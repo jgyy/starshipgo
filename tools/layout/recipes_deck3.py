@@ -163,7 +163,18 @@ def cargo_bay(R, B):
 
 
 def f_cargoA(R, B): cargo_bay(R, B)
-def f_cargoB(R, B): cargo_bay(R, B)
+
+
+def f_cargoB(R, B):
+    """Spares depot: shelving down the walls; the floor is packed in tidy rows by generate_ship.pack_depot."""
+    c = B.cat
+    light_room(R, spacing=3.6, energy=1.6, color="#fff6e6", cats=("ceilinglight", "panellight"))
+    for s in "WE":
+        R.run(s, ["shelving"], gap=0.03, pred=lambda m: FLOOR(m) and m["size"][0] < 3.0, limit=3)
+    R.run("N", ["wallpanel", "sign", "controlpanel"], wall_mount=True, y=2.0)
+    R.run("S", ["wallpanel", "sign"], wall_mount=True, y=2.0)
+    ceiling_runs(R, "cabletray", "x", 2)
+    signs(R, "N", R.cx, "cargo")
 
 
 def f_hangar(R, B):

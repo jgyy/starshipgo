@@ -13,6 +13,7 @@ func _ready() -> void:
 	_make_environment()
 	builder = ShipBuilder.new()
 	builder.name = "Ship"
+	builder.use_probes = not ("--no-probes" in OS.get_cmdline_user_args())
 	add_child(builder)
 	builder.load_data()
 	builder.build()
@@ -29,10 +30,55 @@ func _ready() -> void:
 	player.interact_prompt.connect(hud.set_prompt)
 	for l in builder.lifts:
 		l.deck_changed.connect(func(_d): hud.flash_fade())
+	_make_audio()
 	var tour := _tour_dir()
 	if tour != "":
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		_run_tour.call_deferred(tour)
+
+var _hum: AudioStreamPlayer
+var _rumble: AudioStreamPlayer
+var _lift_snd: AudioStreamPlayer
+
+func _loop(path: String) -> AudioStreamWAV:
+	var s := (load(path) as AudioStreamWAV).duplicate() as AudioStreamWAV
+	s.loop_mode = AudioStreamWAV.LOOP_FORWARD
+	s.loop_begin = 0
+	s.loop_end = s.data.size() / 2
+	return s
+
+func _make_audio() -> void:
+	_hum = AudioStreamPlayer.new()
+	_hum.stream = _loop("res://audio/ambient_hum.wav")
+	_hum.volume_db = -17.0
+	add_child(_hum)
+	_hum.play()
+	_rumble = AudioStreamPlayer.new()
+	_rumble.stream = _loop("res://audio/engine_rumble.wav")
+	_rumble.volume_db = -40.0
+	add_child(_rumble)
+	_rumble.play()
+	_lift_snd = AudioStreamPlayer.new()
+	_lift_snd.stream = load("res://audio/lift.wav")
+	_lift_snd.volume_db = -8.0
+	add_child(_lift_snd)
+	for l in builder.lifts:
+		l.deck_changed.connect(func(_d): _lift_snd.play())
+
+## Engineering areas are louder and rumble; command areas are quiet.
+func _mix_for(dept: String) -> void:
+	var hum := -17.0
+	var rum := -40.0
+	match dept:
+		"engineering": hum = -14.0; rum = -14.0
+		"cargo": hum = -15.0; rum = -22.0
+		"life": hum = -13.0; rum = -26.0
+		"command": hum = -21.0
+		"crew": hum = -20.0
+		"medical", "science": hum = -19.0
+	var tw := create_tween().set_parallel(true)
+	tw.tween_property(_hum, "volume_db", hum, 1.5)
+	tw.tween_property(_rumble, "volume_db", rum, 1.5)
 
 func _tour_dir() -> String:
 	for a in OS.get_cmdline_user_args():
@@ -61,6 +107,7 @@ func _process(delta: float) -> void:
 						if int(d["id"]) == int(r["deck"]):
 							dn = "DECK %d - %s" % [int(d["id"]), d["name"]]
 					hud.show_room(r["name"], dn)
+					_mix_for(r.get("dept", ""))
 				return
 
 func _make_environment() -> void:
@@ -81,6 +128,11 @@ func _make_environment() -> void:
 	env.ssao_radius = 1.4
 	env.ssao_intensity = 2.2
 	env.ssao_power = 1.6
+	env.volumetric_fog_enabled = not ("--no-fog" in OS.get_cmdline_user_args())
+	env.volumetric_fog_density = 0.006
+	env.volumetric_fog_albedo = Color(0.85, 0.9, 1.0)
+	env.volumetric_fog_length = 36.0
+	env.volumetric_fog_ambient_inject = 0.4
 	env.glow_enabled = true
 	env.glow_intensity = 0.9
 	env.glow_bloom = 0.08

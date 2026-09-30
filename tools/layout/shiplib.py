@@ -29,6 +29,7 @@ class Catalog:
         for m in d["models"]:
             self.by_cat.setdefault(m["category"], []).append(m)
         self.use = {k: 0 for k in self.models}
+        self.pen = {}             # soft penalty for models that recently failed to fit
         self.rng = random.Random(1701)
 
     def pick(self, cat, pred=None, label=None, rng=None):
@@ -41,7 +42,7 @@ class Catalog:
             cands = [c for c in cands if pred(c)]
         if not cands:
             return None
-        cands = sorted(cands, key=lambda c: (self.use[c["id"]], rng.random()))
+        cands = sorted(cands, key=lambda c: (self.use[c["id"]] + self.pen.get(c["id"], 0.0), rng.random()))
         return cands[0]
 
     def pick_any(self, cats, pred=None, rng=None):
@@ -54,7 +55,7 @@ class Catalog:
             pool = [c for c in pool if pred(c)]
         if not pool:
             return None
-        pool.sort(key=lambda c: (self.use[c["id"]], rng.random()))
+        pool.sort(key=lambda c: (self.use[c["id"]] + self.pen.get(c["id"], 0.0), rng.random()))
         return pool[0]
 
     def unused(self):
@@ -79,7 +80,14 @@ class Ship:
         return room
 
     # --------------------------------------------------------- links
-    def link(self, a, b, kind="door", c=None, model="door_bulkhead", width=None, height=None, locked=False):
+    DOOR_LABELS = {
+        "security": ["security", "blast"], "engineering": ["engineering", "blast", "maintenance", "hangar", "cargo"],
+        "medical": ["medical", "cleanroom", "glass"], "science": ["science", "glass", "cleanroom"],
+        "command": ["bulkhead", "officer"], "crew": ["cabin", "officer"], "life": ["engineering", "maintenance", "cargo"],
+        "cargo": ["cargo", "hangar", "blast"], "transit": ["bulkhead"],
+    }
+
+    def link(self, a, b, kind="door", c=None, model=None, width=None, height=None, locked=False):
         """Cut matching openings through the shared wall of rooms a and b and add a door."""
         A, B = self.rooms[a], self.rooms[b]
         if abs(A.x1 - B.x0) < 1e-6:
@@ -100,17 +108,26 @@ class Ship:
             bz = A.z1 if sa == "S" else A.z0
         if c is None:
             c = (lo + hi) / 2
-        w = width or (DOOR_W if kind == "door" else 4.0)
-        h = height or (DOOR_H if kind == "door" else 3.0)
+        w = width or (DOOR_W if kind in ("door", "portal") else 4.0)
+        h = height or (DOOR_H if kind in ("door", "portal") else 3.0)
         for room, side in ((A, sa), (B, sb)):
-            room.openings.append({"side": side, "c": c, "w": w, "y0": 0.0, "y1": h, "kind": "door" if kind == "door" else "open"})
+            room.openings.append({"side": side, "c": c, "w": w, "y0": 0.0, "y1": h, "kind": "door" if kind != "open" else "open"})
             room.block_door(side, c, w)
+        y = A.y
+        pos = [bx, y, c] if axis == "z" else [c, y, bz]
+        yaw = 90.0 if axis == "z" else 0.0
         if kind == "door":
-            y = A.y
-            pos = [bx, y, c] if axis == "z" else [c, y, bz]
-            self.doors.append({"m": model, "pos": [round(v, 3) for v in pos], "yaw": 90.0 if axis == "z" else 0.0,
+            if model is None:
+                dept = B.dept if A.dept == "transit" else A.dept
+                pick = self.cat.pick("door", label=self.DOOR_LABELS.get(dept, ["bulkhead"]))
+                model = pick["id"]
+            self.doors.append({"m": model, "pos": [round(v, 3) for v in pos], "yaw": yaw,
                                "locked": locked, "a": a, "b": b})
             self.cat.use[model] += 1
+        elif kind == "portal":
+            fr = self.cat.pick("doorframe")
+            A.props.append({"m": fr["id"], "pos": [round(v, 3) for v in pos], "yaw": yaw, "_m": fr})
+            self.cat.use[fr["id"]] += 1
         return c
 
 
@@ -141,6 +158,14 @@ class Room:
 
     def inner(self, m=0.0):
         return (self.x0 + WALL_T + m, self.z0 + WALL_T + m, self.x1 - WALL_T - m, self.z1 - WALL_T - m)
+
+    def occupancy(self):
+        area = 0.0
+        for p in self.props:
+            fp = p.get("_fp")
+            if fp and p["_m"]["mount"] == "floor":
+                area += (fp[2] - fp[0]) * (fp[3] - fp[1])
+        return area / max(self.w * self.d, 1.0)
 
     def block_door(self, side, c, w):
         depth = 2.4
@@ -215,6 +240,11 @@ class Room:
         lo, hi = m["bounds_min"], m["bounds_max"]
         yaw = FACE_YAW[side] + yaw_extra
         ix0, iz0, ix1, iz1 = self.inner()
+        hw = m["size"][0] * scale / 2
+        if m["mount"] == "floor" and m["size"][1] > 0.6:
+            for (ua, ub, uy0, uy1) in self.wall_used[side]:
+                if uy1 >= 50 and along - hw < ub and along + hw > ua:
+                    return None                       # would block a window / doorway
         cdist = gap + (hi[2] - lo[2]) * scale / 2      # wall -> centre of the footprint
         if side == "N": cx, cz = along, iz0 + cdist
         elif side == "S": cx, cz = along, iz1 - cdist

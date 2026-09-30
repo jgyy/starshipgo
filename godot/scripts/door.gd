@@ -14,6 +14,7 @@ var _amount := 0.0
 var _target := 0.0
 var _shape: CollisionShape3D
 var _near := 0
+var _snd: AudioStreamPlayer3D
 
 func setup(is_locked: bool = false) -> void:
 	locked = is_locked
@@ -45,6 +46,13 @@ func setup(is_locked: bool = false) -> void:
 	add_child(area)
 	area.body_entered.connect(_on_enter)
 	area.body_exited.connect(_on_exit)
+	_snd = AudioStreamPlayer3D.new()
+	_snd.stream = load("res://audio/door.wav")
+	_snd.unit_size = 6.0
+	_snd.max_distance = 22.0
+	_snd.volume_db = -6.0
+	_snd.position = Vector3(0, 1.3, 0)
+	add_child(_snd)
 	set_process(false)
 
 func _on_enter(_b: Node3D) -> void:
@@ -58,6 +66,9 @@ func _on_exit(_b: Node3D) -> void:
 		request(false)
 
 func request(open: bool) -> void:
+	if (1.0 if open else 0.0) != _target and is_inside_tree():
+		_snd.pitch_scale = randf_range(0.95, 1.05)
+		_snd.play()
 	_target = 1.0 if open else 0.0
 	set_process(true)
 

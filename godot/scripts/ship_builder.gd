@@ -11,6 +11,7 @@ var ship: Dictionary = {}
 var doors: Array[Node3D] = []
 var lifts: Array[Node3D] = []
 var room_nodes: Dictionary = {}       # room id -> Node3D
+var use_probes := true
 var stats := {"props": 0, "lights": 0, "doors": 0, "models_used": {}}
 var _scenes: Dictionary = {}
 var _box_meshes: Dictionary = {}
@@ -57,6 +58,7 @@ func _mat_for(key: String, room: Dictionary) -> Material:
 		"glass": return ShipMaterials.glass()
 		"frame": return ShipMaterials.surface("hull_panel", Color(0.55, 0.58, 0.65), 4.0)
 		"trim": return ShipMaterials.surface("hull_panel", Color.from_string(room.get("accent", "#3a6ea5"), Color.WHITE), 4.0)
+		"glow": return ShipMaterials.emissive(Color.from_string(room.get("accent", "#3a6ea5"), Color.WHITE).lightened(0.25), 1.8)
 	return ShipMaterials.surface("hull_panel")
 
 func _build_room(room: Dictionary) -> void:
@@ -96,14 +98,14 @@ func _build_room(room: Dictionary) -> void:
 			var bm := BoxMesh.new()
 			bm.size = bb.size
 			st.append_from(bm, 0, Transform3D(Basis.IDENTITY, bb.position + bb.size * 0.5))
-			if key != "glass":
+			if key != "glass" and key != "glow":
 				var cs := CollisionShape3D.new()
 				var sh := BoxShape3D.new()
 				sh.size = bb.size
 				cs.shape = sh
 				cs.position = bb.position + bb.size * 0.5
 				body.add_child(cs)
-			else:
+			elif key == "glass":
 				var cs2 := CollisionShape3D.new()
 				var sh2 := BoxShape3D.new()
 				sh2.size = bb.size
@@ -116,7 +118,7 @@ func _build_room(room: Dictionary) -> void:
 		mi.mesh = st.commit()
 		mi.material_override = _mat_for(key, room)
 		mi.name = "Mesh_" + key
-		if key == "glass":
+		if key == "glass" or key == "glow":
 			mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		node.add_child(mi)
 	# forcefield planes / decorative extras
@@ -137,6 +139,19 @@ func _build_room(room: Dictionary) -> void:
 		fb.position = q.position
 		fb.rotation_degrees.y = ff.get("yaw", 0.0)
 		body.add_child(fb)
+	# a one-shot reflection probe gives metals and glass the room around them
+	if use_probes and room.get("dept", "") != "" and not rid.begins_with("lift"):
+		var probe := ReflectionProbe.new()
+		probe.size = Vector3(x1 - x0, h + 0.4, z1 - z0)
+		probe.position = Vector3((x0 + x1) * 0.5, y0 + h * 0.5, (z0 + z1) * 0.5)
+		probe.interior = true
+		probe.box_projection = true
+		probe.intensity = 0.8
+		probe.update_mode = ReflectionProbe.UPDATE_ONCE
+		probe.max_distance = 0.0
+		probe.cull_mask = 1
+		probe.ambient_mode = ReflectionProbe.AMBIENT_DISABLED
+		node.add_child(probe)
 	# lights
 	for l in room.get("lights", []):
 		_add_light(node, l)
@@ -175,6 +190,7 @@ func _wall(set: BoxSet, room: Dictionary, side: String, ops: Array, x0: float, z
 		var oa: float = o["c"] - o["w"] * 0.5
 		var ob: float = o["c"] + o["w"] * 0.5
 		_wall_box(set, "wall", horizontal, cur, oa, p0, p1, y0, y0 + h)
+		_trim(set, side, horizontal, cur, oa, p0, p1, y0, h)
 		var yb: float = o.get("y0", 0.0)
 		var yt: float = o.get("y1", 2.6)
 		if yb > 0.01:
@@ -196,6 +212,23 @@ func _wall(set: BoxSet, room: Dictionary, side: String, ops: Array, x0: float, z
 				_wall_box(set, "frame", horizontal, mx - 0.05, mx + 0.05, p0 - 0.03, p1 + 0.03, y0 + yb, y0 + yt)
 		cur = ob
 	_wall_box(set, "wall", horizontal, cur, b, p0, p1, y0, y0 + h)
+	_trim(set, side, horizontal, cur, b, p0, p1, y0, h)
+
+## Baseboard, accent stripe and a glowing cove line on the room side of a solid wall run.
+func _trim(set: BoxSet, side: String, horizontal: bool, a: float, b: float, p0: float, p1: float, y0: float, h: float) -> void:
+	if b - a < 0.3:
+		return
+	var q0: float
+	var q1: float
+	if side == "N" or side == "W":
+		q0 = p1
+		q1 = p1 + 0.02
+	else:
+		q0 = p0 - 0.02
+		q1 = p0
+	_wall_box(set, "hull", horizontal, a, b, q0, q1, y0, y0 + 0.14)
+	_wall_box(set, "trim", horizontal, a, b, q0, q1, y0 + 1.02, y0 + 1.08)
+	_wall_box(set, "glow", horizontal, a, b, q0, q1, y0 + h - 0.17, y0 + h - 0.13)
 
 func _wall_box(set: BoxSet, key: String, horizontal: bool, a: float, b: float, p0: float, p1: float, ya: float, yb: float) -> void:
 	if horizontal:

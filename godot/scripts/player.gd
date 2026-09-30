@@ -16,6 +16,9 @@ var lift: Node3D = null
 var free_look := true
 var _bob := 0.0
 var _pitch := 0.0
+var _steps: Array[AudioStream] = []
+var _step_player: AudioStreamPlayer
+var _last_half := 0
 
 func _ready() -> void:
 	add_to_group("player")
@@ -45,6 +48,11 @@ func _ready() -> void:
 	flash.visible = false
 	camera.add_child(flash)
 	floor_snap_length = 0.3
+	for i in range(1, 4):
+		_steps.append(load("res://audio/footstep_%d.wav" % i))
+	_step_player = AudioStreamPlayer.new()
+	_step_player.volume_db = -9.0
+	add_child(_step_player)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -87,6 +95,12 @@ func _physics_process(delta: float) -> void:
 		_bob += delta * moving * 1.9
 		head.position.y = 1.62 + sin(_bob) * 0.028
 		head.position.x = cos(_bob * 0.5) * 0.015
+		var half := int(floorf(_bob / PI))
+		if half != _last_half:
+			_last_half = half
+			_step_player.stream = _steps[randi() % _steps.size()]
+			_step_player.pitch_scale = randf_range(0.9, 1.1)
+			_step_player.play()
 	else:
 		head.position.y = lerpf(head.position.y, 1.62, delta * 8.0)
 		head.position.x = lerpf(head.position.x, 0.0, delta * 8.0)

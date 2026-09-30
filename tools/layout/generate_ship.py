@@ -93,7 +93,7 @@ def build(cat):
     airlock = rm("airlock", "Airlock & EVA Prep", 3, (2, -32, 18, -24), "security", floor="deck_plate", floor_tint="#a8b0b8", accent="#e0c020")
     eng = rm("eng", "Main Engineering", 3, (2, -24, 18, 0), "engineering", height=3.4)
     aux = rm("aux", "Power Distribution", 3, (2, 0, 18, 14), "engineering")
-    cargoB = rm("cargoB", "Cargo Bay 2", 3, (2, 14, 18, 28), "cargo")
+    cargoB = rm("cargoB", "Spares Depot", 3, (2, 14, 18, 28), "cargo")
     lobby3 = rm("lobby3", "Turbolift Lobby", 3, (-6, 28, 6, 36), "transit")
     liftA3 = rm("liftA3", "Turbolift A", 3, (-10, 29, -6, 33), "transit", floor_tint="#9098a8")
     liftB3 = rm("liftB3", "Turbolift B", 3, (6, 29, 10, 33), "transit", floor_tint="#9098a8")
@@ -101,44 +101,44 @@ def build(cat):
 
     # ---------------------------------------------------------------- links (doors / arches)
     L = S.link
-    L("bridge", "cor1", c=0, model="door_bulkhead")
-    L("ready", "cor1", c=-18, model="door_cabin")
-    L("conf", "cor1", c=-18, model="door_science")
-    L("lounge", "cor1", c=-3, kind="open", width=4.0, height=3.2)
-    L("comms", "cor1", c=-6, model="door_science")
-    L("astro", "cor1", c=7, model="door_science")
-    L("cabin1", "cor1", c=11, model="door_cabin")
-    L("cabin2", "cor1", c=22, model="door_cabin")
-    L("capt", "cor1", c=21, model="door_bulkhead")
+    L("bridge", "cor1", c=0)
+    L("ready", "cor1", c=-18)
+    L("conf", "cor1", c=-18)
+    L("lounge", "cor1", c=-3, kind="portal")
+    L("comms", "cor1", c=-6)
+    L("astro", "cor1", c=7, kind="portal")
+    L("cabin1", "cor1", c=11)
+    L("cabin2", "cor1", c=22)
+    L("capt", "cor1", c=21, kind="portal")
     L("cor1", "lobby1", kind="open", c=0, width=4.0, height=3.2)
-    L("lobby1", "liftA1", c=31, model="door_bulkhead")
-    L("lobby1", "liftB1", c=31, model="door_bulkhead")
+    L("lobby1", "liftA1", c=31)
+    L("lobby1", "liftB1", c=31)
 
-    L("armory", "cor2", c=-27, model="door_security")
-    L("galley", "cor2", c=-17, model="door_cabin")
-    L("mess", "cor2", c=-3, kind="open", width=4.0, height=3.2)
-    L("rec", "cor2", c=12, model="door_cabin")
-    L("dorm", "cor2", c=23, model="door_cabin")
-    L("brig", "cor2", c=-27, model="door_security")
-    L("secoff", "cor2", c=-18, model="door_security")
-    L("medbay", "cor2", c=-9, model="door_medical")
-    L("sci", "cor2", c=10, model="door_science")
-    L("hydro", "cor2", c=22, model="door_science")
+    L("armory", "cor2", c=-27)
+    L("galley", "cor2", c=-17, kind="portal")
+    L("mess", "cor2", c=-3, kind="portal")
+    L("rec", "cor2", c=12, kind="portal")
+    L("dorm", "cor2", c=23, kind="portal")
+    L("brig", "cor2", c=-27)
+    L("secoff", "cor2", c=-18)
+    L("medbay", "cor2", c=-9)
+    L("sci", "cor2", c=10)
+    L("hydro", "cor2", c=22, kind="portal")
     L("cor2", "lobby2", kind="open", c=0, width=4.0, height=3.2)
-    L("lobby2", "liftA2", c=31, model="door_bulkhead")
-    L("lobby2", "liftB2", c=31, model="door_bulkhead")
+    L("lobby2", "liftA2", c=31)
+    L("lobby2", "liftB2", c=31)
 
-    L("life", "cor3", c=-25, model="door_engineering")
-    L("core", "cor3", c=-12, model="door_security")
-    L("shop", "cor3", c=0, model="door_engineering")
-    L("cargoA", "cor3", c=17, model="door_engineering")
-    L("airlock", "cor3", c=-28, model="door_engineering")
-    L("eng", "cor3", c=-12, model="door_engineering")
-    L("aux", "cor3", c=7, model="door_engineering")
-    L("cargoB", "cor3", c=21, model="door_engineering")
+    L("life", "cor3", c=-25)
+    L("core", "cor3", c=-12)
+    L("shop", "cor3", c=0)
+    L("cargoA", "cor3", c=17)
+    L("airlock", "cor3", c=-28)
+    L("eng", "cor3", c=-12)
+    L("aux", "cor3", c=7)
+    L("cargoB", "cor3", c=21)
     L("cor3", "lobby3", kind="open", c=0, width=4.0, height=3.2)
-    L("lobby3", "liftA3", c=31, model="door_bulkhead")
-    L("lobby3", "liftB3", c=31, model="door_bulkhead")
+    L("lobby3", "liftA3", c=31)
+    L("lobby3", "liftB3", c=31)
     L("lobby3", "hangar", kind="open", c=0, width=6.0, height=3.4)
 
     # windows
@@ -206,6 +206,12 @@ def furnish_all(B):
             print("warning: no recipe for", rid)
             continue
         fn(room, B)
+    for rid, room in B.ship.rooms.items():
+        if rid.startswith("lift"):
+            continue
+        if rid not in ("cargoB",):
+            garnish(room, max_new=70 if room.w * room.d > 150 else 35)
+        tabletop_pass(room)
     store_leftovers(B)
 
 
@@ -222,6 +228,7 @@ def store_leftovers(B):
     """Every catalogue model must exist in the ship: put anything not yet used on the shelves
     and floors of the spares stores (cargo bays, workshop, hangar)."""
     cat = B.cat
+    pack_depot(B)
     stores = [B.ship.rooms[r] for r in ("hangar", "cargoA", "cargoB", "shop", "aux")]
     left = sorted(cat.unused(), key=lambda m: -(m["size"][0] * m["size"][2]))
     placed = 0
@@ -260,7 +267,7 @@ def store_leftovers(B):
                     if ok:
                         break
             else:   # table items: stand on any flat host prop in a store room
-                hosts = [p for p in R.props if "_fp" in p and p["_m"].get("top_y") and p["_m"]["mount"] == "floor"]
+                hosts = [p for p in R.props if "_fp" in p and (p["_m"].get("top_y") or 0) >= 0.45 and p["_m"]["mount"] == "floor"]
                 R.rng.shuffle(hosts)
                 for h in hosts:
                     fp = h["_fp"]
@@ -275,6 +282,24 @@ def store_leftovers(B):
         if not ok:
             print("warning: could not place leftover", m["id"])
     print(f"leftovers stored: {placed}/{len(left)}")
+
+
+def pack_depot(B):
+    """Tidy storage rows in the Spares Depot: floor-standing leftovers sorted by category, one aisle per row."""
+    R = B.ship.rooms["cargoB"]
+    items = [m for m in B.cat.unused() if m["mount"] == "floor" and m["size"][0] * m["size"][2] < 6.0 and max(m["size"][0], m["size"][2]) < 3.0]
+    items.sort(key=lambda m: (m["category"], m["id"]))
+    ix0, iz0, ix1, iz1 = R.inner(0.5)
+    x, z, row_d = ix0 + 0.4, iz0 + 0.4, 0.0
+    for m in items:
+        w, d = m["size"][0], m["size"][2]
+        if x + w > ix1 - 0.4:
+            x, z, row_d = ix0 + 0.4, z + row_d + 1.1, 0.0
+        if z + d > iz1 - 0.4:
+            break
+        if R.place(m, x + w / 2, z + d / 2, 180.0 if False else 0.0, margin=0.05):
+            x += w + 0.25
+            row_d = max(row_d, d)
 
 
 def frange(a, b, s):

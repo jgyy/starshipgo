@@ -88,7 +88,8 @@ jobs:
         continue-on-error: true
         run: |
           xvfb-run -a -s "-screen 0 1600x900x24" \
-            godot --path godot --rendering-driver vulkan --resolution 1280x720 -- --tour=$PWD/shots
+            godot --path godot --rendering-driver vulkan --resolution 1280x720 -- --tour=$PWD/shots \
+            --no-probes --no-fog --only=01_bridge,08_main_corridor,09_mess_hall,11_medical_bay,18_main_engineering,24_hangar_bay
       - uses: actions/upload-artifact@v4
         with:
           name: screenshots
