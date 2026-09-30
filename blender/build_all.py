@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+"""Build the StarshipGo component library with headless Blender (bpy).
+
+    python blender/build_all.py --out godot                # everything, 4 processes
+    python blender/build_all.py --out godot --only door    # only categories/labels matching
+    python blender/build_all.py --out godot --check        # validate catalog only (no export)
+
+Outputs (relative to --out):
+    models/<category>/<id>.glb     one GLB per component
+    textures/screens|surfaces|sky  generated texture files
+    data/catalog.json              machine readable catalogue (bounds, tags, mount ...)
+"""
+import argparse
+import importlib
+import json
+import os
+import pkgutil
+import re
+import subprocess
+import sys
+import time
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+
+TARGET = 1000
+
+
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")
+
+
+def load_families():
+    from starship import kit
+    import starship.components as comps
+    for m in pkgutil.iter_modules(comps.__path__):
+        importlib.import_module(f"starship.components.{m.name}")
+    return kit.FAMILIES
+
+
+def plan(families):
+    """Expand families into the flat list of models (id, family, index, label)."""
+    out, seen = [], set()
+    for fam in families:
+        for i, label in enumerate(fam["labels"]):
+            mid = f"{fam['category']}_{slug(label)}"
+            if mid in seen:
+                raise SystemExit(f"duplicate model id {mid}")
+            seen.add(mid)
+            out.append({"id": mid, "fam": fam, "i": i, "label": label})
+    return out
+
+
+def run_shard(args, shard, nshards):
+    import bpy
+    from starship import kit, textures
+    bpy.ops.wm.read_factory_settings(use_empty=True)
+    out = os.path.abspath(args.out)
+    kit.TEXTURE_DIR = os.path.join(out, "textures")
+    fams = load_families()
+    items = plan(fams)
+    if args.only:
+        rx = re.compile(args.only)
+        items = [it for it in items if rx.search(it["id"])]
+    catalog = []
+    t0 = time.time()
+    for n, it in enumerate(items):
+        if n % nshards != shard:
+            continue
+        fam = it["fam"]
+        m = kit.Model(it["id"])
+        rng = kit.seeded(it["id"])
+        fam["fn"](m, it["i"], it["label"], rng)
+        path = os.path.join(out, "models", fam["category"], it["id"] + ".glb")
+        info = kit.export(m, path)
+        lo, hi = info["bounds_min"], info["bounds_max"]
+        catalog.append({
+            "id": it["id"], "category": fam["category"], "label": it["label"],
+            "file": f"models/{fam['category']}/{it['id']}.glb", "mount": fam["mount"],
+            "mount_y": fam["mount_y"], "tags": fam["tags"], "solid": fam["solid"],
+            "size": [round(hi[k] - lo[k], 3) for k in range(3)],
+            "bounds_min": lo, "bounds_max": hi, "tris": info["tris"], "top_y": info["top_y"],
+            "bytes": os.path.getsize(path), "family": fam["fn"].__name__,
+        })
+        if (len(catalog)) % 25 == 0:
+            print(f"[shard {shard}] {len(catalog)} models, {time.time()-t0:.0f}s", flush=True)
+    part = os.path.join(out, "data", f"catalog.part{shard}.json")
+    os.makedirs(os.path.dirname(part), exist_ok=True)
+    json.dump(catalog, open(part, "w"))
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=os.path.join(HERE, "..", "godot"))
+    ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--only", default="")
+    ap.add_argument("--check", action="store_true", help="validate the plan without exporting")
+    ap.add_argument("--textures", action="store_true", help="(re)generate textures only")
+    ap.add_argument("--shard", default="", help="internal: i/n")
+    args = ap.parse_args()
+    out = os.path.abspath(args.out)
+
+    if args.shard:
+        i, n = map(int, args.shard.split("/"))
+        run_shard(args, i, n)
+        return
+
+    if args.textures:
+        from starship import textures
+        print("generating textures ...")
+        textures.make_screens(os.path.join(out, "textures"))
+        textures.make_surfaces(os.path.join(out, "textures"))
+        textures.make_sky(os.path.join(out, "textures"))
+        return
+
+    fams = load_families()
+    items = plan(fams)
+    cats = {}
+    for it in items:
+        cats[it["fam"]["category"]] = cats.get(it["fam"]["category"], 0) + 1
+    print(f"{len(items)} models in {len(cats)} categories")
+    if len(items) != TARGET and not args.only:
+        print(f"ERROR: expected exactly {TARGET} models, planned {len(items)}", file=sys.stderr)
+        for c, k in sorted(cats.items()):
+            print(f"  {c}: {k}", file=sys.stderr)
+        sys.exit(1)
+    if args.check:
+        return
+
+    import bpy  # noqa
+    from starship import textures
+    tex_dir = os.path.join(out, "textures")
+    if not os.path.exists(os.path.join(tex_dir, "screens", "radar.png")):
+        print("generating textures ...")
+        textures.make_screens(tex_dir)
+        textures.make_surfaces(tex_dir)
+        textures.make_sky(tex_dir)
+    t0 = time.time()
+    procs = [subprocess.Popen([sys.executable, __file__, "--out", out, "--only", args.only,
+                               "--shard", f"{k}/{args.jobs}"]) for k in range(args.jobs)]
+    rc = [p.wait() for p in procs]
+    if any(rc):
+        sys.exit("a build shard failed")
+    catalog = []
+    ddir = os.path.join(out, "data")
+    for k in range(args.jobs):
+        p = os.path.join(ddir, f"catalog.part{k}.json")
+        catalog += json.load(open(p))
+        os.remove(p)
+    catalog.sort(key=lambda c: (c["category"], c["id"]))
+    if args.only in ("", "."):
+        json.dump({"version": 1, "count": len(catalog), "models": catalog},
+                  open(os.path.join(ddir, "catalog.json"), "w"), indent=1)
+    print(f"built {len(catalog)} GLBs in {time.time()-t0:.0f}s, "
+          f"{sum(c['bytes'] for c in catalog)/1e6:.1f} MB, {sum(c['tris'] for c in catalog)} tris")
+
+
+if __name__ == "__main__":
+    main()
