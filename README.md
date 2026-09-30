@@ -15,11 +15,11 @@ The game is all about walking around the *inside* of the ship in first person. N
 ## Quick start
 
 ```bash
-# 1. (optional) regenerate the assets - needs Python 3.11:  pip install bpy numpy
+# 1. (optional) regenerate the assets - needs Python 3.14:  pip install bpy numpy
 python blender/build_all.py --out godot          # 1000 GLBs + textures + data/catalog.json (~20 s on 4 cores)
 python tools/layout/generate_ship.py             # arrange them: godot/data/ship.json
 
-# 2. play (Godot 4.6+)
+# 2. play (Godot 4.7+)
 godot --path godot --import                      # first run only: import the GLBs
 godot --path godot
 ```
@@ -171,7 +171,7 @@ Contact sheets of any GLBs: `GODOT=godot tools/preview/run.sh sheet.png godot/mo
 
 ## Versions
 
-Blender 5.0.1 (`bpy` module on PyPI) and Godot 4.6.3 were used to build and verify this project.
+Blender 5.2 (`bpy` module on PyPI) and Godot 4.7 were used to build and verify this project.
 CI installs the latest `bpy` from PyPI and the Godot version in `.github/workflows/ci.yml` (`GODOT_VERSION`,
 overridable from *Run workflow*).
 
