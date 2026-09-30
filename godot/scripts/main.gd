@@ -3,7 +3,8 @@ extends Node3D
 ##   godot --path godot                          play
 ##   godot --path godot -- --tour=/tmp/shots     render the camera tour from ship.json and quit
 ##   godot --path godot -- --bench=/tmp/b.json   fly through the tour cameras and write frame-time statistics
-## Options: --hq (volumetric fog, 4x MSAA, full SSAO), --no-probes, --no-fog, --no-culling, --only=a,b (tour)
+## Options: --hq (volumetric fog, 4x MSAA, full SSAO), --no-probes, --no-fog, --no-culling, --only=a,b (tour),
+##          --occlusion / --no-occlusion (force raycast occlusion culling on / off, see _occlusion)
 
 var builder: ShipBuilder
 var player: CharacterBody3D
@@ -22,6 +23,16 @@ func _arg(prefix: String) -> String:
 func _flag(name: String) -> bool:
 	return name in OS.get_cmdline_user_args()
 
+## Raycast occlusion culling (~3.7x fewer draw calls) runs on Embree.  Official Godot builds bundle Embree; distro
+## builds that link the system library can segfault inside rtcIntersect16 as soon as one occluder exists (Arch
+## godot 4.7.2 + embree 4.4.1), so they default to off.  The project setting stays off for the same reason.
+func _occlusion() -> bool:
+	if _flag("--occlusion"):
+		return true
+	if _flag("--no-occlusion"):
+		return false
+	return Engine.get_version_info().get("build", "") == "official"
+
 func _ready() -> void:
 	var t0 := Time.get_ticks_msec()
 	_hq = _flag("--hq")
@@ -30,6 +41,8 @@ func _ready() -> void:
 	builder.name = "Ship"
 	builder.use_probes = not _flag("--no-probes")
 	builder.use_culling = not _flag("--no-culling")
+	builder.use_occluders = _occlusion()
+	get_viewport().use_occlusion_culling = builder.use_occluders
 	add_child(builder)
 	builder.load_data()
 	if builder.ship.get("rooms", []).is_empty():

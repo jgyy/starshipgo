@@ -15,6 +15,7 @@ const CLAD_T := 0.12
 const RISER := 4.0 / 22.0
 const TREAD := 0.28
 const FLIGHT_W := 1.4
+const REVEAL := 0.01                  # window frames overlap the opening edges by this much (no coplanar faces)
 const CULL_HOPS := 2
 const CULL_TICK := 0.2
 
@@ -28,6 +29,7 @@ var room_polys: Dictionary = {}       # room id -> PackedVector2Array
 var room_adj: Dictionary = {}         # room id -> Array of neighbour room ids (doors, arches, stairs)
 var use_probes := true
 var use_culling := true
+var use_occluders := false            # OccluderInstance3D per room shell; only useful with viewport occlusion culling on
 var stats := {"props": 0, "lights": 0, "doors": 0, "stairs": 0, "models_used": {}, "multimeshes": 0, "colliders": 0}
 var _scenes: Dictionary = {}
 var _model_meshes: Dictionary = {}    # id -> Array[{mesh, xf}]
@@ -279,7 +281,7 @@ func _build_room(room: Dictionary) -> void:
 		if key == "clad" or key == "roof" or key == "belly":
 			mi.layers = 3                      # interior + exterior layer: the sun (layer 2 only) lights the outer hull
 		node.add_child(mi)
-	if sh.occ_v.size() > 0:
+	if use_occluders and sh.occ_v.size() > 0:
 		var occ := ArrayOccluder3D.new()
 		occ.set_arrays(sh.occ_v, sh.occ_i)
 		var oi := OccluderInstance3D.new()
@@ -385,7 +387,7 @@ func _wall(sh: Shell, room: Dictionary, e: Dictionary, inner: Array, idx: int, y
 		if yb > 0.01:
 			_wall_run(sh, e, inner, idx, oa, ob, y0, y0 + yb)
 		if yt < h - 0.01:
-			_wall_run(sh, e, inner, idx, oa, ob, y0 + yt, y0 + h)
+			_wall_run(sh, e, inner, idx, oa, ob, y0 + _soffit(o), y0 + h)
 		if o["kind"] == "window":
 			_window(sh, e, oa, ob, y0 + yb, y0 + yt)
 		cur = ob
@@ -396,6 +398,12 @@ func _wall(sh: Shell, room: Dictionary, e: Dictionary, inner: Array, idx: int, y
 		_trim(sh, e, prev, o["s"] - o["w"] * 0.5, y0, h)
 		prev = o["s"] + o["w"] * 0.5
 	_trim(sh, e, prev, e["len"], y0, h)
+
+## Height of the wall / cladding above an opening.  Open hull mouths are framed by the Blender hull fascia, whose
+## header underside and jambs sit exactly on the opening edges: the shell keeps REVEAL clear of them (here and in
+## _cladding) so the fascia is the only surface there instead of z-fighting with it.
+func _soffit(o: Dictionary) -> float:
+	return o["y1"] + (REVEAL if o["kind"] == "open" else 0.0)
 
 func _wall_run(sh: Shell, e: Dictionary, inner: Array, idx: int, s0: float, s1: float, ya: float, yb: float) -> void:
 	if s1 - s0 < 0.005 or yb - ya < 0.005:
@@ -408,13 +416,16 @@ func _strip(e: Dictionary, s0: float, s1: float, d0: float, d1: float) -> Array:
 
 func _window(sh: Shell, e: Dictionary, oa: float, ob: float, ya: float, yb: float) -> void:
 	sh.prism(_strip(e, oa, ob, WALL_T * 0.5 - 0.015, WALL_T * 0.5 + 0.015), ya, yb, "glass", "glass", "glass", true, false)
+	# The frame reaches REVEAL into the opening and stands proud of the trim strips (WALL_T + 0.02): a frame face
+	# flush with the wall / cladding reveal or the trim front would share its plane and z-fight (flicker).
 	var f := 0.08
+	var r := REVEAL
 	var d0 := -0.02
-	var d1 := WALL_T + 0.02
-	sh.prism(_strip(e, oa - f, oa, d0, d1), ya - f, yb + f, "frame", "frame", "frame", false)
-	sh.prism(_strip(e, ob, ob + f, d0, d1), ya - f, yb + f, "frame", "frame", "frame", false)
-	sh.prism(_strip(e, oa, ob, d0, d1), ya - f, ya, "frame", "frame", "frame", false)
-	sh.prism(_strip(e, oa, ob, d0, d1), yb, yb + f, "frame", "frame", "frame", false)
+	var d1 := WALL_T + 0.03
+	sh.prism(_strip(e, oa - f, oa + r, d0, d1), ya - f, yb + f, "frame", "frame", "frame", false)
+	sh.prism(_strip(e, ob - r, ob + f, d0, d1), ya - f, yb + f, "frame", "frame", "frame", false)
+	sh.prism(_strip(e, oa - f, ob + f, d0, d1), ya - f, ya + r, "frame", "frame", "frame", false)
+	sh.prism(_strip(e, oa - f, ob + f, d0, d1), yb - r, yb + f, "frame", "frame", "frame", false)
 	var n := int(floor((ob - oa) / 3.2))
 	for k in range(1, n + 1):
 		var mx := oa + (ob - oa) * k / float(n + 1)
@@ -429,7 +440,8 @@ func _trim(sh: Shell, e: Dictionary, s0: float, s1: float, y0: float, h: float) 
 		return
 	var d0 := WALL_T
 	var d1 := WALL_T + 0.02
-	sh.prism(_strip(e, a, b, d0, d1), y0, y0 + 0.14, "hull", "hull", "hull", false)
+	# the baseboard sinks 5 mm into the floor slab so its underside is never flush with anything over a floor hole
+	sh.prism(_strip(e, a, b, d0, d1), y0 - 0.005, y0 + 0.14, "hull", "hull", "hull", false)
 	sh.prism(_strip(e, a, b, d0, d1), y0 + 1.02, y0 + 1.08, "trim", "trim", "trim", false)
 	sh.prism(_strip(e, a, b, d0, d1), y0 + h - 0.17, y0 + h - 0.13, "glow", "glow", "glow", false)
 
@@ -452,18 +464,19 @@ func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -
 		var ops: Array = []
 		for o in room.get("openings", []):
 			if o["side"] == e["side"] and o.get("kind", "door") in ["window", "open"]:
-				ops.append({"s": _open_s(e, o["c"]), "w": o["w"], "y0": o.get("y0", 0.0), "y1": o.get("y1", 2.6)})
+				ops.append({"s": _open_s(e, o["c"]), "w": o["w"], "y0": o.get("y0", 0.0), "y1": o.get("y1", 2.6), "kind": o.get("kind", "door")})
 		ops.sort_custom(func(p, q): return p["s"] < q["s"])
 		var cur := 0.0
 		var pieces: Array = []
 		for o in ops:
-			var oa: float = o["s"] - o["w"] * 0.5
-			var ob: float = o["s"] + o["w"] * 0.5
+			var widen: float = REVEAL if o["kind"] == "open" else 0.0     # the fascia jambs line the hull mouth
+			var oa: float = o["s"] - o["w"] * 0.5 - widen
+			var ob: float = o["s"] + o["w"] * 0.5 + widen
 			pieces.append([cur, oa, ya, yb])
 			if o["y0"] > 0.01:
 				pieces.append([oa, ob, ya, y0 + o["y0"]])
 			if o["y1"] < h - 0.01:
-				pieces.append([oa, ob, y0 + o["y1"], yb])
+				pieces.append([oa, ob, y0 + _soffit(o), yb])
 			cur = ob
 		pieces.append([cur, ln, ya, yb])
 		for p in pieces:
