@@ -223,7 +223,7 @@ def _(m, rng):
 @b("c_14")
 def _(m, rng):
     m.cyl(0.32, 0.03, (0, -0.015, 0), "chrome", seg=28, bevel=0.005)
-    m.sphere(0.29, (0, -0.03, 0), "em_white", 24, 8, (1, 0.5, 1))
+    m.sphere(0.29, (0, -0.03, 0), "em_white", 24, 8, (1, 0.5, 1), clip_y=-0.03)  # lower dome only
     m.torus(0.3, 0.012, (0, -0.032, 0), "chrome", seg=28, tseg=6)
     bolts(m, [(0.3 * math.cos(a), -0.005, 0.3 * math.sin(a)) for a in (0.5, 2.6, 4.7)], 0.012, "brushed_alu", "y", 0.012)
 
@@ -1088,6 +1088,7 @@ def _(m, rng):
     m.cyl(0.03, 0.08, (0.15, 0.65, 0.1), "steel", seg=8)
     m.link((0.15, 0.68, 0.1), (0.15, 0.78, 0.0), 0.008, "steel", 5)
     m.sphere(0.03, (0.15, 0.8, 0.0), "em_amber", 8, 6)
+    m.ground()  # crawler rests on y=0 like the other two bots (was floating 0.37 m up)
 
 
 @b("cb_2")

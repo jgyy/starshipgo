@@ -1,0 +1,806 @@
+{
+ "source": "git show HEAD:godot/data/ship.json (version 1, the original layout) audited with tools/layout/audit.py (same rules as the new ship)",
+ "total_errors": 2657,
+ "total_warnings": 83,
+ "rules": {
+  "tabletop-host": {
+   "error": 943,
+   "warn": 0,
+   "rooms": {
+    "life": 92,
+    "hydro": 85,
+    "eng": 77,
+    "aux": 71,
+    "cargoA": 57,
+    "dorm": 55,
+    "medbay": 39,
+    "sci": 39
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "terminal_comm_handset",
+     "msg": "table item terminal_comm_handset @(2.48,-25.54) stands on safety_damage_control_locker (family 'safety') which is not a surface host (shiplib.SURFACE_HOSTS)",
+     "pos": [
+      2.48,
+      -25.54
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "terminal_headset_dock",
+     "msg": "table item terminal_headset_dock @(2.50,-30.01) stands on safety_ration_locker (family 'safety') which is not a surface host (shiplib.SURFACE_HOSTS)",
+     "pos": [
+      2.5,
+      -30.01
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "terminal_portable_reader",
+     "msg": "table item terminal_portable_reader @(2.54,-31.61) stands on suitrack_decontamination_arch (family 'suitrack') which is not a surface host (shiplib.SURFACE_HOSTS)",
+     "pos": [
+      2.54,
+      -31.61
+     ]
+    }
+   ]
+  },
+  "table-support": {
+   "error": 470,
+   "warn": 0,
+   "rooms": {
+    "cargoA": 64,
+    "sci": 59,
+    "eng": 31,
+    "shop": 31,
+    "core": 29,
+    "astro": 28,
+    "lounge": 28,
+    "dorm": 22
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "terminal_laptop_console",
+     "msg": "table item terminal_laptop_console @(2.32,-30.38) on safety_ration_locker: footprint overhangs the host",
+     "pos": [
+      2.32,
+      -30.38
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "terminal_laptop_console",
+     "msg": "table item terminal_laptop_console @(4.55,-31.64) on suitrack_suit_up_bench: footprint overhangs the host",
+     "pos": [
+      4.55,
+      -31.64
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "terminal_keyboard",
+     "msg": "table item terminal_keyboard @(6.97,-24.28) on cell_observation_window: footprint overhangs the host",
+     "pos": [
+      6.97,
+      -24.28
+     ]
+    }
+   ]
+  },
+  "wall-floor-clash": {
+   "error": 340,
+   "warn": 0,
+   "rooms": {
+    "lounge": 34,
+    "astro": 33,
+    "cabin2": 23,
+    "conf": 21,
+    "capt": 20,
+    "rec": 19,
+    "cabin1": 16,
+    "comms": 15
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "wallpanel_wood_veneer",
+     "msg": "wall item wallpanel_wood_veneer (lowest point 1.10 m) collides with floor prop suitrack_decontamination_arch (2.00 m tall) @(3.08,-31.38); footprints overlap 0.067 m2",
+     "pos": [
+      3.08,
+      -31.38
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "sign_dept_science",
+     "msg": "wall item sign_dept_science (lowest point 1.80 m) collides with floor prop spotlight_tripod_floodlight (1.92 m tall) @(3.31,-24.61); footprints overlap 0.000 m2",
+     "pos": [
+      3.31,
+      -24.61
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "beacon_evac_light_strip",
+     "msg": "wall item beacon_evac_light_strip (lowest point 3.35 m) collides with floor prop forcefield_hangar_field_arch (3.70 m tall) @(4.99,-28.79); footprints overlap 0.018 m2",
+     "pos": [
+      4.99,
+      -28.79
+     ]
+    }
+   ]
+  },
+  "policy-category": {
+   "error": 306,
+   "warn": 0,
+   "rooms": {
+    "astro": 60,
+    "galley": 48,
+    "core": 33,
+    "bridge": 31,
+    "dorm": 24,
+    "life": 12,
+    "capt": 11,
+    "conf": 11
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "cell_observation_window",
+     "msg": "family 'cell' (cell_observation_window) is not allowed in airlock by policy.py",
+     "pos": [
+      7.16,
+      -24.37
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "weaponrack_weapons_inspection_bench",
+     "msg": "family 'weaponrack' (weaponrack_weapons_inspection_bench) is not allowed in airlock by policy.py",
+     "pos": [
+      8.32,
+      -30.29
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "weaponrack_pistol_rack_wall",
+     "msg": "family 'weaponrack' (weaponrack_pistol_rack_wall) is not allowed in airlock by policy.py",
+     "pos": [
+      9.29,
+      -24.19
+     ]
+    }
+   ]
+  },
+  "footprint-overlap": {
+   "error": 142,
+   "warn": 0,
+   "rooms": {
+    "cargoA": 25,
+    "eng": 12,
+    "comms": 11,
+    "sci": 11,
+    "brig": 8,
+    "life": 8,
+    "shop": 8,
+    "hydro": 7
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "suitrack_oxygen_pack_rack",
+     "msg": "suitrack_oxygen_pack_rack @(8.37,-31.50) overlaps weaponrack_weapons_inspection_bench @(8.32,-30.29) by 0.034 m2 (penetration 0.04 m)",
+     "pos": [
+      8.34,
+      -30.9
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "forcefield_containment_projector",
+     "msg": "forcefield_containment_projector @(9.45,-28.67) overlaps weaponrack_weapons_inspection_bench @(8.32,-30.29) by 0.007 m2 (penetration 0.08 m)",
+     "pos": [
+      8.88,
+      -29.48
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "cell_control_desk",
+     "msg": "cell_control_desk @(10.83,-24.60) overlaps suitrack_decontamination_arch @(11.05,-25.81) by 0.102 m2 (penetration 0.12 m)",
+     "pos": [
+      10.94,
+      -25.21
+     ]
+    }
+   ]
+  },
+  "mount-mismatch": {
+   "error": 132,
+   "warn": 0,
+   "rooms": {
+    "medbay": 16,
+    "cargoB": 13,
+    "galley": 13,
+    "cor2": 12,
+    "airlock": 10,
+    "life": 9,
+    "cor1": 8,
+    "sci": 8
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "beacon_evac_light_strip",
+     "msg": "wall item beacon_evac_light_strip @(4.75,-29.52) is not on a wall (nearest wall 2.48 m away)",
+     "pos": [
+      4.75,
+      -29.52
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "beacon_emergency_flood",
+     "msg": "wall item beacon_emergency_flood @(4.75,-26.63) is not on a wall (nearest wall 2.63 m away)",
+     "pos": [
+      4.75,
+      -26.63
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "beacon_yellow_alert_bar",
+     "msg": "ceiling item beacon_yellow_alert_bar hangs at y=2.00 but the ceiling is at 3.40",
+     "pos": [
+      5.39,
+      -24.16
+     ]
+    }
+   ]
+  },
+  "outside-shell": {
+   "error": 87,
+   "warn": 0,
+   "rooms": {
+    "core": 12,
+    "cargoA": 9,
+    "eng": 9,
+    "sci": 9,
+    "brig": 8,
+    "comms": 8,
+    "cargoB": 5,
+    "secoff": 5
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "sign_floor_marking",
+     "msg": "sign_floor_marking footprint corner (12.66,-23.90) is -0.10 m from the wall line (needs >= 0.13, inside the room)",
+     "pos": [
+      11.81,
+      -24.15
+     ]
+    },
+    {
+     "room": "armory",
+     "model": "sign_floor_marking",
+     "msg": "sign_floor_marking footprint corner (-18.10,-26.54) is -0.10 m from the wall line (needs >= 0.13, inside the room)",
+     "pos": [
+      -17.85,
+      -27.39
+     ]
+    },
+    {
+     "room": "aux",
+     "model": "valve_pneumatic_actuator_valve",
+     "msg": "valve_pneumatic_actuator_valve footprint corner (1.95,0.85) is -0.05 m from the wall line (needs >= 0.13, inside the room)",
+     "pos": [
+      2.15,
+      0.5
+     ]
+    }
+   ]
+  },
+  "floating-floor": {
+   "error": 77,
+   "warn": 0,
+   "rooms": {
+    "core": 12,
+    "cargoA": 9,
+    "eng": 9,
+    "sci": 9,
+    "comms": 8,
+    "brig": 6,
+    "cargoB": 5,
+    "hangar": 3
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "sign_floor_marking",
+     "msg": "floor prop sign_floor_marking @(11.81,-24.15) has y=2.00 but the deck floor is 0.00 and no prop supports it",
+     "pos": [
+      11.81,
+      -24.15
+     ]
+    },
+    {
+     "room": "armory",
+     "model": "sign_floor_marking",
+     "msg": "floor prop sign_floor_marking @(-17.85,-27.39) has y=6.40 but the deck floor is 4.00 and no prop supports it",
+     "pos": [
+      -17.85,
+      -27.39
+     ]
+    },
+    {
+     "room": "aux",
+     "model": "valve_pneumatic_actuator_valve",
+     "msg": "floor prop valve_pneumatic_actuator_valve @(2.15,0.50) has y=1.80 but the deck floor is 0.00 and no prop supports it",
+     "pos": [
+      2.15,
+      0.5
+     ]
+    }
+   ]
+  },
+  "too-tall": {
+   "error": 55,
+   "warn": 0,
+   "rooms": {
+    "cor2": 15,
+    "cor3": 15,
+    "cor1": 12,
+    "eng": 3,
+    "shop": 2,
+    "airlock": 1,
+    "armory": 1,
+    "brig": 1
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "forcefield_hangar_field_arch",
+     "msg": "floor prop forcefield_hangar_field_arch is 3.70 m tall but the room height is 3.40 m (max 3.35)",
+     "pos": [
+      4.99,
+      -28.79
+     ]
+    },
+    {
+     "room": "armory",
+     "model": "forcefield_hangar_field_arch",
+     "msg": "floor prop forcefield_hangar_field_arch is 3.70 m tall but the room height is 3.40 m (max 3.35)",
+     "pos": [
+      -7.08,
+      -25.87
+     ]
+    },
+    {
+     "room": "brig",
+     "model": "forcefield_hangar_field_arch",
+     "msg": "floor prop forcefield_hangar_field_arch is 3.70 m tall but the room height is 3.40 m (max 3.35)",
+     "pos": [
+      8.8,
+      -28.02
+     ]
+    }
+   ]
+  },
+  "duplicates": {
+   "error": 0,
+   "warn": 55,
+   "rooms": {
+    "sci": 12,
+    "core": 10,
+    "medbay": 8,
+    "mess": 8,
+    "hangar": 6,
+    "shop": 3,
+    "cargoA": 2,
+    "hydro": 2
+   },
+   "examples": [
+    {
+     "room": "astro",
+     "model": "microscope_stereo_microscope",
+     "msg": "microscope_stereo_microscope is used 7 times in astro",
+     "pos": [
+      8.0,
+      7.0
+     ]
+    },
+    {
+     "room": "aux",
+     "model": "engtool_hand_tool_set",
+     "msg": "engtool_hand_tool_set is used 12 times in aux",
+     "pos": [
+      10.0,
+      7.0
+     ]
+    },
+    {
+     "room": "cargoA",
+     "model": "storagebin_toolbox_portable",
+     "msg": "storagebin_toolbox_portable is used 67 times in cargoA",
+     "pos": [
+      -10.0,
+      17.0
+     ]
+    }
+   ]
+  },
+  "ceiling-floor-clash": {
+   "error": 39,
+   "warn": 0,
+   "rooms": {
+    "eng": 9,
+    "secoff": 6,
+    "cor3": 5,
+    "galley": 4,
+    "airlock": 3,
+    "armory": 2,
+    "brig": 2,
+    "cargoA": 2
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": "pipe_ceiling_flanged_twin",
+     "msg": "ceiling item pipe_ceiling_flanged_twin (lowest point 3.16) is hit by floor prop forcefield_hangar_field_arch whose top is 3.70 @(4.99,-28.79)",
+     "pos": [
+      4.99,
+      -28.79
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "camera_cluster_ceiling",
+     "msg": "ceiling item camera_cluster_ceiling (lowest point 3.13) is hit by floor prop forcefield_hangar_field_arch whose top is 3.70 @(4.99,-28.79)",
+     "pos": [
+      4.99,
+      -28.79
+     ]
+    },
+    {
+     "room": "airlock",
+     "model": "beacon_red_alert_bar",
+     "msg": "ceiling item beacon_red_alert_bar (lowest point 1.86) is hit by floor prop cell_door_forcefield whose top is 2.60 @(14.66,-24.36)",
+     "pos": [
+      14.66,
+      -24.36
+     ]
+    }
+   ]
+  },
+  "wall-item-overlap": {
+   "error": 27,
+   "warn": 0,
+   "rooms": {
+    "cabin1": 5,
+    "lobby2": 4,
+    "lobby1": 3,
+    "mess": 3,
+    "bridge": 2,
+    "comms": 2,
+    "cor1": 2,
+    "lobby3": 2
+   },
+   "examples": [
+    {
+     "room": "bridge",
+     "model": "display_swing_arm_monitor",
+     "msg": "wall items display_swing_arm_monitor and pipe_double_run overlap on wall W (along -30.14..-29.38 vs -30.11..-28.11, height 2.29..2.85 vs 2.07..2.33)",
+     "pos": [
+      -9.85,
+      -29.76
+     ]
+    },
+    {
+     "room": "bridge",
+     "model": "display_chronometer_clock",
+     "msg": "wall items display_chronometer_clock and pipe_valve_lever overlap on wall W (along -26.94..-26.29 vs -27.74..-25.74, height 2.38..3.02 vs 2.11..2.39)",
+     "pos": [
+      -9.85,
+      -26.61
+     ]
+    },
+    {
+     "room": "cabin1",
+     "model": "locker_mirror_cabinet",
+     "msg": "wall items locker_mirror_cabinet and wallpanel_tall_pipe_niche overlap on wall W (along 11.39..12.01 vs 10.91..11.91, height 1.20..2.08 vs 0.70..3.10)",
+     "pos": [
+      -13.83,
+      11.7
+     ]
+    }
+   ]
+  },
+  "unreachable-pocket": {
+   "error": 0,
+   "warn": 22,
+   "rooms": {
+    "hangar": 5,
+    "cargoA": 4,
+    "medbay": 3,
+    "capt": 2,
+    "astro": 1,
+    "brig": 1,
+    "cabin1": 1,
+    "cabin2": 1
+   },
+   "examples": [
+    {
+     "room": "astro",
+     "model": null,
+     "msg": "13 free cells (0.5 m2) of astro near (13.2,13.4) cannot be reached from the door",
+     "pos": [
+      13.2,
+      13.4
+     ]
+    },
+    {
+     "room": "brig",
+     "model": null,
+     "msg": "27 free cells (1.1 m2) of brig near (2.6,-31.4) cannot be reached from the door",
+     "pos": [
+      2.6,
+      -31.4
+     ]
+    },
+    {
+     "room": "cabin1",
+     "model": null,
+     "msg": "12 free cells (0.5 m2) of cabin1 near (-12.8,12.4) cannot be reached from the door",
+     "pos": [
+      -12.8,
+      12.4
+     ]
+    }
+   ]
+  },
+  "wall-item-span": {
+   "error": 12,
+   "warn": 0,
+   "rooms": {
+    "cor2": 3,
+    "cor1": 2,
+    "astro": 1,
+    "cabin1": 1,
+    "cabin2": 1,
+    "cargoB": 1,
+    "conf": 1,
+    "cor3": 1
+   },
+   "examples": [
+    {
+     "room": "astro",
+     "model": "display_main_viewscreen",
+     "msg": "wall item display_main_viewscreen top at 3.54 m is above the ceiling (3.40 m) on wall S",
+     "pos": [
+      5.3,
+      13.85
+     ]
+    },
+    {
+     "room": "cabin1",
+     "model": "bed_fold_down_wall_bed",
+     "msg": "wall item bed_fold_down_wall_bed bottom at -0.07 m is below the floor on wall W",
+     "pos": [
+      -13.82,
+      8.4
+     ]
+    },
+    {
+     "room": "cabin2",
+     "model": "display_main_viewscreen",
+     "msg": "wall item display_main_viewscreen top at 4.64 m is above the ceiling (3.40 m) on wall N",
+     "pos": [
+      -5.56,
+      16.15
+     ]
+    }
+   ]
+  },
+  "ceiling-overlap": {
+   "error": 11,
+   "warn": 0,
+   "rooms": {
+    "cor1": 4,
+    "cor3": 3,
+    "cor2": 2,
+    "brig": 1,
+    "life": 1
+   },
+   "examples": [
+    {
+     "room": "brig",
+     "model": "cabletray_ladder_tray",
+     "msg": "ceiling items cabletray_ladder_tray @(9.90,-27.00) and camera_dome_ceiling @(10.00,-27.00) overlap by 0.101 m2",
+     "pos": [
+      9.9,
+      -27.0
+     ]
+    },
+    {
+     "room": "cor1",
+     "model": "duct_ceiling_square_diffuser",
+     "msg": "ceiling items duct_ceiling_square_diffuser @(0.00,-21.52) and camera_cluster_ceiling @(0.00,-21.00) overlap by 0.050 m2",
+     "pos": [
+      0.0,
+      -21.52
+     ]
+    },
+    {
+     "room": "cor1",
+     "model": "duct_ceiling_round_vent",
+     "msg": "ceiling items duct_ceiling_round_vent @(0.00,-20.82) and camera_cluster_ceiling @(0.00,-21.00) overlap by 0.215 m2",
+     "pos": [
+      0.0,
+      -20.82
+     ]
+    }
+   ]
+  },
+  "lights": {
+   "error": 9,
+   "warn": 0,
+   "rooms": {
+    "airlock": 1,
+    "cargoB": 1,
+    "cor2": 1,
+    "galley": 1,
+    "lobby1": 1,
+    "lobby2": 1,
+    "lobby3": 1,
+    "medbay": 1
+   },
+   "examples": [
+    {
+     "room": "airlock",
+     "model": null,
+     "msg": "room airlock has no ceiling-mounted light fixture (category ceilinglight)",
+     "pos": [
+      10.0,
+      -28.0
+     ]
+    },
+    {
+     "room": "cargoB",
+     "model": null,
+     "msg": "room cargoB has no ceiling-mounted light fixture (category ceilinglight)",
+     "pos": [
+      10.0,
+      21.0
+     ]
+    },
+    {
+     "room": "cor2",
+     "model": null,
+     "msg": "room cor2 has no ceiling-mounted light fixture (category ceilinglight)",
+     "pos": [
+      0.0,
+      -2.0
+     ]
+    }
+   ]
+  },
+  "window-blocked": {
+   "error": 6,
+   "warn": 0,
+   "rooms": {
+    "capt": 3,
+    "lounge": 2,
+    "bridge": 1
+   },
+   "examples": [
+    {
+     "room": "bridge",
+     "model": "antenna_satellite_dish_pedestal",
+     "msg": "antenna_satellite_dish_pedestal (2.35 m tall) @(8.54,-39.25) is 0.29 m from the window on wall N at c=0.00 w=15.00",
+     "pos": [
+      8.54,
+      -39.25
+     ]
+    },
+    {
+     "room": "capt",
+     "model": "couch_three_seater_sofa",
+     "msg": "couch_three_seater_sofa (0.98 m tall) @(12.51,22.09) is 0.34 m from the window on wall E at c=21.00 w=5.00",
+     "pos": [
+      12.51,
+      22.09
+     ]
+    },
+    {
+     "room": "capt",
+     "model": "bed_folding_cot",
+     "msg": "bed_folding_cot (0.64 m tall) @(12.83,24.29) is 0.45 m from the window on wall E at c=21.00 w=5.00",
+     "pos": [
+      12.83,
+      24.29
+     ]
+    }
+   ]
+  },
+  "aisle-width": {
+   "error": 0,
+   "warn": 5,
+   "rooms": {
+    "brig": 1,
+    "cabin2": 1,
+    "cargoA": 1,
+    "comms": 1,
+    "hydro": 1
+   },
+   "examples": [
+    {
+     "room": "brig",
+     "model": null,
+     "msg": "passage narrower than 0.8 m between solid props near (13.6,-30.8) in brig",
+     "pos": [
+      13.6,
+      -30.8
+     ]
+    },
+    {
+     "room": "cabin2",
+     "model": null,
+     "msg": "passage narrower than 0.8 m between solid props near (-5.6,18.6) in cabin2",
+     "pos": [
+      -5.6,
+      18.6
+     ]
+    },
+    {
+     "room": "cargoA",
+     "model": null,
+     "msg": "passage narrower than 0.8 m between solid props near (-7.6,9.2) in cargoA",
+     "pos": [
+      -7.6,
+      9.2
+     ]
+    }
+   ]
+  },
+  "door-clearance": {
+   "error": 1,
+   "warn": 0,
+   "rooms": {
+    "comms": 1
+   },
+   "examples": [
+    {
+     "room": "comms",
+     "model": "couch_observation_sofa",
+     "msg": "couch_observation_sofa @(5.37,-7.90) stands in door zone [2.0, -7.38, 4.0, -4.62] (door clearance (derived from the opening))",
+     "pos": [
+      5.37,
+      -7.9
+     ]
+    }
+   ]
+  },
+  "unknown-room-policy": {
+   "error": 0,
+   "warn": 1,
+   "rooms": {
+    "null": 1
+   },
+   "examples": [
+    {
+     "room": null,
+     "model": null,
+     "msg": "policy.py has no entry for room id(s) cabin1, cabin2, cargoA, cargoB, cor1, cor2, cor3, liftA1, liftA2, liftA3, liftB1, liftB2, liftB3; the policy-category rule was skipped for them",
+     "pos": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  }
+ }
+}

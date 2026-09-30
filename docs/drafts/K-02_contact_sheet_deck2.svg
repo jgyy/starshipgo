@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>K-02 - Contact sheet - Deck 2 room plans</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<image x="16.0" y="14.0" width="76.0" height="53.74285714285714" href="R-corF2-P_forward_spine_corridor_plan.svg" xlink:href="R-corF2-P_forward_spine_corridor_plan.svg"/>
+<rect x="16" y="14" width="76" height="53.74" class="f" fill="none"/>
+<text x="17" y="71.34" font-size="2" class="t b">CF2  Forward Spine Corridor</text>
+<image x="96.5" y="14.0" width="76.0" height="53.74285714285714" href="R-corA2-P_aft_spine_corridor_plan.svg" xlink:href="R-corA2-P_aft_spine_corridor_plan.svg"/>
+<rect x="96.5" y="14" width="76" height="53.74" class="f" fill="none"/>
+<text x="97.5" y="71.34" font-size="2" class="t b">CA2  Aft Spine Corridor</text>
+<image x="177.0" y="14.0" width="76.0" height="53.74285714285714" href="R-lobby2-P_mid_ship_stair_lobby_plan.svg" xlink:href="R-lobby2-P_mid_ship_stair_lobby_plan.svg"/>
+<rect x="177" y="14" width="76" height="53.74" class="f" fill="none"/>
+<text x="178" y="71.34" font-size="2" class="t b">LB2  Mid-ship Stair Lobby</text>
+<image x="257.5" y="14.0" width="76.0" height="53.74285714285714" href="R-towerA2-P_port_stair_tower_plan.svg" xlink:href="R-towerA2-P_port_stair_tower_plan.svg"/>
+<rect x="257.5" y="14" width="76" height="53.74" class="f" fill="none"/>
+<text x="258.5" y="71.34" font-size="2" class="t b">SP2  Port Stair Tower</text>
+<image x="338.0" y="14.0" width="76.0" height="53.74285714285714" href="R-towerB2-P_starboard_stair_tower_plan.svg" xlink:href="R-towerB2-P_starboard_stair_tower_plan.svg"/>
+<rect x="338" y="14" width="76" height="53.74" class="f" fill="none"/>
+<text x="339" y="71.34" font-size="2" class="t b">SS2  Starboard Stair Tower</text>
+<image x="16.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-armory-P_armory_plan.svg" xlink:href="R-armory-P_armory_plan.svg"/>
+<rect x="16" y="78.24" width="76" height="53.74" class="f" fill="none"/>
+<text x="17" y="135.59" font-size="2" class="t b">AR  Armory</text>
+<image x="96.5" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-galley-P_galley_plan.svg" xlink:href="R-galley-P_galley_plan.svg"/>
+<rect x="96.5" y="78.24" width="76" height="53.74" class="f" fill="none"/>
+<text x="97.5" y="135.59" font-size="2" class="t b">GA  Galley</text>
+<image x="177.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-mess-P_mess_hall_plan.svg" xlink:href="R-mess-P_mess_hall_plan.svg"/>
+<rect x="177" y="78.24" width="76" height="53.74" class="f" fill="none"/>
+<text x="178" y="135.59" font-size="2" class="t b">MH  Mess Hall</text>
+<image x="257.5" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-brig-P_brig_plan.svg" xlink:href="R-brig-P_brig_plan.svg"/>
+<rect x="257.5" y="78.24" width="76" height="53.74" class="f" fill="none"/>
+<text x="258.5" y="135.59" font-size="2" class="t b">BG  Brig</text>
+<image x="338.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-secoff-P_security_office_plan.svg" xlink:href="R-secoff-P_security_office_plan.svg"/>
+<rect x="338" y="78.24" width="76" height="53.74" class="f" fill="none"/>
+<text x="339" y="135.59" font-size="2" class="t b">SO  Security Office</text>
+<image x="16.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-medbay-P_medical_bay_plan.svg" xlink:href="R-medbay-P_medical_bay_plan.svg"/>
+<rect x="16" y="142.49" width="76" height="53.74" class="f" fill="none"/>
+<text x="17" y="199.83" font-size="2" class="t b">MB  Medical Bay</text>
+<image x="96.5" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-rec-P_recreation_gym_plan.svg" xlink:href="R-rec-P_recreation_gym_plan.svg"/>
+<rect x="96.5" y="142.49" width="76" height="53.74" class="f" fill="none"/>
+<text x="97.5" y="199.83" font-size="2" class="t b">RG  Recreation &amp; Gym</text>
+<image x="177.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-dorm-P_crew_quarters_plan.svg" xlink:href="R-dorm-P_crew_quarters_plan.svg"/>
+<rect x="177" y="142.49" width="76" height="53.74" class="f" fill="none"/>
+<text x="178" y="199.83" font-size="2" class="t b">CW  Crew Quarters</text>
+<image x="257.5" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-sci-P_science_laboratory_plan.svg" xlink:href="R-sci-P_science_laboratory_plan.svg"/>
+<rect x="257.5" y="142.49" width="76" height="53.74" class="f" fill="none"/>
+<text x="258.5" y="199.83" font-size="2" class="t b">SL  Science Laboratory</text>
+<image x="338.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-hydro-P_hydroponics_garden_plan.svg" xlink:href="R-hydro-P_hydroponics_garden_plan.svg"/>
+<rect x="338" y="142.49" width="76" height="53.74" class="f" fill="none"/>
+<text x="339" y="199.83" font-size="2" class="t b">HY  Hydroponics Garden</text>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Contact sheet - Deck 2 room plans</text>
+<text x="299" y="264.6" font-size="2" class="t">HABITAT DECK - THUMBNAILS OF EVERY ROOM PLAN SHEET</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">K-02</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">NTS</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Contact sheet deck 2</text>
+</svg>

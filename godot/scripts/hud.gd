@@ -1,5 +1,5 @@
 extends CanvasLayer
-## Crosshair, location banner, interaction prompt, help and the deck map overlay.
+## Crosshair, location banner, stair prompt, help and the deck map overlay.
 
 var room_label: Label
 var deck_label: Label
@@ -10,6 +10,7 @@ var fade: ColorRect
 var _room_tween: Tween
 
 func _ready() -> void:
+	add_to_group("hud")
 	layer = 10
 	var cross := Label.new()
 	cross.text = "+"
@@ -29,7 +30,7 @@ func _ready() -> void:
 	prompt_label.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	prompt_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	help_label = _label(14, Color(0.8, 0.85, 0.9, 0.85))
-	help_label.text = "WASD move   Shift sprint   Mouse look   F flashlight   M deck map   H toggle help   Esc release mouse\nTurbolifts (aft of each deck): step inside and press 1 / 2 / 3"
+	help_label.text = "WASD move   Shift sprint   Mouse look   F flashlight   M deck map   H toggle help   Esc release mouse\nStairs: the two stair towers at mid-ship lead to every deck - just walk up or down the flights"
 	help_label.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_LEFT)
 	help_label.position = Vector2(32, -74)
 	map = load("res://scripts/deck_map.gd").new()
@@ -64,11 +65,6 @@ func show_room(room_name: String, deck_name: String) -> void:
 
 func set_prompt(t: String) -> void:
 	prompt_label.text = t
-
-func flash_fade() -> void:
-	var tw := create_tween()
-	tw.tween_property(fade, "color:a", 1.0, 0.15)
-	tw.tween_property(fade, "color:a", 0.0, 0.35)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_help"):

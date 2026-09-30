@@ -2,20 +2,40 @@ extends Node3D
 ## Entry point: builds environment, ship, player and HUD.
 ##   godot --path godot                          play
 ##   godot --path godot -- --tour=/tmp/shots     render the camera tour from ship.json and quit
+##   godot --path godot -- --bench=/tmp/b.json   fly through the tour cameras and write frame-time statistics
+## Options: --hq (volumetric fog, 4x MSAA, full SSAO), --no-probes, --no-fog, --no-culling, --only=a,b (tour)
 
 var builder: ShipBuilder
 var player: CharacterBody3D
 var hud: CanvasLayer
 var _room_id := ""
 var _acc := 0.0
+var _hq := false
+var _sun: DirectionalLight3D
+
+func _arg(prefix: String) -> String:
+	for a in OS.get_cmdline_user_args():
+		if a.begins_with(prefix):
+			return a.substr(prefix.length())
+	return ""
+
+func _flag(name: String) -> bool:
+	return name in OS.get_cmdline_user_args()
 
 func _ready() -> void:
+	var t0 := Time.get_ticks_msec()
+	_hq = _flag("--hq")
 	_make_environment()
 	builder = ShipBuilder.new()
 	builder.name = "Ship"
-	builder.use_probes = not ("--no-probes" in OS.get_cmdline_user_args())
+	builder.use_probes = not _flag("--no-probes")
+	builder.use_culling = not _flag("--no-culling")
 	add_child(builder)
 	builder.load_data()
+	if builder.ship.get("rooms", []).is_empty():
+		printerr("no ship data - run tools/layout/generate_ship.py and godot --import first")
+		get_tree().quit(1)
+		return
 	builder.build()
 	player = load("res://scripts/player.gd").new()
 	player.name = "Player"
@@ -27,24 +47,37 @@ func _ready() -> void:
 	add_child(hud)
 	hud.map.ship = builder.ship
 	hud.map.player = player
-	player.interact_prompt.connect(hud.set_prompt)
-	for l in builder.lifts:
-		l.deck_changed.connect(func(_d): hud.flash_fade())
 	_make_audio()
-	var tour := _tour_dir()
+	var load_ms := Time.get_ticks_msec() - t0
+	var bench := _arg("--bench=")
+	if bench != "":
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		var b := Node.new()
+		b.set_script(load("res://scripts/bench.gd"))
+		b.set_meta("load_ms", load_ms)
+		add_child(b)
+		b.run.call_deferred(self, player, builder.ship["cameras"], bench)
+		return
+	var tour := _arg("--tour=")
 	if tour != "":
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		_run_tour.call_deferred(tour)
 
 var _hum: AudioStreamPlayer
 var _rumble: AudioStreamPlayer
-var _lift_snd: AudioStreamPlayer
+var _mix_tween: Tween
 
 func _loop(path: String) -> AudioStreamWAV:
 	var s := (load(path) as AudioStreamWAV).duplicate() as AudioStreamWAV
 	s.loop_mode = AudioStreamWAV.LOOP_FORWARD
 	s.loop_begin = 0
-	s.loop_end = s.data.size() / 2
+	var bytes_per_frame := 1
+	match s.format:
+		AudioStreamWAV.FORMAT_16_BITS: bytes_per_frame = 2
+		AudioStreamWAV.FORMAT_8_BITS: bytes_per_frame = 1
+	if s.stereo:
+		bytes_per_frame *= 2
+	s.loop_end = s.data.size() / bytes_per_frame
 	return s
 
 func _make_audio() -> void:
@@ -58,12 +91,6 @@ func _make_audio() -> void:
 	_rumble.volume_db = -40.0
 	add_child(_rumble)
 	_rumble.play()
-	_lift_snd = AudioStreamPlayer.new()
-	_lift_snd.stream = load("res://audio/lift.wav")
-	_lift_snd.volume_db = -8.0
-	add_child(_lift_snd)
-	for l in builder.lifts:
-		l.deck_changed.connect(func(_d): _lift_snd.play())
 
 ## Engineering areas are louder and rumble; command areas are quiet.
 func _mix_for(dept: String) -> void:
@@ -76,39 +103,32 @@ func _mix_for(dept: String) -> void:
 		"command": hum = -21.0
 		"crew": hum = -20.0
 		"medical", "science": hum = -19.0
-	var tw := create_tween().set_parallel(true)
-	tw.tween_property(_hum, "volume_db", hum, 1.5)
-	tw.tween_property(_rumble, "volume_db", rum, 1.5)
-
-func _tour_dir() -> String:
-	for a in OS.get_cmdline_user_args():
-		if a.begins_with("--tour="):
-			return a.substr(7)
-	return ""
+	if _mix_tween:
+		_mix_tween.kill()                              # a new room cancels the previous crossfade
+	_mix_tween = create_tween().set_parallel(true)
+	_mix_tween.tween_property(_hum, "volume_db", hum, 1.5)
+	_mix_tween.tween_property(_rumble, "volume_db", rum, 1.5)
 
 func _process(delta: float) -> void:
 	_acc += delta
-	if _acc < 0.25:
+	if _acc < ShipBuilder.CULL_TICK:
 		return
 	_acc = 0.0
-	var p := player.global_position
-	for r in builder.ship["rooms"]:
-		var rc: Array = r["rect"]
-		if p.x >= rc[0] and p.x <= rc[2] and p.z >= rc[1] and p.z <= rc[3]:
-			var y0 := 0.0
-			for d in builder.ship["decks"]:
-				if int(d["id"]) == int(r["deck"]):
-					y0 = float(d["y"])
-			if p.y >= y0 - 0.5 and p.y <= y0 + float(r.get("height", 3.4)):
-				if r["id"] != _room_id:
-					_room_id = r["id"]
-					var dn := ""
-					for d in builder.ship["decks"]:
-						if int(d["id"]) == int(r["deck"]):
-							dn = "DECK %d - %s" % [int(d["id"]), d["name"]]
-					hud.show_room(r["name"], dn)
-					_mix_for(r.get("dept", ""))
-				return
+	var p := player.global_position + Vector3(0, 0.9, 0)
+	var here := builder.room_at(p)
+	builder.update_culling(p)
+	if here != "" and here != _room_id:
+		_room_id = here
+		for r in builder.ship["rooms"]:
+			if r["id"] == here:
+				var dn := ""
+				for d in builder.ship["decks"]:
+					if int(d["id"]) == int(r["deck"]):
+						dn = "DECK %d - %s" % [int(d["id"]), d["name"]]
+				hud.show_room(r["name"], dn)
+				_mix_for(r.get("dept", ""))
+				hud.set_prompt("STAIRS  -  walk up or down the flights to change deck" if here.begins_with("tower") else "")
+				break
 
 func _make_environment() -> void:
 	var env := Environment.new()
@@ -128,11 +148,18 @@ func _make_environment() -> void:
 	env.ssao_radius = 1.4
 	env.ssao_intensity = 2.2
 	env.ssao_power = 1.6
-	env.volumetric_fog_enabled = not ("--no-fog" in OS.get_cmdline_user_args())
-	env.volumetric_fog_density = 0.006
-	env.volumetric_fog_albedo = Color(0.85, 0.9, 1.0)
-	env.volumetric_fog_length = 36.0
-	env.volumetric_fog_ambient_inject = 0.4
+	# Performance: a cheap depth haze replaces the volumetric fog unless --hq is given.
+	if _hq and not _flag("--no-fog"):
+		env.volumetric_fog_enabled = true
+		env.volumetric_fog_density = 0.006
+		env.volumetric_fog_albedo = Color(0.85, 0.9, 1.0)
+		env.volumetric_fog_length = 36.0
+		env.volumetric_fog_ambient_inject = 0.4
+	elif not _flag("--no-fog"):
+		env.fog_enabled = true
+		env.fog_light_color = Color(0.62, 0.68, 0.8)
+		env.fog_density = 0.004
+		env.fog_sky_affect = 0.0
 	env.glow_enabled = true
 	env.glow_intensity = 0.9
 	env.glow_bloom = 0.08
@@ -143,13 +170,20 @@ func _make_environment() -> void:
 	var we := WorldEnvironment.new()
 	we.environment = env
 	add_child(we)
+	var vp := get_viewport()
+	if _hq:
+		vp.msaa_3d = Viewport.MSAA_4X
+		vp.screen_space_aa = Viewport.SCREEN_SPACE_AA_DISABLED
+	else:
+		vp.msaa_3d = Viewport.MSAA_DISABLED
+		vp.screen_space_aa = Viewport.SCREEN_SPACE_AA_FXAA
 	# distant planet and sun, visible through windows only (render layer 2)
 	var planet := MeshInstance3D.new()
 	var sm := SphereMesh.new()
 	sm.radius = 420.0
 	sm.height = 840.0
-	sm.radial_segments = 96
-	sm.rings = 48
+	sm.radial_segments = 64
+	sm.rings = 32
 	planet.mesh = sm
 	var pmat := StandardMaterial3D.new()
 	pmat.albedo_texture = load("res://textures/sky/planet.png")
@@ -159,12 +193,14 @@ func _make_environment() -> void:
 	pmat.rim_tint = 0.8
 	planet.material_override = pmat
 	planet.layers = 2
+	planet.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	planet.position = Vector3(-330, -190, -1100)
 	planet.rotation_degrees = Vector3(20, 40, 0)
 	add_child(planet)
 	var sun := DirectionalLight3D.new()
+	_sun = sun
 	sun.light_cull_mask = 2
-	sun.light_energy = 2.4
+	sun.light_energy = 1.5
 	sun.light_color = Color(1.0, 0.95, 0.85)
 	sun.rotation_degrees = Vector3(-18, -125, 0)
 	add_child(sun)
@@ -172,32 +208,45 @@ func _make_environment() -> void:
 func _run_tour(dir: String) -> void:
 	DirAccess.make_dir_recursive_absolute(dir)
 	await get_tree().create_timer(1.0).timeout
-	var only := ""
-	for a in OS.get_cmdline_user_args():
-		if a.begins_with("--only="):
-			only = a.substr(7)
+	var only := _arg("--only=")
+	player.set_physics_process(false)
 	for cam in builder.ship.get("cameras", []):
 		if only != "" and not (cam["name"] in only.split(",")):
-			continue
+			continue          # --only=maps skips every camera and renders just the deck maps
 		var pos: Array = cam["pos"]
 		player.global_position = Vector3(pos[0], pos[1] - 1.62, pos[2])
 		player.velocity = Vector3.ZERO
 		player.look_at_yaw_pitch(deg_to_rad(cam.get("yaw", 0.0)), deg_to_rad(cam.get("pitch", 0.0)))
-		hud.show_room(cam.get("title", cam["name"]), cam.get("subtitle", ""))
+		player.camera.fov = cam.get("fov", 78.0)
+		_sun.shadow_enabled = cam.get("exterior", false)       # the sun only needs shadows when the hull is in view
+		if cam.get("exterior", false):
+			builder.show_all_rooms()
+			hud.show_room(cam.get("title", cam["name"]), cam.get("subtitle", ""))
+		else:
+			builder._current_room = ""
+			builder.update_culling(player.global_position + Vector3(0, 0.9, 0))
+			hud.show_room(cam.get("title", cam["name"]), cam.get("subtitle", ""))
 		hud.help_label.visible = false
 		for i in 10:
 			await get_tree().process_frame
 		var img := get_viewport().get_texture().get_image()
+		if img == null or img.is_empty():
+			printerr("no rendered image (is a renderer available?) - aborting the tour")
+			get_tree().quit(1)
+			return
 		var path := "%s/%s.png" % [dir, cam["name"]]
-		img.save_png(path)
+		if img.save_png(path) != OK:
+			printerr("cannot write ", path)
+			get_tree().quit(1)
+			return
 		print("shot ", path)
-	if only != "":
+	if only != "" and only != "maps":
 		get_tree().quit()
 		return
 	# deck map screenshots
 	hud.map.visible = true
 	for d in builder.ship["decks"]:
-		player.global_position = Vector3(0, float(d["y"]) + 0.1, 0)
+		player.global_position = Vector3(0, float(d["y"]) + 0.1, 1.8)
 		await get_tree().process_frame
 		await get_tree().process_frame
 		var im := get_viewport().get_texture().get_image()

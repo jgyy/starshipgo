@@ -1,0 +1,69 @@
+{
+ "version": 1,
+ "models": [
+  {
+   "id": "arch_hull_fascia",
+   "file": "arch/arch_hull_fascia.glb",
+   "bounds_min": [
+    -13.12,
+    -1.577,
+    -35.232
+   ],
+   "bounds_max": [
+    13.12,
+    11.75,
+    34.388
+   ],
+   "tris": 10668,
+   "bytes": 484304
+  },
+  {
+   "id": "arch_stair_flight",
+   "file": "arch/arch_stair_flight.glb",
+   "bounds_min": [
+    -0.705,
+    0.0,
+    -3.099
+   ],
+   "bounds_max": [
+    0.705,
+    2.92,
+    0.045
+   ],
+   "tris": 4004,
+   "bytes": 273696
+  },
+  {
+   "id": "arch_stair_guard",
+   "file": "arch/arch_stair_guard.glb",
+   "bounds_min": [
+    -0.275,
+    0.0,
+    -0.055
+   ],
+   "bounds_max": [
+    0.275,
+    1.0,
+    0.055
+   ],
+   "tris": 684,
+   "bytes": 59160
+  },
+  {
+   "id": "arch_stair_sign",
+   "file": "arch/arch_stair_sign.glb",
+   "bounds_min": [
+    -0.3,
+    -0.15,
+    -0.0
+   ],
+   "bounds_max": [
+    0.3,
+    0.15,
+    0.026
+   ],
+   "tris": 220,
+   "bytes": 20884
+  }
+ ]
+}

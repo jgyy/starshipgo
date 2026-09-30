@@ -5,7 +5,10 @@ Categories: console(20) seat(8) display(22) controlpanel(20) holo(8) terminal(12
 import math
 
 from ..kit import family
-from mathutils import Euler, Vector  # noqa: E402 (after kit imports bpy)
+try:  # bpy is optional so `build_all.py --check` runs on a bare Python
+    from mathutils import Euler, Vector  # noqa: E402 (after kit imports bpy)
+except ImportError:
+    Euler = Vector = None
 
 PI = math.pi
 BTN = ["em_red", "em_green", "em_amber", "em_cyan", "plastic_grey", "em_white", "plastic_black", "em_blue"]
