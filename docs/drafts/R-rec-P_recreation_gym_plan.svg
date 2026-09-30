@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>R-rec-P - Recreation &amp; Gym - plan</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
+<polygon points="43,183 43,55 273,55 273,203 45.04,203" class="none" fill="#f5f1eb"/>
+<polygon points="233,101.4 273,101.4 273,156.6 233,156.6" class="red" fill="url(#hZone)"/>
+<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<polygon points="98.6,162.28 107.4,162.28 107.4,171.52 98.6,171.52" class="n" fill="#7782ef"/>
+<line x1="107.4" y1="171.52" x2="98.6" y2="171.52" class="m"/>
+<line x1="103" y1="171.52" x2="103" y2="170.32" class="f"/>
+<polygon points="107.4,199.72 98.6,199.72 98.6,190.48 107.4,190.48" class="n" fill="#7782ef"/>
+<line x1="98.6" y1="190.48" x2="107.4" y2="190.48" class="m"/>
+<line x1="103" y1="190.48" x2="103" y2="191.68" class="f"/>
+<polygon points="114.6,162.28 123.4,162.28 123.4,171.52 114.6,171.52" class="n" fill="#7782ef"/>
+<line x1="123.4" y1="171.52" x2="114.6" y2="171.52" class="m"/>
+<line x1="119" y1="171.52" x2="119" y2="170.32" class="f"/>
+<polygon points="66.8,130.2 66.8,107.8 79.2,107.8 79.2,130.2" class="n" fill="#77efc6"/>
+<line x1="79.2" y1="107.8" x2="79.2" y2="130.2" class="m"/>
+<line x1="79.2" y1="119" x2="78" y2="119" class="f"/>
+<polygon points="268,159 268,99 278,99 278,159" class="m" fill="none"/>
+<polygon points="159.8,99.6 142.2,99.6 142.2,60.4 159.8,60.4" class="n" fill="#e881d3"/>
+<line x1="142.2" y1="60.4" x2="159.8" y2="60.4" class="m"/>
+<line x1="151" y1="60.4" x2="151" y2="61.6" class="f"/>
+<polygon points="181.8,99.6 164.2,99.6 164.2,60.4 181.8,60.4" class="n" fill="#e881d3"/>
+<line x1="164.2" y1="60.4" x2="181.8" y2="60.4" class="m"/>
+<line x1="173" y1="60.4" x2="173" y2="61.6" class="f"/>
+<polygon points="203.8,99.6 186.2,99.6 186.2,60.4 203.8,60.4" class="n" fill="#e881d3"/>
+<line x1="186.2" y1="60.4" x2="203.8" y2="60.4" class="m"/>
+<line x1="195" y1="60.4" x2="195" y2="61.6" class="f"/>
+<polygon points="222,80.8 208,80.8 208,59.2 222,59.2" class="n" fill="#e881d3"/>
+<line x1="208" y1="59.2" x2="222" y2="59.2" class="m"/>
+<line x1="215" y1="59.2" x2="215" y2="60.4" class="f"/>
+<polygon points="238,80.8 224,80.8 224,59.2 238,59.2" class="n" fill="#e881d3"/>
+<line x1="224" y1="59.2" x2="238" y2="59.2" class="m"/>
+<line x1="231" y1="59.2" x2="231" y2="60.4" class="f"/>
+<polygon points="151.7,103.4 162.3,103.4 162.3,144.6 151.7,144.6" class="n" fill="#e881d3"/>
+<line x1="162.3" y1="144.6" x2="151.7" y2="144.6" class="m"/>
+<line x1="157" y1="144.6" x2="157" y2="143.4" class="f"/>
+<polygon points="167.7,103.4 178.3,103.4 178.3,144.6 167.7,144.6" class="n" fill="#e881d3"/>
+<line x1="178.3" y1="144.6" x2="167.7" y2="144.6" class="m"/>
+<line x1="173" y1="144.6" x2="173" y2="143.4" class="f"/>
+<polygon points="202,199.2 164,199.2 164,170.8 202,170.8" class="n" fill="#e881d3"/>
+<line x1="164" y1="170.8" x2="202" y2="170.8" class="m"/>
+<line x1="183" y1="170.8" x2="183" y2="172" class="f"/>
+<polygon points="149.6,199.2 120.4,199.2 120.4,189.1 149.6,189.1" class="n" fill="#e881d3"/>
+<line x1="120.4" y1="189.1" x2="149.6" y2="189.1" class="m"/>
+<line x1="135" y1="189.1" x2="135" y2="190.3" class="f"/>
+<polygon points="260,199.2 242,199.2 242,180.9 260,180.9" class="n" fill="#e881d3"/>
+<line x1="242" y1="180.9" x2="260" y2="180.9" class="m"/>
+<line x1="251" y1="180.9" x2="251" y2="182.1" class="f"/>
+<polygon points="239.1,199.2 210.9,199.2 210.9,190.2 239.1,190.2" class="n" fill="#e881d3"/>
+<line x1="210.9" y1="190.2" x2="239.1" y2="190.2" class="m"/>
+<line x1="225" y1="190.2" x2="225" y2="191.4" class="f"/>
+<polygon points="122.7,96 122.7,142 103.3,142 103.3,96" class="n" fill="#f799a5"/>
+<line x1="103.3" y1="142" x2="103.3" y2="96" class="m"/>
+<line x1="103.3" y1="119" x2="104.5" y2="119" class="f"/>
+<polygon points="64.8,86.8 85.2,86.8 85.2,107.2 64.8,107.2" class="n" fill="#f799a5"/>
+<line x1="85.2" y1="107.2" x2="64.8" y2="107.2" class="m"/>
+<line x1="75" y1="107.2" x2="75" y2="106" class="f"/>
+<polygon points="85.2,152.2 64.8,152.2 64.8,131.8 85.2,131.8" class="n" fill="#f799a5"/>
+<line x1="64.8" y1="131.8" x2="85.2" y2="131.8" class="m"/>
+<line x1="75" y1="131.8" x2="75" y2="133" class="f"/>
+<polygon points="96,172.9 126,172.9 126,189.1 96,189.1" class="n" fill="#77efc6"/>
+<line x1="126" y1="189.1" x2="96" y2="189.1" class="m"/>
+<line x1="111" y1="189.1" x2="111" y2="187.9" class="f"/>
+<polygon points="70.5,199.2 51.5,199.2 51.5,181.06 70.5,181.06" class="n" fill="#81e8a2"/>
+<line x1="51.5" y1="181.06" x2="70.5" y2="181.06" class="m"/>
+<line x1="61" y1="181.06" x2="61" y2="182.26" class="f"/>
+<polygon points="90,199.2 72,199.2 72,182.26 90,182.26" class="n" fill="#81e8a2"/>
+<line x1="72" y1="182.26" x2="90" y2="182.26" class="m"/>
+<line x1="81" y1="182.26" x2="81" y2="183.46" class="f"/>
+<polygon points="48,58.8 68.8,58.8 68.8,69.94 48,69.94" class="n" fill="#81e8bc"/>
+<line x1="68.8" y1="69.94" x2="48" y2="69.94" class="m"/>
+<line x1="58.4" y1="69.94" x2="58.4" y2="68.74" class="f"/>
+<polygon points="69.8,58.8 90.6,58.8 90.6,69.94 69.8,69.94" class="n" fill="#81e8bc"/>
+<line x1="90.6" y1="69.94" x2="69.8" y2="69.94" class="m"/>
+<line x1="80.2" y1="69.94" x2="80.2" y2="68.74" class="f"/>
+<polygon points="91.6,58.8 112.4,58.8 112.4,69.94 91.6,69.94" class="n" fill="#81e8bc"/>
+<line x1="112.4" y1="69.94" x2="91.6" y2="69.94" class="m"/>
+<line x1="102" y1="69.94" x2="102" y2="68.74" class="f"/>
+<polygon points="70.16,122.18 70.16,115.82 75.82,115.82 75.82,122.18" class="f" fill="#f7c1a3" fill-opacity="0.9"/>
+<line x1="75.82" y1="115.82" x2="75.82" y2="122.18" class="m"/>
+<line x1="75.82" y1="119" x2="74.62" y2="119" class="f"/>
+<polygon points="108.4,179.4 113.6,179.4 113.6,182.6 108.4,182.6" class="f" fill="#f7c1a3" fill-opacity="0.9"/>
+<line x1="113.6" y1="182.6" x2="108.4" y2="182.6" class="m"/>
+<line x1="111" y1="182.6" x2="111" y2="181.4" class="f"/>
+<polygon points="118,58 128,58 128,64.24 118,64.24" class="f" fill="#e88a81"/>
+<polygon points="270,72 270,78 266.02,78 266.02,72" class="f" fill="#df99f7"/>
+<polygon points="270,171 270,195 268.4,195 268.4,171" class="f" fill="#b777ef"/>
+<polygon points="123.9,200 94.1,200 94.1,198.3 123.9,198.3" class="f" fill="#a499f7"/>
+<polygon points="158,58 188,58 188,59.9 158,59.9" class="f" fill="#a499f7"/>
+<polygon points="270,66 270,84 268.04,84 268.04,66" class="f" fill="#e881c6"/>
+<polygon points="270,119 270,139 268.96,139 268.96,119" class="f" fill="#99f7f6"/>
+<polygon points="219.2,153.8 223.48,153.8 223.48,158.2 219.2,158.2" class="dot" fill="none"/>
+<polygon points="210.34,100.44 232.34,100.44 232.34,103.56 210.34,103.56" class="dot" fill="none"/>
+<polygon points="152.4,154.3 163.6,154.3 163.6,157.72 152.4,157.72" class="dot" fill="none"/>
+<polygon points="78.66,151 110.66,151 110.66,161 78.66,161" class="dot" fill="none"/>
+<polygon points="151.8,89.4 164.2,89.4 164.2,114.6 151.8,114.6" class="dot" fill="none"/>
+<polygon points="84.72,93.34 104.6,93.34 104.6,110.66 84.72,110.66" class="dot" fill="none"/>
+<text x="183" y="185.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">weight bench and rack</text>
+<text x="113" y="119.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">three-seater sofa</text>
+<text x="151" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
+<text x="173" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
+<text x="195" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
+<text x="273" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">round arch</text>
+<text x="111" y="181.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bolted table</text>
+<text x="157" y="124.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rowing machine</text>
+<text x="173" y="124.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rowing machine</text>
+<text x="75" y="97.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">lounge armchair</text>
+<text x="75" y="142.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">lounge armchair</text>
+<text x="61" y="190.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">drink machine</text>
+<text x="251" y="190.35" font-size="1.25" class="t" text-anchor="middle" fill="#333">punching bag</text>
+<text x="81" y="191.03" font-size="1.25" class="t" text-anchor="middle" fill="#333">snack machine</text>
+<text x="215" y="70.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">exercise bike</text>
+<text x="231" y="70.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">exercise bike</text>
+<text x="135" y="194.45" font-size="1.25" class="t" text-anchor="middle" fill="#333">dumbbell rack</text>
+<text x="73" y="119.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">coffee table</text>
+<text x="225" y="195" font-size="1.25" class="t" text-anchor="middle" fill="#333">yoga mat rack</text>
+<text x="58.4" y="64.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
+<text x="80.2" y="64.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
+<text x="102" y="64.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
+<text x="103" y="167.2" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="103" y="195.4" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="119" y="167.2" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<path d="M43 183 L43 55 L273 55 L273 203 L45.04 203Z M46 182.85 L46 58 L270 58 L270 200 L47.75 200Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
+<polygon points="273,105.4 273,152.6 270,152.6 270,105.4" class="none" fill="#ffffff"/>
+<line x1="273" y1="105.4" x2="270" y2="105.4" class="m"/>
+<line x1="273" y1="152.6" x2="270" y2="152.6" class="m"/>
+<line x1="273" y1="105.4" x2="273" y2="152.6" class="f"/>
+<line x1="270" y1="105.4" x2="270" y2="152.6" class="f"/>
+<circle cx="271.5" cy="105.4" r="0.45" class="f" fill="#1c1c1c"/>
+<circle cx="271.5" cy="152.6" r="0.45" class="f" fill="#1c1c1c"/>
+<polygon points="43,99 43,139 46,139 46,99" class="none" fill="#ffffff"/>
+<line x1="43" y1="99" x2="46" y2="99" class="n"/>
+<line x1="43" y1="139" x2="46" y2="139" class="n"/>
+<line x1="43" y1="99" x2="43" y2="139" class="n"/>
+<line x1="44.5" y1="99" x2="44.5" y2="139" class="f"/>
+<line x1="46" y1="99" x2="46" y2="139" class="n"/>
+<text x="59" y="119" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-RG-1</text>
+<line x1="173.17" y1="51.3" x2="173" y2="58.95" class="x"/>
+<circle cx="173" cy="58.95" r="0.4" class="none" fill="#b03030"/>
+<line x1="157.96" y1="51.3" x2="157" y2="124" class="x"/>
+<circle cx="157" cy="124" r="0.4" class="none" fill="#b03030"/>
+<line x1="135.1" y1="206.7" x2="135" y2="194.15" class="x"/>
+<circle cx="135" cy="194.15" r="0.4" class="none" fill="#b03030"/>
+<line x1="226.28" y1="206.72" x2="225" y2="194.7" class="x"/>
+<circle cx="225" cy="194.7" r="0.4" class="none" fill="#b03030"/>
+<line x1="39.3" y1="117.57" x2="72.99" y2="119" class="x"/>
+<circle cx="72.99" cy="119" r="0.4" class="none" fill="#b03030"/>
+<line x1="104.27" y1="206.72" x2="103" y2="195.1" class="x"/>
+<circle cx="103" cy="195.1" r="0.4" class="none" fill="#b03030"/>
+<line x1="111.3" y1="206.84" x2="109" y2="199.15" class="x"/>
+<circle cx="109" cy="199.15" r="0.4" class="none" fill="#b03030"/>
+<line x1="58.78" y1="51.3" x2="58.4" y2="64.37" class="x"/>
+<circle cx="58.4" cy="64.37" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.89" y1="180.25" x2="269.2" y2="183" class="x"/>
+<circle cx="269.2" cy="183" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.9" y1="126.28" x2="269.48" y2="129" class="x"/>
+<circle cx="269.48" cy="129" r="0.4" class="none" fill="#b03030"/>
+<line x1="158" y1="206.7" x2="158" y2="156.01" class="x"/>
+<circle cx="158" cy="156.01" r="0.4" class="none" fill="#b03030"/>
+<circle cx="173.25" cy="48" r="3.3" class="n" fill="#fff"/>
+<text x="173.25" y="48.6" font-size="2" class="t b" text-anchor="middle">RG-01</text>
+<circle cx="158" cy="48" r="3.3" class="n" fill="#fff"/>
+<text x="158" y="48.6" font-size="2" class="t b" text-anchor="middle">RG-02</text>
+<circle cx="135.12" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="135.12" y="210.6" font-size="2" class="t b" text-anchor="middle">RG-03</text>
+<circle cx="226.62" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="226.62" y="210.6" font-size="2" class="t b" text-anchor="middle">RG-04</text>
+<circle cx="36" cy="117.43" r="3.3" class="n" fill="#fff"/>
+<text x="36" y="118.03" font-size="2" class="t b" text-anchor="middle">RG-05</text>
+<circle cx="104.62" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="104.62" y="210.6" font-size="2" class="t b" text-anchor="middle">RG-06</text>
+<circle cx="112.25" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="112.25" y="210.6" font-size="2" class="t b" text-anchor="middle">RG-07</text>
+<circle cx="58.88" cy="48" r="3.3" class="n" fill="#fff"/>
+<text x="58.88" y="48.6" font-size="2" class="t b" text-anchor="middle">RG-08</text>
+<circle cx="280" cy="179.14" r="3.3" class="n" fill="#fff"/>
+<text x="280" y="179.74" font-size="2" class="t b" text-anchor="middle">RG-09</text>
+<circle cx="280" cy="125.14" r="3.3" class="n" fill="#fff"/>
+<text x="280" y="125.74" font-size="2" class="t b" text-anchor="middle">RG-10</text>
+<circle cx="158" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="158" y="210.6" font-size="2" class="t b" text-anchor="middle">RG-11</text>
+<line x1="43" y1="33.2" x2="273" y2="33.2" class="d"/>
+<line x1="42.3" y1="33.9" x2="43.7" y2="32.5" class="m"/>
+<line x1="272.3" y1="33.9" x2="273.7" y2="32.5" class="m"/>
+<line x1="43" y1="53.5" x2="43" y2="32" class="d"/>
+<line x1="273" y1="53.5" x2="273" y2="32" class="d"/>
+<text x="158" y="32.5" font-size="2" class="t" text-anchor="middle">11500</text>
+<line x1="21.2" y1="55" x2="21.2" y2="203" class="d"/>
+<line x1="20.5" y1="55.7" x2="21.9" y2="54.3" class="m"/>
+<line x1="20.5" y1="203.7" x2="21.9" y2="202.3" class="m"/>
+<line x1="41.5" y1="55" x2="20" y2="55" class="d"/>
+<line x1="41.5" y1="203" x2="20" y2="203" class="d"/>
+<text x="20.5" y="131.16" font-size="2" class="t" transform="rotate(-90 20.5 131.16)">7400</text>
+<line x1="289.3" y1="55" x2="289.3" y2="203" class="d"/>
+<line x1="288.6" y1="55.7" x2="290" y2="54.3" class="m"/>
+<line x1="274" y1="55" x2="290.5" y2="55" class="d"/>
+<line x1="288.6" y1="106.1" x2="290" y2="104.7" class="m"/>
+<line x1="274" y1="105.4" x2="290.5" y2="105.4" class="d"/>
+<line x1="288.6" y1="153.3" x2="290" y2="151.9" class="m"/>
+<line x1="274" y1="152.6" x2="290.5" y2="152.6" class="d"/>
+<line x1="288.6" y1="203.7" x2="290" y2="202.3" class="m"/>
+<line x1="274" y1="203" x2="290.5" y2="203" class="d"/>
+<text x="288.7" y="82.25" font-size="1.9" class="t" transform="rotate(-90 288.7 82.25)">2520</text>
+<text x="288.7" y="131.05" font-size="1.9" class="t" transform="rotate(-90 288.7 131.05)">2360</text>
+<text x="288.7" y="179.85" font-size="1.9" class="t" transform="rotate(-90 288.7 179.85)">2520</text>
+<line x1="26.7" y1="55" x2="26.7" y2="183" class="d"/>
+<line x1="26" y1="55.7" x2="27.4" y2="54.3" class="m"/>
+<line x1="42" y1="55" x2="25.5" y2="55" class="d"/>
+<line x1="26" y1="99.7" x2="27.4" y2="98.3" class="m"/>
+<line x1="42" y1="99" x2="25.5" y2="99" class="d"/>
+<line x1="26" y1="139.7" x2="27.4" y2="138.3" class="m"/>
+<line x1="42" y1="139" x2="25.5" y2="139" class="d"/>
+<line x1="26" y1="183.7" x2="27.4" y2="182.3" class="m"/>
+<line x1="42" y1="183" x2="25.5" y2="183" class="d"/>
+<text x="26.1" y="79.05" font-size="1.9" class="t" transform="rotate(-90 26.1 79.05)">2200</text>
+<text x="26.1" y="121.05" font-size="1.9" class="t" transform="rotate(-90 26.1 121.05)">2000</text>
+<text x="26.1" y="163.05" font-size="1.9" class="t" transform="rotate(-90 26.1 163.05)">2200</text>
+<circle cx="292" cy="20" r="6.5" class="m" fill="#fff"/>
+<polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
+<line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
+<text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
+<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
+<rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="50" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
+<text x="20" y="247.4" font-size="1.5" class="t" text-anchor="middle">0</text>
+<text x="30" y="247.4" font-size="1.5" class="t" text-anchor="middle">0.5</text>
+<text x="40" y="247.4" font-size="1.5" class="t" text-anchor="middle">1</text>
+<text x="50" y="247.4" font-size="1.5" class="t" text-anchor="middle">1.5</text>
+<text x="60" y="247.4" font-size="1.5" class="t" text-anchor="middle">2 m</text>
+<text x="307" y="12.8" font-size="2.3" class="t b">ROOM DATA</text>
+<rect x="307" y="14" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="16.25" font-size="1.7" class="t b">Room</text>
+<text x="336" y="16.25" font-size="1.7" class="t">RG  Recreation &amp; Gym</text>
+<rect x="307" y="17.3" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="19.55" font-size="1.7" class="t b">Deck / level</text>
+<text x="336" y="19.55" font-size="1.7" class="t">2  (FFL +4.000)</text>
+<rect x="307" y="20.6" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="22.85" font-size="1.7" class="t b">Department</text>
+<text x="336" y="22.85" font-size="1.7" class="t">crew</text>
+<rect x="307" y="23.9" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="26.15" font-size="1.7" class="t b">Floor area</text>
+<text x="336" y="26.15" font-size="1.7" class="t">85.0 m2</text>
+<rect x="307" y="27.2" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="29.45" font-size="1.7" class="t b">Clear height</text>
+<text x="336" y="29.45" font-size="1.7" class="t">3400 mm</text>
+<rect x="307" y="30.5" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="32.75" font-size="1.7" class="t b">Volume</text>
+<text x="336" y="32.75" font-size="1.7" class="t">289 m3</text>
+<rect x="307" y="33.8" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="36.05" font-size="1.7" class="t b">Floor occupancy</text>
+<text x="336" y="36.05" font-size="1.7" class="t">30 %</text>
+<rect x="307" y="37.1" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="39.35" font-size="1.7" class="t b">Crew</text>
+<text x="336" y="39.35" font-size="1.7" class="t">20</text>
+<rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
+<text x="336" y="42.65" font-size="1.7" class="t">40</text>
+<rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
+<text x="336" y="45.95" font-size="1.7" class="t">1</text>
+<rect x="307" y="47" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="49.25" font-size="1.7" class="t b">Windows</text>
+<text x="336" y="49.25" font-size="1.7" class="t">1</text>
+<rect x="307" y="14" width="106" height="36.3" class="n" fill="none"/>
+<text x="307" y="56.5" font-size="1.7" class="t b">PURPOSE:</text>
+<text x="307" y="59.6" font-size="1.7" class="t">Off-duty space of the crew: a small gym on the starboard half for cardio and strength work, and a lounge around</text>
+<text x="307" y="62.7" font-size="1.7" class="t">the port hull window with sofas, a games table and vending.</text>
+<text x="307" y="69.6" font-size="2.3" class="t b">BILL OF MATERIALS LINES</text>
+<rect x="307" y="70.8" width="106" height="3" class="n" fill="#dfe3ea"/>
+<text x="308" y="72.75" font-size="1.6" class="t b">CODE</text>
+<text x="322" y="72.75" font-size="1.6" class="t b">BOM LINE</text>
+<text x="406" y="72.75" font-size="1.6" class="t b">QTY</text>
+<rect x="307" y="73.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="75.75" font-size="1.6" class="t">RG-01</text>
+<text x="322" y="75.75" font-size="1.6" class="t">Treadmills and exercise bikes</text>
+<text x="406" y="75.75" font-size="1.6" class="t">6</text>
+<rect x="307" y="76.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="78.75" font-size="1.6" class="t">RG-02</text>
+<text x="322" y="78.75" font-size="1.6" class="t">Rowing machines</text>
+<text x="406" y="78.75" font-size="1.6" class="t">2</text>
+<rect x="307" y="79.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="81.75" font-size="1.6" class="t">RG-03</text>
+<text x="322" y="81.75" font-size="1.6" class="t">Free weights and punching bag</text>
+<text x="406" y="81.75" font-size="1.6" class="t">3</text>
+<rect x="307" y="82.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="84.75" font-size="1.6" class="t">RG-04</text>
+<text x="322" y="84.75" font-size="1.6" class="t">Yoga mats and benches</text>
+<text x="406" y="84.75" font-size="1.6" class="t">1</text>
+<rect x="307" y="85.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="87.75" font-size="1.6" class="t">RG-05</text>
+<text x="322" y="87.75" font-size="1.6" class="t">Lounge seating facing the window</text>
+<text x="406" y="87.75" font-size="1.6" class="t">5</text>
+<rect x="307" y="88.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="90.75" font-size="1.6" class="t">RG-06</text>
+<text x="322" y="90.75" font-size="1.6" class="t">Games table</text>
+<text x="406" y="90.75" font-size="1.6" class="t">5</text>
+<rect x="307" y="91.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="93.75" font-size="1.6" class="t">RG-07</text>
+<text x="322" y="93.75" font-size="1.6" class="t">Vending, water and display</text>
+<text x="406" y="93.75" font-size="1.6" class="t">4</text>
+<rect x="307" y="94.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="96.75" font-size="1.6" class="t">RG-08</text>
+<text x="322" y="96.75" font-size="1.6" class="t">Lockers and bench</text>
+<text x="406" y="96.75" font-size="1.6" class="t">3</text>
+<rect x="307" y="97.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="99.75" font-size="1.6" class="t">RG-09</text>
+<text x="322" y="99.75" font-size="1.6" class="t">Plants and notices</text>
+<text x="406" y="99.75" font-size="1.6" class="t">1</text>
+<rect x="307" y="100.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="102.75" font-size="1.6" class="t">RG-10</text>
+<text x="322" y="102.75" font-size="1.6" class="t">Safety and signs</text>
+<text x="406" y="102.75" font-size="1.6" class="t">3</text>
+<rect x="307" y="103.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="105.75" font-size="1.6" class="t">RG-11</text>
+<text x="322" y="105.75" font-size="1.6" class="t">Ceiling lighting</text>
+<text x="406" y="105.75" font-size="1.6" class="t">6</text>
+<rect x="307" y="70.8" width="106" height="36" class="n" fill="none"/>
+<text x="307" y="113.8" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
+<rect x="307" y="116" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<text x="312.4" y="117.9" font-size="1.6" class="t">ceilinglight</text>
+<rect x="360" y="116" width="4.2" height="2.4" class="n" fill="#7782ef"/>
+<text x="365.4" y="117.9" font-size="1.6" class="t">chair</text>
+<rect x="307" y="119.4" width="4.2" height="2.4" class="n" fill="#e881c6"/>
+<text x="312.4" y="121.3" font-size="1.6" class="t">clock</text>
+<rect x="360" y="119.4" width="4.2" height="2.4" class="n" fill="#f799a5"/>
+<text x="365.4" y="121.3" font-size="1.6" class="t">couch</text>
+<rect x="307" y="122.8" width="4.2" height="2.4" class="n" fill="#a499f7"/>
+<text x="312.4" y="124.7" font-size="1.6" class="t">display</text>
+<rect x="360" y="122.8" width="4.2" height="2.4" class="n" fill="#ef77af"/>
+<text x="365.4" y="124.7" font-size="1.6" class="t">doorframe</text>
+<rect x="307" y="126.2" width="4.2" height="2.4" class="n" fill="#e88a81"/>
+<text x="312.4" y="128.1" font-size="1.6" class="t">fountain</text>
+<rect x="360" y="126.2" width="4.2" height="2.4" class="n" fill="#e881d3"/>
+<text x="365.4" y="128.1" font-size="1.6" class="t">gym</text>
+<rect x="307" y="129.6" width="4.2" height="2.4" class="n" fill="#81e8bc"/>
+<text x="312.4" y="131.5" font-size="1.6" class="t">locker</text>
+<rect x="360" y="129.6" width="4.2" height="2.4" class="n" fill="#b777ef"/>
+<text x="365.4" y="131.5" font-size="1.6" class="t">noticeboard</text>
+<rect x="307" y="133" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<text x="312.4" y="134.9" font-size="1.6" class="t">safety</text>
+<rect x="360" y="133" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<text x="365.4" y="134.9" font-size="1.6" class="t">sign</text>
+<rect x="307" y="136.4" width="4.2" height="2.4" class="n" fill="#77efc6"/>
+<text x="312.4" y="138.3" font-size="1.6" class="t">table</text>
+<rect x="360" y="136.4" width="4.2" height="2.4" class="n" fill="#f7bb99"/>
+<text x="365.4" y="138.3" font-size="1.6" class="t">tableware</text>
+<rect x="307" y="139.8" width="4.2" height="2.4" class="n" fill="#81e8a2"/>
+<text x="312.4" y="141.7" font-size="1.6" class="t">vending</text>
+<text x="15" y="12.2" font-size="2.6" class="t b">PLAN - RECREATION &amp; GYM</text>
+<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Recreation &amp; Gym - plan</text>
+<text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  FLOOR PLAN AT FFL +4.000</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">R-rec-P</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">RG</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Recreation &amp; Gym</text>
+</svg>

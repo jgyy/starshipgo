@@ -14,14 +14,25 @@ import math
 import os
 import random
 
-import bpy  # noqa: F401  (must precede bmesh)
-import bmesh
-from mathutils import Matrix, Vector
+try:  # bpy is only needed to build geometry; plan/--check work on a bare Python
+    import bpy  # noqa: F401  (must precede bmesh)
+    import bmesh
+    from mathutils import Matrix, Vector
+    HAVE_BPY = True
+except ImportError:  # pragma: no cover - exercised on bare python
+    bpy = bmesh = Matrix = Vector = None
+    HAVE_BPY = False
 
 # --------------------------------------------------------------------------
 # frame conversion (game -> blender)
-_C = Matrix(((1, 0, 0, 0), (0, 0, -1, 0), (0, 1, 0, 0), (0, 0, 0, 1)))
-_CI = _C.inverted()
+if HAVE_BPY:
+    _C = Matrix(((1, 0, 0, 0), (0, 0, -1, 0), (0, 1, 0, 0), (0, 0, 0, 1)))
+    _CI = _C.inverted()
+else:
+    _C = _CI = None
+
+# bevel failures collected during a build (reported by build_all): list of (model, primitive)
+BEVEL_FAILURES = []
 
 
 def _gm(pos=(0, 0, 0), rot=(0, 0, 0), scale=(1, 1, 1)):
@@ -173,7 +184,9 @@ class Model:
         """Start/select a separate named mesh node (e.g. moving door leaf)."""
         if gname not in self.groups:
             self.groups[gname] = {"bm": bmesh.new(), "mats": [], "pivot": tuple(pivot)}
-            self.groups[gname]["bm"].verts.layers  # noqa
+        elif tuple(pivot) != (0, 0, 0) and tuple(pivot) != self.groups[gname]["pivot"]:
+            raise ValueError(f"{self.name}: group {gname!r} re-selected with pivot {tuple(pivot)} "
+                             f"!= original {self.groups[gname]['pivot']}")
         self.cur = self.groups[gname]
         return self
 
@@ -183,7 +196,7 @@ class Model:
             mats.append(matname)
         return mats.index(matname)
 
-    def _tag(self, verts, matname, bevel=0.0):
+    def _tag(self, verts, matname, bevel=0.0, prim="?"):
         mi = self._mi(matname)
         faces = {f for v in verts for f in v.link_faces}
         for f in faces:
@@ -194,7 +207,7 @@ class Model:
                 bmesh.ops.bevel(self.cur["bm"], geom=list(edges), offset=bevel, offset_type="OFFSET",
                                 segments=1, affect="EDGES", material=mi)
             except Exception:
-                pass
+                BEVEL_FAILURES.append((self.name, prim))
         return faces
 
     # -- primitives -------------------------------------------------------
@@ -203,7 +216,7 @@ class Model:
         sx, sy, sz = size
         bevel = min(bevel, min(sx, sy, sz) * 0.45)
         r = bmesh.ops.create_cube(self.cur["bm"], size=1.0, matrix=_gm(pos, rot, (sx, sy, sz)))
-        self._tag(r["verts"], mat, bevel)
+        self._tag(r["verts"], mat, bevel, "box")
         return self
 
     def boxb(self, p0, p1, mat="hull_mid", bevel=0.0):
@@ -219,13 +232,23 @@ class Model:
         m = _gm(pos, rot) @ _gm((0, 0, 0), pre)
         rr = bmesh.ops.create_cone(self.cur["bm"], cap_ends=cap, cap_tris=False, segments=max(3, seg),
                                    radius1=r, radius2=r2, depth=h, matrix=m)
-        self._tag(rr["verts"], mat, bevel)
+        self._tag(rr["verts"], mat, bevel, "cyl")
         return self
 
-    def sphere(self, r, pos=(0, 0, 0), mat="hull_mid", seg=16, ring=10, scale=(1, 1, 1)):
-        rr = bmesh.ops.create_uvsphere(self.cur["bm"], u_segments=seg, v_segments=ring, radius=r,
+    def sphere(self, r, pos=(0, 0, 0), mat="hull_mid", seg=16, ring=10, scale=(1, 1, 1), clip_y=None):
+        """UV sphere / ellipsoid. clip_y (game-space height) cuts away everything above that plane,
+        leaving an open dome (used for flush ceiling domes whose top half would poke into the ceiling)."""
+        bm = self.cur["bm"]
+        rr = bmesh.ops.create_uvsphere(bm, u_segments=seg, v_segments=ring, radius=r,
                                        matrix=_gm(pos, (0, 0, 0), scale))
-        self._tag(rr["verts"], mat)
+        verts = rr["verts"]
+        if clip_y is not None:
+            edges = {e for v in verts for e in v.link_edges}
+            faces = {f for v in verts for f in v.link_faces}
+            bmesh.ops.bisect_plane(bm, geom=list(verts) + list(edges) + list(faces), dist=1e-6,
+                                   plane_co=(0, 0, clip_y), plane_no=(0, 0, 1), clear_outer=True)
+            verts = [v for v in verts if v.is_valid]
+        self._tag(verts, mat)
         return self
 
     def torus(self, R, r, pos=(0, 0, 0), mat="hull_mid", axis="y", seg=24, tseg=8, arc=2 * math.pi, rot=(0, 0, 0)):
@@ -282,7 +305,7 @@ class Model:
         bmesh.ops.translate(bm, verts=verts, vec=M.to_3x3() @ g2b(to3((0, 0), h)))
         allv = bot + verts
         bmesh.ops.recalc_face_normals(bm, faces=list({fc for v in allv for fc in v.link_faces}))
-        self._tag(allv, mat, bevel)
+        self._tag(allv, mat, bevel, "prism")
         return self
 
     def quad(self, size, pos=(0, 0, 0), mat="hull_mid", rot=(0, 0, 0), uv=True):
@@ -334,7 +357,7 @@ class Model:
         self._tag(rr["verts"], mat)
         return self
 
-    def mirror_x(self, group=None):
+    def mirror_x(self):
         """Mirror everything built so far in the current group across x=0 (adds a copy)."""
         bm = self.cur["bm"]
         geom = list(bm.verts) + list(bm.edges) + list(bm.faces)
@@ -345,6 +368,28 @@ class Model:
         fs = [g for g in ret["geom"] if isinstance(g, bmesh.types.BMFace)]
         bmesh.ops.reverse_faces(bm, faces=fs)
         return self
+
+    # -- origin fixing ----------------------------------------------------
+    def shift(self, dx=0.0, dy=0.0, dz=0.0):
+        """Translate everything built so far (all groups, and group pivots) by a game-space offset."""
+        for g in self.groups.values():
+            if g["bm"].verts:
+                bmesh.ops.translate(g["bm"], verts=list(g["bm"].verts), vec=g2b((dx, dy, dz)))
+            px, py, pz = g["pivot"]
+            g["pivot"] = (px + dx, py + dy, pz + dz)
+        return self
+
+    def ground(self, y=0.0):
+        """Floor mount: move the model so its lowest point is at height y (default 0)."""
+        return self.shift(dy=y - self.bounds()[0][1])
+
+    def hang(self):
+        """Ceiling mount: move the model so its highest point is at y = 0 (hangs down from the origin)."""
+        return self.shift(dy=-self.bounds()[1][1])
+
+    def to_wall(self):
+        """Wall mount: move the model so its back is on the wall plane (z_min = 0)."""
+        return self.shift(dz=-self.bounds()[0][2])
 
     # -- finishing --------------------------------------------------------
     def bounds(self):
@@ -378,6 +423,8 @@ def _smooth(bm, angle=math.radians(38)):
 
 def export(model, path):
     """Write the model as a GLB. Returns dict(bounds, tris)."""
+    if not any(g["bm"].faces for g in model.groups.values()):
+        raise ValueError(f"model {model.name!r} is empty (no faces); cannot export")
     objs = []
     for gname, g in model.groups.items():
         bm = g["bm"]

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>R-aux-P - Power Distribution - plan</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
+<polygon points="43,55 273,55 273,203 43,203" class="none" fill="#efece7"/>
+<polygon points="43,101.4 83,101.4 83,156.6 43,156.6" class="red" fill="url(#hZone)"/>
+<text x="81.4" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<polygon points="89,58.8 111.4,58.8 111.4,70.2 89,70.2" class="n" fill="#c8f799"/>
+<line x1="111.4" y1="70.2" x2="89" y2="70.2" class="m"/>
+<line x1="100.2" y1="70.2" x2="100.2" y2="69" class="f"/>
+<polygon points="112.4,58.8 146.2,58.8 146.2,76.8 112.4,76.8" class="n" fill="#c8f799"/>
+<line x1="146.2" y1="76.8" x2="112.4" y2="76.8" class="m"/>
+<line x1="129.3" y1="76.8" x2="129.3" y2="75.6" class="f"/>
+<polygon points="147.2,58.8 181,58.8 181,76.8 147.2,76.8" class="n" fill="#c8f799"/>
+<line x1="181" y1="76.8" x2="147.2" y2="76.8" class="m"/>
+<line x1="164.1" y1="76.8" x2="164.1" y2="75.6" class="f"/>
+<polygon points="182,58.8 198.8,58.8 198.8,75.6 182,75.6" class="n" fill="#c8f799"/>
+<line x1="198.8" y1="75.6" x2="182" y2="75.6" class="m"/>
+<line x1="190.4" y1="75.6" x2="190.4" y2="74.4" class="f"/>
+<polygon points="199.8,58.8 218.2,58.8 218.2,72.9 199.8,72.9" class="n" fill="#c8f799"/>
+<line x1="218.2" y1="72.9" x2="199.8" y2="72.9" class="m"/>
+<line x1="209" y1="72.9" x2="209" y2="71.7" class="f"/>
+<polygon points="219.2,58.8 235.6,58.8 235.6,71.8 219.2,71.8" class="n" fill="#c8f799"/>
+<line x1="235.6" y1="71.8" x2="219.2" y2="71.8" class="m"/>
+<line x1="227.4" y1="71.8" x2="227.4" y2="70.6" class="f"/>
+<polygon points="236.6,58.8 258.58,58.8 258.58,81.14 236.6,81.14" class="n" fill="#77eaef"/>
+<line x1="258.58" y1="81.14" x2="236.6" y2="81.14" class="m"/>
+<line x1="247.59" y1="81.14" x2="247.59" y2="79.94" class="f"/>
+<polygon points="143,118.16 121,118.16 121,105.84 143,105.84" class="n" fill="#dfe881"/>
+<line x1="121" y1="105.84" x2="143" y2="105.84" class="m"/>
+<line x1="132" y1="105.84" x2="132" y2="107.04" class="f"/>
+<polygon points="166,118.16 144,118.16 144,105.84 166,105.84" class="n" fill="#dfe881"/>
+<line x1="144" y1="105.84" x2="166" y2="105.84" class="m"/>
+<line x1="155" y1="105.84" x2="155" y2="107.04" class="f"/>
+<polygon points="189,118.16 167,118.16 167,105.84 189,105.84" class="n" fill="#dfe881"/>
+<line x1="167" y1="105.84" x2="189" y2="105.84" class="m"/>
+<line x1="178" y1="105.84" x2="178" y2="107.04" class="f"/>
+<polygon points="208,118.04 190,118.04 190,105.96 208,105.96" class="n" fill="#dfe881"/>
+<line x1="190" y1="105.96" x2="208" y2="105.96" class="m"/>
+<line x1="199" y1="105.96" x2="199" y2="107.16" class="f"/>
+<polygon points="227,118.04 209,118.04 209,105.96 227,105.96" class="n" fill="#dfe881"/>
+<line x1="209" y1="105.96" x2="227" y2="105.96" class="m"/>
+<line x1="218" y1="105.96" x2="218" y2="107.16" class="f"/>
+<polygon points="246.4,117.56 228,117.56 228,106.46 246.4,106.46" class="n" fill="#dfe881"/>
+<line x1="228" y1="106.46" x2="246.4" y2="106.46" class="m"/>
+<line x1="237.2" y1="106.46" x2="237.2" y2="107.66" class="f"/>
+<polygon points="121,119.08 141.4,119.08 141.4,133.34 121,133.34" class="n" fill="#f799b1"/>
+<line x1="141.4" y1="133.34" x2="121" y2="133.34" class="m"/>
+<line x1="131.2" y1="133.34" x2="131.2" y2="132.14" class="f"/>
+<polygon points="142.4,119.08 162.8,119.08 162.8,133.34 142.4,133.34" class="n" fill="#f799b1"/>
+<line x1="162.8" y1="133.34" x2="142.4" y2="133.34" class="m"/>
+<line x1="152.6" y1="133.34" x2="152.6" y2="132.14" class="f"/>
+<polygon points="163.8,119.32 187.6,119.32 187.6,133.08 163.8,133.08" class="n" fill="#f799b1"/>
+<line x1="187.6" y1="133.08" x2="163.8" y2="133.08" class="m"/>
+<line x1="175.7" y1="133.08" x2="175.7" y2="131.88" class="f"/>
+<polygon points="188.6,119.08 209,119.08 209,133.34 188.6,133.34" class="n" fill="#f799b1"/>
+<line x1="209" y1="133.34" x2="188.6" y2="133.34" class="m"/>
+<line x1="198.8" y1="133.34" x2="198.8" y2="132.14" class="f"/>
+<polygon points="210,121.1 226.4,121.1 226.4,131.3 210,131.3" class="n" fill="#f799b1"/>
+<line x1="226.4" y1="131.3" x2="210" y2="131.3" class="m"/>
+<line x1="218.2" y1="131.3" x2="218.2" y2="130.1" class="f"/>
+<polygon points="227.4,121.7 241.8,121.7 241.8,130.7 227.4,130.7" class="n" fill="#f799b1"/>
+<line x1="241.8" y1="130.7" x2="227.4" y2="130.7" class="m"/>
+<line x1="234.6" y1="130.7" x2="234.6" y2="129.5" class="f"/>
+<polygon points="149.2,199.2 91,199.2 91,180.72 149.2,180.72" class="n" fill="#c8f799"/>
+<line x1="91" y1="180.72" x2="149.2" y2="180.72" class="m"/>
+<line x1="120.1" y1="180.72" x2="120.1" y2="181.92" class="f"/>
+<polygon points="189.4,199.2 150.4,199.2 150.4,181.02 189.4,181.02" class="n" fill="#c8f799"/>
+<line x1="150.4" y1="181.02" x2="189.4" y2="181.02" class="m"/>
+<line x1="169.9" y1="181.02" x2="169.9" y2="182.22" class="f"/>
+<polygon points="230.6,199.2 190.6,199.2 190.6,183.2 230.6,183.2" class="n" fill="#c8f799"/>
+<line x1="190.6" y1="183.2" x2="230.6" y2="183.2" class="m"/>
+<line x1="210.6" y1="183.2" x2="210.6" y2="184.4" class="f"/>
+<polygon points="253.8,199.2 231.8,199.2 231.8,175.8 253.8,175.8" class="n" fill="#c8f799"/>
+<line x1="231.8" y1="175.8" x2="253.8" y2="175.8" class="m"/>
+<line x1="242.8" y1="175.8" x2="242.8" y2="177" class="f"/>
+<polygon points="269.2,138.84 269.2,175.16 252.06,175.16 252.06,138.84" class="n" fill="#b081e8"/>
+<line x1="252.06" y1="175.16" x2="252.06" y2="138.84" class="m"/>
+<line x1="252.06" y1="157" x2="253.26" y2="157" class="f"/>
+<polygon points="46.8,179.6 46.8,160.4 58.4,160.4 58.4,179.6" class="n" fill="#86e881"/>
+<line x1="58.4" y1="160.4" x2="58.4" y2="179.6" class="m"/>
+<line x1="58.4" y1="170" x2="57.2" y2="170" class="f"/>
+<polygon points="46.8,198.2 46.8,181.8 57.8,181.8 57.8,198.2" class="n" fill="#e8e381"/>
+<line x1="57.8" y1="181.8" x2="57.8" y2="198.2" class="m"/>
+<line x1="57.8" y1="190" x2="56.6" y2="190" class="f"/>
+<polygon points="132,149.28 146,149.28 146,160.72 132,160.72" class="n" fill="#e8e381"/>
+<line x1="146" y1="160.72" x2="132" y2="160.72" class="m"/>
+<line x1="139" y1="160.72" x2="139" y2="159.52" class="f"/>
+<polygon points="172.06,148 197.94,148 197.94,162 172.06,162" class="n" fill="#dfe881"/>
+<line x1="197.94" y1="162" x2="172.06" y2="162" class="m"/>
+<line x1="185" y1="162" x2="185" y2="160.8" class="f"/>
+<polygon points="232.46,163.34 232.46,150.64 245.06,150.64 245.06,163.34" class="n" fill="#ade881"/>
+<line x1="245.06" y1="150.64" x2="245.06" y2="163.34" class="m"/>
+<line x1="245.06" y1="156.99" x2="243.86" y2="156.99" class="f"/>
+<polygon points="259.12,152.8 259.12,161.2 256.12,161.2 256.12,152.8" class="f" fill="#f7a3ce" fill-opacity="0.9"/>
+<line x1="256.12" y1="161.2" x2="256.12" y2="152.8" class="m"/>
+<line x1="256.12" y1="157" x2="257.32" y2="157" class="f"/>
+<polygon points="46,86 46,80 49.98,80 49.98,86" class="f" fill="#df99f7"/>
+<polygon points="265,58 271,58 271,61.98 265,61.98" class="f" fill="#df99f7"/>
+<polygon points="270,59 270,85 262.9,85 262.9,59" class="f" fill="#77eaef"/>
+<polygon points="270,176 270,200 265.3,200 265.3,176" class="f" fill="#f799b1"/>
+<polygon points="46,98.2 46,89.8 50.1,89.8 50.1,98.2" class="f" fill="#df99f7"/>
+<polygon points="46,76 46,66 47.66,66 47.66,76" class="f" fill="#77ef8b"/>
+<polygon points="46,66 46,58 48,58 48,66" class="f" fill="#77ef8b"/>
+<polygon points="270,89 270,117 267.68,117 267.68,89" class="f" fill="#a499f7"/>
+<polygon points="116.8,58 129.2,58 129.2,58.76 116.8,58.76" class="f" fill="#99f7f6"/>
+<polygon points="186.8,58 199.2,58 199.2,58.76 186.8,58.76" class="f" fill="#99f7f6"/>
+<polygon points="159.2,200 146.8,200 146.8,199.24 159.2,199.24" class="f" fill="#99f7f6"/>
+<polygon points="46,134.6 46,123.4 47.68,123.4 47.68,134.6" class="f" fill="#99f7f6"/>
+<polygon points="93,59 133.3,59 133.3,67 93,67" class="dot" fill="none"/>
+<polygon points="133.9,59 174.2,59 174.2,67 133.9,67" class="dot" fill="none"/>
+<polygon points="174.8,59 215.1,59 215.1,67 174.8,67" class="dot" fill="none"/>
+<polygon points="215.7,59 256,59 256,67 215.7,67" class="dot" fill="none"/>
+<polygon points="88.28,149.62 101.04,149.62 101.04,162.38 88.28,162.38" class="dot" fill="none"/>
+<polygon points="133.6,90.4 173.6,90.4 173.6,99.6 133.6,99.6" class="dot" fill="none"/>
+<polygon points="174.2,90.4 214.2,90.4 214.2,99.6 174.2,99.6" class="dot" fill="none"/>
+<polygon points="214.8,90.4 254.8,90.4 254.8,99.6 214.8,99.6" class="dot" fill="none"/>
+<polygon points="88.46,89.4 100.86,89.4 100.86,114.6 88.46,114.6" class="dot" fill="none"/>
+<polygon points="151.8,143.4 164.2,143.4 164.2,168.6 151.8,168.6" class="dot" fill="none"/>
+<polygon points="211.34,146 231.34,146 231.34,166 211.34,166" class="dot" fill="none"/>
+<polygon points="145.5,100.4 170.5,100.4 170.5,103.6 145.5,103.6" class="dot" fill="none"/>
+<polygon points="208.84,100.4 233.84,100.4 233.84,103.6 208.84,103.6" class="dot" fill="none"/>
+<text x="120.1" y="190.26" font-size="1.25" class="t" text-anchor="middle" fill="#333">Gas Turbine Genset</text>
+<text x="169.9" y="190.41" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diesel Genset</text>
+<text x="210.6" y="191.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">Motor Generator Set</text>
+<text x="260.63" y="157.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">engineering status</text>
+<text x="129.3" y="68.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Pad Transformer</text>
+<text x="164.1" y="68.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Pad Transformer</text>
+<text x="242.8" y="187.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">Micro Fusion Generator</text>
+<text x="247.59" y="70.27" font-size="1.25" class="t" text-anchor="middle" fill="#333">Discharge Coil Tower</text>
+<text x="185" y="155.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Battery Trolley</text>
+<text x="175.7" y="126.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">Marshalling Cabinet</text>
+<text x="131.2" y="126.51" font-size="1.25" class="t" text-anchor="middle" fill="#333">Switchgear</text>
+<text x="152.6" y="126.51" font-size="1.25" class="t" text-anchor="middle" fill="#333">Switchgear</text>
+<text x="198.8" y="126.51" font-size="1.25" class="t" text-anchor="middle" fill="#333">Switchgear</text>
+<text x="190.4" y="67.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">Regulator Tower</text>
+<text x="132" y="112.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Capacitor Bank Rack</text>
+<text x="155" y="112.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Capacitor Bank Rack</text>
+<text x="178" y="112.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Capacitor Bank Rack</text>
+<text x="209" y="66.15" font-size="1.25" class="t" text-anchor="middle" fill="#333">Rectifier Cabinet</text>
+<text x="100.2" y="64.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">Power Distribution Cabinet</text>
+<text x="52.6" y="170.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">utility cabinet</text>
+<text x="199" y="112.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Marx Bank</text>
+<text x="218" y="112.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Marx Bank</text>
+<text x="227.4" y="65.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">Inverter Cabinet</text>
+<text x="237.2" y="112.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">Power Cell Locker</text>
+<text x="52.3" y="190.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Rolling Toolb~</text>
+<text x="218.2" y="126.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">Control Cabinet with ~</text>
+<text x="139" y="155.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnostic Cart</text>
+<text x="238.76" y="157.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
+<text x="234.6" y="126.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">Relay Cabinet</text>
+<path d="M43 55 L273 55 L273 203 L43 203Z M46 58 L270 58 L270 200 L46 200Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
+<polygon points="43,105.4 43,152.6 46,152.6 46,105.4" class="none" fill="#ffffff"/>
+<line x1="43" y1="105.4" x2="46" y2="105.4" class="m"/>
+<line x1="43" y1="152.6" x2="46" y2="152.6" class="m"/>
+<polygon points="41.8,105.4 41.8,81.8 44.2,81.8 44.2,105.4" class="f" fill="#7a8594"/>
+<line x1="43" y1="81.8" x2="43" y2="152.6" class="hid"/>
+<line x1="158" y1="51.3" x2="158" y2="102" class="x"/>
+<circle cx="158" cy="102" r="0.4" class="none" fill="#b03030"/>
+<line x1="97.63" y1="51.24" x2="100.2" y2="64.5" class="x"/>
+<circle cx="100.2" cy="64.5" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.7" y1="109.89" x2="237.2" y2="112.01" class="x"/>
+<circle cx="237.2" cy="112.01" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.7" y1="125.22" x2="234.6" y2="126.2" class="x"/>
+<circle cx="234.6" cy="126.2" r="0.4" class="none" fill="#b03030"/>
+<line x1="211.24" y1="206.7" x2="210.6" y2="191.2" class="x"/>
+<circle cx="210.6" cy="191.2" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.71" y1="102.29" x2="268.84" y2="103" class="x"/>
+<circle cx="268.84" cy="103" r="0.4" class="none" fill="#b03030"/>
+<line x1="39.24" y1="187.48" x2="52.3" y2="190" class="x"/>
+<circle cx="52.3" cy="190" r="0.4" class="none" fill="#b03030"/>
+<line x1="39.3" y1="71.1" x2="46.83" y2="71" class="x"/>
+<circle cx="46.83" cy="71" r="0.4" class="none" fill="#b03030"/>
+<line x1="188.29" y1="206.71" x2="185" y2="155" class="x"/>
+<circle cx="185" cy="155" r="0.4" class="none" fill="#b03030"/>
+<line x1="112.45" y1="51.29" x2="113.15" y2="63" class="x"/>
+<circle cx="113.15" cy="63" r="0.4" class="none" fill="#b03030"/>
+<line x1="151.18" y1="206.8" x2="153" y2="199.62" class="x"/>
+<circle cx="153" cy="199.62" r="0.4" class="none" fill="#b03030"/>
+<circle cx="158" cy="48" r="3.3" class="n" fill="#fff"/>
+<text x="158" y="48.6" font-size="2" class="t b" text-anchor="middle">PD-01</text>
+<circle cx="97" cy="48" r="3.3" class="n" fill="#fff"/>
+<text x="97" y="48.6" font-size="2" class="t b" text-anchor="middle">PD-02</text>
+<circle cx="280" cy="109.71" r="3.3" class="n" fill="#fff"/>
+<text x="280" y="110.31" font-size="2" class="t b" text-anchor="middle">PD-03</text>
+<circle cx="280" cy="125.14" r="3.3" class="n" fill="#fff"/>
+<text x="280" y="125.74" font-size="2" class="t b" text-anchor="middle">PD-04</text>
+<circle cx="211.38" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="211.38" y="210.6" font-size="2" class="t b" text-anchor="middle">PD-05</text>
+<circle cx="280" cy="102" r="3.3" class="n" fill="#fff"/>
+<text x="280" y="102.6" font-size="2" class="t b" text-anchor="middle">PD-06</text>
+<circle cx="36" cy="186.86" r="3.3" class="n" fill="#fff"/>
+<text x="36" y="187.46" font-size="2" class="t b" text-anchor="middle">PD-07</text>
+<circle cx="36" cy="71.14" r="3.3" class="n" fill="#fff"/>
+<text x="36" y="71.74" font-size="2" class="t b" text-anchor="middle">PD-08</text>
+<circle cx="188.5" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="188.5" y="210.6" font-size="2" class="t b" text-anchor="middle">PD-09</text>
+<circle cx="112.25" cy="48" r="3.3" class="n" fill="#fff"/>
+<text x="112.25" y="48.6" font-size="2" class="t b" text-anchor="middle">PD-10</text>
+<circle cx="150.38" cy="210" r="3.3" class="n" fill="#fff"/>
+<text x="150.38" y="210.6" font-size="2" class="t b" text-anchor="middle">PD-11</text>
+<line x1="43" y1="33.2" x2="273" y2="33.2" class="d"/>
+<line x1="42.3" y1="33.9" x2="43.7" y2="32.5" class="m"/>
+<line x1="272.3" y1="33.9" x2="273.7" y2="32.5" class="m"/>
+<line x1="43" y1="53.5" x2="43" y2="32" class="d"/>
+<line x1="273" y1="53.5" x2="273" y2="32" class="d"/>
+<text x="158" y="32.5" font-size="2" class="t" text-anchor="middle">11500</text>
+<line x1="21.2" y1="55" x2="21.2" y2="203" class="d"/>
+<line x1="20.5" y1="55.7" x2="21.9" y2="54.3" class="m"/>
+<line x1="20.5" y1="203.7" x2="21.9" y2="202.3" class="m"/>
+<line x1="41.5" y1="55" x2="20" y2="55" class="d"/>
+<line x1="41.5" y1="203" x2="20" y2="203" class="d"/>
+<text x="20.5" y="131.16" font-size="2" class="t" transform="rotate(-90 20.5 131.16)">7400</text>
+<line x1="26.7" y1="55" x2="26.7" y2="203" class="d"/>
+<line x1="26" y1="55.7" x2="27.4" y2="54.3" class="m"/>
+<line x1="42" y1="55" x2="25.5" y2="55" class="d"/>
+<line x1="26" y1="106.1" x2="27.4" y2="104.7" class="m"/>
+<line x1="42" y1="105.4" x2="25.5" y2="105.4" class="d"/>
+<line x1="26" y1="153.3" x2="27.4" y2="151.9" class="m"/>
+<line x1="42" y1="152.6" x2="25.5" y2="152.6" class="d"/>
+<line x1="26" y1="203.7" x2="27.4" y2="202.3" class="m"/>
+<line x1="42" y1="203" x2="25.5" y2="203" class="d"/>
+<text x="26.1" y="82.25" font-size="1.9" class="t" transform="rotate(-90 26.1 82.25)">2520</text>
+<text x="26.1" y="131.05" font-size="1.9" class="t" transform="rotate(-90 26.1 131.05)">2360</text>
+<text x="26.1" y="179.85" font-size="1.9" class="t" transform="rotate(-90 26.1 179.85)">2520</text>
+<circle cx="292" cy="20" r="6.5" class="m" fill="#fff"/>
+<polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
+<line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
+<text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
+<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
+<rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="50" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
+<text x="20" y="247.4" font-size="1.5" class="t" text-anchor="middle">0</text>
+<text x="30" y="247.4" font-size="1.5" class="t" text-anchor="middle">0.5</text>
+<text x="40" y="247.4" font-size="1.5" class="t" text-anchor="middle">1</text>
+<text x="50" y="247.4" font-size="1.5" class="t" text-anchor="middle">1.5</text>
+<text x="60" y="247.4" font-size="1.5" class="t" text-anchor="middle">2 m</text>
+<text x="307" y="12.8" font-size="2.3" class="t b">ROOM DATA</text>
+<rect x="307" y="14" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="16.25" font-size="1.7" class="t b">Room</text>
+<text x="336" y="16.25" font-size="1.7" class="t">PD  Power Distribution</text>
+<rect x="307" y="17.3" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="19.55" font-size="1.7" class="t b">Deck / level</text>
+<text x="336" y="19.55" font-size="1.7" class="t">3  (FFL +0.000)</text>
+<rect x="307" y="20.6" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="22.85" font-size="1.7" class="t b">Department</text>
+<text x="336" y="22.85" font-size="1.7" class="t">engineering</text>
+<rect x="307" y="23.9" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="26.15" font-size="1.7" class="t b">Floor area</text>
+<text x="336" y="26.15" font-size="1.7" class="t">85.1 m2</text>
+<rect x="307" y="27.2" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="29.45" font-size="1.7" class="t b">Clear height</text>
+<text x="336" y="29.45" font-size="1.7" class="t">3400 mm</text>
+<rect x="307" y="30.5" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="32.75" font-size="1.7" class="t b">Volume</text>
+<text x="336" y="32.75" font-size="1.7" class="t">289 m3</text>
+<rect x="307" y="33.8" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="36.05" font-size="1.7" class="t b">Floor occupancy</text>
+<text x="336" y="36.05" font-size="1.7" class="t">30 %</text>
+<rect x="307" y="37.1" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="39.35" font-size="1.7" class="t b">Crew</text>
+<text x="336" y="39.35" font-size="1.7" class="t">2</text>
+<rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
+<text x="336" y="42.65" font-size="1.7" class="t">55</text>
+<rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
+<text x="336" y="45.95" font-size="1.7" class="t">1</text>
+<rect x="307" y="47" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="49.25" font-size="1.7" class="t b">Windows</text>
+<text x="336" y="49.25" font-size="1.7" class="t">0</text>
+<rect x="307" y="14" width="106" height="36.3" class="n" fill="none"/>
+<text x="307" y="56.5" font-size="1.7" class="t b">PURPOSE:</text>
+<text x="307" y="59.6" font-size="1.7" class="t">Power Distribution takes the reactor's output, transforms and conditions it, stores the surge in capacitor banks</text>
+<text x="307" y="62.7" font-size="1.7" class="t">and feeds the ship's buses; one technician monitors it and does the switching.</text>
+<text x="307" y="69.6" font-size="2.3" class="t b">BILL OF MATERIALS LINES</text>
+<rect x="307" y="70.8" width="106" height="3" class="n" fill="#dfe3ea"/>
+<text x="308" y="72.75" font-size="1.6" class="t b">CODE</text>
+<text x="322" y="72.75" font-size="1.6" class="t b">BOM LINE</text>
+<text x="406" y="72.75" font-size="1.6" class="t b">QTY</text>
+<rect x="307" y="73.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="75.75" font-size="1.6" class="t">PD-01</text>
+<text x="322" y="75.75" font-size="1.6" class="t">Ceiling lighting</text>
+<text x="406" y="75.75" font-size="1.6" class="t">6</text>
+<rect x="307" y="76.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="78.75" font-size="1.6" class="t">PD-02</text>
+<text x="322" y="78.75" font-size="1.6" class="t">Transformers and conditioning (north wall)</text>
+<text x="406" y="78.75" font-size="1.6" class="t">7</text>
+<rect x="307" y="79.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="81.75" font-size="1.6" class="t">PD-03</text>
+<text x="322" y="81.75" font-size="1.6" class="t">Capacitor banks (middle row, north face)</text>
+<text x="406" y="81.75" font-size="1.6" class="t">6</text>
+<rect x="307" y="82.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="84.75" font-size="1.6" class="t">PD-04</text>
+<text x="322" y="84.75" font-size="1.6" class="t">Switchgear (middle row, south face)</text>
+<text x="406" y="84.75" font-size="1.6" class="t">6</text>
+<rect x="307" y="85.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="87.75" font-size="1.6" class="t">PD-05</text>
+<text x="322" y="87.75" font-size="1.6" class="t">Generator sets (south wall)</text>
+<text x="406" y="87.75" font-size="1.6" class="t">4</text>
+<rect x="307" y="88.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="90.75" font-size="1.6" class="t">PD-06</text>
+<text x="322" y="90.75" font-size="1.6" class="t">Monitoring console (east wall)</text>
+<text x="406" y="90.75" font-size="1.6" class="t">6</text>
+<rect x="307" y="91.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="93.75" font-size="1.6" class="t">PD-07</text>
+<text x="322" y="93.75" font-size="1.6" class="t">Tool cabinet and spares (west wall, south of the door)</text>
+<text x="406" y="93.75" font-size="1.6" class="t">2</text>
+<rect x="307" y="94.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="96.75" font-size="1.6" class="t">PD-08</text>
+<text x="322" y="96.75" font-size="1.6" class="t">Breaker panels and first aid (west wall, north of the door)</text>
+<text x="406" y="96.75" font-size="1.6" class="t">2</text>
+<rect x="307" y="97.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="99.75" font-size="1.6" class="t">PD-09</text>
+<text x="322" y="99.75" font-size="1.6" class="t">Diagnostic cart and spares trolley (main aisle)</text>
+<text x="406" y="99.75" font-size="1.6" class="t">2</text>
+<rect x="307" y="100.8" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="102.75" font-size="1.6" class="t">PD-10</text>
+<text x="322" y="102.75" font-size="1.6" class="t">Overhead cable trays and pipes</text>
+<text x="406" y="102.75" font-size="1.6" class="t">7</text>
+<rect x="307" y="103.8" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="105.75" font-size="1.6" class="t">PD-11</text>
+<text x="322" y="105.75" font-size="1.6" class="t">Danger signs and fire protection</text>
+<text x="406" y="105.75" font-size="1.6" class="t">7</text>
+<rect x="307" y="70.8" width="106" height="36" class="n" fill="none"/>
+<text x="307" y="113.8" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
+<rect x="307" y="116" width="4.2" height="2.4" class="n" fill="#86e881"/>
+<text x="312.4" y="117.9" font-size="1.6" class="t">cabinet</text>
+<rect x="360" y="116" width="4.2" height="2.4" class="n" fill="#ef779f"/>
+<text x="365.4" y="117.9" font-size="1.6" class="t">cabletray</text>
+<rect x="307" y="119.4" width="4.2" height="2.4" class="n" fill="#dfe881"/>
+<text x="312.4" y="121.3" font-size="1.6" class="t">capacitor</text>
+<rect x="360" y="119.4" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<text x="365.4" y="121.3" font-size="1.6" class="t">ceilinglight</text>
+<rect x="307" y="122.8" width="4.2" height="2.4" class="n" fill="#77eaef"/>
+<text x="312.4" y="124.7" font-size="1.6" class="t">coil</text>
+<rect x="360" y="122.8" width="4.2" height="2.4" class="n" fill="#b081e8"/>
+<text x="365.4" y="124.7" font-size="1.6" class="t">console</text>
+<rect x="307" y="126.2" width="4.2" height="2.4" class="n" fill="#77ef8b"/>
+<text x="312.4" y="128.1" font-size="1.6" class="t">controlpanel</text>
+<rect x="360" y="126.2" width="4.2" height="2.4" class="n" fill="#a499f7"/>
+<text x="365.4" y="128.1" font-size="1.6" class="t">display</text>
+<rect x="307" y="129.6" width="4.2" height="2.4" class="n" fill="#e8e381"/>
+<text x="312.4" y="131.5" font-size="1.6" class="t">engtool</text>
+<rect x="360" y="129.6" width="4.2" height="2.4" class="n" fill="#c8f799"/>
+<text x="365.4" y="131.5" font-size="1.6" class="t">generator</text>
+<rect x="307" y="133" width="4.2" height="2.4" class="n" fill="#f799b1"/>
+<text x="312.4" y="134.9" font-size="1.6" class="t">junction</text>
+<rect x="360" y="133" width="4.2" height="2.4" class="n" fill="#77efd5"/>
+<text x="365.4" y="134.9" font-size="1.6" class="t">pipe</text>
+<rect x="307" y="136.4" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<text x="312.4" y="138.3" font-size="1.6" class="t">safety</text>
+<rect x="360" y="136.4" width="4.2" height="2.4" class="n" fill="#ade881"/>
+<text x="365.4" y="138.3" font-size="1.6" class="t">seat</text>
+<rect x="307" y="139.8" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<text x="312.4" y="141.7" font-size="1.6" class="t">sign</text>
+<rect x="360" y="139.8" width="4.2" height="2.4" class="n" fill="#f799c9"/>
+<text x="365.4" y="141.7" font-size="1.6" class="t">terminal</text>
+<text x="15" y="12.2" font-size="2.6" class="t b">PLAN - POWER DISTRIBUTION</text>
+<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Power Distribution - plan</text>
+<text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  FLOOR PLAN AT FFL +0.000</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">R-aux-P</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">PD</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Power Distribution</text>
+</svg>

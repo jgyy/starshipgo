@@ -47,13 +47,13 @@ def save_data(path, arr):
 
 
 # ---------------------------------------------------------------- helpers
-def fnoise(n, beta, rng):
-    """Tileable 1/f^beta noise in 0..1."""
-    f = np.fft.fftfreq(n)
-    fx, fy = np.meshgrid(f, f)
+def fnoise(n, beta, rng, w=None):
+    """Tileable 1/f^beta noise in 0..1 (n rows x w columns, w defaults to n)."""
+    w = n if w is None else w
+    fx, fy = np.meshgrid(np.fft.fftfreq(w), np.fft.fftfreq(n))
     r = np.sqrt(fx ** 2 + fy ** 2)
     r[0, 0] = 1
-    spec = (np.random.default_rng(rng).normal(size=(n, n)) + 1j * np.random.default_rng(rng + 1).normal(size=(n, n))) / r ** beta
+    spec = (np.random.default_rng(rng).normal(size=(n, w)) + 1j * np.random.default_rng(rng + 1).normal(size=(n, w))) / r ** beta
     spec[0, 0] = 0
     a = np.real(np.fft.ifft2(spec))
     a = (a - a.min()) / (a.max() - a.min() + 1e-9)
@@ -82,7 +82,10 @@ def _line(img, x0, y0, x1, y1, col, w=1):
     for t in np.linspace(0, 1, n * 2):
         x = int(x0 + (x1 - x0) * t)
         y = int(y0 + (y1 - y0) * t)
-        img[max(0, y - w // 2):y + w // 2 + 1, max(0, x - w // 2):x + w // 2 + 1] = col
+        ya, yb = max(0, y - w // 2), min(S, y + w // 2 + 1)
+        xa, xb = max(0, x - w // 2), min(S, x + w // 2 + 1)
+        if ya < yb and xa < xb:
+            img[ya:yb, xa:xb] = col
 
 
 # ------------------------------------------------------------ surface maps
@@ -90,7 +93,7 @@ def _panels(n, cols, rows, seam=0.012):
     x, y = _grid(n)
     u = (x * cols) % 1
     v = (y * rows) % 1
-    e = np.minimum(np.minimum(u, 1 - u) / (1.0 / cols), np.minimum(v, 1 - v) / (1.0 / rows))
+    np.minimum(np.minimum(u, 1 - u) / (1.0 / cols), np.minimum(v, 1 - v) / (1.0 / rows))
     d = np.minimum(np.minimum(u, 1 - u) * cols, np.minimum(v, 1 - v) * rows)
     seam_mask = d < seam * 8
     idx = (np.floor(x * cols) + np.floor(y * rows) * cols).astype(int)
@@ -219,15 +222,8 @@ def make_sky(outdir, w=2048, h=1024):
     rng = np.random.default_rng(7)
     img = np.zeros((h, w, 3), np.float32)
     # nebula
-    n1 = fnoise(1024, 2.4, 71)
-    n2 = fnoise(1024, 2.0, 73)
-    from numpy import kron
-    up = lambda a: np.kron(a, np.ones((h // 1024 or 1, w // 1024))) if False else None
-    def tile(a):
-        a2 = np.concatenate([a, a], axis=1)
-        return a2[:h, :w] if a2.shape[0] >= h else np.concatenate([a2, a2], 0)[:h, :w]
-    a = tile(n1)
-    b = tile(n2)
+    a = fnoise(h, 2.4, 71, w)
+    b = fnoise(h, 2.0, 73, w)
     neb = np.clip((a - .5) * 2.2, 0, 1) ** 1.5
     img += neb[..., None] * np.array([.10, .05, .22]) * (0.5 + b[..., None])
     img += np.clip((b - .55) * 2.5, 0, 1)[..., None] ** 2 * np.array([.20, .06, .10]) * 0.5
@@ -236,7 +232,9 @@ def make_sky(outdir, w=2048, h=1024):
     band = np.exp(-((yy - .5) / .12) ** 2)
     for cnt, mag in ((9000, .35), (2600, .7), (500, 1.0), (60, 1.6)):
         xs = rng.integers(0, w, cnt)
-        ys = np.clip((rng.normal(.5, .22, cnt) * h).astype(int), 0, h - 1)
+        # uniform on the sphere: sin(latitude) is uniform; row = (0.5 - lat/pi) * h
+        lat = np.arcsin(rng.uniform(-1, 1, cnt))
+        ys = np.clip(((.5 - lat / np.pi) * h).astype(int), 0, h - 1)
         col = rng.choice([0, 1, 2], cnt, p=[.5, .35, .15])
         tint = np.array([[1, .95, .9], [.85, .92, 1], [1, .8, .6]])[col]
         for x0, y0, t in zip(xs, ys, tint):

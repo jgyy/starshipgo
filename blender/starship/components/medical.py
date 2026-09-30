@@ -710,7 +710,7 @@ def cryo(m, i, label, rng):
 
 
 def y_pod(m, rng):
-    m.box((1.0, 0.2, 2.5), (0, 0.15, 0), "hull_dark", 0.04)
+    m.box((1.0, 0.3, 2.5), (0, 0.15, 0), "hull_dark", 0.04)  # plinth reaches the floor
     m.box((0.8, 0.6, 2.3), (0, 0.55, 0), "md_frost", 0.06)
     m.box((0.6, 0.08, 1.9), (0, 0.88, 0.0), "md_sheet", 0.03)
     # glass lid
@@ -811,6 +811,7 @@ def p_hover(m, rng):
     m.box((0.6, 0.03, 0.06), (0, 0.56, 0.2), "fabric_red")
     m.box((0.6, 0.03, 0.06), (0, 0.56, 0.5), "fabric_red")
     led(m, 0.3, 0.66, 1.06, "em_green", 0.04)
+    m.shift(dy=-0.105)  # hover height 0.05 m (was 0.155)
 
 
 def p_ivstand(m, rng):

@@ -1,7 +1,10 @@
 """Communications / computing components: racks, storage, antennas, comms units, network gear (50 labels)."""
 import math
 
-from mathutils import Euler, Vector
+try:  # bpy is optional so `build_all.py --check` runs on a bare Python
+    from mathutils import Euler, Vector
+except ImportError:
+    Euler = Vector = None
 
 from ..kit import family, register_material
 

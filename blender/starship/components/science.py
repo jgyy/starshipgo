@@ -2,7 +2,10 @@
 telescopes and particle-physics demonstrators (50 labels)."""
 import math
 
-from mathutils import Euler, Vector
+try:  # bpy is optional so `build_all.py --check` runs on a bare Python
+    from mathutils import Euler, Vector
+except ImportError:
+    Euler = Vector = None
 
 from ..kit import family, register_material
 
@@ -962,7 +965,7 @@ def _(m, rng):
     m.box((0.36, 0.28, 0.24), (0, 1.3, -0.15), "paint_orange", 0.02)
     m.cyl(0.07, 0.18, (0, 1.06, -0.05), "gunmetal", seg=12)
     m.cyl(0.03, 0.14, (0, 0.92, -0.05), "black_metal", seg=8)
-    m.cyl(0.018, 0.95, (0, 0.42, -0.05), "steel", seg=6, r2=0.008)
+    m.cyl(0.018, 0.95, (0, 0.5, -0.05), "steel", seg=6, r2=0.008)
     for k in range(5):
         m.torus(0.02, 0.005, (0, 0.6 + k * 0.1, -0.05), "brushed_alu", seg=8, tseg=4)
     m.cyl(0.14, 0.04, (0, 0.11, -0.05), "rubber", seg=14)

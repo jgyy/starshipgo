@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>G-16 - Drawing index, legend and symbols</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<text x="16" y="18.8" font-size="2.3" class="t b">GENERAL ARRANGEMENT SHEETS</text>
+<rect x="16" y="20" width="108" height="3.4" class="n" fill="#dfe3ea"/>
+<text x="17" y="22.35" font-size="1.8" class="t b">SHEET</text>
+<text x="31" y="22.35" font-size="1.8" class="t b">TITLE</text>
+<text x="105" y="22.35" font-size="1.8" class="t b">SCALE</text>
+<rect x="16" y="23.4" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="25.75" font-size="1.8" class="t b">G-01</text>
+<text x="31" y="25.75" font-size="1.8" class="t">General arrangement - Deck 1 (Command Deck)</text>
+<text x="105" y="25.75" font-size="1.8" class="t">1:250</text>
+<rect x="16" y="26.8" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="29.15" font-size="1.8" class="t b">G-02</text>
+<text x="31" y="29.15" font-size="1.8" class="t">General arrangement - Deck 2 (Habitat Deck)</text>
+<text x="105" y="29.15" font-size="1.8" class="t">1:250</text>
+<rect x="16" y="30.2" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="32.55" font-size="1.8" class="t b">G-03</text>
+<text x="31" y="32.55" font-size="1.8" class="t">General arrangement - Deck 3 (Engineering Deck)</text>
+<text x="105" y="32.55" font-size="1.8" class="t">1:250</text>
+<rect x="16" y="33.6" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="35.95" font-size="1.8" class="t b">G-04</text>
+<text x="31" y="35.95" font-size="1.8" class="t">Hull lines plan</text>
+<text x="105" y="35.95" font-size="1.8" class="t">1:300</text>
+<rect x="16" y="37" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="39.35" font-size="1.8" class="t b">G-05</text>
+<text x="31" y="39.35" font-size="1.8" class="t">Profile - starboard outboard elevation</text>
+<text x="105" y="39.35" font-size="1.8" class="t">1:200</text>
+<rect x="16" y="40.4" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="42.75" font-size="1.8" class="t b">G-06</text>
+<text x="31" y="42.75" font-size="1.8" class="t">Longitudinal section on centreline</text>
+<text x="105" y="42.75" font-size="1.8" class="t">1:200</text>
+<rect x="16" y="43.8" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="46.15" font-size="1.8" class="t b">G-07</text>
+<text x="31" y="46.15" font-size="1.8" class="t">Transverse section A - stair lobby</text>
+<text x="105" y="46.15" font-size="1.8" class="t">1:100</text>
+<rect x="16" y="47.2" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="49.55" font-size="1.8" class="t b">G-08</text>
+<text x="31" y="49.55" font-size="1.8" class="t">Transverse section B - bridge</text>
+<text x="105" y="49.55" font-size="1.8" class="t">1:75</text>
+<rect x="16" y="50.6" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="52.95" font-size="1.8" class="t b">G-09</text>
+<text x="31" y="52.95" font-size="1.8" class="t">Transverse section C - mess / medical / engineering</text>
+<text x="105" y="52.95" font-size="1.8" class="t">1:100</text>
+<rect x="16" y="54" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="56.35" font-size="1.8" class="t b">G-10</text>
+<text x="31" y="56.35" font-size="1.8" class="t">Transverse section D - cabins row</text>
+<text x="105" y="56.35" font-size="1.8" class="t">1:100</text>
+<rect x="16" y="57.4" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="59.75" font-size="1.8" class="t b">G-11</text>
+<text x="31" y="59.75" font-size="1.8" class="t">Transverse section E - hangar bay</text>
+<text x="105" y="59.75" font-size="1.8" class="t">1:75</text>
+<rect x="16" y="60.8" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="63.15" font-size="1.8" class="t b">G-12</text>
+<text x="31" y="63.15" font-size="1.8" class="t">Transverse section F - forward rooms</text>
+<text x="105" y="63.15" font-size="1.8" class="t">1:100</text>
+<rect x="16" y="64.2" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="66.55" font-size="1.8" class="t b">G-13</text>
+<text x="31" y="66.55" font-size="1.8" class="t">Stair tower details</text>
+<text x="105" y="66.55" font-size="1.8" class="t">1:50 / 1:75 / 1:10</text>
+<rect x="16" y="67.6" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="69.95" font-size="1.8" class="t b">G-14</text>
+<text x="31" y="69.95" font-size="1.8" class="t">Circulation and escape diagram</text>
+<text x="105" y="69.95" font-size="1.8" class="t">1:400</text>
+<rect x="16" y="71" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="73.35" font-size="1.8" class="t b">G-15</text>
+<text x="31" y="73.35" font-size="1.8" class="t">Door and window schedule</text>
+<text x="105" y="73.35" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="74.4" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="76.75" font-size="1.8" class="t b">G-16</text>
+<text x="31" y="76.75" font-size="1.8" class="t">Drawing index, legend and symbols</text>
+<text x="105" y="76.75" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="77.8" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="80.15" font-size="1.8" class="t b">K-01</text>
+<text x="31" y="80.15" font-size="1.8" class="t">Contact sheet - Deck 1 room plans</text>
+<text x="105" y="80.15" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="81.2" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="83.55" font-size="1.8" class="t b">K-02</text>
+<text x="31" y="83.55" font-size="1.8" class="t">Contact sheet - Deck 2 room plans</text>
+<text x="105" y="83.55" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="84.6" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="86.95" font-size="1.8" class="t b">K-03</text>
+<text x="31" y="86.95" font-size="1.8" class="t">Contact sheet - Deck 3 room plans</text>
+<text x="105" y="86.95" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="20" width="108" height="68" class="n" fill="none"/>
+<text x="16" y="94" font-size="1.7" class="t">Room sheets: R-&lt;roomid&gt;-P plan, R-&lt;roomid&gt;-SL longitudinal section, R-&lt;roomid&gt;-ST transverse section</text>
+<text x="16" y="98" font-size="1.7" class="t">43 rooms x 3 sheets (see INDEX.md for the complete list, grouped by deck).</text>
+<text x="16" y="102" font-size="1.7" class="t">Contact sheets K-01..K-03 show all room plans of a deck as thumbnails.</text>
+<text x="135" y="18" font-size="2.3" class="t b">LINE WEIGHTS</text>
+<line x1="135" y1="23" x2="153" y2="23" class="h"/>
+<text x="156" y="23.7" font-size="1.7" class="t">Hull / sheet border 0.50</text>
+<line x1="135" y1="27.4" x2="153" y2="27.4" class="m"/>
+<text x="156" y="28.1" font-size="1.7" class="t">Cut furniture, door jambs 0.25</text>
+<line x1="135" y1="31.8" x2="153" y2="31.8" class="n"/>
+<text x="156" y="32.5" font-size="1.7" class="t">Room outlines, furniture 0.18</text>
+<line x1="135" y1="36.2" x2="153" y2="36.2" class="f"/>
+<text x="156" y="36.9" font-size="1.7" class="t">Furniture detail 0.13</text>
+<line x1="135" y1="40.6" x2="153" y2="40.6" class="x"/>
+<text x="156" y="41.3" font-size="1.7" class="t">Fine detail 0.07</text>
+<line x1="135" y1="45" x2="153" y2="45" class="d"/>
+<text x="156" y="45.7" font-size="1.7" class="t">Dimension line 0.10</text>
+<line x1="135" y1="49.4" x2="153" y2="49.4" class="dsh"/>
+<text x="156" y="50.1" font-size="1.7" class="t">Dashed: slab openings, arches</text>
+<line x1="135" y1="53.8" x2="153" y2="53.8" class="dot"/>
+<text x="156" y="54.5" font-size="1.7" class="t">Dotted: ceiling items</text>
+<line x1="135" y1="58.2" x2="153" y2="58.2" class="hid"/>
+<text x="156" y="58.9" font-size="1.7" class="t">Hidden / above cut plane</text>
+<line x1="135" y1="62.6" x2="153" y2="62.6" class="cl"/>
+<text x="156" y="63.3" font-size="1.7" class="t">Frame / centre line</text>
+<line x1="135" y1="67" x2="153" y2="67" class="cut"/>
+<text x="156" y="67.7" font-size="1.7" class="t">Section line</text>
+<text x="135" y="77.4" font-size="2.3" class="t b">HATCHES (SECTIONS / PLANS)</text>
+<rect x="135" y="80.4" width="18" height="3.6" class="n" fill="#1c1c1c"/>
+<text x="156" y="83.1" font-size="1.7" class="t">Cut wall, 150 mm</text>
+<rect x="135" y="85.4" width="18" height="3.6" class="n" fill="url(#hHull)"/>
+<text x="156" y="88.1" font-size="1.7" class="t">Cut hull wall</text>
+<rect x="135" y="90.4" width="18" height="3.6" class="n" fill="url(#hSlab)"/>
+<text x="156" y="93.1" font-size="1.7" class="t">Cut slab 300 mm / stair</text>
+<rect x="135" y="95.4" width="18" height="3.6" class="n" fill="url(#hHole)"/>
+<text x="156" y="98.1" font-size="1.7" class="t">Slab opening (plan)</text>
+<rect x="135" y="100.4" width="18" height="3.6" class="n" fill="url(#hZone)"/>
+<text x="156" y="103.1" font-size="1.7" class="t">Reserved clearance zone</text>
+<rect x="135" y="105.4" width="18" height="3.6" class="n" fill="url(#hGlass)"/>
+<text x="156" y="108.1" font-size="1.7" class="t">Glazing</text>
+<rect x="135" y="110.4" width="18" height="3.6" class="n" fill="url(#hPlen)"/>
+<text x="156" y="113.1" font-size="1.7" class="t">Plenum / service void</text>
+<text x="230" y="18" font-size="2.3" class="t b">PLAN SYMBOLS</text>
+<rect x="230" y="24" width="14" height="3" class="m" fill="#fff"/>
+<line x1="230.6" y1="25.5" x2="237" y2="25.5" class="dsh"/>
+<polygon points="237,24.9 244,24.9 244,26.1 237,26.1" class="f" fill="#7a8594"/>
+<text x="247" y="26.2" font-size="1.7" class="t">Sliding door: leaf parked beside the opening</text>
+<line x1="230" y1="30" x2="244" y2="30" class="n"/>
+<line x1="230" y1="31.2" x2="244" y2="31.2" class="n"/>
+<line x1="230" y1="32.4" x2="244" y2="32.4" class="n"/>
+<text x="247" y="32" font-size="1.7" class="t">Window: frame, glass, frame</text>
+<line x1="230" y1="37.2" x2="244" y2="37.2" class="dsh"/>
+<circle cx="230" cy="37.2" r="0.5" class="f" fill="#111"/>
+<circle cx="244" cy="37.2" r="0.5" class="f" fill="#111"/>
+<text x="247" y="38" font-size="1.7" class="t">Open arch / portal frame</text>
+<rect x="230" y="42" width="14" height="4" class="n" fill="#dde6f5"/>
+<line x1="230" y1="46" x2="244" y2="46" class="m"/>
+<text x="247" y="44.6" font-size="1.7" class="t">Furniture footprint, heavy front edge + tick</text>
+<rect x="230" y="49" width="14" height="1.2" class="f" fill="#5a5a64"/>
+<text x="247" y="50.6" font-size="1.7" class="t">Wall-mounted item (bar on the wall face)</text>
+<rect x="230" y="54" width="14" height="3.4" class="dot" fill="none"/>
+<text x="247" y="56.4" font-size="1.7" class="t">Ceiling item (dotted)</text>
+<rect x="230" y="60" width="14" height="4" class="red" fill="url(#hZone)"/>
+<text x="247" y="62.8" font-size="1.7" class="t">Reserved clearance / door swing zone</text>
+<circle cx="234" cy="69" r="3.3" class="n" fill="#fff"/>
+<text x="234" y="69.6" font-size="2" class="t b" text-anchor="middle">BR-03</text>
+<text x="247" y="69.6" font-size="1.7" class="t">BOM balloon: code of the bill-of-materials line</text>
+<line x1="230" y1="76.5" x2="242" y2="76.5" class="f"/>
+<polygon points="242,76.5 240.66,76.91 240.66,76.09" class="none" fill="#111"/>
+<text x="247" y="77" font-size="1.7" class="t">UP / DN stair arrow</text>
+<line x1="234" y1="84" x2="243" y2="84" class="f"/>
+<polygon points="234,84 232.8,81.9 235.2,81.9" class="f" fill="#fff"/>
+<polygon points="234,84 235.2,81.9 234,81.9" class="f" fill="#111"/>
+<text x="235.8" y="83.5" font-size="1.7" class="t b">+4.000</text>
+<text x="247" y="83.6" font-size="1.7" class="t">Level mark (m above keel datum)</text>
+<line x1="230" y1="90" x2="244" y2="90" class="d"/>
+<line x1="229.3" y1="90.7" x2="230.7" y2="89.3" class="m"/>
+<line x1="243.3" y1="90.7" x2="244.7" y2="89.3" class="m"/>
+<text x="237" y="89.3" font-size="1.7" class="t" text-anchor="middle">2360</text>
+<text x="247" y="90.6" font-size="1.7" class="t">Dimension (mm)</text>
+<text x="16" y="192" font-size="2.3" class="t b">FURNITURE FAMILY COLOURS (catalog category)</text>
+<rect x="16" y="195" width="4" height="2.4" class="n" fill="#f79999"/>
+<text x="21.2" y="196.9" font-size="1.5" class="t">analyzer</text>
+<rect x="56" y="195" width="4" height="2.4" class="n" fill="#819fe8"/>
+<text x="61.2" y="196.9" font-size="1.5" class="t">antenna</text>
+<rect x="96" y="195" width="4" height="2.4" class="n" fill="#bdef77"/>
+<text x="101.2" y="196.9" font-size="1.5" class="t">barrel</text>
+<rect x="136" y="195" width="4" height="2.4" class="n" fill="#f799eb"/>
+<text x="141.2" y="196.9" font-size="1.5" class="t">beacon</text>
+<rect x="176" y="195" width="4" height="2.4" class="n" fill="#81e8d6"/>
+<text x="181.2" y="196.9" font-size="1.5" class="t">bed</text>
+<rect x="216" y="195" width="4" height="2.4" class="n" fill="#efb877"/>
+<text x="221.2" y="196.9" font-size="1.5" class="t">bench</text>
+<rect x="256" y="195" width="4" height="2.4" class="n" fill="#b099f7"/>
+<text x="261.2" y="196.9" font-size="1.5" class="t">bin</text>
+<rect x="296" y="195" width="4" height="2.4" class="n" fill="#86e881"/>
+<text x="301.2" y="196.9" font-size="1.5" class="t">cabinet</text>
+<rect x="336" y="195" width="4" height="2.4" class="n" fill="#ef779f"/>
+<text x="341.2" y="196.9" font-size="1.5" class="t">cabletray</text>
+<rect x="376" y="195" width="4" height="2.4" class="n" fill="#99d4f7"/>
+<text x="381.2" y="196.9" font-size="1.5" class="t">camera</text>
+<rect x="16" y="198.6" width="4" height="2.4" class="n" fill="#dfe881"/>
+<text x="21.2" y="200.5" font-size="1.5" class="t">capacitor</text>
+<rect x="56" y="198.6" width="4" height="2.4" class="n" fill="#d677ef"/>
+<text x="61.2" y="200.5" font-size="1.5" class="t">ceilinglight</text>
+<rect x="96" y="198.6" width="4" height="2.4" class="n" fill="#99f7c8"/>
+<text x="101.2" y="200.5" font-size="1.5" class="t">ceilingpanel</text>
+<rect x="136" y="198.6" width="4" height="2.4" class="n" fill="#e89781"/>
+<text x="141.2" y="200.5" font-size="1.5" class="t">cell</text>
+<rect x="176" y="198.6" width="4" height="2.4" class="n" fill="#7782ef"/>
+<text x="181.2" y="200.5" font-size="1.5" class="t">chair</text>
+<rect x="216" y="198.6" width="4" height="2.4" class="n" fill="#bcf799"/>
+<text x="221.2" y="200.5" font-size="1.5" class="t">cleaningbot</text>
+<rect x="256" y="198.6" width="4" height="2.4" class="n" fill="#e881c6"/>
+<text x="261.2" y="200.5" font-size="1.5" class="t">clock</text>
+<rect x="296" y="198.6" width="4" height="2.4" class="n" fill="#77eaef"/>
+<text x="301.2" y="200.5" font-size="1.5" class="t">coil</text>
+<rect x="336" y="198.6" width="4" height="2.4" class="n" fill="#f7df99"/>
+<text x="341.2" y="200.5" font-size="1.5" class="t">commsunit</text>
+<rect x="376" y="198.6" width="4" height="2.4" class="n" fill="#b081e8"/>
+<text x="381.2" y="200.5" font-size="1.5" class="t">console</text>
+<rect x="16" y="202.2" width="4" height="2.4" class="n" fill="#77ef8b"/>
+<text x="21.2" y="204.1" font-size="1.5" class="t">controlpanel</text>
+<rect x="56" y="202.2" width="4" height="2.4" class="n" fill="#f799a5"/>
+<text x="61.2" y="204.1" font-size="1.5" class="t">couch</text>
+<rect x="96" y="202.2" width="4" height="2.4" class="n" fill="#81ace8"/>
+<text x="101.2" y="204.1" font-size="1.5" class="t">craft</text>
+<rect x="136" y="202.2" width="4" height="2.4" class="n" fill="#cdef77"/>
+<text x="141.2" y="204.1" font-size="1.5" class="t">crate</text>
+<rect x="176" y="202.2" width="4" height="2.4" class="n" fill="#f799f7"/>
+<text x="181.2" y="204.1" font-size="1.5" class="t">cryo</text>
+<rect x="216" y="202.2" width="4" height="2.4" class="n" fill="#81e8c9"/>
+<text x="221.2" y="204.1" font-size="1.5" class="t">cylinder</text>
+<rect x="256" y="202.2" width="4" height="2.4" class="n" fill="#efa977"/>
+<text x="261.2" y="204.1" font-size="1.5" class="t">desk</text>
+<rect x="296" y="202.2" width="4" height="2.4" class="n" fill="#a499f7"/>
+<text x="301.2" y="204.1" font-size="1.5" class="t">display</text>
+<rect x="336" y="202.2" width="4" height="2.4" class="n" fill="#93e881"/>
+<text x="341.2" y="204.1" font-size="1.5" class="t">door</text>
+<rect x="376" y="202.2" width="4" height="2.4" class="n" fill="#ef77af"/>
+<text x="381.2" y="204.1" font-size="1.5" class="t">doorframe</text>
+<rect x="16" y="205.8" width="4" height="2.4" class="n" fill="#99e0f7"/>
+<text x="21.2" y="207.7" font-size="1.5" class="t">duct</text>
+<rect x="56" y="205.8" width="4" height="2.4" class="n" fill="#e8e381"/>
+<text x="61.2" y="207.7" font-size="1.5" class="t">engtool</text>
+<rect x="96" y="205.8" width="4" height="2.4" class="n" fill="#c777ef"/>
+<text x="101.2" y="207.7" font-size="1.5" class="t">floorpanel</text>
+<rect x="136" y="205.8" width="4" height="2.4" class="n" fill="#99f7bc"/>
+<text x="141.2" y="207.7" font-size="1.5" class="t">forcefield</text>
+<rect x="176" y="205.8" width="4" height="2.4" class="n" fill="#e88a81"/>
+<text x="181.2" y="207.7" font-size="1.5" class="t">fountain</text>
+<rect x="216" y="205.8" width="4" height="2.4" class="n" fill="#7791ef"/>
+<text x="221.2" y="207.7" font-size="1.5" class="t">galley</text>
+<rect x="256" y="205.8" width="4" height="2.4" class="n" fill="#c8f799"/>
+<text x="261.2" y="207.7" font-size="1.5" class="t">generator</text>
+<rect x="296" y="205.8" width="4" height="2.4" class="n" fill="#e881d3"/>
+<text x="301.2" y="207.7" font-size="1.5" class="t">gym</text>
+<rect x="336" y="205.8" width="4" height="2.4" class="n" fill="#77efe5"/>
+<text x="341.2" y="207.7" font-size="1.5" class="t">hangartool</text>
+<rect x="376" y="205.8" width="4" height="2.4" class="n" fill="#f7d399"/>
+<text x="381.2" y="207.7" font-size="1.5" class="t">hatch</text>
+<rect x="16" y="209.4" width="4" height="2.4" class="n" fill="#a381e8"/>
+<text x="21.2" y="211.3" font-size="1.5" class="t">holo</text>
+<rect x="56" y="209.4" width="4" height="2.4" class="n" fill="#77ef7c"/>
+<text x="61.2" y="211.3" font-size="1.5" class="t">instrument</text>
+<rect x="96" y="209.4" width="4" height="2.4" class="n" fill="#f799b1"/>
+<text x="101.2" y="211.3" font-size="1.5" class="t">junction</text>
+<rect x="136" y="209.4" width="4" height="2.4" class="n" fill="#81b9e8"/>
+<text x="141.2" y="211.3" font-size="1.5" class="t">labbench</text>
+<rect x="176" y="209.4" width="4" height="2.4" class="n" fill="#dcef77"/>
+<text x="181.2" y="211.3" font-size="1.5" class="t">lamp</text>
+<rect x="216" y="209.4" width="4" height="2.4" class="n" fill="#eb99f7"/>
+<text x="221.2" y="211.3" font-size="1.5" class="t">loader</text>
+<rect x="256" y="209.4" width="4" height="2.4" class="n" fill="#81e8bc"/>
+<text x="261.2" y="211.3" font-size="1.5" class="t">locker</text>
+<rect x="296" y="209.4" width="4" height="2.4" class="n" fill="#ef9a77"/>
+<text x="301.2" y="211.3" font-size="1.5" class="t">medbed</text>
+<rect x="336" y="209.4" width="4" height="2.4" class="n" fill="#9999f7"/>
+<text x="341.2" y="211.3" font-size="1.5" class="t">medcabinet</text>
+<rect x="376" y="209.4" width="4" height="2.4" class="n" fill="#a0e881"/>
+<text x="381.2" y="211.3" font-size="1.5" class="t">medscanner</text>
+<rect x="16" y="213" width="4" height="2.4" class="n" fill="#ef77be"/>
+<text x="21.2" y="214.9" font-size="1.5" class="t">medsupply</text>
+<rect x="56" y="213" width="4" height="2.4" class="n" fill="#99ecf7"/>
+<text x="61.2" y="214.9" font-size="1.5" class="t">medtool</text>
+<rect x="96" y="213" width="4" height="2.4" class="n" fill="#e8d681"/>
+<text x="101.2" y="214.9" font-size="1.5" class="t">microscope</text>
+<rect x="136" y="213" width="4" height="2.4" class="n" fill="#b777ef"/>
+<text x="141.2" y="214.9" font-size="1.5" class="t">noticeboard</text>
+<rect x="176" y="213" width="4" height="2.4" class="n" fill="#99f7b0"/>
+<text x="181.2" y="214.9" font-size="1.5" class="t">nozzle</text>
+<rect x="216" y="213" width="4" height="2.4" class="n" fill="#e88186"/>
+<text x="221.2" y="214.9" font-size="1.5" class="t">pallet</text>
+<rect x="256" y="213" width="4" height="2.4" class="n" fill="#77a0ef"/>
+<text x="261.2" y="214.9" font-size="1.5" class="t">panellight</text>
+<rect x="296" y="213" width="4" height="2.4" class="n" fill="#d4f799"/>
+<text x="301.2" y="214.9" font-size="1.5" class="t">particle</text>
+<rect x="336" y="213" width="4" height="2.4" class="n" fill="#e881e0"/>
+<text x="341.2" y="214.9" font-size="1.5" class="t">pillar</text>
+<rect x="376" y="213" width="4" height="2.4" class="n" fill="#77efd5"/>
+<text x="381.2" y="214.9" font-size="1.5" class="t">pipe</text>
+<rect x="16" y="216.6" width="4" height="2.4" class="n" fill="#f7c799"/>
+<text x="21.2" y="218.5" font-size="1.5" class="t">plant</text>
+<rect x="56" y="216.6" width="4" height="2.4" class="n" fill="#9681e8"/>
+<text x="61.2" y="218.5" font-size="1.5" class="t">planter</text>
+<rect x="96" y="216.6" width="4" height="2.4" class="n" fill="#82ef77"/>
+<text x="101.2" y="218.5" font-size="1.5" class="t">rack</text>
+<rect x="136" y="216.6" width="4" height="2.4" class="n" fill="#f799bd"/>
+<text x="141.2" y="218.5" font-size="1.5" class="t">railing</text>
+<rect x="176" y="216.6" width="4" height="2.4" class="n" fill="#81c6e8"/>
+<text x="181.2" y="218.5" font-size="1.5" class="t">reactor</text>
+<rect x="216" y="216.6" width="4" height="2.4" class="n" fill="#ebef77"/>
+<text x="221.2" y="218.5" font-size="1.5" class="t">router</text>
+<rect x="256" y="216.6" width="4" height="2.4" class="n" fill="#df99f7"/>
+<text x="261.2" y="218.5" font-size="1.5" class="t">safety</text>
+<rect x="296" y="216.6" width="4" height="2.4" class="n" fill="#81e8af"/>
+<text x="301.2" y="218.5" font-size="1.5" class="t">sciinstrument</text>
+<rect x="336" y="216.6" width="4" height="2.4" class="n" fill="#ef8a77"/>
+<text x="341.2" y="218.5" font-size="1.5" class="t">sconce</text>
+<rect x="376" y="216.6" width="4" height="2.4" class="n" fill="#99a5f7"/>
+<text x="381.2" y="218.5" font-size="1.5" class="t">scrubber</text>
+<rect x="16" y="220.2" width="4" height="2.4" class="n" fill="#ade881"/>
+<text x="21.2" y="222.1" font-size="1.5" class="t">seat</text>
+<rect x="56" y="220.2" width="4" height="2.4" class="n" fill="#ef77cd"/>
+<text x="61.2" y="222.1" font-size="1.5" class="t">shelving</text>
+<rect x="96" y="220.2" width="4" height="2.4" class="n" fill="#99f7f6"/>
+<text x="101.2" y="222.1" font-size="1.5" class="t">sign</text>
+<rect x="136" y="220.2" width="4" height="2.4" class="n" fill="#e8c981"/>
+<text x="141.2" y="222.1" font-size="1.5" class="t">specimen</text>
+<rect x="176" y="220.2" width="4" height="2.4" class="n" fill="#a877ef"/>
+<text x="181.2" y="222.1" font-size="1.5" class="t">spotlight</text>
+<rect x="216" y="220.2" width="4" height="2.4" class="n" fill="#99f7a4"/>
+<text x="221.2" y="222.1" font-size="1.5" class="t">storage</text>
+<rect x="256" y="220.2" width="4" height="2.4" class="n" fill="#e88193"/>
+<text x="261.2" y="222.1" font-size="1.5" class="t">storagebin</text>
+<rect x="296" y="220.2" width="4" height="2.4" class="n" fill="#77afef"/>
+<text x="301.2" y="222.1" font-size="1.5" class="t">striplight</text>
+<rect x="336" y="220.2" width="4" height="2.4" class="n" fill="#e0f799"/>
+<text x="341.2" y="222.1" font-size="1.5" class="t">suitrack</text>
+<rect x="376" y="220.2" width="4" height="2.4" class="n" fill="#e281e8"/>
+<text x="381.2" y="222.1" font-size="1.5" class="t">surgical</text>
+<rect x="16" y="223.8" width="4" height="2.4" class="n" fill="#77efc6"/>
+<text x="21.2" y="225.7" font-size="1.5" class="t">table</text>
+<rect x="56" y="223.8" width="4" height="2.4" class="n" fill="#f7bb99"/>
+<text x="61.2" y="225.7" font-size="1.5" class="t">tableware</text>
+<rect x="96" y="223.8" width="4" height="2.4" class="n" fill="#8981e8"/>
+<text x="101.2" y="225.7" font-size="1.5" class="t">tank</text>
+<rect x="136" y="223.8" width="4" height="2.4" class="n" fill="#92ef77"/>
+<text x="141.2" y="225.7" font-size="1.5" class="t">telescope</text>
+<rect x="176" y="223.8" width="4" height="2.4" class="n" fill="#f799c9"/>
+<text x="181.2" y="225.7" font-size="1.5" class="t">terminal</text>
+<rect x="216" y="223.8" width="4" height="2.4" class="n" fill="#81d3e8"/>
+<text x="221.2" y="225.7" font-size="1.5" class="t">toolbox</text>
+<rect x="256" y="223.8" width="4" height="2.4" class="n" fill="#efe477"/>
+<text x="261.2" y="225.7" font-size="1.5" class="t">turbine</text>
+<rect x="296" y="223.8" width="4" height="2.4" class="n" fill="#d399f7"/>
+<text x="301.2" y="225.7" font-size="1.5" class="t">valve</text>
+<rect x="336" y="223.8" width="4" height="2.4" class="n" fill="#81e8a2"/>
+<text x="341.2" y="225.7" font-size="1.5" class="t">vending</text>
+<rect x="376" y="223.8" width="4" height="2.4" class="n" fill="#ef7b77"/>
+<text x="381.2" y="225.7" font-size="1.5" class="t">wallpanel</text>
+<rect x="16" y="227.4" width="4" height="2.4" class="n" fill="#99b1f7"/>
+<text x="21.2" y="229.3" font-size="1.5" class="t">warnlight</text>
+<rect x="56" y="227.4" width="4" height="2.4" class="n" fill="#bae881"/>
+<text x="61.2" y="229.3" font-size="1.5" class="t">watertank</text>
+<rect x="96" y="227.4" width="4" height="2.4" class="n" fill="#ef77dd"/>
+<text x="101.2" y="229.3" font-size="1.5" class="t">weaponrack</text>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Drawing index, legend and symbols</text>
+<text x="299" y="264.6" font-size="2" class="t">SHEET INDEX, LINE WEIGHTS, HATCHES, SYMBOLS AND FURNITURE FAMILY COLOURS</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">G-16</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">NTS</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Index</text>
+</svg>

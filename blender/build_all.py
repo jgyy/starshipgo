@@ -51,9 +51,18 @@ def plan(families):
     return out
 
 
+def missing_textures(tex_dir, textures):
+    """Every texture file the generators produce that does not exist yet."""
+    want = [os.path.join("screens", n + ".png") for n in textures.SCREENS]
+    for n in textures.SURFACES:
+        want += [os.path.join("surfaces", f"{n}_{k}.png") for k in ("albedo", "normal", "orm")]
+    want += [os.path.join("sky", "stars.png"), os.path.join("sky", "planet.png")]
+    return [w for w in want if not os.path.exists(os.path.join(tex_dir, w))]
+
+
 def run_shard(args, shard, nshards):
     import bpy
-    from starship import kit, textures
+    from starship import kit
     bpy.ops.wm.read_factory_settings(use_empty=True)
     out = os.path.abspath(args.out)
     kit.TEXTURE_DIR = os.path.join(out, "textures")
@@ -86,7 +95,18 @@ def run_shard(args, shard, nshards):
             print(f"[shard {shard}] {len(catalog)} models, {time.time()-t0:.0f}s", flush=True)
     part = os.path.join(out, "data", f"catalog.part{shard}.json")
     os.makedirs(os.path.dirname(part), exist_ok=True)
-    json.dump(catalog, open(part, "w"))
+    with open(part, "w") as fh:
+        json.dump(catalog, fh)
+    # bevel failures are swallowed by the kit (geometry stays un-bevelled): report one line per model
+    per_model = {}
+    for mname, prim in kit.BEVEL_FAILURES:
+        per_model.setdefault(mname, []).append(prim)
+    for mname, prims in sorted(per_model.items()):
+        print(f"WARNING [shard {shard}] {mname}: {len(prims)} bevel failure(s) ({', '.join(sorted(set(prims)))})",
+              flush=True)
+    if per_model:
+        print(f"[shard {shard}] bevel failures in {len(per_model)} model(s), "
+              f"{len(kit.BEVEL_FAILURES)} primitive(s) total", flush=True)
 
 
 def main():
@@ -127,10 +147,9 @@ def main():
     if args.check:
         return
 
-    import bpy  # noqa
     from starship import textures
     tex_dir = os.path.join(out, "textures")
-    if not os.path.exists(os.path.join(tex_dir, "screens", "radar.png")):
+    if missing_textures(tex_dir, textures):
         print("generating textures ...")
         textures.make_screens(tex_dir)
         textures.make_surfaces(tex_dir)
@@ -145,12 +164,13 @@ def main():
     ddir = os.path.join(out, "data")
     for k in range(args.jobs):
         p = os.path.join(ddir, f"catalog.part{k}.json")
-        catalog += json.load(open(p))
+        with open(p) as fh:
+            catalog += json.load(fh)
         os.remove(p)
     catalog.sort(key=lambda c: (c["category"], c["id"]))
     if args.only in ("", "."):
-        json.dump({"version": 1, "count": len(catalog), "models": catalog},
-                  open(os.path.join(ddir, "catalog.json"), "w"), indent=1)
+        with open(os.path.join(ddir, "catalog.json"), "w") as fh:
+            json.dump({"version": 1, "count": len(catalog), "models": catalog}, fh, indent=1)
     print(f"built {len(catalog)} GLBs in {time.time()-t0:.0f}s, "
           f"{sum(c['bytes'] for c in catalog)/1e6:.1f} MB, {sum(c['tris'] for c in catalog)} tris")
 

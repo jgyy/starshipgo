@@ -55,8 +55,11 @@ power nav alert tactical systems lifesigns comm medical periodic hazard diagnost
 ## Budget & quality
 * Realistic proportions, chamfered edges (`bevel` 0.005-0.03 on visible edges only), panel
   seams, bolts/greebles, emissive accents, hazard stripes, labels via screens. Avoid a
-  bare-primitive look; but stay economical: **typically 300-2500 triangles, < 60 KB per GLB**
-  (bevel only large visible edges; use `seg` 12-24 for cylinders, 6-10 for small ones).
+  bare-primitive look; but stay economical: **typically 300-2500 triangles and well under 100 KB per GLB**
+  (hard limit 400 KB, enforced by `tests/test_project.py`; bevel only large visible edges; use `seg` 12-24
+  for cylinders, 6-10 for small ones).
+* Origins follow the mount table above and are checked by `tests/test_blender_tools.py`: a floor model's lowest
+  point is y = 0, a wall model starts at the wall plane (z >= 0), a ceiling model hangs down from its origin.
 * No humanoid figures. Nothing floating: parts must connect / rest on each other.
 * Moving parts (doors etc.) go in separate `group()`s with sensible pivots.
 * Deterministic: only use `rng` (never `random` global / time).
@@ -67,4 +70,6 @@ python3 blender/build_all.py --out /tmp/$NAME --only '^(cat1|cat2)_' --jobs 1   
 GODOT=/tmp/godot.sh tools/preview/run.sh /tmp/$NAME.png /tmp/$NAME/models/cat1/*.glb  # contact sheet (view the PNG!)
 ```
 Look at the contact sheet and iterate until every variant reads clearly as what it is.
-Do not edit `kit.py`, `textures.py`, `build_all.py` or other modules; do not run git.
+
+The architectural assets (stair flight, guard, sign, hull fascia) are generated separately by
+`blender/build_arch.py` (see `blender/ARCH.md`) and are not part of the 1000-model catalogue.

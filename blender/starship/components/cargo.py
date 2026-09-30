@@ -466,7 +466,7 @@ def _c_pod_vert(m, r):
     m.cyl(0.7, 0.08, (0, 0.04, 0), "hull_dark", seg=8)
     m.cyl(R, H - 0.4, (0, 0.08 + (H - 0.4) / 2, 0), "cg_darkgreen", seg=20)
     m.sphere(R, (0, 0.08 + H - 0.4, 0), "cg_darkgreen", 20, 10, (1, 0.5, 1))
-    m.sphere(R * 0.95, (0, 0.08, 0), "cg_darkgreen", 20, 10, (1, 0.35, 1))
+    m.sphere(R * 0.95, (0, 0.1663, 0), "cg_darkgreen", 20, 10, (1, 0.35, 1))
     for y in (0.45, 1.0, 1.55):
         m.torus(R + 0.005, 0.02, (0, y, 0), "steel", seg=20, tseg=6)
     m.box((0.5, 0.9, 0.06), (0, 0.85, R - 0.01), "hull_mid", 0.02)
@@ -2526,6 +2526,7 @@ def _h_launch_rail(m, r):
     m.box((0.5, 0.2, 0.2), (0, 0.4, -L / 2 - 0.1), "black_metal", 0.02)
     hazard(m, "f", (0, 0.14, L / 2 - 0.0), 0, 0.0, 0.0, 1.0, 0.1)
     m.box((0.12, 0.12, 0.05), (0.7, 0.2, L / 2 - 0.15), "em_amber")
+    m.ground()  # the arch rings used to sink 0.3 m below the floor
 
 
 def _h_dock_clamp(m, r):

@@ -5,6 +5,10 @@ extends SceneTree
 
 func _init() -> void:
 	var args := OS.get_cmdline_user_args()
+	if args.size() < 2:
+		printerr("usage: godot --path tools/preview -s res://preview.gd -- out.png a.glb [b.glb ...]")
+		quit(2)
+		return
 	var out_path: String = args[0]
 	var files: Array = args.slice(1)
 	var n := files.size()

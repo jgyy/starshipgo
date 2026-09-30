@@ -6,19 +6,28 @@ on:
   pull_request:
   workflow_dispatch:
     inputs:
-      godot_version:
-        description: "Godot version to test with"
-        default: "4.6.3"
+      godot_tag:
+        description: "Godot release tag to test with (github.com/godotengine/godot-builds)"
+        default: "4.7-stable"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 env:
-  # Godot release used for the import / smoke test / screenshots (override via workflow_dispatch).
-  GODOT_VERSION: ${{ github.event.inputs.godot_version || '4.6.3' }}
-  PYTHON_VERSION: "3.11"      # bpy (headless Blender 5.x module) needs Python 3.11
+  # Godot release used for the import / smoke test / stair test / screenshots / benchmark (override via "Run workflow").
+  GODOT_TAG: ${{ github.event.inputs.godot_tag || '4.7-stable' }}
+  # The latest headless Blender on PyPI (bpy 5.2) needs Python 3.13.
+  PYTHON_VERSION: "3.13"
 
 jobs:
   python:
-    name: Scripts and layout
+    name: Scripts, layout, audit, BOM and drawings
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,15 +35,34 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Byte-compile all Python
         run: python -m compileall -q blender tools tests
-      - name: Committed content invariants (1000 GLBs, ship layout)
+      - name: Lint (pyflakes; the recipes' star imports and the 1000 legacy component modules are exempt)
+        run: |
+          pip install pyflakes
+          python -m pyflakes tools tests blender > /tmp/pyflakes.txt || true
+          grep -v -E "import \*|star imports|\.\*' imported but unused|^blender/starship/components/" /tmp/pyflakes.txt | tee /tmp/pyflakes_real.txt || true
+          test ! -s /tmp/pyflakes_real.txt
+      - name: Component plan is valid (exactly 1000 unique models, no bpy needed)
+        run: python blender/build_all.py --check
+      - name: Unit tests (catalog, layout engine, audit, walkability, drawings, bundles)
         run: python -m unittest discover -s tests -v
+      - name: Layout audit - no overlaps, blocked windows or out-of-place equipment
+        run: python tools/layout/audit.py --summary
       - name: Ship layout is reproducible from the catalog
         run: |
           python tools/layout/generate_ship.py
           git diff --exit-code godot/data/ship.json
+      - name: Bill of materials is up to date
+        run: |
+          python tools/layout/bom.py
+          git diff --exit-code docs/BOM.md docs/bom
+      - name: Drawings are up to date
+        run: |
+          python tools/draft/draft.py --out docs/drafts
+          git diff --exit-code docs/drafts
+          test "$(ls docs/drafts/*.svg | wc -l)" -ge 100
 
   blender:
-    name: Blender headless (1000 GLBs)
+    name: Blender headless (1000 models + stairs + hull)
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -42,56 +70,91 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-blender.txt
       - name: Install headless Blender (bpy)
         run: |
           sudo apt-get update
           sudo apt-get install -y libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libsm6 libxkbcommon0
-          pip install bpy numpy
+          pip install -r requirements-blender.txt
           python -c "import bpy; print('Blender', bpy.app.version_string)"
-      - name: Validate the component plan (exactly 1000 unique models)
-        run: python blender/build_all.py --check
-      - name: Regenerate every GLB and texture
+      - name: Regenerate every component model and texture
         run: python blender/build_all.py --out build/godot --jobs 4
-      - name: Regenerated catalog matches the committed one
+      - name: Audio is reproducible (committed WAVs are what the generator writes)
+        run: |
+          python tools/audio/generate_audio.py build/audio
+          for f in build/audio/*.wav; do cmp "$f" "godot/audio/$(basename "$f")"; done
+      - name: Regenerate the architectural assets (stair flights, guard, sign, hull fascia)
+        run: python blender/build_arch.py --out build/godot
+      - name: Regenerated catalog matches the committed one (ids, mounts, sizes, origins)
         run: |
           python - <<'PY'
           import json
-          a = json.load(open("build/godot/data/catalog.json"))["models"]
-          b = json.load(open("godot/data/catalog.json"))["models"]
-          assert [m["id"] for m in a] == [m["id"] for m in b], "model id list changed - rerun build_all.py and commit"
-          assert len(a) == 1000
+          a = {m["id"]: m for m in json.load(open("build/godot/data/catalog.json"))["models"]}
+          b = {m["id"]: m for m in json.load(open("godot/data/catalog.json"))["models"]}
+          assert a.keys() == b.keys() and len(a) == 1000, "model id list changed - rerun build_all.py and commit"
+          bad = []
+          for k, m in a.items():
+              c = b[k]
+              if m["mount"] != c["mount"] or m["category"] != c["category"]:
+                  bad.append((k, "mount/category"))
+              for f in ("size", "bounds_min", "bounds_max"):
+                  if any(abs(x - y) > 0.005 for x, y in zip(m[f], c[f])):
+                      bad.append((k, f))
+          assert not bad, f"{len(bad)} models differ from the committed catalog, e.g. {bad[:5]}"
           print("catalog ok:", len(a), "models")
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: regenerated-glbs
-          path: build/godot/models
+          name: regenerated-assets
+          path: |
+            build/godot/models
+            build/godot/arch
           retention-days: 7
 
   godot:
-    name: Godot import, smoke test and screenshots
+    name: Godot import, smoke + stair tests, screenshots, benchmark
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - uses: chickensoft-games/setup-godot@v2
-        with:
-          version: ${{ env.GODOT_VERSION }}
-          use-dotnet: false
-      - name: Import project (1000 GLBs + textures)
+      - name: Install Godot ${{ env.GODOT_TAG }}
+        run: |
+          curl -fsSL -o godot.zip "https://github.com/godotengine/godot-builds/releases/download/${GODOT_TAG}/Godot_v${GODOT_TAG}_linux.x86_64.zip"
+          unzip -q godot.zip
+          sudo mv "Godot_v${GODOT_TAG}_linux.x86_64" /usr/local/bin/godot
+          godot --version
+      - name: Import project (1000 models, stairs, textures)
         run: godot --headless --path godot --import
       - name: Smoke test - build the whole ship from data
         run: godot --headless --path godot -s res://tests/smoke_test.gd
+      - name: Stair test - walk up and down both stair towers through all three decks
+        run: godot --headless --path godot -s res://tests/stair_test.gd
       - name: Install software rendering stack
         run: sudo apt-get update && sudo apt-get install -y xvfb mesa-vulkan-drivers libvulkan1
-      - name: Render first-person tour screenshots
-        continue-on-error: true
+      - name: Render first-person tour screenshots (must succeed and write every file)
         run: |
           xvfb-run -a -s "-screen 0 1600x900x24" \
             godot --path godot --rendering-driver vulkan --resolution 1280x720 -- --tour=$PWD/shots \
-            --no-probes --no-fog --only=01_bridge,08_main_corridor,09_mess_hall,11_medical_bay,18_main_engineering,24_hangar_bay
+            --no-probes --only=01_bridge,02_corF1,04_conf,08_mess,10_medbay,17_eng,22_hangar,23_towerA2,X1_bow_quarter,X4_plan_view
+          test "$(ls shots/*.png | wc -l)" -ge 10
+      - name: Benchmark - draw calls and frame time along the tour cameras
+        run: |
+          xvfb-run -a -s "-screen 0 1600x900x24" \
+            godot --path godot --rendering-driver vulkan --resolution 960x540 -- --bench=$PWD/bench.json --no-probes
+          python - <<'PY'
+          import json
+          b = json.load(open("bench.json"))
+          print({k: v for k, v in b.items() if k != "per_camera"})
+          # renderer independent regression guards (now ~355 calls / 43k primitives; the original game drew ~17,950 / 2.4 M)
+          assert b["mean_draw_calls"] < 600, b["mean_draw_calls"]
+          assert b["mean_primitives"] < 150000, b["mean_primitives"]
+          PY
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: screenshots
-          path: shots
+          name: screenshots-and-benchmark
+          path: |
+            shots
+            bench.json
           if-no-files-found: warn

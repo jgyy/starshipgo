@@ -486,7 +486,7 @@ def cell_module(m, i, label, rng):
         m.box((0.2, 0.1, 0.01), (-0.2, 1.85, d / 2 + 0.006), "paint_white")
     else:  # contraband x-ray table
         m.box((1.8, 0.1, 0.8), (0, 0.5, 0), "hull_dark", 0.01)
-        m.box((1.7, 0.4, 0.7), (0, 0.25, 0), "hull_mid", 0.01)
+        m.box((1.7, 0.5, 0.7), (0, 0.25, 0), "hull_mid", 0.01)  # base now reaches the floor
         m.box((1.9, 0.03, 0.5), (0, 0.57, 0.0), "rubber")
         m.box((0.9, 0.7, 0.9), (0.0, 0.94, 0), "hull_mid", 0.03)
         for z in (0.45, -0.45):
@@ -557,7 +557,7 @@ def camera_wall(m, i, label, rng):
 def camera_ceiling(m, i, label, rng):
     if i == 0:  # dome
         m.cyl(0.16, 0.03, (0, -0.015, 0), "plastic_white", seg=20, bevel=0.004)
-        m.sphere(0.13, (0, -0.04, 0), "glass_dark", 20, 10, scale=(1, 0.85, 1))
+        m.sphere(0.13, (0, -0.04, 0), "glass_dark", 20, 10, scale=(1, 0.85, 1), clip_y=-0.03)  # lower dome only
         m.box((0.05, 0.05, 0.08), (0, -0.09, 0.02), "black_metal", 0.005)
         m.cyl(0.02, 0.03, (0, -0.1, 0.07), "black_metal", axis="z", seg=8)
         m.cyl(0.012, 0.01, (0, -0.1, 0.09), "glass", axis="z", seg=8)

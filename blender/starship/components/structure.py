@@ -274,7 +274,7 @@ def door_extra(m, i, label, rng):
     elif i == 5:  # cargo door: corrugated
         _rect_frame(m, "steel", 0.16, DT)
         for s in (-1, 1):
-            for yy in (0.0, DH):
+            for yy in (0.1, DH):  # lower post rests on the floor (was centred on y=0, sunk 0.1)
                 m.box((0.2, 0.2, DT + 0.04), (s * 1.08, yy, 0), "hazard_yellow", 0.01)
         m.box((0.8, 0.16, 0.03), (0, DH + 0.12, DT / 2 + 0.01), "st_khaki")
         for k in range(3):
@@ -964,7 +964,7 @@ def ceilingpanel_fam(m, i, label, rng):
         m.box((1.0, 0.03, 1.0), (0, -0.015, 0), "hull_light", 0.004)
         m.cyl(0.36, 0.05, (0, -0.055, 0), "steel", "y", 20)
         m.torus(0.33, 0.03, (0, -0.08, 0), "chrome", "y", 20, 6)
-        m.sphere(0.3, (0, -0.075, 0), "em_warm", 16, 8, (1, 0.5, 1))
+        m.sphere(0.3, (0, -0.075, 0), "em_warm", 16, 8, (1, 0.5, 1), clip_y=-0.03)  # lower dome only
         for k in range(4):
             a = PI / 2 * k + PI / 4
             m.cyl(0.02, 0.01, (0.42 * math.cos(a), -0.035, 0.42 * math.sin(a)), "steel", "y", 6)
@@ -1267,7 +1267,7 @@ def _pipe(m, S, kind, rng):
         _flange(m, S, -0.9, u, 0, r)
         _flange(m, S, 0.9, u, 0, r)
     elif kind == "valve wheel":
-        r, u = 0.06, 0.1
+        r, u = 0.06, 0.17  # wheel (r 0.15) must clear the wall plane
         _hpipe(m, S, -1, 1, u, 0, r, "steel")
         m.sphere(0.13, S.p(0, u, 0), "brass", 12, 8)
         _flange(m, S, -0.2, u, 0, r, "brass")

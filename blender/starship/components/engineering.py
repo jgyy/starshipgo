@@ -384,7 +384,7 @@ def _(m, rng):
     m.box((0.55, 0.3, 0.16), (0, 0.2, 0.1), "black_metal", 0.02)
     leds(m, -0.18, 0.18, 0.2, 0.19, ["em_cyan", "em_amber", "em_cyan"])
     hazard(m, -0.25, 0.25, -1.12, -1.02, 0.12, n=5)
-    flange(m, (0, 1.2, 0.09), 0.14, "y")
+    flange(m, (0, 1.2, 0.09), 0.066, "y")  # collar must not reach behind the wall plane
 
 
 @part("coil", "Dilithium Crystal Chamber")
