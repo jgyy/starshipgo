@@ -1,0 +1,97 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      godot_version:
+        description: "Godot version to test with"
+        default: "4.6.3"
+
+env:
+  # Godot release used for the import / smoke test / screenshots (override via workflow_dispatch).
+  GODOT_VERSION: ${{ github.event.inputs.godot_version || '4.6.3' }}
+  PYTHON_VERSION: "3.11"      # bpy (headless Blender 5.x module) needs Python 3.11
+
+jobs:
+  python:
+    name: Scripts and layout
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Byte-compile all Python
+        run: python -m compileall -q blender tools tests
+      - name: Committed content invariants (1000 GLBs, ship layout)
+        run: python -m unittest discover -s tests -v
+      - name: Ship layout is reproducible from the catalog
+        run: |
+          python tools/layout/generate_ship.py
+          git diff --exit-code godot/data/ship.json
+
+  blender:
+    name: Blender headless (1000 GLBs)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install headless Blender (bpy)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libsm6 libxkbcommon0
+          pip install bpy numpy
+          python -c "import bpy; print('Blender', bpy.app.version_string)"
+      - name: Validate the component plan (exactly 1000 unique models)
+        run: python blender/build_all.py --check
+      - name: Regenerate every GLB and texture
+        run: python blender/build_all.py --out build/godot --jobs 4
+      - name: Regenerated catalog matches the committed one
+        run: |
+          python - <<'PY'
+          import json
+          a = json.load(open("build/godot/data/catalog.json"))["models"]
+          b = json.load(open("godot/data/catalog.json"))["models"]
+          assert [m["id"] for m in a] == [m["id"] for m in b], "model id list changed - rerun build_all.py and commit"
+          assert len(a) == 1000
+          print("catalog ok:", len(a), "models")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: regenerated-glbs
+          path: build/godot/models
+          retention-days: 7
+
+  godot:
+    name: Godot import, smoke test and screenshots
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: chickensoft-games/setup-godot@v2
+        with:
+          version: ${{ env.GODOT_VERSION }}
+          use-dotnet: false
+      - name: Import project (1000 GLBs + textures)
+        run: godot --headless --path godot --import
+      - name: Smoke test - build the whole ship from data
+        run: godot --headless --path godot -s res://tests/smoke_test.gd
+      - name: Install software rendering stack
+        run: sudo apt-get update && sudo apt-get install -y xvfb mesa-vulkan-drivers libvulkan1
+      - name: Render first-person tour screenshots
+        continue-on-error: true
+        run: |
+          xvfb-run -a -s "-screen 0 1600x900x24" \
+            godot --path godot --rendering-driver vulkan --resolution 1280x720 -- --tour=$PWD/shots \
+            --no-probes --no-fog --only=01_bridge,08_main_corridor,09_mess_hall,11_medical_bay,18_main_engineering,24_hangar_bay
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: shots
+          if-no-files-found: warn
