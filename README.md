@@ -154,10 +154,10 @@ absolute times are slow, but it is the same machine and workload for both column
 | Draw calls per frame | 17,950 | 355 | 51x fewer |
 | Objects per frame | 34,955 | 426 | 82x fewer |
 | Primitives per frame | 2,387,619 | 43,292 | 55x fewer |
-| Frame time (llvmpipe) | 2,542 ms | 245 ms | 10x faster |
+| Frame time (llvmpipe) | 1,650 ms | 245 ms | 7x faster |
 | Scene nodes | 16,580 | 3,512 | 5x fewer |
 | Static memory | 332 MB | 163 MB | |
-| Load time | 4,484 ms | 1,883 ms | |
+| Load time | 2,909 ms | 1,883 ms | |
 
 ```bash
 godot --path godot --rendering-driver vulkan --resolution 960x540 -- --bench=/tmp/bench.json --no-probes
