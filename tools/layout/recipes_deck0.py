@@ -486,3 +486,87 @@ def f_library(R, B):
     wi(R, B, "E", "safety_fire_extinguisher", 10.4, y=1.1, quiet=True)
     wi(R, B, "E", "panellight_illuminated_logo_plate", 3.9, y=1.6, quiet=True)
     dsign(R, B, "E", 7.3, "dept_quarters", y=3.1)
+
+
+# ----------------------------------------------------------------------------------------------- ARBORETUM
+def f_arbor(R, B):
+    R.describe(
+        "The ship's garden under the stern dome: food herbs, ornamental beds and a koi tank in a green, humid room where the crew "
+        "come to sit and drink tea; botanists tend the beds and examine specimens at a small microscope bench.",
+        basis="62 m2, 3.6 m high, curved hull walls with five windows.  Production racks (tomato, herbs, microgreens, grow tower, mushrooms, "
+              "wheat) along the north wall; three raised flower beds and the garden path in the middle; tea terrace at the west end; "
+              "koi tank and benches under the windows; UV water purifier and microscope bench against the east wall.  The 1.6 m path from "
+              "the door to the tea terrace is kept clear; nothing taller than 0.6 m stands within 0.5 m of a window.",
+        crew=8, adjacency="Aft spine corridor through the east portal; hull windows to the stern and port; the hydroponics bay "
+                          "(sci/hydro) one deck below feeds its water and nutrients.")
+    R.keep_clear((-6.3, 13.95, -3.5, 15.75), "garden path from the door to the tea terrace")
+    R.line("Production racks along the north wall",
+           "Herb shelves, a microgreen rack, a vertical grow tower, a tomato vine rack and a mushroom shelf along the "
+           "north wall feed the galley with fresh produce; the wall carries the water and nutrient lines and lets the racks share them.")
+    seq(R, B, "N", ["planter_herb_shelf_rack", "planter_microgreen_rack", "planter_vertical_grow_tower",
+                    "planter_tomato_vine_rack", "planter_mushroom_shelf"], -10.7, gap=0.04)
+    R.line("Grow lights over the racks",
+           "Full-spectrum bar panels hang over each rack position: plants need roughly 12 hours a day of 200 umol of light that the dim "
+           "ship lighting cannot give; each panel also gives the pink glow that characterises the room.")
+    for x in (-9.9, -8.2, -5.9, -3.8, -2.7):
+        _ceil(R, B, "planter_grow_light_bar_panel", x, 11.9)
+    R.line("Raised flower beds",
+           "Three flower beds give colour and fragrance and take the sun from the windows; they stand between the racks and the "
+           "path, 0.9 m clear of both, so a gardener can weed from the path side.")
+    beds = [put(R, B, "planter_flower_bed_planter", x, 13.15, 0.0, quiet=True) for x in (-9.2, -7.4, -5.6)]
+    for x in (-8.3, -6.5):
+        _ceil(R, B, "planter_hanging_grow_light_array", x, 13.1)
+    R.line("Dwarf trees and ornamentals",
+           "A dwarf tree in a tub and a strawberry planter on the south side of the path form the 'orchard' and give height; they stand "
+           "away from the hull windows so that the glass stays clear.")
+    first(R, B, "planter_dwarf_tree_tub", [(-5.3, 16.7, 0.0), (-5.0, 16.7, 0.0)])
+    first(R, B, "planter_strawberry_tiered_planter", [(-3.7, 16.4, 0.0), (-3.8, 16.2, 0.0)], quiet=True)
+    R.line("Koi tank and water purifier",
+           "The water feature: a koi aquarium at the stern end of the path makes the sound and sparkle of water, its fish clean the "
+           "irrigation water, and the UV water purifier on the east wall sterilises it and returns it to the beds.")
+    first(R, B, "specimen_aquarium_tank", [(-7.0, 16.7, 0.0), (-7.2, 16.6, 0.0), (-7.4, 16.4, 0.0)])
+    wall(R, B, "E", "watertank_uv_water_purifier", 11.52, quiet=True)
+    R.line("Tea terrace",
+           "A round table with an armchair at the west end of the path is the garden's tea place: the table is set with a teapot "
+           "and cups and has a bonsai in the middle; the path leads straight to it.")
+    tt = first(R, B, "table_round_mess_table", [(-7.3, 14.85, 0.0), (-7.4, 14.85, 0.0)])
+    if tt:
+        x0, z0, x1, z1 = tt["_fp"]
+        xm, zm = (x0 + x1) / 2, (z0 + z1) / 2
+        put(R, B, "chair_armchair", x0 - 0.55, zm, 90.0, quiet=True)
+        top(R, B, tt, ["tableware_teapot", "plant_bonsai", "tableware_cups_and_mugs"], step=0.3, quiet=True)
+    R.line("Benches under the windows",
+           "Low benches (under 0.5 m, so they do not block the glass) sit below the hull windows: the view of the stars and the stern "
+           "wake is the best thing in the room.")
+    for side, mid, a in (("D1", "bench_locker_room_bench", 0.98), ("D2", "bench_locker_room_bench", 0.92),
+                         ("S", "bench_mess_bench", -4.75), ("D4", "bench_locker_room_bench", 1.05)):
+        wall(R, B, side, mid, a, quiet=True)
+    R.line("Microscope bench",
+           "Botanists check leaf, root and water samples at a bench against the east wall with a microscope, a stereo scope and sample jars; "
+           "it is next to the water purifier and the beds so that samples do not travel.")
+    lb = wall(R, B, "E", "labbench_sample_prep_table", 17.0, quiet=True)
+    top(R, B, lb, ["microscope_optical_microscope", "microscope_stereo_microscope", "specimen_specimen_jar_set"], step=0.45, quiet=True)
+    if lb:
+        put(R, B, "labbench_lab_stool", lb["_fp"][0] - 0.5, (lb["_fp"][1] + lb["_fp"][3]) / 2, 90.0, quiet=True)
+    R.line("Greenery",
+           "Ficus trees and ferns fill the corners and a moss wall panel above the benches gives a green wall.")
+    first(R, B, "plant_ficus_tree", [(-12.0, 12.9, 0.0), (-11.6, 12.9, 0.0)], quiet=True)
+    first(R, B, "plant_fern", [(-12.0, 11.8, 0.0)], quiet=True)
+    wi(R, B, "E", "plant_moss_wall_panel", 15.0 + 2.45, y=1.7, quiet=True)
+    for x, z in ((-6.5, 15.0), (-4.5, 15.0)):
+        _ceil(R, B, "plant_hanging_plant", x, z)
+    R.line("Wall lights between the windows",
+           "Small frosted wall lights on the piers between the windows make the garden glow at night without lighting up the glass.")
+    _sconces_between_windows(R, B, ["D0", "D1", "D2", "D4"], mid="sconce_frosted_glass_shell", y=2.0)
+    R.line("Daylight and grow lighting",
+           "Bright daylight-white downlights give the plants a full spectrum; extra pink grow-light omni lights over the beds and the cool "
+           "water light above the koi tank give the room its characteristic glow.")
+    _lights(R, B, spacing=3.2, energy=1.1, color="#f2ffe6", x_margin=1.0)
+    R.omni(-7.4, R.y + 2.8, 12.8, color="#ff7ad0", energy=1.0, rng_=5.0)
+    R.omni(-4.5, R.y + 2.8, 12.4, color="#ff7ad0", energy=0.8, rng_=4.5)
+    R.omni(-7.2, R.y + 1.8, 16.7, color="#59d0ff", energy=0.6, rng_=3.5)
+    R.omni(-8.0, R.y + 2.6, 14.8, color="#fff2cf", energy=0.7, rng_=4.0)
+    R.line("Safety and signs",
+           "Extinguisher by the door, a hose-down panel note and the science sign; a wet-floor stand by the koi tank.")
+    wi(R, B, "E", "safety_fire_extinguisher", 11.3, y=1.1, quiet=True)
+    dsign(R, B, "E", 14.5, "dept_science", y=3.1)
