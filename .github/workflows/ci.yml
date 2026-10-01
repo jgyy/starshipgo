@@ -43,8 +43,10 @@ jobs:
           test ! -s /tmp/pyflakes_real.txt
       - name: Component plan is valid (exactly 1000 unique models, no bpy needed)
         run: python blender/build_all.py --check
-      - name: Unit tests (catalog, layout engine, audit, walkability, drawings, bundles)
-        run: python -m unittest discover -s tests -v
+      - name: Unit tests (catalog, layout engine, audit, walkability, drawings, bundles, texture pixels)
+        run: |
+          pip install numpy pillow
+          python -m unittest discover -s tests -v
       - name: Layout audit - no overlaps, blocked windows or out-of-place equipment
         run: python tools/layout/audit.py --summary
       - name: Ship layout is reproducible from the catalog

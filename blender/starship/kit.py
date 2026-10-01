@@ -14,6 +14,8 @@ import math
 import os
 import random
 
+from . import screen_families
+
 try:  # bpy is only needed to build geometry; plan/--check work on a bare Python
     import bpy  # noqa: F401  (must precede bmesh)
     import bmesh
@@ -332,6 +334,7 @@ class Model:
     def quad(self, size, pos=(0, 0, 0), mat="hull_mid", rot=(0, 0, 0), uv=True):
         """Single-sided quad in local XY facing +Z, with UVs 0..1 (v up)."""
         bm = self.cur["bm"]
+        mat = screen_families.resolve(mat, self.name)       # themed screen variant (see screen_families.py)
         M = _gm(pos, rot)
         w, h = size[0] / 2, size[1] / 2
         pts = [(-w, -h, 0), (w, -h, 0), (w, h, 0), (-w, h, 0)]

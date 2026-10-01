@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hull as hulllib  # noqa: E402
 from shiplib import Catalog, Room, Ship
 from dressing import look  # noqa: E402
+import themes  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -552,6 +553,8 @@ def main():
     B = build(cat)
     S = B.ship
     rooms = [r.to_json() for r in S.rooms.values()]
+    for r in rooms:
+        r["mats"] = themes.theme_for(r["id"], r["dept"])
     total = sum(len(r["props"]) for r in rooms) + len(S.doors)
     bom_lines = sum(len(r["bom"]) for r in rooms)
     out = {"version": 2, "decks": S.decks, "hull": {str(k): [[x, z] for x, z in v] for k, v in S.hull.items()},
