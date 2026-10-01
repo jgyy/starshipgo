@@ -579,6 +579,29 @@ class DraftTests(unittest.TestCase):
         self.assertNotIn("F-F", top)                           # a "4000 F-F" dimension to a floor that does not exist
         self.assertIn("4000 F-F", mid)
 
+    def test_P051_general_arrangement_dimensions_come_from_the_ship_data(self):
+        import sheets_ga
+        with open(SHIP_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        for pts in data["hull"].values():
+            for p in pts:
+                p[0] *= 2.0
+        for d in data["decks"]:
+            d["y"] = {1: 10.0, 2: 5.0, 3: 0.0}[d["id"]]
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "big.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f)
+            ship = model.Ship(path, CAT_PATH)
+        lines = sheets_ga.hull_lines(ship).render()
+        self.assertIn("BEAM 52000", lines)                                        # "BEAM 26000" was a literal
+        self.assertNotIn("BEAM 26000", lines)
+        profile = sheets_ga.profile_sheet(ship).render()
+        self.assertIn(">5000<", profile)                                          # deck pitch from the decks, not "4000"
+        self.assertNotIn(">4000<", profile)
+        self.assertEqual(sheets_ga.floor_to_floor(ship, 5.0), "5000 mm")
+        self.assertEqual(sheets_ga.floor_to_floor(ship, 10.0), "- (top deck)")
+
     def test_P048_a_ship_without_stairs_still_gets_its_drawings(self):
         with open(SHIP_PATH, encoding="utf-8") as f:
             data = json.load(f)

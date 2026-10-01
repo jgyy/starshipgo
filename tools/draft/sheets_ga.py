@@ -133,6 +133,12 @@ def ga_symbol_key(sh, x, y):
     return y + 5
 
 
+def floor_to_floor(ship, y):
+    """Height from the floor at level y to the next deck above, or '-' on the top deck."""
+    above = [d["y"] for d in ship.decks if d["y"] > y + 1e-6]
+    return "%d mm" % round((min(above) - y) * 1000) if above else "- (top deck)"
+
+
 def deck_ga(ship, deck):
     cat = ship.cat
     num = "G-%02d" % deck
@@ -208,7 +214,7 @@ def deck_ga(ship, deck):
     sh.text(x + 106, y + 2.6, "%.1f m2" % tot, 1.9, "end", bold=True)
     y += 10
     # deck facts
-    facts = [("Floor level (FFL)", "%+.3f" % y0), ("Floor to floor", "4000 mm"), ("Hull area (deck)", "%.1f m2" % abs(poly_area(ship.hull[deck]))),
+    facts = [("Floor level (FFL)", "%+.3f" % y0), ("Floor to floor", floor_to_floor(ship, y0)), ("Hull area (deck)", "%.1f m2" % abs(poly_area(ship.hull[deck]))),
              ("Overall length", "%.1f m" % (hz1 - hz0)), ("Beam (max)", "%.1f m" % (hx1 - hx0)),
              ("Doors / arches", str(sum(1 for d in ship.door_list if d["deck"] == deck))),
              ("Windows", str(sum(1 for w in ship.win_list if w["deck"] == deck))),
@@ -229,7 +235,7 @@ def hull_lines(ship):
                slug="hull_lines_plan")
     s = 1000.0 / 300
     bx0, bz0, bx1, bz1 = ship.bounds(None)
-    ox = 14 + 32 + 13 * s
+    ox = 14 + 32 + bx1 * s
     oy = 8 + 28 - bz0 * s
     pv = PV(s, ox, oy, 0, 0)
     styles = {1: ("m", "#dfe7f5"), 2: ("dsh", "none"), 3: ("n", "#eef0f2")}
@@ -250,8 +256,8 @@ def hull_lines(ship):
         k += 1
     sh.line(pv.xy(0, 0)[0], pv.xy(0, bz0)[1] - 8, pv.xy(0, 0)[0], pv.xy(0, bz1)[1] + 4, "cl")
     sh.text(pv.xy(0, 0)[0], pv.xy(0, bz0)[1] - 8.6, "CL", 1.8, "middle", bold=True)
-    sh.dim_h(pv.xy(-13, 0)[0], pv.xy(13, 0)[0], pv.xy(0, bz0)[1] - 13, "BEAM 26000", ext_y=pv.xy(0, bz0)[1] - 2)
-    sh.dim_v(pv.xy(0, bz0)[1], pv.xy(0, bz1)[1], pv.xy(-13, 0)[0] - 14, "LOA %d" % round((bz1 - bz0) * 1000), ext_x=pv.xy(-13, 0)[0] - 4)
+    sh.dim_h(pv.xy(bx0, 0)[0], pv.xy(bx1, 0)[0], pv.xy(0, bz0)[1] - 13, "BEAM %d" % round((bx1 - bx0) * 1000), ext_y=pv.xy(0, bz0)[1] - 2)
+    sh.dim_v(pv.xy(0, bz0)[1], pv.xy(0, bz1)[1], pv.xy(bx0, 0)[0] - 14, "LOA %d" % round((bz1 - bz0) * 1000), ext_x=pv.xy(bx0, 0)[0] - 4)
     # labels of decks
     for d in (1, 2, 3):
         b = ship.bounds(d)
@@ -363,8 +369,9 @@ def profile_sheet(ship):
     sh.dim_h(sv.xy(-bz1, 0)[0], sv.xy(-bz0, 0)[0], yb + 14, "LOA %d" % round((bz1 - bz0) * 1000), ext_y=yb + 2)
     # heights on the right
     xr = sv.xy(-bz0, 0)[0] + 8
-    ys = [sv.xy(0, v)[1] for v in (0.0, 4.0, 8.0)]
-    sh.chain_v(list(reversed(ys)), xr, ["4000", "4000"], ext_x=sv.xy(-bz0, 0)[0] + 1)
+    levels = sorted(d["y"] for d in ship.decks)
+    ys = [sv.xy(0, v)[1] for v in levels]
+    sh.chain_v(list(reversed(ys)), xr, ["%d" % round((b - a) * 1000) for a, b in zip(levels, levels[1:])][::-1], ext_x=sv.xy(-bz0, 0)[0] + 1)
     ymax = max(r.top for r in ship.rooms) + SLAB_T
     sh.dim_v(sv.xy(0, ymax)[1], sv.xy(0, -SLAB_T)[1], xr + 10, "OVERALL %d (keel to roof)" % round((ymax + SLAB_T) * 1000), ext_x=sv.xy(-bz0, 0)[0] + 1)
     # section markers
