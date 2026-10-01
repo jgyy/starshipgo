@@ -1070,7 +1070,7 @@
 <text x="291" y="99.85" font-size="1.8" class="t">+12.000</text>
 <rect x="240" y="100.9" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="241" y="103.25" font-size="1.8" class="t">Floor to floor</text>
-<text x="291" y="103.25" font-size="1.8" class="t">4000 mm</text>
+<text x="291" y="103.25" font-size="1.8" class="t">- (top deck)</text>
 <rect x="240" y="104.3" width="108" height="3.4" class="f" fill="#ffffff"/>
 <text x="241" y="106.65" font-size="1.8" class="t">Hull area (deck)</text>
 <text x="291" y="106.65" font-size="1.8" class="t">859.4 m2</text>

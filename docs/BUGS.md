@@ -39,17 +39,17 @@ Before changing anything, the original game was audited by reading every script 
 | `duplicates` | the same model over and over (warning) | 55 | 5 |
 | `ceiling-floor-clash` | ceiling items inside tall furniture | 39 | 0 |
 | `wall-item-overlap` | wall items overlapping | 27 | 0 |
-| `unreachable-pocket` | floor the player cannot reach (warning) | 22 | 4 |
+| `unreachable-pocket` | floor the player cannot reach (warning) | 22 | 3 |
 | `wall-item-span` | wall items past the end of the wall | 12 | 0 |
 | `ceiling-overlap` | ceiling items overlapping | 11 | 0 |
-| `lights` | rooms without light fixtures | 9 | 3 |
+| `lights` | rooms without light fixtures | 9 | 0 |
 | `window-blocked` | tall props in front of windows | 6 | 0 |
 | `aisle-width` | passages under 0.8 m (warning) | 5 | 7 |
 | `door-clearance` | props in a doorway | 1 | 0 |
 | `unknown-room-policy` | rooms the policy does not know (warning) | 1 | 0 |
-| **total** | | **2740** | **19** |
+| **total** | | **2740** | **15** |
 
-(The new layout still has audit ERRORS: lights x3; warnings: aisle-width x7, duplicates x5, unreachable-pocket x4.)
+(The new layout's remaining entries are warnings only: aisle-width x7, duplicates x5, unreachable-pocket x3.)
 
 ## Defects
 

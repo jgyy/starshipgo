@@ -515,7 +515,7 @@ def f_rec(R, B):
         top(R, B, tbl, ["tableware_cups_and_mugs"], quiet=True)
     R.line("Games table",
            "A bolted table with four chairs in the south-west corner for cards and board games, near the vending machines.")
-    g = first(R, B, "table_bolted_table", [(-9.6, 9.9, 0.0), (-9.6, 8.9, 0.0), (-10.4, 8.4, 0.0), (-8.4, 8.4, 0.0)], quiet=True)
+    g = first(R, B, "table_bolted_table", [(-9.6, 9.1, 0.0), (-9.6, 8.9, 0.0), (-10.4, 8.4, 0.0), (-8.4, 8.4, 0.0)], quiet=True)
     if g:
         x0, z0, x1, z1 = g["_fp"]
         for dx in (-0.4, 0.4):

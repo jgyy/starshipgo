@@ -285,3 +285,4 @@ The ship has 5 decks (0 Sky Deck, 1 Command Deck, 2 Habitat Deck, 3 Engineering 
 | R-drone-P | Drone & Probe Bay - plan | 1:100 | [R-drone-P_drone_probe_bay_plan.svg](R-drone-P_drone_probe_bay_plan.svg) |
 | R-drone-SL | Drone & Probe Bay - longitudinal section | 1:50 | [R-drone-SL_drone_probe_bay_longitudinal_section.svg](R-drone-SL_drone_probe_bay_longitudinal_section.svg) |
 | R-drone-ST | Drone & Probe Bay - transverse section | 1:50 | [R-drone-ST_drone_probe_bay_transverse_section.svg](R-drone-ST_drone_probe_bay_transverse_section.svg) |
+

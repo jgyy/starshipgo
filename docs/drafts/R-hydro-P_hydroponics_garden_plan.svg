@@ -330,7 +330,7 @@
 <text x="336" y="32.75" font-size="1.7" class="t">248 m3</text>
 <rect x="307" y="33.8" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="36.05" font-size="1.7" class="t b">Floor occupancy</text>
-<text x="336" y="36.05" font-size="1.7" class="t">30 %</text>
+<text x="336" y="36.05" font-size="1.7" class="t">28 %</text>
 <rect x="307" y="37.1" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="39.35" font-size="1.7" class="t b">Crew</text>
 <text x="336" y="39.35" font-size="1.7" class="t">3</text>

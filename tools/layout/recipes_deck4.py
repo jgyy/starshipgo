@@ -84,8 +84,8 @@ def f_antimatter(R, B):
            "of the room so the coils, bottles and injector are all about the same distance away and the hull is not in the radiation line "
            "of the crew corridor. It is 2.8 m tall and fits under the 3.4 m ceiling with the overhead trays.")
     put(R, B, "reactor_plasma_tokamak_torus", TX, TZ, 0.0)
-    R.omni(TX, 1.5, TZ, "#c060ff", 2.2, 9.0, shadow=True)
-    R.omni(TX, 0.4, TZ, "#7040ff", 1.0, 5.0)
+    R.omni(TX, R.y + 1.5, TZ, "#c060ff", 2.2, 9.0, shadow=True)
+    R.omni(TX, R.y + 0.4, TZ, "#7040ff", 1.0, 5.0)
 
     R.line("Guard rail and force-field gate",
            "A 4.2 m rail on the north and south keeps people 0.7 m from the trap's shielding; the west side is closed by the bottle store and the east side is a force-field gate that drops only for the maintenance "
@@ -585,7 +585,7 @@ def f_auxctl(R, B):
     R.line("Ceiling lighting", "Dimmable cool-white panels at 3.4 m pitch (200 lux, so the screens stay readable); a separate red-alert circuit "
            "overrides them.")
     lights(R, spacing=3.4, color="#dbe6ff", energy=1.3)
-    R.omni(12.0, 1.7, 7.8, "#40c8ff", 1.8, 8.0)
+    R.omni(12.0, R.y + 1.7, 7.8, "#40c8ff", 1.8, 8.0)
 
     R.line("Status display wall (east hull wall)",
            "A 5.6 m main viewscreen shows the ship's status, tactical picture and damage plan; flanking screens carry the power board and the "
