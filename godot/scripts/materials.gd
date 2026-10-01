@@ -78,12 +78,12 @@ static func window_glow() -> StandardMaterial3D:
 	if _cache.has("window_glow"):
 		return _cache["window_glow"]
 	var m := StandardMaterial3D.new()
-	m.albedo_color = Color(0.05, 0.1, 0.18)
+	m.albedo_color = Color(0.03, 0.06, 0.12)
 	m.roughness = 0.1
 	m.metallic = 0.3
 	m.emission_enabled = true
-	m.emission = Color(1.0, 0.82, 0.55)
-	m.emission_energy_multiplier = 0.55
+	m.emission = Color(1.0, 0.72, 0.4)
+	m.emission_energy_multiplier = 0.28
 	_cache["window_glow"] = m
 	return m
 

@@ -10,9 +10,9 @@ import math
 
 from . import kit
 
-kit.register_material("ext_glow_blue", "#58b4ff", 0, 0.35, emission=4.5)
-kit.register_material("ext_glow_violet", "#a46bff", 0, 0.35, emission=4.0)
-kit.register_material("ext_glow_white", "#e8f2ff", 0, 0.35, emission=5.0)
+kit.register_material("ext_glow_blue", "#58b4ff", 0, 0.35, emission=3.0)
+kit.register_material("ext_glow_violet", "#a46bff", 0, 0.35, emission=2.6)
+kit.register_material("ext_glow_white", "#e8f2ff", 0, 0.35, emission=2.2)
 kit.register_material("ext_glow_amber", "#ffb04a", 0, 0.35, emission=3.5)
 kit.register_material("ext_nav_red", "#ff2a2a", 0, 0.35, emission=6.0)
 kit.register_material("ext_nav_green", "#2aff6a", 0, 0.35, emission=6.0)

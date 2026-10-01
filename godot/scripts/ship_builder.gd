@@ -867,7 +867,7 @@ func _build_exterior_windows() -> void:
 		_quad(glass, c + nrm * 0.13, u, v, hw, hh, nrm)
 	for entry in [[frame, ShipMaterials.surface("hull_panel", Color(0.30, 0.33, 0.40), 2.0), "ExteriorWindowFrames"],
 			[glass, ShipMaterials.window_glow(), "ExteriorWindows"],
-			[field, ShipMaterials.emissive(Color(0.25, 0.6, 1.0), 1.4), "HangarField"]]:
+			[field, ShipMaterials.emissive(Color(0.12, 0.36, 0.8), 0.7), "HangarField"]]:
 		var d: Dictionary = entry[0]
 		var arrays := []
 		arrays.resize(Mesh.ARRAY_MAX)

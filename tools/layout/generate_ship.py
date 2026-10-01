@@ -479,6 +479,10 @@ def furnish_all(B):
         fn(room, B)
 
 
+# hand-placed tour cameras where the automatic one (first door, far corner) misses the showpiece
+CAMERA_OVERRIDES = {"starcart": ((6.5, 12.0 + 1.62, -9.3), (-1.0, 12.0 + 0.9, -16.0))}
+
+
 def cameras(S):
     """Tour cameras for the rooms listed in `order` (25 of the ship's rooms): stand just inside the first door looking at the
     far side of the room; the four exterior cameras follow."""
@@ -493,7 +497,7 @@ def cameras(S):
         if room is None:
             continue
         n += 1
-        eye, tgt = _camera_for(room)
+        eye, tgt = CAMERA_OVERRIDES.get(rid) or _camera_for(room)
         yaw, pitch = look(eye, tgt)
         S.cameras.append({"name": "%02d_%s" % (n, rid), "room": rid, "title": room.name,
                           "subtitle": "DECK %d - %s" % (room.deck, next(d["name"] for d in S.decks if d["id"] == room.deck)),
