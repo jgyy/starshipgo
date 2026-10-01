@@ -77,6 +77,7 @@
 <polygon points="161.27,200.33 134.2,200.33 134.2,195.12 161.27,195.12" class="f" fill="#99e0f7"/>
 <polygon points="188.6,200.33 161.53,200.33 161.53,195.12 188.6,195.12" class="f" fill="#99e0f7"/>
 <polygon points="98.2,129 98.2,115.67 99.08,115.67 99.08,129" class="f" fill="#99f7f6"/>
+<polygon points="129.51,94.75 138.01,94.75 138.01,103.25 129.51,103.25" class="dot" fill="none"/>
 <polygon points="122.87,124.6 149.53,124.6 149.53,130.73 122.87,130.73" class="dot" fill="none"/>
 <polygon points="129.63,150.6 137.89,150.6 137.89,167.4 129.63,167.4" class="dot" fill="none"/>
 <text x="111.53" y="90.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">decontamination_arch</text>
@@ -129,8 +130,8 @@
 <line x1="195.68" y1="164.65" x2="203.02" y2="175.78" class="f"/>
 <line x1="194.84" y1="165.2" x2="202.18" y2="176.33" class="n"/>
 <text x="191.28" y="175.54" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-5</text>
-<line x1="92.49" y1="156.02" x2="133.76" y2="159" class="x"/>
-<circle cx="133.76" cy="159" r="0.4" class="none" fill="#b03030"/>
+<line x1="92.49" y1="101.98" x2="133.76" y2="99" class="x"/>
+<circle cx="133.76" cy="99" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.41" y1="63.19" x2="98.71" y2="61.67" class="x"/>
 <circle cx="98.71" cy="61.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.46" y1="87.42" x2="111.53" y2="90.33" class="x"/>
@@ -147,8 +148,8 @@
 <circle cx="102.87" cy="199.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.36" y1="124.22" x2="98.64" y2="122.33" class="x"/>
 <circle cx="98.64" cy="122.33" r="0.4" class="none" fill="#b03030"/>
-<circle cx="89.2" cy="155.78" r="3.3" class="n" fill="#fff"/>
-<text x="89.2" y="156.38" font-size="2" class="t b" text-anchor="middle">AL-01</text>
+<circle cx="89.2" cy="102.22" r="3.3" class="n" fill="#fff"/>
+<text x="89.2" y="102.82" font-size="2" class="t b" text-anchor="middle">AL-01</text>
 <circle cx="89.2" cy="63.97" r="3.3" class="n" fill="#fff"/>
 <text x="89.2" y="64.57" font-size="2" class="t b" text-anchor="middle">AL-02</text>
 <circle cx="89.2" cy="86.92" r="3.3" class="n" fill="#fff"/>
@@ -232,7 +233,7 @@
 <text x="336" y="39.35" font-size="1.7" class="t">4</text>
 <rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
-<text x="336" y="42.65" font-size="1.7" class="t">24</text>
+<text x="336" y="42.65" font-size="1.7" class="t">25</text>
 <rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
 <text x="336" y="45.95" font-size="1.7" class="t">1</text>
@@ -251,7 +252,7 @@
 <rect x="307" y="73.8" width="106" height="3" class="f" fill="#ffffff"/>
 <text x="308" y="75.75" font-size="1.6" class="t">AL-01</text>
 <text x="322" y="75.75" font-size="1.6" class="t">Ceiling lighting</text>
-<text x="406" y="75.75" font-size="1.6" class="t">1</text>
+<text x="406" y="75.75" font-size="1.6" class="t">2</text>
 <rect x="307" y="76.8" width="106" height="3" class="f" fill="#f4f6f9"/>
 <text x="308" y="78.75" font-size="1.6" class="t">AL-02</text>
 <text x="322" y="78.75" font-size="1.6" class="t">Outer airlock hatch (bow tip)</text>

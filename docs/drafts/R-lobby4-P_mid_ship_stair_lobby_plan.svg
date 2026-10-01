@@ -52,7 +52,7 @@
 <polygon points="298,137 282,137 282,136.1 298,136.1" class="f" fill="#99f7f6"/>
 <polygon points="209.86,101.8 214.14,101.8 214.14,106.2 209.86,106.2" class="dot" fill="none"/>
 <polygon points="131.74,102.28 142.94,102.28 142.94,105.7 131.74,105.7" class="dot" fill="none"/>
-<polygon points="281.06,102.28 292.26,102.28 292.26,105.7 281.06,105.7" class="dot" fill="none"/>
+<polygon points="277.06,94.4 296.26,94.4 296.26,113.6 277.06,113.6" class="dot" fill="none"/>
 <polygon points="105,97 119,97 119,111 105,111" class="dot" fill="none"/>
 <polygon points="305,97 319,97 319,111 305,111" class="dot" fill="none"/>
 <path d="M84 68 L340 68 L340 140 L84 140Z M87 71 L337 71 L337 137 L87 137Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>

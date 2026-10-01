@@ -273,17 +273,17 @@
 <polygon points="200.67,213.67 188.67,213.67 188.67,212.36 200.67,212.36" class="f" fill="#e881c6"/>
 <polygon points="191.07,44.33 222.27,44.33 222.27,45.87 191.07,45.87" class="f" fill="#a499f7"/>
 <polygon points="154.67,44.33 168,44.33 168,45.13 154.67,45.13" class="f" fill="#99f7f6"/>
-<polygon points="119,127.96 133.67,127.96 133.67,130.04 119,130.04" class="dot" fill="none"/>
 <polygon points="115.67,76.77 137,76.77 137,83.44 115.67,83.44" class="dot" fill="none"/>
+<polygon points="115.67,125.67 137,125.67 137,132.33 115.67,132.33" class="dot" fill="none"/>
 <polygon points="115.67,174.56 137,174.56 137,181.23 115.67,181.23" class="dot" fill="none"/>
+<polygon points="179,76.77 200.33,76.77 200.33,83.44 179,83.44" class="dot" fill="none"/>
+<polygon points="179,125.67 200.33,125.67 200.33,132.33 179,132.33" class="dot" fill="none"/>
 <polygon points="153.73,74.73 155.6,74.73 155.6,76.6 153.73,76.6" class="dot" fill="none"/>
 <polygon points="153.73,177.4 155.6,177.4 155.6,179.27 153.73,179.27" class="dot" fill="none"/>
-<polygon points="183.27,73.71 196.07,73.71 196.07,86.51 183.27,86.51" class="dot" fill="none"/>
+<polygon points="183.27,171.49 196.07,171.49 196.07,184.29 183.27,184.29" class="dot" fill="none"/>
 <polygon points="166.67,123 176,123 176,132.33 166.67,132.33" class="dot" fill="none"/>
 <polygon points="166.67,197.67 176,197.67 176,207 166.67,207" class="dot" fill="none"/>
 <polygon points="128,197.67 137.33,197.67 137.33,207 128,207" class="dot" fill="none"/>
-<polygon points="185.53,169.49 193.8,169.49 193.8,186.29 185.53,186.29" class="dot" fill="none"/>
-<polygon points="183.04,123.23 196.29,123.23 196.29,134.77 183.04,134.77" class="dot" fill="none"/>
 <text x="113.33" y="95.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
 <text x="113.33" y="159.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
 <text x="152" y="95.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>

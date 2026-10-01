@@ -37,8 +37,8 @@
 <g clip-path="url(#clipA)">
 <polygon points="182,63 242,63 242,131 182,131" class="x" fill="#e3e7ec"/>
 <polygon points="237.46,75.8 239,75.8 239,84.2 237.46,84.2" class="f" fill="#fbcdf5"/>
-<polygon points="206.4,63 217.6,63 217.6,66.7 206.4,66.7" class="dot" fill="none"/>
-<polygon points="225.4,63 232.6,63 232.6,66 225.4,66" class="dot" fill="none"/>
+<polygon points="224.4,63 233.6,63 233.6,66.4 224.4,66.4" class="dot" fill="none"/>
+<polygon points="199.5,63 224.5,63 224.5,64.24 199.5,64.24" class="dot" fill="none"/>
 <polygon points="237.96,67 239,67 239,75 237.96,75" class="f" fill="#c6faf9"/>
 <polygon points="185,67 186.12,67 186.12,75 185,75" class="f" fill="#c6faf9"/>
 <polygon points="185,78.4 188.42,78.4 188.42,81.6 185,81.6" class="f" fill="#fac1f2"/>

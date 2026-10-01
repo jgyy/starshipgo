@@ -42,11 +42,48 @@
 <polygon points="233.96,67 251.38,67 251.38,119 233.96,119" class="n" fill="url(#hGlass)"/>
 <line x1="242.67" y1="119" x2="242.67" y2="67" class="f"/>
 <polygon points="259.34,63 286,63 286,131 259.34,131" class="x" fill="#e6eaef"/>
+<polygon points="269.12,88.66 273.6,88.66 273.6,97 269.12,97" class="f" fill="#f6c3ba"/>
+<polygon points="141,88.66 144.6,88.66 144.6,97 141,97" class="f" fill="#f6c2b8"/>
+<polygon points="253.37,94.98 274.64,94.98 274.64,131 253.37,131" class="f" fill="#c4f6b5"/>
+<polygon points="141,88.66 144.6,88.66 144.6,97 141,97" class="f" fill="#f6beb4"/>
+<polygon points="266.2,93.4 282.2,93.4 282.2,131 266.2,131" class="f" fill="#b8f2d1"/>
+<polygon points="245.74,97.46 262.28,97.46 262.28,131 245.74,131" class="f" fill="#c1f5b2"/>
+<polygon points="175.4,63 194.6,63 194.6,65.72 175.4,65.72" class="dot" fill="none"/>
+<polygon points="230.34,63 247.66,63 247.66,64.46 230.34,64.46" class="dot" fill="none"/>
+<polygon points="171.02,93.02 193,93.02 193,131.16 171.02,131.16" class="f" fill="#c0f5b0"/>
+<polygon points="223.5,110.36 228.5,110.36 228.5,119.8 223.5,119.8" class="f" fill="#e9f5ac"/>
+<polygon points="165.88,102.18 179.54,102.18 179.54,131 165.88,131" class="f" fill="#ccf0b1"/>
+<polygon points="220.58,120 231.42,120 231.42,131.08 220.58,131.08" class="f" fill="#abf5dc"/>
+<polygon points="141,69.5 142.66,69.5 142.66,100.5 141,100.5" class="f" fill="#c7c0fa"/>
+<polygon points="257.88,93.22 282.2,93.22 282.2,131 257.88,131" class="f" fill="#b0c2f0"/>
+<polygon points="141.8,103.2 159.88,103.2 159.88,131 141.8,131" class="f" fill="#cdaff0"/>
+<polygon points="141.8,103.2 159.3,103.2 159.3,131 141.8,131" class="f" fill="#cbadf0"/>
+<polygon points="165.3,110.4 177.9,110.4 177.9,130.9 165.3,130.9" class="f" fill="#c9f0ad"/>
+<polygon points="140.9,77.1 147.02,77.1 147.02,92 140.9,92" class="f" fill="#c3bcf9"/>
+<polygon points="271.4,86 282.2,86 282.2,131 271.4,131" class="f" fill="#adf0cb"/>
+<polygon points="199.34,110.4 216.64,110.4 216.64,131 199.34,131" class="f" fill="#f9bcc4"/>
+<polygon points="233.36,110.4 250.66,110.4 250.66,131 233.36,131" class="f" fill="#f9bcc4"/>
+<polygon points="175,63 195,63 195,64.58 175,64.58" class="dot" fill="none"/>
+<polygon points="236.8,63 241.2,63 241.2,67.64 236.8,67.64" class="dot" fill="none"/>
 <polygon points="138,131 286,131 286,137 138,137" class="n" fill="url(#hSlab)"/>
 <polygon points="138,57 286,57 286,63 138,63" class="n" fill="url(#hSlab)"/>
 <polygon points="138,63 141,63 141,131 138,131" class="n" fill="#1c1c1c"/>
 <polygon points="283,63 286,63 286,131 283,131" class="n" fill="#1c1c1c"/>
+<polygon points="141.8,103.2 159.3,103.2 159.3,131 141.8,131" class="m" fill="#b387e9"/>
+<polygon points="271.4,86 282.2,86 282.2,131 271.4,131" class="m" fill="#87e9b3"/>
+<polygon points="199.34,110.4 216.64,110.4 216.64,131 199.34,131" class="m" fill="#f79ea9"/>
+<polygon points="233.36,110.4 250.66,110.4 250.66,131 233.36,131" class="m" fill="#f79ea9"/>
+<polygon points="165.3,110.4 177.9,110.4 177.9,130.9 165.3,130.9" class="m" fill="#b1e987"/>
+<polygon points="140.9,77.1 147.02,77.1 147.02,92 140.9,92" class="m" fill="#a89ef7"/>
+<polygon points="236.8,63 241.2,63 241.2,67.64 236.8,67.64" class="m" fill="#d87def"/>
+<polygon points="175,63 195,63 195,64.58 175,64.58" class="m" fill="#d87def"/>
 </g>
+<text x="143.96" y="85.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2300</text>
+<text x="143.96" y="82.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">2300</text>
+<text x="141.83" y="88.14" font-size="1.2" class="t" text-anchor="middle" fill="#444">2300</text>
+<text x="271.36" y="93.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1900</text>
+<text x="142.8" y="93.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1900</text>
+<text x="142.8" y="90.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">1900</text>
 <text x="138" y="54" font-size="1.8" class="t b">BOW</text>
 <text x="286" y="54" font-size="1.8" class="t b" text-anchor="end">STERN</text>
 <line x1="292" y1="137" x2="292" y2="57" class="d"/>

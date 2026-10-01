@@ -134,12 +134,12 @@
 <polygon points="232.67,75.07 232.67,89.6 231.27,89.6 231.27,75.07" class="f" fill="#a499f7"/>
 <polygon points="232.67,178 232.67,186.67 231.33,186.67 231.33,178" class="f" fill="#a499f7"/>
 <polygon points="232.67,89 232.67,102.33 231.97,102.33 231.97,89" class="f" fill="#99f7f6"/>
-<polygon points="126.91,127.53 129.76,127.53 129.76,130.47 126.91,130.47" class="dot" fill="none"/>
-<polygon points="124.6,81.64 132.07,81.64 132.07,83.92 124.6,83.92" class="dot" fill="none"/>
-<polygon points="124.08,170.97 132.59,170.97 132.59,179.48 124.08,179.48" class="dot" fill="none"/>
 <polygon points="181.27,122.6 194.07,122.6 194.07,135.4 181.27,135.4" class="dot" fill="none"/>
+<polygon points="126.08,172.97 130.59,172.97 130.59,177.48 126.08,177.48" class="dot" fill="none"/>
+<polygon points="124.2,74.37 132.47,74.37 132.47,91.17 124.2,91.17" class="dot" fill="none"/>
+<polygon points="183.53,74.37 191.8,74.37 191.8,91.17 183.53,91.17" class="dot" fill="none"/>
 <polygon points="181.04,169.45 194.29,169.45 194.29,181 181.04,181" class="dot" fill="none"/>
-<polygon points="179.33,81.71 196,81.71 196,83.84 179.33,83.84" class="dot" fill="none"/>
+<polygon points="120,127.93 136.67,127.93 136.67,130.07 120,130.07" class="dot" fill="none"/>
 <text x="153.34" y="97.56" font-size="1.25" class="t" text-anchor="middle" fill="#333">observation sofa</text>
 <text x="153.34" y="174.36" font-size="1.25" class="t" text-anchor="middle" fill="#333">observation sofa</text>
 <text x="100" y="203.96" font-size="1.25" class="t" text-anchor="middle" fill="#333">fern</text>
@@ -180,16 +180,16 @@
 <line x1="82.33" y1="152.67" x2="82.33" y2="195.33" class="f"/>
 <line x1="83.33" y1="152.67" x2="83.33" y2="195.33" class="n"/>
 <text x="92" y="174" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-OL-2</text>
-<line x1="127.63" y1="219.37" x2="128.33" y2="175.23" class="x"/>
-<circle cx="128.33" cy="175.23" r="0.4" class="none" fill="#b03030"/>
+<line x1="127.63" y1="38.63" x2="128.33" y2="82.77" class="x"/>
+<circle cx="128.33" cy="82.77" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.63" y1="97.74" x2="117.33" y2="97.27" class="x"/>
 <circle cx="117.33" cy="97.27" r="0.4" class="none" fill="#b03030"/>
 <line x1="142.34" y1="219.4" x2="140.01" y2="202.33" class="x"/>
 <circle cx="140.01" cy="202.33" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.53" y1="59.56" x2="88.51" y2="62.33" class="x"/>
 <circle cx="88.51" cy="62.33" r="0.4" class="none" fill="#b03030"/>
-<line x1="210.79" y1="219.4" x2="209.33" y2="208.85" class="x"/>
-<circle cx="209.33" cy="208.85" r="0.4" class="none" fill="#b03030"/>
+<line x1="127.34" y1="219.37" x2="126.67" y2="209.73" class="x"/>
+<circle cx="126.67" cy="209.73" r="0.4" class="none" fill="#b03030"/>
 <line x1="142.76" y1="38.63" x2="142.67" y2="48.2" class="x"/>
 <circle cx="142.67" cy="48.2" r="0.4" class="none" fill="#b03030"/>
 <line x1="97.64" y1="219.4" x2="100" y2="203.66" class="x"/>
@@ -198,16 +198,16 @@
 <circle cx="231.97" cy="82.33" r="0.4" class="none" fill="#b03030"/>
 <line x1="238.45" y1="97.05" x2="232.32" y2="95.67" class="x"/>
 <circle cx="232.32" cy="95.67" r="0.4" class="none" fill="#b03030"/>
-<circle cx="127.58" cy="222.67" r="3.3" class="n" fill="#fff"/>
-<text x="127.58" y="223.27" font-size="2" class="t b" text-anchor="middle">OL-01</text>
+<circle cx="127.58" cy="35.33" r="3.3" class="n" fill="#fff"/>
+<text x="127.58" y="35.93" font-size="2" class="t b" text-anchor="middle">OL-01</text>
 <circle cx="74.33" cy="97.78" r="3.3" class="n" fill="#fff"/>
 <text x="74.33" y="98.38" font-size="2" class="t b" text-anchor="middle">OL-02</text>
 <circle cx="142.79" cy="222.67" r="3.3" class="n" fill="#fff"/>
 <text x="142.79" y="223.27" font-size="2" class="t b" text-anchor="middle">OL-03</text>
 <circle cx="74.33" cy="58.75" r="3.3" class="n" fill="#fff"/>
 <text x="74.33" y="59.35" font-size="2" class="t b" text-anchor="middle">OL-04</text>
-<circle cx="211.24" cy="222.67" r="3.3" class="n" fill="#fff"/>
-<text x="211.24" y="223.27" font-size="2" class="t b" text-anchor="middle">OL-05</text>
+<circle cx="127.58" cy="222.67" r="3.3" class="n" fill="#fff"/>
+<text x="127.58" y="223.27" font-size="2" class="t b" text-anchor="middle">OL-05</text>
 <circle cx="142.79" cy="35.33" r="3.3" class="n" fill="#fff"/>
 <text x="142.79" y="35.93" font-size="2" class="t b" text-anchor="middle">OL-06</text>
 <circle cx="97.15" cy="222.67" r="3.3" class="n" fill="#fff"/>

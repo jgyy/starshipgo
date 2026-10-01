@@ -36,11 +36,51 @@
 <clipPath id="clipA"><rect x="96.7" y="56.7" width="230.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="97,63 327,63 327,131 97,131" class="x" fill="#e9ecf0"/>
+<polygon points="320.02,99.6 324,99.6 324,114.3 320.02,114.3" class="f" fill="#edc8fa"/>
+<polygon points="203,90.7 237,90.7 237,131 203,131" class="f" fill="#f6b5e3"/>
+<polygon points="147.8,95 167.8,95 167.8,131 147.8,131" class="f" fill="#edc7fa"/>
+<polygon points="126.6,95 146.6,95 146.6,131 126.6,131" class="f" fill="#edc7fa"/>
+<polygon points="169,91 201.8,91 201.8,131 169,131" class="f" fill="#f6b5e3"/>
+<polygon points="260.6,93 277.4,93 277.4,131 260.6,131" class="f" fill="#b4c2f6"/>
+<polygon points="267,63 307,63 307,66.4 267,66.4" class="dot" fill="none"/>
+<polygon points="226.4,63 266.4,63 266.4,66.4 226.4,66.4" class="dot" fill="none"/>
+<polygon points="185.8,63 225.8,63 225.8,66.4 185.8,66.4" class="dot" fill="none"/>
+<polygon points="145.2,63 185.2,63 185.2,66.4 145.2,66.4" class="dot" fill="none"/>
+<polygon points="309.2,90.6 323.2,90.6 323.2,131 309.2,131" class="f" fill="#fac5fa"/>
+<polygon points="137,107.94 153,107.94 153,130.76 137,130.76" class="f" fill="#f3c2fa"/>
+<polygon points="261.14,112.6 276.86,112.6 276.86,130.9 261.14,130.9" class="f" fill="#adbdf5"/>
+<polygon points="166,94.1 182,94.1 182,131 166,131" class="f" fill="#f1b3b6"/>
+<polygon points="299.2,80 323.2,80 323.2,131 299.2,131" class="f" fill="#fac1fa"/>
+<polygon points="136.16,63 161.16,63 161.16,64.24 136.16,64.24" class="dot" fill="none"/>
+<polygon points="183.6,103.72 208.4,103.72 208.4,131 183.6,131" class="f" fill="#f1b2b5"/>
+<polygon points="210,110.42 235,110.42 235,131 210,131" class="f" fill="#f1b2b5"/>
+<polygon points="100.88,89.1 125.12,89.1 125.12,131 100.88,131" class="f" fill="#f2c1fa"/>
+<polygon points="243.6,87 250.4,87 250.4,131 243.6,131" class="f" fill="none"/>
+<polygon points="265.34,63 285.34,63 285.34,64.58 265.34,64.58" class="dot" fill="none"/>
+<polygon points="205.8,63 218.2,63 218.2,64.96 205.8,64.96" class="dot" fill="none"/>
+<polygon points="299.2,80 323.2,80 323.2,131 299.2,131" class="f" fill="#f9bef9"/>
+<polygon points="299.2,80 323.2,80 323.2,131 299.2,131" class="f" fill="#f9bcf9"/>
+<polygon points="100,70.6 101.68,70.6 101.68,75.4 100,75.4" class="f" fill="#bcf9f9"/>
+<polygon points="218,130.68 228,130.68 228,131 218,131" class="f" fill="#bcf9f9"/>
+<polygon points="170,130.68 180,130.68 180,131 170,131" class="f" fill="#bcf9f9"/>
+<polygon points="134,130.68 144,130.68 144,131 134,131" class="f" fill="#bcf9f9"/>
+<polygon points="205.6,63 208.4,63 208.4,65.96 205.6,65.96" class="dot" fill="none"/>
+<polygon points="183.82,63 190.18,63 190.18,66 183.82,66" class="dot" fill="none"/>
 <polygon points="97,131 327,131 327,137 97,137" class="n" fill="url(#hSlab)"/>
 <polygon points="97,57 327,57 327,63 97,63" class="n" fill="url(#hSlab)"/>
 <polygon points="97,63 100,63 100,75.8 97,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="324,63 327,63 327,131 324,131" class="n" fill="url(#hHull)"/>
+<polygon points="299.2,80 323.2,80 323.2,131 299.2,131" class="m" fill="#f79ef7"/>
+<polygon points="218,130.68 228,130.68 228,131 218,131" class="m" fill="#9ef7f6"/>
+<polygon points="170,130.68 180,130.68 180,131 170,131" class="m" fill="#9ef7f6"/>
+<polygon points="134,130.68 144,130.68 144,131 134,131" class="m" fill="#9ef7f6"/>
+<polygon points="100,70.6 101.68,70.6 101.68,75.4 100,75.4" class="m" fill="#9ef7f6"/>
+<polygon points="183.82,63 190.18,63 190.18,66 183.82,66" class="m" fill="#9ed6f7"/>
+<polygon points="205.6,63 208.4,63 208.4,65.96 205.6,65.96" class="m" fill="#e09ef7"/>
 </g>
+<text x="322.01" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
+<text x="100.84" y="73.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2900</text>
+<text x="100.84" y="70.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">2900</text>
 <text x="97" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="327" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="333" y1="137" x2="333" y2="57" class="d"/>

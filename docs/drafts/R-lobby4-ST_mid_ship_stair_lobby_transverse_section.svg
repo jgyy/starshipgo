@@ -43,7 +43,7 @@
 <polygon points="280,103.6 316,103.6 316,131.2 280,131.2" class="f" fill="#f5d3ab"/>
 <polygon points="281.06,63 292.26,63 292.26,66.7 281.06,66.7" class="dot" fill="none"/>
 <polygon points="209.86,63 214.14,63 214.14,67.64 209.86,67.64" class="dot" fill="none"/>
-<polygon points="131.74,63 142.94,63 142.94,66.7 131.74,66.7" class="dot" fill="none"/>
+<polygon points="127.74,63 146.94,63 146.94,65.72 127.74,65.72" class="dot" fill="none"/>
 <polygon points="305,63 319,63 319,65.4 305,65.4" class="dot" fill="none"/>
 <polygon points="105,63 119,63 119,65.4 105,65.4" class="dot" fill="none"/>
 <polygon points="84,131 340,131 340,137 84,137" class="n" fill="url(#hSlab)"/>
@@ -52,7 +52,7 @@
 <polygon points="337,63 340,63 340,67 337,67" class="n" fill="#1c1c1c"/>
 <polygon points="209.86,63 214.14,63 214.14,67.64 209.86,67.64" class="m" fill="#d87def"/>
 <polygon points="281.06,63 292.26,63 292.26,66.7 281.06,66.7" class="m" fill="#d87def"/>
-<polygon points="131.74,63 142.94,63 142.94,66.7 131.74,66.7" class="m" fill="#d87def"/>
+<polygon points="127.74,63 146.94,63 146.94,65.72 127.74,65.72" class="m" fill="#d87def"/>
 <polygon points="305,63 319,63 319,65.4 305,65.4" class="m" fill="#9ee1f7"/>
 <polygon points="105,63 119,63 119,65.4 105,65.4" class="m" fill="#9ee1f7"/>
 </g>

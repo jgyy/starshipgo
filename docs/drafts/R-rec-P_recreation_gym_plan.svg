@@ -121,12 +121,12 @@
 <polygon points="158,58 188,58 188,59.9 158,59.9" class="f" fill="#a499f7"/>
 <polygon points="270,66 270,84 268.04,84 268.04,66" class="f" fill="#e881c6"/>
 <polygon points="270,119 270,139 268.96,139 268.96,119" class="f" fill="#99f7f6"/>
-<polygon points="219.2,153.8 223.48,153.8 223.48,158.2 219.2,158.2" class="dot" fill="none"/>
 <polygon points="210.34,100.44 232.34,100.44 232.34,103.56 210.34,103.56" class="dot" fill="none"/>
-<polygon points="152.4,154.3 163.6,154.3 163.6,157.72 152.4,157.72" class="dot" fill="none"/>
 <polygon points="78.66,151 110.66,151 110.66,161 78.66,161" class="dot" fill="none"/>
-<polygon points="85.06,92.4 104.26,92.4 104.26,111.6 85.06,111.6" class="dot" fill="none"/>
 <polygon points="151.8,89.4 164.2,89.4 164.2,114.6 151.8,114.6" class="dot" fill="none"/>
+<polygon points="211.34,146 231.34,146 231.34,166 211.34,166" class="dot" fill="none"/>
+<polygon points="84.72,93.34 104.6,93.34 104.6,110.66 84.72,110.66" class="dot" fill="none"/>
+<polygon points="145.5,154.4 170.5,154.4 170.5,157.6 145.5,157.6" class="dot" fill="none"/>
 <text x="183" y="185.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">weight bench and rack</text>
 <text x="113" y="119.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">three-seater sofa</text>
 <text x="273.2" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">deep bulkhead</text>
@@ -187,8 +187,8 @@
 <circle cx="269.2" cy="183" r="0.4" class="none" fill="#b03030"/>
 <line x1="276.9" y1="126.28" x2="269.48" y2="129" class="x"/>
 <circle cx="269.48" cy="129" r="0.4" class="none" fill="#b03030"/>
-<line x1="158" y1="206.7" x2="158" y2="156.01" class="x"/>
-<circle cx="158" cy="156.01" r="0.4" class="none" fill="#b03030"/>
+<line x1="158" y1="206.7" x2="158" y2="156" class="x"/>
+<circle cx="158" cy="156" r="0.4" class="none" fill="#b03030"/>
 <circle cx="173.25" cy="48" r="3.3" class="n" fill="#fff"/>
 <text x="173.25" y="48.6" font-size="2" class="t b" text-anchor="middle">RG-01</text>
 <circle cx="158" cy="48" r="3.3" class="n" fill="#fff"/>

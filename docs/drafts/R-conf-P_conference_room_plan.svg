@@ -138,8 +138,8 @@
 <polygon points="179.71,52 219.51,52 219.51,55.6 179.71,55.6" class="f" fill="#a499f7"/>
 <polygon points="191.61,206 179.61,206 179.61,203.9 191.61,203.9" class="f" fill="#f7df99"/>
 <polygon points="46.61,188 46.61,178 48.13,178 48.13,188" class="f" fill="#e881c6"/>
-<polygon points="102.81,127.44 124.81,127.44 124.81,130.56 102.81,130.56" class="dot" fill="none"/>
-<polygon points="195.81,122.62 208.57,122.62 208.57,135.38 195.81,135.38" class="dot" fill="none"/>
+<polygon points="191.19,127.44 213.19,127.44 213.19,130.56 191.19,130.56" class="dot" fill="none"/>
+<polygon points="103.81,119 123.81,119 123.81,139 103.81,139" class="dot" fill="none"/>
 <text x="123.61" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">conference table</text>
 <text x="184.01" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">conference table</text>
 <text x="211.61" y="75.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">tactical plinth</text>

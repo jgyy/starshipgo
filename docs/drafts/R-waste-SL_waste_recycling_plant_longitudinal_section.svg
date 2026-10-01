@@ -37,11 +37,54 @@
 <g clip-path="url(#clipA)">
 <polygon points="142,63 302,63 302,131 142,131" class="x" fill="#e6e9ee"/>
 <polygon points="122,63 142,63 142,131 122,131" class="x" fill="#e6eaef"/>
+<polygon points="206,71 218,71 218,83 206,83" class="f" fill="#ccfbfa"/>
+<polygon points="253.2,69.7 262.8,69.7 262.8,81 253.2,81" class="f" fill="#e9ccfb"/>
+<polygon points="231,99.6 237,99.6 237,114.3 231,114.3" class="f" fill="#efccfb"/>
+<polygon points="187,98.8 193,98.8 193,107.2 187,107.2" class="f" fill="#bbf7c5"/>
+<polygon points="155,109.5 185,109.5 185,131 155,131" class="f" fill="#cad0fa"/>
+<polygon points="279.62,114.6 294.38,114.6 294.38,131.12 279.62,131.12" class="f" fill="#e4f6b7"/>
+<polygon points="126.6,84.4 145.4,84.4 145.4,131 126.6,131" class="f" fill="#f2bcc6"/>
+<polygon points="240.4,83.58 275.6,83.58 275.6,131 240.4,131" class="f" fill="#bfbaf2"/>
+<polygon points="276.6,115.4 298.2,115.4 298.2,131 276.6,131" class="f" fill="#f2b8ba"/>
+<polygon points="164.4,63 189.6,63 189.6,64.96 164.4,64.96" class="dot" fill="none"/>
+<polygon points="280,63 288,63 288,68 280,68" class="dot" fill="none"/>
+<polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="dot" fill="none"/>
+<polygon points="237,63 257,63 257,64.58 237,64.58" class="dot" fill="none"/>
+<polygon points="125,79 128.7,79 128.7,95 125,95" class="f" fill="#cfc1fa"/>
+<polygon points="277.16,103.72 298.2,103.72 298.2,131 277.16,131" class="f" fill="#f1b3b6"/>
+<polygon points="125.9,113 155.7,113 155.7,131 125.9,131" class="f" fill="#f2c0fa"/>
+<polygon points="286.12,112.3 298.2,112.3 298.2,131 286.12,131" class="f" fill="#d6f5aa"/>
+<polygon points="156.16,63 167.84,63 167.84,66.2 156.16,66.2" class="dot" fill="none"/>
+<polygon points="280,63 288,63 288,68 280,68" class="dot" fill="none"/>
+<polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="dot" fill="none"/>
+<polygon points="220.82,63 227.18,63 227.18,66 220.82,66" class="dot" fill="none"/>
+<polygon points="286.7,91 298.2,91 298.2,131 286.7,131" class="f" fill="#eabdf9"/>
+<polygon points="175.4,63 178.6,63 178.6,64.24 175.4,64.24" class="dot" fill="none"/>
+<polygon points="240.62,62.98 253.38,62.98 253.38,66.5 240.62,66.5" class="dot" fill="none"/>
+<polygon points="125.9,113 155.7,113 155.7,131 125.9,131" class="f" fill="#f2bcf9"/>
+<polygon points="125,84 127.2,84 127.2,98 125,98" class="f" fill="#cbbcf9"/>
+<polygon points="286.7,91 298.2,91 298.2,131 286.7,131" class="f" fill="#eabcf9"/>
+<polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="dot" fill="none"/>
+<polygon points="280,63 288,63 288,68 280,68" class="dot" fill="none"/>
 <polygon points="122,131 302,131 302,137 122,137" class="n" fill="url(#hSlab)"/>
 <polygon points="122,57 302,57 302,63 122,63" class="n" fill="url(#hSlab)"/>
 <polygon points="122,63 125,63 125,131 122,131" class="n" fill="#1c1c1c"/>
 <polygon points="299,63 302,63 302,131 299,131" class="n" fill="#1c1c1c"/>
+<polygon points="125.9,113 155.7,113 155.7,131 125.9,131" class="m" fill="#ec9ef7"/>
+<polygon points="286.7,91 298.2,91 298.2,131 286.7,131" class="m" fill="#e09ef7"/>
+<polygon points="125,84 127.2,84 127.2,98 125,98" class="m" fill="#b39ef7"/>
+<polygon points="280,63 288,63 288,68 280,68" class="m" fill="#7defd7"/>
+<polygon points="240.62,62.98 253.38,62.98 253.38,66.5 240.62,66.5" class="m" fill="#d87def"/>
+<polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="m" fill="#ef7da3"/>
+<polygon points="175.4,63 178.6,63 178.6,64.24 175.4,64.24" class="m" fill="#d87def"/>
 </g>
+<text x="212" y="77.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2700</text>
+<text x="258" y="75" font-size="1.2" class="t" text-anchor="middle" fill="#444">2825</text>
+<text x="234" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
+<text x="126.85" y="87.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2200</text>
+<text x="190" y="103.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1400</text>
+<text x="126.1" y="91.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2000</text>
+<text x="126.1" y="94.14" font-size="1.2" class="t" text-anchor="middle" fill="#444">2000</text>
 <text x="122" y="54" font-size="1.8" class="t b">BOW</text>
 <text x="302" y="54" font-size="1.8" class="t b" text-anchor="end">STERN</text>
 <line x1="308" y1="137" x2="308" y2="57" class="d"/>

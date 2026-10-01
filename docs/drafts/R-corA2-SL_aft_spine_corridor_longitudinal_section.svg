@@ -48,14 +48,14 @@
 <polygon points="221,106 231,106 231,116.8 221,116.8" class="f" fill="#f0b6b0"/>
 <polygon points="114,63 131.32,63 131.32,64.46 114,64.46" class="dot" fill="none"/>
 <polygon points="199.4,63 224.6,63 224.6,64.96 199.4,64.96" class="dot" fill="none"/>
-<polygon points="299.62,63 303.04,63 303.04,66.7 299.62,66.7" class="dot" fill="none"/>
+<polygon points="299.74,63 302.94,63 302.94,64.24 299.74,64.24" class="dot" fill="none"/>
 <polygon points="68,131 356,131 356,137 68,137" class="n" fill="url(#hSlab)"/>
 <polygon points="68,57 356,57 356,63 68,63" class="n" fill="url(#hSlab)"/>
 <polygon points="68,63 71,63 71,67 68,67" class="n" fill="#1c1c1c"/>
 <polygon points="353,63 356,63 356,131 353,131" class="n" fill="url(#hHull)"/>
-<polygon points="299.62,63 303.04,63 303.04,66.7 299.62,66.7" class="m" fill="#d87def"/>
 <polygon points="199.4,63 224.6,63 224.6,64.96 199.4,64.96" class="m" fill="#d87def"/>
 <polygon points="114,63 131.32,63 131.32,64.46 114,64.46" class="m" fill="#d87def"/>
+<polygon points="299.74,63 302.94,63 302.94,64.24 299.74,64.24" class="m" fill="#d87def"/>
 </g>
 <text x="142" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
 <text x="286" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>

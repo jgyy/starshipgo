@@ -114,14 +114,13 @@
 <line x1="181.94" y1="70.94" x2="175.54" y2="70.94" class="m"/>
 <line x1="178.74" y1="70.94" x2="178.74" y2="69.74" class="f"/>
 <polygon points="46,139 46,119 47.12,119 47.12,139" class="f" fill="#99f7f6"/>
-<polygon points="155.86,99.8 160.14,99.8 160.14,104.2 155.86,104.2" class="dot" fill="none"/>
-<polygon points="215.74,154.3 226.94,154.3 226.94,157.72 215.74,157.72" class="dot" fill="none"/>
-<polygon points="151.62,149.62 164.38,149.62 164.38,162.38 151.62,162.38" class="dot" fill="none"/>
+<polygon points="89.06,100.28 100.26,100.28 100.26,103.7 89.06,103.7" class="dot" fill="none"/>
 <polygon points="77.16,77.16 88.84,77.16 88.84,88.84 77.16,88.84" class="dot" fill="none"/>
-<polygon points="151.6,87.6 154.4,87.6 154.4,90.4 151.6,90.4" class="dot" fill="none"/>
 <polygon points="211.74,92.4 230.94,92.4 230.94,111.6 211.74,111.6" class="dot" fill="none"/>
-<polygon points="84.66,146 104.66,146 104.66,166 84.66,166" class="dot" fill="none"/>
-<polygon points="82.16,100.4 107.16,100.4 107.16,103.6 82.16,103.6" class="dot" fill="none"/>
+<polygon points="154.62,152.62 161.38,152.62 161.38,159.38 154.62,159.38" class="dot" fill="none"/>
+<polygon points="151.8,89.4 164.2,89.4 164.2,114.6 151.8,114.6" class="dot" fill="none"/>
+<polygon points="211.34,146 231.34,146 231.34,166 211.34,166" class="dot" fill="none"/>
+<polygon points="82.16,154.4 107.16,154.4 107.16,157.6 82.16,157.6" class="dot" fill="none"/>
 <text x="153" y="131.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">island reagent bench</text>
 <text x="209.72" y="67.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">cleanroom glove box</text>
 <text x="65.75" y="189.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>
@@ -280,7 +279,7 @@
 <text x="336" y="39.35" font-size="1.7" class="t">6</text>
 <rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
-<text x="336" y="42.65" font-size="1.7" class="t">35</text>
+<text x="336" y="42.65" font-size="1.7" class="t">34</text>
 <rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
 <text x="336" y="45.95" font-size="1.7" class="t">1</text>
@@ -344,7 +343,7 @@
 <rect x="307" y="109.9" width="106" height="3" class="f" fill="#f4f6f9"/>
 <text x="308" y="111.85" font-size="1.6" class="t">SL-12</text>
 <text x="322" y="111.85" font-size="1.6" class="t">Ceiling lighting and extract</text>
-<text x="406" y="111.85" font-size="1.6" class="t">8</text>
+<text x="406" y="111.85" font-size="1.6" class="t">7</text>
 <rect x="307" y="73.9" width="106" height="39" class="n" fill="none"/>
 <text x="307" y="119.9" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
 <rect x="307" y="122.1" width="4.2" height="2.4" class="n" fill="#f79999"/>

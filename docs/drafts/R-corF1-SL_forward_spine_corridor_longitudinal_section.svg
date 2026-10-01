@@ -48,16 +48,16 @@
 <polygon points="210,98.73 214,98.73 214,108.53 210,108.53" class="f" fill="#ebc0fa"/>
 <polygon points="103.6,74.33 120.4,74.33 120.4,75.64 103.6,75.64" class="dot" fill="none"/>
 <polygon points="177.63,74.33 179.71,74.33 179.71,77.27 177.63,77.27" class="dot" fill="none"/>
-<polygon points="238.67,74.33 252,74.33 252,75.39 238.67,75.39" class="dot" fill="none"/>
-<polygon points="310.93,74.33 313.07,74.33 313.07,75.16 310.93,75.16" class="dot" fill="none"/>
+<polygon points="244.27,74.33 246.4,74.33 246.4,75.16 244.27,75.16" class="dot" fill="none"/>
+<polygon points="310.96,74.33 313.04,74.33 313.04,77.27 310.96,77.27" class="dot" fill="none"/>
 <polygon points="72,119.67 352,119.67 352,123.67 72,123.67" class="n" fill="url(#hSlab)"/>
 <polygon points="72,70.33 352,70.33 352,74.33 72,74.33" class="n" fill="url(#hSlab)"/>
 <polygon points="72,74.33 74,74.33 74,82.87 72,82.87" class="n" fill="#1c1c1c"/>
 <polygon points="350,74.33 352,74.33 352,77 350,77" class="n" fill="#1c1c1c"/>
 <polygon points="177.63,74.33 179.71,74.33 179.71,77.27 177.63,77.27" class="m" fill="#d87def"/>
+<polygon points="310.96,74.33 313.04,74.33 313.04,77.27 310.96,77.27" class="m" fill="#d87def"/>
 <polygon points="103.6,74.33 120.4,74.33 120.4,75.64 103.6,75.64" class="m" fill="#d87def"/>
-<polygon points="238.67,74.33 252,74.33 252,75.39 238.67,75.39" class="m" fill="#d87def"/>
-<polygon points="310.93,74.33 313.07,74.33 313.07,75.16 310.93,75.16" class="m" fill="#d87def"/>
+<polygon points="244.27,74.33 246.4,74.33 246.4,75.16 244.27,75.16" class="m" fill="#d87def"/>
 </g>
 <text x="265.33" y="80.17" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
 <text x="125.33" y="80.17" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>

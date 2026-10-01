@@ -45,7 +45,7 @@
 <polygon points="286,38 318,38 318,39.8 286,39.8" class="f" fill="#99f7f6"/>
 <polygon points="316,170 288,170 288,168.32 316,168.32" class="f" fill="#99f7f6"/>
 <polygon points="313.48,38 330.52,38 330.52,44.84 313.48,44.84" class="f" fill="#f799eb"/>
-<polygon points="297.72,99.6 306.28,99.6 306.28,108.4 297.72,108.4" class="dot" fill="none"/>
+<polygon points="290.8,100.56 313.2,100.56 313.2,107.4 290.8,107.4" class="dot" fill="none"/>
 <polygon points="266,38 154,38 154,94 266,94" class="hid" fill="none"/>
 <polygon points="142.8,114 254.8,114 254.8,170 142.8,170" class="hid" fill="none"/>
 <polygon points="142.8,114 254.8,114 254.8,170 142.8,170" class="n" fill="#ffffff" fill-opacity="0.75"/>
@@ -90,8 +90,8 @@
 <circle cx="302" cy="169.16" r="0.4" class="none" fill="#b03030"/>
 <line x1="321.16" y1="28.29" x2="322" y2="41.42" class="x"/>
 <circle cx="322" cy="41.42" r="0.4" class="none" fill="#b03030"/>
-<line x1="347.71" y1="100.49" x2="302" y2="104" class="x"/>
-<circle cx="302" cy="104" r="0.4" class="none" fill="#b03030"/>
+<line x1="347.71" y1="100.49" x2="302" y2="103.98" class="x"/>
+<circle cx="302" cy="103.98" r="0.4" class="none" fill="#b03030"/>
 <circle cx="298.41" cy="183" r="3.3" class="n" fill="#fff"/>
 <text x="298.41" y="183.6" font-size="1.6" class="t b" text-anchor="middle">SP1-01</text>
 <circle cx="320.95" cy="25" r="3.3" class="n" fill="#fff"/>

@@ -48,8 +48,8 @@
 <polygon points="190.2,91 202.2,91 202.2,131 190.2,131" class="f" fill="#b3f5ac"/>
 <polygon points="232.2,91 245.9,91 245.9,131 232.2,131" class="f" fill="#b3f5ac"/>
 <polygon points="218.2,91 230.2,91 230.2,131 218.2,131" class="f" fill="#b2f5ab"/>
-<polygon points="190.34,63 201.54,63 201.54,66.7 190.34,66.7" class="dot" fill="none"/>
 <polygon points="250.1,63 256.86,63 256.86,65.2 250.1,65.2" class="dot" fill="none"/>
+<polygon points="189.56,62.98 202.32,62.98 202.32,66.5 189.56,66.5" class="dot" fill="none"/>
 <polygon points="200.72,101.4 211.8,101.4 211.8,131 200.72,131" class="f" fill="#c3adf0"/>
 <polygon points="129.85,96 148.6,96 148.6,110 129.85,110" class="f" fill="#adc0f0"/>
 <polygon points="121.74,131 302.26,131 302.26,137 121.74,137" class="n" fill="url(#hSlab)"/>
@@ -58,6 +58,7 @@
 <polygon points="299.26,63 302.26,63 302.26,75.8 299.26,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="200.72,101.4 211.8,101.4 211.8,131 200.72,131" class="m" fill="#a787e9"/>
 <polygon points="134.92,96 135.41,96 135.41,110 134.92,110" class="m" fill="#87a3e9"/>
+<polygon points="189.56,62.98 202.32,62.98 202.32,66.5 189.56,66.5" class="m" fill="#d87def"/>
 </g>
 <text x="139.23" y="103.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1400</text>
 <text x="228.26" y="77.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2700</text>

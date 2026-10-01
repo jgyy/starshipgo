@@ -33,137 +33,137 @@
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="19" font-size="2.3" class="t b">MASS BY DECK (t)</text>
 <text x="16" y="25.2" font-size="1.8" class="t">Deck 0 Sky Deck</text>
-<rect x="52" y="22" width="1.05" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="54.25" y="25.2" font-size="1.7" class="t">2.6 t</text>
+<rect x="52" y="22" width="12.81" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="66.01" y="25.2" font-size="1.7" class="t">32.1 t</text>
 <text x="16" y="31.4" font-size="1.8" class="t">Deck 1 Command Deck</text>
-<rect x="52" y="28.2" width="10.09" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="63.29" y="31.4" font-size="1.7" class="t">25.3 t</text>
+<rect x="52" y="28.2" width="10.08" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="63.28" y="31.4" font-size="1.7" class="t">25.3 t</text>
 <text x="16" y="37.6" font-size="1.8" class="t">Deck 2 Habitat Deck</text>
-<rect x="52" y="34.4" width="19.86" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="73.06" y="37.6" font-size="1.7" class="t">49.8 t</text>
+<rect x="52" y="34.4" width="19.88" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="73.08" y="37.6" font-size="1.7" class="t">49.9 t</text>
 <text x="16" y="43.8" font-size="1.8" class="t">Deck 3 Engineering Deck</text>
 <rect x="52" y="40.6" width="88" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="141.2" y="43.8" font-size="1.7" class="t">220.7 t</text>
 <text x="16" y="50" font-size="1.8" class="t">Deck 4 Hold Deck</text>
-<rect x="52" y="46.8" width="1.34" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="54.54" y="50" font-size="1.7" class="t">3.4 t</text>
+<rect x="52" y="46.8" width="66.25" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="119.45" y="50" font-size="1.7" class="t">166.2 t</text>
 <text x="16" y="58" font-size="2.3" class="t b">TYPICAL POWER BY DECK</text>
 <text x="16" y="64.2" font-size="1.8" class="t">Deck 0 Sky Deck</text>
-<rect x="52" y="61" width="0.2" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="53.21" y="64.2" font-size="1.7" class="t">729 W</text>
+<rect x="52" y="61" width="1.41" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="54.61" y="64.2" font-size="1.7" class="t">79.2 kW</text>
 <text x="16" y="70.4" font-size="1.8" class="t">Deck 1 Command Deck</text>
 <rect x="52" y="67.2" width="1.12" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="54.32" y="70.4" font-size="1.7" class="t">62.8 kW</text>
 <text x="16" y="76.6" font-size="1.8" class="t">Deck 2 Habitat Deck</text>
 <rect x="52" y="73.4" width="6.29" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="59.49" y="76.6" font-size="1.7" class="t">353.5 kW</text>
+<text x="59.49" y="76.6" font-size="1.7" class="t">353.6 kW</text>
 <text x="16" y="82.8" font-size="1.8" class="t">Deck 3 Engineering Deck</text>
 <rect x="52" y="79.6" width="88" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="141.2" y="82.8" font-size="1.7" class="t">4.95 MW</text>
 <text x="16" y="89" font-size="1.8" class="t">Deck 4 Hold Deck</text>
-<rect x="52" y="85.8" width="0.2" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="53.22" y="89" font-size="1.7" class="t">1.3 kW</text>
+<rect x="52" y="85.8" width="55.07" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="108.27" y="89" font-size="1.7" class="t">3.10 MW</text>
 <text x="16" y="97" font-size="2.3" class="t b">EQUIPMENT VALUE BY DECK</text>
 <text x="16" y="103.2" font-size="1.8" class="t">Deck 0 Sky Deck</text>
-<rect x="52" y="100" width="0.2" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="53.25" y="103.2" font-size="1.7" class="t">151,159 cr</text>
+<rect x="52" y="100" width="11.54" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="64.74" y="103.2" font-size="1.7" class="t">33.99 M cr</text>
 <text x="16" y="109.4" font-size="1.8" class="t">Deck 1 Command Deck</text>
 <rect x="52" y="106.2" width="6.62" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="59.82" y="109.4" font-size="1.7" class="t">19.49 M cr</text>
 <text x="16" y="115.6" font-size="1.8" class="t">Deck 2 Habitat Deck</text>
-<rect x="52" y="112.4" width="16.54" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="69.74" y="115.6" font-size="1.7" class="t">48.70 M cr</text>
+<rect x="52" y="112.4" width="16.55" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="69.75" y="115.6" font-size="1.7" class="t">48.72 M cr</text>
 <text x="16" y="121.8" font-size="1.8" class="t">Deck 3 Engineering Deck</text>
 <rect x="52" y="118.6" width="88" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="141.2" y="121.8" font-size="1.7" class="t">259.05 M cr</text>
 <text x="16" y="128" font-size="1.8" class="t">Deck 4 Hold Deck</text>
-<rect x="52" y="124.8" width="0.2" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="53.26" y="128" font-size="1.7" class="t">179,319 cr</text>
+<rect x="52" y="124.8" width="68.52" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="121.72" y="128" font-size="1.7" class="t">201.71 M cr</text>
 <text x="224" y="19" font-size="2.3" class="t b">MASS BY DEPARTMENT (t)</text>
 <text x="224" y="25.2" font-size="1.8" class="t">Engineering</text>
 <rect x="260" y="22" width="88" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="349.2" y="25.2" font-size="1.7" class="t">111.3 t</text>
+<text x="349.2" y="25.2" font-size="1.7" class="t">179.7 t</text>
 <text x="224" y="31.4" font-size="1.8" class="t">Cargo / hangar</text>
-<rect x="260" y="28.2" width="60.42" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="321.62" y="31.4" font-size="1.7" class="t">76.4 t</text>
+<rect x="260" y="28.2" width="69.91" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="331.11" y="31.4" font-size="1.7" class="t">142.8 t</text>
 <text x="224" y="37.6" font-size="1.8" class="t">Command</text>
-<rect x="260" y="34.4" width="25.7" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="286.9" y="37.6" font-size="1.7" class="t">32.5 t</text>
-<text x="224" y="43.8" font-size="1.8" class="t">Crew</text>
-<rect x="260" y="40.6" width="15.52" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="276.72" y="43.8" font-size="1.7" class="t">19.6 t</text>
-<text x="224" y="50" font-size="1.8" class="t">Life support</text>
-<rect x="260" y="46.8" width="14.11" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="275.31" y="50" font-size="1.7" class="t">17.8 t</text>
-<text x="224" y="56.2" font-size="1.8" class="t">Medical</text>
-<rect x="260" y="53" width="11.83" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="273.03" y="56.2" font-size="1.7" class="t">15.0 t</text>
-<text x="224" y="62.4" font-size="1.8" class="t">Science</text>
-<rect x="260" y="59.2" width="10.66" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="271.86" y="62.4" font-size="1.7" class="t">13.5 t</text>
+<rect x="260" y="34.4" width="21.27" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="282.47" y="37.6" font-size="1.7" class="t">43.4 t</text>
+<text x="224" y="43.8" font-size="1.8" class="t">Life support</text>
+<rect x="260" y="40.6" width="19.34" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="280.54" y="43.8" font-size="1.7" class="t">39.5 t</text>
+<text x="224" y="50" font-size="1.8" class="t">Crew</text>
+<rect x="260" y="46.8" width="15.47" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="276.67" y="50" font-size="1.7" class="t">31.6 t</text>
+<text x="224" y="56.2" font-size="1.8" class="t">Science</text>
+<rect x="260" y="53" width="12.96" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="274.16" y="56.2" font-size="1.7" class="t">26.5 t</text>
+<text x="224" y="62.4" font-size="1.8" class="t">Medical</text>
+<rect x="260" y="59.2" width="7.33" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="268.53" y="62.4" font-size="1.7" class="t">15.0 t</text>
 <text x="224" y="68.6" font-size="1.8" class="t">Security</text>
-<rect x="260" y="65.4" width="9.4" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="270.6" y="68.6" font-size="1.7" class="t">11.9 t</text>
+<rect x="260" y="65.4" width="5.83" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="267.03" y="68.6" font-size="1.7" class="t">11.9 t</text>
 <text x="224" y="74.8" font-size="1.8" class="t">Circulation</text>
-<rect x="260" y="71.6" width="3.05" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="264.25" y="74.8" font-size="1.7" class="t">3.9 t</text>
+<rect x="260" y="71.6" width="1.89" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="263.09" y="74.8" font-size="1.7" class="t">3.9 t</text>
 <text x="224" y="82.8" font-size="2.3" class="t b">TYPICAL POWER BY DEPARTMENT</text>
 <text x="224" y="89" font-size="1.8" class="t">Engineering</text>
 <rect x="260" y="85.8" width="88" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="349.2" y="89" font-size="1.7" class="t">4.01 MW</text>
+<text x="349.2" y="89" font-size="1.7" class="t">6.28 MW</text>
 <text x="224" y="95.2" font-size="1.8" class="t">Cargo / hangar</text>
-<rect x="260" y="92" width="16.81" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="278.01" y="95.2" font-size="1.7" class="t">765.3 kW</text>
+<rect x="260" y="92" width="21.52" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="282.72" y="95.2" font-size="1.7" class="t">1.54 MW</text>
 <text x="224" y="101.4" font-size="1.8" class="t">Security</text>
-<rect x="260" y="98.2" width="5.06" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="266.26" y="101.4" font-size="1.7" class="t">230.2 kW</text>
+<rect x="260" y="98.2" width="3.23" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="264.43" y="101.4" font-size="1.7" class="t">230.3 kW</text>
 <text x="224" y="107.6" font-size="1.8" class="t">Command</text>
-<rect x="260" y="104.4" width="3.5" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="264.7" y="107.6" font-size="1.7" class="t">159.3 kW</text>
-<text x="224" y="113.8" font-size="1.8" class="t">Medical</text>
-<rect x="260" y="110.6" width="1.46" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="262.66" y="113.8" font-size="1.7" class="t">66.3 kW</text>
-<text x="224" y="120" font-size="1.8" class="t">Life support</text>
-<rect x="260" y="116.8" width="1.42" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="262.62" y="120" font-size="1.7" class="t">64.4 kW</text>
-<text x="224" y="126.2" font-size="1.8" class="t">Crew</text>
-<rect x="260" y="123" width="0.84" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="262.04" y="126.2" font-size="1.7" class="t">38.3 kW</text>
-<text x="224" y="132.4" font-size="1.8" class="t">Science</text>
-<rect x="260" y="129.2" width="0.65" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="261.85" y="132.4" font-size="1.7" class="t">29.7 kW</text>
+<rect x="260" y="104.4" width="2.66" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="263.86" y="107.6" font-size="1.7" class="t">190.3 kW</text>
+<text x="224" y="113.8" font-size="1.8" class="t">Life support</text>
+<rect x="260" y="110.6" width="1.35" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="262.55" y="113.8" font-size="1.7" class="t">96.5 kW</text>
+<text x="224" y="120" font-size="1.8" class="t">Science</text>
+<rect x="260" y="116.8" width="0.99" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="262.19" y="120" font-size="1.7" class="t">70.5 kW</text>
+<text x="224" y="126.2" font-size="1.8" class="t">Medical</text>
+<rect x="260" y="123" width="0.93" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="262.13" y="126.2" font-size="1.7" class="t">66.4 kW</text>
+<text x="224" y="132.4" font-size="1.8" class="t">Crew</text>
+<rect x="260" y="129.2" width="0.83" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="262.03" y="132.4" font-size="1.7" class="t">59.6 kW</text>
 <text x="224" y="138.6" font-size="1.8" class="t">Circulation</text>
 <rect x="260" y="135.4" width="0.2" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="261.29" y="138.6" font-size="1.7" class="t">4.1 kW</text>
+<text x="261.26" y="138.6" font-size="1.7" class="t">4.1 kW</text>
 <text x="224" y="146.6" font-size="2.3" class="t b">EQUIPMENT VALUE BY DEPARTMENT</text>
 <text x="224" y="152.8" font-size="1.8" class="t">Cargo / hangar</text>
 <rect x="260" y="149.6" width="88" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="349.2" y="152.8" font-size="1.7" class="t">119.79 M cr</text>
+<text x="349.2" y="152.8" font-size="1.7" class="t">209.05 M cr</text>
 <text x="224" y="159" font-size="1.8" class="t">Engineering</text>
-<rect x="260" y="155.8" width="84.44" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="345.64" y="159" font-size="1.7" class="t">114.94 M cr</text>
+<rect x="260" y="155.8" width="86.44" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="347.64" y="159" font-size="1.7" class="t">205.34 M cr</text>
 <text x="224" y="165.2" font-size="1.8" class="t">Command</text>
-<rect x="260" y="162" width="20.34" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="281.54" y="165.2" font-size="1.7" class="t">27.69 M cr</text>
-<text x="224" y="171.4" font-size="1.8" class="t">Medical</text>
-<rect x="260" y="168.2" width="20.09" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="281.29" y="171.4" font-size="1.7" class="t">27.35 M cr</text>
-<text x="224" y="177.6" font-size="1.8" class="t">Science</text>
-<rect x="260" y="174.4" width="12.27" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="273.47" y="177.6" font-size="1.7" class="t">16.70 M cr</text>
+<rect x="260" y="162" width="16.64" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="277.84" y="165.2" font-size="1.7" class="t">39.54 M cr</text>
+<text x="224" y="171.4" font-size="1.8" class="t">Science</text>
+<rect x="260" y="168.2" width="15.93" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="277.13" y="171.4" font-size="1.7" class="t">37.84 M cr</text>
+<text x="224" y="177.6" font-size="1.8" class="t">Medical</text>
+<rect x="260" y="174.4" width="11.51" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="272.71" y="177.6" font-size="1.7" class="t">27.35 M cr</text>
 <text x="224" y="183.8" font-size="1.8" class="t">Life support</text>
-<rect x="260" y="180.6" width="6.3" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="267.5" y="183.8" font-size="1.7" class="t">8.58 M cr</text>
-<text x="224" y="190" font-size="1.8" class="t">Security</text>
-<rect x="260" y="186.8" width="5.16" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="266.36" y="190" font-size="1.7" class="t">7.02 M cr</text>
-<text x="224" y="196.2" font-size="1.8" class="t">Crew</text>
-<rect x="260" y="193" width="3.53" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="264.73" y="196.2" font-size="1.7" class="t">4.81 M cr</text>
+<rect x="260" y="180.6" width="9.27" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="270.47" y="183.8" font-size="1.7" class="t">22.03 M cr</text>
+<text x="224" y="190" font-size="1.8" class="t">Crew</text>
+<rect x="260" y="186.8" width="5.93" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="267.13" y="190" font-size="1.7" class="t">14.08 M cr</text>
+<text x="224" y="196.2" font-size="1.8" class="t">Security</text>
+<rect x="260" y="193" width="2.96" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="264.16" y="196.2" font-size="1.7" class="t">7.02 M cr</text>
 <text x="224" y="202.4" font-size="1.8" class="t">Circulation</text>
-<rect x="260" y="199.2" width="0.52" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="261.72" y="202.4" font-size="1.7" class="t">707,852 cr</text>
-<text x="16" y="244" font-size="2" class="t b">Totals: 301.84 t, 5.36 MW typical / 11.18 MW peak, 327.58 M cr, 1547 items.</text>
+<rect x="260" y="199.2" width="0.3" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="261.5" y="202.4" font-size="1.7" class="t">705,385 cr</text>
+<text x="16" y="244" font-size="2" class="t b">Totals: 494.22 t, 8.54 MW typical / 17.11 MW peak, 562.95 M cr, 2427 items.</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>

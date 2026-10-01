@@ -36,11 +36,62 @@
 <clipPath id="clipA"><rect x="119.63" y="56.7" width="184.74" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="76.11,63 304.07,63 304.07,131 76.11,131" class="x" fill="#e9ecf1"/>
+<polygon points="88.07,67 100.07,67 100.07,79 88.07,79" class="f" fill="#c8fafa"/>
+<polygon points="160.07,78.9 176.07,78.9 176.07,86 160.07,86" class="f" fill="#e7c8fa"/>
+<polygon points="191.27,74.7 200.87,74.7 200.87,86 191.27,86" class="f" fill="#e7c8fa"/>
+<polygon points="85.07,99.6 91.07,99.6 91.07,114.3 85.07,114.3" class="f" fill="#edc8fa"/>
+<polygon points="137.07,76 147.07,76 147.07,86 137.07,86" class="f" fill="#e7c8fa"/>
+<polygon points="253.07,76 271.07,76 271.07,86 253.07,86" class="f" fill="#e7c7fa"/>
+<polygon points="220.07,73.5 232.07,73.5 232.07,86 220.07,86" class="f" fill="#e7c7fa"/>
+<polygon points="241.07,64.42 282.07,64.42 282.07,69.58 241.07,69.58" class="f" fill="#b5f6e8"/>
+<polygon points="199.67,64.42 240.67,64.42 240.67,69.58 199.67,69.58" class="f" fill="#b5f6e8"/>
+<polygon points="158.27,64.42 199.27,64.42 199.27,69.58 158.27,69.58" class="f" fill="#b5f6e8"/>
+<polygon points="116.87,64.42 157.87,64.42 157.87,69.58 116.87,69.58" class="f" fill="#b5f6e8"/>
+<polygon points="112.07,72 128.07,72 128.07,86 112.07,86" class="f" fill="#e7c7fa"/>
+<polygon points="158.15,96.4 176.15,96.4 176.15,131 158.15,131" class="f" fill="#d9f2b9"/>
+<polygon points="178.55,100.4 214.55,100.4 214.55,131 178.55,131" class="f" fill="#d8f2b9"/>
+<polygon points="216.95,98.38 247.47,98.38 247.47,131 216.95,131" class="f" fill="#bdb8f2"/>
+<polygon points="249.87,100.4 282.07,100.4 282.07,131 249.87,131" class="f" fill="#d8f2b8"/>
+<polygon points="288.67,94.4 300.27,94.4 300.27,131 288.67,131" class="f" fill="#baf2b8"/>
+<polygon points="125.39,90.4 155.75,90.4 155.75,131 125.39,131" class="f" fill="#d7f1b7"/>
+<polygon points="233.77,63 274.07,63 274.07,68 233.77,68" class="dot" fill="none"/>
+<polygon points="192.87,63 233.17,63 233.17,68 192.87,68" class="dot" fill="none"/>
+<polygon points="151.97,63 192.27,63 192.27,68 151.97,68" class="dot" fill="none"/>
+<polygon points="111.07,63 151.37,63 151.37,68 111.07,68" class="dot" fill="none"/>
+<polygon points="212.67,63 215.47,63 215.47,65.96 212.67,65.96" class="dot" fill="none"/>
+<polygon points="132.67,63 135.47,63 135.47,65.96 132.67,65.96" class="dot" fill="none"/>
+<polygon points="180.47,118.1 187.67,118.1 187.67,131 180.47,131" class="f" fill="#c3faf9"/>
+<polygon points="287.23,110.84 290.23,110.84 290.23,111.4 287.23,111.4" class="f" fill="#fac1de"/>
+<polygon points="263.59,110.4 276.19,110.4 276.19,130.9 263.59,130.9" class="f" fill="#cdf1b2"/>
+<polygon points="246.37,62.98 259.13,62.98 259.13,66.5 246.37,66.5" class="dot" fill="none"/>
+<polygon points="121.07,62.98 133.83,62.98 133.83,66.5 121.07,66.5" class="dot" fill="none"/>
+<polygon points="183.89,63 196.29,63 196.29,64.96 183.89,64.96" class="dot" fill="none"/>
+<polygon points="298.75,71 301.07,71 301.07,89 298.75,89" class="f" fill="#c6bffa"/>
+<polygon points="176.71,110 202.85,110 202.85,131 176.71,131" class="f" fill="#b5b0f0"/>
+<polygon points="143.29,111.58 172.71,111.58 172.71,131 143.29,131" class="f" fill="#b5b0f0"/>
+<polygon points="283.19,103.2 300.27,103.2 300.27,131 283.19,131" class="f" fill="#cdb0f0"/>
+<polygon points="206.85,113.1 240.07,113.1 240.07,131 206.85,131" class="f" fill="#b5b0f0"/>
+<polygon points="234.07,63 274.07,63 274.07,67.76 234.07,67.76" class="dot" fill="none"/>
+<polygon points="193.47,63 233.47,63 233.47,67.76 193.47,67.76" class="dot" fill="none"/>
+<polygon points="152.87,63 192.87,63 192.87,67.76 152.87,67.76" class="dot" fill="none"/>
+<polygon points="297.99,65.6 301.07,65.6 301.07,73 297.99,73" class="f" fill="#bcccf9"/>
+<polygon points="117.54,84.2 148.89,84.2 148.89,131 117.54,131" class="f" fill="#d2f0ad"/>
 <polygon points="119.93,131 304.07,131 304.07,137 119.93,137" class="n" fill="url(#hSlab)"/>
 <polygon points="119.93,57 304.07,57 304.07,63 119.93,63" class="n" fill="url(#hSlab)"/>
 <polygon points="119.93,63 123.86,63 123.86,131 119.93,131" class="n" fill="url(#hHull)"/>
 <polygon points="301.07,63 304.07,63 304.07,75.8 301.07,75.8" class="n" fill="#1c1c1c"/>
+<polygon points="124.91,84.2 145.03,84.2 145.03,131 124.91,131" class="m" fill="#bde987"/>
 </g>
+<text x="120.07" y="79.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2600</text>
+<text x="220.17" y="67.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3200</text>
+<text x="137.37" y="67.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3200</text>
+<text x="261.57" y="67.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3200</text>
+<text x="178.77" y="67.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3200</text>
+<text x="262.07" y="81.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2500</text>
+<text x="226.07" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
+<text x="94.07" y="73.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2900</text>
+<text x="168.07" y="83.1" font-size="1.2" class="t" text-anchor="middle" fill="#444">2420</text>
+<text x="196.07" y="80" font-size="1.2" class="t" text-anchor="middle" fill="#444">2575</text>
 <text x="119.93" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="304.07" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="310.07" y1="137" x2="310.07" y2="57" class="d"/>

@@ -133,14 +133,14 @@
 <polygon points="162,213.67 155.33,213.67 155.33,212.65 162,212.65" class="f" fill="#e881c6"/>
 <polygon points="83.33,135.67 83.33,122.33 83.97,122.33 83.97,135.67" class="f" fill="#99f7f6"/>
 <polygon points="190.67,167 218.67,167 218.67,179 190.67,179" class="dot" fill="none"/>
-<polygon points="114.35,78.64 117.2,78.64 117.2,81.57 114.35,81.57" class="dot" fill="none"/>
-<polygon points="150.67,176.85 165.33,176.85 165.33,178.93 150.67,178.93" class="dot" fill="none"/>
-<polygon points="154.27,78.97 161.73,78.97 161.73,81.25 154.27,81.25" class="dot" fill="none"/>
-<polygon points="111.52,173.64 120.03,173.64 120.03,182.15 111.52,182.15" class="dot" fill="none"/>
-<polygon points="151.6,122.6 164.4,122.6 164.4,135.4 151.6,135.4" class="dot" fill="none"/>
-<polygon points="197.97,77.85 202.48,77.85 202.48,82.36 197.97,82.36" class="dot" fill="none"/>
+<polygon points="156.57,127.53 159.43,127.53 159.43,130.47 156.57,130.47" class="dot" fill="none"/>
+<polygon points="108.44,79.07 123.11,79.07 123.11,81.15 108.44,81.15" class="dot" fill="none"/>
+<polygon points="196.49,78.97 203.96,78.97 203.96,81.25 196.49,81.25" class="dot" fill="none"/>
+<polygon points="153.75,75.85 162.25,75.85 162.25,84.36 153.75,84.36" class="dot" fill="none"/>
+<polygon points="109.37,171.49 122.17,171.49 122.17,184.29 109.37,184.29" class="dot" fill="none"/>
+<polygon points="151.6,171.49 164.4,171.49 164.4,184.29 151.6,184.29" class="dot" fill="none"/>
+<polygon points="197.97,126.75 202.48,126.75 202.48,131.25 197.97,131.25" class="dot" fill="none"/>
 <polygon points="111.64,120.6 119.91,120.6 119.91,137.4 111.64,137.4" class="dot" fill="none"/>
-<polygon points="193.56,122.33 206.89,122.33 206.89,135.67 193.56,135.67" class="dot" fill="none"/>
 <text x="104.66" y="193.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">Whole-Body Scanner Arch</text>
 <text x="138" y="195.77" font-size="1.25" class="t" text-anchor="middle" fill="#333">MRI Ring Scanner</text>
 <text x="161.33" y="194.33" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo-Stasis Pod</text>

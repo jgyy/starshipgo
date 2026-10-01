@@ -45,6 +45,7 @@
 <polygon points="286,38 318,38 318,39.8 286,39.8" class="f" fill="#99f7f6"/>
 <polygon points="316,170 288,170 288,168.32 316,168.32" class="f" fill="#99f7f6"/>
 <polygon points="313.48,38 330.52,38 330.52,44.84 313.48,44.84" class="f" fill="#f799eb"/>
+<polygon points="159.72,99.6 168.28,99.6 168.28,108.4 159.72,108.4" class="dot" fill="none"/>
 <polygon points="295.24,97.24 308.76,97.24 308.76,110.76 295.24,110.76" class="dot" fill="none"/>
 <polygon points="266,38 154,38 154,94 266,94" class="hid" fill="none"/>
 <polygon points="142.8,114 254.8,114 254.8,170 142.8,170" class="hid" fill="none"/>
@@ -159,7 +160,7 @@
 <text x="41" y="236.55" font-size="1.6" class="t">0</text>
 <rect x="14" y="237.6" width="76" height="3.2" class="f" fill="#ffffff"/>
 <text x="15" y="239.75" font-size="1.6" class="t b">Props placed</text>
-<text x="41" y="239.75" font-size="1.6" class="t">5</text>
+<text x="41" y="239.75" font-size="1.6" class="t">6</text>
 <rect x="14" y="240.8" width="76" height="3.2" class="f" fill="#f4f6f9"/>
 <text x="15" y="242.95" font-size="1.6" class="t b">Doors / arches</text>
 <text x="41" y="242.95" font-size="1.6" class="t">1</text>
@@ -186,7 +187,7 @@
 <rect x="94" y="220.7" width="63" height="2.9" class="f" fill="#ffffff"/>
 <text x="95" y="222.55" font-size="1.5" class="t">SP3-03</text>
 <text x="108" y="222.55" font-size="1.5" class="t">Stair lighting</text>
-<text x="151" y="222.55" font-size="1.5" class="t">1</text>
+<text x="151" y="222.55" font-size="1.5" class="t">2</text>
 <rect x="94" y="212" width="63" height="11.6" class="n" fill="none"/>
 <text x="242" y="214" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
 <rect x="242" y="216.2" width="4.2" height="2.4" class="n" fill="#f799eb"/>

@@ -100,10 +100,10 @@
 <polygon points="211.39,206 181.39,206 181.39,204.1 211.39,204.1" class="f" fill="#a499f7"/>
 <polygon points="103.89,52 116.89,52 116.89,54 103.89,54" class="f" fill="#a499f7"/>
 <polygon points="130.79,52 141.99,52 141.99,53.68 130.79,53.68" class="f" fill="#99f7f6"/>
-<polygon points="102.81,100.44 124.81,100.44 124.81,103.56 102.81,103.56" class="dot" fill="none"/>
-<polygon points="198.81,98.62 205.57,98.62 205.57,105.38 198.81,105.38" class="dot" fill="none"/>
-<polygon points="107.61,143.4 120.01,143.4 120.01,168.6 107.61,168.6" class="dot" fill="none"/>
-<polygon points="192.19,146 212.19,146 212.19,166 192.19,166" class="dot" fill="none"/>
+<polygon points="191.19,154.44 213.19,154.44 213.19,157.56 191.19,157.56" class="dot" fill="none"/>
+<polygon points="107.61,89.4 120.01,89.4 120.01,114.6 107.61,114.6" class="dot" fill="none"/>
+<polygon points="101.31,154.4 126.31,154.4 126.31,157.6 101.31,157.6" class="dot" fill="none"/>
+<polygon points="189.69,100.4 214.69,100.4 214.69,103.6 189.69,103.6" class="dot" fill="none"/>
 <text x="196.39" y="195.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">three-seater sofa</text>
 <text x="116.39" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">officer desk</text>
 <text x="136.39" y="177.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">lounge armchair</text>

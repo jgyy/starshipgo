@@ -208,8 +208,8 @@
 <polygon points="146,187 150,187 150,191 146,191" class="dot" fill="none"/>
 <polygon points="178,187 182,187 182,191 178,191" class="dot" fill="none"/>
 <polygon points="212.67,127 216.67,127 216.67,131 212.67,131" class="dot" fill="none"/>
-<polygon points="111.52,124.75 120.03,124.75 120.03,133.25 111.52,133.25" class="dot" fill="none"/>
-<polygon points="195.97,173.64 204.48,173.64 204.48,182.15 195.97,182.15" class="dot" fill="none"/>
+<polygon points="162.53,126.33 189.4,126.33 189.4,131.67 162.53,131.67" class="dot" fill="none"/>
+<polygon points="153.75,124.75 162.25,124.75 162.25,133.25 153.75,133.25" class="dot" fill="none"/>
 <polygon points="108,65.27 134.67,65.27 134.67,71.4 108,71.4" class="dot" fill="none"/>
 <polygon points="189.2,65.27 215.87,65.27 215.87,71.4 189.2,71.4" class="dot" fill="none"/>
 <polygon points="108,92.6 134.67,92.6 134.67,98.73 108,98.73" class="dot" fill="none"/>
@@ -219,10 +219,11 @@
 <polygon points="108,187.27 134.67,187.27 134.67,193.4 108,193.4" class="dot" fill="none"/>
 <polygon points="189.2,187.27 215.87,187.27 215.87,193.4 189.2,193.4" class="dot" fill="none"/>
 <polygon points="153.87,71.71 162.13,71.71 162.13,88.51 153.87,88.51" class="dot" fill="none"/>
-<polygon points="153.87,169.49 162.13,169.49 162.13,186.29 153.87,186.29" class="dot" fill="none"/>
+<polygon points="196.09,169.49 204.36,169.49 204.36,186.29 196.09,186.29" class="dot" fill="none"/>
 <polygon points="109.11,73.44 122.44,73.44 122.44,86.77 109.11,86.77" class="dot" fill="none"/>
-<polygon points="151.33,122.33 164.67,122.33 164.67,135.67 151.33,135.67" class="dot" fill="none"/>
+<polygon points="151.33,171.23 164.67,171.23 164.67,184.56 151.33,184.56" class="dot" fill="none"/>
 <polygon points="193.56,122.33 206.89,122.33 206.89,135.67 193.56,135.67" class="dot" fill="none"/>
+<polygon points="107.44,127.93 124.11,127.93 124.11,130.07 107.44,130.07" class="dot" fill="none"/>
 <polygon points="107.44,176.83 124.11,176.83 124.11,178.96 107.44,178.96" class="dot" fill="none"/>
 <polygon points="191.89,79.04 208.56,79.04 208.56,81.17 191.89,81.17" class="dot" fill="none"/>
 <text x="89.2" y="180.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">Shell and Tub~</text>
@@ -383,7 +384,7 @@
 <text x="336" y="39.35" font-size="1.7" class="t">1</text>
 <rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
-<text x="336" y="42.65" font-size="1.7" class="t">84</text>
+<text x="336" y="42.65" font-size="1.7" class="t">85</text>
 <rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
 <text x="336" y="45.95" font-size="1.7" class="t">1</text>
@@ -430,7 +431,7 @@
 <rect x="307" y="94.8" width="106" height="3" class="f" fill="#f4f6f9"/>
 <text x="308" y="96.75" font-size="1.6" class="t">CO-08</text>
 <text x="322" y="96.75" font-size="1.6" class="t">Network backbone and cable trays</text>
-<text x="406" y="96.75" font-size="1.6" class="t">12</text>
+<text x="406" y="96.75" font-size="1.6" class="t">13</text>
 <rect x="307" y="97.8" width="106" height="3" class="f" fill="#ffffff"/>
 <text x="308" y="99.75" font-size="1.6" class="t">CO-09</text>
 <text x="322" y="99.75" font-size="1.6" class="t">Safety and signs</text>
@@ -449,24 +450,26 @@
 <text x="312.4" y="118.7" font-size="1.6" class="t">console</text>
 <rect x="360" y="116.8" width="4.2" height="2.4" class="n" fill="#77ef8b"/>
 <text x="365.4" y="118.7" font-size="1.6" class="t">controlpanel</text>
-<rect x="307" y="120.2" width="4.2" height="2.4" class="n" fill="#82ef77"/>
-<text x="312.4" y="122.1" font-size="1.6" class="t">rack</text>
-<rect x="360" y="120.2" width="4.2" height="2.4" class="n" fill="#ebef77"/>
-<text x="365.4" y="122.1" font-size="1.6" class="t">router</text>
-<rect x="307" y="123.6" width="4.2" height="2.4" class="n" fill="#df99f7"/>
-<text x="312.4" y="125.5" font-size="1.6" class="t">safety</text>
-<rect x="360" y="123.6" width="4.2" height="2.4" class="n" fill="#ade881"/>
-<text x="365.4" y="125.5" font-size="1.6" class="t">seat</text>
-<rect x="307" y="127" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
-<text x="312.4" y="128.9" font-size="1.6" class="t">sign</text>
-<rect x="360" y="127" width="4.2" height="2.4" class="n" fill="#99f7a4"/>
-<text x="365.4" y="128.9" font-size="1.6" class="t">storage</text>
-<rect x="307" y="130.4" width="4.2" height="2.4" class="n" fill="#8981e8"/>
-<text x="312.4" y="132.3" font-size="1.6" class="t">tank</text>
-<rect x="360" y="130.4" width="4.2" height="2.4" class="n" fill="#f799c9"/>
-<text x="365.4" y="132.3" font-size="1.6" class="t">terminal</text>
-<rect x="307" y="133.8" width="4.2" height="2.4" class="n" fill="#99b1f7"/>
-<text x="312.4" y="135.7" font-size="1.6" class="t">warnlight</text>
+<rect x="307" y="120.2" width="4.2" height="2.4" class="n" fill="#77efd5"/>
+<text x="312.4" y="122.1" font-size="1.6" class="t">pipe</text>
+<rect x="360" y="120.2" width="4.2" height="2.4" class="n" fill="#82ef77"/>
+<text x="365.4" y="122.1" font-size="1.6" class="t">rack</text>
+<rect x="307" y="123.6" width="4.2" height="2.4" class="n" fill="#ebef77"/>
+<text x="312.4" y="125.5" font-size="1.6" class="t">router</text>
+<rect x="360" y="123.6" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<text x="365.4" y="125.5" font-size="1.6" class="t">safety</text>
+<rect x="307" y="127" width="4.2" height="2.4" class="n" fill="#ade881"/>
+<text x="312.4" y="128.9" font-size="1.6" class="t">seat</text>
+<rect x="360" y="127" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<text x="365.4" y="128.9" font-size="1.6" class="t">sign</text>
+<rect x="307" y="130.4" width="4.2" height="2.4" class="n" fill="#99f7a4"/>
+<text x="312.4" y="132.3" font-size="1.6" class="t">storage</text>
+<rect x="360" y="130.4" width="4.2" height="2.4" class="n" fill="#8981e8"/>
+<text x="365.4" y="132.3" font-size="1.6" class="t">tank</text>
+<rect x="307" y="133.8" width="4.2" height="2.4" class="n" fill="#f799c9"/>
+<text x="312.4" y="135.7" font-size="1.6" class="t">terminal</text>
+<rect x="360" y="133.8" width="4.2" height="2.4" class="n" fill="#99b1f7"/>
+<text x="365.4" y="135.7" font-size="1.6" class="t">warnlight</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - COMPUTER CORE</text>
 <text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>

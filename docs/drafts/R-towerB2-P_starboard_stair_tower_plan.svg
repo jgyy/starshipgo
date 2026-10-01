@@ -45,8 +45,8 @@
 <polygon points="106,38 138,38 138,39.8 106,39.8" class="f" fill="#99f7f6"/>
 <polygon points="136,170 108,170 108,168.32 136,168.32" class="f" fill="#99f7f6"/>
 <polygon points="93.48,38 110.52,38 110.52,44.84 93.48,44.84" class="f" fill="#f799eb"/>
-<polygon points="248.8,100.56 271.2,100.56 271.2,107.4 248.8,107.4" class="dot" fill="none"/>
-<polygon points="109.24,91.24 134.76,91.24 134.76,116.76 109.24,116.76" class="dot" fill="none"/>
+<polygon points="255.72,99.6 264.28,99.6 264.28,108.4 255.72,108.4" class="dot" fill="none"/>
+<polygon points="110.8,100.56 133.2,100.56 133.2,107.4 110.8,107.4" class="dot" fill="none"/>
 <polygon points="158,38 270,38 270,94 158,94" class="hid" fill="none"/>
 <polygon points="281.2,114 169.2,114 169.2,170 281.2,170" class="hid" fill="none"/>
 <polygon points="281.2,114 169.2,114 169.2,170 281.2,170" class="n" fill="#ffffff" fill-opacity="0.75"/>
@@ -91,14 +91,14 @@
 <circle cx="122" cy="169.16" r="0.4" class="none" fill="#b03030"/>
 <line x1="102.84" y1="28.29" x2="102" y2="41.42" class="x"/>
 <circle cx="102" cy="41.42" r="0.4" class="none" fill="#b03030"/>
-<line x1="76.29" y1="107.51" x2="122" y2="104" class="x"/>
-<circle cx="122" cy="104" r="0.4" class="none" fill="#b03030"/>
+<line x1="76.29" y1="100.49" x2="122" y2="103.98" class="x"/>
+<circle cx="122" cy="103.98" r="0.4" class="none" fill="#b03030"/>
 <circle cx="125.59" cy="183" r="3.3" class="n" fill="#fff"/>
 <text x="125.59" y="183.6" font-size="1.6" class="t b" text-anchor="middle">SS2-01</text>
 <circle cx="103.05" cy="25" r="3.3" class="n" fill="#fff"/>
 <text x="103.05" y="25.6" font-size="1.6" class="t b" text-anchor="middle">SS2-02</text>
-<circle cx="73" cy="107.76" r="3.3" class="n" fill="#fff"/>
-<text x="73" y="108.36" font-size="1.6" class="t b" text-anchor="middle">SS2-03</text>
+<circle cx="73" cy="100.24" r="3.3" class="n" fill="#fff"/>
+<text x="73" y="100.84" font-size="1.6" class="t b" text-anchor="middle">SS2-03</text>
 <line x1="80" y1="10.2" x2="344" y2="10.2" class="d"/>
 <line x1="79.3" y1="10.9" x2="80.7" y2="9.5" class="m"/>
 <line x1="343.3" y1="10.9" x2="344.7" y2="9.5" class="m"/>

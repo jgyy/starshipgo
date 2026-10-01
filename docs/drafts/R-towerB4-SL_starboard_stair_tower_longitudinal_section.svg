@@ -36,7 +36,7 @@
 <clipPath id="clipA"><rect x="175.7" y="56.7" width="72.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="176,63 248,63 248,131 176,131" class="x" fill="#ebeef2"/>
-<polygon points="208.62,63 215.38,63 215.38,65.2 208.62,65.2" class="dot" fill="none"/>
+<polygon points="210.28,63 213.7,63 213.7,66.7 210.28,66.7" class="dot" fill="none"/>
 <polygon points="179,91 245,91 245,95.8 179,95.8" class="f" fill="#e3e7ee"/>
 <polygon points="179,11 245,11 245,15.8 179,15.8" class="f" fill="#e3e7ee"/>
 <polygon points="179,-69 245,-69 245,-64.2 179,-64.2" class="f" fill="#e3e7ee"/>

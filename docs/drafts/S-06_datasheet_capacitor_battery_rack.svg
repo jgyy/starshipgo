@@ -143,9 +143,15 @@
 <text x="17" y="214.15" font-size="1.8" class="t b">ROOM</text>
 <text x="107" y="214.15" font-size="1.8" class="t b">QTY</text>
 <rect x="16" y="215.2" width="110" height="4.2" class="f" fill="#ffffff"/>
-<text x="17" y="218.35" font-size="1.8" class="t">Computer Core</text>
-<text x="107" y="218.35" font-size="1.8" class="t">3</text>
-<rect x="16" y="211" width="110" height="8.4" class="n" fill="none"/>
+<text x="17" y="218.35" font-size="1.8" class="t">Auxiliary Control</text>
+<text x="107" y="218.35" font-size="1.8" class="t">2</text>
+<rect x="16" y="219.4" width="110" height="4.2" class="f" fill="#f4f6f9"/>
+<text x="17" y="222.55" font-size="1.8" class="t">Computer Core</text>
+<text x="107" y="222.55" font-size="1.8" class="t">3</text>
+<rect x="16" y="223.6" width="110" height="4.2" class="f" fill="#ffffff"/>
+<text x="17" y="226.75" font-size="1.8" class="t">Drone &amp; Probe Bay</text>
+<text x="107" y="226.75" font-size="1.8" class="t">2</text>
+<rect x="16" y="211" width="110" height="16.8" class="n" fill="none"/>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>

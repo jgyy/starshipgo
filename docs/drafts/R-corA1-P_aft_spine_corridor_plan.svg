@@ -52,12 +52,12 @@
 <polygon points="140,170.33 140,157 140.69,157 140.69,170.33" class="f" fill="#99f7f6"/>
 <polygon points="176,89 176,102.33 175.31,102.33 175.31,89" class="f" fill="#99f7f6"/>
 <polygon points="176,158.33 176,171.67 175.17,171.67 175.17,158.33" class="f" fill="#99f7f6"/>
-<polygon points="150.67,96.63 165.33,96.63 165.33,98.71 150.67,98.71" class="dot" fill="none"/>
-<polygon points="143.33,92.33 143.33,65.67 150,65.67 150,92.33" class="dot" fill="none"/>
+<polygon points="143.33,119.67 143.33,93 150,93 150,119.67" class="dot" fill="none"/>
 <polygon points="143.33,174.33 143.33,147.67 150,147.67 150,174.33" class="dot" fill="none"/>
-<polygon points="143.6,119.67 143.6,93 149.73,93 149.73,119.67" class="dot" fill="none"/>
+<polygon points="144.27,92.33 144.27,65.67 149.07,65.67 149.07,92.33" class="dot" fill="none"/>
 <polygon points="144.27,147 144.27,120.33 149.07,120.33 149.07,147" class="dot" fill="none"/>
-<polygon points="151.37,154.56 164.63,154.56 164.63,166.11 151.37,166.11" class="dot" fill="none"/>
+<polygon points="153.87,89.27 162.13,89.27 162.13,106.07 153.87,106.07" class="dot" fill="none"/>
+<polygon points="153.87,151.93 162.13,151.93 162.13,168.73 153.87,168.73" class="dot" fill="none"/>
 <path d="M138 59.67 L178 59.67 L178 198.33 L138 198.33Z M140 61.67 L176 61.67 L176 196.33 L140 196.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="138,59.67 178,59.67 178,61.67 138,61.67" class="none" fill="#ffffff"/>
 <line x1="138" y1="59.67" x2="138" y2="61.67" class="m"/>

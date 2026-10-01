@@ -121,8 +121,8 @@
 <polygon points="300,55 310,55 310,56.52 300,56.52" class="f" fill="#e881c6"/>
 <polygon points="324,130 324,150 322.96,150 322.96,130" class="f" fill="#99f7f6"/>
 <polygon points="145.74,102.3 156.94,102.3 156.94,105.72 145.74,105.72" class="dot" fill="none"/>
-<polygon points="205.8,91.4 218.2,91.4 218.2,116.6 205.8,116.6" class="dot" fill="none"/>
-<polygon points="262.66,94 282.66,94 282.66,114 262.66,114" class="dot" fill="none"/>
+<polygon points="266.46,91.4 278.86,91.4 278.86,116.6 266.46,116.6" class="dot" fill="none"/>
+<polygon points="199.5,102.4 224.5,102.4 224.5,105.6 199.5,105.6" class="dot" fill="none"/>
 <text x="221" y="142.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">three-seater sofa</text>
 <text x="117" y="76.87" font-size="1.25" class="t" text-anchor="middle" fill="#333">single bunk</text>
 <text x="179" y="76.87" font-size="1.25" class="t" text-anchor="middle" fill="#333">single bunk</text>

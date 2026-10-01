@@ -45,7 +45,7 @@
 <polygon points="155,99.6 161,99.6 161,114.3 155,114.3" class="f" fill="#efccfb"/>
 <polygon points="263.9,87.8 282.2,87.8 282.2,131 263.9,131" class="f" fill="#f2bce7"/>
 <polygon points="142.2,105.8 163.8,105.8 163.8,131 142.2,131" class="f" fill="#f2b8e6"/>
-<polygon points="236.8,63 241.2,63 241.2,67.64 236.8,67.64" class="dot" fill="none"/>
+<polygon points="229,63 249,63 249,64.58 229,64.58" class="dot" fill="none"/>
 <polygon points="273.2,110.1 282.2,110.1 282.2,131 273.2,131" class="f" fill="#f1b6e5"/>
 <polygon points="183.44,63 186.56,63 186.56,67.4 183.44,67.4" class="dot" fill="none"/>
 <polygon points="142.2,105.8 163.8,105.8 163.8,131 142.2,131" class="f" fill="#f1b6e5"/>
@@ -57,7 +57,7 @@
 <polygon points="141,73 142.9,73 142.9,94.1 141,94.1" class="f" fill="#c3bcf9"/>
 <polygon points="186.4,111.4 227.6,111.4 227.6,131 186.4,131" class="f" fill="#f0ade2"/>
 <polygon points="172.4,63 197.6,63 197.6,64.96 172.4,64.96" class="dot" fill="none"/>
-<polygon points="237.3,63 240.72,63 240.72,66.7 237.3,66.7" class="dot" fill="none"/>
+<polygon points="237.4,63 240.6,63 240.6,64.24 237.4,64.24" class="dot" fill="none"/>
 <polygon points="138,131 286,131 286,137 138,137" class="n" fill="url(#hSlab)"/>
 <polygon points="138,57 286,57 286,63 138,63" class="n" fill="url(#hSlab)"/>
 <polygon points="138,63 141,63 141,131 138,131" class="n" fill="#1c1c1c"/>
@@ -65,8 +65,8 @@
 <polygon points="143.4,106.1 182.6,106.1 182.6,131 143.4,131" class="m" fill="#e987d5"/>
 <polygon points="186.4,111.4 227.6,111.4 227.6,131 186.4,131" class="m" fill="#e987d5"/>
 <polygon points="141,73 142.9,73 142.9,94.1 141,94.1" class="m" fill="#a89ef7"/>
-<polygon points="237.3,63 240.72,63 240.72,66.7 237.3,66.7" class="m" fill="#d87def"/>
 <polygon points="172.4,63 197.6,63 197.6,64.96 172.4,64.96" class="m" fill="#d87def"/>
+<polygon points="237.4,63 240.6,63 240.6,64.24 237.4,64.24" class="m" fill="#d87def"/>
 </g>
 <text x="266" y="101.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
 <text x="212" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>

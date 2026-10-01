@@ -42,8 +42,8 @@
 <polygon points="286,38 318,38 318,39.8 286,39.8" class="f" fill="#99f7f6"/>
 <polygon points="316,170 288,170 288,168.32 316,168.32" class="f" fill="#99f7f6"/>
 <polygon points="313.48,38 330.52,38 330.52,44.84 313.48,44.84" class="f" fill="#f799eb"/>
-<polygon points="159.72,99.6 168.28,99.6 168.28,108.4 159.72,108.4" class="dot" fill="none"/>
 <polygon points="295.24,97.24 308.76,97.24 308.76,110.76 295.24,110.76" class="dot" fill="none"/>
+<polygon points="157.24,97.24 170.76,97.24 170.76,110.76 157.24,110.76" class="dot" fill="none"/>
 <polygon points="142.8,114 254.8,114 254.8,170 142.8,170" class="hid" fill="none"/>
 <polygon points="266,38 154,38 154,94 266,94" class="n" fill="#ffffff" fill-opacity="0.75"/>
 <line x1="266" y1="38" x2="266" y2="94" class="x"/>

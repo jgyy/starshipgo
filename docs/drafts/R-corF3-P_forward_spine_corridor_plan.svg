@@ -51,22 +51,21 @@
 <polygon points="149,169 149,162.33 149.35,162.33 149.35,169" class="f" fill="#99f7f6"/>
 <polygon points="167,79 167,85.67 166.56,85.67 166.56,79" class="f" fill="#99f7f6"/>
 <polygon points="167,162.33 167,169 166.65,169 166.65,162.33" class="f" fill="#99f7f6"/>
-<polygon points="154.33,159.15 161.67,159.15 161.67,160.19 154.33,160.19" class="dot" fill="none"/>
+<polygon points="157.29,158.93 158.71,158.93 158.71,160.4 157.29,160.4" class="dot" fill="none"/>
 <polygon points="150.8,92.67 150.8,79.33 153.87,79.33 153.87,92.67" class="dot" fill="none"/>
-<polygon points="150.8,147.33 150.8,134 153.87,134 153.87,147.33" class="dot" fill="none"/>
-<polygon points="150.8,174.67 150.8,161.33 153.87,161.33 153.87,174.67" class="dot" fill="none"/>
-<polygon points="150.67,65.33 150.67,52 154,52 154,65.33" class="dot" fill="none"/>
-<polygon points="150.67,133.67 150.67,120.33 154,120.33 154,133.67" class="dot" fill="none"/>
-<polygon points="150.8,106.33 150.8,93 153.87,93 153.87,106.33" class="dot" fill="none"/>
-<polygon points="150.8,120 150.8,106.67 153.87,106.67 153.87,120" class="dot" fill="none"/>
-<polygon points="150.8,205.33 150.8,192 153.87,192 153.87,205.33" class="dot" fill="none"/>
-<polygon points="151.13,79 151.13,65.67 153.53,65.67 153.53,79" class="dot" fill="none"/>
-<polygon points="151.13,161 151.13,147.67 153.53,147.67 153.53,161" class="dot" fill="none"/>
-<polygon points="151.13,188.33 151.13,175 153.53,175 153.53,188.33" class="dot" fill="none"/>
-<polygon points="155.93,94.13 160.07,94.13 160.07,102.53 155.93,102.53" class="dot" fill="none"/>
-<polygon points="154.67,125.67 161.33,125.67 161.33,132.33 154.67,132.33" class="dot" fill="none"/>
-<polygon points="154.69,64.78 161.31,64.78 161.31,70.55 154.69,70.55" class="dot" fill="none"/>
-<polygon points="153.83,189.8 162.17,189.8 162.17,190.87 153.83,190.87" class="dot" fill="none"/>
+<polygon points="150.8,140.33 150.8,127 153.87,127 153.87,140.33" class="dot" fill="none"/>
+<polygon points="150.67,113 150.67,99.67 154,99.67 154,113" class="dot" fill="none"/>
+<polygon points="150.67,167.67 150.67,154.33 154,154.33 154,167.67" class="dot" fill="none"/>
+<polygon points="150.8,79 150.8,65.67 153.87,65.67 153.87,79" class="dot" fill="none"/>
+<polygon points="150.8,154 150.8,140.67 153.87,140.67 153.87,154" class="dot" fill="none"/>
+<polygon points="150.8,181.33 150.8,168 153.87,168 153.87,181.33" class="dot" fill="none"/>
+<polygon points="151.13,65.33 151.13,52 153.53,52 153.53,65.33" class="dot" fill="none"/>
+<polygon points="151.13,126.67 151.13,113.33 153.53,113.33 153.53,126.67" class="dot" fill="none"/>
+<polygon points="151.13,195 151.13,181.67 153.53,181.67 153.53,195" class="dot" fill="none"/>
+<polygon points="154.8,64.47 161.2,64.47 161.2,70.87 154.8,70.87" class="dot" fill="none"/>
+<polygon points="156.87,189.21 159.13,189.21 159.13,191.46 156.87,191.46" class="dot" fill="none"/>
+<polygon points="155.93,124.8 160.07,124.8 160.07,133.2 155.93,133.2" class="dot" fill="none"/>
+<polygon points="153.83,97.8 162.17,97.8 162.17,98.87 153.83,98.87" class="dot" fill="none"/>
 <path d="M148 49 L168 49 L168 209 L148 209Z M149 50 L167 50 L167 208 L149 208Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="148,209 168,209 168,208 148,208" class="none" fill="#ffffff"/>
 <line x1="148" y1="209" x2="148" y2="208" class="m"/>
@@ -221,7 +220,7 @@
 <text x="336" y="39.35" font-size="1.7" class="t">0</text>
 <rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
-<text x="336" y="42.65" font-size="1.7" class="t">28</text>
+<text x="336" y="42.65" font-size="1.7" class="t">27</text>
 <rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
 <text x="336" y="45.95" font-size="1.7" class="t">5</text>
@@ -256,7 +255,7 @@
 <rect x="307" y="85.8" width="106" height="3" class="f" fill="#ffffff"/>
 <text x="308" y="87.75" font-size="1.6" class="t">CF3-05</text>
 <text x="322" y="87.75" font-size="1.6" class="t">Overhead cable tray and ventilation trunk</text>
-<text x="406" y="87.75" font-size="1.6" class="t">11</text>
+<text x="406" y="87.75" font-size="1.6" class="t">10</text>
 <rect x="307" y="88.8" width="106" height="3" class="f" fill="#f4f6f9"/>
 <text x="308" y="90.75" font-size="1.6" class="t">CF3-06</text>
 <text x="322" y="90.75" font-size="1.6" class="t">Deck evacuation map</text>

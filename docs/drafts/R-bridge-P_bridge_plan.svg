@@ -112,12 +112,12 @@
 <polygon points="180.5,87.5 183.5,87.5 183.5,90.5 180.5,90.5" class="dot" fill="none"/>
 <polygon points="240.5,87.5 243.5,87.5 243.5,90.5 240.5,90.5" class="dot" fill="none"/>
 <polygon points="210.5,127.5 213.5,127.5 213.5,130.5 210.5,130.5" class="dot" fill="none"/>
-<polygon points="185.71,128.64 191.31,128.64 191.31,130.35 185.71,130.35" class="dot" fill="none"/>
-<polygon points="183.71,73.7 193.31,73.7 193.31,83.3 183.71,83.3" class="dot" fill="none"/>
-<polygon points="232.39,72.2 238.59,72.2 238.59,84.8 232.39,84.8" class="dot" fill="none"/>
-<polygon points="136.52,124.5 146.52,124.5 146.52,134.5 136.52,134.5" class="dot" fill="none"/>
-<polygon points="277.51,125.17 287.45,125.17 287.45,133.83 277.51,133.83" class="dot" fill="none"/>
-<polygon points="229.24,128.7 241.74,128.7 241.74,130.3 229.24,130.3" class="dot" fill="none"/>
+<polygon points="183.01,77.72 194.01,77.72 194.01,79.28 183.01,79.28" class="dot" fill="none"/>
+<polygon points="229.99,128.72 240.99,128.72 240.99,130.28 229.99,130.28" class="dot" fill="none"/>
+<polygon points="276.98,128.72 287.98,128.72 287.98,130.28 276.98,130.28" class="dot" fill="none"/>
+<polygon points="185.41,123.2 191.61,123.2 191.61,135.8 185.41,135.8" class="dot" fill="none"/>
+<polygon points="135.27,128.7 147.77,128.7 147.77,130.3 135.27,130.3" class="dot" fill="none"/>
+<polygon points="229.24,77.7 241.74,77.7 241.74,79.3 229.24,79.3" class="dot" fill="none"/>
 <text x="272" y="130.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">briefing table</text>
 <text x="229.5" y="76.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops</text>
 <text x="248.5" y="162.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">tactical</text>

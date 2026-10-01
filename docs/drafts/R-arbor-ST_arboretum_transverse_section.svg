@@ -47,7 +47,28 @@
 <polygon points="299.13,61 304.87,61 304.87,133 299.13,133" class="x" fill="#f2f4f7"/>
 <polygon points="303.35,73 304.87,73 304.87,121 303.35,121" class="n" fill="url(#hGlass)"/>
 <line x1="304.11" y1="121" x2="304.11" y2="73" class="f"/>
+<polygon points="164.13,123.66 204.13,123.66 204.13,133 164.13,133" class="f" fill="#f6d7b3"/>
+<polygon points="128.33,108.2 133.53,108.2 133.53,115.4 128.33,115.4" class="f" fill="#f1e0b7"/>
+<polygon points="127.39,102.86 134.45,102.86 134.45,115.4 127.39,115.4" class="f" fill="#f1e7b6"/>
+<polygon points="128.07,102.64 133.77,102.64 133.77,115.4 128.07,115.4" class="f" fill="#f1e6b5"/>
+<polygon points="215.53,104.1 242.73,104.1 242.73,133 215.53,133" class="f" fill="#f1dfb4"/>
+<polygon points="184.47,92.22 205.79,92.22 205.79,133 184.47,133" class="f" fill="#c1b4f1"/>
+<polygon points="122.93,102.1 138.93,102.1 138.93,133 122.93,133" class="f" fill="#b4d5f1"/>
+<polygon points="265.95,89 271.9,89 271.9,95.98 265.95,95.98" class="f" fill="#f5b9ae"/>
+<polygon points="241.29,123.7 268.81,123.7 268.81,133 241.29,133" class="f" fill="#f5d4ae"/>
+<polygon points="154.13,109.8 172.13,109.8 172.13,133 154.13,133" class="f" fill="#bfb3f1"/>
+<polygon points="158.95,61 178.83,61 178.83,62.46 158.95,62.46" class="dot" fill="none"/>
+<polygon points="218.83,61 238.03,61 238.03,63.72 218.83,63.72" class="dot" fill="none"/>
+<polygon points="214.45,61 223.81,61 223.81,87.44 214.45,87.44" class="dot" fill="none"/>
+<polygon points="174.45,61 183.81,61 183.81,87.44 174.45,87.44" class="dot" fill="none"/>
+<polygon points="237.59,113.24 244.65,113.24 244.65,117.42 237.59,117.42" class="f" fill="#f9d3be"/>
+<polygon points="225.95,115.8 232.31,115.8 232.31,117.8 225.95,117.8" class="f" fill="#f9d3be"/>
+<polygon points="290.08,89 296.01,89 296.01,95.98 290.08,95.98" class="f" fill="#f4b3a7"/>
+<polygon points="250.41,113.1 266.41,113.1 266.41,133 250.41,133" class="f" fill="#a7aef4"/>
+<polygon points="222.85,117.74 247.41,117.74 247.41,133 222.85,133" class="f" fill="#a6f4d9"/>
 <polygon points="115.13,57 123.13,57 123.13,133 115.13,133" class="f" fill="none"/>
+<polygon points="291.13,123.7 300.4,123.7 300.4,133 291.13,133" class="f" fill="#f4d0a6"/>
+<polygon points="122.13,67 123.25,67 123.25,75 122.13,75" class="f" fill="#bcf9f9"/>
 <polygon points="119.13,133 304.87,133 304.87,139 119.13,139" class="n" fill="url(#hSlab)"/>
 <polygon points="119.13,55 304.87,55 304.87,61 119.13,61" class="n" fill="url(#hSlab)"/>
 <polygon points="119.13,61 122.13,61 122.13,77.8 119.13,77.8" class="n" fill="#1c1c1c"/>
@@ -57,7 +78,13 @@
 <polygon points="300.94,121 305.27,121 305.27,122.2 300.94,122.2" class="f" fill="#777"/>
 <polygon points="300.94,71.8 305.27,71.8 305.27,73 300.94,73" class="f" fill="#777"/>
 <polygon points="115.13,57 123.13,57 123.13,133 115.13,133" class="m" fill="none"/>
+<polygon points="291.13,123.7 300.4,123.7 300.4,133 291.13,133" class="m" fill="#efbb7d"/>
+<polygon points="122.13,67 123.25,67 123.25,75 122.13,75" class="m" fill="#9ef7f6"/>
 </g>
+<text x="268.93" y="93.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2000</text>
+<text x="293.04" y="93.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2000</text>
+<text x="122.69" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3100</text>
+<text x="122.69" y="68.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">3100</text>
 <text x="119.13" y="52" font-size="1.8" class="t b">STBD</text>
 <text x="304.87" y="52" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="310.87" y1="139" x2="310.87" y2="55" class="d"/>

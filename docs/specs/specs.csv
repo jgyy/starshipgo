@@ -773,9 +773,11 @@ shelving_wall_shelf_cans,shelving,cargo,passive,Ironwake Heavy Works,IHW-SHE-478
 shelving_wall_storage_rack,shelving,cargo,passive,Ironwake Heavy Works,IHW-SHE-2535,Shelving - Wall Storage Rack,1600,1520,425,77.0,0.0,0.0,0.0,none,0.0,0.0,0,6360,59,627600,8760,25,0,IP54,-40,70,0,,,CSA-C1 cargo handling
 sign_barrier_tape_frame,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-2577,Sign - Barrier Tape Frame,2050,1040,360,45.4,0.0,0.0,0.0,none,0.0,0.0,0,1120,47,1887200,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_blade_sign,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-2195,Sign - Blade Sign,160,500,900,3.82,0.0,0.0,0.0,none,0.0,0.0,0,130,33,1250800,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
+sign_deck_0,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-6141,Sign - Deck 0,800,950,45,1.8,0.0,0.0,0.0,none,0.0,0.0,0,81.8,39,1516900,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_deck_1,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-8937,Sign - Deck 1,800,950,45,2.0,0.0,0.0,0.0,none,0.0,0.0,0,83.5,40,1787600,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_deck_2,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-4640,Sign - Deck 2,800,950,45,1.73,0.0,0.0,0.0,none,0.0,0.0,0,82.3,32,1139400,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_deck_3,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-7867,Sign - Deck 3,800,950,45,1.84,0.0,0.0,0.0,none,0.0,0.0,0,85.4,41,1372500,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
+sign_deck_4,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-5937,Sign - Deck 4,800,950,45,1.98,0.0,0.0,0.0,none,0.0,0.0,0,80.3,41,1692900,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_dept_airlock,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-1826,Sign - Dept Airlock,1000,400,66,1.48,0.0,0.0,0.0,none,0.0,0.0,0,188,39,1318400,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_dept_bridge,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-9413,Sign - Dept Bridge,1000,400,62,1.4,0.0,0.0,0.0,none,0.0,0.0,0,179,41,1649200,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
 sign_dept_cargo,sign,structure,passive,Calder-Okonkwo Industries,COI-SIG-7092,Sign - Dept Cargo,1000,400,52,1.16,0.0,0.0,0.0,none,0.0,0.0,0,90.0,35,1685000,17520,40,0,IP40,-40,80,0,,,CSA-S2 structural
