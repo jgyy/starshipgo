@@ -471,7 +471,8 @@ def cameras(S):
     """One tour camera per room: stand just inside the first door looking at the far side of the room."""
     S.cameras = []
     order = ["bridge", "corF1", "lounge", "conf", "astro", "capt", "corF2", "mess", "galley", "medbay", "sci", "hydro", "brig", "armory",
-             "rec", "lobby2", "eng", "core", "life", "cargo", "airlock", "hangar", "towerA2", "shop", "aux"]
+             "rec", "lobby2", "eng", "core", "life", "cargo", "airlock", "hangar", "towerA2", "shop", "aux",
+             "antimatter", "provisions", "water", "waste", "fab", "auxctl", "hold", "drone"]
     n = 0
     for rid in order:
         room = S.rooms.get(rid)

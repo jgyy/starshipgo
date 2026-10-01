@@ -66,7 +66,7 @@ def f_antimatter(R, B):
         "two-person containment watch.",
         basis="The trap (a plasma torus) stands alone inside a 4.2 m guard rail with a force-field gate facing the door; the bottle store, "
               "capacitor banks and field coils ring it on the hull facets so every cable is short; 1.4 m aisles all round, the 2 m door "
-              "approach is kept clear. Reserve: 3 magnetic bottles x 0.5 mg antihydrogen = 1.5 mg, enough for about 90 days at 0.017 mg/day "
+              "approach is kept clear. Reserve: 2 magnetic bottles x 0.75 mg antihydrogen = 1.5 mg, enough for about 90 days at 0.017 mg/day "
               "cruise load. Emergency coolant: a 4 m3 vertical tank (about 8 minutes of full boil-off cooling). Operators sit 5 m from the "
               "trap behind the rail; a radiation shelter panel and a decontamination station are by the door.",
         crew=2,
@@ -87,22 +87,22 @@ def f_antimatter(R, B):
     R.omni(TX, 0.4, TZ, "#7040ff", 1.0, 5.0)
 
     R.line("Guard rail and force-field gate",
-           "A 4.2 m rail keeps people 0.7 m from the trap's shielding; its east side is a force-field gate that drops only for the maintenance "
+           "A 4.2 m rail on the north and south keeps people 0.7 m from the trap's shielding; the west side is closed by the bottle store and the east side is a force-field gate that drops only for the maintenance "
            "party, so a visitor entering through the door is stopped by a visible barrier instead of a latch.")
-    rail(R, B, "railing_guard_mesh", TX - 2.1, TZ - 2.1, TX + 2.1, TZ + 2.1, skip=("E",))
+    rail(R, B, "railing_guard_mesh", TX - 2.1, TZ - 2.1, TX + 2.1, TZ + 2.1, skip=("E", "W"))
     put(R, B, "forcefield_emitter_pair", TX + 2.1, TZ, -90.0)
 
     R.line("Magnetic bottle store (west hull facets)",
-           "The three reserve bottles stand in a row on the hull facets; each bottle is a separate 0.5 mg pocket, so a failure of one can only release "
+           "The two reserve bottles stand on the hull facets; each bottle is a separate 0.75 mg pocket, so a failure of one can only release "
            "one pocket and the hull behind them is the best shielded wall of the room. Fronts face the trap so a technician sees all dials.")
     aw(R, B, "D1", "coil_magnetic_bottle", 0.67)
     aw(R, B, "D3", "coil_magnetic_bottle", 0.78)
-    wall_row(R, B, "S", ["coil_magnetic_bottle"], -10.3)
 
     R.line("Field coils (north hull facets)",
-           "The dilithium chamber that regulate the containment field and the injector pulse stand at the narrow "
+           "A discharge coil tower and a plasma conduit elbow that regulate the containment field and the injector pulse stand at the narrow "
            "bow end, in the order of the plasma path; their long cable runs go overhead to the trap.")
-    aw(R, B, "D7", "coil_dilithium_crystal_chamber", 0.97)
+    aw(R, B, "D7", "coil_discharge_coil_tower", 0.97)
+    wall_y(R, B, "D6", "coil_plasma_conduit_elbow", 0.95, 1.5, check=False)
 
     R.line("Matter / antimatter injector (south wall)",
            "The injector is the 3.5 m throat between the trap and the warp-core plasma trunk, so it stands against the south wall that is shared with "
@@ -137,11 +137,6 @@ def f_antimatter(R, B):
     wall_row(R, B, "E", ["suitrack_glove_boot_locker", "safety_emergency_shower", "safety_hazmat_cabinet"], -12.5, dirn=1, gap=0.05)
     wall_y(R, B, "N", "safety_radiation_shelter_panel", -2.25, 1.5, check=False)
     wall_y(R, B, "D0", "safety_eye_wash_station", 0.62, 1.1)
-
-    R.line("Maintenance cart, tool locker and spares",
-           "A diagnostic cart stands in the south-west aisle for the weekly service; the cart and chest are on "
-           "wheels, so they can be rolled to the trap only when a procedure calls for them.")
-    put(R, B, "engtool_diagnostic_cart", -10.3, -11.3, 0.0)
 
     R.line("Overhead trays, pipes and ducts",
            "Cable trays carry the coil currents and sensor fibre from the banks to the trap; insulated coolant pipes follow them, and a duct "
@@ -436,9 +431,10 @@ def f_waste(R, B):
     wall_row(R, B, "S", ["pallet_wrapped_stack", "pallet_sacks_stacked"], 9.0, gap=0.08)
 
     R.line("Forklift, pallet jack and crates",
-           "The hand pallet jack for the baled pallets is parked on the south side of the lane near the door, so the "
+           "A sealed biohazard crate waits by the digester for the next feed. The hand pallet jack for the baled pallets is parked on the south side of the lane near the door, so the "
            "operator can fetch a pallet without leaving the line; the forklift comes from the depot for the heavy loads.")
     put(R, B, "loader_hand_pallet_jack", 4.0, -1.8, 0.0)
+    put(R, B, "crate_biohazard", 12.1, -0.75, 0.0)
 
     R.line("Decontamination and PPE (west wall, south of the door)",
            "Anyone handling waste dresses at the glove / boot locker beside the door and washes in the emergency shower on the way out; "
@@ -763,3 +759,92 @@ def f_hold(R, B):
     wall_y(R, B, "N", "safety_first_aid_cabinet", -2.4, 1.5)
     sign_at(R, B, "E", "sign_emergency_exit", 19.7, 2.9)
     sign_at(R, B, "E", "sign_dept_cargo", 25.2, 2.9)
+
+
+# ----------------------------------------------------------------------------------------------- DRONE & PROBE BAY
+def f_drone(R, B):
+    R.describe(
+        "The Drone & Probe Bay stores, services and prepares the ship's robotic fleet - survey probes, repair and maintenance drones, a "
+        "repair pod - and launches probes down a keel launch tube; crewed craft are lifted to the Hangar Bay above, so this bay never opens to space.",
+        basis="One survey scout (the probe carrier) stands on a marked 6 m pad in the north-east corner and a repair pod on the south side; "
+              "a 2.9 m wide transfer lane from the corridor opening runs between the two zones and is kept clear for tugs and pallet jacks. "
+              "Stores: 12 survey probes and 6 repair drones on charging racks (each rack holds 4 units), 2 spare thrusters on stands, "
+              "propellant fed by line from the Deck 3 bunker (refuelling pump). A launch-prep console, a probe launch rail with a blast-shutter force field at the keel "
+              "tube and tools complete the bay. Crew of 3: a flight-deck controller, a drone technician and a pod mechanic.",
+        crew=3,
+        adjacency="Aft spine corridor through a 3.2 m opening on the west; Auxiliary Control directly north; Hangar Bay is on Deck 3 above, "
+                  "reached by the stair towers; the keel launch tube is in the south wall.",
+        notes="Ceiling 3.4 m: craft are chosen to fit under it (scout 2.1 m, repair pod 3.1 m).")
+    R.line("Ceiling lighting", "Bright neutral-white panels (400 lux) on a 3.6 m grid over the lane and the craft; a flood light "
+           "on the pad edge shows the markings.")
+    lights(R, spacing=3.6, color="#f6f8ff", energy=1.7)
+    R.keep_clear((2.5, 20.7, 9.0, 23.6), "2.9 m transfer lane from the corridor opening through the bay")
+
+    R.line("Survey scout on the landing pad (north-east)",
+           "The survey scout, the probe carrier, stands nose to the hull on a marked 6 m pad: it is loaded with probes from the lane side "
+           "and its battery is topped up from the floor power points around the pad.")
+    R.place(mm(B, "hangartool_landing_pad_square"), 7.6, 17.7, 0.0, reserve=False)
+    put(R, B, "craft_scout", 7.6, 17.7, 90.0)
+
+    R.line("Repair pod (south zone)",
+           "The repair pod stands on the south side of the lane, nose to the launch end of the bay, with its clamps beside it so the "
+           "mechanic can charge and service it without moving it; it is the only crewed craft that works from this bay.")
+    put(R, B, "craft_repair_pod", 6.5, 26.6, 0.0)
+
+    R.line("Probe launch rail and keel launch port (south wall)",
+           "Probes are put on the launch rail, which points at a blast-shutter force field in the south wall; when the shutter field drops, the rail "
+           "fires the probe down the keel tube. The rail is on the south side so no crew ever stands in the line of fire.")
+    put(R, B, "hangartool_launch_rail_segment", 4.6, 26.7, 0.0)
+    aw(R, B, "S", "forcefield_blast_shutter", 4.6)
+    sign_at(R, B, "S", "sign_hazard_laser", 7.2, 2.6)
+
+    R.line("Launch-prep console and seat (west wall, north of the opening)",
+           "The flight-deck controller sets up each launch from a console on the west wall, with the pad, the lane and the launch port in "
+           "view; the status board above shows pad, rail and shutter states and the countdown.")
+    con = aw(R, B, "W", "console_flight_control", 17.1)
+    seat_for(R, B, con, "seat_ops_chair")
+    if con:
+        tops(R, B, con, ["terminal_keyboard"], [(0.0, 0.15)])
+    wall_y(R, B, "W", "display_status_board", 17.1, bottom=2.0, check=False)
+
+    R.line("Communications and telemetry racks (west wall)",
+           "A radio rack and a telemetry data rack track each probe in flight and receive its data; they stand by the console so the "
+           "controller can see them, and by the west wall where the data trunk to Auxiliary Control enters.")
+    wall_row(R, B, "W", ["commsunit_radio_rack", "rack_open_frame_rack"], 18.6, gap=0.06)
+
+    R.line("Charging racks for probes and drones (west wall, south of the opening)",
+           "Survey probes and repair drones sleep in charging racks, four to a rack, so every unit leaves with a full battery; the power cell locker "
+           "holds spare cells, and an inverter cabinet feeds the whole row.")
+    wall_row(R, B, "W", ["capacitor_battery_rack", "capacitor_battery_rack", "capacitor_power_cell_locker", "generator_inverter_cabinet"],
+             24.1, gap=0.06)
+    wall_y(R, B, "W", "capacitor_cell_charging_dock", 25.6, bottom=2.3)
+
+    R.line("Drone service area (east hull facets)",
+           "An avionics bench and a tool cart stand on the hull facets so the technician can open a probe or a drone, "
+           "test its electronics away from the pad.")
+    aw(R, B, "D1", "hangartool_avionics_bench", 1.5)
+    aw(R, B, "D3", "hangartool_tool_cart", 1.5)
+
+    R.line("Propellant pump and hose reel (south-east facets)",
+           "Cold-gas propellant for the probes and the pod comes from the bunker on Deck 3 by line to a refuelling pump on the "
+           "south-east facets, furthest from the crew station, with the hull behind them.")
+    aw(R, B, "D4", "hangartool_refuelling_pump", 1.6)
+
+    R.line("Spare thruster and suit gear (south wall)",
+           "A spare thruster block stands on the south wall beside the launch port, and a glove / "
+           "boot locker for the pad crew is at the west end, so crew dress right by the launch rail.")
+    wall_row(R, B, "S", ["suitrack_glove_boot_locker"], 1.7)
+    wall_row(R, B, "S", ["nozzle_quad_rcs_block"], 6.3, gap=0.08)
+
+    R.line("Overhead services and signs",
+           "Overhead cable trays carry the telemetry and charging power, coolant lines run to the launch rail, sprinklers protect the charging row, "
+           "an exit sign marks the opening and floor stencils mark the lane and pad.")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, 3.0, 19.1, "x")
+    ceil_run(R, B, ["pipe_ceiling_insulated_pair"] * 3, 3.0, 25.6, "x")
+    for x, z in ((4.0, 15.5), (4.0, 24.5), (10.0, 24.5), (9.0, 21.5)):
+        R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
+    for x in (4.0, 6.5, 9.0):
+        mark(R, B, x, 22.1, 0.0)
+    fe(R, B, "W", 14.8)
+    sign_at(R, B, "W", "sign_emergency_exit", 19.8, 2.9)
+    sign_at(R, B, "W", "sign_dept_hangar", 28.8, 3.0)
