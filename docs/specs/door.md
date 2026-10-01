@@ -6,18 +6,18 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `door_airlock` | Door - Airlock | Calder-Okonkwo Industries | 2400 x 2890 x 250 | 348.8 kg | 97 W | 120 VAC 1ph | 6,600 |
+| `door_airlock` | Door - Airlock | Calder-Okonkwo Industries | 2400 x 2893 x 250 | 349.2 kg | 97 W | 120 VAC 1ph | 6,610 |
 | `door_blast` | Door - Blast | Calder-Okonkwo Industries | 2600 x 2940 x 295 | 497.9 kg | 130 W | 120 VAC 1ph | 10.5 k |
 | `door_bulkhead` | Door - Bulkhead | Calder-Okonkwo Industries | 2620 x 2860 x 285 | 465.7 kg | 130 W | 120 VAC 1ph | 8,510 |
 | `door_cabin` | Door - Cabin | Calder-Okonkwo Industries | 2620 x 2860 x 285 | 461 kg | 120 W | 120 VAC 1ph | 10.4 k |
 | `door_cargo` | Door - Cargo | Calder-Okonkwo Industries | 2360 x 2800 x 285 | 399 kg | 110 W | 120 VAC 1ph | 8,780 |
-| `door_cleanroom` | Door - Cleanroom | Calder-Okonkwo Industries | 2280 x 2740 x 1075 | 1.47 t | 330 W | 208 VAC 3ph | 26.5 k |
+| `door_cleanroom` | Door - Cleanroom | Calder-Okonkwo Industries | 2280 x 2743 x 1075 | 1.48 t | 330 W | 208 VAC 3ph | 26.6 k |
 | `door_engineering` | Door - Engineering | Calder-Okonkwo Industries | 2620 x 2860 x 285 | 454.8 kg | 120 W | 120 VAC 1ph | 11.8 k |
 | `door_glass_lab` | Door - Glass Lab | Calder-Okonkwo Industries | 2200 x 2740 x 245 | 280.8 kg | 90 W | 120 VAC 1ph | 6,280 |
 | `door_hangar_pressure` | Door - Hangar Pressure | Calder-Okonkwo Industries | 2700 x 3160 x 295 | 517 kg | 130 W | 120 VAC 1ph | 14 k |
 | `door_maintenance_hatch` | Door - Maintenance Hatch | Calder-Okonkwo Industries | 2440 x 2760 x 250 | 358 kg | 91 W | 120 VAC 1ph | 7,360 |
 | `door_medical` | Door - Medical | Calder-Okonkwo Industries | 2620 x 2860 x 285 | 409.9 kg | 120 W | 120 VAC 1ph | 10.3 k |
-| `door_officer_wood` | Door - Officer Wood | Calder-Okonkwo Industries | 2400 x 2880 x 250 | 368.1 kg | 100 W | 120 VAC 1ph | 8,220 |
+| `door_officer_wood` | Door - Officer Wood | Calder-Okonkwo Industries | 2400 x 2883 x 250 | 368.7 kg | 100 W | 120 VAC 1ph | 8,240 |
 | `door_science` | Door - Science | Calder-Okonkwo Industries | 2620 x 2860 x 285 | 450 kg | 110 W | 120 VAC 1ph | 9,360 |
 | `door_security` | Door - Security | Calder-Okonkwo Industries | 2620 x 2860 x 285 | 423.5 kg | 120 W | 120 VAC 1ph | 11.4 k |
 
@@ -27,11 +27,11 @@
 
 **Door - Airlock**, Calder-Okonkwo Industries, part COI-DOO-8858 (consumer)
 
-* Mass 348.8 kg; size 2400 x 2890 x 250 mm; heat 89 W.
+* Mass 349.2 kg; size 2400 x 2893 x 250 mm; heat 89 W.
 * Power 0 W idle / 97 W typical / 1.2 kW peak at 120 VAC 1ph.
-* Price 6,600 cr, lead time 47 days, MTBF 1,155,200 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 6,610 cr, lead time 47 days, MTBF 1,155,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (348.8 kg).
+* floor-mounted. Install with a hoist or gantry (349.2 kg).
 
 ### `door_blast`
 
@@ -77,11 +77,11 @@
 
 **Door - Cleanroom**, Calder-Okonkwo Industries, part COI-DOO-1623 (consumer)
 
-* Mass 1.47 t; size 2280 x 2740 x 1075 mm; heat 300 W.
+* Mass 1.48 t; size 2280 x 2743 x 1075 mm; heat 300 W.
 * Power 0 W idle / 330 W typical / 4 kW peak at 208 VAC 3ph.
-* Price 26.5 k cr, lead time 49 days, MTBF 1,773,100 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 26.6 k cr, lead time 49 days, MTBF 1,773,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (1.47 t).
+* floor-mounted. Install with a hoist or gantry (1.48 t).
 
 ### `door_engineering`
 
@@ -137,11 +137,11 @@
 
 **Door - Officer Wood**, Calder-Okonkwo Industries, part COI-DOO-6774 (consumer)
 
-* Mass 368.1 kg; size 2400 x 2880 x 250 mm; heat 92 W.
+* Mass 368.7 kg; size 2400 x 2883 x 250 mm; heat 92 W.
 * Power 0 W idle / 100 W typical / 1.2 kW peak at 120 VAC 1ph.
-* Price 8,220 cr, lead time 49 days, MTBF 1,438,500 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 8,240 cr, lead time 49 days, MTBF 1,438,500 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (368.1 kg).
+* floor-mounted. Install with a hoist or gantry (368.7 kg).
 
 ### `door_science`
 

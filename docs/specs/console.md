@@ -11,8 +11,8 @@
 | `console_compact_aux` | Bridge console - Compact Aux | Meridian Avionics | 1016 x 1311 x 777 | 145 kg | 280 W | 48 VDC | 286 k |
 | `console_corner` | Bridge console - Corner | Meridian Avionics | 1884 x 1445 x 1328 | 492.7 kg | 600 W | 120 VAC 1ph | 714 k |
 | `console_curved_command_desk` | Bridge console - Curved Command Desk | Meridian Avionics | 2708 x 1060 x 1035 | 389.7 kg | 500 W | 120 VAC 1ph | 563 k |
-| `console_damage_control` | Bridge console - Damage Control | Meridian Avionics | 1716 x 1390 x 907 | 282.3 kg | 450 W | 120 VAC 1ph | 421 k |
-| `console_engineering_status` | Bridge console - Engineering Status | Meridian Avionics | 1816 x 1596 x 857 | 344.6 kg | 490 W | 120 VAC 1ph | 679 k |
+| `console_damage_control` | Bridge console - Damage Control | Meridian Avionics | 1716 x 1390 x 910 | 283.2 kg | 450 W | 120 VAC 1ph | 422 k |
+| `console_engineering_status` | Bridge console - Engineering Status | Meridian Avionics | 1816 x 1596 x 860 | 345.8 kg | 490 W | 120 VAC 1ph | 681 k |
 | `console_environmental` | Bridge console - Environmental | Meridian Avionics | 1812 x 1390 x 854 | 309.5 kg | 370 W | 120 VAC 1ph | 547 k |
 | `console_flight_control` | Bridge console - Flight Control | Meridian Avionics | 1616 x 1395 x 954 | 305.2 kg | 430 W | 120 VAC 1ph | 475 k |
 | `console_helm` | Bridge console - Helm | Meridian Avionics | 1716 x 1432 x 904 | 287.3 kg | 400 W | 120 VAC 1ph | 433 k |
@@ -37,7 +37,7 @@
 * Power 62 W idle / 210 W typical / 290 W peak at 48 VDC.
 * Price 87.5 k cr, lead time 82 days, MTBF 58,200 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 32 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `computer` (screens: text).
+* Software: `nav` (screens: schedule).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `console_communications`
@@ -48,7 +48,7 @@
 * Power 110 W idle / 370 W typical / 520 W peak at 120 VAC 1ph.
 * Price 422 k cr, lead time 86 days, MTBF 57,200 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `comms`, `science` (screens: comm, waveform).
+* Software: `comms` (screens: comm, comms_spectrum).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `console_compact_aux`
@@ -59,7 +59,7 @@
 * Power 84 W idle / 280 W typical / 390 W peak at 48 VDC.
 * Price 286 k cr, lead time 77 days, MTBF 58,300 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `computer`, `diagnostics` (screens: text, diagnostic).
+* Software: `computer` (screens: terminal).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `console_corner`
@@ -70,7 +70,7 @@
 * Power 180 W idle / 600 W typical / 840 W peak at 120 VAC 1ph.
 * Price 714 k cr, lead time 87 days, MTBF 82,600 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `engineering`, `nav`, `sensors` (screens: systems, nav, radar).
+* Software: `power`, `nav`, `sensors` (screens: power_grid, nav_course, radar_sector).
 * floor-mounted, free-standing. Install with a hoist or gantry (492.7 kg).
 
 ### `console_curved_command_desk`
@@ -88,23 +88,23 @@
 
 **Bridge console - Damage Control**, Meridian Avionics, part MAV-CON-6051 (consumer)
 
-* Mass 282.3 kg; size 1716 x 1390 x 907 mm; heat 410 W.
-* Power 130 W idle / 450 W typical / 630 W peak at 120 VAC 1ph.
-* Price 421 k cr, lead time 83 days, MTBF 87,700 h, service every 8,760 h, service life 12 years, crew 1.
+* Mass 283.2 kg; size 1716 x 1390 x 910 mm; heat 410 W.
+* Power 140 W idle / 450 W typical / 630 W peak at 120 VAC 1ph.
+* Price 422 k cr, lead time 83 days, MTBF 87,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `deckplan`, `alert`, `engineering` (screens: schematic, alert, systems).
-* floor-mounted, free-standing. Install with a hoist or gantry (282.3 kg).
+* Software: `reactor`, `nav`, `power` (screens: reactor_core, floor_indicator, power_grid).
+* floor-mounted, free-standing. Install with a hoist or gantry (283.2 kg).
 
 ### `console_engineering_status`
 
 **Bridge console - Engineering Status**, Meridian Avionics, part MAV-CON-3631 (consumer)
 
-* Mass 344.6 kg; size 1816 x 1596 x 857 mm; heat 450 W.
+* Mass 345.8 kg; size 1816 x 1596 x 860 mm; heat 450 W.
 * Power 150 W idle / 490 W typical / 690 W peak at 120 VAC 1ph.
-* Price 679 k cr, lead time 80 days, MTBF 81,500 h, service every 8,760 h, service life 12 years, crew 1.
+* Price 681 k cr, lead time 80 days, MTBF 81,500 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `power`, `diagnostics`, `engineering` (screens: power, bars, systems).
-* floor-mounted, free-standing. Install with a hoist or gantry (344.6 kg).
+* Software: `power`, `nav`, `atmosphere` (screens: power_grid, fuel_status, atmosphere).
+* floor-mounted, free-standing. Install with a hoist or gantry (345.8 kg).
 
 ### `console_environmental`
 
@@ -114,7 +114,7 @@
 * Power 110 W idle / 370 W typical / 520 W peak at 120 VAC 1ph.
 * Price 547 k cr, lead time 87 days, MTBF 72,500 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `deckplan`, `medical` (screens: schematic, lifesigns).
+* Software: `nav` (screens: coolant_flow, crew_roster).
 * floor-mounted, free-standing. Install with a hoist or gantry (309.5 kg).
 
 ### `console_flight_control`
@@ -125,7 +125,7 @@
 * Power 130 W idle / 430 W typical / 610 W peak at 120 VAC 1ph.
 * Price 475 k cr, lead time 80 days, MTBF 62,100 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `nav`, `diagnostics`, `engineering` (screens: nav, diagnostic, systems).
+* Software: `deckplan`, `nav`, `hydroponics` (screens: deck_map, thermal, hydro_status).
 * floor-mounted, free-standing. Install with a hoist or gantry (305.2 kg).
 
 ### `console_helm`
@@ -136,7 +136,7 @@
 * Power 120 W idle / 400 W typical / 570 W peak at 120 VAC 1ph.
 * Price 433 k cr, lead time 87 days, MTBF 80,800 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `nav`, `sensors` (screens: nav, radar).
+* Software: `nav`, `sensors` (screens: nav, sensor_sweep).
 * floor-mounted, free-standing. Install with a hoist or gantry (287.3 kg).
 
 ### `console_navigation`
@@ -147,7 +147,7 @@
 * Power 140 W idle / 470 W typical / 660 W peak at 120 VAC 1ph.
 * Price 598 k cr, lead time 87 days, MTBF 80,000 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `starmap`, `nav`, `computer` (screens: starmap, nav, text).
+* Software: `starmap`, `nav`, `computer` (screens: starmap, nav, terminal).
 * floor-mounted, free-standing. Install with a hoist or gantry (352 kg).
 
 ### `console_ops`
@@ -158,7 +158,7 @@
 * Power 140 W idle / 450 W typical / 640 W peak at 120 VAC 1ph.
 * Price 589 k cr, lead time 83 days, MTBF 92,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `engineering`, `power`, `diagnostics` (screens: systems, power, diagnostic, bars).
+* Software: `atmosphere`, `engineering`, `logbook`, `diagnostics` (screens: atmosphere, engine_temp, log_list, bars).
 * floor-mounted, free-standing. Install with a hoist or gantry (401.4 kg).
 
 ### `console_science`
@@ -169,7 +169,7 @@
 * Power 110 W idle / 370 W typical / 520 W peak at 120 VAC 1ph.
 * Price 527 k cr, lead time 80 days, MTBF 90,200 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `science`, `atmosphere`, `computer` (screens: waveform, graph, text, periodic).
+* Software: `nav`, `engineering`, `computer`, `cargo` (screens: waterfall, engine_temp, terminal, cargo_manifest).
 * floor-mounted, free-standing. Install with a hoist or gantry (259.6 kg).
 
 ### `console_sensor`
@@ -180,7 +180,7 @@
 * Power 120 W idle / 410 W typical / 580 W peak at 120 VAC 1ph.
 * Price 378 k cr, lead time 86 days, MTBF 80,600 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `sensors`, `science` (screens: radar, waveform).
+* Software: `sensors`, `nav` (screens: radar_sector, waterfall).
 * floor-mounted, free-standing. Install with a hoist or gantry (263.1 kg).
 
 ### `console_shield_control`
@@ -191,7 +191,7 @@
 * Power 130 W idle / 430 W typical / 600 W peak at 120 VAC 1ph.
 * Price 430 k cr, lead time 79 days, MTBF 52,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `power`, `diagnostics`, `engineering` (screens: power, bars, systems).
+* Software: `power`, `diagnostics` (screens: power_grid, bars).
 * floor-mounted, free-standing. Install with a hoist or gantry (298.3 kg).
 
 ### `console_sloped_triple_screen`
@@ -202,7 +202,7 @@
 * Power 170 W idle / 560 W typical / 790 W peak at 120 VAC 1ph.
 * Price 552 k cr, lead time 80 days, MTBF 52,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `nav`, `starmap`, `engineering`, `tactical` (screens: nav, starmap, systems, tactical).
+* Software: `deckplan`, `starmap`, `lifesupport`, `security` (screens: deck_map, starmap, life_support, security_grid).
 * floor-mounted, free-standing. Install with a hoist or gantry (396.1 kg).
 
 ### `console_tactical`
@@ -213,7 +213,7 @@
 * Power 140 W idle / 450 W typical / 630 W peak at 120 VAC 1ph.
 * Price 460 k cr, lead time 78 days, MTBF 83,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `tactical`, `alert` (screens: tactical, alert).
+* Software: `security`, `nav` (screens: security_grid, radiation).
 * floor-mounted, free-standing. Install with a hoist or gantry (335.2 kg).
 
 ### `console_transporter_control`
@@ -224,7 +224,7 @@
 * Power 120 W idle / 400 W typical / 560 W peak at 120 VAC 1ph.
 * Price 391 k cr, lead time 81 days, MTBF 87,500 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `medical` (screens: vitals, lifesigns).
+* Software: `nav` (screens: dna, ecg_multi).
 * floor-mounted, free-standing. Install with a hoist or gantry (277.9 kg).
 
 ### `console_wall_flush`
@@ -235,7 +235,7 @@
 * Power 98 W idle / 330 W typical / 460 W peak at 120 VAC 1ph.
 * Price 272 k cr, lead time 81 days, MTBF 90,200 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `engineering`, `nav`, `sensors`, `atmosphere` (screens: systems, nav, radar, graph).
+* Software: `engineering`, `deckplan`, `sensors`, `nav` (screens: systems, deck_map, radar_sector, fuel_status).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `console_weapons`
@@ -246,6 +246,6 @@
 * Power 120 W idle / 410 W typical / 570 W peak at 120 VAC 1ph.
 * Price 468 k cr, lead time 86 days, MTBF 95,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `tactical`, `alert` (screens: tactical, alert).
+* Software: `tactical`, `nav` (screens: shield_status, radiation).
 * floor-mounted, free-standing. Install with a hoist or gantry (300.8 kg).
 

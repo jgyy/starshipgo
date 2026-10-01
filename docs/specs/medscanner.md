@@ -9,7 +9,7 @@
 | `medscanner_bio_scanner_pillar` | Medical scanner - Bio-Scanner Pillar | Lindqvist-Aoki Medical | 1200 x 2820 x 1200 | 878.8 kg | 6.4 kW | 208 VAC 3ph | 1.78 M |
 | `medscanner_blood_analyser` | Medical scanner - Blood Analyser | Lindqvist-Aoki Medical | 920 x 1750 x 840 | 282 kg | 2.2 kW | 208 VAC 3ph | 605 k |
 | `medscanner_handheld_scanner_dock` | Medical scanner - Handheld Scanner Dock | Lindqvist-Aoki Medical | 488 x 1400 x 500 | 68.2 kg | 840 W | 120 VAC 1ph | 119 k |
-| `medscanner_mri_ring_scanner` | Medical scanner - Mri Ring Scanner | Lindqvist-Aoki Medical | 2200 x 2250 x 2650 | 2.93 t | 21 kW | 400 VAC 3ph | 5.67 M |
+| `medscanner_mri_ring_scanner` | Medical scanner - Mri Ring Scanner | Lindqvist-Aoki Medical | 2200 x 2250 x 2653 | 2.93 t | 21 kW | 400 VAC 3ph | 5.68 M |
 | `medscanner_ultrasound_cart` | Medical scanner - Ultrasound Cart | Lindqvist-Aoki Medical | 902 x 1546 x 860 | 259.2 kg | 1.9 kW | 208 VAC 3ph | 448 k |
 | `medscanner_vitals_monitor_stand` | Medical scanner - Vitals Monitor Stand | Lindqvist-Aoki Medical | 642 x 1680 x 635 | 138.8 kg | 1.4 kW | 208 VAC 3ph | 327 k |
 | `medscanner_whole_body_scanner_arch` | Medical scanner - Whole-Body Scanner Arch | Lindqvist-Aoki Medical | 2335 x 2150 x 3000 | 3.37 t | 22 kW | 400 VAC 3ph | 6.69 M |
@@ -25,7 +25,7 @@
 * Power 1.9 kW idle / 6.4 kW typical / 11 kW peak at 208 VAC 3ph.
 * Price 1.78 M cr, lead time 103 days, MTBF 50,100 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 47 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: medical).
+* Software: `medical` (screens: body_scan).
 * floor-mounted, free-standing. Install with a hoist or gantry (878.8 kg).
 
 ### `medscanner_blood_analyser`
@@ -36,7 +36,7 @@
 * Power 670 W idle / 2.2 kW typical / 4 kW peak at 208 VAC 3ph.
 * Price 605 k cr, lead time 97 days, MTBF 72,200 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 45 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `computer` (screens: terminal).
 * floor-mounted, free-standing. Install with a hoist or gantry (282 kg).
 
 ### `medscanner_handheld_scanner_dock`
@@ -47,16 +47,16 @@
 * Power 250 W idle / 840 W typical / 1.5 kW peak at 120 VAC 1ph.
 * Price 119 k cr, lead time 91 days, MTBF 55,600 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 43 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: medical).
+* Software: `medical` (screens: body_scan).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `medscanner_mri_ring_scanner`
 
 **Medical scanner - Mri Ring Scanner**, Lindqvist-Aoki Medical, part LAM-MED-4323 (consumer)
 
-* Mass 2.93 t; size 2200 x 2250 x 2650 mm; heat 19 kW.
+* Mass 2.93 t; size 2200 x 2250 x 2653 mm; heat 19 kW.
 * Power 6.4 kW idle / 21 kW typical / 38 kW peak at 400 VAC 3ph.
-* Price 5.67 M cr, lead time 102 days, MTBF 71,000 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 5.68 M cr, lead time 102 days, MTBF 71,000 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 50 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
 * floor-mounted, free-standing. Install with a hoist or gantry (2.93 t).
 
@@ -101,6 +101,6 @@
 * Power 3.4 kW idle / 11 kW typical / 21 kW peak at 400 VAC 3ph.
 * Price 2.77 M cr, lead time 103 days, MTBF 49,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 48 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Install with a hoist or gantry (1.37 t).
 

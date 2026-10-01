@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `chair_armchair` | Chair - Armchair | Sable Habitat Furnishings | 860 x 995 x 800 | 12 kg | 0 W | none | 518 |
 | `chair_ergonomic_chair` | Chair - Ergonomic Chair | Sable Habitat Furnishings | 650 x 1570 x 821 | 17.1 kg | 0 W | none | 865 |
-| `chair_folding_chair` | Chair - Folding Chair | Sable Habitat Furnishings | 440 x 928 x 462 | 3.34 kg | 0 W | none | 217 |
+| `chair_folding_chair` | Chair - Folding Chair | Sable Habitat Furnishings | 446 x 928 x 465 | 3.41 kg | 0 W | none | 220 |
 | `chair_gaming_chair` | Chair - Gaming Chair | Sable Habitat Furnishings | 850 x 1460 x 739 | 17.7 kg | 0 W | none | 908 |
 | `chair_lounge_chair` | Chair - Lounge Chair | Sable Habitat Furnishings | 634 x 1105 x 871 | 11.7 kg | 0 W | none | 561 |
 | `chair_mess_chair` | Chair - Mess Chair | Sable Habitat Furnishings | 420 x 890 x 460 | 3.41 kg | 0 W | none | 220 |
@@ -41,9 +41,9 @@
 
 **Chair - Folding Chair**, Sable Habitat Furnishings, part SHF-CHA-2499 (passive)
 
-* Mass 3.34 kg; size 440 x 928 x 462 mm; heat 0 W.
+* Mass 3.41 kg; size 446 x 928 x 465 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 217 cr, lead time 30 days, MTBF 1,053,800 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 220 cr, lead time 30 days, MTBF 1,053,800 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing.
 

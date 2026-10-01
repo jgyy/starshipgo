@@ -7,14 +7,14 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `locker_display_cabinet` | Locker - Display Cabinet | Sable Habitat Furnishings | 800 x 900 x 342 | 22 kg | 0 W | none | 908 |
-| `locker_double_locker_bank` | Locker - Double Locker Bank | Sable Habitat Furnishings | 1040 x 1850 x 557 | 91.3 kg | 0 W | none | 3,540 |
+| `locker_double_locker_bank` | Locker - Double Locker Bank | Sable Habitat Furnishings | 1040 x 1853 x 557 | 91.4 kg | 0 W | none | 3,550 |
 | `locker_footlocker` | Locker - Footlocker | Sable Habitat Furnishings | 980 x 510 x 545 | 23.9 kg | 0 W | none | 1,050 |
 | `locker_gear_locker_keypad` | Locker - Gear Locker Keypad | Sable Habitat Furnishings | 940 x 1610 x 665 | 90.1 kg | 0 W | none | 3,860 |
-| `locker_kit_bags_on_hooks` | Locker - Kit Bags On Hooks | Sable Habitat Furnishings | 1200 x 1385 x 380 | 55.9 kg | 0 W | none | 2,430 |
+| `locker_kit_bags_on_hooks` | Locker - Kit Bags On Hooks | Sable Habitat Furnishings | 1206 x 1385 x 383 | 56.6 kg | 0 W | none | 2,460 |
 | `locker_mirror_cabinet` | Locker - Mirror Cabinet | Sable Habitat Furnishings | 620 x 880 x 195 | 8.96 kg | 0 W | none | 420 |
-| `locker_sea_chest` | Locker - Sea Chest | Sable Habitat Furnishings | 1180 x 560 x 615 | 35.3 kg | 0 W | none | 1,590 |
+| `locker_sea_chest` | Locker - Sea Chest | Sable Habitat Furnishings | 1180 x 563 x 615 | 35.5 kg | 0 W | none | 1,600 |
 | `locker_shoe_rack` | Locker - Shoe Rack | Sable Habitat Furnishings | 840 x 915 x 300 | 18 kg | 0 W | none | 752 |
-| `locker_tall_vented_locker` | Locker - Tall Vented Locker | Sable Habitat Furnishings | 520 x 1885 x 547 | 47.8 kg | 0 W | none | 2,090 |
+| `locker_tall_vented_locker` | Locker - Tall Vented Locker | Sable Habitat Furnishings | 520 x 1888 x 547 | 47.9 kg | 0 W | none | 2,090 |
 | `locker_under_bed_drawers` | Locker - Under-Bed Drawers | Sable Habitat Furnishings | 1200 x 240 x 797 | 18.5 kg | 0 W | none | 715 |
 | `locker_wall_cabinet` | Locker - Wall Cabinet | Sable Habitat Furnishings | 900 x 641 x 342 | 15.9 kg | 0 W | none | 724 |
 | `locker_wardrobe` | Locker - Wardrobe | Sable Habitat Furnishings | 1160 x 2060 x 687 | 134.3 kg | 0 W | none | 4,540 |
@@ -35,9 +35,9 @@
 
 **Locker - Double Locker Bank**, Sable Habitat Furnishings, part SHF-LOC-1174 (passive)
 
-* Mass 91.3 kg; size 1040 x 1850 x 557 mm; heat 0 W.
+* Mass 91.4 kg; size 1040 x 1853 x 557 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,540 cr, lead time 41 days, MTBF 1,027,400 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 3,550 cr, lead time 41 days, MTBF 1,027,400 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -65,9 +65,9 @@
 
 **Locker - Kit Bags On Hooks**, Sable Habitat Furnishings, part SHF-LOC-7555 (passive)
 
-* Mass 55.9 kg; size 1200 x 1385 x 380 mm; heat 0 W.
+* Mass 56.6 kg; size 1206 x 1385 x 383 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,430 cr, lead time 39 days, MTBF 1,087,400 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 2,460 cr, lead time 39 days, MTBF 1,087,400 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * wall-mounted. Two-person lift.
 
@@ -85,9 +85,9 @@
 
 **Locker - Sea Chest**, Sable Habitat Furnishings, part SHF-LOC-4298 (passive)
 
-* Mass 35.3 kg; size 1180 x 560 x 615 mm; heat 0 W.
+* Mass 35.5 kg; size 1180 x 563 x 615 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,590 cr, lead time 33 days, MTBF 1,110,300 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 1,600 cr, lead time 33 days, MTBF 1,110,300 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -105,7 +105,7 @@
 
 **Locker - Tall Vented Locker**, Sable Habitat Furnishings, part SHF-LOC-2088 (passive)
 
-* Mass 47.8 kg; size 520 x 1885 x 547 mm; heat 0 W.
+* Mass 47.9 kg; size 520 x 1888 x 547 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 2,090 cr, lead time 34 days, MTBF 888,500 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.

@@ -7,20 +7,20 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `barrel_canister_cluster` | Barrel / drum - Canister Cluster | Ironwake Heavy Works | 832 x 730 x 832 | 22 kg | 0 W | none | 2,410 |
-| `barrel_chemical_drum_hazard` | Barrel / drum - Chemical Drum Hazard | Ironwake Heavy Works | 604 x 935 x 604 | 13.9 kg | 0 W | none | 1,460 |
+| `barrel_chemical_drum_hazard` | Barrel / drum - Chemical Drum Hazard | Ironwake Heavy Works | 604 x 938 x 604 | 13.9 kg | 0 W | none | 1,460 |
 | `barrel_coolant_drums_pallet` | Barrel / drum - Coolant Drums Pallet | Ironwake Heavy Works | 1260 x 1029 x 1060 | 63 kg | 0 W | none | 6,480 |
 | `barrel_cryo_flask` | Barrel / drum - Cryo Flask | Ironwake Heavy Works | 650 x 1412 x 655 | 26.6 kg | 0 W | none | 2,620 |
-| `barrel_cryo_flask_cart` | Barrel / drum - Cryo Flask Cart | Ironwake Heavy Works | 1105 x 1245 x 680 | 40.4 kg | 0 W | none | 4,430 |
-| `barrel_gas_cylinder_rack` | Barrel / drum - Gas Cylinder Rack | Ironwake Heavy Works | 910 x 1350 x 610 | 30.5 kg | 0 W | none | 3,210 |
+| `barrel_cryo_flask_cart` | Barrel / drum - Cryo Flask Cart | Ironwake Heavy Works | 1108 x 1245 x 680 | 40.5 kg | 0 W | none | 4,440 |
+| `barrel_gas_cylinder_rack` | Barrel / drum - Gas Cylinder Rack | Ironwake Heavy Works | 910 x 1355 x 610 | 30.6 kg | 0 W | none | 3,220 |
 | `barrel_gas_cylinder_trolley` | Barrel / drum - Gas Cylinder Trolley | Ironwake Heavy Works | 660 x 1390 x 600 | 20.9 kg | 0 W | none | 2,610 |
 | `barrel_ibc_tote_composite` | Barrel / drum - Ibc Tote Composite | Ironwake Heavy Works | 1352 x 1345 x 1358 | 94.7 kg | 0 W | none | 7,680 |
-| `barrel_ibc_tote_steel` | Barrel / drum - Ibc Tote Steel | Ironwake Heavy Works | 1004 x 1320 x 1358 | 68.3 kg | 0 W | none | 5,960 |
+| `barrel_ibc_tote_steel` | Barrel / drum - Ibc Tote Steel | Ironwake Heavy Works | 1004 x 1323 x 1358 | 68.5 kg | 0 W | none | 5,980 |
 | `barrel_jerrycan_rack` | Barrel / drum - Jerrycan Rack | Ironwake Heavy Works | 1300 x 1095 x 600 | 33 kg | 0 W | none | 3,250 |
 | `barrel_jerrycan_single` | Barrel / drum - Jerrycan Single | Ironwake Heavy Works | 340 x 570 x 171 | 1.18 kg | 0 W | none | 162 |
 | `barrel_plastic_drum_lidded` | Barrel / drum - Plastic Drum Lidded | Ironwake Heavy Works | 675 x 980 x 640 | 16.9 kg | 0 W | none | 2,060 |
 | `barrel_powder_keg_cradle` | Barrel / drum - Powder Keg Cradle | Ironwake Heavy Works | 1660 x 1085 x 800 | 61.3 kg | 0 W | none | 6,080 |
-| `barrel_steel_drum_blue` | Barrel / drum - Steel Drum Blue | Ironwake Heavy Works | 604 x 915 x 604 | 12.6 kg | 0 W | none | 1,210 |
-| `barrel_steel_drum_pair` | Barrel / drum - Steel Drum Pair | Ironwake Heavy Works | 1737 x 915 x 700 | 47.2 kg | 0 W | none | 4,170 |
+| `barrel_steel_drum_blue` | Barrel / drum - Steel Drum Blue | Ironwake Heavy Works | 604 x 918 x 604 | 12.6 kg | 0 W | none | 1,210 |
+| `barrel_steel_drum_pair` | Barrel / drum - Steel Drum Pair | Ironwake Heavy Works | 1737 x 918 x 700 | 47.4 kg | 0 W | none | 4,190 |
 | `barrel_toxic_drums_sump` | Barrel / drum - Toxic Drums Sump | Ironwake Heavy Works | 1024 x 1005 x 900 | 35.4 kg | 0 W | none | 3,580 |
 
 ## Datasheets
@@ -39,7 +39,7 @@
 
 **Barrel / drum - Chemical Drum Hazard**, Ironwake Heavy Works, part IHW-BAR-3239 (passive)
 
-* Mass 13.9 kg; size 604 x 935 x 604 mm; heat 0 W.
+* Mass 13.9 kg; size 604 x 938 x 604 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 1,460 cr, lead time 54 days, MTBF 528,700 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -69,9 +69,9 @@
 
 **Barrel / drum - Cryo Flask Cart**, Ironwake Heavy Works, part IHW-BAR-3438 (passive)
 
-* Mass 40.4 kg; size 1105 x 1245 x 680 mm; heat 0 W.
+* Mass 40.5 kg; size 1108 x 1245 x 680 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,430 cr, lead time 55 days, MTBF 487,200 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 4,440 cr, lead time 55 days, MTBF 487,200 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -79,9 +79,9 @@
 
 **Barrel / drum - Gas Cylinder Rack**, Ironwake Heavy Works, part IHW-BAR-6290 (passive)
 
-* Mass 30.5 kg; size 910 x 1350 x 610 mm; heat 0 W.
+* Mass 30.6 kg; size 910 x 1355 x 610 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,210 cr, lead time 59 days, MTBF 392,900 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 3,220 cr, lead time 59 days, MTBF 392,900 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -109,9 +109,9 @@
 
 **Barrel / drum - Ibc Tote Steel**, Ironwake Heavy Works, part IHW-BAR-2389 (passive)
 
-* Mass 68.3 kg; size 1004 x 1320 x 1358 mm; heat 0 W.
+* Mass 68.5 kg; size 1004 x 1323 x 1358 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 5,960 cr, lead time 54 days, MTBF 595,400 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 5,980 cr, lead time 54 days, MTBF 595,400 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -159,7 +159,7 @@
 
 **Barrel / drum - Steel Drum Blue**, Ironwake Heavy Works, part IHW-BAR-8334 (passive)
 
-* Mass 12.6 kg; size 604 x 915 x 604 mm; heat 0 W.
+* Mass 12.6 kg; size 604 x 918 x 604 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 1,210 cr, lead time 52 days, MTBF 417,500 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -169,9 +169,9 @@
 
 **Barrel / drum - Steel Drum Pair**, Ironwake Heavy Works, part IHW-BAR-2238 (passive)
 
-* Mass 47.2 kg; size 1737 x 915 x 700 mm; heat 0 W.
+* Mass 47.4 kg; size 1737 x 918 x 700 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,170 cr, lead time 58 days, MTBF 406,300 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 4,190 cr, lead time 58 days, MTBF 406,300 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 

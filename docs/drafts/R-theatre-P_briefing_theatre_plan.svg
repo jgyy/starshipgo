@@ -35,24 +35,24 @@
 <polygon points="43,89 45.22,61 48.04,49 273,49 273,209 43,209" class="none" fill="#ebeff7"/>
 <polygon points="233,101.4 273,101.4 273,156.6 233,156.6" class="red" fill="url(#hZone)"/>
 <text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
-<polygon points="79.4,147.62 70.6,147.62 70.6,138.38 79.4,138.38" class="n" fill="#f7df99"/>
-<line x1="70.6" y1="138.38" x2="79.4" y2="138.38" class="m"/>
-<line x1="75" y1="138.38" x2="75" y2="139.58" class="f"/>
-<polygon points="99.4,147.62 90.6,147.62 90.6,138.38 99.4,138.38" class="n" fill="#f7df99"/>
-<line x1="90.6" y1="138.38" x2="99.4" y2="138.38" class="m"/>
-<line x1="95" y1="138.38" x2="95" y2="139.58" class="f"/>
-<polygon points="119.4,147.62 110.6,147.62 110.6,138.38 119.4,138.38" class="n" fill="#f7df99"/>
-<line x1="110.6" y1="138.38" x2="119.4" y2="138.38" class="m"/>
-<line x1="115" y1="138.38" x2="115" y2="139.58" class="f"/>
-<polygon points="169.4,147.62 160.6,147.62 160.6,138.38 169.4,138.38" class="n" fill="#f7df99"/>
-<line x1="160.6" y1="138.38" x2="169.4" y2="138.38" class="m"/>
-<line x1="165" y1="138.38" x2="165" y2="139.58" class="f"/>
-<polygon points="189.4,147.62 180.6,147.62 180.6,138.38 189.4,138.38" class="n" fill="#f7df99"/>
-<line x1="180.6" y1="138.38" x2="189.4" y2="138.38" class="m"/>
-<line x1="185" y1="138.38" x2="185" y2="139.58" class="f"/>
-<polygon points="209.4,147.62 200.6,147.62 200.6,138.38 209.4,138.38" class="n" fill="#f7df99"/>
-<line x1="200.6" y1="138.38" x2="209.4" y2="138.38" class="m"/>
-<line x1="205" y1="138.38" x2="205" y2="139.58" class="f"/>
+<polygon points="79.46,147.66 70.54,147.66 70.54,138.36 79.46,138.36" class="n" fill="#f7df99"/>
+<line x1="70.54" y1="138.36" x2="79.46" y2="138.36" class="m"/>
+<line x1="75" y1="138.36" x2="75" y2="139.56" class="f"/>
+<polygon points="99.46,147.66 90.54,147.66 90.54,138.36 99.46,138.36" class="n" fill="#f7df99"/>
+<line x1="90.54" y1="138.36" x2="99.46" y2="138.36" class="m"/>
+<line x1="95" y1="138.36" x2="95" y2="139.56" class="f"/>
+<polygon points="119.46,147.66 110.54,147.66 110.54,138.36 119.46,138.36" class="n" fill="#f7df99"/>
+<line x1="110.54" y1="138.36" x2="119.46" y2="138.36" class="m"/>
+<line x1="115" y1="138.36" x2="115" y2="139.56" class="f"/>
+<polygon points="169.46,147.66 160.54,147.66 160.54,138.36 169.46,138.36" class="n" fill="#f7df99"/>
+<line x1="160.54" y1="138.36" x2="169.46" y2="138.36" class="m"/>
+<line x1="165" y1="138.36" x2="165" y2="139.56" class="f"/>
+<polygon points="189.46,147.66 180.54,147.66 180.54,138.36 189.46,138.36" class="n" fill="#f7df99"/>
+<line x1="180.54" y1="138.36" x2="189.46" y2="138.36" class="m"/>
+<line x1="185" y1="138.36" x2="185" y2="139.56" class="f"/>
+<polygon points="209.46,147.66 200.54,147.66 200.54,138.36 209.46,138.36" class="n" fill="#f7df99"/>
+<line x1="200.54" y1="138.36" x2="209.46" y2="138.36" class="m"/>
+<line x1="205" y1="138.36" x2="205" y2="139.56" class="f"/>
 <polygon points="183.78,65.58 194.22,65.58 194.22,76.42 183.78,76.42" class="n" fill="#99f7ea"/>
 <line x1="194.22" y1="76.42" x2="183.78" y2="76.42" class="m"/>
 <line x1="189" y1="76.42" x2="189" y2="75.22" class="f"/>
@@ -184,12 +184,12 @@
 <text x="165" y="187.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bar stool</text>
 <text x="185" y="187.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bar stool</text>
 <text x="205" y="187.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bar stool</text>
-<text x="75" y="143.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="95" y="143.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="115" y="143.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="165" y="143.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="185" y="143.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="205" y="143.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="75" y="143.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="95" y="143.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="115" y="143.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="165" y="143.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="185" y="143.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
+<text x="205" y="143.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
 <text x="75" y="121.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">mess chair</text>
 <text x="95" y="121.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">mess chair</text>
 <text x="115" y="121.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">mess chair</text>
@@ -225,8 +225,8 @@
 <circle cx="153" cy="77" r="0.4" class="none" fill="#b03030"/>
 <line x1="188.56" y1="45.3" x2="189" y2="71" class="x"/>
 <circle cx="189" cy="71" r="0.4" class="none" fill="#b03030"/>
-<line x1="39.29" y1="140.57" x2="75" y2="143" class="x"/>
-<circle cx="75" cy="143" r="0.4" class="none" fill="#b03030"/>
+<line x1="39.29" y1="140.57" x2="75" y2="143.01" class="x"/>
+<circle cx="75" cy="143.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="165.55" y1="212.7" x2="165" y2="187" class="x"/>
 <circle cx="165" cy="187" r="0.4" class="none" fill="#b03030"/>
 <line x1="181.5" y1="212.76" x2="183" y2="204.95" class="x"/>

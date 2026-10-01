@@ -83,9 +83,9 @@
 <polygon points="126.67,44.87 134.67,44.87 134.67,58.2 126.67,58.2" class="n" fill="#a877ef"/>
 <line x1="134.67" y1="58.2" x2="126.67" y2="58.2" class="m"/>
 <line x1="130.67" y1="58.2" x2="130.67" y2="57" class="f"/>
-<polygon points="137.33,44.87 145.33,44.87 145.33,51.65 137.33,51.65" class="n" fill="#cdef77"/>
-<line x1="145.33" y1="51.65" x2="137.33" y2="51.65" class="m"/>
-<line x1="141.33" y1="51.65" x2="141.33" y2="50.45" class="f"/>
+<polygon points="137.29,44.87 145.37,44.87 145.37,51.69 137.29,51.69" class="n" fill="#cdef77"/>
+<line x1="145.37" y1="51.69" x2="137.29" y2="51.69" class="m"/>
+<line x1="141.33" y1="51.69" x2="141.33" y2="50.49" class="f"/>
 <polygon points="149.95,44.87 159.39,44.87 159.39,55.67 149.95,55.67" class="n" fill="#a877ef"/>
 <line x1="159.39" y1="55.67" x2="149.95" y2="55.67" class="m"/>
 <line x1="154.67" y1="55.67" x2="154.67" y2="54.47" class="f"/>
@@ -104,9 +104,9 @@
 <polygon points="182.52,190.8 190.83,190.8 190.83,199.13 182.52,199.13" class="n" fill="#f7df99"/>
 <line x1="190.83" y1="199.13" x2="182.52" y2="199.13" class="m"/>
 <line x1="186.67" y1="199.13" x2="186.67" y2="197.93" class="f"/>
-<polygon points="228,213.13 212,213.13 212,207.13 228,207.13" class="n" fill="#81e8a2"/>
-<line x1="212" y1="207.13" x2="228" y2="207.13" class="m"/>
-<line x1="220" y1="207.13" x2="220" y2="208.33" class="f"/>
+<polygon points="228.04,213.13 211.96,213.13 211.96,207.09 228.04,207.09" class="n" fill="#81e8a2"/>
+<line x1="211.96" y1="207.09" x2="228.04" y2="207.09" class="m"/>
+<line x1="220" y1="207.09" x2="220" y2="208.29" class="f"/>
 <polygon points="87.41,195.63 99.25,195.63 99.25,209.05 87.41,209.05" class="n" fill="#99f7f6"/>
 <line x1="99.25" y1="209.05" x2="87.41" y2="209.05" class="m"/>
 <line x1="93.33" y1="209.05" x2="93.33" y2="207.85" class="f"/>
@@ -116,15 +116,15 @@
 <polygon points="196.36,165.75 189.88,171.19 184.48,164.76 190.96,159.32" class="n" fill="#92ef77"/>
 <line x1="184.48" y1="164.76" x2="190.96" y2="159.32" class="m"/>
 <line x1="187.72" y1="162.04" x2="188.49" y2="162.96" class="f"/>
-<polygon points="125.43,210.51 111.89,210.51 111.89,205.76 125.43,205.76" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
+<polygon points="125.43,210.52 111.89,210.52 111.89,205.76 125.43,205.76" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
 <line x1="111.89" y1="205.76" x2="125.43" y2="205.76" class="m"/>
 <line x1="118.66" y1="205.76" x2="118.66" y2="206.96" class="f"/>
-<polygon points="197.44,210.51 183.91,210.51 183.91,205.76 197.44,205.76" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
+<polygon points="197.44,210.52 183.91,210.52 183.91,205.76 197.44,205.76" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
 <line x1="183.91" y1="205.76" x2="197.44" y2="205.76" class="m"/>
 <line x1="190.67" y1="205.76" x2="190.67" y2="206.96" class="f"/>
 <polygon points="83.33,59 83.33,47 86.11,47 86.11,59" class="f" fill="#e0f799"/>
 <polygon points="83.33,197.67 83.33,193.67 85.99,193.67 85.99,197.67" class="f" fill="#e281e8"/>
-<polygon points="208.67,44.33 220.67,44.33 220.67,45.4 208.67,45.4" class="f" fill="#e88a81"/>
+<polygon points="208.67,44.33 220.67,44.33 220.67,45.41 208.67,45.41" class="f" fill="#e88a81"/>
 <polygon points="83.33,88.93 83.33,62.4 85.73,62.4 85.73,88.93" class="f" fill="#e88a81"/>
 <polygon points="83.33,189.11 83.33,175.56 84.87,175.56 84.87,189.11" class="f" fill="#e88a81"/>
 <polygon points="186.67,44.33 202.67,44.33 202.67,46.33 186.67,46.33" class="f" fill="#e88a81"/>
@@ -152,7 +152,7 @@
 <text x="120.67" y="51.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">storage a~</text>
 <text x="130.67" y="51.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">photonic ~</text>
 <text x="154.67" y="50.57" font-size="1.25" class="t" text-anchor="middle" fill="#333">crystal arc~</text>
-<text x="220" y="210.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">cartridge library she~</text>
+<text x="220" y="210.41" font-size="1.25" class="t" text-anchor="middle" fill="#333">cartridge library she~</text>
 <text x="160" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">star map gl~</text>
 <text x="190.42" y="93.05" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
 <text x="190.42" y="165.55" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
@@ -161,7 +161,7 @@
 <text x="186.67" y="195.27" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel of~</text>
 <text x="151.79" y="82.69" font-size="1.25" class="t" text-anchor="middle" fill="#333">science st~</text>
 <text x="207.33" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">science ~</text>
-<text x="141.33" y="48.56" font-size="1.25" class="t" text-anchor="middle" fill="#333">radio rack</text>
+<text x="141.33" y="48.58" font-size="1.25" class="t" text-anchor="middle" fill="#333">radio rack</text>
 <text x="151.78" y="175.91" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel ju~</text>
 <path d="M81.33 42.33 L233.85 42.33 L234.67 55.67 L234.67 215.67 L81.33 215.67Z M83.33 44.33 L231.97 44.33 L232.67 55.73 L232.67 213.67 L83.33 213.67Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="81.33,113.27 81.33,144.73 83.33,144.73 83.33,113.27" class="none" fill="#ffffff"/>
@@ -200,8 +200,8 @@
 <circle cx="218.67" cy="53.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.57" y1="51.59" x2="84.72" y2="53" class="x"/>
 <circle cx="84.72" cy="53" r="0.4" class="none" fill="#b03030"/>
-<line x1="219.15" y1="219.38" x2="220" y2="210.13" class="x"/>
-<circle cx="220" cy="210.13" r="0.4" class="none" fill="#b03030"/>
+<line x1="219.15" y1="219.38" x2="220" y2="210.11" class="x"/>
+<circle cx="220" cy="210.11" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.6" y1="183.2" x2="84.1" y2="182.33" class="x"/>
 <circle cx="84.1" cy="182.33" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.59" y1="199.78" x2="93.33" y2="202.34" class="x"/>

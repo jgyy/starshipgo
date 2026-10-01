@@ -12,7 +12,7 @@
 | `spotlight_recessed_spot_can` | Spotlight - Recessed Spot Can | Tamsin Lighting | 216 x 166 x 220 | 1.23 kg | 22 W | 24 VDC | 611 |
 | `spotlight_search_light_pedestal` | Spotlight - Search Light Pedestal | Tamsin Lighting | 638 x 1690 x 826 | 132.1 kg | 200 W | 120 VAC 1ph | 29.2 k |
 | `spotlight_stage_truss_lights` | Spotlight - Stage Truss Lights | Tamsin Lighting | 1400 x 360 x 846 | 60.4 kg | 98 W | 120 VAC 1ph | 17 k |
-| `spotlight_track_light_pair` | Spotlight - Track Light Pair | Tamsin Lighting | 930 x 284 x 228 | 8.04 kg | 33 W | 24 VDC | 2,200 |
+| `spotlight_track_light_pair` | Spotlight - Track Light Pair | Tamsin Lighting | 930 x 287 x 228 | 8.13 kg | 33 W | 24 VDC | 2,220 |
 | `spotlight_tripod_floodlight` | Spotlight - Tripod Floodlight | Tamsin Lighting | 752 x 1923 x 821 | 178.3 kg | 260 W | 120 VAC 1ph | 41.4 k |
 
 ## Datasheets
@@ -81,9 +81,9 @@
 
 **Spotlight - Track Light Pair**, Tamsin Lighting, part TAM-SPO-6354 (consumer)
 
-* Mass 8.04 kg; size 930 x 284 x 228 mm; heat 26 W.
+* Mass 8.13 kg; size 930 x 287 x 228 mm; heat 26 W.
 * Power 1.7 W idle / 33 W typical / 37 W peak at 24 VDC.
-* Price 2,200 cr, lead time 41 days, MTBF 70,700 h, service every 17,520 h, service life 12 years, crew 0.
+* Price 2,220 cr, lead time 41 days, MTBF 70,700 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 

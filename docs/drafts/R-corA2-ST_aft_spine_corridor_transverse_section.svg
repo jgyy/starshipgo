@@ -37,25 +37,25 @@
 <g clip-path="url(#clipA)">
 <polygon points="182,63 242,63 242,131 182,131" class="x" fill="#e3e7ec"/>
 <polygon points="237.46,75.8 239,75.8 239,84.2 237.46,84.2" class="f" fill="#c2f3eb"/>
-<polygon points="224.4,63 233.6,63 233.6,66.4 224.4,66.4" class="dot" fill="none"/>
-<polygon points="199.5,63 224.5,63 224.5,64.24 199.5,64.24" class="dot" fill="none"/>
-<polygon points="237.96,67 239,67 239,75 237.96,75" class="f" fill="#b8e6f2"/>
+<polygon points="224.4,63 233.6,63 233.6,66.46 224.4,66.46" class="dot" fill="none"/>
+<polygon points="199.5,63 224.5,63 224.5,64.3 199.5,64.3" class="dot" fill="none"/>
+<polygon points="237.9,67 239,67 239,75 237.9,75" class="f" fill="#b8e6f2"/>
 <polygon points="185,67 186.12,67 186.12,75 185,75" class="f" fill="#b8e6f2"/>
 <polygon points="185,78.4 188.42,78.4 188.42,81.6 185,81.6" class="f" fill="#b3f1e6"/>
-<polygon points="224.4,63 233.6,63 233.6,66.9 224.4,66.9" class="dot" fill="none"/>
+<polygon points="224.4,63 233.6,63 233.6,66.96 224.4,66.96" class="dot" fill="none"/>
 <polygon points="185,106 191.24,106 191.24,116.8 185,116.8" class="f" fill="#f9becd"/>
-<polygon points="205.8,63 218.2,63 218.2,64.96 205.8,64.96" class="dot" fill="none"/>
+<polygon points="205.8,63 218.2,63 218.2,65.02 205.8,65.02" class="dot" fill="none"/>
 <polygon points="185,75.8 186.54,75.8 186.54,84.2 185,84.2" class="f" fill="#adf0e4"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="f" fill="#ecadf0"/>
-<polygon points="224,63 234,63 234,66.8 224,66.8" class="dot" fill="none"/>
+<polygon points="224,63 234,63 234,66.86 224,66.86" class="dot" fill="none"/>
 <polygon points="182,131 242,131 242,137 182,137" class="n" fill="url(#hSlab)"/>
 <polygon points="182,57 242,57 242,63 182,63" class="n" fill="url(#hSlab)"/>
 <polygon points="182,63 185,63 185,131 182,131" class="n" fill="#1c1c1c"/>
 <polygon points="239,63 242,63 242,131 239,131" class="n" fill="#1c1c1c"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="m" fill="#e387e9"/>
 <polygon points="185,75.8 186.54,75.8 186.54,84.2 185,84.2" class="m" fill="#87e9d8"/>
-<polygon points="224,63 234,63 234,66.8 224,66.8" class="m" fill="#d87def"/>
-<polygon points="205.8,63 218.2,63 218.2,64.96 205.8,64.96" class="m" fill="#bff79e"/>
+<polygon points="224,63 234,63 234,66.86 224,66.86" class="m" fill="#d87def"/>
+<polygon points="205.8,63 218.2,63 218.2,65.02 205.8,65.02" class="m" fill="#bff79e"/>
 </g>
 <text x="188.12" y="113.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">900</text>
 <text x="186.99" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
@@ -65,7 +65,7 @@
 <text x="185.77" y="77.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
 <text x="186.71" y="83.14" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
 <text x="185.56" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
-<text x="238.48" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
+<text x="238.45" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
 <text x="182" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="242" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="248" y1="137" x2="248" y2="57" class="d"/>

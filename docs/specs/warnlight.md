@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `warnlight_docking_guide_bar` | Warning light - Docking Guide Bar | Tamsin Lighting | 1900 x 95 x 265 | 5.36 kg | 9.7 W | 24 VDC | 1,480 |
+| `warnlight_docking_guide_bar` | Warning light - Docking Guide Bar | Tamsin Lighting | 1900 x 98 x 265 | 5.53 kg | 9.9 W | 24 VDC | 1,520 |
 | `warnlight_door_state_light` | Warning light - Door State Light | Tamsin Lighting | 340 x 120 x 75 | 0.33 kg | 5.8 W | 24 VDC | 139 |
 | `warnlight_floor_guide_disc` | Warning light - Floor Guide Disc | Tamsin Lighting | 220 x 36 x 220 | 0.19 kg | 5.1 W | 24 VDC | 189 |
 | `warnlight_pressure_status_light` | Warning light - Pressure Status Light | Tamsin Lighting | 200 x 440 x 80 | 0.83 kg | 5.2 W | 24 VDC | 406 |
@@ -21,9 +21,9 @@
 
 **Warning light - Docking Guide Bar**, Tamsin Lighting, part TAM-WAR-2880 (consumer)
 
-* Mass 5.36 kg; size 1900 x 95 x 265 mm; heat 7.8 W.
-* Power 0.49 W idle / 9.7 W typical / 11 W peak at 24 VDC.
-* Price 1,480 cr, lead time 36 days, MTBF 67,600 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 5.53 kg; size 1900 x 98 x 265 mm; heat 7.9 W.
+* Power 0.49 W idle / 9.9 W typical / 11 W peak at 24 VDC.
+* Price 1,520 cr, lead time 36 days, MTBF 67,600 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * floor-mounted.
 

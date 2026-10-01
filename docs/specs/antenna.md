@@ -47,7 +47,7 @@
 * Power 110 W idle / 430 W typical / 640 W peak at 120 VAC 1ph.
 * Price 680 k cr, lead time 65 days, MTBF 60,700 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 32 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `comms` (screens: comm).
+* Software: `comms` (screens: uplink).
 * floor-mounted, free-standing. Install with a hoist or gantry (660 kg).
 
 ### `antenna_feed_horn_panel`

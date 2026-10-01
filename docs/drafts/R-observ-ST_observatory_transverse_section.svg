@@ -40,13 +40,13 @@
 <polygon points="97,63 100.4,63 100.4,131 97,131" class="x" fill="#eff2f5"/>
 <polygon points="97.81,67 99.59,67 99.59,119 97.81,119" class="n" fill="url(#hGlass)"/>
 <line x1="98.7" y1="119" x2="98.7" y2="67" class="f"/>
-<polygon points="198.38,86 219.6,86 219.6,131 198.38,131" class="f" fill="#b2f5de"/>
+<polygon points="198.38,85.94 219.6,85.94 219.6,131 198.38,131" class="f" fill="#b2f5de"/>
 <polygon points="279,101.86 291,101.86 291,113.4 279,113.4" class="f" fill="#b1f5de"/>
 <polygon points="106.78,88.66 111.27,88.66 111.27,97 106.78,97" class="f" fill="#fad8c5"/>
 <polygon points="268.64,100.1 301.34,100.1 301.34,131 268.64,131" class="f" fill="#c4fad1"/>
 <polygon points="134,93.4 152,93.4 152,131 134,131" class="f" fill="#b1f5de"/>
 <polygon points="222.24,94.2 255.74,94.2 255.74,131 222.24,131" class="f" fill="#fac4c4"/>
-<polygon points="315.74,115.48 318.66,115.48 318.66,115.8 315.74,115.8" class="f" fill="#f1b5c8"/>
+<polygon points="315.74,115.42 318.66,115.42 318.66,115.8 315.74,115.8" class="f" fill="#f1b5c8"/>
 <polygon points="322.04,80.8 324,80.8 324,89.2 322.04,89.2" class="f" fill="#b0f5bb"/>
 <polygon points="154.34,93.22 195.66,93.22 195.66,131 154.34,131" class="f" fill="#b5c6f1"/>
 <polygon points="111.57,94.98 134.45,94.98 134.45,131 111.57,131" class="f" fill="#c3fac2"/>

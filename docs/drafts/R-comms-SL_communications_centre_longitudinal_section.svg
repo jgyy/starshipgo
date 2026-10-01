@@ -47,13 +47,13 @@
 <polygon points="165.8,103.58 181.88,103.58 181.88,131 165.8,131" class="f" fill="#fac2fa"/>
 <polygon points="165,75 166.9,75 166.9,96.1 165,96.1" class="f" fill="#f1b9b3"/>
 <polygon points="238.2,91 258.2,91 258.2,131 238.2,131" class="f" fill="#c7a8f4"/>
-<polygon points="205.62,62.98 218.38,62.98 218.38,66.5 205.62,66.5" class="dot" fill="none"/>
-<polygon points="169.4,110.96 175.4,110.96 175.4,114.6 169.4,114.6" class="f" fill="#def4a7"/>
+<polygon points="205.62,62.98 218.38,62.98 218.38,66.56 205.62,66.56" class="dot" fill="none"/>
+<polygon points="169.38,110.96 175.44,110.96 175.44,114.6 169.38,114.6" class="f" fill="#def4a7"/>
 <polygon points="204.46,101.4 215.54,101.4 215.54,131 204.46,131" class="f" fill="#bcf2f9"/>
 <polygon points="165.8,103.42 179,103.42 179,131 165.8,131" class="f" fill="#def4a6"/>
 <polygon points="185,104.2 200.28,104.2 200.28,131 185,131" class="f" fill="#b8f4a6"/>
 <polygon points="238.2,91 258.2,91 258.2,131 238.2,131" class="f" fill="#c6a6f4"/>
-<polygon points="241.4,63 250.6,63 250.6,66.4 241.4,66.4" class="dot" fill="none"/>
+<polygon points="241.4,63 250.6,63 250.6,66.46 241.4,66.46" class="dot" fill="none"/>
 <polygon points="162,131 262,131 262,137 162,137" class="n" fill="url(#hSlab)"/>
 <polygon points="162,57 262,57 262,63 162,63" class="n" fill="url(#hSlab)"/>
 <polygon points="162,63 165,63 165,131 162,131" class="n" fill="#1c1c1c"/>
@@ -61,7 +61,7 @@
 <polygon points="165.8,103.42 179,103.42 179,131 165.8,131" class="m" fill="#cfef7d"/>
 <polygon points="185,104.2 200.28,104.2 200.28,131 185,131" class="m" fill="#97ef7d"/>
 <polygon points="238.2,91 258.2,91 258.2,131 238.2,131" class="m" fill="#ac7def"/>
-<polygon points="241.4,63 250.6,63 250.6,66.4 241.4,66.4" class="m" fill="#d87def"/>
+<polygon points="241.4,63 250.6,63 250.6,66.46 241.4,66.46" class="m" fill="#d87def"/>
 </g>
 <text x="192.06" y="99.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1600</text>
 <text x="217.59" y="103.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1400</text>

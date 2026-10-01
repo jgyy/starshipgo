@@ -11,10 +11,10 @@
 | `specimen_biocontainment_cabinet` | Specimen storage - Biocontainment Cabinet | Orrery Instruments | 1610 x 2600 x 900 | 590.6 kg | 1.9 kW | 208 VAC 3ph | 1.68 M |
 | `specimen_containment_cylinder` | Specimen storage - Containment Cylinder | Orrery Instruments | 1260 x 2225 x 1139 | 479.7 kg | 1.7 kW | 208 VAC 3ph | 1 M |
 | `specimen_desktop_terrarium` | Specimen storage - Desktop Terrarium | Orrery Instruments | 600 x 490 x 400 | 18.2 kg | 150 W | 48 VDC | 44.1 k |
-| `specimen_rock_sample_case` | Specimen storage - Rock Sample Case | Orrery Instruments | 500 x 450 x 450 | 14.6 kg | 150 W | 48 VDC | 34.4 k |
+| `specimen_rock_sample_case` | Specimen storage - Rock Sample Case | Orrery Instruments | 506 x 450 x 450 | 14.8 kg | 150 W | 48 VDC | 34.9 k |
 | `specimen_seed_vault` | Specimen storage - Seed Vault | Orrery Instruments | 1000 x 1970 x 769 | 222.9 kg | 880 W | 120 VAC 1ph | 534 k |
 | `specimen_specimen_jar_set` | Specimen storage - Specimen Jar Set | Orrery Instruments | 600 x 360 x 260 | 8.64 kg | 120 W | 48 VDC | 22.6 k |
-| `specimen_vial_rack` | Specimen storage - Vial Rack | Orrery Instruments | 360 x 190 x 220 | 2.35 kg | 100 W | 48 VDC | 5,450 |
+| `specimen_vial_rack` | Specimen storage - Vial Rack | Orrery Instruments | 366 x 190 x 220 | 2.39 kg | 100 W | 48 VDC | 5,530 |
 
 ## Datasheets
 
@@ -36,7 +36,7 @@
 * Power 140 W idle / 460 W typical / 780 W peak at 120 VAC 1ph.
 * Price 236 k cr, lead time 114 days, MTBF 68,900 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 44 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `specimen_biocontainment_cabinet`
@@ -47,7 +47,7 @@
 * Power 560 W idle / 1.9 kW typical / 3.2 kW peak at 208 VAC 3ph.
 * Price 1.68 M cr, lead time 121 days, MTBF 42,100 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 47 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `medical` (screens: lifesigns).
+* Software: `science` (screens: ecg_multi).
 * floor-mounted, free-standing. Install with a hoist or gantry (590.6 kg).
 
 ### `specimen_containment_cylinder`
@@ -58,7 +58,7 @@
 * Power 500 W idle / 1.7 kW typical / 2.8 kW peak at 208 VAC 3ph.
 * Price 1 M cr, lead time 117 days, MTBF 56,700 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 46 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `medical` (screens: lifesigns).
+* Software: `science` (screens: ecg_multi).
 * floor-mounted, free-standing. Install with a hoist or gantry (479.7 kg).
 
 ### `specimen_desktop_terrarium`
@@ -75,9 +75,9 @@
 
 **Specimen storage - Rock Sample Case**, Orrery Instruments, part ORI-SPE-3791 (consumer)
 
-* Mass 14.6 kg; size 500 x 450 x 450 mm; heat 140 W.
+* Mass 14.8 kg; size 506 x 450 x 450 mm; heat 140 W.
 * Power 44 W idle / 150 W typical / 250 W peak at 48 VDC.
-* Price 34.4 k cr, lead time 106 days, MTBF 43,700 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 34.9 k cr, lead time 106 days, MTBF 43,700 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 42 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
 * table-mounted.
 
@@ -89,7 +89,7 @@
 * Power 260 W idle / 880 W typical / 1.5 kW peak at 120 VAC 1ph.
 * Price 534 k cr, lead time 110 days, MTBF 56,200 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 45 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `power` (screens: power).
+* Software: `power` (screens: power_grid).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `specimen_specimen_jar_set`
@@ -106,9 +106,9 @@
 
 **Specimen storage - Vial Rack**, Orrery Instruments, part ORI-SPE-3051 (consumer)
 
-* Mass 2.35 kg; size 360 x 190 x 220 mm; heat 92 W.
+* Mass 2.39 kg; size 366 x 190 x 220 mm; heat 92 W.
 * Power 30 W idle / 100 W typical / 170 W peak at 48 VDC.
-* Price 5,450 cr, lead time 101 days, MTBF 58,000 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 5,530 cr, lead time 101 days, MTBF 58,000 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 42 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
 * table-mounted.
 

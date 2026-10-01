@@ -57,12 +57,12 @@
 <polygon points="134.22,103 159.22,103 159.22,117 134.22,117" class="n" fill="#e8c981"/>
 <line x1="159.22" y1="117" x2="134.22" y2="117" class="m"/>
 <line x1="146.72" y1="117" x2="146.72" y2="115.8" class="f"/>
-<polygon points="161.22,106 186.42,106 186.42,114 161.22,114" class="n" fill="#e8c981"/>
-<line x1="186.42" y1="114" x2="161.22" y2="114" class="m"/>
-<line x1="173.82" y1="114" x2="173.82" y2="112.8" class="f"/>
-<polygon points="188.42,103 216.42,103 216.42,117 188.42,117" class="n" fill="#e8c981"/>
-<line x1="216.42" y1="117" x2="188.42" y2="117" class="m"/>
-<line x1="202.42" y1="117" x2="202.42" y2="115.8" class="f"/>
+<polygon points="161.22,105.94 186.54,105.94 186.54,114.06 161.22,114.06" class="n" fill="#e8c981"/>
+<line x1="186.54" y1="114.06" x2="161.22" y2="114.06" class="m"/>
+<line x1="173.88" y1="114.06" x2="173.88" y2="112.86" class="f"/>
+<polygon points="188.54,103 216.54,103 216.54,117 188.54,117" class="n" fill="#e8c981"/>
+<line x1="216.54" y1="117" x2="188.54" y2="117" class="m"/>
+<line x1="202.54" y1="117" x2="202.54" y2="115.8" class="f"/>
 <polygon points="100.02,140.6 128.02,140.6 128.02,151.42 100.02,151.42" class="n" fill="#e8c981"/>
 <line x1="128.02" y1="151.42" x2="100.02" y2="151.42" class="m"/>
 <line x1="114.02" y1="151.42" x2="114.02" y2="150.22" class="f"/>
@@ -137,22 +137,22 @@
 <polygon points="173.52,62 214.52,62 214.52,68 173.52,68" class="f" fill="#ef77cd"/>
 <polygon points="47.02,139 47.02,119 48.14,119 48.14,139" class="f" fill="#81d3e8"/>
 <polygon points="85.34,170.22 94.7,170.22 94.7,179.78 85.34,179.78" class="dot" fill="none"/>
-<polygon points="98.12,105.7 134.12,105.7 134.12,114.3 98.12,114.3" class="dot" fill="none"/>
-<polygon points="184.42,105.7 220.42,105.7 220.42,114.3 184.42,114.3" class="dot" fill="none"/>
-<polygon points="96.02,141.7 132.02,141.7 132.02,150.3 96.02,150.3" class="dot" fill="none"/>
-<polygon points="146.52,141.7 182.52,141.7 182.52,150.3 146.52,150.3" class="dot" fill="none"/>
+<polygon points="98.06,105.7 134.18,105.7 134.18,114.3 98.06,114.3" class="dot" fill="none"/>
+<polygon points="184.48,105.7 220.6,105.7 220.6,114.3 184.48,114.3" class="dot" fill="none"/>
+<polygon points="95.96,141.7 132.08,141.7 132.08,150.3 95.96,150.3" class="dot" fill="none"/>
+<polygon points="146.46,141.7 182.58,141.7 182.58,150.3 146.46,150.3" class="dot" fill="none"/>
 <polygon points="137.86,67 178.16,67 178.16,75 137.86,75" class="dot" fill="none"/>
 <polygon points="100,127.44 122,127.44 122,130.56 100,130.56" class="dot" fill="none"/>
 <polygon points="189,124 221,124 221,134 189,134" class="dot" fill="none"/>
 <polygon points="152.62,126.6 155.42,126.6 155.42,129.4 152.62,129.4" class="dot" fill="none"/>
-<polygon points="227.02,110 241.02,110 241.02,124 227.02,124" class="dot" fill="none"/>
+<polygon points="227.02,109.98 241.02,109.98 241.02,124.04 227.02,124.04" class="dot" fill="none"/>
 <text x="109.2" y="74.53" font-size="1.25" class="t" text-anchor="middle" fill="#333">Potable Water Tank</text>
 <text x="119.02" y="168.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">round mess table</text>
 <text x="141.24" y="70.76" font-size="1.25" class="t" text-anchor="middle" fill="#333">Filtration Unit</text>
 <text x="116.12" y="110.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Wheat Tray Bed</text>
 <text x="164.52" y="146.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Mushroom Shelf</text>
 <text x="172.81" y="69.9" font-size="1.25" class="t" text-anchor="middle" fill="#333">Circulation Pump</text>
-<text x="202.42" y="110.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Microgreen Rack</text>
+<text x="202.54" y="110.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Microgreen Rack</text>
 <text x="240.03" y="71.2" font-size="1.25" class="t" text-anchor="middle" fill="#333">Humidity Control Unit</text>
 <text x="146.72" y="110.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Lettuce Trough</text>
 <text x="139.02" y="146.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Strawberry Tiered Planter</text>
@@ -161,7 +161,7 @@
 <text x="95.74" y="168.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">armchair</text>
 <text x="142.3" y="168.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">armchair</text>
 <text x="80.02" y="69.85" font-size="1.25" class="t" text-anchor="middle" fill="#333">janitor closet</text>
-<text x="173.82" y="110.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Herb Shelf Rack</text>
+<text x="173.88" y="110.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Herb Shelf Rack</text>
 <text x="54.82" y="74.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Vertical Grow Tower</text>
 <text x="54.82" y="90.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Vertical Grow Tower</text>
 <text x="54.82" y="171.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Vertical Grow Tower</text>
@@ -207,8 +207,8 @@
 <circle cx="172.81" cy="69.6" r="0.4" class="none" fill="#b03030"/>
 <line x1="219.05" y1="55.25" x2="221.47" y2="69.2" class="x"/>
 <circle cx="221.47" cy="69.2" r="0.4" class="none" fill="#b03030"/>
-<line x1="203.31" y1="55.3" x2="202.42" y2="110" class="x"/>
-<circle cx="202.42" cy="110" r="0.4" class="none" fill="#b03030"/>
+<line x1="203.32" y1="55.3" x2="202.54" y2="110" class="x"/>
+<circle cx="202.54" cy="110" r="0.4" class="none" fill="#b03030"/>
 <line x1="112.71" y1="202.7" x2="114.02" y2="146.01" class="x"/>
 <circle cx="114.02" cy="146.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="40.32" y1="90.41" x2="54.82" y2="90" class="x"/>

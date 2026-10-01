@@ -17,7 +17,7 @@
 | `tableware_lunch_box` | Tableware - Lunch Box | Greywater Galley Systems | 274 x 135 x 185 | 1.74 kg | 0 W | none | 700 |
 | `tableware_meal_tray` | Tableware - Meal Tray | Greywater Galley Systems | 420 x 95 x 350 | 3.62 kg | 0 W | none | 1,050 |
 | `tableware_napkin_dispenser` | Tableware - Napkin Dispenser | Greywater Galley Systems | 140 x 155 x 111 | 0.65 kg | 0 W | none | 258 |
-| `tableware_pitcher` | Tableware - Pitcher | Greywater Galley Systems | 280 x 255 x 176 | 3.64 kg | 0 W | none | 1,220 |
+| `tableware_pitcher` | Tableware - Pitcher | Greywater Galley Systems | 280 x 258 x 176 | 3.69 kg | 0 W | none | 1,240 |
 | `tableware_pizza_meal` | Tableware - Pizza Meal | Greywater Galley Systems | 380 x 53 x 380 | 2.34 kg | 0 W | none | 972 |
 | `tableware_plate_stack` | Tableware - Plate Stack | Greywater Galley Systems | 260 x 99 x 260 | 1.84 kg | 0 W | none | 816 |
 | `tableware_salad` | Tableware - Salad | Greywater Galley Systems | 280 x 155 x 280 | 3.41 kg | 0 W | none | 1,230 |
@@ -139,9 +139,9 @@
 
 **Tableware - Pitcher**, Greywater Galley Systems, part GGS-TAB-7164 (passive)
 
-* Mass 3.64 kg; size 280 x 255 x 176 mm; heat 0 W.
+* Mass 3.69 kg; size 280 x 258 x 176 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,220 cr, lead time 55 days, MTBF 43,100 h, service every 2,190 h, service life 15 years, crew 0.
+* Price 1,240 cr, lead time 55 days, MTBF 43,100 h, service every 2,190 h, service life 15 years, crew 0.
 * IP44, 0 to 50 C; certifications: CSA-F2 food contact, CSA-E24 electrical safety.
 * table-mounted.
 

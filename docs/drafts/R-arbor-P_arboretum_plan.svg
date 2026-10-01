@@ -38,21 +38,21 @@
 <polygon points="171.3,118 227.3,118 227.3,154 171.3,154" class="red" fill="url(#hZone)"/>
 <text x="172.9" y="136.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: garden path from the door to the tea terrace</text>
 <polygon points="263.3,157 263.3,101 271.3,101 271.3,157" class="m" fill="none"/>
-<polygon points="83.3,62.8 108.5,62.8 108.5,70.8 83.3,70.8" class="n" fill="#e8c981"/>
-<line x1="108.5" y1="70.8" x2="83.3" y2="70.8" class="m"/>
-<line x1="95.9" y1="70.8" x2="95.9" y2="69.6" class="f"/>
-<polygon points="109.3,62.8 137.3,62.8 137.3,76.8 109.3,76.8" class="n" fill="#e8c981"/>
-<line x1="137.3" y1="76.8" x2="109.3" y2="76.8" class="m"/>
-<line x1="123.3" y1="76.8" x2="123.3" y2="75.6" class="f"/>
-<polygon points="138.1,62.8 152.1,62.8 152.1,76.8 138.1,76.8" class="n" fill="#e8c981"/>
-<line x1="152.1" y1="76.8" x2="138.1" y2="76.8" class="m"/>
-<line x1="145.1" y1="76.8" x2="145.1" y2="75.6" class="f"/>
-<polygon points="152.9,62.8 180.9,62.8 180.9,73.62 152.9,73.62" class="n" fill="#e8c981"/>
-<line x1="180.9" y1="73.62" x2="152.9" y2="73.62" class="m"/>
-<line x1="166.9" y1="73.62" x2="166.9" y2="72.42" class="f"/>
-<polygon points="181.7,62.8 210.7,62.8 210.7,77.8 181.7,77.8" class="n" fill="#e8c981"/>
-<line x1="210.7" y1="77.8" x2="181.7" y2="77.8" class="m"/>
-<line x1="196.2" y1="77.8" x2="196.2" y2="76.6" class="f"/>
+<polygon points="83.3,62.8 108.62,62.8 108.62,70.92 83.3,70.92" class="n" fill="#e8c981"/>
+<line x1="108.62" y1="70.92" x2="83.3" y2="70.92" class="m"/>
+<line x1="95.96" y1="70.92" x2="95.96" y2="69.72" class="f"/>
+<polygon points="109.42,62.8 137.42,62.8 137.42,76.8 109.42,76.8" class="n" fill="#e8c981"/>
+<line x1="137.42" y1="76.8" x2="109.42" y2="76.8" class="m"/>
+<line x1="123.42" y1="76.8" x2="123.42" y2="75.6" class="f"/>
+<polygon points="138.22,62.8 152.22,62.8 152.22,76.8 138.22,76.8" class="n" fill="#e8c981"/>
+<line x1="152.22" y1="76.8" x2="138.22" y2="76.8" class="m"/>
+<line x1="145.22" y1="76.8" x2="145.22" y2="75.6" class="f"/>
+<polygon points="153.02,62.8 181.02,62.8 181.02,73.62 153.02,73.62" class="n" fill="#e8c981"/>
+<line x1="181.02" y1="73.62" x2="153.02" y2="73.62" class="m"/>
+<line x1="167.02" y1="73.62" x2="167.02" y2="72.42" class="f"/>
+<polygon points="181.82,62.8 210.82,62.8 210.82,77.8 181.82,77.8" class="n" fill="#e8c981"/>
+<line x1="210.82" y1="77.8" x2="181.82" y2="77.8" class="m"/>
+<line x1="196.32" y1="77.8" x2="196.32" y2="76.6" class="f"/>
 <polygon points="97.8,94.5 128.8,94.5 128.8,109.5 97.8,109.5" class="n" fill="#e8c981"/>
 <line x1="128.8" y1="109.5" x2="97.8" y2="109.5" class="m"/>
 <line x1="113.3" y1="109.5" x2="113.3" y2="108.3" class="f"/>
@@ -115,8 +115,7 @@
 <polygon points="264.3,119 264.3,139 263.18,139 263.18,119" class="f" fill="#81d3e8"/>
 <polygon points="162.62,134.22 171.98,134.22 171.98,143.78 162.62,143.78" class="dot" fill="none"/>
 <polygon points="202.62,134.22 211.98,134.22 211.98,143.78 202.62,143.78" class="dot" fill="none"/>
-<polygon points="113.3,96.7 149.3,96.7 149.3,105.3 113.3,105.3" class="dot" fill="none"/>
-<polygon points="149.3,96.7 185.3,96.7 185.3,105.3 149.3,105.3" class="dot" fill="none"/>
+<polygon points="113.24,96.7 149.36,96.7 149.36,105.3 113.24,105.3" class="dot" fill="none"/>
 <polygon points="211.94,102.3 223.14,102.3 223.14,105.72 211.94,105.72" class="dot" fill="none"/>
 <polygon points="83.3,71.74 115.3,71.74 115.3,82.26 83.3,82.26" class="dot" fill="none"/>
 <polygon points="117.3,71.74 149.3,71.74 149.3,82.26 117.3,82.26" class="dot" fill="none"/>
@@ -131,8 +130,8 @@
 <text x="149.3" y="102.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Flower Bed Planter</text>
 <text x="185.3" y="102.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Flower Bed Planter</text>
 <text x="267.3" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">gothic ar~</text>
-<text x="196.2" y="70.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">Mushroom Shelf</text>
-<text x="123.3" y="70.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Microgreen Rack</text>
+<text x="196.32" y="70.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">Mushroom Shelf</text>
+<text x="123.42" y="70.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Microgreen Rack</text>
 <text x="191.3" y="173.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Dwarf Tree Tub</text>
 <text x="157.3" y="173.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">aquarium tank</text>
 <text x="223.3" y="167.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Strawberry Tiered Planter</text>
@@ -140,10 +139,10 @@
 <text x="66.62" y="78.9" font-size="1.25" class="t" text-anchor="middle" fill="#333">locker room bench</text>
 <text x="202.3" y="191.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">mess bench</text>
 <text x="131.38" y="177.32" font-size="1.25" class="t" text-anchor="middle" fill="#333">locker room bench</text>
-<text x="166.9" y="68.51" font-size="1.25" class="t" text-anchor="middle" fill="#333">Tomato Vine Rack</text>
+<text x="167.02" y="68.51" font-size="1.25" class="t" text-anchor="middle" fill="#333">Tomato Vine Rack</text>
 <text x="128.02" y="136.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">armchair</text>
-<text x="95.9" y="67.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Herb Shelf Rack</text>
-<text x="145.1" y="70.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Vertical Grow Tower</text>
+<text x="95.96" y="67.16" font-size="1.25" class="t" text-anchor="middle" fill="#333">Herb Shelf Rack</text>
+<text x="145.22" y="70.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Vertical Grow Tower</text>
 <path d="M111.42 165.66 L87.3 132.34 L66.58 99 L50.7 65.66 L48.7 59 L267.3 59 L267.3 199 L137.3 199Z M113.82 163.86 L89.79 130.67 L69.22 97.56 L53.51 64.58 L52.73 62 L264.3 62 L264.3 196 L138.77 196Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="267.3,105.4 267.3,152.6 264.3,152.6 264.3,105.4" class="none" fill="#ffffff"/>
 <line x1="267.3" y1="105.4" x2="264.3" y2="105.4" class="m"/>
@@ -187,8 +186,8 @@
 <line x1="133.58" y1="191.76" x2="117.51" y2="171.06" class="f"/>
 <line x1="134.77" y1="190.84" x2="118.7" y2="170.14" class="n"/>
 <text x="137" y="172.52" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AB-4</text>
-<line x1="94.59" y1="55.28" x2="95.9" y2="66.8" class="x"/>
-<circle cx="95.9" cy="66.8" r="0.4" class="none" fill="#b03030"/>
+<line x1="94.61" y1="55.28" x2="95.96" y2="66.86" class="x"/>
+<circle cx="95.96" cy="66.86" r="0.4" class="none" fill="#b03030"/>
 <line x1="221.71" y1="55.3" x2="221.3" y2="77" class="x"/>
 <circle cx="221.3" cy="77" r="0.4" class="none" fill="#b03030"/>
 <line x1="131.71" y1="55.3" x2="131.3" y2="101" class="x"/>
@@ -312,7 +311,7 @@
 <text x="336" y="39.35" font-size="1.7" class="t">8</text>
 <rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
-<text x="336" y="42.65" font-size="1.7" class="t">42</text>
+<text x="336" y="42.65" font-size="1.7" class="t">41</text>
 <rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
 <text x="336" y="45.95" font-size="1.7" class="t">1</text>
@@ -339,7 +338,7 @@
 <rect x="307" y="79.8" width="106" height="3" class="f" fill="#ffffff"/>
 <text x="308" y="81.75" font-size="1.6" class="t">AB-03</text>
 <text x="322" y="81.75" font-size="1.6" class="t">Raised flower beds</text>
-<text x="406" y="81.75" font-size="1.6" class="t">5</text>
+<text x="406" y="81.75" font-size="1.6" class="t">4</text>
 <rect x="307" y="82.8" width="106" height="3" class="f" fill="#f4f6f9"/>
 <text x="308" y="84.75" font-size="1.6" class="t">AB-04</text>
 <text x="322" y="84.75" font-size="1.6" class="t">Dwarf trees and ornamentals</text>

@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `medcabinet_drug_dispensing_cabinet` | Medical cabinet - Drug Dispensing Cabinet | Lindqvist-Aoki Medical | 1020 x 1800 x 670 | 173.9 kg | 390 W | 120 VAC 1ph | 370 k |
+| `medcabinet_drug_dispensing_cabinet` | Medical cabinet - Drug Dispensing Cabinet | Lindqvist-Aoki Medical | 1020 x 1803 x 670 | 174.2 kg | 390 W | 120 VAC 1ph | 370 k |
 | `medcabinet_glove_and_mask_dispenser` | Medical cabinet - Glove And Mask Dispenser | Lindqvist-Aoki Medical | 500 x 490 x 180 | 5.94 kg | 56 W | 48 VDC | 14.8 k |
 | `medcabinet_instrument_tray_cabinet` | Medical cabinet - Instrument Tray Cabinet | Lindqvist-Aoki Medical | 940 x 1580 x 640 | 128.7 kg | 330 W | 120 VAC 1ph | 253 k |
 | `medcabinet_medical_supply_cart` | Medical cabinet - Medical Supply Cart | Lindqvist-Aoki Medical | 800 x 1137 x 535 | 73.1 kg | 170 W | 48 VDC | 168 k |
@@ -21,11 +21,11 @@
 
 **Medical cabinet - Drug Dispensing Cabinet**, Lindqvist-Aoki Medical, part LAM-MED-2401 (consumer)
 
-* Mass 173.9 kg; size 1020 x 1800 x 670 mm; heat 360 W.
+* Mass 174.2 kg; size 1020 x 1803 x 670 mm; heat 360 W.
 * Power 120 W idle / 390 W typical / 700 W peak at 120 VAC 1ph.
 * Price 370 k cr, lead time 101 days, MTBF 46,300 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 41 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: medical).
+* Software: `computer` (screens: dna).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `medcabinet_glove_and_mask_dispenser`
@@ -86,7 +86,7 @@
 * Power 140 W idle / 470 W typical / 840 W peak at 120 VAC 1ph.
 * Price 577 k cr, lead time 98 days, MTBF 46,400 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 42 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `power` (screens: power).
+* Software: `power` (screens: power_grid).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `medcabinet_wall_first_aid_station`

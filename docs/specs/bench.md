@@ -6,8 +6,8 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `bench_curved_lounge_bench` | Bench - Curved Lounge Bench | Sable Habitat Furnishings | 2423 x 750 x 883 | 100.4 kg | 0 W | none | 3,530 |
-| `bench_gym_bench` | Bench - Gym Bench | Sable Habitat Furnishings | 554 x 488 x 1200 | 18 kg | 0 W | none | 735 |
+| `bench_curved_lounge_bench` | Bench - Curved Lounge Bench | Sable Habitat Furnishings | 2423 x 753 x 883 | 100.8 kg | 0 W | none | 3,540 |
+| `bench_gym_bench` | Bench - Gym Bench | Sable Habitat Furnishings | 554 x 491 x 1200 | 18.1 kg | 0 W | none | 739 |
 | `bench_locker_room_bench` | Bench - Locker Room Bench | Sable Habitat Furnishings | 1600 x 465 x 500 | 19.1 kg | 0 W | none | 910 |
 | `bench_mess_bench` | Bench - Mess Bench | Sable Habitat Furnishings | 2000 x 467 x 400 | 22.1 kg | 0 W | none | 1,030 |
 | `bench_padded_wall_bench` | Bench - Padded Wall Bench | Sable Habitat Furnishings | 1800 x 1380 x 460 | 67.5 kg | 0 W | none | 2,320 |
@@ -19,9 +19,9 @@
 
 **Bench - Curved Lounge Bench**, Sable Habitat Furnishings, part SHF-BEN-4171 (passive)
 
-* Mass 100.4 kg; size 2423 x 750 x 883 mm; heat 0 W.
+* Mass 100.8 kg; size 2423 x 753 x 883 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,530 cr, lead time 38 days, MTBF 862,300 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 3,540 cr, lead time 38 days, MTBF 862,300 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -29,9 +29,9 @@
 
 **Bench - Gym Bench**, Sable Habitat Furnishings, part SHF-BEN-4428 (passive)
 
-* Mass 18 kg; size 554 x 488 x 1200 mm; heat 0 W.
+* Mass 18.1 kg; size 554 x 491 x 1200 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 735 cr, lead time 40 days, MTBF 1,024,800 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 739 cr, lead time 40 days, MTBF 1,024,800 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing.
 

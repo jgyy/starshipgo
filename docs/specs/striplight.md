@@ -7,14 +7,14 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `striplight_baseboard_glow` | Strip light - Baseboard Glow | Tamsin Lighting | 1200 x 80 x 45 | 0.46 kg | 8 W | 24 VDC | 177 |
-| `striplight_cove_strip_warm` | Strip light - Cove Strip Warm | Tamsin Lighting | 2000 x 62 x 96 | 1.3 kg | 10 W | 24 VDC | 354 |
-| `striplight_dot_matrix_strip` | Strip light - Dot Matrix Strip | Tamsin Lighting | 1030 x 54 x 32 | 0.21 kg | 6.5 W | 24 VDC | 353 |
+| `striplight_cove_strip_warm` | Strip light - Cove Strip Warm | Tamsin Lighting | 2000 x 65 x 96 | 1.36 kg | 11 W | 24 VDC | 368 |
+| `striplight_dot_matrix_strip` | Strip light - Dot Matrix Strip | Tamsin Lighting | 1030 x 60 x 37 | 0.27 kg | 6.7 W | 24 VDC | 368 |
 | `striplight_floor_dash_guide` | Strip light - Floor Dash Guide | Tamsin Lighting | 1600 x 20 x 120 | 0.45 kg | 7.5 W | 24 VDC | 217 |
-| `striplight_floor_edge_runner` | Strip light - Floor Edge Runner | Tamsin Lighting | 2030 x 30 x 60 | 0.43 kg | 7.7 W | 24 VDC | 154 |
-| `striplight_handrail_light` | Strip light - Handrail Light | Tamsin Lighting | 2000 x 43 x 92 | 0.89 kg | 8.3 W | 24 VDC | 240 |
+| `striplight_floor_edge_runner` | Strip light - Floor Edge Runner | Tamsin Lighting | 2030 x 35 x 70 | 0.59 kg | 8.1 W | 24 VDC | 191 |
+| `striplight_handrail_light` | Strip light - Handrail Light | Tamsin Lighting | 2000 x 46 x 92 | 0.96 kg | 8.4 W | 24 VDC | 255 |
 | `striplight_hanging_linear_bar` | Strip light - Hanging Linear Bar | Tamsin Lighting | 1500 x 434 x 60 | 4.54 kg | 19 W | 24 VDC | 1,080 |
-| `striplight_recessed_ceiling_channel` | Strip light - Recessed Ceiling Channel | Tamsin Lighting | 1520 x 50 x 140 | 1.11 kg | 8.6 W | 24 VDC | 284 |
-| `striplight_stair_edge_light` | Strip light - Stair Edge Light | Tamsin Lighting | 1200 x 33 x 100 | 0.41 kg | 7 W | 24 VDC | 163 |
+| `striplight_recessed_ceiling_channel` | Strip light - Recessed Ceiling Channel | Tamsin Lighting | 1520 x 55 x 150 | 1.31 kg | 9.2 W | 24 VDC | 327 |
+| `striplight_stair_edge_light` | Strip light - Stair Edge Light | Tamsin Lighting | 1200 x 33 x 103 | 0.42 kg | 7.1 W | 24 VDC | 166 |
 | `striplight_under_console_glow` | Strip light - Under Console Glow | Tamsin Lighting | 1800 x 50 x 50 | 0.52 kg | 6.7 W | 24 VDC | 168 |
 
 ## Datasheets
@@ -33,9 +33,9 @@
 
 **Strip light - Cove Strip Warm**, Tamsin Lighting, part TAM-STR-6573 (consumer)
 
-* Mass 1.3 kg; size 2000 x 62 x 96 mm; heat 8 W.
-* Power 0.52 W idle / 10 W typical / 11 W peak at 24 VDC.
-* Price 354 cr, lead time 34 days, MTBF 65,800 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 1.36 kg; size 2000 x 65 x 96 mm; heat 8.8 W.
+* Power 0.53 W idle / 11 W typical / 12 W peak at 24 VDC.
+* Price 368 cr, lead time 34 days, MTBF 65,800 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 
@@ -43,9 +43,9 @@
 
 **Strip light - Dot Matrix Strip**, Tamsin Lighting, part TAM-STR-8538 (consumer)
 
-* Mass 0.21 kg; size 1030 x 54 x 32 mm; heat 5.2 W.
-* Power 0.33 W idle / 6.5 W typical / 7.2 W peak at 24 VDC.
-* Price 353 cr, lead time 34 days, MTBF 75,200 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.27 kg; size 1030 x 60 x 37 mm; heat 5.4 W.
+* Power 0.33 W idle / 6.7 W typical / 7.4 W peak at 24 VDC.
+* Price 368 cr, lead time 34 days, MTBF 75,200 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 
@@ -63,9 +63,9 @@
 
 **Strip light - Floor Edge Runner**, Tamsin Lighting, part TAM-STR-6687 (consumer)
 
-* Mass 0.43 kg; size 2030 x 30 x 60 mm; heat 6.2 W.
-* Power 0.39 W idle / 7.7 W typical / 8.5 W peak at 24 VDC.
-* Price 154 cr, lead time 33 days, MTBF 49,100 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.59 kg; size 2030 x 35 x 70 mm; heat 6.5 W.
+* Power 0.41 W idle / 8.1 W typical / 9 W peak at 24 VDC.
+* Price 191 cr, lead time 33 days, MTBF 49,100 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * floor-mounted.
 
@@ -73,9 +73,9 @@
 
 **Strip light - Handrail Light**, Tamsin Lighting, part TAM-STR-9660 (consumer)
 
-* Mass 0.89 kg; size 2000 x 43 x 92 mm; heat 6.6 W.
-* Power 0.41 W idle / 8.3 W typical / 9.1 W peak at 24 VDC.
-* Price 240 cr, lead time 28 days, MTBF 59,800 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.96 kg; size 2000 x 46 x 92 mm; heat 6.7 W.
+* Power 0.42 W idle / 8.4 W typical / 9.3 W peak at 24 VDC.
+* Price 255 cr, lead time 28 days, MTBF 59,800 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 
@@ -93,9 +93,9 @@
 
 **Strip light - Recessed Ceiling Channel**, Tamsin Lighting, part TAM-STR-4371 (consumer)
 
-* Mass 1.11 kg; size 1520 x 50 x 140 mm; heat 6.9 W.
-* Power 0.43 W idle / 8.6 W typical / 9.5 W peak at 24 VDC.
-* Price 284 cr, lead time 29 days, MTBF 72,000 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 1.31 kg; size 1520 x 55 x 150 mm; heat 7.4 W.
+* Power 0.46 W idle / 9.2 W typical / 10 W peak at 24 VDC.
+* Price 327 cr, lead time 30 days, MTBF 72,000 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 
@@ -103,9 +103,9 @@
 
 **Strip light - Stair Edge Light**, Tamsin Lighting, part TAM-STR-4381 (consumer)
 
-* Mass 0.41 kg; size 1200 x 33 x 100 mm; heat 5.6 W.
-* Power 0.35 W idle / 7 W typical / 7.7 W peak at 24 VDC.
-* Price 163 cr, lead time 31 days, MTBF 73,300 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.42 kg; size 1200 x 33 x 103 mm; heat 5.7 W.
+* Power 0.35 W idle / 7.1 W typical / 7.8 W peak at 24 VDC.
+* Price 166 cr, lead time 31 days, MTBF 73,300 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * floor-mounted.
 

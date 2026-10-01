@@ -43,7 +43,7 @@
 <polygon points="259.34,63 266,63 266,131 259.34,131" class="x" fill="#e7ebf0"/>
 <polygon points="161.8,120.8 172.7,120.8 172.7,131 161.8,131" class="f" fill="#e8faca"/>
 <polygon points="161,94.08 166.56,94.08 166.56,97.6 161,97.6" class="f" fill="#f2bcbe"/>
-<polygon points="245.4,93 262.2,93 262.2,131 245.4,131" class="f" fill="#ecf6b6"/>
+<polygon points="245.4,92.94 262.2,92.94 262.2,131 245.4,131" class="f" fill="#ecf6b6"/>
 <polygon points="202.4,63 221.6,63 221.6,65.72 202.4,65.72" class="dot" fill="none"/>
 <polygon points="161,94.08 166.56,94.08 166.56,97.6 161,97.6" class="f" fill="#f1b6b9"/>
 <polygon points="248.06,104.4 262.2,104.4 262.2,131 248.06,131" class="f" fill="#eaf5b0"/>
@@ -58,7 +58,7 @@
 <polygon points="217,114.68 223,114.68 223,115.8 217,115.8" class="f" fill="#f0aeeb"/>
 <polygon points="207.72,115.74 232.28,115.74 232.28,131 207.72,131" class="f" fill="#bdf9f1"/>
 <polygon points="161.8,89.8 175.54,89.8 175.54,131 161.8,131" class="f" fill="#e3f9bd"/>
-<polygon points="210.4,63 213.6,63 213.6,64.24 210.4,64.24" class="dot" fill="none"/>
+<polygon points="210.4,63 213.6,63 213.6,64.3 210.4,64.3" class="dot" fill="none"/>
 <polygon points="161.8,89.8 175.54,89.8 175.54,131 161.8,131" class="f" fill="#e3f9bc"/>
 <polygon points="215.8,113.2 224.2,113.2 224.2,131 215.8,131" class="f" fill="#f9eabc"/>
 <polygon points="261.48,83 263,83 263,87 261.48,87" class="f" fill="#a6f4b3"/>
@@ -69,7 +69,7 @@
 <polygon points="161.8,89.8 175.54,89.8 175.54,131 161.8,131" class="m" fill="#d6f79e"/>
 <polygon points="215.8,113.2 224.2,113.2 224.2,131 215.8,131" class="m" fill="#f7e09e"/>
 <polygon points="261.48,83 263,83 263,87 261.48,87" class="m" fill="#7def90"/>
-<polygon points="210.4,63 213.6,63 213.6,64.24 210.4,64.24" class="m" fill="#bff79e"/>
+<polygon points="210.4,63 213.6,63 213.6,64.3 210.4,64.3" class="m" fill="#bff79e"/>
 </g>
 <text x="163.78" y="96.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>
 <text x="163.78" y="93.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>

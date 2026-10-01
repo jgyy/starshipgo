@@ -77,9 +77,9 @@
 <polygon points="90.32,179.84 79.7,179.84 79.7,168.56 90.32,168.56" class="n" fill="#99f7b0"/>
 <line x1="79.7" y1="168.56" x2="90.32" y2="168.56" class="m"/>
 <line x1="85.01" y1="168.56" x2="85.01" y2="169.76" class="f"/>
-<polygon points="147.76,199.2 114.26,199.2 114.26,179.2 147.76,179.2" class="n" fill="#f79999"/>
-<line x1="114.26" y1="179.2" x2="147.76" y2="179.2" class="m"/>
-<line x1="131.01" y1="179.2" x2="131.01" y2="180.4" class="f"/>
+<polygon points="147.76,199.2 114.26,199.2 114.26,179.14 147.76,179.14" class="n" fill="#f79999"/>
+<line x1="114.26" y1="179.14" x2="147.76" y2="179.14" class="m"/>
+<line x1="131.01" y1="179.14" x2="131.01" y2="180.34" class="f"/>
 <polygon points="171.62,199.2 150.4,199.2 150.4,188.4 171.62,188.4" class="n" fill="#77efc6"/>
 <line x1="150.4" y1="188.4" x2="171.62" y2="188.4" class="m"/>
 <line x1="161.01" y1="188.4" x2="161.01" y2="189.6" class="f"/>
@@ -134,7 +134,7 @@
 <polygon points="211.4,147.34 231.28,147.34 231.28,164.66 211.4,164.66" class="dot" fill="none"/>
 <text x="195" y="187.34" font-size="1.25" class="t" text-anchor="middle" fill="#333">dish array demo</text>
 <text x="191" y="68.14" font-size="1.25" class="t" text-anchor="middle" fill="#333">navigation</text>
-<text x="131.01" y="189.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>
+<text x="131.01" y="189.47" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>
 <text x="161.01" y="125.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">chaise</text>
 <text x="161.01" y="159.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">chaise</text>
 <text x="153" y="67.85" font-size="1.25" class="t" text-anchor="middle" fill="#333">sensor</text>

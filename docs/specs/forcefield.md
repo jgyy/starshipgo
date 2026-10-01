@@ -7,7 +7,7 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `forcefield_barrier_bollards` | Force-field emitter - Barrier Bollards | Fennick Safety and Security | 1860 x 1130 x 260 | 128.6 kg | 46 kW | 400 VAC 3ph | 115 k |
-| `forcefield_blast_shutter` | Force-field emitter - Blast Shutter | Fennick Safety and Security | 2800 x 3100 x 615 | 1.34 t | 390 kW | 6.6 kVAC 3ph | 894 k |
+| `forcefield_blast_shutter` | Force-field emitter - Blast Shutter | Fennick Safety and Security | 2806 x 3100 x 615 | 1.35 t | 390 kW | 6.6 kVAC 3ph | 896 k |
 | `forcefield_containment_projector` | Force-field emitter - Containment Projector | Fennick Safety and Security | 1496 x 2400 x 1658 | 1.58 t | 520 kW | 6.6 kVAC 3ph | 1.25 M |
 | `forcefield_deflector_grid` | Force-field emitter - Deflector Grid | Fennick Safety and Security | 1700 x 1720 x 100 | 71.6 kg | 30 kW | 400 VAC 3ph | 52.9 k |
 | `forcefield_emitter_pair` | Force-field emitter - Emitter Pair | Fennick Safety and Security | 2740 x 2200 x 340 | 450.8 kg | 160 kW | 400 VAC 3ph | 370 k |
@@ -31,11 +31,11 @@
 
 **Force-field emitter - Blast Shutter**, Fennick Safety and Security, part FSS-FOR-2572 (consumer)
 
-* Mass 1.34 t; size 2800 x 3100 x 615 mm; heat 360 kW.
+* Mass 1.35 t; size 2806 x 3100 x 615 mm; heat 360 kW.
 * Power 120 kW idle / 390 kW typical / 620 kW peak at 6.6 kVAC 3ph.
-* Price 894 k cr, lead time 89 days, MTBF 80,700 h, service every 4,380 h, service life 15 years, crew 1.
+* Price 896 k cr, lead time 89 days, MTBF 80,700 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 50 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* floor-mounted. Install with a hoist or gantry (1.34 t).
+* floor-mounted. Install with a hoist or gantry (1.35 t).
 
 ### `forcefield_containment_projector`
 

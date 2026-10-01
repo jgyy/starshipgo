@@ -10,18 +10,18 @@
 | `ceilinglight_cove_tray` | Ceiling luminaire - Cove Tray | Tamsin Lighting | 1600 x 170 x 500 | 20.2 kg | 24 W | 24 VDC | 5,770 |
 | `ceilinglight_drum_pendant` | Ceiling luminaire - Drum Pendant | Tamsin Lighting | 624 x 715 x 624 | 41 kg | 42 W | 24 VDC | 11.5 k |
 | `ceilinglight_emergency_fixture` | Ceiling luminaire - Emergency Fixture | Tamsin Lighting | 560 x 185 x 171 | 2.29 kg | 13 W | 24 VDC | 784 |
-| `ceilinglight_flush_dome` | Ceiling luminaire - Flush Dome | Tamsin Lighting | 638 x 176 x 638 | 10.2 kg | 20 W | 24 VDC | 2,400 |
+| `ceilinglight_flush_dome` | Ceiling luminaire - Flush Dome | Tamsin Lighting | 638 x 179 x 638 | 10.4 kg | 20 W | 24 VDC | 2,440 |
 | `ceilinglight_industrial_high_bay` | Ceiling luminaire - Industrial High Bay | Tamsin Lighting | 868 x 705 x 868 | 80.6 kg | 73 W | 120 VAC 1ph | 20.2 k |
-| `ceilinglight_linear_fixture_1_2` | Ceiling luminaire - Linear Fixture 1.2 | Tamsin Lighting | 1250 x 62 x 160 | 1.62 kg | 12 W | 24 VDC | 487 |
+| `ceilinglight_linear_fixture_1_2` | Ceiling luminaire - Linear Fixture 1.2 | Tamsin Lighting | 1250 x 65 x 160 | 1.7 kg | 12 W | 24 VDC | 508 |
 | `ceilinglight_lounge_chandelier_ring` | Ceiling luminaire - Lounge Chandelier Ring | Tamsin Lighting | 1060 x 899 x 1070 | 153.4 kg | 120 W | 120 VAC 1ph | 38.9 k |
-| `ceilinglight_panel_troffer_0_6x1_2` | Ceiling luminaire - Panel Troffer 0.6X1.2 | Tamsin Lighting | 620 x 98 x 1260 | 10.6 kg | 21 W | 24 VDC | 2,470 |
+| `ceilinglight_panel_troffer_0_6x1_2` | Ceiling luminaire - Panel Troffer 0.6X1.2 | Tamsin Lighting | 620 x 101 x 1260 | 10.9 kg | 21 W | 24 VDC | 2,540 |
 | `ceilinglight_pendant_globe` | Ceiling luminaire - Pendant Globe | Tamsin Lighting | 380 x 1020 x 380 | 19.9 kg | 28 W | 24 VDC | 6,040 |
 | `ceilinglight_recessed_hex_cells` | Ceiling luminaire - Recessed Hex Cells | Tamsin Lighting | 994 x 73 x 866 | 9.03 kg | 16 W | 24 VDC | 2,560 |
 | `ceilinglight_ring_light` | Ceiling luminaire - Ring Light | Tamsin Lighting | 960 x 136 x 960 | 17.1 kg | 24 W | 24 VDC | 4,380 |
 | `ceilinglight_round_downlight` | Ceiling luminaire - Round Downlight | Tamsin Lighting | 338 x 110 x 338 | 1.81 kg | 12 W | 24 VDC | 638 |
 | `ceilinglight_square_panel_1x1` | Ceiling luminaire - Square Panel 1X1 | Tamsin Lighting | 1000 x 79 x 1000 | 10.6 kg | 18 W | 24 VDC | 3,360 |
 | `ceilinglight_triple_spot_rail` | Ceiling luminaire - Triple Spot Rail | Tamsin Lighting | 1100 x 220 x 156 | 5.37 kg | 15 W | 24 VDC | 1,350 |
-| `ceilinglight_twin_linear_2_4` | Ceiling luminaire - Twin Linear 2.4 | Tamsin Lighting | 2460 x 120 x 280 | 10.7 kg | 21 W | 24 VDC | 3,230 |
+| `ceilinglight_twin_linear_2_4` | Ceiling luminaire - Twin Linear 2.4 | Tamsin Lighting | 2460 x 123 x 280 | 10.9 kg | 21 W | 24 VDC | 3,290 |
 
 ## Datasheets
 
@@ -69,9 +69,9 @@
 
 **Ceiling luminaire - Flush Dome**, Tamsin Lighting, part TAM-CEI-1964 (consumer)
 
-* Mass 10.2 kg; size 638 x 176 x 638 mm; heat 16 W.
-* Power 0.99 W idle / 20 W typical / 22 W peak at 24 VDC.
-* Price 2,400 cr, lead time 36 days, MTBF 71,900 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 10.4 kg; size 638 x 179 x 638 mm; heat 16 W.
+* Power 1 W idle / 20 W typical / 22 W peak at 24 VDC.
+* Price 2,440 cr, lead time 36 days, MTBF 71,900 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 
@@ -89,9 +89,9 @@
 
 **Ceiling luminaire - Linear Fixture 1.2**, Tamsin Lighting, part TAM-CEI-4312 (consumer)
 
-* Mass 1.62 kg; size 1250 x 62 x 160 mm; heat 9.6 W.
+* Mass 1.7 kg; size 1250 x 65 x 160 mm; heat 9.6 W.
 * Power 0.59 W idle / 12 W typical / 13 W peak at 24 VDC.
-* Price 487 cr, lead time 31 days, MTBF 71,500 h, service every 17,520 h, service life 12 years, crew 0.
+* Price 508 cr, lead time 31 days, MTBF 71,500 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 
@@ -109,9 +109,9 @@
 
 **Ceiling luminaire - Panel Troffer 0.6X1.2**, Tamsin Lighting, part TAM-CEI-4864 (consumer)
 
-* Mass 10.6 kg; size 620 x 98 x 1260 mm; heat 17 W.
+* Mass 10.9 kg; size 620 x 101 x 1260 mm; heat 17 W.
 * Power 1 W idle / 21 W typical / 23 W peak at 24 VDC.
-* Price 2,470 cr, lead time 36 days, MTBF 58,400 h, service every 17,520 h, service life 12 years, crew 0.
+* Price 2,540 cr, lead time 36 days, MTBF 58,400 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 
@@ -179,9 +179,9 @@
 
 **Ceiling luminaire - Twin Linear 2.4**, Tamsin Lighting, part TAM-CEI-4503 (consumer)
 
-* Mass 10.7 kg; size 2460 x 120 x 280 mm; heat 17 W.
+* Mass 10.9 kg; size 2460 x 123 x 280 mm; heat 17 W.
 * Power 1 W idle / 21 W typical / 23 W peak at 24 VDC.
-* Price 3,230 cr, lead time 38 days, MTBF 74,400 h, service every 17,520 h, service life 12 years, crew 0.
+* Price 3,290 cr, lead time 38 days, MTBF 74,400 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 

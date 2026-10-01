@@ -6,8 +6,8 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `cabinet_janitor_closet` | Cabinet - Janitor Closet | Sable Habitat Furnishings | 850 x 1955 x 675 | 152.7 kg | 0 W | none | 5,250 |
-| `cabinet_utility_cabinet` | Cabinet - Utility Cabinet | Sable Habitat Furnishings | 960 x 1830 x 580 | 133.3 kg | 0 W | none | 4,930 |
+| `cabinet_janitor_closet` | Cabinet - Janitor Closet | Sable Habitat Furnishings | 850 x 1958 x 675 | 152.9 kg | 0 W | none | 5,250 |
+| `cabinet_utility_cabinet` | Cabinet - Utility Cabinet | Sable Habitat Furnishings | 960 x 1833 x 580 | 133.6 kg | 0 W | none | 4,940 |
 | `cabinet_wall_storage_lockers` | Cabinet - Wall Storage Lockers | Sable Habitat Furnishings | 1200 x 800 x 400 | 54.4 kg | 0 W | none | 2,250 |
 
 ## Datasheets
@@ -16,7 +16,7 @@
 
 **Cabinet - Janitor Closet**, Sable Habitat Furnishings, part SHF-CAB-5956 (passive)
 
-* Mass 152.7 kg; size 850 x 1955 x 675 mm; heat 0 W.
+* Mass 152.9 kg; size 850 x 1958 x 675 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 5,250 cr, lead time 36 days, MTBF 1,109,500 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
@@ -26,9 +26,9 @@
 
 **Cabinet - Utility Cabinet**, Sable Habitat Furnishings, part SHF-CAB-9689 (passive)
 
-* Mass 133.3 kg; size 960 x 1830 x 580 mm; heat 0 W.
+* Mass 133.6 kg; size 960 x 1833 x 580 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,930 cr, lead time 44 days, MTBF 720,200 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 4,940 cr, lead time 44 days, MTBF 720,200 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 

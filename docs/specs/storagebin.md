@@ -10,11 +10,11 @@
 | `storagebin_bin_trolley_floor` | Storage bin - Bin Trolley Floor | Ironwake Heavy Works | 1000 x 1240 x 590 | 34.6 kg | 0 W | none | 4,040 |
 | `storagebin_bulk_hopper` | Storage bin - Bulk Hopper | Ironwake Heavy Works | 1400 x 2350 x 1400 | 223.4 kg | 0 W | none | 21.2 k |
 | `storagebin_drawer_cabinet` | Storage bin - Drawer Cabinet | Ironwake Heavy Works | 820 x 1500 x 605 | 32.6 kg | 0 W | none | 2,960 |
-| `storagebin_parts_bins_stand` | Storage bin - Parts Bins Stand | Ironwake Heavy Works | 1200 x 1545 x 750 | 60.6 kg | 0 W | none | 6,060 |
+| `storagebin_parts_bins_stand` | Storage bin - Parts Bins Stand | Ironwake Heavy Works | 1206 x 1548 x 750 | 61 kg | 0 W | none | 6,100 |
 | `storagebin_sealed_parts_locker` | Storage bin - Sealed Parts Locker | Ironwake Heavy Works | 1040 x 1980 x 735 | 67.2 kg | 0 W | none | 5,530 |
 | `storagebin_toolbox_portable` | Storage bin - Toolbox Portable | Ironwake Heavy Works | 530 x 262 x 262 | 1.53 kg | 0 W | none | 253 |
 | `storagebin_toolchest_wheels` | Storage bin - Toolchest Wheels | Ironwake Heavy Works | 860 x 1098 x 560 | 24.3 kg | 0 W | none | 2,420 |
-| `storagebin_tote_stack_dolly` | Storage bin - Tote Stack Dolly | Ironwake Heavy Works | 780 x 1490 x 505 | 28.1 kg | 0 W | none | 2,750 |
+| `storagebin_tote_stack_dolly` | Storage bin - Tote Stack Dolly | Ironwake Heavy Works | 780 x 1493 x 505 | 28.1 kg | 0 W | none | 2,750 |
 | `storagebin_trash_compactor` | Storage bin - Trash Compactor | Ironwake Heavy Works | 940 x 2330 x 940 | 96.8 kg | 0 W | none | 9,890 |
 
 ## Datasheets
@@ -63,9 +63,9 @@
 
 **Storage bin - Parts Bins Stand**, Ironwake Heavy Works, part IHW-STO-3512 (passive)
 
-* Mass 60.6 kg; size 1200 x 1545 x 750 mm; heat 0 W.
+* Mass 61 kg; size 1206 x 1548 x 750 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 6,060 cr, lead time 58 days, MTBF 443,800 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 6,100 cr, lead time 58 days, MTBF 443,800 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -103,7 +103,7 @@
 
 **Storage bin - Tote Stack Dolly**, Ironwake Heavy Works, part IHW-STO-1153 (passive)
 
-* Mass 28.1 kg; size 780 x 1490 x 505 mm; heat 0 W.
+* Mass 28.1 kg; size 780 x 1493 x 505 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 2,750 cr, lead time 59 days, MTBF 543,500 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -117,6 +117,6 @@
 * Passive: no electrical load.
 * Price 9,890 cr, lead time 56 days, MTBF 494,100 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
-* Software: `power` (screens: power).
+* Software: `engineering` (screens: engine_temp).
 * floor-mounted, free-standing. Two-person lift.
 

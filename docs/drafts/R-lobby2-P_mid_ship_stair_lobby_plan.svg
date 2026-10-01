@@ -57,8 +57,8 @@
 <polygon points="126,71 142,71 142,71.9 126,71.9" class="f" fill="#81d3e8"/>
 <polygon points="298,137 282,137 282,136.1 298,136.1" class="f" fill="#81d3e8"/>
 <polygon points="206.4,102.28 217.6,102.28 217.6,105.7 206.4,105.7" class="dot" fill="none"/>
-<polygon points="105,97 119,97 119,111 105,111" class="dot" fill="none"/>
-<polygon points="305,97 319,97 319,111 305,111" class="dot" fill="none"/>
+<polygon points="105,96.98 119,96.98 119,111.04 105,111.04" class="dot" fill="none"/>
+<polygon points="305,96.98 319,96.98 319,111.04 305,111.04" class="dot" fill="none"/>
 <polygon points="283.28,100.62 290.04,100.62 290.04,107.38 283.28,107.38" class="dot" fill="none"/>
 <polygon points="127.34,94 147.34,94 147.34,114 127.34,114" class="dot" fill="none"/>
 <text x="166" y="80.37" font-size="1.25" class="t" text-anchor="middle" fill="#333">tech parts machine</text>
@@ -94,8 +94,8 @@
 <circle cx="150" cy="72.99" r="0.4" class="none" fill="#b03030"/>
 <line x1="325.25" y1="64.21" x2="327" y2="71.78" class="x"/>
 <circle cx="327" cy="71.78" r="0.4" class="none" fill="#b03030"/>
-<line x1="80.28" y1="100.46" x2="112" y2="104" class="x"/>
-<circle cx="112" cy="104" r="0.4" class="none" fill="#b03030"/>
+<line x1="80.28" y1="107.54" x2="112" y2="104.01" class="x"/>
+<circle cx="112" cy="104.01" r="0.4" class="none" fill="#b03030"/>
 <circle cx="212" cy="61" r="3.3" class="n" fill="#fff"/>
 <text x="212" y="61.6" font-size="1.6" class="t b" text-anchor="middle">LB2-01</text>
 <circle cx="129.5" cy="147" r="3.3" class="n" fill="#fff"/>
@@ -110,8 +110,8 @@
 <text x="152" y="61.6" font-size="1.6" class="t b" text-anchor="middle">LB2-06</text>
 <circle cx="324.5" cy="61" r="3.3" class="n" fill="#fff"/>
 <text x="324.5" y="61.6" font-size="1.6" class="t b" text-anchor="middle">LB2-07</text>
-<circle cx="77" cy="100.09" r="3.3" class="n" fill="#fff"/>
-<text x="77" y="100.69" font-size="1.6" class="t b" text-anchor="middle">LB2-08</text>
+<circle cx="77" cy="107.91" r="3.3" class="n" fill="#fff"/>
+<text x="77" y="108.51" font-size="1.6" class="t b" text-anchor="middle">LB2-08</text>
 <line x1="84" y1="46.2" x2="340" y2="46.2" class="d"/>
 <line x1="83.3" y1="46.9" x2="84.7" y2="45.5" class="m"/>
 <line x1="339.3" y1="46.9" x2="340.7" y2="45.5" class="m"/>

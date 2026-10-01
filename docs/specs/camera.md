@@ -14,7 +14,7 @@
 | `camera_palm_scanner` | Security sensor - Palm Scanner | Fennick Safety and Security | 300 x 400 x 176 | 2.93 kg | 10 W | 24 VDC | 2,610 |
 | `camera_pan_tilt_ceiling` | Security sensor - Pan Tilt Ceiling | Fennick Safety and Security | 260 x 450 x 310 | 4.89 kg | 13 W | 24 VDC | 3,580 |
 | `camera_retina_scanner` | Security sensor - Retina Scanner | Fennick Safety and Security | 240 x 380 x 99 | 1.19 kg | 8.6 W | 24 VDC | 1,010 |
-| `camera_sentry_sensor_pod` | Security sensor - Sentry Sensor Pod | Fennick Safety and Security | 480 x 1010 x 480 | 37.4 kg | 33 W | 24 VDC | 33.3 k |
+| `camera_sentry_sensor_pod` | Security sensor - Sentry Sensor Pod | Fennick Safety and Security | 480 x 1013 x 480 | 37.5 kg | 33 W | 24 VDC | 33.4 k |
 | `camera_wall_bracket` | Security sensor - Wall Bracket | Fennick Safety and Security | 150 x 260 x 540 | 2.78 kg | 11 W | 24 VDC | 2,070 |
 
 ## Datasheets
@@ -105,9 +105,9 @@
 
 **Security sensor - Sentry Sensor Pod**, Fennick Safety and Security, part FSS-CAM-2407 (consumer)
 
-* Mass 37.4 kg; size 480 x 1010 x 480 mm; heat 30 W.
+* Mass 37.5 kg; size 480 x 1013 x 480 mm; heat 30 W.
 * Power 9.8 W idle / 33 W typical / 52 W peak at 24 VDC.
-* Price 33.3 k cr, lead time 79 days, MTBF 87,200 h, service every 4,380 h, service life 15 years, crew 0.
+* Price 33.4 k cr, lead time 79 days, MTBF 87,200 h, service every 4,380 h, service life 15 years, crew 0.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
 * ceiling-mounted. Two-person lift.
 

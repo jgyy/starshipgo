@@ -7,15 +7,15 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `shelving_cage_lockers` | Shelving - Cage Lockers | Ironwake Heavy Works | 2140 x 2125 x 600 | 204.3 kg | 0 W | none | 19 k |
-| `shelving_gas_and_fuel_shelf` | Shelving - Gas And Fuel Shelf | Ironwake Heavy Works | 2040 x 2030 x 740 | 270.4 kg | 0 W | none | 30 k |
+| `shelving_gas_and_fuel_shelf` | Shelving - Gas And Fuel Shelf | Ironwake Heavy Works | 2040 x 2033 x 740 | 270.8 kg | 0 W | none | 30.1 k |
 | `shelving_hanging_cable_rack` | Shelving - Hanging Cable Rack | Ironwake Heavy Works | 1400 x 1752 x 310 | 60.9 kg | 0 W | none | 5,110 |
-| `shelving_heavy_boxes` | Shelving - Heavy Boxes | Ironwake Heavy Works | 2240 x 2300 x 690 | 269.2 kg | 0 W | none | 27.5 k |
+| `shelving_heavy_boxes` | Shelving - Heavy Boxes | Ironwake Heavy Works | 2240 x 2303 x 690 | 269.5 kg | 0 W | none | 27.5 k |
 | `shelving_mobile_carriages` | Shelving - Mobile Carriages | Ironwake Heavy Works | 2500 x 2080 x 1323 | 566.9 kg | 0 W | none | 59.4 k |
 | `shelving_parts_bin_wall` | Shelving - Parts Bin Wall | Ironwake Heavy Works | 1800 x 1500 x 268 | 57.8 kg | 0 W | none | 6,060 |
-| `shelving_parts_bins_rack` | Shelving - Parts Bins Rack | Ironwake Heavy Works | 1640 x 2000 x 540 | 134.2 kg | 0 W | none | 11.8 k |
+| `shelving_parts_bins_rack` | Shelving - Parts Bins Rack | Ironwake Heavy Works | 1640 x 2003 x 540 | 134.4 kg | 0 W | none | 11.8 k |
 | `shelving_pigeonhole` | Shelving - Pigeonhole | Ironwake Heavy Works | 1700 x 2015 x 500 | 131.5 kg | 0 W | none | 14.4 k |
-| `shelving_wall_shelf_cans` | Shelving - Wall Shelf Cans | Ironwake Heavy Works | 1000 x 1215 x 278 | 25.8 kg | 0 W | none | 2,910 |
-| `shelving_wall_storage_rack` | Shelving - Wall Storage Rack | Ironwake Heavy Works | 1600 x 1520 x 425 | 77 kg | 0 W | none | 6,360 |
+| `shelving_wall_shelf_cans` | Shelving - Wall Shelf Cans | Ironwake Heavy Works | 1006 x 1215 x 278 | 26 kg | 0 W | none | 2,930 |
+| `shelving_wall_storage_rack` | Shelving - Wall Storage Rack | Ironwake Heavy Works | 1606 x 1520 x 425 | 77.2 kg | 0 W | none | 6,370 |
 
 ## Datasheets
 
@@ -33,11 +33,11 @@
 
 **Shelving - Gas And Fuel Shelf**, Ironwake Heavy Works, part IHW-SHE-7578 (passive)
 
-* Mass 270.4 kg; size 2040 x 2030 x 740 mm; heat 0 W.
+* Mass 270.8 kg; size 2040 x 2033 x 740 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 30 k cr, lead time 59 days, MTBF 398,700 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 30.1 k cr, lead time 59 days, MTBF 398,700 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
-* floor-mounted, free-standing. Install with a hoist or gantry (270.4 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (270.8 kg).
 
 ### `shelving_hanging_cable_rack`
 
@@ -53,11 +53,11 @@
 
 **Shelving - Heavy Boxes**, Ironwake Heavy Works, part IHW-SHE-4988 (passive)
 
-* Mass 269.2 kg; size 2240 x 2300 x 690 mm; heat 0 W.
+* Mass 269.5 kg; size 2240 x 2303 x 690 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 27.5 k cr, lead time 60 days, MTBF 539,300 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
-* floor-mounted, free-standing. Install with a hoist or gantry (269.2 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (269.5 kg).
 
 ### `shelving_mobile_carriages`
 
@@ -83,7 +83,7 @@
 
 **Shelving - Parts Bins Rack**, Ironwake Heavy Works, part IHW-SHE-3707 (passive)
 
-* Mass 134.2 kg; size 1640 x 2000 x 540 mm; heat 0 W.
+* Mass 134.4 kg; size 1640 x 2003 x 540 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 11.8 k cr, lead time 54 days, MTBF 493,400 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -103,9 +103,9 @@
 
 **Shelving - Wall Shelf Cans**, Ironwake Heavy Works, part IHW-SHE-4788 (passive)
 
-* Mass 25.8 kg; size 1000 x 1215 x 278 mm; heat 0 W.
+* Mass 26 kg; size 1006 x 1215 x 278 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,910 cr, lead time 50 days, MTBF 629,600 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 2,930 cr, lead time 50 days, MTBF 629,600 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * wall-mounted. Two-person lift.
 
@@ -113,9 +113,9 @@
 
 **Shelving - Wall Storage Rack**, Ironwake Heavy Works, part IHW-SHE-2535 (passive)
 
-* Mass 77 kg; size 1600 x 1520 x 425 mm; heat 0 W.
+* Mass 77.2 kg; size 1606 x 1520 x 425 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 6,360 cr, lead time 59 days, MTBF 627,600 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 6,370 cr, lead time 59 days, MTBF 627,600 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * wall-mounted. Two-person lift.
 

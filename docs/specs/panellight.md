@@ -8,13 +8,13 @@
 |---|---|---|---|---|---|---|---|
 | `panellight_backlit_rectangle` | Panel light - Backlit Rectangle | Tamsin Lighting | 660 x 960 x 62 | 4.42 kg | 9.1 W | 24 VDC | 996 |
 | `panellight_door_side_light` | Panel light - Door Side Light | Tamsin Lighting | 160 x 560 x 52 | 0.55 kg | 5 W | 24 VDC | 231 |
-| `panellight_glowing_wall_strip` | Panel light - Glowing Wall Strip | Tamsin Lighting | 120 x 1300 x 60 | 0.96 kg | 5.5 W | 24 VDC | 345 |
+| `panellight_glowing_wall_strip` | Panel light - Glowing Wall Strip | Tamsin Lighting | 120 x 1300 x 65 | 1.04 kg | 5.6 W | 24 VDC | 370 |
 | `panellight_hex_glow_panel` | Panel light - Hex Glow Panel | Tamsin Lighting | 592 x 520 x 72 | 2.33 kg | 6.8 W | 24 VDC | 759 |
 | `panellight_illuminated_logo_plate` | Panel light - Illuminated Logo Plate | Tamsin Lighting | 600 x 360 x 52 | 1.32 kg | 6.3 W | 24 VDC | 391 |
 | `panellight_porthole_glow` | Panel light - Porthole Glow | Tamsin Lighting | 638 x 638 x 107 | 5.29 kg | 9.2 W | 24 VDC | 1,500 |
 | `panellight_tile_matrix_panel` | Panel light - Tile Matrix Panel | Tamsin Lighting | 840 x 840 x 60 | 4.74 kg | 9 W | 24 VDC | 1,100 |
 | `panellight_triple_bar_panel` | Panel light - Triple Bar Panel | Tamsin Lighting | 800 x 500 x 65 | 2.78 kg | 7.8 W | 24 VDC | 678 |
-| `panellight_wall_grazer` | Panel light - Wall Grazer | Tamsin Lighting | 650 x 190 x 140 | 1.87 kg | 7 W | 24 VDC | 471 |
+| `panellight_wall_grazer` | Panel light - Wall Grazer | Tamsin Lighting | 650 x 190 x 143 | 1.91 kg | 7.1 W | 24 VDC | 480 |
 | `panellight_window_light_box` | Panel light - Window Light Box | Tamsin Lighting | 980 x 950 x 150 | 15.8 kg | 18 W | 24 VDC | 3,670 |
 
 ## Datasheets
@@ -43,9 +43,9 @@
 
 **Panel light - Glowing Wall Strip**, Tamsin Lighting, part TAM-PAN-5202 (consumer)
 
-* Mass 0.96 kg; size 120 x 1300 x 60 mm; heat 4.4 W.
-* Power 0.28 W idle / 5.5 W typical / 6.1 W peak at 24 VDC.
-* Price 345 cr, lead time 32 days, MTBF 65,500 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 1.04 kg; size 120 x 1300 x 65 mm; heat 4.5 W.
+* Power 0.28 W idle / 5.6 W typical / 6.1 W peak at 24 VDC.
+* Price 370 cr, lead time 32 days, MTBF 65,500 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 
@@ -103,9 +103,9 @@
 
 **Panel light - Wall Grazer**, Tamsin Lighting, part TAM-PAN-1139 (consumer)
 
-* Mass 1.87 kg; size 650 x 190 x 140 mm; heat 5.6 W.
-* Power 0.35 W idle / 7 W typical / 7.7 W peak at 24 VDC.
-* Price 471 cr, lead time 35 days, MTBF 50,400 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 1.91 kg; size 650 x 190 x 143 mm; heat 5.7 W.
+* Power 0.35 W idle / 7.1 W typical / 7.8 W peak at 24 VDC.
+* Price 480 cr, lead time 35 days, MTBF 50,400 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 

@@ -7,11 +7,11 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `doorframe_deep_bulkhead` | Door frame - Deep Bulkhead | Calder-Okonkwo Industries | 2900 x 3050 x 600 | 523.2 kg | 0 W | none | 11 k |
-| `doorframe_gothic_arch` | Door frame - Gothic Arch | Calder-Okonkwo Industries | 2800 x 3800 x 400 | 409.5 kg | 0 W | none | 8,250 |
-| `doorframe_hexagonal` | Door frame - Hexagonal | Calder-Okonkwo Industries | 2520 x 2950 x 245 | 197.7 kg | 0 W | none | 5,190 |
+| `doorframe_gothic_arch` | Door frame - Gothic Arch | Calder-Okonkwo Industries | 2800 x 3803 x 400 | 411.3 kg | 0 W | none | 8,300 |
+| `doorframe_hexagonal` | Door frame - Hexagonal | Calder-Okonkwo Industries | 2520 x 2953 x 248 | 200.4 kg | 0 W | none | 5,260 |
 | `doorframe_ibeam_portal` | Door frame - Ibeam Portal | Calder-Okonkwo Industries | 2600 x 2925 x 300 | 238.5 kg | 0 W | none | 6,240 |
-| `doorframe_light_strip_square` | Door frame - Light Strip Square | Calder-Okonkwo Industries | 2850 x 2900 x 240 | 193 kg | 0 W | none | 3,880 |
-| `doorframe_peaked_gable` | Door frame - Peaked Gable | Calder-Okonkwo Industries | 2760 x 3669 x 400 | 398.8 kg | 0 W | none | 10.5 k |
+| `doorframe_light_strip_square` | Door frame - Light Strip Square | Calder-Okonkwo Industries | 2850 x 2903 x 240 | 193.2 kg | 0 W | none | 3,890 |
+| `doorframe_peaked_gable` | Door frame - Peaked Gable | Calder-Okonkwo Industries | 2760 x 3672 x 400 | 399.2 kg | 0 W | none | 10.5 k |
 | `doorframe_round_arch` | Door frame - Round Arch | Calder-Okonkwo Industries | 3000 x 3241 x 500 | 545.2 kg | 0 W | none | 13.9 k |
 | `doorframe_twin_ring` | Door frame - Twin Ring | Calder-Okonkwo Industries | 2440 x 2820 x 240 | 180.2 kg | 0 W | none | 3,810 |
 
@@ -31,19 +31,19 @@
 
 **Door frame - Gothic Arch**, Calder-Okonkwo Industries, part COI-DOO-8497 (passive)
 
-* Mass 409.5 kg; size 2800 x 3800 x 400 mm; heat 0 W.
+* Mass 411.3 kg; size 2800 x 3803 x 400 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 8,250 cr, lead time 44 days, MTBF 1,317,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 8,300 cr, lead time 44 days, MTBF 1,317,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (409.5 kg).
+* floor-mounted. Install with a hoist or gantry (411.3 kg).
 
 ### `doorframe_hexagonal`
 
 **Door frame - Hexagonal**, Calder-Okonkwo Industries, part COI-DOO-2279 (passive)
 
-* Mass 197.7 kg; size 2520 x 2950 x 245 mm; heat 0 W.
+* Mass 200.4 kg; size 2520 x 2953 x 248 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 5,190 cr, lead time 49 days, MTBF 1,610,100 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 5,260 cr, lead time 49 days, MTBF 1,610,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -61,9 +61,9 @@
 
 **Door frame - Light Strip Square**, Calder-Okonkwo Industries, part COI-DOO-9969 (passive)
 
-* Mass 193 kg; size 2850 x 2900 x 240 mm; heat 0 W.
+* Mass 193.2 kg; size 2850 x 2903 x 240 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,880 cr, lead time 51 days, MTBF 1,222,600 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 3,890 cr, lead time 51 days, MTBF 1,222,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -71,11 +71,11 @@
 
 **Door frame - Peaked Gable**, Calder-Okonkwo Industries, part COI-DOO-7058 (passive)
 
-* Mass 398.8 kg; size 2760 x 3669 x 400 mm; heat 0 W.
+* Mass 399.2 kg; size 2760 x 3672 x 400 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 10.5 k cr, lead time 45 days, MTBF 1,766,700 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (398.8 kg).
+* floor-mounted. Install with a hoist or gantry (399.2 kg).
 
 ### `doorframe_round_arch`
 

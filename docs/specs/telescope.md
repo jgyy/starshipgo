@@ -52,6 +52,6 @@
 * Power 71 W idle / 240 W typical / 400 W peak at 48 VDC.
 * Price 308 k cr, lead time 108 days, MTBF 40,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 43 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `starmap` (screens: starmap).
+* Software: `starmap` (screens: asteroids).
 * floor-mounted, free-standing. Two-person lift.
 

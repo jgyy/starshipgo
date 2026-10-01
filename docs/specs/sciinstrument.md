@@ -10,12 +10,12 @@
 | `sciinstrument_geiger_counter` | Science instrument - Geiger Counter | Orrery Instruments | 180 x 286 x 410 | 5.87 kg | 20 W | 24 VDC | 14.1 k |
 | `sciinstrument_magnetometer` | Science instrument - Magnetometer | Orrery Instruments | 400 x 505 x 272 | 16 kg | 44 W | 24 VDC | 44.3 k |
 | `sciinstrument_portable_field_lab` | Science instrument - Portable Field Lab | Orrery Instruments | 600 x 577 x 475 | 43.2 kg | 110 W | 48 VDC | 127 k |
-| `sciinstrument_probe_kit` | Science instrument - Probe Kit | Orrery Instruments | 460 x 179 x 329 | 7.39 kg | 24 W | 24 VDC | 23 k |
+| `sciinstrument_probe_kit` | Science instrument - Probe Kit | Orrery Instruments | 463 x 179 x 329 | 7.44 kg | 25 W | 24 VDC | 23.1 k |
 | `sciinstrument_radiation_monitor_post` | Science instrument - Radiation Monitor Post | Orrery Instruments | 649 x 2020 x 498 | 179.8 kg | 360 W | 120 VAC 1ph | 494 k |
 | `sciinstrument_sample_drill_rig` | Science instrument - Sample Drill Rig | Orrery Instruments | 900 x 1880 x 800 | 426.6 kg | 810 W | 120 VAC 1ph | 902 k |
-| `sciinstrument_seismic_monitor` | Science instrument - Seismic Monitor | Orrery Instruments | 807 x 970 x 620 | 146.5 kg | 320 W | 120 VAC 1ph | 413 k |
+| `sciinstrument_seismic_monitor` | Science instrument - Seismic Monitor | Orrery Instruments | 807 x 973 x 623 | 147.7 kg | 330 W | 120 VAC 1ph | 417 k |
 | `sciinstrument_sensor_puck_array` | Science instrument - Sensor Puck Array | Orrery Instruments | 500 x 205 x 300 | 9.07 kg | 24 W | 24 VDC | 24.7 k |
-| `sciinstrument_weather_station` | Science instrument - Weather Station | Orrery Instruments | 1061 x 2250 x 540 | 348.9 kg | 770 W | 120 VAC 1ph | 746 k |
+| `sciinstrument_weather_station` | Science instrument - Weather Station | Orrery Instruments | 1061 x 2253 x 540 | 349.4 kg | 770 W | 120 VAC 1ph | 748 k |
 
 ## Datasheets
 
@@ -60,18 +60,18 @@
 * Power 33 W idle / 110 W typical / 180 W peak at 48 VDC.
 * Price 127 k cr, lead time 114 days, MTBF 69,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 42 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `engineering` (screens: systems).
+* Software: `lifesupport` (screens: life_support).
 * table-mounted. Two-person lift.
 
 ### `sciinstrument_probe_kit`
 
 **Science instrument - Probe Kit**, Orrery Instruments, part ORI-SCI-6376 (consumer)
 
-* Mass 7.39 kg; size 460 x 179 x 329 mm; heat 22 W.
-* Power 7.3 W idle / 24 W typical / 42 W peak at 24 VDC.
-* Price 23 k cr, lead time 109 days, MTBF 52,800 h, service every 4,380 h, service life 12 years, crew 1.
+* Mass 7.44 kg; size 463 x 179 x 329 mm; heat 23 W.
+* Power 7.4 W idle / 25 W typical / 42 W peak at 24 VDC.
+* Price 23.1 k cr, lead time 109 days, MTBF 52,800 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 40 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `medical` (screens: vitals).
+* Software: `science` (screens: ecg_multi).
 * table-mounted.
 
 ### `sciinstrument_radiation_monitor_post`
@@ -82,7 +82,7 @@
 * Power 110 W idle / 360 W typical / 620 W peak at 120 VAC 1ph.
 * Price 494 k cr, lead time 116 days, MTBF 70,300 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 43 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `diagnostics` (screens: bars).
+* Software: `science` (screens: fuel_status).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `sciinstrument_sample_drill_rig`
@@ -93,18 +93,18 @@
 * Power 240 W idle / 810 W typical / 1.4 kW peak at 120 VAC 1ph.
 * Price 902 k cr, lead time 113 days, MTBF 46,000 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 45 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `science` (screens: graph_lines).
 * floor-mounted, free-standing. Install with a hoist or gantry (426.6 kg).
 
 ### `sciinstrument_seismic_monitor`
 
 **Science instrument - Seismic Monitor**, Orrery Instruments, part ORI-SCI-5551 (consumer)
 
-* Mass 146.5 kg; size 807 x 970 x 620 mm; heat 290 W.
-* Power 97 W idle / 320 W typical / 550 W peak at 120 VAC 1ph.
-* Price 413 k cr, lead time 111 days, MTBF 42,100 h, service every 4,380 h, service life 12 years, crew 1.
+* Mass 147.7 kg; size 807 x 973 x 623 mm; heat 300 W.
+* Power 98 W idle / 330 W typical / 550 W peak at 120 VAC 1ph.
+* Price 417 k cr, lead time 111 days, MTBF 42,100 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 43 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `science` (screens: waveform).
+* Software: `science` (screens: waterfall).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `sciinstrument_sensor_puck_array`
@@ -122,10 +122,10 @@
 
 **Science instrument - Weather Station**, Orrery Instruments, part ORI-SCI-4596 (consumer)
 
-* Mass 348.9 kg; size 1061 x 2250 x 540 mm; heat 710 W.
+* Mass 349.4 kg; size 1061 x 2253 x 540 mm; heat 710 W.
 * Power 230 W idle / 770 W typical / 1.3 kW peak at 120 VAC 1ph.
-* Price 746 k cr, lead time 111 days, MTBF 40,500 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 748 k cr, lead time 111 days, MTBF 40,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 45 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `diagnostics` (screens: bars).
-* floor-mounted, free-standing. Install with a hoist or gantry (348.9 kg).
+* Software: `cargo` (screens: inventory_grid).
+* floor-mounted, free-standing. Install with a hoist or gantry (349.4 kg).
 

@@ -47,9 +47,9 @@
 <polygon points="131,168.26 131,159.74 134.42,159.74 134.42,168.26" class="f" fill="#81e8d6"/>
 <polygon points="131,139 131,119 132.24,119 132.24,139" class="f" fill="#81d3e8"/>
 <polygon points="185,119 185,139 183.8,139 183.8,119" class="f" fill="#81d3e8"/>
-<polygon points="136.4,180 136.4,140 145.6,140 145.6,180" class="dot" fill="none"/>
+<polygon points="136.4,180.12 136.4,140.12 145.6,140.12 145.6,180.12" class="dot" fill="none"/>
 <polygon points="136.4,98 136.4,58 145.6,58 145.6,98" class="dot" fill="none"/>
-<polygon points="137.4,139 137.4,99 144.6,99 144.6,139" class="dot" fill="none"/>
+<polygon points="137.4,139.12 137.4,99 144.6,99 144.6,139.12" class="dot" fill="none"/>
 <polygon points="148,119 168,119 168,139 148,139" class="dot" fill="none"/>
 <path d="M128 49 L188 49 L188 209 L128 209Z M131 52 L185 52 L185 206 L131 206Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="128,209 188,209 188,206 128,206" class="none" fill="#ffffff"/>
@@ -82,8 +82,8 @@
 <circle cx="183.01" cy="164" r="0.4" class="none" fill="#b03030"/>
 <line x1="191.89" y1="126.33" x2="184.4" y2="129" class="x"/>
 <circle cx="184.4" cy="129" r="0.4" class="none" fill="#b03030"/>
-<line x1="124.29" y1="117.87" x2="141" y2="119" class="x"/>
-<circle cx="141" cy="119" r="0.4" class="none" fill="#b03030"/>
+<line x1="124.29" y1="117.88" x2="141" y2="119.06" class="x"/>
+<circle cx="141" cy="119.06" r="0.4" class="none" fill="#b03030"/>
 <line x1="124.28" y1="177.81" x2="131.6" y2="177" class="x"/>
 <circle cx="131.6" cy="177" r="0.4" class="none" fill="#b03030"/>
 <circle cx="121" cy="125.22" r="3.3" class="n" fill="#fff"/>

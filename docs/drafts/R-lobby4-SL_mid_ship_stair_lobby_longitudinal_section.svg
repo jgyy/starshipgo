@@ -38,7 +38,7 @@
 <polygon points="176,63 248,63 248,131 176,131" class="x" fill="#e4e8ed"/>
 <polygon points="180,67 244,67 244,131 180,131" class="n" fill="#fbfbfb"/>
 <polygon points="179,83 180.56,83 180.56,109 179,109" class="f" fill="#f5f7bb"/>
-<polygon points="205,63 219,63 219,65.4 205,65.4" class="dot" fill="none"/>
+<polygon points="204.98,63 219.04,63 219.04,65.4 204.98,65.4" class="dot" fill="none"/>
 <polygon points="244.1,70.5 245,70.5 245,89.5 244.1,89.5" class="f" fill="#b9e6f2"/>
 <polygon points="179,103.6 188.2,103.6 188.2,131.2 179,131.2" class="f" fill="#d3c6fa"/>
 <polygon points="202.4,63 221.6,63 221.6,65.72 202.4,65.72" class="dot" fill="none"/>

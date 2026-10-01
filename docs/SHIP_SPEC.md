@@ -16,15 +16,15 @@
 | Doors / stair flights | 34 / 16 |
 | Pressurised volume | 20,022 m3 |
 | Installed equipment (items / distinct models) | 2587 / 637 |
-| Equipment mass | 494.78 t |
-| Lightship displacement (structure + equipment) | 2661.21 t |
-| Full-load displacement | 3141.96 t |
+| Equipment mass | 495.08 t |
+| Lightship displacement (structure + equipment) | 2661.51 t |
+| Full-load displacement | 3142.27 t |
 | Installed generation | 42.9 MW |
 | Typical electrical load | 8.54 MW |
 | Maximum demand | 11.54 MW |
-| Battery storage | 2496 kWh |
-| Equipment value | 563.06 M cr |
-| Estimated build cost | 1089.55 M cr |
+| Battery storage | 2503 kWh |
+| Equipment value | 563.37 M cr |
+| Estimated build cost | 1090.02 M cr |
 | Cruise / top speed | warp 5 / warp 8 (1.10 / 5.3 ly per day) |
 
 ## 2. Dimensions and decks
@@ -33,84 +33,84 @@ Hull outlines are one closed convex polygon per deck (`ship.json` `hull`). The s
 
 | Deck | Name | Floor | Hull area | Rooms | Room area | Volume | Items | Equip. mass | Typ. load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 0 | Sky Deck | +12.0 m | 859 m2 | 12 | 860 m2 | 3112 m3 | 466 | 32.35 t | 79.2 kW | 34.00 M |
-| 1 | Command Deck | +8.0 m | 1042 m2 | 14 | 1042 m2 | 3714 m3 | 421 | 25.34 t | 62.8 kW | 19.50 M |
-| 2 | Habitat Deck | +4.0 m | 1064 m2 | 15 | 1064 m2 | 3691 m3 | 599 | 50.13 t | 353.6 kW | 48.79 M |
-| 3 | Engineering Deck | +0.0 m | 1244 m2 | 14 | 1245 m2 | 5607 m3 | 516 | 220.74 t | 4.95 MW | 259.05 M |
-| 4 | Hold Deck | -4.0 m | 1146 m2 | 13 | 1146 m2 | 3898 m3 | 585 | 166.22 t | 3.10 MW | 201.72 M |
+| 0 | Sky Deck | +12.0 m | 859 m2 | 12 | 860 m2 | 3112 m3 | 465 | 32.32 t | 78.8 kW | 33.99 M |
+| 1 | Command Deck | +8.0 m | 1042 m2 | 14 | 1042 m2 | 3714 m3 | 421 | 25.37 t | 62.9 kW | 19.53 M |
+| 2 | Habitat Deck | +4.0 m | 1064 m2 | 15 | 1064 m2 | 3691 m3 | 600 | 50.19 t | 353.6 kW | 48.83 M |
+| 3 | Engineering Deck | +0.0 m | 1244 m2 | 14 | 1245 m2 | 5607 m3 | 516 | 220.85 t | 4.95 MW | 259.10 M |
+| 4 | Hold Deck | -4.0 m | 1146 m2 | 13 | 1146 m2 | 3898 m3 | 585 | 166.35 t | 3.10 MW | 201.91 M |
 
 ### Rooms
 
 | Deck | Room | Department | m2 | H m | Items | Mass | Idle | Typical | Peak | Value cr |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Forward Spine Corridor (`CF0`) | Circulation | 24 | 3.4 | 10 | 68 kg | 2 W | 30 W | 33 W | 7.6 k |
-| 0 | Aft Spine Corridor (`CA0`) | Circulation | 43 | 3.4 | 20 | 128 kg | 29 W | 145 W | 194 W | 12.0 k |
-| 0 | Mid-ship Stair Lobby (`LB0`) | Circulation | 46 | 3.4 | 14 | 224 kg | 68 W | 275 W | 374 W | 77.4 k |
-| 0 | Port Stair Tower (`SP0`) | Circulation | 24 | 3.4 | 6 | 20 kg | 2 W | 39 W | 43 W | 4.6 k |
+| 0 | Aft Spine Corridor (`CA0`) | Circulation | 43 | 3.4 | 20 | 130 kg | 29 W | 145 W | 194 W | 12.1 k |
+| 0 | Mid-ship Stair Lobby (`LB0`) | Circulation | 46 | 3.4 | 14 | 224 kg | 68 W | 275 W | 374 W | 77.5 k |
+| 0 | Port Stair Tower (`SP0`) | Circulation | 24 | 3.4 | 6 | 20 kg | 2 W | 39 W | 43 W | 4.7 k |
 | 0 | Starboard Stair Tower (`SS0`) | Circulation | 24 | 3.4 | 6 | 12 kg | 1 W | 29 W | 32 W | 2.8 k |
-| 0 | Star Cartography (`SC`) | Science | 220 | 4.2 | 87 | 7.43 t | 7.7 kW | 28.6 kW | 42.3 kW | 11.01 M |
-| 0 | Briefing Theatre (`BT`) | Command | 92 | 3.4 | 58 | 2.04 t | 2.1 kW | 7.0 kW | 10.0 kW | 1.93 M |
-| 0 | Officers' Wardroom & Bar (`WR`) | Crew and habitat | 92 | 3.4 | 75 | 2.66 t | 1.7 kW | 6.0 kW | 8.8 kW | 583.9 k |
-| 0 | Library & Archive (`LI`) | Crew and habitat | 84 | 3.4 | 59 | 8.70 t | 3.5 kW | 14.1 kW | 20.8 kW | 7.30 M |
-| 0 | Arboretum (`AB`) | Life support and garden | 63 | 3.6 | 42 | 3.14 t | 3.6 kW | 9.4 kW | 14.9 kW | 1.52 M |
-| 0 | Observatory (`OB`) | Science | 84 | 3.4 | 44 | 6.00 t | 3.3 kW | 12.3 kW | 20.1 kW | 10.13 M |
+| 0 | Star Cartography (`SC`) | Science | 220 | 4.2 | 87 | 7.44 t | 7.7 kW | 28.6 kW | 42.3 kW | 11.01 M |
+| 0 | Briefing Theatre (`BT`) | Command | 92 | 3.4 | 58 | 2.05 t | 2.1 kW | 7.0 kW | 10.0 kW | 1.93 M |
+| 0 | Officers' Wardroom & Bar (`WR`) | Crew and habitat | 92 | 3.4 | 75 | 2.66 t | 1.7 kW | 6.0 kW | 8.8 kW | 584.6 k |
+| 0 | Library & Archive (`LI`) | Crew and habitat | 84 | 3.4 | 59 | 8.70 t | 3.5 kW | 14.1 kW | 20.8 kW | 7.31 M |
+| 0 | Arboretum (`AB`) | Life support and garden | 63 | 3.6 | 41 | 3.09 t | 3.5 kW | 9.0 kW | 14.4 kW | 1.50 M |
+| 0 | Observatory (`OB`) | Science | 84 | 3.4 | 44 | 6.00 t | 3.3 kW | 12.3 kW | 20.1 kW | 10.14 M |
 | 0 | Flag Officer's Suite (`FS`) | Crew and habitat | 63 | 3.4 | 45 | 1.92 t | 292 W | 1.3 kW | 3.1 kW | 1.41 M |
-| 1 | Forward Spine Corridor (`CF1`) | Circulation | 63 | 3.4 | 25 | 195 kg | 5 W | 100 W | 108 W | 15.3 k |
-| 1 | Aft Spine Corridor (`CA1`) | Circulation | 31 | 3.4 | 15 | 109 kg | 29 W | 141 W | 189 W | 13.3 k |
-| 1 | Mid-ship Stair Lobby (`LB1`) | Circulation | 46 | 3.4 | 14 | 206 kg | 67 W | 263 W | 361 W | 72.4 k |
+| 1 | Forward Spine Corridor (`CF1`) | Circulation | 63 | 3.4 | 25 | 197 kg | 5 W | 100 W | 108 W | 15.4 k |
+| 1 | Aft Spine Corridor (`CA1`) | Circulation | 31 | 3.4 | 15 | 110 kg | 29 W | 141 W | 189 W | 13.5 k |
+| 1 | Mid-ship Stair Lobby (`LB1`) | Circulation | 46 | 3.4 | 14 | 206 kg | 67 W | 263 W | 361 W | 72.5 k |
 | 1 | Port Stair Tower (`SP1`) | Circulation | 24 | 3.4 | 5 | 10 kg | 1 W | 19 W | 21 W | 2.2 k |
 | 1 | Starboard Stair Tower (`SS1`) | Circulation | 24 | 3.4 | 6 | 20 kg | 2 W | 36 W | 40 W | 4.5 k |
-| 1 | Bridge (`BR`) | Command | 175 | 4.2 | 41 | 4.89 t | 2.3 kW | 8.0 kW | 14.8 kW | 5.55 M |
-| 1 | Captain's Ready Room (`RR`) | Command | 85 | 3.4 | 32 | 1.38 t | 747 W | 2.8 kW | 5.4 kW | 181.6 k |
+| 1 | Bridge (`BR`) | Command | 175 | 4.2 | 41 | 4.90 t | 2.3 kW | 8.0 kW | 14.8 kW | 5.55 M |
+| 1 | Captain's Ready Room (`RR`) | Command | 85 | 3.4 | 32 | 1.38 t | 747 W | 2.8 kW | 5.4 kW | 181.8 k |
 | 1 | Observation Lounge (`OL`) | Crew and habitat | 150 | 3.6 | 53 | 2.68 t | 1.3 kW | 4.4 kW | 6.5 kW | 1.73 M |
-| 1 | Conference Room (`CR`) | Command | 85 | 3.4 | 52 | 1.67 t | 1.1 kW | 3.9 kW | 6.7 kW | 539.6 k |
-| 1 | Astrometrics (`AM`) | Science | 150 | 3.4 | 44 | 6.41 t | 6.0 kW | 23.6 kW | 38.9 kW | 7.43 M |
-| 1 | Officers' Cabins A (`OA`) | Crew and habitat | 59 | 3.4 | 40 | 1.41 t | 37 W | 399 W | 1.8 kW | 99.2 k |
+| 1 | Conference Room (`CR`) | Command | 85 | 3.4 | 52 | 1.67 t | 1.1 kW | 3.9 kW | 6.7 kW | 540.0 k |
+| 1 | Astrometrics (`AM`) | Science | 150 | 3.4 | 44 | 6.43 t | 6.0 kW | 23.7 kW | 38.9 kW | 7.44 M |
+| 1 | Officers' Cabins A (`OA`) | Crew and habitat | 59 | 3.4 | 40 | 1.42 t | 37 W | 399 W | 1.8 kW | 99.3 k |
 | 1 | Officers' Cabins B (`OB`) | Crew and habitat | 46 | 3.4 | 26 | 980 kg | 21 W | 271 W | 1.7 kW | 54.3 k |
-| 1 | Captain's Quarters (`CQ`) | Crew and habitat | 61 | 3.4 | 40 | 1.87 t | 807 W | 3.0 kW | 5.7 kW | 308.8 k |
+| 1 | Captain's Quarters (`CQ`) | Crew and habitat | 61 | 3.4 | 40 | 1.87 t | 807 W | 3.0 kW | 5.7 kW | 308.9 k |
 | 1 | Communications Centre (`CC`) | Command | 44 | 3.4 | 28 | 3.50 t | 4.0 kW | 15.9 kW | 25.1 kW | 3.51 M |
-| 2 | Forward Spine Corridor (`CF2`) | Circulation | 90 | 3.4 | 37 | 293 kg | 7 W | 141 W | 155 W | 24.0 k |
-| 2 | Aft Spine Corridor (`CA2`) | Circulation | 43 | 3.4 | 20 | 147 kg | 30 W | 160 W | 210 W | 15.9 k |
-| 2 | Mid-ship Stair Lobby (`LB2`) | Circulation | 46 | 3.4 | 16 | 592 kg | 377 W | 1.3 kW | 1.9 kW | 194.2 k |
+| 2 | Forward Spine Corridor (`CF2`) | Circulation | 90 | 3.4 | 37 | 297 kg | 7 W | 141 W | 155 W | 24.2 k |
+| 2 | Aft Spine Corridor (`CA2`) | Circulation | 43 | 3.4 | 20 | 149 kg | 30 W | 160 W | 210 W | 16.1 k |
+| 2 | Mid-ship Stair Lobby (`LB2`) | Circulation | 46 | 3.4 | 16 | 593 kg | 377 W | 1.3 kW | 1.9 kW | 194.4 k |
 | 2 | Port Stair Tower (`SP2`) | Circulation | 24 | 3.4 | 5 | 10 kg | 1 W | 18 W | 20 W | 2.1 k |
 | 2 | Starboard Stair Tower (`SS2`) | Circulation | 24 | 3.4 | 6 | 12 kg | 1 W | 29 W | 32 W | 2.8 k |
-| 2 | Armory (`AR`) | Security | 31 | 3.4 | 23 | 2.90 t | 67.1 kW | 220.6 kW | 362.2 kW | 1.89 M |
-| 2 | Galley (`GA`) | Crew and habitat | 85 | 3.4 | 48 | 4.59 t | 6.0 kW | 19.5 kW | 29.1 kW | 1.49 M |
-| 2 | Mess Hall (`MH`) | Crew and habitat | 149 | 3.6 | 158 | 3.52 t | 2.7 kW | 9.1 kW | 13.2 kW | 789.0 k |
+| 2 | Armory (`AR`) | Security | 31 | 3.4 | 23 | 2.91 t | 67.1 kW | 220.6 kW | 362.2 kW | 1.89 M |
+| 2 | Galley (`GA`) | Crew and habitat | 85 | 3.4 | 48 | 4.60 t | 6.0 kW | 19.5 kW | 29.2 kW | 1.50 M |
+| 2 | Mess Hall (`MH`) | Crew and habitat | 149 | 3.6 | 158 | 3.53 t | 2.7 kW | 9.1 kW | 13.3 kW | 789.9 k |
 | 2 | Brig (`BG`) | Security | 31 | 3.4 | 19 | 2.94 t | 110 W | 630 W | 3.5 kW | 1.44 M |
 | 2 | Security Office (`SO`) | Security | 85 | 3.4 | 49 | 3.38 t | 2.2 kW | 7.6 kW | 12.2 kW | 2.86 M |
-| 2 | Medical Bay (`MB`) | Medical | 149 | 3.6 | 52 | 14.97 t | 19.9 kW | 66.4 kW | 119.4 kW | 27.35 M |
-| 2 | Recreation & Gym (`RG`) | Crew and habitat | 85 | 3.4 | 47 | 2.82 t | 419 W | 1.5 kW | 2.1 kW | 315.4 k |
-| 2 | Crew Quarters (`CW`) | Crew and habitat | 69 | 3.4 | 37 | 879 kg | 26 W | 190 W | 230 W | 75.3 k |
-| 2 | Science Laboratory (`SL`) | Science | 85 | 3.4 | 35 | 6.63 t | 1.7 kW | 6.0 kW | 11.0 kW | 9.27 M |
-| 2 | Hydroponics Garden (`HY`) | Life support and garden | 69 | 3.6 | 47 | 6.44 t | 8.2 kW | 20.6 kW | 32.7 kW | 3.07 M |
-| 3 | Forward Spine Corridor (`CF3`) | Circulation | 72 | 3.4 | 27 | 208 kg | 6 W | 116 W | 126 W | 18.4 k |
-| 3 | Aft Spine Corridor (`CA3`) | Circulation | 43 | 3.4 | 21 | 665 kg | 30 W | 289 W | 1.7 kW | 29.1 k |
-| 3 | Mid-ship Stair Lobby (`LB3`) | Circulation | 46 | 3.4 | 14 | 218 kg | 68 W | 269 W | 368 W | 76.4 k |
+| 2 | Medical Bay (`MB`) | Medical | 149 | 3.6 | 52 | 14.98 t | 19.9 kW | 66.4 kW | 119.4 kW | 27.37 M |
+| 2 | Recreation & Gym (`RG`) | Crew and habitat | 85 | 3.4 | 48 | 2.83 t | 419 W | 1.5 kW | 2.2 kW | 316.3 k |
+| 2 | Crew Quarters (`CW`) | Crew and habitat | 69 | 3.4 | 37 | 881 kg | 26 W | 190 W | 230 W | 75.3 k |
+| 2 | Science Laboratory (`SL`) | Science | 85 | 3.4 | 35 | 6.64 t | 1.7 kW | 6.0 kW | 11.0 kW | 9.28 M |
+| 2 | Hydroponics Garden (`HY`) | Life support and garden | 69 | 3.6 | 47 | 6.44 t | 8.2 kW | 20.6 kW | 32.8 kW | 3.07 M |
+| 3 | Forward Spine Corridor (`CF3`) | Circulation | 72 | 3.4 | 27 | 211 kg | 6 W | 116 W | 126 W | 18.6 k |
+| 3 | Aft Spine Corridor (`CA3`) | Circulation | 43 | 3.4 | 21 | 667 kg | 30 W | 289 W | 1.7 kW | 29.2 k |
+| 3 | Mid-ship Stair Lobby (`LB3`) | Circulation | 46 | 3.4 | 14 | 218 kg | 68 W | 269 W | 368 W | 76.5 k |
 | 3 | Port Stair Tower (`SP3`) | Circulation | 24 | 3.4 | 6 | 11 kg | 1 W | 28 W | 31 W | 2.7 k |
 | 3 | Starboard Stair Tower (`SS3`) | Circulation | 24 | 3.4 | 6 | 12 kg | 2 W | 31 W | 34 W | 2.9 k |
-| 3 | Life Support (`LS`) | Life support and garden | 60 | 3.4 | 31 | 10.24 t | 17.1 kW | 43.7 kW | 70.0 kW | 5.50 M |
-| 3 | Computer Core (`CO`) | Command | 143 | 3.4 | 86 | 20.42 t | 33.5 kW | 128.5 kW | 195.4 kW | 17.90 M |
-| 3 | Airlock & EVA Prep (`AL`) | Security | 60 | 3.4 | 26 | 2.69 t | 96 W | 1.5 kW | 2.9 kW | 830.4 k |
-| 3 | Main Engineering (`ME`) | Engineering | 143 | 3.4 | 66 | 61.33 t | 1.23 MW | 3.43 MW | 7.34 MW | 74.43 M |
+| 3 | Life Support (`LS`) | Life support and garden | 60 | 3.4 | 31 | 10.25 t | 17.1 kW | 43.7 kW | 70.0 kW | 5.50 M |
+| 3 | Computer Core (`CO`) | Command | 143 | 3.4 | 86 | 20.45 t | 33.5 kW | 128.5 kW | 195.4 kW | 17.93 M |
+| 3 | Airlock & EVA Prep (`AL`) | Security | 60 | 3.4 | 26 | 2.69 t | 96 W | 1.5 kW | 2.9 kW | 832.8 k |
+| 3 | Main Engineering (`ME`) | Engineering | 143 | 3.4 | 66 | 61.37 t | 1.23 MW | 3.43 MW | 7.34 MW | 74.44 M |
 | 3 | Engineering Workshop (`WS`) | Engineering | 85 | 3.4 | 58 | 9.01 t | 24 W | 268 W | 1.3 kW | 4.15 M |
-| 3 | Cargo Bay (`CB`) | Cargo and hangar | 80 | 3.4 | 37 | 4.33 t | 927 W | 3.2 kW | 7.0 kW | 1.10 M |
-| 3 | Power Distribution (`PD`) | Engineering | 85 | 3.4 | 56 | 39.93 t | 207.7 kW | 573.7 kW | 1.21 MW | 36.33 M |
+| 3 | Cargo Bay (`CB`) | Cargo and hangar | 80 | 3.4 | 37 | 4.34 t | 927 W | 3.2 kW | 7.0 kW | 1.10 M |
+| 3 | Power Distribution (`PD`) | Engineering | 85 | 3.4 | 56 | 39.94 t | 207.7 kW | 573.7 kW | 1.21 MW | 36.34 M |
 | 3 | Spares Depot (`SD`) | Cargo and hangar | 80 | 3.4 | 37 | 9.03 t | 262.3 kW | 746.5 kW | 1.62 MW | 4.59 M |
-| 3 | Hangar Bay (`HB`) | Cargo and hangar | 299 | 8.0 | 45 | 62.65 t | 4.5 kW | 15.5 kW | 30.6 kW | 114.09 M |
-| 4 | Forward Spine Corridor (`CF4`) | Circulation | 60 | 3.4 | 25 | 200 kg | 5 W | 102 W | 110 W | 18.3 k |
-| 4 | Aft Spine Corridor (`CA4`) | Circulation | 79 | 3.4 | 30 | 269 kg | 33 W | 220 W | 274 W | 26.8 k |
+| 3 | Hangar Bay (`HB`) | Cargo and hangar | 299 | 8.0 | 45 | 62.66 t | 4.5 kW | 15.5 kW | 30.6 kW | 114.09 M |
+| 4 | Forward Spine Corridor (`CF4`) | Circulation | 60 | 3.4 | 25 | 202 kg | 5 W | 102 W | 110 W | 18.4 k |
+| 4 | Aft Spine Corridor (`CA4`) | Circulation | 79 | 3.4 | 30 | 272 kg | 33 W | 220 W | 274 W | 26.9 k |
 | 4 | Mid-ship Stair Lobby (`LB4`) | Circulation | 46 | 3.4 | 14 | 209 kg | 67 W | 262 W | 360 W | 73.9 k |
 | 4 | Port Stair Tower (`SP4`) | Circulation | 24 | 3.4 | 6 | 12 kg | 1 W | 30 W | 33 W | 2.7 k |
 | 4 | Starboard Stair Tower (`SS4`) | Circulation | 24 | 3.4 | 6 | 12 kg | 1 W | 29 W | 32 W | 2.8 k |
-| 4 | Antimatter Containment (`AC`) | Engineering | 83 | 3.4 | 53 | 56.98 t | 749.3 kW | 2.27 MW | 4.48 MW | 77.52 M |
+| 4 | Antimatter Containment (`AC`) | Engineering | 83 | 3.4 | 53 | 57.03 t | 750.3 kW | 2.27 MW | 4.48 MW | 77.64 M |
 | 4 | Provisions Hold & Cold Store (`PH`) | Cargo and hangar | 103 | 3.4 | 70 | 12.96 t | 109.1 kW | 356.8 kW | 589.0 kW | 12.08 M |
-| 4 | Water Reclamation Plant (`WP`) | Life support and garden | 83 | 3.4 | 63 | 10.80 t | 5.5 kW | 14.3 kW | 23.8 kW | 8.44 M |
-| 4 | Waste & Recycling Plant (`WW`) | Life support and garden | 103 | 3.4 | 54 | 8.91 t | 2.9 kW | 8.6 kW | 15.7 kW | 3.51 M |
-| 4 | Fabrication Hall (`FH`) | Engineering | 120 | 3.4 | 78 | 12.47 t | 1.6 kW | 5.6 kW | 10.6 kW | 12.90 M |
-| 4 | Auxiliary Control (`AX`) | Command | 120 | 3.4 | 77 | 9.56 t | 6.7 kW | 24.1 kW | 37.1 kW | 9.94 M |
-| 4 | Main Cargo Hold (`MC`) | Cargo and hangar | 151 | 3.4 | 60 | 7.90 t | 1.4 kW | 4.7 kW | 8.3 kW | 1.24 M |
-| 4 | Drone & Probe Bay (`DP`) | Cargo and hangar | 151 | 3.4 | 49 | 45.93 t | 126.0 kW | 409.6 kW | 656.8 kW | 75.96 M |
+| 4 | Water Reclamation Plant (`WP`) | Life support and garden | 83 | 3.4 | 63 | 10.81 t | 5.5 kW | 14.3 kW | 23.8 kW | 8.46 M |
+| 4 | Waste & Recycling Plant (`WW`) | Life support and garden | 103 | 3.4 | 54 | 8.92 t | 2.9 kW | 8.7 kW | 15.7 kW | 3.51 M |
+| 4 | Fabrication Hall (`FH`) | Engineering | 120 | 3.4 | 78 | 12.48 t | 1.6 kW | 5.7 kW | 10.6 kW | 12.92 M |
+| 4 | Auxiliary Control (`AX`) | Command | 120 | 3.4 | 77 | 9.58 t | 6.7 kW | 24.1 kW | 37.1 kW | 9.97 M |
+| 4 | Main Cargo Hold (`MC`) | Cargo and hangar | 151 | 3.4 | 60 | 7.91 t | 1.4 kW | 4.7 kW | 8.3 kW | 1.24 M |
+| 4 | Drone & Probe Bay (`DP`) | Cargo and hangar | 151 | 3.4 | 49 | 45.95 t | 126.0 kW | 409.6 kW | 656.9 kW | 75.98 M |
 
 ## 3. Crew complement
 
@@ -128,48 +128,48 @@ Departments: Cargo and hangar 6 rooms, Command 7 rooms, Crew and habitat 11 room
 
 | Group | Mass | Share |
 |---|---|---|
-| Pressure hull skin and ablative layer | 787.12 t | 25.1 % |
+| Pressure hull skin and ablative layer | 787.12 t | 25.0 % |
 | Deck slabs and roof | 870.22 t | 27.7 % |
 | Internal bulkheads | 203.83 t | 6.5 % |
 | Secondary structure | 223.34 t | 7.1 % |
 | Stair flights | 17.60 t | 0.6 % |
 | Radiators (external) | 64.32 t | 2.0 % |
-| Installed equipment (2587 items) | 494.78 t | 15.7 % |
-| **Lightship** | 2661.21 t | 84.7 % |
-| Tank, cylinder and water-tank contents | 26.06 t | 0.8 % |
+| Installed equipment (2587 items) | 495.08 t | 15.8 % |
+| **Lightship** | 2661.51 t | 84.7 % |
+| Tank, cylinder and water-tank contents | 26.07 t | 0.8 % |
 | Food stores (180 days) | 20.74 t | 0.7 % |
 | Potable water buffer | 9.60 t | 0.3 % |
 | Oxygen reserve (30 days) | 1.61 t | 0.1 % |
 | Atmosphere inventory | 24.03 t | 0.8 % |
 | Cargo payload at departure | 398.71 t | 12.7 % |
-| **Full-load displacement** | 3141.96 t | 100.0 % |
+| **Full-load displacement** | 3142.27 t | 100.0 % |
 
 ### Installed equipment mass by department
 
 | Department | Items | Mass | Share of equipment |
 |---|---|---|---|
-| Cargo and hangar | 298 | 142.80 t | 28.9 % |
-| Command | 374 | 43.47 t | 8.8 % |
-| Crew and habitat | 628 | 32.04 t | 6.5 % |
-| Engineering | 311 | 179.72 t | 36.3 % |
-| Life support and garden | 237 | 39.54 t | 8.0 % |
-| Medical | 52 | 14.97 t | 3.0 % |
-| Science | 210 | 26.48 t | 5.4 % |
-| Security | 117 | 11.91 t | 2.4 % |
-| Circulation | 360 | 3.86 t | 0.8 % |
+| Cargo and hangar | 298 | 142.84 t | 28.9 % |
+| Command | 374 | 43.53 t | 8.8 % |
+| Crew and habitat | 629 | 32.08 t | 6.5 % |
+| Engineering | 311 | 179.82 t | 36.3 % |
+| Life support and garden | 236 | 39.51 t | 8.0 % |
+| Medical | 52 | 14.98 t | 3.0 % |
+| Science | 210 | 26.50 t | 5.4 % |
+| Security | 117 | 11.92 t | 2.4 % |
+| Circulation | 360 | 3.88 t | 0.8 % |
 
 ### Heaviest equipment families
 
 | Family | Mass | Share |
 |---|---|---|
 | craft | 88.95 t | 18.0 % |
-| reactor | 66.11 t | 13.4 % |
-| generator | 31.75 t | 6.4 % |
+| reactor | 66.18 t | 13.4 % |
+| generator | 31.77 t | 6.4 % |
 | coil | 26.59 t | 5.4 % |
-| tank | 21.69 t | 4.4 % |
-| capacitor | 21.47 t | 4.3 % |
-| console | 16.45 t | 3.3 % |
-| door | 15.72 t | 3.2 % |
+| tank | 21.70 t | 4.4 % |
+| capacitor | 21.51 t | 4.3 % |
+| console | 16.46 t | 3.3 % |
+| door | 15.73 t | 3.2 % |
 | rack | 15.70 t | 3.2 % |
 | hangartool | 12.67 t | 2.6 % |
 
@@ -187,8 +187,8 @@ Loads are the *typical* figures of the machine datasheets; connected peak is the
 | Connected peak | 17.11 MW |
 | Maximum demand | 11.54 MW |
 | Margin (generation - maximum demand) | 73 % |
-| Essential load (emergency) | 1172 kW |
-| Battery capacity | 2496 kWh |
+| Essential load (emergency) | 1171 kW |
+| Battery capacity | 2503 kWh |
 | Battery discharge rating | 11.8 MW |
 | Emergency endurance on batteries | 1.9 h |
 
@@ -199,8 +199,8 @@ Loads are the *typical* figures of the machine datasheets; connected peak is the
 | `generator_diesel_genset` | Power generation / conversion - Diesel Genset | aux | 1 | 521 kW | 521 kW | 400 VAC 3ph |
 | `generator_gas_turbine_genset` | Power generation / conversion - Gas Turbine Genset | aux | 1 | 710 kW | 710 kW | 400 VAC 3ph |
 | `generator_micro_fusion_generator` | Power generation / conversion - Micro Fusion Generator | aux | 1 | 4450 kW | 4450 kW | 6.6 kVAC 3ph |
-| `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | aux | 1 | 279 kW | 279 kW | 400 VAC 3ph |
-| `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | eng | 1 | 279 kW | 279 kW | 400 VAC 3ph |
+| `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | aux | 1 | 280 kW | 280 kW | 400 VAC 3ph |
+| `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | eng | 1 | 280 kW | 280 kW | 400 VAC 3ph |
 | `reactor_fusion_core_reactor` | Reactor - Fusion Core Reactor | eng | 1 | 16600 kW | 16600 kW | 6.6 kVAC 3ph |
 | `reactor_plasma_tokamak_torus` | Reactor - Plasma Tokamak Torus | antimatter | 1 | 19100 kW | 19100 kW | 6.6 kVAC 3ph |
 | `turbine_steam_turbine` | Turbomachinery - Steam Turbine | eng | 1 | 939 kW | 939 kW | 400 VAC 3ph |
@@ -209,9 +209,9 @@ Loads are the *typical* figures of the machine datasheets; connected peak is the
 
 | Model | Room | Qty | Capacity | Discharge |
 |---|---|---|---|---|
-| `capacitor_battery_rack` | auxctl | 2 | 476.0 kWh | 952 kW |
-| `capacitor_battery_rack` | core | 3 | 714.0 kWh | 1428 kW |
-| `capacitor_battery_rack` | drone | 2 | 476.0 kWh | 952 kW |
+| `capacitor_battery_rack` | auxctl | 2 | 478.0 kWh | 956 kW |
+| `capacitor_battery_rack` | core | 3 | 717.0 kWh | 1434 kW |
+| `capacitor_battery_rack` | drone | 2 | 478.0 kWh | 956 kW |
 | `capacitor_battery_trolley` | aux | 1 | 142.0 kWh | 285 kW |
 | `capacitor_capacitor_bank_rack` | antimatter | 1 | 10.9 kWh | 656 kW |
 | `capacitor_capacitor_bank_rack` | aux | 3 | 32.7 kWh | 1968 kW |
@@ -232,11 +232,11 @@ flowchart LR
         G0["Diesel Genset x1<br/>521 kW"]
         G1["Gas Turbine Genset x1<br/>710 kW"]
         G2["Micro Fusion Generator x1<br/>4450 kW"]
-        G3["Motor Generator Set x2<br/>558 kW"]
+        G3["Motor Generator Set x2<br/>560 kW"]
         G4["Fusion Core Reactor x1<br/>16600 kW"]
         G5["Plasma Tokamak Torus x1<br/>19100 kW"]
         G6["Steam Turbine x1<br/>939 kW"]
-        B0["Batteries<br/>2496 kWh"]
+        B0["Batteries<br/>2503 kWh"]
     end
     BUS{{"Main bus<br/>42.9 MW gen, 11.54 MW max demand"}}
     G0 --> BUS
@@ -247,16 +247,16 @@ flowchart LR
     G5 --> BUS
     G6 --> BUS
     B0 <--> BUS
-    BUS --> D0["Deck 0 feeder<br/>79.2 kW typ"]
+    BUS --> D0["Deck 0 feeder<br/>78.8 kW typ"]
     D0 --> D0_command["Command<br/>7.0 kW"]
     D0 --> D0_crew["Crew and habitat<br/>21.3 kW"]
-    D0 --> D0_life["Life support and garden<br/>9.4 kW"]
+    D0 --> D0_life["Life support and garden<br/>9.0 kW"]
     D0 --> D0_science["Science<br/>40.9 kW"]
     D0 --> D0_transit["Circulation<br/>519 W"]
-    BUS --> D1["Deck 1 feeder<br/>62.8 kW typ"]
+    BUS --> D1["Deck 1 feeder<br/>62.9 kW typ"]
     D1 --> D1_command["Command<br/>30.6 kW"]
     D1 --> D1_crew["Crew and habitat<br/>8.0 kW"]
-    D1 --> D1_science["Science<br/>23.6 kW"]
+    D1 --> D1_science["Science<br/>23.7 kW"]
     D1 --> D1_transit["Circulation<br/>559 W"]
     BUS --> D2["Deck 2 feeder<br/>353.6 kW typ"]
     D2 --> D2_crew["Crew and habitat<br/>30.2 kW"]
@@ -276,7 +276,7 @@ flowchart LR
     D4 --> D4_cargo["Cargo and hangar<br/>771.1 kW"]
     D4 --> D4_command["Command<br/>24.1 kW"]
     D4 --> D4_engineering["Engineering<br/>2.28 MW"]
-    D4 --> D4_life["Life support and garden<br/>22.9 kW"]
+    D4 --> D4_life["Life support and garden<br/>23.0 kW"]
     D4 --> D4_transit["Circulation<br/>643 W"]
 ```
 
@@ -284,19 +284,19 @@ flowchart LR
 
 | Deck | Idle | Typical | Connected peak | Share of typical |
 |---|---|---|---|---|
-| 0 | 22.2 kW | 79.2 kW | 120.6 kW | 0.9 % |
-| 1 | 16.4 kW | 62.8 kW | 107.4 kW | 0.7 % |
-| 2 | 108.9 kW | 353.6 kW | 588.0 kW | 4.1 % |
+| 0 | 22.1 kW | 78.8 kW | 120.1 kW | 0.9 % |
+| 1 | 16.4 kW | 62.9 kW | 107.5 kW | 0.7 % |
+| 2 | 108.9 kW | 353.6 kW | 588.3 kW | 4.1 % |
 | 3 | 1.75 MW | 4.95 MW | 10.47 MW | 57.9 % |
 | 4 | 1.00 MW | 3.10 MW | 5.82 MW | 36.3 % |
 
 | Department | Idle | Typical | Connected peak | Share of typical |
 |---|---|---|---|---|
 | Cargo and hangar | 504.3 kW | 1.54 MW | 2.91 MW | 18.0 % |
-| Command | 50.4 kW | 190.3 kW | 294.6 kW | 2.2 % |
-| Crew and habitat | 16.7 kW | 59.6 kW | 93.1 kW | 0.7 % |
+| Command | 50.4 kW | 190.3 kW | 294.7 kW | 2.2 % |
+| Crew and habitat | 16.7 kW | 59.6 kW | 93.2 kW | 0.7 % |
 | Engineering | 2.18 MW | 6.28 MW | 13.04 MW | 73.6 % |
-| Life support and garden | 37.4 kW | 96.5 kW | 157.1 kW | 1.1 % |
+| Life support and garden | 37.3 kW | 96.3 kW | 156.7 kW | 1.1 % |
 | Medical | 19.9 kW | 66.4 kW | 119.4 kW | 0.8 % |
 | Science | 18.7 kW | 70.5 kW | 112.3 kW | 0.8 % |
 | Security | 69.6 kW | 230.3 kW | 380.7 kW | 2.7 % |
@@ -310,7 +310,7 @@ flowchart LR
 | forcefield | 1.09 MW | 12.8 % |
 | reactor | 471.5 kW | 5.5 % |
 | rack | 181.7 kW | 2.1 % |
-| scrubber | 49.7 kW | 0.6 % |
+| scrubber | 49.8 kW | 0.6 % |
 | galley | 47.7 kW | 0.6 % |
 | cryo | 45.0 kW | 0.5 % |
 | medscanner | 43.0 kW | 0.5 % |
@@ -330,7 +330,7 @@ flowchart LR
 
 | Deck | Equipment heat |
 |---|---|
-| 0 | 72.7 kW |
+| 0 | 72.4 kW |
 | 1 | 57.5 kW |
 | 2 | 322.0 kW |
 | 3 | 9.82 MW |
@@ -354,7 +354,7 @@ flowchart LR
 | Pressurised volume / air inventory | 20,022 m3 / 24.03 t |
 | Oxygen autonomy (reserve + air) | 124 days |
 | Water-tank storage (50 % fill) | 18468 L (9.6 days of crew use) |
-| Hydroponics planter volume / yield (0.30 kg/m3/day) | 32.0 m3 / 9.6 kg/day |
+| Hydroponics planter volume / yield (0.30 kg/m3/day) | 31.6 m3 / 9.5 kg/day |
 | Fresh produce need (0.55 kg per person-day) | 35.2 kg/day (27 % covered) |
 | Food stores (180 days) | 20.74 t |
 
@@ -363,13 +363,13 @@ flowchart LR
 | System | Families | Units | Mass | Typical | Peak | Value cr |
 |---|---|---|---|---|---|---|
 | Warp field and plasma | coil | 12 | 26.59 t | 6.01 MW | 12.99 MW | 17.38 M |
-| Power generation and conversion | reactor, generator, turbine | 19 | 107.89 t | 837.5 kW | 1.36 MW | 152.24 M |
+| Power generation and conversion | reactor, generator, turbine | 19 | 107.97 t | 837.5 kW | 1.36 MW | 152.35 M |
 | Impulse and manoeuvring | nozzle | 2 | 3.40 t | 8.3 kW | 18.3 kW | 2.05 M |
 | Sensors and astronomy | instrument, telescope, antenna, sciinstrument | 24 | 5.16 t | 8.1 kW | 13.5 kW | 12.10 M |
-| Defence and security | forcefield, weaponrack, camera, cell | 35 | 7.38 t | 1.09 MW | 1.76 MW | 5.54 M |
-| Computing and communications | rack, storage, router, commsunit | 89 | 26.53 t | 202.4 kW | 303.7 kW | 27.55 M |
+| Defence and security | forcefield, weaponrack, camera, cell | 35 | 7.39 t | 1.09 MW | 1.76 MW | 5.54 M |
+| Computing and communications | rack, storage, router, commsunit | 89 | 26.56 t | 202.4 kW | 303.7 kW | 27.59 M |
 | Craft | craft | 5 | 88.95 t | 22.9 kW | 46.0 kW | 180.60 M |
-| Life support machinery | scrubber, tank, watertank, cylinder | 49 | 42.17 t | 86.1 kW | 136.7 kW | 22.12 M |
+| Life support machinery | scrubber, tank, watertank, cylinder | 49 | 42.20 t | 86.2 kW | 136.8 kW | 22.13 M |
 
 Craft carried: craft_interceptor x1 (15.82 t), craft_repair_pod x2 (9.17 t), craft_scout x1 (24.88 t), craft_shuttlecraft x1 (29.92 t).
 
@@ -396,49 +396,49 @@ Speed model: `ly/day = 1.10 x (warp / 5)^(10/3)`. Cruise is warp 5, top speed wa
 
 | Department | Items | Value cr | Share |
 |---|---|---|---|
-| Cargo and hangar | 298 | 209.05 M | 37.1 % |
-| Command | 374 | 39.55 M | 7.0 % |
-| Crew and habitat | 628 | 14.15 M | 2.5 % |
-| Engineering | 311 | 205.34 M | 36.5 % |
-| Life support and garden | 237 | 22.04 M | 3.9 % |
-| Medical | 52 | 27.35 M | 4.9 % |
-| Science | 210 | 37.84 M | 6.7 % |
+| Cargo and hangar | 298 | 209.08 M | 37.1 % |
+| Command | 374 | 39.61 M | 7.0 % |
+| Crew and habitat | 629 | 14.17 M | 2.5 % |
+| Engineering | 311 | 205.48 M | 36.5 % |
+| Life support and garden | 236 | 22.04 M | 3.9 % |
+| Medical | 52 | 27.37 M | 4.9 % |
+| Science | 210 | 37.88 M | 6.7 % |
 | Security | 117 | 7.03 M | 1.2 % |
-| Circulation | 360 | 705.4 k | 0.1 % |
+| Circulation | 360 | 707.0 k | 0.1 % |
 
 | Deck | Items | Value cr | Share |
 |---|---|---|---|
-| 0 | 466 | 34.00 M | 6.0 % |
-| 1 | 421 | 19.50 M | 3.5 % |
-| 2 | 599 | 48.79 M | 8.7 % |
-| 3 | 516 | 259.05 M | 46.0 % |
-| 4 | 585 | 201.72 M | 35.8 % |
+| 0 | 465 | 33.99 M | 6.0 % |
+| 1 | 421 | 19.53 M | 3.5 % |
+| 2 | 600 | 48.83 M | 8.7 % |
+| 3 | 516 | 259.10 M | 46.0 % |
+| 4 | 585 | 201.91 M | 35.8 % |
 
 ### Most valuable rooms
 
 | Room | Deck | Value cr | Mass |
 |---|---|---|---|
-| Hangar Bay | 3 | 114.09 M | 62.65 t |
-| Antimatter Containment | 4 | 77.52 M | 56.98 t |
-| Drone & Probe Bay | 4 | 75.96 M | 45.93 t |
-| Main Engineering | 3 | 74.43 M | 61.33 t |
-| Power Distribution | 3 | 36.33 M | 39.93 t |
-| Medical Bay | 2 | 27.35 M | 14.97 t |
-| Computer Core | 3 | 17.90 M | 20.42 t |
-| Fabrication Hall | 4 | 12.90 M | 12.47 t |
+| Hangar Bay | 3 | 114.09 M | 62.66 t |
+| Antimatter Containment | 4 | 77.64 M | 57.03 t |
+| Drone & Probe Bay | 4 | 75.98 M | 45.95 t |
+| Main Engineering | 3 | 74.44 M | 61.37 t |
+| Power Distribution | 3 | 36.34 M | 39.94 t |
+| Medical Bay | 2 | 27.37 M | 14.98 t |
+| Computer Core | 3 | 17.93 M | 20.45 t |
+| Fabrication Hall | 4 | 12.92 M | 12.48 t |
 | Provisions Hold & Cold Store | 4 | 12.08 M | 12.96 t |
-| Star Cartography | 0 | 11.01 M | 7.43 t |
+| Star Cartography | 0 | 11.01 M | 7.44 t |
 
 ### Build cost estimate
 
 | Item | Cost cr |
 |---|---|
-| Installed equipment | 563.06 M |
+| Installed equipment | 563.37 M |
 | Hull and structure (2166.43 t) | 184.15 M |
-| Integration (22 %) | 123.87 M |
-| Yard overhead and margin (18 %) | 156.79 M |
-| Design and trials (6 %) | 61.67 M |
-| **Total** | 1089.55 M |
+| Integration (22 %) | 123.94 M |
+| Yard overhead and margin (18 %) | 156.86 M |
+| Design and trials (6 %) | 61.70 M |
+| **Total** | 1090.02 M |
 
 ### Running cost per month
 
@@ -447,10 +447,10 @@ Speed model: `ly/day = 1.10 x (warp / 5)^(10/3)`. Cruise is warp 5, top speed wa
 | Crew pay (64 x 4,200 cr) | 268.8 k |
 | Provisions (64 people, 30 days) | 38.0 k |
 | Maintenance (0.25 % of equipment) | 1.41 M |
-| Spares (0.1 % of equipment) | 563.1 k |
+| Spares (0.1 % of equipment) | 563.4 k |
 | Fuel and reaction mass (6232 MWh) | 74.8 k |
 | **Total per month** | 2.35 M |
-| **Per year** | 28.23 M |
+| **Per year** | 28.24 M |
 
 ## 10. Maintenance schedule
 
@@ -459,14 +459,14 @@ Speed model: `ly/day = 1.10 x (warp / 5)^(10/3)`. Cruise is warp 5, top speed wa
 | weekly | 168 | 28 | 1067 |
 | every 1,000 h | 1,000 | 5 | 168 |
 | every 2,000 h | 2,000 | 45 | 260 |
-| quarterly | 2,190 | 115 | 318 |
-| every 3,000 h | 3,000 | 115 | 341 |
+| quarterly | 2,190 | 115 | 319 |
+| every 3,000 h | 3,000 | 114 | 339 |
 | every 4,000 h | 4,000 | 42 | 179 |
 | six-monthly | 4,380 | 324 | 491 |
-| yearly | 8,760 | 857 | 602 |
-| two-yearly | 17,520 | 968 | 247 |
+| yearly | 8,760 | 858 | 603 |
+| two-yearly | 17,520 | 968 | 248 |
 
-Total scheduled maintenance: 3675 crew-hours per year (306 per month) - about 2.0 full-time technicians (1,800 h each).
+Total scheduled maintenance: 3674 crew-hours per year (306 per month) - about 2.0 full-time technicians (1,800 h each).
 
 | Family | Crew-hours per year |
 |---|---|
@@ -477,7 +477,7 @@ Total scheduled maintenance: 3675 crew-hours per year (306 per month) - about 2.
 | engtool | 130 |
 | coil | 105 |
 | tableware | 87 |
-| planter | 81 |
+| planter | 79 |
 | capacitor | 78 |
 | tank | 74 |
 | ceilinglight | 73 |
@@ -518,16 +518,16 @@ Invented Concord Standards Agency (CSA) codes claimed by the installed machine d
 | CSA-C1 | Cargo handling | 87 |
 | CSA-E24 | Electrical safety | 1126 |
 | CSA-EMC4 | Electromagnetic compatibility | 348 |
-| CSA-F1 | Fire and smoke | 599 |
+| CSA-F1 | Fire and smoke | 600 |
 | CSA-F2 | Food contact | 203 |
 | CSA-F9 | Flight certificate | 5 |
 | CSA-H2 | Flight deck | 39 |
 | CSA-L3 | Photobiological safety | 429 |
 | CSA-LAB2 | Laboratory equipment | 40 |
-| CSA-LS1 | Life support equipment | 115 |
+| CSA-LS1 | Life support equipment | 114 |
 | CSA-M5 | Machinery safety | 87 |
 | CSA-MD5 | Medical device class 5 | 33 |
-| CSA-P4 | Pressure equipment | 120 |
+| CSA-P4 | Pressure equipment | 119 |
 | CSA-R3 | Radiation protection (fusion) | 5 |
 | CSA-S2 | Structural | 539 |
 | CSA-S3 | Safety equipment | 177 |

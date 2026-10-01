@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `hatch_dogged_rectangular` | Hatch - Dogged Rectangular | Calder-Okonkwo Industries | 1100 x 800 x 190 | 42.9 kg | 0 W | none | 1,080 |
 | `hatch_emergency_red` | Hatch - Emergency Red | Calder-Okonkwo Industries | 1000 x 1160 x 160 | 45.3 kg | 0 W | none | 1,160 |
-| `hatch_floor_round_wheel` | Hatch - Floor Round Wheel | Calder-Okonkwo Industries | 1240 x 112 x 1240 | 45.5 kg | 0 W | none | 1,060 |
+| `hatch_floor_round_wheel` | Hatch - Floor Round Wheel | Calder-Okonkwo Industries | 1240 x 115 x 1240 | 46.7 kg | 0 W | none | 1,080 |
 | `hatch_floor_square_recessed` | Hatch - Floor Square Recessed | Calder-Okonkwo Industries | 1200 x 80 x 1235 | 28.6 kg | 0 W | none | 810 |
 | `hatch_hex_access` | Hatch - Hex Access | Calder-Okonkwo Industries | 992 x 903 x 150 | 35 kg | 0 W | none | 1,040 |
 | `hatch_iris` | Hatch - Iris | Calder-Okonkwo Industries | 1000 x 1000 x 115 | 30.9 kg | 0 W | none | 887 |
@@ -43,9 +43,9 @@
 
 **Hatch - Floor Round Wheel**, Calder-Okonkwo Industries, part COI-HAT-7769 (passive)
 
-* Mass 45.5 kg; size 1240 x 112 x 1240 mm; heat 0 W.
+* Mass 46.7 kg; size 1240 x 115 x 1240 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,060 cr, lead time 41 days, MTBF 1,416,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,080 cr, lead time 41 days, MTBF 1,416,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 

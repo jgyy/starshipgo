@@ -52,16 +52,16 @@
 <polygon points="167,79 167,85.67 166.56,85.67 166.56,79" class="f" fill="#81d3e8"/>
 <polygon points="167,162.33 167,169 166.65,169 166.65,162.33" class="f" fill="#81d3e8"/>
 <polygon points="157.29,158.93 158.71,158.93 158.71,160.4 157.29,160.4" class="dot" fill="none"/>
-<polygon points="150.8,92.67 150.8,79.33 153.87,79.33 153.87,92.67" class="dot" fill="none"/>
-<polygon points="150.8,140.33 150.8,127 153.87,127 153.87,140.33" class="dot" fill="none"/>
-<polygon points="150.67,113 150.67,99.67 154,99.67 154,113" class="dot" fill="none"/>
-<polygon points="150.67,167.67 150.67,154.33 154,154.33 154,167.67" class="dot" fill="none"/>
-<polygon points="150.8,79 150.8,65.67 153.87,65.67 153.87,79" class="dot" fill="none"/>
-<polygon points="150.8,154 150.8,140.67 153.87,140.67 153.87,154" class="dot" fill="none"/>
-<polygon points="150.8,181.33 150.8,168 153.87,168 153.87,181.33" class="dot" fill="none"/>
-<polygon points="151.13,65.33 151.13,52 153.53,52 153.53,65.33" class="dot" fill="none"/>
-<polygon points="151.13,126.67 151.13,113.33 153.53,113.33 153.53,126.67" class="dot" fill="none"/>
-<polygon points="151.13,195 151.13,181.67 153.53,181.67 153.53,195" class="dot" fill="none"/>
+<polygon points="150.8,92.71 150.8,79.37 153.87,79.37 153.87,92.71" class="dot" fill="none"/>
+<polygon points="150.8,140.41 150.8,127.08 153.87,127.08 153.87,140.41" class="dot" fill="none"/>
+<polygon points="150.67,113.04 150.67,99.71 154,99.71 154,113.04" class="dot" fill="none"/>
+<polygon points="150.67,167.75 150.67,154.41 154,154.41 154,167.75" class="dot" fill="none"/>
+<polygon points="150.8,79.04 150.8,65.71 153.87,65.71 153.87,79.04" class="dot" fill="none"/>
+<polygon points="150.8,154.08 150.8,140.75 153.87,140.75 153.87,154.08" class="dot" fill="none"/>
+<polygon points="150.8,181.41 150.8,168.08 153.87,168.08 153.87,181.41" class="dot" fill="none"/>
+<polygon points="151.13,65.37 151.13,52 153.53,52 153.53,65.37" class="dot" fill="none"/>
+<polygon points="151.13,126.75 151.13,113.37 153.53,113.37 153.53,126.75" class="dot" fill="none"/>
+<polygon points="151.13,195.12 151.13,181.75 153.53,181.75 153.53,195.12" class="dot" fill="none"/>
 <polygon points="154.8,64.47 161.2,64.47 161.2,70.87 154.8,70.87" class="dot" fill="none"/>
 <polygon points="156.87,189.21 159.13,189.21 159.13,191.46 156.87,191.46" class="dot" fill="none"/>
 <polygon points="155.93,124.8 160.07,124.8 160.07,133.2 155.93,133.2" class="dot" fill="none"/>
@@ -101,8 +101,8 @@
 <circle cx="166.34" cy="129" r="0.4" class="none" fill="#b03030"/>
 <line x1="144.15" y1="80.79" x2="149.17" y2="82.33" class="x"/>
 <circle cx="149.17" cy="82.33" r="0.4" class="none" fill="#b03030"/>
-<line x1="144.3" y1="72.28" x2="152.33" y2="72.33" class="x"/>
-<circle cx="152.33" cy="72.33" r="0.4" class="none" fill="#b03030"/>
+<line x1="144.3" y1="72.29" x2="152.33" y2="72.37" class="x"/>
+<circle cx="152.33" cy="72.37" r="0.4" class="none" fill="#b03030"/>
 <line x1="144.15" y1="199.89" x2="149.2" y2="198.33" class="x"/>
 <circle cx="149.2" cy="198.33" r="0.4" class="none" fill="#b03030"/>
 <circle cx="141" cy="64.7" r="3.3" class="n" fill="#fff"/>

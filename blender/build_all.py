@@ -106,6 +106,7 @@ def run_shard(args, shard, nshards):
             continue
         fam = it["fam"]
         m = kit.Model(it["id"])
+        m.mount = fam["mount"]
         rng = kit.seeded(it["id"])
         fam["fn"](m, it["i"], it["label"], rng)
         path = os.path.join(out, "models", fam["category"], it["id"] + ".glb")

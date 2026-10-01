@@ -8,9 +8,9 @@
 |---|---|---|---|---|---|---|---|
 | `reactor_auxiliary_reactor` | Reactor - Auxiliary Reactor | Halvorsen Power Systems | 2090 x 2348 x 1300 | 7.41 t | +2.72 MW out | 6.6 kVAC 3ph | 10.9 M |
 | `reactor_emergency_reactor` | Reactor - Emergency Reactor | Halvorsen Power Systems | 1650 x 1895 x 1250 | 4.62 t | +919 kW out | 400 VAC 3ph | 4.79 M |
-| `reactor_fusion_core_reactor` | Reactor - Fusion Core Reactor | Halvorsen Power Systems | 2524 x 3040 x 2524 | 23.82 t | +16.6 MW out | 6.6 kVAC 3ph | 45.5 M |
-| `reactor_matter_antimatter_injector` | Reactor - Matter Antimatter Injector | Halvorsen Power Systems | 3522 x 2550 x 900 | 9.95 t | 470 kW | 6.6 kVAC 3ph | 9.17 M |
-| `reactor_plasma_tokamak_torus` | Reactor - Plasma Tokamak Torus | Halvorsen Power Systems | 2692 x 2800 x 2692 | 29.22 t | +19.1 MW out | 6.6 kVAC 3ph | 57 M |
+| `reactor_fusion_core_reactor` | Reactor - Fusion Core Reactor | Halvorsen Power Systems | 2524 x 3043 x 2524 | 23.84 t | +16.6 MW out | 6.6 kVAC 3ph | 45.5 M |
+| `reactor_matter_antimatter_injector` | Reactor - Matter Antimatter Injector | Halvorsen Power Systems | 3522 x 2553 x 900 | 9.96 t | 470 kW | 6.6 kVAC 3ph | 9.18 M |
+| `reactor_plasma_tokamak_torus` | Reactor - Plasma Tokamak Torus | Halvorsen Power Systems | 2692 x 2803 x 2692 | 29.25 t | +19.1 MW out | 6.6 kVAC 3ph | 57.1 M |
 | `reactor_reactor_control_pillar` | Reactor - Reactor Control Pillar | Halvorsen Power Systems | 952 x 2430 x 1090 | 3.13 t | 1.5 kW | 208 VAC 3ph | 2.73 M |
 
 ## Datasheets
@@ -39,32 +39,32 @@
 
 **Reactor - Fusion Core Reactor**, Halvorsen Power Systems, part HPS-REA-5727 (producer)
 
-* Mass 23.82 t; size 2524 x 3040 x 2524 mm; heat 5 MW.
+* Mass 23.84 t; size 2524 x 3043 x 2524 mm; heat 5 MW.
 * Output 16600 kW at 6.6 kVAC 3ph; own load 130 kW.
 * Price 45.5 M cr, lead time 169 days, MTBF 60,759 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 86 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety, CSA-R3 radiation (fusion); interface: Power management bus PMB-1.
-* Software: `power` (screens: power).
-* floor-mounted, free-standing. Install with a hoist or gantry (23.82 t). Output 16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.
+* Software: `engineering` (screens: engine_temp).
+* floor-mounted, free-standing. Install with a hoist or gantry (23.84 t). Output 16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.
 
 ### `reactor_matter_antimatter_injector`
 
 **Reactor - Matter Antimatter Injector**, Halvorsen Power Systems, part HPS-REA-8236 (consumer)
 
-* Mass 9.95 t; size 3522 x 2550 x 900 mm; heat 430 kW.
+* Mass 9.96 t; size 3522 x 2553 x 900 mm; heat 430 kW.
 * Power 94 kW idle / 470 kW typical / 790 kW peak at 6.6 kVAC 3ph.
-* Price 9.17 M cr, lead time 166 days, MTBF 64,900 h, service every 4,000 h, service life 25 years, crew 2.
+* Price 9.18 M cr, lead time 166 days, MTBF 64,900 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 86 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety, CSA-R3 radiation (fusion); interface: Power management bus PMB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (9.95 t). Feeds the warp core; draws power while injecting.
+* floor-mounted, free-standing. Install with a hoist or gantry (9.96 t). Feeds the warp core; draws power while injecting.
 
 ### `reactor_plasma_tokamak_torus`
 
 **Reactor - Plasma Tokamak Torus**, Halvorsen Power Systems, part HPS-REA-9166 (producer)
 
-* Mass 29.22 t; size 2692 x 2800 x 2692 mm; heat 5.7 MW.
+* Mass 29.25 t; size 2692 x 2803 x 2692 mm; heat 5.7 MW.
 * Output 19100 kW at 6.6 kVAC 3ph; own load 150 kW.
-* Price 57 M cr, lead time 167 days, MTBF 74,620 h, service every 4,000 h, service life 25 years, crew 2.
+* Price 57.1 M cr, lead time 167 days, MTBF 74,620 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 86 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety, CSA-R3 radiation (fusion); interface: Power management bus PMB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (29.22 t). Output 19.1 MW at 6.6 kVAC 3ph; connect only through its breaker panel.
+* floor-mounted, free-standing. Install with a hoist or gantry (29.25 t). Output 19.1 MW at 6.6 kVAC 3ph; connect only through its breaker panel.
 
 ### `reactor_reactor_control_pillar`
 
@@ -74,6 +74,6 @@
 * Power 290 W idle / 1.5 kW typical / 2.5 kW peak at 208 VAC 3ph.
 * Price 2.73 M cr, lead time 160 days, MTBF 37,300 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 74 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety, CSA-R3 radiation (fusion); interface: Power management bus PMB-1.
-* Software: `power` (screens: power).
+* Software: `engineering` (screens: engine_temp).
 * floor-mounted, free-standing. Install with a hoist or gantry (3.13 t).
 

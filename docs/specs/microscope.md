@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `microscope_confocal_cabinet` | Microscope - Confocal Cabinet | Orrery Instruments | 1037 x 1780 x 905 | 519 kg | 810 W | 120 VAC 1ph | 1.52 M |
+| `microscope_confocal_cabinet` | Microscope - Confocal Cabinet | Orrery Instruments | 1037 x 1783 x 905 | 519.8 kg | 810 W | 120 VAC 1ph | 1.52 M |
 | `microscope_electron_microscope` | Microscope - Electron Microscope | Orrery Instruments | 1570 x 1980 x 733 | 669.6 kg | 1.2 kW | 208 VAC 3ph | 1.82 M |
 | `microscope_optical_microscope` | Microscope - Optical Microscope | Orrery Instruments | 220 x 638 x 285 | 11.8 kg | 42 W | 24 VDC | 31.9 k |
 | `microscope_scanning_probe_microscope` | Microscope - Scanning Probe Microscope | Orrery Instruments | 630 x 460 x 530 | 45.4 kg | 92 W | 48 VDC | 95.8 k |
@@ -18,12 +18,12 @@
 
 **Microscope - Confocal Cabinet**, Orrery Instruments, part ORI-MIC-3405 (consumer)
 
-* Mass 519 kg; size 1037 x 1780 x 905 mm; heat 750 W.
+* Mass 519.8 kg; size 1037 x 1783 x 905 mm; heat 750 W.
 * Power 240 W idle / 810 W typical / 1.4 kW peak at 120 VAC 1ph.
 * Price 1.52 M cr, lead time 118 days, MTBF 47,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 45 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `medical` (screens: medical).
-* floor-mounted, free-standing. Install with a hoist or gantry (519 kg).
+* Software: `science` (screens: dna).
+* floor-mounted, free-standing. Install with a hoist or gantry (519.8 kg).
 
 ### `microscope_electron_microscope`
 
@@ -33,7 +33,7 @@
 * Power 370 W idle / 1.2 kW typical / 2.1 kW peak at 208 VAC 3ph.
 * Price 1.82 M cr, lead time 114 days, MTBF 43,100 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 46 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `diagnostics`, `science` (screens: diagnostic, waveform).
+* Software: `science` (screens: graph_lines, lissajous).
 * floor-mounted, free-standing. Install with a hoist or gantry (669.6 kg).
 
 ### `microscope_optical_microscope`

@@ -66,9 +66,9 @@
 <polygon points="267.16,195.2 236.84,195.2 236.84,176.12 267.16,176.12" class="n" fill="#f799f7"/>
 <line x1="236.84" y1="176.12" x2="267.16" y2="176.12" class="m"/>
 <line x1="252" y1="176.12" x2="252" y2="177.32" class="f"/>
-<polygon points="269.2,67.5 269.2,98.5 258.58,98.5 258.58,67.5" class="n" fill="#99e0f7"/>
-<line x1="258.58" y1="98.5" x2="258.58" y2="67.5" class="m"/>
-<line x1="258.58" y1="83" x2="259.78" y2="83" class="f"/>
+<polygon points="269.2,67.5 269.2,98.5 258.52,98.5 258.52,67.5" class="n" fill="#99e0f7"/>
+<line x1="258.52" y1="98.5" x2="258.52" y2="67.5" class="m"/>
+<line x1="258.52" y1="83" x2="259.72" y2="83" class="f"/>
 <polygon points="49.8,171.79 48.78,153.82 60.26,153.17 61.28,171.14" class="n" fill="#e281e8"/>
 <line x1="60.26" y1="153.17" x2="61.28" y2="171.14" class="m"/>
 <line x1="60.77" y1="162.15" x2="59.57" y2="162.22" class="f"/>
@@ -121,7 +121,7 @@
 <text x="65" y="183.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">boxes_layered</text>
 <text x="109" y="149.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">hand_pallet_jack</text>
 <text x="79" y="96.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="263.89" y="83.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen Cylind~</text>
+<text x="263.86" y="83.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen Cylind~</text>
 <text x="55.03" y="162.78" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_cabinet</text>
 <text x="53.55" y="136.82" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_cabinet</text>
 <text x="83" y="158.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">spill_kit_bin</text>
@@ -150,8 +150,8 @@
 <circle cx="220" cy="167" r="0.4" class="none" fill="#b03030"/>
 <line x1="249.9" y1="202.72" x2="252" y2="185.66" class="x"/>
 <circle cx="252" cy="185.66" r="0.4" class="none" fill="#b03030"/>
-<line x1="276.7" y1="82.84" x2="263.89" y2="83" class="x"/>
-<circle cx="263.89" cy="83" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.7" y1="82.84" x2="263.86" y2="83" class="x"/>
+<circle cx="263.86" cy="83" r="0.4" class="none" fill="#b03030"/>
 <line x1="39.25" y1="151.51" x2="48.37" y2="149.85" class="x"/>
 <circle cx="48.37" cy="149.85" r="0.4" class="none" fill="#b03030"/>
 <line x1="276.7" y1="129" x2="269.16" y2="129" class="x"/>

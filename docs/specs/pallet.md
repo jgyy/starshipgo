@@ -10,12 +10,12 @@
 | `pallet_composite_empty` | Pallet / rack - Composite Empty | Ironwake Heavy Works | 1200 x 180 x 1025 | 7.23 kg | 0 W | none | 808 |
 | `pallet_crates_banded` | Pallet / rack - Crates Banded | Ironwake Heavy Works | 1250 x 1105 x 1050 | 50.9 kg | 0 W | none | 5,730 |
 | `pallet_drums_banded` | Pallet / rack - Drums Banded | Ironwake Heavy Works | 1250 x 1029 x 1090 | 49.7 kg | 0 W | none | 4,700 |
-| `pallet_empty_stack` | Pallet / rack - Empty Stack | Ironwake Heavy Works | 1250 x 915 x 1035 | 43.4 kg | 0 W | none | 4,770 |
+| `pallet_empty_stack` | Pallet / rack - Empty Stack | Ironwake Heavy Works | 1250 x 915 x 1038 | 43.6 kg | 0 W | none | 4,790 |
 | `pallet_mixed_goods` | Pallet / rack - Mixed Goods | Ironwake Heavy Works | 1200 x 879 x 1000 | 37.6 kg | 0 W | none | 4,060 |
-| `pallet_rack_bay_loaded` | Pallet / rack - Rack Bay Loaded | Ironwake Heavy Works | 2760 x 5109 x 1180 | 557.7 kg | 0 W | none | 57.2 k |
-| `pallet_rack_bay_low_wire` | Pallet / rack - Rack Bay Low Wire | Ironwake Heavy Works | 2760 x 3200 x 1180 | 385.8 kg | 0 W | none | 43 k |
-| `pallet_roll_cage_empty` | Pallet / rack - Roll Cage Empty | Ironwake Heavy Works | 800 x 1845 x 700 | 34 kg | 0 W | none | 2,800 |
-| `pallet_roll_cage_loaded` | Pallet / rack - Roll Cage Loaded | Ironwake Heavy Works | 800 x 1845 x 700 | 35.5 kg | 0 W | none | 3,120 |
+| `pallet_rack_bay_loaded` | Pallet / rack - Rack Bay Loaded | Ironwake Heavy Works | 2760 x 5112 x 1180 | 558 kg | 0 W | none | 57.2 k |
+| `pallet_rack_bay_low_wire` | Pallet / rack - Rack Bay Low Wire | Ironwake Heavy Works | 2760 x 3203 x 1180 | 386.2 kg | 0 W | none | 43 k |
+| `pallet_roll_cage_empty` | Pallet / rack - Roll Cage Empty | Ironwake Heavy Works | 806 x 1845 x 703 | 34.4 kg | 0 W | none | 2,840 |
+| `pallet_roll_cage_loaded` | Pallet / rack - Roll Cage Loaded | Ironwake Heavy Works | 806 x 1845 x 703 | 36 kg | 0 W | none | 3,160 |
 | `pallet_sacks_stacked` | Pallet / rack - Sacks Stacked | Ironwake Heavy Works | 1240 x 780 x 1080 | 41.1 kg | 0 W | none | 3,970 |
 | `pallet_wooden_empty` | Pallet / rack - Wooden Empty | Ironwake Heavy Works | 1200 x 150 x 1000 | 6.37 kg | 0 W | none | 698 |
 | `pallet_wrapped_stack` | Pallet / rack - Wrapped Stack | Ironwake Heavy Works | 1240 x 1364 x 1052 | 64.9 kg | 0 W | none | 7,360 |
@@ -67,9 +67,9 @@
 
 **Pallet / rack - Empty Stack**, Ironwake Heavy Works, part IHW-PAL-3051 (passive)
 
-* Mass 43.4 kg; size 1250 x 915 x 1035 mm; heat 0 W.
+* Mass 43.6 kg; size 1250 x 915 x 1038 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,770 cr, lead time 56 days, MTBF 505,800 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 4,790 cr, lead time 56 days, MTBF 505,800 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -87,29 +87,29 @@
 
 **Pallet / rack - Rack Bay Loaded**, Ironwake Heavy Works, part IHW-PAL-2850 (passive)
 
-* Mass 557.7 kg; size 2760 x 5109 x 1180 mm; heat 0 W.
+* Mass 558 kg; size 2760 x 5112 x 1180 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 57.2 k cr, lead time 61 days, MTBF 615,300 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
-* floor-mounted, free-standing. Install with a hoist or gantry (557.7 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (558 kg).
 
 ### `pallet_rack_bay_low_wire`
 
 **Pallet / rack - Rack Bay Low Wire**, Ironwake Heavy Works, part IHW-PAL-7983 (passive)
 
-* Mass 385.8 kg; size 2760 x 3200 x 1180 mm; heat 0 W.
+* Mass 386.2 kg; size 2760 x 3203 x 1180 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 43 k cr, lead time 61 days, MTBF 415,900 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
-* floor-mounted, free-standing. Install with a hoist or gantry (385.8 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (386.2 kg).
 
 ### `pallet_roll_cage_empty`
 
 **Pallet / rack - Roll Cage Empty**, Ironwake Heavy Works, part IHW-PAL-7755 (passive)
 
-* Mass 34 kg; size 800 x 1845 x 700 mm; heat 0 W.
+* Mass 34.4 kg; size 806 x 1845 x 703 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,800 cr, lead time 51 days, MTBF 434,800 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 2,840 cr, lead time 51 days, MTBF 434,800 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -117,9 +117,9 @@
 
 **Pallet / rack - Roll Cage Loaded**, Ironwake Heavy Works, part IHW-PAL-8863 (passive)
 
-* Mass 35.5 kg; size 800 x 1845 x 700 mm; heat 0 W.
+* Mass 36 kg; size 806 x 1845 x 703 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,120 cr, lead time 53 days, MTBF 385,600 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 3,160 cr, lead time 53 days, MTBF 385,600 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 

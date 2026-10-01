@@ -65,9 +65,9 @@
 <polygon points="170.3,157.96 159.68,157.96 159.68,146.68 170.3,146.68" class="n" fill="#99f7b0"/>
 <line x1="159.68" y1="146.68" x2="170.3" y2="146.68" class="m"/>
 <line x1="164.99" y1="146.68" x2="164.99" y2="147.88" class="f"/>
-<polygon points="82.5,199.2 49,199.2 49,179.2 82.5,179.2" class="n" fill="#f79999"/>
-<line x1="49" y1="179.2" x2="82.5" y2="179.2" class="m"/>
-<line x1="65.75" y1="179.2" x2="65.75" y2="180.4" class="f"/>
+<polygon points="82.5,199.2 49,199.2 49,179.14 82.5,179.14" class="n" fill="#f79999"/>
+<line x1="49" y1="179.14" x2="82.5" y2="179.14" class="m"/>
+<line x1="65.75" y1="179.14" x2="65.75" y2="180.34" class="f"/>
 <polygon points="100.7,199.2 84.1,199.2 84.1,182.48 100.7,182.48" class="n" fill="#f79999"/>
 <line x1="84.1" y1="182.48" x2="100.7" y2="182.48" class="m"/>
 <line x1="92.4" y1="182.48" x2="92.4" y2="183.68" class="f"/>
@@ -107,9 +107,9 @@
 <polygon points="158.56,63.96 162.96,63.96 162.96,69.66 158.56,69.66" class="f" fill="#8dcbea" fill-opacity="0.9"/>
 <line x1="162.96" y1="69.66" x2="158.56" y2="69.66" class="m"/>
 <line x1="160.76" y1="69.66" x2="160.76" y2="68.46" class="f"/>
-<polygon points="164.6,61.48 174.92,61.48 174.92,72.14 164.6,72.14" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
-<line x1="174.92" y1="72.14" x2="164.6" y2="72.14" class="m"/>
-<line x1="169.76" y1="72.14" x2="169.76" y2="70.94" class="f"/>
+<polygon points="164.6,61.44 174.92,61.44 174.92,72.16 164.6,72.16" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
+<line x1="174.92" y1="72.16" x2="164.6" y2="72.16" class="m"/>
+<line x1="169.76" y1="72.16" x2="169.76" y2="70.96" class="f"/>
 <polygon points="175.54,62.68 181.94,62.68 181.94,70.94 175.54,70.94" class="f" fill="#f7a3a3" fill-opacity="0.9"/>
 <line x1="181.94" y1="70.94" x2="175.54" y2="70.94" class="m"/>
 <line x1="178.74" y1="70.94" x2="178.74" y2="69.74" class="f"/>
@@ -123,7 +123,7 @@
 <polygon points="82.16,154.4 107.16,154.4 107.16,157.6 82.16,157.6" class="dot" fill="none"/>
 <text x="153" y="131.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">island reagent bench</text>
 <text x="209.72" y="67.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">cleanroom glove box</text>
-<text x="65.75" y="189.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>
+<text x="65.75" y="189.47" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>
 <text x="103" y="67" font-size="1.25" class="t" text-anchor="middle" fill="#333">wet bench sink</text>
 <text x="65.4" y="68.21" font-size="1.25" class="t" text-anchor="middle" fill="#333">fume hood</text>
 <text x="152" y="190.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">biocontainment cabinet</text>

@@ -65,9 +65,9 @@
 <polygon points="147.8,129.61 161.98,111.92 172.38,120.26 158.21,137.95" class="n" fill="#8981e8"/>
 <line x1="172.38" y1="120.26" x2="158.21" y2="137.95" class="m"/>
 <line x1="165.3" y1="129.1" x2="164.36" y2="128.35" class="f"/>
-<polygon points="169.22,103.12 182.54,87.32 187.95,91.89 174.63,107.69" class="n" fill="#99e0f7"/>
-<line x1="187.95" y1="91.89" x2="174.63" y2="107.69" class="m"/>
-<line x1="181.29" y1="99.79" x2="180.37" y2="99.02" class="f"/>
+<polygon points="169.21,103.12 182.54,87.33 187.98,91.92 174.66,107.71" class="n" fill="#99e0f7"/>
+<line x1="187.98" y1="91.92" x2="174.66" y2="107.71" class="m"/>
+<line x1="181.32" y1="99.82" x2="180.4" y2="99.04" class="f"/>
 <polygon points="183.99,176.33 183.99,167 191.61,167 191.61,176.33" class="n" fill="#f7d399"/>
 <line x1="191.61" y1="167" x2="191.61" y2="176.33" class="m"/>
 <line x1="191.61" y1="171.67" x2="190.41" y2="171.67" class="f"/>
@@ -106,7 +106,7 @@
 <text x="205" y="193.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Water Recycler</text>
 <text x="168.67" y="195.99" font-size="1.25" class="t" text-anchor="middle" fill="#333">Reverse Osmosis Skid</text>
 <text x="188.77" y="194.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">Condensate Collector</text>
-<text x="178.58" y="97.81" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen Cylinder Rack</text>
+<text x="178.6" y="97.82" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen Cylinder Rack</text>
 <text x="211.4" y="71.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">CO2 Scrubber T~</text>
 <text x="149.87" y="196.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">UV Water Purifi~</text>
 <text x="178.47" y="139.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cylinder Ha~</text>
@@ -128,8 +128,8 @@
 <circle cx="135.29" cy="181.53" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.5" y1="148.27" x2="141.68" y2="150.39" class="x"/>
 <circle cx="141.68" cy="150.39" r="0.4" class="none" fill="#b03030"/>
-<line x1="223.51" y1="94.77" x2="178.58" y2="97.51" class="x"/>
-<circle cx="178.58" cy="97.51" r="0.4" class="none" fill="#b03030"/>
+<line x1="223.51" y1="94.77" x2="178.6" y2="97.52" class="x"/>
+<circle cx="178.6" cy="97.52" r="0.4" class="none" fill="#b03030"/>
 <line x1="188.51" y1="206.03" x2="187.8" y2="171.67" class="x"/>
 <circle cx="187.8" cy="171.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="120.57" y1="206.13" x2="122.67" y2="197.73" class="x"/>

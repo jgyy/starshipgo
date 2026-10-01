@@ -11,7 +11,7 @@
 | `generator_gas_turbine_genset` | Power generation / conversion - Gas Turbine Genset | Halvorsen Power Systems | 2910 x 1700 x 924 | 5.76 t | +710 kW out | 400 VAC 3ph | 6.09 M |
 | `generator_inverter_cabinet` | Power generation / conversion - Inverter Cabinet | Halvorsen Power Systems | 820 x 1910 x 650 | 1.37 t | 2.4 kW | 208 VAC 3ph | 1.22 M |
 | `generator_micro_fusion_generator` | Power generation / conversion - Micro Fusion Generator | Halvorsen Power Systems | 1100 x 1360 x 1170 | 2.31 t | +4.45 MW out | 6.6 kVAC 3ph | 2.71 M |
-| `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | Halvorsen Power Systems | 2000 x 970 x 800 | 1.99 t | +279 kW out | 400 VAC 3ph | 1.75 M |
+| `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | Halvorsen Power Systems | 2006 x 970 x 800 | 2 t | +280 kW out | 400 VAC 3ph | 1.75 M |
 | `generator_pad_transformer` | Power generation / conversion - Pad Transformer | Halvorsen Power Systems | 1690 x 1390 x 900 | 2.77 t | 5.1 kW | 208 VAC 3ph | 2.19 M |
 | `generator_power_distribution_cabinet` | Power generation / conversion - Power Distribution Cabinet | Halvorsen Power Systems | 1120 x 2010 x 570 | 1.61 t | 3.1 kW | 208 VAC 3ph | 1.67 M |
 | `generator_rectifier_cabinet` | Power generation / conversion - Rectifier Cabinet | Halvorsen Power Systems | 920 x 2110 x 705 | 1.75 t | 3.3 kW | 208 VAC 3ph | 1.62 M |
@@ -59,7 +59,7 @@
 * Converter rating 407 kVA, 208 VAC 3ph; losses 2.4 kW.
 * Price 1.22 M cr, lead time 163 days, MTBF 55,900 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 75 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
-* Software: `power` (screens: power).
+* Software: `lifesupport` (screens: life_support).
 * floor-mounted, free-standing. Install with a hoist or gantry (1.37 t). Conversion rating 407 kVA; losses about 0.6 % at typical load.
 
 ### `generator_micro_fusion_generator`
@@ -76,11 +76,11 @@
 
 **Power generation / conversion - Motor Generator Set**, Halvorsen Power Systems, part HPS-GEN-2166 (producer)
 
-* Mass 1.99 t; size 2000 x 970 x 800 mm; heat 17 kW.
-* Output 279 kW at 400 VAC 3ph; own load 2.2 kW.
+* Mass 2 t; size 2006 x 970 x 800 mm; heat 17 kW.
+* Output 280 kW at 400 VAC 3ph; own load 2.2 kW.
 * Price 1.75 M cr, lead time 161 days, MTBF 35,100 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 77 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (1.99 t). Output 279 kW at 400 VAC 3ph; connect only through its breaker panel.
+* floor-mounted, free-standing. Install with a hoist or gantry (2 t). Output 280 kW at 400 VAC 3ph; connect only through its breaker panel.
 
 ### `generator_pad_transformer`
 

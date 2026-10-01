@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `capacitor_battery_rack` | Energy storage - Battery Rack | Halvorsen Power Systems | 1250 x 1985 x 624 | 1.19 t | 238 kWh | 400 VDC | 1.14 M |
+| `capacitor_battery_rack` | Energy storage - Battery Rack | Halvorsen Power Systems | 1250 x 1985 x 627 | 1.2 t | 239 kWh | 400 VDC | 1.15 M |
 | `capacitor_battery_trolley` | Energy storage - Battery Trolley | Halvorsen Power Systems | 1294 x 1075 x 700 | 711.6 kg | 142 kWh | 400 VDC | 709 k |
 | `capacitor_capacitor_bank_rack` | Energy storage - Capacitor Bank Rack | Halvorsen Power Systems | 1100 x 1960 x 616 | 1.09 t | 10.9 kWh | 400 VDC | 1.05 M |
 | `capacitor_capacitor_wall_array` | Energy storage - Capacitor Wall Array | Halvorsen Power Systems | 1200 x 1200 x 295 | 331.9 kg | 3.32 kWh | 48 VDC | 361 k |
@@ -31,11 +31,11 @@
 
 **Energy storage - Battery Rack**, Halvorsen Power Systems, part HPS-CAP-1463 (energy storage)
 
-* Mass 1.19 t; size 1250 x 1985 x 624 mm; heat 1.2 kW.
-* Capacity 238 kWh, discharge up to 476 kW at 400 VDC.
-* Price 1.14 M cr, lead time 161 days, MTBF 53,700 h, service every 4,000 h, service life 25 years, crew 2.
+* Mass 1.2 t; size 1250 x 1985 x 627 mm; heat 1.2 kW.
+* Capacity 239 kWh, discharge up to 478 kW at 400 VDC.
+* Price 1.15 M cr, lead time 161 days, MTBF 53,700 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 78 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (1.19 t). Stores 238 kWh; discharge limited to 476 kW.
+* floor-mounted, free-standing. Install with a hoist or gantry (1.2 t). Stores 239 kWh; discharge limited to 478 kW.
 
 ### `capacitor_battery_trolley`
 
@@ -205,6 +205,6 @@
 * Capacity 67.6 kWh, discharge up to 135 kW at 400 VDC.
 * Price 285 k cr, lead time 154 days, MTBF 38,800 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 75 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
-* Software: `power` (screens: power).
+* Software: `lifesupport` (screens: life_support).
 * wall-mounted. Install with a hoist or gantry (337.9 kg). Stores 67.6 kWh; discharge limited to 135 kW.
 

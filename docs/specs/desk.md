@@ -27,7 +27,7 @@
 * Passive: no electrical load.
 * Price 1,400 cr, lead time 34 days, MTBF 974,700 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: bars).
+* Software: `cargo` (screens: cargo_manifest).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `desk_corner_desk`
@@ -59,7 +59,7 @@
 * Passive: no electrical load.
 * Price 1,010 cr, lead time 33 days, MTBF 856,200 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: bars).
+* Software: `cargo` (screens: cargo_manifest).
 * floor-mounted, free-standing.
 
 ### `desk_fold_down_wall_desk`
@@ -70,7 +70,7 @@
 * Passive: no electrical load.
 * Price 872 cr, lead time 39 days, MTBF 1,099,900 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `computer` (screens: text).
+* Software: `computer` (screens: terminal).
 * wall-mounted.
 
 ### `desk_officer_desk`
@@ -113,7 +113,7 @@
 * Passive: no electrical load.
 * Price 1,560 cr, lead time 34 days, MTBF 739,200 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `desk_writing_desk`

@@ -10,8 +10,8 @@
 | `loader_cargo_elevator_platform` | Cargo loader - Cargo Elevator Platform | Ironwake Heavy Works | 2416 x 2045 x 2408 | 2.26 t | 3.4 kW | 208 VAC 3ph | 342 k |
 | `loader_cargo_scanner_arch` | Cargo loader - Cargo Scanner Arch | Ironwake Heavy Works | 3840 x 3395 x 3200 | 6.78 t | 13 kW | 400 VAC 3ph | 1.35 M |
 | `loader_cargo_tug` | Cargo loader - Cargo Tug | Ironwake Heavy Works | 1472 x 1495 x 2250 | 843.5 kg | 1.5 kW | 208 VAC 3ph | 127 k |
-| `loader_conveyor_segment_3m` | Cargo loader - Conveyor Segment 3M | Ironwake Heavy Works | 1490 x 900 x 3000 | 741.1 kg | 1.4 kW | 208 VAC 3ph | 101 k |
-| `loader_crane_gantry_segment` | Cargo loader - Crane Gantry Segment | Ironwake Heavy Works | 3600 x 3845 x 1500 | 3.75 t | 6 kW | 208 VAC 3ph | 641 k |
+| `loader_conveyor_segment_3m` | Cargo loader - Conveyor Segment 3M | Ironwake Heavy Works | 1490 x 903 x 3006 | 745.1 kg | 1.4 kW | 208 VAC 3ph | 102 k |
+| `loader_crane_gantry_segment` | Cargo loader - Crane Gantry Segment | Ironwake Heavy Works | 3606 x 3845 x 1500 | 3.76 t | 6 kW | 208 VAC 3ph | 642 k |
 | `loader_drone_lifter` | Cargo loader - Drone Lifter | Ironwake Heavy Works | 2130 x 740 x 2130 | 641.7 kg | 1.1 kW | 208 VAC 3ph | 106 k |
 | `loader_hand_pallet_jack` | Cargo loader - Hand Pallet Jack | Ironwake Heavy Works | 800 x 1141 x 1437 | 205.7 kg | 530 W | 120 VAC 1ph | 36.5 k |
 | `loader_hover_pallet_jack` | Cargo loader - Hover Pallet Jack | Ironwake Heavy Works | 832 x 1093 x 1670 | 253.5 kg | 580 W | 120 VAC 1ph | 44.6 k |
@@ -49,7 +49,7 @@
 * Power 3.9 kW idle / 13 kW typical / 24 kW peak at 400 VAC 3ph.
 * Price 1.35 M cr, lead time 101 days, MTBF 87,700 h, service every 4,380 h, service life 20 years, crew 1.
 * IP55, -40 to 70 C, 66 dB(A); certifications: CSA-H2 flight deck, CSA-E24 electrical safety; interface: Hangar control bus HCB-1.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `cargo` (screens: thermal).
 * floor-mounted, free-standing. Install with a hoist or gantry (6.78 t).
 
 ### `loader_cargo_tug`
@@ -66,21 +66,21 @@
 
 **Cargo loader - Conveyor Segment 3M**, Ironwake Heavy Works, part IHW-LOA-9771 (consumer)
 
-* Mass 741.1 kg; size 1490 x 900 x 3000 mm; heat 1.3 kW.
-* Power 410 W idle / 1.4 kW typical / 2.5 kW peak at 208 VAC 3ph.
-* Price 101 k cr, lead time 97 days, MTBF 133,300 h, service every 4,380 h, service life 20 years, crew 1.
+* Mass 745.1 kg; size 1490 x 903 x 3006 mm; heat 1.3 kW.
+* Power 420 W idle / 1.4 kW typical / 2.5 kW peak at 208 VAC 3ph.
+* Price 102 k cr, lead time 97 days, MTBF 133,300 h, service every 4,380 h, service life 20 years, crew 1.
 * IP55, -40 to 70 C, 61 dB(A); certifications: CSA-H2 flight deck, CSA-E24 electrical safety; interface: Hangar control bus HCB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (741.1 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (745.1 kg).
 
 ### `loader_crane_gantry_segment`
 
 **Cargo loader - Crane Gantry Segment**, Ironwake Heavy Works, part IHW-LOA-7946 (consumer)
 
-* Mass 3.75 t; size 3600 x 3845 x 1500 mm; heat 5.5 kW.
+* Mass 3.76 t; size 3606 x 3845 x 1500 mm; heat 5.5 kW.
 * Power 1.8 kW idle / 6 kW typical / 11 kW peak at 208 VAC 3ph.
-* Price 641 k cr, lead time 97 days, MTBF 116,500 h, service every 4,380 h, service life 20 years, crew 1.
+* Price 642 k cr, lead time 97 days, MTBF 116,500 h, service every 4,380 h, service life 20 years, crew 1.
 * IP55, -40 to 70 C, 64 dB(A); certifications: CSA-H2 flight deck, CSA-E24 electrical safety; interface: Hangar control bus HCB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (3.75 t).
+* floor-mounted, free-standing. Install with a hoist or gantry (3.76 t).
 
 ### `loader_drone_lifter`
 

@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `medsupply_hover_stretcher` | Medical supply - Hover Stretcher | Lindqvist-Aoki Medical | 840 x 595 x 2070 | 77.3 kg | 0 W | none | 132 k |
 | `medsupply_iv_stand` | Medical supply - Iv Stand | Lindqvist-Aoki Medical | 644 x 2012 x 678 | 64 kg | 0 W | none | 150 k |
-| `medsupply_linen_cart` | Medical supply - Linen Cart | Lindqvist-Aoki Medical | 845 x 1292 x 577 | 50.1 kg | 0 W | none | 104 k |
+| `medsupply_linen_cart` | Medical supply - Linen Cart | Lindqvist-Aoki Medical | 845 x 1292 x 580 | 50.3 kg | 0 W | none | 104 k |
 | `medsupply_sharps_container` | Medical supply - Sharps Container | Lindqvist-Aoki Medical | 300 x 335 x 230 | 1.57 kg | 0 W | none | 3,780 |
 | `medsupply_wall_patient_monitor` | Medical supply - Wall Patient Monitor | Lindqvist-Aoki Medical | 875 x 765 x 140 | 6.37 kg | 0 W | none | 12.6 k |
 
@@ -38,7 +38,7 @@
 
 **Medical supply - Linen Cart**, Lindqvist-Aoki Medical, part LAM-MED-1265 (passive)
 
-* Mass 50.1 kg; size 845 x 1292 x 577 mm; heat 0 W.
+* Mass 50.3 kg; size 845 x 1292 x 580 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 104 k cr, lead time 93 days, MTBF 72,600 h, service every 4,380 h, service life 12 years, crew 0.
 * IP32, 10 to 35 C; certifications: CSA-MD5 medical device, CSA-E24 electrical safety.

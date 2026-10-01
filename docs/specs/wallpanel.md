@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `wallpanel_access_panel` | Wall panel - Access Panel | Calder-Okonkwo Industries | 1000 x 1200 x 124 | 14.9 kg | 0 W | none | 468 |
 | `wallpanel_conduit_run` | Wall panel - Conduit Run | Calder-Okonkwo Industries | 1000 x 1200 x 140 | 17.2 kg | 0 W | none | 589 |
-| `wallpanel_diamond_plate` | Wall panel - Diamond Plate | Calder-Okonkwo Industries | 1000 x 1200 x 50 | 5.59 kg | 0 W | none | 251 |
+| `wallpanel_diamond_plate` | Wall panel - Diamond Plate | Calder-Okonkwo Industries | 1006 x 1206 x 53 | 5.99 kg | 0 W | none | 259 |
 | `wallpanel_fuse_box` | Wall panel - Fuse Box | Calder-Okonkwo Industries | 1000 x 1200 x 180 | 21.6 kg | 0 W | none | 698 |
 | `wallpanel_hazard_trim` | Wall panel - Hazard Trim | Calder-Okonkwo Industries | 1000 x 1200 x 68 | 8.32 kg | 0 W | none | 281 |
 | `wallpanel_honeycomb` | Wall panel - Honeycomb | Calder-Okonkwo Industries | 1000 x 1200 x 130 | 16.2 kg | 0 W | none | 719 |
@@ -16,18 +16,18 @@
 | `wallpanel_light_diffuser` | Wall panel - Light Diffuser | Calder-Okonkwo Industries | 1000 x 1200 x 104 | 12.4 kg | 0 W | none | 275 |
 | `wallpanel_plain_smooth` | Wall panel - Plain Smooth | Calder-Okonkwo Industries | 1000 x 1200 x 52 | 5.85 kg | 0 W | none | 170 |
 | `wallpanel_quilted_insulation` | Wall panel - Quilted Insulation | Calder-Okonkwo Industries | 1000 x 1200 x 145 | 18.5 kg | 0 W | none | 528 |
-| `wallpanel_ribbed` | Wall panel - Ribbed | Calder-Okonkwo Industries | 1000 x 1200 x 100 | 11.7 kg | 0 W | none | 400 |
+| `wallpanel_ribbed` | Wall panel - Ribbed | Calder-Okonkwo Industries | 1010 x 1200 x 105 | 12.5 kg | 0 W | none | 415 |
 | `wallpanel_riveted_plate` | Wall panel - Riveted Plate | Calder-Okonkwo Industries | 1000 x 1200 x 82 | 9.93 kg | 0 W | none | 294 |
 | `wallpanel_screen_inset` | Wall panel - Screen Inset | Calder-Okonkwo Industries | 1000 x 1200 x 80 | 10.3 kg | 0 W | none | 285 |
 | `wallpanel_service_bolted` | Wall panel - Service Bolted | Calder-Okonkwo Industries | 1000 x 1200 x 130 | 16.7 kg | 0 W | none | 516 |
 | `wallpanel_tall_conduit_bundle` | Wall panel - Tall Conduit Bundle | Calder-Okonkwo Industries | 1000 x 2400 x 194 | 50.1 kg | 0 W | none | 1,410 |
-| `wallpanel_tall_glow_seam` | Wall panel - Tall Glow Seam | Calder-Okonkwo Industries | 1000 x 2400 x 92 | 20.5 kg | 0 W | none | 468 |
+| `wallpanel_tall_glow_seam` | Wall panel - Tall Glow Seam | Calder-Okonkwo Industries | 1000 x 2406 x 92 | 20.5 kg | 0 W | none | 468 |
 | `wallpanel_tall_hazard_stripe` | Wall panel - Tall Hazard Stripe | Calder-Okonkwo Industries | 1000 x 2400 x 74 | 18.5 kg | 0 W | none | 491 |
 | `wallpanel_tall_lockers` | Wall panel - Tall Lockers | Calder-Okonkwo Industries | 1000 x 2400 x 155 | 38.4 kg | 0 W | none | 836 |
 | `wallpanel_tall_pipe_niche` | Wall panel - Tall Pipe Niche | Calder-Okonkwo Industries | 1000 x 2400 x 176 | 41 kg | 0 W | none | 1,290 |
-| `wallpanel_tall_ribbed` | Wall panel - Tall Ribbed | Calder-Okonkwo Industries | 1000 x 2400 x 120 | 28.9 kg | 0 W | none | 713 |
+| `wallpanel_tall_ribbed` | Wall panel - Tall Ribbed | Calder-Okonkwo Industries | 1010 x 2400 x 125 | 30.4 kg | 0 W | none | 742 |
 | `wallpanel_tall_window_slit` | Wall panel - Tall Window Slit | Calder-Okonkwo Industries | 1000 x 2400 x 125 | 30 kg | 0 W | none | 608 |
-| `wallpanel_tall_wood_panelled` | Wall panel - Tall Wood Panelled | Calder-Okonkwo Industries | 1000 x 2400 x 100 | 23.8 kg | 0 W | none | 576 |
+| `wallpanel_tall_wood_panelled` | Wall panel - Tall Wood Panelled | Calder-Okonkwo Industries | 1006 x 2406 x 103 | 24.8 kg | 0 W | none | 596 |
 | `wallpanel_vent_grille` | Wall panel - Vent Grille | Calder-Okonkwo Industries | 1000 x 1200 x 109 | 12.9 kg | 0 W | none | 482 |
 | `wallpanel_wood_veneer` | Wall panel - Wood Veneer | Calder-Okonkwo Industries | 1000 x 1200 x 80 | 10.3 kg | 0 W | none | 349 |
 
@@ -57,9 +57,9 @@
 
 **Wall panel - Diamond Plate**, Calder-Okonkwo Industries, part COI-WAL-3460 (passive)
 
-* Mass 5.59 kg; size 1000 x 1200 x 50 mm; heat 0 W.
+* Mass 5.99 kg; size 1006 x 1206 x 53 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 251 cr, lead time 37 days, MTBF 1,791,100 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 259 cr, lead time 37 days, MTBF 1,791,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 
@@ -137,9 +137,9 @@
 
 **Wall panel - Ribbed**, Calder-Okonkwo Industries, part COI-WAL-2798 (passive)
 
-* Mass 11.7 kg; size 1000 x 1200 x 100 mm; heat 0 W.
+* Mass 12.5 kg; size 1010 x 1200 x 105 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 400 cr, lead time 45 days, MTBF 1,376,900 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 415 cr, lead time 45 days, MTBF 1,376,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 
@@ -161,7 +161,7 @@
 * Passive: no electrical load.
 * Price 285 cr, lead time 35 days, MTBF 1,300,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* Software: `power` (screens: power).
+* Software: `lifesupport` (screens: life_support).
 * wall-mounted.
 
 ### `wallpanel_service_bolted`
@@ -188,7 +188,7 @@
 
 **Wall panel - Tall Glow Seam**, Calder-Okonkwo Industries, part COI-WAL-9065 (passive)
 
-* Mass 20.5 kg; size 1000 x 2400 x 92 mm; heat 0 W.
+* Mass 20.5 kg; size 1000 x 2406 x 92 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 468 cr, lead time 39 days, MTBF 1,892,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -228,9 +228,9 @@
 
 **Wall panel - Tall Ribbed**, Calder-Okonkwo Industries, part COI-WAL-2740 (passive)
 
-* Mass 28.9 kg; size 1000 x 2400 x 120 mm; heat 0 W.
+* Mass 30.4 kg; size 1010 x 2400 x 125 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 713 cr, lead time 47 days, MTBF 1,640,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 742 cr, lead time 47 days, MTBF 1,640,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted. Two-person lift.
 
@@ -248,9 +248,9 @@
 
 **Wall panel - Tall Wood Panelled**, Calder-Okonkwo Industries, part COI-WAL-7021 (passive)
 
-* Mass 23.8 kg; size 1000 x 2400 x 100 mm; heat 0 W.
+* Mass 24.8 kg; size 1006 x 2406 x 103 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 576 cr, lead time 43 days, MTBF 1,236,900 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 596 cr, lead time 43 days, MTBF 1,236,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 

@@ -13,7 +13,7 @@
 | `plant_hanging_plant` | Plant - Hanging Plant | Brightwater Life Systems | 468 x 1322 x 478 | 24.5 kg | 0 W | none | 1,640 |
 | `plant_moss_wall_panel` | Plant - Moss Wall Panel | Brightwater Life Systems | 1033 x 765 x 122 | 8.14 kg | 0 W | none | 809 |
 | `plant_planter_box` | Plant - Planter Box | Brightwater Life Systems | 1240 x 838 x 390 | 35.1 kg | 0 W | none | 2,170 |
-| `plant_succulent_set` | Plant - Succulent Set | Brightwater Life Systems | 387 x 149 x 300 | 1.52 kg | 0 W | none | 314 |
+| `plant_succulent_set` | Plant - Succulent Set | Brightwater Life Systems | 387 x 153 x 300 | 1.56 kg | 0 W | none | 316 |
 
 ## Datasheets
 
@@ -91,9 +91,9 @@
 
 **Plant - Succulent Set**, Brightwater Life Systems, part BLS-PLA-3415 (passive)
 
-* Mass 1.52 kg; size 387 x 149 x 300 mm; heat 0 W.
+* Mass 1.56 kg; size 387 x 153 x 300 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 314 cr, lead time 26 days, MTBF n/a, service every 168 h, service life 2 years, crew 0.
+* Price 316 cr, lead time 26 days, MTBF n/a, service every 168 h, service life 2 years, crew 0.
 * n/a, 10 to 35 C; certifications: CSA-BIO1 biosafety.
 * table-mounted.
 

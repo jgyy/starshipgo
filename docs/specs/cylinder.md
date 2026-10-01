@@ -11,8 +11,8 @@
 | `cylinder_cylinder_hand_cart` | Gas cylinder - Cylinder Hand Cart | Brightwater Life Systems | 700 x 1247 x 620 | 238.9 kg | 0 W | none | 145 k |
 | `cylinder_emergency_air_bottle` | Gas cylinder - Emergency Air Bottle | Brightwater Life Systems | 520 x 1260 x 605 | 171.4 kg | 0 W | none | 98.7 k |
 | `cylinder_gas_manifold_panel` | Gas cylinder - Gas Manifold Panel | Brightwater Life Systems | 1000 x 800 x 200 | 76.4 kg | 0 W | none | 41.1 k |
-| `cylinder_nitrogen_cylinder_trio` | Gas cylinder - Nitrogen Cylinder Trio | Brightwater Life Systems | 1000 x 1950 x 700 | 588.4 kg | 0 W | none | 266 k |
-| `cylinder_oxygen_cylinder_rack` | Gas cylinder - Oxygen Cylinder Rack | Brightwater Life Systems | 1550 x 1550 x 531 | 607.7 kg | 0 W | none | 274 k |
+| `cylinder_nitrogen_cylinder_trio` | Gas cylinder - Nitrogen Cylinder Trio | Brightwater Life Systems | 1000 x 1953 x 700 | 589.3 kg | 0 W | none | 266 k |
+| `cylinder_oxygen_cylinder_rack` | Gas cylinder - Oxygen Cylinder Rack | Brightwater Life Systems | 1550 x 1553 x 534 | 612.3 kg | 0 W | none | 276 k |
 | `cylinder_portable_o2_unit` | Gas cylinder - Portable O2 Unit | Brightwater Life Systems | 502 x 705 x 430 | 61.1 kg | 0 W | none | 27.5 k |
 
 ## Datasheets
@@ -71,21 +71,21 @@
 
 **Gas cylinder - Nitrogen Cylinder Trio**, Brightwater Life Systems, part BLS-CYL-1971 (passive)
 
-* Mass 588.4 kg; size 1000 x 1950 x 700 mm; heat 0 W.
+* Mass 589.3 kg; size 1000 x 1953 x 700 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 266 k cr, lead time 96 days, MTBF 32,100 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
-* floor-mounted, free-standing. Install with a hoist or gantry (588.4 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (589.3 kg).
 
 ### `cylinder_oxygen_cylinder_rack`
 
 **Gas cylinder - Oxygen Cylinder Rack**, Brightwater Life Systems, part BLS-CYL-2695 (passive)
 
-* Mass 607.7 kg; size 1550 x 1550 x 531 mm; heat 0 W.
+* Mass 612.3 kg; size 1550 x 1553 x 534 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 274 k cr, lead time 98 days, MTBF 54,300 h, service every 3,000 h, service life 18 years, crew 0.
+* Price 276 k cr, lead time 98 days, MTBF 54,300 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
-* floor-mounted, free-standing. Install with a hoist or gantry (607.7 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (612.3 kg).
 
 ### `cylinder_portable_o2_unit`
 

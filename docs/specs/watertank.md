@@ -35,7 +35,7 @@
 * Passive: no electrical load.
 * Price 446 k cr, lead time 100 days, MTBF 36,700 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
-* Software: `computer` (screens: text).
+* Software: `lifesupport` (screens: crew_roster).
 * floor-mounted, free-standing. Install with a hoist or gantry (905.7 kg).
 
 ### `watertank_greywater_processor`
@@ -98,6 +98,6 @@
 * Passive: no electrical load.
 * Price 367 k cr, lead time 102 days, MTBF 53,400 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Install with a hoist or gantry (788.8 kg).
 

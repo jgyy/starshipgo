@@ -128,7 +128,7 @@
 <polygon points="262,53 264,53 264,58.56 262,58.56" class="f" fill="#e88186"/>
 <polygon points="294,53 296,53 296,58.56 294,58.56" class="f" fill="#e88186"/>
 <polygon points="220,155 210,155 210,153.48 220,153.48" class="f" fill="#77ef8b"/>
-<polygon points="100,152 100,132 101.04,132 101.04,152" class="f" fill="#81d3e8"/>
+<polygon points="100,152 100,132 101.1,132 101.1,152" class="f" fill="#81d3e8"/>
 <polygon points="263.06,94.4 282.26,94.4 282.26,113.6 263.06,113.6" class="dot" fill="none"/>
 <polygon points="141.4,95.34 161.28,95.34 161.28,112.66 141.4,112.66" class="dot" fill="none"/>
 <polygon points="199.5,102.4 224.5,102.4 224.5,105.6 199.5,105.6" class="dot" fill="none"/>
@@ -180,8 +180,8 @@
 <circle cx="113" cy="147.78" r="0.4" class="none" fill="#b03030"/>
 <line x1="135.62" y1="161.7" x2="134.99" y2="146" class="x"/>
 <circle cx="134.99" cy="146" r="0.4" class="none" fill="#b03030"/>
-<line x1="93.3" y1="142.09" x2="100.52" y2="142" class="x"/>
-<circle cx="100.52" cy="142" r="0.4" class="none" fill="#b03030"/>
+<line x1="93.3" y1="142.09" x2="100.55" y2="142" class="x"/>
+<circle cx="100.55" cy="142" r="0.4" class="none" fill="#b03030"/>
 <line x1="158.96" y1="46.28" x2="161" y2="66.42" class="x"/>
 <circle cx="161" cy="66.42" r="0.4" class="none" fill="#b03030"/>
 <circle cx="212" cy="43" r="3.3" class="n" fill="#fff"/>

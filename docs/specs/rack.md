@@ -52,7 +52,7 @@
 * Power 1.1 kW idle / 4.5 kW typical / 6.8 kW peak at 208 VAC 3ph.
 * Price 410 k cr, lead time 67 days, MTBF 96,800 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 36 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `computer` (screens: thermal).
 * floor-mounted, free-standing. Install with a hoist or gantry (386.6 kg).
 
 ### `rack_cryogenic_quantum_rack`
@@ -157,7 +157,7 @@
 * Power 800 W idle / 3.2 kW typical / 4.8 kW peak at 208 VAC 3ph.
 * Price 348 k cr, lead time 66 days, MTBF 86,000 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 36 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Install with a hoist or gantry (282.7 kg).
 
 ### `rack_ups_battery_rack`

@@ -38,20 +38,20 @@
 <polygon points="182,63 242,63 242,131 182,131" class="x" fill="#e7eaef"/>
 <polygon points="185,75.8 186.54,75.8 186.54,84.2 185,84.2" class="f" fill="#bcf2e9"/>
 <polygon points="185,67 186.24,67 186.24,75 185,75" class="f" fill="#b5e5f1"/>
-<polygon points="237.96,67 239,67 239,75 237.96,75" class="f" fill="#b4e5f1"/>
-<polygon points="205.8,63 218.2,63 218.2,64.96 205.8,64.96" class="dot" fill="none"/>
-<polygon points="224,63 234,63 234,66.8 224,66.8" class="dot" fill="none"/>
+<polygon points="237.9,67 239,67 239,75 237.9,75" class="f" fill="#b4e5f1"/>
+<polygon points="205.8,63 218.2,63 218.2,65.02 205.8,65.02" class="dot" fill="none"/>
+<polygon points="224,63 234,63 234,66.86 224,66.86" class="dot" fill="none"/>
 <polygon points="185,106 191.24,106 191.24,116.8 185,116.8" class="f" fill="#f9becd"/>
 <polygon points="235.58,78.4 239,78.4 239,81.6 235.58,81.6" class="f" fill="#adf0e4"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="f" fill="#ecadf0"/>
-<polygon points="225.4,63 232.6,63 232.6,66 225.4,66" class="dot" fill="none"/>
+<polygon points="225.4,63 232.6,63 232.6,66.06 225.4,66.06" class="dot" fill="none"/>
 <polygon points="182,131 242,131 242,137 182,137" class="n" fill="url(#hSlab)"/>
 <polygon points="182,57 242,57 242,63 182,63" class="n" fill="url(#hSlab)"/>
 <polygon points="182,63 185,63 185,131 182,131" class="n" fill="#1c1c1c"/>
 <polygon points="239,63 242,63 242,131 239,131" class="n" fill="#1c1c1c"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="m" fill="#e387e9"/>
 <polygon points="235.58,78.4 239,78.4 239,81.6 235.58,81.6" class="m" fill="#87e9d8"/>
-<polygon points="225.4,63 232.6,63 232.6,66 225.4,66" class="m" fill="#d87def"/>
+<polygon points="225.4,63 232.6,63 232.6,66.06 225.4,66.06" class="m" fill="#d87def"/>
 </g>
 <text x="188.12" y="113.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">900</text>
 <text x="186.99" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
@@ -60,7 +60,7 @@
 <text x="237.29" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
 <text x="237.29" y="77.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
 <text x="185.62" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
-<text x="238.48" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
+<text x="238.45" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
 <text x="182" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="242" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="248" y1="137" x2="248" y2="57" class="d"/>

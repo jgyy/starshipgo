@@ -6,8 +6,8 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `terminal_comm_handset` | Terminal - Comm Handset | Kestrel Cognitive Systems | 254 x 107 x 101 | 0.59 kg | 4.5 W | 24 VDC | 854 |
-| `terminal_datapad` | Terminal - Datapad | Kestrel Cognitive Systems | 200 x 16 x 146 | 0.1 kg | 3.3 W | 24 VDC | 140 |
+| `terminal_comm_handset` | Terminal - Comm Handset | Kestrel Cognitive Systems | 254 x 107 x 103 | 0.6 kg | 4.5 W | 24 VDC | 867 |
+| `terminal_datapad` | Terminal - Datapad | Kestrel Cognitive Systems | 200 x 19 x 146 | 0.12 kg | 3.3 W | 24 VDC | 161 |
 | `terminal_datapad_stack` | Terminal - Datapad Stack | Kestrel Cognitive Systems | 225 x 43 x 185 | 0.4 kg | 4 W | 24 VDC | 411 |
 | `terminal_desk_intercom` | Terminal - Desk Intercom | Kestrel Cognitive Systems | 200 x 114 x 165 | 0.82 kg | 4.3 W | 24 VDC | 855 |
 | `terminal_desk_terminal` | Terminal - Desk Terminal | Kestrel Cognitive Systems | 370 x 403 x 265 | 9.45 kg | 18 W | 24 VDC | 12.6 k |
@@ -17,7 +17,7 @@
 | `terminal_laptop_console` | Terminal - Laptop Console | Kestrel Cognitive Systems | 340 x 238 x 272 | 4.55 kg | 11 W | 24 VDC | 5,150 |
 | `terminal_pedestal_terminal` | Terminal - Pedestal Terminal | Kestrel Cognitive Systems | 438 x 1282 x 438 | 57.2 kg | 110 W | 48 VDC | 52.4 k |
 | `terminal_portable_reader` | Terminal - Portable Reader | Kestrel Cognitive Systems | 120 x 38 x 225 | 0.23 kg | 3.1 W | 24 VDC | 337 |
-| `terminal_ticket_kiosk` | Terminal - Ticket Kiosk | Kestrel Cognitive Systems | 600 x 1600 x 421 | 96.9 kg | 180 W | 48 VDC | 117 k |
+| `terminal_ticket_kiosk` | Terminal - Ticket Kiosk | Kestrel Cognitive Systems | 606 x 1603 x 421 | 98 kg | 180 W | 48 VDC | 118 k |
 
 ## Datasheets
 
@@ -25,9 +25,9 @@
 
 **Terminal - Comm Handset**, Kestrel Cognitive Systems, part KCS-TER-1074 (consumer)
 
-* Mass 0.59 kg; size 254 x 107 x 101 mm; heat 4.1 W.
+* Mass 0.6 kg; size 254 x 107 x 103 mm; heat 4.1 W.
 * Power 1.1 W idle / 4.5 W typical / 6.7 W peak at 24 VDC.
-* Price 854 cr, lead time 47 days, MTBF 75,500 h, service every 8,760 h, service life 10 years, crew 1.
+* Price 867 cr, lead time 47 days, MTBF 75,500 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * table-mounted.
 
@@ -35,11 +35,11 @@
 
 **Terminal - Datapad**, Kestrel Cognitive Systems, part KCS-TER-9297 (consumer)
 
-* Mass 0.1 kg; size 200 x 16 x 146 mm; heat 3 W.
-* Power 0.82 W idle / 3.3 W typical / 4.9 W peak at 24 VDC.
-* Price 140 cr, lead time 40 days, MTBF 107,300 h, service every 8,760 h, service life 10 years, crew 1.
+* Mass 0.12 kg; size 200 x 19 x 146 mm; heat 3 W.
+* Power 0.83 W idle / 3.3 W typical / 5 W peak at 24 VDC.
+* Price 161 cr, lead time 41 days, MTBF 107,300 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `logbook` (screens: log_list).
 * table-mounted.
 
 ### `terminal_datapad_stack`
@@ -71,7 +71,7 @@
 * Power 4.5 W idle / 18 W typical / 27 W peak at 24 VDC.
 * Price 12.6 k cr, lead time 60 days, MTBF 62,500 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `engineering` (screens: systems).
+* Software: `power` (screens: power_grid).
 * table-mounted.
 
 ### `terminal_headset_dock`
@@ -92,7 +92,7 @@
 * Power 28 W idle / 110 W typical / 170 W peak at 48 VDC.
 * Price 86.7 k cr, lead time 59 days, MTBF 91,600 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 30 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `engineering` (screens: systems).
+* Software: `hydroponics` (screens: hydro_status).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `terminal_keyboard`
@@ -113,7 +113,7 @@
 * Power 2.7 W idle / 11 W typical / 16 W peak at 24 VDC.
 * Price 5,150 cr, lead time 59 days, MTBF 78,500 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `computer` (screens: terminal).
 * table-mounted.
 
 ### `terminal_pedestal_terminal`
@@ -124,7 +124,7 @@
 * Power 28 W idle / 110 W typical / 170 W peak at 48 VDC.
 * Price 52.4 k cr, lead time 59 days, MTBF 101,500 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 30 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `nav` (screens: nav).
+* Software: `docking` (screens: docking).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `terminal_portable_reader`
@@ -142,10 +142,10 @@
 
 **Terminal - Ticket Kiosk**, Kestrel Cognitive Systems, part KCS-TER-2481 (consumer)
 
-* Mass 96.9 kg; size 600 x 1600 x 421 mm; heat 170 W.
-* Power 44 W idle / 180 W typical / 270 W peak at 48 VDC.
-* Price 117 k cr, lead time 66 days, MTBF 72,600 h, service every 8,760 h, service life 10 years, crew 1.
+* Mass 98 kg; size 606 x 1603 x 421 mm; heat 170 W.
+* Power 45 W idle / 180 W typical / 270 W peak at 48 VDC.
+* Price 118 k cr, lead time 66 days, MTBF 72,600 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 30 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `computer` (screens: terminal).
 * floor-mounted, free-standing. Two-person lift.
 

@@ -75,12 +75,12 @@
 <polygon points="131.53,89.94 143.94,89.94 143.94,103.06 131.53,103.06" class="n" fill="#93e881"/>
 <line x1="143.94" y1="103.06" x2="131.53" y2="103.06" class="m"/>
 <line x1="137.74" y1="103.06" x2="137.74" y2="101.86" class="f"/>
-<polygon points="145.94,93 153.94,93 153.94,100 145.94,100" class="n" fill="#81e8af"/>
-<line x1="153.94" y1="100" x2="145.94" y2="100" class="m"/>
-<line x1="149.94" y1="100" x2="149.94" y2="98.8" class="f"/>
-<polygon points="174.07,91.24 186.47,91.24 186.47,101.76 174.07,101.76" class="n" fill="#81e8af"/>
-<line x1="186.47" y1="101.76" x2="174.07" y2="101.76" class="m"/>
-<line x1="180.27" y1="101.76" x2="180.27" y2="100.56" class="f"/>
+<polygon points="145.94,92.98 154,92.98 154,100.01 145.94,100.01" class="n" fill="#81e8af"/>
+<line x1="154" y1="100.01" x2="145.94" y2="100.01" class="m"/>
+<line x1="149.97" y1="100.01" x2="149.97" y2="98.81" class="f"/>
+<polygon points="174.13,91.24 186.53,91.24 186.53,101.76 174.13,101.76" class="n" fill="#81e8af"/>
+<line x1="186.53" y1="101.76" x2="174.13" y2="101.76" class="m"/>
+<line x1="180.33" y1="101.76" x2="180.33" y2="100.56" class="f"/>
 <polygon points="165.62,151.48 171.66,151.48 171.66,157.52 165.62,157.52" class="n" fill="#f799eb"/>
 <line x1="171.66" y1="157.52" x2="165.62" y2="157.52" class="m"/>
 <line x1="168.63" y1="157.52" x2="168.63" y2="156.32" class="f"/>
@@ -123,9 +123,9 @@
 <polygon points="150.92,206.84 150.92,182.16 211.97,182.16 211.97,206.84" class="n" fill="#93e881"/>
 <line x1="211.97" y1="182.16" x2="211.97" y2="206.84" class="m"/>
 <line x1="211.97" y1="194.5" x2="210.77" y2="194.5" class="f"/>
-<polygon points="155.94,91.19 172.07,91.19 172.07,101.81 155.94,101.81" class="n" fill="#93e881"/>
-<line x1="172.07" y1="101.81" x2="155.94" y2="101.81" class="m"/>
-<line x1="164" y1="101.81" x2="164" y2="100.61" class="f"/>
+<polygon points="156,91.19 172.13,91.19 172.13,101.81 156,101.81" class="n" fill="#93e881"/>
+<line x1="172.13" y1="101.81" x2="156" y2="101.81" class="m"/>
+<line x1="164.06" y1="101.81" x2="164.06" y2="100.61" class="f"/>
 <polygon points="119.78,104.15 128.1,104.15 128.1,120.85 119.78,120.85" class="n" fill="#77a0ef"/>
 <line x1="128.1" y1="120.85" x2="119.78" y2="120.85" class="m"/>
 <line x1="123.94" y1="120.85" x2="123.94" y2="119.65" class="f"/>
@@ -165,7 +165,7 @@
 <text x="149.33" y="57.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">rack_bay_low_wire</text>
 <text x="177.94" y="57.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">rack_bay_low_wire</text>
 <text x="161.94" y="166.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">safety_barrier</text>
-<text x="164" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">cage_large</text>
+<text x="164.06" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">cage_large</text>
 <text x="137.74" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">wood_slat_12</text>
 <text x="209.34" y="163.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">gas_and_~</text>
 <text x="123.94" y="112.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">hover_pal~</text>
@@ -173,7 +173,7 @@
 <text x="176.53" y="83.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">sacks_stacked</text>
 <text x="123.23" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">wrapped_tall_mix~</text>
 <text x="136.58" y="83.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">crates_banded</text>
-<text x="180.28" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">wrapped_stack</text>
+<text x="180.34" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">wrapped_stack</text>
 <text x="123.14" y="83.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">boxes_layered</text>
 <text x="163.34" y="83.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">mixed_goods</text>
 <text x="159.5" y="154.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazard_yellow</text>
@@ -184,7 +184,7 @@
 <text x="209.15" y="62.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">compact a~</text>
 <text x="140" y="154.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">flammable~</text>
 <text x="149.31" y="154.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">biohazard</text>
-<text x="149.94" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">roll_cage~</text>
+<text x="149.97" y="96.8" font-size="1.25" class="t" text-anchor="middle" fill="#333">roll_cage~</text>
 <path d="M137 179 L124.94 149 L114.58 119 L106.64 89 L101.63 59 L101.06 49 L214.94 49 L214.94 209 L149.94 209Z M138.38 178.42 L126.34 148.48 L116.01 118.56 L108.1 88.68 L103.13 58.83 L102.65 50.5 L213.44 50.5 L213.44 207.5 L150.92 207.5Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="214.94,113 214.94,145 213.44,145 213.44,113" class="none" fill="#ffffff"/>
 <line x1="214.94" y1="113" x2="213.44" y2="113" class="m"/>

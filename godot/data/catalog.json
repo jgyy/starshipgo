@@ -31,7 +31,7 @@
    ],
    "tris": 1196,
    "top_y": 1.54,
-   "bytes": 72724,
+   "bytes": 72380,
    "family": "sci_analyzer_floor"
   },
   {
@@ -48,8 +48,8 @@
    "solid": false,
    "size": [
     0.516,
-    0.425,
-    0.533
+    0.428,
+    0.536
    ],
    "bounds_min": [
     -0.258,
@@ -58,12 +58,12 @@
    ],
    "bounds_max": [
     0.258,
-    0.425,
-    0.275
+    0.428,
+    0.278
    ],
    "tris": 798,
    "top_y": 0.42,
-   "bytes": 50588,
+   "bytes": 54028,
    "family": "sci_analyzer_table"
   },
   {
@@ -95,7 +95,7 @@
    ],
    "tris": 594,
    "top_y": 1.78,
-   "bytes": 52296,
+   "bytes": 52620,
    "family": "sci_analyzer_floor"
   },
   {
@@ -113,7 +113,7 @@
    "size": [
     0.62,
     0.745,
-    0.521
+    0.523
    ],
    "bounds_min": [
     -0.31,
@@ -123,11 +123,11 @@
    "bounds_max": [
     0.31,
     0.745,
-    0.271
+    0.273
    ],
    "tris": 1032,
    "top_y": 0.44,
-   "bytes": 79668,
+   "bytes": 79740,
    "family": "sci_analyzer_table"
   },
   {
@@ -145,7 +145,7 @@
    "size": [
     1.675,
     1.84,
-    1.0
+    1.003
    ],
    "bounds_min": [
     -0.9,
@@ -155,11 +155,11 @@
    "bounds_max": [
     0.775,
     1.84,
-    0.37
+    0.373
    ],
    "tris": 1060,
    "top_y": 1.22,
-   "bytes": 70116,
+   "bytes": 69036,
    "family": "sci_analyzer_floor"
   },
   {
@@ -177,7 +177,7 @@
    "size": [
     1.048,
     2.15,
-    0.719
+    0.721
    ],
    "bounds_min": [
     -0.45,
@@ -187,11 +187,11 @@
    "bounds_max": [
     0.598,
     2.15,
-    0.419
+    0.421
    ],
    "tris": 706,
    "top_y": 1.56,
-   "bytes": 52168,
+   "bytes": 53852,
    "family": "sci_analyzer_floor"
   },
   {
@@ -209,7 +209,7 @@
    "size": [
     1.015,
     0.47,
-    0.356
+    0.357
    ],
    "bounds_min": [
     -0.36,
@@ -219,11 +219,11 @@
    "bounds_max": [
     0.655,
     0.47,
-    0.196
+    0.197
    ],
    "tris": 420,
    "top_y": 0.24,
-   "bytes": 39940,
+   "bytes": 39388,
    "family": "sci_analyzer_table"
   },
   {
@@ -255,7 +255,7 @@
    ],
    "tris": 774,
    "top_y": 0.18,
-   "bytes": 60160,
+   "bytes": 60704,
    "family": "sci_analyzer_table"
   },
   {
@@ -354,7 +354,7 @@
    ],
    "tris": 1338,
    "top_y": 0.12,
-   "bytes": 84724,
+   "bytes": 86068,
    "family": "comm_antenna_floor"
   },
   {
@@ -486,7 +486,7 @@
    ],
    "tris": 378,
    "top_y": 0.2,
-   "bytes": 34848,
+   "bytes": 34916,
    "family": "comm_antenna_wall"
   },
   {
@@ -1240,7 +1240,7 @@
    "solid": true,
    "size": [
     0.604,
-    0.935,
+    0.938,
     0.604
    ],
    "bounds_min": [
@@ -1250,12 +1250,12 @@
    ],
    "bounds_max": [
     0.302,
-    0.935,
+    0.938,
     0.302
    ],
    "tris": 436,
-   "top_y": 0.9,
-   "bytes": 19588,
+   "top_y": 0.92,
+   "bytes": 19648,
    "family": "gen"
   },
   {
@@ -1332,7 +1332,7 @@
    ],
    "solid": true,
    "size": [
-    1.105,
+    1.108,
     1.245,
     0.68
    ],
@@ -1342,7 +1342,7 @@
     -0.34
    ],
    "bounds_max": [
-    0.55,
+    0.553,
     1.245,
     0.34
    ],
@@ -1364,7 +1364,7 @@
    "solid": true,
    "size": [
     0.91,
-    1.35,
+    1.355,
     0.61
    ],
    "bounds_min": [
@@ -1374,12 +1374,12 @@
    ],
    "bounds_max": [
     0.455,
-    1.35,
+    1.355,
     0.31
    ],
    "tris": 1624,
-   "top_y": 1.1,
-   "bytes": 65900,
+   "top_y": 1.12,
+   "bytes": 66344,
    "family": "gen"
   },
   {
@@ -1457,7 +1457,7 @@
    "solid": true,
    "size": [
     1.004,
-    1.32,
+    1.323,
     1.358
    ],
    "bounds_min": [
@@ -1467,12 +1467,12 @@
    ],
    "bounds_max": [
     0.502,
-    1.32,
+    1.323,
     0.755
    ],
    "tris": 732,
    "top_y": 1.24,
-   "bytes": 38256,
+   "bytes": 38316,
    "family": "gen"
   },
   {
@@ -1503,7 +1503,7 @@
    ],
    "tris": 1036,
    "top_y": 0.52,
-   "bytes": 53292,
+   "bytes": 54088,
    "family": "gen"
   },
   {
@@ -1612,7 +1612,7 @@
    "solid": true,
    "size": [
     0.604,
-    0.915,
+    0.918,
     0.604
    ],
    "bounds_min": [
@@ -1622,12 +1622,12 @@
    ],
    "bounds_max": [
     0.302,
-    0.915,
+    0.918,
     0.302
    ],
    "tris": 304,
    "top_y": 0.9,
-   "bytes": 14532,
+   "bytes": 14592,
    "family": "gen"
   },
   {
@@ -1643,7 +1643,7 @@
    "solid": true,
    "size": [
     1.737,
-    0.915,
+    0.918,
     0.7
    ],
    "bounds_min": [
@@ -1653,12 +1653,12 @@
    ],
    "bounds_max": [
     1.115,
-    0.915,
+    0.918,
     0.35
    ],
    "tris": 960,
    "top_y": 0.88,
-   "bytes": 35392,
+   "bytes": 35452,
    "family": "gen"
   },
   {
@@ -1798,22 +1798,22 @@
    "solid": false,
    "size": [
     1.69,
-    0.1,
-    0.042
+    0.106,
+    0.045
    ],
    "bounds_min": [
     -0.845,
-    -0.05,
+    -0.053,
     -0.0
    ],
    "bounds_max": [
     0.845,
-    0.05,
-    0.042
+    0.053,
+    0.045
    ],
    "tris": 176,
    "top_y": null,
-   "bytes": 10960,
+   "bytes": 11020,
    "family": "beacon_wall"
   },
   {
@@ -1861,17 +1861,17 @@
    "size": [
     1.32,
     0.14,
-    0.16
+    0.166
    ],
    "bounds_min": [
     -0.66,
     -0.14,
-    -0.08
+    -0.083
    ],
    "bounds_max": [
     0.66,
     0.0,
-    0.08
+    0.083
    ],
    "tris": 152,
    "top_y": 0.0,
@@ -2015,7 +2015,7 @@
    ],
    "solid": true,
    "size": [
-    1.085,
+    1.088,
     1.95,
     2.06
    ],
@@ -2025,13 +2025,13 @@
     -1.03
    ],
    "bounds_max": [
-    0.575,
+    0.578,
     1.95,
     1.03
    ],
    "tris": 752,
    "top_y": 1.48,
-   "bytes": 39240,
+   "bytes": 39236,
    "family": "crew_bed_floor"
   },
   {
@@ -2063,7 +2063,7 @@
    ],
    "tris": 598,
    "top_y": 0.76,
-   "bytes": 41492,
+   "bytes": 41696,
    "family": "crew_bed_floor"
   },
   {
@@ -2112,7 +2112,7 @@
    "solid": true,
    "size": [
     1.1,
-    2.27,
+    2.273,
     2.11
    ],
    "bounds_min": [
@@ -2122,12 +2122,12 @@
    ],
    "bounds_max": [
     0.55,
-    1.2,
+    1.203,
     2.1
    ],
    "tris": 456,
    "top_y": -0.34,
-   "bytes": 27192,
+   "bytes": 27480,
    "family": "crew_bed_wall"
   },
   {
@@ -2159,7 +2159,7 @@
    ],
    "tris": 384,
    "top_y": 0.5,
-   "bytes": 21420,
+   "bytes": 21708,
    "family": "crew_bed_floor"
   },
   {
@@ -2223,7 +2223,7 @@
    ],
    "tris": 634,
    "top_y": 0.72,
-   "bytes": 48280,
+   "bytes": 48692,
    "family": "crew_bed_floor"
   },
   {
@@ -2271,23 +2271,23 @@
    ],
    "solid": true,
    "size": [
-    0.92,
+    0.926,
     0.8,
     2.077
    ],
    "bounds_min": [
-    -0.46,
+    -0.463,
     0.0,
     -1.025
    ],
    "bounds_max": [
-    0.46,
+    0.463,
     0.8,
     1.052
    ],
    "tris": 540,
    "top_y": 0.62,
-   "bytes": 29560,
+   "bytes": 29848,
    "family": "crew_bed_floor"
   },
   {
@@ -2305,12 +2305,12 @@
    "size": [
     1.398,
     1.44,
-    2.64
+    2.643
    ],
    "bounds_min": [
     -0.65,
     0.0,
-    -1.25
+    -1.253
    ],
    "bounds_max": [
     0.748,
@@ -2319,7 +2319,7 @@
    ],
    "tris": 714,
    "top_y": 0.8,
-   "bytes": 47808,
+   "bytes": 47904,
    "family": "crew_bed_floor"
   },
   {
@@ -2336,7 +2336,7 @@
    "solid": true,
    "size": [
     2.423,
-    0.75,
+    0.753,
     0.883
    ],
    "bounds_min": [
@@ -2346,12 +2346,12 @@
    ],
    "bounds_max": [
     1.221,
-    0.75,
+    0.753,
     0.618
    ],
    "tris": 964,
-   "top_y": 0.46,
-   "bytes": 41896,
+   "top_y": 0.48,
+   "bytes": 42340,
    "family": "crew_bench_floor"
   },
   {
@@ -2368,7 +2368,7 @@
    "solid": true,
    "size": [
     0.554,
-    0.488,
+    0.491,
     1.2
    ],
    "bounds_min": [
@@ -2378,12 +2378,12 @@
    ],
    "bounds_max": [
     0.277,
-    0.488,
+    0.491,
     0.6
    ],
    "tris": 368,
    "top_y": 0.48,
-   "bytes": 17188,
+   "bytes": 17248,
    "family": "crew_bench_floor"
   },
   {
@@ -2593,7 +2593,7 @@
    "solid": true,
    "size": [
     0.538,
-    0.775,
+    0.778,
     0.549
    ],
    "bounds_min": [
@@ -2603,12 +2603,12 @@
    ],
    "bounds_max": [
     0.269,
-    0.775,
+    0.778,
     0.28
    ],
    "tris": 880,
    "top_y": 0.78,
-   "bytes": 31440,
+   "bytes": 30540,
    "family": "bin_floor"
   },
   {
@@ -2640,7 +2640,7 @@
    ],
    "tris": 280,
    "top_y": null,
-   "bytes": 15812,
+   "bytes": 15612,
    "family": "bin_wall"
   },
   {
@@ -3251,7 +3251,7 @@
    "solid": true,
    "size": [
     0.85,
-    1.955,
+    1.958,
     0.675
    ],
    "bounds_min": [
@@ -3261,12 +3261,12 @@
    ],
    "bounds_max": [
     0.425,
-    1.955,
+    1.958,
     0.35
    ],
    "tris": 364,
    "top_y": 1.9,
-   "bytes": 20564,
+   "bytes": 20624,
    "family": "cabinet_floor"
   },
   {
@@ -3283,7 +3283,7 @@
    "solid": true,
    "size": [
     0.96,
-    1.83,
+    1.833,
     0.58
    ],
    "bounds_min": [
@@ -3293,12 +3293,12 @@
    ],
    "bounds_max": [
     0.48,
-    1.83,
+    1.833,
     0.3
    ],
    "tris": 476,
    "top_y": 1.84,
-   "bytes": 24136,
+   "bytes": 24196,
    "family": "cabinet_floor"
   },
   {
@@ -3379,12 +3379,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.195,
+    0.198,
     0.46
    ],
    "bounds_min": [
     -1.0,
-    -0.195,
+    -0.198,
     -0.23
    ],
    "bounds_max": [
@@ -3394,7 +3394,7 @@
    ],
    "tris": 368,
    "top_y": -0.08,
-   "bytes": 18476,
+   "bytes": 19304,
    "family": "cabletray_ceil"
   },
   {
@@ -3410,23 +3410,23 @@
    ],
    "solid": false,
    "size": [
-    2.0,
-    0.15,
+    2.006,
+    0.153,
     0.36
    ],
    "bounds_min": [
-    -1.0,
-    -0.15,
+    -1.003,
+    -0.153,
     -0.18
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.0,
     0.18
    ],
    "tris": 404,
    "top_y": -0.1,
-   "bytes": 23508,
+   "bytes": 24372,
    "family": "cabletray_ceil"
   },
   {
@@ -3475,12 +3475,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.17,
+    0.173,
     0.46
    ],
    "bounds_min": [
     -1.0,
-    -0.17,
+    -0.173,
     -0.23
    ],
    "bounds_max": [
@@ -3490,7 +3490,7 @@
    ],
    "tris": 412,
    "top_y": -0.12,
-   "bytes": 25644,
+   "bytes": 25704,
    "family": "cabletray_ceil"
   },
   {
@@ -3507,12 +3507,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.19,
+    0.193,
     0.5
    ],
    "bounds_min": [
     -1.0,
-    -0.19,
+    -0.193,
     -0.25
    ],
    "bounds_max": [
@@ -3522,7 +3522,7 @@
    ],
    "tris": 448,
    "top_y": -0.08,
-   "bytes": 25892,
+   "bytes": 25952,
    "family": "cabletray_ceil"
   },
   {
@@ -3710,7 +3710,7 @@
    ],
    "tris": 378,
    "top_y": 2.0,
-   "bytes": 33724,
+   "bytes": 33800,
    "family": "camera_arch"
   },
   {
@@ -3850,12 +3850,12 @@
    "solid": false,
    "size": [
     0.48,
-    1.01,
+    1.013,
     0.48
    ],
    "bounds_min": [
     -0.24,
-    -1.01,
+    -1.013,
     -0.24
    ],
    "bounds_max": [
@@ -3865,7 +3865,7 @@
    ],
    "tris": 1264,
    "top_y": 0.0,
-   "bytes": 39792,
+   "bytes": 39852,
    "family": "camera_ceiling"
   },
   {
@@ -4210,12 +4210,12 @@
    "size": [
     1.25,
     1.985,
-    0.624
+    0.627
    ],
    "bounds_min": [
     -0.625,
     0.0,
-    -0.3
+    -0.303
    ],
    "bounds_max": [
     0.625,
@@ -4751,7 +4751,7 @@
    ],
    "tris": 318,
    "top_y": 0.7,
-   "bytes": 31584,
+   "bytes": 33280,
    "family": "gen"
   },
   {
@@ -4896,12 +4896,12 @@
    "solid": false,
    "size": [
     0.638,
-    0.176,
+    0.179,
     0.638
    ],
    "bounds_min": [
     -0.319,
-    -0.175,
+    -0.178,
     -0.319
    ],
    "bounds_max": [
@@ -4911,7 +4911,7 @@
    ],
    "tris": 896,
    "top_y": 0.0,
-   "bytes": 29204,
+   "bytes": 29244,
    "family": "ceilinglight"
   },
   {
@@ -4960,12 +4960,12 @@
    "solid": false,
    "size": [
     1.25,
-    0.062,
+    0.065,
     0.16
    ],
    "bounds_min": [
     -0.625,
-    -0.062,
+    -0.065,
     -0.08
    ],
    "bounds_max": [
@@ -4975,7 +4975,7 @@
    ],
    "tris": 212,
    "top_y": 0.0,
-   "bytes": 11164,
+   "bytes": 11612,
    "family": "ceilinglight"
   },
   {
@@ -5024,12 +5024,12 @@
    "solid": false,
    "size": [
     0.62,
-    0.098,
+    0.101,
     1.26
    ],
    "bounds_min": [
     -0.31,
-    -0.098,
+    -0.101,
     -0.63
    ],
    "bounds_max": [
@@ -5039,7 +5039,7 @@
    ],
    "tris": 216,
    "top_y": 0.0,
-   "bytes": 13200,
+   "bytes": 13644,
    "family": "ceilinglight"
   },
   {
@@ -5248,12 +5248,12 @@
    "solid": false,
    "size": [
     2.46,
-    0.12,
+    0.123,
     0.28
    ],
    "bounds_min": [
     -1.23,
-    -0.12,
+    -0.123,
     -0.14
    ],
    "bounds_max": [
@@ -5263,7 +5263,7 @@
    ],
    "tris": 364,
    "top_y": 0.0,
-   "bytes": 15580,
+   "bytes": 16620,
    "family": "ceilinglight"
   },
   {
@@ -5312,22 +5312,22 @@
    "solid": false,
    "size": [
     1.0,
-    0.132,
-    1.0
+    0.135,
+    1.006
    ],
    "bounds_min": [
     -0.5,
-    -0.132,
-    -0.5
+    -0.135,
+    -0.503
    ],
    "bounds_max": [
     0.5,
     0.0,
-    0.5
+    0.503
    ],
    "tris": 244,
    "top_y": 0.0,
-   "bytes": 14092,
+   "bytes": 14580,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5344,12 +5344,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.14,
+    0.143,
     2.0
    ],
    "bounds_min": [
     -1.0,
-    -0.14,
+    -0.143,
     -1.0
    ],
    "bounds_max": [
@@ -5359,7 +5359,7 @@
    ],
    "tris": 360,
    "top_y": 0.0,
-   "bytes": 17596,
+   "bytes": 18244,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5391,7 +5391,7 @@
    ],
    "tris": 336,
    "top_y": 0.0,
-   "bytes": 17192,
+   "bytes": 17768,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5439,23 +5439,23 @@
    ],
    "solid": false,
    "size": [
-    2.0,
-    0.11,
-    2.0
+    2.006,
+    0.113,
+    2.006
    ],
    "bounds_min": [
-    -1.0,
-    -0.11,
-    -1.0
+    -1.003,
+    -0.113,
+    -1.003
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.0,
-    1.0
+    1.003
    ],
    "tris": 252,
    "top_y": 0.0,
-   "bytes": 16176,
+   "bytes": 16300,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5551,7 +5551,7 @@
    ],
    "tris": 124,
    "top_y": 0.0,
-   "bytes": 8276,
+   "bytes": 8272,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5567,23 +5567,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    0.04,
-    1.0
+    1.006,
+    0.043,
+    1.006
    ],
    "bounds_min": [
-    -0.5,
-    -0.04,
-    -0.5
+    -0.503,
+    -0.043,
+    -0.503
    ],
    "bounds_max": [
-    0.5,
+    0.503,
     0.0,
-    0.5
+    0.503
    ],
    "tris": 768,
    "top_y": 0.0,
-   "bytes": 38308,
+   "bytes": 38808,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5711,7 +5711,7 @@
    ],
    "tris": 408,
    "top_y": 0.0,
-   "bytes": 16040,
+   "bytes": 19116,
    "family": "ceilingpanel_fam"
   },
   {
@@ -5758,7 +5758,7 @@
    "solid": true,
    "size": [
     1.9,
-    1.37,
+    1.373,
     0.8
    ],
    "bounds_min": [
@@ -5768,12 +5768,12 @@
    ],
    "bounds_max": [
     0.95,
-    1.37,
+    1.373,
     0.4
    ],
    "tris": 526,
-   "top_y": 0.78,
-   "bytes": 46492,
+   "top_y": 0.8,
+   "bytes": 48028,
    "family": "cell_module"
   },
   {
@@ -5850,23 +5850,23 @@
    ],
    "solid": true,
    "size": [
-    2.0,
+    2.006,
     1.25,
-    0.56
+    0.563
    ],
    "bounds_min": [
-    -1.0,
+    -1.003,
     0.0,
-    -0.31
+    -0.313
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     1.25,
     0.25
    ],
    "tris": 636,
    "top_y": 0.5,
-   "bytes": 24444,
+   "bytes": 24476,
    "family": "cell_module"
   },
   {
@@ -5912,23 +5912,23 @@
    ],
    "solid": true,
    "size": [
-    2.4,
-    2.6,
+    2.406,
+    2.603,
     0.33
    ],
    "bounds_min": [
-    -1.2,
+    -1.203,
     0.0,
     -0.12
    ],
    "bounds_max": [
-    1.2,
-    2.6,
+    1.203,
+    2.603,
     0.21
    ],
    "tris": 346,
    "top_y": 2.6,
-   "bytes": 28936,
+   "bytes": 31492,
    "family": "cell_module"
   },
   {
@@ -5944,7 +5944,7 @@
    "solid": true,
    "size": [
     0.92,
-    1.9,
+    1.903,
     0.665
    ],
    "bounds_min": [
@@ -5954,12 +5954,12 @@
    ],
    "bounds_max": [
     0.46,
-    1.9,
+    1.903,
     0.405
    ],
    "tris": 244,
    "top_y": 1.9,
-   "bytes": 16392,
+   "bytes": 16452,
    "family": "cell_module"
   },
   {
@@ -6005,23 +6005,23 @@
    ],
    "solid": true,
    "size": [
-    3.0,
-    2.6,
+    3.006,
+    2.603,
     1.935
    ],
    "bounds_min": [
-    -1.5,
+    -1.503,
     0.0,
     -0.585
    ],
    "bounds_max": [
-    1.5,
-    2.6,
+    1.503,
+    2.603,
     1.35
    ],
    "tris": 476,
    "top_y": 0.66,
-   "bytes": 26052,
+   "bytes": 26728,
    "family": "cell_module"
   },
   {
@@ -6101,23 +6101,23 @@
    ],
    "solid": true,
    "size": [
-    0.44,
+    0.446,
     0.928,
-    0.462
+    0.465
    ],
    "bounds_min": [
-    -0.22,
+    -0.223,
     -0.008,
     -0.252
    ],
    "bounds_max": [
-    0.22,
+    0.223,
     0.92,
-    0.21
+    0.213
    ],
    "tris": 240,
    "top_y": 0.46,
-   "bytes": 14580,
+   "bytes": 14584,
    "family": "crew_chair_floor"
   },
   {
@@ -6341,7 +6341,7 @@
    ],
    "tris": 1468,
    "top_y": null,
-   "bytes": 53072,
+   "bytes": 53456,
    "family": "cleaningbot"
   },
   {
@@ -6815,7 +6815,7 @@
    "solid": true,
    "size": [
     2.4,
-    2.38,
+    2.383,
     0.7
    ],
    "bounds_min": [
@@ -6825,12 +6825,12 @@
    ],
    "bounds_max": [
     1.2,
-    2.38,
+    2.383,
     0.35
    ],
    "tris": 884,
    "top_y": 2.38,
-   "bytes": 37232,
+   "bytes": 37292,
    "family": "gen"
   },
   {
@@ -6985,7 +6985,7 @@
    ],
    "tris": 868,
    "top_y": 2.1,
-   "bytes": 43080,
+   "bytes": 43096,
    "family": "gen"
   },
   {
@@ -7204,7 +7204,7 @@
    ],
    "tris": 1646,
    "top_y": 0.82,
-   "bytes": 113172,
+   "bytes": 113956,
    "family": "comm_commsunit_floor"
   },
   {
@@ -7237,7 +7237,7 @@
    ],
    "tris": 406,
    "top_y": 0.16,
-   "bytes": 36836,
+   "bytes": 37016,
    "family": "comm_commsunit_table"
   },
   {
@@ -7256,12 +7256,12 @@
    "size": [
     0.245,
     0.182,
-    0.3
+    0.303
    ],
    "bounds_min": [
     -0.11,
     0.0,
-    -0.13
+    -0.133
    ],
    "bounds_max": [
     0.135,
@@ -7270,7 +7270,7 @@
    ],
    "tris": 738,
    "top_y": null,
-   "bytes": 45032,
+   "bytes": 46428,
    "family": "comm_commsunit_table"
   },
   {
@@ -7303,7 +7303,7 @@
    ],
    "tris": 330,
    "top_y": null,
-   "bytes": 29788,
+   "bytes": 29860,
    "family": "comm_commsunit_wall"
   },
   {
@@ -7320,23 +7320,23 @@
    ],
    "solid": true,
    "size": [
-    0.6,
-    2.1,
-    0.509
+    0.606,
+    2.103,
+    0.512
    ],
    "bounds_min": [
-    -0.3,
+    -0.303,
     0.0,
-    -0.25
+    -0.253
    ],
    "bounds_max": [
-    0.3,
-    2.1,
+    0.303,
+    2.103,
     0.259
    ],
    "tris": 1234,
    "top_y": 1.5,
-   "bytes": 88284,
+   "bytes": 88920,
    "family": "comm_commsunit_floor"
   },
   {
@@ -7369,7 +7369,7 @@
    ],
    "tris": 430,
    "top_y": 0.16,
-   "bytes": 41900,
+   "bytes": 41976,
    "family": "comm_commsunit_table"
   },
   {
@@ -7468,7 +7468,7 @@
    ],
    "tris": 508,
    "top_y": null,
-   "bytes": 44532,
+   "bytes": 44460,
    "family": "comm_commsunit_wall"
   },
   {
@@ -7533,7 +7533,7 @@
    ],
    "tris": 642,
    "top_y": 1.06,
-   "bytes": 40448,
+   "bytes": 42176,
    "family": "bridge_console"
   },
   {
@@ -7565,7 +7565,7 @@
    ],
    "tris": 1242,
    "top_y": 0.98,
-   "bytes": 76676,
+   "bytes": 78444,
    "family": "bridge_console"
   },
   {
@@ -7597,7 +7597,7 @@
    ],
    "tris": 532,
    "top_y": null,
-   "bytes": 42228,
+   "bytes": 38520,
    "family": "bridge_console"
   },
   {
@@ -7629,7 +7629,7 @@
    ],
    "tris": 746,
    "top_y": 0.98,
-   "bytes": 67500,
+   "bytes": 60408,
    "family": "bridge_console"
   },
   {
@@ -7679,7 +7679,7 @@
    "size": [
     1.716,
     1.39,
-    0.907
+    0.91
    ],
    "bounds_min": [
     -0.858,
@@ -7689,11 +7689,11 @@
    "bounds_max": [
     0.858,
     1.39,
-    0.457
+    0.46
    ],
    "tris": 1278,
    "top_y": 1.0,
-   "bytes": 82364,
+   "bytes": 89252,
    "family": "bridge_console"
   },
   {
@@ -7711,7 +7711,7 @@
    "size": [
     1.816,
     1.596,
-    0.857
+    0.86
    ],
    "bounds_min": [
     -0.908,
@@ -7721,11 +7721,11 @@
    "bounds_max": [
     0.908,
     1.596,
-    0.432
+    0.435
    ],
    "tris": 1140,
    "top_y": 1.0,
-   "bytes": 81796,
+   "bytes": 87860,
    "family": "bridge_console"
   },
   {
@@ -7757,7 +7757,7 @@
    ],
    "tris": 1520,
    "top_y": 0.98,
-   "bytes": 89740,
+   "bytes": 88220,
    "family": "bridge_console"
   },
   {
@@ -7789,7 +7789,7 @@
    ],
    "tris": 1318,
    "top_y": 0.98,
-   "bytes": 79728,
+   "bytes": 92388,
    "family": "bridge_console"
   },
   {
@@ -7821,7 +7821,7 @@
    ],
    "tris": 1282,
    "top_y": 1.0,
-   "bytes": 90776,
+   "bytes": 91960,
    "family": "bridge_console"
   },
   {
@@ -7853,7 +7853,7 @@
    ],
    "tris": 1322,
    "top_y": 0.96,
-   "bytes": 82224,
+   "bytes": 82556,
    "family": "bridge_console"
   },
   {
@@ -7885,7 +7885,7 @@
    ],
    "tris": 826,
    "top_y": 1.0,
-   "bytes": 72624,
+   "bytes": 71932,
    "family": "bridge_console"
   },
   {
@@ -7917,7 +7917,7 @@
    ],
    "tris": 1100,
    "top_y": 1.0,
-   "bytes": 82188,
+   "bytes": 87304,
    "family": "bridge_console"
   },
   {
@@ -7949,7 +7949,7 @@
    ],
    "tris": 738,
    "top_y": 1.0,
-   "bytes": 67720,
+   "bytes": 67520,
    "family": "bridge_console"
   },
   {
@@ -7981,7 +7981,7 @@
    ],
    "tris": 910,
    "top_y": 1.0,
-   "bytes": 66612,
+   "bytes": 63584,
    "family": "bridge_console"
   },
   {
@@ -8013,7 +8013,7 @@
    ],
    "tris": 752,
    "top_y": 0.96,
-   "bytes": 75040,
+   "bytes": 74636,
    "family": "bridge_console"
   },
   {
@@ -8045,7 +8045,7 @@
    ],
    "tris": 926,
    "top_y": 1.02,
-   "bytes": 58900,
+   "bytes": 58188,
    "family": "bridge_console"
   },
   {
@@ -8077,7 +8077,7 @@
    ],
    "tris": 728,
    "top_y": 0.96,
-   "bytes": 58064,
+   "bytes": 62404,
    "family": "bridge_console"
   },
   {
@@ -8109,7 +8109,7 @@
    ],
    "tris": 824,
    "top_y": null,
-   "bytes": 80340,
+   "bytes": 71528,
    "family": "bridge_console"
   },
   {
@@ -8141,7 +8141,7 @@
    ],
    "tris": 890,
    "top_y": 1.02,
-   "bytes": 63520,
+   "bytes": 66028,
    "family": "bridge_console"
   },
   {
@@ -8173,7 +8173,7 @@
    ],
    "tris": 750,
    "top_y": null,
-   "bytes": 51788,
+   "bytes": 55400,
    "family": "bridge_controlpanel"
   },
   {
@@ -8205,7 +8205,7 @@
    ],
    "tris": 620,
    "top_y": null,
-   "bytes": 29460,
+   "bytes": 30616,
    "family": "bridge_controlpanel"
   },
   {
@@ -8269,7 +8269,7 @@
    ],
    "tris": 1940,
    "top_y": null,
-   "bytes": 69068,
+   "bytes": 72908,
    "family": "bridge_controlpanel"
   },
   {
@@ -8301,7 +8301,7 @@
    ],
    "tris": 322,
    "top_y": null,
-   "bytes": 28328,
+   "bytes": 28700,
    "family": "bridge_controlpanel"
   },
   {
@@ -8365,7 +8365,7 @@
    ],
    "tris": 336,
    "top_y": null,
-   "bytes": 21684,
+   "bytes": 21876,
    "family": "bridge_controlpanel"
   },
   {
@@ -8461,7 +8461,7 @@
    ],
    "tris": 890,
    "top_y": null,
-   "bytes": 55016,
+   "bytes": 54464,
    "family": "bridge_controlpanel"
   },
   {
@@ -8493,7 +8493,7 @@
    ],
    "tris": 300,
    "top_y": null,
-   "bytes": 16328,
+   "bytes": 16520,
    "family": "bridge_controlpanel"
   },
   {
@@ -8525,7 +8525,7 @@
    ],
    "tris": 684,
    "top_y": null,
-   "bytes": 35420,
+   "bytes": 35612,
    "family": "bridge_controlpanel"
   },
   {
@@ -8589,7 +8589,7 @@
    ],
    "tris": 1262,
    "top_y": null,
-   "bytes": 64648,
+   "bytes": 65740,
    "family": "bridge_controlpanel"
   },
   {
@@ -8621,7 +8621,7 @@
    ],
    "tris": 314,
    "top_y": null,
-   "bytes": 26376,
+   "bytes": 26556,
    "family": "bridge_controlpanel"
   },
   {
@@ -8685,7 +8685,7 @@
    ],
    "tris": 364,
    "top_y": null,
-   "bytes": 20416,
+   "bytes": 20612,
    "family": "bridge_controlpanel"
   },
   {
@@ -8781,7 +8781,7 @@
    ],
    "tris": 640,
    "top_y": null,
-   "bytes": 26032,
+   "bytes": 26420,
    "family": "bridge_controlpanel"
   },
   {
@@ -8946,7 +8946,7 @@
    ],
    "tris": 1020,
    "top_y": 0.04,
-   "bytes": 28368,
+   "bytes": 28320,
    "family": "crew_couch_floor"
   },
   {
@@ -8979,7 +8979,7 @@
    ],
    "tris": 800,
    "top_y": 0.56,
-   "bytes": 36436,
+   "bytes": 36440,
    "family": "crew_couch_floor"
   },
   {
@@ -9483,7 +9483,7 @@
    ],
    "tris": 520,
    "top_y": 0.8,
-   "bytes": 21768,
+   "bytes": 22152,
    "family": "gen"
   },
   {
@@ -9607,7 +9607,7 @@
    ],
    "tris": 690,
    "top_y": 0.76,
-   "bytes": 47296,
+   "bytes": 47108,
    "family": "gen"
   },
   {
@@ -9839,23 +9839,23 @@
    ],
    "solid": true,
    "size": [
-    1.0,
+    1.006,
     0.7,
     0.8
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     -0.01,
     -0.4
    ],
    "bounds_max": [
-    0.5,
+    0.503,
     0.69,
     0.4
    ],
    "tris": 816,
    "top_y": 0.42,
-   "bytes": 33664,
+   "bytes": 35996,
    "family": "gen"
   },
   {
@@ -9870,23 +9870,23 @@
    ],
    "solid": true,
    "size": [
-    1.0,
-    0.5,
-    0.713
+    1.006,
+    0.503,
+    0.716
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     0.0,
-    -0.35
+    -0.353
    ],
    "bounds_max": [
-    0.5,
-    0.5,
+    0.503,
+    0.503,
     0.363
    ],
-   "tris": 1124,
+   "tris": 1146,
    "top_y": 0.5,
-   "bytes": 55556,
+   "bytes": 57700,
    "family": "gen"
   },
   {
@@ -9902,7 +9902,7 @@
    "solid": true,
    "size": [
     2.45,
-    1.65,
+    1.653,
     1.6
    ],
    "bounds_min": [
@@ -9912,12 +9912,12 @@
    ],
    "bounds_max": [
     1.225,
-    1.65,
+    1.653,
     0.8
    ],
    "tris": 1000,
    "top_y": 1.52,
-   "bytes": 50464,
+   "bytes": 51100,
    "family": "gen"
   },
   {
@@ -10027,7 +10027,7 @@
    "size": [
     1.254,
     1.3,
-    1.859
+    1.861
    ],
    "bounds_min": [
     -0.627,
@@ -10037,11 +10037,11 @@
    "bounds_max": [
     0.627,
     1.3,
-    0.932
+    0.934
    ],
    "tris": 1120,
    "top_y": 1.3,
-   "bytes": 53404,
+   "bytes": 54556,
    "family": "gen"
   },
   {
@@ -10103,7 +10103,7 @@
    ],
    "tris": 736,
    "top_y": 1.0,
-   "bytes": 32596,
+   "bytes": 32616,
    "family": "gen"
   },
   {
@@ -10212,7 +10212,7 @@
    "solid": true,
    "size": [
     0.644,
-    1.245,
+    1.248,
     0.464
    ],
    "bounds_min": [
@@ -10222,7 +10222,7 @@
    ],
    "bounds_max": [
     0.322,
-    1.245,
+    1.248,
     0.249
    ],
    "tris": 716,
@@ -10289,7 +10289,7 @@
    ],
    "tris": 814,
    "top_y": 1.0,
-   "bytes": 55340,
+   "bytes": 55412,
    "family": "gen"
   },
   {
@@ -10383,7 +10383,7 @@
    ],
    "tris": 670,
    "top_y": 1.96,
-   "bytes": 49396,
+   "bytes": 51764,
    "family": "cryo"
   },
   {
@@ -10401,7 +10401,7 @@
    "size": [
     1.0,
     1.38,
-    2.865
+    2.868
    ],
    "bounds_min": [
     -0.5,
@@ -10411,7 +10411,7 @@
    "bounds_max": [
     0.5,
     1.38,
-    1.405
+    1.408
    ],
    "tris": 442,
    "top_y": 1.36,
@@ -10464,7 +10464,7 @@
    "solid": true,
    "size": [
     0.85,
-    2.07,
+    2.073,
     0.85
    ],
    "bounds_min": [
@@ -10474,12 +10474,12 @@
    ],
    "bounds_max": [
     0.425,
-    2.07,
+    2.073,
     0.425
    ],
    "tris": 876,
    "top_y": 0.06,
-   "bytes": 52132,
+   "bytes": 52192,
    "family": "cryo"
   },
   {
@@ -10511,7 +10511,7 @@
    ],
    "tris": 1972,
    "top_y": null,
-   "bytes": 65452,
+   "bytes": 65480,
    "family": "cylinders"
   },
   {
@@ -10656,7 +10656,7 @@
    "solid": true,
    "size": [
     1.0,
-    1.95,
+    1.953,
     0.7
    ],
    "bounds_min": [
@@ -10666,12 +10666,12 @@
    ],
    "bounds_max": [
     0.5,
-    1.95,
+    1.953,
     0.44
    ],
    "tris": 892,
    "top_y": 0.06,
-   "bytes": 42116,
+   "bytes": 42176,
    "family": "cylinders"
   },
   {
@@ -10688,22 +10688,22 @@
    "solid": true,
    "size": [
     1.55,
-    1.55,
-    0.531
+    1.553,
+    0.534
    ],
    "bounds_min": [
     -0.775,
     0.0,
-    -0.25
+    -0.253
    ],
    "bounds_max": [
     0.775,
-    1.55,
+    1.553,
     0.281
    ],
    "tris": 1136,
    "top_y": 1.34,
-   "bytes": 49276,
+   "bytes": 49364,
    "family": "cylinders"
   },
   {
@@ -10735,7 +10735,7 @@
    ],
    "tris": 362,
    "top_y": 0.08,
-   "bytes": 33372,
+   "bytes": 33444,
    "family": "cylinders"
   },
   {
@@ -11055,7 +11055,7 @@
    ],
    "tris": 438,
    "top_y": 0.76,
-   "bytes": 34164,
+   "bytes": 34780,
    "family": "crew_desk_floor"
   },
   {
@@ -11087,7 +11087,7 @@
    ],
    "tris": 548,
    "top_y": 0.76,
-   "bytes": 43928,
+   "bytes": 44272,
    "family": "crew_desk_floor"
   },
   {
@@ -11151,7 +11151,7 @@
    ],
    "tris": 526,
    "top_y": 0.84,
-   "bytes": 43564,
+   "bytes": 44176,
    "family": "crew_desk_floor"
   },
   {
@@ -11183,7 +11183,7 @@
    ],
    "tris": 242,
    "top_y": -0.32,
-   "bytes": 25760,
+   "bytes": 25940,
    "family": "crew_desk_wall"
   },
   {
@@ -11215,7 +11215,7 @@
    ],
    "tris": 566,
    "top_y": 0.76,
-   "bytes": 44784,
+   "bytes": 44856,
    "family": "crew_desk_floor"
   },
   {
@@ -11279,7 +11279,7 @@
    ],
    "tris": 502,
    "top_y": 1.1,
-   "bytes": 38448,
+   "bytes": 39032,
    "family": "crew_desk_floor"
   },
   {
@@ -11311,7 +11311,7 @@
    ],
    "tris": 484,
    "top_y": 0.74,
-   "bytes": 39784,
+   "bytes": 40056,
    "family": "crew_desk_floor"
   },
   {
@@ -11343,7 +11343,7 @@
    ],
    "tris": 348,
    "top_y": 0.76,
-   "bytes": 22888,
+   "bytes": 23092,
    "family": "crew_desk_floor"
   },
   {
@@ -11695,7 +11695,7 @@
    ],
    "tris": 494,
    "top_y": null,
-   "bytes": 31464,
+   "bytes": 31540,
    "family": "bridge_display"
   },
   {
@@ -11777,7 +11777,7 @@
    "size": [
     1.2,
     1.09,
-    0.099
+    0.101
    ],
    "bounds_min": [
     -0.6,
@@ -11787,11 +11787,11 @@
    "bounds_max": [
     0.6,
     0.4,
-    0.099
+    0.101
    ],
    "tris": 638,
    "top_y": 0.4,
-   "bytes": 43284,
+   "bytes": 47356,
    "family": "bridge_display"
   },
   {
@@ -11855,7 +11855,7 @@
    ],
    "tris": 688,
    "top_y": 0.6,
-   "bytes": 49568,
+   "bytes": 63500,
    "family": "bridge_display"
   },
   {
@@ -11887,7 +11887,7 @@
    ],
    "tris": 296,
    "top_y": null,
-   "bytes": 37352,
+   "bytes": 38536,
    "family": "bridge_display"
   },
   {
@@ -11905,7 +11905,7 @@
    "size": [
     0.9,
     0.862,
-    0.08
+    0.081
    ],
    "bounds_min": [
     -0.45,
@@ -11915,11 +11915,11 @@
    "bounds_max": [
     0.45,
     0.3,
-    0.08
+    0.081
    ],
    "tris": 430,
    "top_y": null,
-   "bytes": 30100,
+   "bytes": 30176,
    "family": "bridge_display"
   },
   {
@@ -12047,7 +12047,7 @@
    ],
    "tris": 1214,
    "top_y": 0.44,
-   "bytes": 74732,
+   "bytes": 76428,
    "family": "bridge_display"
   },
   {
@@ -12143,7 +12143,7 @@
    ],
    "tris": 218,
    "top_y": 0.5,
-   "bytes": 25088,
+   "bytes": 27500,
    "family": "bridge_display"
   },
   {
@@ -12161,7 +12161,7 @@
    "size": [
     0.76,
     0.56,
-    0.751
+    0.754
    ],
    "bounds_min": [
     -0.38,
@@ -12171,11 +12171,11 @@
    "bounds_max": [
     0.38,
     0.15,
-    0.751
+    0.754
    ],
    "tris": 282,
    "top_y": null,
-   "bytes": 21080,
+   "bytes": 21464,
    "family": "bridge_display"
   },
   {
@@ -12239,7 +12239,7 @@
    ],
    "tris": 246,
    "top_y": null,
-   "bytes": 22384,
+   "bytes": 29240,
    "family": "bridge_display"
   },
   {
@@ -12257,7 +12257,7 @@
    "size": [
     2.34,
     0.28,
-    0.115
+    0.118
    ],
    "bounds_min": [
     -1.17,
@@ -12267,11 +12267,11 @@
    "bounds_max": [
     1.17,
     0.14,
-    0.115
+    0.118
    ],
    "tris": 234,
    "top_y": 0.14,
-   "bytes": 18920,
+   "bytes": 19572,
    "family": "bridge_display"
   },
   {
@@ -12335,7 +12335,7 @@
    ],
    "tris": 250,
    "top_y": null,
-   "bytes": 21152,
+   "bytes": 23708,
    "family": "bridge_display"
   },
   {
@@ -12367,7 +12367,7 @@
    ],
    "tris": 338,
    "top_y": null,
-   "bytes": 37700,
+   "bytes": 36720,
    "family": "bridge_display"
   },
   {
@@ -12384,7 +12384,7 @@
    "solid": false,
    "size": [
     2.4,
-    2.89,
+    2.893,
     0.25
    ],
    "bounds_min": [
@@ -12394,12 +12394,12 @@
    ],
    "bounds_max": [
     1.2,
-    2.89,
+    2.893,
     0.14
    ],
    "tris": 1152,
    "top_y": 2.8,
-   "bytes": 50700,
+   "bytes": 50760,
    "family": "door_extra"
   },
   {
@@ -12544,7 +12544,7 @@
    "solid": false,
    "size": [
     2.28,
-    2.74,
+    2.743,
     1.075
    ],
    "bounds_min": [
@@ -12554,12 +12554,12 @@
    ],
    "bounds_max": [
     1.14,
-    2.74,
+    2.743,
     0.95
    ],
    "tris": 552,
    "top_y": 0.06,
-   "bytes": 31052,
+   "bytes": 31324,
    "family": "door_extra"
   },
   {
@@ -12623,7 +12623,7 @@
    ],
    "tris": 524,
    "top_y": 2.74,
-   "bytes": 27332,
+   "bytes": 28932,
    "family": "door_extra"
   },
   {
@@ -12655,7 +12655,7 @@
    ],
    "tris": 1276,
    "top_y": 3.02,
-   "bytes": 57796,
+   "bytes": 59904,
    "family": "door_extra"
   },
   {
@@ -12687,7 +12687,7 @@
    ],
    "tris": 1124,
    "top_y": 2.76,
-   "bytes": 60508,
+   "bytes": 60708,
    "family": "door_extra"
   },
   {
@@ -12736,7 +12736,7 @@
    "solid": false,
    "size": [
     2.4,
-    2.88,
+    2.883,
     0.25
    ],
    "bounds_min": [
@@ -12746,12 +12746,12 @@
    ],
    "bounds_max": [
     1.2,
-    2.88,
+    2.883,
     0.125
    ],
-   "tris": 1436,
+   "tris": 1444,
    "top_y": 2.8,
-   "bytes": 55048,
+   "bytes": 55828,
    "family": "door_extra"
   },
   {
@@ -12864,7 +12864,7 @@
    "solid": false,
    "size": [
     2.8,
-    3.8,
+    3.803,
     0.4
    ],
    "bounds_min": [
@@ -12874,12 +12874,12 @@
    ],
    "bounds_max": [
     1.4,
-    3.8,
+    3.803,
     0.2
    ],
-   "tris": 816,
+   "tris": 860,
    "top_y": 0.4,
-   "bytes": 37600,
+   "bytes": 42152,
    "family": "doorframe_fam"
   },
   {
@@ -12896,22 +12896,22 @@
    "solid": false,
    "size": [
     2.52,
-    2.95,
-    0.245
+    2.953,
+    0.248
    ],
    "bounds_min": [
     -1.26,
     0.0,
-    -0.11
+    -0.113
    ],
    "bounds_max": [
     1.26,
-    2.95,
+    2.953,
     0.135
    ],
    "tris": 420,
    "top_y": 2.96,
-   "bytes": 23624,
+   "bytes": 24092,
    "family": "doorframe_fam"
   },
   {
@@ -12960,7 +12960,7 @@
    "solid": false,
    "size": [
     2.85,
-    2.9,
+    2.903,
     0.24
    ],
    "bounds_min": [
@@ -12970,12 +12970,12 @@
    ],
    "bounds_max": [
     1.55,
-    2.9,
+    2.903,
     0.13
    ],
    "tris": 204,
    "top_y": 2.9,
-   "bytes": 13676,
+   "bytes": 13736,
    "family": "doorframe_fam"
   },
   {
@@ -12992,7 +12992,7 @@
    "solid": false,
    "size": [
     2.76,
-    3.669,
+    3.672,
     0.4
    ],
    "bounds_min": [
@@ -13002,12 +13002,12 @@
    ],
    "bounds_max": [
     1.38,
-    3.669,
+    3.672,
     0.2
    ],
    "tris": 454,
    "top_y": null,
-   "bytes": 21240,
+   "bytes": 21684,
    "family": "doorframe_fam"
   },
   {
@@ -13665,7 +13665,7 @@
    "size": [
     0.7,
     0.12,
-    0.7
+    0.703
    ],
    "bounds_min": [
     -0.35,
@@ -13675,7 +13675,7 @@
    "bounds_max": [
     0.35,
     0.0,
-    0.35
+    0.353
    ],
    "tris": 260,
    "top_y": 0.0,
@@ -13839,7 +13839,7 @@
    ],
    "tris": 164,
    "top_y": 0.2,
-   "bytes": 12668,
+   "bytes": 12656,
    "family": "duct_wall"
   },
   {
@@ -14016,21 +14016,21 @@
    "size": [
     1.18,
     1.0,
-    0.7
+    0.706
    ],
    "bounds_min": [
     -0.4,
     0.0,
-    -0.35
+    -0.353
    ],
    "bounds_max": [
     0.78,
     1.0,
-    0.35
+    0.353
    ],
    "tris": 446,
    "top_y": 0.06,
-   "bytes": 20884,
+   "bytes": 21268,
    "family": "gen"
   },
   {
@@ -14123,7 +14123,7 @@
    ],
    "tris": 546,
    "top_y": 0.8,
-   "bytes": 42924,
+   "bytes": 47428,
    "family": "gen"
   },
   {
@@ -14278,7 +14278,7 @@
    ],
    "tris": 496,
    "top_y": 1.12,
-   "bytes": 26108,
+   "bytes": 26300,
    "family": "gen"
   },
   {
@@ -14386,23 +14386,23 @@
    ],
    "solid": false,
    "size": [
-    1.3,
+    1.306,
     0.9,
     0.21
    ],
    "bounds_min": [
-    -0.65,
+    -0.653,
     -0.45,
     -0.0
    ],
    "bounds_max": [
-    0.65,
+    0.653,
     0.45,
     0.21
    ],
    "tris": 1112,
    "top_y": 0.44,
-   "bytes": 48580,
+   "bytes": 48576,
    "family": "gen"
   },
   {
@@ -14513,7 +14513,7 @@
    "solid": false,
    "size": [
     1.0,
-    0.054,
+    0.057,
     1.0
    ],
    "bounds_min": [
@@ -14523,12 +14523,12 @@
    ],
    "bounds_max": [
     0.5,
-    0.054,
+    0.057,
     0.5
    ],
    "tris": 96,
    "top_y": 0.04,
-   "bytes": 8180,
+   "bytes": 8272,
    "family": "floorpanel_fam"
   },
   {
@@ -14608,23 +14608,23 @@
    ],
    "solid": false,
    "size": [
-    2.0,
+    2.006,
     0.037,
-    2.0
+    2.006
    ],
    "bounds_min": [
-    -1.0,
+    -1.003,
     -0.002,
-    -1.0
+    -1.003
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.035,
-    1.0
+    1.003
    ],
    "tris": 436,
    "top_y": 0.02,
-   "bytes": 24420,
+   "bytes": 24484,
    "family": "floorpanel_fam"
   },
   {
@@ -14673,7 +14673,7 @@
    "solid": false,
    "size": [
     2.0,
-    0.045,
+    0.048,
     2.0
    ],
    "bounds_min": [
@@ -14683,12 +14683,12 @@
    ],
    "bounds_max": [
     1.0,
-    0.045,
+    0.048,
     1.0
    ],
    "tris": 280,
    "top_y": 0.04,
-   "bytes": 12852,
+   "bytes": 13104,
    "family": "floorpanel_fam"
   },
   {
@@ -14752,7 +14752,7 @@
    ],
    "tris": 268,
    "top_y": 0.04,
-   "bytes": 14584,
+   "bytes": 14780,
    "family": "floorpanel_fam"
   },
   {
@@ -14832,23 +14832,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    0.03,
-    1.0
+    1.006,
+    0.033,
+    1.003
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     0.0,
     -0.5
    ],
    "bounds_max": [
-    0.5,
-    0.03,
-    0.5
+    0.503,
+    0.033,
+    0.503
    ],
    "tris": 756,
    "top_y": 0.02,
-   "bytes": 37620,
+   "bytes": 37916,
    "family": "floorpanel_fam"
   },
   {
@@ -14879,7 +14879,7 @@
    ],
    "tris": 728,
    "top_y": null,
-   "bytes": 27152,
+   "bytes": 27180,
    "family": "forcefield_floor"
   },
   {
@@ -14894,17 +14894,17 @@
    ],
    "solid": false,
    "size": [
-    2.8,
+    2.806,
     3.1,
     0.615
    ],
    "bounds_min": [
-    -1.4,
+    -1.403,
     0.0,
     -0.225
    ],
    "bounds_max": [
-    1.4,
+    1.403,
     3.1,
     0.39
    ],
@@ -15143,7 +15143,7 @@
    "solid": true,
    "size": [
     0.36,
-    1.29,
+    1.293,
     0.425
    ],
    "bounds_min": [
@@ -15153,12 +15153,12 @@
    ],
    "bounds_max": [
     0.18,
-    1.29,
+    1.293,
     0.245
    ],
    "tris": 488,
    "top_y": 0.98,
-   "bytes": 25352,
+   "bytes": 25412,
    "family": "fountain_floor"
   },
   {
@@ -15798,7 +15798,7 @@
    ],
    "tris": 606,
    "top_y": 1.5,
-   "bytes": 42832,
+   "bytes": 42860,
    "family": "crew_galley_floor"
   },
   {
@@ -15894,7 +15894,7 @@
    ],
    "tris": 242,
    "top_y": 0.9,
-   "bytes": 21832,
+   "bytes": 22104,
    "family": "crew_galley_floor"
   },
   {
@@ -15926,7 +15926,7 @@
    ],
    "tris": 402,
    "top_y": 1.94,
-   "bytes": 36596,
+   "bytes": 37816,
    "family": "crew_galley_floor"
   },
   {
@@ -16103,7 +16103,7 @@
    "solid": true,
    "size": [
     0.8,
-    1.9,
+    1.903,
     0.84
    ],
    "bounds_min": [
@@ -16113,12 +16113,12 @@
    ],
    "bounds_max": [
     0.4,
-    1.9,
+    1.903,
     0.465
    ],
    "tris": 234,
    "top_y": 1.9,
-   "bytes": 12900,
+   "bytes": 13156,
    "family": "crew_galley_floor"
   },
   {
@@ -16150,7 +16150,7 @@
    ],
    "tris": 716,
    "top_y": 1.42,
-   "bytes": 39168,
+   "bytes": 39552,
    "family": "crew_galley_floor"
   },
   {
@@ -16230,23 +16230,23 @@
    ],
    "solid": true,
    "size": [
-    0.85,
-    1.955,
-    0.925
+    0.856,
+    1.958,
+    0.928
    ],
    "bounds_min": [
-    -0.425,
+    -0.428,
     0.0,
-    -0.425
+    -0.428
    ],
    "bounds_max": [
-    0.425,
-    1.955,
+    0.428,
+    1.958,
     0.5
    ],
    "tris": 452,
    "top_y": 1.7,
-   "bytes": 24264,
+   "bytes": 24516,
    "family": "crew_galley_floor"
   },
   {
@@ -16262,19 +16262,19 @@
    ],
    "solid": true,
    "size": [
-    1.268,
+    1.271,
     1.9,
-    0.54
+    0.546
    ],
    "bounds_min": [
-    -0.62,
+    -0.623,
     0.0,
-    -0.27
+    -0.273
    ],
    "bounds_max": [
     0.648,
     1.9,
-    0.27
+    0.273
    ],
    "tris": 956,
    "top_y": 1.76,
@@ -16358,23 +16358,23 @@
    ],
    "solid": true,
    "size": [
-    0.36,
-    1.445,
-    0.51
+    0.366,
+    1.448,
+    0.513
    ],
    "bounds_min": [
-    -0.18,
+    -0.183,
     0.0,
-    -0.19
+    -0.193
    ],
    "bounds_max": [
-    0.18,
-    1.445,
+    0.183,
+    1.448,
     0.32
    ],
    "tris": 392,
    "top_y": 1.4,
-   "bytes": 21268,
+   "bytes": 21524,
    "family": "crew_galley_floor"
   },
   {
@@ -16436,7 +16436,7 @@
    ],
    "tris": 1044,
    "top_y": 1.84,
-   "bytes": 44372,
+   "bytes": 44368,
    "family": "gen"
   },
   {
@@ -16498,7 +16498,7 @@
    ],
    "tris": 594,
    "top_y": 1.9,
-   "bytes": 47592,
+   "bytes": 49292,
    "family": "gen"
   },
   {
@@ -16544,23 +16544,23 @@
    ],
    "solid": true,
    "size": [
-    2.0,
+    2.006,
     0.97,
     0.8
    ],
    "bounds_min": [
-    -1.0,
+    -1.003,
     0.0,
     -0.4
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.97,
     0.4
    ],
    "tris": 644,
    "top_y": 0.86,
-   "bytes": 32372,
+   "bytes": 32400,
    "family": "gen"
   },
   {
@@ -16764,7 +16764,7 @@
    "size": [
     1.46,
     0.895,
-    0.505
+    0.508
    ],
    "bounds_min": [
     -0.73,
@@ -16774,11 +16774,11 @@
    "bounds_max": [
     0.73,
     0.895,
-    0.25
+    0.253
    ],
    "tris": 1468,
    "top_y": 0.62,
-   "bytes": 57752,
+   "bytes": 58532,
    "family": "crew_gym_floor"
   },
   {
@@ -16827,7 +16827,7 @@
    "solid": true,
    "size": [
     0.9,
-    2.16,
+    2.163,
     0.915
    ],
    "bounds_min": [
@@ -16837,12 +16837,12 @@
    ],
    "bounds_max": [
     0.45,
-    2.16,
+    2.163,
     0.465
    ],
    "tris": 520,
    "top_y": 0.06,
-   "bytes": 23600,
+   "bytes": 23660,
    "family": "crew_gym_floor"
   },
   {
@@ -16874,7 +16874,7 @@
    ],
    "tris": 562,
    "top_y": null,
-   "bytes": 38532,
+   "bytes": 41092,
    "family": "crew_gym_floor"
   },
   {
@@ -16904,9 +16904,9 @@
     1.245,
     1.01
    ],
-   "tris": 644,
+   "tris": 648,
    "top_y": 0.24,
-   "bytes": 48408,
+   "bytes": 49028,
    "family": "crew_gym_floor"
   },
   {
@@ -16955,7 +16955,7 @@
    "solid": true,
    "size": [
     1.41,
-    1.045,
+    1.048,
     0.45
    ],
    "bounds_min": [
@@ -16965,12 +16965,12 @@
    ],
    "bounds_max": [
     0.705,
-    1.045,
+    1.048,
     0.225
    ],
    "tris": 760,
    "top_y": 1.04,
-   "bytes": 33020,
+   "bytes": 33468,
    "family": "crew_gym_floor"
   },
   {
@@ -17032,7 +17032,7 @@
    ],
    "tris": 776,
    "top_y": 0.92,
-   "bytes": 85600,
+   "bytes": 86212,
    "family": "gen"
   },
   {
@@ -17156,7 +17156,7 @@
    ],
    "tris": 798,
    "top_y": 0.58,
-   "bytes": 53412,
+   "bytes": 57916,
    "family": "gen"
   },
   {
@@ -17218,7 +17218,7 @@
    ],
    "tris": 842,
    "top_y": 2.76,
-   "bytes": 54000,
+   "bytes": 53172,
    "family": "gen"
   },
   {
@@ -17264,23 +17264,23 @@
    ],
    "solid": true,
    "size": [
-    1.3,
+    1.308,
     1.996,
     2.415
    ],
    "bounds_min": [
-    -0.65,
+    -0.655,
     0.004,
     -1.265
    ],
    "bounds_max": [
-    0.65,
+    0.653,
     2.0,
     1.15
    ],
    "tris": 1350,
    "top_y": null,
-   "bytes": 56864,
+   "bytes": 57272,
    "family": "gen"
   },
   {
@@ -17373,7 +17373,7 @@
    ],
    "tris": 1038,
    "top_y": 1.2,
-   "bytes": 70748,
+   "bytes": 70056,
    "family": "gen"
   },
   {
@@ -17590,7 +17590,7 @@
    ],
    "tris": 796,
    "top_y": 0.1,
-   "bytes": 39592,
+   "bytes": 40744,
    "family": "gen"
   },
   {
@@ -17606,7 +17606,7 @@
    "solid": true,
    "size": [
     1.853,
-    2.008,
+    2.011,
     1.257
    ],
    "bounds_min": [
@@ -17616,12 +17616,12 @@
    ],
    "bounds_max": [
     1.253,
-    2.008,
+    2.011,
     0.465
    ],
    "tris": 740,
    "top_y": 0.86,
-   "bytes": 39388,
+   "bytes": 39460,
    "family": "gen"
   },
   {
@@ -17652,7 +17652,7 @@
    ],
    "tris": 998,
    "top_y": 0.12,
-   "bytes": 58300,
+   "bytes": 65152,
    "family": "gen"
   },
   {
@@ -17745,7 +17745,7 @@
    ],
    "tris": 712,
    "top_y": null,
-   "bytes": 33244,
+   "bytes": 33628,
    "family": "gen"
   },
   {
@@ -17822,23 +17822,23 @@
    ],
    "solid": true,
    "size": [
-    0.8,
-    0.225,
+    0.806,
+    0.228,
     0.555
    ],
    "bounds_min": [
-    -0.4,
+    -0.403,
     -0.005,
     -0.405
    ],
    "bounds_max": [
-    0.4,
-    0.22,
+    0.403,
+    0.223,
     0.15
    ],
    "tris": 324,
    "top_y": 0.02,
-   "bytes": 15892,
+   "bytes": 16476,
    "family": "gen"
   },
   {
@@ -18262,7 +18262,7 @@
    ],
    "tris": 792,
    "top_y": null,
-   "bytes": 34556,
+   "bytes": 34748,
    "family": "hatch_wall"
   },
   {
@@ -18311,7 +18311,7 @@
    "solid": false,
    "size": [
     1.24,
-    0.112,
+    0.115,
     1.24
    ],
    "bounds_min": [
@@ -18321,12 +18321,12 @@
    ],
    "bounds_max": [
     0.62,
-    0.112,
+    0.115,
     0.62
    ],
    "tris": 800,
    "top_y": 0.08,
-   "bytes": 32036,
+   "bytes": 32096,
    "family": "hatch_floor"
   },
   {
@@ -18358,7 +18358,7 @@
    ],
    "tris": 336,
    "top_y": 0.06,
-   "bytes": 18048,
+   "bytes": 18240,
    "family": "hatch_floor"
   },
   {
@@ -18454,7 +18454,7 @@
    ],
    "tris": 568,
    "top_y": null,
-   "bytes": 28892,
+   "bytes": 29384,
    "family": "hatch_wall"
   },
   {
@@ -18934,7 +18934,7 @@
    ],
    "tris": 306,
    "top_y": null,
-   "bytes": 27288,
+   "bytes": 27364,
    "family": "bridge_instrument_wall"
   },
   {
@@ -19062,7 +19062,7 @@
    ],
    "tris": 766,
    "top_y": null,
-   "bytes": 49208,
+   "bytes": 49284,
    "family": "bridge_instrument_wall"
   },
   {
@@ -19173,22 +19173,22 @@
    "solid": false,
    "size": [
     0.5,
-    2.0,
-    0.15
+    2.003,
+    0.153
    ],
    "bounds_min": [
     -0.25,
-    -1.0,
+    -1.003,
     -0.0
    ],
    "bounds_max": [
     0.25,
     1.0,
-    0.15
+    0.153
    ],
    "tris": 624,
    "top_y": null,
-   "bytes": 32576,
+   "bytes": 32848,
    "family": "gen"
   },
   {
@@ -19250,7 +19250,7 @@
    ],
    "tris": 208,
    "top_y": 0.2,
-   "bytes": 15676,
+   "bytes": 15700,
    "family": "gen"
   },
   {
@@ -19298,7 +19298,7 @@
    "size": [
     0.82,
     1.81,
-    0.51
+    0.513
    ],
    "bounds_min": [
     -0.41,
@@ -19308,7 +19308,7 @@
    "bounds_max": [
     0.41,
     1.81,
-    0.275
+    0.278
    ],
    "tris": 820,
    "top_y": 1.8,
@@ -19327,23 +19327,23 @@
    ],
    "solid": true,
    "size": [
-    0.62,
+    0.626,
     1.8,
     0.761
    ],
    "bounds_min": [
-    -0.31,
+    -0.313,
     0.0,
     -0.375
    ],
    "bounds_max": [
-    0.31,
+    0.313,
     1.8,
     0.386
    ],
    "tris": 1020,
    "top_y": 1.8,
-   "bytes": 52600,
+   "bytes": 52604,
    "family": "gen"
   },
   {
@@ -19374,7 +19374,7 @@
    ],
    "tris": 474,
    "top_y": null,
-   "bytes": 39616,
+   "bytes": 39888,
    "family": "gen"
   },
   {
@@ -19436,7 +19436,7 @@
    ],
    "tris": 1608,
    "top_y": 0.7,
-   "bytes": 74824,
+   "bytes": 74820,
    "family": "gen"
   },
   {
@@ -19560,7 +19560,7 @@
    ],
    "tris": 936,
    "top_y": 1.9,
-   "bytes": 54220,
+   "bytes": 54412,
    "family": "gen"
   },
   {
@@ -19684,7 +19684,7 @@
    ],
    "tris": 1256,
    "top_y": 1.72,
-   "bytes": 53952,
+   "bytes": 57792,
    "family": "gen"
   },
   {
@@ -19777,7 +19777,7 @@
    ],
    "tris": 574,
    "top_y": 2.0,
-   "bytes": 44812,
+   "bytes": 44124,
    "family": "gen"
   },
   {
@@ -19840,7 +19840,7 @@
    ],
    "tris": 1050,
    "top_y": 1.54,
-   "bytes": 62980,
+   "bytes": 67484,
    "family": "sci_labbench_floor"
   },
   {
@@ -19870,9 +19870,9 @@
     3.0,
     0.466
    ],
-   "tris": 942,
+   "tris": 950,
    "top_y": 2.4,
-   "bytes": 63568,
+   "bytes": 64216,
    "family": "sci_labbench_floor"
   },
   {
@@ -20002,7 +20002,7 @@
    ],
    "tris": 602,
    "top_y": 2.3,
-   "bytes": 46340,
+   "bytes": 46656,
    "family": "sci_labbench_floor"
   },
   {
@@ -20034,7 +20034,7 @@
    ],
    "tris": 940,
    "top_y": 0.88,
-   "bytes": 71564,
+   "bytes": 78496,
    "family": "sci_labbench_floor"
   },
   {
@@ -20066,7 +20066,7 @@
    ],
    "tris": 1196,
    "top_y": 1.56,
-   "bytes": 67032,
+   "bytes": 67420,
    "family": "sci_labbench_floor"
   },
   {
@@ -20353,7 +20353,7 @@
    ],
    "tris": 1600,
    "top_y": 1.02,
-   "bytes": 72828,
+   "bytes": 73212,
    "family": "gen"
   },
   {
@@ -20415,7 +20415,7 @@
    ],
    "tris": 702,
    "top_y": 3.3,
-   "bytes": 55496,
+   "bytes": 69428,
    "family": "gen"
   },
   {
@@ -20446,7 +20446,7 @@
    ],
    "tris": 1088,
    "top_y": 0.58,
-   "bytes": 47476,
+   "bytes": 47472,
    "family": "gen"
   },
   {
@@ -20462,22 +20462,22 @@
    "solid": true,
    "size": [
     1.49,
-    0.9,
-    3.0
+    0.903,
+    3.006
    ],
    "bounds_min": [
     -0.69,
     0.0,
-    -1.5
+    -1.503
    ],
    "bounds_max": [
     0.8,
-    0.9,
-    1.5
+    0.903,
+    1.503
    ],
    "tris": 872,
    "top_y": 0.72,
-   "bytes": 47976,
+   "bytes": 48836,
    "family": "gen"
   },
   {
@@ -20492,17 +20492,17 @@
    ],
    "solid": true,
    "size": [
-    3.6,
+    3.606,
     3.845,
     1.5
    ],
    "bounds_min": [
-    -1.8,
+    -1.803,
     0.0,
     -0.75
    ],
    "bounds_max": [
-    1.8,
+    1.803,
     3.845,
     0.75
    ],
@@ -20694,7 +20694,7 @@
    ],
    "tris": 1132,
    "top_y": 1.98,
-   "bytes": 51916,
+   "bytes": 52688,
    "family": "gen"
   },
   {
@@ -20743,7 +20743,7 @@
    "solid": true,
    "size": [
     1.04,
-    1.85,
+    1.853,
     0.557
    ],
    "bounds_min": [
@@ -20753,12 +20753,12 @@
    ],
    "bounds_max": [
     0.52,
-    1.85,
+    1.853,
     0.287
    ],
    "tris": 324,
    "top_y": 1.86,
-   "bytes": 19316,
+   "bytes": 19380,
    "family": "crew_locker_floor"
   },
   {
@@ -20788,9 +20788,9 @@
     0.51,
     0.275
    ],
-   "tris": 302,
+   "tris": 304,
    "top_y": 0.5,
-   "bytes": 17240,
+   "bytes": 18116,
    "family": "crew_locker_floor"
   },
   {
@@ -20838,23 +20838,23 @@
    ],
    "solid": false,
    "size": [
-    1.2,
+    1.206,
     1.385,
-    0.38
+    0.383
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     -0.7,
     -0.0
    ],
    "bounds_max": [
-    0.6,
+    0.603,
     0.685,
-    0.38
+    0.383
    ],
    "tris": 604,
    "top_y": 0.68,
-   "bytes": 29724,
+   "bytes": 30076,
    "family": "crew_locker_wall"
   },
   {
@@ -20903,7 +20903,7 @@
    "solid": true,
    "size": [
     1.18,
-    0.56,
+    0.563,
     0.615
    ],
    "bounds_min": [
@@ -20913,12 +20913,12 @@
    ],
    "bounds_max": [
     0.59,
-    0.56,
+    0.563,
     0.325
    ],
    "tris": 518,
    "top_y": 0.56,
-   "bytes": 21048,
+   "bytes": 21876,
    "family": "crew_locker_floor"
   },
   {
@@ -20967,7 +20967,7 @@
    "solid": true,
    "size": [
     0.52,
-    1.885,
+    1.888,
     0.547
    ],
    "bounds_min": [
@@ -20977,12 +20977,12 @@
    ],
    "bounds_max": [
     0.26,
-    1.885,
+    1.888,
     0.287
    ],
    "tris": 320,
    "top_y": 1.88,
-   "bytes": 19856,
+   "bytes": 19920,
    "family": "crew_locker_floor"
   },
   {
@@ -22070,7 +22070,7 @@
    ],
    "tris": 1114,
    "top_y": 0.68,
-   "bytes": 69228,
+   "bytes": 68504,
    "family": "medbed"
   },
   {
@@ -22087,7 +22087,7 @@
    "solid": true,
    "size": [
     0.78,
-    0.965,
+    0.968,
     2.02
    ],
    "bounds_min": [
@@ -22097,12 +22097,12 @@
    ],
    "bounds_max": [
     0.39,
-    0.965,
+    0.968,
     1.1
    ],
    "tris": 360,
    "top_y": 0.62,
-   "bytes": 21328,
+   "bytes": 21392,
    "family": "medbed"
   },
   {
@@ -22152,7 +22152,7 @@
    "size": [
     1.2,
     2.346,
-    2.117
+    2.12
    ],
    "bounds_min": [
     -0.6,
@@ -22162,7 +22162,7 @@
    "bounds_max": [
     0.6,
     2.35,
-    1.067
+    1.07
    ],
    "tris": 824,
    "top_y": 2.12,
@@ -22215,7 +22215,7 @@
    "solid": true,
    "size": [
     0.9,
-    2.63,
+    2.633,
     2.5
    ],
    "bounds_min": [
@@ -22225,12 +22225,12 @@
    ],
    "bounds_max": [
     0.45,
-    2.63,
+    2.633,
     1.0
    ],
    "tris": 578,
-   "top_y": 1.04,
-   "bytes": 28488,
+   "top_y": 1.06,
+   "bytes": 28548,
    "family": "medbed"
   },
   {
@@ -22247,7 +22247,7 @@
    "solid": true,
    "size": [
     1.02,
-    1.8,
+    1.803,
     0.67
    ],
    "bounds_min": [
@@ -22257,12 +22257,12 @@
    ],
    "bounds_max": [
     0.51,
-    1.8,
+    1.803,
     0.36
    ],
    "tris": 394,
    "top_y": 1.8,
-   "bytes": 37840,
+   "bytes": 41204,
    "family": "medcabinet"
   },
   {
@@ -22454,7 +22454,7 @@
    ],
    "tris": 966,
    "top_y": 1.3,
-   "bytes": 65808,
+   "bytes": 66892,
    "family": "medcabinet"
   },
   {
@@ -22517,8 +22517,8 @@
     0.6
    ],
    "tris": 1130,
-   "top_y": 2.54,
-   "bytes": 59896,
+   "top_y": 2.56,
+   "bytes": 60728,
    "family": "medscanner"
   },
   {
@@ -22550,7 +22550,7 @@
    ],
    "tris": 558,
    "top_y": 1.74,
-   "bytes": 47212,
+   "bytes": 47288,
    "family": "medscanner"
   },
   {
@@ -22582,7 +22582,7 @@
    ],
    "tris": 238,
    "top_y": 0.06,
-   "bytes": 22112,
+   "bytes": 22944,
    "family": "medscanner"
   },
   {
@@ -22600,12 +22600,12 @@
    "size": [
     2.2,
     2.25,
-    2.65
+    2.653
    ],
    "bounds_min": [
     -1.1,
     0.0,
-    -0.8
+    -0.803
    ],
    "bounds_max": [
     1.1,
@@ -22710,7 +22710,7 @@
    ],
    "tris": 1450,
    "top_y": 0.82,
-   "bytes": 69960,
+   "bytes": 69832,
    "family": "medscanner"
   },
   {
@@ -22742,7 +22742,7 @@
    ],
    "tris": 438,
    "top_y": 0.9,
-   "bytes": 33288,
+   "bytes": 33560,
    "family": "medscanner"
   },
   {
@@ -22824,7 +22824,7 @@
    "size": [
     0.845,
     1.292,
-    0.577
+    0.58
    ],
    "bounds_min": [
     -0.4,
@@ -22834,11 +22834,11 @@
    "bounds_max": [
     0.445,
     1.295,
-    0.297
+    0.3
    ],
    "tris": 732,
    "top_y": 1.26,
-   "bytes": 34420,
+   "bytes": 34424,
    "family": "medsupply"
   },
   {
@@ -23142,17 +23142,17 @@
    ],
    "solid": false,
    "size": [
-    0.3,
+    0.306,
     0.204,
-    0.14
+    0.143
    ],
    "bounds_min": [
-    -0.15,
+    -0.153,
     0.001,
-    -0.07
+    -0.073
    ],
    "bounds_max": [
-    0.15,
+    0.153,
     0.205,
     0.07
    ],
@@ -23175,7 +23175,7 @@
    "solid": true,
    "size": [
     1.037,
-    1.78,
+    1.783,
     0.905
    ],
    "bounds_min": [
@@ -23185,12 +23185,12 @@
    ],
    "bounds_max": [
     0.537,
-    1.78,
+    1.783,
     0.455
    ],
    "tris": 842,
    "top_y": 1.48,
-   "bytes": 54652,
+   "bytes": 58076,
    "family": "sci_microscope_floor"
   },
   {
@@ -23222,7 +23222,7 @@
    ],
    "tris": 1348,
    "top_y": 0.8,
-   "bytes": 82284,
+   "bytes": 90600,
    "family": "sci_microscope_floor"
   },
   {
@@ -23414,7 +23414,7 @@
    ],
    "tris": 250,
    "top_y": null,
-   "bytes": 24216,
+   "bytes": 24832,
    "family": "noticeboard"
   },
   {
@@ -23786,7 +23786,7 @@
    ],
    "tris": 1620,
    "top_y": 1.0,
-   "bytes": 63324,
+   "bytes": 63304,
    "family": "gen"
   },
   {
@@ -23803,12 +23803,12 @@
    "size": [
     1.25,
     0.915,
-    1.035
+    1.038
    ],
    "bounds_min": [
     -0.625,
     0.0,
-    -0.5
+    -0.503
    ],
    "bounds_max": [
     0.625,
@@ -23817,7 +23817,7 @@
    ],
    "tris": 1328,
    "top_y": 0.7,
-   "bytes": 67904,
+   "bytes": 68700,
    "family": "gen"
   },
   {
@@ -23864,7 +23864,7 @@
    "solid": true,
    "size": [
     2.76,
-    5.109,
+    5.112,
     1.18
    ],
    "bounds_min": [
@@ -23874,12 +23874,12 @@
    ],
    "bounds_max": [
     1.38,
-    5.109,
+    5.112,
     0.59
    ],
    "tris": 852,
    "top_y": 4.66,
-   "bytes": 43772,
+   "bytes": 44628,
    "family": "gen"
   },
   {
@@ -23895,7 +23895,7 @@
    "solid": true,
    "size": [
     2.76,
-    3.2,
+    3.203,
     1.18
    ],
    "bounds_min": [
@@ -23905,12 +23905,12 @@
    ],
    "bounds_max": [
     1.38,
-    3.2,
+    3.203,
     0.59
    ],
    "tris": 736,
    "top_y": 3.16,
-   "bytes": 38528,
+   "bytes": 39832,
    "family": "gen"
   },
   {
@@ -23925,23 +23925,23 @@
    ],
    "solid": true,
    "size": [
-    0.8,
+    0.806,
     1.845,
-    0.7
+    0.703
    ],
    "bounds_min": [
-    -0.4,
+    -0.403,
     0.0,
     -0.35
    ],
    "bounds_max": [
-    0.4,
+    0.403,
     1.845,
-    0.35
+    0.353
    ],
    "tris": 608,
    "top_y": 0.18,
-   "bytes": 30576,
+   "bytes": 30580,
    "family": "gen"
   },
   {
@@ -23956,23 +23956,23 @@
    ],
    "solid": true,
    "size": [
-    0.8,
+    0.806,
     1.845,
-    0.7
+    0.703
    ],
    "bounds_min": [
-    -0.4,
+    -0.403,
     0.0,
     -0.35
    ],
    "bounds_max": [
-    0.4,
+    0.403,
     1.845,
-    0.35
+    0.353
    ],
    "tris": 700,
    "top_y": 1.44,
-   "bytes": 38888,
+   "bytes": 38892,
    "family": "gen"
   },
   {
@@ -24178,7 +24178,7 @@
    "size": [
     0.12,
     1.3,
-    0.06
+    0.065
    ],
    "bounds_min": [
     -0.06,
@@ -24188,11 +24188,11 @@
    "bounds_max": [
     0.06,
     0.65,
-    0.06
+    0.065
    ],
    "tris": 176,
    "top_y": null,
-   "bytes": 8480,
+   "bytes": 8736,
    "family": "panellight"
   },
   {
@@ -24370,7 +24370,7 @@
    "size": [
     0.65,
     0.19,
-    0.14
+    0.143
    ],
    "bounds_min": [
     -0.325,
@@ -24380,11 +24380,11 @@
    "bounds_max": [
     0.325,
     0.185,
-    0.14
+    0.143
    ],
    "tris": 188,
    "top_y": 0.18,
-   "bytes": 9468,
+   "bytes": 10032,
    "family": "panellight"
   },
   {
@@ -24480,7 +24480,7 @@
    ],
    "tris": 1726,
    "top_y": 0.2,
-   "bytes": 93544,
+   "bytes": 97348,
    "family": "sci_particle_floor"
   },
   {
@@ -24498,7 +24498,7 @@
    "size": [
     1.196,
     2.0,
-    1.22
+    1.222
    ],
    "bounds_min": [
     -0.598,
@@ -24508,11 +24508,11 @@
    "bounds_max": [
     0.598,
     2.0,
-    0.622
+    0.624
    ],
    "tris": 1806,
    "top_y": 0.5,
-   "bytes": 87476,
+   "bytes": 89176,
    "family": "sci_particle_floor"
   },
   {
@@ -24625,7 +24625,7 @@
    "solid": true,
    "size": [
     3.48,
-    3.68,
+    3.683,
     0.6
    ],
    "bounds_min": [
@@ -24635,12 +24635,12 @@
    ],
    "bounds_max": [
     1.74,
-    3.68,
+    3.683,
     0.3
    ],
    "tris": 968,
    "top_y": 0.12,
-   "bytes": 36156,
+   "bytes": 36236,
    "family": "pillar_col"
   },
   {
@@ -24689,7 +24689,7 @@
    "solid": true,
    "size": [
     2.2,
-    3.4,
+    3.403,
     0.5
    ],
    "bounds_min": [
@@ -24699,12 +24699,12 @@
    ],
    "bounds_max": [
     1.1,
-    3.4,
+    3.403,
     0.25
    ],
    "tris": 388,
    "top_y": 3.4,
-   "bytes": 19904,
+   "bytes": 20736,
    "family": "pillar_col"
   },
   {
@@ -24721,7 +24721,7 @@
    "solid": true,
    "size": [
     0.6,
-    3.4,
+    3.403,
     1.0
    ],
    "bounds_min": [
@@ -24731,12 +24731,12 @@
    ],
    "bounds_max": [
     0.3,
-    3.4,
+    3.403,
     0.45
    ],
    "tris": 232,
    "top_y": 3.4,
-   "bytes": 10076,
+   "bytes": 10136,
    "family": "pillar_col"
   },
   {
@@ -24800,7 +24800,7 @@
    ],
    "tris": 472,
    "top_y": 3.4,
-   "bytes": 20752,
+   "bytes": 21524,
    "family": "pillar_col"
   },
   {
@@ -25010,21 +25010,21 @@
    "size": [
     4.024,
     0.515,
-    0.46
+    0.466
    ],
    "bounds_min": [
     -2.012,
     -0.525,
-    -0.23
+    -0.233
    ],
    "bounds_max": [
     2.012,
     -0.01,
-    0.23
+    0.233
    ],
    "tris": 664,
    "top_y": 0.0,
-   "bytes": 30076,
+   "bytes": 31992,
    "family": "pillar_beam"
   },
   {
@@ -25105,12 +25105,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.314,
+    0.317,
     0.222
    ],
    "bounds_min": [
     -1.0,
-    -0.314,
+    -0.317,
     -0.111
    ],
    "bounds_max": [
@@ -25120,7 +25120,7 @@
    ],
    "tris": 660,
    "top_y": null,
-   "bytes": 26220,
+   "bytes": 26280,
    "family": "pipe_ceiling"
   },
   {
@@ -25184,7 +25184,7 @@
    ],
    "tris": 656,
    "top_y": null,
-   "bytes": 26204,
+   "bytes": 26396,
    "family": "pipe_ceiling"
   },
   {
@@ -25201,12 +25201,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.23,
+    0.233,
     1.75
    ],
    "bounds_min": [
     -1.0,
-    -0.23,
+    -0.233,
     -0.875
    ],
    "bounds_max": [
@@ -25216,7 +25216,7 @@
    ],
    "tris": 744,
    "top_y": null,
-   "bytes": 30876,
+   "bytes": 30936,
    "family": "pipe_ceiling"
   },
   {
@@ -25233,12 +25233,12 @@
    "solid": false,
    "size": [
     1.248,
-    0.252,
+    0.255,
     1.045
    ],
    "bounds_min": [
     -1.0,
-    -0.252,
+    -0.255,
     -0.105
    ],
    "bounds_max": [
@@ -25248,7 +25248,7 @@
    ],
    "tris": 640,
    "top_y": null,
-   "bytes": 25332,
+   "bytes": 25396,
    "family": "pipe_ceiling"
   },
   {
@@ -25937,7 +25937,7 @@
    "solid": false,
    "size": [
     0.387,
-    0.149,
+    0.153,
     0.3
    ],
    "bounds_min": [
@@ -25947,12 +25947,12 @@
    ],
    "bounds_max": [
     0.18,
-    0.149,
+    0.153,
     0.15
    ],
    "tris": 786,
    "top_y": 0.02,
-   "bytes": 42608,
+   "bytes": 42708,
    "family": "crew_plant_table"
   },
   {
@@ -26068,23 +26068,23 @@
    ],
    "solid": false,
    "size": [
-    1.8,
+    1.806,
     0.6,
     0.43
    ],
    "bounds_min": [
-    -0.9,
+    -0.903,
     -0.6,
     -0.2
    ],
    "bounds_max": [
-    0.9,
+    0.903,
     0.0,
     0.23
    ],
    "tris": 240,
    "top_y": -0.52,
-   "bytes": 16248,
+   "bytes": 16244,
    "family": "growlight"
   },
   {
@@ -26101,23 +26101,23 @@
    ],
    "solid": true,
    "size": [
-    1.26,
-    1.806,
-    0.4
+    1.266,
+    1.809,
+    0.406
    ],
    "bounds_min": [
-    -0.63,
+    -0.633,
     0.0,
-    -0.2
+    -0.203
    ],
    "bounds_max": [
-    0.63,
-    1.806,
-    0.2
+    0.633,
+    1.809,
+    0.203
    ],
    "tris": 1140,
    "top_y": 1.64,
-   "bytes": 72156,
+   "bytes": 72212,
    "family": "planter"
   },
   {
@@ -26282,7 +26282,7 @@
    ],
    "tris": 1724,
    "top_y": 0.38,
-   "bytes": 76164,
+   "bytes": 76160,
    "family": "planter"
   },
   {
@@ -26381,7 +26381,7 @@
    ],
    "tris": 790,
    "top_y": 2.0,
-   "bytes": 58252,
+   "bytes": 58328,
    "family": "comm_rack_floor"
   },
   {
@@ -26447,7 +26447,7 @@
    ],
    "tris": 1086,
    "top_y": 2.1,
-   "bytes": 70832,
+   "bytes": 84768,
    "family": "comm_rack_floor"
   },
   {
@@ -26777,7 +26777,7 @@
    ],
    "tris": 1318,
    "top_y": 2.1,
-   "bytes": 100560,
+   "bytes": 100932,
    "family": "comm_rack_floor"
   },
   {
@@ -26827,7 +26827,7 @@
    "solid": true,
    "size": [
     2.1,
-    1.055,
+    1.058,
     0.16
    ],
    "bounds_min": [
@@ -26837,12 +26837,12 @@
    ],
    "bounds_max": [
     1.05,
-    1.055,
+    1.058,
     0.08
    ],
    "tris": 516,
    "top_y": 1.06,
-   "bytes": 23936,
+   "bytes": 24384,
    "family": "railing_fam"
   },
   {
@@ -26859,7 +26859,7 @@
    "solid": true,
    "size": [
     2.12,
-    1.06,
+    1.063,
     0.16
    ],
    "bounds_min": [
@@ -26869,12 +26869,12 @@
    ],
    "bounds_max": [
     1.06,
-    1.06,
+    1.063,
     0.08
    ],
    "tris": 288,
    "top_y": 1.06,
-   "bytes": 13208,
+   "bytes": 13656,
    "family": "railing_fam"
   },
   {
@@ -26923,7 +26923,7 @@
    "solid": true,
    "size": [
     2.04,
-    1.09,
+    1.093,
     0.14
    ],
    "bounds_min": [
@@ -26933,12 +26933,12 @@
    ],
    "bounds_max": [
     1.02,
-    1.09,
+    1.093,
     0.07
    ],
    "tris": 436,
    "top_y": null,
-   "bytes": 17036,
+   "bytes": 17096,
    "family": "railing_fam"
   },
   {
@@ -27001,7 +27001,7 @@
    ],
    "tris": 852,
    "top_y": 0.8,
-   "bytes": 41808,
+   "bytes": 42576,
    "family": "railing_fam"
   },
   {
@@ -27495,7 +27495,7 @@
    "solid": true,
    "size": [
     2.524,
-    3.04,
+    3.043,
     2.524
    ],
    "bounds_min": [
@@ -27505,12 +27505,12 @@
    ],
    "bounds_max": [
     1.262,
-    3.04,
+    3.043,
     1.262
    ],
    "tris": 1660,
-   "top_y": 2.24,
-   "bytes": 96764,
+   "top_y": 2.42,
+   "bytes": 96124,
    "family": "gen"
   },
   {
@@ -27526,7 +27526,7 @@
    "solid": true,
    "size": [
     3.522,
-    2.55,
+    2.553,
     0.9
    ],
    "bounds_min": [
@@ -27536,12 +27536,12 @@
    ],
    "bounds_max": [
     1.761,
-    2.55,
+    2.553,
     0.45
    ],
    "tris": 2016,
    "top_y": null,
-   "bytes": 72572,
+   "bytes": 72632,
    "family": "gen"
   },
   {
@@ -27557,7 +27557,7 @@
    "solid": true,
    "size": [
     2.692,
-    2.8,
+    2.803,
     2.692
    ],
    "bounds_min": [
@@ -27567,12 +27567,12 @@
    ],
    "bounds_max": [
     1.346,
-    2.8,
+    2.803,
     1.346
    ],
    "tris": 2684,
    "top_y": 1.72,
-   "bytes": 100384,
+   "bytes": 101216,
    "family": "gen"
   },
   {
@@ -27603,7 +27603,7 @@
    ],
    "tris": 606,
    "top_y": 2.44,
-   "bytes": 47028,
+   "bytes": 46340,
    "family": "gen"
   },
   {
@@ -27654,7 +27654,7 @@
    "solid": true,
    "size": [
     1.06,
-    1.1,
+    1.103,
     1.066
    ],
    "bounds_min": [
@@ -27664,12 +27664,12 @@
    ],
    "bounds_max": [
     0.56,
-    1.1,
+    1.103,
     0.566
    ],
    "tris": 836,
    "top_y": 0.06,
-   "bytes": 34516,
+   "bytes": 35344,
    "family": "comm_router_floor"
   },
   {
@@ -27702,7 +27702,7 @@
    ],
    "tris": 624,
    "top_y": null,
-   "bytes": 33160,
+   "bytes": 33352,
    "family": "comm_router_wall"
   },
   {
@@ -27944,23 +27944,23 @@
    ],
    "solid": false,
    "size": [
-    0.4,
-    0.46,
+    0.406,
+    0.463,
     0.224
    ],
    "bounds_min": [
-    -0.2,
+    -0.203,
     -0.23,
     -0.002
    ],
    "bounds_max": [
-    0.2,
-    0.23,
+    0.203,
+    0.233,
     0.222
    ],
    "tris": 194,
    "top_y": 0.24,
-   "bytes": 20512,
+   "bytes": 21092,
    "family": "safety_wall"
   },
   {
@@ -27976,7 +27976,7 @@
    "solid": true,
    "size": [
     0.934,
-    2.33,
+    2.333,
     0.8
    ],
    "bounds_min": [
@@ -27986,12 +27986,12 @@
    ],
    "bounds_max": [
     0.4,
-    2.33,
+    2.333,
     0.4
    ],
    "tris": 660,
    "top_y": 1.02,
-   "bytes": 29996,
+   "bytes": 30060,
    "family": "safety_floor"
   },
   {
@@ -28022,7 +28022,7 @@
    ],
    "tris": 102,
    "top_y": null,
-   "bytes": 17836,
+   "bytes": 17024,
    "family": "safety_wall"
   },
   {
@@ -28225,7 +28225,7 @@
    "size": [
     1.3,
     1.0,
-    0.095
+    0.098
    ],
    "bounds_min": [
     -0.65,
@@ -28235,11 +28235,11 @@
    "bounds_max": [
     0.65,
     0.5,
-    0.095
+    0.098
    ],
    "tris": 272,
    "top_y": 0.5,
-   "bytes": 17584,
+   "bytes": 17648,
    "family": "safety_wall"
   },
   {
@@ -28348,12 +28348,12 @@
    "solid": false,
    "size": [
     0.3,
-    0.5,
+    0.503,
     0.3
    ],
    "bounds_min": [
     -0.15,
-    -0.5,
+    -0.503,
     -0.15
    ],
    "bounds_max": [
@@ -28362,8 +28362,8 @@
     0.15
    ],
    "tris": 332,
-   "top_y": -0.32,
-   "bytes": 18596,
+   "top_y": -0.34,
+   "bytes": 18656,
    "family": "safety_ceiling"
   },
   {
@@ -28427,7 +28427,7 @@
    ],
    "tris": 444,
    "top_y": null,
-   "bytes": 31260,
+   "bytes": 31336,
    "family": "sci_sciinstrument_table"
   },
   {
@@ -28491,7 +28491,7 @@
    ],
    "tris": 384,
    "top_y": 0.22,
-   "bytes": 36684,
+   "bytes": 39096,
    "family": "sci_sciinstrument_table"
   },
   {
@@ -28507,12 +28507,12 @@
    ],
    "solid": false,
    "size": [
-    0.46,
+    0.463,
     0.179,
     0.329
    ],
    "bounds_min": [
-    -0.23,
+    -0.233,
     0.0,
     -0.189
    ],
@@ -28523,7 +28523,7 @@
    ],
    "tris": 350,
    "top_y": 0.06,
-   "bytes": 31416,
+   "bytes": 33780,
    "family": "sci_sciinstrument_table"
   },
   {
@@ -28555,7 +28555,7 @@
    ],
    "tris": 898,
    "top_y": 0.06,
-   "bytes": 50676,
+   "bytes": 54052,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -28587,7 +28587,7 @@
    ],
    "tris": 986,
    "top_y": 0.1,
-   "bytes": 58720,
+   "bytes": 63156,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -28604,8 +28604,8 @@
    "solid": true,
    "size": [
     0.807,
-    0.97,
-    0.62
+    0.973,
+    0.623
    ],
    "bounds_min": [
     -0.4,
@@ -28614,12 +28614,12 @@
    ],
    "bounds_max": [
     0.407,
-    0.97,
-    0.32
+    0.973,
+    0.323
    ],
    "tris": 518,
    "top_y": 0.62,
-   "bytes": 48552,
+   "bytes": 56496,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -28668,7 +28668,7 @@
    "solid": true,
    "size": [
     1.061,
-    2.25,
+    2.253,
     0.54
    ],
    "bounds_min": [
@@ -28678,12 +28678,12 @@
    ],
    "bounds_max": [
     0.55,
-    2.25,
+    2.253,
     0.251
    ],
    "tris": 794,
    "top_y": null,
-   "bytes": 51928,
+   "bytes": 58856,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -29003,7 +29003,7 @@
    ],
    "tris": 1698,
    "top_y": 2.0,
-   "bytes": 81380,
+   "bytes": 81456,
    "family": "scrubber"
   },
   {
@@ -29020,7 +29020,7 @@
    "solid": true,
    "size": [
     2.4,
-    1.65,
+    1.653,
     0.932
    ],
    "bounds_min": [
@@ -29030,12 +29030,12 @@
    ],
    "bounds_max": [
     1.2,
-    1.65,
+    1.653,
     0.487
    ],
    "tris": 1416,
    "top_y": null,
-   "bytes": 51440,
+   "bytes": 51888,
    "family": "scrubber"
   },
   {
@@ -29067,7 +29067,7 @@
    ],
    "tris": 942,
    "top_y": 2.2,
-   "bytes": 60324,
+   "bytes": 60420,
    "family": "scrubber"
   },
   {
@@ -29099,7 +29099,7 @@
    ],
    "tris": 1450,
    "top_y": 1.88,
-   "bytes": 93052,
+   "bytes": 97456,
    "family": "scrubber"
   },
   {
@@ -29116,7 +29116,7 @@
    "solid": true,
    "size": [
     1.5,
-    1.075,
+    1.078,
     0.76
    ],
    "bounds_min": [
@@ -29126,12 +29126,12 @@
    ],
    "bounds_max": [
     0.75,
-    1.075,
+    1.078,
     0.39
    ],
    "tris": 826,
    "top_y": 0.9,
-   "bytes": 58648,
+   "bytes": 62024,
    "family": "scrubber"
   },
   {
@@ -29148,7 +29148,7 @@
    "solid": true,
    "size": [
     1.085,
-    1.5,
+    1.503,
     0.81
    ],
    "bounds_min": [
@@ -29158,12 +29158,12 @@
    ],
    "bounds_max": [
     0.625,
-    1.5,
+    1.503,
     0.5
    ],
    "tris": 402,
    "top_y": 1.5,
-   "bytes": 36440,
+   "bytes": 39836,
    "family": "scrubber"
   },
   {
@@ -29195,7 +29195,7 @@
    ],
    "tris": 1582,
    "top_y": 1.86,
-   "bytes": 84564,
+   "bytes": 86260,
    "family": "scrubber"
   },
   {
@@ -29291,7 +29291,7 @@
    ],
    "tris": 1444,
    "top_y": 0.5,
-   "bytes": 77056,
+   "bytes": 79468,
    "family": "bridge_seat"
   },
   {
@@ -29355,7 +29355,7 @@
    ],
    "tris": 980,
    "top_y": 0.5,
-   "bytes": 37752,
+   "bytes": 37780,
    "family": "bridge_seat"
   },
   {
@@ -29387,7 +29387,7 @@
    ],
    "tris": 672,
    "top_y": 0.46,
-   "bytes": 26260,
+   "bytes": 26644,
    "family": "bridge_seat"
   },
   {
@@ -29562,7 +29562,7 @@
    "solid": true,
    "size": [
     2.04,
-    2.03,
+    2.033,
     0.74
    ],
    "bounds_min": [
@@ -29572,12 +29572,12 @@
    ],
    "bounds_max": [
     1.02,
-    2.03,
+    2.033,
     0.37
    ],
    "tris": 1844,
-   "top_y": 2.02,
-   "bytes": 82108,
+   "top_y": 2.04,
+   "bytes": 84668,
    "family": "gen"
   },
   {
@@ -29624,7 +29624,7 @@
    "solid": true,
    "size": [
     2.24,
-    2.3,
+    2.303,
     0.69
    ],
    "bounds_min": [
@@ -29634,12 +29634,12 @@
    ],
    "bounds_max": [
     1.12,
-    2.3,
+    2.303,
     0.345
    ],
    "tris": 876,
    "top_y": 2.16,
-   "bytes": 47804,
+   "bytes": 50560,
    "family": "gen"
   },
   {
@@ -29670,7 +29670,7 @@
    ],
    "tris": 1208,
    "top_y": 2.08,
-   "bytes": 56096,
+   "bytes": 57272,
    "family": "gen"
   },
   {
@@ -29717,7 +29717,7 @@
    "solid": true,
    "size": [
     1.64,
-    2.0,
+    2.003,
     0.54
    ],
    "bounds_min": [
@@ -29727,12 +29727,12 @@
    ],
    "bounds_max": [
     0.82,
-    2.0,
+    2.003,
     0.27
    ],
    "tris": 1312,
    "top_y": 1.88,
-   "bytes": 68696,
+   "bytes": 71448,
    "family": "gen"
   },
   {
@@ -29763,7 +29763,7 @@
    ],
    "tris": 1044,
    "top_y": 2.02,
-   "bytes": 45864,
+   "bytes": 48744,
    "family": "gen"
   },
   {
@@ -29778,23 +29778,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
+    1.006,
     1.215,
     0.278
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     -0.545,
     -0.0
    ],
    "bounds_max": [
-    0.5,
+    0.503,
     0.67,
     0.278
    ],
    "tris": 880,
    "top_y": 0.42,
-   "bytes": 47908,
+   "bytes": 48704,
    "family": "gen"
   },
   {
@@ -29809,23 +29809,23 @@
    ],
    "solid": false,
    "size": [
-    1.6,
+    1.606,
     1.52,
     0.425
    ],
    "bounds_min": [
-    -0.8,
+    -0.803,
     -0.7,
     -0.0
    ],
    "bounds_max": [
-    0.8,
+    0.803,
     0.82,
     0.425
    ],
    "tris": 668,
-   "top_y": 0.78,
-   "bytes": 35076,
+   "top_y": 0.52,
+   "bytes": 36232,
    "family": "gen"
   },
   {
@@ -30276,7 +30276,7 @@
    "size": [
     1.0,
     0.4,
-    0.052
+    0.055
    ],
    "bounds_min": [
     -0.5,
@@ -30286,7 +30286,7 @@
    "bounds_max": [
     0.5,
     0.2,
-    0.052
+    0.055
    ],
    "tris": 286,
    "top_y": null,
@@ -30725,7 +30725,7 @@
    ],
    "tris": 1040,
    "top_y": 1.4,
-   "bytes": 47856,
+   "bytes": 48360,
    "family": "sci_specimen_floor"
   },
   {
@@ -30757,7 +30757,7 @@
    ],
    "tris": 978,
    "top_y": 0.9,
-   "bytes": 51252,
+   "bytes": 51620,
    "family": "sci_specimen_floor"
   },
   {
@@ -30789,7 +30789,7 @@
    ],
    "tris": 1042,
    "top_y": 2.34,
-   "bytes": 59776,
+   "bytes": 61564,
    "family": "sci_specimen_floor"
   },
   {
@@ -30821,7 +30821,7 @@
    ],
    "tris": 1546,
    "top_y": 1.88,
-   "bytes": 81264,
+   "bytes": 83048,
    "family": "sci_specimen_floor"
   },
   {
@@ -30869,23 +30869,23 @@
    ],
    "solid": false,
    "size": [
-    0.5,
+    0.506,
     0.45,
     0.45
    ],
    "bounds_min": [
-    -0.25,
+    -0.253,
     0.0,
     -0.24
    ],
    "bounds_max": [
-    0.25,
+    0.253,
     0.45,
     0.21
    ],
    "tris": 660,
    "top_y": 0.1,
-   "bytes": 34892,
+   "bytes": 34456,
    "family": "sci_specimen_table"
   },
   {
@@ -30917,7 +30917,7 @@
    ],
    "tris": 1222,
    "top_y": 1.86,
-   "bytes": 67088,
+   "bytes": 68172,
    "family": "sci_specimen_floor"
   },
   {
@@ -30965,17 +30965,17 @@
    ],
    "solid": false,
    "size": [
-    0.36,
+    0.366,
     0.19,
     0.22
    ],
    "bounds_min": [
-    -0.18,
+    -0.183,
     0.0,
     -0.11
    ],
    "bounds_max": [
-    0.18,
+    0.183,
     0.19,
     0.11
    ],
@@ -31190,12 +31190,12 @@
    "solid": false,
    "size": [
     0.93,
-    0.284,
+    0.287,
     0.228
    ],
    "bounds_min": [
     -0.45,
-    -0.284,
+    -0.287,
     -0.114
    ],
    "bounds_max": [
@@ -31205,7 +31205,7 @@
    ],
    "tris": 664,
    "top_y": null,
-   "bytes": 23952,
+   "bytes": 24204,
    "family": "spot_ceil"
   },
   {
@@ -31320,23 +31320,23 @@
    ],
    "solid": true,
    "size": [
-    1.2,
-    1.96,
-    0.45
+    1.206,
+    1.963,
+    0.453
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     0.0,
-    -0.225
+    -0.228
    ],
    "bounds_max": [
-    0.6,
-    1.96,
+    0.603,
+    1.963,
     0.225
    ],
    "tris": 1484,
    "top_y": 1.96,
-   "bytes": 85632,
+   "bytes": 85692,
    "family": "comm_storage_floor"
   },
   {
@@ -31435,7 +31435,7 @@
    ],
    "tris": 1138,
    "top_y": 1.88,
-   "bytes": 60964,
+   "bytes": 61636,
    "family": "comm_storage_floor"
   },
   {
@@ -31640,23 +31640,23 @@
    ],
    "solid": true,
    "size": [
-    1.2,
-    1.545,
+    1.206,
+    1.548,
     0.75
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     0.0,
     -0.375
    ],
    "bounds_max": [
-    0.6,
-    1.545,
+    0.603,
+    1.548,
     0.375
    ],
    "tris": 600,
    "top_y": 1.54,
-   "bytes": 30344,
+   "bytes": 30788,
    "family": "gen"
   },
   {
@@ -31765,7 +31765,7 @@
    "solid": true,
    "size": [
     0.78,
-    1.49,
+    1.493,
     0.505
    ],
    "bounds_min": [
@@ -31775,12 +31775,12 @@
    ],
    "bounds_max": [
     0.39,
-    1.49,
+    1.493,
     0.24
    ],
    "tris": 716,
    "top_y": 1.5,
-   "bytes": 38912,
+   "bytes": 38916,
    "family": "gen"
   },
   {
@@ -31811,7 +31811,7 @@
    ],
    "tris": 526,
    "top_y": 1.84,
-   "bytes": 38304,
+   "bytes": 37604,
    "family": "gen"
   },
   {
@@ -31860,12 +31860,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.062,
+    0.065,
     0.096
    ],
    "bounds_min": [
     -1.0,
-    -0.062,
+    -0.065,
     -0.051
    ],
    "bounds_max": [
@@ -31875,7 +31875,7 @@
    ],
    "tris": 200,
    "top_y": 0.0,
-   "bytes": 10492,
+   "bytes": 11128,
    "family": "strip_ceil"
   },
   {
@@ -31892,22 +31892,22 @@
    "solid": false,
    "size": [
     1.03,
-    0.054,
-    0.032
+    0.06,
+    0.037
    ],
    "bounds_min": [
     -0.515,
-    -0.027,
+    -0.03,
     -0.0
    ],
    "bounds_max": [
     0.515,
-    0.027,
-    0.032
+    0.03,
+    0.037
    ],
    "tris": 1012,
    "top_y": null,
-   "bytes": 36212,
+   "bytes": 36276,
    "family": "strip_wall"
   },
   {
@@ -31956,22 +31956,22 @@
    "solid": false,
    "size": [
     2.03,
-    0.03,
-    0.06
+    0.035,
+    0.07
    ],
    "bounds_min": [
     -1.015,
     0.0,
-    -0.03
+    -0.035
    ],
    "bounds_max": [
     1.015,
-    0.03,
-    0.03
+    0.035,
+    0.035
    ],
    "tris": 180,
-   "top_y": 0.02,
-   "bytes": 10436,
+   "top_y": 0.04,
+   "bytes": 11072,
    "family": "strip_floor"
   },
   {
@@ -31988,12 +31988,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.043,
+    0.046,
     0.092
    ],
    "bounds_min": [
     -1.0,
-    -0.022,
+    -0.025,
     -0.0
    ],
    "bounds_max": [
@@ -32052,22 +32052,22 @@
    "solid": false,
    "size": [
     1.52,
-    0.05,
-    0.14
+    0.055,
+    0.15
    ],
    "bounds_min": [
     -0.76,
-    -0.05,
-    -0.07
+    -0.055,
+    -0.075
    ],
    "bounds_max": [
     0.76,
     0.0,
-    0.07
+    0.075
    ],
    "tris": 156,
    "top_y": 0.0,
-   "bytes": 9088,
+   "bytes": 9724,
    "family": "strip_ceil"
   },
   {
@@ -32085,7 +32085,7 @@
    "size": [
     1.2,
     0.033,
-    0.1
+    0.103
    ],
    "bounds_min": [
     -0.6,
@@ -32095,7 +32095,7 @@
    "bounds_max": [
     0.6,
     0.033,
-    0.04
+    0.043
    ],
    "tris": 140,
    "top_y": 0.02,
@@ -32147,7 +32147,7 @@
    "solid": true,
    "size": [
     1.87,
-    2.0,
+    2.003,
     0.84
    ],
    "bounds_min": [
@@ -32157,12 +32157,12 @@
    ],
    "bounds_max": [
     1.08,
-    2.0,
+    2.003,
     0.42
    ],
    "tris": 712,
    "top_y": 2.0,
-   "bytes": 38900,
+   "bytes": 38964,
    "family": "suitrack_floor"
   },
   {
@@ -32177,23 +32177,23 @@
    ],
    "solid": false,
    "size": [
-    1.5,
+    1.506,
     0.915,
     0.36
    ],
    "bounds_min": [
-    -0.75,
+    -0.753,
     -0.45,
     -0.0
    ],
    "bounds_max": [
-    0.75,
+    0.753,
     0.465,
     0.36
    ],
    "tris": 1840,
    "top_y": -0.04,
-   "bytes": 56576,
+   "bytes": 56628,
    "family": "suitrack_wall"
   },
   {
@@ -32240,7 +32240,7 @@
    "solid": true,
    "size": [
     1.8,
-    1.7,
+    1.703,
     0.6
    ],
    "bounds_min": [
@@ -32250,12 +32250,12 @@
    ],
    "bounds_max": [
     0.9,
-    1.7,
+    1.703,
     0.3
    ],
    "tris": 1420,
    "top_y": 0.18,
-   "bytes": 57148,
+   "bytes": 57236,
    "family": "suitrack_floor"
   },
   {
@@ -32270,23 +32270,23 @@
    ],
    "solid": true,
    "size": [
-    2.2,
+    2.206,
     1.83,
     0.545
    ],
    "bounds_min": [
-    -1.1,
+    -1.103,
     0.0,
     -0.145
    ],
    "bounds_max": [
-    1.1,
+    1.103,
     1.83,
     0.4
    ],
    "tris": 1028,
    "top_y": 0.5,
-   "bytes": 40176,
+   "bytes": 40180,
    "family": "suitrack_floor"
   },
   {
@@ -32301,17 +32301,17 @@
    ],
    "solid": false,
    "size": [
-    1.2,
+    1.206,
     0.935,
     0.125
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     -0.45,
     -0.0
    ],
    "bounds_max": [
-    0.6,
+    0.603,
     0.485,
     0.125
    ],
@@ -32381,7 +32381,7 @@
    ],
    "tris": 490,
    "top_y": 0.72,
-   "bytes": 40184,
+   "bytes": 39460,
    "family": "surgical"
   },
   {
@@ -32413,7 +32413,7 @@
    ],
    "tris": 910,
    "top_y": 1.46,
-   "bytes": 66588,
+   "bytes": 65888,
    "family": "surgical"
   },
   {
@@ -32509,7 +32509,7 @@
    ],
    "tris": 610,
    "top_y": 1.22,
-   "bytes": 50804,
+   "bytes": 52588,
    "family": "surgical"
   },
   {
@@ -32558,7 +32558,7 @@
    "solid": true,
    "size": [
     1.5,
-    0.787,
+    0.79,
     0.81
    ],
    "bounds_min": [
@@ -32568,12 +32568,12 @@
    ],
    "bounds_max": [
     0.75,
-    0.787,
+    0.79,
     0.405
    ],
    "tris": 408,
    "top_y": 0.76,
-   "bytes": 21632,
+   "bytes": 22080,
    "family": "crew_table_floor"
   },
   {
@@ -32719,7 +32719,7 @@
    "solid": true,
    "size": [
     3.0,
-    0.767,
+    0.77,
     0.8
    ],
    "bounds_min": [
@@ -32729,12 +32729,12 @@
    ],
    "bounds_max": [
     1.5,
-    0.767,
+    0.77,
     0.4
    ],
    "tris": 424,
    "top_y": 0.76,
-   "bytes": 19224,
+   "bytes": 19672,
    "family": "crew_table_floor"
   },
   {
@@ -33211,7 +33211,7 @@
    "solid": false,
    "size": [
     0.28,
-    0.255,
+    0.258,
     0.176
    ],
    "bounds_min": [
@@ -33221,12 +33221,12 @@
    ],
    "bounds_max": [
     0.16,
-    0.26,
+    0.263,
     0.088
    ],
    "tris": 320,
    "top_y": null,
-   "bytes": 12108,
+   "bytes": 12152,
    "family": "crew_tableware_table"
   },
   {
@@ -33420,7 +33420,7 @@
    ],
    "tris": 648,
    "top_y": 1.56,
-   "bytes": 28984,
+   "bytes": 28996,
    "family": "gen"
   },
   {
@@ -33592,7 +33592,7 @@
    "size": [
     1.274,
     0.71,
-    0.559
+    0.562
    ],
    "bounds_min": [
     -0.637,
@@ -33602,11 +33602,11 @@
    "bounds_max": [
     0.637,
     0.35,
-    0.559
+    0.562
    ],
    "tris": 548,
    "top_y": null,
-   "bytes": 24972,
+   "bytes": 25032,
    "family": "gen"
   },
   {
@@ -33653,7 +33653,7 @@
    "solid": true,
    "size": [
     2.262,
-    1.475,
+    1.478,
     1.056
    ],
    "bounds_min": [
@@ -33663,12 +33663,12 @@
    ],
    "bounds_max": [
     1.131,
-    1.475,
+    1.478,
     0.539
    ],
    "tris": 744,
    "top_y": 0.06,
-   "bytes": 30320,
+   "bytes": 30768,
    "family": "gen"
   },
   {
@@ -33777,7 +33777,7 @@
    "solid": true,
    "size": [
     3.118,
-    1.441,
+    1.444,
     0.8
    ],
    "bounds_min": [
@@ -33787,12 +33787,12 @@
    ],
    "bounds_max": [
     1.509,
-    1.441,
+    1.444,
     0.4
    ],
    "tris": 1148,
    "top_y": 0.06,
-   "bytes": 52636,
+   "bytes": 53080,
    "family": "gen"
   },
   {
@@ -33916,7 +33916,7 @@
    ],
    "tris": 964,
    "top_y": 2.0,
-   "bytes": 43492,
+   "bytes": 43504,
    "family": "gen"
   },
   {
@@ -34044,7 +34044,7 @@
    ],
    "tris": 940,
    "top_y": 0.08,
-   "bytes": 57424,
+   "bytes": 54676,
    "family": "sci_telescope_floor"
   },
   {
@@ -34062,7 +34062,7 @@
    "size": [
     0.254,
     0.107,
-    0.101
+    0.103
    ],
    "bounds_min": [
     -0.129,
@@ -34072,7 +34072,7 @@
    "bounds_max": [
     0.125,
     0.107,
-    0.051
+    0.053
    ],
    "tris": 372,
    "top_y": null,
@@ -34093,7 +34093,7 @@
    "solid": false,
    "size": [
     0.2,
-    0.016,
+    0.019,
     0.146
    ],
    "bounds_min": [
@@ -34103,12 +34103,12 @@
    ],
    "bounds_max": [
     0.1,
-    0.016,
+    0.019,
     0.076
    ],
    "tris": 114,
    "top_y": 0.02,
-   "bytes": 13180,
+   "bytes": 13552,
    "family": "bridge_terminal_small"
   },
   {
@@ -34204,7 +34204,7 @@
    ],
    "tris": 542,
    "top_y": 0.02,
-   "bytes": 33536,
+   "bytes": 35328,
    "family": "bridge_terminal_small"
   },
   {
@@ -34269,7 +34269,7 @@
    ],
    "tris": 422,
    "top_y": 0.94,
-   "bytes": 31964,
+   "bytes": 32284,
    "family": "bridge_terminal_floor"
   },
   {
@@ -34333,7 +34333,7 @@
    ],
    "tris": 126,
    "top_y": 0.02,
-   "bytes": 14332,
+   "bytes": 14512,
    "family": "bridge_terminal_small"
   },
   {
@@ -34366,7 +34366,7 @@
    ],
    "tris": 482,
    "top_y": 0.06,
-   "bytes": 31404,
+   "bytes": 29380,
    "family": "bridge_terminal_floor"
   },
   {
@@ -34398,7 +34398,7 @@
    ],
    "tris": 154,
    "top_y": null,
-   "bytes": 17000,
+   "bytes": 17072,
    "family": "bridge_terminal_small"
   },
   {
@@ -34415,23 +34415,23 @@
    ],
    "solid": true,
    "size": [
-    0.6,
-    1.6,
+    0.606,
+    1.603,
     0.421
    ],
    "bounds_min": [
-    -0.3,
+    -0.303,
     0.0,
     -0.2
    ],
    "bounds_max": [
-    0.3,
-    1.6,
+    0.303,
+    1.603,
     0.221
    ],
    "tris": 422,
    "top_y": 1.6,
-   "bytes": 28776,
+   "bytes": 30068,
    "family": "bridge_terminal_floor"
   },
   {
@@ -34942,7 +34942,7 @@
    ],
    "tris": 918,
    "top_y": 0.1,
-   "bytes": 40416,
+   "bytes": 40428,
    "family": "gen"
   },
   {
@@ -35331,7 +35331,7 @@
    "size": [
     0.8,
     0.7,
-    0.425
+    0.428
    ],
    "bounds_min": [
     -0.4,
@@ -35341,11 +35341,11 @@
    "bounds_max": [
     0.4,
     0.35,
-    0.425
+    0.428
    ],
    "tris": 584,
    "top_y": null,
-   "bytes": 30088,
+   "bytes": 30148,
    "family": "gen"
   },
   {
@@ -36279,23 +36279,23 @@
    ],
    "solid": true,
    "size": [
-    0.95,
-    1.9,
+    0.956,
+    1.903,
     0.907
    ],
    "bounds_min": [
-    -0.475,
+    -0.478,
     0.0,
     -0.425
    ],
    "bounds_max": [
-    0.475,
-    1.9,
+    0.478,
+    1.903,
     0.482
    ],
    "tris": 1132,
    "top_y": 1.9,
-   "bytes": 60172,
+   "bytes": 60812,
    "family": "vending"
   },
   {
@@ -36312,7 +36312,7 @@
    "solid": true,
    "size": [
     0.9,
-    1.9,
+    1.903,
     0.847
    ],
    "bounds_min": [
@@ -36322,12 +36322,12 @@
    ],
    "bounds_max": [
     0.45,
-    1.9,
+    1.903,
     0.447
    ],
    "tris": 744,
    "top_y": 1.9,
-   "bytes": 40800,
+   "bytes": 41056,
    "family": "vending"
   },
   {
@@ -36344,7 +36344,7 @@
    "solid": true,
    "size": [
     0.91,
-    1.9,
+    1.903,
     0.847
    ],
    "bounds_min": [
@@ -36354,12 +36354,12 @@
    ],
    "bounds_max": [
     0.46,
-    1.9,
+    1.903,
     0.447
    ],
    "tris": 976,
    "top_y": 1.9,
-   "bytes": 53688,
+   "bytes": 54136,
    "family": "vending"
   },
   {
@@ -36376,7 +36376,7 @@
    "solid": true,
    "size": [
     0.9,
-    1.94,
+    1.943,
     0.71
    ],
    "bounds_min": [
@@ -36386,12 +36386,12 @@
    ],
    "bounds_max": [
     0.45,
-    1.94,
+    1.943,
     0.41
    ],
    "tris": 582,
    "top_y": 1.94,
-   "bytes": 48500,
+   "bytes": 48892,
    "family": "vending"
   },
   {
@@ -36423,7 +36423,7 @@
    ],
    "tris": 368,
    "top_y": null,
-   "bytes": 18964,
+   "bytes": 19348,
    "family": "wallpanel_short"
   },
   {
@@ -36471,23 +36471,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    1.2,
-    0.05
+    1.006,
+    1.206,
+    0.053
    ],
    "bounds_min": [
-    -0.5,
-    -0.6,
+    -0.503,
+    -0.603,
     -0.0
    ],
    "bounds_max": [
-    0.5,
-    0.6,
-    0.05
+    0.503,
+    0.603,
+    0.053
    ],
    "tris": 420,
    "top_y": null,
-   "bytes": 22424,
+   "bytes": 23472,
    "family": "wallpanel_short"
   },
   {
@@ -36727,23 +36727,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
+    1.01,
     1.2,
-    0.1
+    0.105
    ],
    "bounds_min": [
-    -0.5,
+    -0.505,
     -0.6,
     -0.0
    ],
    "bounds_max": [
-    0.5,
+    0.505,
     0.6,
-    0.1
+    0.105
    ],
    "tris": 616,
    "top_y": 0.58,
-   "bytes": 23252,
+   "bytes": 23920,
    "family": "wallpanel_short"
   },
   {
@@ -36807,7 +36807,7 @@
    ],
    "tris": 334,
    "top_y": null,
-   "bytes": 27104,
+   "bytes": 28804,
    "family": "wallpanel_short"
   },
   {
@@ -36890,17 +36890,17 @@
    "solid": false,
    "size": [
     1.0,
-    2.4,
+    2.406,
     0.092
    ],
    "bounds_min": [
     -0.5,
-    -1.2,
+    -1.203,
     -0.0
    ],
    "bounds_max": [
     0.5,
-    1.2,
+    1.203,
     0.092
    ],
    "tris": 264,
@@ -37004,7 +37004,7 @@
    ],
    "tris": 828,
    "top_y": 1.2,
-   "bytes": 31152,
+   "bytes": 31344,
    "family": "wallpanel_tall"
   },
   {
@@ -37021,23 +37021,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
+    1.01,
     2.4,
-    0.12
+    0.125
    ],
    "bounds_min": [
-    -0.5,
+    -0.505,
     -1.2,
     -0.0
    ],
    "bounds_max": [
-    0.5,
+    0.505,
     1.2,
-    0.12
+    0.125
    ],
    "tris": 528,
    "top_y": 1.18,
-   "bytes": 20424,
+   "bytes": 21380,
    "family": "wallpanel_tall"
   },
   {
@@ -37087,23 +37087,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    2.4,
-    0.1
+    1.006,
+    2.406,
+    0.103
    ],
    "bounds_min": [
-    -0.5,
-    -1.2,
+    -0.503,
+    -1.203,
     -0.0
    ],
    "bounds_max": [
-    0.5,
-    1.2,
-    0.1
+    0.503,
+    1.203,
+    0.103
    ],
    "tris": 352,
    "top_y": 1.2,
-   "bytes": 13908,
+   "bytes": 14960,
    "family": "wallpanel_tall"
   },
   {
@@ -37184,7 +37184,7 @@
    "solid": false,
    "size": [
     1.9,
-    0.095,
+    0.098,
     0.265
    ],
    "bounds_min": [
@@ -37194,12 +37194,12 @@
    ],
    "bounds_max": [
     0.95,
-    0.095,
+    0.098,
     0.155
    ],
    "tris": 452,
    "top_y": 0.1,
-   "bytes": 20964,
+   "bytes": 21412,
    "family": "warn_floor"
   },
   {
@@ -37487,7 +37487,7 @@
    ],
    "tris": 1802,
    "top_y": 0.12,
-   "bytes": 87660,
+   "bytes": 88752,
    "family": "watertank"
   },
   {
@@ -37519,7 +37519,7 @@
    ],
    "tris": 706,
    "top_y": 1.24,
-   "bytes": 56792,
+   "bytes": 56864,
    "family": "watertank"
   },
   {
@@ -37615,7 +37615,7 @@
    ],
    "tris": 372,
    "top_y": 1.6,
-   "bytes": 19204,
+   "bytes": 19220,
    "family": "watertank"
   },
   {
@@ -37647,7 +37647,7 @@
    ],
    "tris": 1114,
    "top_y": 1.48,
-   "bytes": 61824,
+   "bytes": 61896,
    "family": "watertank"
   },
   {
@@ -37679,7 +37679,7 @@
    ],
    "tris": 678,
    "top_y": 2.0,
-   "bytes": 54512,
+   "bytes": 54800,
    "family": "watertank"
   },
   {
@@ -37820,12 +37820,12 @@
    "size": [
     1.665,
     1.875,
-    0.7
+    0.703
    ],
    "bounds_min": [
     -0.8,
     0.0,
-    -0.35
+    -0.353
    ],
    "bounds_max": [
     0.865,
@@ -37834,7 +37834,7 @@
    ],
    "tris": 554,
    "top_y": 0.98,
-   "bytes": 47572,
+   "bytes": 52080,
    "family": "weaponrack_floor"
   },
   {
@@ -37896,7 +37896,7 @@
    ],
    "tris": 752,
    "top_y": null,
-   "bytes": 41792,
+   "bytes": 41992,
    "family": "weaponrack_wall"
   },
   {
@@ -37942,17 +37942,17 @@
    ],
    "solid": false,
    "size": [
-    0.95,
+    0.956,
     0.725,
     0.085
    ],
    "bounds_min": [
-    -0.475,
+    -0.478,
     -0.325,
     -0.0
    ],
    "bounds_max": [
-    0.475,
+    0.478,
     0.4,
     0.085
    ],
@@ -38006,7 +38006,7 @@
    "size": [
     1.34,
     1.03,
-    0.142
+    0.145
    ],
    "bounds_min": [
     -0.67,
@@ -38016,11 +38016,11 @@
    "bounds_max": [
     0.67,
     0.53,
-    0.142
+    0.145
    ],
    "tris": 692,
    "top_y": 0.52,
-   "bytes": 43388,
+   "bytes": 43448,
    "family": "weaponrack_wall"
   },
   {
@@ -38067,22 +38067,22 @@
    "solid": false,
    "size": [
     1.3,
-    1.1,
+    1.106,
     0.1
    ],
    "bounds_min": [
     -0.65,
-    -0.55,
+    -0.553,
     -0.0
    ],
    "bounds_max": [
     0.65,
-    0.55,
+    0.553,
     0.1
    ],
    "tris": 566,
    "top_y": 0.56,
-   "bytes": 39492,
+   "bytes": 39572,
    "family": "weaponrack_wall"
   },
   {
@@ -38097,7 +38097,7 @@
    ],
    "solid": true,
    "size": [
-    1.9,
+    1.903,
     1.717,
     0.8
    ],
@@ -38107,13 +38107,13 @@
     -0.4
    ],
    "bounds_max": [
-    0.95,
+    0.953,
     1.717,
     0.4
    ],
    "tris": 480,
    "top_y": 0.94,
-   "bytes": 42084,
+   "bytes": 42412,
    "family": "weaponrack_floor"
   }
  ]

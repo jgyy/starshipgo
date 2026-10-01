@@ -7,11 +7,11 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `medbed_diagnostic_biobed` | Medical bed - Diagnostic Biobed | Lindqvist-Aoki Medical | 1320 x 1710 x 2050 | 575.1 kg | 570 W | 120 VAC 1ph | 987 k |
-| `medbed_exam_table` | Medical bed - Exam Table | Lindqvist-Aoki Medical | 780 x 965 x 2020 | 175.3 kg | 230 W | 120 VAC 1ph | 307 k |
+| `medbed_exam_table` | Medical bed - Exam Table | Lindqvist-Aoki Medical | 780 x 968 x 2020 | 175.8 kg | 230 W | 120 VAC 1ph | 308 k |
 | `medbed_field_stretcher` | Medical bed - Field Stretcher | Lindqvist-Aoki Medical | 880 x 907 x 2200 | 182.9 kg | 280 W | 120 VAC 1ph | 334 k |
-| `medbed_isolation_bed` | Medical bed - Isolation Bed | Lindqvist-Aoki Medical | 1200 x 2346 x 2117 | 638.8 kg | 720 W | 120 VAC 1ph | 1.38 M |
+| `medbed_isolation_bed` | Medical bed - Isolation Bed | Lindqvist-Aoki Medical | 1200 x 2346 x 2120 | 639.7 kg | 720 W | 120 VAC 1ph | 1.38 M |
 | `medbed_recovery_bed` | Medical bed - Recovery Bed | Lindqvist-Aoki Medical | 1159 x 1557 x 2125 | 458.3 kg | 450 W | 120 VAC 1ph | 843 k |
-| `medbed_surgical_table` | Medical bed - Surgical Table | Lindqvist-Aoki Medical | 900 x 2630 x 2500 | 655.1 kg | 640 W | 120 VAC 1ph | 1.54 M |
+| `medbed_surgical_table` | Medical bed - Surgical Table | Lindqvist-Aoki Medical | 900 x 2633 x 2500 | 655.8 kg | 640 W | 120 VAC 1ph | 1.55 M |
 
 ## Datasheets
 
@@ -23,16 +23,16 @@
 * Power 170 W idle / 570 W typical / 1 kW peak at 120 VAC 1ph.
 * Price 987 k cr, lead time 103 days, MTBF 54,900 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 42 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: lifesigns).
+* Software: `medical` (screens: crew_roster).
 * floor-mounted, free-standing. Install with a hoist or gantry (575.1 kg).
 
 ### `medbed_exam_table`
 
 **Medical bed - Exam Table**, Lindqvist-Aoki Medical, part LAM-MED-3866 (consumer)
 
-* Mass 175.3 kg; size 780 x 965 x 2020 mm; heat 210 W.
-* Power 68 W idle / 230 W typical / 410 W peak at 120 VAC 1ph.
-* Price 307 k cr, lead time 95 days, MTBF 63,000 h, service every 4,380 h, service life 12 years, crew 1.
+* Mass 175.8 kg; size 780 x 968 x 2020 mm; heat 210 W.
+* Power 69 W idle / 230 W typical / 410 W peak at 120 VAC 1ph.
+* Price 308 k cr, lead time 95 days, MTBF 63,000 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 41 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
 * floor-mounted, free-standing. Two-person lift.
 
@@ -50,11 +50,11 @@
 
 **Medical bed - Isolation Bed**, Lindqvist-Aoki Medical, part LAM-MED-8688 (consumer)
 
-* Mass 638.8 kg; size 1200 x 2346 x 2117 mm; heat 660 W.
+* Mass 639.7 kg; size 1200 x 2346 x 2120 mm; heat 660 W.
 * Power 220 W idle / 720 W typical / 1.3 kW peak at 120 VAC 1ph.
 * Price 1.38 M cr, lead time 98 days, MTBF 56,700 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 43 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* floor-mounted, free-standing. Install with a hoist or gantry (638.8 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (639.7 kg).
 
 ### `medbed_recovery_bed`
 
@@ -70,9 +70,9 @@
 
 **Medical bed - Surgical Table**, Lindqvist-Aoki Medical, part LAM-MED-8954 (consumer)
 
-* Mass 655.1 kg; size 900 x 2630 x 2500 mm; heat 590 W.
+* Mass 655.8 kg; size 900 x 2633 x 2500 mm; heat 590 W.
 * Power 190 W idle / 640 W typical / 1.1 kW peak at 120 VAC 1ph.
-* Price 1.54 M cr, lead time 105 days, MTBF 63,500 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 1.55 M cr, lead time 105 days, MTBF 63,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 42 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* floor-mounted, free-standing. Install with a hoist or gantry (655.1 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (655.8 kg).
 

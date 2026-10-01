@@ -13,7 +13,7 @@
 | `valve_dial_gauge` | Valve / coupling - Dial Gauge | Anvil Fluid Controls | 480 x 565 x 131 | 12.4 kg | 0 W | none | 428 |
 | `valve_emergency_shutoff` | Valve / coupling - Emergency Shutoff | Anvil Fluid Controls | 450 x 550 x 215 | 20.6 kg | 0 W | none | 442 |
 | `valve_flow_meter` | Valve / coupling - Flow Meter | Anvil Fluid Controls | 900 x 500 x 236 | 39.6 kg | 0 W | none | 935 |
-| `valve_gate_valve_wheel` | Valve / coupling - Gate Valve Wheel | Anvil Fluid Controls | 800 x 700 x 425 | 81.3 kg | 0 W | none | 1,700 |
+| `valve_gate_valve_wheel` | Valve / coupling - Gate Valve Wheel | Anvil Fluid Controls | 800 x 700 x 428 | 81.9 kg | 0 W | none | 1,710 |
 | `valve_gauge_cluster` | Valve / coupling - Gauge Cluster | Anvil Fluid Controls | 800 x 355 x 69 | 7.71 kg | 0 W | none | 303 |
 | `valve_manifold_valve_block` | Valve / coupling - Manifold Valve Block | Anvil Fluid Controls | 800 x 600 x 285 | 51.8 kg | 0 W | none | 1,220 |
 | `valve_pneumatic_actuator_valve` | Valve / coupling - Pneumatic Actuator Valve | Anvil Fluid Controls | 700 x 1350 x 400 | 148 kg | 0 W | none | 3,310 |
@@ -101,9 +101,9 @@
 
 **Valve / coupling - Gate Valve Wheel**, Anvil Fluid Controls, part AFC-VAL-7657 (passive)
 
-* Mass 81.3 kg; size 800 x 700 x 425 mm; heat 0 W.
+* Mass 81.9 kg; size 800 x 700 x 428 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,700 cr, lead time 43 days, MTBF 1,721,300 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,710 cr, lead time 43 days, MTBF 1,721,300 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted. Two-person lift.
 

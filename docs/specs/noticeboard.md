@@ -41,6 +41,6 @@
 * Power 15 W idle / 49 W typical / 69 W peak at 24 VDC.
 * Price 9,780 cr, lead time 72 days, MTBF 83,700 h, service every 8,760 h, service life 12 years, crew 0.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `diagnostics` (screens: bars).
+* Software: `cargo` (screens: cargo_manifest).
 * wall-mounted.
 

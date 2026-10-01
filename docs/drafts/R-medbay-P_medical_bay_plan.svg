@@ -76,15 +76,15 @@
 <polygon points="120.23,213.13 89.09,213.13 89.09,173.13 120.23,173.13" class="n" fill="#9681e8"/>
 <line x1="89.09" y1="173.13" x2="120.23" y2="173.13" class="m"/>
 <line x1="104.66" y1="173.13" x2="104.66" y2="174.33" class="f"/>
-<polygon points="152.67,213.13 123.33,213.13 123.33,177.8 152.67,177.8" class="n" fill="#9681e8"/>
-<line x1="123.33" y1="177.8" x2="152.67" y2="177.8" class="m"/>
-<line x1="138" y1="177.8" x2="138" y2="179" class="f"/>
-<polygon points="168,213.13 154.67,213.13 154.67,174.93 168,174.93" class="n" fill="#ef77af"/>
-<line x1="154.67" y1="174.93" x2="168" y2="174.93" class="m"/>
-<line x1="161.33" y1="174.93" x2="161.33" y2="176.13" class="f"/>
-<polygon points="182.67,213.13 169.33,213.13 169.33,174.93 182.67,174.93" class="n" fill="#ef77af"/>
-<line x1="169.33" y1="174.93" x2="182.67" y2="174.93" class="m"/>
-<line x1="176" y1="174.93" x2="176" y2="176.13" class="f"/>
+<polygon points="152.67,213.13 123.33,213.13 123.33,177.76 152.67,177.76" class="n" fill="#9681e8"/>
+<line x1="123.33" y1="177.76" x2="152.67" y2="177.76" class="m"/>
+<line x1="138" y1="177.76" x2="138" y2="178.96" class="f"/>
+<polygon points="168,213.13 154.67,213.13 154.67,174.89 168,174.89" class="n" fill="#ef77af"/>
+<line x1="154.67" y1="174.89" x2="168" y2="174.89" class="m"/>
+<line x1="161.33" y1="174.89" x2="161.33" y2="176.09" class="f"/>
+<polygon points="182.67,213.13 169.33,213.13 169.33,174.89 182.67,174.89" class="n" fill="#ef77af"/>
+<line x1="169.33" y1="174.89" x2="182.67" y2="174.89" class="m"/>
+<line x1="176" y1="174.89" x2="176" y2="176.09" class="f"/>
 <polygon points="198.67,156.33 210.67,156.33 210.67,189.67 198.67,189.67" class="n" fill="#77efd5"/>
 <line x1="210.67" y1="189.67" x2="198.67" y2="189.67" class="m"/>
 <line x1="204.67" y1="189.67" x2="204.67" y2="188.47" class="f"/>
@@ -103,9 +103,9 @@
 <polygon points="185.53,157.13 197.13,157.13 197.13,166.2 185.53,166.2" class="n" fill="#ef77dd"/>
 <line x1="197.13" y1="166.2" x2="185.53" y2="166.2" class="m"/>
 <line x1="191.33" y1="166.2" x2="191.33" y2="165" class="f"/>
-<polygon points="206.67,44.87 222.67,44.87 222.67,73.09 206.67,73.09" class="n" fill="#77efd5"/>
-<line x1="222.67" y1="73.09" x2="206.67" y2="73.09" class="m"/>
-<line x1="214.67" y1="73.09" x2="214.67" y2="71.89" class="f"/>
+<polygon points="206.67,44.87 222.67,44.87 222.67,73.13 206.67,73.13" class="n" fill="#77efd5"/>
+<line x1="222.67" y1="73.13" x2="206.67" y2="73.13" class="m"/>
+<line x1="214.67" y1="73.13" x2="214.67" y2="71.93" class="f"/>
 <polygon points="215.33,153.67 202,153.67 202,135 215.33,135" class="n" fill="#ef77dd"/>
 <line x1="202" y1="135" x2="215.33" y2="135" class="m"/>
 <line x1="208.67" y1="135" x2="208.67" y2="136.2" class="f"/>
@@ -154,14 +154,14 @@
 <polygon points="197.97,126.75 202.48,126.75 202.48,131.25 197.97,131.25" class="dot" fill="none"/>
 <polygon points="111.64,120.6 119.91,120.6 119.91,137.4 111.64,137.4" class="dot" fill="none"/>
 <text x="104.66" y="193.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">Whole-Body Scanner Arch</text>
-<text x="138" y="195.77" font-size="1.25" class="t" text-anchor="middle" fill="#333">MRI Ring Scanner</text>
-<text x="161.33" y="194.33" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo-Stasis Pod</text>
-<text x="176" y="194.33" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo-Stasis Pod</text>
+<text x="138" y="195.75" font-size="1.25" class="t" text-anchor="middle" fill="#333">MRI Ring Scanner</text>
+<text x="161.33" y="194.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo-Stasis Pod</text>
+<text x="176" y="194.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo-Stasis Pod</text>
 <text x="118.67" y="58.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnostic Biobed</text>
 <text x="142.67" y="58.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnostic Biobed</text>
 <text x="166.67" y="58.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnostic Biobed</text>
 <text x="190.67" y="58.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnostic Biobed</text>
-<text x="214.67" y="59.28" font-size="1.25" class="t" text-anchor="middle" fill="#333">Isolation Bed</text>
+<text x="214.67" y="59.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Isolation Bed</text>
 <text x="204.67" y="173.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Surgical Table</text>
 <text x="216" y="208.17" font-size="1.25" class="t" text-anchor="middle" fill="#333">wet bench sink</text>
 <text x="89.61" y="160.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">officer desk</text>
@@ -203,18 +203,18 @@
 <text x="224" y="180.67" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-MB-3</text>
 <line x1="142.75" y1="38.63" x2="142.66" y2="45.27" class="x"/>
 <circle cx="142.66" cy="45.27" r="0.4" class="none" fill="#b03030"/>
-<line x1="211.72" y1="38.6" x2="214.67" y2="58.98" class="x"/>
-<circle cx="214.67" cy="58.98" r="0.4" class="none" fill="#b03030"/>
+<line x1="211.71" y1="38.6" x2="214.67" y2="59" class="x"/>
+<circle cx="214.67" cy="59" r="0.4" class="none" fill="#b03030"/>
 <line x1="165.69" y1="38.63" x2="166.67" y2="78.2" class="x"/>
 <circle cx="166.67" cy="78.2" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.6" y1="66.08" x2="86.97" y2="64.73" class="x"/>
 <circle cx="86.97" cy="64.73" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.63" y1="160.25" x2="89.61" y2="160.33" class="x"/>
 <circle cx="89.61" cy="160.33" r="0.4" class="none" fill="#b03030"/>
-<line x1="135.52" y1="219.38" x2="138" y2="195.47" class="x"/>
-<circle cx="138" cy="195.47" r="0.4" class="none" fill="#b03030"/>
-<line x1="173.53" y1="219.38" x2="176" y2="194.03" class="x"/>
-<circle cx="176" cy="194.03" r="0.4" class="none" fill="#b03030"/>
+<line x1="135.52" y1="219.38" x2="138" y2="195.45" class="x"/>
+<circle cx="138" cy="195.45" r="0.4" class="none" fill="#b03030"/>
+<line x1="173.53" y1="219.38" x2="176" y2="194.01" class="x"/>
+<circle cx="176" cy="194.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="218.22" y1="219.43" x2="216" y2="207.87" class="x"/>
 <circle cx="216" cy="207.87" r="0.4" class="none" fill="#b03030"/>
 <line x1="77.57" y1="106.23" x2="84.77" y2="107.67" class="x"/>

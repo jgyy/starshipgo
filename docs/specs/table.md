@@ -7,12 +7,12 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `table_bar_counter` | Table - Bar Counter | Sable Habitat Furnishings | 1800 x 1062 x 715 | 45.9 kg | 0 W | none | 1,700 |
-| `table_bolted_table` | Table - Bolted Table | Sable Habitat Furnishings | 1500 x 787 x 810 | 30.7 kg | 0 W | none | 1,460 |
+| `table_bolted_table` | Table - Bolted Table | Sable Habitat Furnishings | 1500 x 790 x 810 | 30.8 kg | 0 W | none | 1,460 |
 | `table_briefing_table` | Table - Briefing Table | Sable Habitat Furnishings | 1662 x 1226 x 1662 | 111.7 kg | 0 W | none | 4,740 |
 | `table_coffee_table` | Table - Coffee Table | Sable Habitat Furnishings | 1120 x 422 x 620 | 9.37 kg | 0 W | none | 417 |
 | `table_conference_table` | Table - Conference Table | Sable Habitat Furnishings | 3010 x 789 x 1210 | 100.7 kg | 0 W | none | 4,410 |
 | `table_fold_down_table` | Table - Fold-Down Table | Sable Habitat Furnishings | 1000 x 440 x 635 | 9.87 kg | 0 W | none | 357 |
-| `table_long_mess_table` | Table - Long Mess Table | Sable Habitat Furnishings | 3000 x 767 x 800 | 65.4 kg | 0 W | none | 2,230 |
+| `table_long_mess_table` | Table - Long Mess Table | Sable Habitat Furnishings | 3000 x 770 x 800 | 65.6 kg | 0 W | none | 2,240 |
 | `table_round_mess_table` | Table - Round Mess Table | Sable Habitat Furnishings | 1228 x 763 x 1228 | 42.2 kg | 0 W | none | 1,720 |
 | `table_side_table` | Table - Side Table | Sable Habitat Furnishings | 522 x 554 x 542 | 5.12 kg | 0 W | none | 320 |
 | `table_square_mess_table` | Table - Square Mess Table | Sable Habitat Furnishings | 920 x 775 x 920 | 23.3 kg | 0 W | none | 1,050 |
@@ -33,7 +33,7 @@
 
 **Table - Bolted Table**, Sable Habitat Furnishings, part SHF-TAB-4341 (passive)
 
-* Mass 30.7 kg; size 1500 x 787 x 810 mm; heat 0 W.
+* Mass 30.8 kg; size 1500 x 790 x 810 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 1,460 cr, lead time 41 days, MTBF 667,700 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
@@ -83,9 +83,9 @@
 
 **Table - Long Mess Table**, Sable Habitat Furnishings, part SHF-TAB-8057 (passive)
 
-* Mass 65.4 kg; size 3000 x 767 x 800 mm; heat 0 W.
+* Mass 65.6 kg; size 3000 x 770 x 800 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,230 cr, lead time 34 days, MTBF 678,700 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 2,240 cr, lead time 34 days, MTBF 678,700 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 

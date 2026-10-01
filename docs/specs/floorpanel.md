@@ -7,17 +7,17 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `floorpanel_arrow_marking_2x2` | Floor panel - Arrow Marking 2X2 | Calder-Okonkwo Industries | 2000 x 36 x 2200 | 31.2 kg | 0 W | none | 851 |
-| `floorpanel_cable_cover_1x1` | Floor panel - Cable Cover 1X1 | Calder-Okonkwo Industries | 1000 x 54 x 1000 | 10.1 kg | 0 W | none | 286 |
+| `floorpanel_cable_cover_1x1` | Floor panel - Cable Cover 1X1 | Calder-Okonkwo Industries | 1000 x 57 x 1000 | 10.6 kg | 0 W | none | 298 |
 | `floorpanel_carpet_tile_1x1` | Floor panel - Carpet Tile 1X1 | Calder-Okonkwo Industries | 1000 x 41 x 1000 | 7.76 kg | 0 W | none | 178 |
 | `floorpanel_checker_2x2` | Floor panel - Checker 2X2 | Calder-Okonkwo Industries | 2000 x 32 x 2000 | 27.2 kg | 0 W | none | 602 |
-| `floorpanel_deck_seam_2x2` | Floor panel - Deck Seam 2X2 | Calder-Okonkwo Industries | 2000 x 37 x 2000 | 30.1 kg | 0 W | none | 768 |
+| `floorpanel_deck_seam_2x2` | Floor panel - Deck Seam 2X2 | Calder-Okonkwo Industries | 2006 x 37 x 2006 | 30.3 kg | 0 W | none | 772 |
 | `floorpanel_diamond_plate_2x2` | Floor panel - Diamond Plate 2X2 | Calder-Okonkwo Industries | 2000 x 38 x 2000 | 31.3 kg | 0 W | none | 850 |
-| `floorpanel_glow_edge_2x2` | Floor panel - Glow Edge 2X2 | Calder-Okonkwo Industries | 2000 x 45 x 2000 | 34.9 kg | 0 W | none | 734 |
+| `floorpanel_glow_edge_2x2` | Floor panel - Glow Edge 2X2 | Calder-Okonkwo Industries | 2000 x 48 x 2000 | 37.3 kg | 0 W | none | 779 |
 | `floorpanel_grating_1x1` | Floor panel - Grating 1X1 | Calder-Okonkwo Industries | 1000 x 45 x 1000 | 8.43 kg | 0 W | none | 303 |
 | `floorpanel_hatch_handle_1x1` | Floor panel - Hatch Handle 1X1 | Calder-Okonkwo Industries | 1000 x 60 x 1000 | 11.9 kg | 0 W | none | 294 |
 | `floorpanel_hazard_edge_2x2` | Floor panel - Hazard Edge 2X2 | Calder-Okonkwo Industries | 2000 x 35 x 2000 | 27.6 kg | 0 W | none | 626 |
 | `floorpanel_hex_tile_1x1` | Floor panel - Hex Tile 1X1 | Calder-Okonkwo Industries | 1000 x 45 x 1056 | 9.66 kg | 0 W | none | 392 |
-| `floorpanel_rubber_studs_1x1` | Floor panel - Rubber Studs 1X1 | Calder-Okonkwo Industries | 1000 x 30 x 1000 | 6.3 kg | 0 W | none | 384 |
+| `floorpanel_rubber_studs_1x1` | Floor panel - Rubber Studs 1X1 | Calder-Okonkwo Industries | 1006 x 33 x 1003 | 6.99 kg | 0 W | none | 401 |
 
 ## Datasheets
 
@@ -35,9 +35,9 @@
 
 **Floor panel - Cable Cover 1X1**, Calder-Okonkwo Industries, part COI-FLO-8462 (passive)
 
-* Mass 10.1 kg; size 1000 x 54 x 1000 mm; heat 0 W.
+* Mass 10.6 kg; size 1000 x 57 x 1000 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 286 cr, lead time 38 days, MTBF 1,110,000 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 298 cr, lead time 38 days, MTBF 1,110,000 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted.
 
@@ -65,9 +65,9 @@
 
 **Floor panel - Deck Seam 2X2**, Calder-Okonkwo Industries, part COI-FLO-6758 (passive)
 
-* Mass 30.1 kg; size 2000 x 37 x 2000 mm; heat 0 W.
+* Mass 30.3 kg; size 2006 x 37 x 2006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 768 cr, lead time 42 days, MTBF 1,549,000 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 772 cr, lead time 42 days, MTBF 1,549,000 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -85,9 +85,9 @@
 
 **Floor panel - Glow Edge 2X2**, Calder-Okonkwo Industries, part COI-FLO-4533 (passive)
 
-* Mass 34.9 kg; size 2000 x 45 x 2000 mm; heat 0 W.
+* Mass 37.3 kg; size 2000 x 48 x 2000 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 734 cr, lead time 45 days, MTBF 1,759,200 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 779 cr, lead time 45 days, MTBF 1,759,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -135,9 +135,9 @@
 
 **Floor panel - Rubber Studs 1X1**, Calder-Okonkwo Industries, part COI-FLO-3528 (passive)
 
-* Mass 6.3 kg; size 1000 x 30 x 1000 mm; heat 0 W.
+* Mass 6.99 kg; size 1006 x 33 x 1003 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 384 cr, lead time 40 days, MTBF 1,516,500 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 401 cr, lead time 40 days, MTBF 1,516,500 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted.
 

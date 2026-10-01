@@ -6,16 +6,16 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `bed_bunk_bed` | Bed - Bunk Bed | Sable Habitat Furnishings | 1085 x 1950 x 2060 | 39.7 kg | 0 W | none | 1,920 |
+| `bed_bunk_bed` | Bed - Bunk Bed | Sable Habitat Furnishings | 1088 x 1950 x 2060 | 39.8 kg | 0 W | none | 1,920 |
 | `bed_captain_bed` | Bed - Captain Bed | Sable Habitat Furnishings | 2050 x 1540 x 2895 | 85.4 kg | 0 W | none | 3,770 |
 | `bed_couch_bed` | Bed - Couch Bed | Sable Habitat Furnishings | 2360 x 1128 x 2100 | 56.3 kg | 0 W | none | 2,340 |
-| `bed_fold_down_wall_bed` | Bed - Fold-Down Wall Bed | Sable Habitat Furnishings | 1100 x 2270 x 2110 | 51.9 kg | 0 W | none | 2,160 |
+| `bed_fold_down_wall_bed` | Bed - Fold-Down Wall Bed | Sable Habitat Furnishings | 1100 x 2273 x 2110 | 51.9 kg | 0 W | none | 2,160 |
 | `bed_folding_cot` | Bed - Folding Cot | Sable Habitat Furnishings | 780 x 640 x 1940 | 9 kg | 0 W | none | 500 |
 | `bed_hammock_frame` | Bed - Hammock Frame | Sable Habitat Furnishings | 1100 x 1684 x 2580 | 48.5 kg | 0 W | none | 1,990 |
 | `bed_officer_bed` | Bed - Officer Bed | Sable Habitat Furnishings | 2250 x 1350 x 2250 | 60.2 kg | 0 W | none | 2,620 |
 | `bed_recliner_sleeper` | Bed - Recliner Sleeper | Sable Habitat Furnishings | 1090 x 1190 x 2575 | 34 kg | 0 W | none | 1,290 |
-| `bed_single_bunk` | Bed - Single Bunk | Sable Habitat Furnishings | 920 x 800 x 2077 | 13.4 kg | 0 W | none | 693 |
-| `bed_sleeping_pod` | Bed - Sleeping Pod | Sable Habitat Furnishings | 1398 x 1440 x 2640 | 50.5 kg | 0 W | none | 2,040 |
+| `bed_single_bunk` | Bed - Single Bunk | Sable Habitat Furnishings | 926 x 800 x 2077 | 13.5 kg | 0 W | none | 697 |
+| `bed_sleeping_pod` | Bed - Sleeping Pod | Sable Habitat Furnishings | 1398 x 1440 x 2643 | 50.5 kg | 0 W | none | 2,040 |
 
 ## Datasheets
 
@@ -23,7 +23,7 @@
 
 **Bed - Bunk Bed**, Sable Habitat Furnishings, part SHF-BED-9398 (passive)
 
-* Mass 39.7 kg; size 1085 x 1950 x 2060 mm; heat 0 W.
+* Mass 39.8 kg; size 1088 x 1950 x 2060 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 1,920 cr, lead time 41 days, MTBF 780,300 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
@@ -54,7 +54,7 @@
 
 **Bed - Fold-Down Wall Bed**, Sable Habitat Furnishings, part SHF-BED-7371 (passive)
 
-* Mass 51.9 kg; size 1100 x 2270 x 2110 mm; heat 0 W.
+* Mass 51.9 kg; size 1100 x 2273 x 2110 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 2,160 cr, lead time 38 days, MTBF 1,004,600 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
@@ -88,7 +88,7 @@
 * Passive: no electrical load.
 * Price 2,620 cr, lead time 39 days, MTBF 979,600 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `computer` (screens: terminal).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `bed_recliner_sleeper`
@@ -105,9 +105,9 @@
 
 **Bed - Single Bunk**, Sable Habitat Furnishings, part SHF-BED-7236 (passive)
 
-* Mass 13.4 kg; size 920 x 800 x 2077 mm; heat 0 W.
+* Mass 13.5 kg; size 926 x 800 x 2077 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 693 cr, lead time 35 days, MTBF 1,092,500 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 697 cr, lead time 35 days, MTBF 1,092,500 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing.
 
@@ -115,7 +115,7 @@
 
 **Bed - Sleeping Pod**, Sable Habitat Furnishings, part SHF-BED-7079 (passive)
 
-* Mass 50.5 kg; size 1398 x 1440 x 2640 mm; heat 0 W.
+* Mass 50.5 kg; size 1398 x 1440 x 2643 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 2,040 cr, lead time 33 days, MTBF 1,063,900 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.

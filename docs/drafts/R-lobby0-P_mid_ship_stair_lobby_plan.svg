@@ -52,8 +52,8 @@
 <polygon points="298,137 282,137 282,136.1 298,136.1" class="f" fill="#81d3e8"/>
 <polygon points="205.62,97.62 218.38,97.62 218.38,110.38 205.62,110.38" class="dot" fill="none"/>
 <polygon points="127.74,94.4 146.94,94.4 146.94,113.6 127.74,113.6" class="dot" fill="none"/>
-<polygon points="105,97 119,97 119,111 105,111" class="dot" fill="none"/>
-<polygon points="305,97 319,97 319,111 305,111" class="dot" fill="none"/>
+<polygon points="105,96.98 119,96.98 119,111.04 105,111.04" class="dot" fill="none"/>
+<polygon points="305,96.98 319,96.98 319,111.04 305,111.04" class="dot" fill="none"/>
 <polygon points="276.72,95.34 296.6,95.34 296.6,112.66 276.72,112.66" class="dot" fill="none"/>
 <path d="M84 68 L340 68 L340 140 L84 140Z M87 71 L337 71 L337 137 L87 137Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="182,68 242,68 242,71 182,71" class="none" fill="#ffffff"/>
@@ -84,8 +84,8 @@
 <circle cx="164" cy="72.99" r="0.4" class="none" fill="#b03030"/>
 <line x1="325.25" y1="64.21" x2="327" y2="71.78" class="x"/>
 <circle cx="327" cy="71.78" r="0.4" class="none" fill="#b03030"/>
-<line x1="80.28" y1="100.46" x2="112" y2="104" class="x"/>
-<circle cx="112" cy="104" r="0.4" class="none" fill="#b03030"/>
+<line x1="80.28" y1="107.54" x2="112" y2="104.01" class="x"/>
+<circle cx="112" cy="104.01" r="0.4" class="none" fill="#b03030"/>
 <circle cx="212" cy="61" r="3.3" class="n" fill="#fff"/>
 <text x="212" y="61.6" font-size="1.6" class="t b" text-anchor="middle">LB0-01</text>
 <circle cx="129.5" cy="147" r="3.3" class="n" fill="#fff"/>
@@ -98,8 +98,8 @@
 <text x="167" y="61.6" font-size="1.6" class="t b" text-anchor="middle">LB0-05</text>
 <circle cx="324.5" cy="61" r="3.3" class="n" fill="#fff"/>
 <text x="324.5" y="61.6" font-size="1.6" class="t b" text-anchor="middle">LB0-06</text>
-<circle cx="77" cy="100.09" r="3.3" class="n" fill="#fff"/>
-<text x="77" y="100.69" font-size="1.6" class="t b" text-anchor="middle">LB0-07</text>
+<circle cx="77" cy="107.91" r="3.3" class="n" fill="#fff"/>
+<text x="77" y="108.51" font-size="1.6" class="t b" text-anchor="middle">LB0-07</text>
 <line x1="84" y1="46.2" x2="340" y2="46.2" class="d"/>
 <line x1="83.3" y1="46.9" x2="84.7" y2="45.5" class="m"/>
 <line x1="339.3" y1="46.9" x2="340.7" y2="45.5" class="m"/>

@@ -55,21 +55,21 @@
 <polygon points="193.8,199.8 179.13,199.8 179.13,192.93 193.8,192.93" class="n" fill="#bae881"/>
 <line x1="179.13" y1="192.93" x2="193.8" y2="192.93" class="m"/>
 <line x1="186.47" y1="192.93" x2="186.47" y2="194.13" class="f"/>
-<polygon points="128.2,168.71 157.53,168.71 157.53,175.97 128.2,175.97" class="n" fill="#bae881"/>
-<line x1="157.53" y1="175.97" x2="128.2" y2="175.97" class="m"/>
+<polygon points="128.16,168.71 157.57,168.71 157.57,175.97 128.16,175.97" class="n" fill="#bae881"/>
+<line x1="157.57" y1="175.97" x2="128.16" y2="175.97" class="m"/>
 <line x1="142.87" y1="175.97" x2="142.87" y2="174.77" class="f"/>
 <polygon points="98.73,157.77 98.73,144.23 109.09,144.23 109.09,157.77" class="n" fill="#f799f7"/>
 <line x1="109.09" y1="144.23" x2="109.09" y2="157.77" class="m"/>
 <line x1="109.09" y1="151" x2="107.89" y2="151" class="f"/>
-<polygon points="98.73,182 98.73,161.33 105.81,161.33 105.81,182" class="n" fill="#99e0f7"/>
-<line x1="105.81" y1="161.33" x2="105.81" y2="182" class="m"/>
-<line x1="105.81" y1="171.67" x2="104.61" y2="171.67" class="f"/>
+<polygon points="98.73,182 98.73,161.33 105.85,161.33 105.85,182" class="n" fill="#99e0f7"/>
+<line x1="105.85" y1="161.33" x2="105.85" y2="182" class="m"/>
+<line x1="105.85" y1="171.67" x2="104.65" y2="171.67" class="f"/>
 <polygon points="97.24,57.67 108.49,57.67 108.49,59.8 97.24,59.8" class="f" fill="#ef77be"/>
 <polygon points="104.87,200.33 100.87,200.33 100.87,197.68 104.87,197.68" class="f" fill="#e281e8"/>
-<polygon points="98.2,82.33 98.2,66.33 99.87,66.33 99.87,82.33" class="f" fill="#bae881"/>
+<polygon points="98.2,82.37 98.2,66.29 99.87,66.29 99.87,82.37" class="f" fill="#bae881"/>
 <polygon points="109.94,59.2 113.08,62.83 112.38,63.43 109.24,59.8" class="f" fill="#81e8c9"/>
 <polygon points="98.2,62.73 98.2,60.6 99.21,60.6 99.21,62.73" class="f" fill="#81e8d6"/>
-<polygon points="98.2,181.67 98.2,161.67 103,161.67 103,181.67" class="f" fill="#bae881"/>
+<polygon points="98.2,181.71 98.2,161.63 103,161.63 103,181.71" class="f" fill="#bae881"/>
 <polygon points="98.2,145.27 98.2,140.73 99.2,140.73 99.2,145.27" class="f" fill="#f799d5"/>
 <polygon points="147.07,200.33 138.67,200.33 138.67,199.77 147.07,199.77" class="f" fill="#81d3e8"/>
 <polygon points="98.2,62.87 98.2,60.47 100.87,60.47 100.87,62.87" class="f" fill="#81e8d6"/>
@@ -83,7 +83,7 @@
 <text x="111.53" y="90.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">decontamination_arch</text>
 <text x="142.87" y="172.64" font-size="1.25" class="t" text-anchor="middle" fill="#333">suit_up_bench</text>
 <text x="166.47" y="196.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">oxygen_pack_rack</text>
-<text x="102.27" y="171.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen C~</text>
+<text x="102.29" y="171.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen C~</text>
 <text x="114.6" y="195.52" font-size="1.25" class="t" text-anchor="middle" fill="#333">wardrobe</text>
 <text x="130.73" y="195.52" font-size="1.25" class="t" text-anchor="middle" fill="#333">wardrobe</text>
 <text x="103.91" y="151.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">compact aux</text>

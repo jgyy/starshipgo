@@ -7,7 +7,7 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `router_cable_modem` | Network router - Cable Modem | Kestrel Cognitive Systems | 202 x 400 x 172 | 3.59 kg | 20 W | 24 VDC | 4,000 |
-| `router_cable_spool` | Network router - Cable Spool | Kestrel Cognitive Systems | 1060 x 1100 x 1066 | 354.8 kg | 730 W | 120 VAC 1ph | 465 k |
+| `router_cable_spool` | Network router - Cable Spool | Kestrel Cognitive Systems | 1060 x 1103 x 1066 | 355.8 kg | 730 W | 120 VAC 1ph | 466 k |
 | `router_fiber_junction_box` | Network router - Fiber Junction Box | Kestrel Cognitive Systems | 500 x 740 x 152 | 16.9 kg | 43 W | 24 VDC | 16.7 k |
 | `router_network_hub` | Network router - Network Hub | Kestrel Cognitive Systems | 460 x 105 x 444 | 6.25 kg | 27 W | 24 VDC | 8,010 |
 | `router_patch_panel` | Network router - Patch Panel | Kestrel Cognitive Systems | 900 x 555 x 208 | 30.4 kg | 77 W | 48 VDC | 37.7 k |
@@ -31,11 +31,11 @@
 
 **Network router - Cable Spool**, Kestrel Cognitive Systems, part KCS-ROU-8615 (consumer)
 
-* Mass 354.8 kg; size 1060 x 1100 x 1066 mm; heat 670 W.
+* Mass 355.8 kg; size 1060 x 1103 x 1066 mm; heat 670 W.
 * Power 180 W idle / 730 W typical / 1.1 kW peak at 120 VAC 1ph.
-* Price 465 k cr, lead time 66 days, MTBF 69,500 h, service every 8,760 h, service life 10 years, crew 0.
+* Price 466 k cr, lead time 66 days, MTBF 69,500 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* floor-mounted, free-standing. Install with a hoist or gantry (354.8 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (355.8 kg).
 
 ### `router_fiber_junction_box`
 

@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `storage_archive_robot` | Data storage - Archive Robot | Kestrel Cognitive Systems | 1800 x 2000 x 925 | 1.94 t | 3.8 kW | 208 VAC 3ph | 2.18 M |
 | `storage_black_box_recorder` | Data storage - Black Box Recorder | Kestrel Cognitive Systems | 370 x 190 x 220 | 8 kg | 120 W | 48 VDC | 9,050 |
-| `storage_cartridge_library_shelves` | Data storage - Cartridge Library Shelves | Kestrel Cognitive Systems | 1200 x 1960 x 450 | 584.8 kg | 1.1 kW | 120 VAC 1ph | 706 k |
+| `storage_cartridge_library_shelves` | Data storage - Cartridge Library Shelves | Kestrel Cognitive Systems | 1206 x 1963 x 453 | 592.6 kg | 1.1 kW | 120 VAC 1ph | 716 k |
 | `storage_cold_storage_locker` | Data storage - Cold Storage Locker | Kestrel Cognitive Systems | 1200 x 2020 x 640 | 859.9 kg | 1.6 kW | 208 VAC 3ph | 1.1 M |
 | `storage_data_crystal_vault` | Data storage - Data Crystal Vault | Kestrel Cognitive Systems | 1192 x 2120 x 1192 | 1.68 t | 3.2 kW | 208 VAC 3ph | 1.56 M |
 | `storage_holo_storage_cylinder` | Data storage - Holo Storage Cylinder | Kestrel Cognitive Systems | 900 x 1990 x 912 | 899 kg | 1.8 kW | 208 VAC 3ph | 832 k |
@@ -42,11 +42,11 @@
 
 **Data storage - Cartridge Library Shelves**, Kestrel Cognitive Systems, part KCS-STO-2389 (consumer)
 
-* Mass 584.8 kg; size 1200 x 1960 x 450 mm; heat 1 kW.
-* Power 260 W idle / 1.1 kW typical / 1.6 kW peak at 120 VAC 1ph.
-* Price 706 k cr, lead time 64 days, MTBF 62,300 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 592.6 kg; size 1206 x 1963 x 453 mm; heat 1 kW.
+* Power 270 W idle / 1.1 kW typical / 1.6 kW peak at 120 VAC 1ph.
+* Price 716 k cr, lead time 64 days, MTBF 62,300 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* floor-mounted, free-standing. Install with a hoist or gantry (584.8 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (592.6 kg).
 
 ### `storage_cold_storage_locker`
 
@@ -76,7 +76,7 @@
 * Power 450 W idle / 1.8 kW typical / 2.7 kW peak at 208 VAC 3ph.
 * Price 832 k cr, lead time 66 days, MTBF 85,600 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `diagnostics` (screens: bars).
+* Software: `cargo` (screens: cargo_manifest).
 * floor-mounted, free-standing. Install with a hoist or gantry (899 kg).
 
 ### `storage_memory_core_column`

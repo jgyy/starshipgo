@@ -7,9 +7,9 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `cryo_cryo_control_pillar` | Cryo / stasis - Cryo Control Pillar | Lindqvist-Aoki Medical | 1071 x 2020 x 700 | 460.8 kg | 3.1 kW | 208 VAC 3ph | 791 k |
-| `cryo_cryo_stasis_pod` | Cryo / stasis - Cryo-Stasis Pod | Lindqvist-Aoki Medical | 1000 x 1380 x 2865 | 1.03 t | 6.2 kW | 208 VAC 3ph | 1.87 M |
+| `cryo_cryo_stasis_pod` | Cryo / stasis - Cryo-Stasis Pod | Lindqvist-Aoki Medical | 1000 x 1380 x 2868 | 1.03 t | 6.2 kW | 208 VAC 3ph | 1.87 M |
 | `cryo_cryo_storage_tank` | Cryo / stasis - Cryo Storage Tank | Lindqvist-Aoki Medical | 1200 x 2550 x 1200 | 1.03 t | 5.9 kW | 208 VAC 3ph | 1.75 M |
-| `cryo_nutrient_iv_tree` | Cryo / stasis - Nutrient Iv Tree | Lindqvist-Aoki Medical | 850 x 2070 x 850 | 431.2 kg | 3.1 kW | 208 VAC 3ph | 844 k |
+| `cryo_nutrient_iv_tree` | Cryo / stasis - Nutrient Iv Tree | Lindqvist-Aoki Medical | 850 x 2073 x 850 | 431.8 kg | 3.1 kW | 208 VAC 3ph | 845 k |
 
 ## Datasheets
 
@@ -21,14 +21,14 @@
 * Power 930 W idle / 3.1 kW typical / 5.6 kW peak at 208 VAC 3ph.
 * Price 791 k cr, lead time 100 days, MTBF 59,700 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 46 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: vitals).
+* Software: `medical` (screens: ecg_multi).
 * floor-mounted, free-standing. Install with a hoist or gantry (460.8 kg).
 
 ### `cryo_cryo_stasis_pod`
 
 **Cryo / stasis - Cryo-Stasis Pod**, Lindqvist-Aoki Medical, part LAM-CRY-1545 (consumer)
 
-* Mass 1.03 t; size 1000 x 1380 x 2865 mm; heat 5.7 kW.
+* Mass 1.03 t; size 1000 x 1380 x 2868 mm; heat 5.7 kW.
 * Power 1.9 kW idle / 6.2 kW typical / 11 kW peak at 208 VAC 3ph.
 * Price 1.87 M cr, lead time 97 days, MTBF 51,400 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 47 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
@@ -49,9 +49,9 @@
 
 **Cryo / stasis - Nutrient Iv Tree**, Lindqvist-Aoki Medical, part LAM-CRY-9760 (consumer)
 
-* Mass 431.2 kg; size 850 x 2070 x 850 mm; heat 2.9 kW.
+* Mass 431.8 kg; size 850 x 2073 x 850 mm; heat 2.9 kW.
 * Power 920 W idle / 3.1 kW typical / 5.5 kW peak at 208 VAC 3ph.
-* Price 844 k cr, lead time 104 days, MTBF 59,700 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 845 k cr, lead time 104 days, MTBF 59,700 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 46 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* floor-mounted, free-standing. Install with a hoist or gantry (431.2 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (431.8 kg).
 

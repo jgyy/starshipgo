@@ -13,13 +13,13 @@
 | `tank_cryo_dewar` | Tank / fluid handling - Cryo Dewar | Brightwater Life Systems | 1000 x 1980 x 1000 | 1.12 t | 0 W | none | 557 k |
 | `tank_deuterium_bottle` | Tank / fluid handling - Deuterium Bottle | Brightwater Life Systems | 304 x 1695 x 320 | 98.7 kg | 0 W | none | 44.5 k |
 | `tank_deuterium_bottle_rack` | Tank / fluid handling - Deuterium Bottle Rack | Brightwater Life Systems | 1500 x 1710 x 560 | 840.6 kg | 0 W | none | 514 k |
-| `tank_expansion_tank` | Tank / fluid handling - Expansion Tank | Brightwater Life Systems | 1274 x 710 x 559 | 311.1 kg | 0 W | none | 172 k |
+| `tank_expansion_tank` | Tank / fluid handling - Expansion Tank | Brightwater Life Systems | 1274 x 710 x 562 | 312.8 kg | 0 W | none | 173 k |
 | `tank_filtration_unit` | Tank / fluid handling - Filtration Unit | Brightwater Life Systems | 1526 x 1631 x 766 | 1.2 t | 3.7 kW | 208 VAC 3ph | 675 k |
-| `tank_horizontal_fuel_tank` | Tank / fluid handling - Horizontal Fuel Tank | Brightwater Life Systems | 2262 x 1475 x 1056 | 1.96 t | 0 W | none | 1.11 M |
+| `tank_horizontal_fuel_tank` | Tank / fluid handling - Horizontal Fuel Tank | Brightwater Life Systems | 2262 x 1478 x 1056 | 1.96 t | 0 W | none | 1.12 M |
 | `tank_piston_pump_skid` | Tank / fluid handling - Piston Pump Skid | Brightwater Life Systems | 1307 x 1050 x 600 | 458.9 kg | 3.4 kW | 208 VAC 3ph | 291 k |
 | `tank_radiator_coil` | Tank / fluid handling - Radiator Coil | Brightwater Life Systems | 1200 x 1400 x 180 | 185.8 kg | 3.6 kW | 208 VAC 3ph | 119 k |
 | `tank_radiator_panel` | Tank / fluid handling - Radiator Panel | Brightwater Life Systems | 1560 x 2050 x 140 | 241.6 kg | 3.8 kW | 208 VAC 3ph | 113 k |
-| `tank_shell_and_tube_heat_exchanger` | Tank / fluid handling - Shell And Tube Heat Exchanger | Brightwater Life Systems | 3118 x 1441 x 800 | 2.38 t | 3.5 kW | 208 VAC 3ph | 1.26 M |
+| `tank_shell_and_tube_heat_exchanger` | Tank / fluid handling - Shell And Tube Heat Exchanger | Brightwater Life Systems | 3118 x 1444 x 800 | 2.38 t | 3.5 kW | 208 VAC 3ph | 1.26 M |
 | `tank_spherical_pressure_vessel` | Tank / fluid handling - Spherical Pressure Vessel | Brightwater Life Systems | 1760 x 2371 x 1753 | 4.51 t | 0 W | none | 2.19 M |
 | `tank_sump_tank` | Tank / fluid handling - Sump Tank | Brightwater Life Systems | 1661 x 895 x 825 | 725.7 kg | 0 W | none | 431 k |
 | `tank_tote_tank` | Tank / fluid handling - Tote Tank | Brightwater Life Systems | 1000 x 1155 x 1125 | 763.2 kg | 0 W | none | 465 k |
@@ -101,11 +101,11 @@
 
 **Tank / fluid handling - Expansion Tank**, Brightwater Life Systems, part BLS-TAN-9949 (passive)
 
-* Mass 311.1 kg; size 1274 x 710 x 559 mm; heat 0 W.
+* Mass 312.8 kg; size 1274 x 710 x 562 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 172 k cr, lead time 97 days, MTBF 55,900 h, service every 3,000 h, service life 18 years, crew 0.
+* Price 173 k cr, lead time 97 days, MTBF 55,900 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
-* wall-mounted. Install with a hoist or gantry (311.1 kg).
+* wall-mounted. Install with a hoist or gantry (312.8 kg).
 
 ### `tank_filtration_unit`
 
@@ -121,9 +121,9 @@
 
 **Tank / fluid handling - Horizontal Fuel Tank**, Brightwater Life Systems, part BLS-TAN-9687 (passive)
 
-* Mass 1.96 t; size 2262 x 1475 x 1056 mm; heat 0 W.
+* Mass 1.96 t; size 2262 x 1478 x 1056 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1.11 M cr, lead time 99 days, MTBF 43,200 h, service every 3,000 h, service life 18 years, crew 0.
+* Price 1.12 M cr, lead time 99 days, MTBF 43,200 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
 * floor-mounted, free-standing. Install with a hoist or gantry (1.96 t).
 
@@ -161,7 +161,7 @@
 
 **Tank / fluid handling - Shell And Tube Heat Exchanger**, Brightwater Life Systems, part BLS-TAN-4164 (consumer)
 
-* Mass 2.38 t; size 3118 x 1441 x 800 mm; heat 3.2 kW.
+* Mass 2.38 t; size 3118 x 1444 x 800 mm; heat 3.2 kW.
 * Power 1.4 kW idle / 3.5 kW typical / 5.6 kW peak at 208 VAC 3ph.
 * Price 1.26 M cr, lead time 99 days, MTBF 56,500 h, service every 3,000 h, service life 18 years, crew 1.
 * IP54, -10 to 55 C, 63 dB(A); certifications: CSA-LS1 life support, CSA-P4 pressure equipment; interface: Environmental bus EB-1.

@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `bin_incinerator_hatch` | Waste / recycling bin - Incinerator Hatch | Sable Habitat Furnishings | 800 x 800 x 185 | 8.61 kg | 0 W | none | 632 |
 | `bin_recycling_bin_triple` | Waste / recycling bin - Recycling Bin Triple | Sable Habitat Furnishings | 1240 x 965 x 509 | 44.1 kg | 0 W | none | 2,000 |
-| `bin_trash_bin` | Waste / recycling bin - Trash Bin | Sable Habitat Furnishings | 538 x 775 x 549 | 15.8 kg | 0 W | none | 750 |
+| `bin_trash_bin` | Waste / recycling bin - Trash Bin | Sable Habitat Furnishings | 538 x 778 x 549 | 15.8 kg | 0 W | none | 750 |
 | `bin_waste_chute_door` | Waste / recycling bin - Waste Chute Door | Sable Habitat Furnishings | 600 x 700 x 110 | 3.24 kg | 0 W | none | 218 |
 
 ## Datasheets
@@ -37,7 +37,7 @@
 
 **Waste / recycling bin - Trash Bin**, Sable Habitat Furnishings, part SHF-BIN-1392 (passive)
 
-* Mass 15.8 kg; size 538 x 775 x 549 mm; heat 0 W.
+* Mass 15.8 kg; size 538 x 778 x 549 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 750 cr, lead time 40 days, MTBF 835,600 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.

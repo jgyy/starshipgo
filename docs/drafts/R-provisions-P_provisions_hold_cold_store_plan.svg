@@ -90,9 +90,9 @@
 <polygon points="161.6,161.48 186.4,161.48 186.4,182.52 161.6,182.52" class="n" fill="#81e8af"/>
 <line x1="186.4" y1="182.52" x2="161.6" y2="182.52" class="m"/>
 <line x1="174" y1="182.52" x2="174" y2="181.32" class="f"/>
-<polygon points="188,165 204,165 204,179 188,179" class="n" fill="#81e8af"/>
-<line x1="204" y1="179" x2="188" y2="179" class="m"/>
-<line x1="196" y1="179" x2="196" y2="177.8" class="f"/>
+<polygon points="188,164.96 204.12,164.96 204.12,179.02 188,179.02" class="n" fill="#81e8af"/>
+<line x1="204.12" y1="179.02" x2="188" y2="179.02" class="m"/>
+<line x1="196.06" y1="179.02" x2="196.06" y2="177.82" class="f"/>
 <polygon points="167,215.2 133,215.2 133,205.2 167,205.2" class="n" fill="#f799c9"/>
 <line x1="133" y1="205.2" x2="167" y2="205.2" class="m"/>
 <line x1="150" y1="205.2" x2="150" y2="206.4" class="f"/>
@@ -212,7 +212,7 @@
 <text x="63.7" y="51.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Dewar</text>
 <text x="101" y="101.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">refrigerator</text>
 <text x="101" y="206.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">refrigerator</text>
-<text x="196" y="172.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">roll_cage_loaded</text>
+<text x="196.06" y="172.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">roll_cage_loaded</text>
 <text x="212.2" y="210.18" font-size="1.25" class="t" text-anchor="middle" fill="#333">ration_locker</text>
 <text x="233.4" y="210.18" font-size="1.25" class="t" text-anchor="middle" fill="#333">ration_locker</text>
 <text x="240.95" y="84.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office ch~</text>
@@ -238,8 +238,8 @@
 <circle cx="203.4" cy="49.7" r="0.4" class="none" fill="#b03030"/>
 <line x1="173.28" y1="35.3" x2="173.8" y2="90" class="x"/>
 <circle cx="173.8" cy="90" r="0.4" class="none" fill="#b03030"/>
-<line x1="196.12" y1="222.7" x2="196" y2="172" class="x"/>
-<circle cx="196" cy="172" r="0.4" class="none" fill="#b03030"/>
+<line x1="173.3" y1="222.7" x2="174" y2="172" class="x"/>
+<circle cx="174" cy="172" r="0.4" class="none" fill="#b03030"/>
 <line x1="150.3" y1="222.7" x2="150" y2="210.2" class="x"/>
 <circle cx="150" cy="210.2" r="0.4" class="none" fill="#b03030"/>
 <line x1="276.7" y1="187.17" x2="257" y2="187" class="x"/>
@@ -272,8 +272,8 @@
 <text x="203.75" y="32.6" font-size="2" class="t b" text-anchor="middle">PH-06</text>
 <circle cx="173.25" cy="32" r="3.3" class="n" fill="#fff"/>
 <text x="173.25" y="32.6" font-size="2" class="t b" text-anchor="middle">PH-07</text>
-<circle cx="196.12" cy="226" r="3.3" class="n" fill="#fff"/>
-<text x="196.12" y="226.6" font-size="2" class="t b" text-anchor="middle">PH-08</text>
+<circle cx="173.25" cy="226" r="3.3" class="n" fill="#fff"/>
+<text x="173.25" y="226.6" font-size="2" class="t b" text-anchor="middle">PH-08</text>
 <circle cx="150.38" cy="226" r="3.3" class="n" fill="#fff"/>
 <text x="150.38" y="226.6" font-size="2" class="t b" text-anchor="middle">PH-09</text>
 <circle cx="280" cy="187.2" r="3.3" class="n" fill="#fff"/>

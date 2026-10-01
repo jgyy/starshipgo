@@ -36,7 +36,7 @@
 <clipPath id="clipA"><rect x="96.7" y="56.7" width="230.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="97,63 327,63 327,131 97,131" class="x" fill="#e4e8ed"/>
-<polygon points="107,91.8 131,91.8 131,131 107,131" class="f" fill="#c2f3d2"/>
+<polygon points="106.94,91.74 131.06,91.74 131.06,131 106.94,131" class="f" fill="#c2f3d2"/>
 <polygon points="260.86,106.8 281.16,106.8 281.16,116.2 260.86,116.2" class="f" fill="#fbcdcd"/>
 <polygon points="152.84,106.8 173.14,106.8 173.14,116.2 152.84,116.2" class="f" fill="#fbcdcd"/>
 <polygon points="260.94,106.56 293.08,106.56 293.08,131 260.94,131" class="f" fill="#e3bcf7"/>
@@ -54,7 +54,7 @@
 <polygon points="205.97,104.78 228.68,104.78 228.68,131 205.97,131" class="f" fill="#fac2fa"/>
 <polygon points="322.88,75 324,75 324,83 322.88,83" class="f" fill="#b3e4f1"/>
 <polygon points="157.67,103.2 198.64,103.2 198.64,131 157.67,131" class="f" fill="#fabffa"/>
-<polygon points="250.12,62.98 262.88,62.98 262.88,66.5 250.12,66.5" class="dot" fill="none"/>
+<polygon points="250.12,62.98 262.88,62.98 262.88,66.56 250.12,66.56" class="dot" fill="none"/>
 <polygon points="157.9,63 177.1,63 177.1,65.72 157.9,65.72" class="dot" fill="none"/>
 <polygon points="202.04,96.18 215.96,96.18 215.96,131 202.04,131" class="f" fill="#bcf2f9"/>
 <polygon points="152.24,103.2 169.74,103.2 169.74,131 152.24,131" class="f" fill="#f9bcf9"/>
@@ -70,7 +70,7 @@
 <polygon points="202.04,96.18 215.96,96.18 215.96,131 202.04,131" class="m" fill="#9eecf7"/>
 <polygon points="152.24,103.2 169.74,103.2 169.74,131 152.24,131" class="m" fill="#f79ef7"/>
 <polygon points="132.42,118.08 143.58,118.08 143.58,131 132.42,131" class="m" fill="#97ef7d"/>
-<polygon points="250.12,62.98 262.88,62.98 262.88,66.5 250.12,66.5" class="m" fill="#bff79e"/>
+<polygon points="250.12,62.98 262.88,62.98 262.88,66.56 250.12,66.56" class="m" fill="#bff79e"/>
 <polygon points="157.9,63 177.1,63 177.1,65.72 157.9,65.72" class="m" fill="#bff79e"/>
 </g>
 <text x="322.01" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>

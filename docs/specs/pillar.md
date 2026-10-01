@@ -6,10 +6,10 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `pillar_arch_rib` | Structural pillar - Arch Rib | Calder-Okonkwo Industries | 3480 x 3680 x 600 | 5.58 t | 0 W | none | 103 k |
+| `pillar_arch_rib` | Structural pillar - Arch Rib | Calder-Okonkwo Industries | 3480 x 3683 x 600 | 5.58 t | 0 W | none | 104 k |
 | `pillar_box_beam_light` | Structural pillar - Box Beam Light | Calder-Okonkwo Industries | 4000 x 400 x 540 | 622.1 kg | 0 W | none | 11.4 k |
-| `pillar_bulkhead_frame` | Structural pillar - Bulkhead Frame | Calder-Okonkwo Industries | 2200 x 3400 x 500 | 2.86 t | 0 W | none | 56.2 k |
-| `pillar_buttress` | Structural pillar - Buttress | Calder-Okonkwo Industries | 600 x 3400 x 1000 | 1.52 t | 0 W | none | 39.4 k |
+| `pillar_bulkhead_frame` | Structural pillar - Bulkhead Frame | Calder-Okonkwo Industries | 2200 x 3403 x 500 | 2.86 t | 0 W | none | 56.3 k |
+| `pillar_buttress` | Structural pillar - Buttress | Calder-Okonkwo Industries | 600 x 3403 x 1000 | 1.52 t | 0 W | none | 39.4 k |
 | `pillar_fluted_round` | Structural pillar - Fluted Round | Calder-Okonkwo Industries | 640 x 3400 x 640 | 1.11 t | 0 W | none | 21.8 k |
 | `pillar_h_beam` | Structural pillar - H Beam | Calder-Okonkwo Industries | 600 x 3400 x 600 | 861.5 kg | 0 W | none | 19 k |
 | `pillar_h_beam_4m` | Structural pillar - H Beam 4M | Calder-Okonkwo Industries | 4000 x 400 x 420 | 473.4 kg | 0 W | none | 9,950 |
@@ -18,7 +18,7 @@
 | `pillar_square_plinth` | Structural pillar - Square Plinth | Calder-Okonkwo Industries | 600 x 3400 x 600 | 886.9 kg | 0 W | none | 22 k |
 | `pillar_tapered_ring` | Structural pillar - Tapered Ring | Calder-Okonkwo Industries | 840 x 3400 x 840 | 1.69 t | 0 W | none | 38.2 k |
 | `pillar_truss` | Structural pillar - Truss | Calder-Okonkwo Industries | 500 x 3400 x 500 | 640.6 kg | 0 W | none | 16.9 k |
-| `pillar_truss_beam_4m` | Structural pillar - Truss Beam 4M | Calder-Okonkwo Industries | 4024 x 515 x 460 | 666.1 kg | 0 W | none | 17.6 k |
+| `pillar_truss_beam_4m` | Structural pillar - Truss Beam 4M | Calder-Okonkwo Industries | 4024 x 515 x 466 | 674.8 kg | 0 W | none | 17.9 k |
 | `pillar_twin_rods` | Structural pillar - Twin Rods | Calder-Okonkwo Industries | 920 x 3400 x 320 | 690.9 kg | 0 W | none | 16.6 k |
 
 ## Datasheets
@@ -27,9 +27,9 @@
 
 **Structural pillar - Arch Rib**, Calder-Okonkwo Industries, part COI-PIL-8848 (passive)
 
-* Mass 5.58 t; size 3480 x 3680 x 600 mm; heat 0 W.
+* Mass 5.58 t; size 3480 x 3683 x 600 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 103 k cr, lead time 59 days, MTBF 1,628,900 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 104 k cr, lead time 59 days, MTBF 1,628,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted, free-standing. Install with a hoist or gantry (5.58 t).
 
@@ -47,9 +47,9 @@
 
 **Structural pillar - Bulkhead Frame**, Calder-Okonkwo Industries, part COI-PIL-8390 (passive)
 
-* Mass 2.86 t; size 2200 x 3400 x 500 mm; heat 0 W.
+* Mass 2.86 t; size 2200 x 3403 x 500 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 56.2 k cr, lead time 50 days, MTBF 1,848,300 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 56.3 k cr, lead time 50 days, MTBF 1,848,300 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted, free-standing. Install with a hoist or gantry (2.86 t).
 
@@ -57,7 +57,7 @@
 
 **Structural pillar - Buttress**, Calder-Okonkwo Industries, part COI-PIL-6011 (passive)
 
-* Mass 1.52 t; size 600 x 3400 x 1000 mm; heat 0 W.
+* Mass 1.52 t; size 600 x 3403 x 1000 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 39.4 k cr, lead time 52 days, MTBF 1,689,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -147,11 +147,11 @@
 
 **Structural pillar - Truss Beam 4M**, Calder-Okonkwo Industries, part COI-PIL-6125 (passive)
 
-* Mass 666.1 kg; size 4024 x 515 x 460 mm; heat 0 W.
+* Mass 674.8 kg; size 4024 x 515 x 466 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 17.6 k cr, lead time 54 days, MTBF 1,859,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 17.9 k cr, lead time 54 days, MTBF 1,859,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* ceiling-mounted. Install with a hoist or gantry (666.1 kg).
+* ceiling-mounted. Install with a hoist or gantry (674.8 kg).
 
 ### `pillar_twin_rods`
 

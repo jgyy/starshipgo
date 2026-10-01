@@ -49,13 +49,13 @@
 <polygon points="194.85,109.76 209.15,109.76 209.15,131 194.85,131" class="f" fill="#bef9f1"/>
 <polygon points="167.01,97.2 168.99,97.2 168.99,104.8 167.01,104.8" class="f" fill="#bef9dc"/>
 <polygon points="188.85,63 220.85,63 220.85,66.4 188.85,66.4" class="dot" fill="none"/>
-<polygon points="234.67,96.66 266.55,96.66 266.55,131 234.67,131" class="f" fill="#f4e3a6"/>
+<polygon points="234.66,96.66 266.57,96.66 266.57,131 234.66,131" class="f" fill="#f4e3a6"/>
 <polygon points="204.17,75 211.47,75 211.47,131 204.17,131" class="f" fill="none"/>
 <polygon points="164.01,131 259.99,131 259.99,137 164.01,137" class="n" fill="url(#hSlab)"/>
 <polygon points="164.01,57 259.99,57 259.99,63 164.01,63" class="n" fill="url(#hSlab)"/>
 <polygon points="164.01,63 167.01,63 167.01,75.8 164.01,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="256.15,63 259.99,63 259.99,131 256.15,131" class="n" fill="url(#hHull)"/>
-<polygon points="234.67,96.66 255.14,96.66 255.14,131 234.67,131" class="m" fill="#efd77d"/>
+<polygon points="234.66,96.66 255.12,96.66 255.12,131 234.66,131" class="m" fill="#efd77d"/>
 <polygon points="204.17,75 211.47,75 211.47,131 204.17,131" class="m" fill="none"/>
 </g>
 <text x="280.66" y="95.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1800</text>

@@ -7,12 +7,12 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `junction_breaker_panel` | Electrical junction - Breaker Panel | Halvorsen Power Systems | 600 x 900 x 183 | 26.8 kg | 14 W | 24 VDC | 24.5 k |
-| `junction_bus_bar_riser` | Electrical junction - Bus Bar Riser | Halvorsen Power Systems | 500 x 2000 x 150 | 36 kg | 20 W | 24 VDC | 35.6 k |
+| `junction_bus_bar_riser` | Electrical junction - Bus Bar Riser | Halvorsen Power Systems | 500 x 2003 x 153 | 36.8 kg | 20 W | 24 VDC | 36.4 k |
 | `junction_cable_termination_cabinet` | Electrical junction - Cable Termination Cabinet | Halvorsen Power Systems | 920 x 1910 x 555 | 256.9 kg | 100 W | 48 VDC | 278 k |
 | `junction_cable_tray_segment` | Electrical junction - Cable Tray Segment | Halvorsen Power Systems | 1600 x 400 x 295 | 43.4 kg | 23 W | 24 VDC | 43.5 k |
 | `junction_conduit_cluster` | Electrical junction - Conduit Cluster | Halvorsen Power Systems | 1400 x 1400 x 156 | 77.9 kg | 34 W | 24 VDC | 91.5 k |
-| `junction_control_cabinet_with_lights` | Electrical junction - Control Cabinet With Lights | Halvorsen Power Systems | 820 x 1810 x 510 | 194.2 kg | 83 W | 48 VDC | 195 k |
-| `junction_data_interface_rack` | Electrical junction - Data Interface Rack | Halvorsen Power Systems | 620 x 1800 x 761 | 207.3 kg | 96 W | 48 VDC | 193 k |
+| `junction_control_cabinet_with_lights` | Electrical junction - Control Cabinet With Lights | Halvorsen Power Systems | 820 x 1810 x 513 | 195.3 kg | 84 W | 48 VDC | 196 k |
+| `junction_data_interface_rack` | Electrical junction - Data Interface Rack | Halvorsen Power Systems | 626 x 1800 x 761 | 209.3 kg | 97 W | 48 VDC | 195 k |
 | `junction_diagnostic_port_panel` | Electrical junction - Diagnostic Port Panel | Halvorsen Power Systems | 500 x 420 x 91 | 4.6 kg | 7.4 W | 24 VDC | 5,260 |
 | `junction_disconnect_switch` | Electrical junction - Disconnect Switch | Halvorsen Power Systems | 360 x 520 x 408 | 20.4 kg | 12 W | 24 VDC | 27 k |
 | `junction_distribution_board` | Electrical junction - Distribution Board | Halvorsen Power Systems | 1200 x 1400 x 235 | 103 kg | 45 W | 24 VDC | 123 k |
@@ -45,9 +45,9 @@
 
 **Electrical junction - Bus Bar Riser**, Halvorsen Power Systems, part HPS-JUN-3910 (consumer)
 
-* Mass 36 kg; size 500 x 2000 x 150 mm; heat 18 W.
-* Power 4.9 W idle / 20 W typical / 29 W peak at 24 VDC.
-* Price 35.6 k cr, lead time 58 days, MTBF 110,300 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 36.8 kg; size 500 x 2003 x 153 mm; heat 18 W.
+* Power 5 W idle / 20 W typical / 30 W peak at 24 VDC.
+* Price 36.4 k cr, lead time 58 days, MTBF 110,300 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * wall-mounted. Two-person lift.
 
@@ -85,9 +85,9 @@
 
 **Electrical junction - Control Cabinet With Lights**, Halvorsen Power Systems, part HPS-JUN-8635 (consumer)
 
-* Mass 194.2 kg; size 820 x 1810 x 510 mm; heat 76 W.
-* Power 21 W idle / 83 W typical / 120 W peak at 48 VDC.
-* Price 195 k cr, lead time 59 days, MTBF 96,200 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 195.3 kg; size 820 x 1810 x 513 mm; heat 77 W.
+* Power 21 W idle / 84 W typical / 130 W peak at 48 VDC.
+* Price 196 k cr, lead time 59 days, MTBF 96,200 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 29 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -95,9 +95,9 @@
 
 **Electrical junction - Data Interface Rack**, Halvorsen Power Systems, part HPS-JUN-7251 (consumer)
 
-* Mass 207.3 kg; size 620 x 1800 x 761 mm; heat 88 W.
-* Power 24 W idle / 96 W typical / 140 W peak at 48 VDC.
-* Price 193 k cr, lead time 62 days, MTBF 61,100 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 209.3 kg; size 626 x 1800 x 761 mm; heat 89 W.
+* Power 24 W idle / 97 W typical / 150 W peak at 48 VDC.
+* Price 195 k cr, lead time 62 days, MTBF 61,100 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 29 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -109,7 +109,7 @@
 * Power 1.9 W idle / 7.4 W typical / 11 W peak at 24 VDC.
 * Price 5,260 cr, lead time 51 days, MTBF 66,200 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `logbook` (screens: log_list).
 * wall-mounted.
 
 ### `junction_disconnect_switch`
@@ -240,7 +240,7 @@
 * Power 36 W idle / 150 W typical / 220 W peak at 48 VDC.
 * Price 332 k cr, lead time 70 days, MTBF 107,100 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 30 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `power` (screens: power).
+* Software: `engineering` (screens: engine_temp).
 * floor-mounted, free-standing. Install with a hoist or gantry (367.8 kg).
 
 ### `junction_terminal_block`

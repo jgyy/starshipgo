@@ -45,8 +45,8 @@
 <text x="177.07" y="68.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: lane from the cargo opening int~</text>
 <polygon points="202,57.33 222,57.33 222,78.67 202,78.67" class="red" fill="url(#hZone)"/>
 <text x="212" y="77.47" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: lane from the corrido~</text>
-<polygon points="294.51,61.07 293.64,66.33 289.99,65.73 290.87,60.47" class="n" fill="#ef9a77"/>
-<line x1="289.99" y1="65.73" x2="290.87" y2="60.47" class="m"/>
+<polygon points="294.52,61.05 293.64,66.35 289.99,65.75 290.87,60.45" class="n" fill="#ef9a77"/>
+<line x1="289.99" y1="65.75" x2="290.87" y2="60.45" class="m"/>
 <line x1="290.43" y1="63.1" x2="291.61" y2="63.29" class="f"/>
 <polygon points="148.67,83.33 188.67,83.33 188.67,123.33 148.67,123.33" class="n" fill="#ef9a77"/>
 <line x1="188.67" y1="123.33" x2="148.67" y2="123.33" class="m"/>

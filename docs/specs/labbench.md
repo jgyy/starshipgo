@@ -7,7 +7,7 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `labbench_cleanroom_glove_box` | Lab bench - Cleanroom Glove Box | Orrery Instruments | 2242 x 1570 x 850 | 301.2 kg | 0 W | none | 13.8 k |
-| `labbench_fume_hood` | Lab bench - Fume Hood | Orrery Instruments | 1640 x 3000 x 911 | 394.7 kg | 0 W | none | 17.8 k |
+| `labbench_fume_hood` | Lab bench - Fume Hood | Orrery Instruments | 1640 x 3000 x 911 | 394.9 kg | 0 W | none | 17.8 k |
 | `labbench_island_reagent_bench` | Lab bench - Island Reagent Bench | Orrery Instruments | 2400 x 1885 x 1232 | 540.7 kg | 0 W | none | 18.6 k |
 | `labbench_lab_chair` | Lab bench - Lab Chair | Orrery Instruments | 610 x 949 x 630 | 31.2 kg | 0 W | none | 1,400 |
 | `labbench_lab_stool` | Lab bench - Lab Stool | Orrery Instruments | 531 x 735 x 564 | 21.4 kg | 0 W | none | 1,210 |
@@ -25,19 +25,19 @@
 * Passive: no electrical load.
 * Price 13.8 k cr, lead time 38 days, MTBF 1,057,000 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `computer` (screens: graph_lines).
 * floor-mounted, free-standing. Install with a hoist or gantry (301.2 kg).
 
 ### `labbench_fume_hood`
 
 **Lab bench - Fume Hood**, Orrery Instruments, part ORI-LAB-6282 (passive)
 
-* Mass 394.7 kg; size 1640 x 3000 x 911 mm; heat 0 W.
+* Mass 394.9 kg; size 1640 x 3000 x 911 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 17.8 k cr, lead time 46 days, MTBF 908,400 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: diagnostic).
-* floor-mounted, free-standing. Install with a hoist or gantry (394.7 kg).
+* Software: `computer` (screens: terminal).
+* floor-mounted, free-standing. Install with a hoist or gantry (394.9 kg).
 
 ### `labbench_island_reagent_bench`
 
@@ -77,7 +77,7 @@
 * Passive: no electrical load.
 * Price 7,580 cr, lead time 38 days, MTBF 1,028,200 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `engineering` (screens: systems).
+* Software: `hydroponics` (screens: hydro_status).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `labbench_sample_prep_table`
@@ -88,7 +88,7 @@
 * Passive: no electrical load.
 * Price 8,270 cr, lead time 44 days, MTBF 1,126,800 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `diagnostics` (screens: bars, diagnostic).
+* Software: `cargo`, `computer` (screens: inventory_grid, terminal).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `labbench_wet_bench_sink`

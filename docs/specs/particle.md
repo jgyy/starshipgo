@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `particle_detector_ring_segment` | Particle physics equipment - Detector Ring Segment | Orrery Instruments | 2247 x 2470 x 1320 | 4.33 t | 570 kW | 6.6 kVAC 3ph | 12.9 M |
 | `particle_mini_collider_ring` | Particle physics equipment - Mini Collider Ring | Orrery Instruments | 2600 x 1400 x 2600 | 5.72 t | 780 kW | 6.6 kVAC 3ph | 15.9 M |
-| `particle_plasma_chamber` | Particle physics equipment - Plasma Chamber | Orrery Instruments | 1196 x 2000 x 1220 | 1.96 t | 260 kW | 6.6 kVAC 3ph | 4.45 M |
+| `particle_plasma_chamber` | Particle physics equipment - Plasma Chamber | Orrery Instruments | 1196 x 2000 x 1222 | 1.96 t | 260 kW | 6.6 kVAC 3ph | 4.45 M |
 | `particle_quantum_chandelier` | Particle physics equipment - Quantum Chandelier | Orrery Instruments | 1200 x 3000 x 840 | 2.04 t | 270 kW | 6.6 kVAC 3ph | 4.33 M |
 | `particle_tesla_emitter` | Particle physics equipment - Tesla Emitter | Orrery Instruments | 798 x 2533 x 808 | 986.3 kg | 140 kW | 400 VAC 3ph | 2.61 M |
 | `particle_tractor_field_emitter` | Particle physics equipment - Tractor Field Emitter | Orrery Instruments | 1000 x 1500 x 1011 | 945.1 kg | 120 kW | 400 VAC 3ph | 2.85 M |
@@ -33,18 +33,18 @@
 * Power 240 kW idle / 780 kW typical / 1.3 MW peak at 6.6 kVAC 3ph.
 * Price 15.9 M cr, lead time 121 days, MTBF 46,900 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 58 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `science` (screens: waveform).
+* Software: `science` (screens: lissajous).
 * floor-mounted, free-standing. Install with a hoist or gantry (5.72 t).
 
 ### `particle_plasma_chamber`
 
 **Particle physics equipment - Plasma Chamber**, Orrery Instruments, part ORI-PAR-3013 (consumer)
 
-* Mass 1.96 t; size 1196 x 2000 x 1220 mm; heat 240 kW.
-* Power 77 kW idle / 260 kW typical / 430 kW peak at 6.6 kVAC 3ph.
+* Mass 1.96 t; size 1196 x 2000 x 1222 mm; heat 240 kW.
+* Power 77 kW idle / 260 kW typical / 440 kW peak at 6.6 kVAC 3ph.
 * Price 4.45 M cr, lead time 119 days, MTBF 55,600 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 57 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `power` (screens: power).
+* Software: `lifesupport` (screens: life_support).
 * floor-mounted, free-standing. Install with a hoist or gantry (1.96 t).
 
 ### `particle_quantum_chandelier`

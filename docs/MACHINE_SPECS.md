@@ -57,115 +57,115 @@ Totals are for one of every model of the category (not the ship installation).
 
 | Category | Models | Total mass | Typical load | Output | Storage | Total price cr | Sheet |
 |---|---|---|---|---|---|---|---|
-| `analyzer` Laboratory analyser | 8 | 3.16 t | 3.27 kW | - | - | 8.45 M | [analyzer](specs/analyzer.md) |
+| `analyzer` Laboratory analyser | 8 | 3.17 t | 3.28 kW | - | - | 8.48 M | [analyzer](specs/analyzer.md) |
 | `antenna` Antenna | 10 | 2.28 t | 1.89 kW | - | - | 2.29 M | [antenna](specs/antenna.md) |
 | `bakery`  | 19 | 7.87 kg | 0 W | - | - | 10.2 k | [bakery](specs/bakery.md) |
-| `barrel` Barrel / drum | 16 | 587.88 kg | 0 W | - | - | 57.4 k | [barrel](specs/barrel.md) |
-| `beacon` Signal beacon | 10 | 17.05 kg | 59.8 W | - | - | 5,519 | [beacon](specs/beacon.md) |
-| `bed` Bed | 10 | 448.9 kg | 0 W | - | - | 19.3 k | [bed](specs/bed.md) |
-| `bench` Bench | 6 | 275 kg | 0 W | - | - | 10.3 k | [bench](specs/bench.md) |
+| `barrel` Barrel / drum | 16 | 588.48 kg | 0 W | - | - | 57.4 k | [barrel](specs/barrel.md) |
+| `beacon` Signal beacon | 10 | 17.28 kg | 59.8 W | - | - | 5,575 | [beacon](specs/beacon.md) |
+| `bed` Bed | 10 | 449.1 kg | 0 W | - | - | 19.3 k | [bed](specs/bed.md) |
+| `bench` Bench | 6 | 275.5 kg | 0 W | - | - | 10.3 k | [bench](specs/bench.md) |
 | `bin` Waste / recycling bin | 4 | 71.75 kg | 0 W | - | - | 3,600 | [bin](specs/bin.md) |
 | `bottle`  | 14 | 9.85 kg | 0 W | - | - | 4,087 | [bottle](specs/bottle.md) |
 | `buffet`  | 4 | 563.4 kg | 0 W | - | - | 16.8 k | [buffet](specs/buffet.md) |
-| `cabinet` Cabinet | 3 | 340.4 kg | 0 W | - | - | 12.4 k | [cabinet](specs/cabinet.md) |
-| `cabletray` Cable tray | 8 | 117.98 kg | 0 W | - | - | 4,048 | [cabletray](specs/cabletray.md) |
-| `camera` Security sensor | 10 | 247.19 kg | 277.1 W | - | - | 209.4 k | [camera](specs/camera.md) |
+| `cabinet` Cabinet | 3 | 340.9 kg | 0 W | - | - | 12.4 k | [cabinet](specs/cabinet.md) |
+| `cabletray` Cable tray | 8 | 118.98 kg | 0 W | - | - | 4,071 | [cabletray](specs/cabletray.md) |
+| `camera` Security sensor | 10 | 247.29 kg | 277.1 W | - | - | 209.5 k | [camera](specs/camera.md) |
 | `can`  | 9 | 0.92 kg | 0 W | - | - | 2,986 | [can](specs/can.md) |
-| `capacitor` Energy storage | 18 | 12.9 t | 6.72 kW | 0.49 MW | 724.9 kWh | 12.48 M | [capacitor](specs/capacitor.md) |
-| `ceilinglight` Ceiling luminaire | 16 | 395.96 kg | 469 W | - | - | 104.7 k | [ceilinglight](specs/ceilinglight.md) |
-| `ceilingpanel` Ceiling panel | 14 | 234.6 kg | 0 W | - | - | 6,596 | [ceilingpanel](specs/ceilingpanel.md) |
-| `cell` Detention fitting | 10 | 3.48 t | 528 W | - | - | 2.5 M | [cell](specs/cell.md) |
-| `chair` Chair | 8 | 75.5 kg | 0 W | - | - | 3,901 | [chair](specs/chair.md) |
+| `capacitor` Energy storage | 18 | 12.91 t | 6.72 kW | 0.49 MW | 725.9 kWh | 12.49 M | [capacitor](specs/capacitor.md) |
+| `ceilinglight` Ceiling luminaire | 16 | 396.74 kg | 469 W | - | - | 104.9 k | [ceilinglight](specs/ceilinglight.md) |
+| `ceilingpanel` Ceiling panel | 14 | 236.92 kg | 0 W | - | - | 6,647 | [ceilingpanel](specs/ceilingpanel.md) |
+| `cell` Detention fitting | 10 | 3.49 t | 529 W | - | - | 2.5 M | [cell](specs/cell.md) |
+| `chair` Chair | 8 | 75.57 kg | 0 W | - | - | 3,904 | [chair](specs/chair.md) |
 | `cleaningbot` Service robot | 3 | 371.4 kg | 880 W | - | - | 361 k | [cleaningbot](specs/cleaningbot.md) |
 | `clock` Chronometer | 3 | 6.52 kg | 6.3 W | - | - | 8,003 | [clock](specs/clock.md) |
 | `cocktail`  | 10 | 1.58 kg | 0 W | - | - | 3,095 | [cocktail](specs/cocktail.md) |
-| `coil` Warp / plasma coil | 12 | 23.51 t | 4.71 MW | - | - | 15.96 M | [coil](specs/coil.md) |
-| `commsunit` Communications unit | 10 | 685.69 kg | 1.09 kW | - | - | 680.4 k | [commsunit](specs/commsunit.md) |
-| `console` Bridge console | 20 | 5.89 t | 8.38 kW | - | - | 9.29 M | [console](specs/console.md) |
+| `coil` Warp / plasma coil | 12 | 23.51 t | 4.71 MW | - | - | 15.97 M | [coil](specs/coil.md) |
+| `commsunit` Communications unit | 10 | 689.13 kg | 1.1 kW | - | - | 684.5 k | [commsunit](specs/commsunit.md) |
+| `console` Bridge console | 20 | 5.89 t | 8.38 kW | - | - | 9.3 M | [console](specs/console.md) |
 | `controlpanel` Control panel | 20 | 96.61 kg | 362.4 W | - | - | 111.5 k | [controlpanel](specs/controlpanel.md) |
 | `couch` Couch / sofa | 10 | 474.61 kg | 0 W | - | - | 20.3 k | [couch](specs/couch.md) |
 | `craft` Craft | 10 | 217.05 t | 51.3 kW | - | - | 420.04 M | [craft](specs/craft.md) |
-| `crate` Crate / container | 30 | 6.62 t | 0 W | - | - | 620.6 k | [crate](specs/crate.md) |
-| `cryo` Cryo / stasis | 4 | 2.95 t | 18.3 kW | - | - | 5.25 M | [cryo](specs/cryo.md) |
-| `cylinder` Gas cylinder | 8 | 4.31 t | 0 W | - | - | 2.1 M | [cylinder](specs/cylinder.md) |
+| `crate` Crate / container | 30 | 6.62 t | 0 W | - | - | 620.9 k | [crate](specs/crate.md) |
+| `cryo` Cryo / stasis | 4 | 2.95 t | 18.3 kW | - | - | 5.26 M | [cryo](specs/cryo.md) |
+| `cylinder` Gas cylinder | 8 | 4.31 t | 0 W | - | - | 2.11 M | [cylinder](specs/cylinder.md) |
 | `deli`  | 9 | 9.26 kg | 0 W | - | - | 4,946 | [deli](specs/deli.md) |
 | `desk` Desk | 10 | 396.6 kg | 0 W | - | - | 15.5 k | [desk](specs/desk.md) |
 | `dessert`  | 10 | 12.05 kg | 0 W | - | - | 4,875 | [dessert](specs/dessert.md) |
-| `display` Display | 22 | 664.05 kg | 4.2 kW | - | - | 1.22 M | [display](specs/display.md) |
-| `door` Door | 14 | 6.91 t | 1.8 kW | - | - | 150 k | [door](specs/door.md) |
-| `doorframe` Door frame | 8 | 2.69 t | 0 W | - | - | 62.8 k | [doorframe](specs/doorframe.md) |
+| `display` Display | 22 | 664.41 kg | 4.2 kW | - | - | 1.22 M | [display](specs/display.md) |
+| `door` Door | 14 | 6.91 t | 1.8 kW | - | - | 150.1 k | [door](specs/door.md) |
+| `doorframe` Door frame | 8 | 2.69 t | 0 W | - | - | 62.9 k | [doorframe](specs/doorframe.md) |
 | `drink`  | 17 | 33.82 kg | 0 W | - | - | 9,328 | [drink](specs/drink.md) |
-| `duct` HVAC duct | 12 | 528.62 kg | 0 W | - | - | 300.7 k | [duct](specs/duct.md) |
+| `duct` HVAC duct | 12 | 528.64 kg | 0 W | - | - | 300.7 k | [duct](specs/duct.md) |
 | `engtool` Engineering tool | 15 | 5.29 t | 0 W | - | - | 3.14 M | [engtool](specs/engtool.md) |
-| `floorpanel` Floor panel | 12 | 236.45 kg | 0 W | - | - | 6,268 | [floorpanel](specs/floorpanel.md) |
+| `floorpanel` Floor panel | 12 | 240.24 kg | 0 W | - | - | 6,346 | [floorpanel](specs/floorpanel.md) |
 | `forcefield` Force-field emitter | 8 | 5.55 t | 1.83 MW | - | - | 4.42 M | [forcefield](specs/forcefield.md) |
 | `fountain` Water fountain | 2 | 33.2 kg | 217 W | - | - | 11 k | [fountain](specs/fountain.md) |
 | `fruit`  | 18 | 14.66 kg | 0 W | - | - | 11.8 k | [fruit](specs/fruit.md) |
-| `galley` Galley equipment | 20 | 3.75 t | 21.43 kW | - | - | 1.27 M | [galley](specs/galley.md) |
+| `galley` Galley equipment | 20 | 3.76 t | 21.43 kW | - | - | 1.28 M | [galley](specs/galley.md) |
 | `generator` Power generation / conversion | 12 | 29.72 t | 78.5 kW | 5.96 MW | - | 27.49 M | [generator](specs/generator.md) |
-| `gym` Gym equipment | 7 | 813.1 kg | 0 W | - | - | 32.1 k | [gym](specs/gym.md) |
-| `hangartool` Hangar equipment | 28 | 20.3 t | 0 W | - | - | 3.35 M | [hangartool](specs/hangartool.md) |
+| `gym` Gym equipment | 7 | 813.8 kg | 0 W | - | - | 32.1 k | [gym](specs/gym.md) |
+| `hangartool` Hangar equipment | 28 | 20.31 t | 0 W | - | - | 3.36 M | [hangartool](specs/hangartool.md) |
 | `hanging`  | 4 | 3.34 kg | 0 W | - | - | 4,551 | [hanging](specs/hanging.md) |
 | `harvest`  | 8 | 53.04 kg | 0 W | - | - | 10.1 k | [harvest](specs/harvest.md) |
-| `hatch` Hatch | 10 | 403.7 kg | 0 W | - | - | 10.6 k | [hatch](specs/hatch.md) |
+| `hatch` Hatch | 10 | 404.9 kg | 0 W | - | - | 10.6 k | [hatch](specs/hatch.md) |
 | `holo` Holographic projector | 8 | 1.52 t | 7.91 kW | - | - | 2.48 M | [holo](specs/holo.md) |
 | `instrument` Bridge instrument | 10 | 24.74 kg | 84.5 W | - | - | 47.5 k | [instrument](specs/instrument.md) |
-| `junction` Electrical junction | 22 | 2.08 t | 879.6 W | - | - | 2.32 M | [junction](specs/junction.md) |
+| `junction` Electrical junction | 22 | 2.09 t | 881.6 W | - | - | 2.32 M | [junction](specs/junction.md) |
 | `labbench` Lab bench | 8 | 1.98 t | 0 W | - | - | 80.1 k | [labbench](specs/labbench.md) |
 | `lamp` Lamp | 8 | 61.86 kg | 171 W | - | - | 19.2 k | [lamp](specs/lamp.md) |
-| `loader` Cargo loader | 12 | 26.3 t | 45.64 kW | - | - | 4.65 M | [loader](specs/loader.md) |
-| `locker` Locker | 12 | 561.96 kg | 0 W | - | - | 22.6 k | [locker](specs/locker.md) |
+| `loader` Cargo loader | 12 | 26.31 t | 45.64 kW | - | - | 4.65 M | [loader](specs/loader.md) |
+| `locker` Locker | 12 | 563.06 kg | 0 W | - | - | 22.7 k | [locker](specs/locker.md) |
 | `meal`  | 30 | 93.09 kg | 0 W | - | - | 26.9 k | [meal](specs/meal.md) |
-| `medbed` Medical bed | 6 | 2.69 t | 2.89 kW | - | - | 5.39 M | [medbed](specs/medbed.md) |
-| `medcabinet` Medical cabinet | 8 | 923.34 kg | 2.18 kW | - | - | 1.95 M | [medcabinet](specs/medcabinet.md) |
-| `medscanner` Medical scanner | 8 | 9.3 t | 66.74 kW | - | - | 18.41 M | [medscanner](specs/medscanner.md) |
-| `medsupply` Medical supply | 5 | 199.34 kg | 0 W | - | - | 402.4 k | [medsupply](specs/medsupply.md) |
-| `medtool` Medical tool | 8 | 23.11 kg | 0 W | - | - | 55.9 k | [medtool](specs/medtool.md) |
+| `medbed` Medical bed | 6 | 2.69 t | 2.89 kW | - | - | 5.4 M | [medbed](specs/medbed.md) |
+| `medcabinet` Medical cabinet | 8 | 923.64 kg | 2.18 kW | - | - | 1.95 M | [medcabinet](specs/medcabinet.md) |
+| `medscanner` Medical scanner | 8 | 9.3 t | 66.74 kW | - | - | 18.42 M | [medscanner](specs/medscanner.md) |
+| `medsupply` Medical supply | 5 | 199.54 kg | 0 W | - | - | 402.4 k | [medsupply](specs/medsupply.md) |
+| `medtool` Medical tool | 8 | 23.18 kg | 0 W | - | - | 56 k | [medtool](specs/medtool.md) |
 | `microscope` Microscope | 5 | 1.26 t | 2.19 kW | - | - | 3.51 M | [microscope](specs/microscope.md) |
 | `noticeboard` Notice board | 3 | 15.62 kg | 122 W | - | - | 24.7 k | [noticeboard](specs/noticeboard.md) |
 | `nozzle` Thruster / nozzle | 8 | 18.09 t | 46.4 kW | - | - | 12.18 M | [nozzle](specs/nozzle.md) |
-| `pallet` Pallet / rack | 14 | 1.47 t | 0 W | - | - | 151.5 k | [pallet](specs/pallet.md) |
-| `panellight` Panel light | 10 | 40.06 kg | 83.7 W | - | - | 10.1 k | [panellight](specs/panellight.md) |
+| `pallet` Pallet / rack | 14 | 1.47 t | 0 W | - | - | 151.6 k | [pallet](specs/pallet.md) |
+| `panellight` Panel light | 10 | 40.18 kg | 83.9 W | - | - | 10.2 k | [panellight](specs/panellight.md) |
 | `particle` Particle physics equipment | 6 | 15.98 t | 2.14 MW | - | - | 43.04 M | [particle](specs/particle.md) |
-| `pillar` Structural pillar | 14 | 19.55 t | 0 W | - | - | 413.2 k | [pillar](specs/pillar.md) |
-| `pipe` Pipe | 20 | 635.16 kg | 0 W | - | - | 18.2 k | [pipe](specs/pipe.md) |
-| `plant` Plant | 8 | 396.83 kg | 0 W | - | - | 24.2 k | [plant](specs/plant.md) |
-| `planter` Hydroponic planter | 12 | 2.16 t | 7.91 kW | - | - | 1.06 M | [planter](specs/planter.md) |
+| `pillar` Structural pillar | 14 | 19.56 t | 0 W | - | - | 414.6 k | [pillar](specs/pillar.md) |
+| `pipe` Pipe | 20 | 637.66 kg | 0 W | - | - | 18.3 k | [pipe](specs/pipe.md) |
+| `plant` Plant | 8 | 396.87 kg | 0 W | - | - | 24.2 k | [plant](specs/plant.md) |
+| `planter` Hydroponic planter | 12 | 2.16 t | 7.92 kW | - | - | 1.06 M | [planter](specs/planter.md) |
 | `rack` Equipment rack | 14 | 3.66 t | 43.8 kW | - | - | 3.86 M | [rack](specs/rack.md) |
-| `railing` Railing | 6 | 487.3 kg | 0 W | - | - | 11.4 k | [railing](specs/railing.md) |
+| `railing` Railing | 6 | 487.6 kg | 0 W | - | - | 11.4 k | [railing](specs/railing.md) |
 | `ration`  | 13 | 7.1 kg | 0 W | - | - | 2,114 | [ration](specs/ration.md) |
-| `reactor` Reactor | 6 | 78.15 t | 780.9 kW | 39.34 MW | - | 130.09 M | [reactor](specs/reactor.md) |
-| `router` Network router | 8 | 904.14 kg | 2.07 kW | - | - | 1.09 M | [router](specs/router.md) |
-| `safety` Safety equipment | 16 | 565.63 kg | 0 W | - | - | 108.9 k | [safety](specs/safety.md) |
-| `sciinstrument` Science instrument | 10 | 1.37 t | 2.89 kW | - | - | 3.2 M | [sciinstrument](specs/sciinstrument.md) |
+| `reactor` Reactor | 6 | 78.21 t | 780.9 kW | 39.34 MW | - | 130.2 M | [reactor](specs/reactor.md) |
+| `router` Network router | 8 | 905.14 kg | 2.07 kW | - | - | 1.09 M | [router](specs/router.md) |
+| `safety` Safety equipment | 16 | 566.24 kg | 0 W | - | - | 109.1 k | [safety](specs/safety.md) |
+| `sciinstrument` Science instrument | 10 | 1.37 t | 2.9 kW | - | - | 3.21 M | [sciinstrument](specs/sciinstrument.md) |
 | `sconce` Wall sconce | 8 | 8.19 kg | 32.1 W | - | - | 2,886 | [sconce](specs/sconce.md) |
-| `scrubber` Atmosphere processor | 10 | 9.9 t | 82.4 kW | - | - | 4.99 M | [scrubber](specs/scrubber.md) |
+| `scrubber` Atmosphere processor | 10 | 9.9 t | 82.5 kW | - | - | 5 M | [scrubber](specs/scrubber.md) |
 | `seat` Seat | 8 | 142.03 kg | 0 W | - | - | 8,028 | [seat](specs/seat.md) |
-| `shelving` Shelving | 10 | 1.8 t | 0 W | - | - | 182.5 k | [shelving](specs/shelving.md) |
-| `sign` Sign | 28 | 88.17 kg | 0 W | - | - | 4,067 | [sign](specs/sign.md) |
+| `shelving` Shelving | 10 | 1.8 t | 0 W | - | - | 182.7 k | [shelving](specs/shelving.md) |
+| `sign` Sign | 28 | 88.24 kg | 0 W | - | - | 4,069 | [sign](specs/sign.md) |
 | `specimen` Specimen storage | 9 | 1.61 t | 6.21 kW | - | - | 3.94 M | [specimen](specs/specimen.md) |
-| `spotlight` Spotlight | 8 | 406.38 kg | 705 W | - | - | 96.9 k | [spotlight](specs/spotlight.md) |
-| `storage` Data storage | 8 | 7.51 t | 14.72 kW | - | - | 7.98 M | [storage](specs/storage.md) |
-| `storagebin` Storage bin | 10 | 573.31 kg | 0 W | - | - | 55.7 k | [storagebin](specs/storagebin.md) |
-| `striplight` Strip light | 10 | 10.32 kg | 89.3 W | - | - | 3,190 | [striplight](specs/striplight.md) |
-| `suitrack` Suit rack | 6 | 942.3 kg | 960 W | - | - | 167.7 k | [suitrack](specs/suitrack.md) |
+| `spotlight` Spotlight | 8 | 406.47 kg | 705 W | - | - | 97 k | [spotlight](specs/spotlight.md) |
+| `storage` Data storage | 8 | 7.52 t | 14.72 kW | - | - | 7.99 M | [storage](specs/storage.md) |
+| `storagebin` Storage bin | 10 | 573.71 kg | 0 W | - | - | 55.8 k | [storagebin](specs/storagebin.md) |
+| `striplight` Strip light | 10 | 10.88 kg | 91.7 W | - | - | 3,317 | [striplight](specs/striplight.md) |
+| `suitrack` Suit rack | 6 | 944 kg | 960 W | - | - | 167.9 k | [suitrack](specs/suitrack.md) |
 | `surgical` Surgical equipment | 6 | 1.43 t | 7.35 kW | - | - | 3.2 M | [surgical](specs/surgical.md) |
-| `table` Table | 10 | 444.26 kg | 0 W | - | - | 18.4 k | [table](specs/table.md) |
-| `tableware` Tableware | 16 | 41.83 kg | 0 W | - | - | 15.2 k | [tableware](specs/tableware.md) |
-| `tank` Tank / fluid handling | 18 | 23.53 t | 24.5 kW | - | - | 12.59 M | [tank](specs/tank.md) |
+| `table` Table | 10 | 444.56 kg | 0 W | - | - | 18.4 k | [table](specs/table.md) |
+| `tableware` Tableware | 16 | 41.88 kg | 0 W | - | - | 15.3 k | [tableware](specs/tableware.md) |
+| `tank` Tank / fluid handling | 18 | 23.55 t | 24.5 kW | - | - | 12.6 M | [tank](specs/tank.md) |
 | `telescope` Telescope | 4 | 1.12 t | 1.8 kW | - | - | 3.02 M | [telescope](specs/telescope.md) |
-| `terminal` Terminal | 12 | 238.79 kg | 458.2 W | - | - | 279.9 k | [terminal](specs/terminal.md) |
+| `terminal` Terminal | 12 | 239.92 kg | 458.2 W | - | - | 281 k | [terminal](specs/terminal.md) |
 | `toolbox` Toolbox | 3 | 32.71 kg | 0 W | - | - | 20 k | [toolbox](specs/toolbox.md) |
 | `tray`  | 12 | 31.28 kg | 0 W | - | - | 9,794 | [tray](specs/tray.md) |
 | `turbine` Turbomachinery | 6 | 32.09 t | 147.19 kW | 0.94 MW | 44.6 kWh | 27.85 M | [turbine](specs/turbine.md) |
-| `valve` Valve / coupling | 18 | 1.13 t | 0 W | - | - | 27.7 k | [valve](specs/valve.md) |
+| `valve` Valve / coupling | 18 | 1.13 t | 0 W | - | - | 27.8 k | [valve](specs/valve.md) |
 | `veg`  | 19 | 11.15 kg | 0 W | - | - | 14.9 k | [veg](specs/veg.md) |
-| `vending` Vending machine | 4 | 848.6 kg | 2.11 kW | - | - | 288.7 k | [vending](specs/vending.md) |
-| `wallpanel` Wall panel | 24 | 455.19 kg | 0 W | - | - | 13.1 k | [wallpanel](specs/wallpanel.md) |
-| `warnlight` Warning light | 8 | 17.3 kg | 55.1 W | - | - | 5,849 | [warnlight](specs/warnlight.md) |
+| `vending` Vending machine | 4 | 851.6 kg | 2.11 kW | - | - | 289.4 k | [vending](specs/vending.md) |
+| `wallpanel` Wall panel | 24 | 458.89 kg | 0 W | - | - | 13.2 k | [wallpanel](specs/wallpanel.md) |
+| `warnlight` Warning light | 8 | 17.47 kg | 55.3 W | - | - | 5,889 | [warnlight](specs/warnlight.md) |
 | `watertank` Water system | 8 | 4.93 t | 2 kW | - | - | 2.63 M | [watertank](specs/watertank.md) |
 | `weaponrack` Weapon rack | 14 | 2.61 t | 652.9 W | - | - | 1.89 M | [weaponrack](specs/weaponrack.md) |
-| **All** | **1198** | **647.02 t** | **10.19 MW** | **46.73 MW** | **769.5 kWh** | **826.12 M** | |
+| **All** | **1198** | **647.26 t** | **10.19 MW** | **46.73 MW** | **770.5 kWh** | **826.37 M** | |
 
 ## 3. Top ten
 
@@ -176,9 +176,9 @@ Totals are for one of every model of the category (not the ship installation).
 | 1 | `craft_cargo_shuttle` | craft | 51.39 t |
 | 2 | `craft_lander` | craft | 30.17 t |
 | 3 | `craft_shuttlecraft` | craft | 29.92 t |
-| 4 | `reactor_plasma_tokamak_torus` | reactor | 29.22 t |
+| 4 | `reactor_plasma_tokamak_torus` | reactor | 29.25 t |
 | 5 | `craft_scout` | craft | 24.88 t |
-| 6 | `reactor_fusion_core_reactor` | reactor | 23.82 t |
+| 6 | `reactor_fusion_core_reactor` | reactor | 23.84 t |
 | 7 | `craft_medical_shuttle` | craft | 22.29 t |
 | 8 | `craft_tug` | craft | 15.9 t |
 | 9 | `craft_interceptor` | craft | 15.82 t |
@@ -206,7 +206,7 @@ Totals are for one of every model of the category (not the ship installation).
 | 1 | `craft_cargo_shuttle` | craft | 94.6 M |
 | 2 | `craft_lander` | craft | 66.1 M |
 | 3 | `craft_shuttlecraft` | craft | 63.9 M |
-| 4 | `reactor_plasma_tokamak_torus` | reactor | 57 M |
+| 4 | `reactor_plasma_tokamak_torus` | reactor | 57.1 M |
 | 5 | `craft_scout` | craft | 50.1 M |
 | 6 | `reactor_fusion_core_reactor` | reactor | 45.5 M |
 | 7 | `craft_medical_shuttle` | craft | 36.5 M |
@@ -227,13 +227,13 @@ Totals are for one of every model of the category (not the ship installation).
 | 7 | `generator_gas_turbine_genset` | generator | 710 kW |
 | 8 | `generator_diesel_genset` | generator | 521 kW |
 | 9 | `capacitor_fuel_cell_tower` | capacitor | 332 kW |
-| 10 | `generator_motor_generator_set` | generator | 279 kW |
+| 10 | `generator_motor_generator_set` | generator | 280 kW |
 
 **Largest energy storage**
 
 | # | Model | Category | Capacity | Discharge |
 |---|---|---|---|---|
-| 1 | `capacitor_battery_rack` | capacitor | 238 kWh | 476 kW |
+| 1 | `capacitor_battery_rack` | capacitor | 239 kWh | 478 kW |
 | 2 | `capacitor_battery_trolley` | capacitor | 142 kWh | 285 kW |
 | 3 | `capacitor_power_cell_locker` | capacitor | 137 kWh | 274 kW |
 | 4 | `capacitor_energy_cell_crate` | capacitor | 71.7 kWh | 143 kW |
@@ -294,20 +294,28 @@ Totals are for one of every model of the category (not the ship installation).
 
 | Application | Models with a screen running it |
 |---|---|
-| `alert` | 8 |
-| `atmosphere` | 10 |
+| `alert` | 4 |
+| `atmosphere` | 6 |
+| `cargo` | 10 |
 | `comms` | 8 |
 | `computer` | 24 |
-| `deckplan` | 5 |
-| `diagnostics` | 49 |
-| `engineering` | 22 |
-| `holo` | 3 |
-| `lifesupport` | 1 |
-| `medical` | 33 |
-| `nav` | 12 |
-| `power` | 21 |
-| `science` | 18 |
+| `deckplan` | 8 |
+| `diagnostics` | 17 |
+| `docking` | 1 |
+| `engineering` | 19 |
+| `galley` | 2 |
+| `holo` | 2 |
+| `hydroponics` | 5 |
+| `lifesupport` | 15 |
+| `logbook` | 13 |
+| `medical` | 21 |
+| `nav` | 18 |
+| `power` | 12 |
+| `reactor` | 1 |
+| `roster` | 2 |
+| `science` | 21 |
+| `security` | 2 |
 | `sensors` | 9 |
-| `starmap` | 6 |
-| `tactical` | 6 |
+| `starmap` | 5 |
+| `tactical` | 5 |
 

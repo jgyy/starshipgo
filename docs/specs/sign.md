@@ -20,7 +20,7 @@
 | `sign_dept_hangar` | Sign - Dept Hangar | Calder-Okonkwo Industries | 1000 x 400 x 48 | 1.08 kg | 0 W | none | 96 |
 | `sign_dept_medical` | Sign - Dept Medical | Calder-Okonkwo Industries | 1000 x 400 x 48 | 1.02 kg | 0 W | none | 88 |
 | `sign_dept_mess` | Sign - Dept Mess | Calder-Okonkwo Industries | 1000 x 400 x 60 | 1.33 kg | 0 W | none | 134 |
-| `sign_dept_quarters` | Sign - Dept Quarters | Calder-Okonkwo Industries | 1000 x 400 x 52 | 1.17 kg | 0 W | none | 114 |
+| `sign_dept_quarters` | Sign - Dept Quarters | Calder-Okonkwo Industries | 1000 x 400 x 55 | 1.24 kg | 0 W | none | 116 |
 | `sign_dept_science` | Sign - Dept Science | Calder-Okonkwo Industries | 1000 x 400 x 56 | 1.28 kg | 0 W | none | 95 |
 | `sign_dept_security` | Sign - Dept Security | Calder-Okonkwo Industries | 1000 x 400 x 60 | 1.35 kg | 0 W | none | 104 |
 | `sign_emergency_exit` | Sign - Emergency Exit | Calder-Okonkwo Industries | 560 x 240 x 84 | 0.63 kg | 0 W | none | 44 |
@@ -181,9 +181,9 @@
 
 **Sign - Dept Quarters**, Calder-Okonkwo Industries, part COI-SIG-5907 (passive)
 
-* Mass 1.17 kg; size 1000 x 400 x 52 mm; heat 0 W.
+* Mass 1.24 kg; size 1000 x 400 x 55 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 114 cr, lead time 33 days, MTBF 1,288,700 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 116 cr, lead time 33 days, MTBF 1,288,700 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 

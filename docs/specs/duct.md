@@ -7,7 +7,7 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `duct_ceiling_round_vent` | HVAC duct - Ceiling Round Vent | Brightwater Life Systems | 584 x 160 x 584 | 3.92 kg | 0 W | none | 2,610 |
-| `duct_ceiling_square_diffuser` | HVAC duct - Ceiling Square Diffuser | Brightwater Life Systems | 700 x 120 x 700 | 4.53 kg | 0 W | none | 2,390 |
+| `duct_ceiling_square_diffuser` | HVAC duct - Ceiling Square Diffuser | Brightwater Life Systems | 700 x 120 x 703 | 4.55 kg | 0 W | none | 2,400 |
 | `duct_emergency_shutter_vent` | HVAC duct - Emergency Shutter Vent | Brightwater Life Systems | 1120 x 800 x 207 | 13.8 kg | 0 W | none | 7,130 |
 | `duct_flex_duct_hose` | HVAC duct - Flex Duct Hose | Brightwater Life Systems | 2120 x 760 x 495 | 60.6 kg | 0 W | none | 29.6 k |
 | `duct_louvered_wall_grille` | HVAC duct - Louvered Wall Grille | Brightwater Life Systems | 900 x 600 x 102 | 4.14 kg | 0 W | none | 2,290 |
@@ -35,9 +35,9 @@
 
 **HVAC duct - Ceiling Square Diffuser**, Brightwater Life Systems, part BLS-DUC-5888 (passive)
 
-* Mass 4.53 kg; size 700 x 120 x 700 mm; heat 0 W.
+* Mass 4.55 kg; size 700 x 120 x 703 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,390 cr, lead time 89 days, MTBF 51,200 h, service every 3,000 h, service life 18 years, crew 0.
+* Price 2,400 cr, lead time 89 days, MTBF 51,200 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
 * ceiling-mounted.
 

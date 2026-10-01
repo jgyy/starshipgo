@@ -78,7 +78,7 @@
 * Power 2.3 W idle / 9.4 W typical / 14 W peak at 24 VDC.
 * Price 1,350 cr, lead time 49 days, MTBF 95,000 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `logbook` (screens: log_list).
 * wall-mounted.
 
 ### `controlpanel_comm_jack_panel`
@@ -129,7 +129,7 @@
 * Power 12 W idle / 48 W typical / 73 W peak at 24 VDC.
 * Price 8,130 cr, lead time 53 days, MTBF 84,700 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 29 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `medical` (screens: lifesigns).
+* Software: `engineering` (screens: body_scan).
 * wall-mounted.
 
 ### `controlpanel_fire_pull_station`
@@ -170,7 +170,7 @@
 * Power 2.8 W idle / 11 W typical / 17 W peak at 24 VDC.
 * Price 2,250 cr, lead time 55 days, MTBF 86,600 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `engineering` (screens: crew_roster).
 * wall-mounted.
 
 ### `controlpanel_lift_call`
@@ -181,7 +181,7 @@
 * Power 2.9 W idle / 12 W typical / 18 W peak at 24 VDC.
 * Price 1,920 cr, lead time 55 days, MTBF 75,300 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `computer` (screens: terminal).
 * wall-mounted.
 
 ### `controlpanel_light_switch`

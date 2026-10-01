@@ -483,6 +483,7 @@ def fix_zfight(model, passes=8):
         bm = g["bm"]
         if len(bm.faces) < 2:
             continue
+        moved = {}                    # vertex index -> times lifted (bounded by the number of passes)
         for _ in range(passes):
             bm.normal_update()
             buckets = {}
@@ -514,11 +515,10 @@ def fix_zfight(model, passes=8):
                         lift[loser.index] = loser
             if not lift:
                 break
-            moved = set()
             for f in lift.values():
                 for vt in f.verts:
-                    if vt.index not in moved:
-                        moved.add(vt.index)
+                    if True:
+                        moved[vt.index] = moved.get(vt.index, 0) + 1
                         vt.co += f.normal * ZFIGHT_LIFT
             lifted_total += len(lift)
     if lifted_total:
@@ -531,7 +531,17 @@ def export(model, path):
     if not any(g["bm"].faces for g in model.groups.values()):
         raise ValueError(f"model {model.name!r} is empty (no faces); cannot export")
     objs = []
-    fix_zfight(model)
+    lo0, hi0 = model.bounds()
+    if fix_zfight(model):
+        # lifting detail faces grows the model by a few mm: slide it back so the mounting plane stays exactly where it was
+        lo1, hi1 = model.bounds()
+        mount = getattr(model, "mount", None)
+        if mount in ("floor", "table"):
+            model.shift(dy=lo0[1] - lo1[1])
+        elif mount == "wall":
+            model.shift(dz=lo0[2] - lo1[2])
+        elif mount == "ceiling":
+            model.shift(dy=hi0[1] - hi1[1])
     for gname, g in model.groups.items():
         bm = g["bm"]
         if not bm.faces:

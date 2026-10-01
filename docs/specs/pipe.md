@@ -7,11 +7,11 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `pipe_ceiling_flanged_twin` | Pipe - Ceiling Flanged Twin | Anvil Fluid Controls | 2000 x 238 x 380 | 26.7 kg | 0 W | none | 1,020 |
-| `pipe_ceiling_hanger_run` | Pipe - Ceiling Hanger Run | Anvil Fluid Controls | 2000 x 314 x 222 | 22 kg | 0 W | none | 764 |
+| `pipe_ceiling_hanger_run` | Pipe - Ceiling Hanger Run | Anvil Fluid Controls | 2000 x 317 x 222 | 22.2 kg | 0 W | none | 769 |
 | `pipe_ceiling_insulated_pair` | Pipe - Ceiling Insulated Pair | Anvil Fluid Controls | 2015 x 250 x 400 | 28 kg | 0 W | none | 721 |
 | `pipe_ceiling_pump` | Pipe - Ceiling Pump | Anvil Fluid Controls | 2000 x 490 x 380 | 51.2 kg | 0 W | none | 1,170 |
-| `pipe_ceiling_tee` | Pipe - Ceiling Tee | Anvil Fluid Controls | 2000 x 230 x 1750 | 124.9 kg | 0 W | none | 2,620 |
-| `pipe_ceiling_turn` | Pipe - Ceiling Turn | Anvil Fluid Controls | 1248 x 252 x 1045 | 47.3 kg | 0 W | none | 1,270 |
+| `pipe_ceiling_tee` | Pipe - Ceiling Tee | Anvil Fluid Controls | 2000 x 233 x 1750 | 126.6 kg | 0 W | none | 2,650 |
+| `pipe_ceiling_turn` | Pipe - Ceiling Turn | Anvil Fluid Controls | 1248 x 255 x 1045 | 47.9 kg | 0 W | none | 1,290 |
 | `pipe_coolant_glow` | Pipe - Coolant Glow | Anvil Fluid Controls | 2000 x 168 x 184 | 9.65 kg | 0 W | none | 437 |
 | `pipe_corrugated_hose` | Pipe - Corrugated Hose | Anvil Fluid Controls | 2010 x 204 x 215 | 13.2 kg | 0 W | none | 666 |
 | `pipe_double_run` | Pipe - Double Run | Anvil Fluid Controls | 2000 x 264 x 148 | 12.5 kg | 0 W | none | 586 |
@@ -43,9 +43,9 @@
 
 **Pipe - Ceiling Hanger Run**, Anvil Fluid Controls, part AFC-PIP-2559 (passive)
 
-* Mass 22 kg; size 2000 x 314 x 222 mm; heat 0 W.
+* Mass 22.2 kg; size 2000 x 317 x 222 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 764 cr, lead time 46 days, MTBF 1,175,600 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 769 cr, lead time 46 days, MTBF 1,175,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 
@@ -73,9 +73,9 @@
 
 **Pipe - Ceiling Tee**, Anvil Fluid Controls, part AFC-PIP-4153 (passive)
 
-* Mass 124.9 kg; size 2000 x 230 x 1750 mm; heat 0 W.
+* Mass 126.6 kg; size 2000 x 233 x 1750 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,620 cr, lead time 45 days, MTBF 1,290,600 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 2,650 cr, lead time 45 days, MTBF 1,290,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted. Two-person lift.
 
@@ -83,9 +83,9 @@
 
 **Pipe - Ceiling Turn**, Anvil Fluid Controls, part AFC-PIP-4992 (passive)
 
-* Mass 47.3 kg; size 1248 x 252 x 1045 mm; heat 0 W.
+* Mass 47.9 kg; size 1248 x 255 x 1045 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,270 cr, lead time 43 days, MTBF 1,671,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,290 cr, lead time 43 days, MTBF 1,671,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted. Two-person lift.
 

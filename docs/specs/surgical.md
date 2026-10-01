@@ -34,7 +34,7 @@
 * Power 140 W idle / 470 W typical / 850 W peak at 120 VAC 1ph.
 * Price 131 k cr, lead time 96 days, MTBF 68,900 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 42 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: lifesigns).
+* Software: `medical` (screens: crew_roster).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `surgical_dialysis_machine`
@@ -45,7 +45,7 @@
 * Power 280 W idle / 930 W typical / 1.7 kW peak at 120 VAC 1ph.
 * Price 391 k cr, lead time 98 days, MTBF 70,100 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 43 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `power` (screens: power).
+* Software: `engineering` (screens: engine_temp).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `surgical_overhead_surgical_light_boom`
@@ -76,6 +76,6 @@
 * Power 250 W idle / 840 W typical / 1.5 kW peak at 120 VAC 1ph.
 * Price 277 k cr, lead time 101 days, MTBF 42,900 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 43 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: lifesigns).
+* Software: `medical` (screens: ecg_multi).
 * floor-mounted, free-standing. Two-person lift.
 

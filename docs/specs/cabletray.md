@@ -7,11 +7,11 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `cabletray_conduit_bundle` | Cable tray - Conduit Bundle | Anvil Fluid Controls | 2000 x 260 x 162 | 8.91 kg | 0 W | none | 337 |
-| `cabletray_covered_led_tray` | Cable tray - Covered Led Tray | Anvil Fluid Controls | 2000 x 195 x 460 | 17.8 kg | 0 W | none | 533 |
-| `cabletray_fibre_glow_tray` | Cable tray - Fibre Glow Tray | Anvil Fluid Controls | 2000 x 150 x 360 | 10.7 kg | 0 W | none | 335 |
+| `cabletray_covered_led_tray` | Cable tray - Covered Led Tray | Anvil Fluid Controls | 2000 x 198 x 460 | 18.1 kg | 0 W | none | 540 |
+| `cabletray_fibre_glow_tray` | Cable tray - Fibre Glow Tray | Anvil Fluid Controls | 2006 x 153 x 360 | 10.9 kg | 0 W | none | 339 |
 | `cabletray_flex_conduit` | Cable tray - Flex Conduit | Anvil Fluid Controls | 2020 x 116 x 175 | 4.17 kg | 0 W | none | 411 |
-| `cabletray_ladder_tray` | Cable tray - Ladder Tray | Anvil Fluid Controls | 2000 x 170 x 460 | 15.5 kg | 0 W | none | 467 |
-| `cabletray_perforated_trough` | Cable tray - Perforated Trough | Anvil Fluid Controls | 2000 x 190 x 500 | 20.3 kg | 0 W | none | 556 |
+| `cabletray_ladder_tray` | Cable tray - Ladder Tray | Anvil Fluid Controls | 2000 x 173 x 460 | 15.7 kg | 0 W | none | 472 |
+| `cabletray_perforated_trough` | Cable tray - Perforated Trough | Anvil Fluid Controls | 2000 x 193 x 500 | 20.6 kg | 0 W | none | 563 |
 | `cabletray_two_tier_tray` | Cable tray - Two Tier Tray | Anvil Fluid Controls | 2000 x 420 x 350 | 29.2 kg | 0 W | none | 920 |
 | `cabletray_wire_basket` | Cable tray - Wire Basket | Anvil Fluid Controls | 2000 x 480 x 110 | 11.4 kg | 0 W | none | 489 |
 
@@ -31,9 +31,9 @@
 
 **Cable tray - Covered Led Tray**, Anvil Fluid Controls, part AFC-CAB-7879 (passive)
 
-* Mass 17.8 kg; size 2000 x 195 x 460 mm; heat 0 W.
+* Mass 18.1 kg; size 2000 x 198 x 460 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 533 cr, lead time 37 days, MTBF 1,738,300 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 540 cr, lead time 37 days, MTBF 1,738,300 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 
@@ -41,9 +41,9 @@
 
 **Cable tray - Fibre Glow Tray**, Anvil Fluid Controls, part AFC-CAB-9538 (passive)
 
-* Mass 10.7 kg; size 2000 x 150 x 360 mm; heat 0 W.
+* Mass 10.9 kg; size 2006 x 153 x 360 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 335 cr, lead time 38 days, MTBF 1,305,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 339 cr, lead time 38 days, MTBF 1,305,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 
@@ -61,9 +61,9 @@
 
 **Cable tray - Ladder Tray**, Anvil Fluid Controls, part AFC-CAB-2485 (passive)
 
-* Mass 15.5 kg; size 2000 x 170 x 460 mm; heat 0 W.
+* Mass 15.7 kg; size 2000 x 173 x 460 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 467 cr, lead time 46 days, MTBF 1,113,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 472 cr, lead time 46 days, MTBF 1,113,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 
@@ -71,9 +71,9 @@
 
 **Cable tray - Perforated Trough**, Anvil Fluid Controls, part AFC-CAB-5649 (passive)
 
-* Mass 20.3 kg; size 2000 x 190 x 500 mm; heat 0 W.
+* Mass 20.6 kg; size 2000 x 193 x 500 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 556 cr, lead time 43 days, MTBF 1,244,700 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 563 cr, lead time 43 days, MTBF 1,244,700 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 

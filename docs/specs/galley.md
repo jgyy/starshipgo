@@ -17,15 +17,15 @@
 | `galley_microwave` | Galley equipment - Microwave | Greywater Galley Systems | 500 x 300 x 410 | 9.73 kg | 320 W | 120 VAC 1ph | 3,830 |
 | `galley_prep_counter` | Galley equipment - Prep Counter | Greywater Galley Systems | 1800 x 1180 x 750 | 251 kg | 0 W | none | 77.8 k |
 | `galley_range_with_hood` | Galley equipment - Range With Hood | Greywater Galley Systems | 900 x 2500 x 825 | 330.3 kg | 4.1 kW | 208 VAC 3ph | 118 k |
-| `galley_refrigerator` | Galley equipment - Refrigerator | Greywater Galley Systems | 800 x 1900 x 840 | 202.9 kg | 320 W | 120 VAC 1ph | 78.3 k |
+| `galley_refrigerator` | Galley equipment - Refrigerator | Greywater Galley Systems | 800 x 1903 x 840 | 203.2 kg | 320 W | 120 VAC 1ph | 78.4 k |
 | `galley_salad_bar` | Galley equipment - Salad Bar | Greywater Galley Systems | 2040 x 1430 x 840 | 418.7 kg | 2 kW | 208 VAC 3ph | 133 k |
 | `galley_sink_unit` | Galley equipment - Sink Unit | Greywater Galley Systems | 1420 x 1330 x 707 | 224.9 kg | 0 W | none | 76.6 k |
 | `galley_soup_kettle` | Galley equipment - Soup Kettle | Greywater Galley Systems | 900 x 1320 x 880 | 172.9 kg | 2.5 kW | 208 VAC 3ph | 47.5 k |
-| `galley_steamer` | Galley equipment - Steamer | Greywater Galley Systems | 850 x 1955 x 925 | 270.1 kg | 3 kW | 208 VAC 3ph | 103 k |
-| `galley_storage_shelving` | Galley equipment - Storage Shelving | Greywater Galley Systems | 1268 x 1900 x 540 | 217.1 kg | 0 W | none | 83.6 k |
+| `galley_steamer` | Galley equipment - Steamer | Greywater Galley Systems | 856 x 1958 x 928 | 273.4 kg | 3 kW | 208 VAC 3ph | 104 k |
+| `galley_storage_shelving` | Galley equipment - Storage Shelving | Greywater Galley Systems | 1271 x 1900 x 546 | 220.1 kg | 0 W | none | 84.8 k |
 | `galley_toaster` | Galley equipment - Toaster | Greywater Galley Systems | 415 x 260 x 230 | 4.25 kg | 94 W | 120 VAC 1ph | 1,470 |
 | `galley_trash_chute` | Galley equipment - Trash Chute | Greywater Galley Systems | 600 x 800 x 232 | 17.5 kg | 0 W | none | 6,640 |
-| `galley_water_cooler` | Galley equipment - Water Cooler | Greywater Galley Systems | 360 x 1445 x 510 | 41.1 kg | 83 W | 120 VAC 1ph | 11.6 k |
+| `galley_water_cooler` | Galley equipment - Water Cooler | Greywater Galley Systems | 366 x 1448 x 513 | 42.1 kg | 84 W | 120 VAC 1ph | 11.9 k |
 
 ## Datasheets
 
@@ -47,7 +47,7 @@
 * Power 680 W idle / 2.3 kW typical / 3.4 kW peak at 208 VAC 3ph.
 * Price 57.3 k cr, lead time 66 days, MTBF 43,800 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 55 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
-* Software: `medical` (screens: vitals).
+* Software: `galley` (screens: body_scan).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `galley_commercial_oven`
@@ -78,7 +78,7 @@
 * Power 510 W idle / 1.7 kW typical / 2.6 kW peak at 208 VAC 3ph.
 * Price 43.1 k cr, lead time 61 days, MTBF 44,000 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 54 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `galley_food_replicator`
@@ -89,7 +89,7 @@
 * Power 330 W idle / 1.1 kW typical / 1.6 kW peak at 120 VAC 1ph.
 * Price 70.2 k cr, lead time 65 days, MTBF 42,500 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 53 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
-* Software: `computer` (screens: text).
+* Software: `galley` (screens: schedule).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `galley_hanging_pots_rack`
@@ -146,9 +146,9 @@
 
 **Galley equipment - Refrigerator**, Greywater Galley Systems, part GGS-GAL-7313 (consumer)
 
-* Mass 202.9 kg; size 800 x 1900 x 840 mm; heat 290 W.
+* Mass 203.2 kg; size 800 x 1903 x 840 mm; heat 290 W.
 * Power 95 W idle / 320 W typical / 470 W peak at 120 VAC 1ph.
-* Price 78.3 k cr, lead time 61 days, MTBF 49,600 h, service every 2,190 h, service life 15 years, crew 1.
+* Price 78.4 k cr, lead time 61 days, MTBF 49,600 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 51 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -186,19 +186,19 @@
 
 **Galley equipment - Steamer**, Greywater Galley Systems, part GGS-GAL-4212 (consumer)
 
-* Mass 270.1 kg; size 850 x 1955 x 925 mm; heat 2.8 kW.
-* Power 890 W idle / 3 kW typical / 4.4 kW peak at 208 VAC 3ph.
-* Price 103 k cr, lead time 67 days, MTBF 35,200 h, service every 2,190 h, service life 15 years, crew 1.
+* Mass 273.4 kg; size 856 x 1958 x 928 mm; heat 2.8 kW.
+* Power 900 W idle / 3 kW typical / 4.5 kW peak at 208 VAC 3ph.
+* Price 104 k cr, lead time 67 days, MTBF 35,200 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 55 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
-* floor-mounted, free-standing. Install with a hoist or gantry (270.1 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (273.4 kg).
 
 ### `galley_storage_shelving`
 
 **Galley equipment - Storage Shelving**, Greywater Galley Systems, part GGS-GAL-4641 (passive)
 
-* Mass 217.1 kg; size 1268 x 1900 x 540 mm; heat 0 W.
+* Mass 220.1 kg; size 1271 x 1900 x 546 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 83.6 k cr, lead time 65 days, MTBF 36,800 h, service every 2,190 h, service life 15 years, crew 0.
+* Price 84.8 k cr, lead time 65 days, MTBF 36,800 h, service every 2,190 h, service life 15 years, crew 0.
 * IP44, 0 to 50 C; certifications: CSA-F2 food contact, CSA-E24 electrical safety.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -226,9 +226,9 @@
 
 **Galley equipment - Water Cooler**, Greywater Galley Systems, part GGS-GAL-9233 (consumer)
 
-* Mass 41.1 kg; size 360 x 1445 x 510 mm; heat 76 W.
-* Power 25 W idle / 83 W typical / 120 W peak at 120 VAC 1ph.
-* Price 11.6 k cr, lead time 63 days, MTBF 46,200 h, service every 2,190 h, service life 15 years, crew 1.
+* Mass 42.1 kg; size 366 x 1448 x 513 mm; heat 77 W.
+* Power 25 W idle / 84 W typical / 130 W peak at 120 VAC 1ph.
+* Price 11.9 k cr, lead time 63 days, MTBF 46,200 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 49 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
 * floor-mounted, free-standing. Two-person lift.
 

@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `engtool_cable_reel` | Engineering tool - Cable Reel | Anvil Fluid Controls | 1180 x 1000 x 700 | 341.2 kg | 0 W | none | 179 k |
+| `engtool_cable_reel` | Engineering tool - Cable Reel | Anvil Fluid Controls | 1180 x 1000 x 706 | 344.1 kg | 0 W | none | 181 k |
 | `engtool_chain_hoist_gantry` | Engineering tool - Chain Hoist Gantry | Anvil Fluid Controls | 1800 x 2360 x 900 | 1.57 t | 0 W | none | 833 k |
 | `engtool_creeper_board` | Engineering tool - Creeper Board | Anvil Fluid Controls | 500 x 215 x 1050 | 49.6 kg | 0 W | none | 25 k |
 | `engtool_diagnostic_cart` | Engineering tool - Diagnostic Cart | Anvil Fluid Controls | 700 x 1697 x 572 | 281.6 kg | 0 W | none | 194 k |
@@ -18,7 +18,7 @@
 | `engtool_spare_parts_bin` | Engineering tool - Spare Parts Bin | Anvil Fluid Controls | 850 x 930 x 500 | 158 kg | 0 W | none | 101 k |
 | `engtool_tool_rack` | Engineering tool - Tool Rack | Anvil Fluid Controls | 1400 x 1045 x 160 | 113.2 kg | 0 W | none | 69.6 k |
 | `engtool_tool_wall_board` | Engineering tool - Tool Wall Board | Anvil Fluid Controls | 1710 x 1060 x 120 | 90.8 kg | 0 W | none | 60.9 k |
-| `engtool_wall_parts_bins` | Engineering tool - Wall Parts Bins | Anvil Fluid Controls | 1300 x 900 x 210 | 107.8 kg | 0 W | none | 67.8 k |
+| `engtool_wall_parts_bins` | Engineering tool - Wall Parts Bins | Anvil Fluid Controls | 1306 x 900 x 210 | 108.3 kg | 0 W | none | 68.1 k |
 | `engtool_welding_rig` | Engineering tool - Welding Rig | Anvil Fluid Controls | 1316 x 1440 x 635 | 507.5 kg | 0 W | none | 326 k |
 | `engtool_work_bench_with_vise` | Engineering tool - Work Bench With Vise | Anvil Fluid Controls | 1800 x 1180 x 1057 | 911.6 kg | 0 W | none | 519 k |
 
@@ -28,11 +28,11 @@
 
 **Engineering tool - Cable Reel**, Anvil Fluid Controls, part AFC-ENG-3258 (passive)
 
-* Mass 341.2 kg; size 1180 x 1000 x 700 mm; heat 0 W.
+* Mass 344.1 kg; size 1180 x 1000 x 706 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 179 k cr, lead time 130 days, MTBF 26,600 h, service every 2,000 h, service life 20 years, crew 0.
+* Price 181 k cr, lead time 130 days, MTBF 26,600 h, service every 2,000 h, service life 20 years, crew 0.
 * IP54, -20 to 60 C; certifications: CSA-M5 machinery safety, CSA-E24 electrical safety.
-* floor-mounted, free-standing. Install with a hoist or gantry (341.2 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (344.1 kg).
 
 ### `engtool_chain_hoist_gantry`
 
@@ -62,7 +62,7 @@
 * Passive: no electrical load.
 * Price 194 k cr, lead time 122 days, MTBF 31,200 h, service every 2,000 h, service life 20 years, crew 0.
 * IP54, -20 to 60 C; certifications: CSA-M5 machinery safety, CSA-E24 electrical safety.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `computer` (screens: graph_lines).
 * floor-mounted, free-standing. Install with a hoist or gantry (281.6 kg).
 
 ### `engtool_hand_tool_set`
@@ -149,9 +149,9 @@
 
 **Engineering tool - Wall Parts Bins**, Anvil Fluid Controls, part AFC-ENG-8756 (passive)
 
-* Mass 107.8 kg; size 1300 x 900 x 210 mm; heat 0 W.
+* Mass 108.3 kg; size 1306 x 900 x 210 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 67.8 k cr, lead time 121 days, MTBF 26,200 h, service every 2,000 h, service life 20 years, crew 0.
+* Price 68.1 k cr, lead time 121 days, MTBF 26,200 h, service every 2,000 h, service life 20 years, crew 0.
 * IP54, -20 to 60 C; certifications: CSA-M5 machinery safety, CSA-E24 electrical safety.
 * wall-mounted. Two-person lift.
 

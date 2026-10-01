@@ -31,37 +31,37 @@
 <pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
-<rect x="32" y="30" width="33.65" height="40.53" class="m" fill="#eef1f6"/>
-<rect x="33.35" y="31.62" width="30.96" height="37.29" class="x" fill="none"/>
+<rect x="32" y="30" width="33.65" height="40.57" class="m" fill="#eef1f6"/>
+<rect x="33.35" y="31.62" width="30.96" height="37.33" class="x" fill="none"/>
 <text x="32" y="27.5" font-size="1.8" class="t b">FRONT</text>
-<rect x="87.65" y="30" width="33.65" height="40.53" class="m" fill="#eef1f6"/>
+<rect x="87.65" y="30" width="33.65" height="40.57" class="m" fill="#eef1f6"/>
 <text x="87.65" y="27.5" font-size="1.8" class="t b">SIDE</text>
-<rect x="32" y="92.53" width="33.65" height="33.65" class="m" fill="#eef1f6"/>
-<text x="32" y="90.03" font-size="1.8" class="t b">TOP</text>
-<line x1="32" y1="77.53" x2="65.65" y2="77.53" class="d"/>
-<line x1="31.3" y1="78.23" x2="32.7" y2="76.83" class="m"/>
-<line x1="64.95" y1="78.23" x2="66.35" y2="76.83" class="m"/>
-<line x1="32" y1="70.53" x2="32" y2="78.73" class="d"/>
-<line x1="65.65" y1="70.53" x2="65.65" y2="78.73" class="d"/>
-<text x="48.83" y="76.83" font-size="2" class="t" text-anchor="middle">2524</text>
-<line x1="25" y1="30" x2="25" y2="70.53" class="d"/>
+<rect x="32" y="92.57" width="33.65" height="33.65" class="m" fill="#eef1f6"/>
+<text x="32" y="90.07" font-size="1.8" class="t b">TOP</text>
+<line x1="32" y1="77.57" x2="65.65" y2="77.57" class="d"/>
+<line x1="31.3" y1="78.27" x2="32.7" y2="76.87" class="m"/>
+<line x1="64.95" y1="78.27" x2="66.35" y2="76.87" class="m"/>
+<line x1="32" y1="70.57" x2="32" y2="78.77" class="d"/>
+<line x1="65.65" y1="70.57" x2="65.65" y2="78.77" class="d"/>
+<text x="48.83" y="76.87" font-size="2" class="t" text-anchor="middle">2524</text>
+<line x1="25" y1="30" x2="25" y2="70.57" class="d"/>
 <line x1="24.3" y1="30.7" x2="25.7" y2="29.3" class="m"/>
-<line x1="24.3" y1="71.23" x2="25.7" y2="69.83" class="m"/>
+<line x1="24.3" y1="71.27" x2="25.7" y2="69.87" class="m"/>
 <line x1="32" y1="30" x2="23.8" y2="30" class="d"/>
-<line x1="32" y1="70.53" x2="23.8" y2="70.53" class="d"/>
-<text x="24.3" y="52.43" font-size="2" class="t" transform="rotate(-90 24.3 52.43)">3040</text>
-<line x1="87.65" y1="77.53" x2="121.31" y2="77.53" class="d"/>
-<line x1="86.95" y1="78.23" x2="88.35" y2="76.83" class="m"/>
-<line x1="120.61" y1="78.23" x2="122.01" y2="76.83" class="m"/>
-<line x1="87.65" y1="70.53" x2="87.65" y2="78.73" class="d"/>
-<line x1="121.31" y1="70.53" x2="121.31" y2="78.73" class="d"/>
-<text x="104.48" y="76.83" font-size="2" class="t" text-anchor="middle">2524</text>
-<line x1="25" y1="92.53" x2="25" y2="126.19" class="d"/>
-<line x1="24.3" y1="93.23" x2="25.7" y2="91.83" class="m"/>
-<line x1="24.3" y1="126.89" x2="25.7" y2="125.49" class="m"/>
-<line x1="32" y1="92.53" x2="23.8" y2="92.53" class="d"/>
-<line x1="32" y1="126.19" x2="23.8" y2="126.19" class="d"/>
-<text x="24.3" y="111.52" font-size="2" class="t" transform="rotate(-90 24.3 111.52)">2524</text>
+<line x1="32" y1="70.57" x2="23.8" y2="70.57" class="d"/>
+<text x="24.3" y="52.45" font-size="2" class="t" transform="rotate(-90 24.3 52.45)">3043</text>
+<line x1="87.65" y1="77.57" x2="121.31" y2="77.57" class="d"/>
+<line x1="86.95" y1="78.27" x2="88.35" y2="76.87" class="m"/>
+<line x1="120.61" y1="78.27" x2="122.01" y2="76.87" class="m"/>
+<line x1="87.65" y1="70.57" x2="87.65" y2="78.77" class="d"/>
+<line x1="121.31" y1="70.57" x2="121.31" y2="78.77" class="d"/>
+<text x="104.48" y="76.87" font-size="2" class="t" text-anchor="middle">2524</text>
+<line x1="25" y1="92.57" x2="25" y2="126.23" class="d"/>
+<line x1="24.3" y1="93.27" x2="25.7" y2="91.87" class="m"/>
+<line x1="24.3" y1="126.93" x2="25.7" y2="125.53" class="m"/>
+<line x1="32" y1="92.57" x2="23.8" y2="92.57" class="d"/>
+<line x1="32" y1="126.23" x2="23.8" y2="126.23" class="d"/>
+<text x="24.3" y="111.56" font-size="2" class="t" transform="rotate(-90 24.3 111.56)">2524</text>
 <text x="238" y="16.8" font-size="2.3" class="t b">SPECIFICATION</text>
 <rect x="238" y="18" width="171" height="4.5" class="n" fill="#dfe3ea"/>
 <text x="239" y="21.45" font-size="1.8" class="t b">PARAMETER</text>
@@ -83,10 +83,10 @@
 <text x="277" y="43.95" font-size="1.8" class="t">power / producer</text>
 <rect x="238" y="45" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="48.45" font-size="1.8" class="t b">Dimensions</text>
-<text x="277" y="48.45" font-size="1.8" class="t">2524 x 3040 x 2524 mm (W x H x D)</text>
+<text x="277" y="48.45" font-size="1.8" class="t">2524 x 3043 x 2524 mm (W x H x D)</text>
 <rect x="238" y="49.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="52.95" font-size="1.8" class="t b">Mass (dry)</text>
-<text x="277" y="52.95" font-size="1.8" class="t">23.82 t</text>
+<text x="277" y="52.95" font-size="1.8" class="t">23.84 t</text>
 <rect x="238" y="54" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="57.45" font-size="1.8" class="t b">Supply</text>
 <text x="277" y="57.45" font-size="1.8" class="t">6.6 kVAC 3ph</text>
@@ -128,14 +128,14 @@
 <text x="277" y="111.45" font-size="1.8" class="t">Power management bus PMB-1</text>
 <rect x="238" y="112.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="115.95" font-size="1.8" class="t b">Software</text>
-<text x="277" y="115.95" font-size="1.8" class="t">power</text>
+<text x="277" y="115.95" font-size="1.8" class="t">engineering</text>
 <rect x="238" y="18" width="171" height="99" class="n" fill="none"/>
 <text x="238" y="123" font-size="2" class="t b">CERTIFICATIONS</text>
 <text x="238" y="127.5" font-size="1.7" class="t">- CSA-M5 machinery safety</text>
 <text x="238" y="131.3" font-size="1.7" class="t">- CSA-E24 electrical safety</text>
 <text x="238" y="135.1" font-size="1.7" class="t">- CSA-R3 radiation (fusion)</text>
 <text x="238" y="142.9" font-size="2" class="t b">NOTES</text>
-<text x="238" y="147.4" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (23.82 t). Output</text>
+<text x="238" y="147.4" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (23.84 t). Output</text>
 <text x="238" y="151.2" font-size="1.7" class="t">16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.</text>
 <text x="16" y="178" font-size="2.2" class="t b">ELECTRICAL PROFILE</text>
 <text x="16" y="185" font-size="2" class="t">Producer / storage: output 16.60 MW</text>

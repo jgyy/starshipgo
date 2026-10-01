@@ -37,8 +37,8 @@
 <text x="126.74" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
 <polygon points="150.74,169 205.94,169 205.94,209 150.74,209" class="red" fill="url(#hZone)"/>
 <text x="152.34" y="189.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
-<polygon points="149.84,204.77 91.64,204.77 91.64,167.23 149.84,167.23" class="n" fill="#77eaef"/>
-<line x1="91.64" y1="167.23" x2="149.84" y2="167.23" class="m"/>
+<polygon points="149.9,204.77 91.58,204.77 91.58,167.23 149.9,167.23" class="n" fill="#77eaef"/>
+<line x1="91.58" y1="167.23" x2="149.9" y2="167.23" class="m"/>
 <line x1="120.74" y1="167.23" x2="120.74" y2="168.43" class="f"/>
 <polygon points="139.54,164.38 101.94,164.38 101.94,158.08 139.54,158.08" class="n" fill="#77eaef"/>
 <line x1="101.94" y1="158.08" x2="139.54" y2="158.08" class="m"/>

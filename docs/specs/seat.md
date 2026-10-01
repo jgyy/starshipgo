@@ -25,7 +25,7 @@
 * Passive: no electrical load.
 * Price 1,780 cr, lead time 34 days, MTBF 985,000 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `engineering` (screens: systems).
+* Software: `lifesupport` (screens: life_support).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `seat_comms_chair`

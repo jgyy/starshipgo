@@ -8,8 +8,8 @@
 |---|---|---|---|---|---|---|---|
 | `safety_breach_repair_kit` | Safety equipment - Breach Repair Kit | Fennick Safety and Security | 600 x 395 x 220 | 4.81 kg | 0 W | none | 997 |
 | `safety_damage_control_locker` | Safety equipment - Damage Control Locker | Fennick Safety and Security | 1000 x 2000 x 625 | 110.6 kg | 0 W | none | 23.7 k |
-| `safety_defibrillator_station` | Safety equipment - Defibrillator Station | Fennick Safety and Security | 400 x 460 x 224 | 3.97 kg | 0 W | none | 891 |
-| `safety_emergency_shower` | Safety equipment - Emergency Shower | Fennick Safety and Security | 934 x 2330 x 800 | 160.1 kg | 0 W | none | 28 k |
+| `safety_defibrillator_station` | Safety equipment - Defibrillator Station | Fennick Safety and Security | 406 x 463 x 224 | 4.06 kg | 0 W | none | 910 |
+| `safety_emergency_shower` | Safety equipment - Emergency Shower | Fennick Safety and Security | 934 x 2333 x 800 | 160.3 kg | 0 W | none | 28.1 k |
 | `safety_evac_route_map` | Safety equipment - Evac Route Map | Fennick Safety and Security | 1000 x 700 x 60 | 3.64 kg | 0 W | none | 696 |
 | `safety_eye_wash_station` | Safety equipment - Eye Wash Station | Fennick Safety and Security | 700 x 700 x 480 | 22.5 kg | 0 W | none | 4,500 |
 | `safety_fire_blanket_box` | Safety equipment - Fire Blanket Box | Fennick Safety and Security | 280 x 390 x 120 | 1.18 kg | 0 W | none | 235 |
@@ -17,11 +17,11 @@
 | `safety_first_aid_cabinet` | Safety equipment - First Aid Cabinet | Fennick Safety and Security | 420 x 520 x 205 | 4.13 kg | 0 W | none | 666 |
 | `safety_hazmat_cabinet` | Safety equipment - Hazmat Cabinet | Fennick Safety and Security | 900 x 2000 x 575 | 96.1 kg | 0 W | none | 20.4 k |
 | `safety_oxygen_mask_box` | Safety equipment - Oxygen Mask Box | Fennick Safety and Security | 500 x 415 x 160 | 2.96 kg | 0 W | none | 747 |
-| `safety_radiation_shelter_panel` | Safety equipment - Radiation Shelter Panel | Fennick Safety and Security | 1300 x 1000 x 95 | 11.3 kg | 0 W | none | 1,800 |
+| `safety_radiation_shelter_panel` | Safety equipment - Radiation Shelter Panel | Fennick Safety and Security | 1300 x 1000 x 98 | 11.6 kg | 0 W | none | 1,840 |
 | `safety_ration_locker` | Safety equipment - Ration Locker | Fennick Safety and Security | 1000 x 1800 x 532 | 93.8 kg | 0 W | none | 16.6 k |
 | `safety_spill_kit_bin` | Safety equipment - Spill Kit Bin | Fennick Safety and Security | 640 x 1113 x 630 | 42 kg | 0 W | none | 8,030 |
 | `safety_sprinkler_head` | Safety equipment - Sprinkler Head | Fennick Safety and Security | 140 x 148 x 140 | 0.27 kg | 0 W | none | 106 |
-| `safety_suppression_nozzle` | Safety equipment - Suppression Nozzle | Fennick Safety and Security | 300 x 500 x 300 | 4.01 kg | 0 W | none | 704 |
+| `safety_suppression_nozzle` | Safety equipment - Suppression Nozzle | Fennick Safety and Security | 300 x 503 x 300 | 4.03 kg | 0 W | none | 707 |
 
 ## Datasheets
 
@@ -49,9 +49,9 @@
 
 **Safety equipment - Defibrillator Station**, Fennick Safety and Security, part FSS-SAF-6128 (passive)
 
-* Mass 3.97 kg; size 400 x 460 x 224 mm; heat 0 W.
+* Mass 4.06 kg; size 406 x 463 x 224 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 891 cr, lead time 39 days, MTBF 298,600 h, service every 4,380 h, service life 15 years, crew 0.
+* Price 910 cr, lead time 39 days, MTBF 298,600 h, service every 4,380 h, service life 15 years, crew 0.
 * IP44, -30 to 70 C; certifications: CSA-S3 safety equipment, CSA-F1 fire and smoke.
 * Software: `medical` (screens: vitals).
 * wall-mounted.
@@ -60,9 +60,9 @@
 
 **Safety equipment - Emergency Shower**, Fennick Safety and Security, part FSS-SAF-4865 (passive)
 
-* Mass 160.1 kg; size 934 x 2330 x 800 mm; heat 0 W.
+* Mass 160.3 kg; size 934 x 2333 x 800 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 28 k cr, lead time 50 days, MTBF 443,100 h, service every 4,380 h, service life 15 years, crew 0.
+* Price 28.1 k cr, lead time 50 days, MTBF 443,100 h, service every 4,380 h, service life 15 years, crew 0.
 * IP44, -30 to 70 C; certifications: CSA-S3 safety equipment, CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -74,7 +74,7 @@
 * Passive: no electrical load.
 * Price 696 cr, lead time 39 days, MTBF 370,200 h, service every 4,380 h, service life 15 years, crew 0.
 * IP44, -30 to 70 C; certifications: CSA-S3 safety equipment, CSA-F1 fire and smoke.
-* Software: `deckplan` (screens: schematic).
+* Software: `engineering` (screens: damage_control).
 * wall-mounted.
 
 ### `safety_eye_wash_station`
@@ -141,9 +141,9 @@
 
 **Safety equipment - Radiation Shelter Panel**, Fennick Safety and Security, part FSS-SAF-3995 (passive)
 
-* Mass 11.3 kg; size 1300 x 1000 x 95 mm; heat 0 W.
+* Mass 11.6 kg; size 1300 x 1000 x 98 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,800 cr, lead time 47 days, MTBF 499,900 h, service every 4,380 h, service life 15 years, crew 0.
+* Price 1,840 cr, lead time 47 days, MTBF 499,900 h, service every 4,380 h, service life 15 years, crew 0.
 * IP44, -30 to 70 C; certifications: CSA-S3 safety equipment, CSA-F1 fire and smoke.
 * wall-mounted.
 
@@ -181,9 +181,9 @@
 
 **Safety equipment - Suppression Nozzle**, Fennick Safety and Security, part FSS-SAF-6390 (passive)
 
-* Mass 4.01 kg; size 300 x 500 x 300 mm; heat 0 W.
+* Mass 4.03 kg; size 300 x 503 x 300 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 704 cr, lead time 46 days, MTBF 305,400 h, service every 4,380 h, service life 15 years, crew 0.
+* Price 707 cr, lead time 46 days, MTBF 305,400 h, service every 4,380 h, service life 15 years, crew 0.
 * IP44, -30 to 70 C; certifications: CSA-S3 safety equipment, CSA-F1 fire and smoke.
 * ceiling-mounted.
 

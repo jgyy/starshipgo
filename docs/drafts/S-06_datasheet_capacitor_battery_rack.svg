@@ -34,9 +34,9 @@
 <rect x="32" y="30" width="50" height="79.4" class="m" fill="#eef1f6"/>
 <rect x="34" y="33.18" width="46" height="73.05" class="x" fill="none"/>
 <text x="32" y="27.5" font-size="1.8" class="t b">FRONT</text>
-<rect x="104" y="30" width="24.96" height="79.4" class="m" fill="#eef1f6"/>
+<rect x="104" y="30" width="25.08" height="79.4" class="m" fill="#eef1f6"/>
 <text x="104" y="27.5" font-size="1.8" class="t b">SIDE</text>
-<rect x="32" y="131.4" width="50" height="24.96" class="m" fill="#eef1f6"/>
+<rect x="32" y="131.4" width="50" height="25.08" class="m" fill="#eef1f6"/>
 <text x="32" y="128.9" font-size="1.8" class="t b">TOP</text>
 <line x1="32" y1="116.4" x2="82" y2="116.4" class="d"/>
 <line x1="31.3" y1="117.1" x2="32.7" y2="115.7" class="m"/>
@@ -50,18 +50,18 @@
 <line x1="32" y1="30" x2="23.8" y2="30" class="d"/>
 <line x1="32" y1="109.4" x2="23.8" y2="109.4" class="d"/>
 <text x="24.3" y="71.86" font-size="2" class="t" transform="rotate(-90 24.3 71.86)">1985</text>
-<line x1="104" y1="116.4" x2="128.96" y2="116.4" class="d"/>
+<line x1="104" y1="116.4" x2="129.08" y2="116.4" class="d"/>
 <line x1="103.3" y1="117.1" x2="104.7" y2="115.7" class="m"/>
-<line x1="128.26" y1="117.1" x2="129.66" y2="115.7" class="m"/>
+<line x1="128.38" y1="117.1" x2="129.78" y2="115.7" class="m"/>
 <line x1="104" y1="109.4" x2="104" y2="117.6" class="d"/>
-<line x1="128.96" y1="109.4" x2="128.96" y2="117.6" class="d"/>
-<text x="116.48" y="115.7" font-size="2" class="t" text-anchor="middle">624</text>
-<line x1="25" y1="131.4" x2="25" y2="156.36" class="d"/>
+<line x1="129.08" y1="109.4" x2="129.08" y2="117.6" class="d"/>
+<text x="116.54" y="115.7" font-size="2" class="t" text-anchor="middle">627</text>
+<line x1="25" y1="131.4" x2="25" y2="156.48" class="d"/>
 <line x1="24.3" y1="132.1" x2="25.7" y2="130.7" class="m"/>
-<line x1="24.3" y1="157.06" x2="25.7" y2="155.66" class="m"/>
+<line x1="24.3" y1="157.18" x2="25.7" y2="155.78" class="m"/>
 <line x1="32" y1="131.4" x2="23.8" y2="131.4" class="d"/>
-<line x1="32" y1="156.36" x2="23.8" y2="156.36" class="d"/>
-<text x="24.3" y="145.5" font-size="2" class="t" transform="rotate(-90 24.3 145.5)">624</text>
+<line x1="32" y1="156.48" x2="23.8" y2="156.48" class="d"/>
+<text x="24.3" y="145.56" font-size="2" class="t" transform="rotate(-90 24.3 145.56)">627</text>
 <text x="238" y="16.8" font-size="2.3" class="t b">SPECIFICATION</text>
 <rect x="238" y="18" width="171" height="4.5" class="n" fill="#dfe3ea"/>
 <text x="239" y="21.45" font-size="1.8" class="t b">PARAMETER</text>
@@ -83,22 +83,22 @@
 <text x="277" y="43.95" font-size="1.8" class="t">power / energy storage</text>
 <rect x="238" y="45" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="48.45" font-size="1.8" class="t b">Dimensions</text>
-<text x="277" y="48.45" font-size="1.8" class="t">1250 x 1985 x 624 mm (W x H x D)</text>
+<text x="277" y="48.45" font-size="1.8" class="t">1250 x 1985 x 627 mm (W x H x D)</text>
 <rect x="238" y="49.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="52.95" font-size="1.8" class="t b">Mass (dry)</text>
-<text x="277" y="52.95" font-size="1.8" class="t">1.19 t</text>
+<text x="277" y="52.95" font-size="1.8" class="t">1.20 t</text>
 <rect x="238" y="54" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="57.45" font-size="1.8" class="t b">Supply</text>
 <text x="277" y="57.45" font-size="1.8" class="t">400 VDC</text>
 <rect x="238" y="58.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="61.95" font-size="1.8" class="t b">Storage</text>
-<text x="277" y="61.95" font-size="1.8" class="t">238.0 kWh, discharge 476.0 kW</text>
+<text x="277" y="61.95" font-size="1.8" class="t">239.0 kWh, discharge 478.0 kW</text>
 <rect x="238" y="63" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="66.45" font-size="1.8" class="t b">Heat dissipation</text>
 <text x="277" y="66.45" font-size="1.8" class="t">1.2 kW</text>
 <rect x="238" y="67.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="70.95" font-size="1.8" class="t b">Unit price</text>
-<text x="277" y="70.95" font-size="1.8" class="t">1.14 M cr</text>
+<text x="277" y="70.95" font-size="1.8" class="t">1.15 M cr</text>
 <rect x="238" y="72" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="75.45" font-size="1.8" class="t b">Lead time</text>
 <text x="277" y="75.45" font-size="1.8" class="t">161 days</text>
@@ -134,10 +134,10 @@
 <text x="238" y="127.5" font-size="1.7" class="t">- CSA-M5 machinery safety</text>
 <text x="238" y="131.3" font-size="1.7" class="t">- CSA-E24 electrical safety</text>
 <text x="238" y="139.1" font-size="2" class="t b">NOTES</text>
-<text x="238" y="143.6" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (1.19 t). Stores</text>
-<text x="238" y="147.4" font-size="1.7" class="t">238 kWh; discharge limited to 476 kW.</text>
+<text x="238" y="143.6" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (1.2 t). Stores</text>
+<text x="238" y="147.4" font-size="1.7" class="t">239 kWh; discharge limited to 478 kW.</text>
 <text x="16" y="178" font-size="2.2" class="t b">ELECTRICAL PROFILE</text>
-<text x="16" y="185" font-size="2" class="t">Producer / storage: 238.0 kWh, 476.0 kW discharge</text>
+<text x="16" y="185" font-size="2" class="t">Producer / storage: 239.0 kWh, 478.0 kW discharge</text>
 <text x="16" y="208" font-size="2.2" class="t b">INSTALLED IN THE SHIP</text>
 <rect x="16" y="211" width="110" height="4.2" class="n" fill="#dfe3ea"/>
 <text x="17" y="214.15" font-size="1.8" class="t b">ROOM</text>

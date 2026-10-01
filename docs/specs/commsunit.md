@@ -8,9 +8,9 @@
 |---|---|---|---|---|---|---|---|
 | `commsunit_comms_console` | Communications unit - Comms Console | Kestrel Cognitive Systems | 1660 x 1379 x 660 | 432.1 kg | 640 W | 120 VAC 1ph | 392 k |
 | `commsunit_encryption_unit` | Communications unit - Encryption Unit | Kestrel Cognitive Systems | 320 x 200 x 287 | 5.2 kg | 20 W | 24 VDC | 4,800 |
-| `commsunit_handset_cradle` | Communications unit - Handset Cradle | Kestrel Cognitive Systems | 245 x 182 x 300 | 3.63 kg | 19 W | 24 VDC | 3,600 |
+| `commsunit_handset_cradle` | Communications unit - Handset Cradle | Kestrel Cognitive Systems | 245 x 182 x 303 | 3.67 kg | 19 W | 24 VDC | 3,640 |
 | `commsunit_intercom_panel` | Communications unit - Intercom Panel | Kestrel Cognitive Systems | 220 x 340 x 60 | 1.3 kg | 16 W | 24 VDC | 1,470 |
-| `commsunit_radio_rack` | Communications unit - Radio Rack | Kestrel Cognitive Systems | 600 x 2100 x 509 | 193.9 kg | 250 W | 48 VDC | 225 k |
+| `commsunit_radio_rack` | Communications unit - Radio Rack | Kestrel Cognitive Systems | 606 x 2103 x 512 | 197.3 kg | 260 W | 48 VDC | 229 k |
 | `commsunit_radio_transceiver` | Communications unit - Radio Transceiver | Kestrel Cognitive Systems | 558 x 500 x 300 | 24 kg | 51 W | 48 VDC | 28.6 k |
 | `commsunit_signal_booster` | Communications unit - Signal Booster | Kestrel Cognitive Systems | 440 x 430 x 254 | 12.8 kg | 31 W | 24 VDC | 11.4 k |
 | `commsunit_speaker_grille` | Communications unit - Speaker Grille | Kestrel Cognitive Systems | 600 x 300 x 105 | 5.51 kg | 22 W | 24 VDC | 5,510 |
@@ -27,7 +27,7 @@
 * Power 160 W idle / 640 W typical / 950 W peak at 120 VAC 1ph.
 * Price 392 k cr, lead time 66 days, MTBF 104,900 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 32 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `comms`, `starmap`, `science` (screens: comm, starmap, waveform).
+* Software: `comms`, `deckplan` (screens: uplink, planet_survey, comms_spectrum).
 * floor-mounted, free-standing. Install with a hoist or gantry (432.1 kg).
 
 ### `commsunit_encryption_unit`
@@ -38,18 +38,18 @@
 * Power 5.1 W idle / 20 W typical / 31 W peak at 24 VDC.
 * Price 4,800 cr, lead time 58 days, MTBF 82,000 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `computer` (screens: terminal).
 * table-mounted.
 
 ### `commsunit_handset_cradle`
 
 **Communications unit - Handset Cradle**, Kestrel Cognitive Systems, part KCS-COM-4776 (consumer)
 
-* Mass 3.63 kg; size 245 x 182 x 300 mm; heat 17 W.
+* Mass 3.67 kg; size 245 x 182 x 303 mm; heat 17 W.
 * Power 4.8 W idle / 19 W typical / 29 W peak at 24 VDC.
-* Price 3,600 cr, lead time 52 days, MTBF 63,300 h, service every 8,760 h, service life 10 years, crew 1.
+* Price 3,640 cr, lead time 52 days, MTBF 63,300 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `computer` (screens: text).
+* Software: `logbook` (screens: log_list).
 * table-mounted.
 
 ### `commsunit_intercom_panel`
@@ -67,11 +67,11 @@
 
 **Communications unit - Radio Rack**, Kestrel Cognitive Systems, part KCS-COM-9309 (consumer)
 
-* Mass 193.9 kg; size 600 x 2100 x 509 mm; heat 230 W.
-* Power 63 W idle / 250 W typical / 380 W peak at 48 VDC.
-* Price 225 k cr, lead time 63 days, MTBF 65,100 h, service every 8,760 h, service life 10 years, crew 1.
+* Mass 197.3 kg; size 606 x 2103 x 512 mm; heat 240 W.
+* Power 64 W idle / 260 W typical / 390 W peak at 48 VDC.
+* Price 229 k cr, lead time 63 days, MTBF 65,100 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `comms`, `science` (screens: comm, waveform).
+* Software: `comms` (screens: comm, ecg_multi).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `commsunit_radio_transceiver`
@@ -113,7 +113,7 @@
 * Power 4.8 W idle / 19 W typical / 29 W peak at 24 VDC.
 * Price 3,930 cr, lead time 57 days, MTBF 98,900 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `holo`, `computer` (screens: globe, text).
+* Software: `deckplan`, `logbook` (screens: planet_survey, log_list).
 * wall-mounted.
 
 ### `commsunit_wall_microphone`

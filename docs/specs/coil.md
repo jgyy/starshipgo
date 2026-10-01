@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `coil_coil_gantry` | Warp / plasma coil - Coil Gantry | Anvil Fluid Controls | 2400 x 2380 x 700 | 3.6 t | 600 kW | 6.6 kVAC 3ph | 2.64 M |
+| `coil_coil_gantry` | Warp / plasma coil - Coil Gantry | Anvil Fluid Controls | 2400 x 2383 x 700 | 3.61 t | 600 kW | 6.6 kVAC 3ph | 2.65 M |
 | `coil_dilithium_crystal_chamber` | Warp / plasma coil - Dilithium Crystal Chamber | Anvil Fluid Controls | 1190 x 1870 x 1190 | 2.1 t | 420 kW | 6.6 kVAC 3ph | 1.41 M |
 | `coil_discharge_coil_tower` | Warp / plasma coil - Discharge Coil Tower | Anvil Fluid Controls | 1099 x 1940 x 1117 | 2.35 t | 370 kW | 6.6 kVAC 3ph | 1.64 M |
 | `coil_eps_conduit_trunk` | Warp / plasma coil - Eps Conduit Trunk | Anvil Fluid Controls | 550 x 2440 x 196 | 206.4 kg | 0 W | none | 129 k |
@@ -25,11 +25,11 @@
 
 **Warp / plasma coil - Coil Gantry**, Anvil Fluid Controls, part AFC-COI-7098 (consumer)
 
-* Mass 3.6 t; size 2400 x 2380 x 700 mm; heat 550 kW.
+* Mass 3.61 t; size 2400 x 2383 x 700 mm; heat 550 kW.
 * Power 210 kW idle / 600 kW typical / 1.3 MW peak at 6.6 kVAC 3ph.
-* Price 2.64 M cr, lead time 136 days, MTBF 36,900 h, service every 2,000 h, service life 20 years, crew 1.
+* Price 2.65 M cr, lead time 136 days, MTBF 36,900 h, service every 2,000 h, service life 20 years, crew 1.
 * IP54, -20 to 60 C, 80 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Machinery control bus MCB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (3.6 t).
+* floor-mounted, free-standing. Install with a hoist or gantry (3.61 t).
 
 ### `coil_dilithium_crystal_chamber`
 
