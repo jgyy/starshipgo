@@ -3,13 +3,12 @@
 Every test fails on the code as it was before the fix and passes now.  Run:  python -m unittest discover -s tests -v
 """
 import ast
-import collections
 import csv
 import gc
 import glob
+import importlib.util
 import io
 import json
-import math
 import os
 import struct
 import subprocess
@@ -573,6 +572,13 @@ class DraftTests(unittest.TestCase):
         for w in self.ship.win_list:
             self.assertIn(">%s<" % w["mark"], svg)
 
+    def test_P050_floor_to_floor_dimension_only_where_a_deck_lies_above(self):
+        import sheets_room
+        top = sheets_room.room_section(self.ship, self.ship.by_id["bridge"], "SL").render()          # deck 1: nothing above
+        mid = sheets_room.room_section(self.ship, self.ship.by_id["mess"], "SL").render()
+        self.assertNotIn("F-F", top)                           # a "4000 F-F" dimension to a floor that does not exist
+        self.assertIn("4000 F-F", mid)
+
     def test_P048_a_ship_without_stairs_still_gets_its_drawings(self):
         with open(SHIP_PATH, encoding="utf-8") as f:
             data = json.load(f)
@@ -704,9 +710,7 @@ class GeneratorToolTests(unittest.TestCase):
 
 class AudioToolTests(unittest.TestCase):
     def setUp(self):
-        try:
-            import numpy  # noqa: F401
-        except ImportError:
+        if importlib.util.find_spec("numpy") is None:
             self.skipTest("numpy not available")
 
     def test_P038_silent_clip_stays_silent(self):
@@ -748,6 +752,8 @@ class HygieneTests(unittest.TestCase):
                     found.append("%s:%d no-op %s" % (os.path.relpath(f, ROOT), n.lineno, ast.unparse(n)[:50]))
                 if isinstance(n, (ast.If, ast.IfExp, ast.While)) and isinstance(n.test, ast.Constant):
                     found.append("%s:%d constant condition %s" % (os.path.relpath(f, ROOT), n.lineno, ast.unparse(n.test)))
+                if isinstance(n, ast.BoolOp) and any(isinstance(v, ast.Constant) and isinstance(v.value, bool) for v in n.values):
+                    found.append("%s:%d constant operand %s" % (os.path.relpath(f, ROOT), n.lineno, ast.unparse(n)[:50]))
         self.assertEqual(found, [])
 
     def test_P041_tools_open_files_with_context_managers(self):

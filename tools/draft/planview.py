@@ -360,7 +360,7 @@ def draw_dim_chains(sh, pv, room, off=13.0, ext=True):
 
 def family_legend(sh, x, y, cat, props, cols=2, colw=38, maxn=24):
     """Legend of the categories present; returns bottom y."""
-    cs = sorted({p.cat for p in props if p.mount != "ceiling" or True})
+    cs = sorted({p.cat for p in props})
     sh.text(x, y, "FURNITURE FAMILIES", 1.9, bold=True)
     y += 2.2
     n = 0
