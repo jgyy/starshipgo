@@ -221,7 +221,8 @@ class Room:
     def occupancy(self):
         a = 0.0
         for p in self.props:
-            if p.mount == "floor" and p.size[1] > FLAT_H:      # rugs / floor markings do not occupy floor (audit rule `density`)
+            if p.mount == "floor" and p.size[1] > FLAT_H and p.code != "ARCH" and p.cat not in ("door", "doorframe"):
+                # rugs, floor markings and door frames do not occupy floor (same definition as audit rule `density`)
                 a += (p.size[0] * p.size[2])
         return a / max(self.area, 1.0)
 

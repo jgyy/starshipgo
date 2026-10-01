@@ -95,7 +95,7 @@ def crossing_edges(cut, room):
             if (da < -1e-9 and db < -1e-9) or (da > 1e-9 and db > 1e-9):
                 continue
             t = da / (da - db)
-            res.append((ha + (hb - ha) * t, e, t * e["len"] if True else 0))
+            res.append((ha + (hb - ha) * t, e, t * e["len"]))
     res.sort(key=lambda r: r[0])
     return res
 

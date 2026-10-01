@@ -144,8 +144,6 @@ def deck_ga(ship, deck):
                slug="general_arrangement_deck%d" % deck)
     s = 1000.0 / GA_SCALE
     bx0, bz0, bx1, bz1 = ship.bounds(None)
-    (14.0, 8.0, 232.0, 290.0)
-    ox = 14 + 34 + 52 - 0          # plan centre line (x=0) on paper
     ox = 14 + 30 + (13.0) * s + 8
     oy = 8 + 30 - ship.bounds(deck)[1] * s
     pv = PV(s, ox, oy, 0.0, 0.0)
@@ -255,7 +253,6 @@ def hull_lines(ship):
     sh.dim_h(pv.xy(-13, 0)[0], pv.xy(13, 0)[0], pv.xy(0, bz0)[1] - 13, "BEAM 26000", ext_y=pv.xy(0, bz0)[1] - 2)
     sh.dim_v(pv.xy(0, bz0)[1], pv.xy(0, bz1)[1], pv.xy(-13, 0)[0] - 14, "LOA %d" % round((bz1 - bz0) * 1000), ext_x=pv.xy(-13, 0)[0] - 4)
     # labels of decks
-    {1: "DECK 1 (bridge nose)", 2: "DECK 2", 3: "DECK 3 (hangar stern)"}
     for d in (1, 2, 3):
         b = ship.bounds(d)
         x, y = pv.xy(13.5 if d != 2 else 14.0, b[1] if d == 1 else (b[3] if d != 2 else b[3] - 2))
@@ -321,7 +318,6 @@ def profile_sheet(ship):
     groups = {}
     for r in ship.rooms:
         groups.setdefault((r.y, r.top), []).append((r.z0, r.z1))
-    {}
     for (y, top), ivs in sorted(groups.items()):
         for a, b in union_intervals(ivs):
             sh.poly(sv.box(-b, -a, y - SLAB_T, top + SLAB_T), "h", "#e9edf3")
@@ -367,7 +363,6 @@ def profile_sheet(ship):
     sh.dim_h(sv.xy(-bz1, 0)[0], sv.xy(-bz0, 0)[0], yb + 14, "LOA %d" % round((bz1 - bz0) * 1000), ext_y=yb + 2)
     # heights on the right
     xr = sv.xy(-bz0, 0)[0] + 8
-    [(ship.deck_y[d], max(r.top for r in ship.deck_rooms(d))) for d in (1, 2, 3)]
     ys = [sv.xy(0, v)[1] for v in (0.0, 4.0, 8.0)]
     sh.chain_v(list(reversed(ys)), xr, ["4000", "4000"], ext_x=sv.xy(-bz0, 0)[0] + 1)
     ymax = max(r.top for r in ship.rooms) + SLAB_T
