@@ -211,13 +211,13 @@ def carbon(twill=True, seed=1, n_th=48, color="#1a1c20", gloss=0.22):
         rnd = L.rand_by_id((i * n_th + j).astype(int) % 4096, seed, -0.2, 0.2, 4096)
         sheen = np.where(over, 1.0, 0.55) * (0.5 + 0.5 * th)
         alb = _tone(hexc(color), (0.55 + 0.9 * sheen) * (1 + rnd))
-        return finish(alb, th * 0.8, gloss + 0.12 * (1 - th), ao=0.55 + 0.45 * th, metal=0.15, nstr=1.4, hblur=1.1)
+        return finish(alb, th * 0.8, gloss + 0.12 * (1 - th), ao=0.55 + 0.45 * th, metal=0.15, nstr=1.0, hblur=1.3)
     return fn
 
 
-add("carbon_fibre_twill", carbon(True, 81), tile=0.6, group="composite")
-add("carbon_fibre_plain", carbon(False, 82, 40), tile=0.6, group="composite")
-add("kevlar_weave", carbon(False, 83, 40, "#b99a2b", 0.4), tile=0.6, group="composite")
+add("carbon_fibre_twill", carbon(True, 81, 40), tile=0.6, group="composite")
+add("carbon_fibre_plain", carbon(False, 82, 32), tile=0.6, group="composite")
+add("kevlar_weave", carbon(False, 83, 32, "#b99a2b", 0.4), tile=0.6, group="composite")
 
 
 def hex_plate(color, cols=8, seed=1, rough=0.4, metal=0.8, gap=3.0, bevel=True):
@@ -317,7 +317,7 @@ def concrete(color, seed, pores=1.0, form=False, rough=0.88, big=0.06):
     def fn(n):
         a = noise(n, seed, 1.8, fmax=0.08)
         b = noise(n, seed + 1, 2.8, fmax=0.01)
-        pore = np.clip(noise(n, seed + 2, 0.6, fmax=0.18) - 1.9, 0, 3) * pores
+        pore = np.clip((noise(n, seed + 2, 0.6, fmax=0.18) - 1.9) * pores, 0, 1.2)
         v = 1 + 0.05 * a + big * b - 0.18 * pore
         x, y = coords(n)
         h = 0.3 * a - pore
@@ -452,7 +452,7 @@ add("plywood", _plywood, size=256, tile=1.0, group="wood")
 
 def _parquet(n):
     x, y = coords(n)
-    cells = 8
+    cells = 4
     p = n / cells
     iu, iv = np.floor(x / p), np.floor(y / p)
     horiz = ((iu + iv) % 2 == 0)
@@ -467,7 +467,7 @@ def _parquet(n):
     ft2 = streaks(n, 202, 50, 0.7, vertical=True)
     fib = np.where(horiz, ft, ft2)
     tone = L.rand_by_id(((iu * cells + iv) * 4 + board).astype(int) % 4096, 203, -0.1, 0.1, 4096)
-    alb = _tone(hexc("#b78a55"), 1 + tone + 0.05 * fib) * (1 - 0.5 * g)[..., None]
+    alb = _tone(hexc("#b78a55"), 1 + tone * 0.7 + 0.03 * fib) * (1 - 0.35 * g)[..., None]
     return finish(alb, 0.3 * fib - 1.3 * g, 0.42 + 0.3 * g, ao=1 - 0.4 * g, nstr=1.0)
 
 
@@ -483,7 +483,7 @@ def leather(color, seed, cells=30, rough=0.5, sheen=0.0):
         puff = soft((f2 - f1) * (n / cells) - 1.5, 5.0)
         tone = L.rand_by_id(cid, seed + 2, -0.04, 0.04, cells * cells)
         alb = _tone(hexc(color), 1 + tone + 0.05 * nz - 0.22 * crease)
-        return finish(alb, puff + 0.1 * nz, rough + 0.12 * crease - sheen * puff, ao=1 - 0.35 * crease, nstr=1.4, hblur=1.2)
+        return finish(alb, puff + 0.1 * nz, rough + 0.12 * crease - sheen * puff, ao=1 - 0.35 * crease, nstr=0.9, hblur=1.2)
     return fn
 
 
@@ -494,7 +494,7 @@ add("leather_tan", leather("#b08a5e", 214, 26), size=256, tile=1.0, group="leath
 add("leather_white", leather("#d9d4ca", 215, 34, 0.42), size=256, tile=1.0, group="leather")
 
 
-def weave(color, color2=None, seed=1, n_th=64, rough=0.92, thick=0.35, plain=True):
+def weave(color, color2=None, seed=1, n_th=48, rough=0.92, thick=0.35, plain=True):
     def fn(n):
         x, y = coords(n)
         i = np.floor(x / n * n_th)
@@ -511,7 +511,7 @@ def weave(color, color2=None, seed=1, n_th=64, rough=0.92, thick=0.35, plain=Tru
         if color2:
             base = _mix(base, _col(color2)[0] * np.ones((n, n, 3), np.float32), np.where(over, 0.0, 1.0))
         alb = base * (0.7 + 0.3 * th + tone + fuzz)[..., None]
-        return finish(alb, th, rough, ao=0.5 + 0.5 * th, nstr=thick * 4, hblur=1.0)
+        return finish(alb, th, rough, ao=0.5 + 0.5 * th, nstr=thick * 2.4, hblur=1.1)
     return fn
 
 
@@ -621,7 +621,7 @@ def _foam_panel(n):
     nz = noise(n, 263, 1.2, fmax=0.2)
     pit = soft(0.18 - f1, 0.1) * 0.0 + np.clip(1 - f1 * 3, 0, 1)
     alb = _tone(hexc("#9aa2a8"), 1 + 0.05 * nz - 0.2 * pit)
-    return finish(alb, -pit * 1.2 + 0.1 * nz, 0.95, ao=1 - 0.3 * pit, nstr=1.2, hblur=1.4)
+    return finish(alb, -pit * 1.2 + 0.1 * nz, 0.95, ao=1 - 0.3 * pit, nstr=0.9, hblur=1.4)
 
 
 add("acoustic_panel_grey", _foam_panel, size=256, tile=1.0, group="padded")
@@ -806,7 +806,6 @@ def _pipe_wrap(n):
     x, y = coords(n)
     k = 8
     t = ((x + y) / n * k) % 1
-    tape = soft((np.abs(t - 0.5) - 0.42) * (n / k) * 0.7 * -1, 1.8) * 0
     ridge = 0.5 + 0.5 * np.cos(2 * np.pi * (x + y) / n * k)
     edge = soft(2.2 - np.minimum(t, 1 - t) * (n / k) * 0.7, 1.6)
     nz = noise(n, 341, 1.5, fmax=0.15)
@@ -939,7 +938,7 @@ def _gravel(n):
     chip = soft((1 - f1 * 1.9) * (n / 28) * 0.5, 2.5)
     nz = noise(n, 463, 2.0, fmax=0.1)
     alb = _tone(hexc("#8d8a84"), r + 0.05 * nz) * (0.5 + 0.5 * chip)[..., None]
-    return finish(alb, chip * 1.2 + (r - 0.6), 0.85, ao=0.4 + 0.6 * chip, nstr=1.6, hblur=1.3)
+    return finish(alb, chip * 1.2 + (r - 0.6), 0.85, ao=0.4 + 0.6 * chip, nstr=1.0, hblur=1.3)
 
 
 add("gravel", _gravel, size=256, tile=1.0, group="organic")
@@ -947,7 +946,6 @@ add("gravel", _gravel, size=256, tile=1.0, group="organic")
 
 # ============================================================ neutral prop sets (tint friendly)
 def _neutral(alb_v, h, rough_rel, ao=None, nstr=1.0):
-    n = alb_v.shape[0]
     alb = np.stack([alb_v] * 3, 2)
     a, nrm, orm = finish(alb, h, rough_rel, ao=ao, metal=0.0, nstr=nstr, toksvig=0.0, rough_range=(0.5, 1.0))
     orm[..., 1] = np.clip(orm[..., 1], 0.6, 1.0)
@@ -975,7 +973,7 @@ def _p_leather(n):
     f1, f2, cid = voronoi(n, 30, 511, 1.0)
     crease = np.clip(1 - (f2 - f1) * 4.0, 0, 1)
     puff = soft((f2 - f1) * (n / 30) - 1.5, 5.0)
-    return _neutral(0.9 - 0.2 * crease, puff, 0.85 + 0.1 * crease, ao=1 - 0.3 * crease, nstr=1.2)
+    return _neutral(0.9 - 0.2 * crease, puff, 0.85 + 0.1 * crease, ao=1 - 0.3 * crease, nstr=0.65)
 
 
 add("p_leather", _p_leather, size=256, tile=0.4, group="prop", neutral=True)
@@ -983,12 +981,12 @@ add("p_leather", _p_leather, size=256, tile=0.4, group="prop", neutral=True)
 
 def _p_weave(n):
     x, y = coords(n)
-    k = 32
+    k = 24
     i, j = np.floor(x / n * k), np.floor(y / n * k)
     over = (i + j) % 2 == 0
     th = np.where(over, np.sin(np.pi * ((x / n * k) % 1)) ** 0.6, np.sin(np.pi * ((y / n * k) % 1)) ** 0.6)
     rnd = np.where(over, L.rand_by_id(i.astype(int) % 256, 521, -0.06, 0.06, 256), L.rand_by_id(j.astype(int) % 256, 522, -0.06, 0.06, 256))
-    return _neutral(np.clip(0.72 + 0.2 * th + rnd, 0, 1), th, 0.98, ao=0.6 + 0.4 * th, nstr=1.2)
+    return _neutral(np.clip(0.72 + 0.2 * th + rnd, 0, 1), th, 0.98, ao=0.6 + 0.4 * th, nstr=0.65)
 
 
 add("p_weave", _p_weave, size=256, tile=0.3, group="prop", neutral=True)
@@ -1040,7 +1038,7 @@ def _p_foam(n):
     f1, f2, cid = voronoi(n, 44, 571, 1.0)
     pit = np.clip(1 - f1 * 3, 0, 1)
     nz = noise(n, 572, 1.2, fmax=0.2)
-    return _neutral(np.clip(0.9 - 0.15 * pit + 0.03 * nz, 0, 1), -pit + 0.1 * nz, 0.98, ao=1 - 0.3 * pit, nstr=1.2)
+    return _neutral(np.clip(0.9 - 0.15 * pit + 0.03 * nz, 0, 1), -pit + 0.1 * nz, 0.98, ao=1 - 0.3 * pit, nstr=0.8)
 
 
 add("p_foam", _p_foam, size=256, tile=0.4, group="prop", neutral=True)

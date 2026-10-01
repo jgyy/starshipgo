@@ -26,21 +26,21 @@ def hexc(h):
     return np.array([int(h[i:i + 2], 16) / 255 for i in (0, 2, 4)], np.float32)
 
 
-def _gauss_kernel(n, sx, sy):
-    key = (n, round(sx, 3), round(sy, 3))
+def _gauss_kernel(shape, sx, sy):
+    key = (shape, round(sx, 3), round(sy, 3))
     if key not in _K_CACHE:
-        fx, fy = _freqs(n)
+        fx = np.fft.fftfreq(shape[1])[None, :]
+        fy = np.fft.fftfreq(shape[0])[:, None]
         _K_CACHE[key] = np.exp(-2 * np.pi ** 2 * ((sx * fx) ** 2 + (sy * fy) ** 2)).astype(np.float32)
     return _K_CACHE[key]
 
 
 def blur(a, sigma, sigma_y=None):
-    """Tileable gaussian blur (sigma in pixels) of an (n, n) or (n, n, c) array."""
+    """Tileable gaussian blur (sigma in pixels) of an (h, w) or (h, w, c) array."""
     if sigma <= 0 and (sigma_y is None or sigma_y <= 0):
         return a
     sy = sigma if sigma_y is None else sigma_y
-    n = a.shape[0]
-    k = _gauss_kernel(n, sigma, sy)
+    k = _gauss_kernel(a.shape[:2], sigma, sy)
     if a.ndim == 3:
         k = k[..., None]
     return np.real(np.fft.ifft2(np.fft.fft2(a, axes=(0, 1)) * k, axes=(0, 1))).astype(np.float32)
@@ -160,7 +160,7 @@ def normal_map(h, strength=1.0, gmax=1.0):
     return np.stack([-gx / ln * 0.5 + 0.5, gy / ln * 0.5 + 0.5, 1.0 / ln * 0.5 + 0.5], axis=2).astype(np.float32), gx, gy
 
 
-def finish(alb, h=None, rough=0.5, ao=None, metal=0.0, nstr=2.0, hblur=0.9, rblur=1.3, ablur=0.5, toksvig=1.0,
+def finish(alb, h=None, rough=0.5, ao=None, metal=0.0, nstr=2.0, hblur=1.1, rblur=1.5, ablur=0.8, toksvig=1.0,
            gmax=0.8, rough_range=(0.06, 1.0)):
     """Band-limit and pack one surface: returns (albedo, normal, orm) float arrays in 0..1.
 
@@ -185,22 +185,37 @@ def finish(alb, h=None, rough=0.5, ao=None, metal=0.0, nstr=2.0, hblur=0.9, rblu
     return np.clip(alb, 0, 1).astype(np.float32), nrm, np.stack([ao, rough, metal], axis=2).astype(np.float32)
 
 
-def prefilter_existing(alb, nrm, orm):
-    """Band-limit the older hand-written surface sets in place of regenerating them: low-pass albedo, soften and
-    renormalise the normal map, bake the lost normal variance into roughness."""
-    alb = np.clip(blur(alb.astype(np.float32), 0.6), 0, 1)
+# per texture strength of the band-limiting applied to the older hand-written sets
+# sigma: albedo blur (px); soften: 0..1 pull of albedo towards its 6 px blur (removes contrast of small holes / bolts);
+# nflat: 0..1 flattening of the normal map before the blur
+PREFILTER = {
+    "ceiling": {"sigma": 1.5, "soften": 0.55, "nflat": 0.5},
+    "grating": {"sigma": 1.1, "soften": 0.25, "nflat": 0.2},
+    "deck_plate": {"sigma": 0.9, "soften": 0.15, "nflat": 0.15},
+    "hull_panel": {"sigma": 0.8, "soften": 0.1, "nflat": 0.1},
+    "stair_tread": {"sigma": 0.9, "soften": 0.15, "nflat": 0.15},
+}
+
+
+def prefilter_existing(alb, nrm, orm, name=""):
+    """Band-limit the older hand-written surface sets: low-pass albedo, soften and renormalise the normal map,
+    bake the lost normal variance into roughness (specular anti-aliasing)."""
+    opt = {"sigma": 0.7, "soften": 0.0, "nflat": 0.0}
+    opt.update(PREFILTER.get(name, {}))
+    alb = alb.astype(np.float32)
+    if opt["soften"] > 0:
+        alb = alb * (1 - opt["soften"]) + blur(alb, 6.0) * opt["soften"]
+    alb = np.clip(blur(alb, opt["sigma"]), 0, 1)
     v = nrm.astype(np.float32) * 2 - 1
-    vb = blur(v, 0.8)
-    var = np.clip(1 - np.linalg.norm(vb, axis=2) / np.maximum(np.linalg.norm(v, axis=2), 1e-3), 0, 1)
-    vb = vb / np.maximum(np.linalg.norm(vb, axis=2, keepdims=True), 1e-4)
+    v[..., :2] *= 1 - opt["nflat"]
+    vb = blur(v, 0.9 + opt["sigma"] * 0.5)
     vb[..., 2] = np.maximum(vb[..., 2], 0.05)
     vb = vb / np.linalg.norm(vb, axis=2, keepdims=True)
     nrm2 = vb * 0.5 + 0.5
     orm = orm.astype(np.float32).copy()
-    orm[..., 1] = np.clip(blur(orm[..., 1], 1.2) + blur(np.abs(v[..., 0]) + np.abs(v[..., 1]), 2.0) * 0.15, 0.06, 1)
-    orm[..., 0] = blur(orm[..., 0], 0.8)
-    orm[..., 2] = blur(orm[..., 2], 1.0)
-    del var
+    orm[..., 1] = np.clip(blur(orm[..., 1], 1.2 + opt["sigma"]) + blur(np.abs(v[..., 0]) + np.abs(v[..., 1]), 2.0) * 0.15, 0.06, 1)
+    orm[..., 0] = blur(orm[..., 0], 0.8 + opt["sigma"])
+    orm[..., 2] = blur(orm[..., 2], 1.0 + opt["sigma"])
     return alb, nrm2.astype(np.float32), orm
 
 

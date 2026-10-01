@@ -272,7 +272,7 @@ def make_arch_textures(outdir):
     """Write godot/textures/surfaces/<name>_{albedo,normal,orm}.png (outdir = textures dir)."""
     from .textures_lib import prefilter_existing
     for name, (fn, n) in ARCH_SURFACES.items():
-        alb, nrm, orm = prefilter_existing(*fn(n))     # band-limit (see docs/TEXTURES.md)
+        alb, nrm, orm = prefilter_existing(*fn(n), name=name)     # band-limit (see docs/TEXTURES.md)
         save(os.path.join(outdir, "surfaces", name + "_albedo.png"), np.clip(alb, 0, 1))
         save_data(os.path.join(outdir, "surfaces", name + "_normal.png"), nrm)
         save_data(os.path.join(outdir, "surfaces", name + "_orm.png"), orm)

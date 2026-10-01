@@ -58,6 +58,8 @@ def missing_textures(tex_dir, textures):
     for n in list(textures.SURFACES) + list(textures_ext.REG):
         want += [os.path.join("surfaces", f"{n}_{k}.png") for k in ("albedo", "normal", "orm")]
     want.append(os.path.join("surfaces", "index.json"))
+    from starship import textures_decals
+    want += [os.path.join("decals", n + ".png") for n in textures_decals.DECALS]
     want += [os.path.join("sky", "stars.png"), os.path.join("sky", "planet.png")]
     return [w for w in want if not os.path.exists(os.path.join(tex_dir, w))]
 
@@ -65,7 +67,7 @@ def missing_textures(tex_dir, textures):
 def make_all_textures(tex_dir, jobs=4, only=""):
     """Screens (21 + 41 extended), the original + extended PBR surfaces, the sky and the surface index.
     only: regex - regenerate just the extended surfaces whose name matches (quick iteration)."""
-    from starship import textures, textures_ext
+    from starship import textures, textures_decals, textures_ext
     if only:
         rx = re.compile(only)
         textures_ext.make_ext_surfaces(tex_dir, names=[k for k in textures_ext.REG if rx.search(k)], jobs=jobs)
@@ -73,6 +75,7 @@ def make_all_textures(tex_dir, jobs=4, only=""):
     textures.make_screens(tex_dir)
     textures.make_surfaces(tex_dir)
     textures_ext.make_ext_surfaces(tex_dir, jobs=jobs)      # also writes surfaces/index.json
+    textures_decals.make_decals(tex_dir)
     textures.make_sky(tex_dir)
 
 
