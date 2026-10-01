@@ -60,14 +60,14 @@ for _n, (_h, _me, _ro) in _MATS.items():
     register_material(_n, _h, _me, _ro)
 
 # transparent liquids / glass (alpha < 1 -> blended)
-for _n, _h, _a in (("f_glass", "#e6f0f4", 0.22), ("f_glass_green", "#5a8a52", 0.45), ("f_glass_brown", "#5a3416", 0.6),
+for _n, _h, _a in (("f_glass", "#cfe0e8", 0.09), ("f_glass_green", "#5a8a52", 0.45), ("f_glass_brown", "#5a3416", 0.6),
                    ("f_glass_dark", "#1e2a20", 0.7), ("f_water", "#bfe0f0", 0.45), ("f_juice_orange", "#f59a24", 0.82),
                    ("f_juice_apple", "#d8b040", 0.7), ("f_milk", "#f8f6f0", 0.97), ("f_wine_red", "#4a0a1c", 0.88),
                    ("f_wine_white", "#e8d878", 0.6), ("f_champagne", "#e8d070", 0.55), ("f_beer", "#d89818", 0.85),
                    ("f_stout", "#1c0f08", 0.96), ("f_whisky", "#b8681c", 0.8), ("f_lemonade", "#f0e890", 0.7),
                    ("f_tea_iced", "#a85a18", 0.8), ("f_martini", "#e8f0e8", 0.45), ("f_margarita", "#d4e888", 0.7),
                    ("f_mojito", "#d8f0c8", 0.55), ("f_cranberry", "#a01830", 0.85), ("f_blue_curacao", "#2aa8e8", 0.8),
-                   ("f_coffee_iced", "#4a2a14", 0.9), ("f_clear_plastic", "#dceaf2", 0.3), ("f_olive_oil", "#b8a020", 0.75),
+                   ("f_coffee_iced", "#4a2a14", 0.9), ("f_clear_plastic", "#dceaf2", 0.14), ("f_olive_oil", "#b8a020", 0.75),
                    ("f_jelly_clear", "#f0b0c0", 0.6), ("f_ice_cube", "#e6f4fa", 0.5), ("f_blue_lagoon", "#18b4e8", 0.78),
                    ("f_cocoa_liquid", "#3a1c0e", 0.97), ("f_green_smoothie", "#7ab83a", 0.92), ("f_pink_smoothie", "#e87aa0", 0.92),
                    ("f_tea_hot", "#b86a20", 0.85), ("f_bubble_milk_tea", "#c8a074", 0.9), ("f_soda_dark", "#2a1208", 0.92), ("f_champagne_bubble", "#f4ecb0", 0.5)):
@@ -117,11 +117,12 @@ def _uv_for(mode, p, nrm, ext, tile, cy):
     # box: dominant normal axis
     ax, ay, az = abs(nrm[0]), abs(nrm[1]), abs(nrm[2])
     s = 1 / (2 * R)
+    vy = (y - y0) / max(y1 - y0, 1e-6)
     if ay >= ax and ay >= az:
         return (x * s + 0.5) * tile[0], (z * s + 0.5) * tile[1]
     if ax >= az:
-        return (z * s + 0.5) * tile[0], (y * s + 0.5) * tile[1]
-    return (x * s + 0.5) * tile[0], (y * s + 0.5) * tile[1]
+        return (z * s + 0.5) * tile[0], vy * tile[1]
+    return (x * s + 0.5) * tile[0], vy * tile[1]
 
 
 def _assign_uv(bm, faces, local, mode, ext, tile, cy):

@@ -35,19 +35,19 @@ def setup_scene(bpy, size, samples):
     w.use_nodes = True
     bg = w.node_tree.nodes["Background"]
     bg.inputs[0].default_value = (0.78, 0.82, 0.88, 1)
-    bg.inputs[1].default_value = 0.9
+    bg.inputs[1].default_value = 0.45
     sc.world = w
     cam = bpy.data.objects.new("cam", bpy.data.cameras.new("cam"))
     cam.data.lens = 70
     sc.collection.objects.link(cam)
     sc.camera = cam
     sun = bpy.data.objects.new("sun", bpy.data.lights.new("sun", "SUN"))
-    sun.data.energy = 3.2
+    sun.data.energy = 4.0
     sun.data.angle = math.radians(12)
     sun.rotation_euler = (math.radians(48), math.radians(8), math.radians(-35))
     sc.collection.objects.link(sun)
     fill = bpy.data.objects.new("fill", bpy.data.lights.new("fill", "AREA"))
-    fill.data.energy = 120
+    fill.data.energy = 160
     fill.data.size = 2.5
     fill.location = (1.2, -1.8, 1.0)
     fill.rotation_euler = (math.radians(70), 0, math.radians(25))
