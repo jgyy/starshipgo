@@ -1,5 +1,5 @@
 class_name AppBase
-extends Control
+extends MarginContainer
 ## Base class of every terminal application.  An app is a Control tree built in code:
 ##   build()        create widgets (called once by start())
 ##   refresh()      pull values from ShipState into the widgets (4 Hz while the terminal is open, and on open)

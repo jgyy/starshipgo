@@ -19,7 +19,7 @@ signal changed
 static var instance: ShipState
 
 const LEVELS := ["green", "yellow", "red"]
-const REACTOR_MAX_MW := 2400.0
+const REACTOR_MAX_MW := 4000.0
 const HIST_LEN := 90
 
 # ---- world links (set by bind_world)
@@ -45,7 +45,7 @@ var warp_engaged := false
 var heading := Vector3(0.2, 0.3, 0.93)
 
 # ---- engineering
-var reactor := {"output": 72.0, "temp": 3600.0, "containment": 99.2, "coolant": 88.0, "fuel": 81.0, "scram": false}
+var reactor := {"output": 85.0, "temp": 3600.0, "containment": 99.2, "coolant": 88.0, "fuel": 81.0, "scram": false}
 var buses: Array = []                       # [{name, demand, alloc, on, group}]
 var subsystems: Array = []                  # [{id, name, health, repair}]
 var coils: Array = []                       # 8 lattice coil temperatures (K)
@@ -117,7 +117,7 @@ func _init() -> void:
 		{"id": "coils", "name": "Spare lattice coils", "qty": 2, "mass": 640.0, "cat": "engineering"},
 		{"id": "mail", "name": "Mail pouches", "qty": 31, "mass": 2.0, "cat": "general"}]
 	say("Ship systems nominal. Departure from %s." % Lore.system_name(current_system), "info")
-	for k in ["reactor", "load", "o2", "temp", "coil"]:
+	for k in ["demand", "supply", "o2", "temp", "coil"]:
 		var arr := PackedFloat32Array()
 		hist[k] = arr
 	set_process(false)
@@ -127,6 +127,8 @@ func _init() -> void:
 		experiments.append({"name": e[0], "secs": e[1], "progress": 0.0, "running": false, "result": ""})
 	for n in ["Kestrel", "Wren", "Osprey"]:
 		shuttles.append({"name": "Shuttle " + n, "state": "docked"})
+	for i in 90:                      # warm start: graphs have history and the readouts have settled
+		sim(0.5)
 	_make_click()
 
 func _make_crew() -> void:
@@ -448,7 +450,7 @@ func total_load() -> float:
 	for b in buses:
 		t += bus_load(b)
 	if warp_engaged:
-		t += pow(warp, 2.0) * 9.0
+		t += pow(warp, 2.0) * 6.0
 	return t
 
 func supply() -> float:
@@ -564,8 +566,8 @@ func sim(dt: float) -> void:
 	_hist_acc += dt
 	if _hist_acc >= 0.5:
 		_hist_acc = 0.0
-		hist_push("reactor", total_load())
-		hist_push("load", supply())
+		hist_push("demand", total_load())
+		hist_push("supply", supply())
 		hist_push("o2", float(l["o2"]))
 		hist_push("temp", float(r["temp"]))
 		hist_push("coil", float(coils[3]))

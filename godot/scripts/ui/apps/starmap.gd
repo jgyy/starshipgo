@@ -73,7 +73,7 @@ func build() -> void:
 	routes_b.name = "RoutesToggle"
 	var lab_b := btn(tb, "LABELS", _set_labels, true)
 	lab_b.name = "LabelsToggle"
-	lab_b.button_pressed = true
+	lab_b.set_pressed_no_signal(true)
 	btn(tb, "RESET VIEW", func() -> void:
 		yaw = -0.55
 		pitch = 0.5
@@ -225,7 +225,7 @@ func _project(pos: Vector3, ctr: Vector2, sc: float) -> Dictionary:
 func _draw_map(c: UIW.Canvas) -> void:
 	var font := c.get_theme_default_font()
 	var ctr := c.size * 0.5
-	var sc := minf(c.size.x, c.size.y) * 0.42 / _radius * zoom
+	var sc := minf(c.size.x, c.size.y) * 0.52 / _radius * zoom
 	# star dust backdrop (stable)
 	for i in 70:
 		var h := hash("dust%d" % i)
@@ -273,11 +273,11 @@ func _draw_map(c: UIW.Canvas) -> void:
 		var pr: Dictionary = _proj[id]
 		var p: Vector2 = pr["p"]
 		var col := Lore.faction_color(s.get("faction", ""))
-		var dim := (faction_filter != "" and s.get("faction", "") != faction_filter) or (search != "" and not String(s["name"]).to_lower().contains(search))
+		var dim: bool = (faction_filter != "" and s.get("faction", "") != faction_filter) or (search != "" and not String(s["name"]).to_lower().contains(search))
 		if dim:
 			col.a = 0.2
 		var lum := float(s.get("star", {}).get("lum_solar", 1.0))
-		var rad := clampf(4.5 + 2.4 * log(1.0 + lum) / log(10.0), 4.0, 12.0) * pr["k"]
+		var rad: float = clampf(4.5 + 2.4 * log(1.0 + lum) / log(10.0), 4.0, 12.0) * pr["k"]
 		c.draw_circle(p, rad + 3.0, Color(col.r, col.g, col.b, 0.12 if not dim else 0.04))
 		c.draw_circle(p, rad, col)
 		c.draw_circle(p, rad * 0.45, Color(1, 1, 1, 0.8 if not dim else 0.2))
@@ -287,10 +287,10 @@ func _draw_map(c: UIW.Canvas) -> void:
 			var pulse := 0.5 + 0.5 * sin(t * 3.0)
 			c.draw_arc(p, rad + 9.0 + pulse * 4.0, 0.0, TAU, 32, Color(0.4, 1.0, 0.6, 0.9 - pulse * 0.5), 2.0, true)
 		if id == st.destination:
-			var d := rad + 9.0
+			var d: float = rad + 9.0
 			c.draw_polyline(PackedVector2Array([p + Vector2(0, -d), p + Vector2(d, 0), p + Vector2(0, d), p + Vector2(-d, 0), p + Vector2(0, -d)]), T.WARN, 2.0, true)
 		if id == selected:
-			var b := rad + 12.0
+			var b: float = rad + 12.0
 			for sx in [-1, 1]:
 				for sy in [-1, 1]:
 					var corner := p + Vector2(b * sx, b * sy)
@@ -298,7 +298,7 @@ func _draw_map(c: UIW.Canvas) -> void:
 					c.draw_line(corner, corner - Vector2(0, 6 * sy), T.ACCENT, 2.0)
 		if search != "" and not dim:
 			c.draw_arc(p, rad + 8.0, 0.0, TAU, 28, T.ACCENT, 2.0, true)
-		var show_label := labels or id == hover or id == selected or id == st.current_system or id == st.destination
+		var show_label: bool = labels or id == hover or id == selected or id == st.current_system or id == st.destination
 		if show_label:
 			var txt: String = s["name"]
 			if id == st.current_system:
