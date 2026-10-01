@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="43,59 45.04,39 273,39 273,219 43,219" class="none" fill="#ebebe8"/>
 <polygon points="233,101.4 273,101.4 273,156.6 233,156.6" class="red" fill="url(#hZone)"/>
-<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="127,103 273,103 273,155 127,155" class="red" fill="url(#hZone)"/>
-<text x="128.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: 2.8 m forklift lane from the corridor door into the hold</text>
+<text x="128.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">CLEAR: 2.8 m forklift lane from the corridor door into the hold</text>
 <polygon points="46.8,87 46.8,63 70.8,63 70.8,87" class="n" fill="#ef77af"/>
 <line x1="70.8" y1="63" x2="70.8" y2="87" class="m"/>
 <line x1="70.8" y1="75" x2="69.6" y2="75" class="f"/>
@@ -184,42 +184,42 @@
 <polygon points="211.34,84 231.34,84 231.34,104 211.34,104" class="dot" fill="none"/>
 <polygon points="82.16,92.4 107.16,92.4 107.16,95.6 82.16,95.6" class="dot" fill="none"/>
 <polygon points="208.84,162.4 233.84,162.4 233.84,165.6 208.84,165.6" class="dot" fill="none"/>
-<text x="257" y="187.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">platform_forklift</text>
-<text x="242.18" y="54.53" font-size="1.25" class="t" text-anchor="middle" fill="#333">Potable Water Tank</text>
-<text x="157.4" y="50" font-size="1.25" class="t" text-anchor="middle" fill="#333">heavy_boxes</text>
-<text x="203.4" y="50" font-size="1.25" class="t" text-anchor="middle" fill="#333">heavy_boxes</text>
-<text x="58.8" y="75.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Storage Tank</text>
-<text x="58.8" y="100.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Storage Tank</text>
-<text x="58.8" y="125.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Storage Tank</text>
-<text x="58.8" y="150.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Storage Tank</text>
-<text x="58.8" y="175.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Storage Tank</text>
-<text x="147.5" y="172.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">drums_banded</text>
-<text x="147.4" y="90.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">sacks_stacked</text>
-<text x="174" y="172.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">wrapped_stack</text>
-<text x="173.8" y="90.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">boxes_layered</text>
-<text x="261.7" y="84.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">workstation</text>
-<text x="199.8" y="90.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">mixed_goods</text>
-<text x="101" y="77.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">chest freezer</text>
-<text x="101" y="182.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">chest freezer</text>
-<text x="225" y="185.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">hand_pallet_jack</text>
-<text x="184.6" y="210.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">parts_bins_rack</text>
-<text x="150" y="210.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">pigeonhole</text>
-<text x="147" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="195" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="231" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="53.8" y="199.01" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Control Pillar</text>
-<text x="84.4" y="50.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Nitrogen Cylinder Trio</text>
-<text x="63.7" y="51.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo Dewar</text>
-<text x="101" y="101.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">refrigerator</text>
-<text x="101" y="206.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">refrigerator</text>
-<text x="196.06" y="172.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">roll_cage_loaded</text>
-<text x="212.2" y="210.18" font-size="1.25" class="t" text-anchor="middle" fill="#333">ration_locker</text>
-<text x="233.4" y="210.18" font-size="1.25" class="t" text-anchor="middle" fill="#333">ration_locker</text>
-<text x="240.95" y="84.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office ch~</text>
-<text x="264.84" y="51.34" font-size="1.25" class="t" text-anchor="middle" fill="#333">crate_cab~</text>
-<text x="105.06" y="47.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">crate_potatoes</text>
-<text x="67" y="211.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">crate_tomatoes</text>
-<text x="79" y="211.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">crate_peppers</text>
+<text x="257" y="187.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">platform_forklift</text>
+<text x="242.18" y="54.53" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Potable Water Tank</text>
+<text x="157.4" y="50" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">heavy_boxes</text>
+<text x="203.4" y="50" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">heavy_boxes</text>
+<text x="58.8" y="75.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Storage Tank</text>
+<text x="58.8" y="100.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Storage Tank</text>
+<text x="58.8" y="125.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Storage Tank</text>
+<text x="58.8" y="150.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Storage Tank</text>
+<text x="58.8" y="175.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Storage Tank</text>
+<text x="147.5" y="172.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drums_banded</text>
+<text x="147.4" y="90.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">sacks_stacked</text>
+<text x="174" y="172.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wrapped_stack</text>
+<text x="173.8" y="90.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">boxes_layered</text>
+<text x="261.7" y="84.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">workstation</text>
+<text x="199.8" y="90.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">mixed_goods</text>
+<text x="101" y="77.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chest freezer</text>
+<text x="101" y="182.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chest freezer</text>
+<text x="225" y="185.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hand_pallet_jack</text>
+<text x="184.6" y="210.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">parts_bins_rack</text>
+<text x="150" y="210.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">pigeonhole</text>
+<text x="147" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="195" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="231" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="53.8" y="199.01" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Control Pillar</text>
+<text x="84.4" y="50.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Nitrogen Cylinder Trio</text>
+<text x="63.7" y="51.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cryo Dewar</text>
+<text x="101" y="101.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refrigerator</text>
+<text x="101" y="206.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refrigerator</text>
+<text x="196.06" y="172.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">roll_cage_loaded</text>
+<text x="212.2" y="210.18" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ration_locker</text>
+<text x="233.4" y="210.18" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ration_locker</text>
+<text x="240.95" y="84.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office ch~</text>
+<text x="264.84" y="51.34" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crate_cab~</text>
+<text x="105.06" y="47.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crate_potatoes</text>
+<text x="67" y="211.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crate_tomatoes</text>
+<text x="79" y="211.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crate_peppers</text>
 <path d="M43 59 L45.04 39 L273 39 L273 219 L43 219Z M46 59.15 L47.75 42 L270 42 L270 216 L46 216Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="273,105.4 273,152.6 270,152.6 270,105.4" class="none" fill="#ffffff"/>
 <line x1="273" y1="105.4" x2="270" y2="105.4" class="m"/>
@@ -320,7 +320,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -486,7 +486,7 @@
 <rect x="307" y="168" width="4.2" height="2.4" class="n" fill="#81e0e8"/>
 <text x="312.4" y="169.9" font-size="1.6" class="t">watertank</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - PROVISIONS HOLD &amp; COLD STORE</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -536,27 +536,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Provisions Hold &amp; Cold Store - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 4 - HOLD DECK  -  FLOOR PLAN AT FFL -4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-provisions-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">PH</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Provisions Hold &amp; Cold Store</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Provisions Hold &amp; Cold Store</text>
 </svg>

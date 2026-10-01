@@ -76,7 +76,7 @@
 <text x="81" y="74.75" font-size="1.9" class="t">4.000 m</text>
 <rect x="14" y="75.8" width="162" height="3.7" class="f" fill="#f4f6f9"/>
 <text x="15" y="78.45" font-size="1.9" class="t b">Rooms / props</text>
-<text x="81" y="78.45" font-size="1.9" class="t">68 / 2553</text>
+<text x="81" y="78.45" font-size="1.9" class="t">68 / 2556</text>
 <rect x="14" y="79.5" width="162" height="3.7" class="f" fill="#ffffff"/>
 <text x="15" y="82.15" font-size="1.9" class="t b">Room floor area (all decks)</text>
 <text x="81" y="82.15" font-size="1.9" class="t">5357 m2</text>
@@ -323,8 +323,8 @@
 <text x="299" y="93.25" font-size="1.8" class="t">-1.06</text>
 <text x="327" y="93.25" font-size="1.8" class="t">36.2</text>
 <rect x="204" y="24" width="152" height="70.3" class="n" fill="none"/>
-<text x="204" y="106.7" font-size="1.6" class="t" fill="#555">Beam = full width of the skin section; KEEL / TOP = lowest and highest point of the section;</text>
-<text x="204" y="110.3" font-size="1.6" class="t" fill="#555">AREA = enclosed cross-section area. Plan contours: G-04, body plan: G-17.</text>
+<text x="204" y="106.7" font-size="1.6" class="t" style="fill:#555">Beam = full width of the skin section; KEEL / TOP = lowest and highest point of the section;</text>
+<text x="204" y="110.3" font-size="1.6" class="t" style="fill:#555">AREA = enclosed cross-section area. Plan contours: G-04, body plan: G-17.</text>
 <text x="14" y="178" font-size="2.3" class="t b">PRINCIPAL DIMENSIONS - PLAN AND PROFILE  1:800</text>
 <polygon points="83.05,249.9 82.6,249.91 82.14,249.92 81.68,249.91 81.22,249.93 80.76,249.94 80.29,249.95 79.82,249.96 79.35,249.98 78.87,249.99 78.38,250 77.89,250.03 77.39,250.04 76.88,250.06 76.36,250.08 75.83,250.09 75.28,250.12 74.73,250.13 74.17,250.15 73.59,250.17 73,250.17 72.39,250.18 71.77,250.19 71.13,250.19 70.47,250.19 69.8,250.18 69.11,250.16 68.4,250.14 67.68,250.1 66.93,250.06 66.15,250.01 65.36,249.94 64.56,249.86 63.72,249.77 62.87,249.66 62,249.52 61.11,249.37 60.19,249.21 59.25,249.02 58.29,248.8 57.31,248.57 56.31,248.3 55.28,248.01 54.25,247.68 53.2,247.32 52.12,246.93 51.04,246.51 49.95,246.04 48.83,245.54 47.71,245 46.59,244.41 45.46,243.78 44.34,243.11 43.21,242.39 42.08,241.63 40.96,240.82 39.86,239.96 38.78,239.05 37.57,238.11 36.74,237.08 35.83,236.02 34.62,234.94 33.9,233.78 33.89,232.57 33.89,231.37 33.89,230.16 33.9,228.95 34.62,227.79 35.83,226.71 36.74,225.65 37.57,224.62 38.78,223.68 39.86,222.77 40.96,221.91 42.08,221.1 43.21,220.34 44.34,219.62 45.46,218.95 46.59,218.32 47.71,217.73 48.83,217.19 49.95,216.69 51.04,216.22 52.12,215.8 53.2,215.41 54.25,215.05 55.28,214.72 56.31,214.43 57.31,214.16 58.29,213.93 59.25,213.71 60.19,213.52 61.11,213.36 62,213.21 62.87,213.07 63.72,212.96 64.56,212.87 65.36,212.79 66.15,212.72 66.93,212.67 67.68,212.63 68.4,212.59 69.11,212.57 69.8,212.55 70.47,212.54 71.13,212.54 71.77,212.54 72.39,212.55 73,212.56 73.59,212.56 74.17,212.58 74.73,212.6 75.28,212.61 75.83,212.64 76.36,212.65 76.88,212.67 77.39,212.69 77.89,212.7 78.38,212.73 78.87,212.74 79.35,212.75 79.82,212.77 80.29,212.78 80.76,212.79 81.22,212.8 81.68,212.82 82.14,212.81 82.6,212.82 83.05,212.83 83.51,212.82 83.96,212.82 84.42,212.82 84.88,212.82 85.34,212.82 85.8,212.81 86.27,212.79 86.75,212.79 87.23,212.78 87.71,212.76 88.2,212.75 88.7,212.74 89.21,212.73 89.73,212.71 90.25,212.69 90.79,212.68 91.34,212.66 91.91,212.64 92.49,212.62 93.08,212.6 93.69,212.58 94.32,212.56 94.97,212.55 95.64,212.52 96.34,212.5 97.07,212.47 97.82,212.44 98.59,212.43 99.41,212.4 100.26,212.38 101.15,212.35 102.08,212.33 103.06,212.32 104.09,212.3 105.16,212.29 106.29,212.29 107.48,212.3 108.73,212.32 110.04,212.36 111.43,212.41 112.86,212.49 114.39,212.58 115.97,212.71 117.64,212.87 119.38,213.08 121.2,213.32 123.08,213.62 125.04,213.97 127.08,214.38 129.18,214.86 131.35,215.41 133.57,216.04 135.85,216.75 138.19,217.55 140.56,218.45 142.98,219.44 145.42,220.54 147.87,221.75 150.37,223.06 152.85,224.49 155.26,226.04 157.34,227.72 161.67,229.44 161.66,231.36 161.67,233.29 157.34,235.01 155.26,236.69 152.85,238.24 150.37,239.67 147.87,240.98 145.42,242.19 142.98,243.29 140.56,244.28 138.19,245.18 135.85,245.98 133.57,246.69 131.35,247.32 129.18,247.87 127.08,248.35 125.04,248.76 123.08,249.11 121.2,249.41 119.38,249.65 117.64,249.86 115.97,250.02 114.39,250.15 112.86,250.24 111.43,250.32 110.04,250.37 108.73,250.41 107.48,250.43 106.29,250.44 105.16,250.44 104.09,250.43 103.06,250.41 102.08,250.4 101.15,250.38 100.26,250.35 99.41,250.33 98.59,250.3 97.82,250.29 97.07,250.26 96.34,250.23 95.64,250.21 94.97,250.18 94.32,250.17 93.69,250.15 93.08,250.13 92.49,250.11 91.91,250.09 91.34,250.07 90.79,250.05 90.25,250.04 89.73,250.02 89.21,250 88.7,249.99 88.2,249.98 87.71,249.97 87.23,249.95 86.75,249.94 86.27,249.94 85.8,249.92 85.34,249.91 84.88,249.91 84.42,249.91 83.96,249.91 83.51,249.91" class="m" fill="#edf1f7"/>
 <polygon points="106.8,248.92 106.8,268.73 48.93,268.73 48.93,248.92" class="n" fill="#d3dae6" fill-opacity="0.6"/>
@@ -389,7 +389,7 @@
 <line x1="199" y1="231.29" x2="192.8" y2="231.29" class="d"/>
 <line x1="199" y1="243.29" x2="192.8" y2="243.29" class="d"/>
 <text x="193.3" y="243.77" font-size="2" class="t" transform="rotate(-90 193.3 243.77)">DRAUGHT 9600</text>
-<text x="200" y="184" font-size="1.6" class="t" fill="#555">Datum +0.000 (deck 3 floor); bow to the right.</text>
+<text x="200" y="184" font-size="1.6" class="t" style="fill:#555">Datum +0.000 (deck 3 floor); bow to the right.</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -439,27 +439,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Principal particulars</text>
 <text x="299" y="264.6" font-size="2" class="t">PARTICULARS, FITTINGS, DECKS AND SKIN STATION OFFSETS</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-18</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">NTS</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">HULL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Particulars</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Particulars</text>
 </svg>

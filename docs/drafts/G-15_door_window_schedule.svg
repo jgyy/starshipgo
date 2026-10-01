@@ -1395,12 +1395,12 @@
 <text x="335" y="67.25" font-size="1.6" class="t">2200</text>
 <text x="346" y="67.25" font-size="1.6" class="t">1.00</text>
 <rect x="263" y="20" width="95" height="48.3" class="n" fill="none"/>
-<text x="263" y="75.75" font-size="1.6" class="t" fill="#444">Doors: 2.36 m wide wall cut, head 2.76 m</text>
-<text x="263" y="79.75" font-size="1.6" class="t" fill="#444">(catalog sliding door models).</text>
-<text x="263" y="83.75" font-size="1.6" class="t" fill="#444">Arches: 3.0 - 4.0 m wide, head 3.0 - 3.2 m.</text>
-<text x="263" y="87.75" font-size="1.6" class="t" fill="#444">Windows only on hull-exposed walls.</text>
-<text x="263" y="91.75" font-size="1.6" class="t" fill="#444">Exterior window panels on the outer skin</text>
-<text x="263" y="95.75" font-size="1.6" class="t" fill="#444">(ship.json ext_windows): 79, see G-05.</text>
+<text x="263" y="75.75" font-size="1.6" class="t" style="fill:#444">Doors: 2.36 m wide wall cut, head 2.76 m</text>
+<text x="263" y="79.75" font-size="1.6" class="t" style="fill:#444">(catalog sliding door models).</text>
+<text x="263" y="83.75" font-size="1.6" class="t" style="fill:#444">Arches: 3.0 - 4.0 m wide, head 3.0 - 3.2 m.</text>
+<text x="263" y="87.75" font-size="1.6" class="t" style="fill:#444">Windows only on hull-exposed walls.</text>
+<text x="263" y="91.75" font-size="1.6" class="t" style="fill:#444">Exterior window panels on the outer skin</text>
+<text x="263" y="95.75" font-size="1.6" class="t" style="fill:#444">(ship.json ext_windows): 79, see G-05.</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -1450,27 +1450,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Door and window schedule</text>
 <text x="299" y="264.6" font-size="2" class="t">DOORS / ARCHES (D-marks on plans) AND WINDOWS (W-marks)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-15</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">NTS</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Schedules</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Schedules</text>
 </svg>

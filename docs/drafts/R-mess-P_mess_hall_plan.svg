@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="81.33,82.33 83.13,55.67 85.81,42.33 234.67,42.33 234.67,215.67 81.33,215.67" class="none" fill="#f5f1eb"/>
 <polygon points="138.67,42.33 184,42.33 184,69 138.67,69" class="red" fill="url(#hZone)"/>
-<text x="161.33" y="67.8" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="161.33" y="67.8" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="208,110.6 234.67,110.6 234.67,147.4 208,147.4" class="red" fill="url(#hZone)"/>
-<text x="209.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="209.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="178.76,85.31 178.76,79.36 184.96,79.36 184.96,85.31" class="n" fill="#f7df99"/>
 <line x1="184.96" y1="79.36" x2="184.96" y2="85.31" class="m"/>
 <line x1="184.96" y1="82.33" x2="183.76" y2="82.33" class="f"/>
@@ -427,26 +427,26 @@
 <polygon points="166.67,122.99 176,122.99 176,132.36 166.67,132.36" class="dot" fill="none"/>
 <polygon points="166.67,197.64 176,197.64 176,207.01 166.67,207.01" class="dot" fill="none"/>
 <polygon points="128,197.64 137.33,197.64 137.33,207.01 128,207.01" class="dot" fill="none"/>
-<text x="113.33" y="95.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
-<text x="113.33" y="159.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
-<text x="152" y="95.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
-<text x="152" y="159.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
-<text x="190.67" y="95.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
-<text x="190.67" y="159.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">long mess tab~</text>
-<text x="124" y="50.77" font-size="1.25" class="t" text-anchor="middle" fill="#333">salad bar</text>
-<text x="199.33" y="50.77" font-size="1.25" class="t" text-anchor="middle" fill="#333">salad bar</text>
-<text x="113.33" y="195.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">bolted table</text>
-<text x="152" y="195.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">bolted table</text>
-<text x="190.67" y="195.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">bolted table</text>
-<text x="225.42" y="202.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">ficus tree</text>
-<text x="226.09" y="64.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">drink machine</text>
-<text x="226.49" y="77.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">snack machine</text>
-<text x="98" y="49.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">food replicator</text>
-<text x="220.67" y="49.45" font-size="1.25" class="t" text-anchor="middle" fill="#333">coffee machine</text>
-<text x="228.4" y="156.9" font-size="1.25" class="t" text-anchor="middle" fill="#333">bakery_d~</text>
-<text x="174.67" y="210.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">planter box</text>
-<text x="100" y="210.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">planter box</text>
-<text x="228.47" y="170.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">trash bin</text>
+<text x="113.33" y="95.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">long mess tab~</text>
+<text x="113.33" y="159.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">long mess tab~</text>
+<text x="152" y="95.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">long mess tab~</text>
+<text x="152" y="159.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">long mess tab~</text>
+<text x="190.67" y="95.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">long mess tab~</text>
+<text x="190.67" y="159.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">long mess tab~</text>
+<text x="124" y="50.77" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">salad bar</text>
+<text x="199.33" y="50.77" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">salad bar</text>
+<text x="113.33" y="195.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">bolted table</text>
+<text x="152" y="195.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">bolted table</text>
+<text x="190.67" y="195.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">bolted table</text>
+<text x="225.42" y="202.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ficus tree</text>
+<text x="226.09" y="64.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drink machine</text>
+<text x="226.49" y="77.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">snack machine</text>
+<text x="98" y="49.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">food replicator</text>
+<text x="220.67" y="49.45" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">coffee machine</text>
+<text x="228.4" y="156.9" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">bakery_d~</text>
+<text x="174.67" y="210.83" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">planter box</text>
+<text x="100" y="210.83" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">planter box</text>
+<text x="228.47" y="170.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">trash bin</text>
 <path d="M81.33 82.33 L83.13 55.67 L85.81 42.33 L234.67 42.33 L234.67 215.67 L81.33 215.67Z M83.33 82.4 L85.12 55.93 L87.45 44.33 L232.67 44.33 L232.67 213.67 L83.33 213.67Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="141.33,42.33 181.33,42.33 181.33,44.33 141.33,44.33" class="none" fill="#ffffff"/>
 <line x1="141.33" y1="42.33" x2="141.33" y2="44.33" class="m"/>
@@ -468,21 +468,21 @@
 <line x1="81.69" y1="77.02" x2="82.77" y2="60.99" class="n"/>
 <line x1="82.69" y1="77.08" x2="83.77" y2="61.06" class="f"/>
 <line x1="83.69" y1="77.15" x2="84.77" y2="61.13" class="n"/>
-<text x="92.88" y="69.72" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-MH-1</text>
+<text x="92.88" y="69.72" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-MH-1</text>
 <polygon points="81.33,98.67 81.33,136 83.33,136 83.33,98.67" class="none" fill="#ffffff"/>
 <line x1="81.33" y1="98.67" x2="83.33" y2="98.67" class="n"/>
 <line x1="81.33" y1="136" x2="83.33" y2="136" class="n"/>
 <line x1="81.33" y1="98.67" x2="81.33" y2="136" class="n"/>
 <line x1="82.33" y1="98.67" x2="82.33" y2="136" class="f"/>
 <line x1="83.33" y1="98.67" x2="83.33" y2="136" class="n"/>
-<text x="92" y="117.33" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-MH-2</text>
+<text x="92" y="117.33" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-MH-2</text>
 <polygon points="81.33,162 81.33,199.33 83.33,199.33 83.33,162" class="none" fill="#ffffff"/>
 <line x1="81.33" y1="162" x2="83.33" y2="162" class="n"/>
 <line x1="81.33" y1="199.33" x2="83.33" y2="199.33" class="n"/>
 <line x1="81.33" y1="162" x2="81.33" y2="199.33" class="n"/>
 <line x1="82.33" y1="162" x2="82.33" y2="199.33" class="f"/>
 <line x1="83.33" y1="162" x2="83.33" y2="199.33" class="n"/>
-<text x="92" y="180.67" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-MH-3</text>
+<text x="92" y="180.67" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-MH-3</text>
 <line x1="77.63" y1="160.18" x2="113.33" y2="159.67" class="x"/>
 <circle cx="113.33" cy="159.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="112.48" y1="219.37" x2="113.33" y2="195.67" class="x"/>
@@ -597,7 +597,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
 <rect x="33.33" y="243.6" width="13.33" height="1.4" class="f" fill="#fff"/>
 <rect x="46.67" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
@@ -761,7 +761,7 @@
 <rect x="307" y="165.8" width="4.2" height="2.4" class="n" fill="#8187e8"/>
 <text x="312.4" y="167.7" font-size="1.6" class="t">vending</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - MESS HALL</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -811,27 +811,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Mess Hall - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  FLOOR PLAN AT FFL +4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-mess-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:75</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">MH</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Mess Hall</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Mess Hall</text>
 </svg>

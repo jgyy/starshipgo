@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="12" font-size="3" class="t b">SECTION A-A - TRANSVERSE SECTION B - BRIDGE</text>
-<text x="16" y="16.2" font-size="1.8" class="t" fill="#555">LOOKING AFT (+Z)  -  plane z = -28.0 m through bridge, brig, armory</text>
+<text x="16" y="16.2" font-size="1.8" class="t" style="fill:#555">LOOKING AFT (+Z)  -  plane z = -28.0 m through bridge, brig, armory</text>
 <clipPath id="clipS"><rect x="91.93" y="34.75" width="240.14" height="116.5"/></clipPath>
 <g clip-path="url(#clipS)">
 <polygon points="212,150.75 206.03,150.5 197.59,149.78 188.4,148.6 179.28,147 170.9,145.03 163.8,142.75 158.4,140.22 155.02,137.53 153.88,134.75 153.75,132.78 153.62,130.82 153.47,128.86 153.33,126.89 153.19,124.92 153.04,122.96 152.88,121 152.72,119.03 152.54,117.07 152.3,115.1 152.06,113.14 151.8,111.18 151.54,109.21 151.28,107.24 150.97,105.28 150.71,103.32 150.46,101.35 150.21,99.39 149.92,97.42 149.68,95.46 149.43,93.5 149.16,91.53 148.88,89.56 148.74,87.6 148.51,85.64 148.28,83.67 148.02,81.71 147.73,79.74 147.6,77.78 147.48,75.82 147.33,73.85 147.18,71.88 147.09,69.92 146.97,67.96 146.82,65.99 146.68,64.03 146.52,62.06 146.33,60.1 146.15,58.14 145.93,56.17 145.71,54.2 145.49,52.24 145.25,50.28 145,48.31 144.75,46.35 145.98,44.26 149.59,42.24 155.41,40.35 163.16,38.64 172.43,37.16 182.73,35.96 193.44,35.07 203.77,34.53 212,34.35 220.23,34.53 230.56,35.07 241.27,35.96 251.57,37.16 260.84,38.64 268.59,40.35 274.41,42.24 278.02,44.26 279.25,46.35 279,48.31 278.75,50.28 278.51,52.24 278.29,54.2 278.07,56.17 277.85,58.14 277.67,60.1 277.48,62.06 277.32,64.03 277.18,65.99 277.03,67.96 276.91,69.92 276.82,71.88 276.67,73.85 276.52,75.82 276.4,77.78 276.27,79.74 275.98,81.71 275.72,83.67 275.49,85.64 275.26,87.6 275.12,89.56 274.84,91.53 274.57,93.5 274.32,95.46 274.08,97.42 273.79,99.39 273.54,101.35 273.29,103.32 273.03,105.28 272.72,107.24 272.46,109.21 272.2,111.18 271.94,113.14 271.7,115.1 271.46,117.07 271.28,119.03 271.12,121 270.96,122.96 270.81,124.92 270.67,126.89 270.53,128.86 270.38,130.82 270.25,132.78 270.12,134.75 268.98,137.53 265.6,140.22 260.2,142.75 253.1,145.03 244.72,147 235.6,148.6 226.41,149.78 217.97,150.5" class="hid" fill="none"/>
@@ -261,7 +261,7 @@
 <text x="212" y="171.15" font-size="1.9" class="t" text-anchor="middle">13118</text>
 <text x="92.43" y="32.25" font-size="2.2" class="t b">STBD</text>
 <text x="331.57" y="32.25" font-size="2.2" class="t b" text-anchor="end">PORT</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="8" height="1.4" class="f" fill="#111"/>
 <rect x="348" y="194.6" width="8" height="1.4" class="f" fill="#fff"/>
 <rect x="356" y="194.6" width="8" height="1.4" class="f" fill="#111"/>
@@ -368,27 +368,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Transverse section B - bridge</text>
 <text x="299" y="264.6" font-size="1.6" class="t">SECTION A-A LOOKING AFT (+Z) - plane z = -28.0 m through bridge, brig, armory</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-08</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:250</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Section</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Section</text>
 </svg>

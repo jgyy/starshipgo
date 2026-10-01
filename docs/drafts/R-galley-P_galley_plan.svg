@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="50.4,199 63.62,159 81.66,119 104.08,79 130.32,39 269.64,39 269.64,219 46.36,219" class="none" fill="#f5f1eb"/>
 <polygon points="229.64,101.4 269.64,101.4 269.64,156.6 229.64,156.6" class="red" fill="url(#hZone)"/>
-<text x="231.24" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="231.24" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="125.64,179 193.64,179 193.64,219 125.64,219" class="red" fill="url(#hZone)"/>
-<text x="159.64" y="181" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="159.64" y="181" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="267.38,154.2 267.38,103.8 272.34,103.8 272.34,154.2" class="m" fill="none"/>
 <polygon points="135.24,216.8 184.04,216.8 184.04,221.6 135.24,221.6" class="m" fill="none"/>
 <polygon points="138.64,42.8 154.64,42.8 154.64,59.6 138.64,59.6" class="n" fill="#dcef77"/>
@@ -150,28 +150,28 @@
 <polygon points="203.1,159 235.1,159 235.1,169 203.1,169" class="dot" fill="none"/>
 <polygon points="85.8,125.16 97.48,125.16 97.48,136.84 85.8,136.84" class="dot" fill="none"/>
 <polygon points="158.24,73.6 161.04,73.6 161.04,76.4 158.24,76.4" class="dot" fill="none"/>
-<text x="143.64" y="125.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">kitchen island</text>
-<text x="191.64" y="95.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">prep counter</text>
-<text x="105.64" y="208" font-size="1.25" class="t" text-anchor="middle" fill="#333">prep counter</text>
-<text x="214.64" y="208" font-size="1.25" class="t" text-anchor="middle" fill="#333">prep counter</text>
-<text x="187.84" y="50.96" font-size="1.25" class="t" text-anchor="middle" fill="#333">chest freezer</text>
-<text x="258.77" y="173.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">sink unit</text>
-<text x="103.85" y="105.37" font-size="1.25" class="t" text-anchor="middle" fill="#333">commercial oven</text>
-<text x="84.6" y="144.62" font-size="1.25" class="t" text-anchor="middle" fill="#333">steamer</text>
-<text x="68.96" y="183.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">soup kettle</text>
-<text x="257.44" y="199.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">dishwasher</text>
-<text x="127.32" y="65.84" font-size="1.25" class="t" text-anchor="middle" fill="#333">range with hood</text>
-<text x="233.65" y="48.56" font-size="1.25" class="t" text-anchor="middle" fill="#333">storage shelving</text>
-<text x="260.38" y="59.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">storage shelv~</text>
-<text x="146.64" y="51.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">refrigerator</text>
-<text x="163.64" y="51.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">refrigerator</text>
-<text x="67.64" y="208.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">food replicator</text>
-<text x="159.64" y="219.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">twin ring</text>
-<text x="260.14" y="81.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">UV Water Purif~</text>
-<text x="214.32" y="47.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">crate_tomatoes</text>
-<text x="94.64" y="208" font-size="1.25" class="t" text-anchor="middle" fill="#333">hotel_pan_mash~</text>
-<text x="180.64" y="95.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">roast_chi~</text>
-<text x="153.65" y="125.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">toaster</text>
+<text x="143.64" y="125.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">kitchen island</text>
+<text x="191.64" y="95.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">prep counter</text>
+<text x="105.64" y="208" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">prep counter</text>
+<text x="214.64" y="208" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">prep counter</text>
+<text x="187.84" y="50.96" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chest freezer</text>
+<text x="258.77" y="173.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">sink unit</text>
+<text x="103.85" y="105.37" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">commercial oven</text>
+<text x="84.6" y="144.62" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">steamer</text>
+<text x="68.96" y="183.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">soup kettle</text>
+<text x="257.44" y="199.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">dishwasher</text>
+<text x="127.32" y="65.84" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">range with hood</text>
+<text x="233.65" y="48.56" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">storage shelving</text>
+<text x="260.38" y="59.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">storage shelv~</text>
+<text x="146.64" y="51.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refrigerator</text>
+<text x="163.64" y="51.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refrigerator</text>
+<text x="67.64" y="208.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">food replicator</text>
+<text x="159.64" y="219.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">twin ring</text>
+<text x="260.14" y="81.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">UV Water Purif~</text>
+<text x="214.32" y="47.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crate_tomatoes</text>
+<text x="94.64" y="208" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hotel_pan_mash~</text>
+<text x="180.64" y="95.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">roast_chi~</text>
+<text x="153.65" y="125.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">toaster</text>
 <path d="M50.4 199 L63.62 159 L81.66 119 L104.08 79 L130.32 39 L269.64 39 L269.64 219 L46.36 219Z M53.3 199.77 L66.42 160.09 L84.34 120.35 L106.65 80.56 L131.94 42 L266.64 42 L266.64 216 L50.03 216Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="269.64,105.4 269.64,152.6 266.64,152.6 266.64,105.4" class="none" fill="#ffffff"/>
 <line x1="269.64" y1="105.4" x2="266.64" y2="105.4" class="m"/>
@@ -287,7 +287,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -431,7 +431,7 @@
 <rect x="360" y="148.4" width="4.2" height="2.4" class="n" fill="#81e0e8"/>
 <text x="365.4" y="150.3" font-size="1.6" class="t">watertank</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - GALLEY</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -481,27 +481,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Galley - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  FLOOR PLAN AT FFL +4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-galley-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">GA</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Galley</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Galley</text>
 </svg>

@@ -34,7 +34,7 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="82.01,55.67 102.01,55.67 122.87,71.67 143.21,87.67 162.55,103.67 180.39,119.67 196.29,135.67 209.88,151.67 220.81,167.67 228.83,183.67 233.71,199.67 233.99,202.33 82.01,202.33" class="none" fill="#edf4f1"/>
 <polygon points="82.01,117.27 108.68,117.27 108.68,154.07 82.01,154.07" class="red" fill="url(#hZone)"/>
-<text x="107.08" y="136.07" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="107.08" y="136.07" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="124.68,157.51 146.83,157.51 146.83,168.51 124.68,168.51" class="n" fill="#9977ef"/>
 <line x1="146.83" y1="168.51" x2="124.68" y2="168.51" class="m"/>
 <line x1="135.75" y1="168.51" x2="135.75" y2="167.31" class="f"/>
@@ -149,29 +149,29 @@
 <polygon points="153.87,160.6 162.13,160.6 162.13,177.4 153.87,177.4" class="dot" fill="none"/>
 <polygon points="109.56,122.33 122.89,122.33 122.89,135.67 109.56,135.67" class="dot" fill="none"/>
 <polygon points="107.89,87.93 124.56,87.93 124.56,90.07 107.89,90.07" class="dot" fill="none"/>
-<text x="191.01" y="192.48" font-size="1.25" class="t" text-anchor="middle" fill="#333">Potable Water Tank</text>
-<text x="91.23" y="76.64" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>
-<text x="89.81" y="103.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">wet bench sink</text>
-<text x="90.24" y="169.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">environmental</text>
-<text x="107.41" y="194.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Greywater Processor</text>
-<text x="135.75" y="163.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">Sump Tank</text>
-<text x="195.92" y="149.94" font-size="1.25" class="t" text-anchor="middle" fill="#333">Water Recycler</text>
-<text x="129.92" y="194.99" font-size="1.25" class="t" text-anchor="middle" fill="#333">Filtration Unit</text>
-<text x="127.35" y="87.2" font-size="1.25" class="t" text-anchor="middle" fill="#333">Distillation Column</text>
-<text x="153.69" y="195.99" font-size="1.25" class="t" text-anchor="middle" fill="#333">Reverse Osmosis Skid</text>
-<text x="179.39" y="163.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Circulation Pump</text>
-<text x="166" y="118.08" font-size="1.25" class="t" text-anchor="middle" fill="#333">Condensate Collector</text>
-<text x="108.68" y="75.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">parts_bins_stand</text>
-<text x="158.21" y="163.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Piston Pump Skid</text>
-<text x="88.41" y="193.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">utility ~</text>
-<text x="173.29" y="196.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">UV Water Purifi~</text>
-<text x="150.01" y="109.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">plastic_dr~</text>
-<text x="124.68" y="103.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">spill_kit_~</text>
-<text x="110.01" y="91.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnost~</text>
-<text x="104.8" y="169.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
-<text x="139.35" y="103.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">chemical_~</text>
-<text x="103.35" y="103.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">lab stool</text>
-<text x="89.81" y="97.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">centrifu~</text>
+<text x="191.01" y="192.48" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Potable Water Tank</text>
+<text x="91.23" y="76.64" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">mass spectrometer</text>
+<text x="89.81" y="103.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wet bench sink</text>
+<text x="90.24" y="169.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">environmental</text>
+<text x="107.41" y="194.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Greywater Processor</text>
+<text x="135.75" y="163.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Sump Tank</text>
+<text x="195.92" y="149.94" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Water Recycler</text>
+<text x="129.92" y="194.99" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Filtration Unit</text>
+<text x="127.35" y="87.2" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Distillation Column</text>
+<text x="153.69" y="195.99" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Reverse Osmosis Skid</text>
+<text x="179.39" y="163.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Circulation Pump</text>
+<text x="166" y="118.08" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Condensate Collector</text>
+<text x="108.68" y="75.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">parts_bins_stand</text>
+<text x="158.21" y="163.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Piston Pump Skid</text>
+<text x="88.41" y="193.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">utility ~</text>
+<text x="173.29" y="196.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">UV Water Purifi~</text>
+<text x="150.01" y="109.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">plastic_dr~</text>
+<text x="124.68" y="103.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">spill_kit_~</text>
+<text x="110.01" y="91.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Diagnost~</text>
+<text x="104.8" y="169.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops chair</text>
+<text x="139.35" y="103.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chemical_~</text>
+<text x="103.35" y="103.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">lab stool</text>
+<text x="89.81" y="97.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">centrifu~</text>
 <path d="M82.01 55.67 L102.01 55.67 L122.87 71.67 L143.21 87.67 L162.55 103.67 L180.39 119.67 L196.29 135.67 L209.88 151.67 L220.81 167.67 L228.83 183.67 L233.71 199.67 L233.99 202.33 L82.01 202.33Z M84.01 57.67 L101.33 57.67 L121.64 73.25 L141.96 89.22 L161.24 105.18 L179.01 121.12 L194.82 137.02 L208.29 152.88 L219.09 168.68 L226.96 184.41 L231.74 200.07 L231.77 200.33 L84.01 200.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="82.01,119.93 82.01,151.4 84.01,151.4 84.01,119.93" class="none" fill="#ffffff"/>
 <line x1="82.01" y1="119.93" x2="84.01" y2="119.93" class="m"/>
@@ -252,7 +252,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
 <rect x="33.33" y="243.6" width="13.33" height="1.4" class="f" fill="#fff"/>
 <rect x="46.67" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
@@ -397,7 +397,7 @@
 <rect x="307" y="152.7" width="4.2" height="2.4" class="n" fill="#81e0e8"/>
 <text x="312.4" y="154.6" font-size="1.6" class="t">watertank</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - WATER RECLAMATION PLANT</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -447,27 +447,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Water Reclamation Plant - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 4 - HOLD DECK  -  FLOOR PLAN AT FFL -4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-water-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:75</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">WP</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Water Reclamation Plant</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Water Reclamation Plant</text>
 </svg>

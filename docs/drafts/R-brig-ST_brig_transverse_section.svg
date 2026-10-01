@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - BRIG</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING AFT (+Z)  -  STBD on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING AFT (+Z)  -  STBD on the left</text>
 <clipPath id="clipA"><rect x="163.71" y="56.7" width="96.58" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="120.67,63 259.99,63 259.99,131 120.67,131" class="x" fill="#eceff3"/>
@@ -52,8 +52,8 @@
 <polygon points="256.99,63 259.99,63 259.99,75.8 256.99,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="168.86,121.7 181.65,121.7 181.65,131 168.86,131" class="m" fill="#b39ef7"/>
 </g>
-<text x="137.99" y="101.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
-<text x="256.41" y="101.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
+<text x="137.99" y="101.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1500</text>
+<text x="256.41" y="101.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1500</text>
 <text x="164.01" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="259.99" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="265.99" y1="137" x2="265.99" y2="57" class="d"/>
@@ -92,7 +92,7 @@
 <line x1="164.01" y1="138" x2="164.01" y2="144.2" class="d"/>
 <line x1="259.99" y1="138" x2="259.99" y2="144.2" class="d"/>
 <text x="212" y="142.3" font-size="2" class="t" text-anchor="middle">4799</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -200,27 +200,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Brig - transverse section</text>
 <text x="299" y="264.6" font-size="1.6" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -24.87 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-brig-ST</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">BG</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Brig</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Brig</text>
 </svg>

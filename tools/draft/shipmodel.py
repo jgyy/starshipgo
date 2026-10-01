@@ -7,6 +7,7 @@ import os
 WALL_T = 0.15
 SLAB_T = 0.3
 PITCH = 4.0
+FLAT_H = 0.15
 
 
 def rot(x, z, yaw):
@@ -221,7 +222,8 @@ class Room:
     def occupancy(self):
         a = 0.0
         for p in self.props:
-            if p.mount == "floor":
+            if p.mount == "floor" and p.size[1] > FLAT_H and p.code != "ARCH" and p.cat not in ("door", "doorframe"):
+                # rugs, floor markings and door frames do not occupy floor (same definition as audit rule `density`)
                 a += (p.size[0] * p.size[2])
         return a / max(self.area, 1.0)
 

@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="43.61,49 229.55,49 231.59,53 249.63,97 262.85,141 270.91,185 272.39,209 43.61,209" class="none" fill="#ebeff7"/>
 <polygon points="106.01,49 161.21,49 161.21,89 106.01,89" class="red" fill="url(#hZone)"/>
-<text x="133.61" y="87.8" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="133.61" y="87.8" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="43.61,101.4 83.61,101.4 83.61,156.6 43.61,156.6" class="red" fill="url(#hZone)"/>
-<text x="82.01" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="82.01" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="93.51,116.9 153.71,116.9 153.71,141.1 93.51,141.1" class="n" fill="#99f7ea"/>
 <line x1="153.71" y1="141.1" x2="93.51" y2="141.1" class="m"/>
 <line x1="123.61" y1="141.1" x2="123.61" y2="139.9" class="f"/>
@@ -168,29 +168,29 @@
 <polygon points="46.61,188 46.61,178 48.13,178 48.13,188" class="f" fill="#77ef8b"/>
 <polygon points="191.19,127.44 213.19,127.44 213.19,130.56 191.19,130.56" class="dot" fill="none"/>
 <polygon points="103.81,119 123.81,119 123.81,139 103.81,139" class="dot" fill="none"/>
-<text x="123.61" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">conference table</text>
-<text x="184.01" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">conference table</text>
-<text x="211.61" y="75.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">tactical plinth</text>
-<text x="65.61" y="191.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">ficus tree</text>
-<text x="232.61" y="190.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">ficus tree</text>
-<text x="145.61" y="199.68" font-size="1.25" class="t" text-anchor="middle" fill="#333">drawer console</text>
-<text x="185.61" y="199.68" font-size="1.25" class="t" text-anchor="middle" fill="#333">drawer console</text>
-<text x="223.61" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">armchair</text>
-<text x="105.61" y="199.08" font-size="1.25" class="t" text-anchor="middle" fill="#333">coffee machine</text>
-<text x="53.21" y="73.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">utility cabinet</text>
-<text x="104" y="108.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="104" y="150.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="124" y="108.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="124" y="150.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="144" y="108.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="144" y="150.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="164" y="108.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="164" y="150.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="184" y="108.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="184" y="150.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="204" y="108.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="204" y="150.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office c~</text>
-<text x="83.61" y="200.37" font-size="1.25" class="t" text-anchor="middle" fill="#333">water co~</text>
+<text x="123.61" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">conference table</text>
+<text x="184.01" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">conference table</text>
+<text x="211.61" y="75.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">tactical plinth</text>
+<text x="65.61" y="191.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ficus tree</text>
+<text x="232.61" y="190.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ficus tree</text>
+<text x="145.61" y="199.68" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drawer console</text>
+<text x="185.61" y="199.68" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drawer console</text>
+<text x="223.61" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">armchair</text>
+<text x="105.61" y="199.08" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">coffee machine</text>
+<text x="53.21" y="73.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">utility cabinet</text>
+<text x="104" y="108.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="104" y="150.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="124" y="108.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="124" y="150.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="144" y="108.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="144" y="150.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="164" y="108.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="164" y="150.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="184" y="108.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="184" y="150.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="204" y="108.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="204" y="150.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office c~</text>
+<text x="83.61" y="200.37" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">water co~</text>
 <path d="M43.61 49 L229.55 49 L231.59 53 L249.63 97 L262.85 141 L270.91 185 L272.39 209 L43.61 209Z M46.61 52 L227.71 52 L228.86 54.25 L246.8 98 L259.93 141.7 L267.93 185.36 L269.2 206 L46.61 206Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="110.01,49 157.21,49 157.21,52 110.01,52" class="none" fill="#ffffff"/>
 <line x1="110.01" y1="49" x2="110.01" y2="52" class="m"/>
@@ -206,21 +206,21 @@
 <line x1="234.63" y1="60.4" x2="246.6" y2="89.6" class="n"/>
 <line x1="233.24" y1="60.97" x2="245.21" y2="90.17" class="f"/>
 <line x1="231.85" y1="61.54" x2="243.82" y2="90.74" class="n"/>
-<text x="225.81" y="81.07" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-CR-1</text>
+<text x="225.81" y="81.07" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-CR-1</text>
 <polygon points="251.93,104.67 260.55,133.35 257.68,134.21 249.06,105.53" class="none" fill="#ffffff"/>
 <line x1="251.93" y1="104.67" x2="249.06" y2="105.53" class="n"/>
 <line x1="260.55" y1="133.35" x2="257.68" y2="134.21" class="n"/>
 <line x1="251.93" y1="104.67" x2="260.55" y2="133.35" class="n"/>
 <line x1="250.5" y1="105.1" x2="259.11" y2="133.78" class="f"/>
 <line x1="249.06" y1="105.53" x2="257.68" y2="134.21" class="n"/>
-<text x="240.92" y="123.61" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-CR-2</text>
+<text x="240.92" y="123.61" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-CR-2</text>
 <polygon points="264.29,148.86 269.47,177.12 266.52,177.67 261.34,149.4" class="none" fill="#ffffff"/>
 <line x1="264.29" y1="148.86" x2="261.34" y2="149.4" class="n"/>
 <line x1="269.47" y1="177.12" x2="266.52" y2="177.67" class="n"/>
 <line x1="264.29" y1="148.86" x2="269.47" y2="177.12" class="n"/>
 <line x1="262.81" y1="149.13" x2="267.99" y2="177.4" class="f"/>
 <line x1="261.34" y1="149.4" x2="266.52" y2="177.67" class="n"/>
-<text x="251.14" y="165.88" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-CR-3</text>
+<text x="251.14" y="165.88" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-CR-3</text>
 <line x1="276.09" y1="125.38" x2="202.19" y2="129" class="x"/>
 <circle cx="202.19" cy="129" r="0.4" class="none" fill="#b03030"/>
 <line x1="39.91" y1="132.62" x2="111.6" y2="129.01" class="x"/>
@@ -297,7 +297,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -424,7 +424,7 @@
 <rect x="360" y="134.1" width="4.2" height="2.4" class="n" fill="#ecf799"/>
 <text x="365.4" y="136" font-size="1.6" class="t">tray</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - CONFERENCE ROOM</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -474,27 +474,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Conference Room - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 1 - COMMAND DECK  -  FLOOR PLAN AT FFL +8.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-conf-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 1</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">CR</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Conference Room</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Conference Room</text>
 </svg>

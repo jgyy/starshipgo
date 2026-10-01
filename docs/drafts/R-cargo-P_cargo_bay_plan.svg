@@ -34,11 +34,11 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="46.4,179 43,119 43,59 273,59 273,199 49.74,199" class="none" fill="#ebebe8"/>
 <polygon points="233,101.4 273,101.4 273,156.6 233,156.6" class="red" fill="url(#hZone)"/>
-<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="119,179 207,179 207,199 119,199" class="red" fill="url(#hZone)"/>
-<text x="163" y="181" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="163" y="181" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="123,71 203,71 203,179 123,179" class="red" fill="url(#hZone)"/>
-<text x="124.6" y="125.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: hangar-opening axis: the 4 m N-S forklift lane must stay open from the hangar to the north wall</text>
+<text x="124.6" y="125.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">CLEAR: hangar-opening axis: the 4 m N-S forklift lane must stay open from the hangar to the north wall</text>
 <polygon points="51.4,62.8 106.6,62.8 106.6,86.4 51.4,86.4" class="n" fill="#81e8af"/>
 <line x1="106.6" y1="86.4" x2="51.4" y2="86.4" class="m"/>
 <line x1="79" y1="86.4" x2="79" y2="85.2" class="f"/>
@@ -111,23 +111,23 @@
 <polygon points="88.46,116.4 100.86,116.4 100.86,141.6 88.46,141.6" class="dot" fill="none"/>
 <polygon points="148,119 168,119 168,139 148,139" class="dot" fill="none"/>
 <polygon points="208.84,127.4 233.84,127.4 233.84,130.6 208.84,130.6" class="dot" fill="none"/>
-<text x="220" y="167.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">platform_forklift</text>
-<text x="79" y="74.9" font-size="1.25" class="t" text-anchor="middle" fill="#333">rack_bay_low_wire</text>
-<text x="228" y="70" font-size="1.25" class="t" text-anchor="middle" fill="#333">heavy_boxes</text>
-<text x="252" y="185.96" font-size="1.25" class="t" text-anchor="middle" fill="#333">transporter control</text>
-<text x="92" y="115.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">drums_banded</text>
-<text x="65" y="115.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">crates_banded</text>
-<text x="92" y="183.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">wrapped_stack</text>
-<text x="65" y="183.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">boxes_layered</text>
-<text x="109" y="149.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">hand_pallet_jack</text>
-<text x="79" y="96.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="263.86" y="83.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen Cylind~</text>
-<text x="55.03" y="162.78" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_cabinet</text>
-<text x="53.55" y="136.82" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_cabinet</text>
-<text x="83" y="158.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">spill_kit_bin</text>
-<text x="252.01" y="165.12" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
-<text x="77" y="141.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">chemical_drum_h~</text>
-<text x="91" y="141.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">chemical_drum_h~</text>
+<text x="220" y="167.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">platform_forklift</text>
+<text x="79" y="74.9" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rack_bay_low_wire</text>
+<text x="228" y="70" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">heavy_boxes</text>
+<text x="252" y="185.96" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">transporter control</text>
+<text x="92" y="115.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drums_banded</text>
+<text x="65" y="115.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crates_banded</text>
+<text x="92" y="183.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wrapped_stack</text>
+<text x="65" y="183.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">boxes_layered</text>
+<text x="109" y="149.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hand_pallet_jack</text>
+<text x="79" y="96.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="263.86" y="83.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Oxygen Cylind~</text>
+<text x="55.03" y="162.78" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_cabinet</text>
+<text x="53.55" y="136.82" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_cabinet</text>
+<text x="83" y="158.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">spill_kit_bin</text>
+<text x="252.01" y="165.12" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops chair</text>
+<text x="77" y="141.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chemical_drum_h~</text>
+<text x="91" y="141.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chemical_drum_h~</text>
 <path d="M46.4 179 L43 119 L43 59 L273 59 L273 199 L49.74 199Z M49.39 178.67 L46 118.92 L46 62 L270 62 L270 196 L52.28 196Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="273,105.4 273,152.6 270,152.6 270,105.4" class="none" fill="#ffffff"/>
 <line x1="273" y1="105.4" x2="270" y2="105.4" class="m"/>
@@ -218,7 +218,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -340,7 +340,7 @@
 <rect x="307" y="133.4" width="4.2" height="2.4" class="n" fill="#e881a1"/>
 <text x="312.4" y="135.3" font-size="1.6" class="t">terminal</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - CARGO BAY</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -390,27 +390,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Cargo Bay - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  FLOOR PLAN AT FFL +0.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-cargo-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">CB</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Cargo Bay</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Cargo Bay</text>
 </svg>

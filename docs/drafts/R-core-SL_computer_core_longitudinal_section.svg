@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - COMPUTER CORE</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING STARBOARD (+X)  -  BOW on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING STARBOARD (+X)  -  BOW on the left</text>
 <clipPath id="clipA"><rect x="81.7" y="56.7" width="260.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="82,63 342,63 342,131 82,131" class="x" fill="#e6eaef"/>
@@ -102,14 +102,14 @@
 <polygon points="126.06,63 151.26,63 151.26,65.02 126.06,65.02" class="m" fill="#bff79e"/>
 <polygon points="275.34,63 295.34,63 295.34,64.58 275.34,64.58" class="m" fill="#bff79e"/>
 </g>
-<text x="262" y="85.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2300</text>
-<text x="162" y="85.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2300</text>
-<text x="243" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="212" y="73.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2900</text>
-<text x="170" y="73.8" font-size="1.2" class="t" text-anchor="middle" fill="#444">2885</text>
-<text x="87.08" y="76" font-size="1.2" class="t" text-anchor="middle" fill="#444">2775</text>
-<text x="87.08" y="73.36" font-size="1.2" class="t" text-anchor="middle" fill="#444">2775</text>
-<text x="179" y="105.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1300</text>
+<text x="262" y="85.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2300</text>
+<text x="162" y="85.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2300</text>
+<text x="243" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="212" y="73.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2900</text>
+<text x="170" y="73.8" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2885</text>
+<text x="87.08" y="76" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2775</text>
+<text x="87.08" y="73.36" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2775</text>
+<text x="179" y="105.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1300</text>
 <text x="82" y="54" font-size="1.8" class="t b">BOW</text>
 <text x="342" y="54" font-size="1.8" class="t b" text-anchor="end">STERN</text>
 <line x1="348" y1="137" x2="348" y2="57" class="d"/>
@@ -160,7 +160,7 @@
 <line x1="82" y1="143.6" x2="82" y2="150.2" class="d"/>
 <line x1="342" y1="143.6" x2="342" y2="150.2" class="d"/>
 <text x="212" y="148.3" font-size="2" class="t" text-anchor="middle">13000</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -267,27 +267,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Computer Core - longitudinal section</text>
 <text x="299" y="264.6" font-size="1.6" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = -7.03 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-core-SL</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">CO</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Computer Core</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Computer Core</text>
 </svg>

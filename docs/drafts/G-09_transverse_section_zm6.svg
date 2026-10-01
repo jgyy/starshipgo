@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="12" font-size="3" class="t b">SECTION A-A - TRANSVERSE SECTION C - FORWARD MIDSHIP</text>
-<text x="16" y="16.2" font-size="1.8" class="t" fill="#555">LOOKING AFT (+Z)  -  plane z = -6.0 m through officers' wardroom &amp; bar, briefing theatre, astrometrics, observation lounge, medical bay, mess hall, main engineering, waste &amp; recycling plant, provisions hold &amp; cold store</text>
+<text x="16" y="16.2" font-size="1.8" class="t" style="fill:#555">LOOKING AFT (+Z)  -  plane z = -6.0 m through officers' wardroom &amp; bar, briefing theatre, astrometrics, observation lounge, medical bay, mess hall, main engineering, waste &amp; recycling plant, provisions hold &amp; cold store</text>
 <clipPath id="clipS"><rect x="111.86" y="29.45" width="200.28" height="127.1"/></clipPath>
 <g clip-path="url(#clipS)">
 <polygon points="212,156.05 207.03,155.85 199.99,155.25 192.33,154.26 184.73,152.93 177.75,151.29 171.83,149.38 167.33,147.28 164.52,145.03 163.57,142.72 163.46,141.08 163.35,139.44 163.23,137.81 163.11,136.17 162.99,134.53 162.86,132.89 162.74,131.26 162.6,129.62 162.5,127.98 162.36,126.35 162.26,124.71 162.15,123.07 162.04,121.44 161.92,119.8 161.79,118.16 161.65,116.52 161.53,114.89 161.39,113.25 161.18,111.61 161,109.98 160.79,108.34 160.58,106.7 160.37,105.06 160.16,103.43 159.93,101.79 159.72,100.15 159.51,98.52 159.24,96.88 159.06,95.24 158.94,93.61 158.76,91.97 158.57,90.33 158.39,88.69 158.18,87.06 158,85.42 157.82,83.78 157.64,82.15 157.43,80.51 157.25,78.87 157.04,77.24 156.83,75.6 156.62,73.96 156.4,72.32 156.19,70.69 155.98,69.05 157,67.31 159.99,65.63 164.85,64.05 171.3,62.62 179.03,61.39 187.61,60.39 196.53,59.65 205.14,59.2 212,59.05 218.86,59.2 227.47,59.65 236.39,60.39 244.97,61.39 252.7,62.62 259.15,64.05 264.01,65.63 267,67.31 268.02,69.05 267.81,70.69 267.6,72.32 267.38,73.96 267.17,75.6 266.96,77.24 266.75,78.87 266.57,80.51 266.36,82.15 266.18,83.78 266,85.42 265.82,87.06 265.61,88.69 265.43,90.33 265.24,91.97 265.06,93.61 264.94,95.24 264.76,96.88 264.49,98.52 264.28,100.15 264.07,101.79 263.84,103.43 263.63,105.06 263.42,106.7 263.21,108.34 263,109.98 262.82,111.61 262.61,113.25 262.47,114.89 262.35,116.52 262.21,118.16 262.08,119.8 261.96,121.44 261.85,123.07 261.74,124.71 261.64,126.35 261.5,127.98 261.4,129.62 261.26,131.26 261.14,132.89 261.01,134.53 260.89,136.17 260.77,137.81 260.65,139.44 260.54,141.08 260.43,142.72 259.48,145.03 256.67,147.28 252.17,149.38 246.25,151.29 239.27,152.93 231.67,154.26 224.01,155.25 216.97,155.85" class="hid" fill="none"/>
@@ -351,6 +351,7 @@
 <polygon points="178.05,104.92 180.95,104.92 180.95,110.71 178.05,110.71" class="f" fill="#f4a9e9"/>
 <polygon points="174.67,101.94 177.67,101.94 177.67,110.72 174.67,110.72" class="f" fill="#a9f4e4"/>
 <polygon points="200.41,106.97 202.49,106.97 202.49,110.72 200.41,110.72" class="f" fill="#f9eabe"/>
+<polygon points="205.9,104.82 206.5,104.82 206.5,106.45 205.9,106.45" class="f" fill="#f9dbbe"/>
 <polygon points="203.49,106.67 206.37,106.67 206.37,110.72 203.49,110.72" class="f" fill="#dba8f4"/>
 <polygon points="173.5,103.9 176.83,103.9 176.83,110.7 173.5,110.7" class="f" fill="#f4a6e8"/>
 <polygon points="197.36,98.72 199.42,98.72 199.42,99.05 197.36,99.05" class="dot" fill="none"/>
@@ -733,7 +734,7 @@
 <text x="236.17" y="176.45" font-size="1.9" class="t" text-anchor="middle">11500</text>
 <text x="112.36" y="26.95" font-size="2.2" class="t b">STBD</text>
 <text x="311.64" y="26.95" font-size="2.2" class="t b" text-anchor="end">PORT</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="6.67" height="1.4" class="f" fill="#111"/>
 <rect x="346.67" y="194.6" width="6.67" height="1.4" class="f" fill="#fff"/>
 <rect x="353.33" y="194.6" width="6.67" height="1.4" class="f" fill="#111"/>
@@ -840,27 +841,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Transverse section C - forward midship</text>
 <text x="299" y="264.6" font-size="1.3" class="t">SECTION A-A LOOKING AFT (+Z) - plane z = -6.0 m through officers' wardroom &amp; bar, briefing theatre, astrometrics, observation lo~</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-09</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:300</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Section</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Section</text>
 </svg>

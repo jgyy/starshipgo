@@ -407,12 +407,7 @@ def index_sheet(ship, ga_list):
     x4 = 16.0
     y4 = 192.0
     sh.text(x4, y4, "FURNITURE FAMILY COLOURS (catalog category)", 2.3, bold=True)
-    per_col = 24
-    colw = 38
-    for i, c in enumerate(cats):
-        col, row = i // per_col, i % per_col
-        xx, yy = x4 + col * colw, y4 + 3 + row * 0
-    # lay out as grid of 11 columns x rows
+    # lay out as grid of 10 columns x rows
     ncol = 10
     for i, c in enumerate(cats):
         col, row = i % ncol, i // ncol

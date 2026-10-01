@@ -34,7 +34,7 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="107.47,182.33 124.17,157 142.91,131.67 163.2,106.33 184.56,81 206.47,55.67 219.8,55.67 219.8,202.33 96.2,202.33" class="none" fill="#edf4f1"/>
 <polygon points="193.13,103.93 219.8,103.93 219.8,140.73 193.13,140.73" class="red" fill="url(#hZone)"/>
-<text x="194.73" y="122.73" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="194.73" y="122.73" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="217.27,77.67 217.27,101.67 204.73,101.67 204.73,77.67" class="n" fill="#8981e8"/>
 <line x1="204.73" y1="101.67" x2="204.73" y2="77.67" class="m"/>
 <line x1="204.73" y1="89.67" x2="205.93" y2="89.67" class="f"/>
@@ -97,21 +97,21 @@
 <polygon points="143.8,137.93 170.47,137.93 170.47,144.07 143.8,144.07" class="dot" fill="none"/>
 <polygon points="170.87,137.93 197.53,137.93 197.53,144.07 170.87,144.07" class="dot" fill="none"/>
 <polygon points="178.11,150.6 186.37,150.6 186.37,167.4 178.11,167.4" class="dot" fill="none"/>
-<text x="141.68" y="150.69" font-size="1.25" class="t" text-anchor="middle" fill="#333">Potable Water Tank</text>
-<text x="160.09" y="125.23" font-size="1.25" class="t" text-anchor="middle" fill="#333">Atmosphere Processor</text>
-<text x="211" y="89.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Twin Amine Scrub~</text>
-<text x="123.14" y="173.81" font-size="1.25" class="t" text-anchor="middle" fill="#333">environmental</text>
-<text x="132.33" y="194.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Greywater Processor</text>
-<text x="212.43" y="169.17" font-size="1.25" class="t" text-anchor="middle" fill="#333">Filter Bank~</text>
-<text x="205" y="193.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Water Recycler</text>
-<text x="168.67" y="195.99" font-size="1.25" class="t" text-anchor="middle" fill="#333">Reverse Osmosis Skid</text>
-<text x="188.77" y="194.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">Condensate Collector</text>
-<text x="178.6" y="97.82" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen Cylinder Rack</text>
-<text x="211.4" y="71.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">CO2 Scrubber T~</text>
-<text x="149.87" y="196.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">UV Water Purifi~</text>
-<text x="178.47" y="139.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cylinder Ha~</text>
-<text x="187.8" y="171.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diagnost~</text>
-<text x="135.29" y="181.83" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
+<text x="141.68" y="150.69" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Potable Water Tank</text>
+<text x="160.09" y="125.23" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Atmosphere Processor</text>
+<text x="211" y="89.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Twin Amine Scrub~</text>
+<text x="123.14" y="173.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">environmental</text>
+<text x="132.33" y="194.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Greywater Processor</text>
+<text x="212.43" y="169.17" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Filter Bank~</text>
+<text x="205" y="193.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Water Recycler</text>
+<text x="168.67" y="195.99" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Reverse Osmosis Skid</text>
+<text x="188.77" y="194.43" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Condensate Collector</text>
+<text x="178.6" y="97.82" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Oxygen Cylinder Rack</text>
+<text x="211.4" y="71.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">CO2 Scrubber T~</text>
+<text x="149.87" y="196.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">UV Water Purifi~</text>
+<text x="178.47" y="139.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Cylinder Ha~</text>
+<text x="187.8" y="171.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Diagnost~</text>
+<text x="135.29" y="181.83" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops chair</text>
 <path d="M107.47 182.33 L124.17 157 L142.91 131.67 L163.2 106.33 L184.56 81 L206.47 55.67 L219.8 55.67 L219.8 202.33 L96.2 202.33Z M109.17 183.38 L125.81 158.15 L144.49 132.89 L164.75 107.6 L186.08 82.3 L207.38 57.67 L217.8 57.67 L217.8 200.33 L99.62 200.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="219.8,106.6 219.8,138.07 217.8,138.07 217.8,106.6" class="none" fill="#ffffff"/>
 <line x1="219.8" y1="106.6" x2="217.8" y2="106.6" class="m"/>
@@ -188,7 +188,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
 <rect x="33.33" y="243.6" width="13.33" height="1.4" class="f" fill="#fff"/>
 <rect x="46.67" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
@@ -318,7 +318,7 @@
 <rect x="360" y="136.4" width="4.2" height="2.4" class="n" fill="#81e0e8"/>
 <text x="365.4" y="138.3" font-size="1.6" class="t">watertank</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - LIFE SUPPORT</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -368,27 +368,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Life Support - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  FLOOR PLAN AT FFL +0.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-life-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:75</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">LS</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Life Support</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Life Support</text>
 </svg>

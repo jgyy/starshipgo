@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="14" font-size="3" class="t b">PROFILE - STARBOARD OUTBOARD ELEVATION OF THE OUTER SKIN</text>
-<text x="16" y="18.4" font-size="1.8" class="t" fill="#555">Solid: skin silhouette (outermost outline over the beam). Dashed: skin on the centreline (x = 0). Thin boxes: room volumes. Panes: ext_windows facing starboard.</text>
+<text x="16" y="18.4" font-size="1.8" class="t" style="fill:#555">Solid: skin silhouette (outermost outline over the beam). Dashed: skin on the centreline (x = 0). Thin boxes: room volumes. Panes: ext_windows facing starboard.</text>
 <polygon points="215.6,117.59 99.85,117.59 99.85,100.68 215.6,100.68" class="hid" fill="none"/>
 <polygon points="268.28,139.89 269.7,139.74 273.79,139.29 280.07,138.55 287.76,137.55 295.95,136.32 303.64,134.89 309.92,133.31 314.01,131.63 315.43,129.89 315.61,128.66 315.86,127.44 316.16,126.21 316.51,124.98 316.93,123.75 317.46,122.52 318.06,121.3 318.71,120.07 319.43,118.84 320.21,117.61 321.05,116.38 321.91,115.16 322.76,113.93 323.56,112.7 325.33,111.47 325.48,110.25 325.61,109.02 325.73,107.79 325.88,106.56 326,105.34 326.15,104.11 326.3,102.88 326.43,101.65 323.08,100.42 321.73,99.19 320.18,97.97 319.53,96.74 316.76,95.51 314.98,94.28 313.21,93.06 311.46,91.83 309.78,90.6 308.19,89.37 306.69,88.14 305.31,86.92 304.05,85.69 302.91,84.46 301.93,83.23 301.08,82.01 300.39,80.78 299.89,79.55 299.54,78.32 299.33,77.09 299.23,75.87 299.21,74.64 297.23,73.34 291.54,72.07 282.82,70.89 272.13,69.82 260.75,68.89 250.05,68.15 241.33,67.59 235.64,67.25 233.66,67.14 132.78,67.14 131.71,67.25 128.64,67.59 123.95,68.15 118.18,68.89 112.05,69.82 106.28,70.89 101.59,72.07 98.52,73.34 97.45,74.64 97.5,75.87 97.53,77.09 97.47,78.32 97.33,79.55 97.1,80.78 96.75,82.01 96.3,83.23 95.78,84.46 95.18,85.69 94.48,86.92 93.73,88.14 92.88,89.37 92,90.6 91.08,91.83 90.18,93.06 89.33,94.28 87.2,95.51 87.13,96.74 85.93,97.97 84.6,99.19 83.25,100.42 81.85,101.65 80.45,102.88 79,104.11 77.53,105.34 76.01,106.56 74.49,107.79 72.94,109.02 71.37,110.25 69.78,111.47 68.17,112.7 66.53,113.93 64.88,115.16 63.23,116.38 61.68,117.61 60.25,118.84 56.73,120.07 56.84,121.3 56.95,122.52 57.06,123.75 57.18,124.98 57.29,126.21 57.39,127.44 57.5,128.66 57.6,129.89 58.66,131.63 61.74,133.31 66.44,134.89 72.21,136.32 78.35,137.55 84.12,138.55 88.83,139.29 91.9,139.74 92.96,139.89" class="h" fill="#edf1f7"/>
 <polygon points="268.28,139.89 269.7,139.74 273.79,139.29 280.07,138.55 287.76,137.55 295.95,136.32 303.64,134.89 309.92,133.31 314.01,131.63 315.43,129.89 315.6,128.66 315.85,127.44 316.15,126.21 316.5,124.98 316.93,123.75 317.45,122.52 318.05,121.3 318.7,120.07 319.43,118.84 320.2,117.61 321.05,116.38 321.9,115.16 322.75,113.93 323.55,112.7 325.33,111.47 325.48,110.25 325.6,109.02 325.73,107.79 325.88,106.56 326,105.34 326.15,104.11 326.3,102.88 326.43,101.65 323.08,100.42 321.73,99.19 320.18,97.97 319.53,96.74 316.75,95.51 314.98,94.28 313.2,93.06 311.45,91.83 309.78,90.6 308.18,89.37 306.68,88.14 305.3,86.92 304.05,85.69 302.9,84.46 301.93,83.23 301.08,82.01 300.38,80.78 299.88,79.55 299.53,78.32 299.33,77.09 299.23,75.87 299.2,74.64 297.22,73.34 291.53,72.07 282.81,70.89 272.12,69.82 260.74,68.89 250.04,68.15 241.32,67.59 235.63,67.25 233.66,67.14 132.78,67.14 131.71,67.25 128.64,67.59 123.95,68.15 118.18,68.89 112.05,69.82 106.28,70.89 101.59,72.07 98.52,73.34 97.45,74.64 97.5,75.87 97.53,77.09 97.48,78.32 97.33,79.55 97.1,80.78 96.75,82.01 96.3,83.23 95.78,84.46 95.18,85.69 94.48,86.92 93.73,88.14 92.88,89.37 92,90.6 91.08,91.83 90.18,93.06 89.33,94.28 87.2,95.51 87.13,96.74 85.93,97.97 84.6,99.19 83.25,100.42 81.85,101.65 80.45,102.88 79,104.11 77.53,105.34 76.03,106.56 74.5,107.79 72.95,109.02 71.38,110.25 69.78,111.47 68.18,112.7 66.53,113.93 64.88,115.16 63.23,116.38 61.68,117.61 60.25,118.84 56.73,120.07 56.85,121.3 56.95,122.52 57.08,123.75 57.18,124.98 57.3,126.21 57.4,127.44 57.5,128.66 57.6,129.89 58.66,131.63 61.74,133.31 66.44,134.89 72.21,136.32 78.35,137.55 84.12,138.55 88.83,139.29 91.9,139.74 92.96,139.89" class="dsh" fill="none"/>
@@ -191,7 +191,7 @@
 <line x1="60.6" y1="154.5" x2="60.6" y2="157.5" class="m"/>
 <text x="60.6" y="161" font-size="1.7" class="t" text-anchor="middle">18</text>
 <line x1="60.6" y1="154.5" x2="60.6" y2="41.31" class="gg"/>
-<text x="50" y="165.5" font-size="1.6" class="t" fill="#555">STATIONS every 6 m from the forward perpendicular (station 0 at the bow end, z = -63.0 m)</text>
+<text x="50" y="165.5" font-size="1.6" class="t" style="fill:#555">STATIONS every 6 m from the forward perpendicular (station 0 at the bow end, z = -63.0 m)</text>
 <line x1="56.73" y1="170" x2="326.43" y2="170" class="d"/>
 <line x1="56.03" y1="170.7" x2="57.43" y2="169.3" class="m"/>
 <line x1="325.73" y1="170.7" x2="327.13" y2="169.3" class="m"/>
@@ -253,7 +253,7 @@
 <polygon points="322.82,35 320.72,35.65 320.72,34.35" class="none" fill="#111"/>
 <text x="324.82" y="36" font-size="2.4" class="t b">BOW</text>
 <text x="50" y="36" font-size="2.4" class="t b">STERN</text>
-<text x="20" y="276.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="276.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="278.6" width="12.5" height="1.4" class="f" fill="#111"/>
 <rect x="32.5" y="278.6" width="12.5" height="1.4" class="f" fill="#fff"/>
 <rect x="45" y="278.6" width="12.5" height="1.4" class="f" fill="#111"/>
@@ -365,27 +365,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Profile - outer skin and fittings</text>
 <text x="299" y="264.6" font-size="2" class="t">SIDE ELEVATION: SKIN SILHOUETTE, DECK LINES, WINDOWS, FITTINGS</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-05</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:400</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">PROFILE</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Profile</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Profile</text>
 </svg>

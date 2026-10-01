@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="88.34,49 98.34,49 132.76,89 166.32,129 198.22,169 227.66,209 88.34,209" class="none" fill="#efecec"/>
 <polygon points="88.34,101.4 128.34,101.4 128.34,156.6 88.34,156.6" class="red" fill="url(#hZone)"/>
-<text x="126.74" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="126.74" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="150.74,169 205.94,169 205.94,209 150.74,209" class="red" fill="url(#hZone)"/>
-<text x="152.34" y="189.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="152.34" y="189.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="149.9,204.77 91.58,204.77 91.58,167.23 149.9,167.23" class="n" fill="#77eaef"/>
 <line x1="91.58" y1="167.23" x2="149.9" y2="167.23" class="m"/>
 <line x1="120.74" y1="167.23" x2="120.74" y2="168.43" class="f"/>
@@ -72,12 +72,12 @@
 <polygon points="165.74,185.9 170.94,185.9 170.94,192.1 165.74,192.1" class="dot" fill="none"/>
 <polygon points="118.18,161.44 140.18,161.44 140.18,164.56 118.18,164.56" class="dot" fill="none"/>
 <polygon points="115.16,153.82 121.52,153.82 121.52,160.18 115.16,160.18" class="dot" fill="none"/>
-<text x="120.74" y="186.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">wall_cot_toilet</text>
-<text x="98.64" y="87.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">computer desk</text>
-<text x="171.92" y="150.42" font-size="1.25" class="t" text-anchor="middle" fill="#333">locker room bench</text>
-<text x="145.97" y="121.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">property_locker</text>
-<text x="120.74" y="161.53" font-size="1.25" class="t" text-anchor="middle" fill="#333">door_forcefield</text>
-<text x="115.15" y="87.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office ch~</text>
+<text x="120.74" y="186.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wall_cot_toilet</text>
+<text x="98.64" y="87.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">computer desk</text>
+<text x="171.92" y="150.42" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">locker room bench</text>
+<text x="145.97" y="121.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">property_locker</text>
+<text x="120.74" y="161.53" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">door_forcefield</text>
+<text x="115.15" y="87.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office ch~</text>
 <path d="M88.34 49 L98.34 49 L132.76 89 L166.32 129 L198.22 169 L227.66 209 L88.34 209Z M91.34 52 L96.96 52 L130.47 90.94 L164 130.9 L195.84 170.83 L221.73 206 L91.34 206Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="88.34,105.4 88.34,152.6 91.34,152.6 91.34,105.4" class="none" fill="#ffffff"/>
 <line x1="88.34" y1="105.4" x2="91.34" y2="105.4" class="m"/>
@@ -166,7 +166,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -282,7 +282,7 @@
 <rect x="360" y="127" width="4.2" height="2.4" class="n" fill="#e881a1"/>
 <text x="365.4" y="128.9" font-size="1.6" class="t">terminal</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - BRIG</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -332,27 +332,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Brig - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  FLOOR PLAN AT FFL +4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-brig-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">BG</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Brig</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Brig</text>
 </svg>

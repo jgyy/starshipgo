@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="96.2,55.67 109.53,55.67 131.44,81 152.8,106.33 173.09,131.67 191.83,157 208.53,182.33 219.8,202.33 96.2,202.33" class="none" fill="#efecec"/>
 <polygon points="96.2,103.93 122.87,103.93 122.87,140.73 96.2,140.73" class="red" fill="url(#hZone)"/>
-<text x="121.27" y="122.73" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="121.27" y="122.73" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="98.2,96.33 132.2,96.33 132.2,118.33 98.2,118.33" class="red" fill="url(#hZone)"/>
-<text x="115.2" y="117.13" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: approach to the decontamination arch and a~</text>
+<text x="115.2" y="117.13" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">CLEAR: approach to the decontamination arch and a~</text>
 <polygon points="99.07,84.73 124,84.73 124,95.93 99.07,95.93" class="n" fill="#bae881"/>
 <line x1="124" y1="95.93" x2="99.07" y2="95.93" class="m"/>
 <line x1="111.53" y1="95.93" x2="111.53" y2="94.73" class="f"/>
@@ -80,15 +80,15 @@
 <polygon points="129.51,94.75 138.01,94.75 138.01,103.25 129.51,103.25" class="dot" fill="none"/>
 <polygon points="122.87,124.6 149.53,124.6 149.53,130.73 122.87,130.73" class="dot" fill="none"/>
 <polygon points="129.63,150.6 137.89,150.6 137.89,167.4 129.63,167.4" class="dot" fill="none"/>
-<text x="111.53" y="90.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">decontamination_arch</text>
-<text x="142.87" y="172.64" font-size="1.25" class="t" text-anchor="middle" fill="#333">suit_up_bench</text>
-<text x="166.47" y="196.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">oxygen_pack_rack</text>
-<text x="102.29" y="171.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxygen C~</text>
-<text x="114.6" y="195.52" font-size="1.25" class="t" text-anchor="middle" fill="#333">wardrobe</text>
-<text x="130.73" y="195.52" font-size="1.25" class="t" text-anchor="middle" fill="#333">wardrobe</text>
-<text x="103.91" y="151.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">compact aux</text>
-<text x="146.47" y="196.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">glove_boot_locker</text>
-<text x="186.47" y="196.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">glove_boot_locker</text>
+<text x="111.53" y="90.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">decontamination_arch</text>
+<text x="142.87" y="172.64" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">suit_up_bench</text>
+<text x="166.47" y="196.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">oxygen_pack_rack</text>
+<text x="102.29" y="171.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Oxygen C~</text>
+<text x="114.6" y="195.52" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wardrobe</text>
+<text x="130.73" y="195.52" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wardrobe</text>
+<text x="103.91" y="151.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">compact aux</text>
+<text x="146.47" y="196.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_locker</text>
+<text x="186.47" y="196.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_locker</text>
 <path d="M96.2 55.67 L109.53 55.67 L131.44 81 L152.8 106.33 L173.09 131.67 L191.83 157 L208.53 182.33 L219.8 202.33 L96.2 202.33Z M98.2 57.67 L108.62 57.67 L129.92 82.3 L151.25 107.6 L171.51 132.89 L190.19 158.15 L206.83 183.38 L216.38 200.33 L98.2 200.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="96.2,106.6 96.2,138.07 98.2,138.07 98.2,106.6" class="none" fill="#ffffff"/>
 <line x1="96.2" y1="106.6" x2="98.2" y2="106.6" class="m"/>
@@ -101,35 +101,35 @@
 <line x1="116.13" y1="63.29" x2="124.85" y2="73.38" class="n"/>
 <line x1="115.37" y1="63.95" x2="124.09" y2="74.03" class="f"/>
 <line x1="114.61" y1="64.6" x2="123.34" y2="74.68" class="n"/>
-<text x="112.42" y="75.31" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-1</text>
+<text x="112.42" y="75.31" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-1</text>
 <polygon points="137.83,88.57 146.42,98.77 144.89,100.06 136.3,89.86" class="none" fill="#ffffff"/>
 <line x1="137.83" y1="88.57" x2="136.3" y2="89.86" class="n"/>
 <line x1="146.42" y1="98.77" x2="144.89" y2="100.06" class="n"/>
 <line x1="137.83" y1="88.57" x2="146.42" y2="98.77" class="n"/>
 <line x1="137.06" y1="89.22" x2="145.66" y2="99.41" class="f"/>
 <line x1="136.3" y1="89.86" x2="144.89" y2="100.06" class="n"/>
-<text x="133.97" y="100.55" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-2</text>
+<text x="133.97" y="100.55" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-2</text>
 <polygon points="158.78,113.79 167.11,124.2 165.55,125.45 157.22,115.04" class="none" fill="#ffffff"/>
 <line x1="158.78" y1="113.79" x2="157.22" y2="115.04" class="n"/>
 <line x1="167.11" y1="124.2" x2="165.55" y2="125.45" class="n"/>
 <line x1="158.78" y1="113.79" x2="167.11" y2="124.2" class="n"/>
 <line x1="158" y1="114.42" x2="166.33" y2="124.83" class="f"/>
 <line x1="157.22" y1="115.04" x2="165.55" y2="125.45" class="n"/>
-<text x="154.62" y="125.67" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-3</text>
+<text x="154.62" y="125.67" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-3</text>
 <polygon points="178.5,138.98 186.43,149.7 184.82,150.89 176.89,140.17" class="none" fill="#ffffff"/>
 <line x1="178.5" y1="138.98" x2="176.89" y2="140.17" class="n"/>
 <line x1="186.43" y1="149.7" x2="184.82" y2="150.89" class="n"/>
 <line x1="178.5" y1="138.98" x2="186.43" y2="149.7" class="n"/>
 <line x1="177.7" y1="139.57" x2="185.62" y2="150.29" class="f"/>
 <line x1="176.89" y1="140.17" x2="184.82" y2="150.89" class="n"/>
-<text x="173.89" y="150.68" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-4</text>
+<text x="173.89" y="150.68" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-4</text>
 <polygon points="196.51,164.1 203.85,175.23 202.18,176.33 194.84,165.2" class="none" fill="#ffffff"/>
 <line x1="196.51" y1="164.1" x2="194.84" y2="165.2" class="n"/>
 <line x1="203.85" y1="175.23" x2="202.18" y2="176.33" class="n"/>
 <line x1="196.51" y1="164.1" x2="203.85" y2="175.23" class="n"/>
 <line x1="195.68" y1="164.65" x2="203.02" y2="175.78" class="f"/>
 <line x1="194.84" y1="165.2" x2="202.18" y2="176.33" class="n"/>
-<text x="191.28" y="175.54" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-5</text>
+<text x="191.28" y="175.54" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-5</text>
 <line x1="92.49" y1="101.98" x2="133.76" y2="99" class="x"/>
 <circle cx="133.76" cy="99" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.41" y1="63.19" x2="98.71" y2="61.67" class="x"/>
@@ -194,7 +194,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
 <rect x="33.33" y="243.6" width="13.33" height="1.4" class="f" fill="#fff"/>
 <rect x="46.67" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
@@ -314,7 +314,7 @@
 <rect x="307" y="130.4" width="4.2" height="2.4" class="n" fill="#f799d5"/>
 <text x="312.4" y="132.3" font-size="1.6" class="t">warnlight</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - AIRLOCK &amp; EVA PREP</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -364,27 +364,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Airlock &amp; EVA Prep - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  FLOOR PLAN AT FFL +0.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-airlock-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:75</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">AL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Airlock &amp; EVA Prep</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Airlock &amp; EVA Prep</text>
 </svg>

@@ -35,7 +35,7 @@
 <polygon points="101.06,49 214.94,49 214.37,59 209.37,89 201.43,119 191.06,149 179,179 166.06,209 101.06,209" class="none" fill="#ebebe8"/>
 <polygon points="101.06,111 111.06,111 111.06,147 101.06,147" class="red" fill="url(#hZone)"/>
 <polygon points="111.06,116 176.06,116 176.06,145 111.06,145" class="red" fill="url(#hZone)"/>
-<text x="143.56" y="118" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: 2.9 m transfer lane from the corridor opening through the bay</text>
+<text x="143.56" y="118" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">CLEAR: 2.9 m transfer lane from the corridor opening through the bay</text>
 <polygon points="132.06,56 192.06,56 192.06,116 132.06,116" class="n" fill="#ef9a77"/>
 <line x1="192.06" y1="116" x2="132.06" y2="116" class="m"/>
 <line x1="162.06" y1="116" x2="162.06" y2="114.8" class="f"/>
@@ -126,20 +126,20 @@
 <polygon points="184.28,71.5 194.28,71.5 194.28,81.5 184.28,81.5" class="dot" fill="none"/>
 <polygon points="151.75,75.7 164.25,75.7 164.25,77.3 151.75,77.3" class="dot" fill="none"/>
 <polygon points="151.75,145.7 164.25,145.7 164.25,147.3 151.75,147.3" class="dot" fill="none"/>
-<text x="162.06" y="86.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">landing_pad_square</text>
-<text x="151.06" y="175.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">repair_pod</text>
-<text x="132.06" y="176.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">launch_rail_segment</text>
-<text x="132.06" y="204.33" font-size="1.25" class="t" text-anchor="middle" fill="#333">blast_shutter</text>
-<text x="205.99" y="73.11" font-size="1.25" class="t" text-anchor="middle" fill="#333">avionics_bench</text>
-<text x="107.73" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">flight cont~</text>
-<text x="154.91" y="201.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">Quad RCS Block</text>
-<text x="178.99" y="161.69" font-size="1.25" class="t" text-anchor="middle" fill="#333">refuelling_pump</text>
-<text x="126.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="151.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="176.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor_marking</text>
-<text x="191.83" y="131.86" font-size="1.25" class="t" text-anchor="middle" fill="#333">tool_cart</text>
-<text x="107.97" y="104.81" font-size="1.25" class="t" text-anchor="middle" fill="#333">open frame r~</text>
-<text x="108.56" y="204.82" font-size="1.25" class="t" text-anchor="middle" fill="#333">glove_boot_lo~</text>
+<text x="162.06" y="86.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">landing_pad_square</text>
+<text x="151.06" y="175.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">repair_pod</text>
+<text x="132.06" y="176.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">launch_rail_segment</text>
+<text x="132.06" y="204.33" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">blast_shutter</text>
+<text x="205.99" y="73.11" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">avionics_bench</text>
+<text x="107.73" y="80.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">flight cont~</text>
+<text x="154.91" y="201.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Quad RCS Block</text>
+<text x="178.99" y="161.69" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refuelling_pump</text>
+<text x="126.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="151.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="176.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="191.83" y="131.86" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">tool_cart</text>
+<text x="107.97" y="104.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">open frame r~</text>
+<text x="108.56" y="204.82" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_lo~</text>
 <path d="M101.06 49 L214.94 49 L214.37 59 L209.37 89 L201.43 119 L191.06 149 L179 179 L166.06 209 L101.06 209Z M102.56 50.5 L213.35 50.5 L212.87 58.83 L207.9 88.68 L199.99 118.56 L189.66 148.48 L177.62 178.42 L165.08 207.5 L102.56 207.5Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="101.06,113 101.06,145 102.56,145 102.56,113" class="none" fill="#ffffff"/>
 <line x1="101.06" y1="113" x2="102.56" y2="113" class="m"/>
@@ -217,7 +217,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -356,7 +356,7 @@
 <rect x="360" y="146.3" width="4.2" height="2.4" class="n" fill="#e881a1"/>
 <text x="365.4" y="148.2" font-size="1.6" class="t">terminal</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - DRONE &amp; PROBE BAY</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -406,27 +406,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Drone &amp; Probe Bay - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 4 - HOLD DECK  -  FLOOR PLAN AT FFL -4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-drone-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:100</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">DP</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Drone &amp; Probe Bay</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Drone &amp; Probe Bay</text>
 </svg>

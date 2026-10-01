@@ -132,6 +132,7 @@
 <polygon points="113,134.6 117.4,134.6 117.4,135.02 113,135.02" class="f" fill="#e88a81"/>
 <polygon points="95,147.8 90.6,147.8 90.6,147.38 95,147.38" class="f" fill="#e88a81"/>
 <polygon points="125,134.6 129,134.6 129,134.91 125,134.91" class="f" fill="#ebef77"/>
+<polygon points="85.2,147.8 79.6,147.8 79.6,147.52 85.2,147.52" class="f" fill="#ebef77"/>
 <polygon points="86.8,134.6 90,134.6 90,134.78 86.8,134.78" class="f" fill="#81d3e8"/>
 <polygon points="121.2,147.8 118,147.8 118,147.62 121.2,147.62" class="f" fill="#81d3e8"/>
 <polygon points="117.66,139.92 120.21,139.92 120.21,142.48 117.66,142.48" class="dot" fill="none"/>
@@ -765,35 +766,35 @@
 <line x1="115.98" y1="40.29" x2="118.59" y2="43.31" class="n"/>
 <line x1="115.75" y1="40.48" x2="118.37" y2="43.51" class="f"/>
 <line x1="115.52" y1="40.68" x2="118.14" y2="43.71" class="n"/>
-<text x="114.87" y="43.89" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-1</text>
+<text x="114.87" y="43.89" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-1</text>
 <polygon points="122.49,47.87 125.07,50.93 124.61,51.32 122.03,48.26" class="none" fill="#ffffff"/>
 <line x1="122.49" y1="47.87" x2="122.03" y2="48.26" class="n"/>
 <line x1="125.07" y1="50.93" x2="124.61" y2="51.32" class="n"/>
 <line x1="122.49" y1="47.87" x2="125.07" y2="50.93" class="n"/>
 <line x1="122.26" y1="48.07" x2="124.84" y2="51.12" class="f"/>
 <line x1="122.03" y1="48.26" x2="124.61" y2="51.32" class="n"/>
-<text x="121.33" y="51.46" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-2</text>
+<text x="121.33" y="51.46" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-2</text>
 <polygon points="128.77,55.44 131.27,58.56 130.81,58.94 128.3,55.81" class="none" fill="#ffffff"/>
 <line x1="128.77" y1="55.44" x2="128.3" y2="55.81" class="n"/>
 <line x1="131.27" y1="58.56" x2="130.81" y2="58.94" class="n"/>
 <line x1="128.77" y1="55.44" x2="131.27" y2="58.56" class="n"/>
 <line x1="128.54" y1="55.63" x2="131.04" y2="58.75" class="f"/>
 <line x1="128.3" y1="55.81" x2="130.81" y2="58.94" class="n"/>
-<text x="127.53" y="59" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-3</text>
+<text x="127.53" y="59" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-3</text>
 <polygon points="134.69,62.99 137.07,66.21 136.59,66.57 134.21,63.35" class="none" fill="#ffffff"/>
 <line x1="134.69" y1="62.99" x2="134.21" y2="63.35" class="n"/>
 <line x1="137.07" y1="66.21" x2="136.59" y2="66.57" class="n"/>
 <line x1="134.69" y1="62.99" x2="137.07" y2="66.21" class="n"/>
 <line x1="134.45" y1="63.17" x2="136.83" y2="66.39" class="f"/>
 <line x1="134.21" y1="63.35" x2="136.59" y2="66.57" class="n"/>
-<text x="133.31" y="66.5" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-4</text>
+<text x="133.31" y="66.5" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-4</text>
 <polygon points="140.09,70.53 142.3,73.87 141.79,74.2 139.59,70.86" class="none" fill="#ffffff"/>
 <line x1="140.09" y1="70.53" x2="139.59" y2="70.86" class="n"/>
 <line x1="142.3" y1="73.87" x2="141.79" y2="74.2" class="n"/>
 <line x1="140.09" y1="70.53" x2="142.3" y2="73.87" class="n"/>
 <line x1="139.84" y1="70.7" x2="142.04" y2="74.03" class="f"/>
 <line x1="139.59" y1="70.86" x2="141.79" y2="74.2" class="n"/>
-<text x="138.52" y="73.96" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AL-5</text>
+<text x="138.52" y="73.96" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-AL-5</text>
 <polygon points="110,103.28 110,112.72 110.6,112.72 110.6,103.28" class="none" fill="#ffffff"/>
 <line x1="110" y1="103.28" x2="110.6" y2="103.28" class="m"/>
 <line x1="110" y1="112.72" x2="110.6" y2="112.72" class="m"/>
@@ -838,36 +839,36 @@
 <line x1="132" y1="262" x2="132" y2="261.4" class="m"/>
 <line x1="76" y1="261.7" x2="132" y2="261.7" class="dsh"/>
 <line x1="76" y1="261.4" x2="132" y2="261.4" class="cl"/>
-<text x="104" y="260.4" font-size="1.4" class="t" text-anchor="middle" fill="#2060a0">FORCE FIELD</text>
+<text x="104" y="260.4" font-size="1.4" class="t" text-anchor="middle" style="fill:#2060a0">FORCE FIELD</text>
 <polygon points="114,38 120.57,45.6 126.98,53.2 133.07,60.8 138.69,68.4 143.7,76 147.98,83.6 151.42,91.2 153.94,98.8 155.48,106.4 156,114 156,190 155.32,202 153.32,214 150.14,226 146,238 141.18,250 136,262 72,262 66.82,250 62,238 57.86,226 54.68,214 52.68,202 52,190 52,114 52.52,106.4 54.06,98.8 56.58,91.2 60.02,83.6 64.3,76 69.31,68.4 74.93,60.8 81.02,53.2 87.43,45.6 94,38" class="h" fill="none"/>
 <text x="104.7" y="98.47" font-size="2.1" class="t b halo" transform="rotate(-90 104.7 98.47)">FORWARD SPINE CORRIDOR</text>
-<text x="101.8" y="87.46" font-size="1.8" class="t halo" transform="rotate(-90 101.8 87.46)" fill="#444">CF3</text>
+<text x="101.8" y="87.46" font-size="1.8" class="t halo" transform="rotate(-90 101.8 87.46)" style="fill:#444">CF3</text>
 <text x="104.7" y="187.41" font-size="2.1" class="t b halo" transform="rotate(-90 104.7 187.41)">AFT SPINE CORRIDOR</text>
-<text x="101.8" y="178.66" font-size="1.8" class="t halo" transform="rotate(-90 101.8 178.66)" fill="#444">CA3</text>
+<text x="101.8" y="178.66" font-size="1.8" class="t halo" transform="rotate(-90 101.8 178.66)" style="fill:#444">CA3</text>
 <text x="104" y="141.2" font-size="2.1" class="t b halo" text-anchor="middle">MID-SHIP STAIR LOBBY</text>
-<text x="104" y="143.9" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">LB3  46 m2</text>
+<text x="104" y="143.9" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">LB3  46 m2</text>
 <text x="65.2" y="141.2" font-size="1.8" class="t b halo" text-anchor="middle">STAIR PORT</text>
-<text x="65.2" y="143.9" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">SP3  24 m2</text>
+<text x="65.2" y="143.9" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">SP3  24 m2</text>
 <text x="142.8" y="141.2" font-size="1.8" class="t b halo" text-anchor="middle">STAIR STBD</text>
-<text x="142.8" y="143.9" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">SS3  24 m2</text>
+<text x="142.8" y="143.9" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">SS3  24 m2</text>
 <text x="84.95" y="65.65" font-size="2.1" class="t b halo" text-anchor="middle">LIFE SUPPORT</text>
-<text x="84.95" y="68.35" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">LS  60 m2</text>
+<text x="84.95" y="68.35" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">LS  60 m2</text>
 <text x="75.87" y="108.76" font-size="2.1" class="t b halo" text-anchor="middle">COMPUTER CORE</text>
-<text x="75.87" y="111.46" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">CO  143 m2</text>
+<text x="75.87" y="111.46" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">CO  143 m2</text>
 <text x="123.05" y="65.65" font-size="2.1" class="t b halo" text-anchor="middle">AIRLOCK &amp; EVA PREP</text>
-<text x="123.05" y="68.35" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">AL  60 m2</text>
+<text x="123.05" y="68.35" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">AL  60 m2</text>
 <text x="132.13" y="108.76" font-size="2.1" class="t b halo" text-anchor="middle">MAIN ENGINEERING</text>
-<text x="132.13" y="111.46" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">ME  143 m2</text>
+<text x="132.13" y="111.46" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">ME  143 m2</text>
 <text x="75" y="163.2" font-size="2.1" class="t b halo" text-anchor="middle">ENGINEERING WORKSHOP</text>
-<text x="75" y="165.9" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">WS  85 m2</text>
+<text x="75" y="165.9" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">WS  85 m2</text>
 <text x="75.14" y="191.94" font-size="2.1" class="t b halo" text-anchor="middle">CARGO BAY</text>
-<text x="75.14" y="194.64" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">CB  80 m2</text>
+<text x="75.14" y="194.64" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">CB  80 m2</text>
 <text x="133" y="163.2" font-size="2.1" class="t b halo" text-anchor="middle">POWER DISTRIBUTION</text>
-<text x="133" y="165.9" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">PD  85 m2</text>
+<text x="133" y="165.9" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">PD  85 m2</text>
 <text x="132.86" y="191.94" font-size="2.1" class="t b halo" text-anchor="middle">SPARES DEPOT</text>
-<text x="132.86" y="194.64" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">SD  80 m2</text>
+<text x="132.86" y="194.64" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">SD  80 m2</text>
 <text x="104" y="231.91" font-size="2.1" class="t b halo" text-anchor="middle">HANGAR BAY</text>
-<text x="104" y="234.61" font-size="1.7" class="t halo" text-anchor="middle" fill="#333">HB  299 m2</text>
+<text x="104" y="234.61" font-size="1.7" class="t halo" text-anchor="middle" style="fill:#333">HB  299 m2</text>
 <line x1="104" y1="30" x2="104" y2="46" class="cut"/>
 <circle cx="104" cy="26.6" r="3" class="n" fill="#fff"/>
 <text x="104" y="27.2" font-size="1.8" class="t b" text-anchor="middle">06</text>
@@ -960,12 +961,12 @@
 <text x="165.4" y="143.25" font-size="1.9" class="t" transform="rotate(-90 165.4 143.25)">3600</text>
 <text x="165.4" y="165.25" font-size="1.9" class="t" transform="rotate(-90 165.4 165.25)">7400</text>
 <text x="165.4" y="194.05" font-size="1.9" class="t" transform="rotate(-90 165.4 194.05)">7000</text>
-<text x="18" y="14" font-size="1.6" class="t" fill="#555">STATIONS every 6 m from the forward perpendicular (station 0 at z = -63.0 m); outer skin: sheets G-04 to G-06</text>
+<text x="18" y="14" font-size="1.6" class="t" style="fill:#555">STATIONS every 6 m from the forward perpendicular (station 0 at z = -63.0 m); outer skin: sheets G-04 to G-06</text>
 <circle cx="252" cy="20" r="6.5" class="m" fill="#fff"/>
 <polygon points="252,14.3 254.2,22.4 252,21 249.8,22.4" class="f" fill="#111"/>
 <line x1="252" y1="22.4" x2="252" y2="25.8" class="f"/>
 <text x="252" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="280" y="22.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="280" y="22.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="280" y="24.6" width="8" height="1.4" class="f" fill="#111"/>
 <rect x="288" y="24.6" width="8" height="1.4" class="f" fill="#fff"/>
 <rect x="296" y="24.6" width="8" height="1.4" class="f" fill="#111"/>
@@ -1066,7 +1067,7 @@
 <text x="291" y="127.25" font-size="1.8" class="t">5</text>
 <rect x="240" y="128.3" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="241" y="130.65" font-size="1.8" class="t">Props</text>
-<text x="291" y="130.65" font-size="1.8" class="t">506</text>
+<text x="291" y="130.65" font-size="1.8" class="t">507</text>
 <rect x="240" y="104.5" width="108" height="27.2" class="n" fill="none"/>
 <text x="240" y="139.7" font-size="2.3" class="t b">SYMBOLS</text>
 <rect x="240" y="142.7" width="8" height="2.4" class="n" fill="#1c1c1c"/>
@@ -1139,27 +1140,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">General arrangement - Deck 3 (Engineering Deck)</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK - GENERAL ARRANGEMENT PLAN AT FFL +0.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-03</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:250</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Deck 3</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Deck 3</text>
 </svg>

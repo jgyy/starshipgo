@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="20" font-size="3" class="t b">DECK 0</text>
-<text x="38" y="20" font-size="1.8" class="t" fill="#444">Sky Deck</text>
+<text x="38" y="20" font-size="1.8" class="t" style="fill:#444">Sky Deck</text>
 <polygon points="44.25,101 51.75,101 51.75,121 44.25,121" class="f" fill="#c4e8c6"/>
 <polygon points="44.25,130 51.75,130 51.75,166 44.25,166" class="f" fill="#c4e8c6"/>
 <polygon points="32,121 64,121 64,130 32,130" class="f" fill="#c4e8c6"/>
@@ -432,7 +432,7 @@
 <text x="63.2" y="158.71" font-size="1.5" class="t halo" text-anchor="middle">23 m</text>
 <text x="18" y="209" font-size="2" class="t b">max 23 m</text>
 <text x="82" y="20" font-size="3" class="t b">DECK 1</text>
-<text x="104" y="20" font-size="1.8" class="t" fill="#444">Command Deck</text>
+<text x="104" y="20" font-size="1.8" class="t" style="fill:#444">Command Deck</text>
 <polygon points="110.25,68.5 117.75,68.5 117.75,121 110.25,121" class="f" fill="#f4e8a8"/>
 <polygon points="110.25,130 117.75,130 117.75,156 110.25,156" class="f" fill="#c4e8c6"/>
 <polygon points="98,121 130,121 130,130 98,130" class="f" fill="#c4e8c6"/>
@@ -912,7 +912,7 @@
 <text x="128.9" y="151.45" font-size="1.5" class="t halo" text-anchor="middle">20 m</text>
 <text x="84" y="209" font-size="2" class="t b">max 34 m</text>
 <text x="148" y="20" font-size="3" class="t b">DECK 2</text>
-<text x="170" y="20" font-size="1.8" class="t" fill="#444">Habitat Deck</text>
+<text x="170" y="20" font-size="1.8" class="t" style="fill:#444">Habitat Deck</text>
 <polygon points="176.25,46 183.75,46 183.75,121 176.25,121" class="f" fill="#f4e8a8"/>
 <polygon points="176.25,130 183.75,130 183.75,166 176.25,166" class="f" fill="#c4e8c6"/>
 <polygon points="164,121 196,121 196,130 164,130" class="f" fill="#c4e8c6"/>
@@ -1342,7 +1342,7 @@
 <text x="196.21" y="158.85" font-size="1.5" class="t halo" text-anchor="middle">24 m</text>
 <text x="150" y="209" font-size="2" class="t b">max 36 m</text>
 <text x="214" y="20" font-size="3" class="t b">DECK 3</text>
-<text x="236" y="20" font-size="1.8" class="t" fill="#444">Engineering Deck</text>
+<text x="236" y="20" font-size="1.8" class="t" style="fill:#444">Engineering Deck</text>
 <polygon points="242.25,61 249.75,61 249.75,121 242.25,121" class="f" fill="#f4e8a8"/>
 <polygon points="242.25,130 249.75,130 249.75,166 242.25,166" class="f" fill="#c4e8c6"/>
 <polygon points="230,121 262,121 262,130 230,130" class="f" fill="#c4e8c6"/>
@@ -1664,7 +1664,7 @@
 <text x="246" y="184.39" font-size="1.5" class="t halo" text-anchor="middle">29 m</text>
 <text x="216" y="209" font-size="2" class="t b">max 31 m</text>
 <text x="280" y="20" font-size="3" class="t b">DECK 4</text>
-<text x="302" y="20" font-size="1.8" class="t" fill="#444">Hold Deck</text>
+<text x="302" y="20" font-size="1.8" class="t" style="fill:#444">Hold Deck</text>
 <polygon points="308.25,71 315.75,71 315.75,121 308.25,121" class="f" fill="#f4e8a8"/>
 <polygon points="308.25,130 315.75,130 315.75,196 308.25,196" class="f" fill="#f4e8a8"/>
 <polygon points="296,121 328,121 328,130 296,130" class="f" fill="#c4e8c6"/>
@@ -2201,8 +2201,8 @@
 <text x="366" y="217" font-size="1.5" class="t">Mid-ship Stair Lobby</text>
 <text x="394" y="217" font-size="1.5" class="t">7.4</text>
 <rect x="348" y="44" width="56" height="174.05" class="n" fill="none"/>
-<text x="20" y="268" font-size="1.7" class="t" fill="#444">Two stair towers per deck (port / starboard); distance = shortest path centre -&gt; door -&gt; ... -&gt; stair strip.</text>
-<text x="20" y="272" font-size="1.7" class="t" fill="#444">Furniture is not considered; every room has one door to a spine corridor.</text>
+<text x="20" y="268" font-size="1.7" class="t" style="fill:#444">Two stair towers per deck (port / starboard); distance = shortest path centre -&gt; door -&gt; ... -&gt; stair strip.</text>
+<text x="20" y="272" font-size="1.7" class="t" style="fill:#444">Furniture is not considered; every room has one door to a spine corridor.</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -2252,27 +2252,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Circulation and escape diagram</text>
 <text x="299" y="264.6" font-size="1.3" class="t">TRAVEL DISTANCE FROM EACH ROOM CENTRE TO THE NEAREST STAIR (via doors, straight legs), ALL 5 DECKS</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-14</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:400</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Escape</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Escape</text>
 </svg>

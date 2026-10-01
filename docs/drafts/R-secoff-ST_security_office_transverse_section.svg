@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - SECURITY OFFICE</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING AFT (+Z)  -  STBD on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING AFT (+Z)  -  STBD on the left</text>
 <clipPath id="clipA"><rect x="113.93" y="56.7" width="196.14" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="86.49,63 309.77,63 309.77,131 86.49,131" class="x" fill="#e9ecf1"/>
@@ -77,16 +77,16 @@
 <polygon points="195.65,109.3 201.89,109.3 201.89,113.4 195.65,113.4" class="m" fill="#e987d5"/>
 <polygon points="305.57,66 306.77,66 306.77,74 305.57,74" class="m" fill="#87d5e9"/>
 </g>
-<text x="207.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
-<text x="259.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
-<text x="155.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
-<text x="115.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
-<text x="289.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
-<text x="301.77" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="99.77" y="105.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1300</text>
-<text x="304.78" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="306.17" y="70.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3050</text>
-<text x="306.17" y="67.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">3050</text>
+<text x="207.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
+<text x="259.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
+<text x="155.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
+<text x="115.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
+<text x="289.77" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
+<text x="301.77" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="99.77" y="105.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1300</text>
+<text x="304.78" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="306.17" y="70.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">3050</text>
+<text x="306.17" y="67.86" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">3050</text>
 <text x="114.23" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="309.77" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="315.77" y1="137" x2="315.77" y2="57" class="d"/>
@@ -125,7 +125,7 @@
 <line x1="114.23" y1="138" x2="114.23" y2="144.2" class="d"/>
 <line x1="309.77" y1="138" x2="309.77" y2="144.2" class="d"/>
 <text x="212" y="142.3" font-size="2" class="t" text-anchor="middle">9777</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -233,27 +233,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Security Office - transverse section</text>
 <text x="299" y="264.6" font-size="1.6" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -17.16 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-secoff-ST</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">SO</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Security Office</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Security Office</text>
 </svg>

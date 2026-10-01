@@ -34,7 +34,7 @@
 <rect x="13" y="7" width="398" height="194" class="x" fill="none"/>
 <polygon points="97,30 327,30 327,178 97,178" class="none" fill="#efece7"/>
 <polygon points="287,76.4 327,76.4 327,131.6 287,131.6" class="red" fill="url(#hZone)"/>
-<text x="288.6" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="288.6" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="109,33.8 145,33.8 145,54.94 109,54.94" class="n" fill="#f7d399"/>
 <line x1="145" y1="54.94" x2="109" y2="54.94" class="m"/>
 <line x1="127" y1="54.94" x2="127" y2="53.74" class="f"/>
@@ -142,25 +142,25 @@
 <polygon points="205.8,118.4 218.2,118.4 218.2,143.6 205.8,143.6" class="dot" fill="none"/>
 <polygon points="265.34,121 285.34,121 285.34,141 265.34,141" class="dot" fill="none"/>
 <polygon points="262.84,75.4 287.84,75.4 287.84,78.6 262.84,78.6" class="dot" fill="none"/>
-<text x="127" y="44.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">Work Bench with Vise</text>
-<text x="165" y="44.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">Work Bench with Vise</text>
-<text x="177" y="98.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">Work Bench with Vise</text>
-<text x="205.2" y="42.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">avionics_bench</text>
-<text x="245" y="136.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Chain Hoist Gantry</text>
-<text x="199.4" y="167.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">heavy_boxes</text>
-<text x="259" y="165.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">air_compressor</text>
-<text x="315.7" y="55.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">workstation</text>
-<text x="125.4" y="169.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">parts_bins_rack</text>
-<text x="159.4" y="169.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">parts_bins_rack</text>
-<text x="107.15" y="79.46" font-size="1.25" class="t" text-anchor="middle" fill="#333">Welding Rig</text>
-<text x="107.8" y="142.46" font-size="1.25" class="t" text-anchor="middle" fill="#333">Nitrogen Cylinder ~</text>
-<text x="233.4" y="168.93" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
-<text x="106.9" y="122.16" font-size="1.25" class="t" text-anchor="middle" fill="#333">gas_cylinder_ra~</text>
-<text x="106.87" y="102.84" font-size="1.25" class="t" text-anchor="middle" fill="#333">Oxy Torch Cart</text>
-<text x="121" y="128.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Creeper Board</text>
-<text x="207" y="98.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Rolling Toolb~</text>
-<text x="147" y="98.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Rolling Toolb~</text>
-<text x="294.95" y="55.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office ch~</text>
+<text x="127" y="44.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Work Bench with Vise</text>
+<text x="165" y="44.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Work Bench with Vise</text>
+<text x="177" y="98.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Work Bench with Vise</text>
+<text x="205.2" y="42.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">avionics_bench</text>
+<text x="245" y="136.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Chain Hoist Gantry</text>
+<text x="199.4" y="167.6" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">heavy_boxes</text>
+<text x="259" y="165.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">air_compressor</text>
+<text x="315.7" y="55.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">workstation</text>
+<text x="125.4" y="169.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">parts_bins_rack</text>
+<text x="159.4" y="169.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">parts_bins_rack</text>
+<text x="107.15" y="79.46" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Welding Rig</text>
+<text x="107.8" y="142.46" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Nitrogen Cylinder ~</text>
+<text x="233.4" y="168.93" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">double locker bank</text>
+<text x="106.9" y="122.16" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">gas_cylinder_ra~</text>
+<text x="106.87" y="102.84" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Oxy Torch Cart</text>
+<text x="121" y="128.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Creeper Board</text>
+<text x="207" y="98.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Rolling Toolb~</text>
+<text x="147" y="98.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Rolling Toolb~</text>
+<text x="294.95" y="55.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office ch~</text>
 <path d="M97 30 L327 30 L327 178 L97 178Z M100 33 L324 33 L324 175 L100 175Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="327,80.4 327,127.6 324,127.6 324,80.4" class="none" fill="#ffffff"/>
 <line x1="327" y1="80.4" x2="324" y2="80.4" class="m"/>
@@ -225,7 +225,7 @@
 <polygon points="400,13.3 402.2,21.4 400,20 397.8,21.4" class="f" fill="#111"/>
 <line x1="400" y1="21.4" x2="400" y2="24.8" class="f"/>
 <text x="400" y="11.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -347,7 +347,7 @@
 <rect x="299" y="233.2" width="4.2" height="2.4" class="n" fill="#77bfef"/>
 <text x="304.4" y="235.1" font-size="1.6" class="t">toolbox</text>
 <text x="15" y="11.2" font-size="2.6" class="t b">PLAN - ENGINEERING WORKSHOP</text>
-<text x="15" y="14.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="14.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -397,27 +397,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Engineering Workshop - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  FLOOR PLAN AT FFL +0.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-shop-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">WS</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Engineering Workshop</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Engineering Workshop</text>
 </svg>

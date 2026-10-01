@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="12" font-size="3" class="t b">SECTION A-A - LONGITUDINAL SECTION ON CENTRELINE</text>
-<text x="16" y="16.2" font-size="1.8" class="t" fill="#555">LOOKING STARBOARD (+X)  -  plane x = +0.0 m through star cartography, bridge, hangar bay</text>
+<text x="16" y="16.2" font-size="1.8" class="t" style="fill:#555">LOOKING STARBOARD (+X)  -  plane x = +0.0 m through star cartography, bridge, hangar bay</text>
 <clipPath id="clipS"><rect x="72.09" y="40.16" width="279.82" height="105.69"/></clipPath>
 <g clip-path="url(#clipS)">
 <polygon points="133.13,135.23 131.71,135.08 127.62,134.63 121.34,133.89 113.65,132.89 105.46,131.66 97.77,130.23 91.49,128.65 87.4,126.97 85.98,125.23 85.8,124 85.55,122.78 85.25,121.55 84.9,120.32 84.48,119.09 83.95,117.87 83.35,116.64 82.7,115.41 81.98,114.18 81.2,112.95 80.36,111.73 79.5,110.5 78.65,109.27 77.85,108.04 76.08,106.81 75.93,105.59 75.8,104.36 75.68,103.13 75.53,101.91 75.41,100.68 75.26,99.45 75.11,98.22 74.98,96.99 78.33,95.77 79.68,94.54 81.23,93.31 81.88,92.08 84.65,90.85 86.43,89.63 88.2,88.4 89.95,87.17 91.63,85.94 93.22,84.72 94.72,83.49 96.1,82.26 97.36,81.03 98.5,79.81 99.48,78.58 100.33,77.35 101.02,76.12 101.52,74.89 101.87,73.67 102.08,72.44 102.18,71.21 102.2,69.98 104.18,68.68 109.87,67.42 118.59,66.23 129.28,65.16 140.66,64.24 151.36,63.49 160.08,62.94 165.77,62.6 167.75,62.48 268.63,62.48 269.7,62.6 272.77,62.94 277.46,63.49 283.23,64.24 289.36,65.16 295.13,66.23 299.82,67.42 302.89,68.68 303.96,69.98 303.91,71.21 303.88,72.44 303.94,73.67 304.08,74.89 304.31,76.12 304.66,77.35 305.11,78.58 305.63,79.81 306.23,81.03 306.93,82.26 307.68,83.49 308.53,84.72 309.41,85.94 310.33,87.17 311.23,88.4 312.08,89.63 314.21,90.85 314.28,92.08 315.48,93.31 316.81,94.54 318.16,95.77 319.56,96.99 320.96,98.22 322.41,99.45 323.88,100.68 325.4,101.91 326.92,103.13 328.47,104.36 330.04,105.59 331.63,106.81 333.24,108.04 334.88,109.27 336.53,110.5 338.18,111.73 339.73,112.95 341.16,114.18 344.68,115.41 344.57,116.64 344.46,117.87 344.35,119.09 344.23,120.32 344.12,121.55 344.02,122.78 343.91,124 343.81,125.23 342.75,126.97 339.67,128.65 334.97,130.23 329.2,131.66 323.06,132.89 317.29,133.89 312.58,134.63 309.51,135.08 308.45,135.23" class="hid" fill="none"/>
@@ -497,7 +497,7 @@
 <polygon points="273.68,102.98 273.8,102.98 273.8,103.98 273.68,103.98" class="m" fill="#87d5e9"/>
 <polygon points="278.81,91.23 279.81,91.23 279.81,91.86 278.81,91.86" class="m" fill="#ef7dcf"/>
 <line x1="307.93" y1="111.23" x2="307.93" y2="93.73" class="cl"/>
-<text x="309.13" y="96.73" font-size="1.5" class="t" fill="#2060a0">FORCE FIELD</text>
+<text x="309.13" y="96.73" font-size="1.5" class="t" style="fill:#2060a0">FORCE FIELD</text>
 <polygon points="178.31,121.23 228.31,121.23 228.31,121.98 178.31,121.98" class="n" fill="url(#hSlab)"/>
 <polygon points="178.31,111.98 228.31,111.98 228.31,112.73 178.31,112.73" class="n" fill="url(#hSlab)"/>
 <polygon points="178.31,112.73 178.68,112.73 178.68,121.23 178.31,121.23" class="n" fill="url(#hHull)"/>
@@ -634,7 +634,7 @@
 <text x="351.41" y="37.66" font-size="2.2" class="t b" text-anchor="end">STERN</text>
 <line x1="232.81" y1="70.73" x2="232.81" y2="60.73" class="f"/>
 <text x="232.81" y="59.23" font-size="1.9" class="t b" text-anchor="middle">STBD STAIR TOWER BEYOND (flights / landings shaded)</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="12.5" height="1.4" class="f" fill="#111"/>
 <rect x="352.5" y="194.6" width="12.5" height="1.4" class="f" fill="#fff"/>
 <rect x="365" y="194.6" width="12.5" height="1.4" class="f" fill="#111"/>
@@ -739,27 +739,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Longitudinal section on centreline</text>
 <text x="299" y="264.6" font-size="1.3" class="t">SECTION A-A LOOKING STARBOARD (+X) - plane x = +0.0 m through star cartography, bridge, hangar bay</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-06</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:400</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">ALL</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Section</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Section</text>
 </svg>

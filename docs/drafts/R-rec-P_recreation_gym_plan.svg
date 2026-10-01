@@ -34,7 +34,7 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="43,183 43,55 273,55 273,203 45.04,203" class="none" fill="#f5f1eb"/>
 <polygon points="233,101.4 273,101.4 273,156.6 233,156.6" class="red" fill="url(#hZone)"/>
-<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="234.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="98.54,142.26 107.46,142.26 107.46,151.56 98.54,151.56" class="n" fill="#f7df99"/>
 <line x1="107.46" y1="151.56" x2="98.54" y2="151.56" class="m"/>
 <line x1="103" y1="151.56" x2="103" y2="150.36" class="f"/>
@@ -147,33 +147,33 @@
 <polygon points="211.34,146 231.34,146 231.34,166 211.34,166" class="dot" fill="none"/>
 <polygon points="84.72,93.34 104.6,93.34 104.6,110.66 84.72,110.66" class="dot" fill="none"/>
 <polygon points="145.5,154.4 170.5,154.4 170.5,157.6 145.5,157.6" class="dot" fill="none"/>
-<text x="183" y="185.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">weight bench and rack</text>
-<text x="113" y="119.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">three-seater sofa</text>
-<text x="273.2" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">deep bulkhead</text>
-<text x="151" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
-<text x="173" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
-<text x="195" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
-<text x="111" y="161.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bolted table</text>
-<text x="157" y="124.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rowing machine</text>
-<text x="173" y="124.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rowing machine</text>
-<text x="75" y="97.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">lounge armchair</text>
-<text x="75" y="142.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">lounge armchair</text>
-<text x="61" y="190.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">drink machine</text>
-<text x="251" y="190.35" font-size="1.25" class="t" text-anchor="middle" fill="#333">punching bag</text>
-<text x="81" y="191.03" font-size="1.25" class="t" text-anchor="middle" fill="#333">snack machine</text>
-<text x="215" y="70.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">exercise bike</text>
-<text x="231" y="70.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">exercise bike</text>
-<text x="135" y="194.42" font-size="1.25" class="t" text-anchor="middle" fill="#333">dumbbell rack</text>
-<text x="73" y="119.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">coffee table</text>
-<text x="225" y="195" font-size="1.25" class="t" text-anchor="middle" fill="#333">yoga mat rack</text>
-<text x="58.4" y="64.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
-<text x="80.2" y="64.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
-<text x="102" y="64.67" font-size="1.25" class="t" text-anchor="middle" fill="#333">double locker bank</text>
-<text x="103" y="147.21" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="103" y="175.39" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="119" y="147.21" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="119" y="175.39" font-size="1.25" class="t" text-anchor="middle" fill="#333">folding ch~</text>
-<text x="103" y="161.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">charcuter~</text>
+<text x="183" y="185.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">weight bench and rack</text>
+<text x="113" y="119.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">three-seater sofa</text>
+<text x="273.2" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">deep bulkhead</text>
+<text x="151" y="80.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">treadmill</text>
+<text x="173" y="80.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">treadmill</text>
+<text x="195" y="80.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">treadmill</text>
+<text x="111" y="161.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">bolted table</text>
+<text x="157" y="124.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rowing machine</text>
+<text x="173" y="124.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rowing machine</text>
+<text x="75" y="97.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">lounge armchair</text>
+<text x="75" y="142.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">lounge armchair</text>
+<text x="61" y="190.43" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drink machine</text>
+<text x="251" y="190.35" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">punching bag</text>
+<text x="81" y="191.03" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">snack machine</text>
+<text x="215" y="70.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">exercise bike</text>
+<text x="231" y="70.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">exercise bike</text>
+<text x="135" y="194.42" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">dumbbell rack</text>
+<text x="73" y="119.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">coffee table</text>
+<text x="225" y="195" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">yoga mat rack</text>
+<text x="58.4" y="64.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">double locker bank</text>
+<text x="80.2" y="64.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">double locker bank</text>
+<text x="102" y="64.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">double locker bank</text>
+<text x="103" y="147.21" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">folding ch~</text>
+<text x="103" y="175.39" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">folding ch~</text>
+<text x="119" y="147.21" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">folding ch~</text>
+<text x="119" y="175.39" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">folding ch~</text>
+<text x="103" y="161.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">charcuter~</text>
 <path d="M43 183 L43 55 L273 55 L273 203 L45.04 203Z M46 182.85 L46 58 L270 58 L270 200 L47.75 200Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="273,105.4 273,152.6 270,152.6 270,105.4" class="none" fill="#ffffff"/>
 <line x1="273" y1="105.4" x2="270" y2="105.4" class="m"/>
@@ -188,7 +188,7 @@
 <line x1="43" y1="99" x2="43" y2="139" class="n"/>
 <line x1="44.5" y1="99" x2="44.5" y2="139" class="f"/>
 <line x1="46" y1="99" x2="46" y2="139" class="n"/>
-<text x="59" y="119" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-RG-1</text>
+<text x="59" y="119" font-size="1.4" class="t" text-anchor="middle" style="fill:#1d3c6e">W-RG-1</text>
 <line x1="173.17" y1="51.3" x2="173" y2="58.95" class="x"/>
 <circle cx="173" cy="58.95" r="0.4" class="none" fill="#b03030"/>
 <line x1="157.96" y1="51.3" x2="157" y2="124" class="x"/>
@@ -277,7 +277,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -421,7 +421,7 @@
 <rect x="360" y="149.6" width="4.2" height="2.4" class="n" fill="#8187e8"/>
 <text x="365.4" y="151.5" font-size="1.6" class="t">vending</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - RECREATION &amp; GYM</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -471,27 +471,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Recreation &amp; Gym - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  FLOOR PLAN AT FFL +4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-rec-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">RG</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Recreation &amp; Gym</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Recreation &amp; Gym</text>
 </svg>

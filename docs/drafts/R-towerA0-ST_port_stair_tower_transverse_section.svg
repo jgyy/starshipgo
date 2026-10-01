@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - PORT STAIR TOWER</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING AFT (+Z)  -  STBD on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING AFT (+Z)  -  STBD on the left</text>
 <clipPath id="clipA"><rect x="145.7" y="56.7" width="132.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="146,63 278,63 278,131 146,131" class="x" fill="#eff1f5"/>
@@ -60,8 +60,8 @@
 <polygon points="246.6,251 275,251 275,255.8 246.6,255.8" class="m" fill="url(#hSlab)"/>
 <polygon points="246.6,171 275,171 275,175.8 246.6,175.8" class="m" fill="url(#hSlab)"/>
 </g>
-<text x="157" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="167" y="83.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2400</text>
+<text x="157" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="167" y="83.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2400</text>
 <text x="146" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="278" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="284" y1="137" x2="284" y2="57" class="d"/>
@@ -76,12 +76,6 @@
 <text x="283.4" y="135.54" font-size="1.9" class="t" transform="rotate(-90 283.4 135.54)">300</text>
 <text x="281.1" y="99.05" font-size="1.9" class="t" transform="rotate(-90 281.1 99.05)">3400</text>
 <text x="283.4" y="61.54" font-size="1.9" class="t" transform="rotate(-90 283.4 61.54)">300</text>
-<line x1="291" y1="51" x2="291" y2="131" class="d"/>
-<line x1="290.3" y1="51.7" x2="291.7" y2="50.3" class="m"/>
-<line x1="290.3" y1="131.7" x2="291.7" y2="130.3" class="m"/>
-<line x1="279" y1="51" x2="292.2" y2="51" class="d"/>
-<line x1="279" y1="131" x2="292.2" y2="131" class="d"/>
-<text x="290.3" y="95.32" font-size="2" class="t" transform="rotate(-90 290.3 95.32)">4000 F-F</text>
 <line x1="130" y1="131" x2="139" y2="131" class="f"/>
 <polygon points="130,131 128.8,128.9 131.2,128.9" class="f" fill="#fff"/>
 <polygon points="130,131 131.2,128.9 130,128.9" class="f" fill="#111"/>
@@ -100,7 +94,7 @@
 <line x1="146" y1="138" x2="146" y2="144.2" class="d"/>
 <line x1="278" y1="138" x2="278" y2="144.2" class="d"/>
 <text x="212" y="142.3" font-size="2" class="t" text-anchor="middle">6600</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -205,27 +199,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Port Stair Tower - transverse section</text>
 <text x="299" y="264.6" font-size="1.6" class="t">DECK 0 - SKY DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 1.80 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-towerA0-ST</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 0</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">SP0</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Port Stair Tower</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Port Stair Tower</text>
 </svg>

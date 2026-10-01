@@ -34,7 +34,7 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="82.29,199.67 87.17,183.67 95.19,167.67 106.12,151.67 119.71,135.67 135.61,119.67 153.45,103.67 172.79,87.67 193.13,71.67 213.99,55.67 233.99,55.67 233.99,202.33 82.01,202.33" class="none" fill="#efece7"/>
 <polygon points="207.32,117.27 233.99,117.27 233.99,154.07 207.32,154.07" class="red" fill="url(#hZone)"/>
-<text x="208.92" y="136.07" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="208.92" y="136.07" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="157.37,131.05 193.27,131.05 193.27,166.95 157.37,166.95" class="n" fill="#77afef"/>
 <line x1="193.27" y1="166.95" x2="157.37" y2="166.95" class="m"/>
 <line x1="175.32" y1="166.95" x2="175.32" y2="165.75" class="f"/>
@@ -115,18 +115,18 @@
 <polygon points="195.64,120.6 203.91,120.6 203.91,137.4 195.64,137.4" class="dot" fill="none"/>
 <polygon points="193.11,82.33 206.44,82.33 206.44,95.67 193.11,95.67" class="dot" fill="none"/>
 <polygon points="107.91,167.93 124.57,167.93 124.57,170.07 107.91,170.07" class="dot" fill="none"/>
-<text x="175.32" y="149.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Plasma Tokamak Torus</text>
-<text x="157.47" y="194.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Matter Antimatter Injector</text>
-<text x="220.79" y="73.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Vertical Coolant Tank</text>
-<text x="225.72" y="100.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">engineering st~</text>
-<text x="100.53" y="180.66" font-size="1.25" class="t" text-anchor="middle" fill="#333">Magnetic Bottle</text>
-<text x="120.83" y="150.82" font-size="1.25" class="t" text-anchor="middle" fill="#333">Magnetic Bottle</text>
-<text x="189.12" y="87.81" font-size="1.25" class="t" text-anchor="middle" fill="#333">Discharge Coil Tower</text>
-<text x="226.12" y="177.53" font-size="1.25" class="t" text-anchor="middle" fill="#333">emergency_sho~</text>
-<text x="202.39" y="195.99" font-size="1.25" class="t" text-anchor="middle" fill="#333">Capacitor Bank Rack</text>
-<text x="187.99" y="196.07" font-size="1.25" class="t" text-anchor="middle" fill="#333">Marx Bank</text>
-<text x="227.62" y="190.42" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_c~</text>
-<text x="211.12" y="100.64" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
+<text x="175.32" y="149.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Plasma Tokamak Torus</text>
+<text x="157.47" y="194.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Matter Antimatter Injector</text>
+<text x="220.79" y="73.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Vertical Coolant Tank</text>
+<text x="225.72" y="100.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">engineering st~</text>
+<text x="100.53" y="180.66" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Magnetic Bottle</text>
+<text x="120.83" y="150.82" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Magnetic Bottle</text>
+<text x="189.12" y="87.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Discharge Coil Tower</text>
+<text x="226.12" y="177.53" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">emergency_sho~</text>
+<text x="202.39" y="195.99" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
+<text x="187.99" y="196.07" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Marx Bank</text>
+<text x="227.62" y="190.42" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_c~</text>
+<text x="211.12" y="100.64" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops chair</text>
 <path d="M82.29 199.67 L87.17 183.67 L95.19 167.67 L106.12 151.67 L119.71 135.67 L135.61 119.67 L153.45 103.67 L172.79 87.67 L193.13 71.67 L213.99 55.67 L233.99 55.67 L233.99 202.33 L82.01 202.33Z M84.26 200.07 L89.04 184.41 L96.91 168.68 L107.71 152.88 L121.18 137.02 L136.99 121.12 L154.76 105.18 L174.04 89.22 L194.36 73.25 L214.67 57.67 L231.99 57.67 L231.99 200.33 L84.23 200.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="233.99,119.93 233.99,151.4 231.99,151.4 231.99,119.93" class="none" fill="#ffffff"/>
 <line x1="233.99" y1="119.93" x2="231.99" y2="119.93" class="m"/>
@@ -213,7 +213,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
 <rect x="33.33" y="243.6" width="13.33" height="1.4" class="f" fill="#fff"/>
 <rect x="46.67" y="243.6" width="13.33" height="1.4" class="f" fill="#111"/>
@@ -364,7 +364,7 @@
 <rect x="360" y="155.7" width="4.2" height="2.4" class="n" fill="#f799d5"/>
 <text x="365.4" y="157.6" font-size="1.6" class="t">warnlight</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - ANTIMATTER CONTAINMENT</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -414,27 +414,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Antimatter Containment - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 4 - HOLD DECK  -  FLOOR PLAN AT FFL -4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-antimatter-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:75</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">AC</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Antimatter Containment</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Antimatter Containment</text>
 </svg>

@@ -34,9 +34,9 @@
 <rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
 <polygon points="43,39 270.96,39 273,59 273,219 43,219" class="none" fill="#edf4f1"/>
 <polygon points="43,101.4 83,101.4 83,156.6 43,156.6" class="red" fill="url(#hZone)"/>
-<text x="81.4" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="81.4" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="81,103 251,103 251,155 81,155" class="red" fill="url(#hZone)"/>
-<text x="166" y="153.8" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: 2.8 m forklift lane from the corridor door to the bale pallets and the digester</text>
+<text x="166" y="153.8" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">CLEAR: 2.8 m forklift lane from the corridor door to the bale pallets and the digester</text>
 <polygon points="246.88,196.62 263.12,196.62 263.12,211.38 246.88,211.38" class="n" fill="#93e881"/>
 <line x1="263.12" y1="211.38" x2="246.88" y2="211.38" class="m"/>
 <line x1="255" y1="211.38" x2="255" y2="210.18" class="f"/>
@@ -136,28 +136,28 @@
 <polygon points="211.34,154 231.34,154 231.34,174 211.34,174" class="dot" fill="none"/>
 <polygon points="82.16,162.4 107.16,162.4 107.16,165.6 82.16,165.6" class="dot" fill="none"/>
 <polygon points="145.5,92.4 170.5,92.4 170.5,95.6 145.5,95.6" class="dot" fill="none"/>
-<text x="151" y="58.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">conveyor_segment_3m</text>
-<text x="212.2" y="58.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">conveyor_segment_3m</text>
-<text x="251.67" y="175.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Spherical Pressure Vessel</text>
-<text x="105" y="56.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bulk_hopper</text>
-<text x="55.44" y="65.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops</text>
-<text x="231.8" y="204.7" font-size="1.25" class="t" text-anchor="middle" fill="#333">sacks_stacked</text>
-<text x="205.4" y="204.98" font-size="1.25" class="t" text-anchor="middle" fill="#333">wrapped_stack</text>
-<text x="93" y="183.31" font-size="1.25" class="t" text-anchor="middle" fill="#333">hand_pallet_jack</text>
-<text x="261.6" y="87.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">HEPA Particulate Unit</text>
-<text x="253" y="53.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">trash_compactor</text>
-<text x="54.8" y="168.64" font-size="1.25" class="t" text-anchor="middle" fill="#333">emergency_shower</text>
-<text x="77.4" y="210.41" font-size="1.25" class="t" text-anchor="middle" fill="#333">recycling bin triple</text>
-<text x="103.4" y="210.41" font-size="1.25" class="t" text-anchor="middle" fill="#333">recycling bin triple</text>
-<text x="255" y="204.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">biohazard</text>
-<text x="51.95" y="189.78" font-size="1.25" class="t" text-anchor="middle" fill="#333">glove_boot_l~</text>
-<text x="123" y="179.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">floor scrubber disc</text>
-<text x="149.92" y="209.75" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_cabinet</text>
-<text x="169.12" y="209.75" font-size="1.25" class="t" text-anchor="middle" fill="#333">hazmat_cabinet</text>
-<text x="77.38" y="65.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">ops chair</text>
-<text x="185.36" y="209.46" font-size="1.25" class="t" text-anchor="middle" fill="#333">chemical_drum_h~</text>
-<text x="122.38" y="210.01" font-size="1.25" class="t" text-anchor="middle" fill="#333">trash bin</text>
-<text x="134.34" y="210.01" font-size="1.25" class="t" text-anchor="middle" fill="#333">trash bin</text>
+<text x="151" y="58.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">conveyor_segment_3m</text>
+<text x="212.2" y="58.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">conveyor_segment_3m</text>
+<text x="251.67" y="175.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Spherical Pressure Vessel</text>
+<text x="105" y="56.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">bulk_hopper</text>
+<text x="55.44" y="65.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops</text>
+<text x="231.8" y="204.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">sacks_stacked</text>
+<text x="205.4" y="204.98" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wrapped_stack</text>
+<text x="93" y="183.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hand_pallet_jack</text>
+<text x="261.6" y="87.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">HEPA Particulate Unit</text>
+<text x="253" y="53.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">trash_compactor</text>
+<text x="54.8" y="168.64" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">emergency_shower</text>
+<text x="77.4" y="210.41" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">recycling bin triple</text>
+<text x="103.4" y="210.41" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">recycling bin triple</text>
+<text x="255" y="204.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">biohazard</text>
+<text x="51.95" y="189.78" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_l~</text>
+<text x="123" y="179.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor scrubber disc</text>
+<text x="149.92" y="209.75" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_cabinet</text>
+<text x="169.12" y="209.75" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_cabinet</text>
+<text x="77.38" y="65.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops chair</text>
+<text x="185.36" y="209.46" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">chemical_drum_h~</text>
+<text x="122.38" y="210.01" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">trash bin</text>
+<text x="134.34" y="210.01" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">trash bin</text>
 <path d="M43 39 L270.96 39 L273 59 L273 219 L43 219Z M46 42 L268.25 42 L270 59.15 L270 216 L46 216Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="43,105.4 43,152.6 46,152.6 46,105.4" class="none" fill="#ffffff"/>
 <line x1="43" y1="105.4" x2="46" y2="105.4" class="m"/>
@@ -238,7 +238,7 @@
 <polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
 <line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
 <text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="241.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -389,7 +389,7 @@
 <rect x="307" y="159.5" width="4.2" height="2.4" class="n" fill="#77efb7"/>
 <text x="312.4" y="161.4" font-size="1.6" class="t">valve</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - WASTE &amp; RECYCLING PLANT</text>
-<text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -439,27 +439,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Waste &amp; Recycling Plant - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 4 - HOLD DECK  -  FLOOR PLAN AT FFL -4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-waste-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">WW</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Waste &amp; Recycling Plant</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Waste &amp; Recycling Plant</text>
 </svg>

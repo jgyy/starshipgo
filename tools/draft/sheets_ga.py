@@ -82,16 +82,7 @@ def room_label(sh, pv, room, small=False):
         sh.text(cx - 2.2, cy + text_w(room.code, 1.8) / 2, room.code, 1.8, rot=-90, halo=True, fill="#444")
         return
     # wrap into up to two lines
-    words = name.upper().split()
-    lines, cur = [], ""
-    mx = max(6, int(avail / (0.54 * size)))
-    for w in words:
-        if len(cur) + len(w) + (1 if cur else 0) <= mx:
-            cur = (cur + " " + w).strip()
-        else:
-            lines.append(cur)
-            cur = w
-    lines.append(cur)
+    lines = wrap_words(name.upper(), max(6, int(avail / (0.54 * size)))) or [""]
     lines = [trunc(l, avail, size) for l in lines[:2]]
     y = cy - 1.4 * (len(lines) - 1)
     for l in lines:
@@ -181,8 +172,6 @@ def deck_ga(ship, deck, num=None):
                slug="general_arrangement_deck%d" % deck)
     s = 1000.0 / GA_SCALE
     bx0, bz0, bx1, bz1 = ship.bounds(None)
-    (14.0, 8.0, 232.0, 290.0)
-    ox = 14 + 34 + 52 - 0          # plan centre line (x=0) on paper
     ox = 14 + 30 + (13.0) * s + 8
     oy = 8 + 30 - ship.bounds(deck)[1] * s
     pv = PV(s, ox, oy, 0.0, 0.0)
@@ -247,7 +236,7 @@ def deck_ga(ship, deck, num=None):
     sh.text(x + 106, y + 2.6, "%.1f m2" % tot, 1.9, "end", bold=True)
     y += 10
     # deck facts
-    facts = [("Floor level (FFL)", "%+.3f" % y0), ("Floor to floor", "4000 mm"), ("Hull area (deck)", "%.1f m2" % abs(poly_area(ship.hull[deck]))),
+    facts = [("Floor level (FFL)", "%+.3f" % y0), ("Floor to floor", floor_to_floor(ship, y0)), ("Hull area (deck)", "%.1f m2" % abs(poly_area(ship.hull[deck]))),
              ("Overall length", "%.1f m" % (hz1 - hz0)), ("Beam (max)", "%.1f m" % (hx1 - hx0)),
              ("Doors / arches", str(sum(1 for d in ship.door_list if d["deck"] == deck))),
              ("Windows", str(sum(1 for w in ship.win_list if w["deck"] == deck))),

@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - ANTIMATTER CONTAINMENT</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING STARBOARD (+X)  -  BOW on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING STARBOARD (+X)  -  BOW on the left</text>
 <clipPath id="clipA"><rect x="123.9" y="56.7" width="176.19" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="79.8,63 299.8,63 299.8,131 79.8,131" class="x" fill="#e9ecf1"/>
@@ -86,15 +86,15 @@
 <polygon points="265.2,63 274.4,63 274.4,66.46 265.2,66.46" class="m" fill="#d87def"/>
 <polygon points="159.2,63 168.4,63 168.4,66.46 159.2,66.46" class="m" fill="#d87def"/>
 </g>
-<text x="146.8" y="80.4" font-size="1.2" class="t" text-anchor="middle" fill="#444">2555</text>
-<text x="106.8" y="71.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3000</text>
-<text x="138.95" y="101.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
-<text x="138.95" y="98.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
-<text x="199.8" y="73.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2900</text>
-<text x="165.8" y="73.8" font-size="1.2" class="t" text-anchor="middle" fill="#444">2885</text>
-<text x="295.64" y="79.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2600</text>
-<text x="83.78" y="101.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
-<text x="294.8" y="73.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2900</text>
+<text x="146.8" y="80.4" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2555</text>
+<text x="106.8" y="71.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">3000</text>
+<text x="138.95" y="101.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1500</text>
+<text x="138.95" y="98.86" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1500</text>
+<text x="199.8" y="73.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2900</text>
+<text x="165.8" y="73.8" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2885</text>
+<text x="295.64" y="79.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2600</text>
+<text x="83.78" y="101.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1500</text>
+<text x="294.8" y="73.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2900</text>
 <text x="124.2" y="54" font-size="1.8" class="t b">BOW</text>
 <text x="299.8" y="54" font-size="1.8" class="t b" text-anchor="end">STERN</text>
 <line x1="305.8" y1="137" x2="305.8" y2="57" class="d"/>
@@ -145,7 +145,7 @@
 <line x1="124.2" y1="143.6" x2="124.2" y2="150.2" class="d"/>
 <line x1="299.8" y1="143.6" x2="299.8" y2="150.2" class="d"/>
 <text x="212" y="148.3" font-size="2" class="t" text-anchor="middle">8780</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -251,27 +251,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Antimatter Containment - longitudinal section</text>
 <text x="299" y="264.6" font-size="1.6" class="t">DECK 4 - HOLD DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = -5.86 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="2.5" class="t b">R-antimatter-SL</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">AC</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Antimatter Containment</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Antimatter Containment</text>
 </svg>

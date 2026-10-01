@@ -34,9 +34,9 @@
 <rect x="13" y="7" width="398" height="194" class="x" fill="none"/>
 <polygon points="97,34 327,34 327,94 323.6,154 320.26,174 97,174" class="none" fill="#ebebe8"/>
 <polygon points="97,76.4 137,76.4 137,131.6 97,131.6" class="red" fill="url(#hZone)"/>
-<text x="135.4" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="135.4" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="179.4,134 234.6,134 234.6,174 179.4,174" class="red" fill="url(#hZone)"/>
-<text x="207" y="136" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="207" y="136" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="100.8,75.06 100.8,42.92 115.8,42.92 115.8,75.06" class="n" fill="#c777ef"/>
 <line x1="115.8" y1="42.92" x2="115.8" y2="75.06" class="m"/>
 <line x1="115.8" y1="58.99" x2="114.6" y2="58.99" class="f"/>
@@ -110,23 +110,23 @@
 <polygon points="248.8,113.4 288.8,113.4 288.8,122.6 248.8,122.6" class="dot" fill="none"/>
 <polygon points="138.66,94 158.66,94 158.66,114 138.66,114" class="dot" fill="none"/>
 <polygon points="262.84,102.4 287.84,102.4 287.84,105.6 262.84,105.6" class="dot" fill="none"/>
-<text x="194.6" y="89.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rack_bay_low_wire</text>
-<text x="251.8" y="89.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rack_bay_low_wire</text>
-<text x="157.4" y="45" font-size="1.25" class="t" text-anchor="middle" fill="#333">heavy_boxes</text>
-<text x="247" y="158.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Ion Drive Engine</text>
-<text x="300" y="159.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">crates_banded</text>
-<text x="271" y="44.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">cage_lockers</text>
-<text x="108.3" y="59.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">workstation</text>
-<text x="273" y="160.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Helical Plasma Coil</text>
-<text x="168.6" y="156.13" font-size="1.25" class="t" text-anchor="middle" fill="#333">hand_pallet_jack</text>
-<text x="197.2" y="43.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">parts_bins_rack</text>
-<text x="125.4" y="165.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">parts_bins_rack</text>
-<text x="231.6" y="43.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">pigeonhole</text>
-<text x="314.17" y="123.63" font-size="1.25" class="t" text-anchor="middle" fill="#333">sealed_parts_locker</text>
-<text x="317.65" y="64.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Power Cell Lo~</text>
-<text x="317.65" y="84.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">Power Cell Lo~</text>
-<text x="151.2" y="164.45" font-size="1.25" class="t" text-anchor="middle" fill="#333">drawer_cabinet</text>
-<text x="129.05" y="59.29" font-size="1.25" class="t" text-anchor="middle" fill="#333">swivel office ch~</text>
+<text x="194.6" y="89.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rack_bay_low_wire</text>
+<text x="251.8" y="89.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rack_bay_low_wire</text>
+<text x="157.4" y="45" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">heavy_boxes</text>
+<text x="247" y="158.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Ion Drive Engine</text>
+<text x="300" y="159.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crates_banded</text>
+<text x="271" y="44.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">cage_lockers</text>
+<text x="108.3" y="59.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">workstation</text>
+<text x="273" y="160.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Helical Plasma Coil</text>
+<text x="168.6" y="156.13" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hand_pallet_jack</text>
+<text x="197.2" y="43.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">parts_bins_rack</text>
+<text x="125.4" y="165.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">parts_bins_rack</text>
+<text x="231.6" y="43.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">pigeonhole</text>
+<text x="314.17" y="123.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">sealed_parts_locker</text>
+<text x="317.65" y="64.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Power Cell Lo~</text>
+<text x="317.65" y="84.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Power Cell Lo~</text>
+<text x="151.2" y="164.45" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drawer_cabinet</text>
+<text x="129.05" y="59.29" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">swivel office ch~</text>
 <path d="M97 34 L327 34 L327 94 L323.6 154 L320.26 174 L97 174Z M100 37 L324 37 L324 93.92 L320.61 153.67 L317.72 171 L100 171Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="97,80.4 97,127.6 100,127.6 100,80.4" class="none" fill="#ffffff"/>
 <line x1="97" y1="80.4" x2="100" y2="80.4" class="m"/>
@@ -209,7 +209,7 @@
 <polygon points="400,13.3 402.2,21.4 400,20 397.8,21.4" class="f" fill="#111"/>
 <line x1="400" y1="21.4" x2="400" y2="24.8" class="f"/>
 <text x="400" y="11.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="30" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="40" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -332,7 +332,7 @@
 <rect x="299" y="233.2" width="4.2" height="2.4" class="n" fill="#e881a1"/>
 <text x="304.4" y="235.1" font-size="1.6" class="t">terminal</text>
 <text x="15" y="11.2" font-size="2.6" class="t b">PLAN - SPARES DEPOT</text>
-<text x="15" y="14.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="14.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -382,27 +382,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Spares Depot - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  FLOOR PLAN AT FFL +0.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-depot-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">SD</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Spares Depot</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Spares Depot</text>
 </svg>

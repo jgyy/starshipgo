@@ -32,7 +32,7 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="15" font-size="2.8" class="t b">SECTION B-B - ALONG THE FLIGHTS (lane A)  1:100</text>
-<text x="16" y="19" font-size="1.6" class="t" fill="#555">Cut at z = 0.85 m looking aft; port tower, all 5 levels (4 flight runs)</text>
+<text x="16" y="19" font-size="1.6" class="t" style="fill:#555">Cut at z = 0.85 m looking aft; port tower, all 5 levels (4 flight runs)</text>
 <clipPath id="clipB"><rect x="39.5" y="27.5" width="67" height="201"/></clipPath>
 <g clip-path="url(#clipB)">
 <polygon points="40,31 106,31 106,65 40,65" class="x" fill="#e4e8ed"/>
@@ -198,7 +198,7 @@
 <text x="97.4" y="202" font-size="1.6" class="t b" text-anchor="middle">MID-LANDING</text>
 <text x="40" y="25" font-size="1.6" class="t">STBD side / hull</text>
 <text x="106" y="25" font-size="1.6" class="t" text-anchor="end">lobby side</text>
-<text x="40" y="283.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="40" y="283.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="40" y="285.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="50" y="285.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="60" y="285.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -255,7 +255,7 @@
 <line x1="172.5" y1="64.5" x2="172.5" y2="70.2" class="d"/>
 <line x1="200.5" y1="64.5" x2="200.5" y2="70.2" class="d"/>
 <text x="186.5" y="68.3" font-size="2" class="t" text-anchor="middle">10 x 280 = 2800</text>
-<text x="154" y="74" font-size="1.4" class="t" fill="#555">DN only (top deck): flight B arrives from the +10.000 landing.</text>
+<text x="154" y="74" font-size="1.4" class="t" style="fill:#555">DN only (top deck): flight B arrives from the +10.000 landing.</text>
 <text x="233" y="17" font-size="2.1" class="t b">PLAN - DECK 1 (FFL +8.000)  1:100</text>
 <polygon points="239,28 305,28 305,64 239,64" class="none" fill="#f2f3f6"/>
 <polygon points="240.5,29.5 285.5,29.5 285.5,44 240.5,44" class="dsh" fill="url(#hHole)"/>
@@ -322,7 +322,7 @@
 <line x1="257.5" y1="64.5" x2="257.5" y2="70.2" class="d"/>
 <line x1="285.5" y1="64.5" x2="285.5" y2="70.2" class="d"/>
 <text x="271.5" y="68.3" font-size="2" class="t" text-anchor="middle">10 x 280 = 2800</text>
-<text x="239" y="74" font-size="1.4" class="t" fill="#555">UP: flight A to the +10.000 landing; DN: flight B arrives from the +6.000 landing.</text>
+<text x="239" y="74" font-size="1.4" class="t" style="fill:#555">UP: flight A to the +10.000 landing; DN: flight B arrives from the +6.000 landing.</text>
 <text x="318" y="17" font-size="2.1" class="t b">PLAN - DECK 2 (FFL +4.000)  1:100</text>
 <polygon points="324,28 390,28 390,64 324,64" class="none" fill="#f2f3f6"/>
 <polygon points="325.5,29.5 370.5,29.5 370.5,44 325.5,44" class="dsh" fill="url(#hHole)"/>
@@ -389,7 +389,7 @@
 <line x1="342.5" y1="64.5" x2="342.5" y2="70.2" class="d"/>
 <line x1="370.5" y1="64.5" x2="370.5" y2="70.2" class="d"/>
 <text x="356.5" y="68.3" font-size="2" class="t" text-anchor="middle">10 x 280 = 2800</text>
-<text x="324" y="74" font-size="1.4" class="t" fill="#555">UP: flight A to the +6.000 landing; DN: flight B arrives from the +2.000 landing.</text>
+<text x="324" y="74" font-size="1.4" class="t" style="fill:#555">UP: flight A to the +6.000 landing; DN: flight B arrives from the +2.000 landing.</text>
 <text x="148" y="77" font-size="2.1" class="t b">PLAN - DECK 3 (FFL +0.000)  1:100</text>
 <polygon points="154,88 220,88 220,124 154,124" class="none" fill="#f2f3f6"/>
 <polygon points="155.5,89.5 200.5,89.5 200.5,104 155.5,104" class="dsh" fill="url(#hHole)"/>
@@ -456,7 +456,7 @@
 <line x1="172.5" y1="124.5" x2="172.5" y2="130.2" class="d"/>
 <line x1="200.5" y1="124.5" x2="200.5" y2="130.2" class="d"/>
 <text x="186.5" y="128.3" font-size="2" class="t" text-anchor="middle">10 x 280 = 2800</text>
-<text x="154" y="134" font-size="1.4" class="t" fill="#555">UP: flight A to the +2.000 landing; DN: flight B arrives from the -2.000 landing.</text>
+<text x="154" y="134" font-size="1.4" class="t" style="fill:#555">UP: flight A to the +2.000 landing; DN: flight B arrives from the -2.000 landing.</text>
 <text x="233" y="77" font-size="2.1" class="t b">PLAN - DECK 4 (FFL -4.000)  1:100</text>
 <polygon points="239,88 305,88 305,124 239,124" class="none" fill="#f2f3f6"/>
 <polygon points="240.5,89.5 285.5,89.5 285.5,104 240.5,104" class="dot" fill="none"/>
@@ -503,7 +503,7 @@
 <line x1="257.5" y1="124.5" x2="257.5" y2="130.2" class="d"/>
 <line x1="285.5" y1="124.5" x2="285.5" y2="130.2" class="d"/>
 <text x="271.5" y="128.3" font-size="2" class="t" text-anchor="middle">10 x 280 = 2800</text>
-<text x="239" y="134" font-size="1.4" class="t" fill="#555">UP only (lowest deck): flight A rises to the -2.000 landing; flight B returns to the strip above.</text>
+<text x="239" y="134" font-size="1.4" class="t" style="fill:#555">UP only (lowest deck): flight A rises to the -2.000 landing; flight B returns to the strip above.</text>
 <text x="150" y="150" font-size="2.3" class="t b">DETAIL A - TREAD / RISER  1:10</text>
 <polygon points="160,232 160,213.82 188,213.82 188,195.64 216,195.64 216,177.45 244,177.45 244,177.45 244,153.45 160,232" class="m" fill="url(#hSlab)"/>
 <line x1="252" y1="195.64" x2="252" y2="213.82" class="d"/>
@@ -614,27 +614,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Stair tower details</text>
 <text x="299" y="264.6" font-size="1.3" class="t">DOG-LEG STAIR TOWER: PLANS AT EACH LEVEL, SECTION ALONG THE FLIGHTS (4 FLIGHT RUNS, 5 DECKS), TREAD / RISER DETAIL</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-13</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:100 / 1:10</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">SP / SS</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Stair tower</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Stair tower</text>
 </svg>
