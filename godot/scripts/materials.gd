@@ -35,6 +35,29 @@ static func surface(kind: String, tint: Color = Color.WHITE, tile: float = 4.0, 
 	_cache[key] = m
 	return m
 
+## The outside of the ship: hull plates, triplanar in world space, slightly metallic.
+static func skin() -> StandardMaterial3D:
+	if _cache.has("skin"):
+		return _cache["skin"]
+	var m := surface("hull_plate", Color(0.86, 0.9, 0.98), 7.0, 0.9)
+	m.metallic_specular = 0.55
+	_cache["skin"] = m
+	return m
+
+## Lit window pane seen from outside (the room behind it is lit).
+static func window_glow() -> StandardMaterial3D:
+	if _cache.has("window_glow"):
+		return _cache["window_glow"]
+	var m := StandardMaterial3D.new()
+	m.albedo_color = Color(0.05, 0.1, 0.18)
+	m.roughness = 0.1
+	m.metallic = 0.3
+	m.emission_enabled = true
+	m.emission = Color(1.0, 0.82, 0.55)
+	m.emission_energy_multiplier = 0.55
+	_cache["window_glow"] = m
+	return m
+
 static func glass(tint: Color = Color(0.7, 0.85, 1.0, 0.12)) -> StandardMaterial3D:
 	var key := "glass|" + tint.to_html()
 	if _cache.has(key):

@@ -23,7 +23,7 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-TARGET = 1000
+TARGET = 1002
 
 
 def slug(s):

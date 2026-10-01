@@ -140,6 +140,9 @@ func build() -> void:
 	for d in ship["doors"]:
 		_place_door(d)
 	_build_hull_extras()
+	_build_skin()
+	_build_exterior_windows()
+	_build_exterior_fittings()
 	for s in ship.get("stairs", []):
 		_build_stairs(s)
 	print("ship built: %d rooms, %d props (%d multimeshes), %d lights, %d doors, %d stairs, %d distinct models" % [
@@ -675,6 +678,173 @@ func _build_hull_extras() -> void:
 			var inst: Node3D = ps.instantiate()
 			inst.name = "HullFascia"
 			add_child(inst)
+
+# ------------------------------------------------------------------ outer skin
+## The smooth, flared, raked envelope that wraps all five decks (loft of closed rings made by tools/layout/hull.py).
+## It is the outside of the ship: back faces are culled, so from inside the rooms (and through their windows) it is
+## invisible; from outside it hides the stepped decks and shows the streamlined hull.  It lives on render layer 2
+## (the sun's layer) and has no collider - the interior shell keeps the physics.
+func _skin_ring_points(sk: Dictionary, ring: Dictionary) -> PackedVector3Array:
+	var n: int = int(sk["n"])
+	var c: Array = sk["center"]
+	var r: Array = ring["r"]
+	var sx: float = ring["sx"]
+	var sz: float = ring["sz"]
+	var y: float = ring["y"]
+	var out := PackedVector3Array()
+	out.resize(n)
+	for i in n:
+		var ph := TAU * float(i) / float(n)
+		out[i] = Vector3(float(c[0]) + sx * float(r[i]) * cos(ph), y, float(c[1]) + sz * float(r[i]) * sin(ph))
+	return out
+
+func _build_skin() -> void:
+	var sk: Dictionary = ship.get("skin", {})
+	if sk.is_empty():
+		return
+	var rings: Array = sk["rings"]
+	var n: int = int(sk["n"])
+	var verts := PackedVector3Array()
+	for ring in rings:
+		verts.append_array(_skin_ring_points(sk, ring))
+	var norms := PackedVector3Array()
+	norms.resize(verts.size())
+	var uvs := PackedVector2Array()
+	uvs.resize(verts.size())
+	var idx := PackedInt32Array()
+	var nr := rings.size()
+	for j in nr - 1:
+		for i in n:
+			var i2 := (i + 1) % n
+			var a := j * n + i
+			var b := j * n + i2
+			var c := (j + 1) * n + i2
+			var d := (j + 1) * n + i
+			for tri in [[a, b, c], [a, c, d]]:
+				var p0: Vector3 = verts[tri[0]]
+				var p1: Vector3 = verts[tri[1]]
+				var p2: Vector3 = verts[tri[2]]
+				var fn := (p1 - p0).cross(p2 - p0)
+				if fn.length_squared() < 1e-10:
+					continue                                  # collapsed quad at the keel / crown blade
+				# Godot front faces are clockwise.  The rings run counter-clockwise seen from above (+Y), so a -Y facing
+				# cross product points outward for the upward-going strips: flip when needed.
+				var ctr := (p0 + p1 + p2) / 3.0
+				var outward := Vector3(ctr.x - float(sk["center"][0]), 0.0, ctr.z - float(sk["center"][1]))
+				if fn.dot(outward) > 0.0:
+					idx.append(tri[0]); idx.append(tri[2]); idx.append(tri[1])
+				else:
+					idx.append(tri[0]); idx.append(tri[1]); idx.append(tri[2])
+				norms[tri[0]] += fn; norms[tri[1]] += fn; norms[tri[2]] += fn
+	for k in norms.size():
+		var nn := norms[k]
+		if nn.length_squared() < 1e-12:
+			nn = Vector3.UP
+		norms[k] = nn.normalized()
+	# the accumulated normals above were the raw cross products: make them point outward
+	for k in norms.size():
+		var v: Vector3 = verts[k]
+		var out := Vector3(v.x - float(sk["center"][0]), 0.0, v.z - float(sk["center"][1]))
+		if out.length_squared() > 1e-6 and norms[k].dot(out) < 0.0 and absf(norms[k].y) < 0.95:
+			norms[k] = -norms[k]
+	for k in verts.size():
+		uvs[k] = Vector2(verts[k].x, verts[k].z)
+	var arrays := []
+	arrays.resize(Mesh.ARRAY_MAX)
+	arrays[Mesh.ARRAY_VERTEX] = verts
+	arrays[Mesh.ARRAY_NORMAL] = norms
+	arrays[Mesh.ARRAY_TEX_UV] = uvs
+	arrays[Mesh.ARRAY_INDEX] = idx
+	var mesh := ArrayMesh.new()
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+	var mi := MeshInstance3D.new()
+	mi.name = "HullSkin"
+	mi.mesh = mesh
+	mi.material_override = ShipMaterials.skin()
+	mi.layers = 2
+	mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON
+	add_child(mi)
+	stats["skin_tris"] = idx.size() / 3
+
+## Lit window panes on the outside of the skin, one per interior hull window (ship.json "ext_windows").
+func _build_exterior_windows() -> void:
+	var wins: Array = ship.get("ext_windows", [])
+	if wins.is_empty():
+		return
+	var centre := Vector3(float(ship["skin"]["center"][0]), 0.0, float(ship["skin"]["center"][1]))
+	var glass := {"v": PackedVector3Array(), "n": PackedVector3Array()}
+	var frame := {"v": PackedVector3Array(), "n": PackedVector3Array()}
+	var field := {"v": PackedVector3Array(), "n": PackedVector3Array()}
+	for w in wins:
+		var c := Vector3(w["c"][0], w["c"][1], w["c"][2])
+		var u := Vector3(w["u"][0], w["u"][1], w["u"][2])
+		var v := Vector3(w["v"][0], w["v"][1], w["v"][2])
+		var nrm := u.cross(v).normalized()
+		if nrm.dot(Vector3(c.x - centre.x, 0.0, c.z - centre.z)) < 0.0:
+			nrm = -nrm
+		var hw: float = float(w["w"]) * 0.5
+		var hh: float = float(w["h"]) * 0.5
+		if w.get("kind", "window") == "mouth":
+			_quad(frame, c + nrm * 0.10, u, v, hw + 0.5, hh + 0.5, nrm)
+			_quad(field, c + nrm * 0.13, u, v, hw, hh, nrm)
+			continue
+		_quad(frame, c + nrm * 0.10, u, v, hw + 0.14, hh + 0.14, nrm)
+		_quad(glass, c + nrm * 0.13, u, v, hw, hh, nrm)
+	for entry in [[frame, ShipMaterials.surface("hull_panel", Color(0.30, 0.33, 0.40), 2.0), "ExteriorWindowFrames"],
+			[glass, ShipMaterials.window_glow(), "ExteriorWindows"],
+			[field, ShipMaterials.emissive(Color(0.25, 0.6, 1.0), 1.4), "HangarField"]]:
+		var d: Dictionary = entry[0]
+		var arrays := []
+		arrays.resize(Mesh.ARRAY_MAX)
+		arrays[Mesh.ARRAY_VERTEX] = d["v"]
+		arrays[Mesh.ARRAY_NORMAL] = d["n"]
+		var uv := PackedVector2Array()
+		for k in (d["v"] as PackedVector3Array).size():
+			uv.append(Vector2(float(k % 4 in [1, 2]), float(k % 4 in [2, 3])))
+		arrays[Mesh.ARRAY_TEX_UV] = uv
+		var mesh := ArrayMesh.new()
+		mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+		var mi := MeshInstance3D.new()
+		mi.name = entry[2]
+		mi.mesh = mesh
+		mi.material_override = entry[1]
+		mi.layers = 2
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		add_child(mi)
+
+## Nacelles, deflector dish, masts, stern engines and keel fin (Blender assets listed in ship.json "exterior").
+func _build_exterior_fittings() -> void:
+	for f in ship.get("exterior", []):
+		var ps := _scene_for(f["m"])
+		if ps == null:
+			continue
+		var inst: Node3D = ps.instantiate()
+		inst.name = "Ext_" + String(f["m"])
+		inst.position = Vector3(f["pos"][0], f["pos"][1], f["pos"][2])
+		inst.rotation_degrees = Vector3(f.get("pitch", 0.0), f.get("yaw", 0.0), 0.0)
+		var sc: float = f.get("scale", 1.0)
+		inst.scale = Vector3.ONE * sc
+		_set_layers(inst, 2)
+		add_child(inst)
+
+func _set_layers(n: Node, mask: int) -> void:
+	if n is VisualInstance3D:
+		(n as VisualInstance3D).layers = mask
+	for c in n.get_children():
+		_set_layers(c, mask)
+
+func _quad(d: Dictionary, c: Vector3, u: Vector3, v: Vector3, hw: float, hh: float, nrm: Vector3) -> void:
+	var p := [c - u * hw - v * hh, c + u * hw - v * hh, c + u * hw + v * hh, c - u * hw + v * hh]
+	var vv: PackedVector3Array = d["v"]
+	var nn: PackedVector3Array = d["n"]
+	for tri in [[0, 1, 2], [0, 2, 3]]:
+		var a: Vector3 = p[tri[0]]; var b: Vector3 = p[tri[1]]; var e: Vector3 = p[tri[2]]
+		if (b - a).cross(e - a).dot(nrm) > 0.0:       # clockwise front faces
+			var t := b; b = e; e = t
+		vv.append(a); vv.append(b); vv.append(e)
+		nn.append(nrm); nn.append(nrm); nn.append(nrm)
+	d["v"] = vv
+	d["n"] = nn
 
 # ------------------------------------------------------------------ stairs
 func _build_stairs(s: Dictionary) -> void:

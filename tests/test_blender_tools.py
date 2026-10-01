@@ -1,6 +1,7 @@
 """Blender tool / catalog convention tests (stdlib only; bpy-dependent parts are skipped)."""
 import json
 import os
+import re
 import subprocess
 import sys
 import unittest
@@ -8,6 +9,7 @@ import unittest
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CATALOG = os.path.join(ROOT, "godot", "data", "catalog.json")
 TOL = 0.005
+TARGET = int(re.search(r"^TARGET = (\d+)", open(os.path.join(ROOT, "blender", "build_all.py")).read(), re.M).group(1))
 
 # Models fixed in this pass (must satisfy their mount convention exactly).
 FIXED_FLOOR = ["hangartool_launch_rail_segment", "door_cargo", "crate_pod_pressurised_tall",
@@ -68,7 +70,7 @@ class BuildAllCheck(unittest.TestCase):
         r = subprocess.run([sys.executable, os.path.join(ROOT, "blender", "build_all.py"), "--check"],
                            capture_output=True, text=True, timeout=300)
         self.assertEqual(r.returncode, 0, r.stderr)
-        self.assertIn("1000 models", r.stdout)
+        self.assertIn("%d models" % TARGET, r.stdout)
 
     def test_kit_imports_without_bpy(self):
         sys.path.insert(0, os.path.join(ROOT, "blender"))
@@ -87,8 +89,8 @@ class CatalogConventions(unittest.TestCase):
         cls.by_id = {e["id"]: e for e in cls.models}
 
     def test_count_and_unique_ids(self):
-        self.assertEqual(len(self.models), 1000)
-        self.assertEqual(len(self.by_id), 1000)
+        self.assertEqual(len(self.models), TARGET)
+        self.assertEqual(len(self.by_id), TARGET)
 
     def test_fixed_floor_models(self):
         for mid in FIXED_FLOOR:

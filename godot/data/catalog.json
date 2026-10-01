@@ -1,6 +1,6 @@
 {
  "version": 1,
- "count": 1000,
+ "count": 1002,
  "models": [
   {
    "id": "analyzer_3d_fabricator",
@@ -24566,6 +24566,37 @@
    "family": "sign_wall"
   },
   {
+   "id": "sign_deck_0",
+   "category": "sign",
+   "label": "deck_0",
+   "file": "models/sign/sign_deck_0.glb",
+   "mount": "wall",
+   "mount_y": 2.0,
+   "tags": [
+    "safety"
+   ],
+   "solid": false,
+   "size": [
+    0.8,
+    0.95,
+    0.045
+   ],
+   "bounds_min": [
+    -0.4,
+    -0.475,
+    -0.0
+   ],
+   "bounds_max": [
+    0.4,
+    0.475,
+    0.045
+   ],
+   "tris": 150,
+   "top_y": null,
+   "bytes": 15288,
+   "family": "sign_wall"
+  },
+  {
    "id": "sign_deck_1",
    "category": "sign",
    "label": "deck_1",
@@ -24656,6 +24687,37 @@
    "tris": 136,
    "top_y": null,
    "bytes": 13368,
+   "family": "sign_wall"
+  },
+  {
+   "id": "sign_deck_4",
+   "category": "sign",
+   "label": "deck_4",
+   "file": "models/sign/sign_deck_4.glb",
+   "mount": "wall",
+   "mount_y": 2.0,
+   "tags": [
+    "safety"
+   ],
+   "solid": false,
+   "size": [
+    0.8,
+    0.95,
+    0.045
+   ],
+   "bounds_min": [
+    -0.4,
+    -0.475,
+    -0.0
+   ],
+   "bounds_max": [
+    0.4,
+    0.475,
+    0.045
+   ],
+   "tris": 150,
+   "top_y": null,
+   "bytes": 15296,
    "family": "sign_wall"
   },
   {

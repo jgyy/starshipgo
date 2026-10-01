@@ -2,12 +2,13 @@
 import json
 import math
 import os
+import re
 import sys
 import unittest
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GODOT = os.path.join(ROOT, "godot")
-TARGET = 1000
+TARGET = int(re.search(r"^TARGET = (\d+)", open(os.path.join(ROOT, "blender", "build_all.py")).read(), re.M).group(1))
 
 
 def load(name):
@@ -21,7 +22,7 @@ class CatalogTests(unittest.TestCase):
         cls.cat = load("catalog.json")
         cls.models = cls.cat["models"]
 
-    def test_exactly_1000_models(self):
+    def test_exact_model_count(self):
         self.assertEqual(len(self.models), TARGET)
         self.assertEqual(self.cat["count"], TARGET)
 
