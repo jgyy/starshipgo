@@ -148,5 +148,103 @@ def f_antimatter(R, B):
     sign_at(R, B, "E", "sign_emergency_exit", -14.0, 2.9)
     wall_y(R, B, "E", "warnlight_red_alert_wall_unit", -15.7, bottom=2.7, check=False)
     wall_y(R, B, "S", "beacon_rotating_beacon", -2.3, 2.9)
-    fe(R, B, "D2", 0.72)
-    fe(R, B, "D2", 0.72)
+    fe(R, B, "D5", 0.9)
+
+
+# ----------------------------------------------------------------------------------------------- PROVISIONS HOLD & COLD STORE
+def f_provisions(R, B):
+    R.describe(
+        "The Provisions Hold is the ship's larder: frozen and chilled food in a cold store on the hull side, dry goods, oils and "
+        "staples on pallets and shelving, and an inventory desk that tells the galley what is left.",
+        basis="Planned for 120 crew on a 180-day voyage: 120 x 0.65 kg/day of food = 78 kg/day = 14 t, of which about 40 % is frozen "
+              "or chilled. 5 cryo storage tanks (about 1 t each) and 5 freezer / refrigerator units hold the cold share; about 15 "
+              "pallets of staples (sacks, boxed rations, drums of oil) stand in two rows either side of a 2.8 m forklift lane from "
+              "the door; hydroponics on Deck 2 supplies fresh produce, so the hold carries 150 days of fully balanced rations plus "
+              "30 days of emergency ration packs in sealed lockers. Aisles are 1.2 m at the shelving and 2.8 m on the forklift lane.",
+        crew=2,
+        adjacency="Forward spine corridor (east door); Antimatter Containment is directly north (the north wall is a radiation "
+                  "bulkhead), Waste & Recycling across the corridor; the galley two decks up is served by the stair towers.",
+        notes="Food added later (produce, packaged meals, drink crates) goes to the pallet rows and the cold-store bays.")
+    R.line("Ceiling lighting", "Cool white panels (300 lux) light the aisles and read the pallet labels; the cold store gets the same lights, "
+           "which stay on while the door field is open.")
+    lights(R, spacing=3.5, color="#eaf4ff", energy=1.5)
+
+    R.keep_clear((-8.8, -5.8, -1.5, -3.2), "2.8 m forklift lane from the corridor door into the hold")
+    R.line("Cold store: cryo storage tanks (west hull wall)",
+           "Frozen meat, fish and bread dough are held in liquid-nitrogen cooled storage tanks on the hull wall, the coldest and best insulated wall "
+           "of the room; the control pillar at the end shows temperature and nitrogen level of every tank.")
+    wall_row(R, B, "W", ["cryo_cryo_storage_tank"] * 5 + ["cryo_cryo_control_pillar"], -7.8, gap=0.05)
+
+    R.line("Cold store: freezers and refrigerators (inner row)",
+           "Chest freezers hold the daily-use frozen stock, upright refrigerators the dairy, eggs and fresh produce; the units stand with "
+           "their backs to the cold-zone boundary so their compressors vent to the warm side, and open to the cold-store aisle.")
+    line_z(R, B, ["galley_chest_freezer", "galley_refrigerator"], -10.1, -7.85, -90.0, gap=0.05, dirn=1)
+    line_z(R, B, ["galley_chest_freezer", "galley_refrigerator"], -10.1, -2.6, -90.0, gap=0.05, dirn=1)
+
+    R.line("Cold store boundary (force-field curtain)",
+           "The cold-store door is a force-field curtain, not a hinged door: pallets and people pass the 3 m opening without losing the cold "
+           "(the field holds the air in), and the field projectors flank the opening on the lane axis.")
+    put(R, B, "forcefield_emitter_pair", -9.0, -7.35, 90.0)
+    put(R, B, "forcefield_emitter_pair", -9.0, -1.65, 90.0)
+    sign_at(R, B, "N", "sign_hazard_low_oxygen", -9.7, 2.8)
+
+    R.line("Nitrogen supply and liquid-nitrogen dewars (north-west corner)",
+           "The cryo tanks are topped up from liquid-nitrogen dewars and an inert-gas trio stands beside them; nitrogen is heavier than "
+           "air in the cold store, so the low-oxygen sign is at the entrance and the dewars are on the wall, never free-standing.")
+    wall_row(R, B, "N", ["cylinder_cryo_dewar", "cylinder_nitrogen_cylinder_trio"], -12.4, gap=0.1)
+
+    R.line("Dry goods shelving and water buffer (north wall)",
+           "Packaged rations, spices, tea and coffee, tinned goods and baking supplies stand on heavy-duty shelves along the north wall, "
+           "grouped by use so the cook finds them; the galley's own potable water tank ends the row, so a failure of the reclamation plant "
+           "does not stop the kitchen in its first days.")
+    wall_row(R, B, "N", ["shelving_heavy_boxes", "shelving_heavy_boxes", "watertank_potable_water_tank"], -8.4, gap=0.06)
+
+    R.line("Staple pallets (north row)",
+           "Rice and flour sacks, boxed rations and a mixed pallet of pasta and cereal stand in a row 1.2 m from the shelving, "
+           "labelled on the lane side; a pallet is 1.2 x 1.0 m so the forklift lifts it straight out into the lane.")
+    line_x(R, B, ["pallet_sacks_stacked", "pallet_boxes_layered", "pallet_mixed_goods"], -8.4, -6.45, 0.0, gap=0.08)
+
+    R.line("Oils, drinks and tinned stock (south pallet row)",
+           "Drums of cooking oil and vinegar, a wrapped pallet of bottled drinks and a roll cage of fast-moving items stand in the south row, "
+           "nearest the galley dispatch; the bung of each drum is turned towards the lane.")
+    line_x(R, B, ["pallet_drums_banded", "pallet_wrapped_stack", "pallet_roll_cage_loaded"], -8.4, -2.35, 0.0, gap=0.08)
+
+    R.line("South wall: small stores and ration lockers",
+           "Emergency ration lockers (30 days of sealed packs, ready to grab in an evacuation) and shelves for small items stand on the south wall; "
+           "ration lockers are locked and sealed so the emergency stock cannot be eaten by accident.")
+    wall_row(R, B, "S", ["shelving_pigeonhole", "shelving_parts_bins_rack", "safety_ration_locker", "safety_ration_locker"], -8.5, gap=0.06)
+
+    R.line("Forklift and pallet jack (east wall, south of the door)",
+           "The platform forklift is parked against the east wall south of the door, nose to the lane, and the hand pallet jack beside it handles "
+           "the daily galley pick; 2.8 m of lane is kept between the vehicles and the north pallet row.")
+    put(R, B, "loader_platform_forklift", -2.3, -1.6, 180.0)
+    put(R, B, "loader_hand_pallet_jack", -3.9, -1.7, 180.0)
+
+    R.line("Inventory desk and terminal (east wall, north of the door)",
+           "The storekeeper counts every pallet in and out at a desk beside the door; the terminal keeps the stock list and shows days of supply "
+           "left per item to the galley and the quartermaster.")
+    desk_station(R, B, "E", "desk_workstation", -6.75)
+    wall_y(R, B, "E", "display_status_board", -6.75, bottom=2.0)
+
+    R.line("Safety and signs",
+           "Extinguishers at the door and the cold store, exit sign, first-aid cabinet by the desk and a fire blanket, as for any store of food "
+           "packaging and oil.")
+    fe(R, B, "N", -1.9)
+    fe(R, B, "W", -0.3)
+    sign_at(R, B, "E", "sign_emergency_exit", -4.5, 2.9)
+    sign_at(R, B, "E", "sign_dept_cargo", -8.4, 2.9)
+    wall_y(R, B, "E", "safety_first_aid_cabinet", -8.4, 1.3)
+
+    R.line("Overhead pipes and trays",
+           "Refrigerant lines run overhead from the cold store compressors to the tanks, with cable trays beside them; all overhead.")
+    ceil_run(R, B, ["pipe_ceiling_insulated_pair"] * 4, -12.0, -8.2, "x")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, -12.0, -0.8, "x")
+
+    R.line("Lane markings, sprinklers and cameras",
+           "Floor stencils mark the 2.8 m forklift lane so pallets are never left in it; sprinkler heads protect the oil drums and packaging, "
+           "and a camera covers the door and the cold-store curtain for the inventory audit.")
+    for x in (-7.8, -5.4, -3.6):
+        put(R, B, "sign_floor_marking", x, -4.5, 90.0)
+    for x, z in ((-7.0, -4.5), (-5.0, -7.9), (-5.0, -0.6)):
+        R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
+    R.place(mm(B, "camera_dome_ceiling"), -6.0, -4.5, 0.0, y=R.y + R.h)
