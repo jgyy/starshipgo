@@ -554,3 +554,102 @@ def f_fab(R, B):
     for x, z in ((-9.0, 6.4), (-5.5, 6.4), (-9.0, 12.0), (-5.0, 10.0)):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), -6.0, 8.0, 0.0, y=R.y + R.h)
+
+
+# ----------------------------------------------------------------------------------------------- AUXILIARY CONTROL
+def f_auxctl(R, B):
+    R.describe(
+        "Auxiliary Control is the backup bridge and damage-control centre: if the main bridge is lost, the ship can be flown, fought and "
+        "repaired from here, and in any damage emergency the damage-control officer coordinates repair parties from this room.",
+        basis="Eight stations in two staggered rows face a 5.6 m status display wall on the hull side (viewing distance 3 to 6 m, which is the "
+              "comfortable range for a 5.6 m display): helm, operations, tactical and damage control in the front row, sensors, communications, "
+              "shields and engineering in the back row; 0.9 m between the rows, the duty officer's chair and podium behind them on the "
+              "door axis, a holographic table for damage-control planning, and a 2.4 m clear approach from the door. The room runs "
+              "4 hours on its own battery racks; the lockers hold breach kits and emergency suits for 8 people (the full watch).",
+        crew=8,
+        adjacency="Aft spine corridor (west door); Fabrication Hall across the corridor; Drone & Probe Bay directly south; "
+                  "the bridge is three decks above, joined by the stair towers and a hardened data trunk.",
+        notes="Sparse and military: no decoration, everything the watch needs within reach of the chairs, red-alert lighting on a separate circuit.")
+    R.line("Ceiling lighting", "Dimmable cool-white panels at 3.4 m pitch (200 lux, so the screens stay readable); a separate red-alert circuit "
+           "overrides them.")
+    lights(R, spacing=3.4, color="#dbe6ff", energy=1.3)
+    R.omni(12.0, 1.7, 7.8, "#40c8ff", 1.8, 8.0)
+
+    R.line("Status display wall (east hull wall)",
+           "A 5.6 m main viewscreen shows the ship's status, tactical picture and damage plan; flanking screens carry the power board and the "
+           "engineering summary. They are on the hull wall so every station faces them and no console has its back to the screen.")
+    wall_y(R, B, "E", "display_main_viewscreen", 8.1, 1.7, check=False)
+    wall_y(R, B, "E", "display_status_board", 4.45, 1.6, check=False)
+    wall_y(R, B, "E", "display_tall_readout", 11.5, 1.7, check=False)
+
+    TOPS = ["terminal_keyboard", "terminal_laptop_console", "terminal_desk_terminal", "terminal_headset_dock"] * 2
+    R.line("Front row stations: helm, operations, tactical, damage control",
+           "The front row is the 'flying and fighting' row: helm and operations steer and run the ship, tactical handles defence, and damage control "
+           "tracks every breach and fire. They sit 3.5 m from the screen wall; consoles face west so operators sit with the screen ahead of them.")
+    for mid, z in (("console_helm", 5.35), ("console_ops", 7.5), ("console_tactical", 9.7), ("console_damage_control", 11.6)):
+        con = put(R, B, mid, 11.3, z, -90.0)
+        seat_for(R, B, con, "seat_tactical_chair" if "tactical" in mid else "seat_ops_chair")
+        if con:
+            tops(R, B, con, [TOPS.pop(0)], [(0.0, 0.15)])
+
+    R.line("Back row stations: sensors, communications, shields, engineering",
+           "The back row supports the front row: sensors build the picture, communications keeps the link to the fleet and the main bridge, "
+           "shield control balances the defences and engineering shows the power state; each seat sees the screen over the front row.")
+    for mid, z in (("console_sensor", 5.35), ("console_communications", 7.2), ("console_shield_control", 9.2), ("console_engineering_status", 11.1)):
+        con = put(R, B, mid, 8.6, z, -90.0)
+        seat_for(R, B, con, "seat_comms_chair" if "communications" in mid else "seat_ops_chair")
+        if con:
+            tops(R, B, con, [TOPS.pop(0)], [(0.0, 0.15)])
+
+    R.line("Duty officer's chair and podium (door axis)",
+           "The duty officer sits on the door axis, behind the back row and one step higher in view: from the command chair every station and the "
+           "screen wall are in sight, and the podium in front holds the command authentication key and the ship-wide intercom.")
+    put(R, B, "console_captain_podium", 7.05, 8.1, -90.0)
+    put(R, B, "seat_captain_command_chair", 6.1, 8.1, 90.0)
+
+    R.line("Damage-control holographic table",
+           "A holographic table shows the ship's decks in 3D with every breach, fire and repair team marked; the damage-control officer and the "
+           "duty officer plan repairs around it standing, as on a military command post.")
+    put(R, B, "holo_briefing_table", 4.6, 10.4, 0.0)
+
+    R.line("Emergency gear lockers (north wall)",
+           "Damage-control lockers hold breach-repair kits, patches and torches; gear lockers and suit racks hold emergency suits, oxygen packs and "
+           "gloves for the whole watch of 8, so in a decompression everyone can suit up without leaving their post.")
+    wall_row(R, B, "N", ["safety_damage_control_locker", "locker_gear_locker_keypad", "safety_damage_control_locker",
+                          "suitrack_glove_boot_locker", "suitrack_oxygen_pack_rack"], 4.2, gap=0.06)
+    wall_y(R, B, "N", "suitrack_eva_helmet_rack", 9.2, 2.65)
+    wall_y(R, B, "N", "safety_breach_repair_kit", 5.0, 2.4)
+    wall_y(R, B, "W", "safety_defibrillator_station", 12.6, 1.4)
+    wall_y(R, B, "N", "display_deck_plan_board", 11.9, 1.9)
+
+    R.line("Communications and data cabinets (west wall, south of the door)",
+           "Radio, network and armoured data racks give the room its own link to the fleet and a copy of the ship's critical data, independent of "
+           "the main bridge and the computer core; they stand together on the west wall so one cable trunk serves them.")
+    wall_row(R, B, "W", ["commsunit_radio_rack", "rack_armored_data_rack", "rack_network_switch_rack", "rack_ups_battery_rack"], 9.3, gap=0.06)
+    wall_y(R, B, "W", "commsunit_intercom_panel", 8.9, 1.5, check=False)
+
+    R.line("Backup power and command safe (south wall)",
+           "Two battery racks keep the room alive for 4 hours without ship power; the secure data safe holds the command authentication keys "
+           "and the ship's log of record, opened only by two officers.")
+    wall_row(R, B, "S", ["capacitor_battery_rack", "capacitor_battery_rack", "storage_secure_data_safe", "cabinet_utility_cabinet"], 6.5, gap=0.08)
+
+    R.line("Watch refreshment (south wall, west)",
+           "A water cooler and coffee machine are for the long watches: crew who must stay alert for 8 hours need water and coffee at hand, "
+           "so nobody leaves their post; a refrigerator holds rations.")
+    wall_row(R, B, "S", ["galley_water_cooler", "galley_coffee_machine", "galley_refrigerator"], 2.4, gap=0.06)
+
+    R.line("Alert lights, signs and overhead services",
+           "A rotating beacon and the red-alert unit change the room to red alert, signs mark the exits and the lockers, and cable trays "
+           "carry the console data from the floor trunk to the racks.")
+    wall_y(R, B, "W", "warnlight_red_alert_wall_unit", 6.4, bottom=2.9, check=False)
+    wall_y(R, B, "N", "beacon_rotating_beacon", 3.5, 2.7)
+    sign_at(R, B, "W", "sign_emergency_exit", 7.3, 2.9)
+    sign_at(R, B, "W", "sign_dept_bridge", 9.9, 2.9)
+    fe(R, B, "W", 5.1)
+    fe(R, B, "S", 12.0)
+    wall_y(R, B, "W", "safety_first_aid_cabinet", 4.1, 1.3)
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, 4.0, 4.7, "x")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, 4.0, 13.0, "x")
+    for x, z in ((6.0, 6.0), (6.0, 11.0), (10.0, 8.2)):
+        R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
+    R.place(mm(B, "camera_dome_ceiling"), 6.5, 8.2, 0.0, y=R.y + R.h)
