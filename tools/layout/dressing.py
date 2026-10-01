@@ -145,7 +145,7 @@ def chairs_around(R, cx, cz, hw, hd, cats=("chair",), step=1.0, pred=None, ends=
     if ends:
         for sign in (-1, 1):
             m = R.cat.pick_any(list(cats), pred=pred, rng=R.rng)
-            if m and R.place(m, cx + sign * (hw + 0.4), cz, -90.0 if sign < 0 else 90.0):
+            if m and R.place(m, cx + sign * (hw + 0.4), cz, 90.0 if sign < 0 else -90.0):       # yaw +90 faces +X: toward the table
                 n += 1
     return n
 

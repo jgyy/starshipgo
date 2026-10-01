@@ -251,11 +251,17 @@ class Ship:
             if model is None:
                 dept = B.dept if A.dept == "transit" else A.dept
                 pick = self.cat.pick("door", label=self.DOOR_LABELS.get(dept, ["bulkhead"]))
+                if pick is None:
+                    raise ValueError(f"link {a}-{b}: the catalog has no 'door' model")
                 model = pick["id"]
+            if model not in self.cat.use:
+                raise ValueError(f"link {a}-{b}: door model {model!r} is not in the catalog")
             self.doors.append({"m": model, "pos": [round(v, 3) for v in pos], "yaw": yaw, "a": a, "b": b})
             self.cat.use[model] += 1
         elif kind == "portal":
             fr = self.cat.pick("doorframe")
+            if fr is None:
+                raise ValueError(f"link {a}-{b}: the catalog has no 'doorframe' model")
             A.props.append({"m": fr["id"], "pos": [round(v, 3) for v in pos], "yaw": yaw, "_m": fr, "b": "ARCH"})
             self.cat.use[fr["id"]] += 1
         return c

@@ -48,7 +48,9 @@ def build_sheets(ship, only=None):
     g.append(sheets_ga.hull_lines(ship))
     g.append(sheets_ga.profile_sheet(ship))
     g += [sheets_ga.ship_section(ship, e) for e in sheets_ga.SECTION_CUTS]
-    g.append(sheets_misc.stair_sheet(ship))
+    stair = sheets_misc.stair_sheet(ship)
+    if stair is not None:
+        g.append(stair)
     g.append(sheets_misc.circulation_sheet(ship))
     g.append(sheets_misc.schedule_sheet(ship))
     files = {}

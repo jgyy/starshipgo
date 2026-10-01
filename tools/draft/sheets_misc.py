@@ -14,6 +14,8 @@ def stair_sheet(ship):
                "1:50 / 1:75 / 1:10", "ALL", "SP / SS", "Stair tower", slug="stair_tower_details")
     cat = ship.cat
     runs, st = ship.stair_geom("SA")
+    if not runs:
+        return None            # a ship without stairs has no stair-tower sheet
     # ---------------- section along lane A (z = 0.85)
     zc = runs[0]["flights"][0]["z"]
     cut = Cut("z", zc)

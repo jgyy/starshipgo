@@ -161,6 +161,22 @@ class EngineTests(unittest.TestCase):
             ship.link("a", "b", kind="doors")            # a typo used to silently become a 4 m wide open arch with no door
         self.assertEqual(ship.link("a", "b", kind="open"), 2.5)
 
+    def test_P047_link_explains_a_catalog_without_doors(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "empty.json")
+            with open(path, "w") as f:
+                json.dump({"models": []}, f)
+            ship = sl.Ship(sl.Catalog(path))
+        ship.decks = [{"id": 1, "y": 0.0}]
+        ship.add_room(sl.Room(ship, "a", "A", 1, (0, 0, 5, 5), clip=False))
+        ship.add_room(sl.Room(ship, "b", "B", 1, (5, 0, 10, 5), clip=False))
+        with self.assertRaisesRegex(ValueError, "no 'door' model"):          # was: TypeError 'NoneType' object is not subscriptable
+            ship.link("a", "b", kind="door")
+        with self.assertRaisesRegex(ValueError, "no 'doorframe' model"):
+            ship.link("a", "b", kind="portal")
+        with self.assertRaisesRegex(ValueError, "not in the catalog"):
+            ship.link("a", "b", kind="door", model="door_nope")
+
     def test_P010_flat_floor_decals_do_not_count_as_occupancy(self):
         r = new_room()
         rug = next(m for m in r.cat.models.values() if m["mount"] == "floor" and m["size"][1] <= 0.15 and m["size"][0] * m["size"][2] > 3)
@@ -180,6 +196,15 @@ class EngineTests(unittest.TestCase):
             self.assertAlmostEqual(stats[room.id], density, delta=0.0006, msg=room.id)
             self.assertAlmostEqual(drawn.by_id[room.id].occupancy(), density, delta=0.002, msg=room.id)
         self.assertLess(stats["hangar"], 0.4)
+
+    def test_P045_end_chairs_face_the_table(self):
+        r = new_room()
+        self.assertEqual(dressing.chairs_around(r, 5.0, 5.0, 1.0, 0.5, ends=True), 6)
+        for p in r.props:
+            fp = p["_fp"]
+            fx, fz = sl.rot(0, 1, p["yaw"])                                  # front vector of the chair
+            to_table = (5.0 - (fp[0] + fp[2]) / 2, 5.0 - (fp[1] + fp[3]) / 2)
+            self.assertGreater(fx * to_table[0] + fz * to_table[1], 0.1, p)  # the two end chairs used to look away from the table
 
     def test_P042_deck1_tops_measures_the_host_width_for_tiny_negative_yaw(self):
         import recipes_deck1_helpers as H
@@ -304,6 +329,107 @@ class AuditGapTests(unittest.TestCase):
                 self.assertEqual(A.main(["--ship", ship_path, "--catalog", cat_path, "--room", "bridg"]), 2)
             with mock.patch("sys.stdout", new=io.StringIO()):
                 self.assertEqual(A.main(["--ship", ship_path, "--catalog", cat_path, "--room", "eng"]), 0)
+
+    def test_P049_every_audit_rule_fires_on_a_minimal_violation(self):
+        """Mutation matrix: one deliberate violation per rule of audit.RULES; a rule that stops firing (or a new rule without
+        a mutation here) fails this test."""
+        def crate_wall(gap):
+            def f(e, s):
+                la, lb = 5.0 - gap / 2 - 0.15, 9.85 - 5.0 - gap / 2
+                e["props"] = [p for p in e["props"] if p["m"] == "lamp"]
+                e["props"] += [TA.prop("crate", 15, 0.15 + la / 2, scale=[1, 1, la]), TA.prop("crate", 15, 5.0 + gap / 2 + lb / 2, scale=[1, 1, lb])]
+            return f
+
+        def zones_off(e, s):
+            for r in s["rooms"]:
+                r["zones"] = []
+
+        def window_blocked(e, s):
+            e["openings"].append({"side": "N", "c": 15.0, "w": 3.0, "y0": 0.9, "y1": 2.4, "kind": "window"})
+            e["props"].append(TA.prop("crate", 15, 0.8))
+
+        def hole(e, s):
+            e["floor_holes"].append([16, 7, 18, 9])
+            e["props"].append(TA.prop("crate", 17, 8))
+
+        def tabletop(e, s):
+            e["props"] += [TA.prop("lockerbox", 17, 8), TA.prop("box", 17, 8, y=1.0)]
+
+        def duplicates(e, s):
+            e["props"] += [TA.prop("crate", 11.5 + i * 1.05, 8.5) for i in range(7)]
+
+        def unreachable(e, s):
+            e["props"].append(TA.prop("crate", 12.5, 5.0, scale=[1.0, 1.0, 9.7]))
+
+        def hull_small(e, s):
+            s["hull"]["1"] = [[0, 0], [19, 0], [19, 10], [0, 10]]
+
+        def stair(e, s):
+            e["ceiling_holes"].append([1, 1, 2, 2])
+
+        def rename(e, s):
+            s["rooms"][0]["id"] = "zzz1"
+            e["id"] = "zzz2"
+
+        def wall_floor(e, s):
+            e["props"] += [TA.prop("crate", 13, 0.65), TA.prop("sign", 13, 0.15, y=0.8, yaw=0.0)]
+
+        def ceil_floor(e, s):
+            e["props"] += [TA.prop("tallcab", 17, 8), TA.prop("pod", 17, 8, y=3.0)]
+
+        def opening_outside(e, s):
+            for r in s["rooms"]:
+                for o in r["openings"]:
+                    o["c"] = 9.8
+
+        def dup_id(e, s):
+            import copy
+            s["rooms"].append(copy.deepcopy(e))
+
+        def density(e, s):
+            e["props"] = [p for p in e["props"] if p["m"] == "lamp"] + [TA.prop("crate", 16, 5, scale=[7.5, 1.0, 8.2])]
+
+        def no_bom(e, s):
+            e["props"].append(TA.prop("crate", 17, 8, b=None))
+
+        matrix = {
+            "footprint-overlap": lambda e, s: e["props"].append(TA.prop("crate", 15.5, 2)),
+            "outside-shell": lambda e, s: e["props"].append(TA.prop("crate", 19.8, 7)),
+            "door-clearance": lambda e, s: e["props"].append(TA.prop("crate", 11, 5)),
+            "window-blocked": window_blocked,
+            "wall-item-overlap": lambda e, s: e["props"].append(TA.prop("sign", 16.2, 9.85, y=1.5, yaw=180.0)),
+            "wall-item-span": lambda e, s: e["props"].append(TA.prop("sign", 19.9, 0.15, y=1.5, yaw=0.0)),
+            "wall-facing": lambda e, s: e["props"].append(TA.prop("sign", 13, 0.15, y=1.5, yaw=90.0)),
+            "ceiling-overlap": lambda e, s: e["props"].append(TA.prop("lamp", 15.2, 5.0, y=3.0)),
+            "floating-floor": lambda e, s: e["props"].append(TA.prop("crate", 17, 8, y=0.5)),
+            "table-support": lambda e, s: e["props"].append(TA.prop("box", 15, 2, y=1.4)),
+            "hole-clash": hole,
+            "policy-category": lambda e, s: e["props"].append(TA.prop("bed", 17, 8)),
+            "unknown-room-policy": rename,
+            "unknown-model": lambda e, s: e["props"].append(TA.prop("nomodel", 12, 2)),
+            "walkable": lambda e, s: (zones_off(e, s), e["props"].append(TA.prop("crate", 11, 5, scale=[1.0, 1.0, 6.0]))),
+            "unreachable-pocket": unreachable,
+            "aisle-width": crate_wall(0.5),
+            "density": density,
+            "duplicates": duplicates,
+            "bom-line": no_bom,
+            "lights": lambda e, s: e.update(lights=[]),
+            "stair-consistency": stair,
+            "hull-containment": hull_small,
+            "opening-validity": opening_outside,
+            "wall-floor-clash": wall_floor,
+            "ceiling-floor-clash": ceil_floor,
+            "too-tall": lambda e, s: e["props"].append(TA.prop("giant", 17, 8)),
+            "tabletop-host": tabletop,
+            "mount-mismatch": lambda e, s: e["props"].append(TA.prop("lamp", 12, 8.0, y=2.5)),
+            "ship-structure": dup_id,
+        }
+        self.assertEqual(sorted(matrix), sorted(A.RULES))
+        for rule, fn in matrix.items():
+            viol = run_ship(mutated(fn))
+            self.assertIn(rule, {v["rule"] for v in viol}, rule)
+        clean = {v["rule"] for v in run_ship(TA.clean_ship()) if v["severity"] == "error"}
+        self.assertEqual(clean, set())
 
     def test_P003_every_rule_is_listed(self):
         self.assertIn("ship-structure", A.RULES)
@@ -447,6 +573,21 @@ class DraftTests(unittest.TestCase):
         for w in self.ship.win_list:
             self.assertIn(">%s<" % w["mark"], svg)
 
+    def test_P048_a_ship_without_stairs_still_gets_its_drawings(self):
+        with open(SHIP_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        data["stairs"] = []
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "nostairs.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f)
+            ship = model.Ship(path, CAT_PATH)
+        sheets = draft.build_sheets(ship)                                   # was: IndexError in the stair-tower sheet
+        nums = [s.num for s in sheets]
+        self.assertNotIn("G-13", nums)
+        self.assertIn("G-14", nums)
+        self.assertEqual(len(nums), len(set(nums)))
+
     def test_P028_files_are_closed_and_the_index_is_utf8_lf(self):
         self.assertEqual(recorded_warnings(lambda: model.Ship(SHIP_PATH, CAT_PATH)), [])
         sheet = svgkit.Sheet("G-01", "T", scale="1:100", deck="DECK 1")
@@ -494,6 +635,22 @@ class BomTests(unittest.TestCase):
         else:
             self.assertIn("Every room centre is within", md)
         self.assertNotIn("Every point of every deck is within 35 m", md)
+
+    def test_P046_bom_documents_the_ship_json_it_is_given(self):
+        ship = json.loads(json.dumps(self.ship))
+        for pts in ship["hull"].values():
+            for p in pts:
+                p[0] *= 2.0
+        md = bom.generate(ship, self.cat)
+        self.assertIn("| Beam | 52 m |", md)                      # hull.py's 26 m beam used to be printed whatever the ship.json said
+        two = json.loads(json.dumps(self.ship))                   # a two-deck ship: no KeyError for the missing deck 3
+        two["decks"] = [d for d in two["decks"] if d["id"] != 3]
+        two["rooms"] = [r for r in two["rooms"] if r["deck"] != 3]
+        ids = {r["id"] for r in two["rooms"]}
+        two["doors"] = [d for d in two["doors"] if d["a"] in ids and d["b"] in ids]
+        md2 = bom.generate(two, self.cat)
+        self.assertIn("| Decks | 2 (floors at +4.0, +8.0 m) |", md2)
+        self.assertNotIn("Engineering Deck", md2)
 
     def test_P032_counts_in_the_text_come_from_the_data(self):
         cat = dict(self.cat)

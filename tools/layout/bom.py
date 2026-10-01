@@ -154,11 +154,13 @@ def generate(ship, cat):
     w("")
     w("| | |")
     w("|---|---|")
-    hl = {d: hulllib.outline(d) for d in (1, 2, 3)}
+    deck_ids = sorted(decks)
+    # the hull of the ship.json being documented, not whatever hull.py would draw today
+    hl = {d: [tuple(p) for p in ship["hull"][str(d)]] for d in deck_ids if str(d) in ship.get("hull", {})}
     allz = [p[1] for d in hl.values() for p in d]
     allx = [abs(p[0]) for d in hl.values() for p in d]
-    w("| Length overall | %.0f m |" % (max(allz) - min(allz)))
-    w("| Beam | %.0f m |" % (2 * max(allx)))
+    w("| Length overall | %.0f m |" % ((max(allz) - min(allz)) if allz else 0.0))
+    w("| Beam | %.0f m |" % (2 * max(allx) if allx else 0.0))
     w("| Decks | %d (floors at %s m) |" % (len(ship["decks"]), ", ".join("%+.1f" % d["y"] for d in sorted(ship["decks"], key=lambda d: d["y"]))))
     w("| Rooms (incl. circulation) | %d |" % len(ship["rooms"]))
     w("| Doors / arches | %d sliding doors, %d open arches and portals |" % (
@@ -173,9 +175,9 @@ def generate(ship, cat):
     w("")
     w("| Deck | Name | Hull area | Rooms | Room area | Items | BOM lines |")
     w("|---|---|---|---|---|---|---|")
-    for d in (1, 2, 3):
+    for d in deck_ids:
         rs = [r for r in ship["rooms"] if r["deck"] == d]
-        w("| %d | %s | %.0f m2 | %d | %.0f m2 | %d | %d |" % (d, decks[d]["name"], hulllib.area(hl[d]), len(rs), sum(r["area"] for r in rs),
+        w("| %d | %s | %.0f m2 | %d | %.0f m2 | %d | %d |" % (d, decks[d]["name"], hulllib.area(hl[d]) if d in hl else 0.0, len(rs), sum(r["area"] for r in rs),
                                                              sum(len(r["props"]) for r in rs), sum(len(r["bom"]) for r in rs)))
     w("")
     w("### Design principles")
@@ -233,9 +235,9 @@ def generate(ship, cat):
     w("")
     # ---- chapters
     chapter = 3
-    for d in (1, 2, 3):
+    for d in deck_ids:
         chapter += 1
-        title, text = DECK_TEXT[d]
+        title, text = DECK_TEXT.get(d, (decks[d]["name"], ""))
         w("## %d. Deck %d - %s (floor +%.1f m)" % (chapter, d, title, decks[d]["y"]))
         w("")
         w(text)
