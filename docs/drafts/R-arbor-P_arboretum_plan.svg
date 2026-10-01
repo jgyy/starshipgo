@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>R-arbor-P - Arboretum - plan</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<rect x="13" y="7" width="398" height="194" class="x" fill="none"/>
+<polygon points="165.42,140.66 141.3,107.34 120.58,74 104.7,40.66 102.7,34 321.3,34 321.3,174 191.3,174" class="none" fill="#edf4f1"/>
+<polygon points="281.3,76.4 321.3,76.4 321.3,131.6 281.3,131.6" class="red" fill="url(#hZone)"/>
+<text x="282.9" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<polygon points="317.3,132 317.3,76 325.3,76 325.3,132" class="m" fill="none"/>
+<text x="321.3" y="104.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">gothic ar~</text>
+<path d="M165.42 140.66 L141.3 107.34 L120.58 74 L104.7 40.66 L102.7 34 L321.3 34 L321.3 174 L191.3 174Z M167.82 138.86 L143.79 105.67 L123.22 72.56 L107.51 39.58 L106.73 37 L318.3 37 L318.3 171 L192.77 171Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
+<polygon points="321.3,80.4 321.3,127.6 318.3,127.6 318.3,80.4" class="none" fill="#ffffff"/>
+<line x1="321.3" y1="80.4" x2="318.3" y2="80.4" class="m"/>
+<line x1="321.3" y1="127.6" x2="318.3" y2="127.6" class="m"/>
+<line x1="321.3" y1="80.4" x2="321.3" y2="127.6" class="f"/>
+<line x1="318.3" y1="80.4" x2="318.3" y2="127.6" class="f"/>
+<circle cx="319.8" cy="80.4" r="0.45" class="f" fill="#1c1c1c"/>
+<circle cx="319.8" cy="127.6" r="0.45" class="f" fill="#1c1c1c"/>
+<polygon points="160.73,134.19 146,113.83 148.43,112.07 163.16,132.43" class="none" fill="#ffffff"/>
+<line x1="160.73" y1="134.19" x2="163.16" y2="132.43" class="n"/>
+<line x1="146" y1="113.83" x2="148.43" y2="112.07" class="n"/>
+<line x1="160.73" y1="134.19" x2="146" y2="113.83" class="n"/>
+<line x1="161.95" y1="133.31" x2="147.21" y2="112.95" class="f"/>
+<line x1="163.16" y1="132.43" x2="148.43" y2="112.07" class="n"/>
+<text x="166.32" y="114.62" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AB-1</text>
+<polygon points="137.08,100.55 124.81,80.8 127.35,79.22 139.63,98.97" class="none" fill="#ffffff"/>
+<line x1="137.08" y1="100.55" x2="139.63" y2="98.97" class="n"/>
+<line x1="124.81" y1="80.8" x2="127.35" y2="79.22" class="n"/>
+<line x1="137.08" y1="100.55" x2="124.81" y2="80.8" class="n"/>
+<line x1="138.35" y1="99.76" x2="126.08" y2="80.01" class="f"/>
+<line x1="139.63" y1="98.97" x2="127.35" y2="79.22" class="n"/>
+<text x="144.53" y="82.23" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AB-2</text>
+<polygon points="117.14,66.78 108.14,47.89 110.85,46.6 119.85,65.49" class="none" fill="#ffffff"/>
+<line x1="117.14" y1="66.78" x2="119.85" y2="65.49" class="n"/>
+<line x1="108.14" y1="47.89" x2="110.85" y2="46.6" class="n"/>
+<line x1="117.14" y1="66.78" x2="108.14" y2="47.89" class="n"/>
+<line x1="118.5" y1="66.14" x2="109.5" y2="47.24" class="f"/>
+<line x1="119.85" y1="65.49" x2="110.85" y2="46.6" class="n"/>
+<text x="127.09" y="50.45" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AB-3</text>
+<polygon points="226.3,174 286.3,174 286.3,171 226.3,171" class="none" fill="#ffffff"/>
+<line x1="226.3" y1="174" x2="226.3" y2="171" class="n"/>
+<line x1="286.3" y1="174" x2="286.3" y2="171" class="n"/>
+<line x1="226.3" y1="174" x2="286.3" y2="174" class="n"/>
+<line x1="226.3" y1="172.5" x2="286.3" y2="172.5" class="f"/>
+<line x1="226.3" y1="171" x2="286.3" y2="171" class="n"/>
+<text x="256.3" y="158" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AB-5</text>
+<polygon points="186.4,167.68 170.33,146.98 172.7,145.14 188.77,165.84" class="none" fill="#ffffff"/>
+<line x1="186.4" y1="167.68" x2="188.77" y2="165.84" class="n"/>
+<line x1="170.33" y1="146.98" x2="172.7" y2="145.14" class="n"/>
+<line x1="186.4" y1="167.68" x2="170.33" y2="146.98" class="n"/>
+<line x1="187.58" y1="166.76" x2="171.51" y2="146.06" class="f"/>
+<line x1="188.77" y1="165.84" x2="172.7" y2="145.14" class="n"/>
+<text x="191" y="147.52" font-size="1.4" class="t" text-anchor="middle" fill="#1d3c6e">W-AB-4</text>
+<line x1="102.7" y1="12.2" x2="321.3" y2="12.2" class="d"/>
+<line x1="102" y1="12.9" x2="103.4" y2="11.5" class="m"/>
+<line x1="320.6" y1="12.9" x2="322" y2="11.5" class="m"/>
+<line x1="102.7" y1="32.5" x2="102.7" y2="11" class="d"/>
+<line x1="321.3" y1="32.5" x2="321.3" y2="11" class="d"/>
+<text x="212" y="11.5" font-size="2" class="t" text-anchor="middle">10930</text>
+<line x1="80.9" y1="34" x2="80.9" y2="174" class="d"/>
+<line x1="80.2" y1="34.7" x2="81.6" y2="33.3" class="m"/>
+<line x1="80.2" y1="174.7" x2="81.6" y2="173.3" class="m"/>
+<line x1="101.2" y1="34" x2="79.7" y2="34" class="d"/>
+<line x1="101.2" y1="174" x2="79.7" y2="174" class="d"/>
+<text x="80.2" y="106.16" font-size="2" class="t" transform="rotate(-90 80.2 106.16)">7000</text>
+<line x1="191.3" y1="190.3" x2="321.3" y2="190.3" class="d"/>
+<line x1="190.6" y1="191" x2="192" y2="189.6" class="m"/>
+<line x1="191.3" y1="175" x2="191.3" y2="191.5" class="d"/>
+<line x1="225.6" y1="191" x2="227" y2="189.6" class="m"/>
+<line x1="226.3" y1="175" x2="226.3" y2="191.5" class="d"/>
+<line x1="285.6" y1="191" x2="287" y2="189.6" class="m"/>
+<line x1="286.3" y1="175" x2="286.3" y2="191.5" class="d"/>
+<line x1="320.6" y1="191" x2="322" y2="189.6" class="m"/>
+<line x1="321.3" y1="175" x2="321.3" y2="191.5" class="d"/>
+<text x="208.8" y="189.7" font-size="1.9" class="t" text-anchor="middle">1750</text>
+<text x="256.3" y="189.7" font-size="1.9" class="t" text-anchor="middle">3000</text>
+<text x="303.8" y="189.7" font-size="1.9" class="t" text-anchor="middle">1750</text>
+<line x1="337.6" y1="34" x2="337.6" y2="174" class="d"/>
+<line x1="336.9" y1="34.7" x2="338.3" y2="33.3" class="m"/>
+<line x1="322.3" y1="34" x2="338.8" y2="34" class="d"/>
+<line x1="336.9" y1="81.1" x2="338.3" y2="79.7" class="m"/>
+<line x1="322.3" y1="80.4" x2="338.8" y2="80.4" class="d"/>
+<line x1="336.9" y1="128.3" x2="338.3" y2="126.9" class="m"/>
+<line x1="322.3" y1="127.6" x2="338.8" y2="127.6" class="d"/>
+<line x1="336.9" y1="174.7" x2="338.3" y2="173.3" class="m"/>
+<line x1="322.3" y1="174" x2="338.8" y2="174" class="d"/>
+<text x="337" y="59.25" font-size="1.9" class="t" transform="rotate(-90 337 59.25)">2320</text>
+<text x="337" y="106.05" font-size="1.9" class="t" transform="rotate(-90 337 106.05)">2360</text>
+<text x="337" y="152.85" font-size="1.9" class="t" transform="rotate(-90 337 152.85)">2320</text>
+<circle cx="400" cy="19" r="6.5" class="m" fill="#fff"/>
+<polygon points="400,13.3 402.2,21.4 400,20 397.8,21.4" class="f" fill="#111"/>
+<line x1="400" y1="21.4" x2="400" y2="24.8" class="f"/>
+<text x="400" y="11.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
+<text x="20" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<rect x="20" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="30" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
+<rect x="40" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="50" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
+<text x="20" y="198.4" font-size="1.5" class="t" text-anchor="middle">0</text>
+<text x="30" y="198.4" font-size="1.5" class="t" text-anchor="middle">0.5</text>
+<text x="40" y="198.4" font-size="1.5" class="t" text-anchor="middle">1</text>
+<text x="50" y="198.4" font-size="1.5" class="t" text-anchor="middle">1.5</text>
+<text x="60" y="198.4" font-size="1.5" class="t" text-anchor="middle">2 m</text>
+<text x="14" y="210.8" font-size="2.3" class="t b">ROOM DATA</text>
+<rect x="14" y="212" width="76" height="3.2" class="f" fill="#ffffff"/>
+<text x="15" y="214.15" font-size="1.6" class="t b">Room</text>
+<text x="41" y="214.15" font-size="1.6" class="t">AB  Arboretum</text>
+<rect x="14" y="215.2" width="76" height="3.2" class="f" fill="#f4f6f9"/>
+<text x="15" y="217.35" font-size="1.6" class="t b">Deck / level</text>
+<text x="41" y="217.35" font-size="1.6" class="t">0  (FFL +12.000)</text>
+<rect x="14" y="218.4" width="76" height="3.2" class="f" fill="#ffffff"/>
+<text x="15" y="220.55" font-size="1.6" class="t b">Department</text>
+<text x="41" y="220.55" font-size="1.6" class="t">life</text>
+<rect x="14" y="221.6" width="76" height="3.2" class="f" fill="#f4f6f9"/>
+<text x="15" y="223.75" font-size="1.6" class="t b">Floor area</text>
+<text x="41" y="223.75" font-size="1.6" class="t">62.8 m2</text>
+<rect x="14" y="224.8" width="76" height="3.2" class="f" fill="#ffffff"/>
+<text x="15" y="226.95" font-size="1.6" class="t b">Clear height</text>
+<text x="41" y="226.95" font-size="1.6" class="t">3600 mm</text>
+<rect x="14" y="228" width="76" height="3.2" class="f" fill="#f4f6f9"/>
+<text x="15" y="230.15" font-size="1.6" class="t b">Volume</text>
+<text x="41" y="230.15" font-size="1.6" class="t">226 m3</text>
+<rect x="14" y="231.2" width="76" height="3.2" class="f" fill="#ffffff"/>
+<text x="15" y="233.35" font-size="1.6" class="t b">Floor occupancy</text>
+<text x="41" y="233.35" font-size="1.6" class="t">2 %</text>
+<rect x="14" y="234.4" width="76" height="3.2" class="f" fill="#f4f6f9"/>
+<text x="15" y="236.55" font-size="1.6" class="t b">Crew</text>
+<text x="41" y="236.55" font-size="1.6" class="t">0</text>
+<rect x="14" y="237.6" width="76" height="3.2" class="f" fill="#ffffff"/>
+<text x="15" y="239.75" font-size="1.6" class="t b">Props placed</text>
+<text x="41" y="239.75" font-size="1.6" class="t">1</text>
+<rect x="14" y="240.8" width="76" height="3.2" class="f" fill="#f4f6f9"/>
+<text x="15" y="242.95" font-size="1.6" class="t b">Doors / arches</text>
+<text x="41" y="242.95" font-size="1.6" class="t">1</text>
+<rect x="14" y="244" width="76" height="3.2" class="f" fill="#ffffff"/>
+<text x="15" y="246.15" font-size="1.6" class="t b">Windows</text>
+<text x="41" y="246.15" font-size="1.6" class="t">5</text>
+<rect x="14" y="212" width="76" height="35.2" class="n" fill="none"/>
+<text x="14" y="250.4" font-size="1.6" class="t b">PURPOSE:</text>
+<text x="14" y="253.5" font-size="1.6" class="t">-</text>
+<text x="94" y="210" font-size="2.3" class="t b">BILL OF MATERIALS LINES</text>
+<rect x="94" y="212" width="63" height="2.9" class="n" fill="#dfe3ea"/>
+<text x="95" y="213.85" font-size="1.5" class="t b">CODE</text>
+<text x="108" y="213.85" font-size="1.5" class="t b">BOM LINE</text>
+<text x="151" y="213.85" font-size="1.5" class="t b">QTY</text>
+<rect x="94" y="212" width="63" height="2.9" class="n" fill="none"/>
+<text x="242" y="214" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
+<rect x="242" y="216.2" width="4.2" height="2.4" class="n" fill="#ef77af"/>
+<text x="247.4" y="218.1" font-size="1.6" class="t">doorframe</text>
+<text x="15" y="11.2" font-size="2.6" class="t b">PLAN - ARBORETUM</text>
+<text x="15" y="14.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Arboretum - plan</text>
+<text x="299" y="264.6" font-size="2" class="t">DECK 0 - SKY DECK  -  FLOOR PLAN AT FFL +12.000</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">R-arbor-P</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 0</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">AB</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Arboretum</text>
+</svg>

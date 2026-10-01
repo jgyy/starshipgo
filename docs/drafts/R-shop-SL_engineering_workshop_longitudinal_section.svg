@@ -50,8 +50,8 @@
 <polygon points="156.76,108.5 169.22,108.5 169.22,131 156.76,131" class="f" fill="#b5bbf6"/>
 <polygon points="255.78,63 260.22,63 260.22,69.28 255.78,69.28" class="dot" fill="none"/>
 <polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="dot" fill="none"/>
-<polygon points="172.4,63 197.6,63 197.6,64.96 172.4,64.96" class="dot" fill="none"/>
 <polygon points="229,63 249,63 249,64.58 229,64.58" class="dot" fill="none"/>
+<polygon points="183.4,63 186.6,63 186.6,64.24 183.4,64.24" class="dot" fill="none"/>
 <polygon points="264.2,101 282.2,101 282.2,130.86 264.2,130.86" class="f" fill="#adf5ef"/>
 <polygon points="141,89 144.2,89 144.2,109.9 141,109.9" class="f" fill="#f0edb1"/>
 <polygon points="141,65.2 148.82,65.2 148.82,74.8 141,74.8" class="f" fill="#bfebfa"/>
@@ -59,8 +59,8 @@
 <polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="dot" fill="none"/>
 <polygon points="235,83.8 253,83.8 253,131 235,131" class="f" fill="#f0edaf"/>
 <polygon points="271.06,94 282.2,94 282.2,131 271.06,131" class="f" fill="#aff0d4"/>
-<polygon points="172.4,63 197.6,63 197.6,64.96 172.4,64.96" class="dot" fill="none"/>
-<polygon points="229,63 249,63 249,64.58 229,64.58" class="dot" fill="none"/>
+<polygon points="178.62,62.98 191.38,62.98 191.38,66.5 178.62,66.5" class="dot" fill="none"/>
+<polygon points="226.4,63 251.6,63 251.6,64.96 226.4,64.96" class="dot" fill="none"/>
 <polygon points="141.8,94 158.2,94 158.2,131 141.8,131" class="f" fill="#a6f4ee"/>
 <polygon points="197.8,108.4 214.2,108.4 214.2,131 197.8,131" class="f" fill="#f0ecad"/>
 <polygon points="268.4,85 282.2,85 282.2,131 268.4,131" class="f" fill="#f4a6de"/>
@@ -76,9 +76,9 @@
 <polygon points="268.4,85 282.2,85 282.2,131 268.4,131" class="m" fill="#ef7dcf"/>
 <polygon points="141,65.2 148.82,65.2 148.82,74.8 141,74.8" class="m" fill="#9ee1f7"/>
 <polygon points="255.78,63 260.22,63 260.22,69.28 255.78,69.28" class="m" fill="#7defd7"/>
+<polygon points="178.62,62.98 191.38,62.98 191.38,66.5 178.62,66.5" class="m" fill="#d87def"/>
 <polygon points="207.4,63 216.6,63 216.6,66.4 207.4,66.4" class="m" fill="#ef7da3"/>
-<polygon points="172.4,63 197.6,63 197.6,64.96 172.4,64.96" class="m" fill="#d87def"/>
-<polygon points="229,63 249,63 249,64.58 229,64.58" class="m" fill="#d87def"/>
+<polygon points="226.4,63 251.6,63 251.6,64.96 226.4,64.96" class="m" fill="#d87def"/>
 </g>
 <text x="163" y="96.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>
 <text x="266" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
@@ -250,7 +250,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Engineering Workshop - longitudinal section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = -7.25 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = -7.25 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-shop-SL</text>

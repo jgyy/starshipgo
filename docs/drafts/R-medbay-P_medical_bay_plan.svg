@@ -138,9 +138,9 @@
 <polygon points="154.27,78.97 161.73,78.97 161.73,81.25 154.27,81.25" class="dot" fill="none"/>
 <polygon points="111.52,173.64 120.03,173.64 120.03,182.15 111.52,182.15" class="dot" fill="none"/>
 <polygon points="151.6,122.6 164.4,122.6 164.4,135.4 151.6,135.4" class="dot" fill="none"/>
-<polygon points="193.83,122.6 206.63,122.6 206.63,135.4 193.83,135.4" class="dot" fill="none"/>
 <polygon points="197.97,77.85 202.48,77.85 202.48,82.36 197.97,82.36" class="dot" fill="none"/>
 <polygon points="111.64,120.6 119.91,120.6 119.91,137.4 111.64,137.4" class="dot" fill="none"/>
+<polygon points="193.56,122.33 206.89,122.33 206.89,135.67 193.56,135.67" class="dot" fill="none"/>
 <text x="104.66" y="193.43" font-size="1.25" class="t" text-anchor="middle" fill="#333">Whole-Body Scanner Arch</text>
 <text x="138" y="195.77" font-size="1.25" class="t" text-anchor="middle" fill="#333">MRI Ring Scanner</text>
 <text x="161.33" y="194.33" font-size="1.25" class="t" text-anchor="middle" fill="#333">Cryo-Stasis Pod</text>

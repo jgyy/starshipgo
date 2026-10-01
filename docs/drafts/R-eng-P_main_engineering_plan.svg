@@ -144,19 +144,18 @@
 <polygon points="141.73,193.13 168.4,193.13 168.4,198.2 141.73,198.2" class="dot" fill="none"/>
 <polygon points="168.8,193.13 195.47,193.13 195.47,198.2 168.8,198.2" class="dot" fill="none"/>
 <polygon points="195.87,193.13 222.53,193.13 222.53,198.2 195.87,198.2" class="dot" fill="none"/>
+<polygon points="111.52,173.64 120.03,173.64 120.03,182.15 111.52,182.15" class="dot" fill="none"/>
 <polygon points="153.75,75.85 162.25,75.85 162.25,84.36 153.75,84.36" class="dot" fill="none"/>
-<polygon points="195.97,173.64 204.48,173.64 204.48,182.15 195.97,182.15" class="dot" fill="none"/>
 <polygon points="114.67,64.6 141.33,64.6 141.33,70.73 114.67,70.73" class="dot" fill="none"/>
 <polygon points="141.73,64.6 168.4,64.6 168.4,70.73 141.73,70.73" class="dot" fill="none"/>
 <polygon points="168.8,64.6 195.47,64.6 195.47,70.73 168.8,70.73" class="dot" fill="none"/>
-<polygon points="168.8,177.93 195.47,177.93 195.47,184.07 168.8,184.07" class="dot" fill="none"/>
-<polygon points="111.64,120.6 119.91,120.6 119.91,137.4 111.64,137.4" class="dot" fill="none"/>
 <polygon points="196.09,71.71 204.36,71.71 204.36,88.51 196.09,88.51" class="dot" fill="none"/>
+<polygon points="109.11,122.33 122.44,122.33 122.44,135.67 109.11,135.67" class="dot" fill="none"/>
 <polygon points="151.33,122.33 164.67,122.33 164.67,135.67 151.33,135.67" class="dot" fill="none"/>
-<polygon points="193.56,122.33 206.89,122.33 206.89,135.67 193.56,135.67" class="dot" fill="none"/>
+<polygon points="193.56,171.23 206.89,171.23 206.89,184.56 193.56,184.56" class="dot" fill="none"/>
 <polygon points="107.44,79.04 124.11,79.04 124.11,81.17 107.44,81.17" class="dot" fill="none"/>
-<polygon points="107.44,176.83 124.11,176.83 124.11,178.96 107.44,178.96" class="dot" fill="none"/>
 <polygon points="149.67,176.83 166.33,176.83 166.33,178.96 149.67,178.96" class="dot" fill="none"/>
+<polygon points="191.89,127.93 208.56,127.93 208.56,130.07 191.89,130.07" class="dot" fill="none"/>
 <text x="168" y="131.97" font-size="1.25" class="t" text-anchor="middle" fill="#333">Fusion Core Reactor</text>
 <text x="151.73" y="206.65" font-size="1.25" class="t" text-anchor="middle" fill="#333">Steam Turbine</text>
 <text x="186.12" y="208.1" font-size="1.25" class="t" text-anchor="middle" fill="#333">Motor Generator Set</text>
@@ -305,7 +304,7 @@
 <text x="336" y="39.35" font-size="1.7" class="t">3</text>
 <rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
 <text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
-<text x="336" y="42.65" font-size="1.7" class="t">66</text>
+<text x="336" y="42.65" font-size="1.7" class="t">65</text>
 <rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
 <text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
 <text x="336" y="45.95" font-size="1.7" class="t">1</text>
@@ -368,7 +367,7 @@
 <rect x="307" y="106.8" width="106" height="3" class="f" fill="#f4f6f9"/>
 <text x="308" y="108.75" font-size="1.6" class="t">ME-12</text>
 <text x="322" y="108.75" font-size="1.6" class="t">Overhead trays, pipes and ducts</text>
-<text x="406" y="108.75" font-size="1.6" class="t">11</text>
+<text x="406" y="108.75" font-size="1.6" class="t">10</text>
 <rect x="307" y="109.8" width="106" height="3" class="f" fill="#ffffff"/>
 <text x="308" y="111.75" font-size="1.6" class="t">ME-13</text>
 <text x="322" y="111.75" font-size="1.6" class="t">Radiation and fire safety</text>

@@ -51,43 +51,43 @@
 <rect x="16" y="33.6" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="17" y="35.95" font-size="1.8" class="t b">G-04</text>
 <text x="31" y="35.95" font-size="1.8" class="t">Hull lines plan</text>
-<text x="105" y="35.95" font-size="1.8" class="t">1:300</text>
+<text x="105" y="35.95" font-size="1.8" class="t">1:400</text>
 <rect x="16" y="37" width="108" height="3.4" class="f" fill="#ffffff"/>
 <text x="17" y="39.35" font-size="1.8" class="t b">G-05</text>
-<text x="31" y="39.35" font-size="1.8" class="t">Profile - starboard outboard elevation</text>
-<text x="105" y="39.35" font-size="1.8" class="t">1:200</text>
+<text x="31" y="39.35" font-size="1.8" class="t">Profile - outer skin and fittings</text>
+<text x="105" y="39.35" font-size="1.8" class="t">1:400</text>
 <rect x="16" y="40.4" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="17" y="42.75" font-size="1.8" class="t b">G-06</text>
 <text x="31" y="42.75" font-size="1.8" class="t">Longitudinal section on centreline</text>
-<text x="105" y="42.75" font-size="1.8" class="t">1:200</text>
+<text x="105" y="42.75" font-size="1.8" class="t">1:400</text>
 <rect x="16" y="43.8" width="108" height="3.4" class="f" fill="#ffffff"/>
 <text x="17" y="46.15" font-size="1.8" class="t b">G-07</text>
 <text x="31" y="46.15" font-size="1.8" class="t">Transverse section A - stair lobby</text>
-<text x="105" y="46.15" font-size="1.8" class="t">1:100</text>
+<text x="105" y="46.15" font-size="1.8" class="t">1:250</text>
 <rect x="16" y="47.2" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="17" y="49.55" font-size="1.8" class="t b">G-08</text>
 <text x="31" y="49.55" font-size="1.8" class="t">Transverse section B - bridge</text>
-<text x="105" y="49.55" font-size="1.8" class="t">1:75</text>
+<text x="105" y="49.55" font-size="1.8" class="t">1:250</text>
 <rect x="16" y="50.6" width="108" height="3.4" class="f" fill="#ffffff"/>
 <text x="17" y="52.95" font-size="1.8" class="t b">G-09</text>
-<text x="31" y="52.95" font-size="1.8" class="t">Transverse section C - mess / medical / engineering</text>
-<text x="105" y="52.95" font-size="1.8" class="t">1:100</text>
+<text x="31" y="52.95" font-size="1.8" class="t">Transverse section C - forward midship</text>
+<text x="105" y="52.95" font-size="1.8" class="t">1:300</text>
 <rect x="16" y="54" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="17" y="56.35" font-size="1.8" class="t b">G-10</text>
-<text x="31" y="56.35" font-size="1.8" class="t">Transverse section D - cabins row</text>
-<text x="105" y="56.35" font-size="1.8" class="t">1:100</text>
+<text x="31" y="56.35" font-size="1.8" class="t">Transverse section D - aft midship</text>
+<text x="105" y="56.35" font-size="1.8" class="t">1:300</text>
 <rect x="16" y="57.4" width="108" height="3.4" class="f" fill="#ffffff"/>
 <text x="17" y="59.75" font-size="1.8" class="t b">G-11</text>
-<text x="31" y="59.75" font-size="1.8" class="t">Transverse section E - hangar bay</text>
-<text x="105" y="59.75" font-size="1.8" class="t">1:75</text>
+<text x="31" y="59.75" font-size="1.8" class="t">Transverse section E - hangar bay and hold</text>
+<text x="105" y="59.75" font-size="1.8" class="t">1:200</text>
 <rect x="16" y="60.8" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="17" y="63.15" font-size="1.8" class="t b">G-12</text>
 <text x="31" y="63.15" font-size="1.8" class="t">Transverse section F - forward rooms</text>
-<text x="105" y="63.15" font-size="1.8" class="t">1:100</text>
+<text x="105" y="63.15" font-size="1.8" class="t">1:250</text>
 <rect x="16" y="64.2" width="108" height="3.4" class="f" fill="#ffffff"/>
 <text x="17" y="66.55" font-size="1.8" class="t b">G-13</text>
 <text x="31" y="66.55" font-size="1.8" class="t">Stair tower details</text>
-<text x="105" y="66.55" font-size="1.8" class="t">1:50 / 1:75 / 1:10</text>
+<text x="105" y="66.55" font-size="1.8" class="t">1:100 / 1:10</text>
 <rect x="16" y="67.6" width="108" height="3.4" class="f" fill="#f4f6f9"/>
 <text x="17" y="69.95" font-size="1.8" class="t b">G-14</text>
 <text x="31" y="69.95" font-size="1.8" class="t">Circulation and escape diagram</text>
@@ -101,21 +101,45 @@
 <text x="31" y="76.75" font-size="1.8" class="t">Drawing index, legend and symbols</text>
 <text x="105" y="76.75" font-size="1.8" class="t">NTS</text>
 <rect x="16" y="77.8" width="108" height="3.4" class="f" fill="#ffffff"/>
-<text x="17" y="80.15" font-size="1.8" class="t b">K-01</text>
-<text x="31" y="80.15" font-size="1.8" class="t">Contact sheet - Deck 1 room plans</text>
-<text x="105" y="80.15" font-size="1.8" class="t">NTS</text>
+<text x="17" y="80.15" font-size="1.8" class="t b">G-17</text>
+<text x="31" y="80.15" font-size="1.8" class="t">Body plan - skin sections</text>
+<text x="105" y="80.15" font-size="1.8" class="t">1:600</text>
 <rect x="16" y="81.2" width="108" height="3.4" class="f" fill="#f4f6f9"/>
-<text x="17" y="83.55" font-size="1.8" class="t b">K-02</text>
-<text x="31" y="83.55" font-size="1.8" class="t">Contact sheet - Deck 2 room plans</text>
+<text x="17" y="83.55" font-size="1.8" class="t b">G-18</text>
+<text x="31" y="83.55" font-size="1.8" class="t">Principal particulars</text>
 <text x="105" y="83.55" font-size="1.8" class="t">NTS</text>
 <rect x="16" y="84.6" width="108" height="3.4" class="f" fill="#ffffff"/>
-<text x="17" y="86.95" font-size="1.8" class="t b">K-03</text>
-<text x="31" y="86.95" font-size="1.8" class="t">Contact sheet - Deck 3 room plans</text>
-<text x="105" y="86.95" font-size="1.8" class="t">NTS</text>
-<rect x="16" y="20" width="108" height="68" class="n" fill="none"/>
-<text x="16" y="94" font-size="1.7" class="t">Room sheets: R-&lt;roomid&gt;-P plan, R-&lt;roomid&gt;-SL longitudinal section, R-&lt;roomid&gt;-ST transverse section</text>
-<text x="16" y="98" font-size="1.7" class="t">43 rooms x 3 sheets (see INDEX.md for the complete list, grouped by deck).</text>
-<text x="16" y="102" font-size="1.7" class="t">Contact sheets K-01..K-03 show all room plans of a deck as thumbnails.</text>
+<text x="17" y="86.95" font-size="1.8" class="t b">G-19</text>
+<text x="31" y="86.95" font-size="1.8" class="t">General arrangement - Deck 0 (Sky Deck)</text>
+<text x="105" y="86.95" font-size="1.8" class="t">1:250</text>
+<rect x="16" y="88" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="90.35" font-size="1.8" class="t b">G-20</text>
+<text x="31" y="90.35" font-size="1.8" class="t">General arrangement - Deck 4 (Hold Deck)</text>
+<text x="105" y="90.35" font-size="1.8" class="t">1:250</text>
+<rect x="16" y="91.4" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="93.75" font-size="1.8" class="t b">K-01</text>
+<text x="31" y="93.75" font-size="1.8" class="t">Contact sheet - Deck 1 room plans</text>
+<text x="105" y="93.75" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="94.8" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="97.15" font-size="1.8" class="t b">K-02</text>
+<text x="31" y="97.15" font-size="1.8" class="t">Contact sheet - Deck 2 room plans</text>
+<text x="105" y="97.15" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="98.2" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="100.55" font-size="1.8" class="t b">K-03</text>
+<text x="31" y="100.55" font-size="1.8" class="t">Contact sheet - Deck 3 room plans</text>
+<text x="105" y="100.55" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="101.6" width="108" height="3.4" class="f" fill="#f4f6f9"/>
+<text x="17" y="103.95" font-size="1.8" class="t b">K-04</text>
+<text x="31" y="103.95" font-size="1.8" class="t">Contact sheet - Deck 0 room plans</text>
+<text x="105" y="103.95" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="105" width="108" height="3.4" class="f" fill="#ffffff"/>
+<text x="17" y="107.35" font-size="1.8" class="t b">K-05</text>
+<text x="31" y="107.35" font-size="1.8" class="t">Contact sheet - Deck 4 room plans</text>
+<text x="105" y="107.35" font-size="1.8" class="t">NTS</text>
+<rect x="16" y="20" width="108" height="88.4" class="n" fill="none"/>
+<text x="16" y="114.4" font-size="1.7" class="t">Room sheets: R-&lt;roomid&gt;-P plan, R-&lt;roomid&gt;-SL longitudinal section, R-&lt;roomid&gt;-ST transverse section</text>
+<text x="16" y="118.4" font-size="1.7" class="t">68 rooms x 3 sheets (see INDEX.md for the complete list, grouped by deck).</text>
+<text x="16" y="122.4" font-size="1.7" class="t">Contact sheets K-xx show all room plans of a deck as thumbnails (one per deck, numbered like the deck's G sheet).</text>
 <text x="135" y="18" font-size="2.3" class="t b">LINE WEIGHTS</text>
 <line x1="135" y1="23" x2="153" y2="23" class="h"/>
 <text x="156" y="23.7" font-size="1.7" class="t">Hull / sheet border 0.50</text>
@@ -431,7 +455,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Drawing index, legend and symbols</text>
-<text x="299" y="264.6" font-size="2" class="t">SHEET INDEX, LINE WEIGHTS, HATCHES, SYMBOLS AND FURNITURE FAMILY COLOURS</text>
+<text x="299" y="264.6" font-size="1.6" class="t">SHEET INDEX, LINE WEIGHTS, HATCHES, SYMBOLS AND FURNITURE FAMILY COLOURS</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">G-16</text>

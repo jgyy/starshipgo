@@ -120,8 +120,8 @@
 <polygon points="77.16,77.16 88.84,77.16 88.84,88.84 77.16,88.84" class="dot" fill="none"/>
 <polygon points="151.6,87.6 154.4,87.6 154.4,90.4 151.6,90.4" class="dot" fill="none"/>
 <polygon points="211.74,92.4 230.94,92.4 230.94,111.6 211.74,111.6" class="dot" fill="none"/>
-<polygon points="84.66,92 104.66,92 104.66,112 84.66,112" class="dot" fill="none"/>
-<polygon points="82.16,154.4 107.16,154.4 107.16,157.6 82.16,157.6" class="dot" fill="none"/>
+<polygon points="84.66,146 104.66,146 104.66,166 84.66,166" class="dot" fill="none"/>
+<polygon points="82.16,100.4 107.16,100.4 107.16,103.6 82.16,103.6" class="dot" fill="none"/>
 <text x="153" y="131.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">island reagent bench</text>
 <text x="209.72" y="67.6" font-size="1.25" class="t" text-anchor="middle" fill="#333">cleanroom glove box</text>
 <text x="65.75" y="189.5" font-size="1.25" class="t" text-anchor="middle" fill="#333">mass spectrometer</text>

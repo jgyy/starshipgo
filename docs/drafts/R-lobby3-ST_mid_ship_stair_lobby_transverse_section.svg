@@ -220,7 +220,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Mid-ship Stair Lobby - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 1.80 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 1.80 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-lobby3-ST</text>

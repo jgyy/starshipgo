@@ -31,48 +31,48 @@
 <pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
-<image x="16.0" y="14.0" width="76.0" height="53.74285714285714" href="R-corF1-P_forward_spine_corridor_plan.svg" xlink:href="R-corF1-P_forward_spine_corridor_plan.svg"/>
-<rect x="16" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="17" y="71.34" font-size="2" class="t b">CF1  Forward Spine Corridor</text>
-<image x="96.5" y="14.0" width="76.0" height="53.74285714285714" href="R-corA1-P_aft_spine_corridor_plan.svg" xlink:href="R-corA1-P_aft_spine_corridor_plan.svg"/>
-<rect x="96.5" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="97.5" y="71.34" font-size="2" class="t b">CA1  Aft Spine Corridor</text>
-<image x="177.0" y="14.0" width="76.0" height="53.74285714285714" href="R-lobby1-P_mid_ship_stair_lobby_plan.svg" xlink:href="R-lobby1-P_mid_ship_stair_lobby_plan.svg"/>
-<rect x="177" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="178" y="71.34" font-size="2" class="t b">LB1  Mid-ship Stair Lobby</text>
-<image x="257.5" y="14.0" width="76.0" height="53.74285714285714" href="R-towerA1-P_port_stair_tower_plan.svg" xlink:href="R-towerA1-P_port_stair_tower_plan.svg"/>
-<rect x="257.5" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="258.5" y="71.34" font-size="2" class="t b">SP1  Port Stair Tower</text>
-<image x="338.0" y="14.0" width="76.0" height="53.74285714285714" href="R-towerB1-P_starboard_stair_tower_plan.svg" xlink:href="R-towerB1-P_starboard_stair_tower_plan.svg"/>
-<rect x="338" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="339" y="71.34" font-size="2" class="t b">SS1  Starboard Stair Tower</text>
-<image x="16.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-bridge-P_bridge_plan.svg" xlink:href="R-bridge-P_bridge_plan.svg"/>
-<rect x="16" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="17" y="135.59" font-size="2" class="t b">BR  Bridge</text>
-<image x="96.5" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-ready-P_captain_s_ready_room_plan.svg" xlink:href="R-ready-P_captain_s_ready_room_plan.svg"/>
-<rect x="96.5" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="97.5" y="135.59" font-size="2" class="t b">RR  Captain's Ready Room</text>
-<image x="177.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-lounge-P_observation_lounge_plan.svg" xlink:href="R-lounge-P_observation_lounge_plan.svg"/>
-<rect x="177" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="178" y="135.59" font-size="2" class="t b">OL  Observation Lounge</text>
-<image x="257.5" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-conf-P_conference_room_plan.svg" xlink:href="R-conf-P_conference_room_plan.svg"/>
-<rect x="257.5" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="258.5" y="135.59" font-size="2" class="t b">CR  Conference Room</text>
-<image x="338.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-astro-P_astrometrics_plan.svg" xlink:href="R-astro-P_astrometrics_plan.svg"/>
-<rect x="338" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="339" y="135.59" font-size="2" class="t b">AM  Astrometrics</text>
-<image x="16.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-cabinA-P_officers_cabins_a_plan.svg" xlink:href="R-cabinA-P_officers_cabins_a_plan.svg"/>
-<rect x="16" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="17" y="199.83" font-size="2" class="t b">OA  Officers' Cabins A</text>
-<image x="96.5" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-cabinB-P_officers_cabins_b_plan.svg" xlink:href="R-cabinB-P_officers_cabins_b_plan.svg"/>
-<rect x="96.5" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="97.5" y="199.83" font-size="2" class="t b">OB  Officers' Cabins B</text>
-<image x="177.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-capt-P_captain_s_quarters_plan.svg" xlink:href="R-capt-P_captain_s_quarters_plan.svg"/>
-<rect x="177" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="178" y="199.83" font-size="2" class="t b">CQ  Captain's Quarters</text>
-<image x="257.5" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-comms-P_communications_centre_plan.svg" xlink:href="R-comms-P_communications_centre_plan.svg"/>
-<rect x="257.5" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="258.5" y="199.83" font-size="2" class="t b">CC  Communications Centre</text>
+<image x="16.0" y="14.0" width="75.2" height="53.17714285714286" href="R-corF1-P_forward_spine_corridor_plan.svg" xlink:href="R-corF1-P_forward_spine_corridor_plan.svg"/>
+<rect x="16" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="17" y="70.78" font-size="2" class="t b">CF1  Forward Spine Corridor</text>
+<image x="95.7" y="14.0" width="75.2" height="53.17714285714286" href="R-corA1-P_aft_spine_corridor_plan.svg" xlink:href="R-corA1-P_aft_spine_corridor_plan.svg"/>
+<rect x="95.7" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="96.7" y="70.78" font-size="2" class="t b">CA1  Aft Spine Corridor</text>
+<image x="175.4" y="14.0" width="75.2" height="53.17714285714286" href="R-lobby1-P_mid_ship_stair_lobby_plan.svg" xlink:href="R-lobby1-P_mid_ship_stair_lobby_plan.svg"/>
+<rect x="175.4" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="176.4" y="70.78" font-size="2" class="t b">LB1  Mid-ship Stair Lobby</text>
+<image x="255.10000000000002" y="14.0" width="75.2" height="53.17714285714286" href="R-towerA1-P_port_stair_tower_plan.svg" xlink:href="R-towerA1-P_port_stair_tower_plan.svg"/>
+<rect x="255.1" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="256.1" y="70.78" font-size="2" class="t b">SP1  Port Stair Tower</text>
+<image x="334.8" y="14.0" width="75.2" height="53.17714285714286" href="R-towerB1-P_starboard_stair_tower_plan.svg" xlink:href="R-towerB1-P_starboard_stair_tower_plan.svg"/>
+<rect x="334.8" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="335.8" y="70.78" font-size="2" class="t b">SS1  Starboard Stair Tower</text>
+<image x="16.0" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-bridge-P_bridge_plan.svg" xlink:href="R-bridge-P_bridge_plan.svg"/>
+<rect x="16" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="17" y="134.45" font-size="2" class="t b">BR  Bridge</text>
+<image x="95.7" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-ready-P_captain_s_ready_room_plan.svg" xlink:href="R-ready-P_captain_s_ready_room_plan.svg"/>
+<rect x="95.7" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="96.7" y="134.45" font-size="2" class="t b">RR  Captain's Ready Room</text>
+<image x="175.4" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-lounge-P_observation_lounge_plan.svg" xlink:href="R-lounge-P_observation_lounge_plan.svg"/>
+<rect x="175.4" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="176.4" y="134.45" font-size="2" class="t b">OL  Observation Lounge</text>
+<image x="255.10000000000002" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-conf-P_conference_room_plan.svg" xlink:href="R-conf-P_conference_room_plan.svg"/>
+<rect x="255.1" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="256.1" y="134.45" font-size="2" class="t b">CR  Conference Room</text>
+<image x="334.8" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-astro-P_astrometrics_plan.svg" xlink:href="R-astro-P_astrometrics_plan.svg"/>
+<rect x="334.8" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="335.8" y="134.45" font-size="2" class="t b">AM  Astrometrics</text>
+<image x="16.0" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-cabinA-P_officers_cabins_a_plan.svg" xlink:href="R-cabinA-P_officers_cabins_a_plan.svg"/>
+<rect x="16" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="17" y="198.13" font-size="2" class="t b">OA  Officers' Cabins A</text>
+<image x="95.7" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-cabinB-P_officers_cabins_b_plan.svg" xlink:href="R-cabinB-P_officers_cabins_b_plan.svg"/>
+<rect x="95.7" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="96.7" y="198.13" font-size="2" class="t b">OB  Officers' Cabins B</text>
+<image x="175.4" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-capt-P_captain_s_quarters_plan.svg" xlink:href="R-capt-P_captain_s_quarters_plan.svg"/>
+<rect x="175.4" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="176.4" y="198.13" font-size="2" class="t b">CQ  Captain's Quarters</text>
+<image x="255.10000000000002" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-comms-P_communications_centre_plan.svg" xlink:href="R-comms-P_communications_centre_plan.svg"/>
+<rect x="255.1" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="256.1" y="198.13" font-size="2" class="t b">CC  Communications Centre</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
