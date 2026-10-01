@@ -324,7 +324,7 @@ def f_water(R, B):
            "Chlorine-free polishing still needs anti-scalant and cleaning chemicals: two drums stand on a spill sump in the north corner, away from the lab and the door, with an eye wash and a spill kit so a leak is contained and treated at once.")
     put(R, B, "barrel_chemical_drum_hazard", 5.8, -16.4, 0.0)
     put(R, B, "barrel_plastic_drum_lidded", 6.6, -16.0, 0.0)
-    put(R, B, "safety_spill_kit_bin", 5.2, -15.9, 0.0)
+    put(R, B, "safety_spill_kit_bin", 4.7, -16.4, 0.0)
     wall_y(R, B, "D2", "safety_eye_wash_station", 0.9, 1.1)
 
     R.line("Spare membranes and filter cartridges",
