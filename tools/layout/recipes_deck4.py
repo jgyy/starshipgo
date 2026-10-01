@@ -356,3 +356,101 @@ def f_water(R, B):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), 6.5, -13.0, 0.0, y=R.y + R.h)
     wall_y(R, B, "W", "warnlight_red_alert_wall_unit", -13.0, bottom=2.9, check=False)
+
+
+# ----------------------------------------------------------------------------------------------- WASTE & RECYCLING PLANT
+def f_waste(R, B):
+    R.describe(
+        "The Waste & Recycling Plant takes everything the crew throw away - paper, plastics, metal, food scraps, medical and "
+        "chemical waste - sorts it, shreds and bales what can be re-made in the Fabrication Hall, digests the wet waste into compost "
+        "and gas, and burns only the residue.",
+        basis="Sized for 120 crew at 0.8 kg of solid waste per person per day = 96 kg/day (about 17 t over a 180-day voyage before "
+              "recycling; 85 % is recovered). Material flow runs west to east along the north wall: intake hopper and chutes, "
+              "two sorting conveyors, a shredder / compactor; baled output goes onto pallets on the south wall for the forklift "
+              "(2.8 m lane from the door); wet waste goes to the digester in the south-east corner and the exhaust is scrubbed "
+              "before it rejoins the ship's air. The grating floor lets spills drain to the sump.",
+        crew=2,
+        adjacency="Forward spine corridor (west door); Water Reclamation directly north (liquor from the digester goes there), "
+                  "Provisions Hold across the corridor; the Fabrication Hall aft receives the baled metal and plastic.",
+        notes="Negative air pressure: the room draws air towards its own scrubbers so odour never reaches the corridor.")
+    R.line("Ceiling lighting", "Sealed industrial panels (350 lux) over the line and the lane; washable, with the lamps clear of the conveyors.")
+    lights(R, spacing=3.5, color="#f2f2e8", energy=1.5)
+    R.keep_clear((3.4, -5.8, 11.9, -3.2), "2.8 m forklift lane from the corridor door to the bale pallets and the digester")
+
+    R.line("Operator station (west wall, north of the door)",
+           "One operator runs the whole line from a console at the intake end: the seat faces east along the conveyors, so the operator sees the "
+           "hopper, the belts and the compactor at once and is close to the door for a quick exit.")
+    con = aw(R, B, "W", "console_ops", -7.7)
+    seat_for(R, B, con, "seat_ops_chair")
+    if con:
+        tops(R, B, con, ["terminal_keyboard"], [(0.0, 0.15)])
+    wall_y(R, B, "W", "display_status_board", -7.7, bottom=2.0, check=False)
+
+    R.line("Intake hopper, chutes and sorting conveyors (north wall)",
+           "Waste from the ship's chutes falls onto the first belt; the bulk hopper takes large items and crates; the two 3 m belts give 6 m of sorting "
+           "length so two people can pick glass, metal and plastics before the shredder. Chute doors are over the belt so nothing drops on the floor.")
+    put(R, B, "storagebin_bulk_hopper", 4.6, -8.15, 0.0)
+    put(R, B, "loader_conveyor_segment_3m", 6.9, -8.06, 90.0)
+    put(R, B, "loader_conveyor_segment_3m", 9.96, -8.06, 90.0)
+    put(R, B, "storagebin_trash_compactor", 12.0, -8.3, 0.0)
+    for x in (6.1, 7.3):
+        wall_y(R, B, "N", "bin_waste_chute_door", x, 2.0)
+    wall_y(R, B, "N", "bin_incinerator_hatch", 9.4, 2.2)
+
+    R.line("Shredder / blower and off-gas scrubbing (east wall, north)",
+           "The shredder housing and blower reduce the sorted waste to flake for baling; its exhaust runs through a HEPA unit and a catalytic "
+           "converter that remove dust and odour before the air returns to the ship, so they stand together on the east wall.")
+    aw(R, B, "E", "scrubber_hepa_particulate_unit", -6.6)
+    wall_y(R, B, "E", "controlpanel_power_isolator", -5.6, 1.4, check=False)
+
+    R.line("Digester and sump (east wall, south of the lane)",
+           "Food scraps and sewage solids go into a closed pressure vessel (anaerobic digester, 4 m3, about 3 weeks retention) which makes compost and "
+           "biogas; the sump tank takes the liquor to the water plant. They stand in the south-east corner away from the door and the operator.")
+    aw(R, B, "E", "tank_spherical_pressure_vessel", -2.2)
+    wall_y(R, B, "E", "valve_dial_gauge", -2.2, bottom=2.5)
+    wall_y(R, B, "E", "valve_pressure_relief_valve", -0.7, 1.0) if False else None
+
+    R.line("Sorting bins and hazardous waste (south wall, west)",
+           "Crew drop sorted waste into triple recycling bins; medical and chemical waste have their own sealed hazmat cabinets and a drum bay "
+           "with a spill kit beside the bins, so hazardous waste is never mixed into the general stream.")
+    wall_row(R, B, "S", ["bin_recycling_bin_triple", "bin_recycling_bin_triple", "bin_trash_bin", "bin_trash_bin",
+                          "safety_hazmat_cabinet", "safety_hazmat_cabinet", "barrel_chemical_drum_hazard"], 2.6, gap=0.06)
+
+    R.line("Baled output pallets (south wall, east)",
+           "Baled metal, plastic flake, cartons and finished compost are stacked on pallets on the south wall, nearest the digester and the lane; the "
+           "forklift takes them to the Fabrication Hall and the hold.")
+    wall_row(R, B, "S", ["pallet_wrapped_stack", "pallet_sacks_stacked"], 9.0, gap=0.08)
+
+    R.line("Forklift, pallet jack and crates",
+           "The hand pallet jack for the baled pallets is parked on the south side of the lane near the door, so the "
+           "operator can fetch a pallet without leaving the line; the forklift comes from the depot for the heavy loads.")
+    put(R, B, "loader_hand_pallet_jack", 4.0, -1.8, 0.0)
+
+    R.line("Decontamination and PPE (west wall, south of the door)",
+           "Anyone handling waste dresses at the glove / boot locker beside the door and washes in the emergency shower on the way out; "
+           "the corridor is never entered in work clothes.")
+    wall_row(R, B, "W", ["safety_emergency_shower", "suitrack_glove_boot_locker"], -3.0, gap=0.04)
+
+    R.line("Cleaning drone",
+           "A floor-scrubbing drone cleans the grating between the line and the lane overnight and returns to its dock.")
+    put(R, B, "cleaningbot_floor_scrubber_disc", 5.5, -2.0, 0.0)
+
+    R.line("Overhead ducts, trays and ventilation",
+           "Exhaust vents in the ceiling draw air towards the scrubbers (negative pressure) and cable trays carry the conveyor and compactor "
+           "power; all overhead.")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, 3.9, -4.5, "x")
+    ceil_run(R, B, ["pipe_ceiling_insulated_pair"] * 4, 3.9, -0.9, "x")
+    for x, z in ((5.5, -7.0), (8.5, -7.0), (11.0, -7.0), (5.5, -1.8)):
+        R.place(mm(B, "duct_ceiling_round_vent"), x, z, 0.0, y=R.y + R.h)
+
+    R.line("Safety and signs",
+           "Biohazard and no-entry signs, extinguishers at the door and by the digester (biogas) and an exit sign over the door; the emergency shower "
+           "by the door doubles as the eye wash.")
+    sign_at(R, B, "E", "sign_hazard_biohazard", -4.5, 2.7)
+    sign_at(R, B, "W", "sign_emergency_exit", -4.5, 2.9)
+    sign_at(R, B, "N", "sign_dept_engineering", 2.7, 2.9)
+    fe(R, B, "E", -3.4)
+    fe(R, B, "N", 3.3)
+    wall_y(R, B, "S", "safety_eye_wash_station", 8.9, 1.1) if False else None
+    R.place(mm(B, "safety_sprinkler_head"), 7.0, -5.2, 0.0, y=R.y + R.h)
+    R.place(mm(B, "camera_dome_ceiling"), 8.0, -3.9, 0.0, y=R.y + R.h)
