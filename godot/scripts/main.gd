@@ -61,9 +61,20 @@ func _ready() -> void:
 	hud.map.ship = builder.ship
 	hud.map.player = player
 	_make_audio()
+	_make_ui()
 	var load_ms := Time.get_ticks_msec() - t0
+	if _flag("--screen-scan"):
+		_screen_scan()
+		return
+	var ui_shot := _arg("--ui-shot=")
+	if ui_shot != "":
+		_interactive = false
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		_run_ui_shots.call_deferred(ui_shot, _arg("--ui-out="))
+		return
 	var bench := _arg("--bench=")
 	if bench != "":
+		_interactive = false
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		var b := Node.new()
 		b.set_script(load("res://scripts/bench.gd"))
@@ -73,8 +84,91 @@ func _ready() -> void:
 		return
 	var tour := _arg("--tour=")
 	if tour != "":
+		_interactive = false
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		_run_tour.call_deferred(tour)
+
+# ------------------------------------------------------------------ interactive screens (see docs/UI.md)
+var state: ShipState
+var terminal: Terminal
+var _interactive := true
+var _scan_acc := 0.0
+
+func _make_ui() -> void:
+	state = ShipState.new()
+	state.name = "ShipState"
+	add_child(state)
+	state.bind_world(builder)
+	terminal = Terminal.new()
+	terminal.name = "Terminal"
+	add_child(terminal)
+	terminal.bind(state)
+	builder.screen_registry.attach_highlight(builder)
+	state.changed.connect(_update_status)
+	state.alert_changed.connect(func(_l: String) -> void: _update_status())
+	_update_status()
+
+func _update_status() -> void:
+	hud.set_status(state.hud_line(), state.alert)
+
+## Ten times a second: which screen is the player looking at (analytic, no colliders).
+func _scan_screens() -> void:
+	var reg := builder.screen_registry
+	if terminal.is_open or _room_id == "":
+		hud.set_target({})
+		reg.show_highlight({})
+		return
+	var space := player.get_world_3d().direct_space_state
+	var rec := reg.update(player.camera.global_transform, _room_id, builder.room_adj, space)
+	hud.set_target(rec, AppCatalog.title_of(rec.get("app", "")) if not rec.is_empty() else "")
+	reg.show_highlight(rec)
+
+func _unhandled_input(event: InputEvent) -> void:
+	if _interactive and event.is_action_pressed("interact") and not terminal.is_open:
+		var rec := builder.screen_registry.current
+		if not rec.is_empty():
+			terminal.open_host(rec)
+			get_viewport().set_input_as_handled()
+
+func _screen_scan() -> void:
+	var s := builder.screen_registry.summary()
+	print("screen scan: %d screens on %d props, %d machine data cards, %d records, %d unmapped" % [
+		s["screens"], s["props_with_screens"], s["machines"], s["records"], s["unmapped"]])
+	print("by app: ", s["by_app"])
+	get_tree().quit(1 if int(s["unmapped"]) > 0 else 0)
+
+## --ui-shot=starmap,nav --ui-out=/tmp/ui : render each app full screen to PNG (docs/screenshots/ui_<app>.png) and quit.
+func _run_ui_shots(ids: String, out: String) -> void:
+	if out == "":
+		out = "user://ui"
+	DirAccess.make_dir_recursive_absolute(out)
+	await get_tree().create_timer(0.5).timeout
+	player.set_physics_process(false)
+	for id in ids.split(","):
+		var host := {"label": "Console", "room": "bridge", "room_name": "Bridge", "tex": ""}
+		for r in builder.screen_registry.records:
+			if r["app"] == id:
+				host = r.duplicate()
+				break
+		terminal.open_app(id, host)
+		if terminal.app != null and terminal.app.has_method("demo"):
+			terminal.app.call("demo")
+		for i in 14:
+			await get_tree().process_frame
+		await get_tree().create_timer(0.4).timeout
+		var img := get_viewport().get_texture().get_image()
+		if img == null or img.is_empty():
+			printerr("no rendered image (is a renderer available?)")
+			get_tree().quit(1)
+			return
+		var path := "%s/ui_%s.png" % [out, id]
+		if img.save_png(path) != OK:
+			printerr("cannot write ", path)
+			get_tree().quit(1)
+			return
+		print("shot ", path)
+		terminal.close()
+	get_tree().quit()
 
 var _hum: AudioStreamPlayer
 var _rumble: AudioStreamPlayer
@@ -123,12 +217,19 @@ func _mix_for(dept: String) -> void:
 	_mix_tween.tween_property(_rumble, "volume_db", rum, 1.5)
 
 func _process(delta: float) -> void:
+	if _interactive and terminal != null:
+		_scan_acc += delta
+		if _scan_acc >= 0.1:
+			_scan_acc = 0.0
+			_scan_screens()
 	_acc += delta
 	if _acc < ShipBuilder.CULL_TICK:
 		return
 	_acc = 0.0
 	var p := player.global_position + Vector3(0, 0.9, 0)
 	var here := builder.room_at(p)
+	if state != null and here != "":
+		state.player_room = here
 	builder.update_culling(p)
 	if here != "" and here != _room_id:
 		_room_id = here

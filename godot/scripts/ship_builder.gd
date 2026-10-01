@@ -31,6 +31,8 @@ var use_probes := true
 var use_culling := true
 var use_occluders := false            # OccluderInstance3D per room shell; only useful with viewport occlusion culling on
 var stats := {"props": 0, "lights": 0, "doors": 0, "stairs": 0, "models_used": {}, "multimeshes": 0, "colliders": 0}
+var screen_registry := ScreenRegistry.new()   # interactive screens / machines (see scripts/ui/screen_registry.gd)
+var hangar_fields: Array = []         # [{"mesh": MeshInstance3D, "shape": CollisionShape3D}] toggled by the docking app
 var _scenes: Dictionary = {}
 var _model_meshes: Dictionary = {}    # id -> Array[{mesh, xf}]
 var _cull_acc := 0.0
@@ -311,6 +313,7 @@ func _build_room(room: Dictionary) -> void:
 		fb.position = q.position
 		fb.rotation_degrees.y = ff.get("yaw", 0.0)
 		body.add_child(fb)
+		hangar_fields.append({"mesh": q, "shape": fb})
 	# a one-shot reflection probe gives metals and glass the room around them
 	var rc: Array = room["rect"]
 	var area: float = room.get("area", 0.0)
@@ -545,6 +548,7 @@ func _add_light(parent: Node3D, l: Dictionary) -> void:
 	lt.distance_fade_length = 8.0
 	lt.light_specular = 0.6
 	lt.position = Vector3(l["pos"][0], l["pos"][1], l["pos"][2])
+	lt.add_to_group("ship_lights")      # alert level tint / pulse (ShipState.apply_alert_lights)
 	parent.add_child(lt)
 	stats["lights"] += 1
 
@@ -579,12 +583,13 @@ func _meshes_of(id: String) -> Array:
 			if n != inst:
 				xf = xf * n.transform
 			if n is MeshInstance3D and (n as MeshInstance3D).mesh != null:
-				out.append({"mesh": (n as MeshInstance3D).mesh, "xf": xf})
+				out.append({"mesh": (n as MeshInstance3D).mesh, "xf": xf, "name": String(n.name)})
 			for c in n.get_children():
 				if c is Node3D:
 					stack.append([c, xf])
 		inst.free()
 	_model_meshes[id] = out
+	screen_registry.index_model(id, out)
 	return out
 
 func _build_props(room: Dictionary, content: Node3D, room_node: Node3D) -> void:
@@ -608,6 +613,8 @@ func _build_props(room: Dictionary, content: Node3D, room_node: Node3D) -> void:
 		if not groups.has(id):
 			groups[id] = []
 		groups[id].append(xf)
+		_meshes_of(id)                   # indexes the model's screen surfaces before the prop is registered
+		screen_registry.add_prop(room, id, entry, xf)
 		stats["props"] += 1
 		stats["models_used"][id] = true
 		var size := Vector3(entry["size"][0], entry["size"][1], entry["size"][2])
@@ -651,6 +658,8 @@ func _place_door(d: Dictionary) -> void:
 	inst.set_script(load("res://scripts/door.gd"))
 	inst.position = Vector3(d["pos"][0], d["pos"][1], d["pos"][2])
 	inst.rotation_degrees.y = d.get("yaw", 0.0)
+	inst.set_meta("a", d.get("a", ""))      # rooms either side (security app / lock command)
+	inst.set_meta("b", d.get("b", ""))
 	add_child(inst)
 	inst.call("setup")
 	_set_visibility(inst, 60.0)

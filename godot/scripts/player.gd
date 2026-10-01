@@ -64,7 +64,18 @@ func _map_open() -> bool:
 	var hud := get_tree().get_first_node_in_group("hud")
 	return hud != null and hud.get("map") != null and (hud.get("map") as Control).visible
 
+## A terminal overlay is open: no look, no movement, no flashlight; the pointer belongs to the UI.
+var ui_locked := false
+
+func set_ui_locked(v: bool) -> void:
+	ui_locked = v
+	if v:
+		velocity.x = 0.0
+		velocity.z = 0.0
+
 func _unhandled_input(event: InputEvent) -> void:
+	if ui_locked:
+		return
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * mouse_sens)
 		_pitch = clampf(_pitch - event.relative.y * mouse_sens, -1.5, 1.5)
@@ -83,8 +94,10 @@ func look_at_yaw_pitch(yaw: float, pitch: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	var inp: Vector2 = sim_move if sim_move != null else Input.get_vector("move_left", "move_right", "move_forward", "move_back")
+	if ui_locked:
+		inp = Vector2.ZERO
 	var dir := (transform.basis * Vector3(inp.x, 0, inp.y)).normalized()
-	var speed := SPRINT_SPEED if Input.is_action_pressed("sprint") else WALK_SPEED
+	var speed := SPRINT_SPEED if Input.is_action_pressed("sprint") and not ui_locked else WALK_SPEED
 	var target := dir * speed
 	velocity.x = move_toward(velocity.x, target.x, ACCEL * delta)
 	velocity.z = move_toward(velocity.z, target.z, ACCEL * delta)

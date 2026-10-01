@@ -7,7 +7,11 @@ var prompt_label: Label
 var help_label: Label
 var map: Control
 var fade: ColorRect
+var interact_label: Label              # "[E] Use NAV (Helm Console)"
+var status_label: Label                # top right: ALERT / DEST / ETA
+var ring: Control                      # crosshair ring that lights up on an interactive screen
 var _room_tween: Tween
+var _ring_on := false
 
 func _ready() -> void:
 	add_to_group("hud")
@@ -29,8 +33,26 @@ func _ready() -> void:
 	prompt_label.position.y -= 120
 	prompt_label.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	prompt_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	interact_label = _label(20, Color(0.55, 0.95, 1.0))
+	interact_label.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	interact_label.position.y -= 160
+	interact_label.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	interact_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	status_label = _label(16, Color(0.6, 0.9, 1.0))
+	status_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	status_label.grow_horizontal = Control.GROW_DIRECTION_BEGIN
+	status_label.position = Vector2(-32, 26)
+	status_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	ring = Control.new()
+	ring.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
+	ring.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ring.draw.connect(func() -> void:
+		if _ring_on:
+			ring.draw_arc(Vector2.ZERO, 17.0, 0.0, TAU, 40, Color(0.45, 0.95, 1.0, 0.9), 2.0, true)
+			ring.draw_arc(Vector2.ZERO, 21.0, 0.0, TAU, 40, Color(0.45, 0.95, 1.0, 0.35), 1.0, true))
+	add_child(ring)
 	help_label = _label(14, Color(0.8, 0.85, 0.9, 0.85))
-	help_label.text = "WASD move   Shift sprint   Mouse look   F flashlight   M deck map   H toggle help   Esc release mouse\nStairs: the two stair towers at mid-ship lead to every deck - just walk up or down the flights"
+	help_label.text = "WASD move   Shift sprint   Mouse look   F flashlight   E use screen / console   M deck map   H toggle help   Esc release mouse\nStairs: the two stair towers at mid-ship lead to every deck - just walk up or down the flights"
 	help_label.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_LEFT)
 	help_label.position = Vector2(32, -74)
 	map = load("res://scripts/deck_map.gd").new()
@@ -66,7 +88,32 @@ func show_room(room_name: String, deck_name: String) -> void:
 func set_prompt(t: String) -> void:
 	prompt_label.text = t
 
+## Interaction target under the crosshair ({} clears it).  `title` is the app title, rec["label"] the host machine.
+func set_target(rec: Dictionary, title := "") -> void:
+	var on := not rec.is_empty()
+	if on:
+		if rec.get("app", "") == "datacard":
+			interact_label.text = "[E] Inspect %s" % rec.get("label", "machine")
+		else:
+			interact_label.text = "[E] Use %s (%s)" % [title, rec.get("label", "")]
+	else:
+		interact_label.text = ""
+	if on != _ring_on:
+		_ring_on = on
+		ring.queue_redraw()
+
+func set_status(text: String, alert := "green") -> void:
+	status_label.text = text
+	var col := Color(0.6, 0.9, 1.0)
+	if alert == "yellow":
+		col = Color(1.0, 0.8, 0.3)
+	elif alert == "red":
+		col = Color(1.0, 0.4, 0.35)
+	status_label.add_theme_color_override("font_color", col)
+
 func _unhandled_input(event: InputEvent) -> void:
+	if get_tree().get_first_node_in_group("terminal") != null and get_tree().get_first_node_in_group("terminal").get("is_open"):
+		return
 	if event.is_action_pressed("toggle_help"):
 		help_label.visible = not help_label.visible
 	if event.is_action_pressed("deck_map"):

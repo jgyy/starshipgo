@@ -1,0 +1,101 @@
+{
+  "ship": {
+    "name": "ISV Meridian Dawn",
+    "registry": "SG-1000",
+    "class": "Odyssey-class deep survey cruiser",
+    "motto": "Ad lucem per tenebras",
+    "cruise_warp": 6.0,
+    "top_warp": 9.2,
+    "ly_per_day_at_cruise": 3.2,
+    "description": "A three-deck long-range survey cruiser of the Meridian Compact, carrying 140 crew and a thousand-part machine shop to the unmapped Perseus Reach."
+  },
+  "factions": [
+    {"id": "compact", "name": "Meridian Compact", "color": "#4aa3ff", "description": "The civilian-run federation that built and crews the Meridian Dawn.", "stance": "home"},
+    {"id": "free", "name": "Free Settlements", "color": "#6fe38a", "description": "Independent colonies along the Reach, friendly to survey ships that bring medicine and mail.", "stance": "friendly"},
+    {"id": "hegemony", "name": "Vael Hegemony", "color": "#ff6a5a", "description": "A militarised neighbour that closes borders to anything armed or unannounced.", "stance": "wary"},
+    {"id": "none", "name": "Unclaimed", "color": "#c6b6ff", "description": "Systems nobody has claimed, mostly because nobody has come back from them.", "stance": "unknown"}
+  ],
+  "systems": [
+    {"id": "sol", "name": "Sol", "pos": [0, 0, 0], "star": {"class": "G2V", "temp_k": 5772, "lum_solar": 1.0}, "faction": "compact", "kind": "home", "visited": true,
+      "summary": "Origin of the expedition. Departure from Ceres Yard was 214 days ago.",
+      "planets": [{"name": "Earth", "type": "terrestrial", "gravity_g": 1.0, "atmosphere": "N2/O2", "habitable": true, "moons": 1, "notes": "Compact capital world."}, {"name": "Mars", "type": "terrestrial", "gravity_g": 0.38, "atmosphere": "thin CO2", "habitable": false, "moons": 2, "notes": "Terraforming stalled."}]},
+    {"id": "tau_ceti", "name": "Tau Ceti", "pos": [-5.2, 4.1, 6.4], "star": {"class": "G8V", "temp_k": 5344, "lum_solar": 0.52}, "faction": "compact", "kind": "colony", "visited": true,
+      "summary": "First fuel depot on the outbound leg. Quiet, orderly, boring - which is the point.",
+      "planets": [{"name": "Tau Ceti e", "type": "super-earth", "gravity_g": 1.3, "atmosphere": "dense N2", "habitable": true, "moons": 0, "notes": "Dock city Halden."}, {"name": "Tau Ceti f", "type": "ice", "gravity_g": 0.9, "atmosphere": "none", "habitable": false, "moons": 1, "notes": "Volatiles mine."}]},
+    {"id": "epsilon_eri", "name": "Epsilon Eridani", "pos": [6.0, -3.5, 7.9], "star": {"class": "K2V", "temp_k": 5084, "lum_solar": 0.34}, "faction": "free", "kind": "colony", "visited": true,
+      "summary": "Young orange star with a dust belt; the Free Settlements run a relay and a hospital ship here.",
+      "planets": [{"name": "Ember", "type": "terrestrial", "gravity_g": 0.82, "atmosphere": "N2/O2 thin", "habitable": true, "moons": 2, "notes": "Farming, lots of it."}]},
+    {"id": "luyten", "name": "Luyten's Rest", "pos": [-9.7, -6.2, 12.0], "star": {"class": "M3.5V", "temp_k": 3150, "lum_solar": 0.0011}, "faction": "free", "kind": "outpost", "visited": true,
+      "summary": "Red dwarf with a tidally locked garden world. The last place to mail a letter.",
+      "planets": [{"name": "Rest", "type": "terrestrial", "gravity_g": 1.1, "atmosphere": "N2/O2", "habitable": true, "moons": 0, "notes": "Twilight belt only."}]},
+    {"id": "vael", "name": "Vael Prime", "pos": [11.0, 8.2, 9.5], "star": {"class": "F5V", "temp_k": 6530, "lum_solar": 3.1}, "faction": "hegemony", "kind": "border", "visited": false,
+      "summary": "Hegemony fleet anchorage. Transit permitted along the marked lane only; stray and they will ask why.",
+      "planets": [{"name": "Vael", "type": "terrestrial", "gravity_g": 1.05, "atmosphere": "N2/O2", "habitable": true, "moons": 3, "notes": "Shipyards."}, {"name": "Vael II", "type": "gas giant", "gravity_g": 2.4, "atmosphere": "H2/He", "habitable": false, "moons": 11, "notes": "Fuel skimmers."}]},
+    {"id": "kepler_x", "name": "Kepler Gate", "pos": [3.2, 12.4, 18.0], "star": {"class": "K5V", "temp_k": 4400, "lum_solar": 0.15}, "faction": "none", "kind": "anomaly", "visited": false,
+      "summary": "A K dwarf orbited by a ring of machined debris. The survey buoy that reported it went silent in 1.8 seconds.",
+      "planets": [{"name": "Gate Ring", "type": "artifact", "gravity_g": 0.0, "atmosphere": "none", "habitable": false, "moons": 0, "notes": "Origin unknown."}]},
+    {"id": "helios_reach", "name": "Helios Reach", "pos": [-12.5, 7.7, 21.2], "star": {"class": "A1V", "temp_k": 9600, "lum_solar": 25.0}, "faction": "none", "kind": "survey", "visited": false,
+      "summary": "A bright white star with a spectacular debris disc. Primary survey target of the mission.",
+      "planets": [{"name": "Helios b", "type": "gas giant", "gravity_g": 3.1, "atmosphere": "H2", "habitable": false, "moons": 6, "notes": "Auroras visible from orbit."}, {"name": "Helios c", "type": "lava", "gravity_g": 0.7, "atmosphere": "SiO vapour", "habitable": false, "moons": 0, "notes": "Surface 1900 K."}]},
+    {"id": "aegis", "name": "Aegis", "pos": [8.8, -10.3, 20.4], "star": {"class": "K0V", "temp_k": 5250, "lum_solar": 0.45}, "faction": "free", "kind": "colony", "visited": false,
+      "summary": "Newest Free Settlement, still building its first orbital ring. Eager for engineers.",
+      "planets": [{"name": "Aegis", "type": "terrestrial", "gravity_g": 0.95, "atmosphere": "N2/O2", "habitable": true, "moons": 1, "notes": "Spaceport under construction."}]},
+    {"id": "nox", "name": "Nox", "pos": [-2.5, -13.4, 26.8], "star": {"class": "M0V", "temp_k": 3850, "lum_solar": 0.07}, "faction": "none", "kind": "hazard", "visited": false,
+      "summary": "A flare star with a shrouded companion. Long-range sensors disagree about how many bodies orbit it.",
+      "planets": [{"name": "Nox I", "type": "barren", "gravity_g": 0.4, "atmosphere": "none", "habitable": false, "moons": 0, "notes": "Scoured by flares."}]},
+    {"id": "perseus_end", "name": "Perseus End", "pos": [4.5, 3.0, 33.0], "star": {"class": "B8V", "temp_k": 12000, "lum_solar": 180.0}, "faction": "none", "kind": "frontier", "visited": false,
+      "summary": "The edge of every chart. The mission's final waypoint, if the ship and the crew hold together.",
+      "planets": []}
+  ],
+  "routes": [
+    {"a": "sol", "b": "tau_ceti", "ly": 11.9, "hazard": "none"},
+    {"a": "tau_ceti", "b": "epsilon_eri", "ly": 14.0, "hazard": "none"},
+    {"a": "tau_ceti", "b": "luyten", "ly": 9.0, "hazard": "low"},
+    {"a": "epsilon_eri", "b": "luyten", "ly": 14.5, "hazard": "low"},
+    {"a": "epsilon_eri", "b": "vael", "ly": 7.0, "hazard": "patrolled"},
+    {"a": "epsilon_eri", "b": "kepler_x", "ly": 11.0, "hazard": "medium"},
+    {"a": "luyten", "b": "helios_reach", "ly": 14.2, "hazard": "medium"},
+    {"a": "luyten", "b": "aegis", "ly": 20.0, "hazard": "low"},
+    {"a": "kepler_x", "b": "helios_reach", "ly": 16.0, "hazard": "high"},
+    {"a": "kepler_x", "b": "perseus_end", "ly": 17.3, "hazard": "high"},
+    {"a": "aegis", "b": "nox", "ly": 12.2, "hazard": "medium"},
+    {"a": "nox", "b": "perseus_end", "ly": 14.3, "hazard": "high"}
+  ],
+  "waypoints": [
+    {"system": "helios_reach", "objective": "Map the debris disc and sample the Helios b aurora", "eta_days": 20, "status": "planned"},
+    {"system": "kepler_x", "objective": "Investigate the Gate Ring and recover the silent buoy", "eta_days": 12, "status": "planned"},
+    {"system": "aegis", "objective": "Deliver medical supplies and reactor spares", "eta_days": 10, "status": "optional"},
+    {"system": "perseus_end", "objective": "Reach the edge of the chart", "eta_days": 34, "status": "planned"}
+  ],
+  "current": {"system": "luyten", "status": "docked at relay, outbound transit cleared", "heading": [0.2, 0.3, 0.93]},
+  "timeline": [
+    {"year": 2391, "title": "Compact founded", "text": "Six worlds pool their shipyards to survey the dark between the stars."},
+    {"year": 2402, "title": "Warp lattice proven", "text": "The Odyssey drive sustains warp 6 for nine days without coil failure."},
+    {"year": 2415, "title": "Keel laid", "text": "A thousand-part machine shop is installed in the hull of the Meridian Dawn so she can build her own spares."},
+    {"year": 2417, "title": "Departure", "text": "Meridian Dawn leaves Ceres Yard bound for the Perseus Reach."}
+  ],
+  "logs": [
+    {"stardate": "47601.2", "role": "Captain", "title": "Departure", "text": "Ceres Yard fell astern at 0600. Crew morale is high and the coffee is, for now, real.", "room": "capt"},
+    {"stardate": "47612.8", "role": "Chief Engineer", "title": "Coil drift", "text": "Warp coil 4 runs 3 K warm at cruise. Not dangerous, but I am watching it. Reactor bus B needs a rebalance.", "room": "eng"},
+    {"stardate": "47618.0", "role": "Medical Officer", "title": "Hydroponics fever", "text": "Nine cases of mild spore allergy from the new fern cultivars. Moved the ferns to bay 3.", "room": "medbay"},
+    {"stardate": "47622.5", "role": "Science Officer", "title": "Kepler Gate", "text": "The buoy telemetry is wrong in a way that is too regular to be noise. I would very much like to look at it.", "room": "astro"},
+    {"stardate": "47630.1", "role": "Security Chief", "title": "Brig inventory", "text": "Brig is empty. The armory is not. I intend to keep it that way.", "room": "secoff"},
+    {"stardate": "47634.0", "role": "Quartermaster", "title": "Galley supplies", "text": "Replicator stock at 61 percent. The fruit bowls are the most popular item aboard and nobody will admit why.", "room": "galley"},
+    {"stardate": "47641.7", "role": "Helm", "title": "Luyten approach", "text": "Docked at the Luyten relay. Mail sent, mail received. Vael patrol asked for our route; filed the northern lane.", "room": "bridge"},
+    {"stardate": "47650.3", "role": "Communications", "title": "Unknown carrier", "text": "A repeating carrier on 14.2 GHz from the direction of Kepler Gate. No modulation I recognise.", "room": "comms"}
+  ],
+  "datapads": [
+    {"id": "dp_welcome", "title": "Welcome aboard", "text": "You are on the Meridian Dawn. Decks 1-3 are connected by two stair towers at mid-ship. Every console in the ship is networked: stand close, look at a screen and press E."},
+    {"id": "dp_drive", "title": "How the warp drive works (briefly)", "text": "A ring of eight lattice coils bends local space ahead of the hull. The reactor feeds the coils through three buses. Push the warp factor too high and the coils run hot; keep the temperature under 4800 K and the lattice sings, above it, it screams."},
+    {"id": "dp_code", "title": "Crew code", "text": "1. Nobody is alone on the ship. 2. The ship is everybody's. 3. If it is on fire, tell someone, then put it out. 4. Mail is sacred."},
+    {"id": "dp_gate", "title": "Kepler Gate dossier", "text": "A ring of manufactured debris 40 km across circles Kepler X. Surveyed once, from 6 light-minutes, by an automated buoy that stopped reporting 1.8 seconds after it resolved the ring. Approach with shields up."}
+  ],
+  "glossary": [
+    {"term": "Warp factor", "text": "Dimensionless drive setting. Warp 6 is the Meridian Dawn's cruise: about 3.2 light-years per day."},
+    {"term": "Lattice coil", "text": "One of eight toroidal coils that shape the warp field."},
+    {"term": "The Reach", "text": "Informal name for the unmapped region beyond Luyten's Rest."},
+    {"term": "Compact", "text": "The Meridian Compact, a federation of six worlds."},
+    {"term": "Bus", "text": "A shared electrical distribution line. The Meridian Dawn has three: A (command), B (engineering) and C (habitat)."},
+    {"term": "Stardate", "text": "Ship-day counter; one unit is about 8.8 hours."}
+  ]
+}
