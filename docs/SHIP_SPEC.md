@@ -16,9 +16,9 @@
 | Doors / stair flights | 34 / 16 |
 | Pressurised volume | 20,022 m3 |
 | Installed equipment (items / distinct models) | 2590 / 638 |
-| Equipment mass | 494.65 t |
-| Lightship displacement (structure + equipment) | 2661.08 t |
-| Full-load displacement | 3141.83 t |
+| Equipment mass | 494.64 t |
+| Lightship displacement (structure + equipment) | 2661.06 t |
+| Full-load displacement | 3141.82 t |
 | Installed generation | 42.9 MW |
 | Typical electrical load | 8.53 MW |
 | Maximum demand | 11.53 MW |
@@ -33,9 +33,9 @@ Hull outlines are one closed convex polygon per deck (`ship.json` `hull`). The s
 
 | Deck | Name | Floor | Hull area | Rooms | Room area | Volume | Items | Equip. mass | Typ. load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 0 | Sky Deck | +12.0 m | 859 m2 | 12 | 860 m2 | 3112 m3 | 464 | 31.92 t | 76.6 kW | 33.23 M |
-| 1 | Command Deck | +8.0 m | 1042 m2 | 14 | 1042 m2 | 3714 m3 | 422 | 25.38 t | 62.9 kW | 19.53 M |
-| 2 | Habitat Deck | +4.0 m | 1064 m2 | 15 | 1064 m2 | 3691 m3 | 602 | 50.20 t | 353.7 kW | 48.86 M |
+| 0 | Sky Deck | +12.0 m | 859 m2 | 12 | 860 m2 | 3112 m3 | 464 | 31.91 t | 76.6 kW | 33.23 M |
+| 1 | Command Deck | +8.0 m | 1042 m2 | 14 | 1042 m2 | 3714 m3 | 422 | 25.37 t | 62.9 kW | 19.53 M |
+| 2 | Habitat Deck | +4.0 m | 1064 m2 | 15 | 1064 m2 | 3691 m3 | 602 | 50.19 t | 353.7 kW | 48.86 M |
 | 3 | Engineering Deck | +0.0 m | 1244 m2 | 14 | 1245 m2 | 5607 m3 | 517 | 220.85 t | 4.95 MW | 259.11 M |
 | 4 | Hold Deck | -4.0 m | 1146 m2 | 13 | 1146 m2 | 3898 m3 | 585 | 166.31 t | 3.10 MW | 201.84 M |
 
@@ -50,7 +50,7 @@ Hull outlines are one closed convex polygon per deck (`ship.json` `hull`). The s
 | 0 | Starboard Stair Tower (`SS0`) | Circulation | 24 | 3.4 | 6 | 12 kg | 1 W | 29 W | 32 W | 2.8 k |
 | 0 | Star Cartography (`SC`) | Science | 220 | 4.2 | 87 | 7.44 t | 7.7 kW | 28.6 kW | 42.3 kW | 11.01 M |
 | 0 | Briefing Theatre (`BT`) | Command | 92 | 3.4 | 56 | 1.64 t | 1.4 kW | 4.7 kW | 6.8 kW | 1.16 M |
-| 0 | Officers' Wardroom & Bar (`WR`) | Crew and habitat | 92 | 3.4 | 75 | 2.66 t | 1.7 kW | 6.0 kW | 8.8 kW | 584.6 k |
+| 0 | Officers' Wardroom & Bar (`WR`) | Crew and habitat | 92 | 3.4 | 75 | 2.66 t | 1.7 kW | 6.0 kW | 8.8 kW | 584.4 k |
 | 0 | Library & Archive (`LI`) | Crew and habitat | 84 | 3.4 | 59 | 8.70 t | 3.5 kW | 14.1 kW | 20.8 kW | 7.31 M |
 | 0 | Arboretum (`AB`) | Life support and garden | 63 | 3.6 | 41 | 3.09 t | 3.5 kW | 9.0 kW | 14.4 kW | 1.50 M |
 | 0 | Observatory (`OB`) | Science | 84 | 3.4 | 44 | 6.00 t | 3.3 kW | 12.3 kW | 20.1 kW | 10.14 M |
@@ -60,11 +60,11 @@ Hull outlines are one closed convex polygon per deck (`ship.json` `hull`). The s
 | 1 | Mid-ship Stair Lobby (`LB1`) | Circulation | 46 | 3.4 | 15 | 210 kg | 76 W | 293 W | 404 W | 78.6 k |
 | 1 | Port Stair Tower (`SP1`) | Circulation | 24 | 3.4 | 5 | 10 kg | 1 W | 19 W | 21 W | 2.2 k |
 | 1 | Starboard Stair Tower (`SS1`) | Circulation | 24 | 3.4 | 6 | 20 kg | 2 W | 36 W | 40 W | 4.5 k |
-| 1 | Bridge (`BR`) | Command | 175 | 4.2 | 41 | 4.90 t | 2.3 kW | 8.0 kW | 14.8 kW | 5.55 M |
+| 1 | Bridge (`BR`) | Command | 175 | 4.2 | 41 | 4.89 t | 2.3 kW | 8.0 kW | 14.8 kW | 5.55 M |
 | 1 | Captain's Ready Room (`RR`) | Command | 85 | 3.4 | 32 | 1.38 t | 747 W | 2.8 kW | 5.4 kW | 181.8 k |
 | 1 | Observation Lounge (`OL`) | Crew and habitat | 150 | 3.6 | 53 | 2.68 t | 1.3 kW | 4.4 kW | 6.5 kW | 1.73 M |
 | 1 | Conference Room (`CR`) | Command | 85 | 3.4 | 52 | 1.67 t | 1.1 kW | 3.9 kW | 6.7 kW | 540.0 k |
-| 1 | Astrometrics (`AM`) | Science | 150 | 3.4 | 44 | 6.43 t | 6.0 kW | 23.7 kW | 38.9 kW | 7.44 M |
+| 1 | Astrometrics (`AM`) | Science | 150 | 3.4 | 44 | 6.42 t | 6.0 kW | 23.7 kW | 38.9 kW | 7.44 M |
 | 1 | Officers' Cabins A (`OA`) | Crew and habitat | 59 | 3.4 | 40 | 1.42 t | 37 W | 399 W | 1.8 kW | 99.3 k |
 | 1 | Officers' Cabins B (`OB`) | Crew and habitat | 46 | 3.4 | 26 | 980 kg | 21 W | 271 W | 1.7 kW | 54.3 k |
 | 1 | Captain's Quarters (`CQ`) | Crew and habitat | 61 | 3.4 | 40 | 1.87 t | 807 W | 3.0 kW | 5.7 kW | 308.9 k |
@@ -83,7 +83,7 @@ Hull outlines are one closed convex polygon per deck (`ship.json` `hull`). The s
 | 2 | Recreation & Gym (`RG`) | Crew and habitat | 85 | 3.4 | 48 | 2.83 t | 419 W | 1.5 kW | 2.2 kW | 316.3 k |
 | 2 | Crew Quarters (`CW`) | Crew and habitat | 69 | 3.4 | 37 | 881 kg | 26 W | 190 W | 230 W | 75.3 k |
 | 2 | Science Laboratory (`SL`) | Science | 85 | 3.4 | 35 | 6.64 t | 1.7 kW | 6.0 kW | 11.0 kW | 9.28 M |
-| 2 | Hydroponics Garden (`HY`) | Life support and garden | 69 | 3.6 | 47 | 6.44 t | 8.2 kW | 20.6 kW | 32.8 kW | 3.07 M |
+| 2 | Hydroponics Garden (`HY`) | Life support and garden | 69 | 3.6 | 47 | 6.43 t | 8.2 kW | 20.6 kW | 32.8 kW | 3.07 M |
 | 3 | Forward Spine Corridor (`CF3`) | Circulation | 72 | 3.4 | 27 | 211 kg | 6 W | 116 W | 126 W | 18.6 k |
 | 3 | Aft Spine Corridor (`CA3`) | Circulation | 43 | 3.4 | 21 | 667 kg | 30 W | 289 W | 1.7 kW | 29.2 k |
 | 3 | Mid-ship Stair Lobby (`LB3`) | Circulation | 46 | 3.4 | 15 | 222 kg | 77 W | 299 W | 411 W | 82.5 k |
@@ -134,15 +134,15 @@ Departments: Cargo and hangar 6 rooms, Command 7 rooms, Crew and habitat 11 room
 | Secondary structure | 223.34 t | 7.1 % |
 | Stair flights | 17.60 t | 0.6 % |
 | Radiators (external) | 64.32 t | 2.0 % |
-| Installed equipment (2590 items) | 494.65 t | 15.7 % |
-| **Lightship** | 2661.08 t | 84.7 % |
+| Installed equipment (2590 items) | 494.64 t | 15.7 % |
+| **Lightship** | 2661.06 t | 84.7 % |
 | Tank, cylinder and water-tank contents | 26.07 t | 0.8 % |
 | Food stores (180 days) | 20.74 t | 0.7 % |
 | Potable water buffer | 9.60 t | 0.3 % |
 | Oxygen reserve (30 days) | 1.61 t | 0.1 % |
 | Atmosphere inventory | 24.03 t | 0.8 % |
 | Cargo payload at departure | 398.71 t | 12.7 % |
-| **Full-load displacement** | 3141.83 t | 100.0 % |
+| **Full-load displacement** | 3141.82 t | 100.0 % |
 
 ### Installed equipment mass by department
 
@@ -150,7 +150,7 @@ Departments: Cargo and hangar 6 rooms, Command 7 rooms, Crew and habitat 11 room
 |---|---|---|---|
 | Cargo and hangar | 298 | 142.84 t | 28.9 % |
 | Command | 372 | 43.12 t | 8.7 % |
-| Crew and habitat | 629 | 32.08 t | 6.5 % |
+| Crew and habitat | 629 | 32.07 t | 6.5 % |
 | Engineering | 310 | 179.78 t | 36.3 % |
 | Life support and garden | 236 | 39.51 t | 8.0 % |
 | Medical | 53 | 14.99 t | 3.0 % |
@@ -436,7 +436,7 @@ Speed model: `ly/day = 1.10 x (warp / 5)^(10/3)`. Cruise is warp 5, top speed wa
 | Installed equipment | 562.56 M |
 | Hull and structure (2166.42 t) | 184.15 M |
 | Integration (22 %) | 123.76 M |
-| Yard overhead and margin (18 %) | 156.69 M |
+| Yard overhead and margin (18 %) | 156.68 M |
 | Design and trials (6 %) | 61.63 M |
 | **Total** | 1088.79 M |
 

@@ -9,14 +9,17 @@ var map: Control
 var fade: ColorRect
 var interact_label: Label              # "[E] Use NAV (Helm Console)"
 var status_label: Label                # top right: ALERT / DEST / ETA
+var crosshair: Label
 var ring: Control                      # crosshair ring that lights up on an interactive screen
 var _room_tween: Tween
 var _ring_on := false
+var _help_before_map := true
 
 func _ready() -> void:
 	add_to_group("hud")
 	layer = 10
 	var cross := Label.new()
+	crosshair = cross
 	cross.text = "+"
 	cross.add_theme_font_size_override("font_size", 22)
 	cross.modulate = Color(1, 1, 1, 0.55)
@@ -56,11 +59,18 @@ func _ready() -> void:
 	help_label = _label(14, Color(0.8, 0.85, 0.9, 0.85))
 	help_label.text = "WASD move   Shift sprint   Mouse look   F flashlight   E use screen / console   M deck map   H toggle help   Esc release mouse\nStairs: the two stair towers at mid-ship lead to every deck - just walk up or down the flights"
 	help_label.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_LEFT)
-	help_label.position = Vector2(32, -74)
+	# `position` is absolute: assigning Vector2(32, -74) after the preset put the label 74 px ABOVE the top edge of the
+	# window (off screen); the offsets are what has to carry the margins of a bottom-left anchored label.
+	help_label.grow_vertical = Control.GROW_DIRECTION_BEGIN
+	help_label.offset_left = 32.0
+	help_label.offset_right = 32.0
+	help_label.offset_top = -24.0
+	help_label.offset_bottom = -24.0
 	map = load("res://scripts/deck_map.gd").new()
 	map.visible = false
 	map.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(map)
+	map.visibility_changed.connect(_on_map_visibility)
 	fade = ColorRect.new()
 	fade.color = Color(0, 0, 0, 0)
 	fade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -86,6 +96,21 @@ func show_room(room_name: String, deck_name: String) -> void:
 	_room_tween = create_tween()
 	_room_tween.tween_interval(3.5)
 	_room_tween.tween_property(room_label, "modulate:a", 0.35, 1.5)
+
+## Tour screenshots: a fresh banner with no stale stair prompt from the previous camera.
+func show_banner(title: String, subtitle: String) -> void:
+	set_prompt("")
+	show_room(title, subtitle)
+
+## The deck map is a full-screen overlay with its own title at (40, 48): the location banner, prompts, crosshair and help
+## text used to show through its translucent background and print over the map's header.
+func _on_map_visibility() -> void:
+	var open := map.visible
+	if open:
+		_help_before_map = help_label.visible
+	for c in [crosshair, ring, room_label, deck_label, prompt_label, interact_label]:
+		(c as Control).visible = not open
+	help_label.visible = false if open else _help_before_map
 
 func set_prompt(t: String) -> void:
 	prompt_label.text = t
@@ -116,7 +141,7 @@ func set_status(text: String, alert := "green") -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if get_tree().get_first_node_in_group("terminal") != null and get_tree().get_first_node_in_group("terminal").get("is_open"):
 		return
-	if event.is_action_pressed("toggle_help"):
+	if event.is_action_pressed("toggle_help") and not map.visible:
 		help_label.visible = not help_label.visible
 	if event.is_action_pressed("deck_map"):
 		map.visible = not map.visible

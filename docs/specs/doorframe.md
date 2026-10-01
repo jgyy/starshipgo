@@ -9,7 +9,7 @@
 | `doorframe_deep_bulkhead` | Door frame - Deep Bulkhead | Calder-Okonkwo Industries | 2900 x 3050 x 600 | 523.2 kg | 0 W | none | 11 k |
 | `doorframe_gothic_arch` | Door frame - Gothic Arch | Calder-Okonkwo Industries | 2800 x 3803 x 400 | 411.3 kg | 0 W | none | 8,300 |
 | `doorframe_hexagonal` | Door frame - Hexagonal | Calder-Okonkwo Industries | 2520 x 2953 x 248 | 200.4 kg | 0 W | none | 5,260 |
-| `doorframe_ibeam_portal` | Door frame - Ibeam Portal | Calder-Okonkwo Industries | 2600 x 2925 x 300 | 238.5 kg | 0 W | none | 6,240 |
+| `doorframe_ibeam_portal` | Door frame - Ibeam Portal | Calder-Okonkwo Industries | 2600 x 2931 x 290 | 231.1 kg | 0 W | none | 6,050 |
 | `doorframe_light_strip_square` | Door frame - Light Strip Square | Calder-Okonkwo Industries | 2850 x 2903 x 240 | 193.2 kg | 0 W | none | 3,890 |
 | `doorframe_peaked_gable` | Door frame - Peaked Gable | Calder-Okonkwo Industries | 2760 x 3672 x 400 | 399.2 kg | 0 W | none | 10.5 k |
 | `doorframe_round_arch` | Door frame - Round Arch | Calder-Okonkwo Industries | 3000 x 3241 x 500 | 545.2 kg | 0 W | none | 13.9 k |
@@ -51,9 +51,9 @@
 
 **Door frame - Ibeam Portal**, Calder-Okonkwo Industries, part COI-DOO-6166 (passive)
 
-* Mass 238.5 kg; size 2600 x 2925 x 300 mm; heat 0 W.
+* Mass 231.1 kg; size 2600 x 2931 x 290 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 6,240 cr, lead time 48 days, MTBF 1,924,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 6,050 cr, lead time 48 days, MTBF 1,924,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 

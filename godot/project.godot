@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1600
 window/size/viewport_height=900
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [input]
 
@@ -92,4 +93,7 @@ occlusion_culling/use_occlusion_culling=false
 
 texture={
 "mipmaps/generate": true
+}
+wav={
+"compress/mode": 0
 }

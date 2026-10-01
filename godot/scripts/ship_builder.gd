@@ -11,7 +11,11 @@ extends Node3D
 
 const WALL_T := 0.15
 const SLAB_T := 0.3
-const CLAD_T := 0.12
+const CLAD_T := 0.10                  # outer plating thickness: the Blender hull fascia belts reach 0.12 m out, so 0.12 put both skins in one plane (z-fight)
+const TRIM_T := 0.012                 # baseboard / accent / glow strips stand this far off the wall (2 cm put their face in the plane
+                                      # of the 2 cm back plates of wall-mounted props: z-fight)
+const GLOW_T := 0.008               # ceiling glow strip depth: 1.2 cm (TRIM_T) put its face in the plane of pipe_insulated_wrapped in the water room
+const BELT_LIFT := 0.015             # exterior belts stand this far off the hull skin (see _build_belts)
 const RISER := 4.0 / 22.0
 const TREAD := 0.28
 const FLIGHT_W := 1.4
@@ -23,6 +27,8 @@ var catalog: Dictionary = {}          # id -> catalog entry
 var arch: Dictionary = {}             # id -> arch entry
 var ship: Dictionary = {}
 var doors: Array[Node3D] = []
+var clad_hulls: Array = []            # convex hulls (PackedVector3Array) of the outer plating pieces: lets tests tell hidden faces from visible ones
+var prop_instances: Array = []        # {room, m, xf}: world transform of every placed prop (the headless renderer keeps no MultiMesh data)
 var room_nodes: Dictionary = {}       # room id -> Node3D (shell + content)
 var room_content: Dictionary = {}     # room id -> Node3D (props, lights, probe) toggled by the culling
 var room_polys: Dictionary = {}       # room id -> PackedVector2Array
@@ -43,6 +49,7 @@ var _current_room := ""
 class Shell:
 	var surf: Dictionary = {}          # material key -> {v, n, uv}
 	var hulls: Array = []              # Array of PackedVector3Array (convex collision hulls)
+	var ghosts: Array = []             # convex hulls of solid-but-collision-free prisms (the outer plating): hidden-face tests only
 	var occ_v := PackedVector3Array()
 	var occ_i := PackedInt32Array()
 
@@ -62,7 +69,7 @@ class Shell:
 
 	## Convex prism from a plan polygon (x, z) between y0 and y1.
 	func prism(pts: Array, y0: float, y1: float, k_side: String, k_top: String = "", k_bot: String = "",
-			collide: bool = true, occlude: bool = false) -> void:
+			collide: bool = true, occlude: bool = false, ghost: bool = false) -> void:
 		var n := pts.size()
 		if n < 3 or y1 - y0 < 0.001:
 			return
@@ -88,19 +95,24 @@ class Shell:
 			if ln < 1e-6:
 				continue
 			var nrm := Vector3(d.y, 0.0, -d.x).normalized()
-			# outward normal: flip if the polygon winds the other way
-			if area > 0.0:
+			# (d.y, 0, -d.x) is the outward normal of a counter-clockwise (area > 0) plan polygon; flip it for the other winding.
+			# The condition used to be `area > 0`, which turned every side face of every shell prism inside out: walls
+			# were drawn by their far faces, 15 cm behind the colliders, with the room-facing faces culled.
+			if area < 0.0:
 				nrm = -nrm
 			var v00 := Vector3(p.x, y0, p.y); var v01 := Vector3(p.x, y1, p.y)
 			var v10 := Vector3(q.x, y0, q.y); var v11 := Vector3(q.x, y1, q.y)
 			tri(k_side, v00, v10, v11, nrm, Vector2(acc, y0), Vector2(acc + ln, y0), Vector2(acc + ln, y1))
 			tri(k_side, v00, v11, v01, nrm, Vector2(acc, y0), Vector2(acc + ln, y1), Vector2(acc, y1))
 			acc += ln
-		if collide:
+		if collide or ghost:
 			var pts3 := PackedVector3Array()
 			for p in pts:
 				pts3.append(Vector3(p.x, y0, p.y)); pts3.append(Vector3(p.x, y1, p.y))
-			hulls.append(pts3)
+			if collide:
+				hulls.append(pts3)
+			else:
+				ghosts.append(pts3)
 		if occlude:
 			var base := occ_v.size()
 			for p in pts:
@@ -148,9 +160,28 @@ func build() -> void:
 	_build_belts()
 	for s in ship.get("stairs", []):
 		_build_stairs(s)
+	TextureFix.fix_tree(self)           # textures imported without mipmaps shimmer: see texture_fix.gd
 	print("ship built: %d rooms, %d props (%d multimeshes), %d lights, %d doors, %d stairs, %d distinct models" % [
 		ship["rooms"].size(), stats["props"], stats["multimeshes"], stats["lights"], stats["doors"], stats["stairs"],
 		stats["models_used"].size()])
+
+## Deck ids ordered from the lowest deck (smallest y) to the highest: tests walk the stairs in this order instead of a
+## hard-coded list that only fits one deck count.
+static func deck_order_bottom_to_top(decks: Array) -> Array:
+	var sorted := decks.duplicate()
+	sorted.sort_custom(func(a, b): return float(a["y"]) < float(b["y"]))
+	var out: Array = []
+	for d in sorted:
+		out.append(int(d["id"]))
+	return out
+
+## Number of stair flights the data describes.
+static func flights_in(ship: Dictionary) -> int:
+	var n := 0
+	for st in ship.get("stairs", []):
+		for run in st["runs"]:
+			n += (run["flights"] as Array).size()
+	return n
 
 func _deck_y(deck: int) -> float:
 	for d in ship["decks"]:
@@ -274,6 +305,7 @@ func _build_room(room: Dictionary) -> void:
 		_wall(sh, room, edges[i], inner, i, y0, h)
 	# hull plating layer outside hull walls
 	_cladding(sh, room, edges, y0, h)
+	clad_hulls.append_array(sh.ghosts)
 	# meshes + collision + occluder
 	var body := StaticBody3D.new()
 	body.name = "Shell"
@@ -404,8 +436,12 @@ func _wall(sh: Shell, room: Dictionary, e: Dictionary, inner: Array, idx: int, y
 	ops.sort_custom(func(p, q): return p["s"] < q["s"])
 	var cur := 0.0
 	for o in ops:
-		var oa: float = o["s"] - o["w"] * 0.5
-		var ob: float = o["s"] + o["w"] * 0.5
+		# an open hull mouth is lined by the Blender fascia jambs sitting exactly on the opening edges: keep REVEAL clear of
+		# them on the sides as well (_soffit / _cladding already did it above and outside), else the wall's cut end faces
+		# and the jamb faces share a plane (flagged by zfight_test at the hangar mouth)
+		var widen: float = REVEAL if (o["kind"] == "open" and e["hull"]) else 0.0
+		var oa: float = o["s"] - o["w"] * 0.5 - widen
+		var ob: float = o["s"] + o["w"] * 0.5 + widen
 		_wall_run(sh, e, inner, idx, cur, oa, y0, y0 + h)
 		var yb: float = o["y0"]
 		var yt: float = o["y1"]
@@ -464,11 +500,11 @@ func _trim(sh: Shell, e: Dictionary, s0: float, s1: float, y0: float, h: float) 
 	if b - a < 0.3:
 		return
 	var d0 := WALL_T
-	var d1 := WALL_T + 0.02
+	var d1 := WALL_T + TRIM_T
 	# the baseboard sinks 5 mm into the floor slab so its underside is never flush with anything over a floor hole
 	sh.prism(_strip(e, a, b, d0, d1), y0 - 0.005, y0 + 0.14, "hull", "hull", "hull", false)
 	sh.prism(_strip(e, a, b, d0, d1), y0 + 1.02, y0 + 1.08, "trim", "trim", "trim", false)
-	sh.prism(_strip(e, a, b, d0, d1), y0 + h - 0.17, y0 + h - 0.13, "glow", "glow", "glow", false)
+	sh.prism(_strip(e, a, b, d0, WALL_T + GLOW_T), y0 + h - 0.17, y0 + h - 0.13, "glow", "glow", "glow", false)
 
 ## Outer plating over the hull walls of a room (windows and hull openings cut through it).
 func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -> void:
@@ -480,6 +516,15 @@ func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -
 	var outer := _offset(oe, -CLAD_T)
 	var ya := y0 - SLAB_T
 	var yb := y0 + h + SLAB_T
+	# the plating of this deck stops where the plating of the deck above starts (its floor slab's underside): a room lower than
+	# the deck pitch leaves less than 2 x SLAB_T between the decks, and the two skins overlapped in the same outer plane
+	var above := INF
+	for d in ship["decks"]:
+		var dy: float = float(d["y"])
+		if dy > y0 + 0.5:
+			above = minf(above, dy)
+	if above < INF:
+		yb = minf(yb, above - SLAB_T)
 	for e in edges:
 		if not e["hull"]:
 			continue
@@ -516,7 +561,7 @@ func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -
 				o0 = _outline_miter(hull, outer, q0, o0)
 			if s1 >= ln - 1e-5:
 				o1 = _outline_miter(hull, outer, q1, o1)
-			sh.prism([q0, q1, o1, o0], p[2], p[3], "clad", "clad", "clad", false)
+			sh.prism([q0, q1, o1, o0], p[2], p[3], "clad", "clad", "clad", false, false, true)
 
 func _outline_edges(hull: Array) -> Array:
 	var pts: Array = []
@@ -638,6 +683,7 @@ func _build_props(room: Dictionary, content: Node3D, room_node: Node3D) -> void:
 		groups[id].append(xf)
 		_meshes_of(id)                   # indexes the model's screen surfaces before the prop is registered
 		screen_registry.add_prop(room, id, entry, xf)
+		prop_instances.append({"room": room["id"], "m": id, "xf": xf})
 		stats["props"] += 1
 		stats["models_used"][id] = true
 		var size := Vector3(entry["size"][0], entry["size"][1], entry["size"][2])
@@ -870,6 +916,10 @@ func _build_belts() -> void:
 			var pa := Vector3(a[0], y, a[1])
 			var pb := Vector3(b[0], y, b[1])
 			var out := Vector3((pa.x + pb.x) * 0.5 - float(c[0]), 0.0, (pa.z + pb.z) * 0.5 - float(c[1])).normalized()
+			# the belt polyline was sampled ON the skin, so its strip lay in the skin's plane (within ~1 mm where the skin is
+			# triangulated between rings): lift it 1.5 cm off the plating to keep it from z-fighting with the skin
+			pa += out * BELT_LIFT
+			pb += out * BELT_LIFT
 			var q := [pa + Vector3.DOWN * 0.07, pb + Vector3.DOWN * 0.07, pb + Vector3.UP * 0.07, pa + Vector3.UP * 0.07]
 			for tri in [[0, 1, 2], [0, 2, 3]]:
 				var p0: Vector3 = q[tri[0]]; var p1: Vector3 = q[tri[1]]; var p2: Vector3 = q[tri[2]]

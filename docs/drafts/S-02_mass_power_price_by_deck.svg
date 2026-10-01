@@ -33,8 +33,8 @@
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="16" y="19" font-size="2.3" class="t b">MASS BY DECK (t)</text>
 <text x="16" y="25.2" font-size="1.8" class="t">Deck 0 Sky Deck</text>
-<rect x="52" y="22" width="12.72" height="4.2" class="n" fill="#6f8fbf"/>
-<text x="65.92" y="25.2" font-size="1.7" class="t">31.9 t</text>
+<rect x="52" y="22" width="12.71" height="4.2" class="n" fill="#6f8fbf"/>
+<text x="65.91" y="25.2" font-size="1.7" class="t">31.9 t</text>
 <text x="16" y="31.4" font-size="1.8" class="t">Deck 1 Command Deck</text>
 <rect x="52" y="28.2" width="10.11" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="63.31" y="31.4" font-size="1.7" class="t">25.4 t</text>
@@ -163,7 +163,7 @@
 <text x="224" y="202.4" font-size="1.8" class="t">Circulation</text>
 <rect x="260" y="199.2" width="0.31" height="4.2" class="n" fill="#6f8fbf"/>
 <text x="261.51" y="202.4" font-size="1.7" class="t">737,197 cr</text>
-<text x="16" y="244" font-size="2" class="t b">Totals: 494.65 t, 8.53 MW typical / 17.11 MW peak, 562.56 M cr, 2590 items.</text>
+<text x="16" y="244" font-size="2" class="t b">Totals: 494.64 t, 8.53 MW typical / 17.11 MW peak, 562.56 M cr, 2590 items.</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>

@@ -36,8 +36,8 @@ func _init() -> void:
 	if b.stats["multimeshes"] >= b.stats["props"]:
 		failures.append("props are not batched (%d multimeshes for %d props)" % [b.stats["multimeshes"], b.stats["props"]])
 	var hull_decks: int = b.ship.get("hull", {}).size()
-	if hull_decks != 5:
-		failures.append("hull outlines missing: %d" % hull_decks)
+	if hull_decks != b.ship["decks"].size():
+		failures.append("hull outlines: %d for %d decks" % [hull_decks, b.ship["decks"].size()])
 	for r in b.ship["rooms"]:
 		if not b.room_nodes.has(r["id"]) or not b.room_content.has(r["id"]):
 			failures.append("room %s was not built" % r["id"])

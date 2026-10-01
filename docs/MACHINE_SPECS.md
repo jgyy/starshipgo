@@ -92,8 +92,8 @@ Totals are for one of every model of the category (not the ship installation).
 | `desk` Desk | 10 | 396.6 kg | 0 W | - | - | 15.5 k | [desk](specs/desk.md) |
 | `dessert`  | 10 | 12.05 kg | 0 W | - | - | 4,875 | [dessert](specs/dessert.md) |
 | `display` Display | 22 | 664.41 kg | 4.2 kW | - | - | 1.22 M | [display](specs/display.md) |
-| `door` Door | 14 | 6.91 t | 1.8 kW | - | - | 150.1 k | [door](specs/door.md) |
-| `doorframe` Door frame | 8 | 2.69 t | 0 W | - | - | 62.9 k | [doorframe](specs/doorframe.md) |
+| `door` Door | 14 | 6.91 t | 1.8 kW | - | - | 150 k | [door](specs/door.md) |
+| `doorframe` Door frame | 8 | 2.68 t | 0 W | - | - | 62.7 k | [doorframe](specs/doorframe.md) |
 | `drink`  | 17 | 33.82 kg | 0 W | - | - | 9,328 | [drink](specs/drink.md) |
 | `duct` HVAC duct | 12 | 528.64 kg | 0 W | - | - | 300.7 k | [duct](specs/duct.md) |
 | `engtool` Engineering tool | 15 | 5.29 t | 0 W | - | - | 3.14 M | [engtool](specs/engtool.md) |

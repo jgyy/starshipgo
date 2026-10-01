@@ -482,10 +482,12 @@ def arch_hull_fascia(m, hull=None):
     for sx in (-1, 1):
         xc = sx * (hw + fw / 2)
         m.boxb((xc - fw / 2, y0 - 0.35, zs - 0.05), (xc + fw / 2, y0 + HANGAR_H + 0.7, zs + dep), "arch_hull_plate", bevel=0.03)
-        m.box((0.05, HANGAR_H, 0.05), (sx * (hw - 0.025), y0 + HANGAR_H / 2, zs + dep - 0.02), "arch_run_amber")
+        # run light: its outer face used to lie exactly on |x| = hw, the plane of the corner gussets (z-fight); it now
+        # stands 4.5 cm proud of the jamb and sinks 5 mm into it
+        m.box((0.05, HANGAR_H, 0.05), (sx * (hw - 0.02), y0 + HANGAR_H / 2, zs + dep - 0.02), "arch_run_amber")
     m.boxb((-hw - fw, y0 + HANGAR_H, zs - 0.05), (hw + fw, y0 + HANGAR_H + 0.7, zs + dep), "arch_hull_plate", bevel=0.03)
     m.boxb((-hw - fw, y0 - 0.35, zs - 0.05), (hw + fw, y0 + 0.02, zs + dep), "arch_hull_plate", bevel=0.03)
-    m.box((HANGAR_W, 0.05, 0.05), (0, y0 + HANGAR_H - 0.025, zs + dep - 0.02), "arch_run_amber")
+    m.box((HANGAR_W, 0.05, 0.05), (0, y0 + HANGAR_H - 0.02, zs + dep - 0.02), "arch_run_amber")
     g = 0.9
     for sx in (-1, 1):
         tri = [(sx * hw, y0 + HANGAR_H - g), (sx * hw, y0 + HANGAR_H), (sx * (hw - g), y0 + HANGAR_H)]

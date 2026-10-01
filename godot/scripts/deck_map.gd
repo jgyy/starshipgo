@@ -1,3 +1,4 @@
+class_name DeckMap
 extends Control
 ## Top-down deck plan drawn from ship.json (tapered rooms, doors, windows, stairs) with the player marker.
 
@@ -51,7 +52,7 @@ func _draw() -> void:
 	var mn: Vector2 = bb[0]
 	var mx: Vector2 = bb[1]
 	var margin := 90.0
-	var sc := minf((vp.x - margin * 2.0) / (mx.x - mn.x), (vp.y - margin * 2.0) / (mx.y - mn.y))
+	var sc := map_scale(vp, mn, mx, margin)
 	var off := Vector2(margin, margin) + ((vp - Vector2(margin, margin) * 2.0) - (mx - mn) * sc) * 0.5
 	var font := ThemeDB.fallback_font
 	var tf := func(p) -> Vector2: return (Vector2(p[0], p[1]) - mn) * sc + off
@@ -82,11 +83,8 @@ func _draw() -> void:
 		var wpx: float = (rc[2] - rc[0]) * sc
 		var hpx: float = (rc[3] - rc[1]) * sc
 		if wpx > 34.0 and hpx > 20.0:
-			var label: String = r["name"]
-			var fs := 13
-			while fs > 7 and font.get_string_size(label, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x > wpx - 6.0:
-				fs -= 1                                   # shrink the label until it fits the room instead of clipping it
-			draw_string(font, c + Vector2(-wpx * 0.5 + 3.0, 4.0), label, HORIZONTAL_ALIGNMENT_CENTER, wpx - 6.0, fs, Color(1, 1, 1, 0.9))
+			var fit := fit_label(font, r["name"], wpx - 6.0, 13, 7)
+			draw_string(font, c + Vector2(-wpx * 0.5 + 3.0, 4.0), fit["text"], HORIZONTAL_ALIGNMENT_CENTER, wpx - 6.0, fit["size"], Color(1, 1, 1, 0.9))
 		# windows (cyan) on the hull walls
 		var edges := {}
 		for e in r["edges"]:
@@ -112,10 +110,7 @@ func _draw() -> void:
 			draw_line((mid - h - mn) * sc + off, (mid + h - mn) * sc + off, Color(0.5, 0.85, 1.0), 3.0)
 		# stair towers: arrows
 		if str(r["id"]).begins_with("tower"):
-			var up := deck > _deck_min()
-			var dn := deck < _deck_max()
-			var t := ("UP/DN" if up and dn else ("UP" if dn else "DN"))
-			draw_string(font, c + Vector2(-16, 18), "STAIRS " + t, HORIZONTAL_ALIGNMENT_LEFT, -1, 10, Color(1, 0.92, 0.5))
+			draw_string(font, c + Vector2(-16, 18), "STAIRS " + stair_hint(ship.get("decks", []), deck), HORIZONTAL_ALIGNMENT_LEFT, -1, 10, Color(1, 0.92, 0.5))
 	for d in ship.get("doors", []):
 		var y: float = d["pos"][1]
 		for dk in ship["decks"]:
@@ -133,17 +128,50 @@ func _draw() -> void:
 		var side := Vector2(-fwd.y, fwd.x)
 		draw_colored_polygon(PackedVector2Array([pp + fwd * 11, pp - fwd * 7 + side * 6, pp - fwd * 7 - side * 6]), Color(1, 0.9, 0.3))
 
-func _deck_min() -> int:
-	var m := 99
-	for d in ship.get("decks", []):
-		m = mini(m, int(d["id"]))
-	return m
+## Room label that fits `width`: the font shrinks from max_fs to min_fs and, if the text is still too wide, is cut with an
+## ellipsis (the old code stopped shrinking at 7 px and let draw_string clip "Starboard Stair Tower" to "Starboard Stair To").
+static func fit_label(font: Font, text: String, width: float, max_fs: int, min_fs: int) -> Dictionary:
+	var fs := max_fs
+	while fs > min_fs and font.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x > width:
+		fs -= 1
+	if font.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x <= width:
+		return {"text": text, "size": fs}
+	for n in range(text.length() - 1, 0, -1):
+		var cand := text.substr(0, n).strip_edges() + "…"
+		if font.get_string_size(cand, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x <= width:
+			return {"text": cand, "size": fs}
+	return {"text": "…", "size": fs}
 
-func _deck_max() -> int:
-	var m := -99
-	for d in ship.get("decks", []):
-		m = maxi(m, int(d["id"]))
-	return m
+## Pixels per metre of the plan.  A window narrower than 2 x margin made the old expression negative: the plan was drawn
+## mirrored and the rooms' text sizes went wrong; the scale now never drops below a sliver.
+static func map_scale(vp: Vector2, mn: Vector2, mx: Vector2, margin: float) -> float:
+	var w := maxf(mx.x - mn.x, 0.001)
+	var h := maxf(mx.y - mn.y, 0.001)
+	return maxf(minf((vp.x - margin * 2.0) / w, (vp.y - margin * 2.0) / h), 0.01)
+
+## Which way the stairs lead from `deck`: "UP" when a deck lies higher (larger y), "DN" when one lies lower.  Deck 1 is the
+## TOP deck, so the old `deck > 1` / `deck < 3` test (3 decks hard-coded) labelled the top deck "UP" and the bottom deck
+## "DN" the wrong way round and could not work with any other number of decks.
+static func stair_hint(decks: Array, deck: int) -> String:
+	var y := 0.0
+	var found := false
+	for d in decks:
+		if int(d["id"]) == deck:
+			y = float(d["y"])
+			found = true
+	if not found:
+		return ""
+	var up := false
+	var dn := false
+	for d in decks:
+		var dy := float(d["y"]) - y
+		if dy > 0.5:
+			up = true
+		elif dy < -0.5:
+			dn = true
+	return "UP/DN" if up and dn else ("UP" if up else ("DN" if dn else ""))
+
+ 
 
 func _deck_name() -> String:
 	for d in ship.get("decks", []):

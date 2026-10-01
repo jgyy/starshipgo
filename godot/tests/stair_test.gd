@@ -18,9 +18,12 @@ func _run() -> void:
 	b.build()
 	p = load("res://scripts/player.gd").new()
 	root.add_child(p)
+	var up_order := ShipBuilder.deck_order_bottom_to_top(b.ship["decks"])
+	var down_order := up_order.duplicate()
+	down_order.reverse()
 	for st in b.ship["stairs"]:
-		await _climb(st, [4, 3, 2, 1, 0])
-		await _climb(st, [0, 1, 2, 3, 4])
+		await _climb(st, up_order)            # from the bottom deck to the top one
+		await _climb(st, down_order)
 	if failures.is_empty():
 		print("STAIR TEST PASSED")
 		quit(0)

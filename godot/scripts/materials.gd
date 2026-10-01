@@ -123,8 +123,19 @@ render_mode blend_add, unshaded, cull_disabled, depth_draw_never;
 uniform vec3 tint : source_color = vec3(0.2, 0.6, 1.0);
 void fragment() {
 	float t = TIME * 0.6;
-	float bands = 0.5 + 0.5 * sin(UV.y * 60.0 + t * 4.0);
-	float grid = step(0.94, fract(UV.x * 40.0)) + step(0.94, fract(UV.y * 24.0));
+	// The grid used step() on fract(): 2 cm hard-edged lines that are thinner than a pixel from a few metres away and
+	// crawl / sparkle as the camera moves.  Screen-space derivatives give them an anti-aliased edge and fade them to
+	// their average brightness when they can no longer be resolved; the stripes fade to flat the same way.
+	float ux = UV.x * 40.0;
+	float uy = UV.y * 24.0;
+	float w = 0.03;                                   // half width of a grid line in cells (6 % of a cell, as before)
+	float ax = max(fwidth(ux), 1e-4);
+	float ay = max(fwidth(uy), 1e-4);
+	float lx = (1.0 - smoothstep(w, w + ax, abs(fract(ux + w + 0.5) - 0.5))) * min(1.0, 2.0 * w / ax);
+	float ly = (1.0 - smoothstep(w, w + ay, abs(fract(uy + w + 0.5) - 0.5))) * min(1.0, 2.0 * w / ay);
+	float grid = lx + ly;
+	float fb = fwidth(UV.y * 60.0);
+	float bands = mix(0.5, 0.5 + 0.5 * sin(UV.y * 60.0 + t * 4.0), clamp(1.0 - fb * 0.5, 0.0, 1.0));
 	float edge = pow(1.0 - abs(UV.y - 0.5) * 2.0, 0.3);
 	ALBEDO = tint * (0.08 + 0.12 * bands + 0.25 * grid) * (0.6 + 0.4 * edge);
 }

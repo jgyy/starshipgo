@@ -1,3 +1,4 @@
+class_name MainScript
 extends Node3D
 ## Entry point: builds environment, ship, player and HUD.
 ##   godot --path godot                          play
@@ -22,6 +23,14 @@ func _arg(prefix: String) -> String:
 
 func _flag(name: String) -> bool:
 	return name in OS.get_cmdline_user_args()
+
+## `--tour=` / `--bench=` given without a value is a usage error, not "start the game normally".
+static func usage_error(args: PackedStringArray) -> String:
+	for a in args:
+		for opt in ["--bench=", "--tour="]:
+			if a == opt:
+				return "%s needs a path, e.g. %s/tmp/out" % [opt, opt]
+	return ""
 
 ## Raycast occlusion culling (~3.7x fewer draw calls) runs on Embree.  Official Godot builds bundle Embree; distro
 ## builds that link the system library can segfault inside rtcIntersect16 as soon as one occluder exists (Arch
@@ -63,6 +72,11 @@ func _ready() -> void:
 	_make_audio()
 	_make_ui()
 	var load_ms := Time.get_ticks_msec() - t0
+	var usage := usage_error(OS.get_cmdline_user_args())
+	if usage != "":
+		printerr(usage)
+		get_tree().quit(2)
+		return
 	if _flag("--screen-scan"):
 		_screen_scan()
 		return
@@ -214,17 +228,17 @@ var _hum: AudioStreamPlayer
 var _rumble: AudioStreamPlayer
 var _mix_tween: Tween
 
+## Loop length in sample FRAMES, whatever the stored format: the old code divided the byte size by 1 / 2 / 4 and so, for
+## the QOA-compressed WAVs the importer produces by default (compress/mode=2), set loop_end to the compressed byte count
+## (71408 frames = 3.2 s of an 8 s clip): the hum and the rumble restarted after 3.2 s, in the middle of the waveform.
+static func loop_frames(s: AudioStreamWAV) -> int:
+	return int(round(s.get_length() * float(s.mix_rate)))
+
 func _loop(path: String) -> AudioStreamWAV:
 	var s := (load(path) as AudioStreamWAV).duplicate() as AudioStreamWAV
 	s.loop_mode = AudioStreamWAV.LOOP_FORWARD
 	s.loop_begin = 0
-	var bytes_per_frame := 1
-	match s.format:
-		AudioStreamWAV.FORMAT_16_BITS: bytes_per_frame = 2
-		AudioStreamWAV.FORMAT_8_BITS: bytes_per_frame = 1
-	if s.stereo:
-		bytes_per_frame *= 2
-	s.loop_end = s.data.size() / bytes_per_frame
+	s.loop_end = loop_frames(s)
 	return s
 
 func _make_audio() -> void:
@@ -359,14 +373,34 @@ func _make_environment() -> void:
 	sun.rotation_degrees = Vector3(-18, -125, 0)
 	add_child(sun)
 
+## Which cameras / deck maps a `--only=` filter selects: {"cams": [camera dicts], "maps": bool, "unknown": [names]}.
+## No filter = every camera and the maps.  "maps" selects the deck maps and may be combined with camera names
+## (`--only=01_bridge,maps`): the old code quit after the cameras whenever the filter was anything but exactly "maps".
+static func tour_plan(only: String, cams: Array) -> Dictionary:
+	var names: PackedStringArray = PackedStringArray()
+	for n in only.split(",", false):
+		names.append(n.strip_edges())
+	var plan := {"cams": [], "maps": only == "" or "maps" in names, "unknown": []}
+	var known := {}
+	for cam in cams:
+		known[cam["name"]] = true
+		if names.is_empty() or cam["name"] in names:
+			plan["cams"].append(cam)
+	for n in names:
+		if n != "maps" and not known.has(n):
+			plan["unknown"].append(n)
+	return plan
+
 func _run_tour(dir: String) -> void:
 	DirAccess.make_dir_recursive_absolute(dir)
+	var plan := tour_plan(_arg("--only="), builder.ship.get("cameras", []))
+	if not (plan["unknown"] as Array).is_empty():
+		printerr("unknown tour camera(s): ", ", ".join(plan["unknown"]), " - nothing rendered")
+		get_tree().quit(2)
+		return
 	await get_tree().create_timer(1.0).timeout
-	var only := _arg("--only=")
 	player.set_physics_process(false)
-	for cam in builder.ship.get("cameras", []):
-		if only != "" and not (cam["name"] in only.split(",")):
-			continue          # --only=maps skips every camera and renders just the deck maps
+	for cam in plan["cams"]:
 		var pos: Array = cam["pos"]
 		player.global_position = Vector3(pos[0], pos[1] - 1.62, pos[2])
 		player.velocity = Vector3.ZERO
@@ -375,11 +409,11 @@ func _run_tour(dir: String) -> void:
 		_sun.shadow_enabled = cam.get("exterior", false)       # the sun only needs shadows when the hull is in view
 		if cam.get("exterior", false):
 			builder.show_all_rooms()
-			hud.show_room(cam.get("title", cam["name"]), cam.get("subtitle", ""))
+			hud.show_banner(cam.get("title", cam["name"]), cam.get("subtitle", ""))
 		else:
 			builder._current_room = ""
 			builder.update_culling(player.global_position + Vector3(0, 0.9, 0))
-			hud.show_room(cam.get("title", cam["name"]), cam.get("subtitle", ""))
+			hud.show_banner(cam.get("title", cam["name"]), cam.get("subtitle", ""))
 		hud.help_label.visible = false
 		for i in 10:
 			await get_tree().process_frame
@@ -394,7 +428,7 @@ func _run_tour(dir: String) -> void:
 			get_tree().quit(1)
 			return
 		print("shot ", path)
-	if only != "" and only != "maps":
+	if not plan["maps"]:
 		get_tree().quit()
 		return
 	# deck map screenshots
@@ -404,5 +438,8 @@ func _run_tour(dir: String) -> void:
 		await get_tree().process_frame
 		await get_tree().process_frame
 		var im := get_viewport().get_texture().get_image()
-		im.save_png("%s/map_deck%d.png" % [dir, int(d["id"])])
+		if im == null or im.is_empty() or im.save_png("%s/map_deck%d.png" % [dir, int(d["id"])]) != OK:
+			printerr("cannot render / write the map of deck ", int(d["id"]))
+			get_tree().quit(1)
+			return
 	get_tree().quit()

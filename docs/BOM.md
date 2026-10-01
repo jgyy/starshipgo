@@ -17,7 +17,7 @@ Every room of the ship is furnished from a written bill of materials: each **BOM
 | BOM lines | 605 |
 | Placed items | 2590 |
 | Distinct models used | 638 of 1198 in the catalogue |
-| Installed equipment mass | 494.65 t (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |
+| Installed equipment mass | 494.64 t (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |
 | Typical / peak electrical load | 8.53 MW / 17.11 MW |
 | Installed generation | 42.9 MW |
 | Equipment value | 562.56 M cr |
@@ -26,9 +26,9 @@ Every room of the ship is furnished from a written bill of materials: each **BOM
 
 | Deck | Name | Hull area | Rooms | Room area | Items | BOM lines | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | Sky Deck | 859 m2 | 12 | 860 m2 | 462 | 113 | 31.92 t | 76.6 kW | 33.23 M |
-| 1 | Command Deck | 1042 m2 | 14 | 1042 m2 | 412 | 104 | 25.38 t | 62.9 kW | 19.53 M |
-| 2 | Habitat Deck | 1064 m2 | 15 | 1064 m2 | 596 | 148 | 50.20 t | 353.7 kW | 48.86 M |
+| 0 | Sky Deck | 859 m2 | 12 | 860 m2 | 462 | 113 | 31.91 t | 76.6 kW | 33.23 M |
+| 1 | Command Deck | 1042 m2 | 14 | 1042 m2 | 412 | 104 | 25.37 t | 62.9 kW | 19.53 M |
+| 2 | Habitat Deck | 1064 m2 | 15 | 1064 m2 | 596 | 148 | 50.19 t | 353.7 kW | 48.86 M |
 | 3 | Engineering Deck | 1244 m2 | 14 | 1245 m2 | 507 | 115 | 220.85 t | 4.95 MW | 259.11 M |
 | 4 | Hold Deck | 1146 m2 | 13 | 1146 m2 | 579 | 125 | 166.31 t | 3.10 MW | 201.84 M |
 
@@ -232,7 +232,7 @@ The sky deck is a lens-shaped dome on top of the ship, away from the engines and
 | [SS0](#ss0---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
 | [SC](#sc---star-cartography) | Star Cartography | 220.5 m2 | 4.2 m | 87 | 16 | 20 % | 7.44 t | 28.6 kW | 11.01 M |
 | [BT](#bt---briefing-theatre) | Briefing Theatre | 91.8 m2 | 3.4 m | 56 | 11 | 14 % | 1.64 t | 4.7 kW | 1.16 M |
-| [WR](#wr---officers-wardroom--bar) | Officers' Wardroom & Bar | 91.8 m2 | 3.4 m | 75 | 16 | 25 % | 2.66 t | 6.0 kW | 584.6 k |
+| [WR](#wr---officers-wardroom--bar) | Officers' Wardroom & Bar | 91.8 m2 | 3.4 m | 75 | 16 | 25 % | 2.66 t | 6.0 kW | 584.4 k |
 | [LI](#li---library--archive) | Library & Archive | 84.5 m2 | 3.4 m | 59 | 10 | 28 % | 8.70 t | 14.1 kW | 7.31 M |
 | [AB](#ab---arboretum) | Arboretum | 62.8 m2 | 3.6 m | 41 | 12 | 26 % | 3.09 t | 9.0 kW | 1.50 M |
 | [OB](#ob---observatory) | Observatory | 84.5 m2 | 3.4 m | 43 | 11 | 25 % | 6.00 t | 12.3 kW | 10.14 M |
@@ -1060,7 +1060,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 1 (4.9 m2 of glazing) |
 | Design occupancy | 20 persons |
 | Items placed / distinct models | 75 / 51 |
-| Installed mass / value | 2.66 t / 584.6 k cr |
+| Installed mass / value | 2.66 t / 584.4 k cr |
 | Electrical load idle / typical / peak | 1.7 kW / 6.0 kW / 8.8 kW |
 | Floor occupancy | 25 % (floor-standing footprints / floor area) |
 | Lights | 9 real lights, 9 ceiling fixtures |
@@ -1943,11 +1943,11 @@ The command deck sits at the top of the ship and reaches furthest forward: the b
 | [LB1](#lb1---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 15 | 7 | 0 % | 210 kg | 293 W | 78.6 k |
 | [SP1](#sp1---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 5 | 3 | 0 % | 10 kg | 19 W | 2.2 k |
 | [SS1](#ss1---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 20 kg | 36 W | 4.5 k |
-| [BR](#br---bridge) | Bridge | 175.2 m2 | 4.2 m | 38 | 10 | 12 % | 4.90 t | 8.0 kW | 5.55 M |
+| [BR](#br---bridge) | Bridge | 175.2 m2 | 4.2 m | 38 | 10 | 12 % | 4.89 t | 8.0 kW | 5.55 M |
 | [RR](#rr---captains-ready-room) | Captain's Ready Room | 85.2 m2 | 3.4 m | 31 | 10 | 13 % | 1.38 t | 2.8 kW | 181.8 k |
 | [OL](#ol---observation-lounge) | Observation Lounge | 149.5 m2 | 3.6 m | 53 | 11 | 16 % | 2.68 t | 4.4 kW | 1.73 M |
 | [CR](#cr---conference-room) | Conference Room | 85.2 m2 | 3.4 m | 51 | 9 | 22 % | 1.67 t | 3.9 kW | 540.0 k |
-| [AM](#am---astrometrics) | Astrometrics | 149.5 m2 | 3.4 m | 43 | 9 | 13 % | 6.43 t | 23.7 kW | 7.44 M |
+| [AM](#am---astrometrics) | Astrometrics | 149.5 m2 | 3.4 m | 43 | 9 | 13 % | 6.42 t | 23.7 kW | 7.44 M |
 | [OA](#oa---officers-cabins-a) | Officers' Cabins A | 59.0 m2 | 3.4 m | 39 | 6 | 28 % | 1.42 t | 399 W | 99.3 k |
 | [OB](#ob---officers-cabins-b) | Officers' Cabins B | 45.9 m2 | 3.4 m | 25 | 5 | 22 % | 980 kg | 271 W | 54.3 k |
 | [CQ](#cq---captains-quarters) | Captain's Quarters | 61.2 m2 | 3.4 m | 39 | 10 | 30 % | 1.87 t | 3.0 kW | 308.9 k |
@@ -2408,7 +2408,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 13 (83.7 m2 of glazing) |
 | Design occupancy | 10 persons |
 | Items placed / distinct models | 38 / 29 |
-| Installed mass / value | 4.90 t / 5.55 M cr |
+| Installed mass / value | 4.89 t / 5.55 M cr |
 | Electrical load idle / typical / peak | 2.3 kW / 8.0 kW / 14.8 kW |
 | Floor occupancy | 12 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -3029,7 +3029,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 3 (13.0 m2 of glazing) |
 | Design occupancy | 6 persons |
 | Items placed / distinct models | 43 / 38 |
-| Installed mass / value | 6.43 t / 7.44 M cr |
+| Installed mass / value | 6.42 t / 7.44 M cr |
 | Electrical load idle / typical / peak | 6.0 kW / 23.7 kW / 38.9 kW |
 | Floor occupancy | 13 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -3685,7 +3685,7 @@ The habitat deck is the widest deck and holds everything that keeps the crew ali
 | [RG](#rg---recreation--gym) | Recreation & Gym | 85.0 m2 | 3.4 m | 48 | 12 | 28 % | 2.83 t | 1.5 kW | 316.3 k |
 | [CW](#cw---crew-quarters) | Crew Quarters | 68.8 m2 | 3.4 m | 37 | 10 | 32 % | 881 kg | 190 W | 75.3 k |
 | [SL](#sl---science-laboratory) | Science Laboratory | 85.0 m2 | 3.4 m | 34 | 12 | 25 % | 6.64 t | 6.0 kW | 9.28 M |
-| [HY](#hy---hydroponics-garden) | Hydroponics Garden | 68.8 m2 | 3.6 m | 47 | 14 | 28 % | 6.44 t | 20.6 kW | 3.07 M |
+| [HY](#hy---hydroponics-garden) | Hydroponics Garden | 68.8 m2 | 3.6 m | 47 | 14 | 28 % | 6.43 t | 20.6 kW | 3.07 M |
 
 ### CF2 - Forward Spine Corridor
 
@@ -5709,7 +5709,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 3 (8.2 m2 of glazing) |
 | Design occupancy | 3 persons |
 | Items placed / distinct models | 47 / 37 |
-| Installed mass / value | 6.44 t / 3.07 M cr |
+| Installed mass / value | 6.43 t / 3.07 M cr |
 | Electrical load idle / typical / peak | 8.2 kW / 20.6 kW / 32.8 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
@@ -9872,19 +9872,19 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `door_blast` | door | floor | 2600 x 2940 x 295 | 498 | 130 | 10,500 | 4 | BG, FH, SD, SO |
 | `door_bulkhead` | door | floor | 2620 x 2860 x 285 | 466 | 130 | 8,510 | 4 | AX, BR, CC, RR |
 | `door_cabin` | door | floor | 2620 x 2860 x 285 | 461 | 120 | 10,400 | 3 | CQ, OA, OB |
-| `door_cargo` | door | floor | 2360 x 2800 x 285 | 399 | 110 | 8,780 | 3 | LS, PH, SD |
-| `door_cleanroom` | door | floor | 2280 x 2743 x 1075 | 1475 | 330 | 26,600 | 1 | AM |
+| `door_cargo` | door | floor | 2360 x 2806 x 285 | 400 | 110 | 8,800 | 3 | LS, PH, SD |
+| `door_cleanroom` | door | floor | 2280 x 2740 x 1075 | 1473 | 330 | 26,500 | 1 | AM |
 | `door_engineering` | door | floor | 2620 x 2860 x 285 | 455 | 120 | 11,800 | 2 | PD, WW |
 | `door_glass_lab` | door | floor | 2200 x 2740 x 245 | 281 | 90 | 6,280 | 2 | MB, SL |
 | `door_hangar_pressure` | door | floor | 2700 x 3160 x 295 | 517 | 130 | 14,000 | 4 | AC, CA3, CB, ME |
 | `door_maintenance_hatch` | door | floor | 2440 x 2760 x 250 | 358 | 91 | 7,360 | 2 | WP, WS |
-| `door_officer_wood` | door | floor | 2400 x 2883 x 250 | 369 | 100 | 8,240 | 5 | BR x2, CO, CR, FS |
+| `door_officer_wood` | door | floor | 2400 x 2880 x 250 | 368 | 100 | 8,220 | 5 | BR x2, CO, CR, FS |
 | `door_science` | door | floor | 2620 x 2860 x 285 | 450 | 110 | 9,360 | 1 | OB |
 | `door_security` | door | floor | 2620 x 2860 x 285 | 424 | 120 | 11,400 | 3 | AL, AR, BG |
 | `doorframe_deep_bulkhead` | doorframe | floor | 2900 x 3050 x 600 | 523 | 0 | 11,000 | 2 | LI, RG |
 | `doorframe_gothic_arch` | doorframe | floor | 2800 x 3803 x 400 | 411 | 0 | 8,300 | 1 | AB |
 | `doorframe_hexagonal` | doorframe | floor | 2520 x 2953 x 248 | 200 | 0 | 5,260 | 1 | GA |
-| `doorframe_ibeam_portal` | doorframe | floor | 2600 x 2925 x 300 | 238 | 0 | 6,240 | 2 | HY, WR |
+| `doorframe_ibeam_portal` | doorframe | floor | 2600 x 2931 x 290 | 231 | 0 | 6,050 | 2 | HY, WR |
 | `doorframe_light_strip_square` | doorframe | floor | 2850 x 2903 x 240 | 193 | 0 | 3,890 | 1 | BT |
 | `doorframe_peaked_gable` | doorframe | floor | 2760 x 3672 x 400 | 399 | 0 | 10,500 | 1 | MH |
 | `doorframe_round_arch` | doorframe | floor | 3000 x 3241 x 500 | 545 | 0 | 13,900 | 1 | OL |
