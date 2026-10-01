@@ -51,10 +51,16 @@ def door_sliding(m, i, label, rng):
             m.box((0.09, 0.34, 0.015), (cx, 1.6, 0.07), "paint_red")
         if i == 3:  # science viewport
             m.box((0.5, 0.7, 0.02), (cx - side * 0.15, 1.6, 0.075), "glass_blue")
+        if i == 4:  # cabin: frosted privacy slit at head height (it was a pure recolour of the bulkhead door)
+            m.box((0.1, 0.8, 0.02), (cx - side * 0.12, 1.45, 0.075), "glass_amber")
+            m.box((0.14, 0.84, 0.012), (cx - side * 0.12, 1.45, 0.068), "black_metal")
         if i == 5:  # engineering: heavy ribs
             for k in range(4):
                 m.box((W / 2 - 0.1, 0.07, 0.03), (cx, 0.5 + k * 0.6, 0.075), "black_metal", 0.01)
     m.group("body")
+    if i == 4:  # cabin: door-number plate beside the frame
+        m.box((0.16, 0.08, 0.02), (-W / 2 - 0.36, 1.45, 0.05), "plastic_white", 0.004)
+        m.box((0.1, 0.02, 0.02), (-W / 2 - 0.36, 1.45, 0.065), "em_amber")
 
 
 # ==========================================================================
@@ -239,7 +245,9 @@ def door_extra(m, i, label, rng):
         _leaves(m, f, 0.03, None)
     elif i == 3:  # wooden-trim officer door
         _rect_frame(m, "wood_dark", 0.2, DT)
-        path_frame(m, RECT, 0.03, DT + 0.03, "gold_trim", 0)
+        # gold lining inside the opening, 1 cm in from the jambs (it used to sit on the wood band, sharing its underside
+        # and jamb planes, and then on the threshold's end faces)
+        path_frame(m, [(-0.99, 0.01), (-0.99, DH - 0.01), (0.99, DH - 0.01), (0.99, 0.01)], -0.02, DT + 0.03, "gold_trim", 0)
         m.box((0.5, 0.08, 0.05), (0, DH + 0.24, 0.02), "gold_trim", 0.008)
         m.box((0.1, 0.08, 0.02), (0, DH + 0.24, 0.06), "em_warm")
 
@@ -260,13 +268,13 @@ def door_extra(m, i, label, rng):
         m.cyl(0.13, 0.03, (0, DH + 0.44, 0.02), "black_metal", "y", 12)
         hazard(m, -1.0, DH + 0.02, 2.0, 0.09, DT / 2)
         for s in (-1, 1):
-            hazard(m, s * 1.24 - 0.06, 0.0, 0.12, 0.6, DT / 2)
+            hazard(m, s * 1.25 - 0.06, 0.0, 0.12, 0.6, DT / 2)       # 1.24 put the inner end exactly on the wall opening edge (1.18)
 
         def f(m, side, cx):
             for k in range(4):
                 m.box((0.09, DH - 0.1, 0.06), (cx - 0.37 + k * 0.245, DH / 2, 0.1), "black_metal", 0.008)
             for yy in (0.45, 1.3, 2.15):
-                m.box((0.99, 0.08, 0.07), (cx, yy, 0.09), "gunmetal", 0.008)
+                m.box((0.97, 0.08, 0.07), (cx, yy, 0.09), "gunmetal", 0.008)      # 0.99 = the leaf width: end faces shared a plane
             m.box((0.99, 0.25, 0.02), (cx, 0.15, 0.145), "hazard_yellow")
             bolt_row(m, (cx - 0.45, 1.75, 0.13), (cx + 0.45, 1.75, 0.13), 3, "chrome", 0.02, 0.02)
             m.box((0.04, DH, 0.24), (cx - side * 0.49, DH / 2, 0), "rubber")
@@ -283,8 +291,11 @@ def door_extra(m, i, label, rng):
         def f(m, side, cx):
             for k in range(12):
                 m.box((0.06, DH - 0.2, 0.05), (cx - 0.45 + k * 0.082, DH / 2 + 0.02, 0.05 if k % 2 else 0.0), "st_khaki")
-            m.box((0.99, 0.12, 0.13), (cx, 0.08, 0), "steel", 0.008)
-            m.box((0.99, 0.12, 0.13), (cx, DH - 0.02, 0), "steel", 0.008)
+            # the leaf box spans y 0.02 .. 2.62: the rails start 5 mm below / end 2 cm above it, so no face of a rail shares a
+            # plane with the leaf's underside (z-fight, flagged by godot/tests/zfight_test.gd)
+            # (and are 2 cm narrower: 0.99 = the leaf width, so their end faces lay in the leaf's end planes)
+            m.box((0.97, 0.12, 0.13), (cx, 0.075, 0), "steel", 0.008)
+            m.box((0.97, 0.12, 0.13), (cx, DH - 0.02, 0), "steel", 0.008)
             m.cyl(0.03, 0.9, (cx - side * 0.42, 1.2, 0.1), "chrome", "y", 8)
             for yy in (0.8, 1.6):
                 m.box((0.04, 0.04, 0.05), (cx - side * 0.42, yy, 0.08), "chrome")
@@ -316,7 +327,7 @@ def door_extra(m, i, label, rng):
         _leaves(m, f, 0.09, "steel")
     else:  # cleanroom
         _rect_frame(m, "paint_white", 0.14, DT)
-        path_frame(m, RECT, -0.03, DT + 0.03, "paint_blue", 0)
+        path_frame(m, [(-0.98, 0.01), (-0.98, DH - 0.01), (0.98, DH - 0.01), (0.98, 0.01)], -0.03, DT + 0.03, "paint_blue", 0)
         for s in (-1, 1):
             m.cyl(0.025, 0.08, (s * 0.7, DH - 0.04, 0.0), "steel", "y", 6, r2=0.012)
         m.box((1.2, 0.05, 0.03), (0, DH + 0.1, DT / 2 + 0.01), "em_blue")
@@ -392,8 +403,9 @@ def doorframe_fam(m, i, label, rng):
         for s in (-1, 1):
             m.prism([(0, 0), (0.35, 0), (0, 0.35)] if s < 0 else [(0, 0), (-0.35, 0), (0, 0.35)], 0.06, (s * 1.0, DH - 0.35, -0.03), "paint_orange", "xy")
             bolt_row(m, (s * 1.12, 0.3, 0.11), (s * 1.12, DH - 0.4, 0.11), 6, "chrome", 0.014, 0.012)
-        m.box((0.24, 0.05, 0.3), (-1.12, 0.03, 0), "black_metal")
-        m.box((0.24, 0.05, 0.3), (1.12, 0.03, 0), "black_metal")
+        # 0.29 deep, not 0.3 = 2 x the 0.15 wall thickness: the feet lay in the face plane of the wall beside the frame
+        m.box((0.24, 0.05, 0.29), (-1.12, 0.03, 0), "black_metal")
+        m.box((0.24, 0.05, 0.29), (1.12, 0.03, 0), "black_metal")
     elif i == 5:
         r = 0.42
         pts = [(-1, 0), (-1, DH - r)] + _arc(-1 + r, DH - r, r, PI, PI / 2, 5)[1:] + _arc(1 - r, DH - r, r, PI / 2, 0, 5)[1:-1] + [(1, DH - r), (1, 0)]
@@ -422,9 +434,9 @@ def doorframe_fam(m, i, label, rng):
         path_frame(m, pts, 0.22, 0.03, "hull_dark", T / 2 + 0.005)
         path_frame(m, pts, -0.03, 0.05, "em_amber", T / 2 - 0.02)
         m.box((0.4, 0.4, 0.4), (0, 3.4, 0), "hull_dark", 0.02, rot=(0, 0, PI / 4))
-        m.box((0.16, 0.16, 0.04), (0, 3.4, T / 2 + 0.02), "em_amber", 0.01, rot=(0, 0, PI / 4))
+        m.box((0.16, 0.16, 0.035), (0, 3.4, T / 2 + 0.0175), "em_amber", 0.01, rot=(0, 0, PI / 4))   # was 0.04 deep: front face at z = 0.15 = the wall face plane
         for s in (-1, 1):
-            m.box((0.36, 0.14, T + 0.08), (s * 1.2, 0.07, 0), "hull_dark", 0.01)
+            m.box((0.36, 0.14, T + 0.07), (s * 1.2, 0.07, 0), "hull_dark", 0.01)       # T + 0.08 = 0.3: ends in the wall face plane
             m.box((0.1, 1.0, 0.03), (s * 1.16, 0.6, T / 2 + 0.005), "hull_light")
 
 

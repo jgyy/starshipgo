@@ -75,14 +75,16 @@ class Sheet:
         self.busy = []       # occupied label boxes (x0, y0, x1, y1)
 
     # ------------------------------------------------------------ primitives
-    def line(self, x1, y1, x2, y2, c="m"):
-        self.out.append('<line x1="%s" y1="%s" x2="%s" y2="%s" class="%s"/>' % (fmt(x1), fmt(y1), fmt(x2), fmt(y2), c))
+    def line(self, x1, y1, x2, y2, c="m", stroke=None):
+        st = ' style="stroke:%s"' % stroke if stroke else ""
+        self.out.append('<line x1="%s" y1="%s" x2="%s" y2="%s" class="%s"%s/>' % (fmt(x1), fmt(y1), fmt(x2), fmt(y2), c, st))
 
-    def poly(self, pts, c="m", fill="none", close=True, op=None):
+    def poly(self, pts, c="m", fill="none", close=True, op=None, stroke=None):
         tag = "polygon" if close else "polyline"
         o = ' fill-opacity="%s"' % op if op is not None else ""
-        self.out.append('<%s points="%s" class="%s" fill="%s"%s/>' % (
-            tag, " ".join("%s,%s" % (fmt(x), fmt(y)) for x, y in pts), c, fill, o))
+        st = ' style="stroke:%s"' % stroke if stroke else ""
+        self.out.append('<%s points="%s" class="%s" fill="%s"%s%s/>' % (
+            tag, " ".join("%s,%s" % (fmt(x), fmt(y)) for x, y in pts), c, fill, o, st))
 
     def rect(self, x, y, w, h, c="m", fill="none", op=None):
         o = ' fill-opacity="%s"' % op if op is not None else ""
@@ -105,7 +107,7 @@ class Sheet:
             return
         cl = "t" + (" b" if bold else "") + (" i" if ital else "") + (" halo" if halo else "")
         tr = ' transform="rotate(%s %s %s)"' % (fmt(rot), fmt(x), fmt(y)) if rot else ""
-        fl = ' fill="%s"' % fill if fill else ""
+        fl = ' style="fill:%s"' % esc(fill) if fill else ""      # a presentation attribute loses against the `.t{fill}` rule
         a = ' text-anchor="%s"' % anchor if anchor != "start" else ""
         self.out.append('<text x="%s" y="%s" font-size="%s" class="%s"%s%s%s>%s</text>' % (
             fmt(x), fmt(y), fmt(size), cl, a, tr, fl, esc(s)))
@@ -180,7 +182,8 @@ class Sheet:
         self.text(x0 + 2, y0 + 12.4, "Engineering drawings - generated", 1.7, fill="#444")
         self.text(x0 + 64, y0 + 3.6, "DRAWING TITLE", 1.4, fill="#666")
         self.text(x0 + 64, y0 + 8.8, self.title, 3.4 if len(self.title) < 34 else 2.7, bold=True, maxw=x1 - x0 - 66)
-        self.text(x0 + 64, y0 + 12.6, self.subtitle, 2.0, maxw=x1 - x0 - 66)
+        ls = len(self.subtitle)
+        self.text(x0 + 64, y0 + 12.6, self.subtitle, 2.0 if ls <= 70 else (1.6 if ls <= 92 else 1.3), maxw=(x1 - x0 - 66) * (1.0 if ls <= 70 else 0.8))
         # grid of fields
         fields = [("SHEET", self.num), ("SCALE", self.scale), ("DECK", self.deck), ("ROOM", self.room),
                   ("UNITS", "mm"), ("REV", "A")]
@@ -255,9 +258,8 @@ class Sheet:
         w = text_w(label, size)
         if y2 - y1 >= w + 0.6:
             self.text(tx, (y1 + y2) / 2 + w / 2, label, size, "start", rot=-90)
-        else:
-            self.text(tx, (y1 + y2) / 2 + w / 2, label, size, "start", rot=-90)
-
+        elif not any(self.label_rot(tx - k * (size + 0.4), (y1 + y2) / 2, label, size) for k in (0, 1, 2)):
+            self.text(tx, (y1 + y2) / 2 + w / 2, label, size, "start", rot=-90)      # never drop a dimension
     def chain_h(self, xs, y, labels, ext_y=None, size=1.9):
         """Continuous horizontal chain through paper x positions `xs` (ascending) with segment labels."""
         self.line(xs[0], y, xs[-1], y, "d")
@@ -296,6 +298,8 @@ class Sheet:
         if self.box_free(b):
             self.busy.append(b)
             self.text(x, y + w / 2, s, size, "start", rot=-90)
+            return True
+        return False
 
     def level_mark(self, x, y, label, size=1.7, right=True):
         """Level mark: small triangle on a short horizontal line, text beside."""
@@ -359,12 +363,32 @@ class Sheet:
 
     # ------------------------------------------------------------ output
     def render(self):
-        self.frame()
-        self.titleblock()
+        content = self.out
+        self.out = list(content)          # frame and title block are drawn on a copy: render() twice gives the same sheet
+        try:
+            self.frame()
+            self.titleblock()
+            body = "\n".join(self.out)
+        finally:
+            self.out = content
         head = ('<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
                 'width="420mm" height="297mm" viewBox="0 0 420 297">\n<title>%s - %s</title>\n<style>%s</style>\n%s\n'
                 '<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>\n' % (esc(self.num), esc(self.title), CSS, PATTERNS))
-        return head + "\n".join(self.out) + "\n</svg>\n"
+        return head + body + "\n</svg>\n"
+
+
+def wrap_words(text, mx):
+    """Greedy word wrap to at most `mx` characters per line; a word longer than a line gets a line of its own (no empty lines)."""
+    lines, cur = [], ""
+    for w in str(text).split():
+        if len(cur) + len(w) + (1 if cur else 0) <= mx or not cur:
+            cur = (cur + " " + w).strip()
+        else:
+            lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
+    return lines
 
 
 def nice_scale(avail_w, avail_h, ext_w, ext_h, options=(20, 25, 50, 75, 100, 150, 200, 250, 300, 400, 500)):

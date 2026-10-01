@@ -7,7 +7,9 @@ extends SceneTree
 
 const LAPS := 6
 const WARMUP_LAPS := 2
-const FRAMES_PER_CAMERA := 20        # > ShipBuilder.CULL_TICK at 60 fps so every stop runs the room/culling update
+const MIN_FRAMES_PER_CAMERA := 4
+const MIN_MS_PER_CAMERA := 260       # > ShipBuilder.CULL_TICK (200 ms) of REAL time: headless frames take ~2 ms, so counting
+                                     # 20 frames (as this test did) was only ~40 ms and most stops never ran the room / culling update
 
 const MONITORS := {
 	"objects": Performance.OBJECT_COUNT,
@@ -43,6 +45,8 @@ func _run() -> void:
 		return
 	var cams: Array = main.get("builder").ship.get("cameras", [])
 	var samples: Array[Dictionary] = []
+	var interior_stops := 0
+	var room_hits := 0                  # stops where main._process had really moved the player into the camera's room
 	for lap in LAPS:
 		for cam in cams:
 			var pos: Array = cam["pos"]
@@ -51,12 +55,22 @@ func _run() -> void:
 			player.look_at_yaw_pitch(deg_to_rad(cam.get("yaw", 0.0)), 0.0)
 			player.flash.visible = not player.flash.visible
 			hud.map.visible = not hud.map.visible
-			for i in FRAMES_PER_CAMERA:
+			var t0 := Time.get_ticks_msec()
+			var f := 0
+			while f < MIN_FRAMES_PER_CAMERA or Time.get_ticks_msec() - t0 < MIN_MS_PER_CAMERA:
 				await process_frame
+				f += 1
+			var rid: String = main.get("_room_id")
+			if not cam.get("exterior", false):
+				interior_stops += 1
+				if rid == str(cam.get("room", "")):
+					room_hits += 1
 		var s := _sample()
 		samples.append(s)
 		print("lap %d  %s" % [lap + 1, s])
 	var failures: Array[String] = []
+	if room_hits < interior_stops * 0.9:
+		failures.append("only %d of %d interior stops ran the room / culling update: the soak does not exercise it" % [room_hits, interior_stops])
 	var first: Dictionary = samples[WARMUP_LAPS - 1]
 	var last: Dictionary = samples[-1]
 	for k in MONITORS:

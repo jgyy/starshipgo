@@ -2,27 +2,123 @@
  "version": 1,
  "models": [
   {
+   "id": "arch_deflector",
+   "file": "arch/arch_deflector.glb",
+   "bounds_min": [
+    -3.4,
+    -3.4,
+    -1.85
+   ],
+   "bounds_max": [
+    3.4,
+    3.4,
+    0.7
+   ],
+   "tris": 1880,
+   "bytes": 107176
+  },
+  {
+   "id": "arch_engine_cluster",
+   "file": "arch/arch_engine_cluster.glb",
+   "bounds_min": [
+    -7.2,
+    -2.22,
+    -0.05
+   ],
+   "bounds_max": [
+    7.2,
+    2.22,
+    4.977
+   ],
+   "tris": 3176,
+   "bytes": 149252
+  },
+  {
    "id": "arch_hull_fascia",
    "file": "arch/arch_hull_fascia.glb",
    "bounds_min": [
     -13.12,
-    -1.577,
+    -0.35,
     -35.232
    ],
    "bounds_max": [
     13.12,
     11.75,
-    34.388
+    32.477
    ],
-   "tris": 10668,
-   "bytes": 484304
+   "tris": 8100,
+   "bytes": 362876
+  },
+  {
+   "id": "arch_keel_fin",
+   "file": "arch/arch_keel_fin.glb",
+   "bounds_min": [
+    -0.2,
+    -4.394,
+    -8.991
+   ],
+   "bounds_max": [
+    0.2,
+    0.0,
+    8.977
+   ],
+   "tris": 80,
+   "bytes": 22128
+  },
+  {
+   "id": "arch_mast",
+   "file": "arch/arch_mast.glb",
+   "bounds_min": [
+    -2.5,
+    0.0,
+    -1.3
+   ],
+   "bounds_max": [
+    2.5,
+    9.13,
+    1.7
+   ],
+   "tris": 1230,
+   "bytes": 63520
+  },
+  {
+   "id": "arch_nacelle_port",
+   "file": "arch/arch_nacelle_port.glb",
+   "bounds_min": [
+    -15.852,
+    -3.18,
+    -21.0
+   ],
+   "bounds_max": [
+    0.0,
+    3.585,
+    25.3
+   ],
+   "tris": 4372,
+   "bytes": 192728
+  },
+  {
+   "id": "arch_nacelle_starboard",
+   "file": "arch/arch_nacelle_starboard.glb",
+   "bounds_min": [
+    0.0,
+    -3.18,
+    -21.0
+   ],
+   "bounds_max": [
+    15.852,
+    3.585,
+    25.3
+   ],
+   "tris": 4372,
+   "bytes": 192716
   },
   {
    "id": "arch_stair_flight",
    "file": "arch/arch_stair_flight.glb",
    "bounds_min": [
     -0.705,
-    0.0,
+    -0.003,
     -3.099
    ],
    "bounds_max": [
@@ -31,7 +127,7 @@
     0.045
    ],
    "tris": 4004,
-   "bytes": 273696
+   "bytes": 267684
   },
   {
    "id": "arch_stair_guard",
@@ -43,11 +139,11 @@
    ],
    "bounds_max": [
     0.275,
-    1.0,
+    1.003,
     0.055
    ],
    "tris": 684,
-   "bytes": 59160
+   "bytes": 56980
   },
   {
    "id": "arch_stair_sign",
@@ -60,10 +156,10 @@
    "bounds_max": [
     0.3,
     0.15,
-    0.026
+    0.027
    ],
    "tris": 220,
-   "bytes": 20884
+   "bytes": 21084
   }
  ]
 }

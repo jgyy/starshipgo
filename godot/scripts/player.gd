@@ -16,6 +16,7 @@ var _pitch := 0.0
 var _steps: Array[AudioStream] = []
 var _step_player: AudioStreamPlayer
 var _last_half := 0
+var _bob_amp := 0.0                   # 0..1: the bob fades in / out instead of switching, so the camera never jumps
 
 func _ready() -> void:
 	add_to_group("player")
@@ -64,12 +65,30 @@ func _map_open() -> bool:
 	var hud := get_tree().get_first_node_in_group("hud")
 	return hud != null and hud.get("map") != null and (hud.get("map") as Control).visible
 
+## A terminal overlay is open: no look, no movement, no flashlight; the pointer belongs to the UI.
+var ui_locked := false
+
+func set_ui_locked(v: bool) -> void:
+	ui_locked = v
+	if v:
+		velocity.x = 0.0
+		velocity.z = 0.0
+
+## A click grabs the pointer back after Esc / alt-tab.  Only the LEFT button does: every InputEventMouseButton used to,
+## so scrolling the wheel or a right click (both are "pressed" button events) silently re-captured the mouse.
+static func wants_capture(event: InputEvent, mode: int, map_open: bool) -> bool:
+	return event is InputEventMouseButton and (event as InputEventMouseButton).pressed \
+		and (event as InputEventMouseButton).button_index == MOUSE_BUTTON_LEFT \
+		and mode != Input.MOUSE_MODE_CAPTURED and not map_open
+
 func _unhandled_input(event: InputEvent) -> void:
+	if ui_locked:
+		return
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * mouse_sens)
 		_pitch = clampf(_pitch - event.relative.y * mouse_sens, -1.5, 1.5)
 		head.rotation.x = _pitch
-	elif event is InputEventMouseButton and event.pressed and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED and not _map_open():
+	elif wants_capture(event, Input.mouse_mode, _map_open()):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	elif event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
@@ -83,8 +102,10 @@ func look_at_yaw_pitch(yaw: float, pitch: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	var inp: Vector2 = sim_move if sim_move != null else Input.get_vector("move_left", "move_right", "move_forward", "move_back")
+	if ui_locked:
+		inp = Vector2.ZERO
 	var dir := (transform.basis * Vector3(inp.x, 0, inp.y)).normalized()
-	var speed := SPRINT_SPEED if Input.is_action_pressed("sprint") else WALK_SPEED
+	var speed := SPRINT_SPEED if Input.is_action_pressed("sprint") and not ui_locked else WALK_SPEED
 	var target := dir * speed
 	velocity.x = move_toward(velocity.x, target.x, ACCEL * delta)
 	velocity.z = move_toward(velocity.z, target.z, ACCEL * delta)
@@ -94,16 +115,22 @@ func _physics_process(delta: float) -> void:
 		velocity.y -= GRAVITY * delta
 	move_and_slide()
 	var moving := Vector2(velocity.x, velocity.z).length()
-	if moving > 0.5 and is_on_floor():
+	var walking := moving > 0.5 and is_on_floor()
+	# The old code set head.y = 1.62 + sin(_bob) * 0.028 the instant walking began, with the phase left over from the last
+	# walk: the camera jumped up to 28 mm (and 15 mm sideways) in one frame at every start.  The amplitude now ramps.
+	_bob_amp = move_toward(_bob_amp, 1.0 if walking else 0.0, delta * 6.0)
+	if walking:
 		_bob += delta * moving * 1.9
-		head.position.y = 1.62 + sin(_bob) * 0.028
-		head.position.x = cos(_bob * 0.5) * 0.015
+	if walking or _bob_amp > 0.0:
+		head.position.y = 1.62 + sin(_bob) * 0.028 * _bob_amp
+		head.position.x = cos(_bob * 0.5) * 0.015 * _bob_amp
+	else:
+		head.position.y = 1.62
+		head.position.x = 0.0
+	if walking:
 		var half := int(floorf(_bob / PI))
 		if half != _last_half:
 			_last_half = half
 			_step_player.stream = _steps[randi() % _steps.size()]
 			_step_player.pitch_scale = randf_range(0.9, 1.1)
 			_step_player.play()
-	else:
-		head.position.y = lerpf(head.position.y, 1.62, delta * 8.0)
-		head.position.x = lerpf(head.position.x, 0.0, delta * 8.0)

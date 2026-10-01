@@ -32,30 +32,35 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - PORT STAIR TOWER</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING AFT (+Z)  -  STBD on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING AFT (+Z)  -  STBD on the left</text>
 <clipPath id="clipA"><rect x="145.7" y="56.7" width="132.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="146,63 278,63 278,131 146,131" class="x" fill="#eff1f5"/>
-<polygon points="160,80.6 174,80.6 174,85.4 160,85.4" class="f" fill="#c1faf9"/>
-<polygon points="154,99.6 160,99.6 160,114.3 154,114.3" class="f" fill="#ebc0fa"/>
-<polygon points="163.62,63 170.38,63 170.38,65.2 163.62,65.2" class="dot" fill="none"/>
-<polygon points="230.4,63 241.6,63 241.6,66.7 230.4,66.7" class="dot" fill="none"/>
+<polygon points="160,80.6 174,80.6 174,85.4 160,85.4" class="f" fill="#b2e4f1"/>
+<polygon points="154,99.6 160,99.6 160,114.3 154,114.3" class="f" fill="#edb2f1"/>
+<polygon points="161.4,63 172.6,63 172.6,66.7 161.4,66.7" class="dot" fill="none"/>
+<polygon points="185,371 185,367.36 190.6,367.36 190.6,363.73 196.2,363.73 196.2,360.09 201.8,360.09 201.8,356.45 207.4,356.45 207.4,352.82 213,352.82 213,349.18 218.6,349.18 218.6,345.55 224.2,345.55 224.2,341.91 229.8,341.91 229.8,338.27 235.4,338.27 235.4,334.64 241,334.64 241,331 241,335.8 185,371" class="hid" fill="none"/>
+<polygon points="246.6,331 246.6,327.36 241,327.36 241,323.73 235.4,323.73 235.4,320.09 229.8,320.09 229.8,316.45 224.2,316.45 224.2,312.82 218.6,312.82 218.6,309.18 213,309.18 213,305.55 207.4,305.55 207.4,301.91 201.8,301.91 201.8,298.27 196.2,298.27 196.2,294.64 190.6,294.64 190.6,291 190.6,295.8 246.6,331" class="f" fill="#e3e7ee"/>
 <polygon points="185,291 185,287.36 190.6,287.36 190.6,283.73 196.2,283.73 196.2,280.09 201.8,280.09 201.8,276.45 207.4,276.45 207.4,272.82 213,272.82 213,269.18 218.6,269.18 218.6,265.55 224.2,265.55 224.2,261.91 229.8,261.91 229.8,258.27 235.4,258.27 235.4,254.64 241,254.64 241,251 241,255.8 185,291" class="hid" fill="none"/>
 <polygon points="246.6,251 246.6,247.36 241,247.36 241,243.73 235.4,243.73 235.4,240.09 229.8,240.09 229.8,236.45 224.2,236.45 224.2,232.82 218.6,232.82 218.6,229.18 213,229.18 213,225.55 207.4,225.55 207.4,221.91 201.8,221.91 201.8,218.27 196.2,218.27 196.2,214.64 190.6,214.64 190.6,211 190.6,215.8 246.6,251" class="f" fill="#e3e7ee"/>
 <polygon points="185,211 185,207.36 190.6,207.36 190.6,203.73 196.2,203.73 196.2,200.09 201.8,200.09 201.8,196.45 207.4,196.45 207.4,192.82 213,192.82 213,189.18 218.6,189.18 218.6,185.55 224.2,185.55 224.2,181.91 229.8,181.91 229.8,178.27 235.4,178.27 235.4,174.64 241,174.64 241,171 241,175.8 185,211" class="hid" fill="none"/>
 <polygon points="246.6,171 246.6,167.36 241,167.36 241,163.73 235.4,163.73 235.4,160.09 229.8,160.09 229.8,156.45 224.2,156.45 224.2,152.82 218.6,152.82 218.6,149.18 213,149.18 213,145.55 207.4,145.55 207.4,141.91 201.8,141.91 201.8,138.27 196.2,138.27 196.2,134.64 190.6,134.64 190.6,131 190.6,135.8 246.6,171" class="f" fill="#e3e7ee"/>
+<polygon points="185,131 185,127.36 190.6,127.36 190.6,123.73 196.2,123.73 196.2,120.09 201.8,120.09 201.8,116.45 207.4,116.45 207.4,112.82 213,112.82 213,109.18 218.6,109.18 218.6,105.55 224.2,105.55 224.2,101.91 229.8,101.91 229.8,98.27 235.4,98.27 235.4,94.64 241,94.64 241,91 241,95.8 185,131" class="hid" fill="none"/>
+<polygon points="246.6,91 246.6,87.36 241,87.36 241,83.73 235.4,83.73 235.4,80.09 229.8,80.09 229.8,76.45 224.2,76.45 224.2,72.82 218.6,72.82 218.6,69.18 213,69.18 213,65.55 207.4,65.55 207.4,61.91 201.8,61.91 201.8,58.27 196.2,58.27 196.2,54.64 190.6,54.64 190.6,51 190.6,55.8 246.6,91" class="f" fill="#e3e7ee"/>
 <polygon points="146,131 246.6,131 246.6,137 146,137" class="n" fill="url(#hSlab)"/>
 <polygon points="275,131 278,131 278,137 275,137" class="n" fill="url(#hSlab)"/>
-<polygon points="146,57 278,57 278,63 146,63" class="n" fill="url(#hSlab)"/>
+<polygon points="146,57 246.6,57 246.6,63 146,63" class="n" fill="url(#hSlab)"/>
+<polygon points="275,57 278,57 278,63 275,63" class="n" fill="url(#hSlab)"/>
 <polygon points="146,63 149,63 149,67 146,67" class="n" fill="#1c1c1c"/>
 <polygon points="275,63 278,63 278,131 275,131" class="n" fill="url(#hHull)"/>
-<polygon points="230.4,63 241.6,63 241.6,66.7 230.4,66.7" class="m" fill="#d87def"/>
-<polygon points="163.62,63 170.38,63 170.38,65.2 163.62,65.2" class="m" fill="#d87def"/>
+<polygon points="161.4,63 172.6,63 172.6,66.7 161.4,66.7" class="m" fill="#bff79e"/>
+<polygon points="246.6,331 275,331 275,335.8 246.6,335.8" class="m" fill="url(#hSlab)"/>
 <polygon points="246.6,251 275,251 275,255.8 246.6,255.8" class="m" fill="url(#hSlab)"/>
 <polygon points="246.6,171 275,171 275,175.8 246.6,175.8" class="m" fill="url(#hSlab)"/>
+<polygon points="246.6,91 275,91 275,95.8 246.6,95.8" class="m" fill="url(#hSlab)"/>
 </g>
-<text x="157" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="167" y="83.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2400</text>
+<text x="157" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="167" y="83.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2400</text>
 <text x="146" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="278" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="284" y1="137" x2="284" y2="57" class="d"/>
@@ -94,7 +99,7 @@
 <line x1="146" y1="138" x2="146" y2="144.2" class="d"/>
 <line x1="278" y1="138" x2="278" y2="144.2" class="d"/>
 <text x="212" y="142.3" font-size="2" class="t" text-anchor="middle">6600</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -201,27 +206,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Port Stair Tower - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 1.80 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 1.80 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-towerA1-ST</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 1</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">SP1</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Port Stair Tower</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Port Stair Tower</text>
 </svg>

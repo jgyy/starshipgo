@@ -11,6 +11,10 @@ DEPT_SIGN = {   # destination room -> department sign model label
     "life": "dept_engineering", "cargo": "dept_cargo", "depot": "dept_cargo", "hangar": "dept_hangar",
     "airlock": "dept_airlock", "lounge": "dept_quarters", "capt": "dept_quarters", "cabinA": "dept_quarters",
     "cabinB": "dept_quarters", "dorm": "dept_quarters", "rec": "dept_quarters", "hydro": "dept_science",
+    "starcart": "dept_science", "observ": "dept_science", "theatre": "dept_bridge", "wardroom": "dept_mess",
+    "library": "dept_quarters", "arbor": "dept_science", "flag": "dept_quarters", "antimatter": "dept_engineering",
+    "provisions": "dept_cargo", "water": "dept_engineering", "waste": "dept_engineering", "fab": "dept_engineering",
+    "auxctl": "dept_bridge", "hold": "dept_cargo", "drone": "dept_hangar",
 }
 
 
@@ -137,7 +141,7 @@ def _tower(R, B, side):
     strip_mid = (xb - 0.15 - 0.9) if side == "A" else (xa + 0.15 + 0.9)
     sgn = 1 if side == "A" else -1
     R.describe(
-        "Dog-leg stair tower linking all three decks on the %s side; two 1.4 m flights and a mid-landing per deck pair." %
+        "Dog-leg stair tower linking all five decks on the %s side; two 1.4 m flights and a mid-landing per deck pair." %
         ("port" if side == "A" else "starboard"),
         basis="Rise 181.8 mm, going 280 mm, 11 risers per flight, 4.0 m floor-to-floor; 0.9 m handrails on both sides; second means of escape.",
         adjacency="Opens to the mid-ship stair lobby through a 3.2 m wide arch.")

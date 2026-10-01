@@ -4,8 +4,36 @@ extends RefCounted
 ## are the Blender-generated PBR maps in res://textures/surfaces.
 
 static var _cache: Dictionary = {}
+static var _index: Dictionary = {}
+static var _index_loaded := false
 
+## Metadata written by the texture generator (blender/starship/textures_ext.py): per surface kind its pixel size,
+## the real-world size of one repeat in metres ("tile_m"), the group and whether it is a tint-friendly "neutral" set.
+static func index() -> Dictionary:
+	if not _index_loaded:
+		_index_loaded = true
+		var f := FileAccess.open("res://textures/surfaces/index.json", FileAccess.READ)
+		if f != null:
+			var d: Variant = JSON.parse_string(f.get_as_text())
+			if d is Dictionary:
+				_index = d
+	return _index
+
+static func has_kind(kind: String) -> bool:
+	return ResourceLoader.exists("res://textures/surfaces/%s_albedo.png" % kind)
+
+## Metres per texture repeat for a kind (what the generator designed it for), or `fallback`.
+static func tile_of(kind: String, fallback: float = 2.0) -> float:
+	return float(index().get(kind, {}).get("tile_m", fallback))
+
+## Textured PBR material (albedo / normal / ORM maps from res://textures/surfaces), projected with world-space
+## triplanar UVs so walls, floors and ceilings need no UVs and neighbouring rooms stay seamless.
+## tile <= 0 uses the size the texture was designed for (index.json).
+## Anti-flicker settings: trilinear + 16x anisotropic sampling of a mip-mapped texture (mipmaps come from the
+## project-wide texture importer default in project.godot), moderate normal strength, roughness floor.
 static func surface(kind: String, tint: Color = Color.WHITE, tile: float = 4.0, rough_mul: float = 1.0) -> StandardMaterial3D:
+	if tile <= 0.0:
+		tile = tile_of(kind, 2.0)
 	var key := "%s|%s|%s|%s" % [kind, tint.to_html(), tile, rough_mul]
 	if _cache.has(key):
 		return _cache[key]
@@ -15,7 +43,7 @@ static func surface(kind: String, tint: Color = Color.WHITE, tile: float = 4.0, 
 		m.albedo_texture = load(base + "albedo.png")
 		m.normal_enabled = true
 		m.normal_texture = load(base + "normal.png")
-		m.normal_scale = 0.8
+		m.normal_scale = 0.7
 		var orm: Texture2D = load(base + "orm.png")
 		m.ao_enabled = true
 		m.ao_texture = orm
@@ -30,9 +58,33 @@ static func surface(kind: String, tint: Color = Color.WHITE, tile: float = 4.0, 
 	m.albedo_color = tint
 	m.uv1_triplanar = true
 	m.uv1_world_triplanar = true
+	m.uv1_triplanar_sharpness = 4.0
 	m.uv1_scale = Vector3.ONE / tile
 	m.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	_cache[key] = m
+	return m
+
+## The outside of the ship: hull plates, triplanar in world space, slightly metallic.
+static func skin() -> StandardMaterial3D:
+	if _cache.has("skin"):
+		return _cache["skin"]
+	var m := surface("hull_plate", Color(0.86, 0.9, 0.98), 7.0, 0.9)
+	m.metallic_specular = 0.55
+	_cache["skin"] = m
+	return m
+
+## Lit window pane seen from outside (the room behind it is lit).
+static func window_glow() -> StandardMaterial3D:
+	if _cache.has("window_glow"):
+		return _cache["window_glow"]
+	var m := StandardMaterial3D.new()
+	m.albedo_color = Color(0.03, 0.06, 0.12)
+	m.roughness = 0.1
+	m.metallic = 0.3
+	m.emission_enabled = true
+	m.emission = Color(1.0, 0.72, 0.4)
+	m.emission_energy_multiplier = 0.28
+	_cache["window_glow"] = m
 	return m
 
 static func glass(tint: Color = Color(0.7, 0.85, 1.0, 0.12)) -> StandardMaterial3D:
@@ -71,8 +123,19 @@ render_mode blend_add, unshaded, cull_disabled, depth_draw_never;
 uniform vec3 tint : source_color = vec3(0.2, 0.6, 1.0);
 void fragment() {
 	float t = TIME * 0.6;
-	float bands = 0.5 + 0.5 * sin(UV.y * 60.0 + t * 4.0);
-	float grid = step(0.94, fract(UV.x * 40.0)) + step(0.94, fract(UV.y * 24.0));
+	// The grid used step() on fract(): 2 cm hard-edged lines that are thinner than a pixel from a few metres away and
+	// crawl / sparkle as the camera moves.  Screen-space derivatives give them an anti-aliased edge and fade them to
+	// their average brightness when they can no longer be resolved; the stripes fade to flat the same way.
+	float ux = UV.x * 40.0;
+	float uy = UV.y * 24.0;
+	float w = 0.03;                                   // half width of a grid line in cells (6 % of a cell, as before)
+	float ax = max(fwidth(ux), 1e-4);
+	float ay = max(fwidth(uy), 1e-4);
+	float lx = (1.0 - smoothstep(w, w + ax, abs(fract(ux + w + 0.5) - 0.5))) * min(1.0, 2.0 * w / ax);
+	float ly = (1.0 - smoothstep(w, w + ay, abs(fract(uy + w + 0.5) - 0.5))) * min(1.0, 2.0 * w / ay);
+	float grid = lx + ly;
+	float fb = fwidth(UV.y * 60.0);
+	float bands = mix(0.5, 0.5 + 0.5 * sin(UV.y * 60.0 + t * 4.0), clamp(1.0 - fb * 0.5, 0.0, 1.0));
 	float edge = pow(1.0 - abs(UV.y - 0.5) * 2.0, 0.3);
 	ALBEDO = tint * (0.08 + 0.12 * bands + 0.25 * grid) * (0.6 + 0.4 * edge);
 }

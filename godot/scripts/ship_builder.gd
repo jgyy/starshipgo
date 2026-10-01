@@ -11,7 +11,11 @@ extends Node3D
 
 const WALL_T := 0.15
 const SLAB_T := 0.3
-const CLAD_T := 0.12
+const CLAD_T := 0.10                  # outer plating thickness: the Blender hull fascia belts reach 0.12 m out, so 0.12 put both skins in one plane (z-fight)
+const TRIM_T := 0.012                 # baseboard / accent / glow strips stand this far off the wall (2 cm put their face in the plane
+                                      # of the 2 cm back plates of wall-mounted props: z-fight)
+const GLOW_T := 0.008               # ceiling glow strip depth: 1.2 cm (TRIM_T) put its face in the plane of pipe_insulated_wrapped in the water room
+const BELT_LIFT := 0.015             # exterior belts stand this far off the hull skin (see _build_belts)
 const RISER := 4.0 / 22.0
 const TREAD := 0.28
 const FLIGHT_W := 1.4
@@ -23,6 +27,8 @@ var catalog: Dictionary = {}          # id -> catalog entry
 var arch: Dictionary = {}             # id -> arch entry
 var ship: Dictionary = {}
 var doors: Array[Node3D] = []
+var clad_hulls: Array = []            # convex hulls (PackedVector3Array) of the outer plating pieces: lets tests tell hidden faces from visible ones
+var prop_instances: Array = []        # {room, m, xf}: world transform of every placed prop (the headless renderer keeps no MultiMesh data)
 var room_nodes: Dictionary = {}       # room id -> Node3D (shell + content)
 var room_content: Dictionary = {}     # room id -> Node3D (props, lights, probe) toggled by the culling
 var room_polys: Dictionary = {}       # room id -> PackedVector2Array
@@ -31,6 +37,8 @@ var use_probes := true
 var use_culling := true
 var use_occluders := false            # OccluderInstance3D per room shell; only useful with viewport occlusion culling on
 var stats := {"props": 0, "lights": 0, "doors": 0, "stairs": 0, "models_used": {}, "multimeshes": 0, "colliders": 0}
+var screen_registry := ScreenRegistry.new()   # interactive screens / machines (see scripts/ui/screen_registry.gd)
+var hangar_fields: Array = []         # [{"mesh": MeshInstance3D, "shape": CollisionShape3D}] toggled by the docking app
 var _scenes: Dictionary = {}
 var _model_meshes: Dictionary = {}    # id -> Array[{mesh, xf}]
 var _cull_acc := 0.0
@@ -41,6 +49,7 @@ var _current_room := ""
 class Shell:
 	var surf: Dictionary = {}          # material key -> {v, n, uv}
 	var hulls: Array = []              # Array of PackedVector3Array (convex collision hulls)
+	var ghosts: Array = []             # convex hulls of solid-but-collision-free prisms (the outer plating): hidden-face tests only
 	var occ_v := PackedVector3Array()
 	var occ_i := PackedInt32Array()
 
@@ -60,7 +69,7 @@ class Shell:
 
 	## Convex prism from a plan polygon (x, z) between y0 and y1.
 	func prism(pts: Array, y0: float, y1: float, k_side: String, k_top: String = "", k_bot: String = "",
-			collide: bool = true, occlude: bool = false) -> void:
+			collide: bool = true, occlude: bool = false, ghost: bool = false) -> void:
 		var n := pts.size()
 		if n < 3 or y1 - y0 < 0.001:
 			return
@@ -86,19 +95,24 @@ class Shell:
 			if ln < 1e-6:
 				continue
 			var nrm := Vector3(d.y, 0.0, -d.x).normalized()
-			# outward normal: flip if the polygon winds the other way
-			if area > 0.0:
+			# (d.y, 0, -d.x) is the outward normal of a counter-clockwise (area > 0) plan polygon; flip it for the other winding.
+			# The condition used to be `area > 0`, which turned every side face of every shell prism inside out: walls
+			# were drawn by their far faces, 15 cm behind the colliders, with the room-facing faces culled.
+			if area < 0.0:
 				nrm = -nrm
 			var v00 := Vector3(p.x, y0, p.y); var v01 := Vector3(p.x, y1, p.y)
 			var v10 := Vector3(q.x, y0, q.y); var v11 := Vector3(q.x, y1, q.y)
 			tri(k_side, v00, v10, v11, nrm, Vector2(acc, y0), Vector2(acc + ln, y0), Vector2(acc + ln, y1))
 			tri(k_side, v00, v11, v01, nrm, Vector2(acc, y0), Vector2(acc + ln, y1), Vector2(acc, y1))
 			acc += ln
-		if collide:
+		if collide or ghost:
 			var pts3 := PackedVector3Array()
 			for p in pts:
 				pts3.append(Vector3(p.x, y0, p.y)); pts3.append(Vector3(p.x, y1, p.y))
-			hulls.append(pts3)
+			if collide:
+				hulls.append(pts3)
+			else:
+				ghosts.append(pts3)
 		if occlude:
 			var base := occ_v.size()
 			for p in pts:
@@ -140,11 +154,34 @@ func build() -> void:
 	for d in ship["doors"]:
 		_place_door(d)
 	_build_hull_extras()
+	_build_skin()
+	_build_exterior_windows()
+	_build_exterior_fittings()
+	_build_belts()
 	for s in ship.get("stairs", []):
 		_build_stairs(s)
+	TextureFix.fix_tree(self)           # textures imported without mipmaps shimmer: see texture_fix.gd
 	print("ship built: %d rooms, %d props (%d multimeshes), %d lights, %d doors, %d stairs, %d distinct models" % [
 		ship["rooms"].size(), stats["props"], stats["multimeshes"], stats["lights"], stats["doors"], stats["stairs"],
 		stats["models_used"].size()])
+
+## Deck ids ordered from the lowest deck (smallest y) to the highest: tests walk the stairs in this order instead of a
+## hard-coded list that only fits one deck count.
+static func deck_order_bottom_to_top(decks: Array) -> Array:
+	var sorted := decks.duplicate()
+	sorted.sort_custom(func(a, b): return float(a["y"]) < float(b["y"]))
+	var out: Array = []
+	for d in sorted:
+		out.append(int(d["id"]))
+	return out
+
+## Number of stair flights the data describes.
+static func flights_in(ship: Dictionary) -> int:
+	var n := 0
+	for st in ship.get("stairs", []):
+		for run in st["runs"]:
+			n += (run["flights"] as Array).size()
+	return n
 
 func _deck_y(deck: int) -> float:
 	for d in ship["decks"]:
@@ -152,8 +189,26 @@ func _deck_y(deck: int) -> float:
 			return float(d["y"])
 	return 0.0
 
+## Surface kind chosen by the room's theme (room["mats"], written by tools/layout/themes.py) for `slot`, or "" when
+## the room has no theme / the texture does not exist - callers then use the original single-texture look.
+func _themed(room: Dictionary, slot: String) -> String:
+	var k: String = str(room.get("mats", {}).get(slot, ""))
+	return k if k != "" and ShipMaterials.has_kind(k) else ""
+
+## Room tint multiplied over a themed texture: `mix_key` (room["mats"]["tint_wall"/"tint_floor"]) says how much of
+## the room's pastel colour is applied (0 = none: the texture already has its own colour).
+func _theme_tint(room: Dictionary, mix_key: String, col: Color) -> Color:
+	return Color.WHITE.lerp(col, float(room.get("mats", {}).get(mix_key, 0.0)))
+
 func _mat_for(key: String, room: Dictionary) -> Material:
 	var tint := Color.from_string(room.get("tint", "#ffffff"), Color.WHITE)
+	var tk := _themed(room, {"wall": "wall", "floor": "floor", "ceiling": "ceiling", "trim": "trim", "frame": "accent_tex",
+			"clad": "clad", "roof": "clad", "belly": "clad"}.get(key, "-"))
+	if tk != "":
+		match key:
+			"wall": return ShipMaterials.surface(tk, _theme_tint(room, "tint_wall", tint), -1.0)
+			"floor": return ShipMaterials.surface(tk, _theme_tint(room, "tint_floor", Color.from_string(room.get("floor_tint", "#ffffff"), Color.WHITE)), -1.0)
+			"ceiling", "trim", "frame", "clad", "roof", "belly": return ShipMaterials.surface(tk, Color.WHITE, -1.0)
 	match key:
 		"wall": return ShipMaterials.surface("wall_trim", tint, 4.0)
 		"floor": return ShipMaterials.surface(room.get("floor", "deck_plate"), Color.from_string(room.get("floor_tint", "#ffffff"), Color.WHITE), 4.0)
@@ -250,6 +305,7 @@ func _build_room(room: Dictionary) -> void:
 		_wall(sh, room, edges[i], inner, i, y0, h)
 	# hull plating layer outside hull walls
 	_cladding(sh, room, edges, y0, h)
+	clad_hulls.append_array(sh.ghosts)
 	# meshes + collision + occluder
 	var body := StaticBody3D.new()
 	body.name = "Shell"
@@ -311,6 +367,7 @@ func _build_room(room: Dictionary) -> void:
 		fb.position = q.position
 		fb.rotation_degrees.y = ff.get("yaw", 0.0)
 		body.add_child(fb)
+		hangar_fields.append({"mesh": q, "shape": fb})
 	# a one-shot reflection probe gives metals and glass the room around them
 	var rc: Array = room["rect"]
 	var area: float = room.get("area", 0.0)
@@ -379,8 +436,12 @@ func _wall(sh: Shell, room: Dictionary, e: Dictionary, inner: Array, idx: int, y
 	ops.sort_custom(func(p, q): return p["s"] < q["s"])
 	var cur := 0.0
 	for o in ops:
-		var oa: float = o["s"] - o["w"] * 0.5
-		var ob: float = o["s"] + o["w"] * 0.5
+		# an open hull mouth is lined by the Blender fascia jambs sitting exactly on the opening edges: keep REVEAL clear of
+		# them on the sides as well (_soffit / _cladding already did it above and outside), else the wall's cut end faces
+		# and the jamb faces share a plane (flagged by zfight_test at the hangar mouth)
+		var widen: float = REVEAL if (o["kind"] == "open" and e["hull"]) else 0.0
+		var oa: float = o["s"] - o["w"] * 0.5 - widen
+		var ob: float = o["s"] + o["w"] * 0.5 + widen
 		_wall_run(sh, e, inner, idx, cur, oa, y0, y0 + h)
 		var yb: float = o["y0"]
 		var yt: float = o["y1"]
@@ -439,11 +500,11 @@ func _trim(sh: Shell, e: Dictionary, s0: float, s1: float, y0: float, h: float) 
 	if b - a < 0.3:
 		return
 	var d0 := WALL_T
-	var d1 := WALL_T + 0.02
+	var d1 := WALL_T + TRIM_T
 	# the baseboard sinks 5 mm into the floor slab so its underside is never flush with anything over a floor hole
 	sh.prism(_strip(e, a, b, d0, d1), y0 - 0.005, y0 + 0.14, "hull", "hull", "hull", false)
 	sh.prism(_strip(e, a, b, d0, d1), y0 + 1.02, y0 + 1.08, "trim", "trim", "trim", false)
-	sh.prism(_strip(e, a, b, d0, d1), y0 + h - 0.17, y0 + h - 0.13, "glow", "glow", "glow", false)
+	sh.prism(_strip(e, a, b, d0, WALL_T + GLOW_T), y0 + h - 0.17, y0 + h - 0.13, "glow", "glow", "glow", false)
 
 ## Outer plating over the hull walls of a room (windows and hull openings cut through it).
 func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -> void:
@@ -455,6 +516,15 @@ func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -
 	var outer := _offset(oe, -CLAD_T)
 	var ya := y0 - SLAB_T
 	var yb := y0 + h + SLAB_T
+	# the plating of this deck stops where the plating of the deck above starts (its floor slab's underside): a room lower than
+	# the deck pitch leaves less than 2 x SLAB_T between the decks, and the two skins overlapped in the same outer plane
+	var above := INF
+	for d in ship["decks"]:
+		var dy: float = float(d["y"])
+		if dy > y0 + 0.5:
+			above = minf(above, dy)
+	if above < INF:
+		yb = minf(yb, above - SLAB_T)
 	for e in edges:
 		if not e["hull"]:
 			continue
@@ -491,7 +561,7 @@ func _cladding(sh: Shell, room: Dictionary, edges: Array, y0: float, h: float) -
 				o0 = _outline_miter(hull, outer, q0, o0)
 			if s1 >= ln - 1e-5:
 				o1 = _outline_miter(hull, outer, q1, o1)
-			sh.prism([q0, q1, o1, o0], p[2], p[3], "clad", "clad", "clad", false)
+			sh.prism([q0, q1, o1, o0], p[2], p[3], "clad", "clad", "clad", false, false, true)
 
 func _outline_edges(hull: Array) -> Array:
 	var pts: Array = []
@@ -545,6 +615,7 @@ func _add_light(parent: Node3D, l: Dictionary) -> void:
 	lt.distance_fade_length = 8.0
 	lt.light_specular = 0.6
 	lt.position = Vector3(l["pos"][0], l["pos"][1], l["pos"][2])
+	lt.add_to_group("ship_lights")      # alert level tint / pulse (ShipState.apply_alert_lights)
 	parent.add_child(lt)
 	stats["lights"] += 1
 
@@ -579,12 +650,14 @@ func _meshes_of(id: String) -> Array:
 			if n != inst:
 				xf = xf * n.transform
 			if n is MeshInstance3D and (n as MeshInstance3D).mesh != null:
-				out.append({"mesh": (n as MeshInstance3D).mesh, "xf": xf})
+				PropMaterials.apply_mesh((n as MeshInstance3D).mesh)       # textured materials, see prop_materials.gd
+				out.append({"mesh": (n as MeshInstance3D).mesh, "xf": xf, "name": String(n.name)})
 			for c in n.get_children():
 				if c is Node3D:
 					stack.append([c, xf])
 		inst.free()
 	_model_meshes[id] = out
+	screen_registry.index_model(id, out)
 	return out
 
 func _build_props(room: Dictionary, content: Node3D, room_node: Node3D) -> void:
@@ -608,6 +681,9 @@ func _build_props(room: Dictionary, content: Node3D, room_node: Node3D) -> void:
 		if not groups.has(id):
 			groups[id] = []
 		groups[id].append(xf)
+		_meshes_of(id)                   # indexes the model's screen surfaces before the prop is registered
+		screen_registry.add_prop(room, id, entry, xf)
+		prop_instances.append({"room": room["id"], "m": id, "xf": xf})
 		stats["props"] += 1
 		stats["models_used"][id] = true
 		var size := Vector3(entry["size"][0], entry["size"][1], entry["size"][2])
@@ -651,6 +727,8 @@ func _place_door(d: Dictionary) -> void:
 	inst.set_script(load("res://scripts/door.gd"))
 	inst.position = Vector3(d["pos"][0], d["pos"][1], d["pos"][2])
 	inst.rotation_degrees.y = d.get("yaw", 0.0)
+	inst.set_meta("a", d.get("a", ""))      # rooms either side (security app / lock command)
+	inst.set_meta("b", d.get("b", ""))
 	add_child(inst)
 	inst.call("setup")
 	_set_visibility(inst, 60.0)
@@ -675,6 +753,212 @@ func _build_hull_extras() -> void:
 			var inst: Node3D = ps.instantiate()
 			inst.name = "HullFascia"
 			add_child(inst)
+
+# ------------------------------------------------------------------ outer skin
+## The smooth, flared, raked envelope that wraps all five decks (loft of closed rings made by tools/layout/hull.py).
+## It is the outside of the ship: back faces are culled, so from inside the rooms (and through their windows) it is
+## invisible; from outside it hides the stepped decks and shows the streamlined hull.  It lives on render layer 2
+## (the sun's layer) and has no collider - the interior shell keeps the physics.
+func _skin_ring_points(sk: Dictionary, ring: Dictionary) -> PackedVector3Array:
+	var n: int = int(sk["n"])
+	var c: Array = sk["center"]
+	var r: Array = ring["r"]
+	var sx: float = ring["sx"]
+	var sz: float = ring["sz"]
+	var y: float = ring["y"]
+	var out := PackedVector3Array()
+	out.resize(n)
+	for i in n:
+		var ph := TAU * float(i) / float(n)
+		out[i] = Vector3(float(c[0]) + sx * float(r[i]) * cos(ph), y, float(c[1]) + sz * float(r[i]) * sin(ph))
+	return out
+
+func _build_skin() -> void:
+	var sk: Dictionary = ship.get("skin", {})
+	if sk.is_empty():
+		return
+	var rings: Array = sk["rings"]
+	var n: int = int(sk["n"])
+	var verts := PackedVector3Array()
+	for ring in rings:
+		verts.append_array(_skin_ring_points(sk, ring))
+	var norms := PackedVector3Array()
+	norms.resize(verts.size())
+	var uvs := PackedVector2Array()
+	uvs.resize(verts.size())
+	var idx := PackedInt32Array()
+	var nr := rings.size()
+	for j in nr - 1:
+		for i in n:
+			var i2 := (i + 1) % n
+			var a := j * n + i
+			var b := j * n + i2
+			var c := (j + 1) * n + i2
+			var d := (j + 1) * n + i
+			for tri in [[a, b, c], [a, c, d]]:
+				var p0: Vector3 = verts[tri[0]]
+				var p1: Vector3 = verts[tri[1]]
+				var p2: Vector3 = verts[tri[2]]
+				var fn := (p1 - p0).cross(p2 - p0)
+				if fn.length_squared() < 1e-10:
+					continue                                  # collapsed quad at the keel / crown blade
+				# Godot front faces are clockwise.  The rings run counter-clockwise seen from above (+Y), so a -Y facing
+				# cross product points outward for the upward-going strips: flip when needed.
+				var ctr := (p0 + p1 + p2) / 3.0
+				var outward := Vector3(ctr.x - float(sk["center"][0]), 0.0, ctr.z - float(sk["center"][1]))
+				if fn.dot(outward) > 0.0:
+					idx.append(tri[0]); idx.append(tri[2]); idx.append(tri[1])
+				else:
+					idx.append(tri[0]); idx.append(tri[1]); idx.append(tri[2])
+				norms[tri[0]] += fn; norms[tri[1]] += fn; norms[tri[2]] += fn
+	for k in norms.size():
+		var nn := norms[k]
+		if nn.length_squared() < 1e-12:
+			nn = Vector3.UP
+		norms[k] = nn.normalized()
+	# the accumulated normals above were the raw cross products: make them point outward
+	for k in norms.size():
+		var v: Vector3 = verts[k]
+		var out := Vector3(v.x - float(sk["center"][0]), 0.0, v.z - float(sk["center"][1]))
+		if out.length_squared() > 1e-6 and norms[k].dot(out) < 0.0 and absf(norms[k].y) < 0.95:
+			norms[k] = -norms[k]
+	for k in verts.size():
+		uvs[k] = Vector2(verts[k].x, verts[k].z)
+	var arrays := []
+	arrays.resize(Mesh.ARRAY_MAX)
+	arrays[Mesh.ARRAY_VERTEX] = verts
+	arrays[Mesh.ARRAY_NORMAL] = norms
+	arrays[Mesh.ARRAY_TEX_UV] = uvs
+	arrays[Mesh.ARRAY_INDEX] = idx
+	var mesh := ArrayMesh.new()
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+	var mi := MeshInstance3D.new()
+	mi.name = "HullSkin"
+	mi.mesh = mesh
+	mi.material_override = ShipMaterials.skin()
+	mi.layers = 2
+	mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON
+	add_child(mi)
+	stats["skin_tris"] = idx.size() / 3
+
+## Lit window panes on the outside of the skin, one per interior hull window (ship.json "ext_windows").
+func _build_exterior_windows() -> void:
+	var wins: Array = ship.get("ext_windows", [])
+	if wins.is_empty():
+		return
+	var centre := Vector3(float(ship["skin"]["center"][0]), 0.0, float(ship["skin"]["center"][1]))
+	var glass := {"v": PackedVector3Array(), "n": PackedVector3Array()}
+	var frame := {"v": PackedVector3Array(), "n": PackedVector3Array()}
+	var field := {"v": PackedVector3Array(), "n": PackedVector3Array()}
+	for w in wins:
+		var c := Vector3(w["c"][0], w["c"][1], w["c"][2])
+		var u := Vector3(w["u"][0], w["u"][1], w["u"][2])
+		var v := Vector3(w["v"][0], w["v"][1], w["v"][2])
+		var nrm := u.cross(v).normalized()
+		if nrm.dot(Vector3(c.x - centre.x, 0.0, c.z - centre.z)) < 0.0:
+			nrm = -nrm
+		var hw: float = float(w["w"]) * 0.5
+		var hh: float = float(w["h"]) * 0.5
+		if w.get("kind", "window") == "mouth":
+			_quad(frame, c + nrm * 0.10, u, v, hw + 0.5, hh + 0.5, nrm)
+			_quad(field, c + nrm * 0.13, u, v, hw, hh, nrm)
+			continue
+		_quad(frame, c + nrm * 0.10, u, v, hw + 0.14, hh + 0.14, nrm)
+		_quad(glass, c + nrm * 0.13, u, v, hw, hh, nrm)
+	for entry in [[frame, ShipMaterials.surface("hull_panel", Color(0.30, 0.33, 0.40), 2.0), "ExteriorWindowFrames"],
+			[glass, ShipMaterials.window_glow(), "ExteriorWindows"],
+			[field, ShipMaterials.emissive(Color(0.12, 0.36, 0.8), 0.7), "HangarField"]]:
+		var d: Dictionary = entry[0]
+		var arrays := []
+		arrays.resize(Mesh.ARRAY_MAX)
+		arrays[Mesh.ARRAY_VERTEX] = d["v"]
+		arrays[Mesh.ARRAY_NORMAL] = d["n"]
+		var uv := PackedVector2Array()
+		for k in (d["v"] as PackedVector3Array).size():
+			uv.append(Vector2(float(k % 4 in [1, 2]), float(k % 4 in [2, 3])))
+		arrays[Mesh.ARRAY_TEX_UV] = uv
+		var mesh := ArrayMesh.new()
+		mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+		var mi := MeshInstance3D.new()
+		mi.name = entry[2]
+		mi.mesh = mesh
+		mi.material_override = entry[1]
+		mi.layers = 2
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		add_child(mi)
+
+## Nacelles, deflector dish, masts, stern engines and keel fin (Blender assets listed in ship.json "exterior").
+func _build_exterior_fittings() -> void:
+	for f in ship.get("exterior", []):
+		var ps := _scene_for(f["m"])
+		if ps == null:
+			continue
+		var inst: Node3D = ps.instantiate()
+		inst.name = "Ext_" + String(f["m"])
+		inst.position = Vector3(f["pos"][0], f["pos"][1], f["pos"][2])
+		inst.rotation_degrees = Vector3(f.get("pitch", 0.0), f.get("yaw", 0.0), 0.0)
+		var sc: float = f.get("scale", 1.0)
+		inst.scale = Vector3.ONE * sc
+		_set_layers(inst, 2)
+		add_child(inst)
+
+## Running-light belts around the skin at the deck boundaries (ship.json "belts").
+func _build_belts() -> void:
+	for belt in ship.get("belts", []):
+		var pts: Array = belt["pts"]
+		var y: float = belt["y"]
+		var v := PackedVector3Array()
+		var nn := PackedVector3Array()
+		var c: Array = ship["skin"]["center"]
+		for i in pts.size():
+			var a: Array = pts[i]
+			var b: Array = pts[(i + 1) % pts.size()]
+			var pa := Vector3(a[0], y, a[1])
+			var pb := Vector3(b[0], y, b[1])
+			var out := Vector3((pa.x + pb.x) * 0.5 - float(c[0]), 0.0, (pa.z + pb.z) * 0.5 - float(c[1])).normalized()
+			# the belt polyline was sampled ON the skin, so its strip lay in the skin's plane (within ~1 mm where the skin is
+			# triangulated between rings): lift it 1.5 cm off the plating to keep it from z-fighting with the skin
+			pa += out * BELT_LIFT
+			pb += out * BELT_LIFT
+			var q := [pa + Vector3.DOWN * 0.07, pb + Vector3.DOWN * 0.07, pb + Vector3.UP * 0.07, pa + Vector3.UP * 0.07]
+			for tri in [[0, 1, 2], [0, 2, 3]]:
+				var p0: Vector3 = q[tri[0]]; var p1: Vector3 = q[tri[1]]; var p2: Vector3 = q[tri[2]]
+				if (p1 - p0).cross(p2 - p0).dot(out) > 0.0:
+					var t := p1; p1 = p2; p2 = t
+				v.append(p0); v.append(p1); v.append(p2)
+				nn.append(out); nn.append(out); nn.append(out)
+		var arrays := []
+		arrays.resize(Mesh.ARRAY_MAX)
+		arrays[Mesh.ARRAY_VERTEX] = v
+		arrays[Mesh.ARRAY_NORMAL] = nn
+		var mesh := ArrayMesh.new()
+		mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+		var mi := MeshInstance3D.new()
+		mi.name = "Belt_%d" % int(y * 10)
+		mi.mesh = mesh
+		mi.material_override = ShipMaterials.emissive(Color.from_string(belt["color"], Color.WHITE), 1.6)
+		mi.layers = 2
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		add_child(mi)
+
+func _set_layers(n: Node, mask: int) -> void:
+	if n is VisualInstance3D:
+		(n as VisualInstance3D).layers = mask
+	for c in n.get_children():
+		_set_layers(c, mask)
+
+func _quad(d: Dictionary, c: Vector3, u: Vector3, v: Vector3, hw: float, hh: float, nrm: Vector3) -> void:
+	var p := [c - u * hw - v * hh, c + u * hw - v * hh, c + u * hw + v * hh, c - u * hw + v * hh]
+	var vv: PackedVector3Array = d["v"]
+	var nn: PackedVector3Array = d["n"]
+	for tri in [[0, 1, 2], [0, 2, 3]]:
+		var a: Vector3 = p[tri[0]]; var b: Vector3 = p[tri[1]]; var e: Vector3 = p[tri[2]]
+		if (b - a).cross(e - a).dot(nrm) > 0.0:       # clockwise front faces
+			var t := b; b = e; e = t
+		vv.append(a); vv.append(b); vv.append(e)
+		nn.append(nrm); nn.append(nrm); nn.append(nrm)
+	d["v"] = vv
+	d["n"] = nn
 
 # ------------------------------------------------------------------ stairs
 func _build_stairs(s: Dictionary) -> void:

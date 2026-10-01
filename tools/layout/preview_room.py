@@ -26,13 +26,22 @@ PALETTE = ["#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#4
            "#008080", "#e6beff", "#9a6324", "#fffac8", "#800000", "#aaffc3", "#808000", "#ffd8b1", "#000075", "#808080"]
 
 
-def color_for(cat, cache={}):
-    if cat not in cache:
-        cache[cat] = PALETTE[len(cache) % len(PALETTE)]
-    return cache[cat]
+def family_colors(categories):
+    """One stable colour per family, independent of which rooms are drawn first (the first 20 come from PALETTE, the rest
+    from golden-ratio hues, so no two families share a colour)."""
+    import colorsys
+    out = {}
+    for i, c in enumerate(sorted(set(categories))):
+        if i < len(PALETTE):
+            out[c] = PALETTE[i]
+        else:
+            r, g, b = colorsys.hsv_to_rgb((i * 0.61803398875) % 1.0, 0.55, 0.9)
+            out[c] = "#%02x%02x%02x" % (int(r * 255), int(g * 255), int(b * 255))
+    return out
 
 
-def draw_room(ax, r, cat, labels=True):
+def draw_room(ax, r, cat, labels=True, colors=None):
+    colors = colors or family_colors(m["category"] for m in cat.values())
     ax.add_patch(Polygon(r["poly"], closed=True, fc="#f4f6f9", ec="#222", lw=2.2, zorder=1))
     for z in r.get("zones", []):
         x0, z0, x1, z1 = z["rect"]
@@ -55,7 +64,7 @@ def draw_room(ax, r, cat, labels=True):
         ax.plot([px - ux * o["w"] / 2, px + ux * o["w"] / 2], [pz - uz * o["w"] / 2, pz + uz * o["w"] / 2], color=col, lw=6, zorder=5, solid_capstyle="butt")
     for p in r["props"]:
         m = cat[p["m"]]
-        col = color_for(m["category"])
+        col = colors[m["category"]]
         lo, hi = m["bounds_min"], m["bounds_max"]
         sc = p.get("scale", 1.0)
         cx, cz = (lo[0] + hi[0]) / 2 * sc, (lo[2] + hi[2]) / 2 * sc
@@ -73,7 +82,7 @@ def draw_room(ax, r, cat, labels=True):
         else:
             ax.add_patch(Polygon(pts, fc="none", ec=col, lw=0.8, ls=":", zorder=2))
         if labels and m["mount"] in ("floor",) and (hi[0] - lo[0]) > 0.6:
-            ax.text(c[0], c[1], m["id"].split("_", 1)[1][:14], fontsize=4.2, ha="center", va="center", zorder=6)
+            ax.text(c[0], c[1], m["id"].split("_", 1)[-1][:14], fontsize=4.2, ha="center", va="center", zorder=6)
 
 
 def main():
@@ -85,15 +94,21 @@ def main():
     ap.add_argument("--no-labels", action="store_true")
     ap.add_argument("--ship", default=os.path.join(ROOT, "godot", "data", "ship.json"))
     a = ap.parse_args()
-    ship = json.load(open(a.ship))
-    cat = {m["id"]: m for m in json.load(open(os.path.join(ROOT, "godot", "data", "catalog.json")))["models"]}
+    with open(a.ship, encoding="utf-8") as f:
+        ship = json.load(f)
+    with open(os.path.join(ROOT, "godot", "data", "catalog.json"), encoding="utf-8") as f:
+        cat = {m["id"]: m for m in json.load(f)["models"]}
+    colors = family_colors(m["category"] for m in cat.values())
+    bad = [x for x in a.rooms if x not in {r["id"] for r in ship["rooms"]}]
+    if bad:
+        sys.exit("no such room: %s; have: %s" % (", ".join(bad), ", ".join(r["id"] for r in ship["rooms"])))
     rooms = [r for r in ship["rooms"] if (r["id"] in a.rooms) or (a.deck and r["deck"] == a.deck)]
     if not rooms:
         sys.exit("no such room; have: " + ", ".join(r["id"] for r in ship["rooms"]))
     if a.deck and not a.rooms:
         fig, ax = plt.subplots(figsize=(10, 16))
         for r in rooms:
-            draw_room(ax, r, cat, not a.no_labels)
+            draw_room(ax, r, cat, not a.no_labels, colors)
             ax.text(r["rect"][0] + 0.3, r["rect"][1] + 0.6, r["name"], fontsize=6, weight="bold", zorder=7)
         ax.set_aspect("equal"); ax.invert_yaxis(); ax.autoscale_view()
     else:
@@ -102,7 +117,7 @@ def main():
         rows = (n + cols - 1) // cols
         fig, axs = plt.subplots(rows, cols, figsize=(11 * cols, 9 * rows), squeeze=False)
         for ax, r in zip([x for row in axs for x in row], rooms):
-            draw_room(ax, r, cat, not a.no_labels)
+            draw_room(ax, r, cat, not a.no_labels, colors)
             ax.set_aspect("equal"); ax.invert_yaxis(); ax.autoscale_view()
             ax.set_title("%s - %s (%.0f m2, %d props)" % (r["id"], r["name"], r["area"], len(r["props"])))
     plt.tight_layout()

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>S-03 - Datasheet - Fusion Core Reactor</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<rect x="32" y="30" width="33.65" height="40.57" class="m" fill="#eef1f6"/>
+<rect x="33.35" y="31.62" width="30.96" height="37.33" class="x" fill="none"/>
+<text x="32" y="27.5" font-size="1.8" class="t b">FRONT</text>
+<rect x="87.65" y="30" width="33.65" height="40.57" class="m" fill="#eef1f6"/>
+<text x="87.65" y="27.5" font-size="1.8" class="t b">SIDE</text>
+<rect x="32" y="92.57" width="33.65" height="33.65" class="m" fill="#eef1f6"/>
+<text x="32" y="90.07" font-size="1.8" class="t b">TOP</text>
+<line x1="32" y1="77.57" x2="65.65" y2="77.57" class="d"/>
+<line x1="31.3" y1="78.27" x2="32.7" y2="76.87" class="m"/>
+<line x1="64.95" y1="78.27" x2="66.35" y2="76.87" class="m"/>
+<line x1="32" y1="70.57" x2="32" y2="78.77" class="d"/>
+<line x1="65.65" y1="70.57" x2="65.65" y2="78.77" class="d"/>
+<text x="48.83" y="76.87" font-size="2" class="t" text-anchor="middle">2524</text>
+<line x1="25" y1="30" x2="25" y2="70.57" class="d"/>
+<line x1="24.3" y1="30.7" x2="25.7" y2="29.3" class="m"/>
+<line x1="24.3" y1="71.27" x2="25.7" y2="69.87" class="m"/>
+<line x1="32" y1="30" x2="23.8" y2="30" class="d"/>
+<line x1="32" y1="70.57" x2="23.8" y2="70.57" class="d"/>
+<text x="24.3" y="52.45" font-size="2" class="t" transform="rotate(-90 24.3 52.45)">3043</text>
+<line x1="87.65" y1="77.57" x2="121.31" y2="77.57" class="d"/>
+<line x1="86.95" y1="78.27" x2="88.35" y2="76.87" class="m"/>
+<line x1="120.61" y1="78.27" x2="122.01" y2="76.87" class="m"/>
+<line x1="87.65" y1="70.57" x2="87.65" y2="78.77" class="d"/>
+<line x1="121.31" y1="70.57" x2="121.31" y2="78.77" class="d"/>
+<text x="104.48" y="76.87" font-size="2" class="t" text-anchor="middle">2524</text>
+<line x1="25" y1="92.57" x2="25" y2="126.23" class="d"/>
+<line x1="24.3" y1="93.27" x2="25.7" y2="91.87" class="m"/>
+<line x1="24.3" y1="126.93" x2="25.7" y2="125.53" class="m"/>
+<line x1="32" y1="92.57" x2="23.8" y2="92.57" class="d"/>
+<line x1="32" y1="126.23" x2="23.8" y2="126.23" class="d"/>
+<text x="24.3" y="111.56" font-size="2" class="t" transform="rotate(-90 24.3 111.56)">2524</text>
+<text x="238" y="16.8" font-size="2.3" class="t b">SPECIFICATION</text>
+<rect x="238" y="18" width="171" height="4.5" class="n" fill="#dfe3ea"/>
+<text x="239" y="21.45" font-size="1.8" class="t b">PARAMETER</text>
+<text x="277" y="21.45" font-size="1.8" class="t b">VALUE</text>
+<rect x="238" y="22.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="25.95" font-size="1.8" class="t b">Model id</text>
+<text x="277" y="25.95" font-size="1.8" class="t">reactor_fusion_core_reactor</text>
+<rect x="238" y="27" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="30.45" font-size="1.8" class="t b">Designation</text>
+<text x="277" y="30.45" font-size="1.8" class="t">Reactor - Fusion Core Reactor</text>
+<rect x="238" y="31.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="34.95" font-size="1.8" class="t b">Manufacturer</text>
+<text x="277" y="34.95" font-size="1.8" class="t">Halvorsen Power Systems</text>
+<rect x="238" y="36" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="39.45" font-size="1.8" class="t b">Part number</text>
+<text x="277" y="39.45" font-size="1.8" class="t">HPS-REA-5727</text>
+<rect x="238" y="40.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="43.95" font-size="1.8" class="t b">Class / role</text>
+<text x="277" y="43.95" font-size="1.8" class="t">power / producer</text>
+<rect x="238" y="45" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="48.45" font-size="1.8" class="t b">Dimensions</text>
+<text x="277" y="48.45" font-size="1.8" class="t">2524 x 3043 x 2524 mm (W x H x D)</text>
+<rect x="238" y="49.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="52.95" font-size="1.8" class="t b">Mass (dry)</text>
+<text x="277" y="52.95" font-size="1.8" class="t">23.82 t</text>
+<rect x="238" y="54" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="57.45" font-size="1.8" class="t b">Supply</text>
+<text x="277" y="57.45" font-size="1.8" class="t">6.6 kVAC 3ph</text>
+<rect x="238" y="58.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="61.95" font-size="1.8" class="t b">Output</text>
+<text x="277" y="61.95" font-size="1.8" class="t">16.60 MW (own load 130.0 kW)</text>
+<rect x="238" y="63" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="66.45" font-size="1.8" class="t b">Heat dissipation</text>
+<text x="277" y="66.45" font-size="1.8" class="t">5.00 MW</text>
+<rect x="238" y="67.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="70.95" font-size="1.8" class="t b">Unit price</text>
+<text x="277" y="70.95" font-size="1.8" class="t">45.50 M cr</text>
+<rect x="238" y="72" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="75.45" font-size="1.8" class="t b">Lead time</text>
+<text x="277" y="75.45" font-size="1.8" class="t">169 days</text>
+<rect x="238" y="76.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="79.95" font-size="1.8" class="t b">MTBF</text>
+<text x="277" y="79.95" font-size="1.8" class="t">60,759 h</text>
+<rect x="238" y="81" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="84.45" font-size="1.8" class="t b">Maintenance interval</text>
+<text x="277" y="84.45" font-size="1.8" class="t">4,000 h</text>
+<rect x="238" y="85.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="88.95" font-size="1.8" class="t b">Service life</text>
+<text x="277" y="88.95" font-size="1.8" class="t">25 years</text>
+<rect x="238" y="90" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="93.45" font-size="1.8" class="t b">Crew to operate</text>
+<text x="277" y="93.45" font-size="1.8" class="t">2</text>
+<rect x="238" y="94.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="97.95" font-size="1.8" class="t b">Ingress protection</text>
+<text x="277" y="97.95" font-size="1.8" class="t">IP54</text>
+<rect x="238" y="99" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="102.45" font-size="1.8" class="t b">Operating temperature</text>
+<text x="277" y="102.45" font-size="1.8" class="t">-20 to 55 C</text>
+<rect x="238" y="103.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="106.95" font-size="1.8" class="t b">Noise</text>
+<text x="277" y="106.95" font-size="1.8" class="t">86 dB(A)</text>
+<rect x="238" y="108" width="171" height="4.5" class="f" fill="#f4f6f9"/>
+<text x="239" y="111.45" font-size="1.8" class="t b">Data interface</text>
+<text x="277" y="111.45" font-size="1.8" class="t">Power management bus PMB-1</text>
+<rect x="238" y="112.5" width="171" height="4.5" class="f" fill="#ffffff"/>
+<text x="239" y="115.95" font-size="1.8" class="t b">Software</text>
+<text x="277" y="115.95" font-size="1.8" class="t">engineering</text>
+<rect x="238" y="18" width="171" height="99" class="n" fill="none"/>
+<text x="238" y="123" font-size="2" class="t b">CERTIFICATIONS</text>
+<text x="238" y="127.5" font-size="1.7" class="t">- CSA-M5 machinery safety</text>
+<text x="238" y="131.3" font-size="1.7" class="t">- CSA-E24 electrical safety</text>
+<text x="238" y="135.1" font-size="1.7" class="t">- CSA-R3 radiation (fusion)</text>
+<text x="238" y="142.9" font-size="2" class="t b">NOTES</text>
+<text x="238" y="147.4" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (23.82 t). Output</text>
+<text x="238" y="151.2" font-size="1.7" class="t">16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.</text>
+<text x="16" y="178" font-size="2.2" class="t b">ELECTRICAL PROFILE</text>
+<text x="16" y="185" font-size="2" class="t">Producer / storage: output 16.60 MW</text>
+<text x="16" y="208" font-size="2.2" class="t b">INSTALLED IN THE SHIP</text>
+<rect x="16" y="211" width="110" height="4.2" class="n" fill="#dfe3ea"/>
+<text x="17" y="214.15" font-size="1.8" class="t b">ROOM</text>
+<text x="107" y="214.15" font-size="1.8" class="t b">QTY</text>
+<rect x="16" y="215.2" width="110" height="4.2" class="f" fill="#ffffff"/>
+<text x="17" y="218.35" font-size="1.8" class="t">Main Engineering</text>
+<text x="107" y="218.35" font-size="1.8" class="t">1</text>
+<rect x="16" y="211" width="110" height="8.4" class="n" fill="none"/>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Datasheet - Fusion Core Reactor</text>
+<text x="299" y="264.6" font-size="1.6" class="t">Reactor - Fusion Core Reactor | Halvorsen Power Systems | PART HPS-REA-5727</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">S-03</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">1:75</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">ALL</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">-</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Machine datasheet</text>
+</svg>

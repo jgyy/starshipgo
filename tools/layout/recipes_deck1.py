@@ -2,6 +2,7 @@
 import math
 from dressing import *   # noqa: F401,F403
 from recipes_deck1_helpers import need, M, put, wall, floor_wall, tops
+from recipes_food import food_bridge, food_cabin, food_capt, food_conf, food_lounge, food_ready   # noqa: F401
 
 
 # ====================================================================================== BRIDGE
@@ -86,6 +87,7 @@ def f_bridge(R, B):
     wall(R, "S", "safety", "fire_extinguisher", -10.1, y=1.1, what="extinguisher")
     for (x, z) in ((-3.0, -29.0), (3.0, -29.0), (0.0, -25.0)):
         R.place(M(R, "safety", "suppression_nozzle"), x, z, 0.0, y=R.y + R.h)
+    food_bridge(R, B)
 
 
 def lights(R, spacing=4.0, energy=1.5, color="#fff0dd", x_margin=1.0, why=None):
@@ -166,6 +168,7 @@ def f_ready(R, B):
            "Extinguisher by the corridor door, exit sign over it.")
     extinguisher(R, "E", -20.4)
     wall(R, "N", "sign", "emergency_exit", -8.3, y=2.6, what="exit sign")
+    food_ready(R, B)
 
 
 def _chairpred(m):
@@ -249,6 +252,7 @@ def f_lounge(R, B):
     extinguisher(R, "E", -12.0)
     wall(R, "E", "sign", "dept_quarters", -9.0, y=2.6, what="lounge sign")
     extinguisher(R, "S", -8.9)
+    food_lounge(R, B)
 
 
 # ====================================================================================== CONFERENCE ROOM
@@ -313,6 +317,7 @@ def f_conf(R, B):
     R.line("Safety and signs", "Extinguisher by the bridge door and a wall clock so meetings keep to time.")
     extinguisher(R, "W", -20.75)
     wall(R, "W", "clock", "digital_clock", -14.3, y=2.4, what="wall clock")
+    food_conf(R, B)
 
 
 # ====================================================================================== ASTROMETRICS
@@ -446,6 +451,7 @@ def f_cabinA(R, B):
     extinguisher(R, "E", 4.2)
     wall(R, "E", "sign", "dept_quarters", 8.0, y=2.6, what="quarters sign")
     wall(R, "N", "clock", "digital_clock", -2.6, y=2.2, what="clock")
+    food_cabin(R, B)
 
 
 def f_cabinB(R, B):
@@ -476,6 +482,7 @@ def f_cabinB(R, B):
     extinguisher(R, "E", 13.1)
     wall(R, "E", "sign", "dept_quarters", 9.45, y=2.6, what="quarters sign")
     wall(R, "N", "display", "chronometer", -3.4, y=2.0, what="clock display")
+    food_cabin(R, B)
 
 
 # ====================================================================================== CAPTAIN'S QUARTERS
@@ -547,6 +554,7 @@ def f_capt(R, B):
     extinguisher(R, "W", 4.4)
     wall(R, "W", "sign", "dept_quarters", 8.2, y=2.6, what="sign")
     wall(R, "S", "clock", "digital_clock", 7.4, y=2.3, what="clock")
+    food_capt(R, B)
 
 
 # ====================================================================================== COMMUNICATIONS CENTRE

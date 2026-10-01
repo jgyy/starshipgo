@@ -1,6 +1,7 @@
 """Blender tool / catalog convention tests (stdlib only; bpy-dependent parts are skipped)."""
 import json
 import os
+import re
 import subprocess
 import sys
 import unittest
@@ -8,6 +9,7 @@ import unittest
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CATALOG = os.path.join(ROOT, "godot", "data", "catalog.json")
 TOL = 0.005
+TARGET = int(re.search(r"^TARGET = (\d+)", open(os.path.join(ROOT, "blender", "build_all.py")).read(), re.M).group(1))
 
 # Models fixed in this pass (must satisfy their mount convention exactly).
 FIXED_FLOOR = ["hangartool_launch_rail_segment", "door_cargo", "crate_pod_pressurised_tall",
@@ -16,32 +18,11 @@ FIXED_FLOOR = ["hangartool_launch_rail_segment", "door_cargo", "crate_pod_pressu
 FIXED_WALL = ["coil_eps_conduit_trunk", "pipe_valve_wheel"]
 FIXED_CEILING = ["camera_dome_ceiling", "ceilinglight_flush_dome", "ceilingpanel_dome_light_1x1"]
 
-# Known, NOT fixed convention violations. All are small (<= 0.05 m): feet / casters / wheel
-# treads / bevel or rotation overhang of the original generators, plus a deliberately hovering
-# stretcher (medsupply_hover_stretcher hovers 0.05 m on its thrusters). Fixing them needs
-# per-generator geometry edits in modules owned by other work; they are harmless to layout.
-ALLOW_FLOOR = {
-    'barrel_cryo_flask', 'barrel_gas_cylinder_trolley', 'bed_captain_bed', 'bed_hammock_frame',
-    'bed_recliner_sleeper', 'bin_recycling_bin_triple', 'chair_folding_chair', 'chair_lounge_chair',
-    'couch_bean_bag', 'craft_lander', 'crate_biohazard', 'crate_cage_large', 'crate_flammable_red',
-    'crate_hazard_yellow', 'crate_iso_container_blue', 'crate_iso_container_hazard',
-    'crate_medical_supply', 'crate_open_parts', 'crate_pod_pressurised_long', 'crate_stacked_pair',
-    'crate_steel_1m', 'crate_strapped_pair', 'crate_strapped_single', 'crate_vault_armoured',
-    'cylinder_cryo_dewar', 'cylinder_portable_o2_unit', 'engtool_welding_rig',
-    'hangartool_air_compressor', 'hangartool_fuel_hose_reel', 'hangartool_mooring_ring',
-    'hangartool_paint_booth_screen', 'loader_cargo_drone', 'loader_drone_lifter',
-    'loader_hand_pallet_jack', 'loader_hover_pallet_jack', 'loader_maintenance_robot_treads',
-    'loader_mobile_crane_arm', 'medsupply_hover_stretcher', 'sciinstrument_field_lab_trunk',
-    'storagebin_toolchest_wheels', 'surgical_defibrillator_cart', 'surgical_ventilator_unit',
-    'telescope_observation_telescope', 'telescope_spectrograph_tripod', 'watertank_condensate_collector',
-}
-ALLOW_WALL = {
-    'bed_fold_down_wall_bed', 'camera_palm_scanner', 'duct_plenum_damper_box', 'hangartool_wall_winch',
-    'safety_eye_wash_station', 'valve_pressure_regulator',
-}
-ALLOW_CEILING = {
-    'pillar_box_beam_light', 'planter_grow_light_bar_panel',
-}
+# kit.snap_origin() puts every model within 4.5 cm of its mount plane exactly on it; what is left is deliberate:
+# the hover stretcher floats 5 cm on its thrusters and the damper box is sunk 5 cm into its wall.
+ALLOW_FLOOR = {'medsupply_hover_stretcher'}
+ALLOW_WALL = {'duct_plenum_damper_box'}
+ALLOW_CEILING = set()
 
 
 def load_models():
@@ -64,11 +45,11 @@ def violations(models):
 
 class BuildAllCheck(unittest.TestCase):
     def test_check_runs_without_bpy(self):
-        # The system python has no bpy; --check must still plan all 1000 models.
+        # The system python has no bpy; --check must still plan every model (1000 components + 196 food and drink).
         r = subprocess.run([sys.executable, os.path.join(ROOT, "blender", "build_all.py"), "--check"],
                            capture_output=True, text=True, timeout=300)
         self.assertEqual(r.returncode, 0, r.stderr)
-        self.assertIn("1000 models", r.stdout)
+        self.assertIn("%d models" % TARGET, r.stdout)
 
     def test_kit_imports_without_bpy(self):
         sys.path.insert(0, os.path.join(ROOT, "blender"))
@@ -87,8 +68,8 @@ class CatalogConventions(unittest.TestCase):
         cls.by_id = {e["id"]: e for e in cls.models}
 
     def test_count_and_unique_ids(self):
-        self.assertEqual(len(self.models), 1000)
-        self.assertEqual(len(self.by_id), 1000)
+        self.assertEqual(len(self.models), TARGET)
+        self.assertEqual(len(self.by_id), TARGET)
 
     def test_fixed_floor_models(self):
         for mid in FIXED_FLOOR:

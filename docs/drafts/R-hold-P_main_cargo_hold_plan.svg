@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<title>R-hold-P - Main Cargo Hold - plan</title>
+<style>
+.t{font-family:Arial, Helvetica, 'DejaVu Sans', sans-serif;fill:#111}
+.b{font-weight:bold}.i{font-style:italic}
+.h{stroke:#111;stroke-width:.5;stroke-linejoin:round;stroke-linecap:round}
+.m{stroke:#1a1a1a;stroke-width:.25;stroke-linejoin:round;stroke-linecap:round}
+.n{stroke:#2a2a2a;stroke-width:.18;stroke-linejoin:round}
+.f{stroke:#333;stroke-width:.13;stroke-linejoin:round}
+.x{stroke:#555;stroke-width:.07}
+.g{stroke:#9a9a9a;stroke-width:.1}
+.gg{stroke:#c4c4c4;stroke-width:.08}
+.d{stroke:#1d3c6e;stroke-width:.1}
+.dsh{stroke:#222;stroke-width:.18;stroke-dasharray:1.6 .8}
+.dot{stroke:#444;stroke-width:.14;stroke-dasharray:.25 .55;stroke-linecap:round}
+.hid{stroke:#777;stroke-width:.12;stroke-dasharray:1 .7}
+.cl{stroke:#b03030;stroke-width:.12;stroke-dasharray:5 1 1 1}
+.cut{stroke:#b03030;stroke-width:.35;stroke-dasharray:6 1.2 1.2 1.2}
+.red{stroke:#b03030;stroke-width:.13;stroke-dasharray:1.2 .7}
+.none{stroke:none}
+.halo{paint-order:stroke;stroke:#fff;stroke-width:.8;stroke-linejoin:round}
+</style>
+<defs>
+<pattern id="hSlab" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" fill="#ececec"/><line x1="0" y1="0" x2="0" y2="1.4" stroke="#222" stroke-width=".13"/></pattern>
+<pattern id="hHull" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1" height="1" fill="#c9d0da"/><line x1="0" y1="0" x2="0" y2="1" stroke="#111" stroke-width=".2"/><line x1="0" y1="0" x2="1" y2="0" stroke="#111" stroke-width=".1"/></pattern>
+<pattern id="hHole" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#444" stroke-width=".12"/></pattern>
+<pattern id="hZone" width="1.8" height="1.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.8" stroke="#d08080" stroke-width=".1"/></pattern>
+<pattern id="hPlen" width="1.6" height="1.6" patternUnits="userSpaceOnUse"><circle cx=".4" cy=".4" r=".12" fill="#888"/><circle cx="1.2" cy="1.2" r=".12" fill="#888"/></pattern>
+<pattern id="hGlass" width="2" height="2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="2" fill="#d6ecf7"/><line x1="0" y1="0" x2="0" y2="2" stroke="#5a9abb" stroke-width=".08"/></pattern>
+<pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
+</defs>
+<rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
+<rect x="13" y="8" width="290" height="242" class="x" fill="none"/>
+<polygon points="137,179 124.94,149 114.58,119 106.64,89 101.63,59 101.06,49 214.94,49 214.94,209 149.94,209" class="none" fill="#ebebe8"/>
+<polygon points="204.94,111 214.94,111 214.94,147 204.94,147" class="red" fill="url(#hZone)"/>
+<polygon points="143.94,113 204.94,113 204.94,145 143.94,145" class="red" fill="url(#hZone)"/>
+<text x="174.44" y="115" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">CLEAR: 3.2 m main forklift lane from the corridor opening into the hold</text>
+<polygon points="106.94,50.9 134.54,50.9 134.54,62.7 106.94,62.7" class="n" fill="#81e8af"/>
+<line x1="134.54" y1="62.7" x2="106.94" y2="62.7" class="m"/>
+<line x1="120.74" y1="62.7" x2="120.74" y2="61.5" class="f"/>
+<polygon points="135.53,50.9 163.13,50.9 163.13,62.7 135.53,62.7" class="n" fill="#81e8af"/>
+<line x1="163.13" y1="62.7" x2="135.53" y2="62.7" class="m"/>
+<line x1="149.33" y1="62.7" x2="149.33" y2="61.5" class="f"/>
+<polygon points="164.13,50.9 191.74,50.9 191.74,62.7 164.13,62.7" class="n" fill="#81e8af"/>
+<line x1="191.74" y1="62.7" x2="164.13" y2="62.7" class="m"/>
+<line x1="177.94" y1="62.7" x2="177.94" y2="61.5" class="f"/>
+<polygon points="116.94,78.35 129.33,78.35 129.33,88.65 116.94,88.65" class="n" fill="#81e8af"/>
+<line x1="129.33" y1="88.65" x2="116.94" y2="88.65" class="m"/>
+<line x1="123.13" y1="88.65" x2="123.13" y2="87.45" class="f"/>
+<polygon points="130.33,78.25 142.83,78.25 142.83,88.75 130.33,88.75" class="n" fill="#81e8af"/>
+<line x1="142.83" y1="88.75" x2="130.33" y2="88.75" class="m"/>
+<line x1="136.58" y1="88.75" x2="136.58" y2="87.55" class="f"/>
+<polygon points="143.84,78.05 156.33,78.05 156.33,88.95 143.84,88.95" class="n" fill="#81e8af"/>
+<line x1="156.33" y1="88.95" x2="143.84" y2="88.95" class="m"/>
+<line x1="150.08" y1="88.95" x2="150.08" y2="87.75" class="f"/>
+<polygon points="157.34,78.5 169.33,78.5 169.33,88.5 157.34,88.5" class="n" fill="#81e8af"/>
+<line x1="169.33" y1="88.5" x2="157.34" y2="88.5" class="m"/>
+<line x1="163.33" y1="88.5" x2="163.33" y2="87.3" class="f"/>
+<polygon points="170.34,78.1 182.74,78.1 182.74,88.9 170.34,88.9" class="n" fill="#81e8af"/>
+<line x1="182.74" y1="88.9" x2="170.34" y2="88.9" class="m"/>
+<line x1="176.54" y1="88.9" x2="176.54" y2="87.7" class="f"/>
+<polygon points="116.94,91.22 129.54,91.22 129.54,101.77 116.94,101.77" class="n" fill="#81e8af"/>
+<line x1="129.54" y1="101.77" x2="116.94" y2="101.77" class="m"/>
+<line x1="123.24" y1="101.77" x2="123.24" y2="100.57" class="f"/>
+<polygon points="131.53,89.94 143.94,89.94 143.94,103.06 131.53,103.06" class="n" fill="#93e881"/>
+<line x1="143.94" y1="103.06" x2="131.53" y2="103.06" class="m"/>
+<line x1="137.74" y1="103.06" x2="137.74" y2="101.86" class="f"/>
+<polygon points="145.94,92.98 154,92.98 154,100.01 145.94,100.01" class="n" fill="#81e8af"/>
+<line x1="154" y1="100.01" x2="145.94" y2="100.01" class="m"/>
+<line x1="149.97" y1="100.01" x2="149.97" y2="98.81" class="f"/>
+<polygon points="156,91.18 172.13,91.18 172.13,101.83 156,101.83" class="n" fill="#93e881"/>
+<line x1="172.13" y1="101.83" x2="156" y2="101.83" class="m"/>
+<line x1="164.06" y1="101.83" x2="164.06" y2="100.63" class="f"/>
+<polygon points="174.13,91.24 186.53,91.24 186.53,101.76 174.13,101.76" class="n" fill="#81e8af"/>
+<line x1="186.53" y1="101.76" x2="174.13" y2="101.76" class="m"/>
+<line x1="180.33" y1="101.76" x2="180.33" y2="100.56" class="f"/>
+<polygon points="135.94,150.79 144.06,150.79 144.06,158.2 135.94,158.2" class="n" fill="#93e881"/>
+<line x1="144.06" y1="158.2" x2="135.94" y2="158.2" class="m"/>
+<line x1="140" y1="158.2" x2="140" y2="157" class="f"/>
+<polygon points="145.25,150.81 153.38,150.81 153.38,158.19 145.25,158.19" class="n" fill="#93e881"/>
+<line x1="153.38" y1="158.19" x2="145.25" y2="158.19" class="m"/>
+<line x1="149.31" y1="158.19" x2="149.31" y2="156.99" class="f"/>
+<polygon points="154.57,149.66 164.44,149.66 164.44,159.34 154.57,159.34" class="n" fill="#93e881"/>
+<line x1="164.44" y1="159.34" x2="154.57" y2="159.34" class="m"/>
+<line x1="159.5" y1="159.34" x2="159.5" y2="158.14" class="f"/>
+<polygon points="165.63,151.48 171.68,151.48 171.68,157.52 165.63,157.52" class="n" fill="#f799eb"/>
+<line x1="171.68" y1="157.52" x2="165.63" y2="157.52" class="m"/>
+<line x1="168.66" y1="157.52" x2="168.66" y2="156.32" class="f"/>
+<polygon points="172.88,150 183.12,150 183.12,159 172.88,159" class="n" fill="#f799eb"/>
+<line x1="183.12" y1="159" x2="172.88" y2="159" class="m"/>
+<line x1="178" y1="159" x2="178" y2="157.8" class="f"/>
+<polygon points="137.74,167.85 144.13,167.85 144.13,174.15 137.74,174.15" class="n" fill="#e281e8"/>
+<line x1="144.13" y1="174.15" x2="137.74" y2="174.15" class="m"/>
+<line x1="140.94" y1="174.15" x2="140.94" y2="172.95" class="f"/>
+<polygon points="146.94,163 176.94,163 176.94,169 146.94,169" class="n" fill="#ef9a77"/>
+<line x1="176.94" y1="169" x2="146.94" y2="169" class="m"/>
+<line x1="161.94" y1="169" x2="161.94" y2="167.8" class="f"/>
+<polygon points="150.92,206.84 150.92,182.16 211.97,182.16 211.97,206.84" class="n" fill="#93e881"/>
+<line x1="211.97" y1="182.16" x2="211.97" y2="206.84" class="m"/>
+<line x1="211.97" y1="194.5" x2="210.77" y2="194.5" class="f"/>
+<polygon points="108.94,88.7 108.94,67.3 114.94,67.3 114.94,88.7" class="n" fill="#f799c9"/>
+<line x1="114.94" y1="67.3" x2="114.94" y2="88.7" class="m"/>
+<line x1="114.94" y1="78" x2="113.73" y2="78" class="f"/>
+<polygon points="213.03,152.8 213.03,173.2 205.63,173.2 205.63,152.8" class="n" fill="#f799c9"/>
+<line x1="205.63" y1="173.2" x2="205.63" y2="152.8" class="m"/>
+<line x1="205.63" y1="163" x2="206.83" y2="163" class="f"/>
+<polygon points="212,108.54 199.88,108.54 199.88,80.46 212,80.46" class="n" fill="#77a0ef"/>
+<line x1="199.88" y1="80.46" x2="212" y2="80.46" class="m"/>
+<line x1="205.94" y1="80.46" x2="205.94" y2="81.66" class="f"/>
+<polygon points="119.78,104.15 128.1,104.15 128.1,120.85 119.78,120.85" class="n" fill="#77a0ef"/>
+<line x1="128.1" y1="120.85" x2="119.78" y2="120.85" class="m"/>
+<line x1="123.94" y1="120.85" x2="123.94" y2="119.65" class="f"/>
+<polygon points="127.57,121.75 142.3,121.75 142.3,144.25 127.57,144.25" class="n" fill="#77a0ef"/>
+<line x1="142.3" y1="144.25" x2="127.57" y2="144.25" class="m"/>
+<line x1="134.94" y1="144.25" x2="134.94" y2="143.05" class="f"/>
+<polygon points="213.03,56.92 213.03,67.08 205.26,67.08 205.26,56.92" class="n" fill="#f799f7"/>
+<line x1="205.26" y1="67.08" x2="205.26" y2="56.92" class="m"/>
+<line x1="205.26" y1="62" x2="206.46" y2="62" class="f"/>
+<polygon points="195.47,65.17 195.47,58.82 201.76,58.82 201.76,65.17" class="n" fill="#92ef77"/>
+<line x1="201.76" y1="58.82" x2="201.76" y2="65.17" class="m"/>
+<line x1="201.76" y1="61.99" x2="200.56" y2="61.99" class="f"/>
+<polygon points="141.44,126.5 158.44,126.5 158.44,131.5 141.44,131.5" class="n" fill="#81d3e8"/>
+<line x1="158.44" y1="131.5" x2="141.44" y2="131.5" class="m"/>
+<line x1="149.94" y1="131.5" x2="149.94" y2="130.3" class="f"/>
+<polygon points="166.44,126.5 183.44,126.5 183.44,131.5 166.44,131.5" class="n" fill="#81d3e8"/>
+<line x1="183.44" y1="131.5" x2="166.44" y2="131.5" class="m"/>
+<line x1="174.94" y1="131.5" x2="174.94" y2="130.3" class="f"/>
+<polygon points="186.44,126.5 203.44,126.5 203.44,131.5 186.44,131.5" class="n" fill="#81d3e8"/>
+<line x1="203.44" y1="131.5" x2="186.44" y2="131.5" class="m"/>
+<line x1="194.94" y1="131.5" x2="194.94" y2="130.3" class="f"/>
+<polygon points="213.44,177.5 213.44,180.5 211.44,180.5 211.44,177.5" class="f" fill="#e281e8"/>
+<polygon points="195.44,50.5 198.44,50.5 198.44,52.49 195.44,52.49" class="f" fill="#e281e8"/>
+<polygon points="203.84,50.5 208.03,50.5 208.03,52.55 203.84,52.55" class="f" fill="#e281e8"/>
+<polygon points="213.44,54.5 213.44,69.5 212.49,69.5 212.49,54.5" class="f" fill="#e88a81"/>
+<polygon points="122.24,136.6 120.67,132.06 121.25,131.86 122.81,136.4" class="f" fill="#81d3e8"/>
+<polygon points="112.95,107.02 111.42,101.22 112.01,101.06 113.54,106.86" class="f" fill="#81d3e8"/>
+<polygon points="213.44,156 213.44,166 212.91,166 212.91,156" class="f" fill="#81d3e8"/>
+<polygon points="213.44,103.2 213.44,108.8 212.59,108.8 212.59,103.2" class="f" fill="#81d3e8"/>
+<polygon points="139.94,165.89 159.94,165.89 159.94,168.11 139.94,168.11" class="dot" fill="none"/>
+<polygon points="160.24,165.89 180.24,165.89 180.24,168.11 160.24,168.11" class="dot" fill="none"/>
+<polygon points="180.54,165.89 200.53,165.89 200.53,168.11 180.54,168.11" class="dot" fill="none"/>
+<polygon points="123.53,108.31 129.91,108.31 129.91,114.69 123.53,114.69" class="dot" fill="none"/>
+<polygon points="186.11,73.31 192.49,73.31 192.49,79.69 186.11,79.69" class="dot" fill="none"/>
+<polygon points="186.11,178.31 192.49,178.31 192.49,184.69 186.11,184.69" class="dot" fill="none"/>
+<polygon points="139.94,105.7 159.94,105.7 159.94,110.3 139.94,110.3" class="dot" fill="none"/>
+<polygon points="160.24,105.7 180.24,105.7 180.24,110.3 160.24,110.3" class="dot" fill="none"/>
+<polygon points="180.54,105.7 200.53,105.7 200.53,110.3 180.54,110.3" class="dot" fill="none"/>
+<polygon points="129.24,68.3 130.63,68.3 130.63,69.7 129.24,69.7" class="dot" fill="none"/>
+<polygon points="169.24,68.3 170.63,68.3 170.63,69.7 169.24,69.7" class="dot" fill="none"/>
+<polygon points="129.24,148.3 130.63,148.3 130.63,149.7 129.24,149.7" class="dot" fill="none"/>
+<polygon points="169.24,173.3 170.63,173.3 170.63,174.7 169.24,174.7" class="dot" fill="none"/>
+<polygon points="194.24,78.3 195.63,78.3 195.63,79.7 194.24,79.7" class="dot" fill="none"/>
+<polygon points="154.91,70.2 161.11,70.2 161.11,82.8 154.91,82.8" class="dot" fill="none"/>
+<polygon points="154.91,175.2 161.11,175.2 161.11,187.8 154.91,187.8" class="dot" fill="none"/>
+<polygon points="121.72,71.5 131.72,71.5 131.72,81.5 121.72,81.5" class="dot" fill="none"/>
+<polygon points="153,141.5 163,141.5 163,151.5 153,151.5" class="dot" fill="none"/>
+<polygon points="151.75,110.7 164.25,110.7 164.25,112.3 151.75,112.3" class="dot" fill="none"/>
+<polygon points="183.05,110.7 195.55,110.7 195.55,112.3 183.05,112.3" class="dot" fill="none"/>
+<polygon points="183.05,145.7 195.55,145.7 195.55,147.3 183.05,147.3" class="dot" fill="none"/>
+<text x="181.44" y="194.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">iso_container_blue</text>
+<text x="205.94" y="94.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">platform_forkli~</text>
+<text x="134.94" y="133.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">cargo_tug</text>
+<text x="120.73" y="57.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rack_bay_low_wire</text>
+<text x="149.33" y="57.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rack_bay_low_wire</text>
+<text x="177.94" y="57.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">rack_bay_low_wire</text>
+<text x="161.94" y="166.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">safety_barrier</text>
+<text x="164.06" y="96.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">cage_large</text>
+<text x="137.74" y="96.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wood_slat_12</text>
+<text x="209.34" y="163.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">gas_and_~</text>
+<text x="123.94" y="112.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hover_pal~</text>
+<text x="150.09" y="83.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">drums_banded</text>
+<text x="176.53" y="83.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">sacks_stacked</text>
+<text x="123.23" y="96.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wrapped_tall_mix~</text>
+<text x="136.58" y="83.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crates_banded</text>
+<text x="180.34" y="96.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wrapped_stack</text>
+<text x="123.14" y="83.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">boxes_layered</text>
+<text x="163.34" y="83.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">mixed_goods</text>
+<text x="159.5" y="154.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazard_yellow</text>
+<text x="178" y="154.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">toxic_drums_~</text>
+<text x="149.94" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="174.94" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="194.94" y="129.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
+<text x="209.15" y="62.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">compact a~</text>
+<text x="140" y="154.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">flammable~</text>
+<text x="149.31" y="154.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">biohazard</text>
+<text x="149.97" y="96.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">roll_cage~</text>
+<path d="M137 179 L124.94 149 L114.58 119 L106.64 89 L101.63 59 L101.06 49 L214.94 49 L214.94 209 L149.94 209Z M138.38 178.42 L126.34 148.48 L116.01 118.56 L108.1 88.68 L103.13 58.83 L102.65 50.5 L213.44 50.5 L213.44 207.5 L150.92 207.5Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
+<polygon points="214.94,113 214.94,145 213.44,145 213.44,113" class="none" fill="#ffffff"/>
+<line x1="214.94" y1="113" x2="213.44" y2="113" class="m"/>
+<line x1="214.94" y1="145" x2="213.44" y2="145" class="m"/>
+<line x1="214.19" y1="113" x2="214.19" y2="145" class="dsh"/>
+<line x1="218.64" y1="110.23" x2="189.3" y2="111.5" class="x"/>
+<circle cx="189.3" cy="111.5" r="0.4" class="none" fill="#b03030"/>
+<line x1="177.06" y1="45.29" x2="177.94" y2="56.8" class="x"/>
+<circle cx="177.94" cy="56.8" r="0.4" class="none" fill="#b03030"/>
+<line x1="97.34" y1="80.24" x2="123.14" y2="83.5" class="x"/>
+<circle cx="123.14" cy="83.5" r="0.4" class="none" fill="#b03030"/>
+<line x1="97.36" y1="95.13" x2="123.23" y2="96.5" class="x"/>
+<circle cx="123.23" cy="96.5" r="0.4" class="none" fill="#b03030"/>
+<line x1="97.35" y1="102.79" x2="112.48" y2="104.04" class="x"/>
+<circle cx="112.48" cy="104.04" r="0.4" class="none" fill="#b03030"/>
+<line x1="183.89" y1="212.73" x2="181.44" y2="194.5" class="x"/>
+<circle cx="181.44" cy="194.5" r="0.4" class="none" fill="#b03030"/>
+<line x1="218.64" y1="163.03" x2="209.34" y2="163" class="x"/>
+<circle cx="209.34" cy="163" r="0.4" class="none" fill="#b03030"/>
+<line x1="218.64" y1="94.86" x2="205.94" y2="94.5" class="x"/>
+<circle cx="205.94" cy="94.5" r="0.4" class="none" fill="#b03030"/>
+<line x1="97.36" y1="132.8" x2="134.94" y2="133" class="x"/>
+<circle cx="134.94" cy="133" r="0.4" class="none" fill="#b03030"/>
+<line x1="218.77" y1="63.75" x2="212.96" y2="62" class="x"/>
+<circle cx="212.96" cy="62" r="0.4" class="none" fill="#b03030"/>
+<line x1="218.67" y1="125.68" x2="194.94" y2="129" class="x"/>
+<circle cx="194.94" cy="129" r="0.4" class="none" fill="#b03030"/>
+<line x1="169.36" y1="45.3" x2="169.94" y2="69" class="x"/>
+<circle cx="169.94" cy="69" r="0.4" class="none" fill="#b03030"/>
+<line x1="218.65" y1="178.46" x2="212.44" y2="179" class="x"/>
+<circle cx="212.44" cy="179" r="0.4" class="none" fill="#b03030"/>
+<circle cx="221.94" cy="110.09" r="3.3" class="n" fill="#fff"/>
+<text x="221.94" y="110.69" font-size="2" class="t b" text-anchor="middle">MC-01</text>
+<circle cx="176.8" cy="42" r="3.3" class="n" fill="#fff"/>
+<text x="176.8" y="42.6" font-size="2" class="t b" text-anchor="middle">MC-02</text>
+<circle cx="94.06" cy="79.83" r="3.3" class="n" fill="#fff"/>
+<text x="94.06" y="80.43" font-size="2" class="t b" text-anchor="middle">MC-03</text>
+<circle cx="94.06" cy="94.96" r="3.3" class="n" fill="#fff"/>
+<text x="94.06" y="95.56" font-size="2" class="t b" text-anchor="middle">MC-04</text>
+<circle cx="94.06" cy="102.52" r="3.3" class="n" fill="#fff"/>
+<text x="94.06" y="103.12" font-size="2" class="t b" text-anchor="middle">MC-05</text>
+<circle cx="184.33" cy="216" r="3.3" class="n" fill="#fff"/>
+<text x="184.33" y="216.6" font-size="2" class="t b" text-anchor="middle">MC-06</text>
+<circle cx="221.94" cy="163.04" r="3.3" class="n" fill="#fff"/>
+<text x="221.94" y="163.64" font-size="2" class="t b" text-anchor="middle">MC-07</text>
+<circle cx="221.94" cy="94.96" r="3.3" class="n" fill="#fff"/>
+<text x="221.94" y="95.56" font-size="2" class="t b" text-anchor="middle">MC-08</text>
+<circle cx="94.06" cy="132.78" r="3.3" class="n" fill="#fff"/>
+<text x="94.06" y="133.38" font-size="2" class="t b" text-anchor="middle">MC-09</text>
+<circle cx="221.94" cy="64.7" r="3.3" class="n" fill="#fff"/>
+<text x="221.94" y="65.3" font-size="2" class="t b" text-anchor="middle">MC-10</text>
+<circle cx="221.94" cy="125.22" r="3.3" class="n" fill="#fff"/>
+<text x="221.94" y="125.82" font-size="2" class="t b" text-anchor="middle">MC-11</text>
+<circle cx="169.28" cy="42" r="3.3" class="n" fill="#fff"/>
+<text x="169.28" y="42.6" font-size="2" class="t b" text-anchor="middle">MC-12</text>
+<circle cx="221.94" cy="178.17" r="3.3" class="n" fill="#fff"/>
+<text x="221.94" y="178.77" font-size="2" class="t b" text-anchor="middle">MC-13</text>
+<line x1="101.06" y1="27.2" x2="214.94" y2="27.2" class="d"/>
+<line x1="100.36" y1="27.9" x2="101.77" y2="26.5" class="m"/>
+<line x1="214.24" y1="27.9" x2="215.63" y2="26.5" class="m"/>
+<line x1="101.06" y1="47.5" x2="101.06" y2="26" class="d"/>
+<line x1="214.94" y1="47.5" x2="214.94" y2="26" class="d"/>
+<text x="158" y="26.5" font-size="2" class="t" text-anchor="middle">11387</text>
+<line x1="79.27" y1="49" x2="79.27" y2="209" class="d"/>
+<line x1="78.56" y1="49.7" x2="79.97" y2="48.3" class="m"/>
+<line x1="78.56" y1="209.7" x2="79.97" y2="208.3" class="m"/>
+<line x1="99.56" y1="49" x2="78.06" y2="49" class="d"/>
+<line x1="99.56" y1="209" x2="78.06" y2="209" class="d"/>
+<text x="78.56" y="131.7" font-size="2" class="t" transform="rotate(-90 78.56 131.7)">16000</text>
+<line x1="231.24" y1="49" x2="231.24" y2="209" class="d"/>
+<line x1="230.54" y1="49.7" x2="231.94" y2="48.3" class="m"/>
+<line x1="215.94" y1="49" x2="232.44" y2="49" class="d"/>
+<line x1="230.54" y1="113.7" x2="231.94" y2="112.3" class="m"/>
+<line x1="215.94" y1="113" x2="232.44" y2="113" class="d"/>
+<line x1="230.54" y1="145.7" x2="231.94" y2="144.3" class="m"/>
+<line x1="215.94" y1="145" x2="232.44" y2="145" class="d"/>
+<line x1="230.54" y1="209.7" x2="231.94" y2="208.3" class="m"/>
+<line x1="215.94" y1="209" x2="232.44" y2="209" class="d"/>
+<text x="230.64" y="83.05" font-size="1.9" class="t" transform="rotate(-90 230.64 83.05)">6400</text>
+<text x="230.64" y="131.05" font-size="1.9" class="t" transform="rotate(-90 230.64 131.05)">3200</text>
+<text x="230.64" y="179.05" font-size="1.9" class="t" transform="rotate(-90 230.64 179.05)">6400</text>
+<circle cx="292" cy="20" r="6.5" class="m" fill="#fff"/>
+<polygon points="292,14.3 294.2,22.4 292,21 289.8,22.4" class="f" fill="#111"/>
+<line x1="292" y1="22.4" x2="292" y2="25.8" class="f"/>
+<text x="292" y="12.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
+<text x="20" y="241.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
+<rect x="20" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="30" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
+<rect x="40" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<rect x="50" y="243.6" width="10" height="1.4" class="f" fill="#fff"/>
+<rect x="60" y="243.6" width="10" height="1.4" class="f" fill="#111"/>
+<text x="20" y="247.4" font-size="1.5" class="t" text-anchor="middle">0</text>
+<text x="30" y="247.4" font-size="1.5" class="t" text-anchor="middle">1</text>
+<text x="40" y="247.4" font-size="1.5" class="t" text-anchor="middle">2</text>
+<text x="50" y="247.4" font-size="1.5" class="t" text-anchor="middle">3</text>
+<text x="60" y="247.4" font-size="1.5" class="t" text-anchor="middle">4</text>
+<text x="70" y="247.4" font-size="1.5" class="t" text-anchor="middle">5 m</text>
+<text x="307" y="12.8" font-size="2.3" class="t b">ROOM DATA</text>
+<rect x="307" y="14" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="16.25" font-size="1.7" class="t b">Room</text>
+<text x="336" y="16.25" font-size="1.7" class="t">MC  Main Cargo Hold</text>
+<rect x="307" y="17.3" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="19.55" font-size="1.7" class="t b">Deck / level</text>
+<text x="336" y="19.55" font-size="1.7" class="t">4  (FFL -4.000)</text>
+<rect x="307" y="20.6" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="22.85" font-size="1.7" class="t b">Department</text>
+<text x="336" y="22.85" font-size="1.7" class="t">cargo</text>
+<rect x="307" y="23.9" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="26.15" font-size="1.7" class="t b">Floor area</text>
+<text x="336" y="26.15" font-size="1.7" class="t">151.1 m2</text>
+<rect x="307" y="27.2" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="29.45" font-size="1.7" class="t b">Clear height</text>
+<text x="336" y="29.45" font-size="1.7" class="t">3400 mm</text>
+<rect x="307" y="30.5" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="32.75" font-size="1.7" class="t b">Volume</text>
+<text x="336" y="32.75" font-size="1.7" class="t">514 m3</text>
+<rect x="307" y="33.8" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="36.05" font-size="1.7" class="t b">Floor occupancy</text>
+<text x="336" y="36.05" font-size="1.7" class="t">37 %</text>
+<rect x="307" y="37.1" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="39.35" font-size="1.7" class="t b">Crew</text>
+<text x="336" y="39.35" font-size="1.7" class="t">3</text>
+<rect x="307" y="40.4" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="42.65" font-size="1.7" class="t b">Props placed</text>
+<text x="336" y="42.65" font-size="1.7" class="t">60</text>
+<rect x="307" y="43.7" width="106" height="3.3" class="f" fill="#f4f6f9"/>
+<text x="308" y="45.95" font-size="1.7" class="t b">Doors / arches</text>
+<text x="336" y="45.95" font-size="1.7" class="t">1</text>
+<rect x="307" y="47" width="106" height="3.3" class="f" fill="#ffffff"/>
+<text x="308" y="49.25" font-size="1.7" class="t b">Windows</text>
+<text x="336" y="49.25" font-size="1.7" class="t">0</text>
+<rect x="307" y="14" width="106" height="36.3" class="n" fill="none"/>
+<text x="307" y="56.5" font-size="1.7" class="t b">PURPOSE:</text>
+<text x="307" y="59.6" font-size="1.7" class="t">The Main Cargo Hold is the keel-deck freight space: pallets, crates and containers of everything the ship carries</text>
+<text x="307" y="62.7" font-size="1.7" class="t">that is not food (provisions have their own hold), spare equipment, trade goods and mission cargo, stored in</text>
+<text x="307" y="65.8" font-size="1.7" class="t">marked bays and moved by forklift and cargo loader between the corridor opening and the bays.</text>
+<text x="307" y="72.7" font-size="2.3" class="t b">BILL OF MATERIALS LINES</text>
+<rect x="307" y="73.9" width="106" height="3" class="n" fill="#dfe3ea"/>
+<text x="308" y="75.85" font-size="1.6" class="t b">CODE</text>
+<text x="322" y="75.85" font-size="1.6" class="t b">BOM LINE</text>
+<text x="406" y="75.85" font-size="1.6" class="t b">QTY</text>
+<rect x="307" y="76.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="78.85" font-size="1.6" class="t">MC-01</text>
+<text x="322" y="78.85" font-size="1.6" class="t">Ceiling lighting</text>
+<text x="406" y="78.85" font-size="1.6" class="t">10</text>
+<rect x="307" y="79.9" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="81.85" font-size="1.6" class="t">MC-02</text>
+<text x="322" y="81.85" font-size="1.6" class="t">Low-bay pallet racking (north wall)</text>
+<text x="406" y="81.85" font-size="1.6" class="t">3</text>
+<rect x="307" y="82.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="84.85" font-size="1.6" class="t">MC-03</text>
+<text x="322" y="84.85" font-size="1.6" class="t">Pallet bays: row A (north zone)</text>
+<text x="406" y="84.85" font-size="1.6" class="t">5</text>
+<rect x="307" y="85.9" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="87.85" font-size="1.6" class="t">MC-04</text>
+<text x="322" y="87.85" font-size="1.6" class="t">Pallet bays: row B (north zone, lane side)</text>
+<text x="406" y="87.85" font-size="1.6" class="t">5</text>
+<rect x="307" y="88.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="90.85" font-size="1.6" class="t">MC-05</text>
+<text x="322" y="90.85" font-size="1.6" class="t">Hazardous goods bay (south zone, hull side)</text>
+<text x="406" y="90.85" font-size="1.6" class="t">9</text>
+<rect x="307" y="91.9" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="93.85" font-size="1.6" class="t">MC-06</text>
+<text x="322" y="93.85" font-size="1.6" class="t">20 ft container (stern wall)</text>
+<text x="406" y="93.85" font-size="1.6" class="t">1</text>
+<rect x="307" y="94.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="96.85" font-size="1.6" class="t">MC-07</text>
+<text x="322" y="96.85" font-size="1.6" class="t">Shelving cage and fuel shelf</text>
+<text x="406" y="96.85" font-size="1.6" class="t">2</text>
+<rect x="307" y="97.9" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="99.85" font-size="1.6" class="t">MC-08</text>
+<text x="322" y="99.85" font-size="1.6" class="t">Loaders: forklift and pallet jacks (east wall, north of the opening)</text>
+<text x="406" y="99.85" font-size="1.6" class="t">2</text>
+<rect x="307" y="100.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="102.85" font-size="1.6" class="t">MC-09</text>
+<text x="322" y="102.85" font-size="1.6" class="t">Cargo tug (west end of the lane)</text>
+<text x="406" y="102.85" font-size="1.6" class="t">1</text>
+<rect x="307" y="103.9" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="105.85" font-size="1.6" class="t">MC-10</text>
+<text x="322" y="105.85" font-size="1.6" class="t">Loading console and manifest desk (east wall, north)</text>
+<text x="406" y="105.85" font-size="1.6" class="t">3</text>
+<rect x="307" y="106.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="108.85" font-size="1.6" class="t">MC-11</text>
+<text x="322" y="108.85" font-size="1.6" class="t">Lane markings and barriers</text>
+<text x="406" y="108.85" font-size="1.6" class="t">3</text>
+<rect x="307" y="109.9" width="106" height="3" class="f" fill="#f4f6f9"/>
+<text x="308" y="111.85" font-size="1.6" class="t">MC-12</text>
+<text x="322" y="111.85" font-size="1.6" class="t">Cable trays, pipes and ceiling sprinklers</text>
+<text x="406" y="111.85" font-size="1.6" class="t">11</text>
+<rect x="307" y="112.9" width="106" height="3" class="f" fill="#ffffff"/>
+<text x="308" y="114.85" font-size="1.6" class="t">MC-13</text>
+<text x="322" y="114.85" font-size="1.6" class="t">Safety and signs</text>
+<text x="406" y="114.85" font-size="1.6" class="t">5</text>
+<rect x="307" y="73.9" width="106" height="42" class="n" fill="none"/>
+<text x="307" y="122.9" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
+<rect x="307" y="125.1" width="4.2" height="2.4" class="n" fill="#f799eb"/>
+<text x="312.4" y="127" font-size="1.6" class="t">barrel</text>
+<rect x="360" y="125.1" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<text x="365.4" y="127" font-size="1.6" class="t">cabletray</text>
+<rect x="307" y="128.5" width="4.2" height="2.4" class="n" fill="#bcf799"/>
+<text x="312.4" y="130.4" font-size="1.6" class="t">ceilinglight</text>
+<rect x="360" y="128.5" width="4.2" height="2.4" class="n" fill="#f799f7"/>
+<text x="365.4" y="130.4" font-size="1.6" class="t">console</text>
+<rect x="307" y="131.9" width="4.2" height="2.4" class="n" fill="#93e881"/>
+<text x="312.4" y="133.8" font-size="1.6" class="t">crate</text>
+<rect x="360" y="131.9" width="4.2" height="2.4" class="n" fill="#e88a81"/>
+<text x="365.4" y="133.8" font-size="1.6" class="t">display</text>
+<rect x="307" y="135.3" width="4.2" height="2.4" class="n" fill="#ef9a77"/>
+<text x="312.4" y="137.2" font-size="1.6" class="t">hangartool</text>
+<rect x="360" y="135.3" width="4.2" height="2.4" class="n" fill="#77a0ef"/>
+<text x="365.4" y="137.2" font-size="1.6" class="t">loader</text>
+<rect x="307" y="138.7" width="4.2" height="2.4" class="n" fill="#81e8af"/>
+<text x="312.4" y="140.6" font-size="1.6" class="t">pallet</text>
+<rect x="360" y="138.7" width="4.2" height="2.4" class="n" fill="#ef77cd"/>
+<text x="365.4" y="140.6" font-size="1.6" class="t">pipe</text>
+<rect x="307" y="142.1" width="4.2" height="2.4" class="n" fill="#e281e8"/>
+<text x="312.4" y="144" font-size="1.6" class="t">safety</text>
+<rect x="360" y="142.1" width="4.2" height="2.4" class="n" fill="#92ef77"/>
+<text x="365.4" y="144" font-size="1.6" class="t">seat</text>
+<rect x="307" y="145.5" width="4.2" height="2.4" class="n" fill="#f799c9"/>
+<text x="312.4" y="147.4" font-size="1.6" class="t">shelving</text>
+<rect x="360" y="145.5" width="4.2" height="2.4" class="n" fill="#81d3e8"/>
+<text x="365.4" y="147.4" font-size="1.6" class="t">sign</text>
+<text x="15" y="12.2" font-size="2.6" class="t b">PLAN - MAIN CARGO HOLD</text>
+<text x="15" y="15.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
+<rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
+<text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="35.31" y="295.2" font-size="1.8" class="t" text-anchor="middle">1</text>
+<text x="85.94" y="4" font-size="1.8" class="t" text-anchor="middle">2</text>
+<text x="85.94" y="295.2" font-size="1.8" class="t" text-anchor="middle">2</text>
+<line x1="60.62" y1="3.5" x2="60.62" y2="5" class="f"/>
+<line x1="60.62" y1="292" x2="60.62" y2="293.5" class="f"/>
+<text x="136.56" y="4" font-size="1.8" class="t" text-anchor="middle">3</text>
+<text x="136.56" y="295.2" font-size="1.8" class="t" text-anchor="middle">3</text>
+<line x1="111.25" y1="3.5" x2="111.25" y2="5" class="f"/>
+<line x1="111.25" y1="292" x2="111.25" y2="293.5" class="f"/>
+<text x="187.19" y="4" font-size="1.8" class="t" text-anchor="middle">4</text>
+<text x="187.19" y="295.2" font-size="1.8" class="t" text-anchor="middle">4</text>
+<line x1="161.88" y1="3.5" x2="161.88" y2="5" class="f"/>
+<line x1="161.88" y1="292" x2="161.88" y2="293.5" class="f"/>
+<text x="237.81" y="4" font-size="1.8" class="t" text-anchor="middle">5</text>
+<text x="237.81" y="295.2" font-size="1.8" class="t" text-anchor="middle">5</text>
+<line x1="212.5" y1="3.5" x2="212.5" y2="5" class="f"/>
+<line x1="212.5" y1="292" x2="212.5" y2="293.5" class="f"/>
+<text x="288.44" y="4" font-size="1.8" class="t" text-anchor="middle">6</text>
+<text x="288.44" y="295.2" font-size="1.8" class="t" text-anchor="middle">6</text>
+<line x1="263.12" y1="3.5" x2="263.12" y2="5" class="f"/>
+<line x1="263.12" y1="292" x2="263.12" y2="293.5" class="f"/>
+<text x="339.06" y="4" font-size="1.8" class="t" text-anchor="middle">7</text>
+<text x="339.06" y="295.2" font-size="1.8" class="t" text-anchor="middle">7</text>
+<line x1="313.75" y1="3.5" x2="313.75" y2="5" class="f"/>
+<line x1="313.75" y1="292" x2="313.75" y2="293.5" class="f"/>
+<text x="389.69" y="4" font-size="1.8" class="t" text-anchor="middle">8</text>
+<text x="389.69" y="295.2" font-size="1.8" class="t" text-anchor="middle">8</text>
+<line x1="364.38" y1="3.5" x2="364.38" y2="5" class="f"/>
+<line x1="364.38" y1="292" x2="364.38" y2="293.5" class="f"/>
+<text x="8.4" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="417.6" y="29.52" font-size="1.8" class="t" text-anchor="middle">A</text>
+<text x="8.4" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="417.6" y="77.35" font-size="1.8" class="t" text-anchor="middle">B</text>
+<text x="8.4" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="417.6" y="125.18" font-size="1.8" class="t" text-anchor="middle">C</text>
+<text x="8.4" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="417.6" y="173.02" font-size="1.8" class="t" text-anchor="middle">D</text>
+<text x="8.4" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="417.6" y="220.85" font-size="1.8" class="t" text-anchor="middle">E</text>
+<text x="8.4" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<text x="417.6" y="268.68" font-size="1.8" class="t" text-anchor="middle">F</text>
+<rect x="235" y="252" width="180" height="40" class="h" fill="#ffffff"/>
+<line x1="235" y1="266" x2="415" y2="266" class="m"/>
+<line x1="297" y1="252" x2="297" y2="266" class="m"/>
+<text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
+<text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
+<text x="299" y="260.8" font-size="3.4" class="t b">Main Cargo Hold - plan</text>
+<text x="299" y="264.6" font-size="2" class="t">DECK 4 - HOLD DECK  -  FLOOR PLAN AT FFL -4.000</text>
+<rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
+<text x="236.5" y="275.2" font-size="3.4" class="t b">R-hold-P</text>
+<rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
+<text x="296.5" y="275.2" font-size="3.4" class="t b">1:100</text>
+<rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
+<text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 4</text>
+<rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
+<text x="236.5" y="288.2" font-size="3.4" class="t b">MC</text>
+<rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
+<text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
+<rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
+<text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Main Cargo Hold</text>
+</svg>

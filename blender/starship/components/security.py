@@ -1010,11 +1010,22 @@ DEPTS = [("bridge", "BRIDGE", "sec_sign_blue"), ("engineering", "ENGINEERING", "
 
 SIGN_WALL = (["deck_1", "deck_2", "deck_3", "exit_arrow", "hazard_radiation", "hazard_biohazard", "hazard_high_voltage",
               "hazard_laser", "hazard_low_oxygen"] + ["dept_" + d[0] for d in DEPTS] +
-             ["emergency_exit", "no_entry", "blade_sign"])
+             ["emergency_exit", "no_entry", "blade_sign", "deck_0", "deck_4"])
 
 
 @family("sign", SIGN_WALL, mount="wall", tags=["safety"], solid=False, mount_y=2.0)
 def sign_wall(m, i, label, rng):
+    if label in ("deck_0", "deck_4"):  # the sky deck and the hold deck: a numeral plus a bar chart of the level
+        n = int(label[-1])
+        col = "sec_sign_purple" if n == 0 else "paint_gold"
+        plate(m, 0.8, 0.95, "sec_sign_black", "steel")
+        m.box((0.7, 0.16, 0.006), (0, 0.33, 0.038), col)
+        text(m, "DECK", 0, 0.33, 0.045, 0.036, "paint_white")
+        text(m, str(n), 0, -0.1, 0.04, 0.09, "paint_white")
+        for k in range(5):                      # five pips: the lit one marks where this deck sits in the stack
+            lit = (k == (0 if n == 0 else 4))
+            m.box((0.09, 0.03, 0.006), (-0.3 + k * 0.15, -0.38, 0.038), col if lit else "gunmetal")
+        return
     if i < 3:  # deck numbers
         n = i + 1
         col = ["sec_sign_blue", "sec_sign_green", "paint_orange"][i]

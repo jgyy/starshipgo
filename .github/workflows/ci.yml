@@ -35,16 +35,21 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Byte-compile all Python
         run: python -m compileall -q blender tools tests
-      - name: Lint (pyflakes; the recipes' star imports and the 1000 legacy component modules are exempt)
+      - name: Lint (pyflakes; only star-import noise and dead stores inside the generator modules are exempt)
         run: |
           pip install pyflakes
           python -m pyflakes tools tests blender > /tmp/pyflakes.txt || true
-          grep -v -E "import \*|star imports|\.\*' imported but unused|^blender/starship/components/" /tmp/pyflakes.txt | tee /tmp/pyflakes_real.txt || true
+          # components/*.py keep unused scratch variables in a few generators; every other finding there (undefined or
+          # unused names, redefinitions) is real and fails the job, as does everything outside components/
+          grep -v -E "import \*|star imports|\.\*' imported but unused|unable to detect undefined names" /tmp/pyflakes.txt \
+            | grep -v -E "^blender/starship/components/.*assigned to but never used" | tee /tmp/pyflakes_real.txt || true
           test ! -s /tmp/pyflakes_real.txt
-      - name: Component plan is valid (exactly 1000 unique models, no bpy needed)
+      - name: Component plan is valid (exactly the expected number of unique models, no bpy needed)
         run: python blender/build_all.py --check
-      - name: Unit tests (catalog, layout engine, audit, walkability, drawings, bundles)
-        run: python -m unittest discover -s tests -v
+      - name: Unit tests (catalog, layout engine, audit, walkability, drawings, bundles, texture pixels)
+        run: |
+          pip install numpy pillow
+          python -m unittest discover -s tests -v
       - name: Layout audit - no overlaps, blocked windows or out-of-place equipment
         run: python tools/layout/audit.py --summary
       - name: Ship layout is reproducible from the catalog
@@ -60,9 +65,27 @@ jobs:
           python tools/draft/draft.py --out docs/drafts
           git diff --exit-code docs/drafts
           test "$(ls docs/drafts/*.svg | wc -l)" -ge 100
+      - name: Bug ledger is up to date
+        run: |
+          python tools/docs/bugs_ledger.py
+          git diff --exit-code docs/BUGS.md
+      - name: Lore and star map are up to date
+        run: |
+          python tools/specs/gen_lore.py
+          git diff --exit-code godot/data/lore.json docs/LORE.md
+      - name: Software specification is up to date
+        run: |
+          python tools/specs/gen_software.py
+          git diff --exit-code godot/data/software.json docs/SOFTWARE_SPEC.md
+      - name: Machine datasheets, ship spec and BOM columns are up to date
+        run: |
+          python tools/specs/gen_specs.py
+          python tools/specs/gen_ship_spec.py
+          python tools/layout/bom.py
+          git diff --exit-code godot/data/specs.json docs/MACHINE_SPECS.md docs/specs docs/SHIP_SPEC.md docs/BOM.md docs/bom
 
   blender:
-    name: Blender headless (1000 models + stairs + hull)
+    name: Blender headless (all component models + stairs + hull)
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -84,6 +107,14 @@ jobs:
         run: |
           python tools/audio/generate_audio.py build/audio
           for f in build/audio/*.wav; do cmp "$f" "godot/audio/$(basename "$f")"; done
+      - name: Rebuilding gives byte-identical GLBs (export order must not depend on pointer addresses)
+        run: |
+          mkdir -p build/repro build/repro2
+          cp -r build/godot/textures build/repro/textures
+          cp -r build/godot/textures build/repro2/textures
+          python blender/build_all.py --out build/repro --only '^(console|desk|door|bed|medbed|crate|rack|pipe)_' --jobs 2
+          python blender/build_all.py --out build/repro2 --only '^(console|desk|door|bed|medbed|crate|rack|pipe)_' --jobs 3
+          diff -r build/repro/models build/repro2/models
       - name: Regenerate the architectural assets (stair flights, guard, sign, hull fascia)
         run: python blender/build_arch.py --out build/godot
       - name: Regenerated catalog matches the committed one (ids, mounts, sizes, origins)
@@ -92,15 +123,18 @@ jobs:
           import json
           a = {m["id"]: m for m in json.load(open("build/godot/data/catalog.json"))["models"]}
           b = {m["id"]: m for m in json.load(open("godot/data/catalog.json"))["models"]}
-          assert a.keys() == b.keys() and len(a) == 1000, "model id list changed - rerun build_all.py and commit"
+          assert a.keys() == b.keys() and len(a) >= 1198, "model id list changed - rerun build_all.py and commit"
           bad = []
           for k, m in a.items():
               c = b[k]
-              if m["mount"] != c["mount"] or m["category"] != c["category"]:
-                  bad.append((k, "mount/category"))
+              for f in ("mount", "category", "solid", "tags", "tris", "mount_y"):
+                  if m[f] != c[f]:
+                      bad.append((k, f))
               for f in ("size", "bounds_min", "bounds_max"):
                   if any(abs(x - y) > 0.005 for x, y in zip(m[f], c[f])):
                       bad.append((k, f))
+              if (m["top_y"] is None) != (c["top_y"] is None) or (m["top_y"] is not None and abs(m["top_y"] - c["top_y"]) > 0.005):
+                  bad.append((k, "top_y"))
           assert not bad, f"{len(bad)} models differ from the committed catalog, e.g. {bad[:5]}"
           print("catalog ok:", len(a), "models")
           PY
@@ -124,12 +158,24 @@ jobs:
           unzip -q godot.zip
           sudo mv "Godot_v${GODOT_TAG}_linux.x86_64" /usr/local/bin/godot
           godot --version
-      - name: Import project (1000 models, stairs, textures)
+      - name: Import project (all models, stairs, textures)
         run: godot --headless --path godot --import
       - name: Smoke test - build the whole ship from data
         run: godot --headless --path godot -s res://tests/smoke_test.gd
-      - name: Stair test - walk up and down both stair towers through all three decks
+      - name: Stair test - walk up and down both stair towers through all five decks
         run: godot --headless --path godot -s res://tests/stair_test.gd
+      - name: Z-fight test - no visible coplanar faces in the shell, skin, fittings and props
+        run: godot --headless --path godot -s res://tests/zfight_test.gd
+      - name: Round-2 regression test (HUD, deck map, tooling, audio loops, textures imported with mipmaps)
+        run: godot --headless --path godot -s res://tests/round2_test.gd
+      - name: UI test - screen discovery, every app driven with synthetic input, alert / door / hangar / jump effects
+        shell: bash
+        run: |
+          set -o pipefail
+          godot --headless --path godot -s res://tests/ui_test.gd 2>&1 | tee ui_test.log
+          if grep -E "SCRIPT ERROR|^ERROR:" ui_test.log; then echo "script errors in the UI test"; exit 1; fi
+      - name: Screen scan - every screen_* prop is interactive and maps to an application
+        run: godot --headless --path godot -- --screen-scan
       - name: Install software rendering stack
         run: sudo apt-get update && sudo apt-get install -y xvfb mesa-vulkan-drivers libvulkan1
       - name: Render first-person tour screenshots (must succeed and write every file)
@@ -138,6 +184,12 @@ jobs:
             godot --path godot --rendering-driver vulkan --resolution 1280x720 -- --tour=$PWD/shots \
             --no-probes --only=01_bridge,02_corF1,04_conf,08_mess,10_medbay,17_eng,22_hangar,23_towerA2,X1_bow_quarter,X4_plan_view
           test "$(ls shots/*.png | wc -l)" -ge 10
+      - name: Render terminal applications full screen (--ui-shot)
+        run: |
+          xvfb-run -a -s "-screen 0 1600x900x24" \
+            godot --path godot --rendering-driver vulkan --resolution 1280x720 -- --no-probes \
+            --ui-shot=starmap,nav,alert,computer,reactor --ui-out=$PWD/shots/ui
+          test "$(ls shots/ui/*.png | wc -l)" -ge 5
       - name: Benchmark - draw calls and frame time along the tour cameras
         run: |
           xvfb-run -a -s "-screen 0 1600x900x24" \

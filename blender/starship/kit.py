@@ -14,6 +14,8 @@ import math
 import os
 import random
 
+from . import screen_families
+
 try:  # bpy is only needed to build geometry; plan/--check work on a bare Python
     import bpy  # noqa: F401  (must precede bmesh)
     import bmesh
@@ -145,6 +147,8 @@ def mat(name):
         b.inputs["Metallic"].default_value = 0.2
     elif name.startswith("screen:"):
         m = _screen_material(name.split(":", 1)[1])
+    elif name.startswith("tex:"):
+        m = _food_material(name.split(":", 1)[1])
     else:
         raise KeyError(f"unknown material {name!r}")
     _mat_cache[name] = m
@@ -166,6 +170,25 @@ def _screen_material(tex):
     b.inputs["Roughness"].default_value = 0.15
     nt.links.new(t.outputs["Color"], b.inputs["Emission Color"])
     b.inputs["Emission Strength"].default_value = 1.6
+    return m
+
+
+def _food_material(tex):
+    """`tex:<name>` - opaque material using the procedural food albedo godot/textures/food/<name>.jpg
+    (see textures_food.py for the generator; roughness / metallic come from its SURFACE table).
+    Parts using it must have UVs."""
+    from . import textures_food
+    rough, metal = textures_food.surface(tex)
+    m, b = _new_material("food_" + tex)
+    path = textures_food.tex_path(TEXTURE_DIR, tex)
+    img = bpy.data.images.load(path, check_existing=True)
+    nt = m.node_tree
+    t = nt.nodes.new("ShaderNodeTexImage")
+    t.image = img
+    t.interpolation = "Linear"
+    nt.links.new(t.outputs["Color"], b.inputs["Base Color"])
+    b.inputs["Roughness"].default_value = rough
+    b.inputs["Metallic"].default_value = metal
     return m
 
 
@@ -198,13 +221,15 @@ class Model:
 
     def _tag(self, verts, matname, bevel=0.0, prim="?"):
         mi = self._mi(matname)
-        faces = {f for v in verts for f in v.link_faces}
+        # ordered containers only: iterating a set of BMesh objects follows memory addresses, which differ
+        # from run to run and made the bevel (and so the exported index buffer) non-reproducible
+        faces = list(dict.fromkeys(f for v in verts for f in v.link_faces))
         for f in faces:
             f.material_index = mi
         if bevel > 0:
-            edges = {e for f in faces for e in f.edges}
+            edges = list(dict.fromkeys(e for f in faces for e in f.edges))
             try:
-                bmesh.ops.bevel(self.cur["bm"], geom=list(edges), offset=bevel, offset_type="OFFSET",
+                bmesh.ops.bevel(self.cur["bm"], geom=edges, offset=bevel, offset_type="OFFSET",
                                 segments=1, affect="EDGES", material=mi)
             except Exception:
                 BEVEL_FAILURES.append((self.name, prim))
@@ -243,8 +268,8 @@ class Model:
                                        matrix=_gm(pos, (0, 0, 0), scale))
         verts = rr["verts"]
         if clip_y is not None:
-            edges = {e for v in verts for e in v.link_edges}
-            faces = {f for v in verts for f in v.link_faces}
+            edges = list(dict.fromkeys(e for v in verts for e in v.link_edges))
+            faces = list(dict.fromkeys(f for v in verts for f in v.link_faces))
             bmesh.ops.bisect_plane(bm, geom=list(verts) + list(edges) + list(faces), dist=1e-6,
                                    plane_co=(0, 0, clip_y), plane_no=(0, 0, 1), clear_outer=True)
             verts = [v for v in verts if v.is_valid]
@@ -304,13 +329,14 @@ class Model:
         verts = [e for e in ext["geom"] if isinstance(e, bmesh.types.BMVert)]
         bmesh.ops.translate(bm, verts=verts, vec=M.to_3x3() @ g2b(to3((0, 0), h)))
         allv = bot + verts
-        bmesh.ops.recalc_face_normals(bm, faces=list({fc for v in allv for fc in v.link_faces}))
+        bmesh.ops.recalc_face_normals(bm, faces=list(dict.fromkeys(fc for v in allv for fc in v.link_faces)))
         self._tag(allv, mat, bevel, "prism")
         return self
 
     def quad(self, size, pos=(0, 0, 0), mat="hull_mid", rot=(0, 0, 0), uv=True):
         """Single-sided quad in local XY facing +Z, with UVs 0..1 (v up)."""
         bm = self.cur["bm"]
+        mat = screen_families.resolve(mat, self.name)       # themed screen variant (see screen_families.py)
         M = _gm(pos, rot)
         w, h = size[0] / 2, size[1] / 2
         pts = [(-w, -h, 0), (w, -h, 0), (w, h, 0), (-w, h, 0)]
@@ -411,6 +437,83 @@ class Model:
         return sum(len(f.verts) - 2 for g in self.groups.values() for f in g["bm"].faces)
 
 
+def canonical_order(bm, weld=False):
+    """Return a copy of `bm` with vertices and faces sorted by position (and, with weld=True, vertices that coincide
+    to 1e-5 merged).
+
+    Blender's bevel operator and remove_doubles order their output (and pick which duplicate face survives) by pointer
+    address, so the same inputs gave a different index buffer, and different GLB bytes, on every run.  UVs and material
+    indices are kept.  Of two coincident faces with opposite winding (the faces where two solids touch, invisible) both
+    are dropped; repeats with the same winding keep one copy; degenerate faces are dropped."""
+    uv_src = bm.loops.layers.uv.active
+    bm.normal_update()
+
+    def snap(v):  # 1e-5 snap: bevel/bisect leave 1e-8 float noise that differs between runs; +0.0 turns -0.0 into 0.0
+        return (round(v.co.x, 5) + 0.0, round(v.co.y, 5) + 0.0, round(v.co.z, 5) + 0.0)
+
+    def key(v):
+        # coincident vertices of different primitives tie on position: break the tie by what they belong to
+        around = sorted((f.material_index, round(f.normal.x, 3) + 0.0, round(f.normal.y, 3) + 0.0, round(f.normal.z, 3) + 0.0)
+                        for f in v.link_faces)
+        return (round(v.co.x, 4), round(v.co.y, 4), round(v.co.z, 4), snap(v), around)
+    if weld:
+        pts = sorted({snap(v) for v in bm.verts}, key=lambda p: (tuple(round(c, 4) for c in p), p))
+        index = {p: i for i, p in enumerate(pts)}
+        keep = list(bm.verts)  # keeps the wrappers alive so id() stays unique
+        pos = {id(v): index[snap(v)] for v in keep}
+    else:
+        order = sorted(bm.verts, key=key)
+        pts = [snap(v) for v in order]
+        pos = {id(v): i for i, v in enumerate(order)}
+    faces = []
+    for f in bm.faces:
+        idx = [pos[id(v)] for v in f.verts]
+        if len(set(idx)) < len(idx):
+            continue  # welded into a sliver
+        uvs = [tuple(l[uv_src].uv) for l in f.loops] if uv_src else None
+        k = idx.index(min(idx))  # the bevel emits the same face starting at a different corner each run
+        idx = idx[k:] + idx[:k]
+        if uvs:
+            uvs = uvs[k:] + uvs[:k]
+        faces.append((f.material_index, tuple(idx), uvs))
+    faces.sort(key=lambda t: (t[0], tuple(sorted(t[1])), t[1]))
+
+    def rot(t):
+        k = t.index(min(t))
+        return t[k:] + t[:k]
+    seen, drop = {}, set()
+    for n, (mi, idx, uvs) in enumerate(faces):
+        k = tuple(sorted(idx))
+        rev = rot(tuple(reversed(idx)))
+        for m2 in seen.get(k, ()):
+            if m2[1] == rev:
+                drop.update((m2[0], n))
+                seen[k].remove(m2)
+                break
+            if m2[1] == idx:
+                drop.add(n)
+                break
+        else:
+            seen.setdefault(k, []).append((n, idx))
+    faces = [f for n, f in enumerate(faces) if n not in drop]
+    nb = bmesh.new()
+    nv = [nb.verts.new(p) for p in pts]
+    uv_dst = nb.loops.layers.uv.verify() if uv_src else None
+    for mi, idx, uvs in faces:
+        try:
+            f = nb.faces.new([nv[i] for i in idx])
+        except ValueError:
+            continue
+        f.material_index = mi
+        if uvs:
+            for l, uv in zip(f.loops, uvs):
+                l[uv_dst].uv = uv
+    nb.normal_update()  # _smooth() reads face angles
+    nb.verts.index_update()
+    nb.faces.index_update()  # fix_zfight keys its work on face/vertex indices
+    return nb
+
+
 def _smooth(bm, angle=math.radians(38)):
     for f in bm.faces:
         f.smooth = True
@@ -421,17 +524,140 @@ def _smooth(bm, angle=math.radians(38)):
             e.smooth = False
 
 
+def _freed(old, new):
+    old.free()
+    return new
+
+
+ZFIGHT_EPS = 0.0015       # faces closer than this to one plane cannot be ordered by the depth buffer
+ZFIGHT_LIFT = 0.003       # the smaller of two coplanar overlapping faces is lifted by this much along its normal
+ZFIGHT_FIXED = []         # (model name, faces lifted) collected during a build (reported by build_all)
+
+
+def _poly2d(face, u, v):
+    return [(vt.co.dot(u), vt.co.dot(v)) for vt in face.verts]
+
+
+def _convex_overlap(a, b):
+    """Separating-axis overlap test of two convex 2D polygons (interiors overlap by more than a sliver)."""
+    for poly in (a, b):
+        n = len(poly)
+        for i in range(n):
+            p, q = poly[i], poly[(i + 1) % n]
+            ax, ay = -(q[1] - p[1]), q[0] - p[0]
+            ln = math.hypot(ax, ay)
+            if ln < 1e-12:
+                continue
+            ax, ay = ax / ln, ay / ln
+            pa = [ax * x + ay * y for x, y in a]
+            pb = [ax * x + ay * y for x, y in b]
+            if max(pa) <= min(pb) + 1e-5 or max(pb) <= min(pa) + 1e-5:
+                return False
+    return True
+
+
+def fix_zfight(model, passes=8):
+    """Lift one face of every pair of coplanar, same-facing, overlapping faces of different materials.
+
+    Such a pair (an inlaid light strip flush with its panel, a screen quad on its bezel ...) gives the depth buffer the same
+    depth for both, so the two surfaces flicker against each other as the camera moves.  The smaller face of the pair
+    (a detail on a larger surface) is moved ZFIGHT_LIFT metres along its normal; returns the number of faces lifted."""
+    lifted_total = 0
+    for gname, g in model.groups.items():
+        bm = g["bm"]
+        if len(bm.faces) < 2:
+            continue
+        moved = {}                    # vertex index -> times lifted (bounded by the number of passes)
+        for _ in range(passes):
+            bm.verts.index_update()
+            bm.faces.index_update()
+            bm.normal_update()
+            buckets = {}
+            for f in bm.faces:
+                if f.calc_area() < 1e-8:
+                    continue
+                n = f.normal
+                d = n.dot(f.verts[0].co)
+                key = (round(n.x * 100), round(n.y * 100), round(n.z * 100), int(math.floor(d / ZFIGHT_EPS)))
+                buckets.setdefault(key, []).append(f)
+            lift = {}
+            for key, faces in buckets.items():
+                cand = list(faces)
+                for dk in (-1, 1):
+                    cand += buckets.get((key[0], key[1], key[2], key[3] + dk), [])
+                for a in faces:
+                    for b in cand:
+                        if a is b or a.material_index == b.material_index or a.index > b.index and b in faces:
+                            continue
+                        if a.normal.dot(b.normal) < 0.9998 or abs(a.normal.dot(a.verts[0].co) - b.normal.dot(b.verts[0].co)) > ZFIGHT_EPS:
+                            continue
+                        n = a.normal
+                        ref = Vector((1, 0, 0)) if abs(n.x) < 0.9 else Vector((0, 1, 0))
+                        u = n.cross(ref).normalized()
+                        v = n.cross(u)
+                        if not _convex_overlap(_poly2d(a, u, v), _poly2d(b, u, v)):
+                            continue
+                        loser = a if (a.calc_area(), a.material_index) <= (b.calc_area(), b.material_index) else b
+                        lift[loser.index] = loser
+            if not lift:
+                break
+            for f in lift.values():
+                n = f.normal.copy()
+                for vt in f.verts:
+                    # a vertex is lifted once at most: shared vertices of a lathe pole or a bevel used to be pushed
+                    # every pass and a six-pack of cans grew from 12.3 to 18 cm
+                    if moved.get(vt.index, 0) < 1:
+                        moved[vt.index] = moved.get(vt.index, 0) + 1
+                        vt.co += n * ZFIGHT_LIFT
+            lifted_total += len(lift)
+    if lifted_total:
+        ZFIGHT_FIXED.append((model.name, lifted_total))
+    return lifted_total
+
+
+ORIGIN_SNAP = 0.045  # offsets up to 4.5 cm are generator slop (feet, casters, bevel overhang); bigger ones are deliberate
+
+
+def snap_origin(model):
+    """Put the model exactly on its mount plane (CONVENTIONS.md): a floor/table model's lowest point is y=0, a wall
+    model's back is z=0, a ceiling model's top is y=0.  Only offsets below ORIGIN_SNAP are corrected, so a model that
+    deliberately hovers (hover stretcher, 5 cm) or is sunk into its host keeps its design."""
+    lo, hi = model.bounds()
+    mount = getattr(model, "mount", None)
+    if mount in ("floor", "table") and 1e-6 < abs(lo[1]) < ORIGIN_SNAP:
+        model.shift(dy=-lo[1])
+    elif mount == "wall" and 1e-6 < abs(lo[2]) < ORIGIN_SNAP:
+        model.shift(dz=-lo[2])
+    elif mount == "ceiling" and 1e-6 < abs(hi[1]) < ORIGIN_SNAP:
+        model.shift(dy=-hi[1])
+
+
 def export(model, path):
     """Write the model as a GLB. Returns dict(bounds, tris)."""
     if not any(g["bm"].faces for g in model.groups.values()):
         raise ValueError(f"model {model.name!r} is empty (no faces); cannot export")
     objs = []
+    for g in model.groups.values():
+        if g["bm"].faces:  # bevel output order follows pointer addresses: fix it before anything order-dependent runs
+            g["bm"] = _freed(g["bm"], canonical_order(g["bm"]))
+    lo0, hi0 = model.bounds()
+    if fix_zfight(model):
+        # lifting detail faces grows the model by a few mm: slide it back so the mounting plane stays exactly where it was
+        lo1, hi1 = model.bounds()
+        mount = getattr(model, "mount", None)
+        if mount in ("floor", "table"):
+            model.shift(dy=lo0[1] - lo1[1])
+        elif mount == "wall":
+            model.shift(dz=lo0[2] - lo1[2])
+        elif mount == "ceiling":
+            model.shift(dy=hi0[1] - hi1[1])
+    snap_origin(model)
     for gname, g in model.groups.items():
         bm = g["bm"]
         if not bm.faces:
             continue
-        bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-5)
-        _smooth(bm)
+        bm = g["bm"] = _freed(bm, canonical_order(bm, weld=True))
+        _smooth(bm, getattr(model, "smooth_angle", math.radians(38)))
         me = bpy.data.meshes.new(gname)
         bm.to_mesh(me)
         for mn in g["mats"]:
