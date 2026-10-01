@@ -434,7 +434,8 @@ def canonical_order(bm):
         faces.append((f.material_index, tuple(idx), uvs))
     faces.sort(key=lambda t: (t[0], tuple(sorted(t[1])), t[1]))
     nb = bmesh.new()
-    nv = [nb.verts.new((v.co.x, v.co.y, v.co.z)) for v in verts]
+    # 1e-5 snap: bevel/bisect leave 1e-8 float noise that differs between runs; +0.0 turns -0.0 into 0.0
+    nv = [nb.verts.new((round(v.co.x, 5) + 0.0, round(v.co.y, 5) + 0.0, round(v.co.z, 5) + 0.0)) for v in verts]
     uv_dst = nb.loops.layers.uv.verify() if uv_src else None
     for mi, idx, uvs in faces:
         try:
