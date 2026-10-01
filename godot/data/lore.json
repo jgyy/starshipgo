@@ -1,0 +1,2165 @@
+{
+ "version": 1,
+ "ship": {
+  "name": "Vesper Lantern",
+  "registry": "MCV-7741",
+  "class": "Wayfinder-class deep survey cruiser",
+  "builder": "Calder-Okonkwo Orbital Yards, Tessara Ring Dock 4",
+  "commissioned": 2291,
+  "motto": "Ad lucem ultra",
+  "crew": 64,
+  "cruise_warp": 5.0,
+  "top_warp": 8.0,
+  "ly_per_day_at_cruise": 1.1,
+  "description": "Vesper Lantern is a three-deck deep survey cruiser of the Meridian Concord's Survey Service, built to stay out for years: a fusion core and warp coils amidships, a hangar for two survey shuttles on the stern platform, a hydroponics garden that feeds most of the crew and a bridge that overhangs the bow like the lantern on an old river boat. Her Deep Survey Charter 7 sends her four years out along the Concord frontier to chart the Veil region and to settle where a faint repeating signal comes from.",
+  "charter": "Deep Survey Charter 7 (four years, CY 2294-2298): chart the frontier lanes, survey every system of the plan, keep the peace with neighbours and run down the Heartbeat signal."
+ },
+ "factions": [
+  {
+   "id": "concord",
+   "name": "Meridian Concord",
+   "color": "#4aa8ff",
+   "stance": "allied",
+   "description": "A federation of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts."
+  },
+  {
+   "id": "collegium",
+   "name": "Orrery Collegium",
+   "color": "#c08aff",
+   "stance": "allied",
+   "description": "An academic league of observatories and archive worlds. Trades star charts and data for passage; neutral in every dispute."
+  },
+  {
+   "id": "commons",
+   "name": "Thessaly Commons",
+   "color": "#6be08a",
+   "stance": "neutral",
+   "description": "Agrarian settlements who farm terraformed worlds and sell grain and seed stock; friendly but insular."
+  },
+  {
+   "id": "freeports",
+   "name": "Ashfall Free Ports",
+   "color": "#ffc247",
+   "stance": "neutral",
+   "description": "A web of independent trade stations and salvage guilds that keep no flag but their ledgers; the cheapest repairs in the volume."
+  },
+  {
+   "id": "korvath",
+   "name": "Korvath Reach Compact",
+   "color": "#ff6a4a",
+   "stance": "rival",
+   "description": "Mining houses and fleet families who claim the lanes beyond Ghalt and bristle at survey ships near their veins."
+  },
+  {
+   "id": "unclaimed",
+   "name": "Unclaimed and Uncharted",
+   "color": "#8a96a8",
+   "stance": "unknown",
+   "description": "Systems nobody holds: dark stars, ruins, hazards and the unknown."
+  }
+ ],
+ "systems": [
+  {
+   "id": "tessara",
+   "name": "Tessara",
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "star": {
+    "class": "G2V",
+    "temp_k": 5780,
+    "lum_solar": 1.0
+   },
+   "faction": "concord",
+   "kind": "home",
+   "visited": true,
+   "summary": "Home system of the Concord and the yard that built Vesper Lantern; the origin of every chart.",
+   "planets": [
+    {
+     "name": "Anchorage",
+     "type": "ocean-continental",
+     "gravity_g": 0.98,
+     "atmosphere": "N2-O2, 21% O2",
+     "habitable": true,
+     "moons": 1,
+     "notes": "Capital world, nine billion people, the Assembly sits at Lantern Hill."
+    },
+    {
+     "name": "Tessara II",
+     "type": "hot rock",
+     "gravity_g": 0.71,
+     "atmosphere": "thin CO2",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Solar mirrors and ore smelters."
+    },
+    {
+     "name": "Gyre",
+     "type": "gas giant",
+     "gravity_g": 2.4,
+     "atmosphere": "H2-He",
+     "habitable": false,
+     "moons": 14,
+     "notes": "Fuel skimmers and the Ring Docks hang above it."
+    }
+   ]
+  },
+  {
+   "id": "calloway",
+   "name": "Calloway",
+   "pos": [
+    4.2,
+    1.1,
+    -2.0
+   ],
+   "star": {
+    "class": "K1V",
+    "temp_k": 5100,
+    "lum_solar": 0.45
+   },
+   "faction": "concord",
+   "kind": "waypoint",
+   "visited": true,
+   "summary": "First jump of the voyage; an orange dwarf with a busy survey relay.",
+   "planets": [
+    {
+     "name": "Calloway Prime",
+     "type": "cold desert",
+     "gravity_g": 0.82,
+     "atmosphere": "thin N2-CO2",
+     "habitable": false,
+     "moons": 2,
+     "notes": "Mining camps, relay station Bellwether in orbit."
+    },
+    {
+     "name": "Dorn",
+     "type": "ice dwarf",
+     "gravity_g": 0.12,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Water ice quarry used for reaction mass."
+    }
+   ]
+  },
+  {
+   "id": "harrow",
+   "name": "Harrow",
+   "pos": [
+    -3.1,
+    2.8,
+    4.5
+   ],
+   "star": {
+    "class": "M0V",
+    "temp_k": 3900,
+    "lum_solar": 0.12
+   },
+   "faction": "concord",
+   "kind": "waypoint",
+   "visited": true,
+   "summary": "Dim red dwarf with a quiet Concord customs station.",
+   "planets": [
+    {
+     "name": "Harrow Station",
+     "type": "orbital",
+     "gravity_g": 0.0,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Customs and fuel depot."
+    },
+    {
+     "name": "Harrow b",
+     "type": "tidally locked rock",
+     "gravity_g": 1.1,
+     "atmosphere": "thin N2",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Terminator ridge colony proposals."
+    }
+   ]
+  },
+  {
+   "id": "ostrava",
+   "name": "Ostrava",
+   "pos": [
+    -6.0,
+    -1.5,
+    -4.4
+   ],
+   "star": {
+    "class": "K5V",
+    "temp_k": 4400,
+    "lum_solar": 0.2
+   },
+   "faction": "concord",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Concord mining outpost on a cold, dark world.",
+   "planets": [
+    {
+     "name": "Ostrava III",
+     "type": "barren rock",
+     "gravity_g": 0.64,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 1,
+     "notes": "Cobalt and titanium mining."
+    }
+   ]
+  },
+  {
+   "id": "vellum",
+   "name": "Vellum",
+   "pos": [
+    6.8,
+    -3.0,
+    5.1
+   ],
+   "star": {
+    "class": "F8V",
+    "temp_k": 6150,
+    "lum_solar": 1.8
+   },
+   "faction": "collegium",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Collegium archive world: the planet itself is a library.",
+   "planets": [
+    {
+     "name": "Vellum Stacks",
+     "type": "temperate rock",
+     "gravity_g": 1.02,
+     "atmosphere": "N2-O2, 19% O2",
+     "habitable": true,
+     "moons": 2,
+     "notes": "Stacks of data vaults under glass domes."
+    },
+    {
+     "name": "Vellum b",
+     "type": "ice giant",
+     "gravity_g": 1.3,
+     "atmosphere": "H2-He-CH4",
+     "habitable": false,
+     "moons": 9,
+     "notes": "Cold storage for deep archives."
+    }
+   ]
+  },
+  {
+   "id": "lumen",
+   "name": "Lumen",
+   "pos": [
+    2.0,
+    7.5,
+    -5.5
+   ],
+   "star": {
+    "class": "A2V",
+    "temp_k": 9000,
+    "lum_solar": 22.0
+   },
+   "faction": "concord",
+   "kind": "waypoint",
+   "visited": false,
+   "summary": "Bright white star with a thin debris ring used as a calibration source by astronomers.",
+   "planets": [
+    {
+     "name": "Lumen Ring",
+     "type": "debris belt",
+     "gravity_g": 0.0,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Dust sheet that scatters starlight perfectly for instrument tests."
+    },
+    {
+     "name": "Lumen b",
+     "type": "scorched rock",
+     "gravity_g": 0.9,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Too hot for anything."
+    }
+   ]
+  },
+  {
+   "id": "brindle",
+   "name": "Brindle",
+   "pos": [
+    -8.5,
+    5.0,
+    0.5
+   ],
+   "star": {
+    "class": "G8V",
+    "temp_k": 5400,
+    "lum_solar": 0.7
+   },
+   "faction": "commons",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Thessaly farm world with wheat seas, and the seed vault our hydroponics stock came from.",
+   "planets": [
+    {
+     "name": "Brindle",
+     "type": "temperate rock",
+     "gravity_g": 0.93,
+     "atmosphere": "N2-O2, 20% O2",
+     "habitable": true,
+     "moons": 1,
+     "notes": "Wheat plains, terraced vineyards."
+    },
+    {
+     "name": "Bramble",
+     "type": "cold rock",
+     "gravity_g": 0.6,
+     "atmosphere": "thin N2",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Seed vault in a lava tube."
+    }
+   ]
+  },
+  {
+   "id": "sarrow",
+   "name": "Sarrow",
+   "pos": [
+    9.5,
+    3.5,
+    -3.0
+   ],
+   "star": {
+    "class": "K3V",
+    "temp_k": 4800,
+    "lum_solar": 0.32
+   },
+   "faction": "concord",
+   "kind": "outpost",
+   "visited": true,
+   "summary": "Concord frontier outpost where the ship took on coolant and spares.",
+   "planets": [
+    {
+     "name": "Sarrow Reach",
+     "type": "cold desert",
+     "gravity_g": 0.7,
+     "atmosphere": "thin CO2",
+     "habitable": false,
+     "moons": 2,
+     "notes": "Outpost dome, fuel tanks and a landing field."
+    },
+    {
+     "name": "Sarrow b",
+     "type": "ice world",
+     "gravity_g": 0.4,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Source of the reaction ice."
+    }
+   ]
+  },
+  {
+   "id": "kithara",
+   "name": "Kithara",
+   "pos": [
+    12.0,
+    -6.0,
+    0.0
+   ],
+   "star": {
+    "class": "F2V",
+    "temp_k": 6900,
+    "lum_solar": 3.6
+   },
+   "faction": "collegium",
+   "kind": "waypoint",
+   "visited": true,
+   "summary": "Collegium observatory system; its astronomers triangulated the Heartbeat.",
+   "planets": [
+    {
+     "name": "Kithara Observatory",
+     "type": "orbital",
+     "gravity_g": 0.0,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Twelve radio dishes on a ring."
+    },
+    {
+     "name": "Kithara II",
+     "type": "ocean world",
+     "gravity_g": 1.15,
+     "atmosphere": "N2-O2, 17% O2",
+     "habitable": true,
+     "moons": 3,
+     "notes": "Floating research rafts."
+    }
+   ]
+  },
+  {
+   "id": "halcyon",
+   "name": "Halcyon Gate",
+   "pos": [
+    15.5,
+    2.0,
+    -9.0
+   ],
+   "star": {
+    "class": "G5V",
+    "temp_k": 5600,
+    "lum_solar": 0.85
+   },
+   "faction": "unclaimed",
+   "kind": "waypoint",
+   "visited": true,
+   "summary": "A quiet yellow star with an old lane relay buoy at its gate; the ship's present anchorage.",
+   "planets": [
+    {
+     "name": "Halcyon I",
+     "type": "cold rock",
+     "gravity_g": 0.55,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Survey shuttle landing site; relay buoy in orbit."
+    },
+    {
+     "name": "Halcyon II",
+     "type": "ocean-ice",
+     "gravity_g": 0.88,
+     "atmosphere": "thin N2-O2",
+     "habitable": false,
+     "moons": 4,
+     "notes": "Frozen sea with warm vents."
+    },
+    {
+     "name": "Halcyon III",
+     "type": "gas giant",
+     "gravity_g": 1.9,
+     "atmosphere": "H2-He",
+     "habitable": false,
+     "moons": 11,
+     "notes": "Shuttle fuel skimming."
+    }
+   ]
+  },
+  {
+   "id": "dunmere",
+   "name": "Dunmere",
+   "pos": [
+    -14.0,
+    -4.0,
+    9.0
+   ],
+   "star": {
+    "class": "K0V",
+    "temp_k": 5250,
+    "lum_solar": 0.5
+   },
+   "faction": "commons",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Quiet agricultural system on the Commons side of the volume.",
+   "planets": [
+    {
+     "name": "Dunmere",
+     "type": "temperate rock",
+     "gravity_g": 1.0,
+     "atmosphere": "N2-O2, 21% O2",
+     "habitable": true,
+     "moons": 2,
+     "notes": "Orchards and pasture."
+    },
+    {
+     "name": "Dunmere b",
+     "type": "hot rock",
+     "gravity_g": 0.8,
+     "atmosphere": "CO2",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Greenhouse trials."
+    }
+   ]
+  },
+  {
+   "id": "cinder",
+   "name": "Cinder",
+   "pos": [
+    -18.0,
+    8.0,
+    -6.0
+   ],
+   "star": {
+    "class": "M2V",
+    "temp_k": 3500,
+    "lum_solar": 0.04
+   },
+   "faction": "freeports",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Free port built inside a hollowed-out comet nucleus: cheap repairs, no questions.",
+   "planets": [
+    {
+     "name": "Cinder Hollow",
+     "type": "comet habitat",
+     "gravity_g": 0.2,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Docks, markets and a hundred salvage guilds."
+    }
+   ]
+  },
+  {
+   "id": "korvath_prime",
+   "name": "Korvath Prime",
+   "pos": [
+    22.0,
+    -12.0,
+    7.0
+   ],
+   "star": {
+    "class": "K2V",
+    "temp_k": 5000,
+    "lum_solar": 0.4
+   },
+   "faction": "korvath",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Seat of the Compact's fleet families; heavily patrolled.",
+   "planets": [
+    {
+     "name": "Korvath",
+     "type": "hot desert",
+     "gravity_g": 1.2,
+     "atmosphere": "dense CO2-N2",
+     "habitable": false,
+     "moons": 1,
+     "notes": "Domed foundry cities."
+    },
+    {
+     "name": "Korvath b",
+     "type": "rock",
+     "gravity_g": 0.9,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Shipyards."
+    }
+   ]
+  },
+  {
+   "id": "ghalt",
+   "name": "Ghalt",
+   "pos": [
+    25.0,
+    -3.0,
+    -14.0
+   ],
+   "star": {
+    "class": "K4V",
+    "temp_k": 4600,
+    "lum_solar": 0.25
+   },
+   "faction": "korvath",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Compact mining outpost that sells fuel and passage permits to survey ships.",
+   "planets": [
+    {
+     "name": "Ghalt Hollow",
+     "type": "cold rock",
+     "gravity_g": 0.7,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Ice and iron."
+    },
+    {
+     "name": "Ghalt b",
+     "type": "ice giant",
+     "gravity_g": 1.4,
+     "atmosphere": "H2-He-CH4",
+     "habitable": false,
+     "moons": 6,
+     "notes": "Gas mining rigs."
+    }
+   ]
+  },
+  {
+   "id": "ironwake",
+   "name": "Ironwake",
+   "pos": [
+    19.0,
+    -16.0,
+    -4.0
+   ],
+   "star": {
+    "class": "G9V",
+    "temp_k": 5300,
+    "lum_solar": 0.6
+   },
+   "faction": "korvath",
+   "kind": "hazard",
+   "visited": false,
+   "summary": "Iron-rich debris field of a shattered world; mining houses fight over it.",
+   "planets": [
+    {
+     "name": "Ironwake Belt",
+     "type": "debris belt",
+     "gravity_g": 0.0,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Dense, fast-moving rubble; lane hazard."
+    }
+   ]
+  },
+  {
+   "id": "veil",
+   "name": "The Veil",
+   "pos": [
+    24.0,
+    6.0,
+    -18.0
+   ],
+   "star": {
+    "class": "B9V",
+    "temp_k": 11000,
+    "lum_solar": 60.0
+   },
+   "faction": "unclaimed",
+   "kind": "hazard",
+   "visited": false,
+   "summary": "A young blue star wrapped in a dust nebula that scrambles sensors and warp fields.",
+   "planets": [
+    {
+     "name": "Veil Anvil",
+     "type": "molten rock",
+     "gravity_g": 1.4,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Forming under the dust."
+    },
+    {
+     "name": "Veil b",
+     "type": "gas dwarf",
+     "gravity_g": 1.1,
+     "atmosphere": "H2-He",
+     "habitable": false,
+     "moons": 3,
+     "notes": "Ice-dust moons forming."
+    }
+   ]
+  },
+  {
+   "id": "orrin",
+   "name": "Orrin",
+   "pos": [
+    -26.0,
+    12.0,
+    8.0
+   ],
+   "star": {
+    "class": "K7V",
+    "temp_k": 4100,
+    "lum_solar": 0.1
+   },
+   "faction": "freeports",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Salvage guild system around a dim orange star.",
+   "planets": [
+    {
+     "name": "Orrin Yard",
+     "type": "orbital",
+     "gravity_g": 0.0,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Wreck breakers."
+    },
+    {
+     "name": "Orrin c",
+     "type": "ice dwarf",
+     "gravity_g": 0.2,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Cold storage."
+    }
+   ]
+  },
+  {
+   "id": "wyndham",
+   "name": "Wyndham",
+   "pos": [
+    -22.0,
+    -14.0,
+    -18.0
+   ],
+   "star": {
+    "class": "M1V",
+    "temp_k": 3700,
+    "lum_solar": 0.06
+   },
+   "faction": "unclaimed",
+   "kind": "uncharted",
+   "visited": false,
+   "summary": "Never surveyed: a red dwarf seen only from a distance.",
+   "planets": [
+    {
+     "name": "Wyndham a",
+     "type": "unknown",
+     "gravity_g": 0.0,
+     "atmosphere": "unknown",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Unsurveyed."
+    }
+   ]
+  },
+  {
+   "id": "tamsin",
+   "name": "Tamsin",
+   "pos": [
+    30.0,
+    10.0,
+    -22.0
+   ],
+   "star": {
+    "class": "F5V",
+    "temp_k": 6500,
+    "lum_solar": 2.5
+   },
+   "faction": "unclaimed",
+   "kind": "waypoint",
+   "visited": false,
+   "summary": "A yellow-white star at the edge of the Veil dust; the last quiet anchorage before the Lighthouse.",
+   "planets": [
+    {
+     "name": "Tamsin I",
+     "type": "barren rock",
+     "gravity_g": 0.45,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 1,
+     "notes": "Planned survey camp."
+    },
+    {
+     "name": "Tamsin II",
+     "type": "ice giant",
+     "gravity_g": 1.2,
+     "atmosphere": "H2-He-CH4",
+     "habitable": false,
+     "moons": 7,
+     "notes": "Fuel source."
+    }
+   ]
+  },
+  {
+   "id": "marrow",
+   "name": "Marrow",
+   "pos": [
+    34.0,
+    -2.0,
+    -22.0
+   ],
+   "star": {
+    "class": "K1V",
+    "temp_k": 5100,
+    "lum_solar": 0.45
+   },
+   "faction": "korvath",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Compact listening post on a bare moon, watching the Veil.",
+   "planets": [
+    {
+     "name": "Marrow Post",
+     "type": "airless moon",
+     "gravity_g": 0.15,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Dish arrays and barracks."
+    }
+   ]
+  },
+  {
+   "id": "lighthouse",
+   "name": "The Lighthouse",
+   "pos": [
+    38.0,
+    4.0,
+    -30.0
+   ],
+   "star": {
+    "class": "NS",
+    "temp_k": 600000,
+    "lum_solar": 0.002
+   },
+   "faction": "unclaimed",
+   "kind": "anomaly",
+   "visited": false,
+   "summary": "A neutron star with a ring of ancient machinery that sends the Heartbeat: a pulse every few minutes on a line no natural star would use.",
+   "planets": [
+    {
+     "name": "Lamp",
+     "type": "artificial ring",
+     "gravity_g": 0.0,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "A ring of alloy 4 km across, spun by the star; the source of the signal."
+    },
+    {
+     "name": "Lighthouse b",
+     "type": "dead rock",
+     "gravity_g": 0.3,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Cinders swept up by the pulsar wind."
+    }
+   ]
+  },
+  {
+   "id": "eventide",
+   "name": "Eventide",
+   "pos": [
+    45.0,
+    8.0,
+    -24.0
+   ],
+   "star": {
+    "class": "M4V",
+    "temp_k": 3200,
+    "lum_solar": 0.02
+   },
+   "faction": "unclaimed",
+   "kind": "uncharted",
+   "visited": false,
+   "summary": "A dim red dwarf past the Lighthouse; nobody has charted it.",
+   "planets": [
+    {
+     "name": "Eventide a",
+     "type": "unknown",
+     "gravity_g": 0.0,
+     "atmosphere": "unknown",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Seen only as a dot."
+    }
+   ]
+  },
+  {
+   "id": "sable",
+   "name": "Sable Reach",
+   "pos": [
+    42.0,
+    -18.0,
+    12.0
+   ],
+   "star": {
+    "class": "K0III",
+    "temp_k": 4700,
+    "lum_solar": 60.0
+   },
+   "faction": "korvath",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Compact frontier giant-star system and a fleet muster point.",
+   "planets": [
+    {
+     "name": "Sable a",
+     "type": "hot rock",
+     "gravity_g": 1.1,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Forts."
+    },
+    {
+     "name": "Sable b",
+     "type": "gas giant",
+     "gravity_g": 2.2,
+     "atmosphere": "H2-He",
+     "habitable": false,
+     "moons": 13,
+     "notes": "Fuel."
+    }
+   ]
+  },
+  {
+   "id": "ember_deep",
+   "name": "Ember Deep",
+   "pos": [
+    -40.0,
+    -10.0,
+    -22.0
+   ],
+   "star": {
+    "class": "DA",
+    "temp_k": 12000,
+    "lum_solar": 0.003
+   },
+   "faction": "unclaimed",
+   "kind": "uncharted",
+   "visited": false,
+   "summary": "A white dwarf with a belt of ash; an unvisited graveyard system.",
+   "planets": [
+    {
+     "name": "Ember b",
+     "type": "dead rock",
+     "gravity_g": 0.2,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Scorched."
+    }
+   ]
+  },
+  {
+   "id": "quill",
+   "name": "Quill",
+   "pos": [
+    -35.0,
+    22.0,
+    15.0
+   ],
+   "star": {
+    "class": "G1V",
+    "temp_k": 5900,
+    "lum_solar": 1.15
+   },
+   "faction": "freeports",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Free port ring around a gold-yellow star; a long-haul crossroads.",
+   "planets": [
+    {
+     "name": "Quill Station",
+     "type": "orbital",
+     "gravity_g": 0.0,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Markets, docks and a notary."
+    },
+    {
+     "name": "Quill b",
+     "type": "ocean-ice",
+     "gravity_g": 0.8,
+     "atmosphere": "thin N2-O2",
+     "habitable": false,
+     "moons": 2,
+     "notes": "Water source."
+    }
+   ]
+  },
+  {
+   "id": "nadir",
+   "name": "Nadir",
+   "pos": [
+    -12.0,
+    -30.0,
+    -24.0
+   ],
+   "star": {
+    "class": "NS",
+    "temp_k": 700000,
+    "lum_solar": 0.003
+   },
+   "faction": "unclaimed",
+   "kind": "hazard",
+   "visited": false,
+   "summary": "A pulsar with hard radiation; lanes avoid it by 5 light-years.",
+   "planets": [
+    {
+     "name": "Nadir a",
+     "type": "scorched rock",
+     "gravity_g": 0.5,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Lit by the pulsar beam twice a second."
+    }
+   ]
+  },
+  {
+   "id": "lyra_ferry",
+   "name": "Lyra Ferry",
+   "pos": [
+    20.0,
+    30.0,
+    18.0
+   ],
+   "star": {
+    "class": "A5V",
+    "temp_k": 8100,
+    "lum_solar": 11.0
+   },
+   "faction": "collegium",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Collegium relay hub high above the plane; its signal towers keep the subspace network alive.",
+   "planets": [
+    {
+     "name": "Ferry Station",
+     "type": "orbital",
+     "gravity_g": 0.0,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Relay hub."
+    },
+    {
+     "name": "Lyra b",
+     "type": "ice world",
+     "gravity_g": 0.5,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Cold, quiet."
+    }
+   ]
+  },
+  {
+   "id": "pale_harbor",
+   "name": "Pale Harbor",
+   "pos": [
+    5.0,
+    -20.0,
+    30.0
+   ],
+   "star": {
+    "class": "G3V",
+    "temp_k": 5700,
+    "lum_solar": 0.95
+   },
+   "faction": "commons",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Thessaly settlement system on a pale-sanded world.",
+   "planets": [
+    {
+     "name": "Pale Harbor",
+     "type": "temperate rock",
+     "gravity_g": 0.97,
+     "atmosphere": "N2-O2, 20% O2",
+     "habitable": true,
+     "moons": 1,
+     "notes": "Salt flats, fisheries."
+    },
+    {
+     "name": "Pale b",
+     "type": "gas giant",
+     "gravity_g": 1.7,
+     "atmosphere": "H2-He",
+     "habitable": false,
+     "moons": 5,
+     "notes": "Skimming."
+    }
+   ]
+  },
+  {
+   "id": "oriel",
+   "name": "Oriel",
+   "pos": [
+    -2.0,
+    25.0,
+    -30.0
+   ],
+   "star": {
+    "class": "K2V",
+    "temp_k": 5000,
+    "lum_solar": 0.4
+   },
+   "faction": "unclaimed",
+   "kind": "uncharted",
+   "visited": false,
+   "summary": "An orange star north of the Lighthouse axis; a single survey flyby, no landing.",
+   "planets": [
+    {
+     "name": "Oriel a",
+     "type": "unknown",
+     "gravity_g": 0.0,
+     "atmosphere": "unknown",
+     "habitable": false,
+     "moons": 0,
+     "notes": "One probe photograph."
+    }
+   ]
+  },
+  {
+   "id": "fennick",
+   "name": "Fennick",
+   "pos": [
+    -28.0,
+    -4.0,
+    22.0
+   ],
+   "star": {
+    "class": "M0V",
+    "temp_k": 3900,
+    "lum_solar": 0.11
+   },
+   "faction": "commons",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Small Commons cooperative around a dim star.",
+   "planets": [
+    {
+     "name": "Fennick",
+     "type": "cold rock",
+     "gravity_g": 0.8,
+     "atmosphere": "N2-CO2",
+     "habitable": false,
+     "moons": 1,
+     "notes": "Greenhouse domes."
+    }
+   ]
+  },
+  {
+   "id": "kestrel",
+   "name": "Kestrel Ridge",
+   "pos": [
+    14.0,
+    18.0,
+    4.0
+   ],
+   "star": {
+    "class": "G0V",
+    "temp_k": 6000,
+    "lum_solar": 1.3
+   },
+   "faction": "collegium",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Collegium field station on a high-albedo rocky world.",
+   "planets": [
+    {
+     "name": "Kestrel Ridge",
+     "type": "cold desert",
+     "gravity_g": 0.85,
+     "atmosphere": "thin CO2",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Geology school."
+    }
+   ]
+  },
+  {
+   "id": "anvil",
+   "name": "Anvil",
+   "pos": [
+    -18.0,
+    -22.0,
+    10.0
+   ],
+   "star": {
+    "class": "K6V",
+    "temp_k": 4200,
+    "lum_solar": 0.15
+   },
+   "faction": "freeports",
+   "kind": "waypoint",
+   "visited": false,
+   "summary": "Salvage lane junction with a shipbreaker's yard.",
+   "planets": [
+    {
+     "name": "Anvil Yard",
+     "type": "orbital",
+     "gravity_g": 0.0,
+     "atmosphere": "habitat air",
+     "habitable": true,
+     "moons": 0,
+     "notes": "Breaker's yard."
+    }
+   ]
+  },
+  {
+   "id": "dray",
+   "name": "Dray",
+   "pos": [
+    8.0,
+    -10.0,
+    -16.0
+   ],
+   "star": {
+    "class": "M3V",
+    "temp_k": 3400,
+    "lum_solar": 0.03
+   },
+   "faction": "concord",
+   "kind": "outpost",
+   "visited": false,
+   "summary": "Concord listening post on a tiny dim star.",
+   "planets": [
+    {
+     "name": "Dray Post",
+     "type": "airless moon",
+     "gravity_g": 0.1,
+     "atmosphere": "none",
+     "habitable": false,
+     "moons": 0,
+     "notes": "Radio telescopes."
+    }
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "a": "tessara",
+   "b": "calloway",
+   "ly": 4.78,
+   "hazard": 0
+  },
+  {
+   "a": "tessara",
+   "b": "harrow",
+   "ly": 6.14,
+   "hazard": 0
+  },
+  {
+   "a": "tessara",
+   "b": "ostrava",
+   "ly": 7.59,
+   "hazard": 1
+  },
+  {
+   "a": "tessara",
+   "b": "vellum",
+   "ly": 9.01,
+   "hazard": 0
+  },
+  {
+   "a": "tessara",
+   "b": "lumen",
+   "ly": 9.51,
+   "hazard": 1
+  },
+  {
+   "a": "tessara",
+   "b": "brindle",
+   "ly": 9.87,
+   "hazard": 0
+  },
+  {
+   "a": "calloway",
+   "b": "sarrow",
+   "ly": 5.9,
+   "hazard": 1
+  },
+  {
+   "a": "calloway",
+   "b": "lumen",
+   "ly": 7.62,
+   "hazard": 1
+  },
+  {
+   "a": "calloway",
+   "b": "vellum",
+   "ly": 8.6,
+   "hazard": 1
+  },
+  {
+   "a": "calloway",
+   "b": "dray",
+   "ly": 18.27,
+   "hazard": 2
+  },
+  {
+   "a": "harrow",
+   "b": "brindle",
+   "ly": 7.07,
+   "hazard": 0
+  },
+  {
+   "a": "harrow",
+   "b": "vellum",
+   "ly": 11.49,
+   "hazard": 1
+  },
+  {
+   "a": "harrow",
+   "b": "dunmere",
+   "ly": 13.61,
+   "hazard": 1
+  },
+  {
+   "a": "ostrava",
+   "b": "brindle",
+   "ly": 8.52,
+   "hazard": 1
+  },
+  {
+   "a": "ostrava",
+   "b": "dray",
+   "ly": 20.07,
+   "hazard": 2
+  },
+  {
+   "a": "sarrow",
+   "b": "kithara",
+   "ly": 10.27,
+   "hazard": 1
+  },
+  {
+   "a": "sarrow",
+   "b": "halcyon",
+   "ly": 8.62,
+   "hazard": 1
+  },
+  {
+   "a": "sarrow",
+   "b": "lumen",
+   "ly": 8.86,
+   "hazard": 2
+  },
+  {
+   "a": "vellum",
+   "b": "kithara",
+   "ly": 7.88,
+   "hazard": 1
+  },
+  {
+   "a": "kithara",
+   "b": "halcyon",
+   "ly": 12.54,
+   "hazard": 1
+  },
+  {
+   "a": "kithara",
+   "b": "korvath_prime",
+   "ly": 13.6,
+   "hazard": 2
+  },
+  {
+   "a": "kithara",
+   "b": "ironwake",
+   "ly": 12.85,
+   "hazard": 3
+  },
+  {
+   "a": "halcyon",
+   "b": "ghalt",
+   "ly": 11.84,
+   "hazard": 2
+  },
+  {
+   "a": "halcyon",
+   "b": "veil",
+   "ly": 13.01,
+   "hazard": 3
+  },
+  {
+   "a": "halcyon",
+   "b": "lumen",
+   "ly": 14.99,
+   "hazard": 2
+  },
+  {
+   "a": "ghalt",
+   "b": "veil",
+   "ly": 9.9,
+   "hazard": 3
+  },
+  {
+   "a": "ghalt",
+   "b": "korvath_prime",
+   "ly": 23.04,
+   "hazard": 2
+  },
+  {
+   "a": "ghalt",
+   "b": "marrow",
+   "ly": 12.08,
+   "hazard": 2
+  },
+  {
+   "a": "ghalt",
+   "b": "ironwake",
+   "ly": 17.46,
+   "hazard": 3
+  },
+  {
+   "a": "veil",
+   "b": "tamsin",
+   "ly": 8.25,
+   "hazard": 4
+  },
+  {
+   "a": "veil",
+   "b": "marrow",
+   "ly": 13.42,
+   "hazard": 3
+  },
+  {
+   "a": "tamsin",
+   "b": "lighthouse",
+   "ly": 12.81,
+   "hazard": 3
+  },
+  {
+   "a": "tamsin",
+   "b": "marrow",
+   "ly": 12.65,
+   "hazard": 2
+  },
+  {
+   "a": "marrow",
+   "b": "lighthouse",
+   "ly": 10.77,
+   "hazard": 3
+  },
+  {
+   "a": "lighthouse",
+   "b": "eventide",
+   "ly": 10.05,
+   "hazard": 3
+  },
+  {
+   "a": "eventide",
+   "b": "marrow",
+   "ly": 15.0,
+   "hazard": 3
+  },
+  {
+   "a": "korvath_prime",
+   "b": "sable",
+   "ly": 21.47,
+   "hazard": 3
+  },
+  {
+   "a": "brindle",
+   "b": "dunmere",
+   "ly": 13.55,
+   "hazard": 0
+  },
+  {
+   "a": "brindle",
+   "b": "cinder",
+   "ly": 11.9,
+   "hazard": 1
+  },
+  {
+   "a": "cinder",
+   "b": "orrin",
+   "ly": 16.61,
+   "hazard": 2
+  },
+  {
+   "a": "cinder",
+   "b": "dunmere",
+   "ly": 19.62,
+   "hazard": 2
+  },
+  {
+   "a": "dunmere",
+   "b": "fennick",
+   "ly": 19.1,
+   "hazard": 1
+  },
+  {
+   "a": "orrin",
+   "b": "quill",
+   "ly": 15.17,
+   "hazard": 2
+  },
+  {
+   "a": "brindle",
+   "b": "quill",
+   "ly": 34.66,
+   "hazard": 3
+  },
+  {
+   "a": "dunmere",
+   "b": "pale_harbor",
+   "ly": 32.53,
+   "hazard": 3
+  },
+  {
+   "a": "tessara",
+   "b": "pale_harbor",
+   "ly": 36.4,
+   "hazard": 3
+  },
+  {
+   "a": "kestrel",
+   "b": "lumen",
+   "ly": 18.56,
+   "hazard": 1
+  },
+  {
+   "a": "kestrel",
+   "b": "kithara",
+   "ly": 24.41,
+   "hazard": 2
+  },
+  {
+   "a": "kestrel",
+   "b": "lyra_ferry",
+   "ly": 19.39,
+   "hazard": 2
+  },
+  {
+   "a": "lumen",
+   "b": "oriel",
+   "ly": 30.37,
+   "hazard": 3
+  },
+  {
+   "a": "anvil",
+   "b": "dunmere",
+   "ly": 18.47,
+   "hazard": 2
+  },
+  {
+   "a": "anvil",
+   "b": "ostrava",
+   "ly": 27.78,
+   "hazard": 2
+  },
+  {
+   "a": "ostrava",
+   "b": "wyndham",
+   "ly": 24.44,
+   "hazard": 3
+  },
+  {
+   "a": "wyndham",
+   "b": "nadir",
+   "ly": 19.8,
+   "hazard": 4
+  },
+  {
+   "a": "wyndham",
+   "b": "ember_deep",
+   "ly": 18.87,
+   "hazard": 3
+  },
+  {
+   "a": "dray",
+   "b": "ironwake",
+   "ly": 17.35,
+   "hazard": 3
+  },
+  {
+   "a": "orrin",
+   "b": "fennick",
+   "ly": 21.35,
+   "hazard": 2
+  },
+  {
+   "a": "kestrel",
+   "b": "halcyon",
+   "ly": 20.67,
+   "hazard": 2
+  }
+ ],
+ "waypoints": [
+  {
+   "system": "tessara",
+   "objective": "Depart Ring Dock 4 and begin Charter 7.",
+   "eta_days": 0.0,
+   "status": "done",
+   "from": "",
+   "leg_ly": 0.0,
+   "via": [
+    "tessara"
+   ],
+   "survey_days": 3
+  },
+  {
+   "system": "calloway",
+   "objective": "Shake-down jump; calibrate warp coils against relay Bellwether.",
+   "eta_days": 4.35,
+   "status": "done",
+   "from": "tessara",
+   "leg_ly": 4.78,
+   "via": [
+    "tessara",
+    "calloway"
+   ],
+   "survey_days": 6
+  },
+  {
+   "system": "sarrow",
+   "objective": "Take on coolant and spares; survey the reaction-ice moon.",
+   "eta_days": 5.36,
+   "status": "done",
+   "from": "calloway",
+   "leg_ly": 5.9,
+   "via": [
+    "calloway",
+    "sarrow"
+   ],
+   "survey_days": 9
+  },
+  {
+   "system": "kithara",
+   "objective": "Collegium observatory: exchange star charts and receive the Heartbeat bearing.",
+   "eta_days": 9.34,
+   "status": "done",
+   "from": "sarrow",
+   "leg_ly": 10.27,
+   "via": [
+    "sarrow",
+    "kithara"
+   ],
+   "survey_days": 21
+  },
+  {
+   "system": "halcyon",
+   "objective": "Deploy shuttles to the old lane relay buoy; hold position for signal analysis.",
+   "eta_days": 11.4,
+   "status": "active",
+   "from": "kithara",
+   "leg_ly": 12.54,
+   "via": [
+    "kithara",
+    "halcyon"
+   ],
+   "survey_days": 14
+  },
+  {
+   "system": "ghalt",
+   "objective": "Buy fuel and a passage permit from the Compact; decide whether to enter the Veil.",
+   "eta_days": 10.76,
+   "status": "planned",
+   "from": "halcyon",
+   "leg_ly": 11.84,
+   "via": [
+    "halcyon",
+    "ghalt"
+   ],
+   "survey_days": 5
+  },
+  {
+   "system": "veil",
+   "objective": "Navigate the dust: sensors and warp fields degrade, a hazard lane.",
+   "eta_days": 9.0,
+   "status": "planned",
+   "from": "ghalt",
+   "leg_ly": 9.9,
+   "via": [
+    "ghalt",
+    "veil"
+   ],
+   "survey_days": 4
+  },
+  {
+   "system": "tamsin",
+   "objective": "Set up a survey camp and listen to the Heartbeat from 12 light-years.",
+   "eta_days": 7.5,
+   "status": "planned",
+   "from": "veil",
+   "leg_ly": 8.25,
+   "via": [
+    "veil",
+    "tamsin"
+   ],
+   "survey_days": 18
+  },
+  {
+   "system": "lighthouse",
+   "objective": "Approach the Lamp and identify the source of the signal.",
+   "eta_days": 11.65,
+   "status": "planned",
+   "from": "tamsin",
+   "leg_ly": 12.81,
+   "via": [
+    "tamsin",
+    "lighthouse"
+   ],
+   "survey_days": 30
+  },
+  {
+   "system": "eventide",
+   "objective": "Chart the uncharted red dwarf past the Lighthouse.",
+   "eta_days": 9.14,
+   "status": "planned",
+   "from": "lighthouse",
+   "leg_ly": 10.05,
+   "via": [
+    "lighthouse",
+    "eventide"
+   ],
+   "survey_days": 10
+  },
+  {
+   "system": "marrow",
+   "objective": "Report to the Compact listening post and trade survey data.",
+   "eta_days": 13.64,
+   "status": "planned",
+   "from": "eventide",
+   "leg_ly": 15.0,
+   "via": [
+    "eventide",
+    "marrow"
+   ],
+   "survey_days": 5
+  },
+  {
+   "system": "sarrow",
+   "objective": "Homeward leg: restock and refit at the frontier outpost.",
+   "eta_days": 29.58,
+   "status": "planned",
+   "from": "marrow",
+   "leg_ly": 32.54,
+   "via": [
+    "marrow",
+    "ghalt",
+    "halcyon",
+    "sarrow"
+   ],
+   "survey_days": 10
+  }
+ ],
+ "current": {
+  "system": "halcyon",
+  "status": "In orbit at Halcyon I, shuttles deployed to the relay buoy, listening to the Heartbeat.",
+  "heading": [
+   0.653,
+   0.307,
+   -0.692
+  ],
+  "toward": "veil"
+ },
+ "timeline": [
+  {
+   "year": 2105,
+   "title": "The first jump",
+   "text": "A Tessara test craft makes the first faster-than-light hop to Calloway; the lane is named the First Road."
+  },
+  {
+   "year": 2142,
+   "title": "Founding of the Meridian Concord",
+   "text": "Four home systems sign the Meridian Accord: open lanes, shared charts and a common Survey Service."
+  },
+  {
+   "year": 2171,
+   "title": "The Quiet Years begin",
+   "text": "Subspace relays fail along the northern lanes for eleven years; expeditions turn back and the frontier freezes."
+  },
+  {
+   "year": 2183,
+   "title": "Orrery Collegium chartered",
+   "text": "Observatory worlds federate and begin the Great Atlas, a star chart open to every flag."
+  },
+  {
+   "year": 2203,
+   "title": "Ashfall Free Ports unite",
+   "text": "Salvage guilds sign the Free Port Articles, agreeing on neutral docking rights."
+  },
+  {
+   "year": 2218,
+   "title": "The Ironwake Dispute",
+   "text": "Two mining houses destroy a freighter fleet over a shattered world; the Korvath Compact forms to end the fighting."
+  },
+  {
+   "year": 2240,
+   "title": "Thessaly Commons joins the lanes",
+   "text": "Agrarian colonies open their worlds to trade and begin shipping seed stock."
+  },
+  {
+   "year": 2261,
+   "title": "The Heartbeat is first logged",
+   "text": "The Kithara observatory records a periodic radio pulse from the far north-east; it is catalogued and forgotten."
+  },
+  {
+   "year": 2283,
+   "title": "Wayfinder class approved",
+   "text": "The Assembly funds six deep survey cruisers designed to stay out for years."
+  },
+  {
+   "year": 2291,
+   "title": "Vesper Lantern commissioned",
+   "text": "The fourth Wayfinder cruiser leaves the yard at Ring Dock 4 and is handed to the Survey Service."
+  },
+  {
+   "year": 2294,
+   "title": "Charter 7 begins",
+   "text": "Vesper Lantern departs Tessara for the frontier with 64 crew and two shuttles."
+  },
+  {
+   "year": 2295,
+   "title": "Heartbeat noticed in flight",
+   "text": "Astrometrics picks the pulse out of the noise at Sarrow and links it to the Kithara records."
+  },
+  {
+   "year": 2296,
+   "title": "The Veil decision",
+   "text": "Command orders the ship to approach the Lighthouse through the dust; the Compact objects."
+  }
+ ],
+ "logs": [
+  {
+   "stardate": "41000.0",
+   "role": "captain",
+   "author": "Capt. Imara Teague",
+   "title": "Departure",
+   "text": "Cast off from Ring Dock 4 at the turn of the shift. Sixty-four crew aboard, hold full, shuttles checked. Charter 7 gives us four years and a short list: chart the lanes, keep the peace, and see what the old Kithara pulse really is. The bridge looks fine at night; the observation lounge is full of faces at the windows. Let us be good guests out there.",
+   "room": "bridge"
+  },
+  {
+   "stardate": "41001.4",
+   "role": "chief engineer",
+   "author": "Ch. Eng. Dov Ashkenazi",
+   "title": "Core first light",
+   "text": "Fusion core reached 72 per cent output on the first try and held. Coolant loops A and B are balanced to within one kelvin. Main engineering is loud and warm as it should be. The warp coils want a long break-in; I have scheduled the first jump at cruise, not a rush.",
+   "room": "eng"
+  },
+  {
+   "stardate": "41012.0",
+   "role": "quartermaster",
+   "author": "Qm. Lio Marchetti",
+   "title": "Manifest",
+   "text": "Cargo bay at 62 per cent, spares depot at 80. Dry rations 400 units, coolant canisters 12, fabricator feedstock 71 per cent. I counted the crates twice and then a third time because the captain asked for a fourth. The depot is organised by function, not by size; this will matter.",
+   "room": "cargo"
+  },
+  {
+   "stardate": "41031.2",
+   "role": "helm",
+   "author": "Lt. Ngozi Adebayo",
+   "title": "Calloway jump",
+   "text": "First jump to Calloway, 4.8 light-years, in 4.4 days at cruise. No drift, the coil temperatures stayed under 420 kelvin. Relay Bellwether answered the hail on the first try. The ship feels light in the hand; I like her.",
+   "room": "bridge"
+  },
+  {
+   "stardate": "41040.7",
+   "role": "hydroponics",
+   "author": "Spec. Wren Takahashi",
+   "title": "First harvest",
+   "text": "The wheat bed is at day 41 of 90 and the lettuce is ready. Pump B is humming a little flat but flow is fine. I have asked the galley to put tomato on every Friday, the crew deserve something red.",
+   "room": "hydro"
+  },
+  {
+   "stardate": "41048.3",
+   "role": "medical officer",
+   "author": "Dr. Amara Lindqvist",
+   "title": "Routine physicals",
+   "text": "Sixty-four physicals done. Everyone is healthy; two sprains from the gym and one case of vending-machine heartburn. Bio-bed 2 needed a reboot but the vitals trace is clean again. I will start a sleep survey next month because spaceflight always brings sleep trouble.",
+   "room": "medbay"
+  },
+  {
+   "stardate": "41061.0",
+   "role": "science officer",
+   "author": "Lt. Cdr. Anselm Okoro",
+   "title": "A pulse in the noise",
+   "text": "Astrometrics found a periodic radio pulse hiding under the pulsar chatter: a sharp burst every 11 minutes 40 seconds from a bearing near the far north-east. It is too regular for a star and too slow for a pulsar. The Kithara records have the same pulse. I am calling it the Heartbeat, and the name is already on the whiteboard.",
+   "room": "astro"
+  },
+  {
+   "stardate": "41066.5",
+   "role": "communications",
+   "author": "Lt. Jun Park",
+   "title": "Not a natural signal",
+   "text": "I ran the pulse through every filter we have. It carries a faint second layer: a repeated string of twelve prime numbers. The Concord archive and the Collegium both say they have never seen it before. I did not tell the mess hall; I told the captain.",
+   "room": "comms"
+  },
+  {
+   "stardate": "41079.9",
+   "role": "security chief",
+   "author": "Cmdr. Tomas Reyes",
+   "title": "Armory and brig",
+   "text": "Armory inventoried and locked. The brig has been empty since departure and the cells hold spare mattresses. Doors to both are on the red alert list. I would like the crew to hold a drill in the first month at the stair towers so that nobody learns the way during an emergency.",
+   "room": "secoff"
+  },
+  {
+   "stardate": "41090.2",
+   "role": "captain",
+   "author": "Capt. Imara Teague",
+   "title": "Secondary objective",
+   "text": "Command signs off: the Heartbeat is added to the charter as a secondary objective. We keep to the survey plan, but every jump will bend a little toward the north-east. I told the crew in the mess over breakfast; they asked more questions than the Assembly did.",
+   "room": "mess"
+  },
+  {
+   "stardate": "41104.0",
+   "role": "chief engineer",
+   "author": "Ch. Eng. Dov Ashkenazi",
+   "title": "Sarrow coolant swap",
+   "text": "At Sarrow we swapped the coolant and took twenty tonnes of reaction ice. Coil C runs two kelvin warmer than the rest and I do not know why. The power distribution room is quiet; the battery bank passed its endurance test at 12.4 megawatt-hours.",
+   "room": "aux"
+  },
+  {
+   "stardate": "41117.3",
+   "role": "hydroponics",
+   "author": "Spec. Wren Takahashi",
+   "title": "Pump B and the lettuce",
+   "text": "Pump B failed overnight and the lettuce bolted. The garden is at 14 kilograms a day without it. Shop made a replacement impeller from spares, fabricator time two hours; the new part is whiter than the old one and looks smug about it.",
+   "room": "hydro"
+  },
+  {
+   "stardate": "41125.8",
+   "role": "medical officer",
+   "author": "Dr. Amara Lindqvist",
+   "title": "Sleep survey",
+   "text": "Eleven crew report the same restless sleep and a shared dream of a long dock with no ship in it. All eleven also work the astrometrics watch. Nothing is wrong with them. I am not saying the pulse can reach into a dream; I am saying I have the list.",
+   "room": "medbay"
+  },
+  {
+   "stardate": "41139.6",
+   "role": "helm",
+   "author": "Lt. Ngozi Adebayo",
+   "title": "Kithara",
+   "text": "Kithara is beautiful from orbit: twelve dishes on a ring and an ocean world below. The Collegium astronomers shared eleven years of the Heartbeat and a triangulation: the source lies 48 light-years out at the edge of the Veil. We copied everything into the ship's computer.",
+   "room": "bridge"
+  },
+  {
+   "stardate": "41150.0",
+   "role": "science officer",
+   "author": "Lt. Cdr. Anselm Okoro",
+   "title": "The pulse reacts",
+   "text": "The pulse changes shape when we change course. Not much, but it is real. At Kithara the burst was a clean square; at Halcyon the edges are rounded. It behaves like a lighthouse that is learning where the ship is. The spectrograph in the science lab agrees with astrometrics.",
+   "room": "sci"
+  },
+  {
+   "stardate": "41158.2",
+   "role": "security chief",
+   "author": "Cmdr. Tomas Reyes",
+   "title": "A shadow at the gate",
+   "text": "Cameras and sensors both show a dark ship holding a long way off while the shuttles worked the relay buoy. No hail, no transponder. The Compact flies no-transponder scouts; I would put money on them. The hangar force field is up and I want the second shuttle on standby.",
+   "room": "secoff"
+  },
+  {
+   "stardate": "41170.4",
+   "role": "quartermaster",
+   "author": "Qm. Lio Marchetti",
+   "title": "Rations",
+   "text": "We have 41 days of oxygen reserve and 120 days of fresh stores because the garden is pulling its weight. I have asked the galley to make soup on the cold days. Nobody has complained about the vending machines yet, which means they are not using them.",
+   "room": "galley"
+  },
+  {
+   "stardate": "41181.9",
+   "role": "captain",
+   "author": "Capt. Imara Teague",
+   "title": "Wardroom",
+   "text": "Held the officers' conference in the wardroom. Opinions: the engineers want to go home, the scientists want to go faster, the security chief wants the armory open. Nobody wants to be first through the Veil. I said we will decide at Halcyon, with the data.",
+   "room": "conf"
+  },
+  {
+   "stardate": "41190.3",
+   "role": "chief engineer",
+   "author": "Ch. Eng. Dov Ashkenazi",
+   "title": "The core breathes",
+   "text": "Core load oscillates with a period of 11 minutes 40 seconds. I checked it three times, then asked the computer core to check it. The fusion reactor is pulling the Heartbeat through its power electronics, a few parts per million, but it is there. Warp harmonics lock to it too.",
+   "room": "core"
+  },
+  {
+   "stardate": "41198.7",
+   "role": "flight deck chief",
+   "author": "Chief Petty Officer Mara Ilves",
+   "title": "Relay buoy",
+   "text": "Shuttle One reached the old relay buoy at Halcyon. It is dead, a century old, but its housing carries an engraved sequence of dots: the same twelve primes as the pulse. Somebody engraved it before the Concord existed. Both shuttles are back in the hangar, field on, bay door cycled.",
+   "room": "hangar"
+  },
+  {
+   "stardate": "41207.1",
+   "role": "communications",
+   "author": "Lt. Jun Park",
+   "title": "A schedule",
+   "text": "The prime string is not a message, it is a timetable: the pulse is a ferry schedule, with a column of sector coordinates under it. The coordinates all lie on one line through the Veil. A ferry for what, I do not know. The Kithara observatory sent confirmation and a lot of excitement.",
+   "room": "comms"
+  },
+  {
+   "stardate": "41213.5",
+   "role": "science officer",
+   "author": "Lt. Cdr. Anselm Okoro",
+   "title": "The countdown",
+   "text": "The period is getting shorter: 11:40, then 11:12, then 10:31. Extrapolated, the burst rate reaches continuous in about 280 days. I do not know if a continuous signal is a call, a warning or a door. Please do not tell anyone I said door.",
+   "room": "astro"
+  },
+  {
+   "stardate": "41221.0",
+   "role": "medical officer",
+   "author": "Dr. Amara Lindqvist",
+   "title": "The dream stops",
+   "text": "The eleven sleepers dream no more after the captain had the astrometrics watch change over; their sleep is normal and nobody is afraid. The dock in the dream was empty because the dock was waiting for us. That is a ridiculous sentence and I am leaving it in.",
+   "room": "medbay"
+  },
+  {
+   "stardate": "41226.8",
+   "role": "captain",
+   "author": "Capt. Imara Teague",
+   "title": "The Compact objects",
+   "text": "A formal message from the Korvath Compact asks us to stay out of the Veil. Concord Survey Command replies that the charter stands. I read both to the bridge crew and then asked for the course to Ghalt, where we can buy a permit and a few more days of thought.",
+   "room": "ready"
+  },
+  {
+   "stardate": "41230.0",
+   "role": "helm",
+   "author": "Lt. Ngozi Adebayo",
+   "title": "Plotting the Veil",
+   "text": "Plotted three routes through the dust. The Veil lane is hazard 3 on the charts; sensors lose range, warp coils run hot and the lane is thin and short on room. I prefer the Ghalt route even though it is longer. I would like the second shuttle to scout ahead.",
+   "room": "bridge"
+  },
+  {
+   "stardate": "41232.2",
+   "role": "hydroponics",
+   "author": "Spec. Wren Takahashi",
+   "title": "Spirals",
+   "text": "The new seed batch from Kithara grows in spirals instead of rows. The same pump, the same light. I measured it: the spiral turns once every 11 minutes 40 seconds in the time-lapse. The lettuce is also delicious, which is the only normal thing here.",
+   "room": "hydro"
+  },
+  {
+   "stardate": "41233.6",
+   "role": "security chief",
+   "author": "Cmdr. Tomas Reyes",
+   "title": "Lockdown drill",
+   "text": "Ran a lockdown drill in all decks, the armory and brig sealed, stair towers open as designed. Doors responded in 2.1 seconds. The crew moved well; the dark ship has not been seen since Halcyon, which worries me more than seeing it.",
+   "room": "secoff"
+  },
+  {
+   "stardate": "41234.5",
+   "role": "science officer",
+   "author": "Lt. Cdr. Anselm Okoro",
+   "title": "Six minutes",
+   "text": "The Heartbeat now repeats every six minutes, down from eleven. It has also started to carry something new under the primes: a short phrase, again and again, that the computer says is a direction and a name. The name is ours. It says Vesper Lantern. I have asked the captain to come to astrometrics.",
+   "room": "astro"
+  }
+ ],
+ "datapads": [
+  {
+   "id": "founding",
+   "title": "The Founding of the Concord",
+   "text": "In CY 2142 four home systems, tired of competing lane tolls, signed the Meridian Accord: open lanes, a shared chart office and a Survey Service whose ships answer to the Assembly and nobody else. The first Assembly met in a repurposed freight hangar at Lantern Hill and wrote the Accord on paper, so that nobody could say it had been overwritten."
+  },
+  {
+   "id": "lane_courtesy",
+   "title": "Lane Courtesy",
+   "text": "Lane law is short. Keep right. Hail at the gate. Do not sit in the lane's throat. Give way to anything that is slower or on fire. A ship that breaks lane courtesy at Ghalt pays the toll twice and apologises in public. The Free Ports add a fifth rule: tip the tugs."
+  },
+  {
+   "id": "lighthouse_rumours",
+   "title": "Lighthouse Rumours",
+   "text": "Crew rumours about the Lighthouse, in order of popularity: it is a navigation beacon; it is a trap; it is a tomb; it is a lighthouse. A cynical midshipman wrote that the real rumour is that nobody has ever gone there and come back with an opinion."
+  },
+  {
+   "id": "wayfinder",
+   "title": "The Wayfinder Class",
+   "text": "Six Wayfinder cruisers were built between 2288 and 2297 at Ring Dock 4. They have a 64-person crew, three decks, a stern hangar for two shuttles and an unusually large hydroponics garden. The bridge overhangs the bow so that the helm can see the lane ahead; engineers still say the view is wasted."
+  },
+  {
+   "id": "korvath_customs",
+   "title": "Korvath Reach Customs",
+   "text": "The Compact trades in iron, fuel and favours. A permit from Ghalt costs forty credits and a signed promise not to survey the veins. A visitor who asks about the veins anyway is invited to a long dinner. Eat the soup; it is excellent."
+  },
+  {
+   "id": "garden_notes",
+   "title": "Notes from the Garden",
+   "text": "Hydroponics runs on a 16-hour light cycle with a red-heavy spectrum for fruit and a blue-heavy one for leaf. Every bed has a name chosen by the last person to harvest it. Bed 3 is called Gerald. Nobody knows why."
+  },
+  {
+   "id": "quiet_years",
+   "title": "The Quiet Years",
+   "text": "For eleven years after CY 2171 the northern subspace relays went silent one by one. Expeditions turned back, the frontier froze, and the Collegium began to keep its own copy of every chart. The cause was never found; the relays woke up in 2182 with no explanation."
+  },
+  {
+   "id": "stardates",
+   "title": "A Short Guide to Stardates",
+   "text": "Ship stardates count one unit per ship day; the digits after the point are tenths of a day. Mission day equals stardate minus 41000. The chart office keeps its own calendar in Concord years; do not confuse them in a log or you will be asked, politely, to explain."
+  },
+  {
+   "id": "etiquette",
+   "title": "Shipboard Etiquette",
+   "text": "Eat in the mess. Sleep in your cabin. Ask before you open a hatch that is not yours. When a door is locked it is locked for a reason, and it will open again when someone with the right to open it says so. Nothing in the galley is secret, but the soup is."
+  },
+  {
+   "id": "orrery_charts",
+   "title": "The Orrery Charts",
+   "text": "The Collegium's Great Atlas has 41,000 pages and a single rule: no page is final. Every chart carries an uncertainty in light-years and the name of the person who last corrected it. Kithara's chart of the Heartbeat has seven names on it."
+  },
+  {
+   "id": "ferrymen",
+   "title": "The Ferrymen Fragment",
+   "text": "A dealer at Cinder once sold a metal tag engraved with twelve dots and a line of text nobody could read. The tag, he said, came from a ship that traded along a line of stars before the Concord existed. He called the ship's owners the Ferrymen, and when he was asked what they ferried, he said: the lost."
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Meridian Concord",
+   "text": "The federation of eleven systems around Tessara that fields the Survey Service."
+  },
+  {
+   "term": "Survey Service",
+   "text": "The Concord's exploration branch: charts lanes, makes first contact, keeps the peace on the frontier."
+  },
+  {
+   "term": "Charter",
+   "text": "A ship's mission order. Charter 7 covers four years of the Veil frontier."
+  },
+  {
+   "term": "Stardate",
+   "text": "Ship day count, one unit per day; mission day is stardate minus 41000."
+  },
+  {
+   "term": "Warp factor",
+   "text": "Dimensionless FTL speed setting; cruise is warp 5, top is warp 8."
+  },
+  {
+   "term": "ly",
+   "text": "Light-year, about 9.46 trillion kilometres."
+  },
+  {
+   "term": "Lane",
+   "text": "A charted jump route between two systems with a distance and a hazard rating."
+  },
+  {
+   "term": "Hazard rating",
+   "text": "0 (open road) to 5 (do not enter): dust, radiation, patrols and bad charts all count."
+  },
+  {
+   "term": "Heartbeat",
+   "text": "The repeating radio pulse that comes from the Lighthouse, first logged at Kithara in 2261."
+  },
+  {
+   "term": "The Lamp",
+   "text": "The ring of ancient machinery around the Lighthouse neutron star."
+  },
+  {
+   "term": "Ring Dock",
+   "text": "An orbital shipyard of Tessara; Dock 4 built Vesper Lantern."
+  },
+  {
+   "term": "Wayfinder class",
+   "text": "Concord deep survey cruiser class: 64 crew, three decks, stern hangar."
+  },
+  {
+   "term": "Orrery Collegium",
+   "text": "The academic league of observatory worlds that keeps the Great Atlas."
+  },
+  {
+   "term": "Free Ports",
+   "text": "Neutral trade stations of the Ashfall guilds."
+  },
+  {
+   "term": "Compact",
+   "text": "Short for the Korvath Reach Compact."
+  },
+  {
+   "term": "Veil",
+   "text": "The dust nebula around a young blue star; sensor and warp-field hazard."
+  },
+  {
+   "term": "Bio-bed",
+   "text": "Medical bed with built-in vitals monitoring and scanner."
+  },
+  {
+   "term": "Astrometrics",
+   "text": "The ship's astronomical measurement room on Deck 1."
+  },
+  {
+   "term": "Credits (cr)",
+   "text": "Concord money; one credit buys a cup of tea on Anchorage."
+  }
+ ]
+}
