@@ -484,7 +484,8 @@ def cameras(S):
     S.cameras = []
     order = ["bridge", "corF1", "lounge", "conf", "astro", "capt", "corF2", "mess", "galley", "medbay", "sci", "hydro", "brig", "armory",
              "rec", "lobby2", "eng", "core", "life", "cargo", "airlock", "hangar", "towerA2", "shop", "aux",
-             "starcart", "theatre", "wardroom", "library", "arbor", "observ", "flag"]
+             "starcart", "theatre", "wardroom", "library", "arbor", "observ", "flag",
+             "antimatter", "provisions", "water", "waste", "fab", "auxctl", "hold", "drone"]
     n = 0
     for rid in order:
         room = S.rooms.get(rid)

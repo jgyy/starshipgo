@@ -108,7 +108,7 @@ ROOM = {
               "labbench", "analyzer", "rack"},
     "waste": {"watertank", "tank", "scrubber", "turbine", "cylinder", "console", "display", "terminal", "engtool", "toolbox",
               "storagebin", "barrel", "cabinet", "locker", "desk", "chair", "seat", "generator", "capacitor", "shelving", "coil",
-              "loader", "crate", "pallet"},
+              "loader", "crate", "pallet", "suitrack"},
     "fab": {"engtool", "storagebin", "shelving", "locker", "cabinet", "table", "terminal", "desk", "chair", "cylinder", "barrel",
             "toolbox", "hangartool", "loader", "display", "tank", "generator", "crate", "capacitor", "seat", "rack", "bench", "pallet",
             "nozzle", "turbine", "coil", "console", "analyzer", "labbench", "particle", "holo"},
