@@ -1,7 +1,7 @@
 extends SceneTree
 ## Walks the player up and down both stair towers with simulated input:
 ##   godot --headless --path godot -s res://tests/stair_test.gd
-## Fails if the player cannot climb from Deck 3 to Deck 1 and back, or falls through a hole.
+## Fails if the player cannot climb from Deck 4 (hold) to Deck 0 (sky) and back, or falls through a hole.
 
 var b: ShipBuilder
 var p: CharacterBody3D
@@ -18,9 +18,12 @@ func _run() -> void:
 	b.build()
 	p = load("res://scripts/player.gd").new()
 	root.add_child(p)
+	var up_order := ShipBuilder.deck_order_bottom_to_top(b.ship["decks"])
+	var down_order := up_order.duplicate()
+	down_order.reverse()
 	for st in b.ship["stairs"]:
-		await _climb(st, [3, 2, 1])
-		await _climb(st, [1, 2, 3])
+		await _climb(st, up_order)            # from the bottom deck to the top one
+		await _climb(st, down_order)
 	if failures.is_empty():
 		print("STAIR TEST PASSED")
 		quit(0)

@@ -1,4 +1,4 @@
-"""Every room of every deck must be reachable on foot (player capsule radius 0.30 m) and stay walkable inside.
+"""Every room of every deck must be reachable on foot (player capsule radius 0.32 m, audit.RADIUS) and stay walkable inside.
 
 The flood fill lives in tools/layout/audit.py (rule "walkable" / "unreachable-pocket") so the layout authors and CI use the same code.
 """
@@ -17,6 +17,10 @@ def load(n):
         return json.load(f)
 
 
+# rooms that have one small unreachable pocket (a warning) in the committed layout; a pocket anywhere else, or a second one, fails
+KNOWN_POCKET_ROOMS = {"airlock", "cabinB", "life"}
+
+
 class WalkTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -30,7 +34,9 @@ class WalkTests(unittest.TestCase):
 
     def test_no_unreachable_pockets(self):
         pockets = [v for v in self.v if v["rule"] == "unreachable-pocket"]
-        self.assertLessEqual(len(pockets), 4, "\n".join(f"{v['room']}: {v['msg']}" for v in pockets[:10]))
+        msg = "\n".join(f"{v['room']}: {v['msg']}" for v in pockets[:10])
+        self.assertLessEqual({v["room"] for v in pockets}, KNOWN_POCKET_ROOMS, msg)
+        self.assertEqual(len(pockets), len({v["room"] for v in pockets}), msg)
 
 
 if __name__ == "__main__":

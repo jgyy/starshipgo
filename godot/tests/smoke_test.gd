@@ -7,8 +7,8 @@ func _init() -> void:
 	var b := ShipBuilder.new()
 	root.add_child(b)
 	b.load_data()
-	if b.catalog.size() != 1000:
-		failures.append("catalog has %d models, expected 1000" % b.catalog.size())
+	if b.catalog.size() < 1000:
+		failures.append("catalog has %d models, expected at least 1000" % b.catalog.size())
 	var missing := 0
 	for id in b.catalog:
 		if not ResourceLoader.exists("res://" + b.catalog[id]["file"]):
@@ -28,15 +28,16 @@ func _init() -> void:
 	for d in b.doors:
 		if d.find_child("leaf_l", true, false) == null or d.find_child("leaf_r", true, false) == null:
 			failures.append("door model without leaf_l / leaf_r nodes: " + d.name)
-	if b.stats["stairs"] != 8:
-		failures.append("expected 8 stair flights (2 towers x 2 runs x 2 flights), got %d" % b.stats["stairs"])
+	var want_flights: int = 4 * (b.ship["decks"].size() - 1)
+	if b.stats["stairs"] != want_flights:
+		failures.append("expected %d stair flights (2 towers x runs x 2 flights), got %d" % [want_flights, b.stats["stairs"]])
 	if b.stats["props"] < 600:
 		failures.append("too few props: %d" % b.stats["props"])
 	if b.stats["multimeshes"] >= b.stats["props"]:
 		failures.append("props are not batched (%d multimeshes for %d props)" % [b.stats["multimeshes"], b.stats["props"]])
 	var hull_decks: int = b.ship.get("hull", {}).size()
-	if hull_decks != 3:
-		failures.append("hull outlines missing: %d" % hull_decks)
+	if hull_decks != b.ship["decks"].size():
+		failures.append("hull outlines: %d for %d decks" % [hull_decks, b.ship["decks"].size()])
 	for r in b.ship["rooms"]:
 		if not b.room_nodes.has(r["id"]) or not b.room_content.has(r["id"]):
 			failures.append("room %s was not built" % r["id"])

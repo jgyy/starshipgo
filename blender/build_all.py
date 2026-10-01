@@ -23,7 +23,7 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-TARGET = 1000
+TARGET = 1198   # 1000 original components + 196 food and drink models + 2 deck signs (blender/starship/components/food*.py)
 
 
 def slug(s):
@@ -54,10 +54,38 @@ def plan(families):
 def missing_textures(tex_dir, textures):
     """Every texture file the generators produce that does not exist yet."""
     want = [os.path.join("screens", n + ".png") for n in textures.SCREENS]
-    for n in textures.SURFACES:
+    from starship import textures_ext
+    for n in list(textures.SURFACES) + list(textures_ext.REG):
         want += [os.path.join("surfaces", f"{n}_{k}.png") for k in ("albedo", "normal", "orm")]
+    want.append(os.path.join("surfaces", "index.json"))
+    from starship import textures_decals
+    want += [os.path.join("decals", n + ".png") for n in textures_decals.DECALS]
     want += [os.path.join("sky", "stars.png"), os.path.join("sky", "planet.png")]
     return [w for w in want if not os.path.exists(os.path.join(tex_dir, w))]
+
+
+def food_textures(tex_dir):
+    """Generate the procedural food albedo maps (godot/textures/food/*.jpg) that do not exist yet."""
+    from starship import textures_food
+    todo = textures_food.missing(tex_dir)
+    if todo:
+        print(f"generating {len(todo)} food textures ...")
+        textures_food.make_all(tex_dir, only=set(todo))
+
+
+def make_all_textures(tex_dir, jobs=4, only=""):
+    """Screens (21 + 41 extended), the original + extended PBR surfaces, the sky and the surface index.
+    only: regex - regenerate just the extended surfaces whose name matches (quick iteration)."""
+    from starship import textures, textures_decals, textures_ext
+    if only:
+        rx = re.compile(only)
+        textures_ext.make_ext_surfaces(tex_dir, names=[k for k in textures_ext.REG if rx.search(k)], jobs=jobs)
+        return
+    textures.make_screens(tex_dir)
+    textures.make_surfaces(tex_dir)
+    textures_ext.make_ext_surfaces(tex_dir, jobs=jobs)      # also writes surfaces/index.json
+    textures_decals.make_decals(tex_dir)
+    textures.make_sky(tex_dir)
 
 
 def run_shard(args, shard, nshards):
@@ -78,6 +106,7 @@ def run_shard(args, shard, nshards):
             continue
         fam = it["fam"]
         m = kit.Model(it["id"])
+        m.mount = fam["mount"]
         rng = kit.seeded(it["id"])
         fam["fn"](m, it["i"], it["label"], rng)
         path = os.path.join(out, "models", fam["category"], it["id"] + ".glb")
@@ -126,11 +155,14 @@ def main():
         return
 
     if args.textures:
-        from starship import textures
         print("generating textures ...")
-        textures.make_screens(os.path.join(out, "textures"))
-        textures.make_surfaces(os.path.join(out, "textures"))
-        textures.make_sky(os.path.join(out, "textures"))
+        t0 = time.time()
+        make_all_textures(os.path.join(out, "textures"), args.jobs, args.only)
+        if not args.only:
+            from starship import textures_arch
+            textures_arch.make_arch_textures(os.path.join(out, "textures"))
+        print(f"textures done in {time.time()-t0:.0f}s")
+        food_textures(os.path.join(out, "textures"))
         return
 
     fams = load_families()
@@ -151,9 +183,8 @@ def main():
     tex_dir = os.path.join(out, "textures")
     if missing_textures(tex_dir, textures):
         print("generating textures ...")
-        textures.make_screens(tex_dir)
-        textures.make_surfaces(tex_dir)
-        textures.make_sky(tex_dir)
+        make_all_textures(tex_dir, args.jobs)
+    food_textures(tex_dir)
     t0 = time.time()
     procs = [subprocess.Popen([sys.executable, __file__, "--out", out, "--only", args.only,
                                "--shard", f"{k}/{args.jobs}"]) for k in range(args.jobs)]

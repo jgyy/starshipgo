@@ -32,33 +32,33 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - ASTROMETRICS</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING AFT (+Z)  -  STBD on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING AFT (+Z)  -  STBD on the left</text>
 <clipPath id="clipA"><rect x="96.7" y="56.7" width="230.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="97,63 327,63 327,131 97,131" class="x" fill="#e4e8ed"/>
-<polygon points="107,91.8 131,91.8 131,131 107,131" class="f" fill="#cdfbd3"/>
+<polygon points="106.94,91.74 131.06,91.74 131.06,131 106.94,131" class="f" fill="#c2f3d2"/>
 <polygon points="260.86,106.8 281.16,106.8 281.16,116.2 260.86,116.2" class="f" fill="#fbcdcd"/>
 <polygon points="152.84,106.8 173.14,106.8 173.14,116.2 152.84,116.2" class="f" fill="#fbcdcd"/>
-<polygon points="260.94,106.56 293.08,106.56 293.08,131 260.94,131" class="f" fill="#f7d4bc"/>
-<polygon points="152.92,106.56 185.06,106.56 185.06,131 152.92,131" class="f" fill="#f7d4bc"/>
-<polygon points="300.12,92.28 317.88,92.28 317.88,131 300.12,131" class="f" fill="#fae2cb"/>
-<polygon points="320.02,99.6 324,99.6 324,114.3 320.02,114.3" class="f" fill="#eecafa"/>
-<polygon points="270.78,108.5 283.24,108.5 283.24,131 270.78,131" class="f" fill="#b8bef6"/>
-<polygon points="162.76,108.5 175.22,108.5 175.22,131 162.76,131" class="f" fill="#b8bef6"/>
-<polygon points="321.7,84.84 324,84.84 324,105.16 321.7,105.16" class="f" fill="#ccc6fa"/>
+<polygon points="260.94,106.56 293.08,106.56 293.08,131 260.94,131" class="f" fill="#e3bcf7"/>
+<polygon points="152.92,106.56 185.06,106.56 185.06,131 152.92,131" class="f" fill="#e3bcf7"/>
+<polygon points="300.12,92.28 317.88,92.28 317.88,131 300.12,131" class="f" fill="#cbfafa"/>
+<polygon points="320.02,99.6 324,99.6 324,114.3 320.02,114.3" class="f" fill="#f0bef3"/>
+<polygon points="270.78,108.5 283.24,108.5 283.24,131 270.78,131" class="f" fill="#faeeca"/>
+<polygon points="162.76,108.5 175.22,108.5 175.22,131 162.76,131" class="f" fill="#faeeca"/>
+<polygon points="321.7,84.84 324,84.84 324,105.16 321.7,105.16" class="f" fill="#f2beb9"/>
 <polygon points="156.5,63 178.5,63 178.5,67.4 156.5,67.4" class="dot" fill="none"/>
 <polygon points="254.36,63 258.64,63 258.64,67.64 254.36,67.64" class="dot" fill="none"/>
-<polygon points="215.51,113.8 227.16,113.8 227.16,131 215.51,131" class="f" fill="#d1f2b8"/>
-<polygon points="116.98,97.46 133.02,97.46 133.02,131 116.98,131" class="f" fill="#c1f5b2"/>
-<polygon points="154.46,110.4 172.29,110.4 172.29,130.9 154.46,130.9" class="f" fill="#cff1b5"/>
-<polygon points="205.97,104.78 228.68,104.78 228.68,131 205.97,131" class="f" fill="#cfb3f1"/>
-<polygon points="322.88,75 324,75 324,83 322.88,83" class="f" fill="#c1faf9"/>
-<polygon points="157.67,103.2 198.64,103.2 198.64,131 157.67,131" class="f" fill="#cdb0f0"/>
-<polygon points="244,63 269,63 269,64.24 244,64.24" class="dot" fill="none"/>
+<polygon points="215.51,113.8 227.16,113.8 227.16,131 215.51,131" class="f" fill="#c2f6b3"/>
+<polygon points="116.98,97.46 133.02,97.46 133.02,131 116.98,131" class="f" fill="#c6fac5"/>
+<polygon points="154.46,110.4 172.29,110.4 172.29,130.9 154.46,130.9" class="f" fill="#bff5af"/>
+<polygon points="205.97,104.78 228.68,104.78 228.68,131 205.97,131" class="f" fill="#fac2fa"/>
+<polygon points="322.88,75 324,75 324,83 322.88,83" class="f" fill="#b3e4f1"/>
+<polygon points="157.67,103.2 198.64,103.2 198.64,131 157.67,131" class="f" fill="#fabffa"/>
+<polygon points="250.12,62.98 262.88,62.98 262.88,66.56 250.12,66.56" class="dot" fill="none"/>
 <polygon points="157.9,63 177.1,63 177.1,65.72 157.9,65.72" class="dot" fill="none"/>
-<polygon points="202.04,96.18 215.96,96.18 215.96,131 202.04,131" class="f" fill="#c3adf0"/>
-<polygon points="152.24,103.2 169.74,103.2 169.74,131 152.24,131" class="f" fill="#cbadf0"/>
-<polygon points="132.42,118.08 143.58,118.08 143.58,131 132.42,131" class="f" fill="#c9f0ad"/>
+<polygon points="202.04,96.18 215.96,96.18 215.96,131 202.04,131" class="f" fill="#bcf2f9"/>
+<polygon points="152.24,103.2 169.74,103.2 169.74,131 152.24,131" class="f" fill="#f9bcf9"/>
+<polygon points="132.42,118.08 143.58,118.08 143.58,131 132.42,131" class="f" fill="#b8f4a6"/>
 <polygon points="97,131 327,131 327,137 97,137" class="n" fill="url(#hSlab)"/>
 <polygon points="97,57 327,57 327,63 97,63" class="n" fill="url(#hSlab)"/>
 <polygon points="97,113 100,113 100,131 97,131" class="n" fill="url(#hHull)"/>
@@ -67,15 +67,15 @@
 <polygon points="96.6,113 100.4,113 100.4,114.2 96.6,114.2" class="f" fill="#777"/>
 <polygon points="96.6,75.8 100.4,75.8 100.4,77 96.6,77" class="f" fill="#777"/>
 <polygon points="324,63 327,63 327,75.8 324,75.8" class="n" fill="#1c1c1c"/>
-<polygon points="202.04,96.18 215.96,96.18 215.96,131 202.04,131" class="m" fill="#a787e9"/>
-<polygon points="152.24,103.2 169.74,103.2 169.74,131 152.24,131" class="m" fill="#b387e9"/>
-<polygon points="132.42,118.08 143.58,118.08 143.58,131 132.42,131" class="m" fill="#b1e987"/>
-<polygon points="157.9,63 177.1,63 177.1,65.72 157.9,65.72" class="m" fill="#d87def"/>
-<polygon points="244,63 269,63 269,64.24 244,64.24" class="m" fill="#d87def"/>
+<polygon points="202.04,96.18 215.96,96.18 215.96,131 202.04,131" class="m" fill="#9eecf7"/>
+<polygon points="152.24,103.2 169.74,103.2 169.74,131 152.24,131" class="m" fill="#f79ef7"/>
+<polygon points="132.42,118.08 143.58,118.08 143.58,131 132.42,131" class="m" fill="#97ef7d"/>
+<polygon points="250.12,62.98 262.88,62.98 262.88,66.56 250.12,66.56" class="m" fill="#bff79e"/>
+<polygon points="157.9,63 177.1,63 177.1,65.72 157.9,65.72" class="m" fill="#bff79e"/>
 </g>
-<text x="322.01" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="322.85" y="95.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1800</text>
-<text x="323.44" y="79.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2600</text>
+<text x="322.01" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="322.85" y="95.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1800</text>
+<text x="323.44" y="79.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2600</text>
 <text x="97" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="327" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="333" y1="137" x2="333" y2="57" class="d"/>
@@ -114,7 +114,7 @@
 <line x1="97" y1="138" x2="97" y2="144.2" class="d"/>
 <line x1="327" y1="138" x2="327" y2="144.2" class="d"/>
 <text x="212" y="142.3" font-size="2" class="t" text-anchor="middle">11500</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -221,27 +221,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Astrometrics - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -6.50 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -6.50 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-astro-ST</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 1</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">AM</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Astrometrics</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Astrometrics</text>
 </svg>

@@ -18,6 +18,7 @@ var _near := 0
 var _snd: AudioStreamPlayer3D
 
 func setup() -> void:
+	PropMaterials.apply_tree(self)               # textured door materials (prop_materials.gd)
 	_l = find_child("leaf_l", true, false) as Node3D
 	_r = find_child("leaf_r", true, false) as Node3D
 	if _l:
@@ -92,7 +93,38 @@ func _on_exit(_b: Node3D) -> void:
 	if _near == 0:
 		request(false)
 
+## ---- security lock (security app / computer "lock" command): a locked door stays shut and denies with a flash
+var locked := false
+var _deny_light: OmniLight3D
+
+func set_locked(v: bool) -> void:
+	locked = v
+	if v:
+		request(false)
+	elif _near > 0:
+		request(true)
+
+func _deny() -> void:
+	if not is_inside_tree():
+		return
+	_snd.pitch_scale = 0.5
+	_snd.play()
+	if _deny_light == null:
+		_deny_light = OmniLight3D.new()
+		_deny_light.light_color = Color(1.0, 0.1, 0.05)
+		_deny_light.omni_range = 4.0
+		_deny_light.position = Vector3(0, 2.2, 0)
+		add_child(_deny_light)
+	_deny_light.light_energy = 3.0
+	_deny_light.visible = true
+	var tw := create_tween()
+	tw.tween_property(_deny_light, "light_energy", 0.0, 0.5)
+	tw.tween_callback(func() -> void: _deny_light.visible = false)
+
 func request(open: bool) -> void:
+	if open and locked:
+		_deny()
+		open = false
 	if (1.0 if open else 0.0) != _target and is_inside_tree():
 		_snd.pitch_scale = randf_range(0.95, 1.05)
 		_snd.play()

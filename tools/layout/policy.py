@@ -80,12 +80,107 @@ ROOM = {
     "hangar": {"craft", "hangartool", "loader", "crate", "pallet", "barrel", "cylinder", "shelving", "storagebin", "forcefield",
                "engtool", "terminal", "console", "display", "nozzle", "tank", "suitrack", "locker", "toolbox", "cabinet",
                "generator", "turbine", "capacitor", "desk", "chair", "seat", "antenna", "medsupply", "coil"},
+    # ---- deck 0 (sky deck)
+    "starcart": {"holo", "console", "seat", "display", "telescope", "terminal", "desk", "chair", "antenna", "rack", "sciinstrument",
+                 "commsunit", "plant", "lamp", "router", "analyzer", "storage", "bench", "couch", "table", "tableware", "cabinet",
+                 "shelving", "railing"},
+    "theatre": {"seat", "chair", "display", "holo", "terminal", "console", "desk", "table", "bench", "lamp", "plant", "couch",
+                "tableware", "galley", "cabinet", "commsunit", "shelving"},
+    "wardroom": {"table", "chair", "couch", "bench", "tableware", "galley", "vending", "plant", "lamp", "display", "holo", "terminal",
+                 "cabinet", "shelving", "telescope", "desk", "locker"},
+    "library": {"shelving", "table", "chair", "desk", "couch", "lamp", "plant", "terminal", "display", "storage", "cabinet", "bench",
+                "holo", "tableware", "seat", "telescope", "locker"},
+    "arbor": {"planter", "plant", "watertank", "tank", "bench", "table", "chair", "lamp", "display", "terminal", "tableware", "couch",
+              "scrubber", "engtool", "storagebin", "cabinet", "shelving", "specimen", "microscope", "labbench", "galley", "barrel"},
+    "observ": {"telescope", "console", "seat", "display", "holo", "terminal", "desk", "chair", "antenna", "sciinstrument", "analyzer",
+               "rack", "lamp", "plant", "couch", "bench", "shelving", "cabinet", "storage", "router", "commsunit", "labbench", "table"},
+    "flag": {"bed", "locker", "desk", "chair", "couch", "table", "tableware", "lamp", "plant", "display", "holo", "galley", "shelving",
+             "terminal", "cabinet", "bench", "seat", "telescope", "vending"},
+    # ---- deck 4 (hold deck)
+    "antimatter": {"reactor", "coil", "capacitor", "generator", "tank", "turbine", "console", "display", "terminal", "engtool",
+                   "toolbox", "storagebin", "cylinder", "particle", "cabinet", "barrel", "rack", "cryo", "nozzle", "seat", "desk",
+                   "chair", "locker", "forcefield", "shelving", "suitrack"},
+    "provisions": {"crate", "pallet", "barrel", "loader", "shelving", "storagebin", "cylinder", "tank", "cabinet", "locker", "terminal",
+                   "display", "console", "desk", "chair", "seat", "cryo", "galley", "tableware", "watertank", "forcefield", "toolbox",
+                   "engtool", "planter"},
+    "water": {"watertank", "tank", "scrubber", "turbine", "cylinder", "console", "display", "terminal", "engtool", "toolbox",
+              "storagebin", "barrel", "cabinet", "locker", "desk", "chair", "seat", "generator", "capacitor", "shelving", "coil",
+              "labbench", "analyzer", "rack"},
+    "waste": {"watertank", "tank", "scrubber", "turbine", "cylinder", "console", "display", "terminal", "engtool", "toolbox",
+              "storagebin", "barrel", "cabinet", "locker", "desk", "chair", "seat", "generator", "capacitor", "shelving", "coil",
+              "loader", "crate", "pallet", "suitrack"},
+    "fab": {"engtool", "storagebin", "shelving", "locker", "cabinet", "table", "terminal", "desk", "chair", "cylinder", "barrel",
+            "toolbox", "hangartool", "loader", "display", "tank", "generator", "crate", "capacitor", "seat", "rack", "bench", "pallet",
+            "nozzle", "turbine", "coil", "console", "analyzer", "labbench", "particle", "holo"},
+    "auxctl": {"console", "seat", "display", "terminal", "holo", "desk", "chair", "commsunit", "rack", "router", "locker", "cabinet",
+               "table", "engtool", "plant", "lamp", "capacitor", "storage", "tank", "suitrack", "tableware", "galley", "antenna"},
+    "hold": {"crate", "pallet", "barrel", "loader", "shelving", "storagebin", "cylinder", "hangartool", "terminal", "display", "console",
+             "desk", "chair", "seat", "forcefield", "cabinet", "locker", "toolbox", "tank", "engtool", "suitrack", "watertank",
+             "generator", "capacitor"},
+    "drone": {"craft", "hangartool", "loader", "crate", "pallet", "barrel", "cylinder", "shelving", "storagebin", "engtool", "terminal",
+              "console", "display", "nozzle", "tank", "suitrack", "locker", "toolbox", "cabinet", "generator", "turbine", "capacitor",
+              "desk", "chair", "seat", "antenna", "coil", "rack", "router", "commsunit", "forcefield"},
 }
+
+
+# ------------------------------------------------------------------ food and drink (blender/starship/components/food*.py)
+# Prepared food and drink are table / shelf items; raw produce, harvest crates and hanging produce belong where food is
+# grown, stored or prepared; alcohol only where people may take a drink off duty (wardroom, lounge, captain, galley stores).
+FOOD_PREPARED = {"meal", "bakery", "dessert", "tray", "drink"}
+FOOD_CASUAL = {"can", "bottle"}
+FOOD_PRODUCE = {"fruit", "veg", "deli"}
+FOOD_STORES = {"ration", "harvest", "hanging"}
+FOOD_BAR = {"cocktail", "buffet"}
+_FOOD_ROOMS = {
+    "galley": FOOD_PREPARED | FOOD_CASUAL | FOOD_PRODUCE | FOOD_STORES | {"buffet"},
+    "mess": FOOD_PREPARED | FOOD_CASUAL | FOOD_PRODUCE | {"ration", "buffet"},
+    "wardroom": FOOD_PREPARED | FOOD_CASUAL | FOOD_PRODUCE | FOOD_BAR | {"ration"},
+    "provisions": FOOD_PRODUCE | FOOD_STORES | FOOD_CASUAL | {"drink"},
+    "hydro": {"harvest", "hanging", "fruit", "veg", "drink", "meal", "tray", "bakery", "can"},
+    "lounge": FOOD_CASUAL | {"drink", "dessert", "bakery", "fruit", "deli", "tray", "cocktail", "meal"},
+    "capt": FOOD_PREPARED | FOOD_CASUAL | {"fruit", "deli", "cocktail"},
+    "conf": {"drink", "can", "bottle", "bakery", "fruit", "tray", "dessert"},
+    "ready": {"drink", "can", "bottle", "bakery", "fruit", "tray"},
+    "bridge": {"drink", "can"},
+    "medbay": {"drink", "fruit", "ration", "tray", "meal", "bottle"},
+    "rec": FOOD_CASUAL | {"drink", "bakery", "fruit", "dessert", "tray", "meal", "deli"},
+    "dorm": {"drink", "can", "bottle", "fruit", "ration", "bakery"},
+    "cabinA": {"drink", "can", "bottle", "fruit", "ration", "bakery", "dessert"},
+    "cabinB": {"drink", "can", "bottle", "fruit", "ration", "bakery", "dessert"},
+    "brig": {"tray", "drink", "ration", "fruit", "bakery"},
+    "secoff": {"drink", "can", "bakery", "tray", "meal", "bottle"},
+    "armory": {"drink", "can"},
+    "lobby": {"can", "bottle"},
+    "sci": {"drink", "can", "ration", "fruit"},
+    "astro": {"drink", "can", "ration"},
+    "comms": {"drink", "can"},
+    "eng": {"drink", "can", "ration"},
+    "shop": {"drink", "can", "ration"},
+    "aux": {"drink", "can"},
+    "life": {"drink", "can", "ration"},
+    "core": {"drink", "can"},
+    "airlock": {"ration", "bottle"},
+    "cargo": {"drink", "can", "ration"},
+    "depot": {"ration", "veg", "fruit", "deli", "hanging", "harvest", "bottle", "can"},
+    "hangar": {"drink", "can", "ration"},
+}
+# the two rooms the integrator adds: Wardroom & Bar (crew dept) and Provisions Hold / Cold Store (cargo dept)
+ROOM["wardroom"] = {"table", "bench", "chair", "couch", "display", "holo", "plant", "lamp", "tableware", "galley", "shelving", "cabinet",
+                    "terminal", "vending", "fountain", "telescope", "gym", "seat", "noticeboard"}
+ROOM["provisions"] = {"shelving", "storagebin", "crate", "pallet", "barrel", "cylinder", "cabinet", "locker", "tank", "watertank", "galley", "terminal",
+                      "display", "loader", "rack", "toolbox", "desk", "chair", "forcefield", "medcabinet", "scrubber", "engtool"}
+for _room, _cats in _FOOD_ROOMS.items():
+    ROOM.setdefault(_room, set()).update(_cats)
+
+
+# families the deck 0 / deck 4 recipes need on top of the food sets
+ROOM["provisions"] = set(ROOM.get("provisions", set())) | {"cryo", "locker", "crate", "pallet", "loader", "shelving", "storagebin", "cabinet", "tank", "barrel", "cylinder", "watertank", "forcefield", "terminal", "display", "console", "desk", "chair", "seat", "toolbox", "engtool"}
+ROOM["wardroom"] = set(ROOM.get("wardroom", set())) | {"locker", "table", "chair", "couch", "bench", "tableware", "galley", "vending", "plant", "lamp", "display", "holo", "terminal", "cabinet", "shelving", "telescope", "desk"}
 
 
 def room_key(room_id):
     """Strip the deck digit of circulation rooms (corF2 -> corF, lobby3 -> lobby, towerA1 -> towerA)."""
-    return room_id.rstrip("0123456789") if room_id[-1].isdigit() else room_id
+    return room_id.rstrip("0123456789")
 
 
 def allowed(room_id):
@@ -98,6 +193,21 @@ CATEGORY_INFO = {
     "antenna": ("Antenna / relay", "Sends and receives subspace and radio traffic; mounted where signal paths and cabling are short."),
     "barrel": ("Drum / cylinder store", "Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained."),
     "beacon": ("Alert beacon / emergency lamp", "Gives light and visual or audible warning during alarms and power loss."),
+    "bakery": ("Bread and baked goods", "Fresh bread, pastries and cakes from the galley oven: morale food that fits any table."),
+    "buffet": ("Buffet / display furniture", "Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself."),
+    "can": ("Canned drink", "Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines."),
+    "bottle": ("Bottle / flask", "Water, wine, spirits, oils and flasks in glass, PET and steel containers."),
+    "cocktail": ("Glassware and cocktails", "Bar glasses and mixed drinks for the wardroom, lounge and the captain's table."),
+    "dessert": ("Dessert", "Cakes, ice cream and puddings served after the main meal."),
+    "deli": ("Cheese, charcuterie and dairy", "Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches."),
+    "drink": ("Hot and cold drink", "Coffee, tea, juices, shakes and smoothies at the table."),
+    "fruit": ("Fresh fruit", "Fruit from the hydroponics deck and the cold store."),
+    "hanging": ("Hanging produce", "Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls."),
+    "harvest": ("Hydroponic harvest crate", "Crates of freshly picked crops on their way from the grow beds to the galley."),
+    "meal": ("Plated meal", "Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries."),
+    "ration": ("Space ration", "Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food."),
+    "tray": ("Serving tray / dish", "Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food."),
+    "veg": ("Vegetables", "Fresh vegetables from the grow beds, ready to prepare."),
     "bed": ("Bunk / bed", "Sleeping place for crew off shift."),
     "bench": ("Bench seating", "Fixed seating along walls so the floor stays free for circulation."),
     "bin": ("Waste / recycling bin", "Collects waste for the recycler; a clean ship stays habitable."),

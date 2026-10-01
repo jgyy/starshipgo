@@ -32,30 +32,30 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - MID-SHIP STAIR LOBBY</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING STARBOARD (+X)  -  BOW on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING STARBOARD (+X)  -  BOW on the left</text>
 <clipPath id="clipA"><rect x="175.7" y="56.7" width="72.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="176,63 248,63 248,131 176,131" class="x" fill="#e4e8ed"/>
 <polygon points="180,67 244,67 244,131 180,131" class="n" fill="#fbfbfb"/>
-<polygon points="179,83 180.56,83 180.56,109 179,109" class="f" fill="#dbbbf7"/>
-<polygon points="205,63 219,63 219,65.4 205,65.4" class="dot" fill="none"/>
-<polygon points="244.1,70.5 245,70.5 245,89.5 244.1,89.5" class="f" fill="#c6fafa"/>
-<polygon points="210.28,63 213.7,63 213.7,66.7 210.28,66.7" class="dot" fill="none"/>
-<polygon points="179,103.6 188.2,103.6 188.2,131.2 179,131.2" class="f" fill="#f6d7b3"/>
-<polygon points="179,79 181.08,79 181.08,112.5 179,112.5" class="f" fill="#c9c3fa"/>
-<polygon points="241.02,99.6 245,99.6 245,114.3 241.02,114.3" class="f" fill="#ecc3fa"/>
-<polygon points="202.4,63 221.6,63 221.6,65.72 202.4,65.72" class="dot" fill="none"/>
+<polygon points="179,83 180.56,83 180.56,109 179,109" class="f" fill="#f5f7bb"/>
+<polygon points="204.98,63 219.04,63 219.04,65.4 204.98,65.4" class="dot" fill="none"/>
+<polygon points="244.1,70.5 245,70.5 245,89.5 244.1,89.5" class="f" fill="#b9e6f2"/>
+<polygon points="205.62,62.98 218.38,62.98 218.38,66.56 205.62,66.56" class="dot" fill="none"/>
+<polygon points="179,103.6 188.2,103.6 188.2,131.2 179,131.2" class="f" fill="#d3c6fa"/>
+<polygon points="179,79 181.08,79 181.08,112.5 179,112.5" class="f" fill="#f1bab5"/>
+<polygon points="241.02,99.6 245,99.6 245,114.3 241.02,114.3" class="f" fill="#eeb5f1"/>
+<polygon points="202,63 222,63 222,64.58 202,64.58" class="dot" fill="none"/>
 <polygon points="176,131 248,131 248,137 176,137" class="n" fill="url(#hSlab)"/>
 <polygon points="176,57 248,57 248,63 176,63" class="n" fill="url(#hSlab)"/>
 <polygon points="176,63 179,63 179,67 176,67" class="n" fill="#1c1c1c"/>
 <polygon points="245,63 248,63 248,67 245,67" class="n" fill="#1c1c1c"/>
-<polygon points="202.4,63 221.6,63 221.6,65.72 202.4,65.72" class="m" fill="#d87def"/>
+<polygon points="202,63 222,63 222,64.58 202,64.58" class="m" fill="#bff79e"/>
 </g>
-<text x="183.6" y="113.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">900</text>
-<text x="180.04" y="96.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>
-<text x="243.01" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
-<text x="179.78" y="93.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>
-<text x="244.55" y="80.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2550</text>
+<text x="183.6" y="113.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">900</text>
+<text x="180.04" y="96.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1750</text>
+<text x="243.01" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="179.78" y="93.86" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1750</text>
+<text x="244.55" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
 <text x="176" y="54" font-size="1.8" class="t b">BOW</text>
 <text x="248" y="54" font-size="1.8" class="t b" text-anchor="end">STERN</text>
 <line x1="254" y1="137" x2="254" y2="57" class="d"/>
@@ -106,7 +106,7 @@
 <line x1="176" y1="143.6" x2="176" y2="150.2" class="d"/>
 <line x1="248" y1="143.6" x2="248" y2="150.2" class="d"/>
 <text x="212" y="148.3" font-size="2" class="t" text-anchor="middle">3600</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -213,27 +213,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Mid-ship Stair Lobby - longitudinal section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 0.00 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 0.00 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-lobby3-SL</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 3</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">LB3</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Mid-ship Stair Lobby</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Mid-ship Stair Lobby</text>
 </svg>

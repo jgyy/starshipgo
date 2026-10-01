@@ -34,56 +34,21 @@
 <rect x="13" y="7" width="398" height="194" class="x" fill="none"/>
 <polygon points="80,32 344,32 344,176 80,176" class="none" fill="#edf0f3"/>
 <polygon points="80,32 120,32 120,176 80,176" class="red" fill="url(#hZone)"/>
-<text x="118.4" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
+<text x="118.4" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="158,38 338,38 338,96 158,96" class="dsh" fill="url(#hHole)"/>
 <polygon points="158,112 338,112 338,170 158,170" class="dsh" fill="url(#hHole)"/>
 <polygon points="281.2,38 338,38 338,170 281.2,170" class="dsh" fill="url(#hHole)"/>
 <polygon points="158,38 338,38 338,96 158,96" class="dot" fill="none"/>
 <polygon points="158,112 338,112 338,170 158,170" class="dot" fill="none"/>
 <polygon points="281.2,38 338,38 338,170 281.2,170" class="dot" fill="none"/>
-<polygon points="108,170 96,170 96,162.04 108,162.04" class="f" fill="#df99f7"/>
-<polygon points="106,38 138,38 138,39.8 106,39.8" class="f" fill="#99f7f6"/>
-<polygon points="136,170 108,170 108,168.32 136,168.32" class="f" fill="#99f7f6"/>
-<polygon points="93.48,38 110.52,38 110.52,44.84 93.48,44.84" class="f" fill="#f799eb"/>
-<polygon points="248.8,100.56 271.2,100.56 271.2,107.4 248.8,107.4" class="dot" fill="none"/>
-<polygon points="109.24,91.24 134.76,91.24 134.76,116.76 109.24,116.76" class="dot" fill="none"/>
-<polygon points="-510,38 -622,38 -622,94 -510,94" class="hid" fill="none"/>
-<polygon points="-633.2,114 -521.2,114 -521.2,170 -633.2,170" class="hid" fill="none"/>
+<polygon points="108,170 96,170 96,162.04 108,162.04" class="f" fill="#e281e8"/>
+<polygon points="106,38 138,38 138,39.8 106,39.8" class="f" fill="#81d3e8"/>
+<polygon points="136,170 108,170 108,168.32 136,168.32" class="f" fill="#81d3e8"/>
+<polygon points="93.48,38 110.52,38 110.52,44.84 93.48,44.84" class="f" fill="#81e8d6"/>
+<polygon points="255.72,99.6 264.28,99.6 264.28,108.4 255.72,108.4" class="dot" fill="none"/>
+<polygon points="110.8,100.56 133.2,100.56 133.2,107.4 110.8,107.4" class="dot" fill="none"/>
 <polygon points="158,38 270,38 270,94 158,94" class="hid" fill="none"/>
 <polygon points="281.2,114 169.2,114 169.2,170 281.2,170" class="hid" fill="none"/>
-<polygon points="-633.2,114 -521.2,114 -521.2,170 -633.2,170" class="n" fill="#ffffff" fill-opacity="0.75"/>
-<line x1="-633.2" y1="114" x2="-633.2" y2="170" class="x"/>
-<line x1="-622" y1="114" x2="-622" y2="170" class="x"/>
-<line x1="-610.8" y1="114" x2="-610.8" y2="170" class="x"/>
-<line x1="-599.6" y1="114" x2="-599.6" y2="170" class="x"/>
-<line x1="-588.4" y1="114" x2="-588.4" y2="170" class="x"/>
-<line x1="-577.2" y1="114" x2="-577.2" y2="170" class="x"/>
-<line x1="-566" y1="114" x2="-566" y2="170" class="x"/>
-<line x1="-554.8" y1="114" x2="-554.8" y2="170" class="x"/>
-<line x1="-543.6" y1="114" x2="-543.6" y2="170" class="x"/>
-<line x1="-532.4" y1="114" x2="-532.4" y2="170" class="x"/>
-<line x1="-521.2" y1="114" x2="-521.2" y2="170" class="x"/>
-<line x1="-526.8" y1="142" x2="-616.4" y2="142" class="f"/>
-<polygon points="-616.4,142 -615.16,141.62 -615.16,142.38" class="none" fill="#111"/>
-<text x="-526.8" y="140.8" font-size="1.7" class="t b" text-anchor="middle">DN</text>
-<circle cx="-526.8" cy="142" r="0.5" class="f" fill="#111"/>
-<polygon points="-510,38 -622,38 -622,94 -510,94" class="n" fill="#ffffff" fill-opacity="0.75"/>
-<line x1="-510" y1="38" x2="-510" y2="94" class="x"/>
-<line x1="-521.2" y1="38" x2="-521.2" y2="94" class="x"/>
-<line x1="-532.4" y1="38" x2="-532.4" y2="94" class="x"/>
-<line x1="-543.6" y1="38" x2="-543.6" y2="94" class="x"/>
-<line x1="-554.8" y1="38" x2="-554.8" y2="94" class="x"/>
-<line x1="-566" y1="38" x2="-566" y2="94" class="x"/>
-<line x1="-577.2" y1="38" x2="-577.2" y2="94" class="x"/>
-<line x1="-588.4" y1="38" x2="-588.4" y2="94" class="gg"/>
-<line x1="-599.6" y1="38" x2="-599.6" y2="94" class="gg"/>
-<line x1="-610.8" y1="38" x2="-610.8" y2="94" class="gg"/>
-<line x1="-622" y1="38" x2="-622" y2="94" class="gg"/>
-<polyline points="-583.2,38 -577.45,64.83 -578.65,65.9 -575.75,66.1 -576.95,67.17 -571.2,94" class="f" fill="none"/>
-<line x1="-515.6" y1="66" x2="-605.2" y2="66" class="f"/>
-<polygon points="-605.2,66 -603.96,65.62 -603.96,66.38" class="none" fill="#111"/>
-<text x="-515.6" y="64.8" font-size="1.7" class="t b" text-anchor="middle">UP</text>
-<circle cx="-515.6" cy="66" r="0.5" class="f" fill="#111"/>
 <polygon points="281.2,114 169.2,114 169.2,170 281.2,170" class="n" fill="#ffffff" fill-opacity="0.75"/>
 <line x1="281.2" y1="114" x2="281.2" y2="170" class="x"/>
 <line x1="270" y1="114" x2="270" y2="170" class="x"/>
@@ -126,14 +91,14 @@
 <circle cx="122" cy="169.16" r="0.4" class="none" fill="#b03030"/>
 <line x1="102.84" y1="28.29" x2="102" y2="41.42" class="x"/>
 <circle cx="102" cy="41.42" r="0.4" class="none" fill="#b03030"/>
-<line x1="76.29" y1="107.51" x2="122" y2="104" class="x"/>
-<circle cx="122" cy="104" r="0.4" class="none" fill="#b03030"/>
+<line x1="76.29" y1="100.49" x2="122" y2="103.98" class="x"/>
+<circle cx="122" cy="103.98" r="0.4" class="none" fill="#b03030"/>
 <circle cx="125.59" cy="183" r="3.3" class="n" fill="#fff"/>
 <text x="125.59" y="183.6" font-size="1.6" class="t b" text-anchor="middle">SS2-01</text>
 <circle cx="103.05" cy="25" r="3.3" class="n" fill="#fff"/>
 <text x="103.05" y="25.6" font-size="1.6" class="t b" text-anchor="middle">SS2-02</text>
-<circle cx="73" cy="107.76" r="3.3" class="n" fill="#fff"/>
-<text x="73" y="108.36" font-size="1.6" class="t b" text-anchor="middle">SS2-03</text>
+<circle cx="73" cy="100.24" r="3.3" class="n" fill="#fff"/>
+<text x="73" y="100.84" font-size="1.6" class="t b" text-anchor="middle">SS2-03</text>
 <line x1="80" y1="10.2" x2="344" y2="10.2" class="d"/>
 <line x1="79.3" y1="10.9" x2="80.7" y2="9.5" class="m"/>
 <line x1="343.3" y1="10.9" x2="344.7" y2="9.5" class="m"/>
@@ -162,7 +127,7 @@
 <polygon points="400,13.3 402.2,21.4 400,20 397.8,21.4" class="f" fill="#111"/>
 <line x1="400" y1="21.4" x2="400" y2="24.8" class="f"/>
 <text x="400" y="11.3" font-size="2" class="t b" text-anchor="middle">BOW</text>
-<text x="20" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="20" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="20" y="194.6" width="20" height="1.4" class="f" fill="#111"/>
 <rect x="40" y="194.6" width="20" height="1.4" class="f" fill="#fff"/>
 <text x="20" y="198.4" font-size="1.5" class="t" text-anchor="middle">0</text>
@@ -225,16 +190,16 @@
 <text x="151" y="222.55" font-size="1.5" class="t">2</text>
 <rect x="94" y="212" width="63" height="11.6" class="n" fill="none"/>
 <text x="242" y="214" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
-<rect x="242" y="216.2" width="4.2" height="2.4" class="n" fill="#f799eb"/>
+<rect x="242" y="216.2" width="4.2" height="2.4" class="n" fill="#81e8d6"/>
 <text x="247.4" y="218.1" font-size="1.6" class="t">beacon</text>
-<rect x="299" y="216.2" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<rect x="299" y="216.2" width="4.2" height="2.4" class="n" fill="#bcf799"/>
 <text x="304.4" y="218.1" font-size="1.6" class="t">ceilinglight</text>
-<rect x="356" y="216.2" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<rect x="356" y="216.2" width="4.2" height="2.4" class="n" fill="#e281e8"/>
 <text x="361.4" y="218.1" font-size="1.6" class="t">safety</text>
-<rect x="242" y="219.6" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<rect x="242" y="219.6" width="4.2" height="2.4" class="n" fill="#81d3e8"/>
 <text x="247.4" y="221.5" font-size="1.6" class="t">sign</text>
 <text x="15" y="11.2" font-size="2.6" class="t b">PLAN - STARBOARD STAIR TOWER</text>
-<text x="15" y="14.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
+<text x="15" y="14.4" font-size="1.4" class="t" style="fill:#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>
@@ -284,27 +249,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Starboard Stair Tower - plan</text>
 <text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  FLOOR PLAN AT FFL +4.000</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-towerB2-P</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:25</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">SS2</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Starboard Stair Tower</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Starboard Stair Tower</text>
 </svg>

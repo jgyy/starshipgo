@@ -11,6 +11,10 @@ DEPT_SIGN = {   # destination room -> department sign model label
     "life": "dept_engineering", "cargo": "dept_cargo", "depot": "dept_cargo", "hangar": "dept_hangar",
     "airlock": "dept_airlock", "lounge": "dept_quarters", "capt": "dept_quarters", "cabinA": "dept_quarters",
     "cabinB": "dept_quarters", "dorm": "dept_quarters", "rec": "dept_quarters", "hydro": "dept_science",
+    "starcart": "dept_science", "observ": "dept_science", "theatre": "dept_bridge", "wardroom": "dept_mess",
+    "library": "dept_quarters", "arbor": "dept_science", "flag": "dept_quarters", "antimatter": "dept_engineering",
+    "provisions": "dept_cargo", "water": "dept_engineering", "waste": "dept_engineering", "fab": "dept_engineering",
+    "auxctl": "dept_bridge", "hold": "dept_cargo", "drone": "dept_hangar",
 }
 
 

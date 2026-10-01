@@ -1,6 +1,6 @@
 {
  "version": 1,
- "count": 1000,
+ "count": 1198,
  "models": [
   {
    "id": "analyzer_3d_fabricator",
@@ -31,7 +31,7 @@
    ],
    "tris": 1196,
    "top_y": 1.54,
-   "bytes": 72724,
+   "bytes": 72380,
    "family": "sci_analyzer_floor"
   },
   {
@@ -48,8 +48,8 @@
    "solid": false,
    "size": [
     0.516,
-    0.425,
-    0.533
+    0.428,
+    0.536
    ],
    "bounds_min": [
     -0.258,
@@ -58,12 +58,12 @@
    ],
    "bounds_max": [
     0.258,
-    0.425,
-    0.275
+    0.428,
+    0.278
    ],
    "tris": 798,
    "top_y": 0.42,
-   "bytes": 50588,
+   "bytes": 54028,
    "family": "sci_analyzer_table"
   },
   {
@@ -95,7 +95,7 @@
    ],
    "tris": 594,
    "top_y": 1.78,
-   "bytes": 52296,
+   "bytes": 52620,
    "family": "sci_analyzer_floor"
   },
   {
@@ -113,7 +113,7 @@
    "size": [
     0.62,
     0.745,
-    0.521
+    0.523
    ],
    "bounds_min": [
     -0.31,
@@ -123,11 +123,11 @@
    "bounds_max": [
     0.31,
     0.745,
-    0.271
+    0.273
    ],
    "tris": 1032,
    "top_y": 0.44,
-   "bytes": 79668,
+   "bytes": 79740,
    "family": "sci_analyzer_table"
   },
   {
@@ -145,7 +145,7 @@
    "size": [
     1.675,
     1.84,
-    1.0
+    1.003
    ],
    "bounds_min": [
     -0.9,
@@ -155,11 +155,11 @@
    "bounds_max": [
     0.775,
     1.84,
-    0.37
+    0.373
    ],
    "tris": 1060,
    "top_y": 1.22,
-   "bytes": 70116,
+   "bytes": 69036,
    "family": "sci_analyzer_floor"
   },
   {
@@ -177,7 +177,7 @@
    "size": [
     1.048,
     2.15,
-    0.719
+    0.721
    ],
    "bounds_min": [
     -0.45,
@@ -187,11 +187,11 @@
    "bounds_max": [
     0.598,
     2.15,
-    0.419
+    0.421
    ],
    "tris": 706,
    "top_y": 1.56,
-   "bytes": 52168,
+   "bytes": 53852,
    "family": "sci_analyzer_floor"
   },
   {
@@ -209,7 +209,7 @@
    "size": [
     1.015,
     0.47,
-    0.356
+    0.357
    ],
    "bounds_min": [
     -0.36,
@@ -219,11 +219,11 @@
    "bounds_max": [
     0.655,
     0.47,
-    0.196
+    0.197
    ],
    "tris": 420,
    "top_y": 0.24,
-   "bytes": 39940,
+   "bytes": 39388,
    "family": "sci_analyzer_table"
   },
   {
@@ -255,7 +255,7 @@
    ],
    "tris": 774,
    "top_y": 0.18,
-   "bytes": 60160,
+   "bytes": 60704,
    "family": "sci_analyzer_table"
   },
   {
@@ -354,7 +354,7 @@
    ],
    "tris": 1338,
    "top_y": 0.12,
-   "bytes": 84724,
+   "bytes": 86068,
    "family": "comm_antenna_floor"
   },
   {
@@ -486,7 +486,7 @@
    ],
    "tris": 378,
    "top_y": 0.2,
-   "bytes": 34848,
+   "bytes": 34916,
    "family": "comm_antenna_wall"
   },
   {
@@ -589,6 +589,614 @@
    "family": "comm_antenna_floor"
   },
   {
+   "id": "bakery_bagel_poppy",
+   "category": "bakery",
+   "label": "bagel_poppy",
+   "file": "models/bakery/bakery_bagel_poppy.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.104,
+    0.036,
+    0.102
+   ],
+   "bounds_min": [
+    -0.052,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.052,
+    0.036,
+    0.051
+   ],
+   "tris": 2072,
+   "top_y": null,
+   "bytes": 117076,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_baguette",
+   "category": "bakery",
+   "label": "baguette",
+   "file": "models/bakery/bakery_baguette.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.52,
+    0.069,
+    0.056
+   ],
+   "bounds_min": [
+    -0.26,
+    0.0,
+    -0.028
+   ],
+   "bounds_max": [
+    0.26,
+    0.069,
+    0.028
+   ],
+   "tris": 912,
+   "top_y": null,
+   "bytes": 60784,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_bread_loaf",
+   "category": "bakery",
+   "label": "bread_loaf",
+   "file": "models/bakery/bakery_bread_loaf.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.125,
+    0.104
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.052
+   ],
+   "bounds_max": [
+    0.15,
+    0.125,
+    0.052
+   ],
+   "tris": 516,
+   "top_y": null,
+   "bytes": 52004,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_brioche_loaf",
+   "category": "bakery",
+   "label": "brioche_loaf",
+   "file": "models/bakery/bakery_brioche_loaf.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.12,
+    0.13
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.065
+   ],
+   "bounds_max": [
+    0.15,
+    0.12,
+    0.065
+   ],
+   "tris": 1332,
+   "top_y": null,
+   "bytes": 58344,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cake_slice_chocolate",
+   "category": "bakery",
+   "label": "cake_slice_chocolate",
+   "file": "models/bakery/bakery_cake_slice_chocolate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.078,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.078,
+    0.1
+   ],
+   "tris": 958,
+   "top_y": null,
+   "bytes": 38332,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cinnamon_roll",
+   "category": "bakery",
+   "label": "cinnamon_roll",
+   "file": "models/bakery/bakery_cinnamon_roll.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.18,
+    0.037,
+    0.178
+   ],
+   "bounds_min": [
+    -0.09,
+    0.0,
+    -0.089
+   ],
+   "bounds_max": [
+    0.09,
+    0.037,
+    0.089
+   ],
+   "tris": 2900,
+   "top_y": null,
+   "bytes": 103460,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cookies_on_plate",
+   "category": "bakery",
+   "label": "cookies_on_plate",
+   "file": "models/bakery/bakery_cookies_on_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.24,
+    0.039,
+    0.24
+   ],
+   "bounds_min": [
+    -0.12,
+    0.0,
+    -0.12
+   ],
+   "bounds_max": [
+    0.12,
+    0.039,
+    0.12
+   ],
+   "tris": 1632,
+   "top_y": null,
+   "bytes": 81276,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_croissant",
+   "category": "bakery",
+   "label": "croissant",
+   "file": "models/bakery/bakery_croissant.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.061,
+    0.06
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.03
+   ],
+   "bounds_max": [
+    0.079,
+    0.061,
+    0.03
+   ],
+   "tris": 1260,
+   "top_y": null,
+   "bytes": 50424,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cupcake_swirl",
+   "category": "bakery",
+   "label": "cupcake_swirl",
+   "file": "models/bakery/bakery_cupcake_swirl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.084,
+    0.115,
+    0.086
+   ],
+   "bounds_min": [
+    -0.042,
+    0.0,
+    -0.043
+   ],
+   "bounds_max": [
+    0.042,
+    0.115,
+    0.043
+   ],
+   "tris": 1974,
+   "top_y": null,
+   "bytes": 74196,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_donut_chocolate",
+   "category": "bakery",
+   "label": "donut_chocolate",
+   "file": "models/bakery/bakery_donut_chocolate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.102,
+    0.036,
+    0.102
+   ],
+   "bounds_min": [
+    -0.051,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.051,
+    0.036,
+    0.051
+   ],
+   "tris": 2184,
+   "top_y": null,
+   "bytes": 87268,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_donut_pink_sprinkles",
+   "category": "bakery",
+   "label": "donut_pink_sprinkles",
+   "file": "models/bakery/bakery_donut_pink_sprinkles.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.1,
+    0.037,
+    0.1
+   ],
+   "bounds_min": [
+    -0.05,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.05,
+    0.037,
+    0.05
+   ],
+   "tris": 1664,
+   "top_y": null,
+   "bytes": 72644,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_layer_cake_birthday",
+   "category": "bakery",
+   "label": "layer_cake_birthday",
+   "file": "models/bakery/bakery_layer_cake_birthday.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.24,
+    0.253,
+    0.24
+   ],
+   "bounds_min": [
+    -0.12,
+    0.0,
+    -0.12
+   ],
+   "bounds_max": [
+    0.12,
+    0.253,
+    0.12
+   ],
+   "tris": 3008,
+   "top_y": null,
+   "bytes": 147716,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_muffin_choc_chip",
+   "category": "bakery",
+   "label": "muffin_choc_chip",
+   "file": "models/bakery/bakery_muffin_choc_chip.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.106,
+    0.088,
+    0.106
+   ],
+   "bounds_min": [
+    -0.053,
+    0.0,
+    -0.053
+   ],
+   "bounds_max": [
+    0.053,
+    0.088,
+    0.053
+   ],
+   "tris": 624,
+   "top_y": null,
+   "bytes": 56064,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_pancake_stack",
+   "category": "bakery",
+   "label": "pancake_stack",
+   "file": "models/bakery/bakery_pancake_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.26,
+    0.102,
+    0.26
+   ],
+   "bounds_min": [
+    -0.13,
+    0.0,
+    -0.13
+   ],
+   "bounds_max": [
+    0.13,
+    0.102,
+    0.13
+   ],
+   "tris": 2484,
+   "top_y": null,
+   "bytes": 107472,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_pie_apple_lattice",
+   "category": "bakery",
+   "label": "pie_apple_lattice",
+   "file": "models/bakery/bakery_pie_apple_lattice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.242,
+    0.054,
+    0.242
+   ],
+   "bounds_min": [
+    -0.121,
+    0.0,
+    -0.121
+   ],
+   "bounds_max": [
+    0.121,
+    0.054,
+    0.121
+   ],
+   "tris": 1360,
+   "top_y": null,
+   "bytes": 79816,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_pretzel_salted",
+   "category": "bakery",
+   "label": "pretzel_salted",
+   "file": "models/bakery/bakery_pretzel_salted.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.176,
+    0.034,
+    0.176
+   ],
+   "bounds_min": [
+    -0.088,
+    0.0,
+    -0.088
+   ],
+   "bounds_max": [
+    0.088,
+    0.034,
+    0.088
+   ],
+   "tris": 3420,
+   "top_y": null,
+   "bytes": 147244,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_sourdough_boule",
+   "category": "bakery",
+   "label": "sourdough_boule",
+   "file": "models/bakery/bakery_sourdough_boule.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.26,
+    0.157,
+    0.26
+   ],
+   "bounds_min": [
+    -0.13,
+    0.0,
+    -0.13
+   ],
+   "bounds_max": [
+    0.13,
+    0.157,
+    0.13
+   ],
+   "tris": 2268,
+   "top_y": null,
+   "bytes": 136600,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_toast_in_rack",
+   "category": "bakery",
+   "label": "toast_in_rack",
+   "file": "models/bakery/bakery_toast_in_rack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.1,
+    0.105,
+    0.17
+   ],
+   "bounds_min": [
+    -0.05,
+    0.0,
+    -0.085
+   ],
+   "bounds_max": [
+    0.05,
+    0.105,
+    0.085
+   ],
+   "tris": 840,
+   "top_y": null,
+   "bytes": 68920,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_waffle_berries",
+   "category": "bakery",
+   "label": "waffle_berries",
+   "file": "models/bakery/bakery_waffle_berries.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.051,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.051,
+    0.14
+   ],
+   "tris": 2094,
+   "top_y": null,
+   "bytes": 114580,
+   "family": "food_bakery"
+  },
+  {
    "id": "barrel_canister_cluster",
    "category": "barrel",
    "label": "canister_cluster",
@@ -632,7 +1240,7 @@
    "solid": true,
    "size": [
     0.604,
-    0.935,
+    0.938,
     0.604
    ],
    "bounds_min": [
@@ -642,12 +1250,12 @@
    ],
    "bounds_max": [
     0.302,
-    0.935,
+    0.938,
     0.302
    ],
    "tris": 436,
-   "top_y": 0.9,
-   "bytes": 19588,
+   "top_y": 0.92,
+   "bytes": 19648,
    "family": "gen"
   },
   {
@@ -724,7 +1332,7 @@
    ],
    "solid": true,
    "size": [
-    1.105,
+    1.108,
     1.245,
     0.68
    ],
@@ -734,7 +1342,7 @@
     -0.34
    ],
    "bounds_max": [
-    0.55,
+    0.553,
     1.245,
     0.34
    ],
@@ -756,7 +1364,7 @@
    "solid": true,
    "size": [
     0.91,
-    1.35,
+    1.355,
     0.61
    ],
    "bounds_min": [
@@ -766,12 +1374,12 @@
    ],
    "bounds_max": [
     0.455,
-    1.35,
+    1.355,
     0.31
    ],
    "tris": 1624,
-   "top_y": 1.1,
-   "bytes": 65900,
+   "top_y": 1.12,
+   "bytes": 66344,
    "family": "gen"
   },
   {
@@ -849,7 +1457,7 @@
    "solid": true,
    "size": [
     1.004,
-    1.32,
+    1.323,
     1.358
    ],
    "bounds_min": [
@@ -859,12 +1467,12 @@
    ],
    "bounds_max": [
     0.502,
-    1.32,
+    1.323,
     0.755
    ],
    "tris": 732,
    "top_y": 1.24,
-   "bytes": 38256,
+   "bytes": 38316,
    "family": "gen"
   },
   {
@@ -895,7 +1503,7 @@
    ],
    "tris": 1036,
    "top_y": 0.52,
-   "bytes": 53292,
+   "bytes": 54088,
    "family": "gen"
   },
   {
@@ -1004,7 +1612,7 @@
    "solid": true,
    "size": [
     0.604,
-    0.915,
+    0.918,
     0.604
    ],
    "bounds_min": [
@@ -1014,12 +1622,12 @@
    ],
    "bounds_max": [
     0.302,
-    0.915,
+    0.918,
     0.302
    ],
    "tris": 304,
    "top_y": 0.9,
-   "bytes": 14532,
+   "bytes": 14592,
    "family": "gen"
   },
   {
@@ -1035,7 +1643,7 @@
    "solid": true,
    "size": [
     1.737,
-    0.915,
+    0.918,
     0.7
    ],
    "bounds_min": [
@@ -1045,12 +1653,12 @@
    ],
    "bounds_max": [
     1.115,
-    0.915,
+    0.918,
     0.35
    ],
    "tris": 960,
    "top_y": 0.88,
-   "bytes": 35392,
+   "bytes": 35452,
    "family": "gen"
   },
   {
@@ -1190,22 +1798,22 @@
    "solid": false,
    "size": [
     1.69,
-    0.1,
-    0.042
+    0.106,
+    0.045
    ],
    "bounds_min": [
     -0.845,
-    -0.05,
+    -0.053,
     -0.0
    ],
    "bounds_max": [
     0.845,
-    0.05,
-    0.042
+    0.053,
+    0.045
    ],
    "tris": 176,
    "top_y": null,
-   "bytes": 10960,
+   "bytes": 11020,
    "family": "beacon_wall"
   },
   {
@@ -1253,17 +1861,17 @@
    "size": [
     1.32,
     0.14,
-    0.16
+    0.166
    ],
    "bounds_min": [
     -0.66,
     -0.14,
-    -0.08
+    -0.083
    ],
    "bounds_max": [
     0.66,
     0.0,
-    0.08
+    0.083
    ],
    "tris": 152,
    "top_y": 0.0,
@@ -1407,7 +2015,7 @@
    ],
    "solid": true,
    "size": [
-    1.085,
+    1.088,
     1.95,
     2.06
    ],
@@ -1417,13 +2025,13 @@
     -1.03
    ],
    "bounds_max": [
-    0.575,
+    0.578,
     1.95,
     1.03
    ],
    "tris": 752,
    "top_y": 1.48,
-   "bytes": 39240,
+   "bytes": 39236,
    "family": "crew_bed_floor"
   },
   {
@@ -1455,7 +2063,7 @@
    ],
    "tris": 598,
    "top_y": 0.76,
-   "bytes": 41492,
+   "bytes": 41696,
    "family": "crew_bed_floor"
   },
   {
@@ -1504,7 +2112,7 @@
    "solid": true,
    "size": [
     1.1,
-    2.27,
+    2.273,
     2.11
    ],
    "bounds_min": [
@@ -1514,12 +2122,12 @@
    ],
    "bounds_max": [
     0.55,
-    1.2,
+    1.203,
     2.1
    ],
    "tris": 456,
    "top_y": -0.34,
-   "bytes": 27192,
+   "bytes": 27480,
    "family": "crew_bed_wall"
   },
   {
@@ -1551,7 +2159,7 @@
    ],
    "tris": 384,
    "top_y": 0.5,
-   "bytes": 21420,
+   "bytes": 21708,
    "family": "crew_bed_floor"
   },
   {
@@ -1615,7 +2223,7 @@
    ],
    "tris": 634,
    "top_y": 0.72,
-   "bytes": 48280,
+   "bytes": 48692,
    "family": "crew_bed_floor"
   },
   {
@@ -1663,23 +2271,23 @@
    ],
    "solid": true,
    "size": [
-    0.92,
+    0.926,
     0.8,
     2.077
    ],
    "bounds_min": [
-    -0.46,
+    -0.463,
     0.0,
     -1.025
    ],
    "bounds_max": [
-    0.46,
+    0.463,
     0.8,
     1.052
    ],
    "tris": 540,
    "top_y": 0.62,
-   "bytes": 29560,
+   "bytes": 29848,
    "family": "crew_bed_floor"
   },
   {
@@ -1697,12 +2305,12 @@
    "size": [
     1.398,
     1.44,
-    2.64
+    2.643
    ],
    "bounds_min": [
     -0.65,
     0.0,
-    -1.25
+    -1.253
    ],
    "bounds_max": [
     0.748,
@@ -1711,7 +2319,7 @@
    ],
    "tris": 714,
    "top_y": 0.8,
-   "bytes": 47808,
+   "bytes": 47904,
    "family": "crew_bed_floor"
   },
   {
@@ -1728,7 +2336,7 @@
    "solid": true,
    "size": [
     2.423,
-    0.75,
+    0.753,
     0.883
    ],
    "bounds_min": [
@@ -1738,12 +2346,12 @@
    ],
    "bounds_max": [
     1.221,
-    0.75,
+    0.753,
     0.618
    ],
    "tris": 964,
-   "top_y": 0.46,
-   "bytes": 41896,
+   "top_y": 0.48,
+   "bytes": 42340,
    "family": "crew_bench_floor"
   },
   {
@@ -1760,7 +2368,7 @@
    "solid": true,
    "size": [
     0.554,
-    0.488,
+    0.491,
     1.2
    ],
    "bounds_min": [
@@ -1770,12 +2378,12 @@
    ],
    "bounds_max": [
     0.277,
-    0.488,
+    0.491,
     0.6
    ],
    "tris": 368,
    "top_y": 0.48,
-   "bytes": 17188,
+   "bytes": 17248,
    "family": "crew_bench_floor"
   },
   {
@@ -1985,7 +2593,7 @@
    "solid": true,
    "size": [
     0.538,
-    0.775,
+    0.778,
     0.549
    ],
    "bounds_min": [
@@ -1995,12 +2603,12 @@
    ],
    "bounds_max": [
     0.269,
-    0.775,
+    0.778,
     0.28
    ],
    "tris": 880,
    "top_y": 0.78,
-   "bytes": 31440,
+   "bytes": 30540,
    "family": "bin_floor"
   },
   {
@@ -2032,8 +2640,602 @@
    ],
    "tris": 280,
    "top_y": null,
-   "bytes": 15812,
+   "bytes": 15612,
    "family": "bin_wall"
+  },
+  {
+   "id": "bottle_beer_brown_longneck",
+   "category": "bottle",
+   "label": "beer_brown_longneck",
+   "file": "models/bottle/bottle_beer_brown_longneck.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.064,
+    0.256,
+    0.062
+   ],
+   "bounds_min": [
+    -0.032,
+    0.0,
+    -0.031
+   ],
+   "bounds_max": [
+    0.032,
+    0.256,
+    0.031
+   ],
+   "tris": 1094,
+   "top_y": null,
+   "bytes": 46208,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_beer_lager_green",
+   "category": "bottle",
+   "label": "beer_lager_green",
+   "file": "models/bottle/bottle_beer_lager_green.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.23,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.23,
+    0.033
+   ],
+   "tris": 934,
+   "top_y": null,
+   "bytes": 39484,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_champagne_foil",
+   "category": "bottle",
+   "label": "champagne_foil",
+   "file": "models/bottle/bottle_champagne_foil.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.324,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.324,
+    0.04
+   ],
+   "tris": 1108,
+   "top_y": null,
+   "bytes": 60908,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_gin_blue_flask",
+   "category": "bottle",
+   "label": "gin_blue_flask",
+   "file": "models/bottle/bottle_gin_blue_flask.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.082,
+    0.285,
+    0.082
+   ],
+   "bounds_min": [
+    -0.041,
+    0.0,
+    -0.041
+   ],
+   "bounds_max": [
+    0.041,
+    0.285,
+    0.041
+   ],
+   "tris": 970,
+   "top_y": null,
+   "bytes": 35508,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_hip_flask_steel",
+   "category": "bottle",
+   "label": "hip_flask_steel",
+   "file": "models/bottle/bottle_hip_flask_steel.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.11,
+    0.185,
+    0.032
+   ],
+   "bounds_min": [
+    -0.055,
+    0.0,
+    -0.016
+   ],
+   "bounds_max": [
+    0.055,
+    0.185,
+    0.016
+   ],
+   "tris": 200,
+   "top_y": null,
+   "bytes": 7132,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_hot_sauce_bottle",
+   "category": "bottle",
+   "label": "hot_sauce_bottle",
+   "file": "models/bottle/bottle_hot_sauce_bottle.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.054,
+    0.175,
+    0.052
+   ],
+   "bounds_min": [
+    -0.027,
+    0.0,
+    -0.026
+   ],
+   "bounds_max": [
+    0.027,
+    0.175,
+    0.026
+   ],
+   "tris": 750,
+   "top_y": null,
+   "bytes": 31204,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_milk_bottle_glass",
+   "category": "bottle",
+   "label": "milk_bottle_glass",
+   "file": "models/bottle/bottle_milk_bottle_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.07,
+    0.193,
+    0.068
+   ],
+   "bounds_min": [
+    -0.035,
+    0.0,
+    -0.034
+   ],
+   "bounds_max": [
+    0.035,
+    0.193,
+    0.034
+   ],
+   "tris": 1174,
+   "top_y": null,
+   "bytes": 46488,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_olive_oil_cruet",
+   "category": "bottle",
+   "label": "olive_oil_cruet",
+   "file": "models/bottle/bottle_olive_oil_cruet.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.074,
+    0.282,
+    0.074
+   ],
+   "bounds_min": [
+    -0.037,
+    0.0,
+    -0.037
+   ],
+   "bounds_max": [
+    0.037,
+    0.282,
+    0.037
+   ],
+   "tris": 970,
+   "top_y": null,
+   "bytes": 24468,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_sport_bottle_squeeze",
+   "category": "bottle",
+   "label": "sport_bottle_squeeze",
+   "file": "models/bottle/bottle_sport_bottle_squeeze.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.062,
+    0.251,
+    0.062
+   ],
+   "bounds_min": [
+    -0.031,
+    0.0,
+    -0.031
+   ],
+   "bounds_max": [
+    0.031,
+    0.251,
+    0.031
+   ],
+   "tris": 780,
+   "top_y": null,
+   "bytes": 32120,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_thermos_vacuum_flask",
+   "category": "bottle",
+   "label": "thermos_vacuum_flask",
+   "file": "models/bottle/bottle_thermos_vacuum_flask.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.116,
+    0.295,
+    0.082
+   ],
+   "bounds_min": [
+    -0.058,
+    0.0,
+    -0.041
+   ],
+   "bounds_max": [
+    0.058,
+    0.295,
+    0.041
+   ],
+   "tris": 712,
+   "top_y": null,
+   "bytes": 32556,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_water_bottle_500ml",
+   "category": "bottle",
+   "label": "water_bottle_500ml",
+   "file": "models/bottle/bottle_water_bottle_500ml.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.07,
+    0.211,
+    0.07
+   ],
+   "bounds_min": [
+    -0.035,
+    0.0,
+    -0.035
+   ],
+   "bounds_max": [
+    0.035,
+    0.211,
+    0.035
+   ],
+   "tris": 1608,
+   "top_y": null,
+   "bytes": 55856,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_whisky_decanter_square",
+   "category": "bottle",
+   "label": "whisky_decanter_square",
+   "file": "models/bottle/bottle_whisky_decanter_square.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.094,
+    0.23,
+    0.1
+   ],
+   "bounds_min": [
+    -0.047,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.047,
+    0.23,
+    0.05
+   ],
+   "tris": 352,
+   "top_y": null,
+   "bytes": 13824,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_wine_red_bordeaux",
+   "category": "bottle",
+   "label": "wine_red_bordeaux",
+   "file": "models/bottle/bottle_wine_red_bordeaux.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.076,
+    0.325,
+    0.076
+   ],
+   "bounds_min": [
+    -0.038,
+    0.0,
+    -0.038
+   ],
+   "bounds_max": [
+    0.038,
+    0.325,
+    0.038
+   ],
+   "tris": 1224,
+   "top_y": null,
+   "bytes": 41704,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_wine_white_hock",
+   "category": "bottle",
+   "label": "wine_white_hock",
+   "file": "models/bottle/bottle_wine_white_hock.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.072,
+    0.338,
+    0.072
+   ],
+   "bounds_min": [
+    -0.036,
+    0.0,
+    -0.036
+   ],
+   "bounds_max": [
+    0.036,
+    0.338,
+    0.036
+   ],
+   "tris": 1224,
+   "top_y": null,
+   "bytes": 44312,
+   "family": "food_bottle"
+  },
+  {
+   "id": "buffet_bakery_display_stand",
+   "category": "buffet",
+   "label": "bakery_display_stand",
+   "file": "models/buffet/buffet_bakery_display_stand.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    0.94,
+    1.48,
+    0.54
+   ],
+   "bounds_min": [
+    -0.47,
+    0.0,
+    -0.27
+   ],
+   "bounds_max": [
+    0.47,
+    1.48,
+    0.27
+   ],
+   "tris": 5424,
+   "top_y": 1.48,
+   "bytes": 198628,
+   "family": "food_buffet"
+  },
+  {
+   "id": "buffet_chafing_buffet_line",
+   "category": "buffet",
+   "label": "chafing_buffet_line",
+   "file": "models/buffet/buffet_chafing_buffet_line.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    1.96,
+    1.306,
+    0.76
+   ],
+   "bounds_min": [
+    -0.98,
+    0.0,
+    -0.38
+   ],
+   "bounds_max": [
+    0.98,
+    1.306,
+    0.38
+   ],
+   "tris": 1000,
+   "top_y": 0.92,
+   "bytes": 94600,
+   "family": "food_buffet"
+  },
+  {
+   "id": "buffet_dessert_display_case",
+   "category": "buffet",
+   "label": "dessert_display_case",
+   "file": "models/buffet/buffet_dessert_display_case.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    1.2,
+    1.113,
+    0.6
+   ],
+   "bounds_min": [
+    -0.6,
+    0.0,
+    -0.3
+   ],
+   "bounds_max": [
+    0.6,
+    1.113,
+    0.3
+   ],
+   "tris": 3040,
+   "top_y": 1.12,
+   "bytes": 165820,
+   "family": "food_buffet"
+  },
+  {
+   "id": "buffet_fruit_market_stand",
+   "category": "buffet",
+   "label": "fruit_market_stand",
+   "file": "models/buffet/buffet_fruit_market_stand.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    1.2,
+    0.93,
+    0.938
+   ],
+   "bounds_min": [
+    -0.6,
+    0.0,
+    -0.469
+   ],
+   "bounds_max": [
+    0.6,
+    0.93,
+    0.469
+   ],
+   "tris": 6920,
+   "top_y": 0.08,
+   "bytes": 282700,
+   "family": "food_buffet"
   },
   {
    "id": "cabinet_janitor_closet",
@@ -2049,7 +3251,7 @@
    "solid": true,
    "size": [
     0.85,
-    1.955,
+    1.958,
     0.675
    ],
    "bounds_min": [
@@ -2059,12 +3261,12 @@
    ],
    "bounds_max": [
     0.425,
-    1.955,
+    1.958,
     0.35
    ],
    "tris": 364,
    "top_y": 1.9,
-   "bytes": 20564,
+   "bytes": 20624,
    "family": "cabinet_floor"
   },
   {
@@ -2081,7 +3283,7 @@
    "solid": true,
    "size": [
     0.96,
-    1.83,
+    1.833,
     0.58
    ],
    "bounds_min": [
@@ -2091,12 +3293,12 @@
    ],
    "bounds_max": [
     0.48,
-    1.83,
+    1.833,
     0.3
    ],
    "tris": 476,
    "top_y": 1.84,
-   "bytes": 24136,
+   "bytes": 24196,
    "family": "cabinet_floor"
   },
   {
@@ -2177,12 +3379,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.195,
+    0.198,
     0.46
    ],
    "bounds_min": [
     -1.0,
-    -0.195,
+    -0.198,
     -0.23
    ],
    "bounds_max": [
@@ -2192,7 +3394,7 @@
    ],
    "tris": 368,
    "top_y": -0.08,
-   "bytes": 18476,
+   "bytes": 19304,
    "family": "cabletray_ceil"
   },
   {
@@ -2208,23 +3410,23 @@
    ],
    "solid": false,
    "size": [
-    2.0,
-    0.15,
+    2.006,
+    0.153,
     0.36
    ],
    "bounds_min": [
-    -1.0,
-    -0.15,
+    -1.003,
+    -0.153,
     -0.18
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.0,
     0.18
    ],
    "tris": 404,
    "top_y": -0.1,
-   "bytes": 23508,
+   "bytes": 24372,
    "family": "cabletray_ceil"
   },
   {
@@ -2273,12 +3475,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.17,
+    0.173,
     0.46
    ],
    "bounds_min": [
     -1.0,
-    -0.17,
+    -0.173,
     -0.23
    ],
    "bounds_max": [
@@ -2288,7 +3490,7 @@
    ],
    "tris": 412,
    "top_y": -0.12,
-   "bytes": 25644,
+   "bytes": 25704,
    "family": "cabletray_ceil"
   },
   {
@@ -2305,12 +3507,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.19,
+    0.193,
     0.5
    ],
    "bounds_min": [
     -1.0,
-    -0.19,
+    -0.193,
     -0.25
    ],
    "bounds_max": [
@@ -2320,7 +3522,7 @@
    ],
    "tris": 448,
    "top_y": -0.08,
-   "bytes": 25892,
+   "bytes": 25952,
    "family": "cabletray_ceil"
   },
   {
@@ -2508,7 +3710,7 @@
    ],
    "tris": 378,
    "top_y": 2.0,
-   "bytes": 33724,
+   "bytes": 33800,
    "family": "camera_arch"
   },
   {
@@ -2648,12 +3850,12 @@
    "solid": false,
    "size": [
     0.48,
-    1.01,
+    1.013,
     0.48
    ],
    "bounds_min": [
     -0.24,
-    -1.01,
+    -1.013,
     -0.24
    ],
    "bounds_max": [
@@ -2663,7 +3865,7 @@
    ],
    "tris": 1264,
    "top_y": 0.0,
-   "bytes": 39792,
+   "bytes": 39852,
    "family": "camera_ceiling"
   },
   {
@@ -2698,6 +3900,303 @@
    "family": "camera_wall"
   },
   {
+   "id": "can_blue_cooler_tall",
+   "category": "can",
+   "label": "blue_cooler_tall",
+   "file": "models/can/can_blue_cooler_tall.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.169,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.169,
+    0.033
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 50236,
+   "family": "food_can"
+  },
+  {
+   "id": "can_cola",
+   "category": "can",
+   "label": "cola",
+   "file": "models/can/can_cola.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.123,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.123,
+    0.033
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 45948,
+   "family": "food_can"
+  },
+  {
+   "id": "can_cold_brew",
+   "category": "can",
+   "label": "cold_brew",
+   "file": "models/can/can_cold_brew.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.064,
+    0.096,
+    0.064
+   ],
+   "bounds_min": [
+    -0.032,
+    0.0,
+    -0.032
+   ],
+   "bounds_max": [
+    0.032,
+    0.096,
+    0.032
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 50468,
+   "family": "food_can"
+  },
+  {
+   "id": "can_energy_slim",
+   "category": "can",
+   "label": "energy_slim",
+   "file": "models/can/can_energy_slim.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.058,
+    0.136,
+    0.058
+   ],
+   "bounds_min": [
+    -0.029,
+    0.0,
+    -0.029
+   ],
+   "bounds_max": [
+    0.029,
+    0.136,
+    0.029
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 45816,
+   "family": "food_can"
+  },
+  {
+   "id": "can_grape_pop_mini",
+   "category": "can",
+   "label": "grape_pop_mini",
+   "file": "models/can/can_grape_pop_mini.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.052,
+    0.091,
+    0.052
+   ],
+   "bounds_min": [
+    -0.026,
+    0.0,
+    -0.026
+   ],
+   "bounds_max": [
+    0.026,
+    0.091,
+    0.026
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 65296,
+   "family": "food_can"
+  },
+  {
+   "id": "can_lime_fizz",
+   "category": "can",
+   "label": "lime_fizz",
+   "file": "models/can/can_lime_fizz.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.123,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.123,
+    0.033
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 51320,
+   "family": "food_can"
+  },
+  {
+   "id": "can_orange_soda",
+   "category": "can",
+   "label": "orange_soda",
+   "file": "models/can/can_orange_soda.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.07,
+    0.116,
+    0.07
+   ],
+   "bounds_min": [
+    -0.035,
+    0.0,
+    -0.035
+   ],
+   "bounds_max": [
+    0.035,
+    0.116,
+    0.035
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 49528,
+   "family": "food_can"
+  },
+  {
+   "id": "can_sixpack_cola",
+   "category": "can",
+   "label": "sixpack_cola",
+   "file": "models/can/can_sixpack_cola.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.123,
+    0.132
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.066
+   ],
+   "bounds_max": [
+    0.1,
+    0.123,
+    0.066
+   ],
+   "tris": 1200,
+   "top_y": null,
+   "bytes": 62300,
+   "family": "food_can"
+  },
+  {
+   "id": "can_tonic_sleek",
+   "category": "can",
+   "label": "tonic_sleek",
+   "file": "models/can/can_tonic_sleek.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.054,
+    0.147,
+    0.054
+   ],
+   "bounds_min": [
+    -0.027,
+    0.0,
+    -0.027
+   ],
+   "bounds_max": [
+    0.027,
+    0.147,
+    0.027
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 50996,
+   "family": "food_can"
+  },
+  {
    "id": "capacitor_battery_rack",
    "category": "capacitor",
    "label": "Battery Rack",
@@ -2711,12 +4210,12 @@
    "size": [
     1.25,
     1.985,
-    0.624
+    0.627
    ],
    "bounds_min": [
     -0.625,
     0.0,
-    -0.3
+    -0.303
    ],
    "bounds_max": [
     0.625,
@@ -3252,7 +4751,7 @@
    ],
    "tris": 318,
    "top_y": 0.7,
-   "bytes": 31584,
+   "bytes": 33280,
    "family": "gen"
   },
   {
@@ -3397,12 +4896,12 @@
    "solid": false,
    "size": [
     0.638,
-    0.176,
+    0.179,
     0.638
    ],
    "bounds_min": [
     -0.319,
-    -0.175,
+    -0.178,
     -0.319
    ],
    "bounds_max": [
@@ -3412,7 +4911,7 @@
    ],
    "tris": 896,
    "top_y": 0.0,
-   "bytes": 29204,
+   "bytes": 29244,
    "family": "ceilinglight"
   },
   {
@@ -3461,12 +4960,12 @@
    "solid": false,
    "size": [
     1.25,
-    0.062,
+    0.065,
     0.16
    ],
    "bounds_min": [
     -0.625,
-    -0.062,
+    -0.065,
     -0.08
    ],
    "bounds_max": [
@@ -3476,7 +4975,7 @@
    ],
    "tris": 212,
    "top_y": 0.0,
-   "bytes": 11164,
+   "bytes": 11612,
    "family": "ceilinglight"
   },
   {
@@ -3525,12 +5024,12 @@
    "solid": false,
    "size": [
     0.62,
-    0.098,
+    0.101,
     1.26
    ],
    "bounds_min": [
     -0.31,
-    -0.098,
+    -0.101,
     -0.63
    ],
    "bounds_max": [
@@ -3540,7 +5039,7 @@
    ],
    "tris": 216,
    "top_y": 0.0,
-   "bytes": 13200,
+   "bytes": 13644,
    "family": "ceilinglight"
   },
   {
@@ -3749,12 +5248,12 @@
    "solid": false,
    "size": [
     2.46,
-    0.12,
+    0.123,
     0.28
    ],
    "bounds_min": [
     -1.23,
-    -0.12,
+    -0.123,
     -0.14
    ],
    "bounds_max": [
@@ -3764,7 +5263,7 @@
    ],
    "tris": 364,
    "top_y": 0.0,
-   "bytes": 15580,
+   "bytes": 16620,
    "family": "ceilinglight"
   },
   {
@@ -3813,22 +5312,22 @@
    "solid": false,
    "size": [
     1.0,
-    0.132,
-    1.0
+    0.135,
+    1.006
    ],
    "bounds_min": [
     -0.5,
-    -0.132,
-    -0.5
+    -0.135,
+    -0.503
    ],
    "bounds_max": [
     0.5,
     0.0,
-    0.5
+    0.503
    ],
    "tris": 244,
    "top_y": 0.0,
-   "bytes": 14092,
+   "bytes": 14580,
    "family": "ceilingpanel_fam"
   },
   {
@@ -3845,12 +5344,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.14,
+    0.143,
     2.0
    ],
    "bounds_min": [
     -1.0,
-    -0.14,
+    -0.143,
     -1.0
    ],
    "bounds_max": [
@@ -3860,7 +5359,7 @@
    ],
    "tris": 360,
    "top_y": 0.0,
-   "bytes": 17596,
+   "bytes": 18244,
    "family": "ceilingpanel_fam"
   },
   {
@@ -3892,7 +5391,7 @@
    ],
    "tris": 336,
    "top_y": 0.0,
-   "bytes": 17192,
+   "bytes": 17768,
    "family": "ceilingpanel_fam"
   },
   {
@@ -3940,23 +5439,23 @@
    ],
    "solid": false,
    "size": [
-    2.0,
-    0.11,
-    2.0
+    2.006,
+    0.113,
+    2.006
    ],
    "bounds_min": [
-    -1.0,
-    -0.11,
-    -1.0
+    -1.003,
+    -0.113,
+    -1.003
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.0,
-    1.0
+    1.003
    ],
    "tris": 252,
    "top_y": 0.0,
-   "bytes": 16176,
+   "bytes": 16300,
    "family": "ceilingpanel_fam"
   },
   {
@@ -4052,7 +5551,7 @@
    ],
    "tris": 124,
    "top_y": 0.0,
-   "bytes": 8276,
+   "bytes": 8272,
    "family": "ceilingpanel_fam"
   },
   {
@@ -4068,23 +5567,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    0.04,
-    1.0
+    1.006,
+    0.043,
+    1.006
    ],
    "bounds_min": [
-    -0.5,
-    -0.04,
-    -0.5
+    -0.503,
+    -0.043,
+    -0.503
    ],
    "bounds_max": [
-    0.5,
+    0.503,
     0.0,
-    0.5
+    0.503
    ],
    "tris": 768,
    "top_y": 0.0,
-   "bytes": 38308,
+   "bytes": 38808,
    "family": "ceilingpanel_fam"
   },
   {
@@ -4212,7 +5711,7 @@
    ],
    "tris": 408,
    "top_y": 0.0,
-   "bytes": 16040,
+   "bytes": 19116,
    "family": "ceilingpanel_fam"
   },
   {
@@ -4259,7 +5758,7 @@
    "solid": true,
    "size": [
     1.9,
-    1.37,
+    1.373,
     0.8
    ],
    "bounds_min": [
@@ -4269,12 +5768,12 @@
    ],
    "bounds_max": [
     0.95,
-    1.37,
+    1.373,
     0.4
    ],
    "tris": 526,
-   "top_y": 0.78,
-   "bytes": 46492,
+   "top_y": 0.8,
+   "bytes": 48028,
    "family": "cell_module"
   },
   {
@@ -4351,23 +5850,23 @@
    ],
    "solid": true,
    "size": [
-    2.0,
+    2.006,
     1.25,
-    0.56
+    0.563
    ],
    "bounds_min": [
-    -1.0,
+    -1.003,
     0.0,
-    -0.31
+    -0.313
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     1.25,
     0.25
    ],
    "tris": 636,
    "top_y": 0.5,
-   "bytes": 24444,
+   "bytes": 24476,
    "family": "cell_module"
   },
   {
@@ -4413,23 +5912,23 @@
    ],
    "solid": true,
    "size": [
-    2.4,
-    2.6,
+    2.406,
+    2.603,
     0.33
    ],
    "bounds_min": [
-    -1.2,
+    -1.203,
     0.0,
     -0.12
    ],
    "bounds_max": [
-    1.2,
-    2.6,
+    1.203,
+    2.603,
     0.21
    ],
    "tris": 346,
    "top_y": 2.6,
-   "bytes": 28936,
+   "bytes": 31492,
    "family": "cell_module"
   },
   {
@@ -4445,7 +5944,7 @@
    "solid": true,
    "size": [
     0.92,
-    1.9,
+    1.903,
     0.665
    ],
    "bounds_min": [
@@ -4455,12 +5954,12 @@
    ],
    "bounds_max": [
     0.46,
-    1.9,
+    1.903,
     0.405
    ],
    "tris": 244,
    "top_y": 1.9,
-   "bytes": 16392,
+   "bytes": 16452,
    "family": "cell_module"
   },
   {
@@ -4506,23 +6005,23 @@
    ],
    "solid": true,
    "size": [
-    3.0,
-    2.6,
+    3.006,
+    2.603,
     1.935
    ],
    "bounds_min": [
-    -1.5,
+    -1.503,
     0.0,
     -0.585
    ],
    "bounds_max": [
-    1.5,
-    2.6,
+    1.503,
+    2.603,
     1.35
    ],
    "tris": 476,
    "top_y": 0.66,
-   "bytes": 26052,
+   "bytes": 26728,
    "family": "cell_module"
   },
   {
@@ -4602,23 +6101,23 @@
    ],
    "solid": true,
    "size": [
-    0.44,
+    0.446,
     0.928,
-    0.462
+    0.465
    ],
    "bounds_min": [
-    -0.22,
+    -0.223,
     -0.008,
     -0.252
    ],
    "bounds_max": [
-    0.22,
+    0.223,
     0.92,
-    0.21
+    0.213
    ],
    "tris": 240,
    "top_y": 0.46,
-   "bytes": 14580,
+   "bytes": 14584,
    "family": "crew_chair_floor"
   },
   {
@@ -4842,7 +6341,7 @@
    ],
    "tris": 1468,
    "top_y": null,
-   "bytes": 53072,
+   "bytes": 53456,
    "family": "cleaningbot"
   },
   {
@@ -4974,6 +6473,336 @@
    "family": "clock"
   },
   {
+   "id": "cocktail_beer_mug_foam",
+   "category": "cocktail",
+   "label": "beer_mug_foam",
+   "file": "models/cocktail/cocktail_beer_mug_foam.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.14,
+    0.143,
+    0.094
+   ],
+   "bounds_min": [
+    -0.07,
+    0.0,
+    -0.047
+   ],
+   "bounds_max": [
+    0.07,
+    0.143,
+    0.047
+   ],
+   "tris": 1264,
+   "top_y": null,
+   "bytes": 52856,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_blue_lagoon_hurricane",
+   "category": "cocktail",
+   "label": "blue_lagoon_hurricane",
+   "file": "models/cocktail/cocktail_blue_lagoon_hurricane.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.215,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.215,
+    0.04
+   ],
+   "tris": 1256,
+   "top_y": null,
+   "bytes": 46672,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_champagne_flute",
+   "category": "cocktail",
+   "label": "champagne_flute",
+   "file": "models/cocktail/cocktail_champagne_flute.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.2,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.2,
+    0.033
+   ],
+   "tris": 1080,
+   "top_y": null,
+   "bytes": 31480,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_margarita_salt_rim",
+   "category": "cocktail",
+   "label": "margarita_salt_rim",
+   "file": "models/cocktail/cocktail_margarita_salt_rim.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.12,
+    0.163,
+    0.12
+   ],
+   "bounds_min": [
+    -0.06,
+    0.0,
+    -0.06
+   ],
+   "bounds_max": [
+    0.06,
+    0.163,
+    0.06
+   ],
+   "tris": 1376,
+   "top_y": null,
+   "bytes": 91656,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_martini_olive",
+   "category": "cocktail",
+   "label": "martini_olive",
+   "file": "models/cocktail/cocktail_martini_olive.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.098,
+    0.179,
+    0.098
+   ],
+   "bounds_min": [
+    -0.049,
+    0.0,
+    -0.049
+   ],
+   "bounds_max": [
+    0.049,
+    0.179,
+    0.049
+   ],
+   "tris": 800,
+   "top_y": null,
+   "bytes": 25140,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_mojito_mint_highball",
+   "category": "cocktail",
+   "label": "mojito_mint_highball",
+   "file": "models/cocktail/cocktail_mojito_mint_highball.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.078,
+    0.215,
+    0.076
+   ],
+   "bounds_min": [
+    -0.039,
+    0.0,
+    -0.038
+   ],
+   "bounds_max": [
+    0.039,
+    0.215,
+    0.038
+   ],
+   "tris": 1412,
+   "top_y": null,
+   "bytes": 83400,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_old_fashioned_orange",
+   "category": "cocktail",
+   "label": "old_fashioned_orange",
+   "file": "models/cocktail/cocktail_old_fashioned_orange.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.11,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.11,
+    0.04
+   ],
+   "tris": 706,
+   "top_y": null,
+   "bytes": 32540,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_pint_stout",
+   "category": "cocktail",
+   "label": "pint_stout",
+   "file": "models/cocktail/cocktail_pint_stout.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.086,
+    0.155,
+    0.086
+   ],
+   "bounds_min": [
+    -0.043,
+    0.0,
+    -0.043
+   ],
+   "bounds_max": [
+    0.043,
+    0.155,
+    0.043
+   ],
+   "tris": 708,
+   "top_y": null,
+   "bytes": 20828,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_whisky_rocks_tumbler",
+   "category": "cocktail",
+   "label": "whisky_rocks_tumbler",
+   "file": "models/cocktail/cocktail_whisky_rocks_tumbler.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.076,
+    0.085,
+    0.076
+   ],
+   "bounds_min": [
+    -0.038,
+    0.0,
+    -0.038
+   ],
+   "bounds_max": [
+    0.038,
+    0.085,
+    0.038
+   ],
+   "tris": 580,
+   "top_y": null,
+   "bytes": 17356,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_wine_glass_red",
+   "category": "cocktail",
+   "label": "wine_glass_red",
+   "file": "models/cocktail/cocktail_wine_glass_red.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.084,
+    0.195,
+    0.084
+   ],
+   "bounds_min": [
+    -0.042,
+    0.0,
+    -0.042
+   ],
+   "bounds_max": [
+    0.042,
+    0.195,
+    0.042
+   ],
+   "tris": 1016,
+   "top_y": null,
+   "bytes": 24992,
+   "family": "food_cocktail"
+  },
+  {
    "id": "coil_coil_gantry",
    "category": "coil",
    "label": "Coil Gantry",
@@ -4986,7 +6815,7 @@
    "solid": true,
    "size": [
     2.4,
-    2.38,
+    2.383,
     0.7
    ],
    "bounds_min": [
@@ -4996,12 +6825,12 @@
    ],
    "bounds_max": [
     1.2,
-    2.38,
+    2.383,
     0.35
    ],
    "tris": 884,
    "top_y": 2.38,
-   "bytes": 37232,
+   "bytes": 37292,
    "family": "gen"
   },
   {
@@ -5156,7 +6985,7 @@
    ],
    "tris": 868,
    "top_y": 2.1,
-   "bytes": 43080,
+   "bytes": 43096,
    "family": "gen"
   },
   {
@@ -5375,7 +7204,7 @@
    ],
    "tris": 1646,
    "top_y": 0.82,
-   "bytes": 113172,
+   "bytes": 113956,
    "family": "comm_commsunit_floor"
   },
   {
@@ -5408,7 +7237,7 @@
    ],
    "tris": 406,
    "top_y": 0.16,
-   "bytes": 36836,
+   "bytes": 37016,
    "family": "comm_commsunit_table"
   },
   {
@@ -5427,12 +7256,12 @@
    "size": [
     0.245,
     0.182,
-    0.3
+    0.303
    ],
    "bounds_min": [
     -0.11,
     0.0,
-    -0.13
+    -0.133
    ],
    "bounds_max": [
     0.135,
@@ -5441,7 +7270,7 @@
    ],
    "tris": 738,
    "top_y": null,
-   "bytes": 45032,
+   "bytes": 46428,
    "family": "comm_commsunit_table"
   },
   {
@@ -5474,7 +7303,7 @@
    ],
    "tris": 330,
    "top_y": null,
-   "bytes": 29788,
+   "bytes": 29860,
    "family": "comm_commsunit_wall"
   },
   {
@@ -5491,23 +7320,23 @@
    ],
    "solid": true,
    "size": [
-    0.6,
-    2.1,
-    0.509
+    0.606,
+    2.103,
+    0.512
    ],
    "bounds_min": [
-    -0.3,
+    -0.303,
     0.0,
-    -0.25
+    -0.253
    ],
    "bounds_max": [
-    0.3,
-    2.1,
+    0.303,
+    2.103,
     0.259
    ],
    "tris": 1234,
    "top_y": 1.5,
-   "bytes": 88284,
+   "bytes": 88920,
    "family": "comm_commsunit_floor"
   },
   {
@@ -5540,7 +7369,7 @@
    ],
    "tris": 430,
    "top_y": 0.16,
-   "bytes": 41900,
+   "bytes": 41976,
    "family": "comm_commsunit_table"
   },
   {
@@ -5639,7 +7468,7 @@
    ],
    "tris": 508,
    "top_y": null,
-   "bytes": 44532,
+   "bytes": 44460,
    "family": "comm_commsunit_wall"
   },
   {
@@ -5704,7 +7533,7 @@
    ],
    "tris": 642,
    "top_y": 1.06,
-   "bytes": 40448,
+   "bytes": 42176,
    "family": "bridge_console"
   },
   {
@@ -5736,7 +7565,7 @@
    ],
    "tris": 1242,
    "top_y": 0.98,
-   "bytes": 76676,
+   "bytes": 78444,
    "family": "bridge_console"
   },
   {
@@ -5768,7 +7597,7 @@
    ],
    "tris": 532,
    "top_y": null,
-   "bytes": 42228,
+   "bytes": 38520,
    "family": "bridge_console"
   },
   {
@@ -5800,7 +7629,7 @@
    ],
    "tris": 746,
    "top_y": 0.98,
-   "bytes": 67500,
+   "bytes": 60408,
    "family": "bridge_console"
   },
   {
@@ -5850,7 +7679,7 @@
    "size": [
     1.716,
     1.39,
-    0.907
+    0.91
    ],
    "bounds_min": [
     -0.858,
@@ -5860,11 +7689,11 @@
    "bounds_max": [
     0.858,
     1.39,
-    0.457
+    0.46
    ],
    "tris": 1278,
    "top_y": 1.0,
-   "bytes": 82364,
+   "bytes": 89252,
    "family": "bridge_console"
   },
   {
@@ -5882,7 +7711,7 @@
    "size": [
     1.816,
     1.596,
-    0.857
+    0.86
    ],
    "bounds_min": [
     -0.908,
@@ -5892,11 +7721,11 @@
    "bounds_max": [
     0.908,
     1.596,
-    0.432
+    0.435
    ],
    "tris": 1140,
    "top_y": 1.0,
-   "bytes": 81796,
+   "bytes": 87860,
    "family": "bridge_console"
   },
   {
@@ -5928,7 +7757,7 @@
    ],
    "tris": 1520,
    "top_y": 0.98,
-   "bytes": 89740,
+   "bytes": 88220,
    "family": "bridge_console"
   },
   {
@@ -5960,7 +7789,7 @@
    ],
    "tris": 1318,
    "top_y": 0.98,
-   "bytes": 79728,
+   "bytes": 92388,
    "family": "bridge_console"
   },
   {
@@ -5992,7 +7821,7 @@
    ],
    "tris": 1282,
    "top_y": 1.0,
-   "bytes": 90776,
+   "bytes": 91960,
    "family": "bridge_console"
   },
   {
@@ -6024,7 +7853,7 @@
    ],
    "tris": 1322,
    "top_y": 0.96,
-   "bytes": 82224,
+   "bytes": 82556,
    "family": "bridge_console"
   },
   {
@@ -6056,7 +7885,7 @@
    ],
    "tris": 826,
    "top_y": 1.0,
-   "bytes": 72624,
+   "bytes": 71932,
    "family": "bridge_console"
   },
   {
@@ -6088,7 +7917,7 @@
    ],
    "tris": 1100,
    "top_y": 1.0,
-   "bytes": 82188,
+   "bytes": 87304,
    "family": "bridge_console"
   },
   {
@@ -6120,7 +7949,7 @@
    ],
    "tris": 738,
    "top_y": 1.0,
-   "bytes": 67720,
+   "bytes": 67520,
    "family": "bridge_console"
   },
   {
@@ -6152,7 +7981,7 @@
    ],
    "tris": 910,
    "top_y": 1.0,
-   "bytes": 66612,
+   "bytes": 63584,
    "family": "bridge_console"
   },
   {
@@ -6184,7 +8013,7 @@
    ],
    "tris": 752,
    "top_y": 0.96,
-   "bytes": 75040,
+   "bytes": 74636,
    "family": "bridge_console"
   },
   {
@@ -6216,7 +8045,7 @@
    ],
    "tris": 926,
    "top_y": 1.02,
-   "bytes": 58900,
+   "bytes": 58188,
    "family": "bridge_console"
   },
   {
@@ -6248,7 +8077,7 @@
    ],
    "tris": 728,
    "top_y": 0.96,
-   "bytes": 58064,
+   "bytes": 62404,
    "family": "bridge_console"
   },
   {
@@ -6280,7 +8109,7 @@
    ],
    "tris": 824,
    "top_y": null,
-   "bytes": 80340,
+   "bytes": 71528,
    "family": "bridge_console"
   },
   {
@@ -6312,7 +8141,7 @@
    ],
    "tris": 890,
    "top_y": 1.02,
-   "bytes": 63520,
+   "bytes": 66028,
    "family": "bridge_console"
   },
   {
@@ -6344,7 +8173,7 @@
    ],
    "tris": 750,
    "top_y": null,
-   "bytes": 51788,
+   "bytes": 55400,
    "family": "bridge_controlpanel"
   },
   {
@@ -6376,7 +8205,7 @@
    ],
    "tris": 620,
    "top_y": null,
-   "bytes": 29460,
+   "bytes": 30616,
    "family": "bridge_controlpanel"
   },
   {
@@ -6440,7 +8269,7 @@
    ],
    "tris": 1940,
    "top_y": null,
-   "bytes": 69068,
+   "bytes": 72908,
    "family": "bridge_controlpanel"
   },
   {
@@ -6472,7 +8301,7 @@
    ],
    "tris": 322,
    "top_y": null,
-   "bytes": 28328,
+   "bytes": 28700,
    "family": "bridge_controlpanel"
   },
   {
@@ -6536,7 +8365,7 @@
    ],
    "tris": 336,
    "top_y": null,
-   "bytes": 21684,
+   "bytes": 21876,
    "family": "bridge_controlpanel"
   },
   {
@@ -6632,7 +8461,7 @@
    ],
    "tris": 890,
    "top_y": null,
-   "bytes": 55016,
+   "bytes": 54464,
    "family": "bridge_controlpanel"
   },
   {
@@ -6664,7 +8493,7 @@
    ],
    "tris": 300,
    "top_y": null,
-   "bytes": 16328,
+   "bytes": 16520,
    "family": "bridge_controlpanel"
   },
   {
@@ -6696,7 +8525,7 @@
    ],
    "tris": 684,
    "top_y": null,
-   "bytes": 35420,
+   "bytes": 35612,
    "family": "bridge_controlpanel"
   },
   {
@@ -6760,7 +8589,7 @@
    ],
    "tris": 1262,
    "top_y": null,
-   "bytes": 64648,
+   "bytes": 65740,
    "family": "bridge_controlpanel"
   },
   {
@@ -6792,7 +8621,7 @@
    ],
    "tris": 314,
    "top_y": null,
-   "bytes": 26376,
+   "bytes": 26556,
    "family": "bridge_controlpanel"
   },
   {
@@ -6856,7 +8685,7 @@
    ],
    "tris": 364,
    "top_y": null,
-   "bytes": 20416,
+   "bytes": 20612,
    "family": "bridge_controlpanel"
   },
   {
@@ -6952,7 +8781,7 @@
    ],
    "tris": 640,
    "top_y": null,
-   "bytes": 26032,
+   "bytes": 26420,
    "family": "bridge_controlpanel"
   },
   {
@@ -7117,7 +8946,7 @@
    ],
    "tris": 1020,
    "top_y": 0.04,
-   "bytes": 28368,
+   "bytes": 28320,
    "family": "crew_couch_floor"
   },
   {
@@ -7150,7 +8979,7 @@
    ],
    "tris": 800,
    "top_y": 0.56,
-   "bytes": 36436,
+   "bytes": 36440,
    "family": "crew_couch_floor"
   },
   {
@@ -7654,7 +9483,7 @@
    ],
    "tris": 520,
    "top_y": 0.8,
-   "bytes": 21768,
+   "bytes": 22152,
    "family": "gen"
   },
   {
@@ -7778,7 +9607,7 @@
    ],
    "tris": 690,
    "top_y": 0.76,
-   "bytes": 47296,
+   "bytes": 47108,
    "family": "gen"
   },
   {
@@ -8010,23 +9839,23 @@
    ],
    "solid": true,
    "size": [
-    1.0,
+    1.006,
     0.7,
     0.8
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     -0.01,
     -0.4
    ],
    "bounds_max": [
-    0.5,
+    0.503,
     0.69,
     0.4
    ],
    "tris": 816,
    "top_y": 0.42,
-   "bytes": 33664,
+   "bytes": 35996,
    "family": "gen"
   },
   {
@@ -8041,23 +9870,23 @@
    ],
    "solid": true,
    "size": [
-    1.0,
-    0.5,
-    0.713
+    1.006,
+    0.503,
+    0.716
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     0.0,
-    -0.35
+    -0.353
    ],
    "bounds_max": [
-    0.5,
-    0.5,
+    0.503,
+    0.503,
     0.363
    ],
-   "tris": 1124,
+   "tris": 1146,
    "top_y": 0.5,
-   "bytes": 55556,
+   "bytes": 57700,
    "family": "gen"
   },
   {
@@ -8073,7 +9902,7 @@
    "solid": true,
    "size": [
     2.45,
-    1.65,
+    1.653,
     1.6
    ],
    "bounds_min": [
@@ -8083,12 +9912,12 @@
    ],
    "bounds_max": [
     1.225,
-    1.65,
+    1.653,
     0.8
    ],
    "tris": 1000,
    "top_y": 1.52,
-   "bytes": 50464,
+   "bytes": 51100,
    "family": "gen"
   },
   {
@@ -8198,7 +10027,7 @@
    "size": [
     1.254,
     1.3,
-    1.859
+    1.861
    ],
    "bounds_min": [
     -0.627,
@@ -8208,11 +10037,11 @@
    "bounds_max": [
     0.627,
     1.3,
-    0.932
+    0.934
    ],
    "tris": 1120,
    "top_y": 1.3,
-   "bytes": 53404,
+   "bytes": 54556,
    "family": "gen"
   },
   {
@@ -8274,7 +10103,7 @@
    ],
    "tris": 736,
    "top_y": 1.0,
-   "bytes": 32596,
+   "bytes": 32616,
    "family": "gen"
   },
   {
@@ -8383,7 +10212,7 @@
    "solid": true,
    "size": [
     0.644,
-    1.245,
+    1.248,
     0.464
    ],
    "bounds_min": [
@@ -8393,7 +10222,7 @@
    ],
    "bounds_max": [
     0.322,
-    1.245,
+    1.248,
     0.249
    ],
    "tris": 716,
@@ -8460,7 +10289,7 @@
    ],
    "tris": 814,
    "top_y": 1.0,
-   "bytes": 55340,
+   "bytes": 55412,
    "family": "gen"
   },
   {
@@ -8554,7 +10383,7 @@
    ],
    "tris": 670,
    "top_y": 1.96,
-   "bytes": 49396,
+   "bytes": 51764,
    "family": "cryo"
   },
   {
@@ -8572,7 +10401,7 @@
    "size": [
     1.0,
     1.38,
-    2.865
+    2.868
    ],
    "bounds_min": [
     -0.5,
@@ -8582,7 +10411,7 @@
    "bounds_max": [
     0.5,
     1.38,
-    1.405
+    1.408
    ],
    "tris": 442,
    "top_y": 1.36,
@@ -8635,7 +10464,7 @@
    "solid": true,
    "size": [
     0.85,
-    2.07,
+    2.073,
     0.85
    ],
    "bounds_min": [
@@ -8645,12 +10474,12 @@
    ],
    "bounds_max": [
     0.425,
-    2.07,
+    2.073,
     0.425
    ],
    "tris": 876,
    "top_y": 0.06,
-   "bytes": 52132,
+   "bytes": 52192,
    "family": "cryo"
   },
   {
@@ -8682,7 +10511,7 @@
    ],
    "tris": 1972,
    "top_y": null,
-   "bytes": 65452,
+   "bytes": 65480,
    "family": "cylinders"
   },
   {
@@ -8827,7 +10656,7 @@
    "solid": true,
    "size": [
     1.0,
-    1.95,
+    1.953,
     0.7
    ],
    "bounds_min": [
@@ -8837,12 +10666,12 @@
    ],
    "bounds_max": [
     0.5,
-    1.95,
+    1.953,
     0.44
    ],
    "tris": 892,
    "top_y": 0.06,
-   "bytes": 42116,
+   "bytes": 42176,
    "family": "cylinders"
   },
   {
@@ -8859,22 +10688,22 @@
    "solid": true,
    "size": [
     1.55,
-    1.55,
-    0.531
+    1.553,
+    0.534
    ],
    "bounds_min": [
     -0.775,
     0.0,
-    -0.25
+    -0.253
    ],
    "bounds_max": [
     0.775,
-    1.55,
+    1.553,
     0.281
    ],
    "tris": 1136,
    "top_y": 1.34,
-   "bytes": 49276,
+   "bytes": 49364,
    "family": "cylinders"
   },
   {
@@ -8906,8 +10735,296 @@
    ],
    "tris": 362,
    "top_y": 0.08,
-   "bytes": 33372,
+   "bytes": 33444,
    "family": "cylinders"
+  },
+  {
+   "id": "deli_butter_dish_and_knife",
+   "category": "deli",
+   "label": "butter_dish_and_knife",
+   "file": "models/deli/deli_butter_dish_and_knife.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.17,
+    0.046,
+    0.142
+   ],
+   "bounds_min": [
+    -0.085,
+    0.0,
+    -0.071
+   ],
+   "bounds_max": [
+    0.085,
+    0.046,
+    0.071
+   ],
+   "tris": 120,
+   "top_y": null,
+   "bytes": 6348,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_charcuterie_board",
+   "category": "deli",
+   "label": "charcuterie_board",
+   "file": "models/deli/deli_charcuterie_board.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.42,
+    0.048,
+    0.28
+   ],
+   "bounds_min": [
+    -0.21,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.21,
+    0.048,
+    0.14
+   ],
+   "tris": 4260,
+   "top_y": 0.02,
+   "bytes": 183612,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_cheese_board",
+   "category": "deli",
+   "label": "cheese_board",
+   "file": "models/deli/deli_cheese_board.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.4,
+    0.06,
+    0.26
+   ],
+   "bounds_min": [
+    -0.2,
+    0.0,
+    -0.13
+   ],
+   "bounds_max": [
+    0.2,
+    0.06,
+    0.13
+   ],
+   "tris": 1368,
+   "top_y": 0.02,
+   "bytes": 87336,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_egg_carton_dozen",
+   "category": "deli",
+   "label": "egg_carton_dozen",
+   "file": "models/deli/deli_egg_carton_dozen.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.31,
+    0.152,
+    0.212
+   ],
+   "bounds_min": [
+    -0.155,
+    0.0,
+    -0.106
+   ],
+   "bounds_max": [
+    0.155,
+    0.152,
+    0.106
+   ],
+   "tris": 3592,
+   "top_y": null,
+   "bytes": 116604,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_ham_leg_stand",
+   "category": "deli",
+   "label": "ham_leg_stand",
+   "file": "models/deli/deli_ham_leg_stand.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.504,
+    0.214,
+    0.2
+   ],
+   "bounds_min": [
+    -0.252,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.252,
+    0.214,
+    0.1
+   ],
+   "tris": 1460,
+   "top_y": 0.06,
+   "bytes": 67096,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_honey_pot_dipper",
+   "category": "deli",
+   "label": "honey_pot_dipper",
+   "file": "models/deli/deli_honey_pot_dipper.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.114,
+    0.14,
+    0.114
+   ],
+   "bounds_min": [
+    -0.057,
+    0.0,
+    -0.057
+   ],
+   "bounds_max": [
+    0.057,
+    0.14,
+    0.057
+   ],
+   "tris": 1106,
+   "top_y": null,
+   "bytes": 44788,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_jam_jars_trio",
+   "category": "deli",
+   "label": "jam_jars_trio",
+   "file": "models/deli/deli_jam_jars_trio.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.234,
+    0.123,
+    0.068
+   ],
+   "bounds_min": [
+    -0.117,
+    0.0,
+    -0.034
+   ],
+   "bounds_max": [
+    0.117,
+    0.123,
+    0.034
+   ],
+   "tris": 1656,
+   "top_y": null,
+   "bytes": 69600,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_parmesan_wheel_wedge",
+   "category": "deli",
+   "label": "parmesan_wheel_wedge",
+   "file": "models/deli/deli_parmesan_wheel_wedge.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.566,
+    0.12,
+    0.372
+   ],
+   "bounds_min": [
+    -0.283,
+    0.0,
+    -0.186
+   ],
+   "bounds_max": [
+    0.283,
+    0.12,
+    0.186
+   ],
+   "tris": 528,
+   "top_y": 0.12,
+   "bytes": 38980,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_sausage_plate",
+   "category": "deli",
+   "label": "sausage_plate",
+   "file": "models/deli/deli_sausage_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.044,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.044,
+    0.15
+   ],
+   "tris": 1746,
+   "top_y": null,
+   "bytes": 53928,
+   "family": "food_deli"
   },
   {
    "id": "desk_computer_desk",
@@ -8938,7 +11055,7 @@
    ],
    "tris": 438,
    "top_y": 0.76,
-   "bytes": 34164,
+   "bytes": 34780,
    "family": "crew_desk_floor"
   },
   {
@@ -8970,7 +11087,7 @@
    ],
    "tris": 548,
    "top_y": 0.76,
-   "bytes": 43928,
+   "bytes": 44272,
    "family": "crew_desk_floor"
   },
   {
@@ -9034,7 +11151,7 @@
    ],
    "tris": 526,
    "top_y": 0.84,
-   "bytes": 43564,
+   "bytes": 44176,
    "family": "crew_desk_floor"
   },
   {
@@ -9066,7 +11183,7 @@
    ],
    "tris": 242,
    "top_y": -0.32,
-   "bytes": 25760,
+   "bytes": 25940,
    "family": "crew_desk_wall"
   },
   {
@@ -9098,7 +11215,7 @@
    ],
    "tris": 566,
    "top_y": 0.76,
-   "bytes": 44784,
+   "bytes": 44856,
    "family": "crew_desk_floor"
   },
   {
@@ -9162,7 +11279,7 @@
    ],
    "tris": 502,
    "top_y": 1.1,
-   "bytes": 38448,
+   "bytes": 39032,
    "family": "crew_desk_floor"
   },
   {
@@ -9194,7 +11311,7 @@
    ],
    "tris": 484,
    "top_y": 0.74,
-   "bytes": 39784,
+   "bytes": 40056,
    "family": "crew_desk_floor"
   },
   {
@@ -9226,8 +11343,328 @@
    ],
    "tris": 348,
    "top_y": 0.76,
-   "bytes": 22888,
+   "bytes": 23092,
    "family": "crew_desk_floor"
+  },
+  {
+   "id": "dessert_brownie_stack",
+   "category": "dessert",
+   "label": "brownie_stack",
+   "file": "models/dessert/dessert_brownie_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.101,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.101,
+    0.1
+   ],
+   "tris": 1060,
+   "top_y": null,
+   "bytes": 64252,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_cheesecake_slice",
+   "category": "dessert",
+   "label": "cheesecake_slice",
+   "file": "models/dessert/dessert_cheesecake_slice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.08,
+    0.1
+   ],
+   "tris": 1128,
+   "top_y": null,
+   "bytes": 95592,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_chocolate_bar_open",
+   "category": "dessert",
+   "label": "chocolate_bar_open",
+   "file": "models/dessert/dessert_chocolate_bar_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.206,
+    0.034,
+    0.074
+   ],
+   "bounds_min": [
+    -0.103,
+    0.0,
+    -0.037
+   ],
+   "bounds_max": [
+    0.103,
+    0.034,
+    0.037
+   ],
+   "tris": 320,
+   "top_y": null,
+   "bytes": 21756,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_creme_caramel",
+   "category": "dessert",
+   "label": "creme_caramel",
+   "file": "models/dessert/dessert_creme_caramel.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.18,
+    0.063,
+    0.178
+   ],
+   "bounds_min": [
+    -0.09,
+    0.0,
+    -0.089
+   ],
+   "bounds_max": [
+    0.09,
+    0.063,
+    0.089
+   ],
+   "tris": 1006,
+   "top_y": null,
+   "bytes": 25964,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_fruit_tart",
+   "category": "dessert",
+   "label": "fruit_tart",
+   "file": "models/dessert/dessert_fruit_tart.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.206,
+    0.049,
+    0.206
+   ],
+   "bounds_min": [
+    -0.103,
+    0.0,
+    -0.103
+   ],
+   "bounds_max": [
+    0.103,
+    0.049,
+    0.103
+   ],
+   "tris": 2928,
+   "top_y": null,
+   "bytes": 133972,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_ice_cream_cone_double",
+   "category": "dessert",
+   "label": "ice_cream_cone_double",
+   "file": "models/dessert/dessert_ice_cream_cone_double.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.256,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.256,
+    0.04
+   ],
+   "tris": 2004,
+   "top_y": null,
+   "bytes": 78068,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_jelly_mould",
+   "category": "dessert",
+   "label": "jelly_mould",
+   "file": "models/dessert/dessert_jelly_mould.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.093,
+    0.198
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.099
+   ],
+   "bounds_max": [
+    0.1,
+    0.093,
+    0.099
+   ],
+   "tris": 1196,
+   "top_y": null,
+   "bytes": 60272,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_macarons_plate",
+   "category": "dessert",
+   "label": "macarons_plate",
+   "file": "models/dessert/dessert_macarons_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.023,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.023,
+    0.1
+   ],
+   "tris": 2912,
+   "top_y": null,
+   "bytes": 74812,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_sundae_glass",
+   "category": "dessert",
+   "label": "sundae_glass",
+   "file": "models/dessert/dessert_sundae_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.132,
+    0.277,
+    0.118
+   ],
+   "bounds_min": [
+    -0.066,
+    0.0,
+    -0.059
+   ],
+   "bounds_max": [
+    0.066,
+    0.277,
+    0.059
+   ],
+   "tris": 2236,
+   "top_y": null,
+   "bytes": 91564,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_tiramisu_cup",
+   "category": "dessert",
+   "label": "tiramisu_cup",
+   "file": "models/dessert/dessert_tiramisu_cup.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.102,
+    0.106,
+    0.08
+   ],
+   "bounds_min": [
+    -0.051,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.051,
+    0.106,
+    0.04
+   ],
+   "tris": 792,
+   "top_y": null,
+   "bytes": 27096,
+   "family": "food_dessert"
   },
   {
    "id": "display_alert_board",
@@ -9258,7 +11695,7 @@
    ],
    "tris": 494,
    "top_y": null,
-   "bytes": 31464,
+   "bytes": 31540,
    "family": "bridge_display"
   },
   {
@@ -9340,7 +11777,7 @@
    "size": [
     1.2,
     1.09,
-    0.099
+    0.101
    ],
    "bounds_min": [
     -0.6,
@@ -9350,11 +11787,11 @@
    "bounds_max": [
     0.6,
     0.4,
-    0.099
+    0.101
    ],
    "tris": 638,
    "top_y": 0.4,
-   "bytes": 43284,
+   "bytes": 47356,
    "family": "bridge_display"
   },
   {
@@ -9418,7 +11855,7 @@
    ],
    "tris": 688,
    "top_y": 0.6,
-   "bytes": 49568,
+   "bytes": 63500,
    "family": "bridge_display"
   },
   {
@@ -9450,7 +11887,7 @@
    ],
    "tris": 296,
    "top_y": null,
-   "bytes": 37352,
+   "bytes": 38536,
    "family": "bridge_display"
   },
   {
@@ -9468,7 +11905,7 @@
    "size": [
     0.9,
     0.862,
-    0.08
+    0.081
    ],
    "bounds_min": [
     -0.45,
@@ -9478,11 +11915,11 @@
    "bounds_max": [
     0.45,
     0.3,
-    0.08
+    0.081
    ],
    "tris": 430,
    "top_y": null,
-   "bytes": 30100,
+   "bytes": 30176,
    "family": "bridge_display"
   },
   {
@@ -9610,7 +12047,7 @@
    ],
    "tris": 1214,
    "top_y": 0.44,
-   "bytes": 74732,
+   "bytes": 76428,
    "family": "bridge_display"
   },
   {
@@ -9706,7 +12143,7 @@
    ],
    "tris": 218,
    "top_y": 0.5,
-   "bytes": 25088,
+   "bytes": 27500,
    "family": "bridge_display"
   },
   {
@@ -9724,7 +12161,7 @@
    "size": [
     0.76,
     0.56,
-    0.751
+    0.754
    ],
    "bounds_min": [
     -0.38,
@@ -9734,11 +12171,11 @@
    "bounds_max": [
     0.38,
     0.15,
-    0.751
+    0.754
    ],
    "tris": 282,
    "top_y": null,
-   "bytes": 21080,
+   "bytes": 21464,
    "family": "bridge_display"
   },
   {
@@ -9802,7 +12239,7 @@
    ],
    "tris": 246,
    "top_y": null,
-   "bytes": 22384,
+   "bytes": 29240,
    "family": "bridge_display"
   },
   {
@@ -9820,7 +12257,7 @@
    "size": [
     2.34,
     0.28,
-    0.115
+    0.118
    ],
    "bounds_min": [
     -1.17,
@@ -9830,11 +12267,11 @@
    "bounds_max": [
     1.17,
     0.14,
-    0.115
+    0.118
    ],
    "tris": 234,
    "top_y": 0.14,
-   "bytes": 18920,
+   "bytes": 19572,
    "family": "bridge_display"
   },
   {
@@ -9898,7 +12335,7 @@
    ],
    "tris": 250,
    "top_y": null,
-   "bytes": 21152,
+   "bytes": 23708,
    "family": "bridge_display"
   },
   {
@@ -9930,7 +12367,7 @@
    ],
    "tris": 338,
    "top_y": null,
-   "bytes": 37700,
+   "bytes": 36720,
    "family": "bridge_display"
   },
   {
@@ -9947,7 +12384,7 @@
    "solid": false,
    "size": [
     2.4,
-    2.89,
+    2.893,
     0.25
    ],
    "bounds_min": [
@@ -9957,12 +12394,12 @@
    ],
    "bounds_max": [
     1.2,
-    2.89,
+    2.893,
     0.14
    ],
    "tris": 1152,
    "top_y": 2.8,
-   "bytes": 50700,
+   "bytes": 50760,
    "family": "door_extra"
   },
   {
@@ -10075,7 +12512,7 @@
    "solid": false,
    "size": [
     2.36,
-    2.8,
+    2.806,
     0.285
    ],
    "bounds_min": [
@@ -10085,12 +12522,12 @@
    ],
    "bounds_max": [
     1.18,
-    2.8,
+    2.806,
     0.155
    ],
    "tris": 1004,
    "top_y": 2.76,
-   "bytes": 51968,
+   "bytes": 52820,
    "family": "door_extra"
   },
   {
@@ -10122,7 +12559,7 @@
    ],
    "tris": 552,
    "top_y": 0.06,
-   "bytes": 31052,
+   "bytes": 31104,
    "family": "door_extra"
   },
   {
@@ -10186,7 +12623,7 @@
    ],
    "tris": 524,
    "top_y": 2.74,
-   "bytes": 27332,
+   "bytes": 28932,
    "family": "door_extra"
   },
   {
@@ -10218,7 +12655,7 @@
    ],
    "tris": 1276,
    "top_y": 3.02,
-   "bytes": 57796,
+   "bytes": 57800,
    "family": "door_extra"
   },
   {
@@ -10250,7 +12687,7 @@
    ],
    "tris": 1124,
    "top_y": 2.76,
-   "bytes": 60508,
+   "bytes": 60708,
    "family": "door_extra"
   },
   {
@@ -10314,7 +12751,7 @@
    ],
    "tris": 1436,
    "top_y": 2.8,
-   "bytes": 55048,
+   "bytes": 55064,
    "family": "door_extra"
   },
   {
@@ -10427,7 +12864,7 @@
    "solid": false,
    "size": [
     2.8,
-    3.8,
+    3.803,
     0.4
    ],
    "bounds_min": [
@@ -10437,12 +12874,12 @@
    ],
    "bounds_max": [
     1.4,
-    3.8,
+    3.803,
     0.2
    ],
-   "tris": 816,
+   "tris": 860,
    "top_y": 0.4,
-   "bytes": 37600,
+   "bytes": 42152,
    "family": "doorframe_fam"
   },
   {
@@ -10459,22 +12896,22 @@
    "solid": false,
    "size": [
     2.52,
-    2.95,
-    0.245
+    2.953,
+    0.248
    ],
    "bounds_min": [
     -1.26,
     0.0,
-    -0.11
+    -0.113
    ],
    "bounds_max": [
     1.26,
-    2.95,
+    2.953,
     0.135
    ],
    "tris": 420,
    "top_y": 2.96,
-   "bytes": 23624,
+   "bytes": 24092,
    "family": "doorframe_fam"
   },
   {
@@ -10491,22 +12928,22 @@
    "solid": false,
    "size": [
     2.6,
-    2.925,
-    0.3
+    2.931,
+    0.29
    ],
    "bounds_min": [
     -1.3,
     0.0,
-    -0.15
+    -0.145
    ],
    "bounds_max": [
     1.3,
-    2.925,
-    0.15
+    2.931,
+    0.145
    ],
    "tris": 676,
-   "top_y": 2.92,
-   "bytes": 30292,
+   "top_y": 2.94,
+   "bytes": 31912,
    "family": "doorframe_fam"
   },
   {
@@ -10523,7 +12960,7 @@
    "solid": false,
    "size": [
     2.85,
-    2.9,
+    2.903,
     0.24
    ],
    "bounds_min": [
@@ -10533,12 +12970,12 @@
    ],
    "bounds_max": [
     1.55,
-    2.9,
+    2.903,
     0.13
    ],
    "tris": 204,
    "top_y": 2.9,
-   "bytes": 13676,
+   "bytes": 13736,
    "family": "doorframe_fam"
   },
   {
@@ -10555,7 +12992,7 @@
    "solid": false,
    "size": [
     2.76,
-    3.669,
+    3.672,
     0.4
    ],
    "bounds_min": [
@@ -10565,12 +13002,12 @@
    ],
    "bounds_max": [
     1.38,
-    3.669,
+    3.672,
     0.2
    ],
    "tris": 454,
    "top_y": null,
-   "bytes": 21240,
+   "bytes": 21684,
    "family": "doorframe_fam"
   },
   {
@@ -10638,6 +13075,550 @@
    "family": "doorframe_fam"
   },
   {
+   "id": "drink_bubble_tea_cup",
+   "category": "drink",
+   "label": "bubble_tea_cup",
+   "file": "models/drink/drink_bubble_tea_cup.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.086,
+    0.255,
+    0.086
+   ],
+   "bounds_min": [
+    -0.043,
+    0.0,
+    -0.043
+   ],
+   "bounds_max": [
+    0.043,
+    0.255,
+    0.043
+   ],
+   "tris": 2892,
+   "top_y": null,
+   "bytes": 99244,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_cappuccino_rosetta",
+   "category": "drink",
+   "label": "cappuccino_rosetta",
+   "file": "models/drink/drink_cappuccino_rosetta.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.182,
+    0.076,
+    0.18
+   ],
+   "bounds_min": [
+    -0.091,
+    0.0,
+    -0.09
+   ],
+   "bounds_max": [
+    0.091,
+    0.076,
+    0.09
+   ],
+   "tris": 1774,
+   "top_y": null,
+   "bytes": 95020,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_coffee_pot_and_mugs",
+   "category": "drink",
+   "label": "coffee_pot_and_mugs",
+   "file": "models/drink/drink_coffee_pot_and_mugs.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.312,
+    0.205,
+    0.186
+   ],
+   "bounds_min": [
+    -0.156,
+    0.0,
+    -0.093
+   ],
+   "bounds_max": [
+    0.156,
+    0.205,
+    0.093
+   ],
+   "tris": 2764,
+   "top_y": null,
+   "bytes": 83988,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_espresso_cup_sugar",
+   "category": "drink",
+   "label": "espresso_cup_sugar",
+   "file": "models/drink/drink_espresso_cup_sugar.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.116,
+    0.054,
+    0.116
+   ],
+   "bounds_min": [
+    -0.058,
+    0.0,
+    -0.058
+   ],
+   "bounds_max": [
+    0.058,
+    0.054,
+    0.058
+   ],
+   "tris": 1486,
+   "top_y": null,
+   "bytes": 53584,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_hot_cocoa_mug",
+   "category": "drink",
+   "label": "hot_cocoa_mug",
+   "file": "models/drink/drink_hot_cocoa_mug.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.134,
+    0.095,
+    0.094
+   ],
+   "bounds_min": [
+    -0.067,
+    0.0,
+    -0.047
+   ],
+   "bounds_max": [
+    0.067,
+    0.095,
+    0.047
+   ],
+   "tris": 1482,
+   "top_y": null,
+   "bytes": 51968,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_iced_coffee_glass",
+   "category": "drink",
+   "label": "iced_coffee_glass",
+   "file": "models/drink/drink_iced_coffee_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.215,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.215,
+    0.04
+   ],
+   "tris": 900,
+   "top_y": null,
+   "bytes": 26380,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_latte_art_cup",
+   "category": "drink",
+   "label": "latte_art_cup",
+   "file": "models/drink/drink_latte_art_cup.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.072,
+    0.156
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.078
+   ],
+   "bounds_max": [
+    0.079,
+    0.072,
+    0.078
+   ],
+   "tris": 1690,
+   "top_y": null,
+   "bytes": 55900,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_latte_macchiato_glass",
+   "category": "drink",
+   "label": "latte_macchiato_glass",
+   "file": "models/drink/drink_latte_macchiato_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.15,
+    0.18,
+    0.15
+   ],
+   "bounds_min": [
+    -0.075,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.075,
+    0.18,
+    0.075
+   ],
+   "tris": 1268,
+   "top_y": null,
+   "bytes": 50184,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_lemonade_pitcher_set",
+   "category": "drink",
+   "label": "lemonade_pitcher_set",
+   "file": "models/drink/drink_lemonade_pitcher_set.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.258,
+    0.232,
+    0.172
+   ],
+   "bounds_min": [
+    -0.129,
+    0.0,
+    -0.086
+   ],
+   "bounds_max": [
+    0.129,
+    0.232,
+    0.086
+   ],
+   "tris": 2344,
+   "top_y": null,
+   "bytes": 89788,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_mason_jar_green_smoothie",
+   "category": "drink",
+   "label": "mason_jar_green_smoothie",
+   "file": "models/drink/drink_mason_jar_green_smoothie.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.078,
+    0.19,
+    0.078
+   ],
+   "bounds_min": [
+    -0.039,
+    0.0,
+    -0.039
+   ],
+   "bounds_max": [
+    0.039,
+    0.19,
+    0.039
+   ],
+   "tris": 1596,
+   "top_y": null,
+   "bytes": 76684,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_milk_glass_cookies",
+   "category": "drink",
+   "label": "milk_glass_cookies",
+   "file": "models/drink/drink_milk_glass_cookies.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.196,
+    0.11,
+    0.1
+   ],
+   "bounds_min": [
+    -0.098,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.098,
+    0.11,
+    0.05
+   ],
+   "tris": 1232,
+   "top_y": null,
+   "bytes": 77452,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_milkshake_whipped",
+   "category": "drink",
+   "label": "milkshake_whipped",
+   "file": "models/drink/drink_milkshake_whipped.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.094,
+    0.27,
+    0.096
+   ],
+   "bounds_min": [
+    -0.047,
+    0.0,
+    -0.048
+   ],
+   "bounds_max": [
+    0.047,
+    0.27,
+    0.048
+   ],
+   "tris": 1288,
+   "top_y": null,
+   "bytes": 47936,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_orange_juice_glass",
+   "category": "drink",
+   "label": "orange_juice_glass",
+   "file": "models/drink/drink_orange_juice_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.074,
+    0.185,
+    0.072
+   ],
+   "bounds_min": [
+    -0.037,
+    0.0,
+    -0.036
+   ],
+   "bounds_max": [
+    0.037,
+    0.185,
+    0.036
+   ],
+   "tris": 760,
+   "top_y": null,
+   "bytes": 55408,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_smoothie_strawberry_tall",
+   "category": "drink",
+   "label": "smoothie_strawberry_tall",
+   "file": "models/drink/drink_smoothie_strawberry_tall.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.088,
+    0.235,
+    0.08
+   ],
+   "bounds_min": [
+    -0.044,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.044,
+    0.235,
+    0.04
+   ],
+   "tris": 1028,
+   "top_y": null,
+   "bytes": 60328,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_tea_cup_with_bag",
+   "category": "drink",
+   "label": "tea_cup_with_bag",
+   "file": "models/drink/drink_tea_cup_with_bag.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.144,
+    0.076,
+    0.144
+   ],
+   "bounds_min": [
+    -0.072,
+    0.0,
+    -0.072
+   ],
+   "bounds_max": [
+    0.072,
+    0.076,
+    0.072
+   ],
+   "tris": 1438,
+   "top_y": null,
+   "bytes": 35492,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_tea_pot_and_cups",
+   "category": "drink",
+   "label": "tea_pot_and_cups",
+   "file": "models/drink/drink_tea_pot_and_cups.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.358,
+    0.147,
+    0.324
+   ],
+   "bounds_min": [
+    -0.179,
+    0.0,
+    -0.162
+   ],
+   "bounds_max": [
+    0.179,
+    0.147,
+    0.162
+   ],
+   "tris": 4650,
+   "top_y": null,
+   "bytes": 126132,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_water_glass_ice_lemon",
+   "category": "drink",
+   "label": "water_glass_ice_lemon",
+   "file": "models/drink/drink_water_glass_ice_lemon.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.078,
+    0.109,
+    0.072
+   ],
+   "bounds_min": [
+    -0.039,
+    0.0,
+    -0.036
+   ],
+   "bounds_max": [
+    0.039,
+    0.109,
+    0.036
+   ],
+   "tris": 712,
+   "top_y": null,
+   "bytes": 21380,
+   "family": "food_drink"
+  },
+  {
    "id": "duct_ceiling_round_vent",
    "category": "duct",
    "label": "Ceiling Round Vent",
@@ -10684,7 +13665,7 @@
    "size": [
     0.7,
     0.12,
-    0.7
+    0.703
    ],
    "bounds_min": [
     -0.35,
@@ -10694,7 +13675,7 @@
    "bounds_max": [
     0.35,
     0.0,
-    0.35
+    0.353
    ],
    "tris": 260,
    "top_y": 0.0,
@@ -10858,7 +13839,7 @@
    ],
    "tris": 164,
    "top_y": 0.2,
-   "bytes": 12668,
+   "bytes": 12656,
    "family": "duct_wall"
   },
   {
@@ -11035,21 +14016,21 @@
    "size": [
     1.18,
     1.0,
-    0.7
+    0.706
    ],
    "bounds_min": [
     -0.4,
     0.0,
-    -0.35
+    -0.353
    ],
    "bounds_max": [
     0.78,
     1.0,
-    0.35
+    0.353
    ],
    "tris": 446,
    "top_y": 0.06,
-   "bytes": 20884,
+   "bytes": 21268,
    "family": "gen"
   },
   {
@@ -11142,7 +14123,7 @@
    ],
    "tris": 546,
    "top_y": 0.8,
-   "bytes": 42924,
+   "bytes": 47428,
    "family": "gen"
   },
   {
@@ -11297,7 +14278,7 @@
    ],
    "tris": 496,
    "top_y": 1.12,
-   "bytes": 26108,
+   "bytes": 26300,
    "family": "gen"
   },
   {
@@ -11405,23 +14386,23 @@
    ],
    "solid": false,
    "size": [
-    1.3,
+    1.306,
     0.9,
     0.21
    ],
    "bounds_min": [
-    -0.65,
+    -0.653,
     -0.45,
     -0.0
    ],
    "bounds_max": [
-    0.65,
+    0.653,
     0.45,
     0.21
    ],
    "tris": 1112,
    "top_y": 0.44,
-   "bytes": 48580,
+   "bytes": 48576,
    "family": "gen"
   },
   {
@@ -11532,7 +14513,7 @@
    "solid": false,
    "size": [
     1.0,
-    0.054,
+    0.057,
     1.0
    ],
    "bounds_min": [
@@ -11542,12 +14523,12 @@
    ],
    "bounds_max": [
     0.5,
-    0.054,
+    0.057,
     0.5
    ],
    "tris": 96,
    "top_y": 0.04,
-   "bytes": 8180,
+   "bytes": 8272,
    "family": "floorpanel_fam"
   },
   {
@@ -11627,23 +14608,23 @@
    ],
    "solid": false,
    "size": [
-    2.0,
+    2.006,
     0.037,
-    2.0
+    2.006
    ],
    "bounds_min": [
-    -1.0,
+    -1.003,
     -0.002,
-    -1.0
+    -1.003
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.035,
-    1.0
+    1.003
    ],
    "tris": 436,
    "top_y": 0.02,
-   "bytes": 24420,
+   "bytes": 24484,
    "family": "floorpanel_fam"
   },
   {
@@ -11692,7 +14673,7 @@
    "solid": false,
    "size": [
     2.0,
-    0.045,
+    0.048,
     2.0
    ],
    "bounds_min": [
@@ -11702,12 +14683,12 @@
    ],
    "bounds_max": [
     1.0,
-    0.045,
+    0.048,
     1.0
    ],
    "tris": 280,
    "top_y": 0.04,
-   "bytes": 12852,
+   "bytes": 13104,
    "family": "floorpanel_fam"
   },
   {
@@ -11771,7 +14752,7 @@
    ],
    "tris": 268,
    "top_y": 0.04,
-   "bytes": 14584,
+   "bytes": 14780,
    "family": "floorpanel_fam"
   },
   {
@@ -11851,23 +14832,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    0.03,
-    1.0
+    1.006,
+    0.033,
+    1.003
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     0.0,
     -0.5
    ],
    "bounds_max": [
-    0.5,
-    0.03,
-    0.5
+    0.503,
+    0.033,
+    0.503
    ],
    "tris": 756,
    "top_y": 0.02,
-   "bytes": 37620,
+   "bytes": 37916,
    "family": "floorpanel_fam"
   },
   {
@@ -11898,7 +14879,7 @@
    ],
    "tris": 728,
    "top_y": null,
-   "bytes": 27152,
+   "bytes": 27180,
    "family": "forcefield_floor"
   },
   {
@@ -11913,17 +14894,17 @@
    ],
    "solid": false,
    "size": [
-    2.8,
+    2.806,
     3.1,
     0.615
    ],
    "bounds_min": [
-    -1.4,
+    -1.403,
     0.0,
     -0.225
    ],
    "bounds_max": [
-    1.4,
+    1.403,
     3.1,
     0.39
    ],
@@ -12162,7 +15143,7 @@
    "solid": true,
    "size": [
     0.36,
-    1.29,
+    1.293,
     0.425
    ],
    "bounds_min": [
@@ -12172,13 +15153,589 @@
    ],
    "bounds_max": [
     0.18,
-    1.29,
+    1.293,
     0.245
    ],
    "tris": 488,
    "top_y": 0.98,
-   "bytes": 25352,
+   "bytes": 25412,
    "family": "fountain_floor"
+  },
+  {
+   "id": "fruit_apple_green_pair",
+   "category": "fruit",
+   "label": "apple_green_pair",
+   "file": "models/fruit/fruit_apple_green_pair.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.091,
+    0.116
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.058
+   ],
+   "bounds_max": [
+    0.079,
+    0.091,
+    0.058
+   ],
+   "tris": 2178,
+   "top_y": null,
+   "bytes": 80212,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_apple_red_and_slice",
+   "category": "fruit",
+   "label": "apple_red_and_slice",
+   "file": "models/fruit/fruit_apple_red_and_slice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.12,
+    0.08,
+    0.132
+   ],
+   "bounds_min": [
+    -0.06,
+    0.0,
+    -0.066
+   ],
+   "bounds_max": [
+    0.06,
+    0.08,
+    0.066
+   ],
+   "tris": 1322,
+   "top_y": null,
+   "bytes": 67468,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_banana_bunch",
+   "category": "fruit",
+   "label": "banana_bunch",
+   "file": "models/fruit/fruit_banana_bunch.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.13,
+    0.044,
+    0.286
+   ],
+   "bounds_min": [
+    -0.065,
+    0.0,
+    -0.143
+   ],
+   "bounds_max": [
+    0.065,
+    0.044,
+    0.143
+   ],
+   "tris": 724,
+   "top_y": null,
+   "bytes": 42132,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_blueberries_bowl",
+   "category": "fruit",
+   "label": "blueberries_bowl",
+   "file": "models/fruit/fruit_blueberries_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.124,
+    0.064,
+    0.124
+   ],
+   "bounds_min": [
+    -0.062,
+    0.0,
+    -0.062
+   ],
+   "bounds_max": [
+    0.062,
+    0.064,
+    0.062
+   ],
+   "tris": 3888,
+   "top_y": null,
+   "bytes": 143028,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_cherries_stems",
+   "category": "fruit",
+   "label": "cherries_stems",
+   "file": "models/fruit/fruit_cherries_stems.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.082,
+    0.074,
+    0.058
+   ],
+   "bounds_min": [
+    -0.041,
+    0.0,
+    -0.029
+   ],
+   "bounds_max": [
+    0.041,
+    0.074,
+    0.029
+   ],
+   "tris": 1744,
+   "top_y": null,
+   "bytes": 72564,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_coconut_cracked",
+   "category": "fruit",
+   "label": "coconut_cracked",
+   "file": "models/fruit/fruit_coconut_cracked.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.238,
+    0.1,
+    0.136
+   ],
+   "bounds_min": [
+    -0.119,
+    0.0,
+    -0.068
+   ],
+   "bounds_max": [
+    0.119,
+    0.1,
+    0.068
+   ],
+   "tris": 836,
+   "top_y": null,
+   "bytes": 47472,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_grapes_green_vine",
+   "category": "fruit",
+   "label": "grapes_green_vine",
+   "file": "models/fruit/fruit_grapes_green_vine.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.126,
+    0.079,
+    0.108
+   ],
+   "bounds_min": [
+    -0.063,
+    0.0,
+    -0.054
+   ],
+   "bounds_max": [
+    0.063,
+    0.079,
+    0.054
+   ],
+   "tris": 3204,
+   "top_y": null,
+   "bytes": 118476,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_grapes_purple",
+   "category": "fruit",
+   "label": "grapes_purple",
+   "file": "models/fruit/fruit_grapes_purple.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.132,
+    0.076,
+    0.074
+   ],
+   "bounds_min": [
+    -0.066,
+    0.0,
+    -0.037
+   ],
+   "bounds_max": [
+    0.066,
+    0.076,
+    0.037
+   ],
+   "tris": 2668,
+   "top_y": null,
+   "bytes": 104224,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_kiwi_halves",
+   "category": "fruit",
+   "label": "kiwi_halves",
+   "file": "models/fruit/fruit_kiwi_halves.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.142,
+    0.051,
+    0.12
+   ],
+   "bounds_min": [
+    -0.071,
+    0.0,
+    -0.06
+   ],
+   "bounds_max": [
+    0.071,
+    0.051,
+    0.06
+   ],
+   "tris": 1044,
+   "top_y": null,
+   "bytes": 69788,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_lemons_cut",
+   "category": "fruit",
+   "label": "lemons_cut",
+   "file": "models/fruit/fruit_lemons_cut.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.174,
+    0.052,
+    0.136
+   ],
+   "bounds_min": [
+    -0.087,
+    0.0,
+    -0.068
+   ],
+   "bounds_max": [
+    0.087,
+    0.052,
+    0.068
+   ],
+   "tris": 984,
+   "top_y": null,
+   "bytes": 48572,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_mango_hedgehog",
+   "category": "fruit",
+   "label": "mango_hedgehog",
+   "file": "models/fruit/fruit_mango_hedgehog.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.228,
+    0.096,
+    0.102
+   ],
+   "bounds_min": [
+    -0.114,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.114,
+    0.096,
+    0.051
+   ],
+   "tris": 2244,
+   "top_y": null,
+   "bytes": 64676,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_orange_and_half",
+   "category": "fruit",
+   "label": "orange_and_half",
+   "file": "models/fruit/fruit_orange_and_half.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.164,
+    0.07,
+    0.102
+   ],
+   "bounds_min": [
+    -0.082,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.082,
+    0.07,
+    0.051
+   ],
+   "tris": 874,
+   "top_y": null,
+   "bytes": 74896,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_peaches_halved",
+   "category": "fruit",
+   "label": "peaches_halved",
+   "file": "models/fruit/fruit_peaches_halved.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.222,
+    0.076,
+    0.092
+   ],
+   "bounds_min": [
+    -0.111,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.111,
+    0.076,
+    0.046
+   ],
+   "tris": 1340,
+   "top_y": null,
+   "bytes": 43168,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_pear_ripe",
+   "category": "fruit",
+   "label": "pear_ripe",
+   "file": "models/fruit/fruit_pear_ripe.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.154,
+    0.147,
+    0.142
+   ],
+   "bounds_min": [
+    -0.077,
+    0.0,
+    -0.071
+   ],
+   "bounds_max": [
+    0.077,
+    0.147,
+    0.071
+   ],
+   "tris": 2338,
+   "top_y": null,
+   "bytes": 86680,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_pineapple_whole",
+   "category": "fruit",
+   "label": "pineapple_whole",
+   "file": "models/fruit/fruit_pineapple_whole.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.126,
+    0.25,
+    0.102
+   ],
+   "bounds_min": [
+    -0.063,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.063,
+    0.25,
+    0.051
+   ],
+   "tris": 2128,
+   "top_y": null,
+   "bytes": 119164,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_pomegranate_open",
+   "category": "fruit",
+   "label": "pomegranate_open",
+   "file": "models/fruit/fruit_pomegranate_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.178,
+    0.078,
+    0.104
+   ],
+   "bounds_min": [
+    -0.089,
+    0.0,
+    -0.052
+   ],
+   "bounds_max": [
+    0.089,
+    0.078,
+    0.052
+   ],
+   "tris": 2828,
+   "top_y": null,
+   "bytes": 92780,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_strawberries_bowl",
+   "category": "fruit",
+   "label": "strawberries_bowl",
+   "file": "models/fruit/fruit_strawberries_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.14,
+    0.09,
+    0.138
+   ],
+   "bounds_min": [
+    -0.07,
+    0.0,
+    -0.069
+   ],
+   "bounds_max": [
+    0.07,
+    0.09,
+    0.069
+   ],
+   "tris": 8092,
+   "top_y": null,
+   "bytes": 238100,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_watermelon_wedge",
+   "category": "fruit",
+   "label": "watermelon_wedge",
+   "file": "models/fruit/fruit_watermelon_wedge.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.22,
+    0.094,
+    0.052
+   ],
+   "bounds_min": [
+    -0.11,
+    0.0,
+    -0.026
+   ],
+   "bounds_max": [
+    0.11,
+    0.094,
+    0.026
+   ],
+   "tris": 212,
+   "top_y": null,
+   "bytes": 29216,
+   "family": "food_fruit"
   },
   {
    "id": "galley_chest_freezer",
@@ -12241,7 +15798,7 @@
    ],
    "tris": 606,
    "top_y": 1.5,
-   "bytes": 42832,
+   "bytes": 42860,
    "family": "crew_galley_floor"
   },
   {
@@ -12337,7 +15894,7 @@
    ],
    "tris": 242,
    "top_y": 0.9,
-   "bytes": 21832,
+   "bytes": 22104,
    "family": "crew_galley_floor"
   },
   {
@@ -12369,7 +15926,7 @@
    ],
    "tris": 402,
    "top_y": 1.94,
-   "bytes": 36596,
+   "bytes": 37816,
    "family": "crew_galley_floor"
   },
   {
@@ -12546,7 +16103,7 @@
    "solid": true,
    "size": [
     0.8,
-    1.9,
+    1.903,
     0.84
    ],
    "bounds_min": [
@@ -12556,12 +16113,12 @@
    ],
    "bounds_max": [
     0.4,
-    1.9,
+    1.903,
     0.465
    ],
    "tris": 234,
    "top_y": 1.9,
-   "bytes": 12900,
+   "bytes": 13156,
    "family": "crew_galley_floor"
   },
   {
@@ -12593,7 +16150,7 @@
    ],
    "tris": 716,
    "top_y": 1.42,
-   "bytes": 39168,
+   "bytes": 39552,
    "family": "crew_galley_floor"
   },
   {
@@ -12673,23 +16230,23 @@
    ],
    "solid": true,
    "size": [
-    0.85,
-    1.955,
-    0.925
+    0.856,
+    1.958,
+    0.928
    ],
    "bounds_min": [
-    -0.425,
+    -0.428,
     0.0,
-    -0.425
+    -0.428
    ],
    "bounds_max": [
-    0.425,
-    1.955,
+    0.428,
+    1.958,
     0.5
    ],
    "tris": 452,
    "top_y": 1.7,
-   "bytes": 24264,
+   "bytes": 24516,
    "family": "crew_galley_floor"
   },
   {
@@ -12705,19 +16262,19 @@
    ],
    "solid": true,
    "size": [
-    1.268,
+    1.271,
     1.9,
-    0.54
+    0.546
    ],
    "bounds_min": [
-    -0.62,
+    -0.623,
     0.0,
-    -0.27
+    -0.273
    ],
    "bounds_max": [
     0.648,
     1.9,
-    0.27
+    0.273
    ],
    "tris": 956,
    "top_y": 1.76,
@@ -12801,23 +16358,23 @@
    ],
    "solid": true,
    "size": [
-    0.36,
-    1.445,
-    0.51
+    0.366,
+    1.448,
+    0.513
    ],
    "bounds_min": [
-    -0.18,
+    -0.183,
     0.0,
-    -0.19
+    -0.193
    ],
    "bounds_max": [
-    0.18,
-    1.445,
+    0.183,
+    1.448,
     0.32
    ],
    "tris": 392,
    "top_y": 1.4,
-   "bytes": 21268,
+   "bytes": 21524,
    "family": "crew_galley_floor"
   },
   {
@@ -12879,7 +16436,7 @@
    ],
    "tris": 1044,
    "top_y": 1.84,
-   "bytes": 44372,
+   "bytes": 44368,
    "family": "gen"
   },
   {
@@ -12941,7 +16498,7 @@
    ],
    "tris": 594,
    "top_y": 1.9,
-   "bytes": 47592,
+   "bytes": 49292,
    "family": "gen"
   },
   {
@@ -12987,23 +16544,23 @@
    ],
    "solid": true,
    "size": [
-    2.0,
+    2.006,
     0.97,
     0.8
    ],
    "bounds_min": [
-    -1.0,
+    -1.003,
     0.0,
     -0.4
    ],
    "bounds_max": [
-    1.0,
+    1.003,
     0.97,
     0.4
    ],
    "tris": 644,
    "top_y": 0.86,
-   "bytes": 32372,
+   "bytes": 32400,
    "family": "gen"
   },
   {
@@ -13207,7 +16764,7 @@
    "size": [
     1.46,
     0.895,
-    0.505
+    0.508
    ],
    "bounds_min": [
     -0.73,
@@ -13217,11 +16774,11 @@
    "bounds_max": [
     0.73,
     0.895,
-    0.25
+    0.253
    ],
    "tris": 1468,
    "top_y": 0.62,
-   "bytes": 57752,
+   "bytes": 58532,
    "family": "crew_gym_floor"
   },
   {
@@ -13270,7 +16827,7 @@
    "solid": true,
    "size": [
     0.9,
-    2.16,
+    2.163,
     0.915
    ],
    "bounds_min": [
@@ -13280,12 +16837,12 @@
    ],
    "bounds_max": [
     0.45,
-    2.16,
+    2.163,
     0.465
    ],
    "tris": 520,
    "top_y": 0.06,
-   "bytes": 23600,
+   "bytes": 23660,
    "family": "crew_gym_floor"
   },
   {
@@ -13317,7 +16874,7 @@
    ],
    "tris": 562,
    "top_y": null,
-   "bytes": 38532,
+   "bytes": 41092,
    "family": "crew_gym_floor"
   },
   {
@@ -13347,9 +16904,9 @@
     1.245,
     1.01
    ],
-   "tris": 644,
+   "tris": 648,
    "top_y": 0.24,
-   "bytes": 48408,
+   "bytes": 49028,
    "family": "crew_gym_floor"
   },
   {
@@ -13398,7 +16955,7 @@
    "solid": true,
    "size": [
     1.41,
-    1.045,
+    1.048,
     0.45
    ],
    "bounds_min": [
@@ -13408,12 +16965,12 @@
    ],
    "bounds_max": [
     0.705,
-    1.045,
+    1.048,
     0.225
    ],
    "tris": 760,
    "top_y": 1.04,
-   "bytes": 33020,
+   "bytes": 33468,
    "family": "crew_gym_floor"
   },
   {
@@ -13475,7 +17032,7 @@
    ],
    "tris": 776,
    "top_y": 0.92,
-   "bytes": 85600,
+   "bytes": 86212,
    "family": "gen"
   },
   {
@@ -13599,7 +17156,7 @@
    ],
    "tris": 798,
    "top_y": 0.58,
-   "bytes": 53412,
+   "bytes": 57916,
    "family": "gen"
   },
   {
@@ -13661,7 +17218,7 @@
    ],
    "tris": 842,
    "top_y": 2.76,
-   "bytes": 54000,
+   "bytes": 53172,
    "family": "gen"
   },
   {
@@ -13707,23 +17264,23 @@
    ],
    "solid": true,
    "size": [
-    1.3,
+    1.308,
     1.996,
     2.415
    ],
    "bounds_min": [
-    -0.65,
+    -0.655,
     0.004,
     -1.265
    ],
    "bounds_max": [
-    0.65,
+    0.653,
     2.0,
     1.15
    ],
    "tris": 1350,
    "top_y": null,
-   "bytes": 56864,
+   "bytes": 57272,
    "family": "gen"
   },
   {
@@ -13816,7 +17373,7 @@
    ],
    "tris": 1038,
    "top_y": 1.2,
-   "bytes": 70748,
+   "bytes": 70056,
    "family": "gen"
   },
   {
@@ -14033,7 +17590,7 @@
    ],
    "tris": 796,
    "top_y": 0.1,
-   "bytes": 39592,
+   "bytes": 40744,
    "family": "gen"
   },
   {
@@ -14049,7 +17606,7 @@
    "solid": true,
    "size": [
     1.853,
-    2.008,
+    2.011,
     1.257
    ],
    "bounds_min": [
@@ -14059,12 +17616,12 @@
    ],
    "bounds_max": [
     1.253,
-    2.008,
+    2.011,
     0.465
    ],
    "tris": 740,
    "top_y": 0.86,
-   "bytes": 39388,
+   "bytes": 39460,
    "family": "gen"
   },
   {
@@ -14095,7 +17652,7 @@
    ],
    "tris": 998,
    "top_y": 0.12,
-   "bytes": 58300,
+   "bytes": 65152,
    "family": "gen"
   },
   {
@@ -14188,7 +17745,7 @@
    ],
    "tris": 712,
    "top_y": null,
-   "bytes": 33244,
+   "bytes": 33628,
    "family": "gen"
   },
   {
@@ -14265,24 +17822,416 @@
    ],
    "solid": true,
    "size": [
-    0.8,
-    0.225,
+    0.806,
+    0.228,
     0.555
    ],
    "bounds_min": [
-    -0.4,
+    -0.403,
     -0.005,
     -0.405
    ],
    "bounds_max": [
-    0.4,
-    0.22,
+    0.403,
+    0.223,
     0.15
    ],
    "tris": 324,
    "top_y": 0.02,
-   "bytes": 15892,
+   "bytes": 16476,
    "family": "gen"
+  },
+  {
+   "id": "hanging_chili_ristra",
+   "category": "hanging",
+   "label": "chili_ristra",
+   "file": "models/hanging/hanging_chili_ristra.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.1,
+    0.686,
+    0.043
+   ],
+   "bounds_min": [
+    -0.05,
+    -0.343,
+    -0.0
+   ],
+   "bounds_max": [
+    0.05,
+    0.343,
+    0.043
+   ],
+   "tris": 3105,
+   "top_y": null,
+   "bytes": 95396,
+   "family": "food_hanging"
+  },
+  {
+   "id": "hanging_garlic_braid",
+   "category": "hanging",
+   "label": "garlic_braid",
+   "file": "models/hanging/hanging_garlic_braid.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.12,
+    0.486,
+    0.07
+   ],
+   "bounds_min": [
+    -0.06,
+    -0.243,
+    -0.0
+   ],
+   "bounds_max": [
+    0.06,
+    0.243,
+    0.07
+   ],
+   "tris": 6224,
+   "top_y": null,
+   "bytes": 166440,
+   "family": "food_hanging"
+  },
+  {
+   "id": "hanging_herb_bundles",
+   "category": "hanging",
+   "label": "herb_bundles",
+   "file": "models/hanging/hanging_herb_bundles.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.5,
+    0.316,
+    0.093
+   ],
+   "bounds_min": [
+    -0.25,
+    -0.158,
+    -0.0
+   ],
+   "bounds_max": [
+    0.25,
+    0.158,
+    0.093
+   ],
+   "tris": 3036,
+   "top_y": null,
+   "bytes": 176000,
+   "family": "food_hanging"
+  },
+  {
+   "id": "hanging_sausage_links_hanging",
+   "category": "hanging",
+   "label": "sausage_links_hanging",
+   "file": "models/hanging/hanging_sausage_links_hanging.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.38,
+    0.047
+   ],
+   "bounds_min": [
+    -0.15,
+    -0.19,
+    -0.0
+   ],
+   "bounds_max": [
+    0.15,
+    0.19,
+    0.047
+   ],
+   "tris": 2536,
+   "top_y": null,
+   "bytes": 118176,
+   "family": "food_hanging"
+  },
+  {
+   "id": "harvest_crate_cabbages",
+   "category": "harvest",
+   "label": "crate_cabbages",
+   "file": "models/harvest/harvest_crate_cabbages.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.604,
+    0.23,
+    0.416
+   ],
+   "bounds_min": [
+    -0.302,
+    0.0,
+    -0.208
+   ],
+   "bounds_max": [
+    0.302,
+    0.23,
+    0.208
+   ],
+   "tris": 3224,
+   "top_y": 0.02,
+   "bytes": 136868,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_herbs",
+   "category": "harvest",
+   "label": "crate_herbs",
+   "file": "models/harvest/harvest_crate_herbs.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.16,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.16,
+    0.2
+   ],
+   "tris": 3084,
+   "top_y": 0.02,
+   "bytes": 194636,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_lettuce",
+   "category": "harvest",
+   "label": "crate_lettuce",
+   "file": "models/harvest/harvest_crate_lettuce.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.622,
+    0.221,
+    0.498
+   ],
+   "bounds_min": [
+    -0.311,
+    0.0,
+    -0.249
+   ],
+   "bounds_max": [
+    0.311,
+    0.221,
+    0.249
+   ],
+   "tris": 3296,
+   "top_y": 0.02,
+   "bytes": 129244,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_peppers",
+   "category": "harvest",
+   "label": "crate_peppers",
+   "file": "models/harvest/harvest_crate_peppers.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.244,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.244,
+    0.2
+   ],
+   "tris": 2152,
+   "top_y": 0.02,
+   "bytes": 112428,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_potatoes",
+   "category": "harvest",
+   "label": "crate_potatoes",
+   "file": "models/harvest/harvest_crate_potatoes.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.266,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.266,
+    0.2
+   ],
+   "tris": 3320,
+   "top_y": 0.02,
+   "bytes": 114008,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_strawberries",
+   "category": "harvest",
+   "label": "crate_strawberries",
+   "file": "models/harvest/harvest_crate_strawberries.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.16,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.16,
+    0.2
+   ],
+   "tris": 5784,
+   "top_y": 0.02,
+   "bytes": 214648,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_tomatoes",
+   "category": "harvest",
+   "label": "crate_tomatoes",
+   "file": "models/harvest/harvest_crate_tomatoes.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.221,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.221,
+    0.2
+   ],
+   "tris": 4952,
+   "top_y": 0.02,
+   "bytes": 161908,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_tray_mushrooms",
+   "category": "harvest",
+   "label": "tray_mushrooms",
+   "file": "models/harvest/harvest_tray_mushrooms.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.111,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.111,
+    0.2
+   ],
+   "tris": 4284,
+   "top_y": 0.04,
+   "bytes": 149096,
+   "family": "food_harvest"
   },
   {
    "id": "hatch_dogged_rectangular",
@@ -14313,7 +18262,7 @@
    ],
    "tris": 792,
    "top_y": null,
-   "bytes": 34556,
+   "bytes": 34748,
    "family": "hatch_wall"
   },
   {
@@ -14362,7 +18311,7 @@
    "solid": false,
    "size": [
     1.24,
-    0.112,
+    0.115,
     1.24
    ],
    "bounds_min": [
@@ -14372,12 +18321,12 @@
    ],
    "bounds_max": [
     0.62,
-    0.112,
+    0.115,
     0.62
    ],
    "tris": 800,
    "top_y": 0.08,
-   "bytes": 32036,
+   "bytes": 32096,
    "family": "hatch_floor"
   },
   {
@@ -14409,7 +18358,7 @@
    ],
    "tris": 336,
    "top_y": 0.06,
-   "bytes": 18048,
+   "bytes": 18240,
    "family": "hatch_floor"
   },
   {
@@ -14505,7 +18454,7 @@
    ],
    "tris": 568,
    "top_y": null,
-   "bytes": 28892,
+   "bytes": 29384,
    "family": "hatch_wall"
   },
   {
@@ -14985,7 +18934,7 @@
    ],
    "tris": 306,
    "top_y": null,
-   "bytes": 27288,
+   "bytes": 27364,
    "family": "bridge_instrument_wall"
   },
   {
@@ -15113,7 +19062,7 @@
    ],
    "tris": 766,
    "top_y": null,
-   "bytes": 49208,
+   "bytes": 49284,
    "family": "bridge_instrument_wall"
   },
   {
@@ -15224,22 +19173,22 @@
    "solid": false,
    "size": [
     0.5,
-    2.0,
-    0.15
+    2.003,
+    0.153
    ],
    "bounds_min": [
     -0.25,
-    -1.0,
+    -1.003,
     -0.0
    ],
    "bounds_max": [
     0.25,
     1.0,
-    0.15
+    0.153
    ],
    "tris": 624,
    "top_y": null,
-   "bytes": 32576,
+   "bytes": 32848,
    "family": "gen"
   },
   {
@@ -15301,7 +19250,7 @@
    ],
    "tris": 208,
    "top_y": 0.2,
-   "bytes": 15676,
+   "bytes": 15700,
    "family": "gen"
   },
   {
@@ -15349,7 +19298,7 @@
    "size": [
     0.82,
     1.81,
-    0.51
+    0.513
    ],
    "bounds_min": [
     -0.41,
@@ -15359,7 +19308,7 @@
    "bounds_max": [
     0.41,
     1.81,
-    0.275
+    0.278
    ],
    "tris": 820,
    "top_y": 1.8,
@@ -15378,23 +19327,23 @@
    ],
    "solid": true,
    "size": [
-    0.62,
+    0.626,
     1.8,
     0.761
    ],
    "bounds_min": [
-    -0.31,
+    -0.313,
     0.0,
     -0.375
    ],
    "bounds_max": [
-    0.31,
+    0.313,
     1.8,
     0.386
    ],
    "tris": 1020,
    "top_y": 1.8,
-   "bytes": 52600,
+   "bytes": 52604,
    "family": "gen"
   },
   {
@@ -15425,7 +19374,7 @@
    ],
    "tris": 474,
    "top_y": null,
-   "bytes": 39616,
+   "bytes": 39888,
    "family": "gen"
   },
   {
@@ -15487,7 +19436,7 @@
    ],
    "tris": 1608,
    "top_y": 0.7,
-   "bytes": 74824,
+   "bytes": 74820,
    "family": "gen"
   },
   {
@@ -15611,7 +19560,7 @@
    ],
    "tris": 936,
    "top_y": 1.9,
-   "bytes": 54220,
+   "bytes": 54412,
    "family": "gen"
   },
   {
@@ -15735,7 +19684,7 @@
    ],
    "tris": 1256,
    "top_y": 1.72,
-   "bytes": 53952,
+   "bytes": 57792,
    "family": "gen"
   },
   {
@@ -15828,7 +19777,7 @@
    ],
    "tris": 574,
    "top_y": 2.0,
-   "bytes": 44812,
+   "bytes": 44124,
    "family": "gen"
   },
   {
@@ -15891,7 +19840,7 @@
    ],
    "tris": 1050,
    "top_y": 1.54,
-   "bytes": 62980,
+   "bytes": 67484,
    "family": "sci_labbench_floor"
   },
   {
@@ -15921,9 +19870,9 @@
     3.0,
     0.466
    ],
-   "tris": 942,
+   "tris": 950,
    "top_y": 2.4,
-   "bytes": 63568,
+   "bytes": 64216,
    "family": "sci_labbench_floor"
   },
   {
@@ -16053,7 +20002,7 @@
    ],
    "tris": 602,
    "top_y": 2.3,
-   "bytes": 46340,
+   "bytes": 46656,
    "family": "sci_labbench_floor"
   },
   {
@@ -16085,7 +20034,7 @@
    ],
    "tris": 940,
    "top_y": 0.88,
-   "bytes": 71564,
+   "bytes": 78496,
    "family": "sci_labbench_floor"
   },
   {
@@ -16117,7 +20066,7 @@
    ],
    "tris": 1196,
    "top_y": 1.56,
-   "bytes": 67032,
+   "bytes": 67420,
    "family": "sci_labbench_floor"
   },
   {
@@ -16404,7 +20353,7 @@
    ],
    "tris": 1600,
    "top_y": 1.02,
-   "bytes": 72828,
+   "bytes": 73212,
    "family": "gen"
   },
   {
@@ -16466,7 +20415,7 @@
    ],
    "tris": 702,
    "top_y": 3.3,
-   "bytes": 55496,
+   "bytes": 69428,
    "family": "gen"
   },
   {
@@ -16497,7 +20446,7 @@
    ],
    "tris": 1088,
    "top_y": 0.58,
-   "bytes": 47476,
+   "bytes": 47472,
    "family": "gen"
   },
   {
@@ -16513,22 +20462,22 @@
    "solid": true,
    "size": [
     1.49,
-    0.9,
-    3.0
+    0.903,
+    3.006
    ],
    "bounds_min": [
     -0.69,
     0.0,
-    -1.5
+    -1.503
    ],
    "bounds_max": [
     0.8,
-    0.9,
-    1.5
+    0.903,
+    1.503
    ],
    "tris": 872,
    "top_y": 0.72,
-   "bytes": 47976,
+   "bytes": 48836,
    "family": "gen"
   },
   {
@@ -16543,17 +20492,17 @@
    ],
    "solid": true,
    "size": [
-    3.6,
+    3.606,
     3.845,
     1.5
    ],
    "bounds_min": [
-    -1.8,
+    -1.803,
     0.0,
     -0.75
    ],
    "bounds_max": [
-    1.8,
+    1.803,
     3.845,
     0.75
    ],
@@ -16745,7 +20694,7 @@
    ],
    "tris": 1132,
    "top_y": 1.98,
-   "bytes": 51916,
+   "bytes": 52688,
    "family": "gen"
   },
   {
@@ -16794,7 +20743,7 @@
    "solid": true,
    "size": [
     1.04,
-    1.85,
+    1.853,
     0.557
    ],
    "bounds_min": [
@@ -16804,12 +20753,12 @@
    ],
    "bounds_max": [
     0.52,
-    1.85,
+    1.853,
     0.287
    ],
    "tris": 324,
    "top_y": 1.86,
-   "bytes": 19316,
+   "bytes": 19380,
    "family": "crew_locker_floor"
   },
   {
@@ -16839,9 +20788,9 @@
     0.51,
     0.275
    ],
-   "tris": 302,
+   "tris": 304,
    "top_y": 0.5,
-   "bytes": 17240,
+   "bytes": 18116,
    "family": "crew_locker_floor"
   },
   {
@@ -16889,23 +20838,23 @@
    ],
    "solid": false,
    "size": [
-    1.2,
+    1.206,
     1.385,
-    0.38
+    0.383
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     -0.7,
     -0.0
    ],
    "bounds_max": [
-    0.6,
+    0.603,
     0.685,
-    0.38
+    0.383
    ],
    "tris": 604,
    "top_y": 0.68,
-   "bytes": 29724,
+   "bytes": 30076,
    "family": "crew_locker_wall"
   },
   {
@@ -16954,7 +20903,7 @@
    "solid": true,
    "size": [
     1.18,
-    0.56,
+    0.563,
     0.615
    ],
    "bounds_min": [
@@ -16964,12 +20913,12 @@
    ],
    "bounds_max": [
     0.59,
-    0.56,
+    0.563,
     0.325
    ],
    "tris": 518,
    "top_y": 0.56,
-   "bytes": 21048,
+   "bytes": 21876,
    "family": "crew_locker_floor"
   },
   {
@@ -17018,7 +20967,7 @@
    "solid": true,
    "size": [
     0.52,
-    1.885,
+    1.888,
     0.547
    ],
    "bounds_min": [
@@ -17028,12 +20977,12 @@
    ],
    "bounds_max": [
     0.26,
-    1.885,
+    1.888,
     0.287
    ],
    "tris": 320,
    "top_y": 1.88,
-   "bytes": 19856,
+   "bytes": 19920,
    "family": "crew_locker_floor"
   },
   {
@@ -17133,6 +21082,966 @@
    "family": "crew_locker_floor"
   },
   {
+   "id": "meal_beef_stew_pot",
+   "category": "meal",
+   "label": "beef_stew_pot",
+   "file": "models/meal/meal_beef_stew_pot.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.29,
+    0.15,
+    0.242
+   ],
+   "bounds_min": [
+    -0.145,
+    0.0,
+    -0.121
+   ],
+   "bounds_max": [
+    0.145,
+    0.15,
+    0.121
+   ],
+   "tris": 3276,
+   "top_y": null,
+   "bytes": 168664,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_burger_with_fries",
+   "category": "meal",
+   "label": "burger_with_fries",
+   "file": "models/meal/meal_burger_with_fries.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.099,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.099,
+    0.14
+   ],
+   "tris": 2856,
+   "top_y": null,
+   "bytes": 138140,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_burrito_plate",
+   "category": "meal",
+   "label": "burrito_plate",
+   "file": "models/meal/meal_burrito_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.07,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.07,
+    0.15
+   ],
+   "tris": 1740,
+   "top_y": null,
+   "bytes": 102108,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_caesar_salad",
+   "category": "meal",
+   "label": "caesar_salad",
+   "file": "models/meal/meal_caesar_salad.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.29,
+    0.052,
+    0.29
+   ],
+   "bounds_min": [
+    -0.145,
+    0.0,
+    -0.145
+   ],
+   "bounds_max": [
+    0.145,
+    0.052,
+    0.145
+   ],
+   "tris": 2244,
+   "top_y": null,
+   "bytes": 99276,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_club_sandwich",
+   "category": "meal",
+   "label": "club_sandwich",
+   "file": "models/meal/meal_club_sandwich.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.098,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.098,
+    0.14
+   ],
+   "tris": 1210,
+   "top_y": null,
+   "bytes": 39540,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_curry_and_rice",
+   "category": "meal",
+   "label": "curry_and_rice",
+   "file": "models/meal/meal_curry_and_rice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.32,
+    0.076,
+    0.32
+   ],
+   "bounds_min": [
+    -0.16,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.16,
+    0.076,
+    0.16
+   ],
+   "tris": 2588,
+   "top_y": 0.02,
+   "bytes": 142892,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_double_cheeseburger",
+   "category": "meal",
+   "label": "double_cheeseburger",
+   "file": "models/meal/meal_double_cheeseburger.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.236,
+    0.159,
+    0.236
+   ],
+   "bounds_min": [
+    -0.118,
+    0.0,
+    -0.118
+   ],
+   "bounds_max": [
+    0.118,
+    0.159,
+    0.118
+   ],
+   "tris": 1904,
+   "top_y": 0.0,
+   "bytes": 111944,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_dumplings_steamer",
+   "category": "meal",
+   "label": "dumplings_steamer",
+   "file": "models/meal/meal_dumplings_steamer.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.298,
+    0.05,
+    0.308
+   ],
+   "bounds_min": [
+    -0.149,
+    0.0,
+    -0.154
+   ],
+   "bounds_max": [
+    0.149,
+    0.05,
+    0.154
+   ],
+   "tris": 2612,
+   "top_y": null,
+   "bytes": 100836,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_fish_and_chips",
+   "category": "meal",
+   "label": "fish_and_chips",
+   "file": "models/meal/meal_fish_and_chips.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.32,
+    0.064,
+    0.32
+   ],
+   "bounds_min": [
+    -0.16,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.16,
+    0.064,
+    0.16
+   ],
+   "tris": 2674,
+   "top_y": null,
+   "bytes": 95180,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_fried_egg_breakfast",
+   "category": "meal",
+   "label": "fried_egg_breakfast",
+   "file": "models/meal/meal_fried_egg_breakfast.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.029,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.029,
+    0.15
+   ],
+   "tris": 1716,
+   "top_y": null,
+   "bytes": 103112,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_fried_rice_bowl",
+   "category": "meal",
+   "label": "fried_rice_bowl",
+   "file": "models/meal/meal_fried_rice_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.21,
+    0.105,
+    0.176
+   ],
+   "bounds_min": [
+    -0.105,
+    0.0,
+    -0.088
+   ],
+   "bounds_max": [
+    0.105,
+    0.105,
+    0.088
+   ],
+   "tris": 3130,
+   "top_y": null,
+   "bytes": 131724,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_hot_dog_mustard",
+   "category": "meal",
+   "label": "hot_dog_mustard",
+   "file": "models/meal/meal_hot_dog_mustard.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.226,
+    0.088,
+    0.15
+   ],
+   "bounds_min": [
+    -0.113,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.113,
+    0.088,
+    0.075
+   ],
+   "tris": 1214,
+   "top_y": null,
+   "bytes": 93348,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_lasagna_slice",
+   "category": "meal",
+   "label": "lasagna_slice",
+   "file": "models/meal/meal_lasagna_slice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.069,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.069,
+    0.14
+   ],
+   "tris": 1196,
+   "top_y": null,
+   "bytes": 58624,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_mac_and_cheese",
+   "category": "meal",
+   "label": "mac_and_cheese",
+   "file": "models/meal/meal_mac_and_cheese.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.19,
+    0.059,
+    0.188
+   ],
+   "bounds_min": [
+    -0.095,
+    0.0,
+    -0.094
+   ],
+   "bounds_max": [
+    0.095,
+    0.059,
+    0.094
+   ],
+   "tris": 4212,
+   "top_y": null,
+   "bytes": 147892,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_maki_platter",
+   "category": "meal",
+   "label": "maki_platter",
+   "file": "models/meal/meal_maki_platter.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.396,
+    0.047,
+    0.21
+   ],
+   "bounds_min": [
+    -0.198,
+    0.0,
+    -0.105
+   ],
+   "bounds_max": [
+    0.198,
+    0.047,
+    0.105
+   ],
+   "tris": 2192,
+   "top_y": null,
+   "bytes": 118876,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_omelette_plate",
+   "category": "meal",
+   "label": "omelette_plate",
+   "file": "models/meal/meal_omelette_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.045,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.045,
+    0.15
+   ],
+   "tris": 2312,
+   "top_y": null,
+   "bytes": 88424,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_paella_pan",
+   "category": "meal",
+   "label": "paella_pan",
+   "file": "models/meal/meal_paella_pan.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.462,
+    0.053,
+    0.36
+   ],
+   "bounds_min": [
+    -0.231,
+    0.0,
+    -0.18
+   ],
+   "bounds_max": [
+    0.231,
+    0.053,
+    0.18
+   ],
+   "tris": 3420,
+   "top_y": 0.02,
+   "bytes": 128228,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_pho_bowl",
+   "category": "meal",
+   "label": "pho_bowl",
+   "file": "models/meal/meal_pho_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.256,
+    0.112,
+    0.23
+   ],
+   "bounds_min": [
+    -0.128,
+    0.0,
+    -0.115
+   ],
+   "bounds_max": [
+    0.128,
+    0.112,
+    0.115
+   ],
+   "tris": 5030,
+   "top_y": 0.08,
+   "bytes": 213212,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_pizza_margherita",
+   "category": "meal",
+   "label": "pizza_margherita",
+   "file": "models/meal/meal_pizza_margherita.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.336,
+    0.027,
+    0.336
+   ],
+   "bounds_min": [
+    -0.168,
+    0.0,
+    -0.168
+   ],
+   "bounds_max": [
+    0.168,
+    0.027,
+    0.168
+   ],
+   "tris": 2612,
+   "top_y": 0.02,
+   "bytes": 137000,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_pizza_pepperoni",
+   "category": "meal",
+   "label": "pizza_pepperoni",
+   "file": "models/meal/meal_pizza_pepperoni.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.33,
+    0.021,
+    0.33
+   ],
+   "bounds_min": [
+    -0.165,
+    0.0,
+    -0.165
+   ],
+   "bounds_max": [
+    0.165,
+    0.021,
+    0.165
+   ],
+   "tris": 3756,
+   "top_y": 0.02,
+   "bytes": 180608,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_porridge_bowl",
+   "category": "meal",
+   "label": "porridge_bowl",
+   "file": "models/meal/meal_porridge_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.19,
+    0.08,
+    0.17
+   ],
+   "bounds_min": [
+    -0.095,
+    0.0,
+    -0.085
+   ],
+   "bounds_max": [
+    0.095,
+    0.08,
+    0.085
+   ],
+   "tris": 3104,
+   "top_y": null,
+   "bytes": 101388,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_ramen_bowl",
+   "category": "meal",
+   "label": "ramen_bowl",
+   "file": "models/meal/meal_ramen_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.238,
+    0.145,
+    0.21
+   ],
+   "bounds_min": [
+    -0.119,
+    0.0,
+    -0.105
+   ],
+   "bounds_max": [
+    0.119,
+    0.145,
+    0.105
+   ],
+   "tris": 6860,
+   "top_y": null,
+   "bytes": 264868,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_roast_chicken",
+   "category": "meal",
+   "label": "roast_chicken",
+   "file": "models/meal/meal_roast_chicken.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.4,
+    0.138,
+    0.328
+   ],
+   "bounds_min": [
+    -0.2,
+    0.0,
+    -0.164
+   ],
+   "bounds_max": [
+    0.2,
+    0.138,
+    0.164
+   ],
+   "tris": 5060,
+   "top_y": 0.02,
+   "bytes": 197012,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_salad_bowl_wood",
+   "category": "meal",
+   "label": "salad_bowl_wood",
+   "file": "models/meal/meal_salad_bowl_wood.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.129,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.129,
+    0.15
+   ],
+   "tris": 4712,
+   "top_y": null,
+   "bytes": 225328,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_shepherds_pie_dish",
+   "category": "meal",
+   "label": "shepherds_pie_dish",
+   "file": "models/meal/meal_shepherds_pie_dish.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.068,
+    0.15
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.1,
+    0.068,
+    0.075
+   ],
+   "tris": 1128,
+   "top_y": null,
+   "bytes": 30700,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_spaghetti_bolognese",
+   "category": "meal",
+   "label": "spaghetti_bolognese",
+   "file": "models/meal/meal_spaghetti_bolognese.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.29,
+    0.063,
+    0.29
+   ],
+   "bounds_min": [
+    -0.145,
+    0.0,
+    -0.145
+   ],
+   "bounds_max": [
+    0.145,
+    0.063,
+    0.145
+   ],
+   "tris": 4032,
+   "top_y": null,
+   "bytes": 163648,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_steak_dinner",
+   "category": "meal",
+   "label": "steak_dinner",
+   "file": "models/meal/meal_steak_dinner.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.056,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.056,
+    0.15
+   ],
+   "tris": 2492,
+   "top_y": null,
+   "bytes": 104688,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_sushi_nigiri_set",
+   "category": "meal",
+   "label": "sushi_nigiri_set",
+   "file": "models/meal/meal_sushi_nigiri_set.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.052,
+    0.13
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.065
+   ],
+   "bounds_max": [
+    0.15,
+    0.052,
+    0.065
+   ],
+   "tris": 2060,
+   "top_y": null,
+   "bytes": 99176,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_tacos_trio",
+   "category": "meal",
+   "label": "tacos_trio",
+   "file": "models/meal/meal_tacos_trio.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.324,
+    0.085,
+    0.13
+   ],
+   "bounds_min": [
+    -0.162,
+    0.0,
+    -0.065
+   ],
+   "bounds_max": [
+    0.162,
+    0.085,
+    0.065
+   ],
+   "tris": 1064,
+   "top_y": null,
+   "bytes": 59568,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_tomato_soup_bowl",
+   "category": "meal",
+   "label": "tomato_soup_bowl",
+   "file": "models/meal/meal_tomato_soup_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.21,
+    0.07,
+    0.208
+   ],
+   "bounds_min": [
+    -0.105,
+    0.0,
+    -0.104
+   ],
+   "bounds_max": [
+    0.105,
+    0.07,
+    0.104
+   ],
+   "tris": 2184,
+   "top_y": null,
+   "bytes": 75440,
+   "family": "food_meal"
+  },
+  {
    "id": "medbed_diagnostic_biobed",
    "category": "medbed",
    "label": "Diagnostic Biobed",
@@ -17161,7 +22070,7 @@
    ],
    "tris": 1114,
    "top_y": 0.68,
-   "bytes": 69228,
+   "bytes": 68504,
    "family": "medbed"
   },
   {
@@ -17178,7 +22087,7 @@
    "solid": true,
    "size": [
     0.78,
-    0.965,
+    0.968,
     2.02
    ],
    "bounds_min": [
@@ -17188,12 +22097,12 @@
    ],
    "bounds_max": [
     0.39,
-    0.965,
+    0.968,
     1.1
    ],
    "tris": 360,
    "top_y": 0.62,
-   "bytes": 21328,
+   "bytes": 21392,
    "family": "medbed"
   },
   {
@@ -17243,7 +22152,7 @@
    "size": [
     1.2,
     2.346,
-    2.117
+    2.12
    ],
    "bounds_min": [
     -0.6,
@@ -17253,7 +22162,7 @@
    "bounds_max": [
     0.6,
     2.35,
-    1.067
+    1.07
    ],
    "tris": 824,
    "top_y": 2.12,
@@ -17306,7 +22215,7 @@
    "solid": true,
    "size": [
     0.9,
-    2.63,
+    2.633,
     2.5
    ],
    "bounds_min": [
@@ -17316,12 +22225,12 @@
    ],
    "bounds_max": [
     0.45,
-    2.63,
+    2.633,
     1.0
    ],
    "tris": 578,
-   "top_y": 1.04,
-   "bytes": 28488,
+   "top_y": 1.06,
+   "bytes": 28548,
    "family": "medbed"
   },
   {
@@ -17338,7 +22247,7 @@
    "solid": true,
    "size": [
     1.02,
-    1.8,
+    1.803,
     0.67
    ],
    "bounds_min": [
@@ -17348,12 +22257,12 @@
    ],
    "bounds_max": [
     0.51,
-    1.8,
+    1.803,
     0.36
    ],
    "tris": 394,
    "top_y": 1.8,
-   "bytes": 37840,
+   "bytes": 41204,
    "family": "medcabinet"
   },
   {
@@ -17545,7 +22454,7 @@
    ],
    "tris": 966,
    "top_y": 1.3,
-   "bytes": 65808,
+   "bytes": 66892,
    "family": "medcabinet"
   },
   {
@@ -17608,8 +22517,8 @@
     0.6
    ],
    "tris": 1130,
-   "top_y": 2.54,
-   "bytes": 59896,
+   "top_y": 2.56,
+   "bytes": 60728,
    "family": "medscanner"
   },
   {
@@ -17641,7 +22550,7 @@
    ],
    "tris": 558,
    "top_y": 1.74,
-   "bytes": 47212,
+   "bytes": 47288,
    "family": "medscanner"
   },
   {
@@ -17673,7 +22582,7 @@
    ],
    "tris": 238,
    "top_y": 0.06,
-   "bytes": 22112,
+   "bytes": 22944,
    "family": "medscanner"
   },
   {
@@ -17691,12 +22600,12 @@
    "size": [
     2.2,
     2.25,
-    2.65
+    2.653
    ],
    "bounds_min": [
     -1.1,
     0.0,
-    -0.8
+    -0.803
    ],
    "bounds_max": [
     1.1,
@@ -17801,7 +22710,7 @@
    ],
    "tris": 1450,
    "top_y": 0.82,
-   "bytes": 69960,
+   "bytes": 69832,
    "family": "medscanner"
   },
   {
@@ -17833,7 +22742,7 @@
    ],
    "tris": 438,
    "top_y": 0.9,
-   "bytes": 33288,
+   "bytes": 33560,
    "family": "medscanner"
   },
   {
@@ -17915,7 +22824,7 @@
    "size": [
     0.845,
     1.292,
-    0.577
+    0.58
    ],
    "bounds_min": [
     -0.4,
@@ -17925,11 +22834,11 @@
    "bounds_max": [
     0.445,
     1.295,
-    0.297
+    0.3
    ],
    "tris": 732,
    "top_y": 1.26,
-   "bytes": 34420,
+   "bytes": 34424,
    "family": "medsupply"
   },
   {
@@ -18233,17 +23142,17 @@
    ],
    "solid": false,
    "size": [
-    0.3,
+    0.306,
     0.204,
-    0.14
+    0.143
    ],
    "bounds_min": [
-    -0.15,
+    -0.153,
     0.001,
-    -0.07
+    -0.073
    ],
    "bounds_max": [
-    0.15,
+    0.153,
     0.205,
     0.07
    ],
@@ -18266,7 +23175,7 @@
    "solid": true,
    "size": [
     1.037,
-    1.78,
+    1.783,
     0.905
    ],
    "bounds_min": [
@@ -18276,12 +23185,12 @@
    ],
    "bounds_max": [
     0.537,
-    1.78,
+    1.783,
     0.455
    ],
    "tris": 842,
    "top_y": 1.48,
-   "bytes": 54652,
+   "bytes": 58076,
    "family": "sci_microscope_floor"
   },
   {
@@ -18313,7 +23222,7 @@
    ],
    "tris": 1348,
    "top_y": 0.8,
-   "bytes": 82284,
+   "bytes": 90600,
    "family": "sci_microscope_floor"
   },
   {
@@ -18505,7 +23414,7 @@
    ],
    "tris": 250,
    "top_y": null,
-   "bytes": 24216,
+   "bytes": 24832,
    "family": "noticeboard"
   },
   {
@@ -18877,7 +23786,7 @@
    ],
    "tris": 1620,
    "top_y": 1.0,
-   "bytes": 63324,
+   "bytes": 63304,
    "family": "gen"
   },
   {
@@ -18894,12 +23803,12 @@
    "size": [
     1.25,
     0.915,
-    1.035
+    1.038
    ],
    "bounds_min": [
     -0.625,
     0.0,
-    -0.5
+    -0.503
    ],
    "bounds_max": [
     0.625,
@@ -18908,7 +23817,7 @@
    ],
    "tris": 1328,
    "top_y": 0.7,
-   "bytes": 67904,
+   "bytes": 68700,
    "family": "gen"
   },
   {
@@ -18955,7 +23864,7 @@
    "solid": true,
    "size": [
     2.76,
-    5.109,
+    5.112,
     1.18
    ],
    "bounds_min": [
@@ -18965,12 +23874,12 @@
    ],
    "bounds_max": [
     1.38,
-    5.109,
+    5.112,
     0.59
    ],
    "tris": 852,
    "top_y": 4.66,
-   "bytes": 43772,
+   "bytes": 44628,
    "family": "gen"
   },
   {
@@ -18986,7 +23895,7 @@
    "solid": true,
    "size": [
     2.76,
-    3.2,
+    3.203,
     1.18
    ],
    "bounds_min": [
@@ -18996,12 +23905,12 @@
    ],
    "bounds_max": [
     1.38,
-    3.2,
+    3.203,
     0.59
    ],
    "tris": 736,
    "top_y": 3.16,
-   "bytes": 38528,
+   "bytes": 39832,
    "family": "gen"
   },
   {
@@ -19016,23 +23925,23 @@
    ],
    "solid": true,
    "size": [
-    0.8,
+    0.806,
     1.845,
-    0.7
+    0.703
    ],
    "bounds_min": [
-    -0.4,
+    -0.403,
     0.0,
     -0.35
    ],
    "bounds_max": [
-    0.4,
+    0.403,
     1.845,
-    0.35
+    0.353
    ],
    "tris": 608,
    "top_y": 0.18,
-   "bytes": 30576,
+   "bytes": 30580,
    "family": "gen"
   },
   {
@@ -19047,23 +23956,23 @@
    ],
    "solid": true,
    "size": [
-    0.8,
+    0.806,
     1.845,
-    0.7
+    0.703
    ],
    "bounds_min": [
-    -0.4,
+    -0.403,
     0.0,
     -0.35
    ],
    "bounds_max": [
-    0.4,
+    0.403,
     1.845,
-    0.35
+    0.353
    ],
    "tris": 700,
    "top_y": 1.44,
-   "bytes": 38888,
+   "bytes": 38892,
    "family": "gen"
   },
   {
@@ -19269,7 +24178,7 @@
    "size": [
     0.12,
     1.3,
-    0.06
+    0.065
    ],
    "bounds_min": [
     -0.06,
@@ -19279,11 +24188,11 @@
    "bounds_max": [
     0.06,
     0.65,
-    0.06
+    0.065
    ],
    "tris": 176,
    "top_y": null,
-   "bytes": 8480,
+   "bytes": 8736,
    "family": "panellight"
   },
   {
@@ -19461,7 +24370,7 @@
    "size": [
     0.65,
     0.19,
-    0.14
+    0.143
    ],
    "bounds_min": [
     -0.325,
@@ -19471,11 +24380,11 @@
    "bounds_max": [
     0.325,
     0.185,
-    0.14
+    0.143
    ],
    "tris": 188,
    "top_y": 0.18,
-   "bytes": 9468,
+   "bytes": 10032,
    "family": "panellight"
   },
   {
@@ -19571,7 +24480,7 @@
    ],
    "tris": 1726,
    "top_y": 0.2,
-   "bytes": 93544,
+   "bytes": 97348,
    "family": "sci_particle_floor"
   },
   {
@@ -19589,7 +24498,7 @@
    "size": [
     1.196,
     2.0,
-    1.22
+    1.222
    ],
    "bounds_min": [
     -0.598,
@@ -19599,11 +24508,11 @@
    "bounds_max": [
     0.598,
     2.0,
-    0.622
+    0.624
    ],
    "tris": 1806,
    "top_y": 0.5,
-   "bytes": 87476,
+   "bytes": 89176,
    "family": "sci_particle_floor"
   },
   {
@@ -19716,7 +24625,7 @@
    "solid": true,
    "size": [
     3.48,
-    3.68,
+    3.683,
     0.6
    ],
    "bounds_min": [
@@ -19726,12 +24635,12 @@
    ],
    "bounds_max": [
     1.74,
-    3.68,
+    3.683,
     0.3
    ],
    "tris": 968,
    "top_y": 0.12,
-   "bytes": 36156,
+   "bytes": 36236,
    "family": "pillar_col"
   },
   {
@@ -19780,7 +24689,7 @@
    "solid": true,
    "size": [
     2.2,
-    3.4,
+    3.403,
     0.5
    ],
    "bounds_min": [
@@ -19790,12 +24699,12 @@
    ],
    "bounds_max": [
     1.1,
-    3.4,
+    3.403,
     0.25
    ],
    "tris": 388,
    "top_y": 3.4,
-   "bytes": 19904,
+   "bytes": 20736,
    "family": "pillar_col"
   },
   {
@@ -19812,7 +24721,7 @@
    "solid": true,
    "size": [
     0.6,
-    3.4,
+    3.403,
     1.0
    ],
    "bounds_min": [
@@ -19822,12 +24731,12 @@
    ],
    "bounds_max": [
     0.3,
-    3.4,
+    3.403,
     0.45
    ],
    "tris": 232,
    "top_y": 3.4,
-   "bytes": 10076,
+   "bytes": 10136,
    "family": "pillar_col"
   },
   {
@@ -19891,7 +24800,7 @@
    ],
    "tris": 472,
    "top_y": 3.4,
-   "bytes": 20752,
+   "bytes": 21524,
    "family": "pillar_col"
   },
   {
@@ -20101,21 +25010,21 @@
    "size": [
     4.024,
     0.515,
-    0.46
+    0.466
    ],
    "bounds_min": [
     -2.012,
     -0.525,
-    -0.23
+    -0.233
    ],
    "bounds_max": [
     2.012,
     -0.01,
-    0.23
+    0.233
    ],
    "tris": 664,
    "top_y": 0.0,
-   "bytes": 30076,
+   "bytes": 31992,
    "family": "pillar_beam"
   },
   {
@@ -20196,12 +25105,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.314,
+    0.317,
     0.222
    ],
    "bounds_min": [
     -1.0,
-    -0.314,
+    -0.317,
     -0.111
    ],
    "bounds_max": [
@@ -20211,7 +25120,7 @@
    ],
    "tris": 660,
    "top_y": null,
-   "bytes": 26220,
+   "bytes": 26280,
    "family": "pipe_ceiling"
   },
   {
@@ -20275,7 +25184,7 @@
    ],
    "tris": 656,
    "top_y": null,
-   "bytes": 26204,
+   "bytes": 26396,
    "family": "pipe_ceiling"
   },
   {
@@ -20292,12 +25201,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.23,
+    0.233,
     1.75
    ],
    "bounds_min": [
     -1.0,
-    -0.23,
+    -0.233,
     -0.875
    ],
    "bounds_max": [
@@ -20307,7 +25216,7 @@
    ],
    "tris": 744,
    "top_y": null,
-   "bytes": 30876,
+   "bytes": 30936,
    "family": "pipe_ceiling"
   },
   {
@@ -20324,12 +25233,12 @@
    "solid": false,
    "size": [
     1.248,
-    0.252,
+    0.255,
     1.045
    ],
    "bounds_min": [
     -1.0,
-    -0.252,
+    -0.255,
     -0.105
    ],
    "bounds_max": [
@@ -20339,7 +25248,7 @@
    ],
    "tris": 640,
    "top_y": null,
-   "bytes": 25332,
+   "bytes": 25396,
    "family": "pipe_ceiling"
   },
   {
@@ -21028,7 +25937,7 @@
    "solid": false,
    "size": [
     0.387,
-    0.149,
+    0.153,
     0.3
    ],
    "bounds_min": [
@@ -21038,12 +25947,12 @@
    ],
    "bounds_max": [
     0.18,
-    0.149,
+    0.153,
     0.15
    ],
    "tris": 786,
    "top_y": 0.02,
-   "bytes": 42608,
+   "bytes": 42708,
    "family": "crew_plant_table"
   },
   {
@@ -21159,23 +26068,23 @@
    ],
    "solid": false,
    "size": [
-    1.8,
+    1.806,
     0.6,
     0.43
    ],
    "bounds_min": [
-    -0.9,
+    -0.903,
     -0.6,
     -0.2
    ],
    "bounds_max": [
-    0.9,
+    0.903,
     0.0,
     0.23
    ],
    "tris": 240,
    "top_y": -0.52,
-   "bytes": 16248,
+   "bytes": 16244,
    "family": "growlight"
   },
   {
@@ -21192,23 +26101,23 @@
    ],
    "solid": true,
    "size": [
-    1.26,
-    1.806,
-    0.4
+    1.266,
+    1.809,
+    0.406
    ],
    "bounds_min": [
-    -0.63,
+    -0.633,
     0.0,
-    -0.2
+    -0.203
    ],
    "bounds_max": [
-    0.63,
-    1.806,
-    0.2
+    0.633,
+    1.809,
+    0.203
    ],
    "tris": 1140,
    "top_y": 1.64,
-   "bytes": 72156,
+   "bytes": 72212,
    "family": "planter"
   },
   {
@@ -21373,7 +26282,7 @@
    ],
    "tris": 1724,
    "top_y": 0.38,
-   "bytes": 76164,
+   "bytes": 76160,
    "family": "planter"
   },
   {
@@ -21472,7 +26381,7 @@
    ],
    "tris": 790,
    "top_y": 2.0,
-   "bytes": 58252,
+   "bytes": 58328,
    "family": "comm_rack_floor"
   },
   {
@@ -21538,7 +26447,7 @@
    ],
    "tris": 1086,
    "top_y": 2.1,
-   "bytes": 70832,
+   "bytes": 84768,
    "family": "comm_rack_floor"
   },
   {
@@ -21868,7 +26777,7 @@
    ],
    "tris": 1318,
    "top_y": 2.1,
-   "bytes": 100560,
+   "bytes": 100932,
    "family": "comm_rack_floor"
   },
   {
@@ -21918,7 +26827,7 @@
    "solid": true,
    "size": [
     2.1,
-    1.055,
+    1.058,
     0.16
    ],
    "bounds_min": [
@@ -21928,12 +26837,12 @@
    ],
    "bounds_max": [
     1.05,
-    1.055,
+    1.058,
     0.08
    ],
    "tris": 516,
    "top_y": 1.06,
-   "bytes": 23936,
+   "bytes": 24384,
    "family": "railing_fam"
   },
   {
@@ -21950,7 +26859,7 @@
    "solid": true,
    "size": [
     2.12,
-    1.06,
+    1.063,
     0.16
    ],
    "bounds_min": [
@@ -21960,12 +26869,12 @@
    ],
    "bounds_max": [
     1.06,
-    1.06,
+    1.063,
     0.08
    ],
    "tris": 288,
    "top_y": 1.06,
-   "bytes": 13208,
+   "bytes": 13656,
    "family": "railing_fam"
   },
   {
@@ -22014,7 +26923,7 @@
    "solid": true,
    "size": [
     2.04,
-    1.09,
+    1.093,
     0.14
    ],
    "bounds_min": [
@@ -22024,12 +26933,12 @@
    ],
    "bounds_max": [
     1.02,
-    1.09,
+    1.093,
     0.07
    ],
    "tris": 436,
    "top_y": null,
-   "bytes": 17036,
+   "bytes": 17096,
    "family": "railing_fam"
   },
   {
@@ -22092,8 +27001,424 @@
    ],
    "tris": 852,
    "top_y": 0.8,
-   "bytes": 41808,
+   "bytes": 42576,
    "family": "railing_fam"
+  },
+  {
+   "id": "ration_bento_ration_box",
+   "category": "ration",
+   "label": "bento_ration_box",
+   "file": "models/ration/ration_bento_ration_box.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.24,
+    0.051,
+    0.374
+   ],
+   "bounds_min": [
+    -0.12,
+    0.0,
+    -0.187
+   ],
+   "bounds_max": [
+    0.12,
+    0.051,
+    0.187
+   ],
+   "tris": 1292,
+   "top_y": 0.02,
+   "bytes": 111880,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_canned_beans_open",
+   "category": "ration",
+   "label": "canned_beans_open",
+   "file": "models/ration/ration_canned_beans_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.232,
+    0.141,
+    0.11
+   ],
+   "bounds_min": [
+    -0.116,
+    0.0,
+    -0.055
+   ],
+   "bounds_max": [
+    0.116,
+    0.141,
+    0.055
+   ],
+   "tris": 684,
+   "top_y": null,
+   "bytes": 40624,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_cup_noodle_instant",
+   "category": "ration",
+   "label": "cup_noodle_instant",
+   "file": "models/ration/ration_cup_noodle_instant.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.144,
+    0.108,
+    0.092
+   ],
+   "bounds_min": [
+    -0.072,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.072,
+    0.108,
+    0.046
+   ],
+   "tris": 564,
+   "top_y": null,
+   "bytes": 34648,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_freeze_dried_tray",
+   "category": "ration",
+   "label": "freeze_dried_tray",
+   "file": "models/ration/ration_freeze_dried_tray.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.242,
+    0.041,
+    0.16
+   ],
+   "bounds_min": [
+    -0.121,
+    0.0,
+    -0.08
+   ],
+   "bounds_max": [
+    0.121,
+    0.041,
+    0.08
+   ],
+   "tris": 724,
+   "top_y": null,
+   "bytes": 68092,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_mre_tray_pasta",
+   "category": "ration",
+   "label": "mre_tray_pasta",
+   "file": "models/ration/ration_mre_tray_pasta.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.314,
+    0.046,
+    0.232
+   ],
+   "bounds_min": [
+    -0.157,
+    0.0,
+    -0.116
+   ],
+   "bounds_max": [
+    0.157,
+    0.046,
+    0.116
+   ],
+   "tris": 824,
+   "top_y": null,
+   "bytes": 49880,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_nutrient_tubes_set",
+   "category": "ration",
+   "label": "nutrient_tubes_set",
+   "file": "models/ration/ration_nutrient_tubes_set.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.156,
+    0.107,
+    0.124
+   ],
+   "bounds_min": [
+    -0.078,
+    0.0,
+    -0.062
+   ],
+   "bounds_max": [
+    0.078,
+    0.107,
+    0.062
+   ],
+   "tris": 684,
+   "top_y": null,
+   "bytes": 49712,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_pouch_beef_stew",
+   "category": "ration",
+   "label": "pouch_beef_stew",
+   "file": "models/ration/ration_pouch_beef_stew.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.185,
+    0.094
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.047
+   ],
+   "bounds_max": [
+    0.15,
+    0.185,
+    0.047
+   ],
+   "tris": 96,
+   "top_y": null,
+   "bytes": 24240,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_pouch_fruit_puree_spout",
+   "category": "ration",
+   "label": "pouch_fruit_puree_spout",
+   "file": "models/ration/ration_pouch_fruit_puree_spout.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.192,
+    0.165,
+    0.05
+   ],
+   "bounds_min": [
+    -0.096,
+    0.0,
+    -0.025
+   ],
+   "bounds_max": [
+    0.096,
+    0.165,
+    0.025
+   ],
+   "tris": 252,
+   "top_y": null,
+   "bytes": 42624,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_pouch_vegetable_flat",
+   "category": "ration",
+   "label": "pouch_vegetable_flat",
+   "file": "models/ration/ration_pouch_vegetable_flat.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.236,
+    0.069,
+    0.2
+   ],
+   "bounds_min": [
+    -0.118,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.118,
+    0.069,
+    0.1
+   ],
+   "tris": 128,
+   "top_y": null,
+   "bytes": 30288,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_protein_bars_stack",
+   "category": "ration",
+   "label": "protein_bars_stack",
+   "file": "models/ration/ration_protein_bars_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.198,
+    0.055,
+    0.15
+   ],
+   "bounds_min": [
+    -0.099,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.099,
+    0.055,
+    0.075
+   ],
+   "tris": 576,
+   "top_y": null,
+   "bytes": 94672,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_ration_boxes_stacked",
+   "category": "ration",
+   "label": "ration_boxes_stacked",
+   "file": "models/ration/ration_ration_boxes_stacked.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.352,
+    0.301,
+    0.24
+   ],
+   "bounds_min": [
+    -0.176,
+    0.0,
+    -0.12
+   ],
+   "bounds_max": [
+    0.176,
+    0.301,
+    0.12
+   ],
+   "tris": 288,
+   "top_y": 0.3,
+   "bytes": 24468,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_ration_brick_pack",
+   "category": "ration",
+   "label": "ration_brick_pack",
+   "file": "models/ration/ration_ration_brick_pack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.152,
+    0.056,
+    0.19
+   ],
+   "bounds_min": [
+    -0.076,
+    0.0,
+    -0.095
+   ],
+   "bounds_max": [
+    0.076,
+    0.056,
+    0.095
+   ],
+   "tris": 192,
+   "top_y": null,
+   "bytes": 24744,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_water_pouches_stack",
+   "category": "ration",
+   "label": "water_pouches_stack",
+   "file": "models/ration/ration_water_pouches_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.192,
+    0.191,
+    0.188
+   ],
+   "bounds_min": [
+    -0.096,
+    0.0,
+    -0.094
+   ],
+   "bounds_max": [
+    0.096,
+    0.191,
+    0.094
+   ],
+   "tris": 228,
+   "top_y": null,
+   "bytes": 22484,
+   "family": "food_ration"
   },
   {
    "id": "reactor_auxiliary_reactor",
@@ -22170,7 +27495,7 @@
    "solid": true,
    "size": [
     2.524,
-    3.04,
+    3.043,
     2.524
    ],
    "bounds_min": [
@@ -22180,12 +27505,12 @@
    ],
    "bounds_max": [
     1.262,
-    3.04,
+    3.043,
     1.262
    ],
    "tris": 1660,
-   "top_y": 2.24,
-   "bytes": 96764,
+   "top_y": 2.42,
+   "bytes": 96124,
    "family": "gen"
   },
   {
@@ -22201,7 +27526,7 @@
    "solid": true,
    "size": [
     3.522,
-    2.55,
+    2.553,
     0.9
    ],
    "bounds_min": [
@@ -22211,12 +27536,12 @@
    ],
    "bounds_max": [
     1.761,
-    2.55,
+    2.553,
     0.45
    ],
    "tris": 2016,
    "top_y": null,
-   "bytes": 72572,
+   "bytes": 72632,
    "family": "gen"
   },
   {
@@ -22232,7 +27557,7 @@
    "solid": true,
    "size": [
     2.692,
-    2.8,
+    2.803,
     2.692
    ],
    "bounds_min": [
@@ -22242,12 +27567,12 @@
    ],
    "bounds_max": [
     1.346,
-    2.8,
+    2.803,
     1.346
    ],
    "tris": 2684,
    "top_y": 1.72,
-   "bytes": 100384,
+   "bytes": 101216,
    "family": "gen"
   },
   {
@@ -22278,7 +27603,7 @@
    ],
    "tris": 606,
    "top_y": 2.44,
-   "bytes": 47028,
+   "bytes": 46340,
    "family": "gen"
   },
   {
@@ -22329,7 +27654,7 @@
    "solid": true,
    "size": [
     1.06,
-    1.1,
+    1.103,
     1.066
    ],
    "bounds_min": [
@@ -22339,12 +27664,12 @@
    ],
    "bounds_max": [
     0.56,
-    1.1,
+    1.103,
     0.566
    ],
    "tris": 836,
    "top_y": 0.06,
-   "bytes": 34516,
+   "bytes": 35344,
    "family": "comm_router_floor"
   },
   {
@@ -22377,7 +27702,7 @@
    ],
    "tris": 624,
    "top_y": null,
-   "bytes": 33160,
+   "bytes": 33352,
    "family": "comm_router_wall"
   },
   {
@@ -22619,23 +27944,23 @@
    ],
    "solid": false,
    "size": [
-    0.4,
-    0.46,
+    0.406,
+    0.463,
     0.224
    ],
    "bounds_min": [
-    -0.2,
+    -0.203,
     -0.23,
     -0.002
    ],
    "bounds_max": [
-    0.2,
-    0.23,
+    0.203,
+    0.233,
     0.222
    ],
    "tris": 194,
    "top_y": 0.24,
-   "bytes": 20512,
+   "bytes": 21092,
    "family": "safety_wall"
   },
   {
@@ -22651,7 +27976,7 @@
    "solid": true,
    "size": [
     0.934,
-    2.33,
+    2.333,
     0.8
    ],
    "bounds_min": [
@@ -22661,12 +27986,12 @@
    ],
    "bounds_max": [
     0.4,
-    2.33,
+    2.333,
     0.4
    ],
    "tris": 660,
    "top_y": 1.02,
-   "bytes": 29996,
+   "bytes": 30060,
    "family": "safety_floor"
   },
   {
@@ -22697,7 +28022,7 @@
    ],
    "tris": 102,
    "top_y": null,
-   "bytes": 17836,
+   "bytes": 17024,
    "family": "safety_wall"
   },
   {
@@ -22900,7 +28225,7 @@
    "size": [
     1.3,
     1.0,
-    0.095
+    0.098
    ],
    "bounds_min": [
     -0.65,
@@ -22910,11 +28235,11 @@
    "bounds_max": [
     0.65,
     0.5,
-    0.095
+    0.098
    ],
    "tris": 272,
    "top_y": 0.5,
-   "bytes": 17584,
+   "bytes": 17648,
    "family": "safety_wall"
   },
   {
@@ -23023,12 +28348,12 @@
    "solid": false,
    "size": [
     0.3,
-    0.5,
+    0.503,
     0.3
    ],
    "bounds_min": [
     -0.15,
-    -0.5,
+    -0.503,
     -0.15
    ],
    "bounds_max": [
@@ -23037,8 +28362,8 @@
     0.15
    ],
    "tris": 332,
-   "top_y": -0.32,
-   "bytes": 18596,
+   "top_y": -0.34,
+   "bytes": 18656,
    "family": "safety_ceiling"
   },
   {
@@ -23102,7 +28427,7 @@
    ],
    "tris": 444,
    "top_y": null,
-   "bytes": 31260,
+   "bytes": 31336,
    "family": "sci_sciinstrument_table"
   },
   {
@@ -23166,7 +28491,7 @@
    ],
    "tris": 384,
    "top_y": 0.22,
-   "bytes": 36684,
+   "bytes": 39096,
    "family": "sci_sciinstrument_table"
   },
   {
@@ -23182,12 +28507,12 @@
    ],
    "solid": false,
    "size": [
-    0.46,
+    0.463,
     0.179,
     0.329
    ],
    "bounds_min": [
-    -0.23,
+    -0.233,
     0.0,
     -0.189
    ],
@@ -23198,7 +28523,7 @@
    ],
    "tris": 350,
    "top_y": 0.06,
-   "bytes": 31416,
+   "bytes": 33780,
    "family": "sci_sciinstrument_table"
   },
   {
@@ -23230,7 +28555,7 @@
    ],
    "tris": 898,
    "top_y": 0.06,
-   "bytes": 50676,
+   "bytes": 54052,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -23262,7 +28587,7 @@
    ],
    "tris": 986,
    "top_y": 0.1,
-   "bytes": 58720,
+   "bytes": 63156,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -23279,8 +28604,8 @@
    "solid": true,
    "size": [
     0.807,
-    0.97,
-    0.62
+    0.973,
+    0.623
    ],
    "bounds_min": [
     -0.4,
@@ -23289,12 +28614,12 @@
    ],
    "bounds_max": [
     0.407,
-    0.97,
-    0.32
+    0.973,
+    0.323
    ],
    "tris": 518,
    "top_y": 0.62,
-   "bytes": 48552,
+   "bytes": 56496,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -23343,7 +28668,7 @@
    "solid": true,
    "size": [
     1.061,
-    2.25,
+    2.253,
     0.54
    ],
    "bounds_min": [
@@ -23353,12 +28678,12 @@
    ],
    "bounds_max": [
     0.55,
-    2.25,
+    2.253,
     0.251
    ],
    "tris": 794,
    "top_y": null,
-   "bytes": 51928,
+   "bytes": 58856,
    "family": "sci_sciinstrument_floor"
   },
   {
@@ -23678,7 +29003,7 @@
    ],
    "tris": 1698,
    "top_y": 2.0,
-   "bytes": 81380,
+   "bytes": 81456,
    "family": "scrubber"
   },
   {
@@ -23695,7 +29020,7 @@
    "solid": true,
    "size": [
     2.4,
-    1.65,
+    1.653,
     0.932
    ],
    "bounds_min": [
@@ -23705,12 +29030,12 @@
    ],
    "bounds_max": [
     1.2,
-    1.65,
+    1.653,
     0.487
    ],
    "tris": 1416,
    "top_y": null,
-   "bytes": 51440,
+   "bytes": 51888,
    "family": "scrubber"
   },
   {
@@ -23742,7 +29067,7 @@
    ],
    "tris": 942,
    "top_y": 2.2,
-   "bytes": 60324,
+   "bytes": 60420,
    "family": "scrubber"
   },
   {
@@ -23774,7 +29099,7 @@
    ],
    "tris": 1450,
    "top_y": 1.88,
-   "bytes": 93052,
+   "bytes": 97456,
    "family": "scrubber"
   },
   {
@@ -23791,7 +29116,7 @@
    "solid": true,
    "size": [
     1.5,
-    1.075,
+    1.078,
     0.76
    ],
    "bounds_min": [
@@ -23801,12 +29126,12 @@
    ],
    "bounds_max": [
     0.75,
-    1.075,
+    1.078,
     0.39
    ],
    "tris": 826,
    "top_y": 0.9,
-   "bytes": 58648,
+   "bytes": 62024,
    "family": "scrubber"
   },
   {
@@ -23823,7 +29148,7 @@
    "solid": true,
    "size": [
     1.085,
-    1.5,
+    1.503,
     0.81
    ],
    "bounds_min": [
@@ -23833,12 +29158,12 @@
    ],
    "bounds_max": [
     0.625,
-    1.5,
+    1.503,
     0.5
    ],
    "tris": 402,
    "top_y": 1.5,
-   "bytes": 36440,
+   "bytes": 39836,
    "family": "scrubber"
   },
   {
@@ -23870,7 +29195,7 @@
    ],
    "tris": 1582,
    "top_y": 1.86,
-   "bytes": 84564,
+   "bytes": 86260,
    "family": "scrubber"
   },
   {
@@ -23966,7 +29291,7 @@
    ],
    "tris": 1444,
    "top_y": 0.5,
-   "bytes": 77056,
+   "bytes": 79468,
    "family": "bridge_seat"
   },
   {
@@ -24030,7 +29355,7 @@
    ],
    "tris": 980,
    "top_y": 0.5,
-   "bytes": 37752,
+   "bytes": 37780,
    "family": "bridge_seat"
   },
   {
@@ -24062,7 +29387,7 @@
    ],
    "tris": 672,
    "top_y": 0.46,
-   "bytes": 26260,
+   "bytes": 26644,
    "family": "bridge_seat"
   },
   {
@@ -24237,7 +29562,7 @@
    "solid": true,
    "size": [
     2.04,
-    2.03,
+    2.033,
     0.74
    ],
    "bounds_min": [
@@ -24247,12 +29572,12 @@
    ],
    "bounds_max": [
     1.02,
-    2.03,
+    2.033,
     0.37
    ],
    "tris": 1844,
-   "top_y": 2.02,
-   "bytes": 82108,
+   "top_y": 2.04,
+   "bytes": 84668,
    "family": "gen"
   },
   {
@@ -24299,7 +29624,7 @@
    "solid": true,
    "size": [
     2.24,
-    2.3,
+    2.303,
     0.69
    ],
    "bounds_min": [
@@ -24309,12 +29634,12 @@
    ],
    "bounds_max": [
     1.12,
-    2.3,
+    2.303,
     0.345
    ],
    "tris": 876,
    "top_y": 2.16,
-   "bytes": 47804,
+   "bytes": 50560,
    "family": "gen"
   },
   {
@@ -24345,7 +29670,7 @@
    ],
    "tris": 1208,
    "top_y": 2.08,
-   "bytes": 56096,
+   "bytes": 57272,
    "family": "gen"
   },
   {
@@ -24392,7 +29717,7 @@
    "solid": true,
    "size": [
     1.64,
-    2.0,
+    2.003,
     0.54
    ],
    "bounds_min": [
@@ -24402,12 +29727,12 @@
    ],
    "bounds_max": [
     0.82,
-    2.0,
+    2.003,
     0.27
    ],
    "tris": 1312,
    "top_y": 1.88,
-   "bytes": 68696,
+   "bytes": 71448,
    "family": "gen"
   },
   {
@@ -24438,7 +29763,7 @@
    ],
    "tris": 1044,
    "top_y": 2.02,
-   "bytes": 45864,
+   "bytes": 48744,
    "family": "gen"
   },
   {
@@ -24453,23 +29778,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
+    1.006,
     1.215,
     0.278
    ],
    "bounds_min": [
-    -0.5,
+    -0.503,
     -0.545,
     -0.0
    ],
    "bounds_max": [
-    0.5,
+    0.503,
     0.67,
     0.278
    ],
    "tris": 880,
    "top_y": 0.42,
-   "bytes": 47908,
+   "bytes": 48704,
    "family": "gen"
   },
   {
@@ -24484,23 +29809,23 @@
    ],
    "solid": false,
    "size": [
-    1.6,
+    1.606,
     1.52,
     0.425
    ],
    "bounds_min": [
-    -0.8,
+    -0.803,
     -0.7,
     -0.0
    ],
    "bounds_max": [
-    0.8,
+    0.803,
     0.82,
     0.425
    ],
    "tris": 668,
-   "top_y": 0.78,
-   "bytes": 35076,
+   "top_y": 0.52,
+   "bytes": 36232,
    "family": "gen"
   },
   {
@@ -24563,6 +29888,37 @@
    "tris": 156,
    "top_y": null,
    "bytes": 11312,
+   "family": "sign_wall"
+  },
+  {
+   "id": "sign_deck_0",
+   "category": "sign",
+   "label": "deck_0",
+   "file": "models/sign/sign_deck_0.glb",
+   "mount": "wall",
+   "mount_y": 2.0,
+   "tags": [
+    "safety"
+   ],
+   "solid": false,
+   "size": [
+    0.8,
+    0.95,
+    0.045
+   ],
+   "bounds_min": [
+    -0.4,
+    -0.475,
+    -0.0
+   ],
+   "bounds_max": [
+    0.4,
+    0.475,
+    0.045
+   ],
+   "tris": 150,
+   "top_y": null,
+   "bytes": 15288,
    "family": "sign_wall"
   },
   {
@@ -24656,6 +30012,37 @@
    "tris": 136,
    "top_y": null,
    "bytes": 13368,
+   "family": "sign_wall"
+  },
+  {
+   "id": "sign_deck_4",
+   "category": "sign",
+   "label": "deck_4",
+   "file": "models/sign/sign_deck_4.glb",
+   "mount": "wall",
+   "mount_y": 2.0,
+   "tags": [
+    "safety"
+   ],
+   "solid": false,
+   "size": [
+    0.8,
+    0.95,
+    0.045
+   ],
+   "bounds_min": [
+    -0.4,
+    -0.475,
+    -0.0
+   ],
+   "bounds_max": [
+    0.4,
+    0.475,
+    0.045
+   ],
+   "tris": 150,
+   "top_y": null,
+   "bytes": 15296,
    "family": "sign_wall"
   },
   {
@@ -24889,7 +30276,7 @@
    "size": [
     1.0,
     0.4,
-    0.052
+    0.055
    ],
    "bounds_min": [
     -0.5,
@@ -24899,7 +30286,7 @@
    "bounds_max": [
     0.5,
     0.2,
-    0.052
+    0.055
    ],
    "tris": 286,
    "top_y": null,
@@ -25338,7 +30725,7 @@
    ],
    "tris": 1040,
    "top_y": 1.4,
-   "bytes": 47856,
+   "bytes": 48360,
    "family": "sci_specimen_floor"
   },
   {
@@ -25370,7 +30757,7 @@
    ],
    "tris": 978,
    "top_y": 0.9,
-   "bytes": 51252,
+   "bytes": 51620,
    "family": "sci_specimen_floor"
   },
   {
@@ -25402,7 +30789,7 @@
    ],
    "tris": 1042,
    "top_y": 2.34,
-   "bytes": 59776,
+   "bytes": 61564,
    "family": "sci_specimen_floor"
   },
   {
@@ -25434,7 +30821,7 @@
    ],
    "tris": 1546,
    "top_y": 1.88,
-   "bytes": 81264,
+   "bytes": 83048,
    "family": "sci_specimen_floor"
   },
   {
@@ -25482,23 +30869,23 @@
    ],
    "solid": false,
    "size": [
-    0.5,
+    0.506,
     0.45,
     0.45
    ],
    "bounds_min": [
-    -0.25,
+    -0.253,
     0.0,
     -0.24
    ],
    "bounds_max": [
-    0.25,
+    0.253,
     0.45,
     0.21
    ],
    "tris": 660,
    "top_y": 0.1,
-   "bytes": 34892,
+   "bytes": 34456,
    "family": "sci_specimen_table"
   },
   {
@@ -25530,7 +30917,7 @@
    ],
    "tris": 1222,
    "top_y": 1.86,
-   "bytes": 67088,
+   "bytes": 68172,
    "family": "sci_specimen_floor"
   },
   {
@@ -25578,17 +30965,17 @@
    ],
    "solid": false,
    "size": [
-    0.36,
+    0.366,
     0.19,
     0.22
    ],
    "bounds_min": [
-    -0.18,
+    -0.183,
     0.0,
     -0.11
    ],
    "bounds_max": [
-    0.18,
+    0.183,
     0.19,
     0.11
    ],
@@ -25803,12 +31190,12 @@
    "solid": false,
    "size": [
     0.93,
-    0.284,
+    0.287,
     0.228
    ],
    "bounds_min": [
     -0.45,
-    -0.284,
+    -0.287,
     -0.114
    ],
    "bounds_max": [
@@ -25818,7 +31205,7 @@
    ],
    "tris": 664,
    "top_y": null,
-   "bytes": 23952,
+   "bytes": 24204,
    "family": "spot_ceil"
   },
   {
@@ -25933,23 +31320,23 @@
    ],
    "solid": true,
    "size": [
-    1.2,
-    1.96,
-    0.45
+    1.206,
+    1.963,
+    0.453
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     0.0,
-    -0.225
+    -0.228
    ],
    "bounds_max": [
-    0.6,
-    1.96,
+    0.603,
+    1.963,
     0.225
    ],
    "tris": 1484,
    "top_y": 1.96,
-   "bytes": 85632,
+   "bytes": 85692,
    "family": "comm_storage_floor"
   },
   {
@@ -26048,7 +31435,7 @@
    ],
    "tris": 1138,
    "top_y": 1.88,
-   "bytes": 60964,
+   "bytes": 61636,
    "family": "comm_storage_floor"
   },
   {
@@ -26253,23 +31640,23 @@
    ],
    "solid": true,
    "size": [
-    1.2,
-    1.545,
+    1.206,
+    1.548,
     0.75
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     0.0,
     -0.375
    ],
    "bounds_max": [
-    0.6,
-    1.545,
+    0.603,
+    1.548,
     0.375
    ],
    "tris": 600,
    "top_y": 1.54,
-   "bytes": 30344,
+   "bytes": 30788,
    "family": "gen"
   },
   {
@@ -26378,7 +31765,7 @@
    "solid": true,
    "size": [
     0.78,
-    1.49,
+    1.493,
     0.505
    ],
    "bounds_min": [
@@ -26388,12 +31775,12 @@
    ],
    "bounds_max": [
     0.39,
-    1.49,
+    1.493,
     0.24
    ],
    "tris": 716,
    "top_y": 1.5,
-   "bytes": 38912,
+   "bytes": 38916,
    "family": "gen"
   },
   {
@@ -26424,7 +31811,7 @@
    ],
    "tris": 526,
    "top_y": 1.84,
-   "bytes": 38304,
+   "bytes": 37604,
    "family": "gen"
   },
   {
@@ -26473,12 +31860,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.062,
+    0.065,
     0.096
    ],
    "bounds_min": [
     -1.0,
-    -0.062,
+    -0.065,
     -0.051
    ],
    "bounds_max": [
@@ -26488,7 +31875,7 @@
    ],
    "tris": 200,
    "top_y": 0.0,
-   "bytes": 10492,
+   "bytes": 11128,
    "family": "strip_ceil"
   },
   {
@@ -26505,22 +31892,22 @@
    "solid": false,
    "size": [
     1.03,
-    0.054,
-    0.032
+    0.06,
+    0.037
    ],
    "bounds_min": [
     -0.515,
-    -0.027,
+    -0.03,
     -0.0
    ],
    "bounds_max": [
     0.515,
-    0.027,
-    0.032
+    0.03,
+    0.037
    ],
    "tris": 1012,
    "top_y": null,
-   "bytes": 36212,
+   "bytes": 36276,
    "family": "strip_wall"
   },
   {
@@ -26569,22 +31956,22 @@
    "solid": false,
    "size": [
     2.03,
-    0.03,
-    0.06
+    0.035,
+    0.07
    ],
    "bounds_min": [
     -1.015,
     0.0,
-    -0.03
+    -0.035
    ],
    "bounds_max": [
     1.015,
-    0.03,
-    0.03
+    0.035,
+    0.035
    ],
    "tris": 180,
-   "top_y": 0.02,
-   "bytes": 10436,
+   "top_y": 0.04,
+   "bytes": 11072,
    "family": "strip_floor"
   },
   {
@@ -26601,12 +31988,12 @@
    "solid": false,
    "size": [
     2.0,
-    0.043,
+    0.046,
     0.092
    ],
    "bounds_min": [
     -1.0,
-    -0.022,
+    -0.025,
     -0.0
    ],
    "bounds_max": [
@@ -26665,22 +32052,22 @@
    "solid": false,
    "size": [
     1.52,
-    0.05,
-    0.14
+    0.055,
+    0.15
    ],
    "bounds_min": [
     -0.76,
-    -0.05,
-    -0.07
+    -0.055,
+    -0.075
    ],
    "bounds_max": [
     0.76,
     0.0,
-    0.07
+    0.075
    ],
    "tris": 156,
    "top_y": 0.0,
-   "bytes": 9088,
+   "bytes": 9724,
    "family": "strip_ceil"
   },
   {
@@ -26698,7 +32085,7 @@
    "size": [
     1.2,
     0.033,
-    0.1
+    0.103
    ],
    "bounds_min": [
     -0.6,
@@ -26708,7 +32095,7 @@
    "bounds_max": [
     0.6,
     0.033,
-    0.04
+    0.043
    ],
    "tris": 140,
    "top_y": 0.02,
@@ -26760,7 +32147,7 @@
    "solid": true,
    "size": [
     1.87,
-    2.0,
+    2.003,
     0.84
    ],
    "bounds_min": [
@@ -26770,12 +32157,12 @@
    ],
    "bounds_max": [
     1.08,
-    2.0,
+    2.003,
     0.42
    ],
    "tris": 712,
    "top_y": 2.0,
-   "bytes": 38900,
+   "bytes": 38964,
    "family": "suitrack_floor"
   },
   {
@@ -26790,23 +32177,23 @@
    ],
    "solid": false,
    "size": [
-    1.5,
+    1.506,
     0.915,
     0.36
    ],
    "bounds_min": [
-    -0.75,
+    -0.753,
     -0.45,
     -0.0
    ],
    "bounds_max": [
-    0.75,
+    0.753,
     0.465,
     0.36
    ],
    "tris": 1840,
    "top_y": -0.04,
-   "bytes": 56576,
+   "bytes": 56628,
    "family": "suitrack_wall"
   },
   {
@@ -26853,7 +32240,7 @@
    "solid": true,
    "size": [
     1.8,
-    1.7,
+    1.703,
     0.6
    ],
    "bounds_min": [
@@ -26863,12 +32250,12 @@
    ],
    "bounds_max": [
     0.9,
-    1.7,
+    1.703,
     0.3
    ],
    "tris": 1420,
    "top_y": 0.18,
-   "bytes": 57148,
+   "bytes": 57236,
    "family": "suitrack_floor"
   },
   {
@@ -26883,23 +32270,23 @@
    ],
    "solid": true,
    "size": [
-    2.2,
+    2.206,
     1.83,
     0.545
    ],
    "bounds_min": [
-    -1.1,
+    -1.103,
     0.0,
     -0.145
    ],
    "bounds_max": [
-    1.1,
+    1.103,
     1.83,
     0.4
    ],
    "tris": 1028,
    "top_y": 0.5,
-   "bytes": 40176,
+   "bytes": 40180,
    "family": "suitrack_floor"
   },
   {
@@ -26914,17 +32301,17 @@
    ],
    "solid": false,
    "size": [
-    1.2,
+    1.206,
     0.935,
     0.125
    ],
    "bounds_min": [
-    -0.6,
+    -0.603,
     -0.45,
     -0.0
    ],
    "bounds_max": [
-    0.6,
+    0.603,
     0.485,
     0.125
    ],
@@ -26994,7 +32381,7 @@
    ],
    "tris": 490,
    "top_y": 0.72,
-   "bytes": 40184,
+   "bytes": 39460,
    "family": "surgical"
   },
   {
@@ -27026,7 +32413,7 @@
    ],
    "tris": 910,
    "top_y": 1.46,
-   "bytes": 66588,
+   "bytes": 65888,
    "family": "surgical"
   },
   {
@@ -27122,7 +32509,7 @@
    ],
    "tris": 610,
    "top_y": 1.22,
-   "bytes": 50804,
+   "bytes": 52588,
    "family": "surgical"
   },
   {
@@ -27171,7 +32558,7 @@
    "solid": true,
    "size": [
     1.5,
-    0.787,
+    0.79,
     0.81
    ],
    "bounds_min": [
@@ -27181,12 +32568,12 @@
    ],
    "bounds_max": [
     0.75,
-    0.787,
+    0.79,
     0.405
    ],
    "tris": 408,
    "top_y": 0.76,
-   "bytes": 21632,
+   "bytes": 22080,
    "family": "crew_table_floor"
   },
   {
@@ -27332,7 +32719,7 @@
    "solid": true,
    "size": [
     3.0,
-    0.767,
+    0.77,
     0.8
    ],
    "bounds_min": [
@@ -27342,12 +32729,12 @@
    ],
    "bounds_max": [
     1.5,
-    0.767,
+    0.77,
     0.4
    ],
    "tris": 424,
    "top_y": 0.76,
-   "bytes": 19224,
+   "bytes": 19672,
    "family": "crew_table_floor"
   },
   {
@@ -27824,7 +33211,7 @@
    "solid": false,
    "size": [
     0.28,
-    0.255,
+    0.258,
     0.176
    ],
    "bounds_min": [
@@ -27834,12 +33221,12 @@
    ],
    "bounds_max": [
     0.16,
-    0.26,
+    0.263,
     0.088
    ],
    "tris": 320,
    "top_y": null,
-   "bytes": 12108,
+   "bytes": 12152,
    "family": "crew_tableware_table"
   },
   {
@@ -28033,7 +33420,7 @@
    ],
    "tris": 648,
    "top_y": 1.56,
-   "bytes": 28984,
+   "bytes": 28996,
    "family": "gen"
   },
   {
@@ -28205,7 +33592,7 @@
    "size": [
     1.274,
     0.71,
-    0.559
+    0.562
    ],
    "bounds_min": [
     -0.637,
@@ -28215,11 +33602,11 @@
    "bounds_max": [
     0.637,
     0.35,
-    0.559
+    0.562
    ],
    "tris": 548,
    "top_y": null,
-   "bytes": 24972,
+   "bytes": 25032,
    "family": "gen"
   },
   {
@@ -28266,7 +33653,7 @@
    "solid": true,
    "size": [
     2.262,
-    1.475,
+    1.478,
     1.056
    ],
    "bounds_min": [
@@ -28276,12 +33663,12 @@
    ],
    "bounds_max": [
     1.131,
-    1.475,
+    1.478,
     0.539
    ],
    "tris": 744,
    "top_y": 0.06,
-   "bytes": 30320,
+   "bytes": 30768,
    "family": "gen"
   },
   {
@@ -28390,7 +33777,7 @@
    "solid": true,
    "size": [
     3.118,
-    1.441,
+    1.444,
     0.8
    ],
    "bounds_min": [
@@ -28400,12 +33787,12 @@
    ],
    "bounds_max": [
     1.509,
-    1.441,
+    1.444,
     0.4
    ],
    "tris": 1148,
    "top_y": 0.06,
-   "bytes": 52636,
+   "bytes": 53080,
    "family": "gen"
   },
   {
@@ -28529,7 +33916,7 @@
    ],
    "tris": 964,
    "top_y": 2.0,
-   "bytes": 43492,
+   "bytes": 43504,
    "family": "gen"
   },
   {
@@ -28657,7 +34044,7 @@
    ],
    "tris": 940,
    "top_y": 0.08,
-   "bytes": 57424,
+   "bytes": 54676,
    "family": "sci_telescope_floor"
   },
   {
@@ -28675,7 +34062,7 @@
    "size": [
     0.254,
     0.107,
-    0.101
+    0.103
    ],
    "bounds_min": [
     -0.129,
@@ -28685,7 +34072,7 @@
    "bounds_max": [
     0.125,
     0.107,
-    0.051
+    0.053
    ],
    "tris": 372,
    "top_y": null,
@@ -28706,7 +34093,7 @@
    "solid": false,
    "size": [
     0.2,
-    0.016,
+    0.019,
     0.146
    ],
    "bounds_min": [
@@ -28716,12 +34103,12 @@
    ],
    "bounds_max": [
     0.1,
-    0.016,
+    0.019,
     0.076
    ],
    "tris": 114,
    "top_y": 0.02,
-   "bytes": 13180,
+   "bytes": 13552,
    "family": "bridge_terminal_small"
   },
   {
@@ -28817,7 +34204,7 @@
    ],
    "tris": 542,
    "top_y": 0.02,
-   "bytes": 33536,
+   "bytes": 35328,
    "family": "bridge_terminal_small"
   },
   {
@@ -28882,7 +34269,7 @@
    ],
    "tris": 422,
    "top_y": 0.94,
-   "bytes": 31964,
+   "bytes": 32284,
    "family": "bridge_terminal_floor"
   },
   {
@@ -28946,7 +34333,7 @@
    ],
    "tris": 126,
    "top_y": 0.02,
-   "bytes": 14332,
+   "bytes": 14512,
    "family": "bridge_terminal_small"
   },
   {
@@ -28979,7 +34366,7 @@
    ],
    "tris": 482,
    "top_y": 0.06,
-   "bytes": 31404,
+   "bytes": 29380,
    "family": "bridge_terminal_floor"
   },
   {
@@ -29011,7 +34398,7 @@
    ],
    "tris": 154,
    "top_y": null,
-   "bytes": 17000,
+   "bytes": 17072,
    "family": "bridge_terminal_small"
   },
   {
@@ -29028,23 +34415,23 @@
    ],
    "solid": true,
    "size": [
-    0.6,
-    1.6,
+    0.606,
+    1.603,
     0.421
    ],
    "bounds_min": [
-    -0.3,
+    -0.303,
     0.0,
     -0.2
    ],
    "bounds_max": [
-    0.3,
-    1.6,
+    0.303,
+    1.603,
     0.221
    ],
    "tris": 422,
    "top_y": 1.6,
-   "bytes": 28776,
+   "bytes": 30068,
    "family": "bridge_terminal_floor"
   },
   {
@@ -29144,6 +34531,390 @@
    "family": "toolbox"
   },
   {
+   "id": "tray_bread_basket_wicker",
+   "category": "tray",
+   "label": "bread_basket_wicker",
+   "file": "models/tray/tray_bread_basket_wicker.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.306,
+    0.089,
+    0.306
+   ],
+   "bounds_min": [
+    -0.153,
+    0.0,
+    -0.153
+   ],
+   "bounds_max": [
+    0.153,
+    0.089,
+    0.153
+   ],
+   "tris": 2384,
+   "top_y": null,
+   "bytes": 103024,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_breakfast_tray_wood",
+   "category": "tray",
+   "label": "breakfast_tray_wood",
+   "file": "models/tray/tray_breakfast_tray_wood.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.5,
+    0.135,
+    0.34
+   ],
+   "bounds_min": [
+    -0.25,
+    0.0,
+    -0.17
+   ],
+   "bounds_max": [
+    0.25,
+    0.135,
+    0.17
+   ],
+   "tris": 2632,
+   "top_y": 0.02,
+   "bytes": 160420,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_cake_stand_afternoon_tea",
+   "category": "tray",
+   "label": "cake_stand_afternoon_tea",
+   "file": "models/tray/tray_cake_stand_afternoon_tea.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.308,
+    0.422,
+    0.306
+   ],
+   "bounds_min": [
+    -0.154,
+    0.0,
+    -0.153
+   ],
+   "bounds_max": [
+    0.154,
+    0.422,
+    0.153
+   ],
+   "tris": 3307,
+   "top_y": 0.0,
+   "bytes": 140480,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_cloche_hot_dish",
+   "category": "tray",
+   "label": "cloche_hot_dish",
+   "file": "models/tray/tray_cloche_hot_dish.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.175,
+    0.298
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.149
+   ],
+   "bounds_max": [
+    0.15,
+    0.175,
+    0.149
+   ],
+   "tris": 2466,
+   "top_y": null,
+   "bytes": 97764,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_coffee_set_tray",
+   "category": "tray",
+   "label": "coffee_set_tray",
+   "file": "models/tray/tray_coffee_set_tray.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.46,
+    0.217,
+    0.32
+   ],
+   "bounds_min": [
+    -0.23,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.23,
+    0.217,
+    0.16
+   ],
+   "tris": 4538,
+   "top_y": 0.02,
+   "bytes": 144468,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_drinks_tray_round",
+   "category": "tray",
+   "label": "drinks_tray_round",
+   "file": "models/tray/tray_drinks_tray_round.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.328,
+    0.166,
+    0.328
+   ],
+   "bounds_min": [
+    -0.164,
+    0.0,
+    -0.164
+   ],
+   "bounds_max": [
+    0.164,
+    0.166,
+    0.164
+   ],
+   "tris": 2626,
+   "top_y": 0.0,
+   "bytes": 66896,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_fruit_bowl_mixed",
+   "category": "tray",
+   "label": "fruit_bowl_mixed",
+   "file": "models/tray/tray_fruit_bowl_mixed.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.34,
+    0.15,
+    0.338
+   ],
+   "bounds_min": [
+    -0.17,
+    0.0,
+    -0.169
+   ],
+   "bounds_max": [
+    0.17,
+    0.15,
+    0.169
+   ],
+   "tris": 3270,
+   "top_y": null,
+   "bytes": 180368,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_hotel_pan_mash_gravy",
+   "category": "tray",
+   "label": "hotel_pan_mash_gravy",
+   "file": "models/tray/tray_hotel_pan_mash_gravy.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.562,
+    0.077,
+    0.366
+   ],
+   "bounds_min": [
+    -0.281,
+    0.0,
+    -0.183
+   ],
+   "bounds_max": [
+    0.281,
+    0.077,
+    0.183
+   ],
+   "tris": 1280,
+   "top_y": 0.06,
+   "bytes": 62944,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_hotel_pan_roast_veg",
+   "category": "tray",
+   "label": "hotel_pan_roast_veg",
+   "file": "models/tray/tray_hotel_pan_roast_veg.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.562,
+    0.093,
+    0.386
+   ],
+   "bounds_min": [
+    -0.281,
+    0.0,
+    -0.193
+   ],
+   "bounds_max": [
+    0.281,
+    0.093,
+    0.193
+   ],
+   "tris": 2942,
+   "top_y": 0.02,
+   "bytes": 155332,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_meal_tray_brig",
+   "category": "tray",
+   "label": "meal_tray_brig",
+   "file": "models/tray/tray_meal_tray_brig.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.38,
+    0.054,
+    0.29
+   ],
+   "bounds_min": [
+    -0.19,
+    0.0,
+    -0.145
+   ],
+   "bounds_max": [
+    0.19,
+    0.054,
+    0.145
+   ],
+   "tris": 1016,
+   "top_y": 0.0,
+   "bytes": 84740,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_meal_tray_steel",
+   "category": "tray",
+   "label": "meal_tray_steel",
+   "file": "models/tray/tray_meal_tray_steel.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.464,
+    0.11,
+    0.306
+   ],
+   "bounds_min": [
+    -0.232,
+    0.0,
+    -0.153
+   ],
+   "bounds_max": [
+    0.232,
+    0.11,
+    0.153
+   ],
+   "tris": 2016,
+   "top_y": 0.02,
+   "bytes": 127768,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_soup_tureen_ladle",
+   "category": "tray",
+   "label": "soup_tureen_ladle",
+   "file": "models/tray/tray_soup_tureen_ladle.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.454,
+    0.214,
+    0.32
+   ],
+   "bounds_min": [
+    -0.227,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.227,
+    0.214,
+    0.16
+   ],
+   "tris": 1920,
+   "top_y": null,
+   "bytes": 56340,
+   "family": "food_tray"
+  },
+  {
    "id": "turbine_axial_compressor",
    "category": "turbine",
    "label": "Axial Compressor",
@@ -29171,7 +34942,7 @@
    ],
    "tris": 918,
    "top_y": 0.1,
-   "bytes": 40416,
+   "bytes": 40428,
    "family": "gen"
   },
   {
@@ -29560,7 +35331,7 @@
    "size": [
     0.8,
     0.7,
-    0.425
+    0.428
    ],
    "bounds_min": [
     -0.4,
@@ -29570,11 +35341,11 @@
    "bounds_max": [
     0.4,
     0.35,
-    0.425
+    0.428
    ],
    "tris": 584,
    "top_y": null,
-   "bytes": 30088,
+   "bytes": 30148,
    "family": "gen"
   },
   {
@@ -29888,6 +35659,614 @@
    "family": "gen"
   },
   {
+   "id": "veg_asparagus_bundle",
+   "category": "veg",
+   "label": "asparagus_bundle",
+   "file": "models/veg/veg_asparagus_bundle.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.264,
+    0.014,
+    0.1
+   ],
+   "bounds_min": [
+    -0.132,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.132,
+    0.014,
+    0.05
+   ],
+   "tris": 1222,
+   "top_y": null,
+   "bytes": 61304,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_aubergine_pair",
+   "category": "veg",
+   "label": "aubergine_pair",
+   "file": "models/veg/veg_aubergine_pair.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.178,
+    0.263,
+    0.092
+   ],
+   "bounds_min": [
+    -0.089,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.089,
+    0.263,
+    0.046
+   ],
+   "tris": 2120,
+   "top_y": null,
+   "bytes": 60992,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_bell_peppers_trio",
+   "category": "veg",
+   "label": "bell_peppers_trio",
+   "file": "models/veg/veg_bell_peppers_trio.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.226,
+    0.118,
+    0.19
+   ],
+   "bounds_min": [
+    -0.113,
+    0.0,
+    -0.095
+   ],
+   "bounds_max": [
+    0.113,
+    0.118,
+    0.095
+   ],
+   "tris": 3450,
+   "top_y": null,
+   "bytes": 90268,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_broccoli_cauliflower",
+   "category": "veg",
+   "label": "broccoli_cauliflower",
+   "file": "models/veg/veg_broccoli_cauliflower.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.22,
+    0.106,
+    0.124
+   ],
+   "bounds_min": [
+    -0.11,
+    0.0,
+    -0.062
+   ],
+   "bounds_max": [
+    0.11,
+    0.106,
+    0.062
+   ],
+   "tris": 4432,
+   "top_y": null,
+   "bytes": 138040,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_cabbage_green",
+   "category": "veg",
+   "label": "cabbage_green",
+   "file": "models/veg/veg_cabbage_green.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.258,
+    0.162,
+    0.264
+   ],
+   "bounds_min": [
+    -0.129,
+    0.0,
+    -0.132
+   ],
+   "bounds_max": [
+    0.129,
+    0.162,
+    0.132
+   ],
+   "tris": 1404,
+   "top_y": null,
+   "bytes": 60324,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_cabbage_red_halved",
+   "category": "veg",
+   "label": "cabbage_red_halved",
+   "file": "models/veg/veg_cabbage_red_halved.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.362,
+    0.16,
+    0.168
+   ],
+   "bounds_min": [
+    -0.181,
+    0.0,
+    -0.084
+   ],
+   "bounds_max": [
+    0.181,
+    0.16,
+    0.084
+   ],
+   "tris": 1656,
+   "top_y": null,
+   "bytes": 70864,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_carrots_bunch",
+   "category": "veg",
+   "label": "carrots_bunch",
+   "file": "models/veg/veg_carrots_bunch.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.308,
+    0.039,
+    0.222
+   ],
+   "bounds_min": [
+    -0.154,
+    0.0,
+    -0.111
+   ],
+   "bounds_max": [
+    0.154,
+    0.039,
+    0.111
+   ],
+   "tris": 2986,
+   "top_y": null,
+   "bytes": 126068,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_chili_peppers_pile",
+   "category": "veg",
+   "label": "chili_peppers_pile",
+   "file": "models/veg/veg_chili_peppers_pile.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.112,
+    0.048,
+    0.028
+   ],
+   "bounds_min": [
+    -0.056,
+    0.0,
+    -0.014
+   ],
+   "bounds_max": [
+    0.056,
+    0.048,
+    0.014
+   ],
+   "tris": 1053,
+   "top_y": null,
+   "bytes": 43316,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_corn_cobs",
+   "category": "veg",
+   "label": "corn_cobs",
+   "file": "models/veg/veg_corn_cobs.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.288,
+    0.084,
+    0.14
+   ],
+   "bounds_min": [
+    -0.144,
+    0.0,
+    -0.07
+   ],
+   "bounds_max": [
+    0.144,
+    0.084,
+    0.07
+   ],
+   "tris": 2120,
+   "top_y": null,
+   "bytes": 100620,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_cucumbers_sliced",
+   "category": "veg",
+   "label": "cucumbers_sliced",
+   "file": "models/veg/veg_cucumbers_sliced.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.22,
+    0.043,
+    0.114
+   ],
+   "bounds_min": [
+    -0.11,
+    0.0,
+    -0.057
+   ],
+   "bounds_max": [
+    0.11,
+    0.043,
+    0.057
+   ],
+   "tris": 1900,
+   "top_y": null,
+   "bytes": 64688,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_garlic_bulbs",
+   "category": "veg",
+   "label": "garlic_bulbs",
+   "file": "models/veg/veg_garlic_bulbs.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.186,
+    0.075,
+    0.092
+   ],
+   "bounds_min": [
+    -0.093,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.093,
+    0.075,
+    0.046
+   ],
+   "tris": 2956,
+   "top_y": null,
+   "bytes": 82500,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_lettuce_heads",
+   "category": "veg",
+   "label": "lettuce_heads",
+   "file": "models/veg/veg_lettuce_heads.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.364,
+    0.09,
+    0.238
+   ],
+   "bounds_min": [
+    -0.182,
+    0.0,
+    -0.119
+   ],
+   "bounds_max": [
+    0.182,
+    0.09,
+    0.119
+   ],
+   "tris": 2088,
+   "top_y": null,
+   "bytes": 129576,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_mushrooms_brown_white",
+   "category": "veg",
+   "label": "mushrooms_brown_white",
+   "file": "models/veg/veg_mushrooms_brown_white.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.051,
+    0.146
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.073
+   ],
+   "bounds_max": [
+    0.079,
+    0.051,
+    0.073
+   ],
+   "tris": 3360,
+   "top_y": null,
+   "bytes": 109960,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_onions_assorted",
+   "category": "veg",
+   "label": "onions_assorted",
+   "file": "models/veg/veg_onions_assorted.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.228,
+    0.1,
+    0.176
+   ],
+   "bounds_min": [
+    -0.114,
+    0.0,
+    -0.088
+   ],
+   "bounds_max": [
+    0.114,
+    0.1,
+    0.088
+   ],
+   "tris": 3474,
+   "top_y": null,
+   "bytes": 109856,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_pea_pods_open",
+   "category": "veg",
+   "label": "pea_pods_open",
+   "file": "models/veg/veg_pea_pods_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.172,
+    0.028,
+    0.112
+   ],
+   "bounds_min": [
+    -0.086,
+    0.0,
+    -0.056
+   ],
+   "bounds_max": [
+    0.086,
+    0.028,
+    0.056
+   ],
+   "tris": 1280,
+   "top_y": null,
+   "bytes": 49996,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_potatoes_pile",
+   "category": "veg",
+   "label": "potatoes_pile",
+   "file": "models/veg/veg_potatoes_pile.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.298,
+    0.109,
+    0.252
+   ],
+   "bounds_min": [
+    -0.149,
+    0.0,
+    -0.126
+   ],
+   "bounds_max": [
+    0.149,
+    0.109,
+    0.126
+   ],
+   "tris": 2304,
+   "top_y": null,
+   "bytes": 83260,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_pumpkin_ribbed",
+   "category": "veg",
+   "label": "pumpkin_ribbed",
+   "file": "models/veg/veg_pumpkin_ribbed.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.286,
+    0.242,
+    0.272
+   ],
+   "bounds_min": [
+    -0.143,
+    0.0,
+    -0.136
+   ],
+   "bounds_max": [
+    0.143,
+    0.242,
+    0.136
+   ],
+   "tris": 1840,
+   "top_y": null,
+   "bytes": 56540,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_radish_bunch",
+   "category": "veg",
+   "label": "radish_bunch",
+   "file": "models/veg/veg_radish_bunch.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.184,
+    0.073,
+    0.068
+   ],
+   "bounds_min": [
+    -0.092,
+    0.0,
+    -0.034
+   ],
+   "bounds_max": [
+    0.092,
+    0.073,
+    0.034
+   ],
+   "tris": 4284,
+   "top_y": null,
+   "bytes": 140064,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_tomatoes_on_vine",
+   "category": "veg",
+   "label": "tomatoes_on_vine",
+   "file": "models/veg/veg_tomatoes_on_vine.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.236,
+    0.062,
+    0.126
+   ],
+   "bounds_min": [
+    -0.118,
+    0.0,
+    -0.063
+   ],
+   "bounds_max": [
+    0.118,
+    0.062,
+    0.063
+   ],
+   "tris": 4820,
+   "top_y": null,
+   "bytes": 158048,
+   "family": "food_veg"
+  },
+  {
    "id": "vending_drink_machine",
    "category": "vending",
    "label": "drink machine",
@@ -29900,23 +36279,23 @@
    ],
    "solid": true,
    "size": [
-    0.95,
-    1.9,
+    0.956,
+    1.903,
     0.907
    ],
    "bounds_min": [
-    -0.475,
+    -0.478,
     0.0,
     -0.425
    ],
    "bounds_max": [
-    0.475,
-    1.9,
+    0.478,
+    1.903,
     0.482
    ],
    "tris": 1132,
    "top_y": 1.9,
-   "bytes": 60172,
+   "bytes": 60812,
    "family": "vending"
   },
   {
@@ -29933,7 +36312,7 @@
    "solid": true,
    "size": [
     0.9,
-    1.9,
+    1.903,
     0.847
    ],
    "bounds_min": [
@@ -29943,12 +36322,12 @@
    ],
    "bounds_max": [
     0.45,
-    1.9,
+    1.903,
     0.447
    ],
    "tris": 744,
    "top_y": 1.9,
-   "bytes": 40800,
+   "bytes": 41056,
    "family": "vending"
   },
   {
@@ -29965,7 +36344,7 @@
    "solid": true,
    "size": [
     0.91,
-    1.9,
+    1.903,
     0.847
    ],
    "bounds_min": [
@@ -29975,12 +36354,12 @@
    ],
    "bounds_max": [
     0.46,
-    1.9,
+    1.903,
     0.447
    ],
    "tris": 976,
    "top_y": 1.9,
-   "bytes": 53688,
+   "bytes": 54136,
    "family": "vending"
   },
   {
@@ -29997,7 +36376,7 @@
    "solid": true,
    "size": [
     0.9,
-    1.94,
+    1.943,
     0.71
    ],
    "bounds_min": [
@@ -30007,12 +36386,12 @@
    ],
    "bounds_max": [
     0.45,
-    1.94,
+    1.943,
     0.41
    ],
    "tris": 582,
    "top_y": 1.94,
-   "bytes": 48500,
+   "bytes": 48892,
    "family": "vending"
   },
   {
@@ -30044,7 +36423,7 @@
    ],
    "tris": 368,
    "top_y": null,
-   "bytes": 18964,
+   "bytes": 19348,
    "family": "wallpanel_short"
   },
   {
@@ -30092,23 +36471,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    1.2,
-    0.05
+    1.006,
+    1.206,
+    0.053
    ],
    "bounds_min": [
-    -0.5,
-    -0.6,
+    -0.503,
+    -0.603,
     -0.0
    ],
    "bounds_max": [
-    0.5,
-    0.6,
-    0.05
+    0.503,
+    0.603,
+    0.053
    ],
    "tris": 420,
    "top_y": null,
-   "bytes": 22424,
+   "bytes": 23472,
    "family": "wallpanel_short"
   },
   {
@@ -30348,23 +36727,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
+    1.01,
     1.2,
-    0.1
+    0.105
    ],
    "bounds_min": [
-    -0.5,
+    -0.505,
     -0.6,
     -0.0
    ],
    "bounds_max": [
-    0.5,
+    0.505,
     0.6,
-    0.1
+    0.105
    ],
    "tris": 616,
    "top_y": 0.58,
-   "bytes": 23252,
+   "bytes": 23920,
    "family": "wallpanel_short"
   },
   {
@@ -30428,7 +36807,7 @@
    ],
    "tris": 334,
    "top_y": null,
-   "bytes": 27104,
+   "bytes": 28804,
    "family": "wallpanel_short"
   },
   {
@@ -30511,17 +36890,17 @@
    "solid": false,
    "size": [
     1.0,
-    2.4,
+    2.406,
     0.092
    ],
    "bounds_min": [
     -0.5,
-    -1.2,
+    -1.203,
     -0.0
    ],
    "bounds_max": [
     0.5,
-    1.2,
+    1.203,
     0.092
    ],
    "tris": 264,
@@ -30625,7 +37004,7 @@
    ],
    "tris": 828,
    "top_y": 1.2,
-   "bytes": 31152,
+   "bytes": 31344,
    "family": "wallpanel_tall"
   },
   {
@@ -30642,23 +37021,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
+    1.01,
     2.4,
-    0.12
+    0.125
    ],
    "bounds_min": [
-    -0.5,
+    -0.505,
     -1.2,
     -0.0
    ],
    "bounds_max": [
-    0.5,
+    0.505,
     1.2,
-    0.12
+    0.125
    ],
    "tris": 528,
    "top_y": 1.18,
-   "bytes": 20424,
+   "bytes": 21380,
    "family": "wallpanel_tall"
   },
   {
@@ -30708,23 +37087,23 @@
    ],
    "solid": false,
    "size": [
-    1.0,
-    2.4,
-    0.1
+    1.006,
+    2.406,
+    0.103
    ],
    "bounds_min": [
-    -0.5,
-    -1.2,
+    -0.503,
+    -1.203,
     -0.0
    ],
    "bounds_max": [
-    0.5,
-    1.2,
-    0.1
+    0.503,
+    1.203,
+    0.103
    ],
    "tris": 352,
    "top_y": 1.2,
-   "bytes": 13908,
+   "bytes": 14960,
    "family": "wallpanel_tall"
   },
   {
@@ -30805,7 +37184,7 @@
    "solid": false,
    "size": [
     1.9,
-    0.095,
+    0.098,
     0.265
    ],
    "bounds_min": [
@@ -30815,12 +37194,12 @@
    ],
    "bounds_max": [
     0.95,
-    0.095,
+    0.098,
     0.155
    ],
    "tris": 452,
    "top_y": 0.1,
-   "bytes": 20964,
+   "bytes": 21412,
    "family": "warn_floor"
   },
   {
@@ -31108,7 +37487,7 @@
    ],
    "tris": 1802,
    "top_y": 0.12,
-   "bytes": 87660,
+   "bytes": 88752,
    "family": "watertank"
   },
   {
@@ -31140,7 +37519,7 @@
    ],
    "tris": 706,
    "top_y": 1.24,
-   "bytes": 56792,
+   "bytes": 56864,
    "family": "watertank"
   },
   {
@@ -31236,7 +37615,7 @@
    ],
    "tris": 372,
    "top_y": 1.6,
-   "bytes": 19204,
+   "bytes": 19220,
    "family": "watertank"
   },
   {
@@ -31268,7 +37647,7 @@
    ],
    "tris": 1114,
    "top_y": 1.48,
-   "bytes": 61824,
+   "bytes": 61896,
    "family": "watertank"
   },
   {
@@ -31300,7 +37679,7 @@
    ],
    "tris": 678,
    "top_y": 2.0,
-   "bytes": 54512,
+   "bytes": 54800,
    "family": "watertank"
   },
   {
@@ -31441,12 +37820,12 @@
    "size": [
     1.665,
     1.875,
-    0.7
+    0.703
    ],
    "bounds_min": [
     -0.8,
     0.0,
-    -0.35
+    -0.353
    ],
    "bounds_max": [
     0.865,
@@ -31455,7 +37834,7 @@
    ],
    "tris": 554,
    "top_y": 0.98,
-   "bytes": 47572,
+   "bytes": 52080,
    "family": "weaponrack_floor"
   },
   {
@@ -31517,7 +37896,7 @@
    ],
    "tris": 752,
    "top_y": null,
-   "bytes": 41792,
+   "bytes": 41992,
    "family": "weaponrack_wall"
   },
   {
@@ -31563,17 +37942,17 @@
    ],
    "solid": false,
    "size": [
-    0.95,
+    0.956,
     0.725,
     0.085
    ],
    "bounds_min": [
-    -0.475,
+    -0.478,
     -0.325,
     -0.0
    ],
    "bounds_max": [
-    0.475,
+    0.478,
     0.4,
     0.085
    ],
@@ -31627,7 +38006,7 @@
    "size": [
     1.34,
     1.03,
-    0.142
+    0.145
    ],
    "bounds_min": [
     -0.67,
@@ -31637,11 +38016,11 @@
    "bounds_max": [
     0.67,
     0.53,
-    0.142
+    0.145
    ],
    "tris": 692,
    "top_y": 0.52,
-   "bytes": 43388,
+   "bytes": 43448,
    "family": "weaponrack_wall"
   },
   {
@@ -31688,22 +38067,22 @@
    "solid": false,
    "size": [
     1.3,
-    1.1,
+    1.106,
     0.1
    ],
    "bounds_min": [
     -0.65,
-    -0.55,
+    -0.553,
     -0.0
    ],
    "bounds_max": [
     0.65,
-    0.55,
+    0.553,
     0.1
    ],
    "tris": 566,
    "top_y": 0.56,
-   "bytes": 39492,
+   "bytes": 39572,
    "family": "weaponrack_wall"
   },
   {
@@ -31718,7 +38097,7 @@
    ],
    "solid": true,
    "size": [
-    1.9,
+    1.903,
     1.717,
     0.8
    ],
@@ -31728,13 +38107,13 @@
     -0.4
    ],
    "bounds_max": [
-    0.95,
+    0.953,
     1.717,
     0.4
    ],
    "tris": 480,
    "top_y": 0.94,
-   "bytes": 42084,
+   "bytes": 42412,
    "family": "weaponrack_floor"
   }
  ]

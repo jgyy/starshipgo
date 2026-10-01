@@ -424,9 +424,9 @@ def _lerp_ramp(z):
 
 
 def arch_hull_fascia(m, hull=None):
-    """World-space exterior fascia: per-deck rails + running lights, bow stems, stern transoms,
-    hangar mouth frame and two engine nacelles. Node names: fascia_deckN, stem_deckN,
-    transom_deckN, hangar_frame, nacelle_port, nacelle_starboard."""
+    """World-space fascia: per-deck rails + running lights, bow stems, stern transoms and the
+    hangar mouth frame. Node names: fascia_deckN, stem_deckN, transom_deckN, hangar_frame.
+    (The engine nacelles moved to exterior.py when the outer skin was added.)"""
     hull = hull or load_hull()
     for deck in (1, 2, 3):
         d = hull[deck]
@@ -482,10 +482,12 @@ def arch_hull_fascia(m, hull=None):
     for sx in (-1, 1):
         xc = sx * (hw + fw / 2)
         m.boxb((xc - fw / 2, y0 - 0.35, zs - 0.05), (xc + fw / 2, y0 + HANGAR_H + 0.7, zs + dep), "arch_hull_plate", bevel=0.03)
-        m.box((0.05, HANGAR_H, 0.05), (sx * (hw - 0.025), y0 + HANGAR_H / 2, zs + dep - 0.02), "arch_run_amber")
+        # run light: its outer face used to lie exactly on |x| = hw, the plane of the corner gussets (z-fight); it now
+        # stands 4.5 cm proud of the jamb and sinks 5 mm into it
+        m.box((0.05, HANGAR_H, 0.05), (sx * (hw - 0.02), y0 + HANGAR_H / 2, zs + dep - 0.02), "arch_run_amber")
     m.boxb((-hw - fw, y0 + HANGAR_H, zs - 0.05), (hw + fw, y0 + HANGAR_H + 0.7, zs + dep), "arch_hull_plate", bevel=0.03)
     m.boxb((-hw - fw, y0 - 0.35, zs - 0.05), (hw + fw, y0 + 0.02, zs + dep), "arch_hull_plate", bevel=0.03)
-    m.box((HANGAR_W, 0.05, 0.05), (0, y0 + HANGAR_H - 0.025, zs + dep - 0.02), "arch_run_amber")
+    m.box((HANGAR_W, 0.05, 0.05), (0, y0 + HANGAR_H - 0.02, zs + dep - 0.02), "arch_run_amber")
     g = 0.9
     for sx in (-1, 1):
         tri = [(sx * hw, y0 + HANGAR_H - g), (sx * hw, y0 + HANGAR_H), (sx * (hw - g), y0 + HANGAR_H)]
@@ -495,20 +497,6 @@ def arch_hull_fascia(m, hull=None):
     for k in range(-3, 4):          # hazard-yellow marker blocks on the header
         m.box((0.7, 0.16, 0.03), (k * 2.0, y0 + HANGAR_H + 0.35, zs + dep + 0.012), "hazard_yellow", bevel=0.004)
 
-    # ---- engine nacelles hung below the stern corners of deck 3 ----------------------------
-    for name, sx in (("nacelle_port", -1), ("nacelle_starboard", 1)):
-        m.group(name)
-        xn, yn, zn0, L = sx * 11.6, y0 - 0.25, 28.6, 5.6
-        pylon = [(sx * 7.6, zn0 - 2.2), (sx * 11.0, zn0 - 0.9), (sx * 11.0, zn0 + 1.9), (sx * 7.6, zn0 + 2.4)]
-        m.prism(pylon, 0.85, (0, yn - 0.3, 0), "arch_hull_plate", plane="xz", bevel=0.03)
-        m.sphere(1.0, (xn, yn, zn0), "arch_hull_plate", seg=20, ring=10, scale=(1.3, 1.3, L))
-        for dz, dr in ((-2.4, 1.0), (0.4, 1.1), (2.2, 0.85)):      # armour / cooling bands
-            r = 1.3 * math.sqrt(max(0.05, 1 - (dz / L) ** 2)) + 0.03
-            m.cyl(r, 0.22, (xn, yn, zn0 + dz), "arch_steel", axis="z", seg=18)
-            m.cyl(r + 0.0, 0.03, (xn, yn, zn0 + dz + 0.13), "arch_run_cyan", axis="z", seg=18)
-        m.cyl(0.95, 0.5, (xn, yn, zn0 + L * 0.98), "arch_dark_panel", axis="z", seg=24, r2=0.75)
-        m.cyl(0.7, 0.06, (xn, yn, zn0 + L * 0.98 + 0.27), "em_blue", axis="z", seg=24)
-        m.torus(0.78, 0.05, (xn, yn, zn0 - L * 0.97), "arch_run_cyan", axis="z", seg=24, tseg=6)
     return m
 
 
@@ -519,3 +507,6 @@ ARCH_MODELS = {
     "arch_stair_sign": arch_stair_sign,
     "arch_hull_fascia": arch_hull_fascia,
 }
+
+from .exterior import EXTERIOR_MODELS  # noqa: E402  (registered here so build_arch.py builds them too)
+ARCH_MODELS.update(EXTERIOR_MODELS)

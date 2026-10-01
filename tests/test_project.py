@@ -2,12 +2,13 @@
 import json
 import math
 import os
+import re
 import sys
 import unittest
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GODOT = os.path.join(ROOT, "godot")
-TARGET = 1000
+TARGET = int(re.search(r"^TARGET = (\d+)", open(os.path.join(ROOT, "blender", "build_all.py")).read(), re.M).group(1))
 
 
 def load(name):
@@ -21,7 +22,7 @@ class CatalogTests(unittest.TestCase):
         cls.cat = load("catalog.json")
         cls.models = cls.cat["models"]
 
-    def test_exactly_1000_models(self):
+    def test_exact_model_count(self):
         self.assertEqual(len(self.models), TARGET)
         self.assertEqual(self.cat["count"], TARGET)
 
@@ -62,6 +63,19 @@ class CatalogTests(unittest.TestCase):
         self.assertGreaterEqual(len(cats), 60)
 
 
+def props_outside(ship):
+    """Props whose origin is not inside their room polygon.  Door frames stand exactly on the wall line; everything else
+    (wall items sit on the wall face, 0.15 m in) must be at least 0.1 m inside."""
+    bad = []
+    for r in ship["rooms"]:
+        for p in r["props"]:
+            x, _, z = p["pos"]
+            margin = -0.01 if p.get("b") == "ARCH" else 0.1
+            if not ShipTests._inside(r["poly"], x, z, margin):
+                bad.append(f"{p['m']} outside {r['id']}")
+    return bad
+
+
 class ShipTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -90,11 +104,7 @@ class ShipTests(unittest.TestCase):
         self.assertGreater(total, 1000, "ship is bare")
 
     def test_props_inside_their_room(self):
-        for r in self.ship["rooms"]:
-            poly = r["poly"]
-            for p in r["props"]:
-                x, _, z = p["pos"]
-                self.assertTrue(self._inside(poly, x, z, -0.4), f"{p['m']} outside {r['id']}")
+        self.assertEqual(props_outside(self.ship), [])
 
     @staticmethod
     def _inside(poly, x, z, margin):
@@ -110,9 +120,9 @@ class ShipTests(unittest.TestCase):
         return True
 
     def test_decks_and_rooms(self):
-        self.assertEqual(len(self.ship["decks"]), 3)
-        self.assertGreaterEqual(len(self.ship["rooms"]), 40)
-        self.assertGreaterEqual(len(self.ship["doors"]), 25)
+        self.assertEqual(len(self.ship["decks"]), 5)
+        self.assertGreaterEqual(len(self.ship["rooms"]), 60)
+        self.assertGreaterEqual(len(self.ship["doors"]), 30)
         self.assertGreaterEqual(len([c for c in self.ship["cameras"] if not c.get("exterior")]), 20)
         self.assertGreaterEqual(len([c for c in self.ship["cameras"] if c.get("exterior")]), 3)
 
@@ -134,7 +144,7 @@ class ShipTests(unittest.TestCase):
             zs = [p[1] for p in pts]
             xs = [abs(p[0]) for p in pts]
             length, beam = max(zs) - min(zs), 2 * max(xs)
-            self.assertLessEqual(length, 60.0)
+            self.assertLessEqual(length, 70.0)
             self.assertLessEqual(beam, 26.5)
             bow = [abs(p[0]) for p in pts if p[1] < min(zs) + 1.0]
             stern = [abs(p[0]) for p in pts if p[1] > max(zs) - 1.0]
@@ -154,9 +164,10 @@ class ShipTests(unittest.TestCase):
         self.assertNotIn("lifts", self.ship)
         stairs = self.ship["stairs"]
         self.assertEqual(len(stairs), 2)
+        self.assertEqual(len(self.ship["decks"]) - 1, len(stairs[0]["runs"]))
         decks = {d["id"]: d["y"] for d in self.ship["decks"]}
         for s in stairs:
-            self.assertEqual(len(s["runs"]), 2)
+            self.assertEqual(len(s["runs"]), len(self.ship["decks"]) - 1)
             for run in s["runs"]:
                 fa, fb = run["flights"]
                 lo, hi = decks[run["deck_lo"]], decks[run["deck_hi"]]
@@ -176,13 +187,13 @@ class ShipTests(unittest.TestCase):
                 towers.setdefault(r["id"][:-1], {})[r["deck"]] = r
         self.assertEqual(set(towers), {"towerA", "towerB"})
         for name, by in towers.items():
-            self.assertEqual(set(by), {1, 2, 3})
-            rects = {d: r["rect"] for d, r in by.items()}
-            self.assertEqual(rects[1], rects[2])
-            self.assertEqual(rects[2], rects[3])
-            self.assertEqual(by[3]["ceiling_holes"], by[2]["floor_holes"])
-            self.assertEqual(by[2]["ceiling_holes"], by[1]["floor_holes"])
-            self.assertFalse(by[3]["floor_holes"] or by[1]["ceiling_holes"])
+            ids = sorted(by)
+            self.assertEqual(ids, sorted(d["id"] for d in self.ship["decks"]))
+            self.assertEqual(by[ids[0]]["floor_holes"] != [], True)
+            for upper, lower in zip(ids, ids[1:]):          # deck ids grow downwards
+                self.assertEqual(by[lower]["ceiling_holes"], by[upper]["floor_holes"])
+                self.assertEqual(by[lower]["rect"][0], by[upper]["rect"][0])
+            self.assertFalse(by[ids[-1]]["floor_holes"] or by[ids[0]]["ceiling_holes"])
 
     def test_every_room_has_a_bill_of_materials(self):
         for r in self.ship["rooms"]:

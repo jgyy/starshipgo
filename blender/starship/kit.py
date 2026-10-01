@@ -14,6 +14,8 @@ import math
 import os
 import random
 
+from . import screen_families
+
 try:  # bpy is only needed to build geometry; plan/--check work on a bare Python
     import bpy  # noqa: F401  (must precede bmesh)
     import bmesh
@@ -145,6 +147,8 @@ def mat(name):
         b.inputs["Metallic"].default_value = 0.2
     elif name.startswith("screen:"):
         m = _screen_material(name.split(":", 1)[1])
+    elif name.startswith("tex:"):
+        m = _food_material(name.split(":", 1)[1])
     else:
         raise KeyError(f"unknown material {name!r}")
     _mat_cache[name] = m
@@ -166,6 +170,25 @@ def _screen_material(tex):
     b.inputs["Roughness"].default_value = 0.15
     nt.links.new(t.outputs["Color"], b.inputs["Emission Color"])
     b.inputs["Emission Strength"].default_value = 1.6
+    return m
+
+
+def _food_material(tex):
+    """`tex:<name>` - opaque material using the procedural food albedo godot/textures/food/<name>.jpg
+    (see textures_food.py for the generator; roughness / metallic come from its SURFACE table).
+    Parts using it must have UVs."""
+    from . import textures_food
+    rough, metal = textures_food.surface(tex)
+    m, b = _new_material("food_" + tex)
+    path = textures_food.tex_path(TEXTURE_DIR, tex)
+    img = bpy.data.images.load(path, check_existing=True)
+    nt = m.node_tree
+    t = nt.nodes.new("ShaderNodeTexImage")
+    t.image = img
+    t.interpolation = "Linear"
+    nt.links.new(t.outputs["Color"], b.inputs["Base Color"])
+    b.inputs["Roughness"].default_value = rough
+    b.inputs["Metallic"].default_value = metal
     return m
 
 
@@ -313,6 +336,7 @@ class Model:
     def quad(self, size, pos=(0, 0, 0), mat="hull_mid", rot=(0, 0, 0), uv=True):
         """Single-sided quad in local XY facing +Z, with UVs 0..1 (v up)."""
         bm = self.cur["bm"]
+        mat = screen_families.resolve(mat, self.name)       # themed screen variant (see screen_families.py)
         M = _gm(pos, rot)
         w, h = size[0] / 2, size[1] / 2
         pts = [(-w, -h, 0), (w, -h, 0), (w, h, 0), (-w, h, 0)]
@@ -465,18 +489,110 @@ def _freed(old, new):
     return new
 
 
+ZFIGHT_EPS = 0.0015       # faces closer than this to one plane cannot be ordered by the depth buffer
+ZFIGHT_LIFT = 0.003       # the smaller of two coplanar overlapping faces is lifted by this much along its normal
+ZFIGHT_FIXED = []         # (model name, faces lifted) collected during a build (reported by build_all)
+
+
+def _poly2d(face, u, v):
+    return [(vt.co.dot(u), vt.co.dot(v)) for vt in face.verts]
+
+
+def _convex_overlap(a, b):
+    """Separating-axis overlap test of two convex 2D polygons (interiors overlap by more than a sliver)."""
+    for poly in (a, b):
+        n = len(poly)
+        for i in range(n):
+            p, q = poly[i], poly[(i + 1) % n]
+            ax, ay = -(q[1] - p[1]), q[0] - p[0]
+            ln = math.hypot(ax, ay)
+            if ln < 1e-12:
+                continue
+            ax, ay = ax / ln, ay / ln
+            pa = [ax * x + ay * y for x, y in a]
+            pb = [ax * x + ay * y for x, y in b]
+            if max(pa) <= min(pb) + 1e-5 or max(pb) <= min(pa) + 1e-5:
+                return False
+    return True
+
+
+def fix_zfight(model, passes=8):
+    """Lift one face of every pair of coplanar, same-facing, overlapping faces of different materials.
+
+    Such a pair (an inlaid light strip flush with its panel, a screen quad on its bezel ...) gives the depth buffer the same
+    depth for both, so the two surfaces flicker against each other as the camera moves.  The smaller face of the pair
+    (a detail on a larger surface) is moved ZFIGHT_LIFT metres along its normal; returns the number of faces lifted."""
+    lifted_total = 0
+    for gname, g in model.groups.items():
+        bm = g["bm"]
+        if len(bm.faces) < 2:
+            continue
+        moved = {}                    # vertex index -> times lifted (bounded by the number of passes)
+        for _ in range(passes):
+            bm.normal_update()
+            buckets = {}
+            for f in bm.faces:
+                if f.calc_area() < 1e-8:
+                    continue
+                n = f.normal
+                d = n.dot(f.verts[0].co)
+                key = (round(n.x * 100), round(n.y * 100), round(n.z * 100), int(math.floor(d / ZFIGHT_EPS)))
+                buckets.setdefault(key, []).append(f)
+            lift = {}
+            for key, faces in buckets.items():
+                cand = list(faces)
+                for dk in (-1, 1):
+                    cand += buckets.get((key[0], key[1], key[2], key[3] + dk), [])
+                for a in faces:
+                    for b in cand:
+                        if a is b or a.material_index == b.material_index or a.index > b.index and b in faces:
+                            continue
+                        if a.normal.dot(b.normal) < 0.9998 or abs(a.normal.dot(a.verts[0].co) - b.normal.dot(b.verts[0].co)) > ZFIGHT_EPS:
+                            continue
+                        n = a.normal
+                        ref = Vector((1, 0, 0)) if abs(n.x) < 0.9 else Vector((0, 1, 0))
+                        u = n.cross(ref).normalized()
+                        v = n.cross(u)
+                        if not _convex_overlap(_poly2d(a, u, v), _poly2d(b, u, v)):
+                            continue
+                        loser = a if (a.calc_area(), a.material_index) <= (b.calc_area(), b.material_index) else b
+                        lift[loser.index] = loser
+            if not lift:
+                break
+            for f in lift.values():
+                for vt in f.verts:
+                    if True:
+                        moved[vt.index] = moved.get(vt.index, 0) + 1
+                        vt.co += f.normal * ZFIGHT_LIFT
+            lifted_total += len(lift)
+    if lifted_total:
+        ZFIGHT_FIXED.append((model.name, lifted_total))
+    return lifted_total
+
+
 def export(model, path):
     """Write the model as a GLB. Returns dict(bounds, tris)."""
     if not any(g["bm"].faces for g in model.groups.values()):
         raise ValueError(f"model {model.name!r} is empty (no faces); cannot export")
     objs = []
+    lo0, hi0 = model.bounds()
+    if fix_zfight(model):
+        # lifting detail faces grows the model by a few mm: slide it back so the mounting plane stays exactly where it was
+        lo1, hi1 = model.bounds()
+        mount = getattr(model, "mount", None)
+        if mount in ("floor", "table"):
+            model.shift(dy=lo0[1] - lo1[1])
+        elif mount == "wall":
+            model.shift(dz=lo0[2] - lo1[2])
+        elif mount == "ceiling":
+            model.shift(dy=hi0[1] - hi1[1])
     for gname, g in model.groups.items():
         bm = g["bm"]
         if not bm.faces:
             continue
         bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-5)
         bm = g["bm"] = _freed(bm, canonical_order(bm))
-        _smooth(bm)
+        _smooth(bm, getattr(model, "smooth_angle", math.radians(38)))
         me = bpy.data.meshes.new(gname)
         bm.to_mesh(me)
         for mn in g["mats"]:

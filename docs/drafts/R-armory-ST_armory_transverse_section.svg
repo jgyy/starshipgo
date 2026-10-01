@@ -32,36 +32,36 @@
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
 <text x="15" y="11.2" font-size="2.6" class="t b">SECTION A-A - ARMORY</text>
-<text x="15" y="14.4" font-size="1.6" class="t" fill="#555">LOOKING AFT (+Z)  -  STBD on the left</text>
+<text x="15" y="14.4" font-size="1.6" class="t" style="fill:#555">LOOKING AFT (+Z)  -  STBD on the left</text>
 <clipPath id="clipA"><rect x="163.71" y="56.7" width="96.58" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="164.01,63 303.33,63 303.33,131 164.01,131" class="x" fill="#eceff3"/>
-<polygon points="193.01,89.6 199.01,89.6 199.01,104.3 193.01,104.3" class="f" fill="#ecc4fa"/>
-<polygon points="221.01,103 237.01,103 237.01,131 221.01,131" class="f" fill="#f5afeb"/>
-<polygon points="259.01,91 279.01,91 279.01,131 259.01,131" class="f" fill="#f5aeea"/>
-<polygon points="238.01,91 258.01,91 258.01,131 238.01,131" class="f" fill="#f5aeea"/>
-<polygon points="167.01,99.8 171.11,99.8 171.11,110.2 167.01,110.2" class="f" fill="#ebc1fa"/>
+<polygon points="193.01,89.6 199.01,89.6 199.01,104.3 193.01,104.3" class="f" fill="#eeb6f1"/>
+<polygon points="221.01,103 237.01,103 237.01,131 221.01,131" class="f" fill="#f5e6af"/>
+<polygon points="259.01,91 279.01,91 279.01,131 259.01,131" class="f" fill="#f5e6ae"/>
+<polygon points="238.01,91 258.01,91 258.01,131 238.01,131" class="f" fill="#f5e6ae"/>
+<polygon points="167.01,99.8 171.11,99.8 171.11,110.2 167.01,110.2" class="f" fill="#edb3f1"/>
 <polygon points="248.17,63 259.85,63 259.85,66.2 248.17,66.2" class="dot" fill="none"/>
-<polygon points="199.35,102.14 204.65,102.14 204.65,110.2 199.35,110.2" class="f" fill="#fac1de"/>
-<polygon points="212.77,108.5 225.27,108.5 225.27,131 212.77,131" class="f" fill="#abb2f5"/>
+<polygon points="199.35,102.14 204.65,102.14 204.65,110.2 199.35,110.2" class="f" fill="#f1b2c5"/>
+<polygon points="212.77,108.5 225.27,108.5 225.27,131 212.77,131" class="f" fill="#faebc0"/>
 <polygon points="241.41,63 246.61,63 246.61,72 241.41,72" class="dot" fill="none"/>
-<polygon points="270.48,84 290.84,84 290.84,106 270.48,106" class="f" fill="#f5aae9"/>
-<polygon points="194.85,109.76 209.15,109.76 209.15,131 194.85,131" class="f" fill="#a9f4db"/>
-<polygon points="167.01,97.2 168.99,97.2 168.99,104.8 167.01,104.8" class="f" fill="#bee3f9"/>
+<polygon points="270.48,84 290.84,84 290.84,106 270.48,106" class="f" fill="#f5e4aa"/>
+<polygon points="194.85,109.76 209.15,109.76 209.15,131 194.85,131" class="f" fill="#bef9f1"/>
+<polygon points="167.01,97.2 168.99,97.2 168.99,104.8 167.01,104.8" class="f" fill="#bef9dc"/>
 <polygon points="188.85,63 220.85,63 220.85,66.4 188.85,66.4" class="dot" fill="none"/>
-<polygon points="234.67,96.66 266.55,96.66 266.55,131 234.67,131" class="f" fill="#f4a6e8"/>
+<polygon points="234.66,96.66 266.57,96.66 266.57,131 234.66,131" class="f" fill="#f4e3a6"/>
 <polygon points="204.17,75 211.47,75 211.47,131 204.17,131" class="f" fill="none"/>
 <polygon points="164.01,131 259.99,131 259.99,137 164.01,137" class="n" fill="url(#hSlab)"/>
 <polygon points="164.01,57 259.99,57 259.99,63 164.01,63" class="n" fill="url(#hSlab)"/>
 <polygon points="164.01,63 167.01,63 167.01,75.8 164.01,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="256.15,63 259.99,63 259.99,131 256.15,131" class="n" fill="url(#hHull)"/>
-<polygon points="234.67,96.66 255.14,96.66 255.14,131 234.67,131" class="m" fill="#ef7dde"/>
+<polygon points="234.66,96.66 255.12,96.66 255.12,131 234.66,131" class="m" fill="#efd77d"/>
 <polygon points="204.17,75 211.47,75 211.47,131 204.17,131" class="m" fill="none"/>
 </g>
-<text x="280.66" y="95.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1800</text>
-<text x="196.01" y="99.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1600</text>
-<text x="169.06" y="105.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1300</text>
-<text x="168" y="101.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1500</text>
+<text x="280.66" y="95.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1800</text>
+<text x="196.01" y="99.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1600</text>
+<text x="169.06" y="105.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1300</text>
+<text x="168" y="101.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1500</text>
 <text x="164.01" y="54" font-size="1.8" class="t b">STBD</text>
 <text x="259.99" y="54" font-size="1.8" class="t b" text-anchor="end">PORT</text>
 <line x1="265.99" y1="137" x2="265.99" y2="57" class="d"/>
@@ -100,7 +100,7 @@
 <line x1="164.01" y1="138" x2="164.01" y2="144.2" class="d"/>
 <line x1="259.99" y1="138" x2="259.99" y2="144.2" class="d"/>
 <text x="212" y="142.3" font-size="2" class="t" text-anchor="middle">4799</text>
-<text x="340" y="192.8" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="340" y="192.8" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <rect x="340" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
 <rect x="350" y="194.6" width="10" height="1.4" class="f" fill="#fff"/>
 <rect x="360" y="194.6" width="10" height="1.4" class="f" fill="#111"/>
@@ -208,27 +208,27 @@
 <line x1="297" y1="252" x2="297" y2="266" class="m"/>
 <text x="237" y="257.2" font-size="4.4" class="t b">STARSHIPGO</text>
 <text x="237" y="261.4" font-size="2.2" class="t">Interior arrangement</text>
-<text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
-<text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
+<text x="237" y="264.4" font-size="1.7" class="t" style="fill:#444">Engineering drawings - generated</text>
+<text x="299" y="255.6" font-size="1.4" class="t" style="fill:#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Armory - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -24.87 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -24.87 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
+<text x="236.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-armory-ST</text>
 <rect x="295" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="269.3" font-size="1.4" class="t" fill="#666">SCALE</text>
+<text x="296.5" y="269.3" font-size="1.4" class="t" style="fill:#666">SCALE</text>
 <text x="296.5" y="275.2" font-size="3.4" class="t b">1:50</text>
 <rect x="355" y="266" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="269.3" font-size="1.4" class="t" fill="#666">DECK</text>
+<text x="356.5" y="269.3" font-size="1.4" class="t" style="fill:#666">DECK</text>
 <text x="356.5" y="275.2" font-size="3.4" class="t b">DECK 2</text>
 <rect x="235" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="236.5" y="282.3" font-size="1.4" class="t" fill="#666">ROOM</text>
+<text x="236.5" y="282.3" font-size="1.4" class="t" style="fill:#666">ROOM</text>
 <text x="236.5" y="288.2" font-size="3.4" class="t b">AR</text>
 <rect x="295" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="296.5" y="282.3" font-size="1.4" class="t" fill="#666">UNITS</text>
+<text x="296.5" y="282.3" font-size="1.4" class="t" style="fill:#666">UNITS</text>
 <text x="296.5" y="288.2" font-size="3.4" class="t b">mm</text>
 <rect x="355" y="279" width="60" height="13" class="f" fill="none"/>
-<text x="356.5" y="282.3" font-size="1.4" class="t" fill="#666">REV</text>
+<text x="356.5" y="282.3" font-size="1.4" class="t" style="fill:#666">REV</text>
 <text x="356.5" y="288.2" font-size="3.4" class="t b">A</text>
-<text x="236.5" y="291.1" font-size="1.3" class="t" fill="#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Armory</text>
+<text x="236.5" y="291.1" font-size="1.3" class="t" style="fill:#555">Drawn by: generated   |   Checked: -   |   Rev A   |   Armory</text>
 </svg>

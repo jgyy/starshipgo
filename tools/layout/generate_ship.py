@@ -5,13 +5,16 @@
 
 Deterministic: same catalog -> same ship.  The ship is drafted on a 3-deck grid (see docs/drafts):
 
+    Deck 0  Sky          y = 12 m  star cartography, wardroom, library, observatory, arboretum (lens-shaped dome)
     Deck 1  Command      y = 8 m   bridge in the bow, officers' country aft
     Deck 2  Habitat      y = 4 m   mess, medical, science, security, crew
     Deck 3  Engineering  y = 0 m   engines, life support, cargo, hangar on the stern platform
+    Deck 4  Hold         y = -4 m  antimatter, provisions, water, fabrication, main hold (tapering keel)
 
 Every deck has a central spine corridor (3 m), a mid-ship cross passage ("lobby") and TWO stair
 towers (port / starboard) that stack on top of each other - there are no lifts.  Rooms are the drafting
-rectangles clipped by the tapered hull outline of their deck (hull.py).
+rectangles clipped by the tapered hull outline of their deck (hull.py).  The outer skin that wraps the five decks
+(smooth, flared, raked) is lofted from the room volumes by hull.skin().
 """
 import json
 import os
@@ -21,7 +24,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hull as hulllib  # noqa: E402
 from shiplib import Catalog, Room, Ship
 from dressing import look  # noqa: E402
+import themes  # noqa: E402
 
+HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 GODOT = os.path.join(ROOT, "godot")
 
@@ -37,8 +42,9 @@ DEPT = {
     "life": dict(tint="#d3e5dc", floor="hull_panel", floor_tint="#c8dcd2", accent="#30a58a"),
 }
 
-DECKS = [{"id": 1, "name": "Command Deck", "y": 8.0}, {"id": 2, "name": "Habitat Deck", "y": 4.0},
-         {"id": 3, "name": "Engineering Deck", "y": 0.0}]
+DECKS = [{"id": 0, "name": "Sky Deck", "y": 12.0}, {"id": 1, "name": "Command Deck", "y": 8.0},
+         {"id": 2, "name": "Habitat Deck", "y": 4.0}, {"id": 3, "name": "Engineering Deck", "y": 0.0},
+         {"id": 4, "name": "Hold Deck", "y": -4.0}]
 PITCH = 4.0
 
 # ------------------------------------------------------------------ drafting grid
@@ -82,13 +88,27 @@ def build(cat):
 
     def circulation(deck):
         d = deck
-        z_fore = {1: -21.0, 2: -30.0, 3: -24.0}[d]
-        z_aft = {1: 14.0, 2: 18.0, 3: 18.0}[d]
+        z_fore = {0: -8.0, 1: -21.0, 2: -30.0, 3: -24.0, 4: -20.0}[d]
+        z_aft = {0: 18.0, 1: 14.0, 2: 18.0, 3: 18.0, 4: 30.0}[d]
         R[f"corF{d}"] = rm(f"corF{d}", "Forward Spine Corridor", d, (-CORR, z_fore, CORR, 0.0), "transit", code=f"CF{d}")
         R[f"corA{d}"] = rm(f"corA{d}", "Aft Spine Corridor", d, (-CORR, 3.6, CORR, z_aft), "transit", code=f"CA{d}")
         R[f"lobby{d}"] = rm(f"lobby{d}", "Mid-ship Stair Lobby", d, LOBBY, "transit", code=f"LB{d}")
         R[f"towerA{d}"] = rm(f"towerA{d}", "Port Stair Tower", d, TOWER_W, "transit", code=f"SP{d}", height=3.4)
         R[f"towerB{d}"] = rm(f"towerB{d}", "Starboard Stair Tower", d, TOWER_E, "transit", code=f"SS{d}", height=3.4)
+
+    # ---------------------------------------------------------------- DECK 0  (sky deck)
+    circulation(0)
+    R["starcart"] = rm("starcart", "Star Cartography", 0, (-XH, -20.0, XH, -8.0), "science", height=4.2, floor="carpet",
+                       floor_tint="#52607a", accent="#6a8cff", code="SC")
+    R["theatre"] = rm("theatre", "Briefing Theatre", 0, (-XH, -8.0, -CORR, 0.0), "command", code="BT")
+    R["wardroom"] = rm("wardroom", "Officers' Wardroom & Bar", 0, (CORR, -8.0, XH, 0.0), "crew", floor="carpet",
+                       floor_tint="#7a5a4a", accent="#d08a40", code="WR")
+    R["library"] = rm("library", "Library & Archive", 0, (-XH, 3.6, -CORR, 11.0), "crew", floor="carpet", floor_tint="#6a5a4a",
+                      accent="#b08a50", code="LI")
+    R["arbor"] = rm("arbor", "Arboretum", 0, (-XH, 11.0, -CORR, 18.0), "life", height=3.6, floor="hull_panel", floor_tint="#9ab8a0",
+                    code="AB")
+    R["observ"] = rm("observ", "Observatory", 0, (CORR, 3.6, XH, 11.0), "science", floor="carpet", floor_tint="#4a566a", code="OB")
+    R["flag"] = rm("flag", "Flag Officer's Suite", 0, (CORR, 11.0, XH, 18.0), "crew", floor_tint="#8a7a68", code="FS")
 
     # ---------------------------------------------------------------- DECK 1  (command)
     circulation(1)
@@ -130,15 +150,46 @@ def build(cat):
     R["hangar"] = rm("hangar", "Hangar Bay", 3, (-XH, 18.0, XH, 32.0), "cargo", height=8.0, floor="deck_plate",
                      floor_tint="#a8acb4", code="HB")
 
+    # ---------------------------------------------------------------- DECK 4  (hold)
+    circulation(4)
+    R["antimatter"] = rm("antimatter", "Antimatter Containment", 4, (-XH, -20.0, -CORR, -9.0), "engineering", height=3.4,
+                         accent="#d06aff", code="AC")
+    R["provisions"] = rm("provisions", "Provisions Hold & Cold Store", 4, (-XH, -9.0, -CORR, 0.0), "cargo", floor="hull_panel",
+                         floor_tint="#cfd8dc", accent="#40a8d8", code="PH")
+    R["water"] = rm("water", "Water Reclamation Plant", 4, (CORR, -20.0, XH, -9.0), "life", code="WP")
+    R["waste"] = rm("waste", "Waste & Recycling Plant", 4, (CORR, -9.0, XH, 0.0), "life", floor="grating", floor_tint="#ffffff",
+                    code="WW")
+    R["fab"] = rm("fab", "Fabrication Hall", 4, (-XH, 3.6, -CORR, 14.0), "engineering", code="FH")
+    R["auxctl"] = rm("auxctl", "Auxiliary Control", 4, (CORR, 3.6, XH, 14.0), "command", code="AX")
+    R["hold"] = rm("hold", "Main Cargo Hold", 4, (-XH, 14.0, -CORR, 30.0), "cargo", code="MC")
+    R["drone"] = rm("drone", "Drone & Probe Bay", 4, (CORR, 14.0, XH, 30.0), "cargo", floor="deck_plate", floor_tint="#a8acb4", code="DP")
+
     # ---------------------------------------------------------------- links (doors / arches)
     L = S.link
-    for d in (1, 2, 3):
+    for d in hulllib.DECK_IDS:
         L(f"corF{d}", f"lobby{d}", kind="open", c=0, width=3.0, height=3.2)
         L(f"corA{d}", f"lobby{d}", kind="open", c=0, width=3.0, height=3.2)
         # the stair towers open onto the cross passage over the deck-level strip
         L(f"towerA{d}", f"lobby{d}", kind="open", c=1.8, width=3.2, height=3.2)
         L(f"towerB{d}", f"lobby{d}", kind="open", c=1.8, width=3.2, height=3.2)
 
+    # deck 0
+    L("starcart", "corF0", c=0, kind="open", width=3.0, height=3.2)
+    L("theatre", "corF0", c=-4.0, kind="portal")
+    L("wardroom", "corF0", c=-4.0, kind="portal")
+    L("library", "corA0", c=7.3, kind="portal")
+    L("arbor", "corA0", c=14.5, kind="portal")
+    L("observ", "corA0", c=7.3)
+    L("flag", "corA0", c=14.5)
+    # deck 4
+    L("antimatter", "corF4", c=-14.0)
+    L("provisions", "corF4", c=-4.5)
+    L("water", "corF4", c=-14.0)
+    L("waste", "corF4", c=-4.5)
+    L("fab", "corA4", c=7.3)
+    L("auxctl", "corA4", c=7.3)
+    L("hold", "corA4", c=22.0, kind="open", width=3.2, height=3.2)
+    L("drone", "corA4", c=22.0, kind="open", width=3.2, height=3.2)
     # deck 1
     L("bridge", "corF1", c=0)
     L("bridge", "ready", kind="door", c=-6.0)
@@ -178,6 +229,13 @@ def build(cat):
     L("depot", "hangar", kind="door", c=7.0, model=None)
 
     # ---------------------------------------------------------------- windows (hull walls only)
+    hull_windows(R["starcart"], width=3.6, y0=0.6, y1=3.6, margin=0.3, gap=0.3)
+    hull_windows(R["theatre"], width=1.4, y0=1.0, y1=2.4)
+    hull_windows(R["wardroom"], width=2.6, y0=0.8, y1=2.7)
+    hull_windows(R["library"], width=1.6, y0=1.0, y1=2.6)
+    hull_windows(R["arbor"], width=3.0, y0=0.6, y1=3.0)
+    hull_windows(R["observ"], width=2.8, y0=0.6, y1=3.2)
+    hull_windows(R["flag"], width=2.2, y0=0.8, y1=2.7)
     hull_windows(R["bridge"], width=3.4, y0=0.5, y1=3.6, margin=0.2, gap=0.25)
     hull_windows(R["lounge"], width=3.2, y0=0.7, y1=2.8)
     hull_windows(R["ready"], width=1.6, y0=0.9, y1=2.6)
@@ -208,6 +266,117 @@ def build(cat):
     S.spawn = {"pos": [0.0, S.deck_y(2) + 0.1, lob.cz], "yaw": 0.0}
     cameras(S)
     return B
+
+
+SLAB = 0.3
+
+
+# structure that only exists outside the rooms: the sensor prow ahead of the bridge and the engine boom under the hangar.
+# They are solid fairing (the skin must enclose them) and give the hull its pointed bow and raked stern.
+FAIRINGS = [
+    ([(-10.5, -33.0), (10.5, -33.0), (2.5, -51.0), (-2.5, -51.0)], -3.0, 10.5),
+    ([(-6.0, -41.0), (6.0, -41.0), (2.0, -57.0), (-2.0, -57.0)], -0.5, 8.0),
+    ([(-3.0, -50.0), (3.0, -50.0), (1.6, -60.0), (-1.6, -60.0)], 1.5, 6.0),
+    ([(-8.0, 29.0), (8.0, 29.0), (5.5, 41.0), (-5.5, 41.0)], -5.6, -0.3),
+    ([(-4.5, 38.0), (4.5, 38.0), (3.0, 46.0), (-3.0, 46.0)], -5.0, -1.5),
+]
+
+
+def room_volumes(S):
+    """(polygon, y_lo, y_hi) of every room including its floor / ceiling slabs plus the fairings: what the outer skin
+    must enclose."""
+    vols = [(r.poly, r.y - SLAB, r.y + r.h + SLAB) for r in S.rooms.values()]
+    return vols + [(list(p), lo, hi) for p, lo, hi in FAIRINGS]
+
+
+def exterior(S):
+    """Outer skin (hull.skin) and the window panels that show the rooms' hull windows on it."""
+    import math
+    sk = hulllib.skin(room_volumes(S))
+    wins = []
+    for r in S.rooms.values():
+        for o in r.openings:
+            if o["kind"] != "window":
+                continue
+            e = r.edge(o["side"])
+            if e is None or not e["hull"]:
+                continue
+            wx, wz = r._wall_point(e, o["side"], o["c"])
+            ux, uz = e["u"]
+            dx, dz = -e["n"][0], -e["n"][1]                    # outward
+            yc = r.y + (o["y0"] + o["y1"]) / 2
+            hit = hulllib.skin_hit(sk, wx, yc, wz, dx, dz)
+            hu = hulllib.skin_hit(sk, wx, yc + 0.5, wz, dx, dz)
+            hd = hulllib.skin_hit(sk, wx, yc - 0.5, wz, dx, dz)
+            if hit is None or hu is None or hd is None:
+                continue
+            v = (hu[0] - hd[0], 1.0, hu[1] - hd[1])             # slope direction: one metre of height along the skin
+            dot = v[0] * ux + v[2] * uz
+            v = (v[0] - dot * ux, v[1], v[2] - dot * uz)
+            ln = math.sqrt(v[0] ** 2 + v[1] ** 2 + v[2] ** 2)
+            v = tuple(c / ln for c in v)
+            wins.append({"room": r.id, "c": [round(hit[0], 3), round(yc, 3), round(hit[1], 3)],
+                         "u": [round(ux, 4), 0.0, round(uz, 4)], "v": [round(c, 4) for c in v],
+                         "w": o["w"], "h": round((o["y1"] - o["y0"]) / v[1], 3), "kind": "window"})
+    # the hangar mouth: a lit, force-field-blue panel on the stern skin
+    hit = hulllib.skin_hit(sk, 0.0, S.deck_y(3) + 3.5, 20.0, 0.0, 1.0)
+    if hit is not None:
+        hu = hulllib.skin_hit(sk, 0.0, S.deck_y(3) + 4.0, 20.0, 0.0, 1.0)
+        hd = hulllib.skin_hit(sk, 0.0, S.deck_y(3) + 3.0, 20.0, 0.0, 1.0)
+        vz = (hu[1] - hd[1]) / 1.0
+        ln = math.sqrt(1.0 + vz * vz)
+        wins.append({"room": "hangar", "c": [0.0, round(S.deck_y(3) + 3.5, 3), round(hit[1], 3)], "u": [1.0, 0.0, 0.0],
+                     "v": [0.0, round(1.0 / ln, 4), round(vz / ln, 4)], "w": 14.0, "h": round(7.0 * ln, 3), "kind": "mouth"})
+    belts = []
+    for y, col in ((-0.3, "#33e0ff"), (3.7, "#ffab1f"), (7.7, "#cfe2ff"), (11.7, "#33e0ff")):
+        poly = hulllib.skin_polygon(sk, y)
+        cx, cz = sk["center"]
+        pts = []
+        for i, (x, z) in enumerate(poly):
+            if i % 2:
+                continue
+            dx, dz = x - cx, z - cz
+            ln = math.hypot(dx, dz) or 1.0
+            pts.append([round(x + dx / ln * 0.07, 2), round(z + dz / ln * 0.07, 2)])
+        belts.append({"y": y, "color": col, "pts": pts})
+    return {"skin": sk, "ext_windows": wins, "exterior": exterior_fittings(sk, S), "belts": belts}
+
+
+def skin_top(sk, x, z, y_from=40.0):
+    y = y_from
+    while y > -30.0:
+        if hulllib.skin_contains(sk, x, y, z):
+            return y
+        y -= 0.05
+    return None
+
+
+def skin_bottom(sk, x, z):
+    y = -30.0
+    while y < 40.0:
+        if hulllib.skin_contains(sk, x, y, z):
+            return y
+        y += 0.05
+    return None
+
+
+def exterior_fittings(sk, S):
+    """Nacelles, deflector, masts, engines and keel fin placed on the skin: [{"m", "pos", "yaw", "pitch"}]."""
+    out = []
+    z0 = 4.0
+    for side, mid in ((1, "arch_nacelle_starboard"), (-1, "arch_nacelle_port")):
+        hit = hulllib.skin_hit(sk, 0.0, 2.5, z0, float(side), 0.0)
+        out.append({"m": mid, "pos": [round(hit[0] - side * 0.9, 3), 2.5, z0], "yaw": 0.0})
+    hit = hulllib.skin_hit(sk, 0.0, 4.0, 0.0, 0.0, -1.0)
+    out.append({"m": "arch_deflector", "pos": [0.0, 4.0, round(hit[1] + 0.7, 3)], "yaw": 0.0, "pitch": 0.0})
+    for z, scale in ((-6.0, 1.0), (7.0, 0.7)):
+        yt = skin_top(sk, 0.0, z)
+        out.append({"m": "arch_mast", "pos": [0.0, round(yt - 0.4, 3), z], "yaw": 0.0, "scale": scale})
+    hit = hulllib.skin_hit(sk, 0.0, -2.6, 20.0, 0.0, 1.0)
+    out.append({"m": "arch_engine_cluster", "pos": [0.0, -2.6, round(hit[1] - 2.2, 3)], "yaw": 0.0})
+    yb = skin_bottom(sk, 0.0, 4.0)
+    out.append({"m": "arch_keel_fin", "pos": [0.0, round(yb + 0.35, 3), 4.0], "yaw": 0.0})
+    return out
 
 
 def hull_windows(room, width=2.0, y0=0.9, y1=2.6, pitch=None, margin=0.25, min_w=0.8, gap=0.3):
@@ -258,15 +427,14 @@ def add_stairs(S, R):
     climbs to the mid-landing, flight B climbs back to the strip of the deck above."""
     for side in ("A", "B"):
         g = stair_rects(side)
-        g["sgn"]
         za, zb = g["lane_a"], g["lane_b"]
         x0h, x1h = sorted((g["x_far"], g["x_foot"]))            # hole extent along x for the flight lanes
         land0, land1 = sorted((g["x_far"], g["x_land"]))
         holes = [[x0h, za[0], x1h, za[1]], [x0h, zb[0], x1h, zb[1]], [land0, g["z0"], land1, g["z1"]]]
         runs = []
-        for lo, hi in ((3, 2), (2, 1)):
+        for lo, hi in ((4, 3), (3, 2), (2, 1), (1, 0)):
             y0 = S.deck_y(lo)
-            za_c = (za[0] + za[1]) / 2 - 0.025 if False else (g["z0"] + FLIGHT_W / 2)
+            za_c = g["z0"] + FLIGHT_W / 2
             zb_c = g["z1"] - FLIGHT_W / 2
             # flight A: starts at the strip edge, climbs away from the lobby
             fa = {"pos": [round(g["x_foot"], 3), round(y0, 3), round(za_c, 3)], "yaw": g["yaw_up"], "rise": PITCH / 2, "run": 10 * TREAD}
@@ -276,13 +444,11 @@ def add_stairs(S, R):
                          "landing": {"rect": [round(v, 3) for v in (land0, g["z0"], land1, g["z1"])], "y": round(y0 + PITCH / 2, 3)}})
         S.stairs.append({"id": f"S{side}", "name": "Port stair" if side == "A" else "Starboard stair", "runs": runs,
                          "width": FLIGHT_W, "strip": [round(v, 3) for v in (min(g["x_foot"], g["x_end"]), g["z0"], max(g["x_foot"], g["x_end"]), g["z1"])]})
-        for d in (1, 2, 3):
+        for d in hulllib.DECK_IDS:
             room = R[f"tower{side}{d}"]
-            if d > 1:                      # the deck above has stairs passing through this ceiling
-                pass
-            if d < 3:
+            if d < max(hulllib.DECK_IDS):     # the flights from the deck below arrive through this floor
                 room.add_hole(holes[0], floor=True); room.add_hole(holes[1], floor=True); room.add_hole(holes[2], floor=True)
-            if d > 1:
+            if d > min(hulllib.DECK_IDS):     # and the flights to the deck above leave through this ceiling
                 room.add_hole(holes[0], ceiling=True); room.add_hole(holes[1], ceiling=True); room.add_hole(holes[2], ceiling=True)
 
 
@@ -294,7 +460,8 @@ ONLY_DECKS = None      # set by --decks: furnish only these decks (others stay e
 
 def furnish_all(B):
     recipes = {}
-    mods = ["recipes_common"] + ["recipes_deck%d" % d for d in (1, 2, 3) if ONLY_DECKS is None or d in ONLY_DECKS]
+    mods = ["recipes_common"] + ["recipes_deck%d" % d for d in hulllib.DECK_IDS
+                                 if (ONLY_DECKS is None or d in ONLY_DECKS) and os.path.exists(os.path.join(HERE, "recipes_deck%d.py" % d))]
     for name in mods:
         mod = importlib.import_module(name)
         for k, v in vars(mod).items():
@@ -312,18 +479,25 @@ def furnish_all(B):
         fn(room, B)
 
 
+# hand-placed tour cameras where the automatic one (first door, far corner) misses the showpiece
+CAMERA_OVERRIDES = {"starcart": ((6.5, 12.0 + 1.62, -9.3), (-1.0, 12.0 + 0.9, -16.0))}
+
+
 def cameras(S):
-    """One tour camera per room: stand just inside the first door looking at the far side of the room."""
+    """Tour cameras for the rooms listed in `order` (25 of the ship's rooms): stand just inside the first door looking at the
+    far side of the room; the four exterior cameras follow."""
     S.cameras = []
     order = ["bridge", "corF1", "lounge", "conf", "astro", "capt", "corF2", "mess", "galley", "medbay", "sci", "hydro", "brig", "armory",
-             "rec", "lobby2", "eng", "core", "life", "cargo", "airlock", "hangar", "towerA2", "shop", "aux"]
+             "rec", "lobby2", "eng", "core", "life", "cargo", "airlock", "hangar", "towerA2", "shop", "aux",
+             "starcart", "theatre", "wardroom", "library", "arbor", "observ", "flag",
+             "antimatter", "provisions", "water", "waste", "fab", "auxctl", "hold", "drone"]
     n = 0
     for rid in order:
         room = S.rooms.get(rid)
         if room is None:
             continue
         n += 1
-        eye, tgt = _camera_for(room)
+        eye, tgt = CAMERA_OVERRIDES.get(rid) or _camera_for(room)
         yaw, pitch = look(eye, tgt)
         S.cameras.append({"name": "%02d_%s" % (n, rid), "room": rid, "title": room.name,
                           "subtitle": "DECK %d - %s" % (room.deck, next(d["name"] for d in S.decks if d["id"] == room.deck)),
@@ -333,10 +507,10 @@ def cameras(S):
 
 def exterior_cameras(S):
     """Outside views of the tapered hull (used for documentation screenshots)."""
-    views = [("X1_bow_quarter", (-32.0, 27.0, -60.0), (0.0, 1.0, -8.0), "Exterior - bow quarter view"),
-             ("X2_starboard_profile", (78.0, 4.5, -1.0), (0.0, 4.0, -1.0), "Exterior - starboard profile"),
-             ("X3_stern_quarter", (34.0, 22.0, 62.0), (0.0, 2.0, 12.0), "Exterior - stern quarter, hangar mouth"),
-             ("X4_plan_view", (0.0, 100.0, -1.0), (0.0, 0.0, -1.0), "Exterior - plan view")]
+    views = [("X1_bow_quarter", (-50.0, 30.0, -92.0), (0.0, 3.0, -8.0), "Exterior - bow quarter view"),
+             ("X2_starboard_profile", (118.0, 5.0, 0.0), (0.0, 4.0, 0.0), "Exterior - starboard profile"),
+             ("X3_stern_quarter", (52.0, 26.0, 88.0), (0.0, 2.0, 12.0), "Exterior - stern quarter, hangar mouth"),
+             ("X4_plan_view", (0.0, 135.0, -1.0), (0.0, 0.0, -1.0), "Exterior - plan view")]
     for name, eye, tgt, title in views:
         yaw, pitch = look(eye, tgt)
         if name == "X4_plan_view":
@@ -357,8 +531,6 @@ def _camera_for(room):
             px, pz = e["a"][0], op["c"]
         nx, nz = e["n"]
         ex, ez = px + nx * 1.4, pz + nz * 1.4
-        # shift towards the room centre so the view is oblique and shows depth
-        ex += (cx - ex) * 0.0
         if not room.inside(ex, ez, 0.4):
             ex, ez = cx, cz
     else:
@@ -370,24 +542,32 @@ def _camera_for(room):
     return (ex, room.y + 1.62, ez), (tx, room.y + min(1.5, room.h * 0.45), tz)
 
 
-def main():
+def main(argv=None):
     global ONLY_DECKS
     import argparse
     ap = argparse.ArgumentParser()
-    ap.add_argument("--decks", default="", help="comma separated decks to furnish (default all)")
-    ap.add_argument("--out", default=os.path.join(GODOT, "data", "ship.json"))
-    a = ap.parse_args()
+    ap.add_argument("--decks", default="", help="comma separated decks to furnish (default all); needs an explicit --out")
+    ap.add_argument("--out", default=None, help="default godot/data/ship.json")
+    a = ap.parse_args(argv)
     if a.decks:
-        ONLY_DECKS = {int(x) for x in a.decks.split(",")}
+        if a.out is None:
+            ap.error("--decks leaves the other decks empty, so it must not overwrite godot/data/ship.json: pass --out PATH")
+        try:
+            ONLY_DECKS = {int(x) for x in a.decks.split(",")}
+        except ValueError:
+            ap.error("--decks takes comma separated deck numbers, e.g. 1,3")
+    a.out = a.out or os.path.join(GODOT, "data", "ship.json")
     cat = Catalog(os.path.join(GODOT, "data", "catalog.json"))
     B = build(cat)
     S = B.ship
     rooms = [r.to_json() for r in S.rooms.values()]
+    for r in rooms:
+        r["mats"] = themes.theme_for(r["id"], r["dept"])
     total = sum(len(r["props"]) for r in rooms) + len(S.doors)
     bom_lines = sum(len(r["bom"]) for r in rooms)
     out = {"version": 2, "decks": S.decks, "hull": {str(k): [[x, z] for x, z in v] for k, v in S.hull.items()},
            "rooms": rooms, "doors": S.doors, "stairs": S.stairs,
-           "cameras": S.cameras, "spawn": S.spawn,
+           "cameras": S.cameras, "spawn": S.spawn, **exterior(S),
            "stats": {"rooms": len(rooms), "props": total, "bom_lines": bom_lines,
                      "distinct_models": sum(1 for v in cat.use.values() if v > 0), "catalog": len(cat.models)}}
     path = os.path.abspath(a.out)
