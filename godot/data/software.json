@@ -1,0 +1,1023 @@
+{
+ "version": 1,
+ "fallback": "computer",
+ "theme": {
+  "bg": "#070b12",
+  "panel": "#0d1522",
+  "panel_hi": "#14213a",
+  "line": "#2a4266",
+  "text": "#d6e4f5",
+  "dim": "#7d93b2",
+  "accent": "#42c8ff",
+  "accent2": "#7affc6",
+  "ok": "#4be08a",
+  "warn": "#ffc247",
+  "crit": "#ff4d5e",
+  "info": "#6aa8ff",
+  "alert_green": "#2fd37a",
+  "alert_yellow": "#ffc247",
+  "alert_red": "#ff3b4a"
+ },
+ "categories": [
+  {
+   "id": "navigation",
+   "title": "Navigation and cartography"
+  },
+  {
+   "id": "engineering",
+   "title": "Engineering and power"
+  },
+  {
+   "id": "operations",
+   "title": "Operations and defence"
+  },
+  {
+   "id": "life",
+   "title": "Life support, medical and hydroponics"
+  },
+  {
+   "id": "science",
+   "title": "Science and information"
+  },
+  {
+   "id": "services",
+   "title": "Crew services"
+  },
+  {
+   "id": "systems",
+   "title": "Ship systems and administration"
+  }
+ ],
+ "apps": [
+  {
+   "id": "starmap",
+   "title": "Star Cartography",
+   "version": "1.0",
+   "category": "navigation",
+   "description": "A rotatable 3D chart of every system in lore.json: faction colours, jump lanes, the ship's position and the mission plan. The crew can inspect a system, plot a route along lanes and commit a destination to the helm.",
+   "screen_textures": [
+    "starmap"
+   ],
+   "categories": [
+    "console",
+    "display",
+    "holo",
+    "telescope",
+    "terminal"
+   ],
+   "rooms": [
+    "bridge",
+    "astro",
+    "ready",
+    "conf",
+    "lounge"
+   ],
+   "hosts": [
+    "console",
+    "display",
+    "holo",
+    "telescope",
+    "terminal"
+   ],
+   "update_rate": "Chart redraws on input only; ship marker and clock 1 Hz; lore data loaded once."
+  },
+  {
+   "id": "nav",
+   "title": "Helm and Navigation",
+   "version": "1.0",
+   "category": "navigation",
+   "description": "The pilot's view: current course, speed, heading, the ETA to the next waypoint and the destination selector. It is the control surface for ShipState.destination and for the throttle (impulse / cruise / top warp).",
+   "screen_textures": [
+    "nav"
+   ],
+   "categories": [
+    "console",
+    "display",
+    "controlpanel"
+   ],
+   "rooms": [
+    "bridge",
+    "hangar"
+   ],
+   "hosts": [
+    "console",
+    "display",
+    "controlpanel"
+   ],
+   "update_rate": "1 Hz (ETA, distance); gauges animate at 30 Hz from interpolated values."
+  },
+  {
+   "id": "sensors",
+   "title": "Long-Range Sensors",
+   "version": "1.0",
+   "category": "operations",
+   "description": "A radar-style sweep of the neighbourhood: contacts (ships, anomalies, debris) with bearing, range and classification; the crew can lock a contact and request a deep scan.",
+   "screen_textures": [
+    "radar"
+   ],
+   "categories": [
+    "console",
+    "display",
+    "instrument",
+    "antenna"
+   ],
+   "rooms": [
+    "bridge",
+    "astro",
+    "comms"
+   ],
+   "hosts": [
+    "console",
+    "display",
+    "instrument",
+    "antenna"
+   ],
+   "update_rate": "Sweep 30 Hz; contact positions 2 Hz."
+  },
+  {
+   "id": "tactical",
+   "title": "Tactical and Shields",
+   "version": "1.0",
+   "category": "operations",
+   "description": "Shield and weapon management with a ship silhouette showing four shield quadrants and hull integrity. Under the exploration charter the ship is lightly armed; the app is used for debris shielding and defence drills.",
+   "screen_textures": [
+    "tactical"
+   ],
+   "categories": [
+    "console",
+    "display",
+    "weaponrack",
+    "controlpanel"
+   ],
+   "rooms": [
+    "bridge",
+    "secoff",
+    "armory"
+   ],
+   "hosts": [
+    "console",
+    "display",
+    "weaponrack",
+    "controlpanel"
+   ],
+   "update_rate": "10 Hz."
+  },
+  {
+   "id": "warp",
+   "title": "Warp Field Control",
+   "version": "1.0",
+   "category": "engineering",
+   "description": "Controls the warp field generator (the coil, particle and turbine machines): field strength, nacelle alignment, coil temperatures and the pre-jump checklist.",
+   "screen_textures": [
+    "warp"
+   ],
+   "categories": [
+    "coil",
+    "particle",
+    "console",
+    "display",
+    "turbine"
+   ],
+   "rooms": [
+    "eng",
+    "bridge"
+   ],
+   "hosts": [
+    "coil",
+    "particle",
+    "console",
+    "display",
+    "turbine"
+   ],
+   "update_rate": "5 Hz."
+  },
+  {
+   "id": "reactor",
+   "title": "Fusion Core Control",
+   "version": "1.0",
+   "category": "engineering",
+   "description": "Operates the main fusion core: output, fuel (deuterium / helium-3), containment, coolant loops and SCRAM.",
+   "screen_textures": [],
+   "categories": [
+    "reactor",
+    "generator",
+    "capacitor",
+    "console",
+    "controlpanel"
+   ],
+   "rooms": [
+    "eng",
+    "aux"
+   ],
+   "hosts": [
+    "reactor",
+    "generator",
+    "capacitor",
+    "console",
+    "controlpanel"
+   ],
+   "update_rate": "10 Hz."
+  },
+  {
+   "id": "power",
+   "title": "Power Distribution",
+   "version": "1.0",
+   "category": "engineering",
+   "description": "Single-line view of the ship's electrical network: generation, buses, per-deck and per-department breakers, loads and battery state, from the machine datasheets.",
+   "screen_textures": [
+    "power"
+   ],
+   "categories": [
+    "junction",
+    "capacitor",
+    "cell",
+    "controlpanel",
+    "console",
+    "display"
+   ],
+   "rooms": [
+    "aux",
+    "eng",
+    "bridge"
+   ],
+   "hosts": [
+    "junction",
+    "capacitor",
+    "cell",
+    "controlpanel",
+    "console",
+    "display"
+   ],
+   "update_rate": "2 Hz."
+  },
+  {
+   "id": "engineering",
+   "title": "Damage Control and Systems Status",
+   "version": "1.0",
+   "category": "engineering",
+   "description": "Status board of every ship system with health bars, active faults and repair tasking; shows which rooms are affected.",
+   "screen_textures": [
+    "systems"
+   ],
+   "categories": [
+    "console",
+    "display",
+    "controlpanel",
+    "terminal"
+   ],
+   "rooms": [
+    "eng",
+    "bridge",
+    "shop"
+   ],
+   "hosts": [
+    "console",
+    "display",
+    "controlpanel",
+    "terminal"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "lifesupport",
+   "title": "Life Support",
+   "version": "1.0",
+   "category": "life",
+   "description": "Per-deck atmosphere (O2, CO2, temperature, pressure), scrubber and water-recycler status and the consumables budget.",
+   "screen_textures": [
+    "hazard"
+   ],
+   "categories": [
+    "scrubber",
+    "watertank",
+    "tank",
+    "console",
+    "display",
+    "controlpanel"
+   ],
+   "rooms": [
+    "life",
+    "eng"
+   ],
+   "hosts": [
+    "scrubber",
+    "watertank",
+    "tank",
+    "console",
+    "display",
+    "controlpanel"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "hydroponics",
+   "title": "Hydroponics Control",
+   "version": "1.0",
+   "category": "life",
+   "description": "Garden control: crop beds, light spectrum and schedule, water, nutrients and harvest forecast; the food source for the galley.",
+   "screen_textures": [],
+   "categories": [
+    "planter",
+    "plant",
+    "terminal",
+    "controlpanel",
+    "display"
+   ],
+   "rooms": [
+    "hydro"
+   ],
+   "hosts": [
+    "planter",
+    "plant",
+    "terminal",
+    "controlpanel",
+    "display"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "medical",
+   "title": "Medical Diagnostics",
+   "version": "1.0",
+   "category": "life",
+   "description": "Bio-bed vitals, scanner results and a patient list. Bio-bed models host the vitals trace; the medical scanner hosts the body scan.",
+   "screen_textures": [
+    "medical",
+    "vitals",
+    "lifesigns"
+   ],
+   "categories": [
+    "medbed",
+    "medscanner",
+    "cryo",
+    "surgical",
+    "display",
+    "console"
+   ],
+   "rooms": [
+    "medbay",
+    "cabinA",
+    "capt"
+   ],
+   "hosts": [
+    "medbed",
+    "medscanner",
+    "cryo",
+    "surgical",
+    "display",
+    "console"
+   ],
+   "update_rate": "ECG 30 Hz, vitals 1 Hz."
+  },
+  {
+   "id": "science",
+   "title": "Science Analysis",
+   "version": "1.0",
+   "category": "science",
+   "description": "Spectrograph, periodic table lookup and sample catalogue for the lab analysers and the astrometrics instruments.",
+   "screen_textures": [
+    "waveform",
+    "periodic"
+   ],
+   "categories": [
+    "analyzer",
+    "sciinstrument",
+    "microscope",
+    "particle",
+    "specimen",
+    "console",
+    "display"
+   ],
+   "rooms": [
+    "sci",
+    "astro"
+   ],
+   "hosts": [
+    "analyzer",
+    "sciinstrument",
+    "microscope",
+    "particle",
+    "specimen",
+    "console",
+    "display"
+   ],
+   "update_rate": "Graph 30 Hz while a sample is loaded."
+  },
+  {
+   "id": "comms",
+   "title": "Communications",
+   "version": "1.0",
+   "category": "operations",
+   "description": "Channels (ship-wide, department, external subspace), message inbox and hailing.",
+   "screen_textures": [
+    "comm"
+   ],
+   "categories": [
+    "commsunit",
+    "router",
+    "antenna",
+    "console",
+    "display",
+    "terminal"
+   ],
+   "rooms": [
+    "comms",
+    "bridge",
+    "ready"
+   ],
+   "hosts": [
+    "commsunit",
+    "router",
+    "antenna",
+    "console",
+    "display",
+    "terminal"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "security",
+   "title": "Security and Access",
+   "version": "1.0",
+   "category": "systems",
+   "description": "Door lock management that really locks and unlocks doors in the game, a camera grid and intruder alerts.",
+   "screen_textures": [],
+   "categories": [
+    "camera",
+    "console",
+    "display",
+    "controlpanel",
+    "terminal"
+   ],
+   "rooms": [
+    "secoff",
+    "brig",
+    "bridge",
+    "armory"
+   ],
+   "hosts": [
+    "camera",
+    "console",
+    "display",
+    "controlpanel",
+    "terminal"
+   ],
+   "update_rate": "1 Hz list; camera tiles 5 Hz."
+  },
+  {
+   "id": "cargo",
+   "title": "Cargo and Inventory Manifest",
+   "version": "1.0",
+   "category": "services",
+   "description": "Inventory of the cargo bay and spares depot: containers, mass, volume and a tally of the ship's stores.",
+   "screen_textures": [],
+   "categories": [
+    "terminal",
+    "console",
+    "loader",
+    "pallet",
+    "crate",
+    "display"
+   ],
+   "rooms": [
+    "cargo",
+    "depot",
+    "hangar"
+   ],
+   "hosts": [
+    "terminal",
+    "console",
+    "loader",
+    "pallet",
+    "crate",
+    "display"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "fabricator",
+   "title": "Fabricator Queue",
+   "version": "1.0",
+   "category": "services",
+   "description": "3D printer / fabricator job queue: parts, progress, material feed and power draw.",
+   "screen_textures": [],
+   "categories": [
+    "analyzer",
+    "terminal",
+    "console",
+    "display"
+   ],
+   "rooms": [
+    "shop",
+    "sci",
+    "cargo"
+   ],
+   "hosts": [
+    "analyzer",
+    "terminal",
+    "console",
+    "display"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "galley",
+   "title": "Galley Replicator and Menu",
+   "version": "1.0",
+   "category": "services",
+   "description": "Food and drink catalogue with calories and ingredients; orders from the replicator or galley. Ties to docs/FOOD.md and the food models in the catalogue.",
+   "screen_textures": [],
+   "categories": [
+    "galley",
+    "vending",
+    "terminal",
+    "display",
+    "tableware"
+   ],
+   "rooms": [
+    "galley",
+    "mess"
+   ],
+   "hosts": [
+    "galley",
+    "vending",
+    "terminal",
+    "display",
+    "tableware"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "vending",
+   "title": "Vending Terminal",
+   "version": "1.0",
+   "category": "services",
+   "description": "Self-service vending machine: a short list of snacks and drinks, prices in credits, dispense status line.",
+   "screen_textures": [],
+   "categories": [
+    "vending"
+   ],
+   "rooms": [
+    "mess",
+    "rec",
+    "lounge",
+    "dorm"
+   ],
+   "hosts": [
+    "vending"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "alert",
+   "title": "Alert Status Panel",
+   "version": "1.0",
+   "category": "operations",
+   "description": "The ship-wide alert level (green, yellow, red) panel. Changing the level changes the lighting of every room.",
+   "screen_textures": [
+    "alert"
+   ],
+   "categories": [
+    "display",
+    "controlpanel",
+    "warnlight",
+    "beacon",
+    "sign"
+   ],
+   "rooms": [
+    "bridge",
+    "secoff",
+    "eng",
+    "corF1"
+   ],
+   "hosts": [
+    "display",
+    "controlpanel",
+    "warnlight",
+    "beacon",
+    "sign"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "computer",
+   "title": "Ship's Computer",
+   "version": "1.0",
+   "category": "systems",
+   "description": "A text terminal: type commands and the ship's computer answers. It is the fallback app for any unknown screen texture.",
+   "screen_textures": [
+    "text"
+   ],
+   "categories": [
+    "terminal",
+    "console",
+    "display"
+   ],
+   "rooms": [
+    "bridge",
+    "core",
+    "conf",
+    "ready",
+    "comms"
+   ],
+   "hosts": [
+    "terminal",
+    "console",
+    "display"
+   ],
+   "update_rate": "On input."
+  },
+  {
+   "id": "deckplan",
+   "title": "Deck Plan and Locator",
+   "version": "1.0",
+   "category": "navigation",
+   "description": "A you-are-here deck map: choose a deck, see every room, find a room by name and show the route from the player's position.",
+   "screen_textures": [
+    "schematic"
+   ],
+   "categories": [
+    "sign",
+    "noticeboard",
+    "display",
+    "terminal"
+   ],
+   "rooms": [
+    "corF1",
+    "lobby1",
+    "lobby2",
+    "lobby3",
+    "towerA1",
+    "bridge"
+   ],
+   "hosts": [
+    "sign",
+    "noticeboard",
+    "display",
+    "terminal"
+   ],
+   "update_rate": "Marker 10 Hz."
+  },
+  {
+   "id": "logbook",
+   "title": "Captain's and Crew Logs",
+   "version": "1.0",
+   "category": "science",
+   "description": "Browse the ship's log entries from lore.json by stardate, role or room; read the story of the voyage.",
+   "screen_textures": [],
+   "categories": [
+    "terminal",
+    "display",
+    "console"
+   ],
+   "rooms": [
+    "ready",
+    "capt",
+    "bridge",
+    "lounge"
+   ],
+   "hosts": [
+    "terminal",
+    "display",
+    "console"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "roster",
+   "title": "Duty Roster and Notice Board",
+   "version": "1.0",
+   "category": "services",
+   "description": "Duty roster by department and shift, plus a notice board with ship announcements.",
+   "screen_textures": [],
+   "categories": [
+    "noticeboard",
+    "display",
+    "terminal"
+   ],
+   "rooms": [
+    "mess",
+    "corF2",
+    "dorm",
+    "lounge",
+    "rec"
+   ],
+   "hosts": [
+    "noticeboard",
+    "display",
+    "terminal"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "clock",
+   "title": "Ship's Chronometer",
+   "version": "1.0",
+   "category": "systems",
+   "description": "Ship time, stardate, mission elapsed time and the time to the next waypoint.",
+   "screen_textures": [],
+   "categories": [
+    "clock",
+    "display"
+   ],
+   "rooms": [
+    "bridge",
+    "mess",
+    "corF2",
+    "ready"
+   ],
+   "hosts": [
+    "clock",
+    "display"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "atmosphere",
+   "title": "Environmental Monitor",
+   "version": "1.0",
+   "category": "life",
+   "description": "Room-by-room environment: temperature, humidity, lighting level and noise. Complements the life support deck summary.",
+   "screen_textures": [
+    "graph"
+   ],
+   "categories": [
+    "display",
+    "controlpanel",
+    "terminal",
+    "sign"
+   ],
+   "rooms": [
+    "life",
+    "hydro",
+    "bridge",
+    "corF3"
+   ],
+   "hosts": [
+    "display",
+    "controlpanel",
+    "terminal",
+    "sign"
+   ],
+   "update_rate": "1 Hz."
+  },
+  {
+   "id": "docking",
+   "title": "Hangar and Docking Control",
+   "version": "1.0",
+   "category": "operations",
+   "description": "Hangar bay: force-field on/off, shuttle status, bay door cycle and pressure.",
+   "screen_textures": [],
+   "categories": [
+    "forcefield",
+    "craft",
+    "controlpanel",
+    "console",
+    "display"
+   ],
+   "rooms": [
+    "hangar",
+    "airlock"
+   ],
+   "hosts": [
+    "forcefield",
+    "craft",
+    "controlpanel",
+    "console",
+    "display"
+   ],
+   "update_rate": "2 Hz."
+  },
+  {
+   "id": "diagnostics",
+   "title": "System Diagnostics",
+   "version": "1.0",
+   "category": "systems",
+   "description": "Self-test of the screen network and machines: runs a test pattern, displays bars and a pass/fail list.",
+   "screen_textures": [
+    "diagnostic",
+    "bars"
+   ],
+   "categories": [
+    "display",
+    "terminal",
+    "console",
+    "controlpanel"
+   ],
+   "rooms": [
+    "eng",
+    "core",
+    "shop"
+   ],
+   "hosts": [
+    "display",
+    "terminal",
+    "console",
+    "controlpanel"
+   ],
+   "update_rate": "On run."
+  },
+  {
+   "id": "datapad",
+   "title": "Library and Datapad Reader",
+   "version": "1.0",
+   "category": "science",
+   "description": "Reader for the short lore datapads (library and wardroom) and the glossary.",
+   "screen_textures": [],
+   "categories": [
+    "terminal",
+    "display",
+    "console"
+   ],
+   "rooms": [
+    "lounge",
+    "conf",
+    "ready",
+    "rec",
+    "dorm"
+   ],
+   "hosts": [
+    "terminal",
+    "display",
+    "console"
+   ],
+   "update_rate": "On change."
+  },
+  {
+   "id": "holo",
+   "title": "Holo-Projection Viewer",
+   "version": "1.0",
+   "category": "navigation",
+   "description": "Rotating 3D schematic of the ship (and optionally of a selected machine model) on the holo tables.",
+   "screen_textures": [
+    "globe"
+   ],
+   "categories": [
+    "holo",
+    "display"
+   ],
+   "rooms": [
+    "conf",
+    "bridge",
+    "eng",
+    "astro"
+   ],
+   "hosts": [
+    "holo",
+    "display"
+   ],
+   "update_rate": "30 Hz while open."
+  }
+ ],
+ "texture_map": {
+  "alert": "alert",
+  "bars": "diagnostics",
+  "comm": "comms",
+  "diagnostic": "diagnostics",
+  "globe": "holo",
+  "graph": "atmosphere",
+  "hazard": "lifesupport",
+  "lifesigns": "medical",
+  "medical": "medical",
+  "nav": "nav",
+  "periodic": "science",
+  "power": "power",
+  "radar": "sensors",
+  "schematic": "deckplan",
+  "starmap": "starmap",
+  "systems": "engineering",
+  "tactical": "tactical",
+  "text": "computer",
+  "vitals": "medical",
+  "warp": "warp",
+  "waveform": "science"
+ },
+ "texture_prefix_map": {
+  "scr_alert": "alert",
+  "scr_atmo": "atmosphere",
+  "scr_bars": "diagnostics",
+  "scr_bay": "docking",
+  "scr_bio": "medical",
+  "scr_book": "datapad",
+  "scr_breaker": "power",
+  "scr_cam": "security",
+  "scr_cargo": "cargo",
+  "scr_cctv": "security",
+  "scr_chart": "starmap",
+  "scr_clock": "clock",
+  "scr_comm": "comms",
+  "scr_console": "computer",
+  "scr_core": "reactor",
+  "scr_crop": "hydroponics",
+  "scr_damage": "engineering",
+  "scr_datapad": "datapad",
+  "scr_deck": "deckplan",
+  "scr_diag": "diagnostics",
+  "scr_dock": "docking",
+  "scr_door": "security",
+  "scr_drink": "galley",
+  "scr_duty": "roster",
+  "scr_eng": "engineering",
+  "scr_env": "atmosphere",
+  "scr_fab": "fabricator",
+  "scr_food": "galley",
+  "scr_ftl": "warp",
+  "scr_fusion": "reactor",
+  "scr_galley": "galley",
+  "scr_globe": "holo",
+  "scr_grid": "power",
+  "scr_hangar": "docking",
+  "scr_helm": "nav",
+  "scr_holo": "holo",
+  "scr_hologram": "holo",
+  "scr_hydro": "hydroponics",
+  "scr_inventory": "cargo",
+  "scr_journal": "logbook",
+  "scr_lab": "science",
+  "scr_library": "datapad",
+  "scr_life": "lifesupport",
+  "scr_locator": "deckplan",
+  "scr_log": "logbook",
+  "scr_manifest": "cargo",
+  "scr_map": "starmap",
+  "scr_med": "medical",
+  "scr_menu": "galley",
+  "scr_nav": "nav",
+  "scr_notice": "roster",
+  "scr_o2": "lifesupport",
+  "scr_periodic": "science",
+  "scr_plan": "deckplan",
+  "scr_plant": "hydroponics",
+  "scr_power": "power",
+  "scr_print": "fabricator",
+  "scr_radar": "sensors",
+  "scr_radio": "comms",
+  "scr_reactor": "reactor",
+  "scr_replicator": "galley",
+  "scr_roster": "roster",
+  "scr_scan": "sensors",
+  "scr_sci": "science",
+  "scr_scrub": "lifesupport",
+  "scr_sec": "security",
+  "scr_sensor": "sensors",
+  "scr_shield": "tactical",
+  "scr_shop": "vending",
+  "scr_spectro": "science",
+  "scr_starmap": "starmap",
+  "scr_systems": "engineering",
+  "scr_tactical": "tactical",
+  "scr_term": "computer",
+  "scr_text": "computer",
+  "scr_time": "clock",
+  "scr_vend": "vending",
+  "scr_vital": "medical",
+  "scr_warp": "warp",
+  "scr_weapon": "tactical"
+ },
+ "category_map": {
+  "analyzer": "science",
+  "antenna": "comms",
+  "camera": "security",
+  "capacitor": "power",
+  "cell": "power",
+  "cleaningbot": "diagnostics",
+  "clock": "clock",
+  "coil": "warp",
+  "commsunit": "comms",
+  "console": "nav",
+  "controlpanel": "engineering",
+  "craft": "docking",
+  "crate": "cargo",
+  "cryo": "medical",
+  "display": "diagnostics",
+  "forcefield": "docking",
+  "galley": "galley",
+  "generator": "power",
+  "gym": "roster",
+  "holo": "holo",
+  "instrument": "sensors",
+  "junction": "power",
+  "loader": "cargo",
+  "medbed": "medical",
+  "medscanner": "medical",
+  "microscope": "science",
+  "noticeboard": "roster",
+  "pallet": "cargo",
+  "particle": "science",
+  "planter": "hydroponics",
+  "reactor": "reactor",
+  "router": "comms",
+  "sciinstrument": "science",
+  "scrubber": "lifesupport",
+  "sign": "deckplan",
+  "specimen": "science",
+  "surgical": "medical",
+  "tank": "lifesupport",
+  "telescope": "starmap",
+  "terminal": "computer",
+  "turbine": "engineering",
+  "vending": "vending",
+  "watertank": "lifesupport",
+  "weaponrack": "tactical"
+ }
+}
