@@ -108,16 +108,16 @@ def diamond_plate(color, rough, seed, lugs=10, dark=False):
         lug = soft((1 - r) * px * 0.14, 2.2)
         nz = noise(n, seed, 2.0, fmax=0.06)
         wear = np.clip(noise(n, seed + 1, 1.5, fmax=0.1) - 1.2, 0, 3)
-        v_ = 1 + 0.04 * nz + lug * 0.08 - wear * 0.03
+        v_ = 1 + 0.04 * nz + lug * 0.05 - wear * 0.03
         alb = _tone(hexc(color), v_)
         return finish(alb, lug + 0.05 * nz, rough + 0.12 * wear - 0.06 * lug + 0.04 * nz, ao=1 - 0.25 * (1 - lug) * 0.4,
-                      metal=0.85 - 0.2 * wear, nstr=2.2, hblur=1.1)
+                      metal=0.85 - 0.2 * wear, nstr=1.3, hblur=1.5)
     return fn
 
 
-add("diamond_plate_steel", diamond_plate("#8a9098", 0.42, 41), tile=1.0, group="plate")
-add("diamond_plate_dark", diamond_plate("#40454d", 0.46, 42), tile=1.0, group="plate")
-add("diamond_plate_alu", diamond_plate("#b9bec6", 0.36, 43, lugs=12), tile=1.0, group="plate")
+add("diamond_plate_steel", diamond_plate("#8a9098", 0.42, 41, lugs=8), tile=1.0, group="plate")
+add("diamond_plate_dark", diamond_plate("#40454d", 0.46, 42, lugs=8), tile=1.0, group="plate")
+add("diamond_plate_alu", diamond_plate("#b9bec6", 0.36, 43, lugs=10), tile=1.0, group="plate")
 
 
 def riveted(color, plates=2, seed=1, rough=0.45, metal=0.8, stripe=None, rivet_n=4, wear=0.5):
@@ -169,16 +169,16 @@ def perforated(color, holes=10, r=0.27, seed=1, backing="#15181c", hex_=False):
         hole = soft(p * r - d, 2.2)
         nz = noise(n, seed, 2.0, fmax=0.05)
         rim = soft(p * r + 2.5 - d, 3.0) * (1 - hole)
-        alb = _mix(_tone(hexc(color), 1 + 0.04 * nz), _col(backing)[0] * np.ones((n, n, 3), np.float32), hole)
+        alb = _mix(_tone(hexc(color), 1 + 0.04 * nz), _col(backing)[0] * np.ones((n, n, 3), np.float32), hole * 0.45)
         ao = 1 - 0.7 * hole
         return finish(alb, rim * 0.6 - hole * 0.6, 0.45 + 0.2 * hole + 0.05 * nz, ao=ao, metal=0.85 * (1 - 0.7 * hole),
-                      nstr=1.6, hblur=1.2)
+                      nstr=0.7, hblur=2.0)
     return fn
 
 
-add("perforated_mesh", perforated("#9ea3aa", 10, 0.27, 61), tile=1.0, group="plate")
-add("perforated_dark", perforated("#3a3f46", 12, 0.25, 62), tile=1.0, group="plate")
-add("perforated_hex", perforated("#8e949c", 8, 0.34, 63, hex_=True), tile=1.0, group="plate")
+add("perforated_mesh", perforated("#9ea3aa", 8, 0.27, 61), tile=1.0, group="plate")
+add("perforated_dark", perforated("#3a3f46", 9, 0.25, 62), tile=1.0, group="plate")
+add("perforated_hex", perforated("#8e949c", 6, 0.34, 63, hex_=True), tile=1.0, group="plate")
 
 
 def _vent(n):
@@ -210,14 +210,14 @@ def carbon(twill=True, seed=1, n_th=48, color="#1a1c20", gloss=0.22):
         th = np.where(over, prof_x, prof_y)
         rnd = L.rand_by_id((i * n_th + j).astype(int) % 4096, seed, -0.2, 0.2, 4096)
         sheen = np.where(over, 1.0, 0.55) * (0.5 + 0.5 * th)
-        alb = _tone(hexc(color), (0.55 + 0.9 * sheen) * (1 + rnd))
-        return finish(alb, th * 0.8, gloss + 0.12 * (1 - th), ao=0.55 + 0.45 * th, metal=0.15, nstr=1.0, hblur=1.3)
+        alb = _tone(hexc(color), (0.88 + 0.25 * sheen) * (1 + rnd * 0.3))
+        return finish(alb, th * 0.8, gloss + 0.12 * (1 - th), ao=0.8 + 0.2 * th, metal=0.15, nstr=0.45, hblur=1.8)
     return fn
 
 
-add("carbon_fibre_twill", carbon(True, 81, 40), tile=0.6, group="composite")
-add("carbon_fibre_plain", carbon(False, 82, 32), tile=0.6, group="composite")
-add("kevlar_weave", carbon(False, 83, 32, "#b99a2b", 0.4), tile=0.6, group="composite")
+add("carbon_fibre_twill", carbon(True, 81, 24), tile=0.6, group="composite")
+add("carbon_fibre_plain", carbon(False, 82, 20), tile=0.6, group="composite")
+add("kevlar_weave", carbon(False, 83, 20, "#b99a2b", 0.4), tile=0.6, group="composite")
 
 
 def hex_plate(color, cols=8, seed=1, rough=0.4, metal=0.8, gap=3.0, bevel=True):
@@ -227,15 +227,15 @@ def hex_plate(color, cols=8, seed=1, rough=0.4, metal=0.8, gap=3.0, bevel=True):
         nz = noise(n, seed, 2.0, fmax=0.05)
         groove = soft(gap - edge, 2.0)
         bev = soft(edge - gap, 5.0) - soft(edge - gap - 10, 6.0) if bevel else 0
-        alb = _tone(hexc(color), 1 + tone + 0.04 * nz - 0.5 * groove)
-        return finish(alb, 0.8 * bev - 1.5 * groove, rough + 0.2 * groove, ao=1 - 0.6 * groove, metal=metal, nstr=1.8)
+        alb = _tone(hexc(color), 1 + tone + 0.04 * nz - 0.2 * groove)
+        return finish(alb, 0.8 * bev - 1.5 * groove, rough + 0.2 * groove, ao=1 - 0.3 * groove, metal=metal, nstr=0.8, hblur=2.0)
     return fn
 
 
-add("hex_plate_steel", hex_plate("#8d939b", 8, 91), tile=1.0, group="plate")
-add("hex_plate_dark", hex_plate("#3b4048", 10, 92), tile=1.0, group="plate")
-add("hex_tile_white", hex_plate("#e4e7e9", 8, 93, 0.22, 0.0, 2.5), tile=1.0, group="tile")
-add("hex_tile_teal", hex_plate("#2b8f95", 8, 94, 0.22, 0.0, 2.5), tile=1.0, group="tile")
+add("hex_plate_steel", hex_plate("#8d939b", 6, 91), tile=1.0, group="plate")
+add("hex_plate_dark", hex_plate("#3b4048", 7, 92), tile=1.0, group="plate")
+add("hex_tile_white", hex_plate("#c4c7c9", 6, 93, 0.22, 0.0, 2.5), tile=1.0, group="tile")
+add("hex_tile_teal", hex_plate("#2b8f95", 6, 94, 0.22, 0.0, 2.5), tile=1.0, group="tile")
 
 
 # ============================================================ tiles / stone / concrete
@@ -262,12 +262,12 @@ def tiles(color, cols=4, rows=None, grout="#a9a9a2", seed=1, rough=0.18, gap=3.5
     return fn
 
 
-add("ceramic_tile_white", tiles("#e9ebeb", 4, grout="#b9b9b2", seed=101), tile=2.0, group="tile")
+add("ceramic_tile_white", tiles("#c6c9c9", 4, grout="#9a9a94", seed=101), tile=2.0, group="tile")
 add("ceramic_tile_blue", tiles("#3f78b5", 4, grout="#bcc3c9", seed=102), tile=2.0, group="tile")
 add("ceramic_tile_green", tiles("#3f8f6a", 4, grout="#bcc3c0", seed=103), tile=2.0, group="tile")
 add("ceramic_tile_black", tiles("#1d2024", 4, grout="#4a4d52", seed=104, rough=0.12), tile=2.0, group="tile")
 add("ceramic_tile_sand", tiles("#cdbb98", 4, grout="#a39b88", seed=105, speck=0.4, rough=0.35), tile=2.0, group="tile")
-add("ceramic_subway_white", tiles("#eef0ee", 4, 8, grout="#b0b0aa", seed=106, staggered=True, gap=3.0), tile=2.0, group="tile")
+add("ceramic_subway_white", tiles("#cdd1cf", 4, 8, grout="#9b9b95", seed=106, staggered=True, gap=3.0), tile=2.0, group="tile")
 add("mosaic_tile_blue", tiles("#3a86b8", 16, grout="#c9d0d4", seed=107, gap=3.0, tone=0.12), tile=1.0, group="tile")
 add("mosaic_tile_grey", tiles("#8d949b", 16, grout="#c9cbcc", seed=108, gap=3.0, tone=0.1), tile=1.0, group="tile")
 
@@ -289,7 +289,7 @@ def marble(base, vein, seed, vein_n=3.0, warp=1.2, sharp=14, rough=0.12, vein2=N
     return fn
 
 
-add("marble_white", marble("#ecebe8", "#8b8f98", 111), tile=2.0, group="stone")
+add("marble_white", marble("#cfcdc8", "#7b7f88", 111), tile=2.0, group="stone")
 add("marble_black", marble("#1c1d20", "#c7c2b5", 112, 2.5, 1.4, 16), tile=2.0, group="stone")
 add("marble_green", marble("#2c5a46", "#d6e0d2", 113, 3.5, 1.3, 12), tile=2.0, group="stone")
 
@@ -399,13 +399,13 @@ def wood(light, dark, seed, rings=9, warp=2.2, pore=0.5, planks=0, gap=0.0, roug
         r = (t * 2) % 1
         ring = np.clip(np.abs(r - 0.5) * 2, 0, 1) ** 1.5
         late = soft(ring - 0.55, 0.5) * 0.5 + ring * 0.5
-        v = np.clip(0.35 + 0.5 * late + 0.06 * fib + 0.04 * fib2 + 0.05 * wp, 0, 1)
+        v = np.clip(0.35 + 0.42 * late + 0.035 * fib + 0.022 * fib2 + 0.05 * wp, 0, 1)
         alb = _mix(_col(light)[0] * np.ones((n, n, 3), np.float32), _col(dark)[0] * np.ones((n, n, 3), np.float32), v)
         tone = L.rand_by_id(pid, seed + 4, -0.06, 0.06, max(planks, 1))
         alb = alb * (1 + tone)[..., None]
         grooves = soft(gap / 2 - xl, 1.8) if planks and gap else np.zeros((n, n), np.float32)
         alb = alb * (1 - 0.55 * grooves)[..., None]
-        h = -0.6 * fib2 * pore - 0.4 * ring - 1.4 * grooves
+        h = -0.4 * fib2 * pore - 0.3 * ring - 1.4 * grooves
         return finish(alb, h, rough + 0.12 * (1 - late) + 0.05 * fib2 + 0.3 * grooves, ao=1 - 0.5 * grooves, nstr=nstr, hblur=0.9)
     return fn
 
@@ -475,14 +475,14 @@ add("wood_parquet", _parquet, tile=2.0, group="wood")
 
 
 # ============================================================ leather / fabric / carpet
-def leather(color, seed, cells=30, rough=0.5, sheen=0.0):
+def leather(color, seed, cells=24, rough=0.5, sheen=0.0):
     def fn(n):
         f1, f2, cid = voronoi(n, cells, seed, 1.0)
         crease = np.clip(1 - (f2 - f1) * 4.0, 0, 1)
         nz = noise(n, seed + 1, 2.2, fmax=0.05)
         puff = soft((f2 - f1) * (n / cells) - 1.5, 5.0)
         tone = L.rand_by_id(cid, seed + 2, -0.04, 0.04, cells * cells)
-        alb = _tone(hexc(color), 1 + tone + 0.05 * nz - 0.22 * crease)
+        alb = _tone(hexc(color), 1 + tone + 0.05 * nz - 0.15 * crease)
         return finish(alb, puff + 0.1 * nz, rough + 0.12 * crease - sheen * puff, ao=1 - 0.35 * crease, nstr=0.9, hblur=1.2)
     return fn
 
@@ -490,11 +490,11 @@ def leather(color, seed, cells=30, rough=0.5, sheen=0.0):
 add("leather_black", leather("#262322", 211), size=256, tile=1.0, group="leather")
 add("leather_brown", leather("#6a432b", 212), size=256, tile=1.0, group="leather")
 add("leather_red", leather("#8e2a28", 213), size=256, tile=1.0, group="leather")
-add("leather_tan", leather("#b08a5e", 214, 26), size=256, tile=1.0, group="leather")
-add("leather_white", leather("#d9d4ca", 215, 34, 0.42), size=256, tile=1.0, group="leather")
+add("leather_tan", leather("#b08a5e", 214, 22), size=256, tile=1.0, group="leather")
+add("leather_white", leather("#d9d4ca", 215, 28, 0.42), size=256, tile=1.0, group="leather")
 
 
-def weave(color, color2=None, seed=1, n_th=48, rough=0.92, thick=0.35, plain=True):
+def weave(color, color2=None, seed=1, n_th=36, rough=0.92, thick=0.35, plain=True):
     def fn(n):
         x, y = coords(n)
         i = np.floor(x / n * n_th)
@@ -503,14 +503,14 @@ def weave(color, color2=None, seed=1, n_th=48, rough=0.92, thick=0.35, plain=Tru
         fv = (y / n * n_th) % 1
         over = ((i + j) % 2 == 0) if plain else (((i - j) % 4) < 2)
         th = np.where(over, np.sin(np.pi * fu) ** 0.6, np.sin(np.pi * fv) ** 0.6)
-        rx = L.rand_by_id(i.astype(int) % 512, seed, -0.12, 0.12, 512)
-        ry = L.rand_by_id(j.astype(int) % 512, seed + 1, -0.12, 0.12, 512)
+        rx = L.rand_by_id(i.astype(int) % 512, seed, -0.07, 0.07, 512)
+        ry = L.rand_by_id(j.astype(int) % 512, seed + 1, -0.07, 0.07, 512)
         tone = np.where(over, rx, ry)
         fuzz = noise(n, seed + 2, 1.0, fmax=0.2) * 0.04
         base = _col(color)[0] * np.ones((n, n, 3), np.float32)
         if color2:
             base = _mix(base, _col(color2)[0] * np.ones((n, n, 3), np.float32), np.where(over, 0.0, 1.0))
-        alb = base * (0.7 + 0.3 * th + tone + fuzz)[..., None]
+        alb = base * (0.8 + 0.2 * th + tone + fuzz)[..., None]
         return finish(alb, th, rough, ao=0.5 + 0.5 * th, nstr=thick * 2.4, hblur=1.1)
     return fn
 
@@ -525,16 +525,16 @@ add("fabric_heather", weave("#6f7d93", "#8d97a8", seed=226, plain=False), tile=0
 
 def carpet_tweed(c1, c2, seed, loop=False):
     def fn(n):
-        a = noise(n, seed, 1.0, fmax=0.2)
-        b = noise(n, seed + 1, 1.0, fmax=0.2)
-        m = soft(a, 0.9)
+        a = noise(n, seed, 1.0, fmax=0.14)
+        b = noise(n, seed + 1, 1.0, fmax=0.14)
+        m = soft(a, 2.2) * 0.45
         if loop:
             f1, f2, cid = voronoi(n, 56, seed + 2, 1.0)
             lp = soft(1 - f1 * 2.0, 0.9)
             m = np.clip(m * 0.4 + 0.6 * lp, 0, 1)
         base = _mix(_col(c1)[0] * np.ones((n, n, 3), np.float32), _col(c2)[0] * np.ones((n, n, 3), np.float32), m)
         blot = noise(n, seed + 3, 2.4, fmax=0.015)
-        alb = base * (1 + 0.04 * b + 0.04 * blot)[..., None]
+        alb = base * (1 + 0.04 * b + 0.025 * blot)[..., None]
         return finish(alb, a * 0.4 + 0.3 * b, 0.95, ao=0.7 + 0.3 * soft(a + 1, 2.0), nstr=1.0, hblur=1.2, ablur=0.7)
     return fn
 
@@ -872,7 +872,7 @@ for _nm, _c, _a, _sd in (("panel_eng_orange", "#c9722a", "#2a2d33", 401), ("pane
                          ("panel_sec_red", "#a83830", "#2a2d33", 403), ("panel_sci_violet", "#6a5aa6", "#e8eef0", 404),
                          ("panel_cmd_blue", "#3f6aa6", "#d8dde4", 405), ("panel_life_green", "#4f8f5f", "#e8eef0", 406),
                          ("panel_cargo_yellow", "#c9a52a", "#2a2d33", 407), ("panel_crew_beige", "#b9a98a", "#6a5a44", 408),
-                         ("panel_white", "#dfe3e6", "#7b8590", 409), ("panel_grey", "#8a9099", "#2a2d33", 410)):
+                         ("panel_white", "#c2c7cb", "#7b8590", 409), ("panel_grey", "#8a9099", "#2a2d33", 410)):
     add(_nm, dept_panel(_c, _a, _sd), tile=2.0, group="panel")
 
 
@@ -881,15 +881,15 @@ def laminate(color, seed, rough=0.36, grain=0.02):
     def fn(n):
         f = noise(n, seed, 1.2, fmax=0.2)
         m = noise(n, seed + 1, 2.4, fmax=0.015)
-        alb = _tone(hexc(color), 1 + grain * f + 0.015 * m)
+        alb = _tone(hexc(color), 1 + grain * f + 0.006 * m)
         return finish(alb, 0.1 * f, rough + 0.03 * f, nstr=0.4)
     return fn
 
 
-add("laminate_white", laminate("#e7eaeb", 421), size=256, tile=1.0, group="laminate")
-add("laminate_clinic_blue", laminate("#c4dbe6", 422), size=256, tile=1.0, group="laminate")
+add("laminate_white", laminate("#cdd1d3", 421), size=256, tile=1.0, group="laminate")
+add("laminate_clinic_blue", laminate("#a6c1cf", 422), size=256, tile=1.0, group="laminate")
 add("laminate_grey", laminate("#a9aeb4", 423, 0.4), size=256, tile=1.0, group="laminate")
-add("laminate_beige", laminate("#d8ccb4", 424, 0.4), size=256, tile=1.0, group="laminate")
+add("laminate_beige", laminate("#c2b79f", 424, 0.4), size=256, tile=1.0, group="laminate")
 add("laminate_black", laminate("#26282c", 425, 0.3), size=256, tile=1.0, group="laminate")
 
 
