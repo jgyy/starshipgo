@@ -30,6 +30,11 @@ def sign_at(R, B, side, mid, along, y=2.6):
     return wall_y(R, B, side, mid, along, y, check=False)
 
 
+def mark(R, B, x, z, yaw=0.0, mid="sign_floor_marking"):
+    """Flat floor stencil (lane / bay marking): ignored by the overlap and clearance rules, may lie inside a keep-clear lane."""
+    return R.place(mm(B, mid), x, z, yaw, check=False, reserve=False)
+
+
 def desk_station(R, B, side, desk, along, terminals=("terminal_desk_terminal", "terminal_keyboard"), chair="chair_swivel_office_chair"):
     d = aw(R, B, side, desk, along)
     seat_for(R, B, d, chair)
@@ -244,7 +249,7 @@ def f_provisions(R, B):
            "Floor stencils mark the 2.8 m forklift lane so pallets are never left in it; sprinkler heads protect the oil drums and packaging, "
            "and a camera covers the door and the cold-store curtain for the inventory audit.")
     for x in (-7.8, -5.4, -3.6):
-        put(R, B, "sign_floor_marking", x, -4.5, 90.0)
+        mark(R, B, x, -4.5, 90.0)
     for x, z in ((-7.0, -4.5), (-5.0, -7.9), (-5.0, -0.6)):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), -6.0, -4.5, 0.0, y=R.y + R.h)
