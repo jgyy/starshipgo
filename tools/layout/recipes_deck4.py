@@ -454,3 +454,103 @@ def f_waste(R, B):
     wall_y(R, B, "S", "safety_eye_wash_station", 8.9, 1.1) if False else None
     R.place(mm(B, "safety_sprinkler_head"), 7.0, -5.2, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), 8.0, -3.9, 0.0, y=R.y + R.h)
+
+
+# ----------------------------------------------------------------------------------------------- FABRICATION HALL
+def f_fab(R, B):
+    R.describe(
+        "The Fabrication Hall is the ship's own factory: it makes spare parts, tools and fittings from stock material and from the "
+        "baled metal and plastic of the recycling plant, so a failed part can be replaced in hours instead of weeks.",
+        basis="Work flows from raw stock (pallet racking on the north wall) to machine (3D fabricators and the materials tester on the hull wall), "
+              "to finishing and assembly (two bench islands in the middle), to dirty trades (washing, welding, painting on the south wall) and "
+              "out to the depot through the corridor door; designs are drawn at the design corner by the door. A 1.5 m aisle runs along the racks "
+              "(hand pallet jack route), 1.8 m between hull-wall machines and the islands, 2.6 m clear in front of the door. "
+              "Crew of 4 on a normal shift (2 machinists, 1 welder / finisher, 1 designer); 4 fabricators can print about 40 kg of parts per day.",
+        crew=4,
+        adjacency="Aft spine corridor (east door); Auxiliary Control is across the corridor; Main Cargo Hold is directly south and "
+                  "Workshop and Spares Depot are on Deck 3 above, reached by the stair towers.",
+        notes="Welding, painting and washing are all on the south wall with the ducted extraction above, away from the clean printers.")
+    R.line("Ceiling lighting", "Bright neutral-white panels (500 lux) for precision work; on top of that every bench has a task lamp on the "
+           "tool board above.")
+    lights(R, spacing=3.4, color="#fff6e8", energy=1.7)
+
+    R.line("Stock material racking (north wall)",
+           "Aluminium and steel bar, plate, plastic feedstock and spools of filament are stored on low-bay pallet racking along the north wall, "
+           "furthest from the door, with heavy boxes of fasteners beside it; the forklift or pallet jack serves them from the 1.5 m aisle in front.")
+    wall_row(R, B, "N", ["pallet_rack_bay_low_wire", "pallet_rack_bay_low_wire", "shelving_heavy_boxes"], -12.5, gap=0.08)
+    wall_row(R, B, "N", ["locker_double_locker_bank"], -4.4)
+
+    R.line("3D fabricator line (west hull wall)",
+           "Four metal / polymer 3D fabricators and the materials tester stand in a row on the hull wall so power and the cooling lines run on one "
+           "trunk, and every printed part goes straight to the tester beside it; fronts face the middle of the room for loading and part removal.")
+    wall_row(R, B, "W", ["analyzer_3d_fabricator"] * 4 + ["analyzer_materials_tester"], 5.1, gap=0.08)
+    con = aw(R, B, "W", "console_compact_aux", 11.35)
+    seat_for(R, B, con, "seat_ops_chair")
+    wall_y(R, B, "W", "display_status_board", 9.9, bottom=2.2, check=False)
+
+    R.line("Assembly and inspection islands (middle)",
+           "Two bench islands take the finished parts: one with vises for fitting and filing, one reagent-style bench with a spectrometer for "
+           "surface and composition checks. Island benches stand back to back so one power pedestal feeds both; 1.8 m aisles all round.")
+    bench1 = put(R, B, "engtool_work_bench_with_vise", -8.4, 7.45, 0.0)
+    bench2 = put(R, B, "engtool_work_bench_with_vise", -8.4, 8.6, 180.0)
+    for b in (bench1, bench2):
+        if b:
+            tops(R, B, b, ["engtool_hand_tool_set", "toolbox_tabletop_toolbox"], [(-0.45, 0.0), (0.45, 0.0)])
+    isl = put(R, B, "labbench_island_reagent_bench", -7.2, 11.0, 0.0)
+    if isl:
+        tops(R, B, isl, ["analyzer_spectrometer", "analyzer_centrifuge"], [(-0.5, 0.0), (0.5, 0.0)])
+    put(R, B, "seat_science_stool", -8.2, 12.2, 180.0)
+    put(R, B, "seat_science_stool", -6.2, 12.2, 180.0)
+    put(R, B, "engtool_chain_hoist_gantry", -11.0, 9.9, 0.0)
+
+    R.line("Dirty trades (south wall)",
+           "Parts washer, welding rig with its gas rack and the paint-booth screen are on the south wall together, under one extraction duct, "
+           "so fumes, solvent and sparks are away from the 3D printers and the paper-and-screen design corner.")
+    wall_row(R, B, "S", ["hangartool_parts_washer", "engtool_welding_rig", "barrel_gas_cylinder_rack", "hangartool_paint_booth_screen"],
+             -11.9, gap=0.08)
+    wall_y(R, B, "S", "safety_fire_blanket_box", -3.0, 1.4)
+    wall_run(R, B, "S", "duct_rectangular_duct_run", -12.0, -3.2, 3.0)
+
+    R.line("Design corner (east wall, south of the door)",
+           "The designer works at a computer desk and a drafting table in the south-east corner, with a holographic projector to review a part in "
+           "3D before it is printed and a schematics wall to pin the drawings; it is beside the door so engineers from other decks can drop in.")
+    desk_station(R, B, "E", "desk_computer_desk", 13.1)
+    dt = aw(R, B, "E", "desk_drafting_table", 11.6)
+    seat_for(R, B, dt, "seat_science_stool")
+    put(R, B, "holo_ship_schematic_projector", -2.4, 9.85, -90.0)
+    wall_y(R, B, "E", "display_schematics_wall", 12.4, bottom=1.75, check=False)
+
+    R.line("Tool chests and parts wall (east wall, north of the door)",
+           "Roll-around tool chests hold the hand tools; the parts wall above them holds the small parts and fixings that are used every day, "
+           "so a machinist does not walk to the depot for a screw.")
+    aw(R, B, "E", "storagebin_toolchest_wheels", 4.4)
+    wall_y(R, B, "E", "shelving_parts_bin_wall", 4.9, 2.2)
+    wall_y(R, B, "N", "engtool_tool_rack", -2.4, 1.9)
+
+    R.line("Pallet jack and tool cart",
+           "The hand pallet jack stands at the end of the rack aisle and a tool cart by the islands, so a machinist reaches tools "
+           "and stock without crossing the hall.")
+    put(R, B, "loader_hand_pallet_jack", -5.0, 6.3, 0.0)
+    put(R, B, "hangartool_tool_cart", -5.4, 9.5, 0.0)
+
+    R.line("Overhead extraction, services and trays",
+           "Cable trays and compressed-air pipes run overhead from the south-wall trunk to each machine; the extraction duct above the dirty "
+           "trades leaves through the hull riser.")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, -12.0, 5.4, "x")
+    ceil_run(R, B, ["pipe_ceiling_hanger_run"] * 4, -12.0, 8.8, "x")
+    ceil_run(R, B, ["pipe_ceiling_insulated_pair"] * 4, -12.0, 12.6, "x")
+
+    R.line("Safety and signs",
+           "Eye wash by the dirty trades, extinguishers by the door and the welder, a first-aid cabinet, floor stencils for the aisles and an "
+           "exit sign over the door.")
+    sign_at(R, B, "E", "sign_emergency_exit", 7.3, 2.9)
+    sign_at(R, B, "E", "sign_dept_engineering", 9.8, 2.9)
+    wall_y(R, B, "D0", "safety_eye_wash_station", 1.0, 1.1)
+    fe(R, B, "E", 8.95)
+    fe(R, B, "S", -12.4)
+    wall_y(R, B, "E", "safety_first_aid_cabinet", 9.5, 1.3)
+    for x in (-10.0, -7.0):
+        mark(R, B, x, 5.8, 0.0)
+    for x, z in ((-9.0, 6.4), (-5.5, 6.4), (-9.0, 12.0), (-5.0, 10.0)):
+        R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
+    R.place(mm(B, "camera_dome_ceiling"), -6.0, 8.0, 0.0, y=R.y + R.h)
