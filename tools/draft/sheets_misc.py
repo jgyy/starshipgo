@@ -11,6 +11,8 @@ from svgkit import Sheet, nice_scale, trunc
 # ------------------------------------------------------------------ G-13 stairs
 def stair_sheet(ship):
     decks = ship.deck_ids                                     # top (sky) deck first
+    if not ship.stair_geom("SA")[0]:
+        return None                                           # a ship without stairs has no stair-tower sheet
     nruns = len(ship.stair_geom("SA")[0])
     sh = Sheet("G-13", "Stair tower details", "DOG-LEG STAIR TOWER: PLANS AT EACH LEVEL, SECTION ALONG THE FLIGHTS (%d FLIGHT RUNS, %d DECKS), TREAD / RISER DETAIL" % (nruns, len(decks)),
                "1:100 / 1:10", "ALL", "SP / SS", "Stair tower", slug="stair_tower_details")

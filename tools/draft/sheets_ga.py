@@ -161,6 +161,12 @@ def ga_symbol_key(sh, x, y):
     return y + 5
 
 
+def floor_to_floor(ship, y):
+    """Height from the floor at level y to the next deck above, or '-' on the top deck."""
+    above = [d["y"] for d in ship.decks if d["y"] > y + 1e-6]
+    return "%d mm" % round((min(above) - y) * 1000) if above else "- (top deck)"
+
+
 def deck_ga(ship, deck, num=None):
     cat = ship.cat
     num = num or "G-%02d" % deck

@@ -574,8 +574,8 @@ class DraftTests(unittest.TestCase):
 
     def test_P050_floor_to_floor_dimension_only_where_a_deck_lies_above(self):
         import sheets_room
-        top = sheets_room.room_section(self.ship, self.ship.by_id["bridge"], "SL").render()          # deck 1: nothing above
-        mid = sheets_room.room_section(self.ship, self.ship.by_id["mess"], "SL").render()
+        top = sheets_room.room_section(self.ship, self.ship.by_id["corF0"], "SL").render()          # deck 0 (top): nothing above
+        mid = sheets_room.room_section(self.ship, self.ship.by_id["corF2"], "SL").render()
         self.assertNotIn("F-F", top)                           # a "4000 F-F" dimension to a floor that does not exist
         self.assertIn("4000 F-F", mid)
 
@@ -586,21 +586,26 @@ class DraftTests(unittest.TestCase):
         for pts in data["hull"].values():
             for p in pts:
                 p[0] *= 2.0
+        for ring in data["skin"]["rings"]:                                        # the hull sheets now draw the smooth skin
+            ring["sx"] *= 2.0
         for d in data["decks"]:
-            d["y"] = {1: 10.0, 2: 5.0, 3: 0.0}[d["id"]]
+            d["y"] = -4.0 + 5.0 * (4 - d["id"])
         with tempfile.TemporaryDirectory() as d:
             path = os.path.join(d, "big.json")
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f)
             ship = model.Ship(path, CAT_PATH)
-        lines = sheets_ga.hull_lines(ship).render()
-        self.assertIn("BEAM 52000", lines)                                        # "BEAM 26000" was a literal
-        self.assertNotIn("BEAM 26000", lines)
-        profile = sheets_ga.profile_sheet(ship).render()
+        import sheets_hull
+        lines = sheets_hull.hull_lines(ship).render()
+        base = self.ship.skin
+        beam = round((ship.skin.x1 - ship.skin.x0) * 1000)
+        self.assertEqual(beam, 2 * round((base.x1 - base.x0) * 1000))
+        self.assertIn("BEAM OF SKIN %d" % beam, lines)                            # dimensions follow the (doubled) ship data
+        profile = sheets_hull.profile_sheet(ship).render()
         self.assertIn(">5000<", profile)                                          # deck pitch from the decks, not "4000"
         self.assertNotIn(">4000<", profile)
-        self.assertEqual(sheets_ga.floor_to_floor(ship, 5.0), "5000 mm")
-        self.assertEqual(sheets_ga.floor_to_floor(ship, 10.0), "- (top deck)")
+        self.assertEqual(sheets_ga.floor_to_floor(ship, 6.0), "5000 mm")
+        self.assertEqual(sheets_ga.floor_to_floor(ship, 16.0), "- (top deck)")
 
     def test_P048_a_ship_without_stairs_still_gets_its_drawings(self):
         with open(SHIP_PATH, encoding="utf-8") as f:
@@ -672,9 +677,9 @@ class BomTests(unittest.TestCase):
                 p[0] *= 2.0
         md = bom.generate(ship, self.cat)
         self.assertIn("| Beam | 52 m |", md)                      # hull.py's 26 m beam used to be printed whatever the ship.json said
-        two = json.loads(json.dumps(self.ship))                   # a two-deck ship: no KeyError for the missing deck 3
-        two["decks"] = [d for d in two["decks"] if d["id"] != 3]
-        two["rooms"] = [r for r in two["rooms"] if r["deck"] != 3]
+        two = json.loads(json.dumps(self.ship))                   # a two-deck ship (decks 1 and 2): no KeyError for the missing decks
+        two["decks"] = [d for d in two["decks"] if d["id"] in (1, 2)]
+        two["rooms"] = [r for r in two["rooms"] if r["deck"] in (1, 2)]
         ids = {r["id"] for r in two["rooms"]}
         two["doors"] = [d for d in two["doors"] if d["a"] in ids and d["b"] in ids]
         md2 = bom.generate(two, self.cat)

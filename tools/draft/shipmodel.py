@@ -99,7 +99,7 @@ def rect_poly(r):
 
 class Catalog:
     def __init__(self, path):
-        with open(path) as fh:
+        with open(path, encoding="utf-8") as fh:
             d = json.load(fh)
         self.models = {m["id"]: m for m in d["models"]}
         cats = sorted({m["category"] for m in d["models"]})
@@ -233,7 +233,7 @@ class Room:
 
 class Ship:
     def __init__(self, ship_path, cat_path):
-        with open(ship_path) as fh:
+        with open(ship_path, encoding="utf-8") as fh:
             d = json.load(fh)
         self.cat = Catalog(cat_path)
         self.raw = d
@@ -257,7 +257,7 @@ class Ship:
         arch = os.path.join(os.path.dirname(os.path.abspath(ship_path)), "arch.json")
         models = {}
         if os.path.exists(arch):
-            with open(arch) as fh:
+            with open(arch, encoding="utf-8") as fh:
                 models = {m["id"]: m for m in json.load(fh)["models"]}
         self.fittings = [Fitting(f, models) for f in d.get("exterior", []) if f["m"] in models]
         self.fp_z = self._forward_perpendicular()

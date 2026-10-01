@@ -55,7 +55,8 @@ def build_sheets(ship, only=None):
             [sheets_ga.ship_section(ship, e) for e in sheets_ga.SECTION_CUTS] + \
             [sheets_misc.stair_sheet(ship), sheets_misc.circulation_sheet(ship), sheets_misc.schedule_sheet(ship),
              sheets_hull.body_plan(ship, "G-17"), sheets_hull.particulars_sheet(ship, "G-18")]:
-        g[sh.num] = sh
+        if sh is not None:                                    # a ship without stairs has no stair-tower sheet
+            g[sh.num] = sh
     files = {}
     for sh in room_sheets:
         if sh.num.endswith("-P"):
