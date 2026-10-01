@@ -51,16 +51,15 @@
 <polygon points="325.4,97.8 338.2,97.8 338.2,131 325.4,131" class="f" fill="#f6f0b3"/>
 <polygon points="97.29,111.58 129.7,111.58 129.7,131 97.29,131" class="f" fill="#bdb8f2"/>
 <polygon points="126.06,63 151.26,63 151.26,64.96 126.06,64.96" class="dot" fill="none"/>
-<polygon points="278.96,62.98 291.72,62.98 291.72,66.5 278.96,66.5" class="dot" fill="none"/>
 <polygon points="308.2,63 315.8,63 315.8,67.76 308.2,67.76" class="dot" fill="none"/>
 <polygon points="174,109.9 216,109.9 216,131 174,131" class="f" fill="none"/>
 <polygon points="216,109.9 258,109.9 258,131 216,131" class="f" fill="none"/>
-<polygon points="202,63 222,63 222,64.58 202,64.58" class="dot" fill="none"/>
+<polygon points="275.34,63 295.34,63 295.34,64.58 275.34,64.58" class="dot" fill="none"/>
+<polygon points="210.4,63 213.6,63 213.6,64.24 210.4,64.24" class="dot" fill="none"/>
 <polygon points="85.8,77.4 105.8,77.4 105.8,131 85.8,131" class="f" fill="#aef2f5"/>
 <polygon points="322.2,111.6 338.2,111.6 338.2,131 322.2,131" class="f" fill="#ddfac0"/>
 <polygon points="92,63 100,63 100,68 92,68" class="dot" fill="none"/>
 <polygon points="115.4,63 124.6,63 124.6,66.4 115.4,66.4" class="dot" fill="none"/>
-<polygon points="285.4,63 294.6,63 294.6,66.4 285.4,66.4" class="dot" fill="none"/>
 <polygon points="308.2,63 315.8,63 315.8,67.76 308.2,67.76" class="dot" fill="none"/>
 <polygon points="169.2,109.9 172.4,109.9 172.4,131 169.2,131" class="f" fill="none"/>
 <polygon points="259.6,109.9 262.8,109.9 262.8,131 259.6,131" class="f" fill="none"/>
@@ -245,7 +244,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Main Engineering - longitudinal section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 7.03 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 7.03 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-eng-SL</text>

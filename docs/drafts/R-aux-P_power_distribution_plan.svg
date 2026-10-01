@@ -141,14 +141,14 @@
 <polygon points="133.9,59 174.2,59 174.2,67 133.9,67" class="dot" fill="none"/>
 <polygon points="174.8,59 215.1,59 215.1,67 174.8,67" class="dot" fill="none"/>
 <polygon points="215.7,59 256,59 256,67 215.7,67" class="dot" fill="none"/>
-<polygon points="88.28,149.62 101.04,149.62 101.04,162.38 88.28,162.38" class="dot" fill="none"/>
-<polygon points="133.6,90.4 173.6,90.4 173.6,99.6 133.6,99.6" class="dot" fill="none"/>
+<polygon points="88.28,95.62 101.04,95.62 101.04,108.38 88.28,108.38" class="dot" fill="none"/>
+<polygon points="151.62,95.62 164.38,95.62 164.38,108.38 151.62,108.38" class="dot" fill="none"/>
 <polygon points="174.2,90.4 214.2,90.4 214.2,99.6 174.2,99.6" class="dot" fill="none"/>
 <polygon points="214.8,90.4 254.8,90.4 254.8,99.6 214.8,99.6" class="dot" fill="none"/>
-<polygon points="88.46,89.4 100.86,89.4 100.86,114.6 88.46,114.6" class="dot" fill="none"/>
+<polygon points="174.2,158.4 214.2,158.4 214.2,167.6 174.2,167.6" class="dot" fill="none"/>
 <polygon points="151.8,143.4 164.2,143.4 164.2,168.6 151.8,168.6" class="dot" fill="none"/>
-<polygon points="211.34,146 231.34,146 231.34,166 211.34,166" class="dot" fill="none"/>
-<polygon points="145.5,100.4 170.5,100.4 170.5,103.6 145.5,103.6" class="dot" fill="none"/>
+<polygon points="215.14,143.4 227.54,143.4 227.54,168.6 215.14,168.6" class="dot" fill="none"/>
+<polygon points="84.66,146 104.66,146 104.66,166 84.66,166" class="dot" fill="none"/>
 <polygon points="208.84,100.4 233.84,100.4 233.84,103.6 208.84,103.6" class="dot" fill="none"/>
 <text x="120.1" y="190.26" font-size="1.25" class="t" text-anchor="middle" fill="#333">Gas Turbine Genset</text>
 <text x="169.9" y="190.41" font-size="1.25" class="t" text-anchor="middle" fill="#333">Diesel Genset</text>

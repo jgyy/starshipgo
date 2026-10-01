@@ -103,14 +103,14 @@
 <polygon points="136.2,156.78 176.2,156.78 176.2,161.22 136.2,161.22" class="dot" fill="none"/>
 <polygon points="176.8,156.78 216.8,156.78 216.8,161.22 176.8,161.22" class="dot" fill="none"/>
 <polygon points="217.4,156.78 257.4,156.78 257.4,161.22 217.4,161.22" class="dot" fill="none"/>
-<polygon points="151.62,122.62 164.38,122.62 164.38,135.38 151.62,135.38" class="dot" fill="none"/>
 <polygon points="55,92.4 95,92.4 95,101.6 55,101.6" class="dot" fill="none"/>
 <polygon points="95.6,92.4 135.6,92.4 135.6,101.6 95.6,101.6" class="dot" fill="none"/>
 <polygon points="136.2,92.4 176.2,92.4 176.2,101.6 136.2,101.6" class="dot" fill="none"/>
 <polygon points="176.8,92.4 216.8,92.4 216.8,101.6 176.8,101.6" class="dot" fill="none"/>
 <polygon points="217.4,92.4 257.4,92.4 257.4,101.6 217.4,101.6" class="dot" fill="none"/>
-<polygon points="211.34,119 231.34,119 231.34,139 211.34,139" class="dot" fill="none"/>
-<polygon points="82.16,127.4 107.16,127.4 107.16,130.6 82.16,130.6" class="dot" fill="none"/>
+<polygon points="88.46,116.4 100.86,116.4 100.86,141.6 88.46,141.6" class="dot" fill="none"/>
+<polygon points="148,119 168,119 168,139 148,139" class="dot" fill="none"/>
+<polygon points="208.84,127.4 233.84,127.4 233.84,130.6 208.84,130.6" class="dot" fill="none"/>
 <text x="220" y="167.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">platform_forklift</text>
 <text x="79" y="74.9" font-size="1.25" class="t" text-anchor="middle" fill="#333">rack_bay_low_wire</text>
 <text x="228" y="70" font-size="1.25" class="t" text-anchor="middle" fill="#333">heavy_boxes</text>

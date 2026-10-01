@@ -39,17 +39,17 @@
 <polygon points="180,67 244,67 244,131 180,131" class="n" fill="#fbfbfb"/>
 <polygon points="179,83 180.56,83 180.56,109 179,109" class="f" fill="#dbbbf7"/>
 <polygon points="205,63 219,63 219,65.4 205,65.4" class="dot" fill="none"/>
+<polygon points="208.62,63 215.38,63 215.38,65.2 208.62,65.2" class="dot" fill="none"/>
 <polygon points="244.1,70.5 245,70.5 245,89.5 244.1,89.5" class="f" fill="#c6fafa"/>
-<polygon points="199.4,63 224.6,63 224.6,64.96 199.4,64.96" class="dot" fill="none"/>
 <polygon points="179,103.6 188.2,103.6 188.2,131.2 179,131.2" class="f" fill="#f6d7b3"/>
 <polygon points="179,79 181.08,79 181.08,112.5 179,112.5" class="f" fill="#c9c3fa"/>
 <polygon points="241.02,99.6 245,99.6 245,114.3 241.02,114.3" class="f" fill="#ecc3fa"/>
-<polygon points="209.8,63 214.2,63 214.2,67.64 209.8,67.64" class="dot" fill="none"/>
+<polygon points="199.4,63 224.6,63 224.6,64.96 199.4,64.96" class="dot" fill="none"/>
 <polygon points="176,131 248,131 248,137 176,137" class="n" fill="url(#hSlab)"/>
 <polygon points="176,57 248,57 248,63 176,63" class="n" fill="url(#hSlab)"/>
 <polygon points="176,63 179,63 179,67 176,67" class="n" fill="#1c1c1c"/>
 <polygon points="245,63 248,63 248,67 245,67" class="n" fill="#1c1c1c"/>
-<polygon points="209.8,63 214.2,63 214.2,67.64 209.8,67.64" class="m" fill="#d87def"/>
+<polygon points="199.4,63 224.6,63 224.6,64.96 199.4,64.96" class="m" fill="#d87def"/>
 </g>
 <text x="183.6" y="113.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">900</text>
 <text x="180.04" y="96.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>
@@ -216,7 +216,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Mid-ship Stair Lobby - longitudinal section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 0.00 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 0.00 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-lobby1-SL</text>

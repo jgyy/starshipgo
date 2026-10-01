@@ -58,7 +58,7 @@
 <polygon points="323.04,68 324,68 324,76 323.04,76" class="f" fill="#bcf9f9"/>
 <polygon points="269.14,61 281.54,61 281.54,62.96 269.14,62.96" class="dot" fill="none"/>
 <polygon points="202.4,61 221.6,61 221.6,63.72 202.4,63.72" class="dot" fill="none"/>
-<polygon points="139.06,61 158.26,61 158.26,63.72 139.06,63.72" class="dot" fill="none"/>
+<polygon points="138.66,61 158.66,61 158.66,62.58 138.66,62.58" class="dot" fill="none"/>
 <polygon points="97,133 327,133 327,139 97,139" class="n" fill="url(#hSlab)"/>
 <polygon points="97,55 327,55 327,61 97,61" class="n" fill="url(#hSlab)"/>
 <polygon points="97,113 100,113 100,133 97,133" class="n" fill="url(#hHull)"/>
@@ -70,8 +70,8 @@
 <polygon points="100.8,123.66 108.8,123.66 108.8,133 100.8,133" class="m" fill="#efbb7d"/>
 <polygon points="323.04,68 324,68 324,76 323.04,76" class="m" fill="#9ef7f6"/>
 <polygon points="202.4,61 221.6,61 221.6,63.72 202.4,63.72" class="m" fill="#d87def"/>
-<polygon points="139.06,61 158.26,61 158.26,63.72 139.06,63.72" class="m" fill="#d87def"/>
 <polygon points="269.14,61 281.54,61 281.54,62.96 269.14,62.96" class="m" fill="#d87def"/>
+<polygon points="138.66,61 158.66,61 158.66,62.58 138.66,62.58" class="m" fill="#d87def"/>
 </g>
 <text x="159" y="107.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1300</text>
 <text x="211" y="85.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">2400</text>
@@ -226,7 +226,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="3.4" class="t b">Medical Bay - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -6.49 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -6.49 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-medbay-ST</text>

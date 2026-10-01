@@ -120,10 +120,10 @@
 <polygon points="96.02,141.7 132.02,141.7 132.02,150.3 96.02,150.3" class="dot" fill="none"/>
 <polygon points="146.52,141.7 182.52,141.7 182.52,150.3 146.52,150.3" class="dot" fill="none"/>
 <polygon points="137.86,67 178.16,67 178.16,75 137.86,75" class="dot" fill="none"/>
-<polygon points="189,124 221,124 221,134 189,134" class="dot" fill="none"/>
 <polygon points="152.62,126.6 155.42,126.6 155.42,129.4 152.62,129.4" class="dot" fill="none"/>
 <polygon points="227.02,110 241.02,110 241.02,124 227.02,124" class="dot" fill="none"/>
 <polygon points="107.62,125.62 114.38,125.62 114.38,132.38 107.62,132.38" class="dot" fill="none"/>
+<polygon points="192.5,127.4 217.5,127.4 217.5,130.6 192.5,130.6" class="dot" fill="none"/>
 <text x="109.2" y="74.53" font-size="1.25" class="t" text-anchor="middle" fill="#333">Potable Water Tank</text>
 <text x="119.02" y="168.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">round mess table</text>
 <text x="141.24" y="70.76" font-size="1.25" class="t" text-anchor="middle" fill="#333">Filtration Unit</text>

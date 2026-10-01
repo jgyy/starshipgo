@@ -2,6 +2,7 @@
 import colorsys
 import json
 import math
+import os
 
 WALL_T = 0.15
 SLAB_T = 0.3
@@ -97,7 +98,8 @@ def rect_poly(r):
 
 class Catalog:
     def __init__(self, path):
-        d = json.load(open(path))
+        with open(path) as fh:
+            d = json.load(fh)
         self.models = {m["id"]: m for m in d["models"]}
         cats = sorted({m["category"] for m in d["models"]})
         self.cats = cats
@@ -229,7 +231,8 @@ class Room:
 
 class Ship:
     def __init__(self, ship_path, cat_path):
-        d = json.load(open(ship_path))
+        with open(ship_path) as fh:
+            d = json.load(fh)
         self.cat = Catalog(cat_path)
         self.raw = d
         self.decks = d["decks"]
@@ -246,6 +249,16 @@ class Ship:
                 if r:
                     r.doors.append(dr)
         self.spawn = d.get("spawn")
+        self.deck_ids = sorted(self.deck_y)                    # top (Sky) deck first
+        self.skin = Skin(d["skin"]) if d.get("skin") else None
+        self.ext_windows = d.get("ext_windows", [])
+        arch = os.path.join(os.path.dirname(os.path.abspath(ship_path)), "arch.json")
+        models = {}
+        if os.path.exists(arch):
+            with open(arch) as fh:
+                models = {m["id"]: m for m in json.load(fh)["models"]}
+        self.fittings = [Fitting(f, models) for f in d.get("exterior", []) if f["m"] in models]
+        self.fp_z = self._forward_perpendicular()
         self._build_schedules()
 
     def _build_schedules(self):
@@ -294,6 +307,49 @@ class Ship:
         self.win_list = wins
         self.win_mark = {(w["room"], w["side"], round(w["c"], 2)): w for w in wins}
 
+    def _forward_perpendicular(self):
+        """Station 0: the foremost point of the ship (skin and fittings), rounded outward to a whole metre."""
+        zs = [self.bounds(None)[1]]
+        if self.skin:
+            zs.append(self.skin.z0)
+        zs += [f.bmin[2] for f in self.fittings]
+        return float(math.floor(min(zs) + 1e-9))
+
+    def overall(self):
+        """(xmin, ymin, zmin, xmax, ymax, zmax) of the skin and every exterior fitting."""
+        lo = [1e9] * 3
+        hi = [-1e9] * 3
+        if self.skin:
+            lo = [self.skin.x0, self.skin.y0, self.skin.z0]
+            hi = [self.skin.x1, self.skin.y1, self.skin.z1]
+        else:
+            b = self.bounds(None)
+            lo = [b[0], min(self.deck_y.values()), b[1]]
+            hi = [b[2], max(self.deck_y.values()) + 4.0, b[3]]
+        for f in self.fittings:
+            lo = [min(a, b) for a, b in zip(lo, f.bmin)]
+            hi = [max(a, b) for a, b in zip(hi, f.bmax)]
+        return (lo[0], lo[1], lo[2], hi[0], hi[1], hi[2])
+
+    def station_zs(self, zmin=None, zmax=None):
+        """(index, z) of every station (every STATION_M from the forward perpendicular) inside [zmin, zmax]."""
+        zmin = self.fp_z if zmin is None else zmin
+        zmax = self.overall()[5] if zmax is None else zmax
+        out, k = [], 0
+        while self.fp_z + STATION_M * k <= zmax + 1e-6:
+            z = self.fp_z + STATION_M * k
+            if z >= zmin - 1e-6:
+                out.append((k, z))
+            k += 1
+        return out
+
+    def tower(self, sid, deck):
+        """Stair tower room of stair `sid` (e.g. 'SA') on `deck`."""
+        return self.by_id.get("tower%s%d" % (sid[1], deck))
+
+    def top_y(self, deck):
+        return max((r.top for r in self.deck_rooms(deck)), default=self.deck_y[deck] + 3.4)
+
     def deck_rooms(self, deck):
         return [r for r in self.rooms if r.deck == deck]
 
@@ -325,3 +381,137 @@ class Ship:
                 out.append({"lo": run["deck_lo"], "hi": run["deck_hi"], "flights": fl, "landing": lr, "landing_y": run["landing"]["y"]})
             return out, st
         return [], None
+
+
+# ================================================================== outer skin and exterior fittings
+STATION_M = 6.0           # frame / station spacing along the ship (m)
+
+
+def convex_hull(pts):
+    """Andrew's monotone chain; returns the hull counter-clockwise (no repeated end point)."""
+    p = sorted(set((round(x, 6), round(y, 6)) for x, y in pts))
+    if len(p) <= 2:
+        return p
+
+    def cross(o, a, b):
+        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
+    lo, hi = [], []
+    for q in p:
+        while len(lo) >= 2 and cross(lo[-2], lo[-1], q) <= 0:
+            lo.pop()
+        lo.append(q)
+    for q in reversed(p):
+        while len(hi) >= 2 and cross(hi[-2], hi[-1], q) <= 0:
+            hi.pop()
+        hi.append(q)
+    return lo[:-1] + hi[:-1]
+
+
+class Skin:
+    """The smooth outer skin: a loft of closed star-shaped rings (see tools/layout/hull.py)."""
+
+    def __init__(self, d):
+        self.cx, self.cz = d["center"]
+        self.n = d["n"]
+        self.rings = d["rings"]
+        self.ys = [r["y"] for r in self.rings]
+        self.y0, self.y1 = self.ys[0], self.ys[-1]
+        n = self.n
+        cs = [(math.cos(2 * math.pi * i / n), math.sin(2 * math.pi * i / n)) for i in range(n)]
+        self.pts = [[(self.cx + r["sx"] * r["r"][i] * cs[i][0], self.cz + r["sz"] * r["r"][i] * cs[i][1]) for i in range(n)]
+                    for r in self.rings]
+        allp = [p for ring in self.pts for p in ring]
+        self.x0, self.x1 = min(p[0] for p in allp), max(p[0] for p in allp)
+        self.z0, self.z1 = min(p[1] for p in allp), max(p[1] for p in allp)
+
+    def plan(self, y):
+        """Cross-section polygon (x, z) at height y, interpolated between the two surrounding rings (None outside)."""
+        if y < self.y0 - 1e-9 or y > self.y1 + 1e-9:
+            return None
+        for i in range(len(self.ys) - 1):
+            ya, yb = self.ys[i], self.ys[i + 1]
+            if ya - 1e-9 <= y <= yb + 1e-9:
+                t = 0.0 if yb - ya < 1e-9 else (y - ya) / (yb - ya)
+                return [(p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t) for p, q in zip(self.pts[i], self.pts[i + 1])]
+        return None
+
+    def silhouette(self):
+        """Side silhouette: (fore, aft) lists of (z, y) per ring, bow (min z) and stern (max z)."""
+        fore = [(min(p[1] for p in ring), y) for ring, y in zip(self.pts, self.ys)]
+        aft = [(max(p[1] for p in ring), y) for ring, y in zip(self.pts, self.ys)]
+        return fore, aft
+
+    def volume(self):
+        """Enclosed volume (m3) by integrating the ring areas over height."""
+        ar = [abs(poly_area(r)) for r in self.pts]
+        return sum((ar[i] + ar[i + 1]) / 2 * (self.ys[i + 1] - self.ys[i]) for i in range(len(ar) - 1))
+
+
+class Fitting:
+    """An exterior fitting (nacelle, deflector, mast, ...) as an oriented bounding box (Godot Euler order YXZ)."""
+
+    def __init__(self, d, models):
+        self.d = d
+        self.id = d["m"]
+        m = models[self.id]
+        self.label = self.id[5:] if self.id.startswith("arch_") else self.id
+        self.label = self.label.replace("_", " ")
+        self.pos = tuple(d["pos"])
+        self.yaw, self.pitch, self.scale = d.get("yaw", 0.0), d.get("pitch", 0.0), d.get("scale", 1.0)
+        lo, hi = m["bounds_min"], m["bounds_max"]
+        self.size = tuple((hi[i] - lo[i]) * self.scale for i in range(3))
+        cp, sp = math.cos(math.radians(self.pitch)), math.sin(math.radians(self.pitch))
+        self.corners = []
+        for k in range(8):
+            x = (hi if k & 1 else lo)[0] * self.scale
+            y = (hi if k & 2 else lo)[1] * self.scale
+            z = (hi if k & 4 else lo)[2] * self.scale
+            y, z = y * cp - z * sp, y * sp + z * cp                  # pitch about X
+            x, z = rot(x, z, self.yaw)                                # yaw about Y
+            self.corners.append((self.pos[0] + x, self.pos[1] + y, self.pos[2] + z))
+        self.bmin = tuple(min(c[i] for c in self.corners) for i in range(3))
+        self.bmax = tuple(max(c[i] for c in self.corners) for i in range(3))
+
+    EDGES = [(a, a | b) for a in range(8) for b in (1, 2, 4) if not a & b]
+
+    def hull2(self, i, j):
+        """Convex hull of the box projected on coordinates (i, j) of (x, y, z)."""
+        return convex_hull([(c[i], c[j]) for c in self.corners])
+
+    def cut_poly(self, T):
+        """Intersection of the box with the vertical plane d = 0 where T(x, z) -> (h, d); polygon of (h, y) or None."""
+        q = []
+        for c in self.corners:
+            h, d = T(c[0], c[2])
+            q.append((h, c[1], d))
+        pts = []
+        for a, b in self.EDGES:
+            da, db = q[a][2], q[b][2]
+            if abs(da) < 1e-9:
+                pts.append((q[a][0], q[a][1]))
+            if (da < -1e-9 and db > 1e-9) or (da > 1e-9 and db < -1e-9):
+                t = da / (da - db)
+                pts.append((q[a][0] + (q[b][0] - q[a][0]) * t, q[a][1] + (q[b][1] - q[a][1]) * t))
+        if len(pts) < 3:
+            return None
+        hp = convex_hull(pts)
+        return hp if len(hp) >= 3 else None
+
+    def depth_range(self, T):
+        ds = [T(c[0], c[2])[1] for c in self.corners]
+        return min(ds), max(ds)
+
+    def beyond_poly(self, T):
+        """Projection (h, y) of the part of the box behind the plane (d > 0)."""
+        q = [(T(c[0], c[2]), c[1]) for c in self.corners]
+        pts = [(h, y) for (h, d), y in q if d >= -1e-9]
+        for a, b in self.EDGES:
+            (ha, da), ya = q[a]
+            (hb, db), yb = q[b]
+            if (da < -1e-9 and db > 1e-9) or (da > 1e-9 and db < -1e-9):
+                t = da / (da - db)
+                pts.append((ha + (hb - ha) * t, ya + (yb - ya) * t))
+        if len(pts) < 3:
+            return None
+        hp = convex_hull(pts)
+        return hp if len(hp) >= 3 else None

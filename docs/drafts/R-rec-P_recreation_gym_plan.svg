@@ -47,7 +47,7 @@
 <polygon points="66.8,130.2 66.8,107.8 79.2,107.8 79.2,130.2" class="n" fill="#77efc6"/>
 <line x1="79.2" y1="107.8" x2="79.2" y2="130.2" class="m"/>
 <line x1="79.2" y1="119" x2="78" y2="119" class="f"/>
-<polygon points="268,159 268,99 278,99 278,159" class="m" fill="none"/>
+<polygon points="267.2,158 267.2,100 279.2,100 279.2,158" class="m" fill="none"/>
 <polygon points="159.8,99.6 142.2,99.6 142.2,60.4 159.8,60.4" class="n" fill="#e881d3"/>
 <line x1="142.2" y1="60.4" x2="159.8" y2="60.4" class="m"/>
 <line x1="151" y1="60.4" x2="151" y2="61.6" class="f"/>
@@ -125,14 +125,14 @@
 <polygon points="210.34,100.44 232.34,100.44 232.34,103.56 210.34,103.56" class="dot" fill="none"/>
 <polygon points="152.4,154.3 163.6,154.3 163.6,157.72 152.4,157.72" class="dot" fill="none"/>
 <polygon points="78.66,151 110.66,151 110.66,161 78.66,161" class="dot" fill="none"/>
+<polygon points="85.06,92.4 104.26,92.4 104.26,111.6 85.06,111.6" class="dot" fill="none"/>
 <polygon points="151.8,89.4 164.2,89.4 164.2,114.6 151.8,114.6" class="dot" fill="none"/>
-<polygon points="84.72,93.34 104.6,93.34 104.6,110.66 84.72,110.66" class="dot" fill="none"/>
 <text x="183" y="185.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">weight bench and rack</text>
 <text x="113" y="119.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">three-seater sofa</text>
+<text x="273.2" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">deep bulkhead</text>
 <text x="151" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
 <text x="173" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
 <text x="195" y="80.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">treadmill</text>
-<text x="273" y="129.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">round arch</text>
 <text x="111" y="181.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">bolted table</text>
 <text x="157" y="124.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rowing machine</text>
 <text x="173" y="124.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">rowing machine</text>

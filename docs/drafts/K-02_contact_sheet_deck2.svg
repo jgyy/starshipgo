@@ -31,51 +31,51 @@
 <pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
-<image x="16.0" y="14.0" width="76.0" height="53.74285714285714" href="R-corF2-P_forward_spine_corridor_plan.svg" xlink:href="R-corF2-P_forward_spine_corridor_plan.svg"/>
-<rect x="16" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="17" y="71.34" font-size="2" class="t b">CF2  Forward Spine Corridor</text>
-<image x="96.5" y="14.0" width="76.0" height="53.74285714285714" href="R-corA2-P_aft_spine_corridor_plan.svg" xlink:href="R-corA2-P_aft_spine_corridor_plan.svg"/>
-<rect x="96.5" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="97.5" y="71.34" font-size="2" class="t b">CA2  Aft Spine Corridor</text>
-<image x="177.0" y="14.0" width="76.0" height="53.74285714285714" href="R-lobby2-P_mid_ship_stair_lobby_plan.svg" xlink:href="R-lobby2-P_mid_ship_stair_lobby_plan.svg"/>
-<rect x="177" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="178" y="71.34" font-size="2" class="t b">LB2  Mid-ship Stair Lobby</text>
-<image x="257.5" y="14.0" width="76.0" height="53.74285714285714" href="R-towerA2-P_port_stair_tower_plan.svg" xlink:href="R-towerA2-P_port_stair_tower_plan.svg"/>
-<rect x="257.5" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="258.5" y="71.34" font-size="2" class="t b">SP2  Port Stair Tower</text>
-<image x="338.0" y="14.0" width="76.0" height="53.74285714285714" href="R-towerB2-P_starboard_stair_tower_plan.svg" xlink:href="R-towerB2-P_starboard_stair_tower_plan.svg"/>
-<rect x="338" y="14" width="76" height="53.74" class="f" fill="none"/>
-<text x="339" y="71.34" font-size="2" class="t b">SS2  Starboard Stair Tower</text>
-<image x="16.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-armory-P_armory_plan.svg" xlink:href="R-armory-P_armory_plan.svg"/>
-<rect x="16" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="17" y="135.59" font-size="2" class="t b">AR  Armory</text>
-<image x="96.5" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-galley-P_galley_plan.svg" xlink:href="R-galley-P_galley_plan.svg"/>
-<rect x="96.5" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="97.5" y="135.59" font-size="2" class="t b">GA  Galley</text>
-<image x="177.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-mess-P_mess_hall_plan.svg" xlink:href="R-mess-P_mess_hall_plan.svg"/>
-<rect x="177" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="178" y="135.59" font-size="2" class="t b">MH  Mess Hall</text>
-<image x="257.5" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-brig-P_brig_plan.svg" xlink:href="R-brig-P_brig_plan.svg"/>
-<rect x="257.5" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="258.5" y="135.59" font-size="2" class="t b">BG  Brig</text>
-<image x="338.0" y="78.24285714285713" width="76.0" height="53.74285714285714" href="R-secoff-P_security_office_plan.svg" xlink:href="R-secoff-P_security_office_plan.svg"/>
-<rect x="338" y="78.24" width="76" height="53.74" class="f" fill="none"/>
-<text x="339" y="135.59" font-size="2" class="t b">SO  Security Office</text>
-<image x="16.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-medbay-P_medical_bay_plan.svg" xlink:href="R-medbay-P_medical_bay_plan.svg"/>
-<rect x="16" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="17" y="199.83" font-size="2" class="t b">MB  Medical Bay</text>
-<image x="96.5" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-rec-P_recreation_gym_plan.svg" xlink:href="R-rec-P_recreation_gym_plan.svg"/>
-<rect x="96.5" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="97.5" y="199.83" font-size="2" class="t b">RG  Recreation &amp; Gym</text>
-<image x="177.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-dorm-P_crew_quarters_plan.svg" xlink:href="R-dorm-P_crew_quarters_plan.svg"/>
-<rect x="177" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="178" y="199.83" font-size="2" class="t b">CW  Crew Quarters</text>
-<image x="257.5" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-sci-P_science_laboratory_plan.svg" xlink:href="R-sci-P_science_laboratory_plan.svg"/>
-<rect x="257.5" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="258.5" y="199.83" font-size="2" class="t b">SL  Science Laboratory</text>
-<image x="338.0" y="142.48571428571427" width="76.0" height="53.74285714285714" href="R-hydro-P_hydroponics_garden_plan.svg" xlink:href="R-hydro-P_hydroponics_garden_plan.svg"/>
-<rect x="338" y="142.49" width="76" height="53.74" class="f" fill="none"/>
-<text x="339" y="199.83" font-size="2" class="t b">HY  Hydroponics Garden</text>
+<image x="16.0" y="14.0" width="75.2" height="53.17714285714286" href="R-corF2-P_forward_spine_corridor_plan.svg" xlink:href="R-corF2-P_forward_spine_corridor_plan.svg"/>
+<rect x="16" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="17" y="70.78" font-size="2" class="t b">CF2  Forward Spine Corridor</text>
+<image x="95.7" y="14.0" width="75.2" height="53.17714285714286" href="R-corA2-P_aft_spine_corridor_plan.svg" xlink:href="R-corA2-P_aft_spine_corridor_plan.svg"/>
+<rect x="95.7" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="96.7" y="70.78" font-size="2" class="t b">CA2  Aft Spine Corridor</text>
+<image x="175.4" y="14.0" width="75.2" height="53.17714285714286" href="R-lobby2-P_mid_ship_stair_lobby_plan.svg" xlink:href="R-lobby2-P_mid_ship_stair_lobby_plan.svg"/>
+<rect x="175.4" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="176.4" y="70.78" font-size="2" class="t b">LB2  Mid-ship Stair Lobby</text>
+<image x="255.10000000000002" y="14.0" width="75.2" height="53.17714285714286" href="R-towerA2-P_port_stair_tower_plan.svg" xlink:href="R-towerA2-P_port_stair_tower_plan.svg"/>
+<rect x="255.1" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="256.1" y="70.78" font-size="2" class="t b">SP2  Port Stair Tower</text>
+<image x="334.8" y="14.0" width="75.2" height="53.17714285714286" href="R-towerB2-P_starboard_stair_tower_plan.svg" xlink:href="R-towerB2-P_starboard_stair_tower_plan.svg"/>
+<rect x="334.8" y="14" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="335.8" y="70.78" font-size="2" class="t b">SS2  Starboard Stair Tower</text>
+<image x="16.0" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-armory-P_armory_plan.svg" xlink:href="R-armory-P_armory_plan.svg"/>
+<rect x="16" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="17" y="134.45" font-size="2" class="t b">AR  Armory</text>
+<image x="95.7" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-galley-P_galley_plan.svg" xlink:href="R-galley-P_galley_plan.svg"/>
+<rect x="95.7" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="96.7" y="134.45" font-size="2" class="t b">GA  Galley</text>
+<image x="175.4" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-mess-P_mess_hall_plan.svg" xlink:href="R-mess-P_mess_hall_plan.svg"/>
+<rect x="175.4" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="176.4" y="134.45" font-size="2" class="t b">MH  Mess Hall</text>
+<image x="255.10000000000002" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-brig-P_brig_plan.svg" xlink:href="R-brig-P_brig_plan.svg"/>
+<rect x="255.1" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="256.1" y="134.45" font-size="2" class="t b">BG  Brig</text>
+<image x="334.8" y="77.67714285714285" width="75.2" height="53.17714285714286" href="R-secoff-P_security_office_plan.svg" xlink:href="R-secoff-P_security_office_plan.svg"/>
+<rect x="334.8" y="77.68" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="335.8" y="134.45" font-size="2" class="t b">SO  Security Office</text>
+<image x="16.0" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-medbay-P_medical_bay_plan.svg" xlink:href="R-medbay-P_medical_bay_plan.svg"/>
+<rect x="16" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="17" y="198.13" font-size="2" class="t b">MB  Medical Bay</text>
+<image x="95.7" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-rec-P_recreation_gym_plan.svg" xlink:href="R-rec-P_recreation_gym_plan.svg"/>
+<rect x="95.7" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="96.7" y="198.13" font-size="2" class="t b">RG  Recreation &amp; Gym</text>
+<image x="175.4" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-dorm-P_crew_quarters_plan.svg" xlink:href="R-dorm-P_crew_quarters_plan.svg"/>
+<rect x="175.4" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="176.4" y="198.13" font-size="2" class="t b">CW  Crew Quarters</text>
+<image x="255.10000000000002" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-sci-P_science_laboratory_plan.svg" xlink:href="R-sci-P_science_laboratory_plan.svg"/>
+<rect x="255.1" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="256.1" y="198.13" font-size="2" class="t b">SL  Science Laboratory</text>
+<image x="334.8" y="141.3542857142857" width="75.2" height="53.17714285714286" href="R-hydro-P_hydroponics_garden_plan.svg" xlink:href="R-hydro-P_hydroponics_garden_plan.svg"/>
+<rect x="334.8" y="141.35" width="75.2" height="53.18" class="f" fill="none"/>
+<text x="335.8" y="198.13" font-size="2" class="t b">HY  Hydroponics Garden</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>

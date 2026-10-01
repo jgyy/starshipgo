@@ -83,7 +83,7 @@
 <line x1="201.94" y1="209" x2="201.94" y2="206" class="m"/>
 <polygon points="154.74,210.2 131.14,210.2 131.14,207.8 154.74,207.8" class="f" fill="#7a8594"/>
 <line x1="131.14" y1="209" x2="201.94" y2="209" class="hid"/>
-<text x="178.34" y="191" font-size="1.3" class="t b" text-anchor="middle">D31</text>
+<text x="178.34" y="191" font-size="1.3" class="t b" text-anchor="middle">D42</text>
 <line x1="119.79" y1="212.7" x2="120.74" y2="186" class="x"/>
 <circle cx="120.74" cy="186" r="0.4" class="none" fill="#b03030"/>
 <line x1="84.64" y1="162.89" x2="120.74" y2="161.23" class="x"/>

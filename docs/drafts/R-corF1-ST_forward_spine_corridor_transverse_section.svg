@@ -39,26 +39,26 @@
 <polygon points="182,67 242,67 242,131 182,131" class="n" fill="#fbfbfb"/>
 <polygon points="185,75.8 186.54,75.8 186.54,84.2 185,84.2" class="f" fill="#fbd6f7"/>
 <polygon points="237.8,94 239,94 239,108 237.8,108" class="f" fill="#f1d5fb"/>
-<polygon points="224.4,63 233.6,63 233.6,66.9 224.4,66.9" class="dot" fill="none"/>
 <polygon points="199.5,63 224.5,63 224.5,64.24 199.5,64.24" class="dot" fill="none"/>
-<polygon points="235.58,78.4 239,78.4 239,81.6 235.58,81.6" class="f" fill="#fbcdf5"/>
 <polygon points="225.4,63 232.6,63 232.6,66 225.4,66" class="dot" fill="none"/>
+<polygon points="235.58,78.4 239,78.4 239,81.6 235.58,81.6" class="f" fill="#fbcdf5"/>
+<polygon points="224.4,63 233.6,63 233.6,66.9 224.4,66.9" class="dot" fill="none"/>
 <polygon points="237.96,67 239,67 239,75 237.96,75" class="f" fill="#c6fafa"/>
 <polygon points="185,67 186.12,67 186.12,75 185,75" class="f" fill="#c6fafa"/>
-<polygon points="224.4,63 233.6,63 233.6,66.4 224.4,66.4" class="dot" fill="none"/>
+<polygon points="224.4,63 233.6,63 233.6,66.9 224.4,66.9" class="dot" fill="none"/>
 <polygon points="237.46,75.8 239,75.8 239,84.2 237.46,84.2" class="f" fill="#fac2f3"/>
 <polygon points="202,63 222,63 222,64.58 202,64.58" class="dot" fill="none"/>
-<polygon points="224.4,63 233.6,63 233.6,66.9 224.4,66.9" class="dot" fill="none"/>
+<polygon points="225.4,63 232.6,63 232.6,66 225.4,66" class="dot" fill="none"/>
 <polygon points="185,78.4 188.42,78.4 188.42,81.6 185,81.6" class="f" fill="#f9bcf2"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="f" fill="#eabcf9"/>
-<polygon points="224,63 234,63 234,66.8 224,66.8" class="dot" fill="none"/>
+<polygon points="224.4,63 233.6,63 233.6,66.4 224.4,66.4" class="dot" fill="none"/>
 <polygon points="182,131 242,131 242,137 182,137" class="n" fill="url(#hSlab)"/>
 <polygon points="182,57 242,57 242,63 182,63" class="n" fill="url(#hSlab)"/>
 <polygon points="182,63 185,63 185,131 182,131" class="n" fill="#1c1c1c"/>
 <polygon points="239,63 242,63 242,131 239,131" class="n" fill="#1c1c1c"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="m" fill="#e09ef7"/>
 <polygon points="185,78.4 188.42,78.4 188.42,81.6 185,81.6" class="m" fill="#f79eec"/>
-<polygon points="224,63 234,63 234,66.8 224,66.8" class="m" fill="#ef7da3"/>
+<polygon points="224.4,63 233.6,63 233.6,66.4 224.4,66.4" class="m" fill="#ef7da3"/>
 </g>
 <text x="186.99" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
 <text x="186.99" y="106.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
@@ -218,7 +218,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Forward Spine Corridor - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -10.50 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 1 - COMMAND DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = -10.50 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-corF1-ST</text>

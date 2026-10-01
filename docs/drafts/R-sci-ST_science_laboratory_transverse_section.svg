@@ -48,11 +48,11 @@
 <polygon points="287.5,94.2 321,94.2 321,131 287.5,131" class="f" fill="#fac4c4"/>
 <polygon points="112.76,108.5 125.22,108.5 125.22,131 112.76,131" class="f" fill="#adb4f5"/>
 <polygon points="309.7,91.9 323.2,91.9 323.2,131 309.7,131" class="f" fill="#b5f1b2"/>
-<polygon points="262.84,63 287.84,63 287.84,64.24 262.84,64.24" class="dot" fill="none"/>
 <polygon points="143.06,63 154.26,63 154.26,66.7 143.06,66.7" class="dot" fill="none"/>
 <polygon points="205.62,62.98 218.38,62.98 218.38,66.5 205.62,66.5" class="dot" fill="none"/>
 <polygon points="223.68,116.3 234.3,116.3 234.3,131 223.68,131" class="f" fill="#b0d3f0"/>
 <polygon points="199.7,116.3 210.32,116.3 210.32,131 199.7,131" class="f" fill="#b0d3f0"/>
+<polygon points="265.34,63 285.34,63 285.34,64.58 265.34,64.58" class="dot" fill="none"/>
 <polygon points="193,93.3 241,93.3 241,131 193,131" class="f" fill="#add1f0"/>
 <polygon points="322.88,67 324,67 324,75 322.88,75" class="f" fill="#bcf9f9"/>
 <polygon points="97,131 327,131 327,137 97,137" class="n" fill="url(#hSlab)"/>
@@ -217,7 +217,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Science Laboratory - transverse section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 7.30 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 2 - HABITAT DECK  -  SECTION A-A LOOKING AFT (+Z)  (cut plane z = 7.30 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-sci-ST</text>

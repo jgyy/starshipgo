@@ -134,8 +134,8 @@
 <polygon points="142,159 174,159 174,169 142,169" class="dot" fill="none"/>
 <polygon points="73.18,125.82 79.54,125.82 79.54,132.18 73.18,132.18" class="dot" fill="none"/>
 <polygon points="86.9,84 106.9,84 106.9,104 86.9,104" class="dot" fill="none"/>
-<polygon points="86.9,154 106.9,154 106.9,174 86.9,174" class="dot" fill="none"/>
 <polygon points="148.06,85.34 167.94,85.34 167.94,102.66 148.06,102.66" class="dot" fill="none"/>
+<polygon points="84.4,162.4 109.4,162.4 109.4,165.6 84.4,165.6" class="dot" fill="none"/>
 <polygon points="206.58,162.4 231.58,162.4 231.58,165.6 206.58,165.6" class="dot" fill="none"/>
 <text x="148.36" y="127.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">briefing table</text>
 <text x="148.36" y="206.01" font-size="1.25" class="t" text-anchor="middle" fill="#333">sloped triple screen</text>

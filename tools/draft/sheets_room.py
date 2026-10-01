@@ -128,7 +128,7 @@ def room_plan(ship, room):
     draw_holes(sh, pv, room)
     draw_props(sh, pv, room, cat, labels=(s >= 10))
     if room.id.startswith("tower"):
-        draw_stairs(sh, pv, ship, room.deck)
+        draw_stairs(sh, pv, ship, room.deck, only_side="S" + room.id[5:6].upper())
     draw_walls(sh, pv, room)
     draw_openings(sh, pv, room, marks=True)
     draw_forcefields(sh, pv, room)

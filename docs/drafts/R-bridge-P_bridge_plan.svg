@@ -112,10 +112,10 @@
 <polygon points="180.5,87.5 183.5,87.5 183.5,90.5 180.5,90.5" class="dot" fill="none"/>
 <polygon points="240.5,87.5 243.5,87.5 243.5,90.5 240.5,90.5" class="dot" fill="none"/>
 <polygon points="210.5,127.5 213.5,127.5 213.5,130.5 210.5,130.5" class="dot" fill="none"/>
-<polygon points="140.45,128.4 142.59,128.4 142.59,130.6 140.45,130.6" class="dot" fill="none"/>
+<polygon points="185.71,128.64 191.31,128.64 191.31,130.35 185.71,130.35" class="dot" fill="none"/>
 <polygon points="183.71,73.7 193.31,73.7 193.31,83.3 183.71,83.3" class="dot" fill="none"/>
 <polygon points="232.39,72.2 238.59,72.2 238.59,84.8 232.39,84.8" class="dot" fill="none"/>
-<polygon points="183.51,124.5 193.51,124.5 193.51,134.5 183.51,134.5" class="dot" fill="none"/>
+<polygon points="136.52,124.5 146.52,124.5 146.52,134.5 136.52,134.5" class="dot" fill="none"/>
 <polygon points="277.51,125.17 287.45,125.17 287.45,133.83 277.51,133.83" class="dot" fill="none"/>
 <polygon points="229.24,128.7 241.74,128.7 241.74,130.3 229.24,130.3" class="dot" fill="none"/>
 <text x="272" y="130.3" font-size="1.25" class="t" text-anchor="middle" fill="#333">briefing table</text>
@@ -144,13 +144,13 @@
 <line x1="163.8" y1="169" x2="163.8" y2="167.5" class="m"/>
 <polygon points="140.2,169.6 128.4,169.6 128.4,168.4 140.2,168.4" class="f" fill="#7a8594"/>
 <line x1="128.4" y1="169" x2="163.8" y2="169" class="hid"/>
-<text x="152" y="160" font-size="1.3" class="t b" text-anchor="middle">D14</text>
+<text x="152" y="160" font-size="1.3" class="t b" text-anchor="middle">D25</text>
 <polygon points="260.2,169 283.8,169 283.8,167.5 260.2,167.5" class="none" fill="#ffffff"/>
 <line x1="260.2" y1="169" x2="260.2" y2="167.5" class="m"/>
 <line x1="283.8" y1="169" x2="283.8" y2="167.5" class="m"/>
 <polygon points="260.2,169.6 248.4,169.6 248.4,168.4 260.2,168.4" class="f" fill="#7a8594"/>
 <line x1="248.4" y1="169" x2="283.8" y2="169" class="hid"/>
-<text x="272" y="160" font-size="1.3" class="t b" text-anchor="middle">D15</text>
+<text x="272" y="160" font-size="1.3" class="t b" text-anchor="middle">D26</text>
 <polygon points="115.89,146.21 125.68,129.79 126.96,130.56 117.17,146.97" class="none" fill="#ffffff"/>
 <line x1="115.89" y1="146.21" x2="117.17" y2="146.97" class="n"/>
 <line x1="125.68" y1="129.79" x2="126.96" y2="130.56" class="n"/>

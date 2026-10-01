@@ -51,7 +51,6 @@
 <polygon points="281.56,93 291.86,93 291.86,131 281.56,131" class="f" fill="#edfac5"/>
 <polygon points="284.84,65.2 292.66,65.2 292.66,74.8 284.84,74.8" class="f" fill="#c1ecfa"/>
 <polygon points="279.86,97 291.86,97 291.86,131 279.86,131" class="f" fill="#ebfabf"/>
-<polygon points="220.66,63 240.66,63 240.66,64.58 220.66,64.58" class="dot" fill="none"/>
 <polygon points="281.56,93 291.86,93 291.86,131 281.56,131" class="f" fill="#eaf9bc"/>
 <polygon points="245.22,94.4 256.12,94.4 256.12,131 245.22,131" class="f" fill="#eaf9bc"/>
 <polygon points="284.84,65.2 292.66,65.2 292.66,74.8 284.84,74.8" class="f" fill="#bceaf9"/>
@@ -70,7 +69,6 @@
 <polygon points="291.82,78 292.66,78 292.66,86 291.82,86" class="m" fill="#9ef7f6"/>
 <polygon points="284.84,65.2 292.66,65.2 292.66,74.8 284.84,74.8" class="m" fill="#9ee1f7"/>
 <polygon points="179.06,63 188.26,63 188.26,66.4 179.06,66.4" class="m" fill="#ef7da3"/>
-<polygon points="220.66,63 240.66,63 240.66,64.58 220.66,64.58" class="m" fill="#d87def"/>
 </g>
 <text x="288.75" y="70.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3050</text>
 <text x="288.75" y="67.86" font-size="1.2" class="t" text-anchor="middle" fill="#444">3050</text>
@@ -225,7 +223,7 @@
 <text x="237" y="264.4" font-size="1.7" class="t" fill="#444">Engineering drawings - generated</text>
 <text x="299" y="255.6" font-size="1.4" class="t" fill="#666">DRAWING TITLE</text>
 <text x="299" y="260.8" font-size="2.7" class="t b">Airlock &amp; EVA Prep - longitudinal section</text>
-<text x="299" y="264.6" font-size="2" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 4.76 m)</text>
+<text x="299" y="264.6" font-size="1.6" class="t">DECK 3 - ENGINEERING DECK  -  SECTION A-A LOOKING STARBOARD (+X)  (cut plane x = 4.76 m)</text>
 <rect x="235" y="266" width="60" height="13" class="f" fill="none"/>
 <text x="236.5" y="269.3" font-size="1.4" class="t" fill="#666">SHEET</text>
 <text x="236.5" y="275.2" font-size="3.4" class="t b">R-airlock-SL</text>
