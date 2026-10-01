@@ -456,7 +456,8 @@ def main():
     ap.add_argument("--root", default=ROOT)
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
-    ship = json.load(open(os.path.join(a.root, "godot", "data", "ship.json")))
+    with open(os.path.join(a.root, "godot", "data", "ship.json")) as f:
+        ship = json.load(f)
     specs = A.load_specs(a.root)
     md = generate(ship, specs, gen_lore.build())
     out = a.out or os.path.join(a.root, "docs", "SHIP_SPEC.md")

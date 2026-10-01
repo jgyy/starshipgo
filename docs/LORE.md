@@ -24,7 +24,7 @@ Vesper Lantern is a three-deck deep survey cruiser of the Meridian Concord's Sur
 
 | Faction | Colour | Stance | Systems | About |
 |---|---|---|---|---|
-| Meridian Concord | `#4aa8ff` | allied | 7 | A federation of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts. |
+| Meridian Concord | `#4aa8ff` | allied | 7 | A union of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts. |
 | Orrery Collegium | `#c08aff` | allied | 4 | An academic league of observatories and archive worlds. Trades star charts and data for passage; neutral in every dispute. |
 | Thessaly Commons | `#6be08a` | neutral | 4 | Agrarian settlements who farm terraformed worlds and sell grain and seed stock; friendly but insular. |
 | Ashfall Free Ports | `#ffc247` | neutral | 4 | A web of independent trade stations and salvage guilds that keep no flag but their ledgers; the cheapest repairs in the volume. |
@@ -724,7 +724,7 @@ A dealer at Cinder once sold a metal tag engraved with twelve dots and a line of
 
 | Term | Meaning |
 |---|---|
-| Meridian Concord | The federation of eleven systems around Tessara that fields the Survey Service. |
+| Meridian Concord | The union of eleven systems around Tessara that fields the Survey Service. |
 | Survey Service | The Concord's exploration branch: charts lanes, makes first contact, keeps the peace on the frontier. |
 | Charter | A ship's mission order. Charter 7 covers four years of the Veil frontier. |
 | Stardate | Ship day count, one unit per day; mission day is stardate minus 41000. |

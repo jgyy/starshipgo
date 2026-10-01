@@ -280,6 +280,7 @@ def write_all(root):
     with open(p, "w") as f:
         f.write(md)
     jp = os.path.join(root, "godot", "data", "software.json")
+    os.makedirs(os.path.dirname(jp), exist_ok=True)
     with open(jp, "w") as f:
         json.dump(software_json(), f, indent=1, sort_keys=False)
         f.write("\n")

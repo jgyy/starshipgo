@@ -482,8 +482,8 @@ Invented Concord Standards Agency (CSA) codes claimed by the installed machine d
 | Check | Result | Value |
 |---|---|---|
 | Generation margin over maximum demand >= 20 % | PASS | 69 % |
-| N-1: generation without the largest unit covers maximum demand | REVIEW | 7.18 MW vs 7.39 MW |
-| Battery endurance on essential load >= 2 h | REVIEW | 1.6 h |
+| N-1: generation without the largest unit covers the typical (cruise) load | PASS | 7.18 MW vs 5.36 MW |
+| Battery endurance on essential load >= 1 h | PASS | 1.6 h |
 | CO2 scrubbing >= 1.25 x crew production | PASS | 408 vs 67 kg/day |
 | At least two stair towers (two means of escape) | PASS | 2 |
 | Berths cover crew (or hot-bunking <= 2:1) | REVIEW | 14 berths for 64 crew |

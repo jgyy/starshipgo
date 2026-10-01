@@ -239,7 +239,8 @@ def spec_for(m, root, used_pn):
 
 
 def build(root):
-    cat = json.load(open(os.path.join(root, "godot", "data", "catalog.json")))["models"]
+    with open(os.path.join(root, "godot", "data", "catalog.json")) as f:
+        cat = json.load(f)["models"]
     used = set()
     models = {}
     for m in sorted(cat, key=lambda m: m["id"]):

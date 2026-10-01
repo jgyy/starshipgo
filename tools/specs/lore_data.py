@@ -25,7 +25,7 @@ SHIP = {
 
 FACTIONS = [
     ("concord", "Meridian Concord", "#4aa8ff", "allied",
-     "A federation of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts."),
+     "A union of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts."),
     ("collegium", "Orrery Collegium", "#c08aff", "allied",
      "An academic league of observatories and archive worlds. Trades star charts and data for passage; neutral in every dispute."),
     ("commons", "Thessaly Commons", "#6be08a", "neutral",
@@ -341,7 +341,7 @@ DATAPADS = [
 ]
 
 GLOSSARY = [
-    ("Meridian Concord", "The federation of eleven systems around Tessara that fields the Survey Service."),
+    ("Meridian Concord", "The union of eleven systems around Tessara that fields the Survey Service."),
     ("Survey Service", "The Concord's exploration branch: charts lanes, makes first contact, keeps the peace on the frontier."),
     ("Charter", "A ship's mission order. Charter 7 covers four years of the Veil frontier."),
     ("Stardate", "Ship day count, one unit per day; mission day is stardate minus 41000."),

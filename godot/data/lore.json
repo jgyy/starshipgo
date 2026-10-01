@@ -20,7 +20,7 @@
    "name": "Meridian Concord",
    "color": "#4aa8ff",
    "stance": "allied",
-   "description": "A federation of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts."
+   "description": "A union of eleven home systems around Tessara governed by a rotating Assembly. Funds the Survey Service, values open lanes and shared charts."
   },
   {
    "id": "collegium",
@@ -2087,7 +2087,7 @@
  "glossary": [
   {
    "term": "Meridian Concord",
-   "text": "The federation of eleven systems around Tessara that fields the Survey Service."
+   "text": "The union of eleven systems around Tessara that fields the Survey Service."
   },
   {
    "term": "Survey Service",
