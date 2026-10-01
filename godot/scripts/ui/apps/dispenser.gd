@@ -4,7 +4,7 @@ extends AppBase
 ## names food or drink.  Specs and prices come from specs.json when it has an entry.
 
 const FOOD_CATS := ["tableware", "food", "drink", "beverage", "meal", "snack", "bakery", "dessert", "produce", "fruit"]
-const FOOD_WORDS := ["food", "drink", "meal", "coffee", "tea", "snack", "fruit", "salad", "bread", "pizza", "soup", "juice", "pastry", "cake", "burger", "sandwich", "noodle", "rice", "cheese", "egg", "milk", "cup", "mug", "bottle", "bowl", "plate", "tray"]
+const FOOD_WORDS := ["food", "drink", "meal", "coffee", "tea", "snack", "fruit", "salad", "bread", "pizza", "soup", "juice", "pastry", "cake", "burger", "sandwich", "noodle", "rice", "cheese", "milk", "lunch", "dessert"]
 const VEND_WORDS := ["cup", "mug", "bottle", "drink", "coffee", "tea", "snack", "bar", "fruit", "juice", "water", "pitcher", "bread", "salad", "lunch", "pizza"]
 
 var mode := "galley"                   # "galley" (free) or "vending" (credits)
@@ -29,8 +29,9 @@ func is_food(id: String, e: Dictionary) -> bool:
 		return false
 	if cat in FOOD_CATS:
 		return true
+	var toks := id.split("_")
 	for w in FOOD_WORDS:
-		if id.contains(w):
+		if w in toks:
 			return true
 	return false
 

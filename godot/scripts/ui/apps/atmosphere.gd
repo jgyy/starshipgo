@@ -69,7 +69,7 @@ func refresh() -> void:
 			continue
 		var v := _room_vals(r)
 		var state: Array = ["VACUUM", T.BAD] if v[3] else (["SEALED", T.WARN] if st.sealed.get(r["id"], false) else ["OK", T.OK])
-		rows.append(["%s" % r["name"], str(r["deck"]), "%.1f%%" % v[0], "%.1f C" % v[1], "%.0f" % v[2], state])
+		rows.append(["%s" % r["name"], str(int(r["deck"])), "%.1f%%" % v[0], "%.1f C" % v[1], "%.0f" % v[2], state])
 		metas.append(r["id"])
 	table_fill(_tree, rows, metas)
 	var m: Variant = table_selected(_tree)
@@ -77,5 +77,5 @@ func refresh() -> void:
 		for r in st.ship.get("rooms", []):
 			if r["id"] == m:
 				var v2 := _room_vals(r)
-				_detail.text = "%s\nDeck %s, %.0f m2 (%s)\nO2 %.1f %%   Temp %.1f C   Pressure %.1f kPa\n%s" % [r["name"], r["deck"], r.get("area", 0.0), r.get("dept", ""), v2[0], v2[1], v2[2], "Bay is open to space - switch the hangar force field on." if v2[3] else ("Room is sealed from the ventilation loop." if st.sealed.get(m, false) else "Ventilation normal.")]
+				_detail.text = "%s\nDeck %d, %.0f m2 (%s)\nO2 %.1f %%   Temp %.1f C   Pressure %.1f kPa\n%s" % [r["name"], int(r["deck"]), r.get("area", 0.0), r.get("dept", ""), v2[0], v2[1], v2[2], "Bay is open to space - switch the hangar force field on." if v2[3] else ("Room is sealed from the ventilation loop." if st.sealed.get(m, false) else "Ventilation normal.")]
 		_graph.set_series([{"data": _hist, "color": T.OK}])

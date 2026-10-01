@@ -74,7 +74,7 @@ func tick(_dt: float) -> void:
 func _update_info() -> void:
 	for r in st.ship.get("rooms", []):
 		if r["id"] == selected:
-			_info.text = "%s [%s]\nDeck %s - %s department\n%.0f m2, ceiling %.1f m\n%s" % [r["name"], r["id"], r["deck"], r.get("dept", ""), r.get("area", 0.0), r.get("height", 3.4), r.get("brief", {}).get("purpose", "") if r.get("brief") is Dictionary else ""]
+			_info.text = "%s [%s]\nDeck %d - %s department\n%.0f m2, ceiling %.1f m\n%s" % [r["name"], r["id"], int(r["deck"]), r.get("dept", ""), r.get("area", 0.0), r.get("height", 3.4), r.get("brief", {}).get("purpose", "") if r.get("brief") is Dictionary else ""]
 
 func refresh() -> void:
 	for p in _deck_btns:
@@ -87,7 +87,7 @@ func refresh() -> void:
 			continue
 		if q == "" and r.get("dept", "") == "transit":
 			continue
-		rows.append([r["name"], str(r["deck"]), String(r.get("dept", "")).capitalize()])
+		rows.append([r["name"], str(int(r["deck"])), String(r.get("dept", "")).capitalize()])
 		metas.append(r["id"])
 	table_fill(_tree, rows, metas)
 

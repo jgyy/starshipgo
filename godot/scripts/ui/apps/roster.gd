@@ -62,5 +62,5 @@ func refresh() -> void:
 func _room(rid: String) -> String:
 	for r in st.ship.get("rooms", []):
 		if r["id"] == rid:
-			return "%s (deck %s)" % [r["name"], r["deck"]]
+			return "%s (deck %d)" % [r["name"], int(r["deck"])]
 	return rid
