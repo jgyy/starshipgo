@@ -141,7 +141,7 @@ def _tower(R, B, side):
     strip_mid = (xb - 0.15 - 0.9) if side == "A" else (xa + 0.15 + 0.9)
     sgn = 1 if side == "A" else -1
     R.describe(
-        "Dog-leg stair tower linking all three decks on the %s side; two 1.4 m flights and a mid-landing per deck pair." %
+        "Dog-leg stair tower linking all five decks on the %s side; two 1.4 m flights and a mid-landing per deck pair." %
         ("port" if side == "A" else "starboard"),
         basis="Rise 181.8 mm, going 280 mm, 11 risers per flight, 4.0 m floor-to-floor; 0.9 m handrails on both sides; second means of escape.",
         adjacency="Opens to the mid-ship stair lobby through a 3.2 m wide arch.")

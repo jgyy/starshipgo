@@ -4,7 +4,7 @@
 
 ## 1. The ship
 
-Vesper Lantern is a three-deck deep survey cruiser of the Meridian Concord's Survey Service, built to stay out for years: a fusion core and warp coils amidships, a hangar for two survey shuttles on the stern platform, a hydroponics garden that feeds most of the crew and a bridge that overhangs the bow like the lantern on an old river boat. Her Deep Survey Charter 7 sends her four years out along the Concord frontier to chart the Veil region and to settle where a faint repeating signal comes from.
+Vesper Lantern is a five-deck deep survey cruiser of the Meridian Concord's Survey Service, built to stay out for years: a fusion core and warp coils amidships, a hangar for two survey shuttles on the stern platform, a hydroponics garden that feeds most of the crew and a bridge that overhangs the bow like the lantern on an old river boat. Her Deep Survey Charter 7 sends her four years out along the Concord frontier to chart the Veil region and to settle where a faint repeating signal comes from.
 
 | | |
 |---|---|
@@ -690,7 +690,7 @@ Crew rumours about the Lighthouse, in order of popularity: it is a navigation be
 
 ### The Wayfinder Class
 
-Six Wayfinder cruisers were built between 2288 and 2297 at Ring Dock 4. They have a 64-person crew, three decks, a stern hangar for two shuttles and an unusually large hydroponics garden. The bridge overhangs the bow so that the helm can see the lane ahead; engineers still say the view is wasted.
+Six Wayfinder cruisers were built between 2288 and 2297 at Ring Dock 4. They have a 64-person crew, five decks, a stern hangar for two shuttles and an unusually large hydroponics garden. The bridge overhangs the bow so that the helm can see the lane ahead; engineers still say the view is wasted.
 
 ### Korvath Reach Customs
 
@@ -735,7 +735,7 @@ A dealer at Cinder once sold a metal tag engraved with twelve dots and a line of
 | Heartbeat | The repeating radio pulse that comes from the Lighthouse, first logged at Kithara in 2261. |
 | The Lamp | The ring of ancient machinery around the Lighthouse neutron star. |
 | Ring Dock | An orbital shipyard of Tessara; Dock 4 built Vesper Lantern. |
-| Wayfinder class | Concord deep survey cruiser class: 64 crew, three decks, stern hangar. |
+| Wayfinder class | Concord deep survey cruiser class: 64 crew, five decks, stern hangar. |
 | Orrery Collegium | The academic league of observatory worlds that keeps the Great Atlas. |
 | Free Ports | Neutral trade stations of the Ashfall guilds. |
 | Compact | Short for the Korvath Reach Compact. |

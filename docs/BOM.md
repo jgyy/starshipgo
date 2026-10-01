@@ -543,7 +543,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SP0 - Port Stair Tower
 
-> Dog-leg stair tower linking all three decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -607,7 +607,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SS0 - Starboard Stair Tower
 
-> Dog-leg stair tower linking all three decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -2269,7 +2269,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SP1 - Port Stair Tower
 
-> Dog-leg stair tower linking all three decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -2332,7 +2332,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SS1 - Starboard Stair Tower
 
-> Dog-leg stair tower linking all three decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -4016,7 +4016,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SP2 - Port Stair Tower
 
-> Dog-leg stair tower linking all three decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -4079,7 +4079,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SS2 - Starboard Stair Tower
 
-> Dog-leg stair tower linking all three decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -6229,7 +6229,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SP3 - Port Stair Tower
 
-> Dog-leg stair tower linking all three decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -6293,7 +6293,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SS3 - Starboard Stair Tower
 
-> Dog-leg stair tower linking all three decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -8067,7 +8067,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SP4 - Port Stair Tower
 
-> Dog-leg stair tower linking all three decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the port side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|
@@ -8130,7 +8130,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 ### SS4 - Starboard Stair Tower
 
-> Dog-leg stair tower linking all three decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
+> Dog-leg stair tower linking all five decks on the starboard side; two 1.4 m flights and a mid-landing per deck pair.
 
 | Property | Value |
 |---|---|

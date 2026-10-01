@@ -65,6 +65,10 @@ jobs:
           python tools/draft/draft.py --out docs/drafts
           git diff --exit-code docs/drafts
           test "$(ls docs/drafts/*.svg | wc -l)" -ge 100
+      - name: Bug ledger is up to date
+        run: |
+          python tools/docs/bugs_ledger.py
+          git diff --exit-code docs/BUGS.md
       - name: Lore and star map are up to date
         run: |
           python tools/specs/gen_lore.py
@@ -158,8 +162,12 @@ jobs:
         run: godot --headless --path godot --import
       - name: Smoke test - build the whole ship from data
         run: godot --headless --path godot -s res://tests/smoke_test.gd
-      - name: Stair test - walk up and down both stair towers through all three decks
+      - name: Stair test - walk up and down both stair towers through all five decks
         run: godot --headless --path godot -s res://tests/stair_test.gd
+      - name: Z-fight test - no visible coplanar faces in the shell, skin, fittings and props
+        run: godot --headless --path godot -s res://tests/zfight_test.gd
+      - name: Round-2 regression test (HUD, deck map, tooling, audio loops, textures imported with mipmaps)
+        run: godot --headless --path godot -s res://tests/round2_test.gd
       - name: UI test - screen discovery, every app driven with synthetic input, alert / door / hangar / jump effects
         shell: bash
         run: |

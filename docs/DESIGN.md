@@ -23,7 +23,7 @@ reaches furthest aft and its stern carries the hangar as a platform.
 | 2 Habitat | +4.0 m | -30 | +18 | 1,064 m2 |
 | 3 Engineering | +0.0 m | -24 | +32 | 1,244 m2 |
 
-The ship is **66 m long and 26 m wide** (the original was ~102 x 36 m with 3,500 m2 per deck, now ~1,050 m2).
+The hull outlines of the original three decks are **66 m long and 26 m wide** (the five-deck ship with its skin and fittings is 111 m long) (the original was ~102 x 36 m with 3,500 m2 per deck, now ~1,050 m2).
 
 ```mermaid
 flowchart LR
@@ -43,6 +43,14 @@ rectangular; every room that touches the bow or stern picks up diagonal, streaml
 polygon whose walls are *edges* (`N/S/E/W` or diagonal `D0`, `D1` ...): furniture footprints are oriented rectangles tested against
 the polygon, wall items hang on any edge, windows can be cut in the hull facets (the bridge wraps around the nose with 13 windows).
 The Godot builder mitres the wall corners, cuts the slabs to the polygon and plates the hull walls on the outside.
+
+### The outer skin (five decks)
+
+The ship now has five decks (Deck 0 sky dome at +12 m ... Deck 4 hold at -4 m). The rooms keep vertical walls; what the outside world sees is a separate **skin**: a loft of closed rings
+(`hull.skin()`, exported in `ship.json`) that encloses every room by >= 0.2 m, leans out ~9 degrees with height, turns the terraced bow and stern into raked ramps, rolls into a keel under
+the hold and a dome over the sky deck. Godot draws it on render layer 2 with back-face culling (invisible from inside), puts lit window panels on it where the rooms have windows, running-light
+belts at the deck boundaries and the exterior fittings (nacelles, deflector, masts, engines, keel fin - `blender/starship/exterior.py`). See the README for the construction diagram and
+`docs/drafts` (G-04 .. G-20) for the lines plan, profile, body plan and sections.
 
 ## 2. Circulation: stairs instead of lifts
 
