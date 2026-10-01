@@ -190,14 +190,14 @@ func _test_state_effects() -> void:
 	ok((hf["mesh"] as Node3D).visible and not (hf["shape"] as CollisionShape3D).disabled, "hangar field on shows plane and collider")
 	# navigation
 	var here := st.current_system
-	ok(st.set_destination("kepler_x"), "destination accepted")
-	ok(st.destination == "kepler_x" and st.route.size() >= 2 and st.eta_days() > 0.0, "route and ETA computed (%s)" % st.eta_text())
-	ok(st.hud_line().contains("KEPLER"), "HUD line shows the destination: " + st.hud_line())
+	ok(st.set_destination("veil"), "destination accepted")
+	ok(st.destination == "veil" and st.route.size() >= 2 and st.eta_days() > 0.0, "route and ETA computed (%s)" % st.eta_text())
+	ok(st.hud_line().contains("VEIL"), "HUD line shows the destination: " + st.hud_line())
 	ok(not st.set_destination("nowhere"), "unknown system rejected")
 	ok(st.jump(), "jump starts")
-	ok(st.current_system == "kepler_x" and st.visited.has("kepler_x") and not st.in_transit, "jump updates the current system (%s -> %s)" % [here, st.current_system])
+	ok(st.current_system == "veil" and st.visited.has("veil") and not st.in_transit, "jump updates the current system (%s -> %s)" % [here, st.current_system])
 	ok(st.destination == "", "destination cleared on arrival")
-	ok(not st.jump("kepler_x"), "cannot jump to where you are")
+	ok(not st.jump("veil"), "cannot jump to where you are")
 	st.set_scram(true)
 	ok(not st.jump("sol"), "no jump with the reactor scrammed")
 	st.set_scram(false)
@@ -334,7 +334,7 @@ func _test_all_apps() -> void:
 		for bus in st.buses:
 			bus["on"] = true
 		st.destination = ""
-		st.current_system = "luyten"
+		st.current_system = "halcyon"
 		st.in_transit = false
 		await process_frame
 
@@ -412,7 +412,7 @@ func _test_clicks() -> void:
 		ok(st.hangar_field_on, "and on again")
 	term.close()
 	# starmap: click a system, PLOT COURSE, JUMP
-	st.current_system = "luyten"
+	st.current_system = "halcyon"
 	st.destination = ""
 	term.open_app("starmap", {"label": "Star table"})
 	await process_frame
@@ -429,9 +429,9 @@ func _test_clicks() -> void:
 	sm.tick(0.01)
 	await process_frame
 	var proj: Dictionary = sm.get("_proj")
-	ok(proj.has("kepler_x"), "star map projected Kepler Gate")
-	if proj.has("kepler_x") and cv != null:
-		var local: Vector2 = proj["kepler_x"]["p"]
+	ok(proj.has("veil"), "star map projected The Veil")
+	if proj.has("veil") and cv != null:
+		var local: Vector2 = proj["veil"]["p"]
 		var gp := cv.get_global_rect().position + local
 		for pressed in [true, false]:
 			var e := InputEventMouseButton.new()
@@ -441,13 +441,13 @@ func _test_clicks() -> void:
 			e.pressed = pressed
 			root.push_input(e, true)
 		await process_frame
-		ok(sm.get("selected") == "kepler_x", "clicking a star selects it (selected=%s)" % str(sm.get("selected")))
+		ok(sm.get("selected") == "veil", "clicking a star selects it (selected=%s)" % str(sm.get("selected")))
 		_click(_find_button(sm, "PLOT COURSE"))
 		await process_frame
-		ok(st.destination == "kepler_x", "PLOT COURSE sets the destination")
+		ok(st.destination == "veil", "PLOT COURSE sets the destination")
 		_click(_find_button(sm, "JUMP"))
 		await process_frame
-		ok(st.current_system == "kepler_x", "JUMP moves the ship (now at %s)" % st.current_system)
+		ok(st.current_system == "veil", "JUMP moves the ship (now at %s)" % st.current_system)
 		# drag rotates, wheel zooms
 		var y0: float = sm.get("yaw")
 		var mm := InputEventMouseMotion.new()
@@ -515,12 +515,12 @@ func _test_computer() -> void:
 	ok(not st.hangar_field_on, "computer: hangar off")
 	cmp.exec("hangar on")
 	ok(st.hangar_field_on, "computer: hangar on")
-	st.current_system = "luyten"
+	st.current_system = "halcyon"
 	st.in_transit = false
-	cmp.exec("dest helios")
-	ok(st.destination == "helios_reach", "computer: dest helios -> %s" % st.destination)
+	cmp.exec("dest sarrow")
+	ok(st.destination == "sarrow", "computer: dest helios -> %s" % st.destination)
 	cmp.exec("jump")
-	ok(st.current_system == "helios_reach", "computer: jump arrives (%s)" % st.current_system)
+	ok(st.current_system == "sarrow", "computer: jump arrives (%s)" % st.current_system)
 	ok(cmp.exec("specs reactor_fusion_core_reactor").contains("reactor"), "computer: specs card")
 	# typing through the real LineEdit
 	var nodes: Array = []

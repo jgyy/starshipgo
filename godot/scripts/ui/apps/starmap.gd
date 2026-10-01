@@ -128,14 +128,14 @@ func build() -> void:
 		dot.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 		r.add_child(dot)
 		wrap_lbl(r, "%s - %s" % [f["name"], f.get("description", "")], 13, T.TEXT)
-	for h in ["none", "low", "medium", "patrolled", "high"]:
+	for h in [0, 1, 2, 3, 4, 5]:
 		var r2 := hb(lg)
 		var d2 := ColorRect.new()
 		d2.color = Lore.hazard_color(h)
 		d2.custom_minimum_size = Vector2(30, 4)
 		d2.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 		r2.add_child(d2)
-		lbl(r2, "route hazard: " + h, 13, T.TEXT_DIM)
+		lbl(r2, "lane hazard %d" % h, 13, T.TEXT_DIM)
 	wrap_lbl(lg, "Disc size = luminosity.  Ring = visited.  Pulsing ring = your position.  Diamond = destination.", 13, T.TEXT_DIM)
 	select(st.destination if st.destination != "" else st.current_system)
 
@@ -168,13 +168,12 @@ func refresh() -> void:
 	if not is_here:
 		info += "\nStraight line %.1f ly  |  by lanes %.1f ly in %d hop(s)  |  ETA %.1f d at warp %.1f" % [dist, lane, maxi(plot.size() - 1, 1), lane / maxf(0.05, st.warp_ly_per_day()), st.warp]
 	_info_l.text = info
-	var worst := "none"
-	var order := ["none", "low", "patrolled", "medium", "high"]
+	var worst := "0"
 	for i in range(plot.size() - 1):
-		var h: String = Lore.route(plot[i], plot[i + 1]).get("hazard", "none")
-		if order.find(h) > order.find(worst):
+		var h := str(int(Lore.route(plot[i], plot[i + 1]).get("hazard", 0)))
+		if int(h) > int(worst):
 			worst = h
-	_route_l.text = "" if is_here else ("Lane: %s  (worst hazard: %s)" % [" > ".join(plot.map(func(x: String) -> String: return Lore.system_name(x))), worst.to_upper()] if plot.size() >= 2 else "No charted lane - dead reckoning only.")
+	_route_l.text = "" if is_here else ("Lane: %s  (worst hazard level %s of 5)" % [" > ".join(plot.map(func(x: String) -> String: return Lore.system_name(x))), worst] if plot.size() >= 2 else "No charted lane - dead reckoning only.")
 	if st.destination == selected:
 		_route_l.text += "   COURSE PLOTTED"
 	_plot_b.disabled = is_here or st.in_transit
@@ -256,7 +255,7 @@ func _draw_map(c: UIW.Canvas) -> void:
 		if not _proj.has(r["a"]) or not _proj.has(r["b"]):
 			continue
 		var touches: bool = r["a"] == st.current_system or r["b"] == st.current_system or r["a"] == selected or r["b"] == selected
-		var col: Color = Lore.hazard_color(r.get("hazard", ""))
+		var col: Color = Lore.hazard_color(r.get("hazard", 0))
 		col.a = 0.85 if (show_all or touches) else 0.16
 		c.draw_line(_proj[r["a"]]["p"], _proj[r["b"]]["p"], col, 1.6 if (show_all or touches) else 1.0, true)
 		if show_all:

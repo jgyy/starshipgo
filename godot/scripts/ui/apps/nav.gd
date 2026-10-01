@@ -136,7 +136,7 @@ func _draw_chart(c: UIW.Canvas) -> void:
 	for rr in [10.0, 20.0, 30.0]:
 		c.draw_arc(ctr, rr * (minf(c.size.x, c.size.y) / 60.0) * _scale, 0, TAU, 48, Color(0.14, 0.35, 0.42, 0.5), 1.0, true)
 	for r in Lore.routes():
-		var col: Color = Lore.hazard_color(r.get("hazard", ""))
+		var col: Color = Lore.hazard_color(r.get("hazard", 0))
 		col.a = 0.35
 		c.draw_line(_to_screen(c, r["a"]), _to_screen(c, r["b"]), col, 1.0, true)
 	for i in range(st.route.size() - 1):

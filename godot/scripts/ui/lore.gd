@@ -121,7 +121,13 @@ static func route_length(path: Array) -> float:
 		total += float(r.get("ly", distance(path[i], path[i + 1])))
 	return total
 
-static func hazard_color(h: String) -> Color:
+## Lane hazard: 0-5 in lore.json (older data used the words none/low/medium/patrolled/high).
+static func hazard_color(hz: Variant) -> Color:
+	if typeof(hz) == TYPE_FLOAT or typeof(hz) == TYPE_INT:
+		var lv := clampi(int(hz), 0, 5)
+		return [Color(0.35, 0.85, 0.55), Color(0.55, 0.88, 0.45), Color(0.8, 0.88, 0.4), Color(1.0, 0.8, 0.3),
+			Color(1.0, 0.58, 0.32), Color(1.0, 0.38, 0.32)][lv]
+	var h := str(hz)
 	match h:
 		"none": return Color(0.35, 0.85, 0.55)
 		"low": return Color(0.65, 0.88, 0.4)
