@@ -198,13 +198,15 @@ class Model:
 
     def _tag(self, verts, matname, bevel=0.0, prim="?"):
         mi = self._mi(matname)
-        faces = {f for v in verts for f in v.link_faces}
+        # ordered containers only: iterating a set of BMesh objects follows memory addresses, which differ
+        # from run to run and made the bevel (and so the exported index buffer) non-reproducible
+        faces = list(dict.fromkeys(f for v in verts for f in v.link_faces))
         for f in faces:
             f.material_index = mi
         if bevel > 0:
-            edges = {e for f in faces for e in f.edges}
+            edges = list(dict.fromkeys(e for f in faces for e in f.edges))
             try:
-                bmesh.ops.bevel(self.cur["bm"], geom=list(edges), offset=bevel, offset_type="OFFSET",
+                bmesh.ops.bevel(self.cur["bm"], geom=edges, offset=bevel, offset_type="OFFSET",
                                 segments=1, affect="EDGES", material=mi)
             except Exception:
                 BEVEL_FAILURES.append((self.name, prim))
@@ -411,6 +413,41 @@ class Model:
         return sum(len(f.verts) - 2 for g in self.groups.values() for f in g["bm"].faces)
 
 
+def canonical_order(bm):
+    """Return a copy of `bm` whose vertices and faces are sorted by position.
+
+    Blender's bevel operator orders its output by pointer address, so the same inputs gave a different
+    vertex/index order (and different GLB bytes) on every run.  Sorting makes the export reproducible.
+    UVs and material indices are kept; faces that repeat another face's vertices are dropped."""
+    uv_src = bm.loops.layers.uv.active
+    verts = sorted(bm.verts, key=lambda v: (round(v.co.x, 4), round(v.co.y, 4), round(v.co.z, 4),
+                                            round(v.co.x, 6), round(v.co.y, 6), round(v.co.z, 6)))
+    pos = {id(v): i for i, v in enumerate(verts)}
+    faces = []
+    for f in bm.faces:
+        idx = [pos[id(v)] for v in f.verts]
+        uvs = [tuple(l[uv_src].uv) for l in f.loops] if uv_src else None
+        k = idx.index(min(idx))  # the bevel emits the same face starting at a different corner each run
+        idx = idx[k:] + idx[:k]
+        if uvs:
+            uvs = uvs[k:] + uvs[:k]
+        faces.append((f.material_index, tuple(idx), uvs))
+    faces.sort(key=lambda t: (t[0], tuple(sorted(t[1])), t[1]))
+    nb = bmesh.new()
+    nv = [nb.verts.new((v.co.x, v.co.y, v.co.z)) for v in verts]
+    uv_dst = nb.loops.layers.uv.verify() if uv_src else None
+    for mi, idx, uvs in faces:
+        try:
+            f = nb.faces.new([nv[i] for i in idx])
+        except ValueError:
+            continue
+        f.material_index = mi
+        if uvs:
+            for l, uv in zip(f.loops, uvs):
+                l[uv_dst].uv = uv
+    return nb
+
+
 def _smooth(bm, angle=math.radians(38)):
     for f in bm.faces:
         f.smooth = True
@@ -419,6 +456,11 @@ def _smooth(bm, angle=math.radians(38)):
             e.smooth = False
         elif len(e.link_faces) != 2:
             e.smooth = False
+
+
+def _freed(old, new):
+    old.free()
+    return new
 
 
 def export(model, path):
@@ -431,6 +473,7 @@ def export(model, path):
         if not bm.faces:
             continue
         bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-5)
+        bm = g["bm"] = _freed(bm, canonical_order(bm))
         _smooth(bm)
         me = bpy.data.meshes.new(gname)
         bm.to_mesh(me)
