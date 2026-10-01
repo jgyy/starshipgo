@@ -51,16 +51,19 @@ ZONING = [
                     "rooms get the diagonal, streamlined walls of the hull. Wedge rooms take equipment along their straight walls."),
     ("Circulation", "A 3 m spine corridor on the centreline, a mid-ship cross passage and two dog-leg stair towers (port and starboard) "
                     "stacked on every deck. There are no lifts. Corridors carry only wall and ceiling equipment so the escape route stays clear."),
-    ("Escape", "Every point of every deck is within 35 m of a stair tower and there are always two towers; stair towers are protected "
+    ("Escape", "%(escape)s There are always two towers; stair towers are protected "
                "spaces with extinguishers, emergency lighting and signage."),
 ]
+ESCAPE_LIMIT = 35.0      # m, design limit of the walking distance to a stair tower
 
 MM = lambda v: int(round(v * 1000))
 
 
 def load(root=ROOT):
-    ship = json.load(open(os.path.join(root, "godot", "data", "ship.json")))
-    cat = {m["id"]: m for m in json.load(open(os.path.join(root, "godot", "data", "catalog.json")))["models"]}
+    with open(os.path.join(root, "godot", "data", "ship.json"), encoding="utf-8") as f:
+        ship = json.load(f)
+    with open(os.path.join(root, "godot", "data", "catalog.json"), encoding="utf-8") as f:
+        cat = {m["id"]: m for m in json.load(f)["models"]}
     return ship, cat
 
 
@@ -98,20 +101,24 @@ def pretty(mid, cat):
 
 
 def room_items(room, cat):
-    """BOM line code -> Counter of model ids (walls, ceilings, floors and table items)."""
+    """(BOM line code -> Counter of model ids, doorway frames, items that belong to no BOM line).
+
+    An item without a (known) BOM line used to be reported as a "doorway frame"; it is its own group now."""
     lines = collections.OrderedDict((l["code"], collections.Counter()) for l in room["bom"])
     arch = collections.Counter()
+    loose = collections.Counter()
     for p in room["props"]:
         b = p.get("b")
-        if b == "ARCH" or b not in lines:
+        if b == "ARCH":
             arch[p["m"]] += 1
+        elif b not in lines:
+            loose[p["m"]] += 1
         else:
             lines[b][p["m"]] += 1
-    return lines, arch
+    return lines, arch, loose
 
 
 def egress_table(ship):
-    [(-6.4, 1.8), (6.4, 1.8)]
     rows = []
     for r in ship["rooms"]:
         if r["id"].startswith("tower") or r["id"].startswith("lobby"):
@@ -121,7 +128,6 @@ def egress_table(ship):
         inside_spine = abs(cx) < 1.6
         to_spine = 0.0 if inside_spine else abs(cx) - 1.5
         dz = abs(cz - 1.8)
-        6.4 - 1.5 if True else 0
         best = to_spine + dz + 4.9
         rows.append((r["deck"], r["id"], r["name"], best))
     return rows
@@ -130,22 +136,32 @@ def egress_table(ship):
 def write_csv(ship, cat, out_dir, specs=None):
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, "bill_of_materials.csv")
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["deck", "room_code", "room", "bom_line", "line_title", "model_id", "family", "item", "mount", "qty",
                     "width_mm", "height_mm", "depth_mm", "function", "why",
                     "unit_mass_kg", "unit_power_typ_w", "unit_price_cr", "total_mass_kg", "total_power_typ_w", "total_price_cr"])
         for r in ship["rooms"]:
-            lines, arch = room_items(r, cat)
+            lines, arch, loose = room_items(r, cat)
+
+            def row(code, title, mid, n, why):
+                m = cat[mid]
+                info = policy.CATEGORY_INFO.get(m["category"], ("", ""))
+                kg, pw, cr = unit_cols(mid, specs)
+                w.writerow([r["deck"], r["code"], r["name"], code, title, mid, m["category"], pretty(mid, cat),
+                            m["mount"], n, MM(m["size"][0]), MM(m["size"][1]), MM(m["size"][2]), info[1], why,
+                            "" if kg is None else kg, "" if pw is None else pw, "" if cr is None else cr,
+                            "" if kg is None else round(kg * n, 2), "" if pw is None else round(pw * n, 1), "" if cr is None else round(cr * n, 2)])
             for l in r["bom"]:
                 for mid, n in sorted(lines[l["code"]].items()):
-                    m = cat[mid]
-                    info = policy.CATEGORY_INFO.get(m["category"], ("", ""))
-                    kg, pw, cr = unit_cols(mid, specs)
-                    w.writerow([r["deck"], r["code"], r["name"], l["code"], l["title"], mid, m["category"], pretty(mid, cat),
-                                m["mount"], n, MM(m["size"][0]), MM(m["size"][1]), MM(m["size"][2]), info[1], l["why"],
-                                "" if kg is None else kg, "" if pw is None else pw, "" if cr is None else cr,
-                                "" if kg is None else round(kg * n, 2), "" if pw is None else round(pw * n, 1), "" if cr is None else round(cr * n, 2)])
+                    row(l["code"], l["title"], mid, n, l["why"])
+            # doorway frames, doors and items outside every BOM line are bought too: the CSV lists every placement
+            for mid, n in sorted(arch.items()):
+                row("ARCH", "Doorway frames", mid, n, "Open doorway between spaces that need no door.")
+            for mid, n in sorted(loose.items()):
+                row("-", "Not in any BOM line", mid, n, "Placed without a BOM line (the audit rule bom-line fails on this).")
+            for mid, n in sorted(collections.Counter(d["m"] for d in ship["doors"] if d["a"] == r["id"]).items()):
+                row("DOOR", "Sliding doors", mid, n, "Pressure-tight compartment door (listed with the first room of the pair).")
     return path
 
 
@@ -172,11 +188,13 @@ def generate(ship, cat, specs=None):
     w("")
     w("| | |")
     w("|---|---|")
-    hl = {d: hulllib.outline(d) for d in sorted(DECK_TEXT)}
+    deck_ids = sorted(decks)
+    # the hull of the ship.json being documented, not whatever hull.py would draw today
+    hl = {d: [tuple(p) for p in ship["hull"][str(d)]] for d in deck_ids if str(d) in ship.get("hull", {})}
     allz = [p[1] for d in hl.values() for p in d]
     allx = [abs(p[0]) for d in hl.values() for p in d]
-    w("| Length overall | %.0f m |" % (max(allz) - min(allz)))
-    w("| Beam | %.0f m |" % (2 * max(allx)))
+    w("| Length overall | %.0f m |" % ((max(allz) - min(allz)) if allz else 0.0))
+    w("| Beam | %.0f m |" % (2 * max(allx) if allx else 0.0))
     w("| Decks | %d (floors at %s m) |" % (len(ship["decks"]), ", ".join("%+.1f" % d["y"] for d in sorted(ship["decks"], key=lambda d: d["y"]))))
     w("| Rooms (incl. circulation) | %d |" % len(ship["rooms"]))
     w("| Doors / arches | %d sliding doors, %d open arches and portals |" % (
@@ -199,30 +217,40 @@ def generate(ship, cat, specs=None):
     w("")
     w("| Deck | Name | Hull area | Rooms | Room area | Items | BOM lines | Mass | Typical load | Value cr |")
     w("|---|---|---|---|---|---|---|---|---|---|")
-    for d in sorted(DECK_TEXT):
+    for d in deck_ids:
         rs = [r for r in ship["rooms"] if r["deck"] == d]
         dt = specagg.blank()
         for r in rs:
             specagg.merge(dt, specagg.room_totals(r, ship, specs))
         sc = (specagg.fmt_kg(dt["kg"]), specagg.fmt_w(dt["typ"]), specagg.fmt_cr(dt["cr"])) if specs else ("", "", "")
-        w("| %d | %s | %.0f m2 | %d | %.0f m2 | %d | %d | %s | %s | %s |" % (d, decks[d]["name"], hulllib.area(hl[d]), len(rs), sum(r["area"] for r in rs),
+        w("| %d | %s | %.0f m2 | %d | %.0f m2 | %d | %d | %s | %s | %s |" % (d, decks[d]["name"], (hulllib.area(hl[d]) if d in hl else 0.0), len(rs), sum(r["area"] for r in rs),
                                                                      sum(len(r["props"]) for r in rs), sum(len(r["bom"]) for r in rs), *sc))
     w("")
     w("### Design principles")
     w("")
+    eg = egress_table(ship)
+    worst = max(eg, key=lambda r: r[3]) if eg else None
+    over = [r for r in eg if r[3] > ESCAPE_LIMIT]
+    if worst is None:
+        escape = "(no rooms)"
+    elif over:
+        escape = "%d room(s) are further than the %.0f m design limit from a stair tower (longest: %s, %.1f m; see section 3)." % (
+            len(over), ESCAPE_LIMIT, worst[2], worst[3])
+    else:
+        escape = "Every room centre is within the %.0f m design limit of a stair tower (longest: %s, %.1f m)." % (ESCAPE_LIMIT, worst[2], worst[3])
     for t, s in ZONING:
-        w("* **%s.** %s" % (t, s))
+        w("* **%s.** %s" % (t, s % {"escape": escape} if "%(escape)s" in s else s))
     w("")
     w("```mermaid")
     w("flowchart LR")
     w("    brief[Room brief and BOM lines<br/>recipes_deck*.py] --> gen[generate_ship.py]")
-    w("    cat[(catalog.json<br/>1000 Blender models)] --> gen")
+    w("    cat[(catalog.json<br/>%d Blender models)] --> gen" % len(cat))
     w("    hull[hull.py<br/>tapered outlines] --> gen")
     w("    pol[policy.py<br/>allowed families] --> aud[audit.py]")
     w("    gen --> ship[(ship.json)]")
     w("    ship --> aud")
     w("    ship --> bom[bom.py -> this document]")
-    w("    ship --> dr[draft.py -> 140+ plan and section sheets]")
+    w("    ship --> dr[draft.py -> plan and section sheets]")
     w("    ship --> game[Godot: build, cull, batch]")
     w("```")
     w("")
@@ -244,18 +272,18 @@ def generate(ship, cat, specs=None):
     w("")
     w("## 3. Means of escape")
     w("")
-    w("Approximate walking distance (door of the room -> spine corridor -> nearest stair tower) for every room; the design limit is 35 m.")
+    w("Approximate walking distance (room centre -> spine corridor -> nearest stair tower) for every room; the design limit is %.0f m." % ESCAPE_LIMIT)
     w("")
     w("| Deck | Room | Walking distance to the nearest stair |")
     w("|---|---|---|")
     for deck, rid, name, dist in egress_table(ship):
-        w("| %d | %s (`%s`) | %.0f m |" % (deck, name, rid, dist))
+        w("| %d | %s (`%s`) | %.1f m%s |" % (deck, name, rid, dist, " **over the limit**" if dist > ESCAPE_LIMIT else ""))
     w("")
     # ---- chapters
     chapter = 3
-    for d in sorted(DECK_TEXT):
+    for d in deck_ids:
         chapter += 1
-        title, text = DECK_TEXT[d]
+        title, text = DECK_TEXT.get(d, (decks[d]["name"], ""))
         w("## %d. Deck %d - %s (floor +%.1f m)" % (chapter, d, title, decks[d]["y"]))
         w("")
         w(text)
@@ -351,8 +379,11 @@ def room_chapter(w, r, ship, cat, st, specs=None):
     if b.get("notes"):
         w("**Notes.** %s" % b["notes"])
         w("")
-    lines, arch = room_items(r, cat)
+    lines, arch, loose = room_items(r, cat)
     doors = [d for d in ship["doors"] if d["a"] == r["id"] or d["b"] == r["id"]]
+    if loose:
+        w("**Items not assigned to a BOM line (%d)**: %s." % (sum(loose.values()), ", ".join("`%s` x%d" % kv for kv in sorted(loose.items()))))
+        w("")
     if doors or arch or wins:
         w("**Openings and architecture**")
         w("")
@@ -414,7 +445,7 @@ def main():
     md = generate(ship, cat, specs)
     out = a.out or os.path.join(a.root, "docs", "BOM.md")
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    with open(out, "w") as f:
+    with open(out, "w", encoding="utf-8", newline="\n") as f:
         f.write(md)
     csv_path = write_csv(ship, cat, os.path.join(os.path.dirname(out), "bom"), specs)
     print(f"{out}: {md.count(chr(10))} lines, {len(md) // 1024} KB; {csv_path}")

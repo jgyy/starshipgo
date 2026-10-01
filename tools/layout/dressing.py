@@ -6,7 +6,7 @@ from regular patterns (runs along a wall, grids, arcs, chairs around a table).
 """
 import math
 
-from shiplib import rot
+from shiplib import rot, as_cats
 
 
 # ------------------------------------------------------------------ geometry helpers
@@ -114,7 +114,6 @@ def tabletop(R, host, cats, n=3, prefer=None):
     w, d = fp[2] - fp[0], fp[3] - fp[1]
     out = []
     slots = [(-0.3, -0.25), (0.3, 0.25), (0.3, -0.25), (-0.3, 0.25), (0.0, 0.0), (0.0, -0.3), (0.0, 0.3)]
-    0
     for (sx, sz) in slots:
         if len(out) >= n:
             break
@@ -146,7 +145,7 @@ def chairs_around(R, cx, cz, hw, hd, cats=("chair",), step=1.0, pred=None, ends=
     if ends:
         for sign in (-1, 1):
             m = R.cat.pick_any(list(cats), pred=pred, rng=R.rng)
-            if m and R.place(m, cx + sign * (hw + 0.4), cz, -90.0 if sign < 0 else 90.0):
+            if m and R.place(m, cx + sign * (hw + 0.4), cz, 90.0 if sign < 0 else -90.0):       # yaw +90 faces +X: toward the table
                 n += 1
     return n
 
@@ -192,7 +191,7 @@ def arc(R, cx, cz, radius, a0, a1, n, pred=None, cats=None, face="centre", singl
         a = math.radians(a0 + (a1 - a0) * (i / max(1, n - 1)))
         x, z = cx + radius * math.cos(a), cz + radius * math.sin(a)
         yaw = yaw_to(x, z, cx, cz) if face == "centre" else yaw_to(cx, cz, x, z)
-        m = R.cat.models[single] if single else R.cat.pick_any(cats, pred=pred, rng=R.rng)
+        m = R.cat.models[single] if single else R.cat.pick_any(as_cats(cats), pred=pred, rng=R.rng)
         if m is None:
             continue
         p = R.place(m, x, z, yaw, margin=margin)
@@ -207,7 +206,7 @@ def row(R, cats, x0, z0, x1, z1, n, yaw=0.0, pred=None, single=None, margin=0.0)
     for i in range(n):
         t = i / max(1, n - 1) if n > 1 else 0.5
         x, z = x0 + (x1 - x0) * t, z0 + (z1 - z0) * t
-        m = R.cat.models[single] if single else R.cat.pick_any(list(cats) if not isinstance(cats, str) else [cats], pred=pred, rng=R.rng)
+        m = R.cat.models[single] if single else R.cat.pick_any(as_cats(cats), pred=pred, rng=R.rng)
         if m is None:
             continue
         p = R.place(m, x, z, yaw, margin=margin)

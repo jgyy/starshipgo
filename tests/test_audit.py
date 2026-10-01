@@ -299,8 +299,10 @@ class RuleTests(unittest.TestCase):
             for r in s["rooms"]:
                 r["zones"] = []
             e["props"].append(prop("crate", 11, 5, scale=[1.0, 1.0, 6.0]))
-        viol = self.expect(self.mutate(f), "walkable")
-        self.assertTrue(any("eng" == v["room"] for v in viol))
+        # the zones were wiped, but the audit derives the door zones from the openings itself, so door-clearance fires too
+        viol = self.run_ship(self.mutate(f))
+        self.assertEqual(rules(viol), ["door-clearance", "walkable"])
+        self.assertTrue(any("eng" == v["room"] and v["rule"] == "walkable" for v in viol))
 
     def test_walkable_pocket_is_a_warning(self):
         def f(e, s):

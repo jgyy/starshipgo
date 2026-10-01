@@ -54,7 +54,6 @@ def link_of(room, o):
 
 def draw_openings(sh, pv, room, detail=True, marks=False):
     ship = room.ship
-    pv.s
     for o in room.openings:
         r = room.opening_seg(o)
         if r is None:
@@ -99,8 +98,6 @@ def draw_openings(sh, pv, room, detail=True, marks=False):
             if other is None or room.id < other:
                 ux, uz = e["u"]
                 # leaf covers half of the opening, parked beside it; centre line of the combined wall is the room edge
-                cx0, cz0 = p0
-                (cx0 - nx * WALL_T / 2 + nx * 0.0, cz0 - nz * WALL_T / 2)
                 t = 0.06
                 w = o["w"]
                 pts = [(p0[0] - nx * t, p0[1] - nz * t), (p0[0] + ux * w / 2 - nx * t, p0[1] + uz * w / 2 - nz * t),
@@ -363,7 +360,7 @@ def draw_dim_chains(sh, pv, room, off=13.0, ext=True):
 
 def family_legend(sh, x, y, cat, props, cols=2, colw=38, maxn=24):
     """Legend of the categories present; returns bottom y."""
-    cs = sorted({p.cat for p in props if p.mount != "ceiling" or True})
+    cs = sorted({p.cat for p in props})
     sh.text(x, y, "FURNITURE FAMILIES", 1.9, bold=True)
     y += 2.2
     n = 0

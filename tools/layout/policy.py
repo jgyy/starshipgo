@@ -180,7 +180,7 @@ ROOM["wardroom"] = set(ROOM.get("wardroom", set())) | {"locker", "table", "chair
 
 def room_key(room_id):
     """Strip the deck digit of circulation rooms (corF2 -> corF, lobby3 -> lobby, towerA1 -> towerA)."""
-    return room_id.rstrip("0123456789") if room_id[-1].isdigit() else room_id
+    return room_id.rstrip("0123456789")
 
 
 def allowed(room_id):

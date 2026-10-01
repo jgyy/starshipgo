@@ -95,7 +95,7 @@ def crossing_edges(cut, room):
             if (da < -1e-9 and db < -1e-9) or (da > 1e-9 and db > 1e-9):
                 continue
             t = da / (da - db)
-            res.append((ha + (hb - ha) * t, e, t * e["len"] if True else 0))
+            res.append((ha + (hb - ha) * t, e, t * e["len"]))
     res.sort(key=lambda r: r[0])
     return res
 
@@ -431,10 +431,11 @@ def room_section_dims(sh, sv, cut, room, iv, info, ship):
     xd = xr + 6.0
     ys = [sv.xy(0, v)[1] for v in (y + h + SLAB_T, y + h, y, y - SLAB_T)]
     sh.chain_v(list(reversed(ys)), xd, ["300", str(int(round(h * 1000))), "300"][::-1], ext_x=xr + 1.0)
-    # floor-to-floor
-    y_ff = y + 4.0
-    xd2 = xr + 13.0
-    sh.dim_v(sv.xy(0, y + 0)[1], sv.xy(0, y_ff)[1], xd2, "4000 F-F" if room.deck > 1 or True else "", ext_x=xr + 1.0)
+    # floor-to-floor: to the next deck above, if the ship has one (the top deck has no floor above it)
+    above = [d["y"] for d in ship.decks if d["y"] > y + 1e-6]
+    if above:
+        y_ff = min(above)
+        sh.dim_v(sv.xy(0, y)[1], sv.xy(0, y_ff)[1], xr + 13.0, "%d F-F" % round((y_ff - y) * 1000), ext_x=xr + 1.0)
     # overall height slab to slab
     # levels on the left
     xlm = xl - 16.0

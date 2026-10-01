@@ -1,5 +1,7 @@
 """Small helpers shared by the deck 1 recipes."""
+import math
 import sys
+
 from dressing import yaw_to
 
 
@@ -45,7 +47,8 @@ def tops(R, host, cat, labels, dxs=None):
         return out
     n = len(labels)
     fp = host["_fp"]
-    w = (fp[2] - fp[0]) if host["yaw"] % 180 < 1 else (fp[3] - fp[1])
+    quarter_turn = 45.0 < abs(host["yaw"]) % 180.0 < 135.0       # yaw -0.4 % 180 is 179.6: take the absolute value first
+    w = (fp[3] - fp[1]) if quarter_turn else (fp[2] - fp[0])
     for i, lab in enumerate(labels):
         if isinstance(lab, tuple):
             c, lb, dx, dz = lab
@@ -56,7 +59,6 @@ def tops(R, host, cat, labels, dxs=None):
         if m is None:
             continue
         # offsets are given in host-local frame (x to the right of the host, z toward its front)
-        import math
         t = math.radians(host["yaw"])
         wx, wz = dx * math.cos(t) + dz * math.sin(t), -dx * math.sin(t) + dz * math.cos(t)
         p = R.on_top(host, m, dx=wx, dz=wz)

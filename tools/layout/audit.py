@@ -59,7 +59,9 @@ RULES (error unless noted)
   stair-consistency    ceiling_holes of a deck == floor_holes of the deck above it (same rects); flights lie inside their
                        tower room; flight A top y == landing y == flight B foot y (and run tops meet the next run).
   hull-containment     room polygon vertices inside the deck hull (3 cm tol); rooms of one deck overlap < 0.05 m2.
-  opening-validity     door/open/window inside its wall span; door/open has a matching opening in the neighbour room
+  ship-structure       (v2) unique room ids, every room on a listed deck, every prop has a model id and a finite pos, every door has a
+                       catalog model, existing rooms and a door opening at its position.
+  opening-validity     door/open/window inside its wall span and 0 <= y0 < y1 <= room height; door/open has a matching opening in the neighbour room
                        (openings on hull edges, or on side S of a room with forcefields, need no neighbour).
 """
 import argparse
@@ -67,13 +69,15 @@ import collections
 import json
 import math
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import hull as hulllib  # noqa: E402
 import policy  # noqa: E402
-from shiplib import WALL_T, rot, obb_corners, rect_poly, _point_in_poly, SURFACE_HOSTS  # noqa: E402
+from shiplib import (WALL_T, rot, obb_corners, rect_poly, _point_in_poly, SURFACE_HOSTS, point_seg_dist,  # noqa: E402,F401
+                     seg_poly_dist, WINDOW_CLEAR, WINDOW_CLEAR_H)
 
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 CELL = 0.2
@@ -81,9 +85,10 @@ RADIUS = 0.32
 AISLE_RADIUS = 0.40
 MIN_OVERLAP_AREA = 1e-4          # 1 cm2
 MIN_OVERLAP_DEPTH = 0.005        # 5 mm (positions are rounded to 1 mm in ship.json)
+TOUCH_TOL = 0.002               # vertical contact within 2 mm is touching, not clashing (ship.json positions are rounded to 1 mm)
 FLAT_H = 0.15                    # floor props this low are flat decals: furniture may stand on / across them
 DEPOT_LIKE = ("depot", "cargo", "hangar", "armory")
-CIRCULATION = ("cor", "lobby", "tower", "lift")
+CIRCULATION = re.compile(r"^(cor[FA]|lobby|tower[AB]|lift[A-Z]?)\d*$")    # spine corridors, lobbies, stair towers (NOT "core")
 
 
 # ====================================================================== geometry helpers
@@ -143,33 +148,6 @@ def polys_intersect(a, b):
         return False, 0.0, 0.0
     ar = overlap_area(a, b)
     return ar > MIN_OVERLAP_AREA, ar, sat_depth(a, b)
-
-
-def point_seg_dist(p, a, b):
-    ex, ez = b[0] - a[0], b[1] - a[1]
-    l2 = ex * ex + ez * ez
-    t = 0.0 if l2 < 1e-12 else max(0.0, min(1.0, ((p[0] - a[0]) * ex + (p[1] - a[1]) * ez) / l2))
-    return math.hypot(p[0] - (a[0] + t * ex), p[1] - (a[1] + t * ez))
-
-
-def _seg_cross(a, b, c, d):
-    def o(p, q, r):
-        return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0])
-    return o(a, b, c) * o(a, b, d) < 0 and o(c, d, a) * o(c, d, b) < 0
-
-
-def seg_poly_dist(a, b, poly):
-    """Distance between segment ab and convex polygon (0 when they touch / overlap)."""
-    if _point_in_poly(a, poly) or _point_in_poly(b, poly):
-        return 0.0
-    n = len(poly)
-    best = 1e9
-    for i in range(n):
-        c, d = poly[i], poly[(i + 1) % n]
-        if _seg_cross(a, b, c, d):
-            return 0.0
-        best = min(best, point_seg_dist(a, c, d), point_seg_dist(b, c, d), point_seg_dist(c, a, b), point_seg_dist(d, a, b))
-    return best
 
 
 def rect_dist_poly_overlap(rect, poly):
@@ -289,22 +267,22 @@ class Room:
         self.key = policy.room_key(self.id)
 
     def is_circulation(self):
-        return self.id.startswith(CIRCULATION)
+        return bool(CIRCULATION.match(self.id))
 
     def inset_dist(self, pt):
         """Smallest distance of pt to the room's wall lines (positive inside)."""
         return min(e.n[0] * (pt[0] - e.a[0]) + e.n[1] * (pt[1] - e.a[1]) for e in self.edges)
 
     def zones(self):
+        """Clearance zones: those the generator wrote plus the ones every door / open opening implies (like Room.block_door),
+        so an opening whose zone the generator forgot to reserve is still protected."""
         z = self.raw.get("zones")
-        if z is not None:
-            return [(zz["kind"], zz["rect"], zz.get("why", "")) for zz in z]
-        out = []     # v1: derive from the openings like Room.block_door
+        out = [(zz["kind"], zz["rect"], zz.get("why", "")) for zz in (z or [])]
         for o in self.openings:
             if o["kind"] not in ("door", "open"):
                 continue
             e = self.edge_by.get(o["side"])
-            if e is None or o["side"].startswith("D"):
+            if e is None or o["side"].startswith("D") or e.hull:
                 continue
             c, w = o["c"], o["w"]
             depth = 2.0 if o["kind"] == "door" else 1.0
@@ -316,8 +294,15 @@ class Room:
                 r = (e.a[0], c - w / 2 - 0.2, e.a[0] + depth, c + w / 2 + 0.2)
             else:
                 r = (e.a[0] - depth, c - w / 2 - 0.2, e.a[0], c + w / 2 + 0.2)
-            out.append(("door", list(r), "door clearance (derived from the opening)"))
+            if not any(all(abs(a - b) <= 0.02 for a, b in zip(r, q[1])) for q in out if q[0] == "door"):
+                out.append(("door", list(r), "door clearance (derived from the opening)"))
         return out
+
+
+def _valid_prop(raw):
+    pos = raw.get("pos") if isinstance(raw, dict) else None
+    return (isinstance(raw.get("m"), str) and isinstance(pos, (list, tuple)) and len(pos) == 3
+            and all(isinstance(v, (int, float)) and math.isfinite(v) for v in pos))
 
 
 class Ctx:
@@ -331,6 +316,10 @@ class Ctx:
         self.unknown_models = set()
         for room in self.rooms:
             for raw in room.raw.get("props", []):
+                if not _valid_prop(raw):
+                    self.viol("error", "ship-structure", room, raw.get("m") if isinstance(raw, dict) else None, None,
+                              f"malformed prop entry {raw!r}: needs an id 'm' and a finite [x, y, z] 'pos'", room.poly[0])
+                    continue
                 mod = catalog.get(raw["m"])
                 if mod is None:
                     self.viol("error", "unknown-model", room, raw["m"], raw.get("b"), f"model '{raw['m']}' is not in the catalog",
@@ -472,10 +461,10 @@ def check_room(ctx, room, allowed_keys):
             continue
         s0, s1 = e.seg(o["c"], o["w"])
         for p in floor_props:
-            if p.hy <= 0.6:
+            if p.hy <= WINDOW_CLEAR_H:
                 continue
             d = seg_poly_dist(s0, s1, p.corners)
-            if d <= 0.5:
+            if d <= WINDOW_CLEAR:
                 V("error", "window-blocked", room, p.m, p.b,
                   f"{p.m} ({p.hy:.2f} m tall) @({p.center[0]:.2f},{p.center[1]:.2f}) is {d:.2f} m from the window on wall "
                   f"{o['side']} at c={o['c']:.2f} w={o['w']:.2f}", p.center)
@@ -606,19 +595,19 @@ def check_room(ctx, room, allowed_keys):
         box = aabb_of(pts)
         y_low = p.y + lo[1] * p.sy
         for q in tall:
-            if not aabb_hit(box, q.aabb) or q.y + q.hy <= y_low:
+            if not aabb_hit(box, q.aabb) or q.y + q.hy <= y_low + TOUCH_TOL:
                 continue
-            ar = overlap_area(pts, q.corners)
-            if ar > MIN_OVERLAP_AREA:
+            hit, ar, _dp = polys_intersect(pts, q.corners)
+            if hit:
                 V("error", "wall-floor-clash", room, p.m, p.b,
                   f"wall item {p.m} (lowest point {y_low - room.y:.2f} m) collides with floor prop {q.m} ({q.hy:.2f} m tall) "
                   f"@({q.center[0]:.2f},{q.center[1]:.2f}); footprints overlap {ar:.3f} m2", q.center, other=q.m)
     for a in ceil_props:
         lowest = a.y + a.mod["bounds_min"][1] * a.sy
         for q in tall:
-            if aabb_hit(a.aabb, q.aabb) and q.y + q.hy > lowest + 1e-6:
-                ar = overlap_area(a.corners, q.corners)
-                if ar > MIN_OVERLAP_AREA:
+            if aabb_hit(a.aabb, q.aabb) and q.y + q.hy > lowest + TOUCH_TOL:
+                hit, ar, _dp = polys_intersect(a.corners, q.corners)
+                if hit:
                     V("error", "ceiling-floor-clash", room, a.m, a.b,
                       f"ceiling item {a.m} (lowest point {lowest:.2f}) is hit by floor prop {q.m} whose top is {q.y + q.hy:.2f} "
                       f"@({q.center[0]:.2f},{q.center[1]:.2f})", q.center, other=q.m)
@@ -657,6 +646,10 @@ def check_room(ctx, room, allowed_keys):
     if not room.id.startswith(("tower", "lift")):
         if not room.raw.get("lights"):
             V("error", "lights", room, None, None, f"room {room.id} has no light entries", centroid(room.poly))
+        for lt in room.raw.get("lights", []) or []:
+            lx, ly, lz = lt["pos"]
+            if room.inset_dist((lx, lz)) < -0.02 or not (room.y - 0.01 <= ly <= room.y + room.h + 0.01):
+                V("error", "lights", room, None, None, f"light at ({lx:.2f}, {ly:.2f}, {lz:.2f}) is outside room {room.id}", (lx, lz))
         if not any(p.mount == "ceiling" and p.cat == "ceilinglight" for p in room.props):
             V("error", "lights", room, None, None, f"room {room.id} has no ceiling-mounted light fixture (category ceilinglight)",
               centroid(room.poly))
@@ -665,6 +658,8 @@ def check_room(ctx, room, allowed_keys):
     if ctx.v2:
         codes = {}
         for ln in room.raw.get("bom", []) or []:
+            if ln.get("code") in codes:
+                V("error", "bom-line", room, None, ln.get("code"), f"BOM line code {ln.get('code')} is used twice in {room.id}", centroid(room.poly))
             codes[ln.get("code")] = ln
         used = collections.Counter()
         for p in room.props:
@@ -699,6 +694,11 @@ def check_room(ctx, room, allowed_keys):
         if o["c"] - o["w"] / 2 < s0 - 0.01 or o["c"] + o["w"] / 2 > s1 + 0.01:
             V("error", "opening-validity", room, None, None,
               f"{o['kind']} on wall {o['side']} at c={o['c']:.2f} w={o['w']:.2f} exceeds the wall span {s0:.2f}..{s1:.2f}", e.point(o["c"]))
+        y0, y1 = o.get("y0", 0.0), o.get("y1", 0.0)
+        if not (-0.01 <= y0 < y1 <= room.h + 0.01) or o["w"] <= 0:
+            V("error", "opening-validity", room, None, None,
+              f"{o['kind']} on wall {o['side']} at c={o['c']:.2f}: height range {y0:.2f}..{y1:.2f} m and width {o['w']:.2f} m must lie "
+              f"within the room (0..{room.h:.2f} m) and be positive", e.point(o["c"]))
 
 
 # ====================================================================== walkability
@@ -1018,6 +1018,35 @@ def check_ship(ctx):
                       f"{st.get('id')}: last flight ends at y {fl[-1]['pos'][1] + fl[-1]['rise']:.3f}, deck {run.get('deck_hi')} floor is {want_hi:.3f}",
                       (fl[-1]["pos"][0], fl[-1]["pos"][2]))
 
+    # ---- ship-structure: ids, decks, doors
+    seen_ids = collections.Counter(r.id for r in ctx.rooms)
+    for rid, n in seen_ids.items():
+        if n > 1:
+            V("error", "ship-structure", ctx.by_id[rid], None, None, f"room id {rid!r} is used by {n} rooms", centroid(ctx.by_id[rid].poly))
+    if ctx.v2:
+        for r in ctx.rooms:
+            if r.deck not in ctx.deck_y:
+                V("error", "ship-structure", r, None, None, f"room {r.id} is on deck {r.deck!r}, which is not in the ship's deck list "
+                  f"{sorted(ctx.deck_y)} (its floor level would silently be 0)", centroid(r.poly))
+    for d in ship.get("doors", []) or []:
+        pos = d.get("pos") or [0, 0, 0]
+        where = (pos[0], pos[2])
+        if d.get("m") not in ctx.cat:
+            V("error", "unknown-model", d.get("a"), d.get("m"), None, f"door model '{d.get('m')}' is not in the catalog", where)
+        ra = ctx.by_id.get(d.get("a"))
+        rb = ctx.by_id.get(d.get("b"))
+        if ra is None or rb is None:
+            V("error", "ship-structure", d.get("a"), d.get("m"), None, f"door joins {d.get('a')!r} and {d.get('b')!r}, a room that does not exist", where)
+            continue
+        hit = False
+        for o in ra.openings:
+            e = ra.edge_by.get(o["side"])
+            if o["kind"] == "door" and e is not None:
+                P = e.point(o["c"])
+                hit = hit or (abs(P[0] - pos[0]) <= 0.05 and abs(P[1] - pos[2]) <= 0.05)
+        if not hit:
+            V("error", "ship-structure", ra, d.get("m"), None, f"door {d.get('m')} at ({pos[0]:.2f},{pos[2]:.2f}) is not at a door opening of {ra.id}", where)
+
     # ---- hull-containment
     hulls = ship.get("hull") or {}
     for room in ctx.rooms:
@@ -1061,12 +1090,15 @@ def check_ship(ctx):
 RULES = ["footprint-overlap", "outside-shell", "door-clearance", "window-blocked", "wall-item-overlap", "wall-item-span", "wall-facing",
          "ceiling-overlap", "floating-floor", "table-support", "hole-clash", "policy-category", "unknown-room-policy", "unknown-model",
          "walkable", "unreachable-pocket", "aisle-width", "density", "duplicates", "bom-line", "lights", "stair-consistency",
-         "hull-containment", "opening-validity", "wall-floor-clash", "ceiling-floor-clash", "too-tall", "tabletop-host", "mount-mismatch"]
+         "hull-containment", "opening-validity", "wall-floor-clash", "ceiling-floor-clash", "too-tall", "tabletop-host", "mount-mismatch",
+         "ship-structure"]
 
 
 def audit(ship, catalog, only_room=None, rules=None):
     """All violations (optionally only room `only_room`, only rule ids in `rules`)."""
     ctx = Ctx(ship, catalog)
+    if only_room and only_room not in ctx.by_id:
+        raise ValueError(f"unknown room {only_room!r}; rooms are: {', '.join(sorted(ctx.by_id))}")
     unknown = sorted({r.id for r in ctx.rooms if r.key not in policy.ROOM})
     for room in ctx.rooms:
         if only_room and room.id != only_room:
@@ -1105,7 +1137,7 @@ def audit_stats(ship, catalog):
             "wall_props": sum(1 for p in room.props if p.mount == "wall"),
             "ceiling_props": sum(1 for p in room.props if p.mount == "ceiling"),
             "table_props": sum(1 for p in room.props if p.mount == "table"),
-            "occupancy": round(sum(p.area for p in fl) / max(room.area, 1.0), 3),
+            "occupancy": round(sum(p.area for p in fl if not p.flat) / max(room.area, 1.0), 3),     # same definition as rule `density`
             "distinct_models": len({p.m for p in room.props if not p.arch}),
             "bom_lines": len(room.raw.get("bom", []) or []),
         })
@@ -1145,7 +1177,11 @@ def main(argv=None):
     a = ap.parse_args(argv)
     with open(a.ship) as f:
         ship = json.load(f)
-    viol = audit(ship, load_catalog(a.catalog), a.room)
+    try:
+        viol = audit(ship, load_catalog(a.catalog), a.room)
+    except ValueError as ex:
+        print(f"error: {ex}", file=sys.stderr)
+        return 2
     errors = sum(1 for v in viol if v["severity"] == "error")
     if a.json:
         print(json.dumps(viol if not a.max else viol[:a.max], indent=1))

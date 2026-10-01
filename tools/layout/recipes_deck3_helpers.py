@@ -83,7 +83,7 @@ def line_z(R, B, ids, x, z, yaw=90.0, gap=0.06, dirn=1):
     return out
 
 
-def ceil_run(R, B, ids, x0, z0, axis="x", gap=0.03, count=None):
+def ceil_run(R, B, ids, x0, z0, axis="x", gap=0.03):
     """Ceiling services (pipes, trays, ducts) laid end to end from (x0, z0) along `axis`; pieces that do not fit are skipped."""
     cur = x0 if axis == "x" else z0
     out = []

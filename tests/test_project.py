@@ -63,6 +63,19 @@ class CatalogTests(unittest.TestCase):
         self.assertGreaterEqual(len(cats), 60)
 
 
+def props_outside(ship):
+    """Props whose origin is not inside their room polygon.  Door frames stand exactly on the wall line; everything else
+    (wall items sit on the wall face, 0.15 m in) must be at least 0.1 m inside."""
+    bad = []
+    for r in ship["rooms"]:
+        for p in r["props"]:
+            x, _, z = p["pos"]
+            margin = -0.01 if p.get("b") == "ARCH" else 0.1
+            if not ShipTests._inside(r["poly"], x, z, margin):
+                bad.append(f"{p['m']} outside {r['id']}")
+    return bad
+
+
 class ShipTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -91,11 +104,7 @@ class ShipTests(unittest.TestCase):
         self.assertGreater(total, 1000, "ship is bare")
 
     def test_props_inside_their_room(self):
-        for r in self.ship["rooms"]:
-            poly = r["poly"]
-            for p in r["props"]:
-                x, _, z = p["pos"]
-                self.assertTrue(self._inside(poly, x, z, -0.4), f"{p['m']} outside {r['id']}")
+        self.assertEqual(props_outside(self.ship), [])
 
     @staticmethod
     def _inside(poly, x, z, margin):

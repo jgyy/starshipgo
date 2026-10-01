@@ -16,6 +16,7 @@ import numpy as np
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "godot", "audio")
 SR = 22050
+WRITTEN = {"ambient_hum.wav", "engine_rumble.wav", "footstep_1.wav", "footstep_2.wav", "footstep_3.wav", "door.wav"}
 FOOT_PEAK = 23000   # int16 peak of footsteps / door, about -3 dBFS (23000/32768)
 
 
@@ -32,7 +33,9 @@ def save(out, name, x, peak=None):
     and normalised to exactly that peak; otherwise it is scaled by 32000 and clipped."""
     if peak is not None:
         x = remove_dc(x)
-        pcm = np.rint(x / np.abs(x).max() * peak).astype("<i2")
+        top = np.abs(x).max()
+        # a silent clip has nothing to normalise: dividing by 0 gave NaN, which int16 turns into -32768 (full-scale click)
+        pcm = np.rint(x / top * peak).astype("<i2") if top > 1e-12 else np.zeros(len(x), "<i2")
     else:
         pcm = np.rint(np.clip(x, -1, 1) * 32000).astype("<i2")
     os.makedirs(out, exist_ok=True)
@@ -99,12 +102,13 @@ def door(out):
 
 
 def generate(out=OUT):
+    """Write every sound into `out`; returns the sorted names of the files written (not whatever else the folder holds)."""
     ambient_hum(out)
     engine_rumble(out)
     for i in range(3):
         footstep(out, i)
     door(out)
-    return sorted(os.listdir(out))
+    return sorted(n for n in os.listdir(out) if n in WRITTEN)
 
 
 if __name__ == "__main__":
