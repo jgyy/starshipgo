@@ -20,6 +20,9 @@ import audit  # noqa: E402
 import hull as hulllib  # noqa: E402
 import policy  # noqa: E402
 
+sys.path.insert(0, os.path.join(HERE, "..", "specs"))
+import specagg  # noqa: E402  (machine datasheet aggregation: mass / power / price columns)
+
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 
 DECK_TEXT = {
@@ -53,6 +56,26 @@ def load(root=ROOT):
     ship = json.load(open(os.path.join(root, "godot", "data", "ship.json")))
     cat = {m["id"]: m for m in json.load(open(os.path.join(root, "godot", "data", "catalog.json")))["models"]}
     return ship, cat
+
+
+def unit_cols(mid, specs):
+    """(mass kg, typical W, price cr) of one unit, or None for each value if the datasheet is missing."""
+    s = specs.get(mid) if specs else None
+    if not s:
+        return None, None, None
+    return s["kg"], s["w"][1], s["cr"]
+
+
+def cell(v, qty=1, kind="kg"):
+    """Table cell for a spec value times qty; blank when the datasheet is missing."""
+    if v is None:
+        return ""
+    v = v * qty
+    if kind == "kg":
+        return ("%.0f" % v) if v >= 100 else ("%.1f" % v)
+    if kind == "w":
+        return "%.0f" % v
+    return "{:,.0f}".format(v)
 
 
 def fmt_size(m):
@@ -98,25 +121,30 @@ def egress_table(ship):
     return rows
 
 
-def write_csv(ship, cat, out_dir):
+def write_csv(ship, cat, out_dir, specs=None):
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, "bill_of_materials.csv")
     with open(path, "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["deck", "room_code", "room", "bom_line", "line_title", "model_id", "family", "item", "mount", "qty",
-                    "width_mm", "height_mm", "depth_mm", "function", "why"])
+                    "width_mm", "height_mm", "depth_mm", "function", "why",
+                    "unit_mass_kg", "unit_power_typ_w", "unit_price_cr", "total_mass_kg", "total_power_typ_w", "total_price_cr"])
         for r in ship["rooms"]:
             lines, arch = room_items(r, cat)
             for l in r["bom"]:
                 for mid, n in sorted(lines[l["code"]].items()):
                     m = cat[mid]
                     info = policy.CATEGORY_INFO.get(m["category"], ("", ""))
+                    kg, pw, cr = unit_cols(mid, specs)
                     w.writerow([r["deck"], r["code"], r["name"], l["code"], l["title"], mid, m["category"], pretty(mid, cat),
-                                m["mount"], n, MM(m["size"][0]), MM(m["size"][1]), MM(m["size"][2]), info[1], l["why"]])
+                                m["mount"], n, MM(m["size"][0]), MM(m["size"][1]), MM(m["size"][2]), info[1], l["why"],
+                                "" if kg is None else kg, "" if pw is None else pw, "" if cr is None else cr,
+                                "" if kg is None else round(kg * n, 2), "" if pw is None else round(pw * n, 1), "" if cr is None else round(cr * n, 2)])
     return path
 
 
-def generate(ship, cat):
+def generate(ship, cat, specs=None):
+    specs = specs or {}
     stats = {s["room"]: s for s in audit.audit_stats(ship, cat)}
     out = []
     w = out.append
@@ -152,15 +180,27 @@ def generate(ship, cat):
     w("| BOM lines | %d |" % total_lines)
     w("| Placed items | %d |" % total_props)
     w("| Distinct models used | %d of %d in the catalogue |" % (len(models_used), len(cat)))
+    if specs:
+        tot = specagg.blank()
+        for r in ship["rooms"]:
+            specagg.merge(tot, specagg.room_totals(r, ship, specs))
+        w("| Installed equipment mass | %s (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |" % specagg.fmt_kg(tot["kg"]))
+        w("| Typical / peak electrical load | %s / %s |" % (specagg.fmt_w(tot["typ"]), specagg.fmt_w(tot["peak"])))
+        w("| Installed generation | %.1f MW |" % (tot["gen_kw"] / 1000.0))
+        w("| Equipment value | %s cr |" % specagg.fmt_cr(tot["cr"]))
     w("")
     w("### Decks")
     w("")
-    w("| Deck | Name | Hull area | Rooms | Room area | Items | BOM lines |")
-    w("|---|---|---|---|---|---|---|")
+    w("| Deck | Name | Hull area | Rooms | Room area | Items | BOM lines | Mass | Typical load | Value cr |")
+    w("|---|---|---|---|---|---|---|---|---|---|")
     for d in (1, 2, 3):
         rs = [r for r in ship["rooms"] if r["deck"] == d]
-        w("| %d | %s | %.0f m2 | %d | %.0f m2 | %d | %d |" % (d, decks[d]["name"], hulllib.area(hl[d]), len(rs), sum(r["area"] for r in rs),
-                                                             sum(len(r["props"]) for r in rs), sum(len(r["bom"]) for r in rs)))
+        dt = specagg.blank()
+        for r in rs:
+            specagg.merge(dt, specagg.room_totals(r, ship, specs))
+        sc = (specagg.fmt_kg(dt["kg"]), specagg.fmt_w(dt["typ"]), specagg.fmt_cr(dt["cr"])) if specs else ("", "", "")
+        w("| %d | %s | %.0f m2 | %d | %.0f m2 | %d | %d | %s | %s | %s |" % (d, decks[d]["name"], hulllib.area(hl[d]), len(rs), sum(r["area"] for r in rs),
+                                                                     sum(len(r["props"]) for r in rs), sum(len(r["bom"]) for r in rs), *sc))
     w("")
     w("### Design principles")
     w("")
@@ -215,21 +255,23 @@ def generate(ship, cat):
         w(text)
         w("")
         rs = [r for r in ship["rooms"] if r["deck"] == d]
-        w("| Code | Room | Area | Height | Items | BOM lines | Floor occupancy |")
-        w("|---|---|---|---|---|---|---|")
+        w("| Code | Room | Area | Height | Items | BOM lines | Floor occupancy | Mass | Typical load | Value cr |")
+        w("|---|---|---|---|---|---|---|---|---|---|")
         for r in rs:
             s = stats.get(r["id"], {})
-            w("| [%s](#%s) | %s | %.1f m2 | %.1f m | %d | %d | %.0f %% |" % (r["code"], anchor(r), r["name"], r["area"], r["height"],
-                                                                     len(r["props"]), len(r["bom"]), 100 * s.get("occupancy", 0.0)))
+            rtot = specagg.room_totals(r, ship, specs)
+            sc = (specagg.fmt_kg(rtot["kg"]), specagg.fmt_w(rtot["typ"]), specagg.fmt_cr(rtot["cr"])) if specs else ("", "", "")
+            w("| [%s](#%s) | %s | %.1f m2 | %.1f m | %d | %d | %.0f %% | %s | %s | %s |" % (r["code"], anchor(r), r["name"], r["area"], r["height"],
+                                                                                  len(r["props"]), len(r["bom"]), 100 * s.get("occupancy", 0.0), *sc))
         w("")
         for r in rs:
-            room_chapter(w, r, ship, cat, stats.get(r["id"], {}))
+            room_chapter(w, r, ship, cat, stats.get(r["id"], {}), specs)
     w("## %d. Index of models used" % (chapter + 1))
     w("")
     w("Every distinct model in the ship with its total quantity and the rooms that use it.")
     w("")
-    w("| Model | Family | Mount | Size mm (W x H x D) | Qty | Rooms |")
-    w("|---|---|---|---|---|---|")
+    w("| Model | Family | Mount | Size mm (W x H x D) | Unit mass kg | Unit typ. W | Unit price cr | Qty | Rooms |")
+    w("|---|---|---|---|---|---|---|---|---|")
     use = collections.defaultdict(lambda: collections.Counter())
     for r in ship["rooms"]:
         for p in r["props"]:
@@ -239,7 +281,9 @@ def generate(ship, cat):
     for mid in sorted(use):
         m = cat[mid]
         rooms = ", ".join("%s x%d" % (k, v) if v > 1 else k for k, v in sorted(use[mid].items()))
-        w("| `%s` | %s | %s | %s | %d | %s |" % (mid, m["category"], m["mount"], fmt_size(m), sum(use[mid].values()), rooms))
+        kg, pw, cr = unit_cols(mid, specs)
+        w("| `%s` | %s | %s | %s | %s | %s | %s | %d | %s |" % (mid, m["category"], m["mount"], fmt_size(m), cell(kg), cell(pw, 1, "w"), cell(cr, 1, "cr"),
+                                                              sum(use[mid].values()), rooms))
     w("")
     return "\n".join(out) + "\n"
 
@@ -258,7 +302,8 @@ def anchor(r):
     return keep.replace(" ", "-")
 
 
-def room_chapter(w, r, ship, cat, st):
+def room_chapter(w, r, ship, cat, st, specs=None):
+    specs = specs or {}
     w("### %s - %s" % (r["code"], r["name"]))
     w("")
     b = r["brief"]
@@ -278,6 +323,12 @@ def room_chapter(w, r, ship, cat, st):
     if b.get("crew"):
         w("| Design occupancy | %s persons |" % b["crew"])
     w("| Items placed / distinct models | %d / %d |" % (len(r["props"]), st.get("distinct_models", 0)))
+    if specs:
+        rtot = specagg.room_totals(r, ship, specs)
+        w("| Installed mass / value | %s / %s cr |" % (specagg.fmt_kg(rtot["kg"]), specagg.fmt_cr(rtot["cr"])))
+        w("| Electrical load idle / typical / peak | %s / %s / %s |" % (specagg.fmt_w(rtot["idle"]), specagg.fmt_w(rtot["typ"]), specagg.fmt_w(rtot["peak"])))
+        if rtot["gen_kw"] or rtot["cap_kwh"]:
+            w("| Generation / storage | %.0f kW / %.0f kWh |" % (rtot["gen_kw"], rtot["cap_kwh"]))
     w("| Floor occupancy | %.0f %% (floor-standing footprints / floor area) |" % (100 * st.get("occupancy", 0.0)))
     w("| Lights | %d real lights, %d ceiling fixtures |" % (len(r["lights"]), sum(1 for p in r["props"] if cat[p["m"]]["category"] == "ceilinglight")))
     w("")
@@ -319,12 +370,18 @@ def room_chapter(w, r, ship, cat, st):
         w("*Why:* %s" % l["why"])
         w("")
         if items:
-            w("| Qty | Model | Family | Mount | Size mm (W x H x D) | Function of the family |")
-            w("|---|---|---|---|---|---|")
+            w("| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |")
+            w("|---|---|---|---|---|---|---|---|---|")
+            lt = specagg.blank()
             for mid, cnt in sorted(items.items(), key=lambda kv: (cat[kv[0]]["category"], kv[0])):
                 m = cat[mid]
                 info = policy.CATEGORY_INFO.get(m["category"], ("", ""))
-                w("| %d | `%s` | %s | %s | %s | %s |" % (cnt, mid, info[0] or m["category"], m["mount"], fmt_size(m), md_escape(info[1])))
+                kg, pw, cr = unit_cols(mid, specs)
+                specagg.add(lt, mid, specs, cnt)
+                w("| %d | `%s` | %s | %s | %s | %s | %s | %s | %s |" % (cnt, mid, info[0] or m["category"], m["mount"], fmt_size(m), cell(kg, cnt), cell(pw, cnt, "w"),
+                                                                      cell(cr, cnt, "cr"), md_escape(info[1])))
+            if specs:
+                w("| | **Line subtotal** | | | | **%s** | **%s** | **%s** | |" % (cell(lt["kg"]), cell(lt["typ"], 1, "w"), cell(lt["cr"], 1, "cr")))
             w("")
     # room totals by family
     fam = collections.Counter(cat[p["m"]]["category"] for p in r["props"])
@@ -347,12 +404,13 @@ def main():
     ap.add_argument("--out", default=None, help="markdown output (default docs/BOM.md)")
     a = ap.parse_args()
     ship, cat = load(a.root)
-    md = generate(ship, cat)
+    specs = specagg.load_specs(a.root)
+    md = generate(ship, cat, specs)
     out = a.out or os.path.join(a.root, "docs", "BOM.md")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, "w") as f:
         f.write(md)
-    csv_path = write_csv(ship, cat, os.path.join(os.path.dirname(out), "bom"))
+    csv_path = write_csv(ship, cat, os.path.join(os.path.dirname(out), "bom"), specs)
     print(f"{out}: {md.count(chr(10))} lines, {len(md) // 1024} KB; {csv_path}")
 
 

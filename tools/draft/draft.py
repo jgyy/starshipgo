@@ -59,11 +59,12 @@ def build_sheets(ship, only=None):
     listing = [(sh.num, sh.title, sh.scale) for sh in g] + [("G-16", "Drawing index, legend and symbols", "NTS")] + \
               [(sh.num, sh.title, sh.scale) for sh in k]
     g.append(sheets_misc.index_sheet(ship, listing))
-    return g + k + room_sheets
+    import sheets_spec   # specification sheets S-01.. (power diagram, budgets, machine datasheets); none if specs.json is missing
+    return g + k + sheets_spec.spec_sheets(ship) + room_sheets
 
 
 def write_index(out, sheets, ship):
-    groups = [("General arrangement and contact sheets", lambda s: s.num[0] in "GK")]
+    groups = [("General arrangement and contact sheets", lambda s: s.num[0] in "GK"), ("Specification sheets (power, budgets, machine datasheets)", lambda s: s.num[0] == "S")]
     for d in (1, 2, 3):
         groups.append(("Deck %d - %s (room sheets)" % (d, ship.deck_name[d]), (lambda dd: lambda s: s.num[0] == "R" and s.deck == "DECK %d" % dd)(d)))
     lines = ["# Starshipgo engineering drawings", "",

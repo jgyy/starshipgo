@@ -60,6 +60,20 @@ jobs:
           python tools/draft/draft.py --out docs/drafts
           git diff --exit-code docs/drafts
           test "$(ls docs/drafts/*.svg | wc -l)" -ge 100
+      - name: Lore and star map are up to date
+        run: |
+          python tools/specs/gen_lore.py
+          git diff --exit-code godot/data/lore.json docs/LORE.md
+      - name: Software specification is up to date
+        run: |
+          python tools/specs/gen_software.py
+          git diff --exit-code godot/data/software.json docs/SOFTWARE_SPEC.md
+      - name: Machine datasheets, ship spec and BOM columns are up to date
+        run: |
+          python tools/specs/gen_specs.py
+          python tools/specs/gen_ship_spec.py
+          python tools/layout/bom.py
+          git diff --exit-code godot/data/specs.json docs/MACHINE_SPECS.md docs/specs docs/SHIP_SPEC.md docs/BOM.md docs/bom
 
   blender:
     name: Blender headless (1000 models + stairs + hull)
