@@ -253,3 +253,106 @@ def f_provisions(R, B):
     for x, z in ((-7.0, -4.5), (-5.0, -7.9), (-5.0, -0.6)):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), -6.0, -4.5, 0.0, y=R.y + R.h)
+
+
+# ----------------------------------------------------------------------------------------------- WATER RECLAMATION PLANT
+def f_water(R, B):
+    R.describe(
+        "The Water Reclamation Plant recovers drinking-quality water from every source on the ship (showers, sinks, galley, laundry, "
+        "humidity condensate and the waste plant's liquor): grey water goes in at the sump, passes the filters and membranes, "
+        "is sterilised, tested and ends in the potable tank that feeds the ship's mains.",
+        basis="Sized for 120 crew at 100 l/person/day = 12 m3/day of grey water at a 96 % recovery (11.5 m3/day returned), so the "
+              "RO skid is rated 0.5 m3/h (24 h a day). The potable tank holds 24 h of supply (12 m3 incl. the Deck-3 buffer). "
+              "Process order along the south wall follows the flow: sump, grey-water processor, filtration, reverse osmosis, "
+              "distillation / UV sterilising, potable storage; 1.2 m aisle in front of the train, the entry lane from the door is kept "
+              "2.6 m wide, pumps stand on their own row so noisy machines are on the other side of the aisle from the control desk.",
+        crew=2,
+        adjacency="Forward spine corridor (west door); Antimatter Containment across the corridor; Waste & Recycling is directly "
+                  "south; Life Support (Deck 3) above feeds the grey-water riser and takes the potable return.",
+        notes="Tapered bow compartment: the bulky vessels sit on the hull facets, the process train on the straight south wall.")
+    R.line("Ceiling lighting", "Cool-white panels at 3.5 m pitch (350 lux) over the aisles, with the lamps on the process train at gauge level.")
+    lights(R, spacing=3.5, color="#e6fbff", energy=1.5)
+
+    R.line("Grey-water sump and pump row",
+           "Grey water arrives in a sump and is lifted by a piston pump and a circulation pump (duty / standby) into the process train; the pump row stands "
+           "in front of the entry lane, back to the north, fronts facing the train so a technician sees the gauges and the sight glasses.")
+    line_x(R, B, ["tank_sump_tank", "tank_piston_pump_skid", "tank_circulation_pump"], 4.7, -11.95, 0.0, gap=0.2)
+
+    R.line("Process train (south wall)",
+           "Left to right along the wall in flow order: grey-water processor (settles solids), filtration unit (sand and carbon), reverse-osmosis "
+           "skid (removes salts, 96 % recovery), distillation column (polishing), UV purifier (final sterilising), and the 12 m3 potable tank. "
+           "Putting them in a row keeps each pipe joint short and lets one operator walk the whole process.")
+    wall_row(R, B, "S", ["watertank_greywater_processor", "tank_filtration_unit", "watertank_reverse_osmosis_skid",
+                          "watertank_uv_water_purifier", "watertank_potable_water_tank"], 2.6, gap=0.12)
+    R.line("Process pipework, valves and gauges (south wall, above the train)",
+           "Pipes carrying the water between stages run along the wall above the vessels, with a flow meter, pressure gauges and isolating valves "
+           "at gauge height so every stage can be isolated and read without climbing.")
+    wall_run(R, B, "S", "pipe_insulated_wrapped", 2.6, 11.0, 3.2)
+    for x, mid in ((3.6, "valve_flow_meter"), (5.4, "valve_pressure_regulator"), (6.9, "valve_dial_gauge"), (8.3, "valve_gauge_cluster"),
+                   (9.6, "valve_sight_glass"), (10.7, "valve_gate_valve_wheel")):
+        wall_y(R, B, "S", mid, x, bottom=2.25)
+
+    R.line("Hull-facet vessels (north-east facets)",
+           "The tall vessels - distillation of the condensate stream, the condensate collector and the water recycler - stand on "
+           "the hull facets, one per facet so the pipes reach them from the north wall trunk and the floor load is carried by the hull frames; "
+           "fronts face the entry lane.")
+    aw(R, B, "D1", "watertank_distillation_column", 0.97)
+    aw(R, B, "D3", "watertank_condensate_collector", 0.9)
+    aw(R, B, "D5", "watertank_water_recycler", 0.78)
+
+    R.line("Water quality laboratory bench (west wall, north of the door)",
+           "A wet bench with a sink and a mass spectrometer test every batch before it enters the potable tank (conductivity, pH, TOC, "
+           "bacteria); the lab corner is next to the door so the technician can reach the sample port without crossing the plant.")
+    bench = aw(R, B, "W", "labbench_wet_bench_sink", -16.45)
+    aw(R, B, "W", "analyzer_mass_spectrometer", -18.45)
+    if bench:
+        tops(R, B, bench, ["analyzer_gas_chromatograph", "analyzer_centrifuge"], [(-0.45, 0.0), (0.45, 0.0)])
+    put(R, B, "labbench_lab_stool", 3.1, -16.45, 90.0)
+    wall_y(R, B, "W", "display_vitals_monitor", -16.45, bottom=2.0, check=False)
+
+    R.line("Plant control console and seat (west wall, south of the door)",
+           "The operator monitors flow, pressure and water quality from a console near the door, with the whole process train and the pump row in view "
+           "and an alarm display above; a keyboard terminal on the desk lets the operator set the duty pump and the dosing.")
+    con = aw(R, B, "W", "console_environmental", -11.45)
+    seat_for(R, B, con, "seat_ops_chair")
+    if con:
+        tops(R, B, con, ["terminal_keyboard"], [(0.0, 0.15)])
+    wall_y(R, B, "W", "display_power_board", -11.45, bottom=2.1, check=False)
+    aw(R, B, "W", "cabinet_utility_cabinet", -9.7)
+
+    R.line("Dosing chemicals and spill containment (north-east)",
+           "Chlorine-free polishing still needs anti-scalant and cleaning chemicals: two drums stand on a spill sump in the north corner, away from the lab and the door, with an eye wash and a spill kit so a leak is contained and treated at once.")
+    put(R, B, "barrel_chemical_drum_hazard", 5.8, -16.4, 0.0)
+    put(R, B, "barrel_plastic_drum_lidded", 6.6, -16.0, 0.0)
+    put(R, B, "safety_spill_kit_bin", 5.2, -15.9, 0.0)
+    wall_y(R, B, "D2", "safety_eye_wash_station", 0.9, 1.1)
+
+    R.line("Spare membranes and filter cartridges",
+           "RO membranes and carbon cartridges last about six months; spares for one change stand in a parts-bin stand by the lab so the "
+           "technician can change a stage without fetching them from the depot.")
+    put(R, B, "storagebin_parts_bins_stand", 3.5, -18.5, 0.0)
+
+    R.line("Service cart",
+           "A diagnostic cart is kept by the lab for the weekly inspection; it stands in the north-west corner clear of the entry lane.")
+    put(R, B, "engtool_diagnostic_cart", 3.6, -17.3, 90.0)
+
+    R.line("Overhead pipes and trays",
+           "Insulated feed and return lines and cable trays run overhead from the grey-water riser by the door to the process train and out to "
+           "the potable mains; the floor stays clear.")
+    ceil_run(R, B, ["pipe_ceiling_insulated_pair"] * 4, 3.0, -10.4, "x")
+    ceil_run(R, B, ["pipe_ceiling_flanged_twin"] * 3, 3.0, -12.9, "x")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 2, 3.6, -15.8, "x")
+
+    R.line("Safety and signs",
+           "Biohazard sign (grey water carries pathogens), wet-floor stands on the aisle, exit sign above the door, extinguishers at both ends of the "
+           "train and sprinkler / dome camera in the ceiling.")
+    sign_at(R, B, "S", "sign_hazard_biohazard", 12.0, 2.9)
+    sign_at(R, B, "W", "sign_emergency_exit", -14.0, 2.9)
+    sign_at(R, B, "W", "sign_dept_engineering", -17.0, 2.9)
+    fe(R, B, "N", 2.25, y=1.9)
+    fe(R, B, "S", 12.3)
+    put(R, B, "sign_wet_floor_stand", 7.5, -10.7, 0.0)
+    for x, z in ((6.0, -10.7), (10.0, -10.7)):
+        R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
+    R.place(mm(B, "camera_dome_ceiling"), 6.5, -13.0, 0.0, y=R.y + R.h)
+    wall_y(R, B, "W", "warnlight_red_alert_wall_unit", -13.0, bottom=2.9, check=False)
