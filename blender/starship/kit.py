@@ -445,6 +445,7 @@ def canonical_order(bm):
         if uvs:
             for l, uv in zip(f.loops, uvs):
                 l[uv_dst].uv = uv
+    nb.normal_update()  # _smooth() reads face angles
     return nb
 
 
