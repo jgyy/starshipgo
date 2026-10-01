@@ -326,7 +326,19 @@ def exterior(S):
         ln = math.sqrt(1.0 + vz * vz)
         wins.append({"room": "hangar", "c": [0.0, round(S.deck_y(3) + 3.5, 3), round(hit[1], 3)], "u": [1.0, 0.0, 0.0],
                      "v": [0.0, round(1.0 / ln, 4), round(vz / ln, 4)], "w": 14.0, "h": round(7.0 * ln, 3), "kind": "mouth"})
-    return {"skin": sk, "ext_windows": wins, "exterior": exterior_fittings(sk, S)}
+    belts = []
+    for y, col in ((-0.3, "#33e0ff"), (3.7, "#ffab1f"), (7.7, "#cfe2ff"), (11.7, "#33e0ff")):
+        poly = hulllib.skin_polygon(sk, y)
+        cx, cz = sk["center"]
+        pts = []
+        for i, (x, z) in enumerate(poly):
+            if i % 2:
+                continue
+            dx, dz = x - cx, z - cz
+            ln = math.hypot(dx, dz) or 1.0
+            pts.append([round(x + dx / ln * 0.07, 2), round(z + dz / ln * 0.07, 2)])
+        belts.append({"y": y, "color": col, "pts": pts})
+    return {"skin": sk, "ext_windows": wins, "exterior": exterior_fittings(sk, S), "belts": belts}
 
 
 def skin_top(sk, x, z, y_from=40.0):

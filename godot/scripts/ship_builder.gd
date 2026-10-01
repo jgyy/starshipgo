@@ -143,6 +143,7 @@ func build() -> void:
 	_build_skin()
 	_build_exterior_windows()
 	_build_exterior_fittings()
+	_build_belts()
 	for s in ship.get("stairs", []):
 		_build_stairs(s)
 	print("ship built: %d rooms, %d props (%d multimeshes), %d lights, %d doors, %d stairs, %d distinct models" % [
@@ -826,6 +827,41 @@ func _build_exterior_fittings() -> void:
 		inst.scale = Vector3.ONE * sc
 		_set_layers(inst, 2)
 		add_child(inst)
+
+## Running-light belts around the skin at the deck boundaries (ship.json "belts").
+func _build_belts() -> void:
+	for belt in ship.get("belts", []):
+		var pts: Array = belt["pts"]
+		var y: float = belt["y"]
+		var v := PackedVector3Array()
+		var nn := PackedVector3Array()
+		var c: Array = ship["skin"]["center"]
+		for i in pts.size():
+			var a: Array = pts[i]
+			var b: Array = pts[(i + 1) % pts.size()]
+			var pa := Vector3(a[0], y, a[1])
+			var pb := Vector3(b[0], y, b[1])
+			var out := Vector3((pa.x + pb.x) * 0.5 - float(c[0]), 0.0, (pa.z + pb.z) * 0.5 - float(c[1])).normalized()
+			var q := [pa + Vector3.DOWN * 0.07, pb + Vector3.DOWN * 0.07, pb + Vector3.UP * 0.07, pa + Vector3.UP * 0.07]
+			for tri in [[0, 1, 2], [0, 2, 3]]:
+				var p0: Vector3 = q[tri[0]]; var p1: Vector3 = q[tri[1]]; var p2: Vector3 = q[tri[2]]
+				if (p1 - p0).cross(p2 - p0).dot(out) > 0.0:
+					var t := p1; p1 = p2; p2 = t
+				v.append(p0); v.append(p1); v.append(p2)
+				nn.append(out); nn.append(out); nn.append(out)
+		var arrays := []
+		arrays.resize(Mesh.ARRAY_MAX)
+		arrays[Mesh.ARRAY_VERTEX] = v
+		arrays[Mesh.ARRAY_NORMAL] = nn
+		var mesh := ArrayMesh.new()
+		mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+		var mi := MeshInstance3D.new()
+		mi.name = "Belt_%d" % int(y * 10)
+		mi.mesh = mesh
+		mi.material_override = ShipMaterials.emissive(Color.from_string(belt["color"], Color.WHITE), 1.6)
+		mi.layers = 2
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		add_child(mi)
 
 func _set_layers(n: Node, mask: int) -> void:
 	if n is VisualInstance3D:

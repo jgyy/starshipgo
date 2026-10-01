@@ -26,6 +26,9 @@ import specagg  # noqa: E402  (machine datasheet aggregation: mass / power / pri
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 
 DECK_TEXT = {
+    0: ("Sky Deck", "The sky deck is a lens-shaped dome on top of the ship, away from the engines and under the widest sky: "
+        "star cartography in the bow where the great star map is read, a briefing theatre, the wardroom and bar, the library, "
+        "an arboretum, the observatory and the flag officer's suite."),
     1: ("Command Deck", "The command deck sits at the top of the ship and reaches furthest forward: the bridge overhangs the bow so the "
         "crew has an unobstructed view ahead over the tapered nose. Everything that steers, decides or communicates is here, "
         "with the officers' country aft where it is quietest and furthest from the engines."),
@@ -35,12 +38,15 @@ DECK_TEXT = {
     3: ("Engineering Deck", "The engineering deck is the ship's machinery floor: life support and the computer core forward, main "
         "engineering and power distribution amidships and aft, cargo and spares next to the hangar so stores never cross the crew "
         "areas, and the hangar on the stern platform where craft can launch straight aft."),
+    4: ("Hold Deck", "The hold deck is the keel: antimatter containment as low and as far from the crew as the ship allows, the "
+        "provisions hold and cold store, water reclamation and waste plants, the fabrication hall, auxiliary control and the "
+        "main cargo hold and drone bay at the stern."),
 }
 
 ZONING = [
     ("Hull lines", "The hull is drafted as one closed, convex outline per deck: an elliptical-sine bow that is tangent to a 26 m "
-                   "parallel mid-body, then a rounded counter that tapers to a narrow transom. The decks are terraced like a cruise "
-                   "ship (Deck 1 overhangs the bow, Deck 3 extends aft to form the hangar platform)."),
+                   "parallel mid-body, then a rounded counter that tapers to a narrow transom. The five decks are terraced (Deck 1 overhangs the bow, Deck 3 extends aft to form the hangar platform, Deck 0 is a dome on top, Deck 4 a tapering keel) "
+                   "and wrapped in a smooth, flared and raked outer skin lofted from the room volumes."),
     ("Room shapes", "Rooms are drafted on a rectangular grid and clipped by the hull: amidships rooms stay rectangular, bow and stern "
                     "rooms get the diagonal, streamlined walls of the hull. Wedge rooms take equipment along their straight walls."),
     ("Circulation", "A 3 m spine corridor on the centreline, a mid-ship cross passage and two dog-leg stair towers (port and starboard) "
@@ -166,12 +172,12 @@ def generate(ship, cat, specs=None):
     w("")
     w("| | |")
     w("|---|---|")
-    hl = {d: hulllib.outline(d) for d in (1, 2, 3)}
+    hl = {d: hulllib.outline(d) for d in sorted(DECK_TEXT)}
     allz = [p[1] for d in hl.values() for p in d]
     allx = [abs(p[0]) for d in hl.values() for p in d]
     w("| Length overall | %.0f m |" % (max(allz) - min(allz)))
     w("| Beam | %.0f m |" % (2 * max(allx)))
-    w("| Decks | 3 (floors at +0.0, +4.0, +8.0 m) |")
+    w("| Decks | %d (floors at %s m) |" % (len(ship["decks"]), ", ".join("%+.1f" % d["y"] for d in sorted(ship["decks"], key=lambda d: d["y"]))))
     w("| Rooms (incl. circulation) | %d |" % len(ship["rooms"]))
     w("| Doors / arches | %d sliding doors, %d open arches and portals |" % (
         len(ship["doors"]), sum(1 for r in ship["rooms"] for o in r["openings"] if o["kind"] == "open") // 2 +
@@ -193,7 +199,7 @@ def generate(ship, cat, specs=None):
     w("")
     w("| Deck | Name | Hull area | Rooms | Room area | Items | BOM lines | Mass | Typical load | Value cr |")
     w("|---|---|---|---|---|---|---|---|---|---|")
-    for d in (1, 2, 3):
+    for d in sorted(DECK_TEXT):
         rs = [r for r in ship["rooms"] if r["deck"] == d]
         dt = specagg.blank()
         for r in rs:
@@ -247,7 +253,7 @@ def generate(ship, cat, specs=None):
     w("")
     # ---- chapters
     chapter = 3
-    for d in (1, 2, 3):
+    for d in sorted(DECK_TEXT):
         chapter += 1
         title, text = DECK_TEXT[d]
         w("## %d. Deck %d - %s (floor +%.1f m)" % (chapter, d, title, decks[d]["y"]))

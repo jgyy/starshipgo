@@ -421,11 +421,93 @@ def _smooth(bm, angle=math.radians(38)):
             e.smooth = False
 
 
+ZFIGHT_EPS = 0.0015       # faces closer than this to one plane cannot be ordered by the depth buffer
+ZFIGHT_LIFT = 0.003       # the smaller of two coplanar overlapping faces is lifted by this much along its normal
+ZFIGHT_FIXED = []         # (model name, faces lifted) collected during a build (reported by build_all)
+
+
+def _poly2d(face, u, v):
+    return [(vt.co.dot(u), vt.co.dot(v)) for vt in face.verts]
+
+
+def _convex_overlap(a, b):
+    """Separating-axis overlap test of two convex 2D polygons (interiors overlap by more than a sliver)."""
+    for poly in (a, b):
+        n = len(poly)
+        for i in range(n):
+            p, q = poly[i], poly[(i + 1) % n]
+            ax, ay = -(q[1] - p[1]), q[0] - p[0]
+            ln = math.hypot(ax, ay)
+            if ln < 1e-12:
+                continue
+            ax, ay = ax / ln, ay / ln
+            pa = [ax * x + ay * y for x, y in a]
+            pb = [ax * x + ay * y for x, y in b]
+            if max(pa) <= min(pb) + 1e-5 or max(pb) <= min(pa) + 1e-5:
+                return False
+    return True
+
+
+def fix_zfight(model, passes=8):
+    """Lift one face of every pair of coplanar, same-facing, overlapping faces of different materials.
+
+    Such a pair (an inlaid light strip flush with its panel, a screen quad on its bezel ...) gives the depth buffer the same
+    depth for both, so the two surfaces flicker against each other as the camera moves.  The smaller face of the pair
+    (a detail on a larger surface) is moved ZFIGHT_LIFT metres along its normal; returns the number of faces lifted."""
+    lifted_total = 0
+    for gname, g in model.groups.items():
+        bm = g["bm"]
+        if len(bm.faces) < 2:
+            continue
+        for _ in range(passes):
+            bm.normal_update()
+            buckets = {}
+            for f in bm.faces:
+                if f.calc_area() < 1e-8:
+                    continue
+                n = f.normal
+                d = n.dot(f.verts[0].co)
+                key = (round(n.x * 100), round(n.y * 100), round(n.z * 100), int(math.floor(d / ZFIGHT_EPS)))
+                buckets.setdefault(key, []).append(f)
+            lift = {}
+            for key, faces in buckets.items():
+                cand = list(faces)
+                for dk in (-1, 1):
+                    cand += buckets.get((key[0], key[1], key[2], key[3] + dk), [])
+                for a in faces:
+                    for b in cand:
+                        if a is b or a.material_index == b.material_index or a.index > b.index and b in faces:
+                            continue
+                        if a.normal.dot(b.normal) < 0.9998 or abs(a.normal.dot(a.verts[0].co) - b.normal.dot(b.verts[0].co)) > ZFIGHT_EPS:
+                            continue
+                        n = a.normal
+                        ref = Vector((1, 0, 0)) if abs(n.x) < 0.9 else Vector((0, 1, 0))
+                        u = n.cross(ref).normalized()
+                        v = n.cross(u)
+                        if not _convex_overlap(_poly2d(a, u, v), _poly2d(b, u, v)):
+                            continue
+                        loser = a if (a.calc_area(), a.material_index) <= (b.calc_area(), b.material_index) else b
+                        lift[loser.index] = loser
+            if not lift:
+                break
+            moved = set()
+            for f in lift.values():
+                for vt in f.verts:
+                    if vt.index not in moved:
+                        moved.add(vt.index)
+                        vt.co += f.normal * ZFIGHT_LIFT
+            lifted_total += len(lift)
+    if lifted_total:
+        ZFIGHT_FIXED.append((model.name, lifted_total))
+    return lifted_total
+
+
 def export(model, path):
     """Write the model as a GLB. Returns dict(bounds, tris)."""
     if not any(g["bm"].faces for g in model.groups.values()):
         raise ValueError(f"model {model.name!r} is empty (no faces); cannot export")
     objs = []
+    fix_zfight(model)
     for gname, g in model.groups.items():
         bm = g["bm"]
         if not bm.faces:
