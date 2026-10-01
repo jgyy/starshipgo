@@ -3,7 +3,7 @@ from shipmodel import SLAB_T
 from planview import (PV, draw_floor, draw_walls, draw_openings, draw_props, draw_zones, draw_holes, draw_forcefields, 
                   draw_stairs, place_balloons, draw_dim_chains, family_legend)
 from sectionview import (SV, Cut, draw_room_section, draw_stairs_section, room_section_dims, wall_item_labels)
-from svgkit import Sheet, nice_scale
+from svgkit import Sheet, nice_scale, wrap_words
 
 LAY_A = (14.0, 9.0, 302.0, 249.0)       # plan area when the data panel is on the right
 LAY_B = (14.0, 8.0, 410.0, 200.0)       # plan area when the panel is underneath
@@ -33,17 +33,7 @@ def room_info_rows(ship, room):
 
 
 def wrap_lines(text, maxw, size):
-    words, lines, cur = str(text).split(), [], ""
-    mx = max(8, int(maxw / (0.54 * size)))
-    for w in words:
-        if len(cur) + len(w) + (1 if cur else 0) <= mx:
-            cur = (cur + " " + w).strip()
-        else:
-            lines.append(cur)
-            cur = w
-    if cur:
-        lines.append(cur)
-    return lines
+    return wrap_words(text, max(8, int(maxw / (0.54 * size))))
 
 
 def wrap_block(sh, x, y, w, head, text, maxlines=4, size=1.7):
@@ -128,7 +118,7 @@ def room_plan(ship, room):
     draw_holes(sh, pv, room)
     draw_props(sh, pv, room, cat, labels=(s >= 10))
     if room.id.startswith("tower"):
-        draw_stairs(sh, pv, ship, room.deck)
+        draw_stairs(sh, pv, ship, room.deck, only_side="S" + room.id[5])      # towerA1 -> SA; the other tower is 20 m away
     draw_walls(sh, pv, room)
     draw_openings(sh, pv, room, marks=True)
     draw_forcefields(sh, pv, room)

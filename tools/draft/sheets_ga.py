@@ -4,7 +4,7 @@ import math
 from shipmodel import SLAB_T, line_interval, poly_area
 from planview import (PV, draw_floor, draw_walls, draw_openings, draw_props, draw_holes, draw_stairs, draw_forcefields)
 from sectionview import (SV, Cut, draw_room_section, draw_stairs_section, lv)
-from svgkit import Sheet, nice_scale, text_w, trunc
+from svgkit import Sheet, nice_scale, text_w, trunc, wrap_words
 
 GA_SCALE = 250
 
@@ -49,16 +49,7 @@ def room_label(sh, pv, room, small=False):
         sh.text(cx - 2.2, cy + text_w(room.code, 1.8) / 2, room.code, 1.8, rot=-90, halo=True, fill="#444")
         return
     # wrap into up to two lines
-    words = name.upper().split()
-    lines, cur = [], ""
-    mx = max(6, int(avail / (0.54 * size)))
-    for w in words:
-        if len(cur) + len(w) + (1 if cur else 0) <= mx:
-            cur = (cur + " " + w).strip()
-        else:
-            lines.append(cur)
-            cur = w
-    lines.append(cur)
+    lines = wrap_words(name.upper(), max(6, int(avail / (0.54 * size)))) or [""]
     lines = [trunc(l, avail, size) for l in lines[:2]]
     y = cy - 1.4 * (len(lines) - 1)
     for l in lines:

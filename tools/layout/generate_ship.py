@@ -258,7 +258,6 @@ def add_stairs(S, R):
     climbs to the mid-landing, flight B climbs back to the strip of the deck above."""
     for side in ("A", "B"):
         g = stair_rects(side)
-        g["sgn"]
         za, zb = g["lane_a"], g["lane_b"]
         x0h, x1h = sorted((g["x_far"], g["x_foot"]))            # hole extent along x for the flight lanes
         land0, land1 = sorted((g["x_far"], g["x_land"]))
@@ -266,7 +265,7 @@ def add_stairs(S, R):
         runs = []
         for lo, hi in ((3, 2), (2, 1)):
             y0 = S.deck_y(lo)
-            za_c = (za[0] + za[1]) / 2 - 0.025 if False else (g["z0"] + FLIGHT_W / 2)
+            za_c = g["z0"] + FLIGHT_W / 2
             zb_c = g["z1"] - FLIGHT_W / 2
             # flight A: starts at the strip edge, climbs away from the lobby
             fa = {"pos": [round(g["x_foot"], 3), round(y0, 3), round(za_c, 3)], "yaw": g["yaw_up"], "rise": PITCH / 2, "run": 10 * TREAD}
@@ -278,8 +277,6 @@ def add_stairs(S, R):
                          "width": FLIGHT_W, "strip": [round(v, 3) for v in (min(g["x_foot"], g["x_end"]), g["z0"], max(g["x_foot"], g["x_end"]), g["z1"])]})
         for d in (1, 2, 3):
             room = R[f"tower{side}{d}"]
-            if d > 1:                      # the deck above has stairs passing through this ceiling
-                pass
             if d < 3:
                 room.add_hole(holes[0], floor=True); room.add_hole(holes[1], floor=True); room.add_hole(holes[2], floor=True)
             if d > 1:
@@ -313,7 +310,8 @@ def furnish_all(B):
 
 
 def cameras(S):
-    """One tour camera per room: stand just inside the first door looking at the far side of the room."""
+    """Tour cameras for the rooms listed in `order` (25 of the ship's rooms): stand just inside the first door looking at the
+    far side of the room; the four exterior cameras follow."""
     S.cameras = []
     order = ["bridge", "corF1", "lounge", "conf", "astro", "capt", "corF2", "mess", "galley", "medbay", "sci", "hydro", "brig", "armory",
              "rec", "lobby2", "eng", "core", "life", "cargo", "airlock", "hangar", "towerA2", "shop", "aux"]
@@ -357,8 +355,6 @@ def _camera_for(room):
             px, pz = e["a"][0], op["c"]
         nx, nz = e["n"]
         ex, ez = px + nx * 1.4, pz + nz * 1.4
-        # shift towards the room centre so the view is oblique and shows depth
-        ex += (cx - ex) * 0.0
         if not room.inside(ex, ez, 0.4):
             ex, ez = cx, cz
     else:
@@ -370,15 +366,21 @@ def _camera_for(room):
     return (ex, room.y + 1.62, ez), (tx, room.y + min(1.5, room.h * 0.45), tz)
 
 
-def main():
+def main(argv=None):
     global ONLY_DECKS
     import argparse
     ap = argparse.ArgumentParser()
-    ap.add_argument("--decks", default="", help="comma separated decks to furnish (default all)")
-    ap.add_argument("--out", default=os.path.join(GODOT, "data", "ship.json"))
-    a = ap.parse_args()
+    ap.add_argument("--decks", default="", help="comma separated decks to furnish (default all); needs an explicit --out")
+    ap.add_argument("--out", default=None, help="default godot/data/ship.json")
+    a = ap.parse_args(argv)
     if a.decks:
-        ONLY_DECKS = {int(x) for x in a.decks.split(",")}
+        if a.out is None:
+            ap.error("--decks leaves the other decks empty, so it must not overwrite godot/data/ship.json: pass --out PATH")
+        try:
+            ONLY_DECKS = {int(x) for x in a.decks.split(",")}
+        except ValueError:
+            ap.error("--decks takes comma separated deck numbers, e.g. 1,3")
+    a.out = a.out or os.path.join(GODOT, "data", "ship.json")
     cat = Catalog(os.path.join(GODOT, "data", "catalog.json"))
     B = build(cat)
     S = B.ship

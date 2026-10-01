@@ -21,6 +21,7 @@ import zlib
 import hull as hulllib
 
 WALL_T = 0.15          # must match ship_builder.gd
+FLAT_H = 0.15          # floor props this low are flat decals (same value as audit.FLAT_H)
 DOOR_W = 2.36          # wall cut for a door (2.0 opening + frame)
 DOOR_H = 2.76
 SIDES = ("N", "S", "E", "W")
@@ -63,9 +64,49 @@ def polys_overlap(a, b, margin=0.0):
     return True
 
 
+def point_seg_dist(p, a, b):
+    ex, ez = b[0] - a[0], b[1] - a[1]
+    l2 = ex * ex + ez * ez
+    t = 0.0 if l2 < 1e-12 else max(0.0, min(1.0, ((p[0] - a[0]) * ex + (p[1] - a[1]) * ez) / l2))
+    return math.hypot(p[0] - (a[0] + t * ex), p[1] - (a[1] + t * ez))
+
+
+def _seg_cross(a, b, c, d):
+    def o(p, q, r):
+        return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0])
+    return o(a, b, c) * o(a, b, d) < 0 and o(c, d, a) * o(c, d, b) < 0
+
+
+def seg_poly_dist(a, b, poly):
+    """Distance between segment ab and convex polygon (0 when they touch / overlap)."""
+    if _point_in_poly(a, poly) or _point_in_poly(b, poly):
+        return 0.0
+    n = len(poly)
+    best = 1e9
+    for i in range(n):
+        c, d = poly[i], poly[(i + 1) % n]
+        if _seg_cross(a, b, c, d):
+            return 0.0
+        best = min(best, point_seg_dist(a, c, d), point_seg_dist(b, c, d), point_seg_dist(c, a, b), point_seg_dist(d, a, b))
+    return best
+
+
+WINDOW_CLEAR = 0.5       # tall floor props keep this far from a window (audit rule window-blocked)
+WINDOW_CLEAR_H = 0.6     # ... when they are taller than this
+
+
 # families whose flat top is a real work surface (table items may stand on these and nothing else)
 SURFACE_HOSTS = {"table", "desk", "labbench", "galley", "console", "cabinet", "storagebin", "engtool", "medcabinet", "medbed",
                  "rack", "cell", "commsunit", "shelving", "surgical", "holo", "storage"}
+
+
+def as_cats(cats):
+    """Family argument of the pattern helpers -> list of category names (a str, tuple, list or set is accepted)."""
+    if isinstance(cats, str):
+        return [cats]
+    if not cats:
+        raise ValueError("a family (category name or a list of them) is required")
+    return list(cats)
 
 
 def rect_poly(r):
@@ -173,6 +214,8 @@ class Ship:
         """Cut matching openings through the shared wall of rooms a and b and add a door.
 
         kind: "door" (sliding door model), "portal" (open doorway with a frame model) or "open" (wide opening)."""
+        if kind not in ("door", "portal", "open"):
+            raise ValueError(f"link {a}-{b}: unknown kind {kind!r} (use 'door', 'portal' or 'open')")
         A, B = self.rooms[a], self.rooms[b]
         if abs(A.rx1 - B.rx0) < 1e-6:
             sa, sb, axis = "E", "W", "z"
@@ -233,6 +276,8 @@ class Room:
         poly = rect_poly(rect)
         if clip and deck in ship.hull:
             poly = hulllib.clip_convex(poly, ship.hull[deck])
+            if len(poly) < 3:
+                raise ValueError(f"room {rid!r} {tuple(rect)} lies outside the deck {deck} hull outline")
         self.poly = [tuple(p) for p in poly]
         xs, zs = [p[0] for p in self.poly], [p[1] for p in self.poly]
         self.x0, self.x1, self.z0, self.z1 = min(xs), max(xs), min(zs), max(zs)   # bounding box of the real shape
@@ -244,6 +289,7 @@ class Room:
         self.cfoot = []         # occupied ceiling polygons
         self.zones = []         # documented clearance zones (for drawings)
         self.floor_holes, self.ceiling_holes = [], []
+        self.window_segs = []   # world segments of the windows, for the 0.5 m clearance of tall floor props
         self.edges = self._make_edges()
         self.wall_used = {e["side"]: [] for e in self.edges}
         self.rng = random.Random(zlib.crc32(rid.encode()))        # stable and collision-free per room id
@@ -346,8 +392,8 @@ class Room:
         area = 0.0
         for p in self.props:
             fp = p.get("_fp")
-            if fp and p["_m"]["mount"] == "floor":
-                area += p["_area"]
+            if fp and p["_m"]["mount"] == "floor" and p["_m"]["size"][1] * p.get("scale", 1.0) > FLAT_H:
+                area += p["_area"]            # rugs / floor markings do not occupy floor (audit rule `density`)
         return area / max(self.area, 1.0)
 
     def describe(self, purpose, basis="", crew=0, adjacency="", notes=""):
@@ -396,6 +442,7 @@ class Room:
         if e is None:
             raise ValueError(f"{self.id} has no wall {side}")
         self.openings.append({"side": side, "c": round(c, 3), "w": w, "y0": y0, "y1": y1, "kind": "window"})
+        self.window_segs.append((self._wall_point(e, side, c - w / 2), self._wall_point(e, side, c + w / 2)))
         self.wall_used[side].append((c - w / 2 - 0.1, c + w / 2 + 0.1, 0.0, 99.0))
 
     def diag_sides(self):
@@ -457,6 +504,8 @@ class Room:
         if check and floor_item:
             if not self.free(corners, margin):
                 return None
+            if height > WINDOW_CLEAR_H and any(seg_poly_dist(a, b, corners) <= WINDOW_CLEAR + 0.002 for a, b in self.window_segs):
+                return None                                   # would block a window (audit: window-blocked)
             if self._vclash(corners, 0.0, height):
                 return None
         if ceil_item:
@@ -547,20 +596,22 @@ class Room:
         if along - wd / 2 < span[0] + 0.05 or along + wd / 2 > span[1] - 0.05:
             return None
         yy = (m.get("mount_y") or 1.5) if y is None else y
-        if yy + m["size"][1] / 2 > self.h - 0.02 or yy - m["size"][1] / 2 < 0.0:
+        lo, hi = m["bounds_min"], m["bounds_max"]
+        # the model's real vertical extent above the wall origin (64 of the 274 wall models are not centred on it)
+        ylo, yhi = yy + lo[1], yy + hi[1]
+        if yhi > self.h - 0.02 or ylo < -0.02:
             return None
-        if check and not self.wall_span_free(side, along - wd / 2, along + wd / 2, yy - m["size"][1] / 2 - 0.02, yy + m["size"][1] / 2 + 0.02):
+        if check and not self.wall_span_free(side, along - wd / 2, along + wd / 2, ylo - 0.02, yhi + 0.02):
             return None
         yaw = e["yaw"] if side[0] == "D" else FACE_YAW[side]
-        lo, hi = m["bounds_min"], m["bounds_max"]
         lx = (lo[0] + hi[0]) / 2
         wx, wz = self._wall_point(e, side, along)
         wx, wz = wx + e["n"][0] * (WALL_T + gap), wz + e["n"][1] * (WALL_T + gap)
         ox, oz = rot(lx, 0, yaw)
         # the item's volume must not intersect a tall floor prop standing against the same wall
-        depth = max(hi[2], 0.02)
-        bcx, bcz = wx + e["n"][0] * depth / 2, wz + e["n"][1] * depth / 2
-        box = obb_corners(bcx, bcz, (hi[0] - lo[0]) / 2, depth / 2, yaw)
+        z0, z1 = lo[2], max(hi[2], lo[2] + 0.02)           # the whole local depth, also the part behind the origin
+        bcx, bcz = wx + e["n"][0] * (z0 + z1) / 2, wz + e["n"][1] * (z0 + z1) / 2
+        box = obb_corners(bcx, bcz, (hi[0] - lo[0]) / 2, (z1 - z0) / 2, yaw)
         wy0, wy1 = yy + lo[1], yy + hi[1]
         if check:
             for q in self.props:
@@ -574,7 +625,7 @@ class Room:
             p["b"] = self.cur["code"]
         self.props.append(p)
         self.cat.use[m["id"]] += 1
-        self.wall_used[side].append((along - wd / 2, along + wd / 2, yy - m["size"][1] / 2, yy + m["size"][1] / 2))
+        self.wall_used[side].append((along - wd / 2, along + wd / 2, ylo, yhi))
         return p
 
     def ceiling_item(self, m, x, z, yaw=0.0):
@@ -668,7 +719,7 @@ class Room:
             for j in range(nz):
                 x = x0 + (x1 - x0) * (i + 0.5) / nx
                 z = z0 + (z1 - z0) * (j + 0.5) / nz
-                m = self.cat.models[single] if single else self.cat.pick_any(cats if isinstance(cats, list) else [cats], pred=pred, rng=self.rng)
+                m = self.cat.models[single] if single else self.cat.pick_any(as_cats(cats), pred=pred, rng=self.rng)
                 if m is None:
                     continue
                 p = self.place(m, x + self.rng.uniform(-jitter, jitter), z + self.rng.uniform(-jitter, jitter), yaw)
@@ -679,6 +730,9 @@ class Room:
     def light_grid(self, cats=("ceilinglight",), spacing=4.2, energy=1.6, color="#fff0dd", pred=None, shadow_every=3,
                    range_mul=1.5, angle=75.0, x_margin=1.0, label=None, cosmetic_only=False):
         """Regular grid of ceiling fixtures (+ one real light each) over the room's shape."""
+        if spacing <= 0:
+            raise ValueError("light_grid: spacing must be positive")
+        shadow_every = max(1, int(shadow_every))        # 0 used to raise ZeroDivisionError; 1 = every light casts a shadow
         nx = max(1, int(round((self.w - 2 * x_margin) / spacing)))
         nz = max(1, int(round((self.d - 2 * x_margin) / spacing)))
         k = 0

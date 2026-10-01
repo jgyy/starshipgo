@@ -6,6 +6,7 @@ import math
 WALL_T = 0.15
 SLAB_T = 0.3
 PITCH = 4.0
+FLAT_H = 0.15
 
 
 def rot(x, z, yaw):
@@ -97,7 +98,8 @@ def rect_poly(r):
 
 class Catalog:
     def __init__(self, path):
-        d = json.load(open(path))
+        with open(path, encoding="utf-8") as f:
+            d = json.load(f)
         self.models = {m["id"]: m for m in d["models"]}
         cats = sorted({m["category"] for m in d["models"]})
         self.cats = cats
@@ -219,7 +221,7 @@ class Room:
     def occupancy(self):
         a = 0.0
         for p in self.props:
-            if p.mount == "floor":
+            if p.mount == "floor" and p.size[1] > FLAT_H:      # rugs / floor markings do not occupy floor (audit rule `density`)
                 a += (p.size[0] * p.size[2])
         return a / max(self.area, 1.0)
 
@@ -229,7 +231,8 @@ class Room:
 
 class Ship:
     def __init__(self, ship_path, cat_path):
-        d = json.load(open(ship_path))
+        with open(ship_path, encoding="utf-8") as f:
+            d = json.load(f)
         self.cat = Catalog(cat_path)
         self.raw = d
         self.decks = d["decks"]

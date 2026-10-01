@@ -36,7 +36,6 @@ def stair_sheet(ship):
     draw_stairs_section(sh, sv, cut, ship, "cut", handrail=True, only=["SA"])
     sh.close_g()
     # level marks
-    sv.xy(a, 0)[0] - 4
     for d in (1, 2, 3):
         y = ship.deck_y[d]
         sh.level_mark(sv.xy(a, 0)[0] - 22, sv.xy(0, y)[1], lv(y), 1.8, True)
@@ -47,7 +46,6 @@ def stair_sheet(ship):
     r_ = f["rise"] / f["n"]
     xe = f["x"] + f["dir"] * f["tread"] * (f["n"] - 1)
     # rise chain (vertical) at the landing side
-    sv.xy(-xe, 0)[0] + (6 if f["dir"] < 0 else -6)
     sh.dim_v(sv.xy(0, f["y"])[1], sv.xy(0, f["y"] + f["rise"])[1], sv.xy(-xe, 0)[0] - 7, "%d R @ 181.8 = %d" % (f["n"], round(f["rise"] * 1000)),
              ext_x=sv.xy(-xe, 0)[0] - 0.5)
     # going chain horizontal below the flight
@@ -71,7 +69,6 @@ def stair_sheet(ship):
         yy = sv.xy(0, ship.deck_y[2])[1] - 9
         sh.dim_h(sv.xy(-hx1, 0)[0], sv.xy(-hx0, 0)[0], yy, "SLAB OPENING %d" % round((hx1 - hx0) * 1000), ext_y=sv.xy(0, ship.deck_y[2])[1] - 0.5)
     # whole storey: 2 x 11 risers
-    runs[1]["flights"][0]
     sh.dim_v(sv.xy(0, ship.deck_y[2])[1], sv.xy(0, ship.deck_y[2] + PITCH)[1], sv.xy(b, 0)[0] + 7, "22 R @ 181.8 = 4000 (2 flights)",
              ext_x=sv.xy(b, 0)[0] + 1)
     # landing labels
@@ -251,7 +248,6 @@ def circulation_sheet(ship):
                 sh.text(cx, cy + .7, "STAIR", 1.6, "middle", bold=True)
             else:
                 sh.circ(cx, cy, 0.7, "n", "#b03030")
-                r.w * s
                 sh.text(cx, cy - 1.2, r.code, 1.6, "middle", bold=True, halo=True)
                 sh.text(cx, cy + 2.2, "%.0f m" % dd, 1.6, "middle", halo=True)
             results.append((d, r, dd))
@@ -299,10 +295,11 @@ def schedule_sheet(ship):
     x2 = 16.0 + (sum(cw) + 4) * (2 if len(rows) > per else 1) + 2
     x2 = max(x2, 242.0)
     sh.text(x2, 14, "WINDOW SCHEDULE (%d panes)" % len(wrows), 2.6, bold=True)
-    sh.table(x2, 20, [22, 9, 11, 10, 14, 12, 12, 13], wrows[:46], header=("MARK", "DECK", "ROOM", "WALL", "W mm", "SILL", "HEAD", "AREA m2"),
-             rh=3.45, size=1.7, bold_first=True, maxrows=46)
-    sh.text(x2, 20 + 3.45 * 48 + 6, "Doors: 2.36 m wide wall cut, head 2.76 m (catalog sliding door models).", 1.6, fill="#444")
-    sh.text(x2, 20 + 3.45 * 48 + 10, "Arches: 3.0 - 4.0 m wide, head 3.0 - 3.2 m. Windows only on hull-exposed walls.", 1.6, fill="#444")
+    wcap = 64            # rows that fit above the title block (y = 252) at 3.45 mm per row; the table says "+N more" beyond that
+    ybot = sh.table(x2, 20, [22, 9, 11, 10, 14, 12, 12, 13], wrows, header=("MARK", "DECK", "ROOM", "WALL", "W mm", "SILL", "HEAD", "AREA m2"),
+                    rh=3.45, size=1.7, bold_first=True, maxrows=wcap)
+    sh.text(x2, ybot + 6, "Doors: 2.36 m wide wall cut, head 2.76 m (catalog sliding door models).", 1.6, fill="#444")
+    sh.text(x2, ybot + 10, "Arches: 3.0 - 4.0 m wide, head 3.0 - 3.2 m. Windows only on hull-exposed walls.", 1.6, fill="#444")
     return sh
 
 
@@ -385,12 +382,7 @@ def index_sheet(ship, ga_list):
     x4 = 16.0
     y4 = 192.0
     sh.text(x4, y4, "FURNITURE FAMILY COLOURS (catalog category)", 2.3, bold=True)
-    per_col = 24
-    colw = 38
-    for i, c in enumerate(cats):
-        col, row = i // per_col, i % per_col
-        xx, yy = x4 + col * colw, y4 + 3 + row * 0
-    # lay out as grid of 11 columns x rows
+    # lay out as grid of 10 columns x rows
     ncol = 10
     for i, c in enumerate(cats):
         col, row = i % ncol, i // ncol

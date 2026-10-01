@@ -136,8 +136,19 @@ R = {
 
 
 def load(p):
-    with open(p) as f:
+    with open(p, encoding="utf-8") as f:
         return json.load(f)
+
+
+def remaining_text(new_count):
+    """Sentence under the rule table: what the current layout still reports (errors are never called 'warnings only')."""
+    if not new_count:
+        return "(The new layout has no remaining audit entries.)"
+    warns = ", ".join("%s x%d" % (r, n) for (r, s), n in sorted(new_count.items()) if s == "warn")
+    errs = ", ".join("%s x%d" % (r, n) for (r, s), n in sorted(new_count.items()) if s == "error")
+    if errs:
+        return "(The new layout still has audit ERRORS: %s%s.)" % (errs, "; warnings: " + warns if warns else "")
+    return "(The new layout's remaining entries are warnings only: %s.)" % warns
 
 
 def main():
@@ -199,8 +210,7 @@ def main():
         w("| `%s` | %s | %d | %d |" % (rule, what.get(rule, ""), n_old, n_new))
     w("| **total** | | **%d** | **%d** |" % (old["total_errors"] + old["total_warnings"], len(new)))
     w("")
-    w("(The new layout's remaining entries are warnings only: %s.)" % ", ".join(
-        "%s x%d" % (r, n) for (r, s), n in sorted(new_count.items()) if s == "warn") if new else "(none)")
+    w(remaining_text(new_count))
     w("")
     w("## Defects")
     w("")
@@ -222,7 +232,7 @@ def main():
         w("*Resolution.* %s" % res)
         w("")
     path = os.path.join(ROOT, "docs", "BUGS.md")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(out) + "\n")
     print("wrote %s (%d lines, %d/%d fixed)" % (path, len(out), len(fixed), len(defects)))
 

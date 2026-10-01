@@ -80,8 +80,8 @@ def write_index(out, sheets, ship):
             f = filename(s)
             lines.append("| %s | %s | %s | [%s](%s) |" % (s.num, s.title.replace("|", "/"), s.scale, f, f))
         lines.append("")
-    with open(os.path.join(out, "INDEX.md"), "w") as fh:
-        fh.write("\n".join(lines))
+    with open(os.path.join(out, "INDEX.md"), "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(lines) + "\n")
 
 
 # ------------------------------------------------------------------ PNG export (optional)
@@ -93,9 +93,40 @@ def find_chrome():
     return None
 
 
+def _unfilter(raw, W, H, bpp):
+    """Undo the PNG scanline filters; returns the H rows (bytes, no filter byte)."""
+    stride = W * bpp
+    rows, prev = [], bytearray(stride)
+    pos = 0
+    for _ in range(H):
+        ft = raw[pos]
+        cur = bytearray(raw[pos + 1:pos + 1 + stride])
+        pos += 1 + stride
+        for i in range(stride):
+            a = cur[i - bpp] if i >= bpp else 0
+            b = prev[i]
+            c = prev[i - bpp] if i >= bpp else 0
+            if ft == 1:
+                cur[i] = (cur[i] + a) & 255
+            elif ft == 2:
+                cur[i] = (cur[i] + b) & 255
+            elif ft == 3:
+                cur[i] = (cur[i] + ((a + b) >> 1)) & 255
+            elif ft == 4:
+                p = a + b - c
+                pa, pb, pc = abs(p - a), abs(p - b), abs(p - c)
+                pr = a if (pa <= pb and pa <= pc) else (b if pb <= pc else c)
+                cur[i] = (cur[i] + pr) & 255
+        rows.append(bytes(cur))
+        prev = cur
+    return rows
+
+
 def crop_png(path, w, h):
-    """Crop a PNG to its top-left w x h (8-bit, non-interlaced) using only zlib/struct."""
-    data = open(path, "rb").read()
+    """Crop a PNG to its top-left w x h (8-bit, non-interlaced, colour types 0/2/4/6) using only zlib/struct.
+    Returns True when the file was rewritten."""
+    with open(path, "rb") as f:
+        data = f.read()
     pos = 8
     idat = b""
     ihdr = None
@@ -109,21 +140,21 @@ def crop_png(path, w, h):
             idat += body
         pos += 12 + ln
     W, H, depth, ctype, _, _, inter = struct.unpack(">IIBBBBB", ihdr)
-    if inter or depth != 8 or h >= H:
-        return
+    if inter or depth != 8 or ctype not in (0, 2, 4, 6) or (h >= H and w >= W):
+        return False
     bpp = {0: 1, 2: 3, 4: 2, 6: 4}[ctype]
+    h, w = min(h, H), min(w, W)
     raw = zlib.decompress(idat)
-    stride = 1 + W * bpp
-    rows = raw[:stride * h]
-    if w < W:          # narrowing needs unfiltering; only crop the height
-        w = W
+    rows = b"".join(b"\x00" + r[:w * bpp] for r in _unfilter(raw, W, H, bpp)[:h])
 
     def chunk(t, b):
         c = struct.pack(">I", len(b)) + t + b
         return c + struct.pack(">I", zlib.crc32(t + b) & 0xffffffff)
-    out = b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", W, h, depth, ctype, 0, 0, 0)) + \
+    out = b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", w, h, depth, ctype, 0, 0, 0)) + \
         chunk(b"IDAT", zlib.compress(rows, 9)) + chunk(b"IEND", b"")
-    open(path, "wb").write(out)
+    with open(path, "wb") as f:
+        f.write(out)
+    return True
 
 
 SHOWCASE = {"R-bridge-P", "R-mess-P", "R-mess-SL", "R-eng-P", "R-medbay-ST", "R-hangar-SL"}   # room sheets rasterised for the README
@@ -146,7 +177,11 @@ def export_png(out, sheets):
         # headless Chromium reserves ~88 px of browser chrome: ask for a taller window and crop
         cmd = [chrome, "--headless", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--screenshot=" + png,
                "--window-size=%d,%d" % (W, H + 88), "file://" + svg]
-        subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
+        try:
+            subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
+        except subprocess.TimeoutExpired:
+            print("Chromium timed out on %s - skipped" % png)
+            continue
         if os.path.exists(png):
             crop_png(png, W, H)
             n += 1
@@ -163,7 +198,10 @@ def main(argv=None):
     a = ap.parse_args(argv)
     ship = model.Ship(a.ship, a.catalog)
     os.makedirs(a.out, exist_ok=True)
-    sheets = build_sheets(ship, set(a.only.split(",")) if a.only else None)
+    only = set(a.only.split(",")) if a.only else None
+    if only and not only <= set(ship.by_id):
+        ap.error("unknown room id(s): %s; rooms are: %s" % (", ".join(sorted(only - set(ship.by_id))), ", ".join(sorted(ship.by_id))))
+    sheets = build_sheets(ship, only)
     for sh in sheets:
         with open(os.path.join(a.out, filename(sh)), "w", newline="\n") as f:
             f.write(sh.render())
