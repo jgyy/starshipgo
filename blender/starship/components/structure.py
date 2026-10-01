@@ -51,10 +51,16 @@ def door_sliding(m, i, label, rng):
             m.box((0.09, 0.34, 0.015), (cx, 1.6, 0.07), "paint_red")
         if i == 3:  # science viewport
             m.box((0.5, 0.7, 0.02), (cx - side * 0.15, 1.6, 0.075), "glass_blue")
+        if i == 4:  # cabin: frosted privacy slit at head height (it was a pure recolour of the bulkhead door)
+            m.box((0.1, 0.8, 0.02), (cx - side * 0.12, 1.45, 0.075), "glass_amber")
+            m.box((0.14, 0.84, 0.012), (cx - side * 0.12, 1.45, 0.068), "black_metal")
         if i == 5:  # engineering: heavy ribs
             for k in range(4):
                 m.box((W / 2 - 0.1, 0.07, 0.03), (cx, 0.5 + k * 0.6, 0.075), "black_metal", 0.01)
     m.group("body")
+    if i == 4:  # cabin: door-number plate beside the frame
+        m.box((0.16, 0.08, 0.02), (-W / 2 - 0.36, 1.45, 0.05), "plastic_white", 0.004)
+        m.box((0.1, 0.02, 0.02), (-W / 2 - 0.36, 1.45, 0.065), "em_amber")
 
 
 # ==========================================================================

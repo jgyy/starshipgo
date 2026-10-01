@@ -268,8 +268,8 @@ class Model:
                                        matrix=_gm(pos, (0, 0, 0), scale))
         verts = rr["verts"]
         if clip_y is not None:
-            edges = {e for v in verts for e in v.link_edges}
-            faces = {f for v in verts for f in v.link_faces}
+            edges = list(dict.fromkeys(e for v in verts for e in v.link_edges))
+            faces = list(dict.fromkeys(f for v in verts for f in v.link_faces))
             bmesh.ops.bisect_plane(bm, geom=list(verts) + list(edges) + list(faces), dist=1e-6,
                                    plane_co=(0, 0, clip_y), plane_no=(0, 0, 1), clear_outer=True)
             verts = [v for v in verts if v.is_valid]
@@ -329,7 +329,7 @@ class Model:
         verts = [e for e in ext["geom"] if isinstance(e, bmesh.types.BMVert)]
         bmesh.ops.translate(bm, verts=verts, vec=M.to_3x3() @ g2b(to3((0, 0), h)))
         allv = bot + verts
-        bmesh.ops.recalc_face_normals(bm, faces=list({fc for v in allv for fc in v.link_faces}))
+        bmesh.ops.recalc_face_normals(bm, faces=list(dict.fromkeys(fc for v in allv for fc in v.link_faces)))
         self._tag(allv, mat, bevel, "prism")
         return self
 
@@ -437,19 +437,39 @@ class Model:
         return sum(len(f.verts) - 2 for g in self.groups.values() for f in g["bm"].faces)
 
 
-def canonical_order(bm):
-    """Return a copy of `bm` whose vertices and faces are sorted by position.
+def canonical_order(bm, weld=False):
+    """Return a copy of `bm` with vertices and faces sorted by position (and, with weld=True, vertices that coincide
+    to 1e-5 merged).
 
-    Blender's bevel operator orders its output by pointer address, so the same inputs gave a different
-    vertex/index order (and different GLB bytes) on every run.  Sorting makes the export reproducible.
-    UVs and material indices are kept; faces that repeat another face's vertices are dropped."""
+    Blender's bevel operator and remove_doubles order their output (and pick which duplicate face survives) by pointer
+    address, so the same inputs gave a different index buffer, and different GLB bytes, on every run.  UVs and material
+    indices are kept.  Of two coincident faces with opposite winding (the faces where two solids touch, invisible) both
+    are dropped; repeats with the same winding keep one copy; degenerate faces are dropped."""
     uv_src = bm.loops.layers.uv.active
-    verts = sorted(bm.verts, key=lambda v: (round(v.co.x, 4), round(v.co.y, 4), round(v.co.z, 4),
-                                            round(v.co.x, 6), round(v.co.y, 6), round(v.co.z, 6)))
-    pos = {id(v): i for i, v in enumerate(verts)}
+    bm.normal_update()
+
+    def snap(v):  # 1e-5 snap: bevel/bisect leave 1e-8 float noise that differs between runs; +0.0 turns -0.0 into 0.0
+        return (round(v.co.x, 5) + 0.0, round(v.co.y, 5) + 0.0, round(v.co.z, 5) + 0.0)
+
+    def key(v):
+        # coincident vertices of different primitives tie on position: break the tie by what they belong to
+        around = sorted((f.material_index, round(f.normal.x, 3) + 0.0, round(f.normal.y, 3) + 0.0, round(f.normal.z, 3) + 0.0)
+                        for f in v.link_faces)
+        return (round(v.co.x, 4), round(v.co.y, 4), round(v.co.z, 4), snap(v), around)
+    if weld:
+        pts = sorted({snap(v) for v in bm.verts}, key=lambda p: (tuple(round(c, 4) for c in p), p))
+        index = {p: i for i, p in enumerate(pts)}
+        keep = list(bm.verts)  # keeps the wrappers alive so id() stays unique
+        pos = {id(v): index[snap(v)] for v in keep}
+    else:
+        order = sorted(bm.verts, key=key)
+        pts = [snap(v) for v in order]
+        pos = {id(v): i for i, v in enumerate(order)}
     faces = []
     for f in bm.faces:
         idx = [pos[id(v)] for v in f.verts]
+        if len(set(idx)) < len(idx):
+            continue  # welded into a sliver
         uvs = [tuple(l[uv_src].uv) for l in f.loops] if uv_src else None
         k = idx.index(min(idx))  # the bevel emits the same face starting at a different corner each run
         idx = idx[k:] + idx[:k]
@@ -457,9 +477,27 @@ def canonical_order(bm):
             uvs = uvs[k:] + uvs[:k]
         faces.append((f.material_index, tuple(idx), uvs))
     faces.sort(key=lambda t: (t[0], tuple(sorted(t[1])), t[1]))
+
+    def rot(t):
+        k = t.index(min(t))
+        return t[k:] + t[:k]
+    seen, drop = {}, set()
+    for n, (mi, idx, uvs) in enumerate(faces):
+        k = tuple(sorted(idx))
+        rev = rot(tuple(reversed(idx)))
+        for m2 in seen.get(k, ()):
+            if m2[1] == rev:
+                drop.update((m2[0], n))
+                seen[k].remove(m2)
+                break
+            if m2[1] == idx:
+                drop.add(n)
+                break
+        else:
+            seen.setdefault(k, []).append((n, idx))
+    faces = [f for n, f in enumerate(faces) if n not in drop]
     nb = bmesh.new()
-    # 1e-5 snap: bevel/bisect leave 1e-8 float noise that differs between runs; +0.0 turns -0.0 into 0.0
-    nv = [nb.verts.new((round(v.co.x, 5) + 0.0, round(v.co.y, 5) + 0.0, round(v.co.z, 5) + 0.0)) for v in verts]
+    nv = [nb.verts.new(p) for p in pts]
     uv_dst = nb.loops.layers.uv.verify() if uv_src else None
     for mi, idx, uvs in faces:
         try:
@@ -471,6 +509,8 @@ def canonical_order(bm):
             for l, uv in zip(f.loops, uvs):
                 l[uv_dst].uv = uv
     nb.normal_update()  # _smooth() reads face angles
+    nb.verts.index_update()
+    nb.faces.index_update()  # fix_zfight keys its work on face/vertex indices
     return nb
 
 
@@ -529,6 +569,8 @@ def fix_zfight(model, passes=8):
             continue
         moved = {}                    # vertex index -> times lifted (bounded by the number of passes)
         for _ in range(passes):
+            bm.verts.index_update()
+            bm.faces.index_update()
             bm.normal_update()
             buckets = {}
             for f in bm.faces:
@@ -560,14 +602,34 @@ def fix_zfight(model, passes=8):
             if not lift:
                 break
             for f in lift.values():
+                n = f.normal.copy()
                 for vt in f.verts:
-                    if True:
+                    # a vertex is lifted once at most: shared vertices of a lathe pole or a bevel used to be pushed
+                    # every pass and a six-pack of cans grew from 12.3 to 18 cm
+                    if moved.get(vt.index, 0) < 1:
                         moved[vt.index] = moved.get(vt.index, 0) + 1
-                        vt.co += f.normal * ZFIGHT_LIFT
+                        vt.co += n * ZFIGHT_LIFT
             lifted_total += len(lift)
     if lifted_total:
         ZFIGHT_FIXED.append((model.name, lifted_total))
     return lifted_total
+
+
+ORIGIN_SNAP = 0.045  # offsets up to 4.5 cm are generator slop (feet, casters, bevel overhang); bigger ones are deliberate
+
+
+def snap_origin(model):
+    """Put the model exactly on its mount plane (CONVENTIONS.md): a floor/table model's lowest point is y=0, a wall
+    model's back is z=0, a ceiling model's top is y=0.  Only offsets below ORIGIN_SNAP are corrected, so a model that
+    deliberately hovers (hover stretcher, 5 cm) or is sunk into its host keeps its design."""
+    lo, hi = model.bounds()
+    mount = getattr(model, "mount", None)
+    if mount in ("floor", "table") and 1e-6 < abs(lo[1]) < ORIGIN_SNAP:
+        model.shift(dy=-lo[1])
+    elif mount == "wall" and 1e-6 < abs(lo[2]) < ORIGIN_SNAP:
+        model.shift(dz=-lo[2])
+    elif mount == "ceiling" and 1e-6 < abs(hi[1]) < ORIGIN_SNAP:
+        model.shift(dy=-hi[1])
 
 
 def export(model, path):
@@ -575,6 +637,9 @@ def export(model, path):
     if not any(g["bm"].faces for g in model.groups.values()):
         raise ValueError(f"model {model.name!r} is empty (no faces); cannot export")
     objs = []
+    for g in model.groups.values():
+        if g["bm"].faces:  # bevel output order follows pointer addresses: fix it before anything order-dependent runs
+            g["bm"] = _freed(g["bm"], canonical_order(g["bm"]))
     lo0, hi0 = model.bounds()
     if fix_zfight(model):
         # lifting detail faces grows the model by a few mm: slide it back so the mounting plane stays exactly where it was
@@ -586,12 +651,12 @@ def export(model, path):
             model.shift(dz=lo0[2] - lo1[2])
         elif mount == "ceiling":
             model.shift(dy=hi0[1] - hi1[1])
+    snap_origin(model)
     for gname, g in model.groups.items():
         bm = g["bm"]
         if not bm.faces:
             continue
-        bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-5)
-        bm = g["bm"] = _freed(bm, canonical_order(bm))
+        bm = g["bm"] = _freed(bm, canonical_order(bm, weld=True))
         _smooth(bm, getattr(model, "smooth_angle", math.radians(38)))
         me = bpy.data.meshes.new(gname)
         bm.to_mesh(me)

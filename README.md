@@ -1,9 +1,9 @@
 # StarshipGo
 
 A first-person exploration game set inside the interior of a starship. **Blender** (headless, via the `bpy` module) procedurally
-generates the **1000-model component library**, the stair flights and the hull fittings, plus their textures; a **bill-of-materials driven
-layout generator** furnishes every room of a tapered, streamlined three-deck hull; **Godot 4** builds it and lets you walk it:
-sliding doors, **stairs between the decks**, ~170 real-time lights, reflections, a planet outside the windows, ambient sound and a deck map.
+generates the **1198-model component library** (1000 equipment models, 196 food and drink models, 2 deck signs), the stair flights and the hull fittings, plus their textures; a **bill-of-materials driven
+layout generator** furnishes every room of a tapered, streamlined five-deck hull; **Godot 4** builds it and lets you walk it:
+sliding doors, **stairs between the decks**, ~320 real-time lights, reflections, a planet outside the windows, ambient sound and a deck map.
 No people, just the ship.
 
 | | |
@@ -17,7 +17,7 @@ No people, just the ship.
 ```bash
 # 1. (optional) regenerate the assets - the latest headless Blender needs Python 3.13:
 pip install -r requirements-blender.txt                 # bpy 5.2 + numpy
-python blender/build_all.py --out godot                 # 1000 GLBs + textures + data/catalog.json (~25 s on 4 cores)
+python blender/build_all.py --out godot                 # 1198 GLBs + textures + data/catalog.json (~25 s on 4 cores; first run adds several minutes of texture generation)
 python blender/build_arch.py --out godot                # stair flights, guard, sign, hull fascia + hull plating textures
 python tools/layout/generate_ship.py                    # furnish the ship from its bills of materials: godot/data/ship.json
 python tools/layout/bom.py                              # docs/BOM.md + docs/bom/*.csv
@@ -47,7 +47,7 @@ There are no lifts any more: walk into one of the two **stair towers** at mid-sh
 
 ## The ship
 
-Three decks, 43 rooms (30 furnished rooms + corridors, lobbies and stair towers), 26 sliding doors, open arches between rooms,
+Five decks, 68 rooms (furnished rooms plus corridors, lobbies and stair towers), 34 sliding doors, open arches between rooms,
 two stair towers and a hangar with a force-field mouth. Everything is placed on purpose:
 
 ```mermaid
@@ -111,9 +111,9 @@ The long version is in [`docs/DESIGN.md`](docs/DESIGN.md); the drawings in [`doc
 ```mermaid
 flowchart LR
     subgraph Blender["Blender 5.2 (headless bpy, Python 3.13)"]
-        K[kit.py<br/>bmesh primitives + PBR materials] --> F[11 component modules<br/>93 families]
+        K[kit.py<br/>bmesh primitives + PBR materials] --> F[19 component modules<br/>108 categories]
         T[textures.py + textures_arch.py] --> S[screens / surfaces / hull plating / sky]
-        F --> G[[1000 x .glb]]
+        F --> G[[1198 x .glb]]
         F --> C[(catalog.json)]
         A[arch.py] --> AG[[stair flight, guard, sign,<br/>hull fascia]]
     end
@@ -135,7 +135,7 @@ flowchart LR
     end
 ```
 
-* `blender/starship/kit.py` - modelling kit; `components/*.py` - the 1000 models; `arch.py` - architectural assets (see [`blender/ARCH.md`](blender/ARCH.md)).
+* `blender/starship/kit.py` - modelling kit; `components/*.py` - the 1198 models; `arch.py` - architectural assets (see [`blender/ARCH.md`](blender/ARCH.md)).
 * `tools/layout/` - hull, layout engine (`shiplib.py`), recipes, policy, audit, BOM generator. `tools/draft/` - the drawing generator. `tools/docs/` - the bug ledger.
 * `godot/scripts/` - `ship_builder.gd` (mitred polygon walls, slab holes, hull plating, stairs, MultiMesh batching, room culling, occluders),
   `player.gd`, `door.gd`, `hud.gd`, `deck_map.gd`, `bench.gd`.
@@ -179,7 +179,7 @@ CI runs the benchmark and fails if the mean draw calls or primitives regress pas
 ```mermaid
 flowchart LR
     PR[push / PR] --> PY[python 3.13<br/>compile, pyflakes, 120+ unit tests,<br/>audit, ship / BOM / drawings reproducible]
-    PR --> BL[blender<br/>bpy 5.2: regenerate 1000 models,<br/>stairs + hull, audio; catalog matches]
+    PR --> BL[blender<br/>bpy 5.2: regenerate 1198 models,<br/>stairs + hull, audio; catalog matches]
     PR --> GD[godot 4.7<br/>import, smoke test, stair test,<br/>screenshots, benchmark guard]
     GD --> A[(screenshots + bench.json)]
     BL --> A2[(regenerated assets)]

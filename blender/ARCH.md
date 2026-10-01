@@ -1,6 +1,6 @@
 # Architectural assets (stairs, guard, sign, hull fascia)
 
-Separate from the 1000-model catalogue (nothing here is registered with `@family`).
+Separate from the model catalogue (nothing here is registered with `@family`).
 Code: `blender/starship/arch.py`, textures `blender/starship/textures_arch.py`, CLI `blender/build_arch.py`.
 
 ```bash

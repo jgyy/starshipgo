@@ -18,7 +18,7 @@ def console_station(m, i, label, rng):
   **Every variant must look different** (different proportions / details / colours / parts),
   not just a recolour. Use `i`/`label`/`rng` to drive the differences.
 * A module may define many families (functions) - the sum of all labels in the repo is
-  exactly **1000**.
+  exactly **1198** (`TARGET` in `build_all.py`: 1000 equipment models + 196 food and drink models + 2 deck signs).
 
 ## Coordinates and units
 Authoring frame = glTF/Godot frame: **+X right, +Y up, +Z front**. 1 unit = 1 metre; model at real
@@ -72,4 +72,4 @@ GODOT=/tmp/godot.sh tools/preview/run.sh /tmp/$NAME.png /tmp/$NAME/models/cat1/*
 Look at the contact sheet and iterate until every variant reads clearly as what it is.
 
 The architectural assets (stair flight, guard, sign, hull fascia) are generated separately by
-`blender/build_arch.py` (see `blender/ARCH.md`) and are not part of the 1000-model catalogue.
+`blender/build_arch.py` (see `blender/ARCH.md`) and are not part of the model catalogue.

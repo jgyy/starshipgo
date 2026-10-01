@@ -480,7 +480,7 @@ def furnish_all(B):
 
 
 # hand-placed tour cameras where the automatic one (first door, far corner) misses the showpiece
-CAMERA_OVERRIDES = {"starcart": ((6.5, 12.0 + 1.62, -9.3), (-1.0, 12.0 + 0.9, -16.0))}
+CAMERA_OVERRIDES = {"starcart": ((5.6, 12.0 + 1.62, -9.3), (-1.0, 12.0 + 0.9, -16.0))}
 
 
 def cameras(S):

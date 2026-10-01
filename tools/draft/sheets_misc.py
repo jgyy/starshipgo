@@ -232,7 +232,6 @@ def circulation_sheet(ship):
     results = []
     for k, d in enumerate(decks):
         dist, prev, pos = escape_graph(ship, d)
-        hb = ship.bounds(d)
         x0 = 16 + k * pitch
         pv = PV(s, x0 + pitch / 2 - 1, 36 - ship.bounds(None)[1] * s, 0.0, 0.0)
         sh.text(x0, 20, "DECK %d" % d, 3.0, bold=True)

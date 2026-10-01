@@ -13,7 +13,6 @@ import zlib
 from ..kit import g2b, register_material
 
 try:
-    import bmesh  # noqa: F401
     from mathutils import Vector, noise as _mn
 except ImportError:  # pragma: no cover - bare python (--check): geometry is never built
     Vector = _mn = None
@@ -166,7 +165,7 @@ def lathe(m, prof, pos=(0, 0, 0), mat="f_plate", seg=24, rot=(0, 0, 0), scale=(1
           tile=(1, 1), arc=TAU, ext=None, a0=0.0, closed=False):
     """Surface of revolution about the local Y axis.
 
-    prof : [(r, y), ...] walking the outline *clockwise* in the (r right, y up) plane (outside on the right):
+    prof : [(r, y), ...] walking the outline *counter-clockwise* in the (r right, y up) plane (outside on the left):
            e.g. a solid disc: [(0,0),(R,0),(R,h),(0,h)].  r == 0 points collapse to a single pole vertex.
     uv   : None | 'cyl' | 'top' | 'sph' | 'box' | 'auto' projection (required for tex: materials)
     disp : (amplitude, frequency[, octaves]) radial noise displacement (metres) about the local centre
@@ -554,13 +553,15 @@ def settle(m, mode="table"):
 
 
 def torus_prof(R, rho, y, n=12, a_from=90.0, a_to=-270.0):
-    """Outline points (r, y) of a circular cross-section (ring radius R, tube radius rho, centre height y) walking clockwise
-    from angle a_from to a_to (degrees); a full -360 turn gives a closed loop for lathe(closed=True)."""
+    """Outline points (r, y) of a circular cross-section (ring radius R, tube radius rho, centre height y) between the angles
+    a_from and a_to (degrees), returned counter-clockwise (outside on the left) as lathe() expects; a full -360 turn gives a
+    closed loop for lathe(closed=True)."""
     out = []
     full = abs(a_from - a_to - 360) < 1e-6
     for k in range(n if full else n + 1):
         a = math.radians(a_from + (a_to - a_from) * k / n)
         out.append((R + rho * math.cos(a), y + rho * math.sin(a)))
+    out.reverse()  # lathe() wants counter-clockwise outlines (like the can profile (0,0),(r,0),(r,h),(0,h)); the clockwise walk gave inside-out shells
     return out
 
 

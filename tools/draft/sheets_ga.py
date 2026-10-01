@@ -1,10 +1,10 @@
 """General arrangement sheets: deck plans, hull lines, profile, ship sections."""
 import math
 
-from shipmodel import SLAB_T, STATION_M, line_interval, poly_area
+from shipmodel import SLAB_T, STATION_M, poly_area
 from planview import (PV, draw_floor, draw_walls, draw_openings, draw_props, draw_holes, draw_stairs, draw_forcefields)
 from sectionview import (SV, Cut, draw_room_section, draw_stairs_section, lv)
-from hullview import skin_cut, skin_beyond, draw_fittings_section
+from hullview import skin_cut, skin_beyond
 from svgkit import Sheet, nice_scale, text_w, trunc, wrap_words
 
 GA_SCALE = 250

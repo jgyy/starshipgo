@@ -2,7 +2,7 @@
 import math
 
 from ..kit import family, register_material
-from .lifesupport import (bolts, cabinet, door, gauge, hazard, label_plate, lean, led, slats)
+from .lifesupport import (bolts, cabinet, door, gauge, hazard, label_plate, lean, led)
 
 register_material("md_teal", "#2aa6a0", 0.1, 0.5)
 register_material("md_sheet", "#c8dde6", 0.0, 0.9)

@@ -99,7 +99,7 @@ def f_starcart(R, B):
     R.line("Star-map table",
            "The briefing table is the room's centre: a holographic star map is projected over it, so the whole crew can plan jumps and "
            "survey routes round the same 3-D chart.  It stands on the centre line, in line with the entry and the bow window.")
-    table = put(R, B, "holo_briefing_table", C[0], C[1], 0.0)
+    put(R, B, "holo_briefing_table", C[0], C[1], 0.0)
     R.line("Table crew stools",
            "Six science stools ring the table at arm's length so navigators can lean in and reach into the projection; the south side "
            "stays open so people walking in from the corridor see the map first.")
@@ -109,7 +109,7 @@ def f_starcart(R, B):
     R.line("Captain's podium",
            "The captain briefs the room from a podium at the head of the table with the bow glass behind; it is a low console so "
            "the stars stay visible over it.")
-    pod = put(R, B, "console_captain_podium", 0.0, -17.7, 0.0)
+    put(R, B, "console_captain_podium", 0.0, -17.7, 0.0)
     R.line("Wing consoles around the table",
            "Navigation, sensor, science and ops stations stand in a loose arc on each side of the table facing it, so each operator feeds the "
            "map while watching it; consoles are 1.2 m or more apart for a seated operator to pass behind.")
@@ -375,7 +375,7 @@ def f_wardroom(R, B):
     R.line("Window lounge",
            "A three-seater sofa faces the starboard window across a low coffee table; two lounge armchairs make the group conversational.  "
            "Seating is kept 1.7 m from the glass so the window stays clear.")
-    sofa = put(R, B, "couch_three_seater_sofa", 9.9, -2.3, 90.0)
+    put(R, B, "couch_three_seater_sofa", 9.9, -2.3, 90.0)
     ct = put(R, B, "table_coffee_table", 11.4, -3.0, 90.0)
     top(R, B, ct, ["tableware_teapot", "tableware_cups_and_mugs"], step=0.35, quiet=True)
     put(R, B, "couch_lounge_armchair", 11.6, -0.9, -150.0, quiet=True)
@@ -459,7 +459,7 @@ def f_library(R, B):
     R.line("Reading nook",
            "A sofa with an armchair and coffee table in the south-west corner, a metre or more back from the port windows so the glass "
            "stays clear, are the quiet place for reading for pleasure; a floor lamp and a wall reading light give a warm light.")
-    sofa = first(R, B, "couch_two_seater_sofa", [(-11.3, 10.1, 180.0), (-11.0, 10.1, 180.0)], quiet=True)
+    first(R, B, "couch_two_seater_sofa", [(-11.3, 10.1, 180.0), (-11.0, 10.1, 180.0)], quiet=True)
     first(R, B, "couch_lounge_armchair", [(-11.9, 7.8, 90.0), (-11.7, 7.8, 90.0)], quiet=True)
     ct = first(R, B, "table_coffee_table", [(-10.6, 8.3, 0.0), (-10.6, 8.5, 0.0)], quiet=True)
     top(R, B, ct, ["tableware_cups_and_mugs"], quiet=True)
@@ -516,7 +516,8 @@ def f_arbor(R, B):
     R.line("Raised flower beds",
            "Three flower beds give colour and fragrance and take the sun from the windows; they stand between the racks and the "
            "path, 0.9 m clear of both, so a gardener can weed from the path side.")
-    beds = [put(R, B, "planter_flower_bed_planter", x, 13.15, 0.0, quiet=True) for x in (-9.2, -7.4, -5.6)]
+    for x in (-9.2, -7.4, -5.6):
+        put(R, B, "planter_flower_bed_planter", x, 13.15, 0.0, quiet=True)
     for x in (-8.3, -6.5):
         _ceil(R, B, "planter_hanging_grow_light_array", x, 13.1)
     R.line("Dwarf trees and ornamentals",
@@ -535,7 +536,7 @@ def f_arbor(R, B):
     tt = first(R, B, "table_round_mess_table", [(-7.3, 14.85, 0.0), (-7.4, 14.85, 0.0)])
     if tt:
         x0, z0, x1, z1 = tt["_fp"]
-        xm, zm = (x0 + x1) / 2, (z0 + z1) / 2
+        zm = (z0 + z1) / 2
         put(R, B, "chair_armchair", x0 - 0.55, zm, 90.0, quiet=True)
         top(R, B, tt, ["tableware_teapot", "plant_bonsai", "tableware_cups_and_mugs"], step=0.3, quiet=True)
     R.line("Benches under the windows",

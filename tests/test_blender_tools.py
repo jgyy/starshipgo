@@ -18,32 +18,11 @@ FIXED_FLOOR = ["hangartool_launch_rail_segment", "door_cargo", "crate_pod_pressu
 FIXED_WALL = ["coil_eps_conduit_trunk", "pipe_valve_wheel"]
 FIXED_CEILING = ["camera_dome_ceiling", "ceilinglight_flush_dome", "ceilingpanel_dome_light_1x1"]
 
-# Known, NOT fixed convention violations. All are small (<= 0.05 m): feet / casters / wheel
-# treads / bevel or rotation overhang of the original generators, plus a deliberately hovering
-# stretcher (medsupply_hover_stretcher hovers 0.05 m on its thrusters). Fixing them needs
-# per-generator geometry edits in modules owned by other work; they are harmless to layout.
-ALLOW_FLOOR = {
-    'barrel_cryo_flask', 'barrel_gas_cylinder_trolley', 'bed_captain_bed', 'bed_hammock_frame',
-    'bed_recliner_sleeper', 'bin_recycling_bin_triple', 'chair_folding_chair', 'chair_lounge_chair',
-    'couch_bean_bag', 'craft_lander', 'crate_biohazard', 'crate_cage_large', 'crate_flammable_red',
-    'crate_hazard_yellow', 'crate_iso_container_blue', 'crate_iso_container_hazard',
-    'crate_medical_supply', 'crate_open_parts', 'crate_pod_pressurised_long', 'crate_stacked_pair',
-    'crate_steel_1m', 'crate_strapped_pair', 'crate_strapped_single', 'crate_vault_armoured',
-    'cylinder_cryo_dewar', 'cylinder_portable_o2_unit', 'engtool_welding_rig',
-    'hangartool_air_compressor', 'hangartool_fuel_hose_reel', 'hangartool_mooring_ring',
-    'hangartool_paint_booth_screen', 'loader_cargo_drone', 'loader_drone_lifter',
-    'loader_hand_pallet_jack', 'loader_hover_pallet_jack', 'loader_maintenance_robot_treads',
-    'loader_mobile_crane_arm', 'medsupply_hover_stretcher', 'sciinstrument_field_lab_trunk',
-    'storagebin_toolchest_wheels', 'surgical_defibrillator_cart', 'surgical_ventilator_unit',
-    'telescope_observation_telescope', 'telescope_spectrograph_tripod', 'watertank_condensate_collector',
-}
-ALLOW_WALL = {
-    'bed_fold_down_wall_bed', 'camera_palm_scanner', 'duct_plenum_damper_box', 'hangartool_wall_winch',
-    'safety_eye_wash_station', 'valve_pressure_regulator',
-}
-ALLOW_CEILING = {
-    'pillar_box_beam_light', 'planter_grow_light_bar_panel',
-}
+# kit.snap_origin() puts every model within 4.5 cm of its mount plane exactly on it; what is left is deliberate:
+# the hover stretcher floats 5 cm on its thrusters and the damper box is sunk 5 cm into its wall.
+ALLOW_FLOOR = {'medsupply_hover_stretcher'}
+ALLOW_WALL = {'duct_plenum_damper_box'}
+ALLOW_CEILING = set()
 
 
 def load_models():

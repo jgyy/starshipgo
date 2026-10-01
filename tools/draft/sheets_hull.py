@@ -378,7 +378,6 @@ def particulars_sheet(ship, num="G-18"):
                "Particulars", slug="principal_particulars")
     mast = [f for f in ship.fittings if "mast" in f.id]
     keelfin = [f for f in ship.fittings if "keel" in f.id]
-    nac = [f for f in ship.fittings if "nacelle" in f.id]
     hb = ship.bounds(None)
     area_total = sum(r.area for r in ship.rooms)
     crew = sum(r.crew() for r in ship.rooms)
