@@ -2,6 +2,7 @@
 import csv
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -193,6 +194,23 @@ class BomColumnsTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             bom.write_csv(ship, cat, t, some)
             self.assertTrue(os.path.exists(os.path.join(t, "bill_of_materials.csv")))
+
+
+class SpecSheetTests(unittest.TestCase):
+    def test_spec_sheets(self):
+        sys.path.insert(0, os.path.join(ROOT, "tools", "draft"))
+        import shipmodel
+        import sheets_spec
+        ship = shipmodel.Ship(os.path.join(ROOT, "godot", "data", "ship.json"), os.path.join(ROOT, "godot", "data", "catalog.json"))
+        sheets = sheets_spec.spec_sheets(ship)
+        nums = [s.num for s in sheets]
+        self.assertEqual(len(nums), len(set(nums)))
+        self.assertGreaterEqual(len(sheets), 12)
+        self.assertEqual(nums[:2], ["S-01", "S-02"])
+        for s in sheets:
+            svg = s.render()
+            self.assertIn("STARSHIPGO", svg)
+            self.assertIsNone(re.search(r"\b(nan|inf)\b", svg), s.num)
 
 
 if __name__ == "__main__":
