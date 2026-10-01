@@ -711,7 +711,6 @@ def f_hold(R, B):
            -9.4, 24.55, 0.0, gap=0.12)
     put(R, B, "safety_spill_kit_bin", -8.9, 26.2, 0.0)
     put(R, B, "hangartool_safety_barrier", -6.8, 25.7, 0.0)
-    put(R, B, "pallet_empty_stack", -3.7, 24.6, 0.0)
     wall_y(R, B, "D2", "sign_hazard_biohazard", 1.5, 2.6, check=False)
     wall_y(R, B, "D1", "sign_no_entry", 1.5, 2.4, check=False)
 
@@ -741,8 +740,6 @@ def f_hold(R, B):
            "the corridor are in view; the display above the console shows the bay plan with free positions.")
     con = aw(R, B, "E", "console_compact_aux", 15.3)
     seat_for(R, B, con, "seat_ops_chair")
-    if con:
-        tops(R, B, con, ["terminal_keyboard"], [(0.0, 0.15)])
     wall_y(R, B, "E", "display_status_board", 15.3, bottom=2.0, check=False)
 
     R.line("Lane markings and barriers",
@@ -753,7 +750,7 @@ def f_hold(R, B):
 
     R.line("Cable trays, pipes and ceiling sprinklers",
            "Sprinkler lines and cable trays run along the lanes overhead; sprinkler heads protect each bay.")
-    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, -9.0, 19.9, "x")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 3, -9.0, 19.9, "x")
     ceil_run(R, B, ["pipe_ceiling_hanger_run"] * 3, -9.0, 25.8, "x")
     for x, z in ((-10.0, 16.0), (-6.0, 16.0), (-10.0, 24.0), (-6.0, 26.5), (-3.5, 17.0)):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
