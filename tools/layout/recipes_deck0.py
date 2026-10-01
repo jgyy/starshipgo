@@ -570,3 +570,177 @@ def f_arbor(R, B):
            "Extinguisher by the door, a hose-down panel note and the science sign; a wet-floor stand by the koi tank.")
     wi(R, B, "E", "safety_fire_extinguisher", 11.3, y=1.1, quiet=True)
     dsign(R, B, "E", 14.5, "dept_science", y=3.1)
+
+
+# ----------------------------------------------------------------------------------------------- OBSERVATORY
+def f_observ(R, B):
+    R.describe(
+        "The ship's stargazing and astronomy room on the starboard stern: real telescopes at the big window, a spectrograph and a small "
+        "instrument lab, a console cluster to run them, and chaises for the crew to watch the stars at night.",
+        basis="11.5 m x 7.4 m.  The window wall (east) is kept completely free except for the main telescope 1.8 m inside it; consoles in "
+              "a row on the north wall, instruments on the south wall, two chaises facing the window across the room centre, lights low "
+              "and red-tinted so eyes stay dark-adapted.  Door zone (2 m deep) and the walkway to the window kept clear.",
+        crew=8, adjacency="Aft spine corridor through the west door; the library and arboretum are across the corridor; hull window "
+                           "on the starboard wall plus a small port at the stern corner.")
+    R.line("Main telescope",
+           "The observation telescope on its mount stands on the centre line of the big window, 1.8 m back from the glass so its "
+           "tube can swing without touching it; the seats look past it at the stars.")
+    first(R, B, "telescope_observation_telescope", [(10.4, 5.8, 90.0), (10.2, 5.8, 90.0)])
+    R.line("Star trackers and spectrograph",
+           "A star tracker on its tripod, a spectrograph tripod and an astrometric dish stand round the window and take images, spectra "
+           "and fixes of the sky at once; they sit at the sides of the window, not in front of it.")
+    first(R, B, "telescope_star_tracker_scope", [(10.7, 9.4, 120.0), (10.2, 9.6, 120.0)], quiet=True)
+    first(R, B, "telescope_spectrograph_tripod", [(10.5, 4.3, 60.0), (9.8, 4.6, 60.0)], quiet=True)
+    first(R, B, "telescope_astrometric_dish", [(11.7, 9.9, -150.0), (11.3, 9.9, -150.0)], quiet=True)
+    R.line("Control console row",
+           "Science, sensor and navigation consoles run side by side on the north wall: the observers steer the telescopes, read the "
+           "detectors and log targets while their seats face the displays above the consoles.")
+    for mid, x, seat in (("console_science", 5.2, "science_stool"), ("console_sensor", 7.0, "ops_chair"),
+                         ("console_navigation", 8.9, "tactical_chair")):
+        c = wall(R, B, "N", mid, x, quiet=True)
+        if c is not None:
+            seat_facing(R, c, cats=("seat",), gap=0.3, label=seat)
+    for x, mid in ((5.2, "display_triple_stack"), (7.0, "display_wing_display"), (8.9, "display_triple_stack")):
+        wi(R, B, "N", mid, x, y=2.3, quiet=True)
+    R.line("Data racks",
+           "Two racks by the door record the nightly sky images and hold the telescopes' observation catalogue, near the console row and "
+           "the door.")
+    seq(R, B, "N", ["rack_storage_array", "rack_photonic_fiber_rack"], 1.75, gap=0.04)
+    R.line("Instrument bench",
+           "Spectra and samples are measured at a bench on the south wall: a spectrometer, a field lab and a magnetometer on the bench, "
+           "a mass spectrometer, weather station and a satellite-dish demonstrator next to it.")
+    lb = wall(R, B, "S", "labbench_sample_prep_table", 3.6, quiet=True)
+    top(R, B, lb, ["analyzer_spectrometer", "sciinstrument_portable_field_lab", "sciinstrument_magnetometer"], step=0.5, quiet=True)
+    if lb:
+        put(R, B, "labbench_lab_stool", (lb["_fp"][0] + lb["_fp"][2]) / 2, lb["_fp"][1] - 0.45, 180.0, quiet=True)
+    wall(R, B, "S", "analyzer_mass_spectrometer", 5.9, quiet=True)
+    wall(R, B, "S", "sciinstrument_weather_station", 7.4, quiet=True)
+    wall(R, B, "S", "antenna_dish_array_demo", 9.1, quiet=True)
+    wall(R, B, "S", "sciinstrument_sample_drill_rig", 10.7, quiet=True)
+    R.line("Stargazing seating",
+           "Two chaises recline toward the window across the room centre for long meteor and aurora watches; an ottoman and a "
+           "side table with a lamp complete the group.")
+    first(R, B, "couch_chaise", [(7.4, 7.1, 90.0), (7.0, 7.1, 90.0)])
+    first(R, B, "couch_chaise", [(7.4, 8.8, 90.0), (7.0, 8.8, 90.0)])
+    st = first(R, B, "table_side_table", [(8.8, 8.0, 0.0), (8.9, 7.9, 0.0)], quiet=True)
+    top(R, B, st, ["lamp_table_lamp"], quiet=True)
+    R.line("Holographic sky globe",
+           "A holographic star-map globe on a pedestal in the corner shows the whole sky with the targets of the night marked, the "
+           "observers' planning sheet.")
+    first(R, B, "holo_star_map_globe", [(4.4, 9.8, 0.0), (4.4, 9.6, 0.0)], quiet=True)
+    R.line("Observer's log desk",
+           "A small desk against the west wall holds the observing log and a lamp; each night's observer writes up targets and "
+           "weather there, away from the console glare.")
+    d = wall(R, B, "W", "desk_writing_desk", 9.6, quiet=True)
+    top(R, B, d, ["lamp_architect_desk_lamp", "terminal_datapad"], step=0.5, quiet=True)
+    if d:
+        put(R, B, "chair_ergonomic_chair", d["_fp"][2] + 0.5, (d["_fp"][1] + d["_fp"][3]) / 2, 90.0, quiet=True)
+    R.line("Plants and notices",
+           "A ficus by the door, the night-roster notice board and the observatory chronometer keep the room tidy and on schedule.")
+    first(R, B, "plant_ficus_tree", [(2.3, 4.0, 0.0)], quiet=True)
+    wi(R, B, "W", "noticeboard_duty_roster_display", 4.4, y=1.7, quiet=True)
+    wi(R, B, "W", "clock_dual_time_ship_clock", 10.2, y=2.3, quiet=True)
+    R.line("Low red lighting",
+           "Dim downlights and red omni lights keep the room around 20 lux so the eye stays dark-adapted; the consoles' own displays "
+           "and a cool blue accent at the telescope are the main light sources.")
+    _lights(R, B, spacing=3.6, energy=0.6, color="#ffb09a", x_margin=1.0)
+    R.omni(7.0, R.y + 2.6, 5.0, color="#ff6a50", energy=0.5, rng_=5.0)
+    R.omni(5.5, R.y + 2.4, 9.5, color="#ff6a50", energy=0.4, rng_=4.5)
+    R.omni(10.4, R.y + 2.0, 5.8, color="#6aa8ff", energy=0.5, rng_=4.0)
+    R.line("Safety and signs",
+           "An extinguisher by the door, the science sign and an exit sign mark the room as a working lab.")
+    wi(R, B, "W", "safety_fire_extinguisher", 10.0, y=1.1, quiet=True)
+    dsign(R, B, "W", 7.3, "dept_science", y=3.1)
+
+
+# ----------------------------------------------------------------------------------------------- FLAG OFFICER'S SUITE
+def f_flag(R, B):
+    R.describe(
+        "The admiral's quarters on the starboard stern: a sleeping alcove, a working corner with desk, display and private holo-comm, a "
+        "small lounge with a sofa, armchairs and a stargazing telescope at the stern window, and a table for two for private dinners.",
+        basis="62 m2, tapering to the stern.  Bed head on the north wall in the widest corner, desk, wardrobe and bookcase along the "
+              "north and west walls, lounge in the middle, dining table and telescope at the stern window; the 2 m door zone and a 1.2 m "
+              "route from the door to the lounge are kept clear; nothing taller than 0.6 m stands within 0.5 m of a window.  Richer than "
+              "the officers' cabins: a captain's bed, a real desk and lounge, art and lamps.",
+        crew=1, adjacency="Aft spine corridor through the west door; the observatory is across the corridor to the north; "
+                          "hull windows to the stern and starboard.")
+    R.line("Admiral's bed",
+           "A captain's bed with a canopy stands head to the north wall in the widest, quietest corner, away from the door and "
+           "with a hull window beside it; the bedside table carries the reading lamp.")
+    bed = wall(R, B, "N", "bed_captain_bed", 8.5, quiet=True)
+    if bed is None:
+        bed = first(R, B, "bed_captain_bed", [(8.5, 12.6, 0.0)])
+    for x in (6.95,):
+        t = first(R, B, "table_side_table", [(x, 11.5, 0.0), (x - 0.1, 11.6, 0.0)], quiet=True)
+        top(R, B, t, ["lamp_bedside_light"] if x < 9 else ["lamp_table_lamp"], quiet=True)
+    R.line("Wardrobe and bookcase",
+           "A tall wardrobe for uniforms stands next to the desk and a pigeonhole bookcase against the west wall holds the admiral's "
+           "own books; both are within reach of the door and out of the lounge.")
+    wall(R, B, "N", "locker_wardrobe", 3.95, quiet=True)
+    wall(R, B, "W", "shelving_pigeonhole", 12.0, quiet=True)
+    R.line("Admiral's desk",
+           "A large officer's desk on the north wall is the working corner: the admiral sits facing the wall display with the whole "
+           "room behind; the desk is fitted with a lamp, terminal, chronometer and datapads.")
+    desk = wall(R, B, "N", "desk_officer_desk", 5.65, quiet=True)
+    top(R, B, desk, ["lamp_architect_desk_lamp", "terminal_desk_terminal", "terminal_datapad_stack", "instrument_brass_chronometer"],
+        step=0.4, quiet=True)
+    if desk:
+        seat = M(B, "chair_ergonomic_chair")
+        put(R, B, "chair_ergonomic_chair", (desk["_fp"][0] + desk["_fp"][2]) / 2, desk["_fp"][3] + 0.1 + seat["size"][2] / 2, 180.0, quiet=True)
+        wi(R, B, "N", "display_status_board", 5.65, y=2.35, quiet=True)
+    R.line("Lounge group",
+           "A sofa against the south wall, a coffee table and two ottomans form a conversation group where the admiral receives "
+           "visitors; the group sits on a soft rug and is laid out round a clear 1.2 m route from the door.")
+    first(R, B, "couch_two_seater_sofa", [(7.1, 16.8, 180.0), (7.0, 16.8, 180.0)])
+    ct = first(R, B, "table_coffee_table", [(7.1, 15.6, 0.0), (7.1, 15.5, 0.0)], quiet=True)
+    top(R, B, ct, ["tableware_teapot", "tableware_cups_and_mugs"], step=0.35, quiet=True)
+    first(R, B, "couch_ottoman", [(8.4, 15.7, -90.0), (8.3, 15.7, -90.0)], quiet=True)
+    for x in (6.1, 7.1, 8.1):
+        R.place(M(B, "floorpanel_carpet_tile_1x1"), x, 15.4, 0.0, check=False)
+        R.place(M(B, "floorpanel_carpet_tile_1x1"), x, 16.4, 0.0, check=False)
+    R.line("Stargazing telescope",
+           "An observation telescope at the stern window is the admiral's private hobby: it stands a metre back from the glass at the "
+           "side of the lounge so the view of the stars stays open.")
+    first(R, B, "telescope_observation_telescope", [(5.0, 16.4, 180.0), (5.0, 16.3, 180.0), (5.1, 16.3, 180.0)])
+    R.line("Dinner table for two",
+           "A small round table with two chairs by the window for private dinners with a guest; set with plates, glasses and a candle "
+           "lantern, it is the one formal corner of the suite.")
+    dt = first(R, B, "table_round_mess_table", [(2.85, 16.6, 0.0), (2.85, 16.7, 0.0)], quiet=True)
+    if dt:
+        x0, z0, x1, z1 = dt["_fp"]
+        zm = (z0 + z1) / 2
+        put(R, B, "chair_mess_chair", (x0 + x1) / 2, z1 + 0.3, 180.0, quiet=True)
+        put(R, B, "chair_folding_chair", x1 + 0.3, zm, -90.0, quiet=True)
+        top(R, B, dt, ["tableware_plate_stack", "tableware_bottle_and_glasses", "lamp_decorative_lantern"], step=0.3, quiet=True)
+    R.line("Art, plants and display",
+           "A holographic art frame on the west wall, a ficus tree and a fern, a bonsai on the dining table and a floor lamp make "
+           "the suite feel like a home rather than a cabin.")
+    wi(R, B, "W", "display_holo_frame_panel", 17.2, y=1.7, quiet=True)
+    first(R, B, "plant_ficus_tree", [(4.1, 14.55, 0.0), (4.2, 14.5, 0.0)], quiet=True)
+    first(R, B, "plant_fern", [(11.2, 12.6, 0.0)], quiet=True)
+    first(R, B, "lamp_floor_lamp", [(6.1, 13.5, 0.0), (6.2, 13.6, 0.0)], quiet=True)
+    first(R, B, "lamp_uplight", [(2.1, 17.5, 0.0), (2.0, 17.5, 0.0)], quiet=True)
+    wi(R, B, "W", "locker_mirror_cabinet", 11.4, y=1.7, quiet=True)
+    R.line("Bed rug and chest",
+           "A rug under the bed foot and a sea chest at the bed's foot hold the admiral's winter blankets and make the sleeping alcove "
+           "feel like a separate part of the room.")
+    for x in (7.6, 8.6, 9.6):
+        R.place(M(B, "floorpanel_carpet_tile_1x1"), x, 14.4, 0.0, check=False)
+    first(R, B, "locker_sea_chest", [(8.6, 14.75, 0.0), (8.5, 14.8, 0.0)], quiet=True)
+    for x, z in ((3.0, 13.0), (6.6, 14.4)):
+        _ceil(R, B, "plant_hanging_plant", x, z)
+    R.line("Wall lights between the windows",
+           "Small wall lights on the piers between the hull windows are the soft evening light of the suite.")
+    _sconces_between_windows(R, B, ["D1", "D2", "D3"], mid="sconce_brass_candle_sconce", y=1.9)
+    R.line("Warm lighting",
+           "A chandelier over the lounge, downlights elsewhere at 150 lux and warm omni accents by the bed, the desk and the "
+           "telescope give the suite a warm, residential light.")
+    _lights(R, B, spacing=3.6, energy=0.9, color="#ffdcb0", x_margin=1.0)
+    _ceil(R, B, "ceilinglight_lounge_chandelier_ring", 7.0, 15.7)
+    R.omni(8.9, R.y + 2.2, 12.5, color="#ffb870", energy=0.7, rng_=4.5)
+    R.omni(5.6, R.y + 2.2, 12.4, color="#ffe3b8", energy=0.6, rng_=4.0)
+    R.omni(3.8, R.y + 2.0, 16.4, color="#ffd2a0", energy=0.5, rng_=4.0)
+    R.line("Safety and signs",
+           "An extinguisher by the door and the quarters sign; the suite has its own alarm panel next to the bed.")
+    wi(R, B, "W", "safety_fire_extinguisher", 17.0, y=1.1, quiet=True)
+    dsign(R, B, "W", 14.5, "dept_quarters", y=3.0)
