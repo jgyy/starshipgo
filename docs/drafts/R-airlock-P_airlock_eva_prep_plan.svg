@@ -37,46 +37,46 @@
 <text x="121.27" y="122.73" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
 <polygon points="98.2,96.33 132.2,96.33 132.2,118.33 98.2,118.33" class="red" fill="url(#hZone)"/>
 <text x="115.2" y="117.13" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">CLEAR: approach to the decontamination arch and a~</text>
-<polygon points="99.07,84.73 124,84.73 124,95.93 99.07,95.93" class="n" fill="#e0f799"/>
+<polygon points="99.07,84.73 124,84.73 124,95.93 99.07,95.93" class="n" fill="#bae881"/>
 <line x1="124" y1="95.93" x2="99.07" y2="95.93" class="m"/>
 <line x1="111.53" y1="95.93" x2="111.53" y2="94.73" class="f"/>
-<polygon points="122.33,199.8 106.87,199.8 106.87,190.64 122.33,190.64" class="n" fill="#81e8bc"/>
+<polygon points="122.33,199.8 106.87,199.8 106.87,190.64 122.33,190.64" class="n" fill="#d4f799"/>
 <line x1="106.87" y1="190.64" x2="122.33" y2="190.64" class="m"/>
 <line x1="114.6" y1="190.64" x2="114.6" y2="191.84" class="f"/>
-<polygon points="138.47,199.8 123,199.8 123,190.64 138.47,190.64" class="n" fill="#81e8bc"/>
+<polygon points="138.47,199.8 123,199.8 123,190.64 138.47,190.64" class="n" fill="#d4f799"/>
 <line x1="123" y1="190.64" x2="138.47" y2="190.64" class="m"/>
 <line x1="130.73" y1="190.64" x2="130.73" y2="191.84" class="f"/>
-<polygon points="153.8,199.8 139.13,199.8 139.13,192.93 153.8,192.93" class="n" fill="#e0f799"/>
+<polygon points="153.8,199.8 139.13,199.8 139.13,192.93 153.8,192.93" class="n" fill="#bae881"/>
 <line x1="139.13" y1="192.93" x2="153.8" y2="192.93" class="m"/>
 <line x1="146.47" y1="192.93" x2="146.47" y2="194.13" class="f"/>
-<polygon points="178.47,199.8 154.47,199.8 154.47,191.8 178.47,191.8" class="n" fill="#e0f799"/>
+<polygon points="178.47,199.8 154.47,199.8 154.47,191.8 178.47,191.8" class="n" fill="#bae881"/>
 <line x1="154.47" y1="191.8" x2="178.47" y2="191.8" class="m"/>
 <line x1="166.47" y1="191.8" x2="166.47" y2="193" class="f"/>
-<polygon points="193.8,199.8 179.13,199.8 179.13,192.93 193.8,192.93" class="n" fill="#e0f799"/>
+<polygon points="193.8,199.8 179.13,199.8 179.13,192.93 193.8,192.93" class="n" fill="#bae881"/>
 <line x1="179.13" y1="192.93" x2="193.8" y2="192.93" class="m"/>
 <line x1="186.47" y1="192.93" x2="186.47" y2="194.13" class="f"/>
-<polygon points="128.2,168.71 157.53,168.71 157.53,175.97 128.2,175.97" class="n" fill="#e0f799"/>
+<polygon points="128.2,168.71 157.53,168.71 157.53,175.97 128.2,175.97" class="n" fill="#bae881"/>
 <line x1="157.53" y1="175.97" x2="128.2" y2="175.97" class="m"/>
 <line x1="142.87" y1="175.97" x2="142.87" y2="174.77" class="f"/>
-<polygon points="98.73,157.77 98.73,144.23 109.09,144.23 109.09,157.77" class="n" fill="#b081e8"/>
+<polygon points="98.73,157.77 98.73,144.23 109.09,144.23 109.09,157.77" class="n" fill="#f799f7"/>
 <line x1="109.09" y1="144.23" x2="109.09" y2="157.77" class="m"/>
 <line x1="109.09" y1="151" x2="107.89" y2="151" class="f"/>
-<polygon points="98.73,182 98.73,161.33 105.81,161.33 105.81,182" class="n" fill="#81e8c9"/>
+<polygon points="98.73,182 98.73,161.33 105.81,161.33 105.81,182" class="n" fill="#99e0f7"/>
 <line x1="105.81" y1="161.33" x2="105.81" y2="182" class="m"/>
 <line x1="105.81" y1="171.67" x2="104.61" y2="171.67" class="f"/>
-<polygon points="97.24,57.67 108.49,57.67 108.49,59.8 97.24,59.8" class="f" fill="#f7d399"/>
-<polygon points="104.87,200.33 100.87,200.33 100.87,197.68 104.87,197.68" class="f" fill="#df99f7"/>
-<polygon points="98.2,82.33 98.2,66.33 99.87,66.33 99.87,82.33" class="f" fill="#e0f799"/>
-<polygon points="109.94,59.2 113.08,62.83 112.38,63.43 109.24,59.8" class="f" fill="#77ef8b"/>
-<polygon points="98.2,62.73 98.2,60.6 99.21,60.6 99.21,62.73" class="f" fill="#f799eb"/>
-<polygon points="98.2,181.67 98.2,161.67 103,161.67 103,181.67" class="f" fill="#e0f799"/>
-<polygon points="98.2,145.27 98.2,140.73 99.2,140.73 99.2,145.27" class="f" fill="#99b1f7"/>
-<polygon points="147.07,200.33 138.67,200.33 138.67,199.77 147.07,199.77" class="f" fill="#99f7f6"/>
-<polygon points="98.2,62.87 98.2,60.47 100.87,60.47 100.87,62.87" class="f" fill="#f799eb"/>
-<polygon points="133.93,200.33 106.87,200.33 106.87,195.12 133.93,195.12" class="f" fill="#99e0f7"/>
-<polygon points="161.27,200.33 134.2,200.33 134.2,195.12 161.27,195.12" class="f" fill="#99e0f7"/>
-<polygon points="188.6,200.33 161.53,200.33 161.53,195.12 188.6,195.12" class="f" fill="#99e0f7"/>
-<polygon points="98.2,129 98.2,115.67 99.08,115.67 99.08,129" class="f" fill="#99f7f6"/>
+<polygon points="97.24,57.67 108.49,57.67 108.49,59.8 97.24,59.8" class="f" fill="#ef77be"/>
+<polygon points="104.87,200.33 100.87,200.33 100.87,197.68 104.87,197.68" class="f" fill="#e281e8"/>
+<polygon points="98.2,82.33 98.2,66.33 99.87,66.33 99.87,82.33" class="f" fill="#bae881"/>
+<polygon points="109.94,59.2 113.08,62.83 112.38,63.43 109.24,59.8" class="f" fill="#81e8c9"/>
+<polygon points="98.2,62.73 98.2,60.6 99.21,60.6 99.21,62.73" class="f" fill="#81e8d6"/>
+<polygon points="98.2,181.67 98.2,161.67 103,161.67 103,181.67" class="f" fill="#bae881"/>
+<polygon points="98.2,145.27 98.2,140.73 99.2,140.73 99.2,145.27" class="f" fill="#f799d5"/>
+<polygon points="147.07,200.33 138.67,200.33 138.67,199.77 147.07,199.77" class="f" fill="#81d3e8"/>
+<polygon points="98.2,62.87 98.2,60.47 100.87,60.47 100.87,62.87" class="f" fill="#81e8d6"/>
+<polygon points="133.93,200.33 106.87,200.33 106.87,195.12 133.93,195.12" class="f" fill="#77efe5"/>
+<polygon points="161.27,200.33 134.2,200.33 134.2,195.12 161.27,195.12" class="f" fill="#77efe5"/>
+<polygon points="188.6,200.33 161.53,200.33 161.53,195.12 188.6,195.12" class="f" fill="#77efe5"/>
+<polygon points="98.2,129 98.2,115.67 99.08,115.67 99.08,129" class="f" fill="#81d3e8"/>
 <polygon points="129.51,94.75 138.01,94.75 138.01,103.25 129.51,103.25" class="dot" fill="none"/>
 <polygon points="122.87,124.6 149.53,124.6 149.53,130.73 122.87,130.73" class="dot" fill="none"/>
 <polygon points="129.63,150.6 137.89,150.6 137.89,167.4 129.63,167.4" class="dot" fill="none"/>
@@ -287,31 +287,31 @@
 <text x="406" y="99.75" font-size="1.6" class="t">6</text>
 <rect x="307" y="70.8" width="106" height="30" class="n" fill="none"/>
 <text x="307" y="107.8" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
-<rect x="307" y="110" width="4.2" height="2.4" class="n" fill="#f799eb"/>
+<rect x="307" y="110" width="4.2" height="2.4" class="n" fill="#81e8d6"/>
 <text x="312.4" y="111.9" font-size="1.6" class="t">beacon</text>
-<rect x="360" y="110" width="4.2" height="2.4" class="n" fill="#ef779f"/>
+<rect x="360" y="110" width="4.2" height="2.4" class="n" fill="#d677ef"/>
 <text x="365.4" y="111.9" font-size="1.6" class="t">cabletray</text>
-<rect x="307" y="113.4" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<rect x="307" y="113.4" width="4.2" height="2.4" class="n" fill="#bcf799"/>
 <text x="312.4" y="115.3" font-size="1.6" class="t">ceilinglight</text>
-<rect x="360" y="113.4" width="4.2" height="2.4" class="n" fill="#b081e8"/>
+<rect x="360" y="113.4" width="4.2" height="2.4" class="n" fill="#f799f7"/>
 <text x="365.4" y="115.3" font-size="1.6" class="t">console</text>
-<rect x="307" y="116.8" width="4.2" height="2.4" class="n" fill="#77ef8b"/>
+<rect x="307" y="116.8" width="4.2" height="2.4" class="n" fill="#81e8c9"/>
 <text x="312.4" y="118.7" font-size="1.6" class="t">controlpanel</text>
-<rect x="360" y="116.8" width="4.2" height="2.4" class="n" fill="#81e8c9"/>
+<rect x="360" y="116.8" width="4.2" height="2.4" class="n" fill="#99e0f7"/>
 <text x="365.4" y="118.7" font-size="1.6" class="t">cylinder</text>
-<rect x="307" y="120.2" width="4.2" height="2.4" class="n" fill="#99e0f7"/>
+<rect x="307" y="120.2" width="4.2" height="2.4" class="n" fill="#77efe5"/>
 <text x="312.4" y="122.1" font-size="1.6" class="t">duct</text>
-<rect x="360" y="120.2" width="4.2" height="2.4" class="n" fill="#f7d399"/>
+<rect x="360" y="120.2" width="4.2" height="2.4" class="n" fill="#ef77be"/>
 <text x="365.4" y="122.1" font-size="1.6" class="t">hatch</text>
-<rect x="307" y="123.6" width="4.2" height="2.4" class="n" fill="#81e8bc"/>
+<rect x="307" y="123.6" width="4.2" height="2.4" class="n" fill="#d4f799"/>
 <text x="312.4" y="125.5" font-size="1.6" class="t">locker</text>
-<rect x="360" y="123.6" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<rect x="360" y="123.6" width="4.2" height="2.4" class="n" fill="#e281e8"/>
 <text x="365.4" y="125.5" font-size="1.6" class="t">safety</text>
-<rect x="307" y="127" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<rect x="307" y="127" width="4.2" height="2.4" class="n" fill="#81d3e8"/>
 <text x="312.4" y="128.9" font-size="1.6" class="t">sign</text>
-<rect x="360" y="127" width="4.2" height="2.4" class="n" fill="#e0f799"/>
+<rect x="360" y="127" width="4.2" height="2.4" class="n" fill="#bae881"/>
 <text x="365.4" y="128.9" font-size="1.6" class="t">suitrack</text>
-<rect x="307" y="130.4" width="4.2" height="2.4" class="n" fill="#99b1f7"/>
+<rect x="307" y="130.4" width="4.2" height="2.4" class="n" fill="#f799d5"/>
 <text x="312.4" y="132.3" font-size="1.6" class="t">warnlight</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - AIRLOCK &amp; EVA PREP</text>
 <text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>

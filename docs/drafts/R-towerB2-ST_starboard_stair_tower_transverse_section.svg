@@ -36,8 +36,8 @@
 <clipPath id="clipA"><rect x="145.7" y="56.7" width="132.6" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="146,63 278,63 278,131 146,131" class="x" fill="#eff1f5"/>
-<polygon points="250,80.6 264,80.6 264,85.4 250,85.4" class="f" fill="#c1faf9"/>
-<polygon points="264,99.6 270,99.6 270,114.3 264,114.3" class="f" fill="#ebc0fa"/>
+<polygon points="250,80.6 264,80.6 264,85.4 250,85.4" class="f" fill="#b2e4f1"/>
+<polygon points="264,99.6 270,99.6 270,114.3 264,114.3" class="f" fill="#edb2f1"/>
 <polygon points="251.4,63 262.6,63 262.6,66.7 251.4,66.7" class="dot" fill="none"/>
 <polygon points="185.86,63 190.14,63 190.14,67.64 185.86,67.64" class="dot" fill="none"/>
 <polygon points="239,291 239,287.36 233.4,287.36 233.4,283.73 227.8,283.73 227.8,280.09 222.2,280.09 222.2,276.45 216.6,276.45 216.6,272.82 211,272.82 211,269.18 205.4,269.18 205.4,265.55 199.8,265.55 199.8,261.91 194.2,261.91 194.2,258.27 188.6,258.27 188.6,254.64 183,254.64 183,251 183,255.8 239,291" class="hid" fill="none"/>
@@ -54,8 +54,8 @@
 <polygon points="177.4,57 278,57 278,63 177.4,63" class="n" fill="url(#hSlab)"/>
 <polygon points="146,63 149,63 149,131 146,131" class="n" fill="url(#hHull)"/>
 <polygon points="275,63 278,63 278,67 275,67" class="n" fill="#1c1c1c"/>
-<polygon points="185.86,63 190.14,63 190.14,67.64 185.86,67.64" class="m" fill="#d87def"/>
-<polygon points="251.4,63 262.6,63 262.6,66.7 251.4,66.7" class="m" fill="#d87def"/>
+<polygon points="185.86,63 190.14,63 190.14,67.64 185.86,67.64" class="m" fill="#bff79e"/>
+<polygon points="251.4,63 262.6,63 262.6,66.7 251.4,66.7" class="m" fill="#bff79e"/>
 <polygon points="149,251 177.4,251 177.4,255.8 149,255.8" class="m" fill="url(#hSlab)"/>
 <polygon points="149,171 177.4,171 177.4,175.8 149,175.8" class="m" fill="url(#hSlab)"/>
 <polygon points="149,91 177.4,91 177.4,95.8 149,95.8" class="m" fill="url(#hSlab)"/>

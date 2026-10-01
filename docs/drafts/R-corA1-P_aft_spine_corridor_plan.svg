@@ -43,15 +43,15 @@
 <text x="164.67" y="112.87" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
 <polygon points="151.33,146.6 178,146.6 178,183.4 151.33,183.4" class="red" fill="url(#hZone)"/>
 <text x="164.67" y="148.6" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
-<polygon points="176,135 176,141.67 171.84,141.67 171.84,135" class="f" fill="#e88a81"/>
-<polygon points="176,127 176,131 173.35,131 173.35,127" class="f" fill="#df99f7"/>
-<polygon points="140,73.67 140,60.33 140.8,60.33 140.8,73.67" class="f" fill="#df99f7"/>
-<polygon points="176,185.67 176,189.67 174.97,189.67 174.97,185.67" class="f" fill="#f799eb"/>
-<polygon points="140,131.84 140,126.16 142.28,126.16 142.28,131.84" class="f" fill="#f799eb"/>
-<polygon points="140,101 140,87.67 140.69,87.67 140.69,101" class="f" fill="#99f7f6"/>
-<polygon points="140,170.33 140,157 140.69,157 140.69,170.33" class="f" fill="#99f7f6"/>
-<polygon points="176,89 176,102.33 175.31,102.33 175.31,89" class="f" fill="#99f7f6"/>
-<polygon points="176,158.33 176,171.67 175.17,171.67 175.17,158.33" class="f" fill="#99f7f6"/>
+<polygon points="176,135 176,141.67 171.84,141.67 171.84,135" class="f" fill="#f799b1"/>
+<polygon points="176,127 176,131 173.35,131 173.35,127" class="f" fill="#e281e8"/>
+<polygon points="140,73.67 140,60.33 140.8,60.33 140.8,73.67" class="f" fill="#e281e8"/>
+<polygon points="176,185.67 176,189.67 174.97,189.67 174.97,185.67" class="f" fill="#81e8d6"/>
+<polygon points="140,131.84 140,126.16 142.28,126.16 142.28,131.84" class="f" fill="#81e8d6"/>
+<polygon points="140,101 140,87.67 140.69,87.67 140.69,101" class="f" fill="#81d3e8"/>
+<polygon points="140,170.33 140,157 140.69,157 140.69,170.33" class="f" fill="#81d3e8"/>
+<polygon points="176,89 176,102.33 175.31,102.33 175.31,89" class="f" fill="#81d3e8"/>
+<polygon points="176,158.33 176,171.67 175.17,171.67 175.17,158.33" class="f" fill="#81d3e8"/>
 <polygon points="143.33,119.67 143.33,93 150,93 150,119.67" class="dot" fill="none"/>
 <polygon points="143.33,174.33 143.33,147.67 150,147.67 150,174.33" class="dot" fill="none"/>
 <polygon points="144.27,92.33 144.27,65.67 149.07,65.67 149.07,92.33" class="dot" fill="none"/>
@@ -256,17 +256,17 @@
 <text x="406" y="93.75" font-size="1.6" class="t">1</text>
 <rect x="307" y="70.8" width="106" height="24" class="n" fill="none"/>
 <text x="307" y="101.8" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
-<rect x="307" y="104" width="4.2" height="2.4" class="n" fill="#f799eb"/>
+<rect x="307" y="104" width="4.2" height="2.4" class="n" fill="#81e8d6"/>
 <text x="312.4" y="105.9" font-size="1.6" class="t">beacon</text>
-<rect x="360" y="104" width="4.2" height="2.4" class="n" fill="#ef779f"/>
+<rect x="360" y="104" width="4.2" height="2.4" class="n" fill="#d677ef"/>
 <text x="365.4" y="105.9" font-size="1.6" class="t">cabletray</text>
-<rect x="307" y="107.4" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<rect x="307" y="107.4" width="4.2" height="2.4" class="n" fill="#bcf799"/>
 <text x="312.4" y="109.3" font-size="1.6" class="t">ceilinglight</text>
-<rect x="360" y="107.4" width="4.2" height="2.4" class="n" fill="#e88a81"/>
+<rect x="360" y="107.4" width="4.2" height="2.4" class="n" fill="#f799b1"/>
 <text x="365.4" y="109.3" font-size="1.6" class="t">fountain</text>
-<rect x="307" y="110.8" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<rect x="307" y="110.8" width="4.2" height="2.4" class="n" fill="#e281e8"/>
 <text x="312.4" y="112.7" font-size="1.6" class="t">safety</text>
-<rect x="360" y="110.8" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<rect x="360" y="110.8" width="4.2" height="2.4" class="n" fill="#81d3e8"/>
 <text x="365.4" y="112.7" font-size="1.6" class="t">sign</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - AFT SPINE CORRIDOR</text>
 <text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>

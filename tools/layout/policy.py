@@ -173,6 +173,11 @@ for _room, _cats in _FOOD_ROOMS.items():
     ROOM.setdefault(_room, set()).update(_cats)
 
 
+# families the deck 0 / deck 4 recipes need on top of the food sets
+ROOM["provisions"] = set(ROOM.get("provisions", set())) | {"cryo", "locker", "crate", "pallet", "loader", "shelving", "storagebin", "cabinet", "tank", "barrel", "cylinder", "watertank", "forcefield", "terminal", "display", "console", "desk", "chair", "seat", "toolbox", "engtool"}
+ROOM["wardroom"] = set(ROOM.get("wardroom", set())) | {"locker", "table", "chair", "couch", "bench", "tableware", "galley", "vending", "plant", "lamp", "display", "holo", "terminal", "cabinet", "shelving", "telescope", "desk"}
+
+
 def room_key(room_id):
     """Strip the deck digit of circulation rooms (corF2 -> corF, lobby3 -> lobby, towerA1 -> towerA)."""
     return room_id.rstrip("0123456789") if room_id[-1].isdigit() else room_id

@@ -37,19 +37,19 @@
 <g clip-path="url(#clipA)">
 <polygon points="176,63 248,63 248,131 176,131" class="x" fill="#e4e8ed"/>
 <polygon points="180,67 244,67 244,131 180,131" class="n" fill="#fbfbfb"/>
-<polygon points="179,83 180.56,83 180.56,109 179,109" class="f" fill="#dbbbf7"/>
+<polygon points="179,83 180.56,83 180.56,109 179,109" class="f" fill="#f5f7bb"/>
 <polygon points="205,63 219,63 219,65.4 205,65.4" class="dot" fill="none"/>
-<polygon points="244.1,70.5 245,70.5 245,89.5 244.1,89.5" class="f" fill="#c6fafa"/>
-<polygon points="179,103.6 188.2,103.6 188.2,131.2 179,131.2" class="f" fill="#f6d7b3"/>
+<polygon points="244.1,70.5 245,70.5 245,89.5 244.1,89.5" class="f" fill="#b9e6f2"/>
+<polygon points="179,103.6 188.2,103.6 188.2,131.2 179,131.2" class="f" fill="#d3c6fa"/>
 <polygon points="203.34,63 220.66,63 220.66,64.46 203.34,64.46" class="dot" fill="none"/>
-<polygon points="179,79 181.08,79 181.08,112.5 179,112.5" class="f" fill="#c9c3fa"/>
-<polygon points="241.02,99.6 245,99.6 245,114.3 241.02,114.3" class="f" fill="#ecc3fa"/>
+<polygon points="179,79 181.08,79 181.08,112.5 179,112.5" class="f" fill="#f1bab5"/>
+<polygon points="241.02,99.6 245,99.6 245,114.3 241.02,114.3" class="f" fill="#eeb5f1"/>
 <polygon points="205.62,62.98 218.38,62.98 218.38,66.5 205.62,66.5" class="dot" fill="none"/>
 <polygon points="176,131 248,131 248,137 176,137" class="n" fill="url(#hSlab)"/>
 <polygon points="176,57 248,57 248,63 176,63" class="n" fill="url(#hSlab)"/>
 <polygon points="176,63 179,63 179,67 176,67" class="n" fill="#1c1c1c"/>
 <polygon points="245,63 248,63 248,67 245,67" class="n" fill="#1c1c1c"/>
-<polygon points="205.62,62.98 218.38,62.98 218.38,66.5 205.62,66.5" class="m" fill="#d87def"/>
+<polygon points="205.62,62.98 218.38,62.98 218.38,66.5 205.62,66.5" class="m" fill="#bff79e"/>
 </g>
 <text x="183.6" y="113.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">900</text>
 <text x="180.04" y="96.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1750</text>

@@ -222,187 +222,217 @@
 <rect x="56" y="195" width="4" height="2.4" class="n" fill="#819fe8"/>
 <text x="61.2" y="196.9" font-size="1.5" class="t">antenna</text>
 <rect x="96" y="195" width="4" height="2.4" class="n" fill="#bdef77"/>
-<text x="101.2" y="196.9" font-size="1.5" class="t">barrel</text>
+<text x="101.2" y="196.9" font-size="1.5" class="t">bakery</text>
 <rect x="136" y="195" width="4" height="2.4" class="n" fill="#f799eb"/>
-<text x="141.2" y="196.9" font-size="1.5" class="t">beacon</text>
+<text x="141.2" y="196.9" font-size="1.5" class="t">barrel</text>
 <rect x="176" y="195" width="4" height="2.4" class="n" fill="#81e8d6"/>
-<text x="181.2" y="196.9" font-size="1.5" class="t">bed</text>
+<text x="181.2" y="196.9" font-size="1.5" class="t">beacon</text>
 <rect x="216" y="195" width="4" height="2.4" class="n" fill="#efb877"/>
-<text x="221.2" y="196.9" font-size="1.5" class="t">bench</text>
+<text x="221.2" y="196.9" font-size="1.5" class="t">bed</text>
 <rect x="256" y="195" width="4" height="2.4" class="n" fill="#b099f7"/>
-<text x="261.2" y="196.9" font-size="1.5" class="t">bin</text>
+<text x="261.2" y="196.9" font-size="1.5" class="t">bench</text>
 <rect x="296" y="195" width="4" height="2.4" class="n" fill="#86e881"/>
-<text x="301.2" y="196.9" font-size="1.5" class="t">cabinet</text>
+<text x="301.2" y="196.9" font-size="1.5" class="t">bin</text>
 <rect x="336" y="195" width="4" height="2.4" class="n" fill="#ef779f"/>
-<text x="341.2" y="196.9" font-size="1.5" class="t">cabletray</text>
+<text x="341.2" y="196.9" font-size="1.5" class="t">bottle</text>
 <rect x="376" y="195" width="4" height="2.4" class="n" fill="#99d4f7"/>
-<text x="381.2" y="196.9" font-size="1.5" class="t">camera</text>
+<text x="381.2" y="196.9" font-size="1.5" class="t">buffet</text>
 <rect x="16" y="198.6" width="4" height="2.4" class="n" fill="#dfe881"/>
-<text x="21.2" y="200.5" font-size="1.5" class="t">capacitor</text>
+<text x="21.2" y="200.5" font-size="1.5" class="t">cabinet</text>
 <rect x="56" y="198.6" width="4" height="2.4" class="n" fill="#d677ef"/>
-<text x="61.2" y="200.5" font-size="1.5" class="t">ceilinglight</text>
+<text x="61.2" y="200.5" font-size="1.5" class="t">cabletray</text>
 <rect x="96" y="198.6" width="4" height="2.4" class="n" fill="#99f7c8"/>
-<text x="101.2" y="200.5" font-size="1.5" class="t">ceilingpanel</text>
+<text x="101.2" y="200.5" font-size="1.5" class="t">camera</text>
 <rect x="136" y="198.6" width="4" height="2.4" class="n" fill="#e89781"/>
-<text x="141.2" y="200.5" font-size="1.5" class="t">cell</text>
+<text x="141.2" y="200.5" font-size="1.5" class="t">can</text>
 <rect x="176" y="198.6" width="4" height="2.4" class="n" fill="#7782ef"/>
-<text x="181.2" y="200.5" font-size="1.5" class="t">chair</text>
+<text x="181.2" y="200.5" font-size="1.5" class="t">capacitor</text>
 <rect x="216" y="198.6" width="4" height="2.4" class="n" fill="#bcf799"/>
-<text x="221.2" y="200.5" font-size="1.5" class="t">cleaningbot</text>
+<text x="221.2" y="200.5" font-size="1.5" class="t">ceilinglight</text>
 <rect x="256" y="198.6" width="4" height="2.4" class="n" fill="#e881c6"/>
-<text x="261.2" y="200.5" font-size="1.5" class="t">clock</text>
+<text x="261.2" y="200.5" font-size="1.5" class="t">ceilingpanel</text>
 <rect x="296" y="198.6" width="4" height="2.4" class="n" fill="#77eaef"/>
-<text x="301.2" y="200.5" font-size="1.5" class="t">coil</text>
+<text x="301.2" y="200.5" font-size="1.5" class="t">cell</text>
 <rect x="336" y="198.6" width="4" height="2.4" class="n" fill="#f7df99"/>
-<text x="341.2" y="200.5" font-size="1.5" class="t">commsunit</text>
+<text x="341.2" y="200.5" font-size="1.5" class="t">chair</text>
 <rect x="376" y="198.6" width="4" height="2.4" class="n" fill="#b081e8"/>
-<text x="381.2" y="200.5" font-size="1.5" class="t">console</text>
+<text x="381.2" y="200.5" font-size="1.5" class="t">cleaningbot</text>
 <rect x="16" y="202.2" width="4" height="2.4" class="n" fill="#77ef8b"/>
-<text x="21.2" y="204.1" font-size="1.5" class="t">controlpanel</text>
+<text x="21.2" y="204.1" font-size="1.5" class="t">clock</text>
 <rect x="56" y="202.2" width="4" height="2.4" class="n" fill="#f799a5"/>
-<text x="61.2" y="204.1" font-size="1.5" class="t">couch</text>
+<text x="61.2" y="204.1" font-size="1.5" class="t">cocktail</text>
 <rect x="96" y="202.2" width="4" height="2.4" class="n" fill="#81ace8"/>
-<text x="101.2" y="204.1" font-size="1.5" class="t">craft</text>
+<text x="101.2" y="204.1" font-size="1.5" class="t">coil</text>
 <rect x="136" y="202.2" width="4" height="2.4" class="n" fill="#cdef77"/>
-<text x="141.2" y="204.1" font-size="1.5" class="t">crate</text>
+<text x="141.2" y="204.1" font-size="1.5" class="t">commsunit</text>
 <rect x="176" y="202.2" width="4" height="2.4" class="n" fill="#f799f7"/>
-<text x="181.2" y="204.1" font-size="1.5" class="t">cryo</text>
+<text x="181.2" y="204.1" font-size="1.5" class="t">console</text>
 <rect x="216" y="202.2" width="4" height="2.4" class="n" fill="#81e8c9"/>
-<text x="221.2" y="204.1" font-size="1.5" class="t">cylinder</text>
+<text x="221.2" y="204.1" font-size="1.5" class="t">controlpanel</text>
 <rect x="256" y="202.2" width="4" height="2.4" class="n" fill="#efa977"/>
-<text x="261.2" y="204.1" font-size="1.5" class="t">desk</text>
+<text x="261.2" y="204.1" font-size="1.5" class="t">couch</text>
 <rect x="296" y="202.2" width="4" height="2.4" class="n" fill="#a499f7"/>
-<text x="301.2" y="204.1" font-size="1.5" class="t">display</text>
+<text x="301.2" y="204.1" font-size="1.5" class="t">craft</text>
 <rect x="336" y="202.2" width="4" height="2.4" class="n" fill="#93e881"/>
-<text x="341.2" y="204.1" font-size="1.5" class="t">door</text>
+<text x="341.2" y="204.1" font-size="1.5" class="t">crate</text>
 <rect x="376" y="202.2" width="4" height="2.4" class="n" fill="#ef77af"/>
-<text x="381.2" y="204.1" font-size="1.5" class="t">doorframe</text>
+<text x="381.2" y="204.1" font-size="1.5" class="t">cryo</text>
 <rect x="16" y="205.8" width="4" height="2.4" class="n" fill="#99e0f7"/>
-<text x="21.2" y="207.7" font-size="1.5" class="t">duct</text>
+<text x="21.2" y="207.7" font-size="1.5" class="t">cylinder</text>
 <rect x="56" y="205.8" width="4" height="2.4" class="n" fill="#e8e381"/>
-<text x="61.2" y="207.7" font-size="1.5" class="t">engtool</text>
+<text x="61.2" y="207.7" font-size="1.5" class="t">deli</text>
 <rect x="96" y="205.8" width="4" height="2.4" class="n" fill="#c777ef"/>
-<text x="101.2" y="207.7" font-size="1.5" class="t">floorpanel</text>
+<text x="101.2" y="207.7" font-size="1.5" class="t">desk</text>
 <rect x="136" y="205.8" width="4" height="2.4" class="n" fill="#99f7bc"/>
-<text x="141.2" y="207.7" font-size="1.5" class="t">forcefield</text>
+<text x="141.2" y="207.7" font-size="1.5" class="t">dessert</text>
 <rect x="176" y="205.8" width="4" height="2.4" class="n" fill="#e88a81"/>
-<text x="181.2" y="207.7" font-size="1.5" class="t">fountain</text>
+<text x="181.2" y="207.7" font-size="1.5" class="t">display</text>
 <rect x="216" y="205.8" width="4" height="2.4" class="n" fill="#7791ef"/>
-<text x="221.2" y="207.7" font-size="1.5" class="t">galley</text>
+<text x="221.2" y="207.7" font-size="1.5" class="t">door</text>
 <rect x="256" y="205.8" width="4" height="2.4" class="n" fill="#c8f799"/>
-<text x="261.2" y="207.7" font-size="1.5" class="t">generator</text>
+<text x="261.2" y="207.7" font-size="1.5" class="t">doorframe</text>
 <rect x="296" y="205.8" width="4" height="2.4" class="n" fill="#e881d3"/>
-<text x="301.2" y="207.7" font-size="1.5" class="t">gym</text>
+<text x="301.2" y="207.7" font-size="1.5" class="t">drink</text>
 <rect x="336" y="205.8" width="4" height="2.4" class="n" fill="#77efe5"/>
-<text x="341.2" y="207.7" font-size="1.5" class="t">hangartool</text>
+<text x="341.2" y="207.7" font-size="1.5" class="t">duct</text>
 <rect x="376" y="205.8" width="4" height="2.4" class="n" fill="#f7d399"/>
-<text x="381.2" y="207.7" font-size="1.5" class="t">hatch</text>
+<text x="381.2" y="207.7" font-size="1.5" class="t">engtool</text>
 <rect x="16" y="209.4" width="4" height="2.4" class="n" fill="#a381e8"/>
-<text x="21.2" y="211.3" font-size="1.5" class="t">holo</text>
+<text x="21.2" y="211.3" font-size="1.5" class="t">floorpanel</text>
 <rect x="56" y="209.4" width="4" height="2.4" class="n" fill="#77ef7c"/>
-<text x="61.2" y="211.3" font-size="1.5" class="t">instrument</text>
+<text x="61.2" y="211.3" font-size="1.5" class="t">forcefield</text>
 <rect x="96" y="209.4" width="4" height="2.4" class="n" fill="#f799b1"/>
-<text x="101.2" y="211.3" font-size="1.5" class="t">junction</text>
+<text x="101.2" y="211.3" font-size="1.5" class="t">fountain</text>
 <rect x="136" y="209.4" width="4" height="2.4" class="n" fill="#81b9e8"/>
-<text x="141.2" y="211.3" font-size="1.5" class="t">labbench</text>
+<text x="141.2" y="211.3" font-size="1.5" class="t">fruit</text>
 <rect x="176" y="209.4" width="4" height="2.4" class="n" fill="#dcef77"/>
-<text x="181.2" y="211.3" font-size="1.5" class="t">lamp</text>
+<text x="181.2" y="211.3" font-size="1.5" class="t">galley</text>
 <rect x="216" y="209.4" width="4" height="2.4" class="n" fill="#eb99f7"/>
-<text x="221.2" y="211.3" font-size="1.5" class="t">loader</text>
+<text x="221.2" y="211.3" font-size="1.5" class="t">generator</text>
 <rect x="256" y="209.4" width="4" height="2.4" class="n" fill="#81e8bc"/>
-<text x="261.2" y="211.3" font-size="1.5" class="t">locker</text>
+<text x="261.2" y="211.3" font-size="1.5" class="t">gym</text>
 <rect x="296" y="209.4" width="4" height="2.4" class="n" fill="#ef9a77"/>
-<text x="301.2" y="211.3" font-size="1.5" class="t">medbed</text>
+<text x="301.2" y="211.3" font-size="1.5" class="t">hangartool</text>
 <rect x="336" y="209.4" width="4" height="2.4" class="n" fill="#9999f7"/>
-<text x="341.2" y="211.3" font-size="1.5" class="t">medcabinet</text>
+<text x="341.2" y="211.3" font-size="1.5" class="t">hanging</text>
 <rect x="376" y="209.4" width="4" height="2.4" class="n" fill="#a0e881"/>
-<text x="381.2" y="211.3" font-size="1.5" class="t">medscanner</text>
+<text x="381.2" y="211.3" font-size="1.5" class="t">harvest</text>
 <rect x="16" y="213" width="4" height="2.4" class="n" fill="#ef77be"/>
-<text x="21.2" y="214.9" font-size="1.5" class="t">medsupply</text>
+<text x="21.2" y="214.9" font-size="1.5" class="t">hatch</text>
 <rect x="56" y="213" width="4" height="2.4" class="n" fill="#99ecf7"/>
-<text x="61.2" y="214.9" font-size="1.5" class="t">medtool</text>
+<text x="61.2" y="214.9" font-size="1.5" class="t">holo</text>
 <rect x="96" y="213" width="4" height="2.4" class="n" fill="#e8d681"/>
-<text x="101.2" y="214.9" font-size="1.5" class="t">microscope</text>
+<text x="101.2" y="214.9" font-size="1.5" class="t">instrument</text>
 <rect x="136" y="213" width="4" height="2.4" class="n" fill="#b777ef"/>
-<text x="141.2" y="214.9" font-size="1.5" class="t">noticeboard</text>
+<text x="141.2" y="214.9" font-size="1.5" class="t">junction</text>
 <rect x="176" y="213" width="4" height="2.4" class="n" fill="#99f7b0"/>
-<text x="181.2" y="214.9" font-size="1.5" class="t">nozzle</text>
+<text x="181.2" y="214.9" font-size="1.5" class="t">labbench</text>
 <rect x="216" y="213" width="4" height="2.4" class="n" fill="#e88186"/>
-<text x="221.2" y="214.9" font-size="1.5" class="t">pallet</text>
+<text x="221.2" y="214.9" font-size="1.5" class="t">lamp</text>
 <rect x="256" y="213" width="4" height="2.4" class="n" fill="#77a0ef"/>
-<text x="261.2" y="214.9" font-size="1.5" class="t">panellight</text>
+<text x="261.2" y="214.9" font-size="1.5" class="t">loader</text>
 <rect x="296" y="213" width="4" height="2.4" class="n" fill="#d4f799"/>
-<text x="301.2" y="214.9" font-size="1.5" class="t">particle</text>
+<text x="301.2" y="214.9" font-size="1.5" class="t">locker</text>
 <rect x="336" y="213" width="4" height="2.4" class="n" fill="#e881e0"/>
-<text x="341.2" y="214.9" font-size="1.5" class="t">pillar</text>
+<text x="341.2" y="214.9" font-size="1.5" class="t">meal</text>
 <rect x="376" y="213" width="4" height="2.4" class="n" fill="#77efd5"/>
-<text x="381.2" y="214.9" font-size="1.5" class="t">pipe</text>
+<text x="381.2" y="214.9" font-size="1.5" class="t">medbed</text>
 <rect x="16" y="216.6" width="4" height="2.4" class="n" fill="#f7c799"/>
-<text x="21.2" y="218.5" font-size="1.5" class="t">plant</text>
+<text x="21.2" y="218.5" font-size="1.5" class="t">medcabinet</text>
 <rect x="56" y="216.6" width="4" height="2.4" class="n" fill="#9681e8"/>
-<text x="61.2" y="218.5" font-size="1.5" class="t">planter</text>
+<text x="61.2" y="218.5" font-size="1.5" class="t">medscanner</text>
 <rect x="96" y="216.6" width="4" height="2.4" class="n" fill="#82ef77"/>
-<text x="101.2" y="218.5" font-size="1.5" class="t">rack</text>
+<text x="101.2" y="218.5" font-size="1.5" class="t">medsupply</text>
 <rect x="136" y="216.6" width="4" height="2.4" class="n" fill="#f799bd"/>
-<text x="141.2" y="218.5" font-size="1.5" class="t">railing</text>
+<text x="141.2" y="218.5" font-size="1.5" class="t">medtool</text>
 <rect x="176" y="216.6" width="4" height="2.4" class="n" fill="#81c6e8"/>
-<text x="181.2" y="218.5" font-size="1.5" class="t">reactor</text>
+<text x="181.2" y="218.5" font-size="1.5" class="t">microscope</text>
 <rect x="216" y="216.6" width="4" height="2.4" class="n" fill="#ebef77"/>
-<text x="221.2" y="218.5" font-size="1.5" class="t">router</text>
+<text x="221.2" y="218.5" font-size="1.5" class="t">noticeboard</text>
 <rect x="256" y="216.6" width="4" height="2.4" class="n" fill="#df99f7"/>
-<text x="261.2" y="218.5" font-size="1.5" class="t">safety</text>
+<text x="261.2" y="218.5" font-size="1.5" class="t">nozzle</text>
 <rect x="296" y="216.6" width="4" height="2.4" class="n" fill="#81e8af"/>
-<text x="301.2" y="218.5" font-size="1.5" class="t">sciinstrument</text>
+<text x="301.2" y="218.5" font-size="1.5" class="t">pallet</text>
 <rect x="336" y="216.6" width="4" height="2.4" class="n" fill="#ef8a77"/>
-<text x="341.2" y="218.5" font-size="1.5" class="t">sconce</text>
+<text x="341.2" y="218.5" font-size="1.5" class="t">panellight</text>
 <rect x="376" y="216.6" width="4" height="2.4" class="n" fill="#99a5f7"/>
-<text x="381.2" y="218.5" font-size="1.5" class="t">scrubber</text>
+<text x="381.2" y="218.5" font-size="1.5" class="t">particle</text>
 <rect x="16" y="220.2" width="4" height="2.4" class="n" fill="#ade881"/>
-<text x="21.2" y="222.1" font-size="1.5" class="t">seat</text>
+<text x="21.2" y="222.1" font-size="1.5" class="t">pillar</text>
 <rect x="56" y="220.2" width="4" height="2.4" class="n" fill="#ef77cd"/>
-<text x="61.2" y="222.1" font-size="1.5" class="t">shelving</text>
+<text x="61.2" y="222.1" font-size="1.5" class="t">pipe</text>
 <rect x="96" y="220.2" width="4" height="2.4" class="n" fill="#99f7f6"/>
-<text x="101.2" y="222.1" font-size="1.5" class="t">sign</text>
+<text x="101.2" y="222.1" font-size="1.5" class="t">plant</text>
 <rect x="136" y="220.2" width="4" height="2.4" class="n" fill="#e8c981"/>
-<text x="141.2" y="222.1" font-size="1.5" class="t">specimen</text>
+<text x="141.2" y="222.1" font-size="1.5" class="t">planter</text>
 <rect x="176" y="220.2" width="4" height="2.4" class="n" fill="#a877ef"/>
-<text x="181.2" y="222.1" font-size="1.5" class="t">spotlight</text>
+<text x="181.2" y="222.1" font-size="1.5" class="t">rack</text>
 <rect x="216" y="220.2" width="4" height="2.4" class="n" fill="#99f7a4"/>
-<text x="221.2" y="222.1" font-size="1.5" class="t">storage</text>
+<text x="221.2" y="222.1" font-size="1.5" class="t">railing</text>
 <rect x="256" y="220.2" width="4" height="2.4" class="n" fill="#e88193"/>
-<text x="261.2" y="222.1" font-size="1.5" class="t">storagebin</text>
+<text x="261.2" y="222.1" font-size="1.5" class="t">ration</text>
 <rect x="296" y="220.2" width="4" height="2.4" class="n" fill="#77afef"/>
-<text x="301.2" y="222.1" font-size="1.5" class="t">striplight</text>
+<text x="301.2" y="222.1" font-size="1.5" class="t">reactor</text>
 <rect x="336" y="220.2" width="4" height="2.4" class="n" fill="#e0f799"/>
-<text x="341.2" y="222.1" font-size="1.5" class="t">suitrack</text>
+<text x="341.2" y="222.1" font-size="1.5" class="t">router</text>
 <rect x="376" y="220.2" width="4" height="2.4" class="n" fill="#e281e8"/>
-<text x="381.2" y="222.1" font-size="1.5" class="t">surgical</text>
+<text x="381.2" y="222.1" font-size="1.5" class="t">safety</text>
 <rect x="16" y="223.8" width="4" height="2.4" class="n" fill="#77efc6"/>
-<text x="21.2" y="225.7" font-size="1.5" class="t">table</text>
+<text x="21.2" y="225.7" font-size="1.5" class="t">sciinstrument</text>
 <rect x="56" y="223.8" width="4" height="2.4" class="n" fill="#f7bb99"/>
-<text x="61.2" y="225.7" font-size="1.5" class="t">tableware</text>
+<text x="61.2" y="225.7" font-size="1.5" class="t">sconce</text>
 <rect x="96" y="223.8" width="4" height="2.4" class="n" fill="#8981e8"/>
-<text x="101.2" y="225.7" font-size="1.5" class="t">tank</text>
+<text x="101.2" y="225.7" font-size="1.5" class="t">scrubber</text>
 <rect x="136" y="223.8" width="4" height="2.4" class="n" fill="#92ef77"/>
-<text x="141.2" y="225.7" font-size="1.5" class="t">telescope</text>
+<text x="141.2" y="225.7" font-size="1.5" class="t">seat</text>
 <rect x="176" y="223.8" width="4" height="2.4" class="n" fill="#f799c9"/>
-<text x="181.2" y="225.7" font-size="1.5" class="t">terminal</text>
+<text x="181.2" y="225.7" font-size="1.5" class="t">shelving</text>
 <rect x="216" y="223.8" width="4" height="2.4" class="n" fill="#81d3e8"/>
-<text x="221.2" y="225.7" font-size="1.5" class="t">toolbox</text>
+<text x="221.2" y="225.7" font-size="1.5" class="t">sign</text>
 <rect x="256" y="223.8" width="4" height="2.4" class="n" fill="#efe477"/>
-<text x="261.2" y="225.7" font-size="1.5" class="t">turbine</text>
+<text x="261.2" y="225.7" font-size="1.5" class="t">specimen</text>
 <rect x="296" y="223.8" width="4" height="2.4" class="n" fill="#d399f7"/>
-<text x="301.2" y="225.7" font-size="1.5" class="t">valve</text>
+<text x="301.2" y="225.7" font-size="1.5" class="t">spotlight</text>
 <rect x="336" y="223.8" width="4" height="2.4" class="n" fill="#81e8a2"/>
-<text x="341.2" y="225.7" font-size="1.5" class="t">vending</text>
+<text x="341.2" y="225.7" font-size="1.5" class="t">storage</text>
 <rect x="376" y="223.8" width="4" height="2.4" class="n" fill="#ef7b77"/>
-<text x="381.2" y="225.7" font-size="1.5" class="t">wallpanel</text>
+<text x="381.2" y="225.7" font-size="1.5" class="t">storagebin</text>
 <rect x="16" y="227.4" width="4" height="2.4" class="n" fill="#99b1f7"/>
-<text x="21.2" y="229.3" font-size="1.5" class="t">warnlight</text>
+<text x="21.2" y="229.3" font-size="1.5" class="t">striplight</text>
 <rect x="56" y="227.4" width="4" height="2.4" class="n" fill="#bae881"/>
-<text x="61.2" y="229.3" font-size="1.5" class="t">watertank</text>
+<text x="61.2" y="229.3" font-size="1.5" class="t">suitrack</text>
 <rect x="96" y="227.4" width="4" height="2.4" class="n" fill="#ef77dd"/>
-<text x="101.2" y="229.3" font-size="1.5" class="t">weaponrack</text>
+<text x="101.2" y="229.3" font-size="1.5" class="t">surgical</text>
+<rect x="136" y="227.4" width="4" height="2.4" class="n" fill="#99f7ea"/>
+<text x="141.2" y="229.3" font-size="1.5" class="t">table</text>
+<rect x="176" y="227.4" width="4" height="2.4" class="n" fill="#e8bc81"/>
+<text x="181.2" y="229.3" font-size="1.5" class="t">tableware</text>
+<rect x="216" y="227.4" width="4" height="2.4" class="n" fill="#9977ef"/>
+<text x="221.2" y="229.3" font-size="1.5" class="t">tank</text>
+<rect x="256" y="227.4" width="4" height="2.4" class="n" fill="#9af799"/>
+<text x="261.2" y="229.3" font-size="1.5" class="t">telescope</text>
+<rect x="296" y="227.4" width="4" height="2.4" class="n" fill="#e881a1"/>
+<text x="301.2" y="229.3" font-size="1.5" class="t">terminal</text>
+<rect x="336" y="227.4" width="4" height="2.4" class="n" fill="#77bfef"/>
+<text x="341.2" y="229.3" font-size="1.5" class="t">toolbox</text>
+<rect x="376" y="227.4" width="4" height="2.4" class="n" fill="#ecf799"/>
+<text x="381.2" y="229.3" font-size="1.5" class="t">tray</text>
+<rect x="16" y="231" width="4" height="2.4" class="n" fill="#d581e8"/>
+<text x="21.2" y="232.9" font-size="1.5" class="t">turbine</text>
+<rect x="56" y="231" width="4" height="2.4" class="n" fill="#77efb7"/>
+<text x="61.2" y="232.9" font-size="1.5" class="t">valve</text>
+<rect x="96" y="231" width="4" height="2.4" class="n" fill="#f7af99"/>
+<text x="101.2" y="232.9" font-size="1.5" class="t">veg</text>
+<rect x="136" y="231" width="4" height="2.4" class="n" fill="#8187e8"/>
+<text x="141.2" y="232.9" font-size="1.5" class="t">vending</text>
+<rect x="176" y="231" width="4" height="2.4" class="n" fill="#a1ef77"/>
+<text x="181.2" y="232.9" font-size="1.5" class="t">wallpanel</text>
+<rect x="216" y="231" width="4" height="2.4" class="n" fill="#f799d5"/>
+<text x="221.2" y="232.9" font-size="1.5" class="t">warnlight</text>
+<rect x="256" y="231" width="4" height="2.4" class="n" fill="#81e0e8"/>
+<text x="261.2" y="232.9" font-size="1.5" class="t">watertank</text>
+<rect x="296" y="231" width="4" height="2.4" class="n" fill="#efd577"/>
+<text x="301.2" y="232.9" font-size="1.5" class="t">weaponrack</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>
 <text x="35.31" y="4" font-size="1.8" class="t" text-anchor="middle">1</text>

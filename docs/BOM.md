@@ -14,23 +14,23 @@ Every room of the ship is furnished from a written bill of materials: each **BOM
 | Rooms (incl. circulation) | 68 |
 | Doors / arches | 34 sliding doors, 35 open arches and portals |
 | Stair towers | 2 (port / starboard), 4 dog-leg flight pairs, 22 risers of 181.8 mm per deck |
-| BOM lines | 578 |
-| Placed items | 2427 |
-| Distinct models used | 541 of 1002 in the catalogue |
-| Installed equipment mass | 494.22 t (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |
+| BOM lines | 605 |
+| Placed items | 2587 |
+| Distinct models used | 637 of 1198 in the catalogue |
+| Installed equipment mass | 494.78 t (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |
 | Typical / peak electrical load | 8.54 MW / 17.11 MW |
 | Installed generation | 42.9 MW |
-| Equipment value | 562.95 M cr |
+| Equipment value | 563.06 M cr |
 
 ### Decks
 
 | Deck | Name | Hull area | Rooms | Room area | Items | BOM lines | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | Sky Deck | 859 m2 | 12 | 860 m2 | 451 | 110 | 32.14 t | 79.2 kW | 33.99 M |
-| 1 | Command Deck | 1042 m2 | 14 | 1042 m2 | 375 | 96 | 25.30 t | 62.8 kW | 19.49 M |
-| 2 | Habitat Deck | 1064 m2 | 15 | 1064 m2 | 491 | 135 | 49.87 t | 353.6 kW | 48.72 M |
+| 0 | Sky Deck | 859 m2 | 12 | 860 m2 | 464 | 113 | 32.35 t | 79.2 kW | 34.00 M |
+| 1 | Command Deck | 1042 m2 | 14 | 1042 m2 | 411 | 104 | 25.34 t | 62.8 kW | 19.50 M |
+| 2 | Habitat Deck | 1064 m2 | 15 | 1064 m2 | 593 | 148 | 50.13 t | 353.6 kW | 48.79 M |
 | 3 | Engineering Deck | 1244 m2 | 14 | 1245 m2 | 506 | 115 | 220.74 t | 4.95 MW | 259.05 M |
-| 4 | Hold Deck | 1146 m2 | 13 | 1146 m2 | 570 | 122 | 166.18 t | 3.10 MW | 201.71 M |
+| 4 | Hold Deck | 1146 m2 | 13 | 1146 m2 | 579 | 125 | 166.22 t | 3.10 MW | 201.72 M |
 
 ### Design principles
 
@@ -64,16 +64,18 @@ flowchart LR
 | `display` Wall display | Shows status, plans and sensor data to people in the room. | 83 | 19 |
 | `pipe` Pipe run | Carries water, coolant or gas. | 78 | 4 |
 | `seat` Crew station seat | Operator chair for console positions. | 66 | 7 |
-| `tableware` Tableware / table setting | Plates, cups and condiments on tables. | 65 | 13 |
 | `beacon` Alert beacon / emergency lamp | Gives light and visual or audible warning during alarms and power loss. | 64 | 4 |
 | `rack` Equipment rack | Houses servers, storage and network gear with cooling. | 62 | 13 |
 | `console` Workstation console | Operator station with displays and controls for one ship function. | 59 | 16 |
+| `tableware` Tableware / table setting | Plates, cups and condiments on tables. | 52 | 11 |
 | `terminal` Terminal / datapad | Data entry and information access. | 50 | 8 |
 | `galley` Galley equipment | Food storage, cooking and dish-washing equipment. | 45 | 18 |
 | `table` Table | Work, meeting or dining surface. | 44 | 8 |
 | `duct` Ventilation duct / grille | Moves conditioned air to and from the room. | 35 | 3 |
 | `lamp` Lamp | Local task or mood lighting. | 35 | 7 |
 | `couch` Sofa / lounge seating | Soft seating for rest and informal meetings. | 34 | 7 |
+| `meal` Plated meal | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. | 33 | 25 |
+| `drink` Hot and cold drink | Coffee, tea, juices, shakes and smoothies at the table. | 32 | 12 |
 | `locker` Personal / equipment locker | Secure storage for personal gear and issue equipment. | 32 | 8 |
 | `planter` Hydroponic planter | Grows food and oxygen-producing plants. | 31 | 12 |
 | `shelving` Shelving | Open storage for parts, stores and gear. | 31 | 6 |
@@ -84,15 +86,18 @@ flowchart LR
 | `engtool` Engineering tool / equipment | Tools, carts and test gear for maintenance crews. | 27 | 11 |
 | `hangartool` Flight-deck equipment | Servicing, fuelling, launch and safety gear for craft. | 27 | 16 |
 | `desk` Desk | Work surface for paperwork and terminals. | 26 | 7 |
+| `can` Canned drink | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. | 23 | 7 |
 | `capacitor` Energy storage | Buffers electrical power so systems ride through peaks and brown-outs. | 23 | 6 |
 | `analyzer` Laboratory analyser | Measures and characterises samples (composition, structure, biology) for the science staff. | 17 | 8 |
 | `labbench` Laboratory furniture | Benches, hoods and stools for safe wet and dry lab work. | 17 | 7 |
+| `bottle` Bottle / flask | Water, wine, spirits, oils and flasks in glass, PET and steel containers. | 16 | 6 |
 | `camera` Security sensor | Surveillance and access control for the security department. | 16 | 4 |
 | `holo` Holographic projector | Three-dimensional display for briefings and tactical planning. | 16 | 6 |
 | `watertank` Water treatment | Stores, purifies and recycles water. | 16 | 7 |
 | `bed` Bunk / bed | Sleeping place for crew off shift. | 15 | 3 |
 | `floorpanel` Floor panel | Floor finish panel, markings or hatch plate. | 15 | 1 |
 | `tank` Process tank / heat exchanger | Stores or conditions fluids for ship systems. | 15 | 10 |
+| `cocktail` Glassware and cocktails | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. | 14 | 6 |
 | `generator` Power generator / transformer | Produces and conditions electrical power for the ship. | 13 | 9 |
 | `noticeboard` Notice board | Duty rosters and notices. | 13 | 3 |
 | `suitrack` Suit / EVA rack | Stores and dresses pressure suits and breathing kit. | 13 | 6 |
@@ -109,9 +114,12 @@ flowchart LR
 | `bin` Waste / recycling bin | Collects waste for the recycler; a clean ship stays habitable. | 10 | 4 |
 | `commsunit` Communications unit | Radio and intercom equipment for ship and external communications. | 10 | 5 |
 | `fountain` Drinking fountain | Drinking water for crew. | 10 | 2 |
+| `harvest` Hydroponic harvest crate | Crates of freshly picked crops on their way from the grow beds to the galley. | 10 | 8 |
 | `junction` Electrical junction / cabinet | Distributes and protects power and data circuits. | 10 | 8 |
 | `storage` Data / secure storage | Archives data and valuables. | 10 | 6 |
+| `hanging` Hanging produce | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. | 9 | 4 |
 | `storagebin` Storage bin / tool chest | Small-parts and tool storage. | 9 | 6 |
+| `tray` Serving tray / dish | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. | 9 | 7 |
 | `cabinet` Storage cabinet | Closed storage for supplies the room's staff need daily. | 8 | 3 |
 | `cryo` Cryo / stasis equipment | Preserves patients and samples at cryogenic temperature. | 8 | 3 |
 | `vending` Vending machine | Snacks, drinks and small parts for crew. | 8 | 4 |
@@ -119,6 +127,7 @@ flowchart LR
 | `medsupply` Medical supply / IV | Consumables and patient-care accessories. | 7 | 3 |
 | `router` Network hardware | Routes data between ship systems. | 7 | 3 |
 | `valve` Valve / gauge | Controls and monitors fluid lines. | 7 | 6 |
+| `bakery` Bread and baked goods | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. | 6 | 5 |
 | `controlpanel` Wall control panel | Local controls for doors, lights, environment and power. | 6 | 6 |
 | `medbed` Patient bed / table | Examination, treatment and recovery of patients. | 6 | 3 |
 | `scrubber` Air scrubber / processor | Removes CO2 and contaminants from ship air. | 6 | 6 |
@@ -128,12 +137,18 @@ flowchart LR
 | `medcabinet` Medical store | Drugs, sterile instruments and consumables, locked and labelled. | 5 | 5 |
 | `warnlight` Warning light | Signals hazards and machine states. | 5 | 2 |
 | `antenna` Antenna / relay | Sends and receives subspace and radio traffic; mounted where signal paths and cabling are short. | 4 | 4 |
+| `deli` Cheese, charcuterie and dairy | Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches. | 4 | 4 |
+| `fruit` Fresh fruit | Fruit from the hydroponics deck and the cold store. | 4 | 3 |
 | `microscope` Microscope | Magnifies samples for analysis. | 4 | 3 |
 | `reactor` Reactor / power core | Main and auxiliary power generation. | 4 | 4 |
 | `specimen` Specimen container | Holds biological and mineral samples safely. | 4 | 4 |
 | `surgical` Surgical equipment | Operating-theatre machines. | 4 | 4 |
 | `toolbox` Toolbox | Portable hand tools. | 4 | 1 |
+| `veg` Vegetables | Fresh vegetables from the grow beds, ready to prepare. | 4 | 3 |
+| `buffet` Buffet / display furniture | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. | 3 | 2 |
 | `cell` Holding-cell fitting | Secure detention furniture and control equipment for the brig. | 3 | 3 |
+| `dessert` Dessert | Cakes, ice cream and puddings served after the main meal. | 3 | 3 |
+| `ration` Space ration | Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food. | 3 | 3 |
 | `sciinstrument` Field / science instrument | Sensors and field labs for science work. | 3 | 3 |
 | `medscanner` Diagnostic scanner | Imaging and analysis for diagnosis. | 2 | 2 |
 | `nozzle` Thruster / nozzle | Propulsion hardware (installed or held as spare). | 2 | 2 |
@@ -217,7 +232,7 @@ The sky deck is a lens-shaped dome on top of the ship, away from the engines and
 | [SS0](#ss0---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
 | [SC](#sc---star-cartography) | Star Cartography | 220.5 m2 | 4.2 m | 87 | 16 | 20 % | 7.43 t | 28.6 kW | 11.01 M |
 | [BT](#bt---briefing-theatre) | Briefing Theatre | 91.8 m2 | 3.4 m | 58 | 11 | 14 % | 2.04 t | 7.0 kW | 1.93 M |
-| [WR](#wr---officers-wardroom--bar) | Officers' Wardroom & Bar | 91.8 m2 | 3.4 m | 62 | 13 | 24 % | 2.45 t | 6.0 kW | 573.9 k |
+| [WR](#wr---officers-wardroom--bar) | Officers' Wardroom & Bar | 91.8 m2 | 3.4 m | 75 | 16 | 25 % | 2.66 t | 6.0 kW | 583.9 k |
 | [LI](#li---library--archive) | Library & Archive | 84.5 m2 | 3.4 m | 59 | 10 | 35 % | 8.70 t | 14.1 kW | 7.30 M |
 | [AB](#ab---arboretum) | Arboretum | 62.8 m2 | 3.6 m | 42 | 12 | 26 % | 3.14 t | 9.4 kW | 1.52 M |
 | [OB](#ob---observatory) | Observatory | 84.5 m2 | 3.4 m | 43 | 11 | 25 % | 6.00 t | 12.3 kW | 10.13 M |
@@ -517,9 +532,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x3, bench x2, display x2, duct x2, safety x2, sign x2, noticeboard x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (34)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (36)</summary>
 
-`beacon`, `bench`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
+`beacon`, `bench`, `bin`, `bottle`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -1044,10 +1059,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 6 (2 diagonal hull facets, 3 on the outer hull) |
 | Windows | 1 (4.9 m2 of glazing) |
 | Design occupancy | 20 persons |
-| Items placed / distinct models | 62 / 41 |
-| Installed mass / value | 2.45 t / 573.9 k cr |
+| Items placed / distinct models | 75 / 51 |
+| Installed mass / value | 2.66 t / 583.9 k cr |
 | Electrical load idle / typical / peak | 1.7 kW / 6.0 kW / 8.8 kW |
-| Floor occupancy | 24 % (floor-standing footprints / floor area) |
+| Floor occupancy | 25 % (floor-standing footprints / floor area) |
 | Lights | 9 real lights, 9 ceiling fixtures |
 
 **Design basis.** 11.5 m x 8 m, 3.4 m high.  Bar and back-bar along the north wall (about 4 m of counter, 1.0 m service gap behind it), dining table for 8 in the open south-west half with 1.3 m chair aisles, lounge group in front of the 2.6 m window, fireplace nook in the north-east corner, drinks and snack machines beside the door.  The door zone and the straight route from the door to the window stay clear.
@@ -1061,7 +1076,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_ibeam_portal` | 1 | Open doorway between spaces that need no door. |
 | Viewport glazing | (built from hull data) | 1 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 13 lines, 62 items**
+**Bill of materials - 16 lines, 75 items**
 
 #### WR-01 - Back bar equipment (4 items)
 
@@ -1212,11 +1227,45 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `sign_dept_mess` | Sign | wall | 1000 x 400 x 60 | 1.3 | 0 | 134 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **1.3** | **0** | **134** | |
 
-**Room totals by family**: tableware x15, ceilinglight x9, chair x8, couch x7, table x6, galley x4, locker x3, lamp x2, vending x2, clock x1, display x1, doorframe x1, fountain x1, plant x1, sign x1.
+#### WR-14 - Bar counter, glassware and spirits (10 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (47)</summary>
+*Why:* The bar counters carry the cocktail glasses, spirits, wine and beer in groups by glass type, so the barman reaches each drink without crossing the counter; taps and bottles stand at the back, glasses at the front.
 
-`beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `valve`, `vending`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `bottle_beer_lager_green` | Bottle / flask | table | 66 x 230 x 66 | 0.5 | 0 | 287 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 2 | `bottle_gin_blue_flask` | Bottle / flask | table | 82 x 285 x 82 | 1.9 | 0 | 610 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `bottle_wine_white_hock` | Bottle / flask | table | 72 x 338 x 72 | 0.8 | 0 | 378 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `cocktail_beer_mug_foam` | Glassware and cocktails | table | 140 x 143 x 94 | 0.2 | 0 | 385 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 2 | `cocktail_martini_olive` | Glassware and cocktails | table | 98 x 179 x 98 | 0.4 | 0 | 488 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 2 | `cocktail_whisky_rocks_tumbler` | Glassware and cocktails | table | 76 x 85 x 76 | 0.1 | 0 | 350 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_wine_glass_red` | Glassware and cocktails | table | 84 x 195 x 84 | 0.2 | 0 | 308 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| | **Line subtotal** | | | | **4.1** | **0** | **2,806** | |
+
+#### WR-15 - Dinner tables (1 item)
+
+*Why:* The wardroom tables are laid for officers' dinner: a full meal and a glass at each place and a centrepiece, with the menu different from table to table.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `drink_latte_art_cup` | Hot and cold drink | table | 158 x 72 x 156 | 0.9 | 0 | 519 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **0.9** | **0** | **519** | |
+
+#### WR-16 - Display and buffet pieces (2 items)
+
+*Why:* A dessert case and a bakery stand along the wall give the wardroom a self-service end without a kitchen of its own.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `buffet_bakery_display_stand` | Buffet / display furniture | floor | 940 x 1480 x 540 | 101 | 0 | 3,560 | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. |
+| 1 | `buffet_dessert_display_case` | Buffet / display furniture | floor | 1200 x 1113 x 600 | 108 | 0 | 3,120 | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. |
+| | **Line subtotal** | | | | **209** | **0** | **6,680** | |
+
+**Room totals by family**: tableware x15, ceilinglight x9, chair x8, couch x7, cocktail x6, table x6, bottle x4, galley x4, locker x3, buffet x2, lamp x2, vending x2, clock x1, display x1, doorframe x1, drink x1, fountain x1, plant x1, sign x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (62)</summary>
+
+`bakery`, `beacon`, `bench`, `bin`, `bottle`, `buffet`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `cocktail`, `controlpanel`, `couch`, `deli`, `desk`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `gym`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `tray`, `valve`, `veg`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -1894,14 +1943,14 @@ The command deck sits at the top of the ship and reaches furthest forward: the b
 | [LB1](#lb1---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 14 | 7 | 0 % | 206 kg | 263 W | 72.4 k |
 | [SP1](#sp1---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 5 | 3 | 0 % | 10 kg | 19 W | 2.2 k |
 | [SS1](#ss1---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 20 kg | 36 W | 4.5 k |
-| [BR](#br---bridge) | Bridge | 175.2 m2 | 4.2 m | 37 | 9 | 12 % | 4.89 t | 8.0 kW | 5.55 M |
-| [RR](#rr---captains-ready-room) | Captain's Ready Room | 85.2 m2 | 3.4 m | 29 | 9 | 13 % | 1.38 t | 2.8 kW | 180.7 k |
-| [OL](#ol---observation-lounge) | Observation Lounge | 149.5 m2 | 3.6 m | 43 | 9 | 16 % | 2.68 t | 4.4 kW | 1.72 M |
-| [CR](#cr---conference-room) | Conference Room | 85.2 m2 | 3.4 m | 39 | 8 | 22 % | 1.65 t | 3.9 kW | 532.6 k |
+| [BR](#br---bridge) | Bridge | 175.2 m2 | 4.2 m | 38 | 10 | 12 % | 4.89 t | 8.0 kW | 5.55 M |
+| [RR](#rr---captains-ready-room) | Captain's Ready Room | 85.2 m2 | 3.4 m | 31 | 10 | 13 % | 1.38 t | 2.8 kW | 181.6 k |
+| [OL](#ol---observation-lounge) | Observation Lounge | 149.5 m2 | 3.6 m | 53 | 11 | 16 % | 2.68 t | 4.4 kW | 1.73 M |
+| [CR](#cr---conference-room) | Conference Room | 85.2 m2 | 3.4 m | 51 | 9 | 22 % | 1.67 t | 3.9 kW | 539.6 k |
 | [AM](#am---astrometrics) | Astrometrics | 149.5 m2 | 3.4 m | 43 | 9 | 13 % | 6.41 t | 23.6 kW | 7.43 M |
-| [OA](#oa---officers-cabins-a) | Officers' Cabins A | 59.0 m2 | 3.4 m | 36 | 5 | 28 % | 1.41 t | 399 W | 97.9 k |
-| [OB](#ob---officers-cabins-b) | Officers' Cabins B | 45.9 m2 | 3.4 m | 23 | 4 | 22 % | 979 kg | 271 W | 53.5 k |
-| [CQ](#cq---captains-quarters) | Captain's Quarters | 61.2 m2 | 3.4 m | 33 | 9 | 30 % | 1.86 t | 3.0 kW | 306.1 k |
+| [OA](#oa---officers-cabins-a) | Officers' Cabins A | 59.0 m2 | 3.4 m | 39 | 6 | 28 % | 1.41 t | 399 W | 99.2 k |
+| [OB](#ob---officers-cabins-b) | Officers' Cabins B | 45.9 m2 | 3.4 m | 25 | 5 | 22 % | 980 kg | 271 W | 54.3 k |
+| [CQ](#cq---captains-quarters) | Captain's Quarters | 61.2 m2 | 3.4 m | 39 | 10 | 30 % | 1.87 t | 3.0 kW | 308.8 k |
 | [CC](#cc---communications-centre) | Communications Centre | 43.7 m2 | 3.4 m | 27 | 8 | 21 % | 3.50 t | 15.9 kW | 3.51 M |
 
 ### CF1 - Forward Spine Corridor
@@ -2209,9 +2258,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x3, bench x2, display x2, duct x2, safety x2, sign x2, noticeboard x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (34)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (36)</summary>
 
-`beacon`, `bench`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
+`beacon`, `bench`, `bin`, `bottle`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -2357,7 +2406,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 14 (12 diagonal hull facets, 13 on the outer hull) |
 | Windows | 13 (83.7 m2 of glazing) |
 | Design occupancy | 10 persons |
-| Items placed / distinct models | 37 / 28 |
+| Items placed / distinct models | 38 / 29 |
 | Installed mass / value | 4.89 t / 5.55 M cr |
 | Electrical load idle / typical / peak | 2.3 kW / 8.0 kW / 14.8 kW |
 | Floor occupancy | 12 % (floor-standing footprints / floor area) |
@@ -2376,7 +2425,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `conf` | `door_officer_wood` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 13 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 9 lines, 37 items**
+**Bill of materials - 10 lines, 38 items**
 
 #### BR-01 - Ceiling lighting (6 items)
 
@@ -2481,11 +2530,20 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 3 | `safety_suppression_nozzle` | Safety equipment | ceiling | 300 x 500 x 300 | 12.0 | 0 | 2,112 | Fire, first-aid, breach and emergency gear required by regulation. |
 | | **Line subtotal** | | | | **127** | **0** | **26,681** | |
 
-**Room totals by family**: console x9, seat x9, ceilinglight x6, safety x5, display x4, holo x2, clock x1, sign x1.
+#### BR-10 - Coffee on the bridge (1 item)
 
-<details><summary>Equipment families permitted in this room by the placement policy (39)</summary>
+*Why:* A flask of coffee and mugs by the briefing table keep a long watch alert; cans on the side consoles are kept clear of the controls and screens.
 
-`beacon`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `sign`, `spotlight`, `striplight`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `drink_coffee_pot_and_mugs` | Hot and cold drink | table | 312 x 205 x 186 | 6.7 | 0 | 946 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **6.7** | **0** | **946** | |
+
+**Room totals by family**: console x9, seat x9, ceilinglight x6, safety x5, display x4, holo x2, clock x1, drink x1, sign x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (41)</summary>
+
+`beacon`, `bin`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `sign`, `spotlight`, `striplight`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -2504,8 +2562,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 8 (5 diagonal hull facets, 5 on the outer hull) |
 | Windows | 3 (7.7 m2 of glazing) |
 | Design occupancy | 1 persons |
-| Items placed / distinct models | 29 / 25 |
-| Installed mass / value | 1.38 t / 180.7 k cr |
+| Items placed / distinct models | 31 / 27 |
+| Installed mass / value | 1.38 t / 181.6 k cr |
 | Electrical load idle / typical / peak | 747 W / 2.8 kW / 5.4 kW |
 | Floor occupancy | 13 % (floor-standing footprints / floor area) |
 | Lights | 4 real lights, 4 ceiling fixtures |
@@ -2522,7 +2580,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corF1` | `door_bulkhead` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 3 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 9 lines, 29 items**
+**Bill of materials - 10 lines, 31 items**
 
 #### RR-01 - Ceiling lighting (4 items)
 
@@ -2622,11 +2680,21 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `sign_emergency_exit` | Sign | wall | 560 x 240 x 84 | 0.6 | 0 | 44 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **4.9** | **0** | **913** | |
 
-**Room totals by family**: ceilinglight x4, chair x3, display x3, tableware x3, couch x2, lamp x2, shelving x2, table x2, terminal x2, desk x1, galley x1, locker x1, plant x1, safety x1, sign x1.
+#### RR-10 - Coffee and a snack in the ready room (2 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (46)</summary>
+*Why:* The captain takes coffee at the desk and a pastry with visitors at the low table; the tray stays within reach of the chair.
 
-`beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `drink_cappuccino_rosetta` | Hot and cold drink | table | 182 x 76 x 180 | 1.4 | 0 | 555 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `fruit_apple_red_and_slice` | Fresh fruit | table | 120 x 80 x 132 | 0.6 | 0 | 406 | Fruit from the hydroponics deck and the cold store. |
+| | **Line subtotal** | | | | **2.0** | **0** | **961** | |
+
+**Room totals by family**: ceilinglight x4, chair x3, display x3, tableware x3, couch x2, lamp x2, shelving x2, table x2, terminal x2, desk x1, drink x1, fruit x1, galley x1, locker x1, plant x1, safety x1, sign x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (52)</summary>
+
+`bakery`, `beacon`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `tray`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -2645,8 +2713,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 5 (1 diagonal hull facets, 2 on the outer hull) |
 | Windows | 2 (13.4 m2 of glazing) |
 | Design occupancy | 20 persons |
-| Items placed / distinct models | 43 / 29 |
-| Installed mass / value | 2.68 t / 1.72 M cr |
+| Items placed / distinct models | 53 / 39 |
+| Installed mass / value | 2.68 t / 1.73 M cr |
 | Electrical load idle / typical / peak | 1.3 kW / 4.4 kW / 6.5 kW |
 | Floor occupancy | 16 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -2662,7 +2730,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_round_arch` | 1 | Open doorway between spaces that need no door. |
 | Viewport glazing | (built from hull data) | 2 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 9 lines, 43 items**
+**Bill of materials - 11 lines, 53 items**
 
 #### OL-01 - Ceiling lighting (6 items)
 
@@ -2766,11 +2834,37 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `sign_dept_quarters` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 114 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **9.7** | **0** | **1,852** | |
 
-**Room totals by family**: ceilinglight x6, couch x5, table x5, tableware x5, chair x4, galley x3, plant x3, display x2, lamp x2, safety x2, shelving x2, doorframe x1, holo x1, sign x1, telescope x1.
+#### OL-10 - Bar counter glassware and bottles (8 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (46)</summary>
+*Why:* The observation lounge has a small bar: cocktail glasses, a decanter and wine on one counter, beer mugs and bottles on the other, each family of glassware grouped so the bartender reaches everything without turning.
 
-`beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `gym`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `valve`, `vending`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `bottle_beer_lager_green` | Bottle / flask | table | 66 x 230 x 66 | 0.5 | 0 | 287 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `bottle_whisky_decanter_square` | Bottle / flask | table | 94 x 230 x 100 | 1.0 | 0 | 124 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `bottle_wine_red_bordeaux` | Bottle / flask | table | 76 x 325 x 76 | 0.9 | 0 | 382 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `cocktail_beer_mug_foam` | Glassware and cocktails | table | 140 x 143 x 94 | 0.2 | 0 | 385 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_champagne_flute` | Glassware and cocktails | table | 66 x 200 x 66 | 0.1 | 0 | 326 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_martini_olive` | Glassware and cocktails | table | 98 x 179 x 98 | 0.2 | 0 | 244 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_mojito_mint_highball` | Glassware and cocktails | table | 78 x 215 x 76 | 0.2 | 0 | 427 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_wine_glass_red` | Glassware and cocktails | table | 84 x 195 x 84 | 0.2 | 0 | 308 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| | **Line subtotal** | | | | **3.3** | **0** | **2,483** | |
+
+#### OL-11 - Snacks on the low tables (2 items)
+
+*Why:* Cake, coffee and a fruit plate on the low tables turn the lounge into somewhere to linger over the view.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `dessert_cheesecake_slice` | Dessert | table | 200 x 80 x 200 | 1.6 | 0 | 368 | Cakes, ice cream and puddings served after the main meal. |
+| 1 | `drink_cappuccino_rosetta` | Hot and cold drink | table | 182 x 76 x 180 | 1.4 | 0 | 555 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **3.0** | **0** | **923** | |
+
+**Room totals by family**: ceilinglight x6, cocktail x5, couch x5, table x5, tableware x5, chair x4, bottle x3, galley x3, plant x3, display x2, lamp x2, safety x2, shelving x2, dessert x1, doorframe x1, drink x1, holo x1, sign x1, telescope x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (56)</summary>
+
+`bakery`, `beacon`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `cocktail`, `controlpanel`, `couch`, `deli`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `gym`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `tray`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -2789,8 +2883,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 8 (5 diagonal hull facets, 5 on the outer hull) |
 | Windows | 3 (7.7 m2 of glazing) |
 | Design occupancy | 12 persons |
-| Items placed / distinct models | 39 / 23 |
-| Installed mass / value | 1.65 t / 532.6 k cr |
+| Items placed / distinct models | 51 / 28 |
+| Installed mass / value | 1.67 t / 539.6 k cr |
 | Electrical load idle / typical / peak | 1.1 kW / 3.9 kW / 6.7 kW |
 | Floor occupancy | 22 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
@@ -2807,7 +2901,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corF1` | `door_officer_wood` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 3 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 8 lines, 39 items**
+**Bill of materials - 9 lines, 51 items**
 
 #### CR-01 - Ceiling lighting (2 items)
 
@@ -2897,11 +2991,24 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 4.3 | 0 | 869 | Fire, first-aid, breach and emergency gear required by regulation. |
 | | **Line subtotal** | | | | **5.0** | **2** | **1,852** | |
 
-**Room totals by family**: chair x13, tableware x6, terminal x3, ceilinglight x2, desk x2, display x2, galley x2, plant x2, table x2, cabinet x1, clock x1, commsunit x1, holo x1, safety x1.
+#### CR-09 - Refreshments for meetings (12 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (42)</summary>
+*Why:* Long meetings need coffee, water and something to eat: a coffee pot and mugs, a pastry basket and a water bottle for each place on both tables, within reach of the people who sit in the middle.
 
-`beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 4 | `bottle_water_bottle_500ml` | Bottle / flask | table | 70 x 211 x 70 | 2.0 | 0 | 1,960 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 4 | `can_cola` | Canned drink | table | 66 x 123 x 66 | 0.2 | 0 | 1,308 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 2 | `drink_coffee_pot_and_mugs` | Hot and cold drink | table | 312 x 205 x 186 | 13.3 | 0 | 1,892 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `tray_bread_basket_wicker` | Serving tray / dish | table | 306 x 89 x 306 | 1.1 | 0 | 740 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| 1 | `tray_cake_stand_afternoon_tea` | Serving tray / dish | table | 308 x 422 x 306 | 5.4 | 0 | 1,100 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| | **Line subtotal** | | | | **22.0** | **0** | **7,000** | |
+
+**Room totals by family**: chair x13, tableware x6, bottle x4, can x4, terminal x3, ceilinglight x2, desk x2, display x2, drink x2, galley x2, plant x2, table x2, tray x2, cabinet x1, clock x1, commsunit x1, holo x1, safety x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (49)</summary>
+
+`bakery`, `beacon`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `controlpanel`, `desk`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `tray`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -3051,9 +3158,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x6, rack x6, console x5, seat x5, display x4, telescope x3, analyzer x2, chair x2, desk x2, clock x1, commsunit x1, holo x1, plant x1, router x1, safety x1, sign x1, storage x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (47)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (50)</summary>
 
-`analyzer`, `antenna`, `beacon`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `rack`, `railing`, `router`, `safety`, `sciinstrument`, `sconce`, `seat`, `sign`, `spotlight`, `storage`, `striplight`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
+`analyzer`, `antenna`, `beacon`, `bin`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `rack`, `railing`, `ration`, `router`, `safety`, `sciinstrument`, `sconce`, `seat`, `sign`, `spotlight`, `storage`, `striplight`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -3072,8 +3179,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 7 (3 diagonal hull facets, 4 on the outer hull) |
 | Windows | 1 (2.0 m2 of glazing) |
 | Design occupancy | 3 persons |
-| Items placed / distinct models | 36 / 21 |
-| Installed mass / value | 1.41 t / 97.9 k cr |
+| Items placed / distinct models | 39 / 24 |
+| Installed mass / value | 1.41 t / 99.2 k cr |
 | Electrical load idle / typical / peak | 37 W / 399 W / 1.8 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
@@ -3089,7 +3196,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corA1` | `door_cabin` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 1 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 5 lines, 36 items**
+**Bill of materials - 6 lines, 39 items**
 
 #### OA-01 - Ceiling lighting (3 items)
 
@@ -3152,11 +3259,22 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `sign_dept_quarters` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 114 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **6.1** | **2** | **1,966** | |
 
-**Room totals by family**: lamp x7, locker x5, bed x3, ceilinglight x3, chair x3, desk x3, terminal x3, couch x2, clock x1, display x1, safety x1, shelving x1, sign x1, table x1, tableware x1.
+#### OA-06 - Drink and fruit at the desk (3 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (44)</summary>
+*Why:* Officers keep a drink and a piece of fruit at the desk for late work and keep the cabin supplied from the wardroom.
 
-`beacon`, `bed`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `can_cold_brew` | Canned drink | table | 64 x 96 x 64 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `drink_hot_cocoa_mug` | Hot and cold drink | table | 134 x 95 x 94 | 0.6 | 0 | 456 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `drink_tea_cup_with_bag` | Hot and cold drink | table | 144 x 76 x 144 | 0.8 | 0 | 445 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **1.5** | **0** | **1,228** | |
+
+**Room totals by family**: lamp x7, locker x5, bed x3, ceilinglight x3, chair x3, desk x3, terminal x3, couch x2, drink x2, can x1, clock x1, display x1, safety x1, shelving x1, sign x1, table x1, tableware x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (51)</summary>
+
+`bakery`, `beacon`, `bed`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `hatch`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `ration`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -3175,8 +3293,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 7 (4 diagonal hull facets, 5 on the outer hull) |
 | Windows | 5 (8.0 m2 of glazing) |
 | Design occupancy | 2 persons |
-| Items placed / distinct models | 23 / 16 |
-| Installed mass / value | 979 kg / 53.5 k cr |
+| Items placed / distinct models | 25 / 18 |
+| Installed mass / value | 980 kg / 54.3 k cr |
 | Electrical load idle / typical / peak | 21 W / 271 W / 1.7 kW |
 | Floor occupancy | 22 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
@@ -3192,7 +3310,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corA1` | `door_cabin` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 5 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 4 lines, 23 items**
+**Bill of materials - 5 lines, 25 items**
 
 #### OB-01 - Ceiling lighting (2 items)
 
@@ -3242,11 +3360,21 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `sign_dept_quarters` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 114 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **8.5** | **36** | **7,203** | |
 
-**Room totals by family**: lamp x5, locker x3, bed x2, ceilinglight x2, couch x2, desk x2, terminal x2, chair x1, display x1, safety x1, sign x1, table x1.
+#### OB-05 - Drink and fruit at the desk (2 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (44)</summary>
+*Why:* Officers keep a drink and a piece of fruit at the desk for late work and keep the cabin supplied from the wardroom.
 
-`beacon`, `bed`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `can_cold_brew` | Canned drink | table | 64 x 96 x 64 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `drink_hot_cocoa_mug` | Hot and cold drink | table | 134 x 95 x 94 | 0.6 | 0 | 456 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **0.7** | **0** | **783** | |
+
+**Room totals by family**: lamp x5, locker x3, bed x2, ceilinglight x2, couch x2, desk x2, terminal x2, can x1, chair x1, display x1, drink x1, safety x1, sign x1, table x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (51)</summary>
+
+`bakery`, `beacon`, `bed`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `hatch`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `ration`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -3265,8 +3393,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 7 (3 diagonal hull facets, 4 on the outer hull) |
 | Windows | 1 (3.0 m2 of glazing) |
 | Design occupancy | 1 persons |
-| Items placed / distinct models | 33 / 28 |
-| Installed mass / value | 1.86 t / 306.1 k cr |
+| Items placed / distinct models | 39 / 34 |
+| Installed mass / value | 1.87 t / 308.8 k cr |
 | Electrical load idle / typical / peak | 807 W / 3.0 kW / 5.7 kW |
 | Floor occupancy | 30 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
@@ -3282,7 +3410,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corA1` | `door_cabin` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 1 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 9 lines, 33 items**
+**Bill of materials - 10 lines, 39 items**
 
 #### CQ-01 - Ceiling lighting (3 items)
 
@@ -3384,11 +3512,25 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `sign_dept_quarters` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 114 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **6.1** | **2** | **1,966** | |
 
-**Room totals by family**: chair x5, lamp x4, ceilinglight x3, galley x3, locker x3, table x2, tableware x2, terminal x2, bed x1, clock x1, couch x1, desk x1, display x1, plant x1, safety x1, shelving x1, sign x1.
+#### CQ-10 - The captain's table (6 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (48)</summary>
+*Why:* The captain dines alone or with a guest at the round table: a steak dinner with wine, a fruit bowl at the centre, and a coffee and whisky on the desk and the low table for late work.
 
-`beacon`, `bed`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `cocktail_champagne_flute` | Glassware and cocktails | table | 66 x 200 x 66 | 0.1 | 0 | 326 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_whisky_rocks_tumbler` | Glassware and cocktails | table | 76 x 85 x 76 | 0.1 | 0 | 175 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_wine_glass_red` | Glassware and cocktails | table | 84 x 195 x 84 | 0.2 | 0 | 308 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `drink_espresso_cup_sugar` | Hot and cold drink | table | 116 x 54 x 116 | 0.4 | 0 | 451 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `meal_steak_dinner` | Plated meal | table | 300 x 56 x 300 | 2.5 | 0 | 784 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_sushi_nigiri_set` | Plated meal | table | 300 x 52 x 130 | 1.1 | 0 | 635 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| | **Line subtotal** | | | | **4.3** | **0** | **2,679** | |
+
+**Room totals by family**: chair x5, lamp x4, ceilinglight x3, cocktail x3, galley x3, locker x3, meal x2, table x2, tableware x2, terminal x2, bed x1, clock x1, couch x1, desk x1, display x1, drink x1, plant x1, safety x1, shelving x1, sign x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (58)</summary>
+
+`bakery`, `beacon`, `bed`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `cocktail`, `controlpanel`, `couch`, `deli`, `desk`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `telescope`, `terminal`, `tray`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -3514,9 +3656,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: rack x4, antenna x3, commsunit x3, seat x3, cabletray x2, ceilinglight x2, console x2, display x2, router x2, holo x1, safety x1, sign x1, storage x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (46)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (48)</summary>
 
-`antenna`, `beacon`, `bin`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `rack`, `railing`, `router`, `safety`, `sconce`, `seat`, `sign`, `spotlight`, `storage`, `striplight`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
+`antenna`, `beacon`, `bin`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `rack`, `railing`, `router`, `safety`, `sconce`, `seat`, `sign`, `spotlight`, `storage`, `striplight`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -3534,15 +3676,15 @@ The habitat deck is the widest deck and holds everything that keeps the crew ali
 | [SP2](#sp2---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 5 | 3 | 0 % | 10 kg | 18 W | 2.1 k |
 | [SS2](#ss2---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
 | [AR](#ar---armory) | Armory | 30.7 m2 | 3.4 m | 22 | 9 | 20 % | 2.90 t | 220.6 kW | 1.89 M |
-| [GA](#ga---galley) | Galley | 84.9 m2 | 3.4 m | 34 | 10 | 19 % | 4.56 t | 19.5 kW | 1.48 M |
-| [MH](#mh---mess-hall) | Mess Hall | 149.1 m2 | 3.6 m | 100 | 13 | 27 % | 3.34 t | 9.1 kW | 752.4 k |
-| [BG](#bg---brig) | Brig | 30.7 m2 | 3.4 m | 15 | 8 | 28 % | 2.94 t | 630 W | 1.44 M |
-| [SO](#so---security-office) | Security Office | 84.9 m2 | 3.4 m | 44 | 11 | 24 % | 3.37 t | 7.6 kW | 2.86 M |
-| [MB](#mb---medical-bay) | Medical Bay | 149.1 m2 | 3.6 m | 46 | 13 | 30 % | 14.97 t | 66.4 kW | 27.35 M |
-| [RG](#rg---recreation--gym) | Recreation & Gym | 85.0 m2 | 3.4 m | 40 | 11 | 28 % | 2.82 t | 1.5 kW | 311.0 k |
-| [CW](#cw---crew-quarters) | Crew Quarters | 68.8 m2 | 3.4 m | 33 | 9 | 32 % | 878 kg | 190 W | 73.6 k |
+| [GA](#ga---galley) | Galley | 84.9 m2 | 3.4 m | 48 | 15 | 19 % | 4.59 t | 19.5 kW | 1.49 M |
+| [MH](#mh---mess-hall) | Mess Hall | 149.1 m2 | 3.6 m | 158 | 14 | 27 % | 3.52 t | 9.1 kW | 789.0 k |
+| [BG](#bg---brig) | Brig | 30.7 m2 | 3.4 m | 17 | 9 | 28 % | 2.94 t | 630 W | 1.44 M |
+| [SO](#so---security-office) | Security Office | 84.9 m2 | 3.4 m | 48 | 12 | 24 % | 3.38 t | 7.6 kW | 2.86 M |
+| [MB](#mb---medical-bay) | Medical Bay | 149.1 m2 | 3.6 m | 51 | 14 | 30 % | 14.97 t | 66.4 kW | 27.35 M |
+| [RG](#rg---recreation--gym) | Recreation & Gym | 85.0 m2 | 3.4 m | 47 | 12 | 28 % | 2.82 t | 1.5 kW | 315.4 k |
+| [CW](#cw---crew-quarters) | Crew Quarters | 68.8 m2 | 3.4 m | 37 | 10 | 32 % | 879 kg | 190 W | 75.3 k |
 | [SL](#sl---science-laboratory) | Science Laboratory | 85.0 m2 | 3.4 m | 34 | 12 | 25 % | 6.63 t | 6.0 kW | 9.27 M |
-| [HY](#hy---hydroponics-garden) | Hydroponics Garden | 68.8 m2 | 3.6 m | 39 | 12 | 27 % | 6.40 t | 20.6 kW | 3.06 M |
+| [HY](#hy---hydroponics-garden) | Hydroponics Garden | 68.8 m2 | 3.6 m | 47 | 14 | 28 % | 6.44 t | 20.6 kW | 3.07 M |
 
 ### CF2 - Forward Spine Corridor
 
@@ -3862,9 +4004,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x3, bench x2, display x2, duct x2, safety x2, sign x2, vending x2, noticeboard x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (34)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (36)</summary>
 
-`beacon`, `bench`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
+`beacon`, `bench`, `bin`, `bottle`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4123,9 +4265,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: weaponrack x9, camera x3, safety x2, sign x2, ceilinglight x1, chair x1, duct x1, forcefield x1, table x1, terminal x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (46)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (48)</summary>
 
-`barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cell`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `crate`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `forcefield`, `fountain`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `table`, `terminal`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
+`barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cell`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `crate`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `forcefield`, `fountain`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `table`, `terminal`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4144,8 +4286,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 8 (5 diagonal hull facets, 5 on the outer hull) |
 | Windows | none |
 | Design occupancy | 6 persons |
-| Items placed / distinct models | 34 / 24 |
-| Installed mass / value | 4.56 t / 1.48 M cr |
+| Items placed / distinct models | 48 / 38 |
+| Installed mass / value | 4.59 t / 1.49 M cr |
 | Electrical load idle / typical / peak | 6.0 kW / 19.5 kW / 29.1 kW |
 | Floor occupancy | 19 % (floor-standing footprints / floor area) |
 | Lights | 5 real lights, 5 ceiling fixtures |
@@ -4161,7 +4303,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_hexagonal` | 1 | Open doorway between spaces that need no door. |
 | Doorway frame | `doorframe_twin_ring` | 1 | Open doorway between spaces that need no door. |
 
-**Bill of materials - 10 lines, 34 items**
+**Bill of materials - 15 lines, 48 items**
 
 #### GA-01 - Cold storage (3 items)
 
@@ -4216,7 +4358,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `galley_sink_unit` | Galley equipment | floor | 1420 x 1330 x 707 | 225 | 0 | 76,600 | Food storage, cooking and dish-washing equipment. |
 | | **Line subtotal** | | | | **349** | **1700** | **119,700** | |
 
-#### GA-06 - Serving line (7 items)
+#### GA-06 - Serving line (3 items)
 
 *Why:* Two counters flank the portal on the mess side: hot food on the port side, salads and cold on the starboard side, so plates move straight through the opening without the cooks entering the hall.
 
@@ -4224,11 +4366,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `galley_food_replicator` | Galley equipment | floor | 900 x 1940 x 680 | 197 | 1100 | 70,200 | Food storage, cooking and dish-washing equipment. |
 | 2 | `galley_prep_counter` | Galley equipment | floor | 1800 x 1180 x 750 | 502 | 0 | 155,600 | Food storage, cooking and dish-washing equipment. |
-| 1 | `tableware_bowls` | Tableware / table setting | table | 345 x 101 x 275 | 2.8 | 0 | 879 | Plates, cups and condiments on tables. |
-| 1 | `tableware_meal_tray` | Tableware / table setting | table | 420 x 95 x 350 | 3.6 | 0 | 1,050 | Plates, cups and condiments on tables. |
-| 1 | `tableware_plate_stack` | Tableware / table setting | table | 260 x 99 x 260 | 1.8 | 0 | 816 | Plates, cups and condiments on tables. |
-| 1 | `tableware_salad` | Tableware / table setting | table | 280 x 155 x 280 | 3.4 | 0 | 1,230 | Plates, cups and condiments on tables. |
-| | **Line subtotal** | | | | **710** | **1100** | **229,775** | |
+| | **Line subtotal** | | | | **699** | **1100** | **225,800** | |
 
 #### GA-07 - Hanging pots and ceiling rail (1 item)
 
@@ -4268,11 +4406,69 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 106 | Fire, first-aid, breach and emergency gear required by regulation. |
 | | **Line subtotal** | | | | **105** | **120** | **31,566** | |
 
-**Room totals by family**: galley x19, ceilinglight x5, tableware x4, doorframe x2, safety x2, duct x1, watertank x1.
+#### GA-11 - Raw ingredients on the prep island (4 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (46)</summary>
+*Why:* Vegetables, eggs and a cabbage are laid out on the island for the cook to prepare, one cooking step from the fridges; ingredients stay on the island, not on the serving counters, so raw and cooked food are kept apart.
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `crate`, `cylinder`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `scrubber`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `table`, `tableware`, `tank`, `terminal`, `valve`, `wallpanel`, `warnlight`, `watertank`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `deli_egg_carton_dozen` | Cheese, charcuterie and dairy | table | 310 x 152 x 212 | 1.4 | 0 | 1,110 | Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches. |
+| 1 | `veg_cabbage_green` | Vegetables | table | 258 x 162 x 264 | 1.4 | 0 | 449 | Fresh vegetables from the grow beds, ready to prepare. |
+| 1 | `veg_carrots_bunch` | Vegetables | table | 308 x 39 x 222 | 0.3 | 0 | 904 | Fresh vegetables from the grow beds, ready to prepare. |
+| 1 | `veg_tomatoes_on_vine` | Vegetables | table | 236 x 62 x 126 | 0.2 | 0 | 1,450 | Fresh vegetables from the grow beds, ready to prepare. |
+| | **Line subtotal** | | | | **3.3** | **0** | **3,913** | |
+
+#### GA-12 - Finished dishes on the prep counters (2 items)
+
+*Why:* Roast chicken, a loaf, butter and a pie stand on the prep counter nearest the range, ready to be carved and sliced; dishes go from range to counter to serving line without crossing the raw-food area.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `deli_butter_dish_and_knife` | Cheese, charcuterie and dairy | table | 170 x 46 x 142 | 0.1 | 0 | 39 | Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches. |
+| 1 | `meal_roast_chicken` | Plated meal | table | 400 x 138 x 328 | 10.4 | 0 | 1,710 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| | **Line subtotal** | | | | **10.5** | **0** | **1,749** | |
+
+#### GA-13 - Hot and cold serving counters (7 items)
+
+*Why:* The hot counter holds steam pans of mash, roast vegetables and a stew; the cold counter has salad, pie, cake and fruit; each dish sits where the queue passes it in the order people build a plate.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `bakery_pie_apple_lattice` | Bread and baked goods | table | 242 x 54 x 242 | 0.4 | 0 | 416 | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. |
+| 1 | `dessert_tiramisu_cup` | Dessert | table | 102 x 106 x 80 | 0.4 | 0 | 245 | Cakes, ice cream and puddings served after the main meal. |
+| 1 | `meal_beef_stew_pot` | Plated meal | table | 290 x 150 x 242 | 6.2 | 0 | 1,060 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_salad_bowl_wood` | Plated meal | table | 300 x 129 x 300 | 5.9 | 0 | 1,500 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `tray_fruit_bowl_mixed` | Serving tray / dish | table | 340 x 150 x 338 | 2.2 | 0 | 1,030 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| 1 | `tray_hotel_pan_mash_gravy` | Serving tray / dish | table | 562 x 77 x 366 | 1.8 | 0 | 426 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| 1 | `tray_hotel_pan_roast_veg` | Serving tray / dish | table | 562 x 93 x 386 | 2.6 | 0 | 933 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| | **Line subtotal** | | | | **19.5** | **0** | **5,610** | |
+
+#### GA-14 - Hanging produce and drying rack (4 items)
+
+*Why:* Garlic, chilli, herb bundles and cured sausages hang on the wall above the dry stores, in the dry airflow that keeps them for weeks and within a step of the prep island.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `hanging_chili_ristra` | Hanging produce | wall | 100 x 686 x 43 | 0.4 | 0 | 939 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `hanging_garlic_braid` | Hanging produce | wall | 120 x 486 x 70 | 0.5 | 0 | 1,880 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `hanging_herb_bundles` | Hanging produce | wall | 500 x 316 x 93 | 1.8 | 0 | 956 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `hanging_sausage_links_hanging` | Hanging produce | wall | 300 x 380 x 47 | 0.7 | 0 | 776 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| | **Line subtotal** | | | | **3.3** | **0** | **4,551** | |
+
+#### GA-15 - Fresh harvest delivery (1 item)
+
+*Why:* Crates of tomatoes and potatoes from the hydroponics deck wait at the wall by the door, in the order the cook will use them, so deliveries never cross the cooking area.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `harvest_crate_tomatoes` | Hydroponic harvest crate | floor | 600 x 221 x 400 | 6.7 | 0 | 1,640 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| | **Line subtotal** | | | | **6.7** | **0** | **1,640** | |
+
+**Room totals by family**: galley x19, ceilinglight x5, hanging x4, meal x3, tray x3, veg x3, deli x2, doorframe x2, safety x2, bakery x1, dessert x1, duct x1, harvest x1, watertank x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (60)</summary>
+
+`bakery`, `barrel`, `beacon`, `bin`, `bottle`, `buffet`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `crate`, `cylinder`, `deli`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `hanging`, `harvest`, `hatch`, `instrument`, `junction`, `locker`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `ration`, `safety`, `sconce`, `scrubber`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `table`, `tableware`, `tank`, `terminal`, `tray`, `valve`, `veg`, `wallpanel`, `warnlight`, `watertank`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4291,8 +4487,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 6 (2 diagonal hull facets, 3 on the outer hull) |
 | Windows | 3 (12.9 m2 of glazing) |
 | Design occupancy | 40 persons |
-| Items placed / distinct models | 100 / 36 |
-| Installed mass / value | 3.34 t / 752.4 k cr |
+| Items placed / distinct models | 158 / 76 |
+| Installed mass / value | 3.52 t / 789.0 k cr |
 | Electrical load idle / typical / peak | 2.7 kW / 9.1 kW / 13.2 kW |
 | Floor occupancy | 27 % (floor-standing footprints / floor area) |
 | Lights | 7 real lights, 6 ceiling fixtures |
@@ -4308,7 +4504,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_peaked_gable` | 1 | Open doorway between spaces that need no door. |
 | Viewport glazing | (built from hull data) | 3 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 13 lines, 100 items**
+**Bill of materials - 14 lines, 158 items**
 
 #### MH-01 - Long dining tables (6 items)
 
@@ -4348,18 +4544,57 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 16 | `chair_mess_chair` | Chair | floor | 420 x 890 x 460 | 54.6 | 0 | 3,520 | Seating for desks and tables. |
 | | **Line subtotal** | | | | **108** | **0** | **6,992** | |
 
-#### MH-05 - Table settings (15 items)
+#### MH-05 - Table settings and the day's menu (72 items)
 
-*Why:* Plates, cups, condiments and napkin dispensers on the tables make the hall read as a dining room and save a trip to the counter.
+*Why:* Each table is laid for its diners with a different full meal at the seats, a drink beside each plate and a shared centrepiece (bread, fruit, soup, cheese) on the centre line within everybody's reach; the menu is varied from table to table so the hall reads as a working dining room.
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `tableware_bread_basket` | Tableware / table setting | table | 344 x 135 x 244 | 6.4 | 0 | 2,400 | Plates, cups and condiments on tables. |
+| 1 | `bakery_pancake_stack` | Bread and baked goods | table | 260 x 102 x 260 | 1.0 | 0 | 765 | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. |
+| 1 | `bakery_pie_apple_lattice` | Bread and baked goods | table | 242 x 54 x 242 | 0.4 | 0 | 416 | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. |
+| 1 | `bakery_waffle_berries` | Bread and baked goods | table | 280 x 51 x 280 | 0.5 | 0 | 638 | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. |
+| 4 | `bottle_water_bottle_500ml` | Bottle / flask | table | 70 x 211 x 70 | 2.0 | 0 | 1,960 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 3 | `can_blue_cooler_tall` | Canned drink | table | 66 x 169 x 66 | 0.3 | 0 | 984 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 3 | `can_cola` | Canned drink | table | 66 x 123 x 66 | 0.2 | 0 | 981 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 2 | `can_grape_pop_mini` | Canned drink | table | 52 x 91 x 52 | 0.1 | 0 | 654 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 2 | `can_lime_fizz` | Canned drink | table | 66 x 123 x 66 | 0.1 | 0 | 654 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 2 | `can_orange_soda` | Canned drink | table | 70 x 116 x 70 | 0.1 | 0 | 656 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `deli_cheese_board` | Cheese, charcuterie and dairy | table | 400 x 60 x 260 | 0.7 | 0 | 427 | Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches. |
+| 2 | `drink_hot_cocoa_mug` | Hot and cold drink | table | 134 x 95 x 94 | 1.2 | 0 | 912 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 3 | `drink_iced_coffee_glass` | Hot and cold drink | table | 80 x 215 x 80 | 2.1 | 0 | 843 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `drink_lemonade_pitcher_set` | Hot and cold drink | table | 258 x 232 x 172 | 5.9 | 0 | 809 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 2 | `drink_milk_glass_cookies` | Hot and cold drink | table | 196 x 110 x 100 | 2.1 | 0 | 776 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 4 | `drink_orange_juice_glass` | Hot and cold drink | table | 74 x 185 x 72 | 1.9 | 0 | 940 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `drink_smoothie_strawberry_tall` | Hot and cold drink | table | 88 x 235 x 80 | 0.8 | 0 | 321 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 2 | `drink_water_glass_ice_lemon` | Hot and cold drink | table | 78 x 109 x 72 | 0.6 | 0 | 438 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `meal_burger_with_fries` | Plated meal | table | 280 x 99 x 280 | 4.0 | 0 | 930 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_burrito_plate` | Plated meal | table | 300 x 70 x 300 | 3.4 | 0 | 567 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_caesar_salad` | Plated meal | table | 290 x 52 x 290 | 2.4 | 0 | 716 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_club_sandwich` | Plated meal | table | 280 x 98 x 280 | 3.9 | 0 | 436 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_curry_and_rice` | Plated meal | table | 320 x 76 x 320 | 4.5 | 0 | 861 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 3 | `meal_dumplings_steamer` | Plated meal | table | 298 x 50 x 308 | 7.9 | 0 | 2,484 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_fish_and_chips` | Plated meal | table | 320 x 64 x 320 | 3.8 | 0 | 862 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_fried_egg_breakfast` | Plated meal | table | 300 x 29 x 300 | 1.3 | 0 | 538 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_fried_rice_bowl` | Plated meal | table | 210 x 105 x 176 | 2.2 | 0 | 978 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_lasagna_slice` | Plated meal | table | 280 x 69 x 280 | 2.7 | 0 | 395 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 3 | `meal_mac_and_cheese` | Plated meal | table | 190 x 59 x 188 | 3.4 | 0 | 3,840 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_omelette_plate` | Plated meal | table | 300 x 45 x 300 | 2.3 | 0 | 733 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_pho_bowl` | Plated meal | table | 256 x 112 x 230 | 3.4 | 0 | 1,560 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_pizza_margherita` | Plated meal | table | 336 x 27 x 336 | 1.7 | 0 | 807 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_pizza_pepperoni` | Plated meal | table | 330 x 21 x 330 | 1.3 | 0 | 1,140 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_porridge_bowl` | Plated meal | table | 190 x 80 x 170 | 1.4 | 0 | 951 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_ramen_bowl` | Plated meal | table | 238 x 145 x 210 | 3.7 | 0 | 2,120 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 2 | `meal_salad_bowl_wood` | Plated meal | table | 300 x 129 x 300 | 11.8 | 0 | 3,000 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_spaghetti_bolognese` | Plated meal | table | 290 x 63 x 290 | 3.0 | 0 | 1,260 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_steak_dinner` | Plated meal | table | 300 x 56 x 300 | 2.5 | 0 | 784 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_tacos_trio` | Plated meal | table | 324 x 85 x 130 | 1.8 | 0 | 352 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 2 | `meal_tomato_soup_bowl` | Plated meal | table | 210 x 70 x 208 | 3.3 | 0 | 1,360 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 3 | `tableware_condiments` | Tableware / table setting | table | 220 x 190 x 100 | 3.6 | 0 | 1,119 | Plates, cups and condiments on tables. |
-| 4 | `tableware_cups_and_mugs` | Tableware / table setting | table | 318 x 100 x 283 | 10.1 | 0 | 3,828 | Plates, cups and condiments on tables. |
-| 2 | `tableware_napkin_dispenser` | Tableware / table setting | table | 140 x 155 x 111 | 1.3 | 0 | 516 | Plates, cups and condiments on tables. |
-| 4 | `tableware_plate_stack` | Tableware / table setting | table | 260 x 99 x 260 | 7.4 | 0 | 3,264 | Plates, cups and condiments on tables. |
-| | **Line subtotal** | | | | **28.8** | **0** | **11,127** | |
+| 3 | `tableware_napkin_dispenser` | Tableware / table setting | table | 140 x 155 x 111 | 2.0 | 0 | 774 | Plates, cups and condiments on tables. |
+| 1 | `tray_bread_basket_wicker` | Serving tray / dish | table | 306 x 89 x 306 | 1.1 | 0 | 740 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| 1 | `tray_fruit_bowl_mixed` | Serving tray / dish | table | 340 x 150 x 338 | 2.2 | 0 | 1,030 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| 1 | `tray_soup_tureen_ladle` | Serving tray / dish | table | 454 x 214 x 320 | 4.0 | 0 | 674 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| | **Line subtotal** | | | | **109** | **0** | **44,185** | |
 
 #### MH-06 - Serving line (7 items)
 
@@ -4451,11 +4686,20 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 212 | Fire, first-aid, breach and emergency gear required by regulation. |
 | | **Line subtotal** | | | | **132** | **144** | **40,612** | |
 
-**Room totals by family**: chair x32, tableware x15, table x9, bench x8, ceilinglight x6, safety x5, galley x4, display x3, duct x3, noticeboard x3, plant x3, bin x2, clock x2, vending x2, doorframe x1, fountain x1, sign x1.
+#### MH-14 - Buffet and bakery stand (1 item)
 
-<details><summary>Equipment families permitted in this room by the placement policy (42)</summary>
+*Why:* A hot-pan buffet counter and a bakery display stand let a second queue help itself at busy sittings while the galley passes only the main course; both stand with their backs to a wall, clear of the tables and the 1.2 m aisles.
 
-`beacon`, `bench`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `vending`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `buffet_bakery_display_stand` | Buffet / display furniture | floor | 940 x 1480 x 540 | 101 | 0 | 3,560 | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. |
+| | **Line subtotal** | | | | **101** | **0** | **3,560** | |
+
+**Room totals by family**: chair x32, meal x28, drink x15, can x12, table x9, bench x8, ceilinglight x6, tableware x6, safety x5, bottle x4, galley x4, bakery x3, display x3, duct x3, noticeboard x3, plant x3, tray x3, bin x2, clock x2, vending x2, buffet x1, deli x1, doorframe x1, fountain x1, sign x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (54)</summary>
+
+`bakery`, `beacon`, `bench`, `bin`, `bottle`, `buffet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `deli`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `ration`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `tray`, `valve`, `veg`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4474,7 +4718,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 7 (4 diagonal hull facets, 5 on the outer hull) |
 | Windows | none |
 | Design occupancy | 2 persons |
-| Items placed / distinct models | 15 / 14 |
+| Items placed / distinct models | 17 / 16 |
 | Installed mass / value | 2.94 t / 1.44 M cr |
 | Electrical load idle / typical / peak | 110 W / 630 W / 3.5 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
@@ -4491,7 +4735,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corF2` | `door_blast` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Sliding door to `secoff` | `door_security` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 
-**Bill of materials - 8 lines, 15 items**
+**Bill of materials - 9 lines, 17 items**
 
 #### BG-01 - Detention cell (1 item)
 
@@ -4571,11 +4815,21 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `ceilinglight_triple_spot_rail` | Ceiling light fixture | ceiling | 1100 x 220 x 156 | 5.4 | 15 | 1,350 | General lighting sized to the task in the room. |
 | | **Line subtotal** | | | | **5.4** | **15** | **1,350** | |
 
-**Room totals by family**: camera x4, cell x3, bench x1, ceilinglight x1, chair x1, desk x1, display x1, safety x1, sign x1, terminal x1.
+#### BG-09 - Guard coffee and detainee meal (2 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (44)</summary>
+*Why:* The guard keeps coffee and a doughnut on the desk for the long watch; the detainee's meal arrives on a one-piece moulded tray with a plastic spork, left on the desk until the cell is opened.
 
-`beacon`, `bed`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cell`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `forcefield`, `fountain`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `table`, `terminal`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `bakery_donut_pink_sprinkles` | Bread and baked goods | table | 100 x 37 x 100 | 0.1 | 0 | 500 | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. |
+| 1 | `drink_espresso_cup_sugar` | Hot and cold drink | table | 116 x 54 x 116 | 0.4 | 0 | 451 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **0.4** | **0** | **951** | |
+
+**Room totals by family**: camera x4, cell x3, bakery x1, bench x1, ceilinglight x1, chair x1, desk x1, display x1, drink x1, safety x1, sign x1, terminal x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (49)</summary>
+
+`bakery`, `beacon`, `bed`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cell`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `forcefield`, `fountain`, `fruit`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `ration`, `safety`, `sconce`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `table`, `terminal`, `tray`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4594,8 +4848,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 8 (5 diagonal hull facets, 5 on the outer hull) |
 | Windows | none |
 | Design occupancy | 8 persons |
-| Items placed / distinct models | 44 / 30 |
-| Installed mass / value | 3.37 t / 2.86 M cr |
+| Items placed / distinct models | 48 / 34 |
+| Installed mass / value | 3.38 t / 2.86 M cr |
 | Electrical load idle / typical / peak | 2.2 kW / 7.6 kW / 12.2 kW |
 | Floor occupancy | 24 % (floor-standing footprints / floor area) |
 | Lights | 5 real lights, 5 ceiling fixtures |
@@ -4611,7 +4865,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `brig` | `door_security` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Sliding door to `corF2` | `door_blast` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 
-**Bill of materials - 11 lines, 44 items**
+**Bill of materials - 12 lines, 48 items**
 
 #### SO-01 - Monitor wall (5 items)
 
@@ -4732,11 +4986,23 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `ceilinglight_square_panel_1x1` | Ceiling light fixture | ceiling | 1000 x 79 x 1000 | 10.6 | 18 | 3,360 | General lighting sized to the task in the room. |
 | | **Line subtotal** | | | | **51.6** | **90** | **14,577** | |
 
-**Room totals by family**: chair x10, ceilinglight x5, display x5, console x3, desk x3, safety x3, seat x3, camera x2, plant x2, weaponrack x2, fountain x1, galley x1, holo x1, shelving x1, sign x1, storagebin x1.
+#### SO-12 - Watch coffee and snacks (4 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (51)</summary>
+*Why:* The watch runs on coffee: a pot and mugs at the briefing table, mugs and a snack on each duty desk, so officers on a long shift never leave the monitor wall for food.
 
-`beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `forcefield`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `can_energy_slim` | Canned drink | table | 58 x 136 x 58 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `drink_coffee_pot_and_mugs` | Hot and cold drink | table | 312 x 205 x 186 | 6.7 | 0 | 946 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `drink_espresso_cup_sugar` | Hot and cold drink | table | 116 x 54 x 116 | 0.4 | 0 | 451 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `drink_hot_cocoa_mug` | Hot and cold drink | table | 134 x 95 x 94 | 0.6 | 0 | 456 | Coffee, tea, juices, shakes and smoothies at the table. |
+| | **Line subtotal** | | | | **7.7** | **0** | **2,180** | |
+
+**Room totals by family**: chair x10, ceilinglight x5, display x5, console x3, desk x3, drink x3, safety x3, seat x3, camera x2, plant x2, weaponrack x2, can x1, fountain x1, galley x1, holo x1, shelving x1, sign x1, storagebin x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (57)</summary>
+
+`bakery`, `beacon`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `forcefield`, `fountain`, `galley`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `table`, `tableware`, `terminal`, `tray`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4755,7 +5021,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 6 (2 diagonal hull facets, 3 on the outer hull) |
 | Windows | 3 (9.6 m2 of glazing) |
 | Design occupancy | 6 persons |
-| Items placed / distinct models | 46 / 35 |
+| Items placed / distinct models | 51 / 40 |
 | Installed mass / value | 14.97 t / 27.35 M cr |
 | Electrical load idle / typical / peak | 19.9 kW / 66.4 kW / 119.4 kW |
 | Floor occupancy | 30 % (floor-standing footprints / floor area) |
@@ -4772,7 +5038,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Sliding door to `corF2` | `door_glass_lab` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 | Viewport glazing | (built from hull data) | 3 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 13 lines, 46 items**
+**Bill of materials - 14 lines, 51 items**
 
 #### MB-01 - Treatment beds (8 items)
 
@@ -4913,11 +5179,24 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `ceilinglight_triple_spot_rail` | Ceiling light fixture | ceiling | 1100 x 220 x 156 | 5.4 | 15 | 1,350 | General lighting sized to the task in the room. |
 | | **Line subtotal** | | | | **66.0** | **139** | **17,008** | |
 
-**Room totals by family**: ceilinglight x8, medsupply x7, medbed x6, medcabinet x5, cylinder x4, surgical x4, cryo x2, medscanner x2, bench x1, chair x1, clock x1, desk x1, labbench x1, medtool x1, sign x1, terminal x1.
+#### MB-14 - Patient meals and nutrition (5 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (57)</summary>
+*Why:* Patients on a bed get a meal tray, juice and fruit puree at the bedside, and the nurse's desk has fruit and water: nutrition is part of treatment and a tray at the bed avoids trips to the mess.
 
-`analyzer`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `cryo`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `labbench`, `lamp`, `locker`, `medbed`, `medcabinet`, `medscanner`, `medsupply`, `medtool`, `microscope`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `specimen`, `spotlight`, `storagebin`, `striplight`, `surgical`, `tableware`, `tank`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `drink_orange_juice_glass` | Hot and cold drink | table | 74 x 185 x 72 | 0.5 | 0 | 235 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `drink_water_glass_ice_lemon` | Hot and cold drink | table | 78 x 109 x 72 | 0.3 | 0 | 219 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `fruit_apple_red_and_slice` | Fresh fruit | table | 120 x 80 x 132 | 0.6 | 0 | 406 | Fruit from the hydroponics deck and the cold store. |
+| 1 | `ration_pouch_fruit_puree_spout` | Space ration | table | 192 x 165 x 50 | 0.2 | 0 | 79 | Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food. |
+| 1 | `tray_meal_tray_steel` | Serving tray / dish | table | 464 x 110 x 306 | 1.9 | 0 | 655 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| | **Line subtotal** | | | | **3.4** | **0** | **1,594** | |
+
+**Room totals by family**: ceilinglight x8, medsupply x7, medbed x6, medcabinet x5, cylinder x4, surgical x4, cryo x2, drink x2, medscanner x2, bench x1, chair x1, clock x1, desk x1, fruit x1, labbench x1, medtool x1, ration x1, sign x1, terminal x1, tray x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (63)</summary>
+
+`analyzer`, `beacon`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `cryo`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `hatch`, `instrument`, `junction`, `labbench`, `lamp`, `locker`, `meal`, `medbed`, `medcabinet`, `medscanner`, `medsupply`, `medtool`, `microscope`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `specimen`, `spotlight`, `storagebin`, `striplight`, `surgical`, `tableware`, `tank`, `terminal`, `tray`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -4936,8 +5215,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 5 (1 diagonal hull facets, 2 on the outer hull) |
 | Windows | 1 (3.2 m2 of glazing) |
 | Design occupancy | 20 persons |
-| Items placed / distinct models | 40 / 30 |
-| Installed mass / value | 2.82 t / 311.0 k cr |
+| Items placed / distinct models | 47 / 37 |
+| Installed mass / value | 2.82 t / 315.4 k cr |
 | Electrical load idle / typical / peak | 419 W / 1.5 kW / 2.1 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -4953,7 +5232,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_deep_bulkhead` | 1 | Open doorway between spaces that need no door. |
 | Viewport glazing | (built from hull data) | 1 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 11 lines, 40 items**
+**Bill of materials - 12 lines, 47 items**
 
 #### RG-01 - Treadmills and exercise bikes (6 items)
 
@@ -5073,11 +5352,26 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `ceilinglight_triple_spot_rail` | Ceiling light fixture | ceiling | 1100 x 220 x 156 | 5.4 | 15 | 1,350 | General lighting sized to the task in the room. |
 | | **Line subtotal** | | | | **57.4** | **106** | **15,997** | |
 
-**Room totals by family**: gym x11, ceilinglight x6, chair x3, couch x3, locker x3, display x2, table x2, tableware x2, vending x2, clock x1, doorframe x1, fountain x1, noticeboard x1, safety x1, sign x1.
+#### RG-12 - Snacks and drinks in the lounge corner (7 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (47)</summary>
+*Why:* Off-duty crew gather round the low table and the bolted table: a snack board, pretzels and drinks make it a place to stay, and are one step from the vending machines.
 
-`beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `galley`, `gym`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `vending`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `bakery_pretzel_salted` | Bread and baked goods | table | 176 x 34 x 176 | 0.1 | 0 | 1,030 | Fresh bread, pastries and cakes from the galley oven: morale food that fits any table. |
+| 1 | `bottle_beer_lager_green` | Bottle / flask | table | 66 x 230 x 66 | 0.5 | 0 | 287 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `can_cola` | Canned drink | table | 66 x 123 x 66 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `can_energy_slim` | Canned drink | table | 58 x 136 x 58 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `can_lime_fizz` | Canned drink | table | 66 x 123 x 66 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `deli_charcuterie_board` | Cheese, charcuterie and dairy | table | 420 x 48 x 280 | 0.7 | 0 | 1,290 | Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches. |
+| 1 | `dessert_macarons_plate` | Dessert | table | 200 x 23 x 200 | 0.5 | 0 | 882 | Cakes, ice cream and puddings served after the main meal. |
+| | **Line subtotal** | | | | **2.0** | **0** | **4,470** | |
+
+**Room totals by family**: gym x11, ceilinglight x6, can x3, chair x3, couch x3, locker x3, display x2, table x2, tableware x2, vending x2, bakery x1, bottle x1, clock x1, deli x1, dessert x1, doorframe x1, fountain x1, noticeboard x1, safety x1, sign x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (56)</summary>
+
+`bakery`, `beacon`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `deli`, `desk`, `dessert`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `galley`, `gym`, `hatch`, `holo`, `instrument`, `junction`, `lamp`, `locker`, `meal`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `tray`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -5096,8 +5390,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 9 (6 diagonal hull facets, 7 on the outer hull) |
 | Windows | 4 (4.1 m2 of glazing) |
 | Design occupancy | 28 persons |
-| Items placed / distinct models | 33 / 19 |
-| Installed mass / value | 878 kg / 73.6 k cr |
+| Items placed / distinct models | 37 / 23 |
+| Installed mass / value | 879 kg / 75.3 k cr |
 | Electrical load idle / typical / peak | 26 W / 190 W / 230 W |
 | Floor occupancy | 32 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
@@ -5113,7 +5407,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_twin_ring` | 1 | Open doorway between spaces that need no door. |
 | Viewport glazing | (built from hull data) | 4 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 9 lines, 33 items**
+**Bill of materials - 10 lines, 37 items**
 
 #### CW-01 - Bunk row on the north wall (10 items)
 
@@ -5207,11 +5501,23 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `ceilinglight_recessed_hex_cells` | Ceiling light fixture | ceiling | 994 x 73 x 866 | 9.0 | 16 | 2,560 | General lighting sized to the task in the room. |
 | | **Line subtotal** | | | | **20.8** | **46** | **5,566** | |
 
-**Room totals by family**: bed x8, locker x6, chair x5, ceilinglight x3, lamp x2, tableware x2, desk x1, doorframe x1, noticeboard x1, safety x1, sign x1, table x1, terminal x1.
+#### CW-10 - Snacks and drinks at the crew table (4 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (44)</summary>
+*Why:* A hot drink, a fruit and a ration cup are on the crew table for off-watch snacks; crew eat in the mess but keep a little food in the quarters for the night watch.
 
-`beacon`, `bed`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `can_cold_brew` | Canned drink | table | 64 x 96 x 64 | 0.1 | 0 | 327 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
+| 1 | `drink_hot_cocoa_mug` | Hot and cold drink | table | 134 x 95 x 94 | 0.6 | 0 | 456 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 1 | `fruit_apple_green_pair` | Fresh fruit | table | 158 x 91 x 116 | 0.8 | 0 | 668 | Fruit from the hydroponics deck and the cold store. |
+| 1 | `ration_cup_noodle_instant` | Space ration | table | 144 x 108 x 92 | 0.2 | 0 | 173 | Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food. |
+| | **Line subtotal** | | | | **1.6** | **0** | **1,624** | |
+
+**Room totals by family**: bed x8, locker x6, chair x5, ceilinglight x3, lamp x2, tableware x2, can x1, desk x1, doorframe x1, drink x1, fruit x1, noticeboard x1, ration x1, safety x1, sign x1, table x1, terminal x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (50)</summary>
+
+`bakery`, `beacon`, `bed`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `floorpanel`, `fountain`, `fruit`, `hatch`, `instrument`, `junction`, `lamp`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `ration`, `safety`, `sconce`, `shelving`, `sign`, `spotlight`, `striplight`, `table`, `tableware`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -5378,9 +5684,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: labbench x10, ceilinglight x6, analyzer x4, microscope x2, specimen x2, cabinet x1, chair x1, cylinder x1, desk x1, duct x1, plant x1, safety x1, sign x1, storagebin x1, terminal x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (57)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (61)</summary>
 
-`analyzer`, `barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `cryo`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `hatch`, `holo`, `instrument`, `junction`, `labbench`, `lamp`, `locker`, `medtool`, `microscope`, `noticeboard`, `panellight`, `particle`, `pillar`, `pipe`, `plant`, `rack`, `railing`, `safety`, `sciinstrument`, `sconce`, `seat`, `shelving`, `sign`, `specimen`, `spotlight`, `storagebin`, `striplight`, `tableware`, `tank`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
+`analyzer`, `barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `cryo`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `fruit`, `hatch`, `holo`, `instrument`, `junction`, `labbench`, `lamp`, `locker`, `medtool`, `microscope`, `noticeboard`, `panellight`, `particle`, `pillar`, `pipe`, `plant`, `rack`, `railing`, `ration`, `safety`, `sciinstrument`, `sconce`, `seat`, `shelving`, `sign`, `specimen`, `spotlight`, `storagebin`, `striplight`, `tableware`, `tank`, `telescope`, `terminal`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -5399,10 +5705,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 9 (6 diagonal hull facets, 7 on the outer hull) |
 | Windows | 3 (8.2 m2 of glazing) |
 | Design occupancy | 3 persons |
-| Items placed / distinct models | 39 / 29 |
-| Installed mass / value | 6.40 t / 3.06 M cr |
+| Items placed / distinct models | 47 / 37 |
+| Installed mass / value | 6.44 t / 3.07 M cr |
 | Electrical load idle / typical / peak | 8.2 kW / 20.6 kW / 32.7 kW |
-| Floor occupancy | 27 % (floor-standing footprints / floor area) |
+| Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
 
 **Design basis.** About 69 m2 with a 3.6 m ceiling for grow lights and hanging arrays.  Two growing rows of trays and racks run east-west with 1.2 m service aisles; vertical towers on the west wall; water, pumps and nutrient dosing along the north wall so pipes stay short and dry and spills run to one drain; seating nook by the window; tall racks kept 0.5 m off all windows.
@@ -5416,7 +5722,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Doorway frame | `doorframe_ibeam_portal` | 1 | Open doorway between spaces that need no door. |
 | Viewport glazing | (built from hull data) | 3 | Natural view and orientation for the crew; windows are only cut in hull walls. |
 
-**Bill of materials - 12 lines, 39 items**
+**Bill of materials - 14 lines, 47 items**
 
 #### HY-01 - Water tank and pumps (3 items)
 
@@ -5543,11 +5849,35 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `ceilinglight_triple_spot_rail` | Ceiling light fixture | ceiling | 1100 x 220 x 156 | 5.4 | 15 | 1,350 | General lighting sized to the task in the room. |
 | | **Line subtotal** | | | | **25.6** | **39** | **7,120** | |
 
-**Room totals by family**: planter x15, pipe x3, barrel x2, ceilinglight x2, chair x2, tableware x2, tank x2, bench x1, bin x1, cabinet x1, doorframe x1, duct x1, plant x1, safety x1, scrubber x1, sign x1, table x1, watertank x1.
+#### HY-13 - Harvest crates (5 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (53)</summary>
+*Why:* Freshly picked crops are packed in crates beside the beds they came from and carried to the galley the same day; each crate is one crop so the galley can count what it receives.
 
-`barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `cylinder`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `galley`, `hatch`, `instrument`, `junction`, `labbench`, `lamp`, `microscope`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `planter`, `railing`, `safety`, `sconce`, `scrubber`, `shelving`, `sign`, `specimen`, `spotlight`, `storagebin`, `striplight`, `table`, `tableware`, `tank`, `terminal`, `valve`, `wallpanel`, `warnlight`, `watertank`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `harvest_crate_herbs` | Hydroponic harvest crate | floor | 600 x 160 x 400 | 4.8 | 0 | 1,030 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_crate_lettuce` | Hydroponic harvest crate | floor | 622 x 221 x 498 | 8.8 | 0 | 1,180 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_crate_peppers` | Hydroponic harvest crate | floor | 600 x 244 x 400 | 8.0 | 0 | 803 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_crate_strawberries` | Hydroponic harvest crate | floor | 600 x 160 x 400 | 4.7 | 0 | 1,830 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_tray_mushrooms` | Hydroponic harvest crate | floor | 600 x 111 x 400 | 3.3 | 0 | 1,350 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| | **Line subtotal** | | | | **29.6** | **0** | **6,193** | |
+
+#### HY-14 - Tasting table and drying herbs (3 items)
+
+*Why:* Gardeners taste what they grow: fruit and a salad on the table by the entrance, and herb bundles hung to dry on the wall.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `fruit_strawberries_bowl` | Fresh fruit | table | 140 x 90 x 138 | 0.9 | 0 | 2,440 | Fruit from the hydroponics deck and the cold store. |
+| 1 | `hanging_herb_bundles` | Hanging produce | wall | 500 x 316 x 93 | 1.8 | 0 | 956 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `veg_tomatoes_on_vine` | Vegetables | table | 236 x 62 x 126 | 0.2 | 0 | 1,450 | Fresh vegetables from the grow beds, ready to prepare. |
+| | **Line subtotal** | | | | **3.0** | **0** | **4,846** | |
+
+**Room totals by family**: planter x15, harvest x5, pipe x3, barrel x2, ceilinglight x2, chair x2, tableware x2, tank x2, bench x1, bin x1, cabinet x1, doorframe x1, duct x1, fruit x1, hanging x1, plant x1, safety x1, scrubber x1, sign x1, table x1, veg x1, watertank x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (62)</summary>
+
+`bakery`, `barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `controlpanel`, `couch`, `cylinder`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `fruit`, `galley`, `hanging`, `harvest`, `hatch`, `instrument`, `junction`, `labbench`, `lamp`, `meal`, `microscope`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `planter`, `railing`, `safety`, `sconce`, `scrubber`, `shelving`, `sign`, `specimen`, `spotlight`, `storagebin`, `striplight`, `table`, `tableware`, `tank`, `terminal`, `tray`, `valve`, `veg`, `wallpanel`, `warnlight`, `watertank`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -5885,9 +6215,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x3, bench x2, display x2, duct x2, safety x2, sign x2, noticeboard x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (34)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (36)</summary>
 
-`beacon`, `bench`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
+`beacon`, `bench`, `bin`, `bottle`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -6169,9 +6499,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: watertank x6, scrubber x4, duct x3, pipe x3, cabletray x2, cylinder x2, safety x2, sign x2, ceilinglight x1, console x1, display x1, engtool x1, seat x1, terminal x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (52)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (55)</summary>
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `safety`, `sconce`, `scrubber`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`, `watertank`
+`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `ration`, `safety`, `sconce`, `scrubber`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`, `watertank`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -6320,9 +6650,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: rack x40, ceilinglight x9, cabletray x8, safety x7, router x4, tank x4, capacitor x3, sign x2, cabinet x1, console x1, controlpanel x1, pipe x1, seat x1, storage x1, terminal x1, warnlight x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (50)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (52)</summary>
 
-`beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hatch`, `holo`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `router`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storage`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`
+`beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `commsunit`, `console`, `controlpanel`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hatch`, `holo`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `router`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storage`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -6457,9 +6787,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: suitrack x7, duct x3, beacon x2, ceilinglight x2, locker x2, sign x2, cabletray x1, console x1, controlpanel x1, cylinder x1, hatch x1, safety x1, warnlight x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (50)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (52)</summary>
 
-`barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `hatch`, `instrument`, `junction`, `locker`, `medtool`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`
+`barrel`, `beacon`, `bench`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `hatch`, `instrument`, `junction`, `locker`, `medtool`, `noticeboard`, `panellight`, `pillar`, `pipe`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -6644,9 +6974,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x9, pipe x7, railing x7, coil x5, safety x4, cabletray x3, capacitor x3, console x3, junction x3, seat x3, sign x3, tank x3, display x2, generator x2, reactor x2, terminal x2, turbine x2, engtool x1, locker x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (58)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (61)</summary>
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hangartool`, `hatch`, `holo`, `instrument`, `junction`, `locker`, `noticeboard`, `nozzle`, `panellight`, `particle`, `pillar`, `pipe`, `rack`, `railing`, `reactor`, `safety`, `sconce`, `scrubber`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`, `watertank`
+`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hangartool`, `hatch`, `holo`, `instrument`, `junction`, `locker`, `noticeboard`, `nozzle`, `panellight`, `particle`, `pillar`, `pipe`, `rack`, `railing`, `ration`, `reactor`, `safety`, `sconce`, `scrubber`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`, `watertank`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -6787,9 +7117,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: engtool x14, ceilinglight x6, cabletray x5, duct x5, pipe x5, safety x5, shelving x3, hangartool x2, sign x2, terminal x2, toolbox x2, barrel x1, chair x1, cylinder x1, desk x1, locker x1, noticeboard x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (57)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (60)</summary>
 
-`barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `noticeboard`, `nozzle`, `pallet`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `table`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`
+`barrel`, `beacon`, `bench`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `noticeboard`, `nozzle`, `pallet`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `table`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -6935,9 +7265,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: cabletray x5, pallet x5, pipe x5, safety x5, sign x4, ceilinglight x3, barrel x2, loader x2, console x1, cylinder x1, seat x1, shelving x1, terminal x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (51)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (54)</summary>
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `noticeboard`, `pallet`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`
+`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `noticeboard`, `pallet`, `panellight`, `pillar`, `pipe`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -7106,9 +7436,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: generator x10, capacitor x7, junction x7, ceilinglight x6, pipe x4, sign x4, cabletray x3, safety x3, coil x2, controlpanel x2, engtool x2, cabinet x1, console x1, display x1, seat x1, terminal x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (51)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (53)</summary>
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `reactor`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`
+`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hatch`, `instrument`, `junction`, `locker`, `noticeboard`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `reactor`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -7242,9 +7572,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: shelving x5, pipe x4, cabletray x3, ceilinglight x3, pallet x3, capacitor x2, safety x2, sign x2, storagebin x2, terminal x2, chair x1, coil x1, desk x1, display x1, engtool x1, loader x1, nozzle x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (60)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (68)</summary>
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `generator`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `medcabinet`, `medsupply`, `noticeboard`, `nozzle`, `pallet`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storage`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`, `weaponrack`
+`barrel`, `beacon`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `crate`, `cylinder`, `deli`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `fountain`, `fruit`, `generator`, `hangartool`, `hanging`, `harvest`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `medcabinet`, `medsupply`, `noticeboard`, `nozzle`, `pallet`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storage`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `veg`, `wallpanel`, `warnlight`, `weaponrack`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -7388,9 +7718,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: hangartool x16, pipe x10, ceilinglight x8, craft x3, shelving x2, console x1, locker x1, safety x1, seat x1, sign x1, storagebin x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (59)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (62)</summary>
 
-`antenna`, `barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `craft`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `generator`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `medsupply`, `noticeboard`, `nozzle`, `pallet`, `panellight`, `pillar`, `pipe`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`
+`antenna`, `barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `can`, `capacitor`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `coil`, `console`, `controlpanel`, `craft`, `crate`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `generator`, `hangartool`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `medsupply`, `noticeboard`, `nozzle`, `pallet`, `panellight`, `pillar`, `pipe`, `railing`, `ration`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `suitrack`, `tank`, `terminal`, `toolbox`, `turbine`, `valve`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -7408,7 +7738,7 @@ The hold deck is the keel: antimatter containment as low and as far from the cre
 | [SP4](#sp4---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 30 W | 2.7 k |
 | [SS4](#ss4---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
 | [AC](#ac---antimatter-containment) | Antimatter Containment | 82.8 m2 | 3.4 m | 52 | 13 | 30 % | 56.98 t | 2.27 MW | 77.52 M |
-| [PH](#ph---provisions-hold--cold-store) | Provisions Hold & Cold Store | 103.4 m2 | 3.4 m | 60 | 14 | 37 % | 12.92 t | 356.8 kW | 12.07 M |
+| [PH](#ph---provisions-hold--cold-store) | Provisions Hold & Cold Store | 103.4 m2 | 3.4 m | 69 | 17 | 38 % | 12.96 t | 356.8 kW | 12.08 M |
 | [WP](#wp---water-reclamation-plant) | Water Reclamation Plant | 82.8 m2 | 3.4 m | 62 | 12 | 26 % | 10.80 t | 14.3 kW | 8.44 M |
 | [WW](#ww---waste--recycling-plant) | Waste & Recycling Plant | 103.4 m2 | 3.4 m | 53 | 12 | 27 % | 8.91 t | 8.6 kW | 3.51 M |
 | [FH](#fh---fabrication-hall) | Fabrication Hall | 119.5 m2 | 3.4 m | 77 | 10 | 30 % | 12.47 t | 5.6 kW | 12.90 M |
@@ -7722,9 +8052,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 **Room totals by family**: ceilinglight x3, bench x2, display x2, duct x2, safety x2, sign x2, noticeboard x1.
 
-<details><summary>Equipment families permitted in this room by the placement policy (34)</summary>
+<details><summary>Equipment families permitted in this room by the placement policy (36)</summary>
 
-`beacon`, `bench`, `bin`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
+`beacon`, `bench`, `bin`, `bottle`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `cleaningbot`, `clock`, `controlpanel`, `display`, `door`, `doorframe`, `duct`, `floorpanel`, `fountain`, `hatch`, `instrument`, `junction`, `noticeboard`, `panellight`, `pillar`, `pipe`, `plant`, `railing`, `safety`, `sconce`, `sign`, `spotlight`, `striplight`, `valve`, `vending`, `wallpanel`, `warnlight`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -8054,10 +8384,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 5 (1 diagonal hull facets, 2 on the outer hull) |
 | Windows | none |
 | Design occupancy | 2 persons |
-| Items placed / distinct models | 60 / 39 |
-| Installed mass / value | 12.92 t / 12.07 M cr |
+| Items placed / distinct models | 69 / 48 |
+| Installed mass / value | 12.96 t / 12.08 M cr |
 | Electrical load idle / typical / peak | 109.1 kW / 356.8 kW / 589.0 kW |
-| Floor occupancy | 37 % (floor-standing footprints / floor area) |
+| Floor occupancy | 38 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
 
 **Design basis.** Planned for 120 crew on a 180-day voyage: 120 x 0.65 kg/day of food = 78 kg/day = 14 t, of which about 40 % is frozen or chilled. 5 cryo storage tanks (about 1 t each) and 5 freezer / refrigerator units hold the cold share; about 15 pallets of staples (sacks, boxed rations, drums of oil) stand in two rows either side of a 2.8 m forklift lane from the door; hydroponics on Deck 2 supplies fresh produce, so the hold carries 150 days of fully balanced rations plus 30 days of emergency ration packs in sealed lockers. Aisles are 1.2 m at the shelving and 2.8 m on the forklift lane.
@@ -8072,7 +8402,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|
 | Sliding door to `corF4` | `door_cargo` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 
-**Bill of materials - 14 lines, 60 items**
+**Bill of materials - 17 lines, 69 items**
 
 #### PH-01 - Ceiling lighting (6 items)
 
@@ -8225,11 +8555,44 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 3 | `sign_floor_marking` | Sign | floor | 1700 x 16 x 500 | 2.2 | 0 | 137 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **5.0** | **10** | **1,869** | |
 
-**Room totals by family**: safety x7, ceilinglight x6, cryo x6, pallet x6, sign x6, cabletray x4, galley x4, pipe x4, shelving x4, cylinder x2, forcefield x2, loader x2, terminal x2, camera x1, chair x1, desk x1, display x1, watertank x1.
+#### PH-15 - Crates of fresh produce (4 items)
 
-<details><summary>Equipment families permitted in this room by the placement policy (54)</summary>
+*Why:* Fresh produce is stored in the crates it was picked in, one crop per crate, at the wall nearest the galley lift so the oldest crate can be taken first.
 
-`barrel`, `beacon`, `bin`, `cabinet`, `cabletray`, `camera`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `console`, `controlpanel`, `crate`, `cryo`, `cylinder`, `desk`, `display`, `door`, `doorframe`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `galley`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `noticeboard`, `pallet`, `panellight`, `pillar`, `pipe`, `planter`, `railing`, `safety`, `sconce`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tableware`, `tank`, `terminal`, `toolbox`, `valve`, `wallpanel`, `warnlight`, `watertank`
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `harvest_crate_cabbages` | Hydroponic harvest crate | floor | 604 x 230 x 416 | 7.8 | 0 | 1,130 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_crate_peppers` | Hydroponic harvest crate | floor | 600 x 244 x 400 | 8.0 | 0 | 803 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_crate_potatoes` | Hydroponic harvest crate | floor | 600 x 266 x 400 | 9.0 | 0 | 1,160 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| 1 | `harvest_crate_tomatoes` | Hydroponic harvest crate | floor | 600 x 221 x 400 | 6.7 | 0 | 1,640 | Crates of freshly picked crops on their way from the grow beds to the galley. |
+| | **Line subtotal** | | | | **31.4** | **0** | **4,733** | |
+
+#### PH-16 - Hanging store (4 items)
+
+*Why:* Garlic, chilli, herbs and cured sausages hang from the wall rail where cool dry air keeps them for months.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `hanging_chili_ristra` | Hanging produce | wall | 100 x 686 x 43 | 0.4 | 0 | 939 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `hanging_garlic_braid` | Hanging produce | wall | 120 x 486 x 70 | 0.5 | 0 | 1,880 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `hanging_herb_bundles` | Hanging produce | wall | 500 x 316 x 93 | 1.8 | 0 | 956 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| 1 | `hanging_sausage_links_hanging` | Hanging produce | wall | 300 x 380 x 47 | 0.7 | 0 | 776 | Garlic, chilli, herbs and sausages hung to dry and cure on the galley and store walls. |
+| | **Line subtotal** | | | | **3.3** | **0** | **4,551** | |
+
+#### PH-17 - Rations and dry goods on the shelving (1 item)
+
+*Why:* Sealed ration boxes, water pouches and canned goods sit on top of the shelving units in their original cartons, labelled for the stock rotation; the lower shelves carry the bulk stores.
+
+| Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `ration_ration_boxes_stacked` | Space ration | table | 352 x 301 x 240 | 3.0 | 0 | 156 | Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food. |
+| | **Line subtotal** | | | | **3.0** | **0** | **156** | |
+
+**Room totals by family**: safety x7, ceilinglight x6, cryo x6, pallet x6, sign x6, cabletray x4, galley x4, hanging x4, harvest x4, pipe x4, shelving x4, cylinder x2, forcefield x2, loader x2, terminal x2, camera x1, chair x1, desk x1, display x1, ration x1, watertank x1.
+
+<details><summary>Equipment families permitted in this room by the placement policy (64)</summary>
+
+`barrel`, `beacon`, `bin`, `bottle`, `cabinet`, `cabletray`, `camera`, `can`, `ceilinglight`, `ceilingpanel`, `chair`, `cleaningbot`, `clock`, `console`, `controlpanel`, `crate`, `cryo`, `cylinder`, `deli`, `desk`, `display`, `door`, `doorframe`, `drink`, `duct`, `engtool`, `floorpanel`, `forcefield`, `fountain`, `fruit`, `galley`, `hanging`, `harvest`, `hatch`, `instrument`, `junction`, `loader`, `locker`, `medcabinet`, `noticeboard`, `pallet`, `panellight`, `pillar`, `pipe`, `rack`, `railing`, `ration`, `safety`, `sconce`, `scrubber`, `seat`, `shelving`, `sign`, `spotlight`, `storagebin`, `striplight`, `tank`, `terminal`, `toolbox`, `valve`, `veg`, `wallpanel`, `warnlight`, `watertank`
 
 Anything else (for example reactors, cargo crates or beds, unless listed above) is rejected by the audit.
 
@@ -9320,6 +9683,11 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `antenna_dish_array_demo` | antenna | floor | 2066 x 1889 x 1216 | 660 | 430 | 680,000 | 1 | OB |
 | `antenna_feed_horn_panel` | antenna | wall | 1000 x 700 x 360 | 28.9 | 60 | 30,600 | 1 | CC |
 | `antenna_phased_array_panel` | antenna | wall | 1300 x 1559 x 120 | 28.5 | 65 | 32,900 | 1 | CC |
+| `bakery_donut_pink_sprinkles` | bakery | table | 100 x 37 x 100 | 0.1 | 0 | 500 | 1 | BG |
+| `bakery_pancake_stack` | bakery | table | 260 x 102 x 260 | 1.0 | 0 | 765 | 1 | MH |
+| `bakery_pie_apple_lattice` | bakery | table | 242 x 54 x 242 | 0.4 | 0 | 416 | 2 | GA, MH |
+| `bakery_pretzel_salted` | bakery | table | 176 x 34 x 176 | 0.1 | 0 | 1,030 | 1 | RG |
+| `bakery_waffle_berries` | bakery | table | 280 x 51 x 280 | 0.5 | 0 | 638 | 1 | MH |
 | `barrel_chemical_drum_hazard` | barrel | floor | 604 x 935 x 604 | 13.9 | 0 | 1,460 | 5 | CB x2, MC, WP, WW |
 | `barrel_gas_cylinder_rack` | barrel | floor | 910 x 1350 x 610 | 30.5 | 0 | 3,210 | 2 | FH, WS |
 | `barrel_plastic_drum_lidded` | barrel | floor | 675 x 980 x 640 | 16.9 | 0 | 2,060 | 3 | HY x2, WP |
@@ -9339,6 +9707,14 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `bin_recycling_bin_triple` | bin | floor | 1240 x 965 x 509 | 44.1 | 0 | 2,000 | 3 | MH, WW x2 |
 | `bin_trash_bin` | bin | floor | 538 x 775 x 549 | 15.8 | 0 | 750 | 4 | HY, MH, WW x2 |
 | `bin_waste_chute_door` | bin | wall | 600 x 700 x 110 | 3.2 | 0 | 218 | 2 | WW x2 |
+| `bottle_beer_lager_green` | bottle | table | 66 x 230 x 66 | 0.5 | 0 | 287 | 3 | OL, RG, WR |
+| `bottle_gin_blue_flask` | bottle | table | 82 x 285 x 82 | 0.9 | 0 | 305 | 2 | WR x2 |
+| `bottle_water_bottle_500ml` | bottle | table | 70 x 211 x 70 | 0.5 | 0 | 490 | 8 | CR x4, MH x4 |
+| `bottle_whisky_decanter_square` | bottle | table | 94 x 230 x 100 | 1.0 | 0 | 124 | 1 | OL |
+| `bottle_wine_red_bordeaux` | bottle | table | 76 x 325 x 76 | 0.9 | 0 | 382 | 1 | OL |
+| `bottle_wine_white_hock` | bottle | table | 72 x 338 x 72 | 0.8 | 0 | 378 | 1 | WR |
+| `buffet_bakery_display_stand` | buffet | floor | 940 x 1480 x 540 | 101 | 0 | 3,560 | 2 | MH, WR |
+| `buffet_dessert_display_case` | buffet | floor | 1200 x 1113 x 600 | 108 | 0 | 3,120 | 1 | WR |
 | `cabinet_janitor_closet` | cabinet | floor | 850 x 1955 x 675 | 153 | 0 | 5,250 | 2 | HY, SL |
 | `cabinet_utility_cabinet` | cabinet | floor | 960 x 1830 x 580 | 133 | 0 | 4,930 | 5 | AX, CO, CR, PD, WP |
 | `cabinet_wall_storage_lockers` | cabinet | wall | 1200 x 800 x 400 | 54.4 | 0 | 2,250 | 1 | BT |
@@ -9350,6 +9726,13 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `camera_dome_ceiling` | camera | ceiling | 318 x 150 x 318 | 2.2 | 10 | 1,520 | 10 | AC x3, AR, AX, BG, FH, PH, SO, WW |
 | `camera_pan_tilt_ceiling` | camera | ceiling | 260 x 450 x 310 | 4.9 | 13 | 3,580 | 3 | AR, BG, SO |
 | `camera_retina_scanner` | camera | wall | 240 x 380 x 99 | 1.2 | 9 | 1,010 | 1 | AR |
+| `can_blue_cooler_tall` | can | table | 66 x 169 x 66 | 0.1 | 0 | 328 | 3 | MH x3 |
+| `can_cola` | can | table | 66 x 123 x 66 | 0.1 | 0 | 327 | 8 | CR x4, MH x3, RG |
+| `can_cold_brew` | can | table | 64 x 96 x 64 | 0.1 | 0 | 327 | 3 | CW, OA, OB |
+| `can_energy_slim` | can | table | 58 x 136 x 58 | 0.1 | 0 | 327 | 2 | RG, SO |
+| `can_grape_pop_mini` | can | table | 52 x 91 x 52 | 0.1 | 0 | 327 | 2 | MH x2 |
+| `can_lime_fizz` | can | table | 66 x 123 x 66 | 0.1 | 0 | 327 | 3 | MH x2, RG |
+| `can_orange_soda` | can | table | 70 x 116 x 70 | 0.1 | 0 | 328 | 2 | MH x2 |
 | `capacitor_battery_rack` | capacitor | floor | 1250 x 1985 x 624 | 1190 | 480 | 1,140,000 | 7 | AX x2, CO x3, DP x2 |
 | `capacitor_battery_trolley` | capacitor | floor | 1294 x 1075 x 700 | 712 | 290 | 709,000 | 1 | PD |
 | `capacitor_capacitor_bank_rack` | capacitor | floor | 1100 x 1960 x 616 | 1093 | 27 | 1,050,000 | 6 | AC, ME x2, PD x3 |
@@ -9383,6 +9766,12 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `clock_analogue_chronometer` | clock | wall | 480 x 480 x 100 | 2.4 | 2 | 3,410 | 3 | AM, MH, WR |
 | `clock_digital_clock` | clock | wall | 500 x 200 x 76 | 0.7 | 2 | 983 | 4 | CQ, CR, MB, OA |
 | `clock_dual_time_ship_clock` | clock | wall | 900 x 420 x 98 | 3.4 | 2 | 3,610 | 5 | BR, MH, OB, RG, SC |
+| `cocktail_beer_mug_foam` | cocktail | table | 140 x 143 x 94 | 0.2 | 0 | 385 | 2 | OL, WR |
+| `cocktail_champagne_flute` | cocktail | table | 66 x 200 x 66 | 0.1 | 0 | 326 | 2 | CQ, OL |
+| `cocktail_martini_olive` | cocktail | table | 98 x 179 x 98 | 0.2 | 0 | 244 | 3 | OL, WR x2 |
+| `cocktail_mojito_mint_highball` | cocktail | table | 78 x 215 x 76 | 0.2 | 0 | 427 | 1 | OL |
+| `cocktail_whisky_rocks_tumbler` | cocktail | table | 76 x 85 x 76 | 0.1 | 0 | 175 | 3 | CQ, WR x2 |
+| `cocktail_wine_glass_red` | cocktail | table | 84 x 195 x 84 | 0.2 | 0 | 308 | 3 | CQ, OL, WR |
 | `coil_discharge_coil_tower` | coil | floor | 1099 x 1940 x 1117 | 2355 | 370000 | 1,640,000 | 2 | AC, PD |
 | `coil_helical_plasma_coil` | coil | floor | 1100 x 2345 x 1094 | 2316 | 740000 | 1,450,000 | 3 | ME x2, SD |
 | `coil_magnetic_bottle` | coil | floor | 1220 x 2500 x 1190 | 3245 | 560000 | 1,950,000 | 2 | AC x2 |
@@ -9443,6 +9832,10 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `cylinder_nitrogen_cylinder_trio` | cylinder | floor | 1000 x 1950 x 700 | 588 | 0 | 266,000 | 3 | PH, SL, WS |
 | `cylinder_oxygen_cylinder_rack` | cylinder | floor | 1550 x 1550 x 531 | 608 | 0 | 274,000 | 3 | AL, CB, LS |
 | `cylinder_portable_o2_unit` | cylinder | floor | 502 x 705 x 430 | 61.1 | 0 | 27,500 | 2 | MB x2 |
+| `deli_butter_dish_and_knife` | deli | table | 170 x 46 x 142 | 0.1 | 0 | 39 | 1 | GA |
+| `deli_charcuterie_board` | deli | table | 420 x 48 x 280 | 0.7 | 0 | 1,290 | 1 | RG |
+| `deli_cheese_board` | deli | table | 400 x 60 x 260 | 0.7 | 0 | 427 | 1 | MH |
+| `deli_egg_carton_dozen` | deli | table | 310 x 152 x 212 | 1.4 | 0 | 1,110 | 1 | GA |
 | `desk_computer_desk` | desk | floor | 1380 x 1271 x 650 | 29.6 | 0 | 1,400 | 2 | BG, FH |
 | `desk_drafting_table` | desk | floor | 1200 x 1180 x 828 | 32.0 | 0 | 1,090 | 1 | FH |
 | `desk_drawer_console` | desk | floor | 1400 x 1046 x 582 | 24.3 | 0 | 1,010 | 2 | CR x2 |
@@ -9450,6 +9843,9 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `desk_secretary_desk` | desk | floor | 1060 x 1390 x 522 | 20.3 | 0 | 915 | 1 | LI |
 | `desk_workstation` | desk | floor | 1607 x 1222 x 750 | 41.0 | 0 | 1,560 | 6 | AM x2, PH, SD, SL, WS |
 | `desk_writing_desk` | desk | floor | 1200 x 953 x 600 | 19.5 | 0 | 797 | 7 | CW, OA x3, OB x3 |
+| `dessert_cheesecake_slice` | dessert | table | 200 x 80 x 200 | 1.6 | 0 | 368 | 1 | OL |
+| `dessert_macarons_plate` | dessert | table | 200 x 23 x 200 | 0.5 | 0 | 882 | 1 | RG |
+| `dessert_tiramisu_cup` | dessert | table | 102 x 106 x 80 | 0.4 | 0 | 245 | 1 | GA |
 | `display_alert_board` | display | wall | 1000 x 1020 x 105 | 6.5 | 66 | 12,200 | 1 | SO |
 | `display_chronometer_clock` | display | wall | 650 x 650 x 100 | 3.1 | 36 | 6,220 | 3 | OB, OL, RR |
 | `display_circular_display` | display | wall | 1016 x 1016 x 115 | 8.0 | 73 | 14,700 | 4 | AM, SC x3 |
@@ -9489,6 +9885,18 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `doorframe_peaked_gable` | doorframe | floor | 2760 x 3669 x 400 | 399 | 0 | 10,500 | 1 | MH |
 | `doorframe_round_arch` | doorframe | floor | 3000 x 3241 x 500 | 545 | 0 | 13,900 | 1 | OL |
 | `doorframe_twin_ring` | doorframe | floor | 2440 x 2820 x 240 | 180 | 0 | 3,810 | 2 | CW, GA |
+| `drink_cappuccino_rosetta` | drink | table | 182 x 76 x 180 | 1.4 | 0 | 555 | 2 | OL, RR |
+| `drink_coffee_pot_and_mugs` | drink | table | 312 x 205 x 186 | 6.7 | 0 | 946 | 4 | BR, CR x2, SO |
+| `drink_espresso_cup_sugar` | drink | table | 116 x 54 x 116 | 0.4 | 0 | 451 | 3 | BG, CQ, SO |
+| `drink_hot_cocoa_mug` | drink | table | 134 x 95 x 94 | 0.6 | 0 | 456 | 6 | CW, MH x2, OA, OB, SO |
+| `drink_iced_coffee_glass` | drink | table | 80 x 215 x 80 | 0.7 | 0 | 281 | 3 | MH x3 |
+| `drink_latte_art_cup` | drink | table | 158 x 72 x 156 | 0.9 | 0 | 519 | 1 | WR |
+| `drink_lemonade_pitcher_set` | drink | table | 258 x 232 x 172 | 5.9 | 0 | 809 | 1 | MH |
+| `drink_milk_glass_cookies` | drink | table | 196 x 110 x 100 | 1.1 | 0 | 388 | 2 | MH x2 |
+| `drink_orange_juice_glass` | drink | table | 74 x 185 x 72 | 0.5 | 0 | 235 | 5 | MB, MH x4 |
+| `drink_smoothie_strawberry_tall` | drink | table | 88 x 235 x 80 | 0.8 | 0 | 321 | 1 | MH |
+| `drink_tea_cup_with_bag` | drink | table | 144 x 76 x 144 | 0.8 | 0 | 445 | 1 | OA |
+| `drink_water_glass_ice_lemon` | drink | table | 78 x 109 x 72 | 0.3 | 0 | 219 | 3 | MB, MH x2 |
 | `duct_ceiling_round_vent` | duct | ceiling | 584 x 160 x 584 | 3.9 | 0 | 2,610 | 6 | AR, GA, SL, WW x3 |
 | `duct_ceiling_square_diffuser` | duct | ceiling | 700 x 120 x 700 | 4.5 | 0 | 2,390 | 14 | HY, LB0 x2, LB1 x2, LB2 x2, LB3 x2, LB4 x2, MH x3 |
 | `duct_rectangular_duct_run` | duct | wall | 2030 x 480 x 391 | 29.6 | 0 | 14,600 | 15 | AL x3, FH x4, LS x3, WS x5 |
@@ -9509,6 +9917,9 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `forcefield_shield_doorway` | forcefield | floor | 2480 x 2800 x 365 | 626 | 220000 | 559,000 | 1 | AR |
 | `fountain_drinking_fountain_wall_unit` | fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | 6 | CA0, CA1, CA2, CA3, CA4, RG |
 | `fountain_water_cooler_tower` | fountain | floor | 360 x 1290 x 425 | 23.1 | 130 | 7,510 | 4 | BT, MH, SO, WR |
+| `fruit_apple_green_pair` | fruit | table | 158 x 91 x 116 | 0.8 | 0 | 668 | 1 | CW |
+| `fruit_apple_red_and_slice` | fruit | table | 120 x 80 x 132 | 0.6 | 0 | 406 | 2 | MB, RR |
+| `fruit_strawberries_bowl` | fruit | table | 140 x 90 x 138 | 0.9 | 0 | 2,440 | 1 | HY |
 | `galley_chest_freezer` | galley | floor | 1520 x 915 x 786 | 170 | 310 | 59,300 | 3 | GA, PH x2 |
 | `galley_coffee_machine` | galley | floor | 900 x 1725 x 642 | 170 | 2300 | 57,300 | 9 | AX, BT, CQ, CR, MH, OL, RR, SO, WR |
 | `galley_commercial_oven` | galley | floor | 950 x 1920 x 875 | 284 | 3600 | 107,000 | 1 | GA |
@@ -9559,6 +9970,18 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `hangartool_safety_barrier` | hangartool | floor | 3000 x 1145 x 600 | 410 | 0 | 81,600 | 1 | MC |
 | `hangartool_tool_cart` | hangartool | floor | 940 x 1416 x 615 | 156 | 0 | 21,700 | 2 | DP, FH |
 | `hangartool_wheel_chocks` | hangartool | floor | 800 x 225 x 555 | 17.7 | 0 | 2,620 | 1 | HB |
+| `hanging_chili_ristra` | hanging | wall | 100 x 686 x 43 | 0.4 | 0 | 939 | 2 | GA, PH |
+| `hanging_garlic_braid` | hanging | wall | 120 x 486 x 70 | 0.5 | 0 | 1,880 | 2 | GA, PH |
+| `hanging_herb_bundles` | hanging | wall | 500 x 316 x 93 | 1.8 | 0 | 956 | 3 | GA, HY, PH |
+| `hanging_sausage_links_hanging` | hanging | wall | 300 x 380 x 47 | 0.7 | 0 | 776 | 2 | GA, PH |
+| `harvest_crate_cabbages` | harvest | floor | 604 x 230 x 416 | 7.8 | 0 | 1,130 | 1 | PH |
+| `harvest_crate_herbs` | harvest | floor | 600 x 160 x 400 | 4.8 | 0 | 1,030 | 1 | HY |
+| `harvest_crate_lettuce` | harvest | floor | 622 x 221 x 498 | 8.8 | 0 | 1,180 | 1 | HY |
+| `harvest_crate_peppers` | harvest | floor | 600 x 244 x 400 | 8.0 | 0 | 803 | 2 | HY, PH |
+| `harvest_crate_potatoes` | harvest | floor | 600 x 266 x 400 | 9.0 | 0 | 1,160 | 1 | PH |
+| `harvest_crate_strawberries` | harvest | floor | 600 x 160 x 400 | 4.7 | 0 | 1,830 | 1 | HY |
+| `harvest_crate_tomatoes` | harvest | floor | 600 x 221 x 400 | 6.7 | 0 | 1,640 | 2 | GA, PH |
+| `harvest_tray_mushrooms` | harvest | floor | 600 x 111 x 400 | 3.3 | 0 | 1,350 | 1 | HY |
 | `hatch_oval_pressure` | hatch | wall | 844 x 1236 x 160 | 45.4 | 0 | 1,230 | 1 | AL |
 | `holo_briefing_projector` | holo | floor | 598 x 1330 x 1204 | 112 | 650 | 171,000 | 1 | BT |
 | `holo_briefing_table` | holo | floor | 1594 x 1790 x 1594 | 600 | 2600 | 841,000 | 4 | AX, BR, SC, SO |
@@ -9605,6 +10028,31 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `locker_tall_vented_locker` | locker | floor | 520 x 1885 x 547 | 47.8 | 0 | 2,090 | 8 | CW x5, OA x2, OB |
 | `locker_wall_cabinet` | locker | wall | 900 x 641 x 342 | 15.9 | 0 | 724 | 1 | CW |
 | `locker_wardrobe` | locker | floor | 1160 x 2060 x 687 | 134 | 0 | 4,540 | 10 | AL x2, CQ x2, FS, OA x3, OB x2 |
+| `meal_beef_stew_pot` | meal | table | 290 x 150 x 242 | 6.2 | 0 | 1,060 | 1 | GA |
+| `meal_burger_with_fries` | meal | table | 280 x 99 x 280 | 4.0 | 0 | 930 | 1 | MH |
+| `meal_burrito_plate` | meal | table | 300 x 70 x 300 | 3.4 | 0 | 567 | 1 | MH |
+| `meal_caesar_salad` | meal | table | 290 x 52 x 290 | 2.4 | 0 | 716 | 1 | MH |
+| `meal_club_sandwich` | meal | table | 280 x 98 x 280 | 3.9 | 0 | 436 | 1 | MH |
+| `meal_curry_and_rice` | meal | table | 320 x 76 x 320 | 4.5 | 0 | 861 | 1 | MH |
+| `meal_dumplings_steamer` | meal | table | 298 x 50 x 308 | 2.6 | 0 | 828 | 3 | MH x3 |
+| `meal_fish_and_chips` | meal | table | 320 x 64 x 320 | 3.8 | 0 | 862 | 1 | MH |
+| `meal_fried_egg_breakfast` | meal | table | 300 x 29 x 300 | 1.3 | 0 | 538 | 1 | MH |
+| `meal_fried_rice_bowl` | meal | table | 210 x 105 x 176 | 2.2 | 0 | 978 | 1 | MH |
+| `meal_lasagna_slice` | meal | table | 280 x 69 x 280 | 2.7 | 0 | 395 | 1 | MH |
+| `meal_mac_and_cheese` | meal | table | 190 x 59 x 188 | 1.1 | 0 | 1,280 | 3 | MH x3 |
+| `meal_omelette_plate` | meal | table | 300 x 45 x 300 | 2.3 | 0 | 733 | 1 | MH |
+| `meal_pho_bowl` | meal | table | 256 x 112 x 230 | 3.4 | 0 | 1,560 | 1 | MH |
+| `meal_pizza_margherita` | meal | table | 336 x 27 x 336 | 1.7 | 0 | 807 | 1 | MH |
+| `meal_pizza_pepperoni` | meal | table | 330 x 21 x 330 | 1.3 | 0 | 1,140 | 1 | MH |
+| `meal_porridge_bowl` | meal | table | 190 x 80 x 170 | 1.4 | 0 | 951 | 1 | MH |
+| `meal_ramen_bowl` | meal | table | 238 x 145 x 210 | 3.7 | 0 | 2,120 | 1 | MH |
+| `meal_roast_chicken` | meal | table | 400 x 138 x 328 | 10.4 | 0 | 1,710 | 1 | GA |
+| `meal_salad_bowl_wood` | meal | table | 300 x 129 x 300 | 5.9 | 0 | 1,500 | 3 | GA, MH x2 |
+| `meal_spaghetti_bolognese` | meal | table | 290 x 63 x 290 | 3.0 | 0 | 1,260 | 1 | MH |
+| `meal_steak_dinner` | meal | table | 300 x 56 x 300 | 2.5 | 0 | 784 | 2 | CQ, MH |
+| `meal_sushi_nigiri_set` | meal | table | 300 x 52 x 130 | 1.1 | 0 | 635 | 1 | CQ |
+| `meal_tacos_trio` | meal | table | 324 x 85 x 130 | 1.8 | 0 | 352 | 1 | MH |
+| `meal_tomato_soup_bowl` | meal | table | 210 x 70 x 208 | 1.6 | 0 | 680 | 2 | MH x2 |
 | `medbed_diagnostic_biobed` | medbed | floor | 1320 x 1710 x 2050 | 575 | 570 | 987,000 | 4 | MB x4 |
 | `medbed_isolation_bed` | medbed | floor | 1200 x 2346 x 2117 | 639 | 720 | 1,380,000 | 1 | MB |
 | `medbed_surgical_table` | medbed | floor | 900 x 2630 x 2500 | 655 | 640 | 1,540,000 | 1 | MB |
@@ -9675,6 +10123,9 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `rack_ups_battery_rack` | rack | floor | 600 x 2000 x 1000 | 241 | 2600 | 231,000 | 2 | AX, CC |
 | `railing_guard_balusters` | railing | floor | 2100 x 1055 x 160 | 47.3 | 0 | 1,150 | 7 | ME x7 |
 | `railing_guard_mesh` | railing | floor | 2100 x 1065 x 160 | 47.3 | 0 | 1,190 | 4 | AC x4 |
+| `ration_cup_noodle_instant` | ration | table | 144 x 108 x 92 | 0.2 | 0 | 173 | 1 | CW |
+| `ration_pouch_fruit_puree_spout` | ration | table | 192 x 165 x 50 | 0.2 | 0 | 79 | 1 | MB |
+| `ration_ration_boxes_stacked` | ration | table | 352 x 301 x 240 | 3.0 | 0 | 156 | 1 | PH |
 | `reactor_fusion_core_reactor` | reactor | floor | 2524 x 3040 x 2524 | 23818 | 130000 | 45,500,000 | 1 | ME |
 | `reactor_matter_antimatter_injector` | reactor | floor | 3522 x 2550 x 900 | 9948 | 470000 | 9,170,000 | 1 | AC |
 | `reactor_plasma_tokamak_torus` | reactor | floor | 2692 x 2800 x 2692 | 29216 | 150000 | 57,000,000 | 1 | AC |
@@ -9785,17 +10236,15 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `table_round_mess_table` | table | floor | 1228 x 763 x 1228 | 42.2 | 0 | 1,720 | 4 | AB, CQ, FS, HY |
 | `table_side_table` | table | floor | 522 x 554 x 542 | 5.1 | 0 | 320 | 8 | BT, FS, OA, OB x2, OL, RR, WR |
 | `tableware_bottle_and_glasses` | tableware | table | 260 x 315 x 160 | 3.9 | 0 | 1,380 | 9 | CR, FS, OL x3, RG, WR x3 |
-| `tableware_bowls` | tableware | table | 345 x 101 x 275 | 2.8 | 0 | 879 | 1 | GA |
-| `tableware_bread_basket` | tableware | table | 344 x 135 x 244 | 3.2 | 0 | 1,200 | 4 | MH x2, WR x2 |
+| `tableware_bread_basket` | tableware | table | 344 x 135 x 244 | 3.2 | 0 | 1,200 | 2 | WR x2 |
 | `tableware_condiments` | tableware | table | 220 x 190 x 100 | 1.2 | 0 | 373 | 4 | MH x3, WR |
-| `tableware_cups_and_mugs` | tableware | table | 318 x 100 x 283 | 2.5 | 0 | 957 | 18 | AB, CR x2, CW, HY, LI x2, MH x4, OA, OL x2, RG, RR x2, WR |
+| `tableware_cups_and_mugs` | tableware | table | 318 x 100 x 283 | 2.5 | 0 | 957 | 14 | AB, CR x2, CW, HY, LI x2, OA, OL x2, RG, RR x2, WR |
 | `tableware_cutlery_set` | tableware | table | 200 x 30 x 240 | 0.4 | 0 | 174 | 2 | CW, WR |
 | `tableware_fruit_bowl` | tableware | table | 320 x 180 x 320 | 5.1 | 0 | 1,850 | 4 | CQ, CR, WR x2 |
-| `tableware_meal_tray` | tableware | table | 420 x 95 x 350 | 3.6 | 0 | 1,050 | 1 | GA |
-| `tableware_napkin_dispenser` | tableware | table | 140 x 155 x 111 | 0.7 | 0 | 258 | 2 | MH x2 |
+| `tableware_napkin_dispenser` | tableware | table | 140 x 155 x 111 | 0.7 | 0 | 258 | 3 | MH x3 |
 | `tableware_pitcher` | tableware | table | 280 x 255 x 176 | 3.6 | 0 | 1,220 | 3 | BT, CR, WR |
-| `tableware_plate_stack` | tableware | table | 260 x 99 x 260 | 1.8 | 0 | 816 | 7 | FS, GA, MH x4, WR |
-| `tableware_salad` | tableware | table | 280 x 155 x 280 | 3.4 | 0 | 1,230 | 2 | GA, WR |
+| `tableware_plate_stack` | tableware | table | 260 x 99 x 260 | 1.8 | 0 | 816 | 2 | FS, WR |
+| `tableware_salad` | tableware | table | 280 x 155 x 280 | 3.4 | 0 | 1,230 | 1 | WR |
 | `tableware_teapot` | tableware | table | 353 x 209 x 180 | 3.4 | 0 | 1,350 | 8 | AB, CQ, CR, FS, HY, RR, WR x2 |
 | `tank_accumulator_tank` | tank | floor | 901 x 1730 x 800 | 787 | 0 | 388,000 | 2 | CO x2 |
 | `tank_buffer_tank_with_level_tube` | tank | floor | 1070 x 1900 x 1000 | 1263 | 0 | 561,000 | 1 | ME |
@@ -9820,6 +10269,13 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `terminal_laptop_console` | terminal | table | 340 x 238 x 272 | 4.5 | 11 | 5,150 | 8 | AX x2, LI, OA x3, OB x2 |
 | `terminal_portable_reader` | terminal | table | 120 x 38 x 225 | 0.2 | 3 | 337 | 1 | LI |
 | `toolbox_tabletop_toolbox` | toolbox | table | 480 x 300 x 260 | 11.0 | 0 | 7,610 | 4 | FH x2, WS x2 |
+| `tray_bread_basket_wicker` | tray | table | 306 x 89 x 306 | 1.1 | 0 | 740 | 2 | CR, MH |
+| `tray_cake_stand_afternoon_tea` | tray | table | 308 x 422 x 306 | 5.4 | 0 | 1,100 | 1 | CR |
+| `tray_fruit_bowl_mixed` | tray | table | 340 x 150 x 338 | 2.2 | 0 | 1,030 | 2 | GA, MH |
+| `tray_hotel_pan_mash_gravy` | tray | table | 562 x 77 x 366 | 1.8 | 0 | 426 | 1 | GA |
+| `tray_hotel_pan_roast_veg` | tray | table | 562 x 93 x 386 | 2.6 | 0 | 933 | 1 | GA |
+| `tray_meal_tray_steel` | tray | table | 464 x 110 x 306 | 1.9 | 0 | 655 | 1 | MB |
+| `tray_soup_tureen_ladle` | tray | table | 454 x 214 x 320 | 4.0 | 0 | 674 | 1 | MH |
 | `turbine_flywheel` | turbine | floor | 1500 x 1660 x 640 | 2232 | 94 | 2,090,000 | 1 | ME |
 | `turbine_steam_turbine` | turbine | floor | 2959 x 1821 x 1017 | 7794 | 7500 | 6,470,000 | 1 | ME |
 | `valve_dial_gauge` | valve | wall | 480 x 565 x 131 | 12.4 | 0 | 428 | 2 | WP, WW |
@@ -9828,6 +10284,9 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `valve_gauge_cluster` | valve | wall | 800 x 355 x 69 | 7.7 | 0 | 303 | 1 | WP |
 | `valve_pressure_regulator` | valve | wall | 600 x 625 x 299 | 41.0 | 0 | 1,180 | 1 | WP |
 | `valve_sight_glass` | valve | wall | 500 x 500 x 215 | 21.1 | 0 | 607 | 1 | WP |
+| `veg_cabbage_green` | veg | table | 258 x 162 x 264 | 1.4 | 0 | 449 | 1 | GA |
+| `veg_carrots_bunch` | veg | table | 308 x 39 x 222 | 0.3 | 0 | 904 | 1 | GA |
+| `veg_tomatoes_on_vine` | veg | table | 236 x 62 x 126 | 0.2 | 0 | 1,450 | 2 | GA, HY |
 | `vending_drink_machine` | vending | floor | 950 x 1900 x 907 | 251 | 570 | 99,600 | 3 | MH, RG, WR |
 | `vending_snack_machine` | vending | floor | 900 x 1900 x 847 | 208 | 520 | 67,800 | 3 | MH, RG, WR |
 | `vending_tech_parts_machine` | vending | floor | 910 x 1900 x 847 | 222 | 530 | 69,600 | 1 | LB2 |

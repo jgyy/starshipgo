@@ -41,15 +41,15 @@
 <text x="102.4" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
 <polygon points="320,68 340,68 340,140 320,140" class="red" fill="url(#hZone)"/>
 <text x="321.6" y="104.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
-<polygon points="144,137 108,137 108,127.8 144,127.8" class="f" fill="#efb877"/>
-<polygon points="280,71 316,71 316,80.2 280,80.2" class="f" fill="#efb877"/>
-<polygon points="161,71 167,71 167,74.98 161,74.98" class="f" fill="#df99f7"/>
-<polygon points="263,137 257,137 257,133.02 263,133.02" class="f" fill="#df99f7"/>
-<polygon points="257,71 279,71 279,73.08 257,73.08" class="f" fill="#a499f7"/>
-<polygon points="167,137 145,137 145,134.92 167,134.92" class="f" fill="#a499f7"/>
-<polygon points="317,71 337,71 337,72.56 317,72.56" class="f" fill="#b777ef"/>
-<polygon points="126,71 142,71 142,71.9 126,71.9" class="f" fill="#99f7f6"/>
-<polygon points="298,137 282,137 282,136.1 298,136.1" class="f" fill="#99f7f6"/>
+<polygon points="144,137 108,137 108,127.8 144,127.8" class="f" fill="#b099f7"/>
+<polygon points="280,71 316,71 316,80.2 280,80.2" class="f" fill="#b099f7"/>
+<polygon points="161,71 167,71 167,74.98 161,74.98" class="f" fill="#e281e8"/>
+<polygon points="263,137 257,137 257,133.02 263,133.02" class="f" fill="#e281e8"/>
+<polygon points="257,71 279,71 279,73.08 257,73.08" class="f" fill="#e88a81"/>
+<polygon points="167,137 145,137 145,134.92 167,134.92" class="f" fill="#e88a81"/>
+<polygon points="317,71 337,71 337,72.56 317,72.56" class="f" fill="#ebef77"/>
+<polygon points="126,71 142,71 142,71.9 126,71.9" class="f" fill="#81d3e8"/>
+<polygon points="298,137 282,137 282,136.1 298,136.1" class="f" fill="#81d3e8"/>
 <polygon points="280.28,97.62 293.04,97.62 293.04,110.38 280.28,110.38" class="dot" fill="none"/>
 <polygon points="105,97 119,97 119,111 105,111" class="dot" fill="none"/>
 <polygon points="305,97 319,97 319,111 305,111" class="dot" fill="none"/>
@@ -247,19 +247,19 @@
 <text x="151" y="234.15" font-size="1.5" class="t">2</text>
 <rect x="94" y="212" width="63" height="23.2" class="n" fill="none"/>
 <text x="242" y="214" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
-<rect x="242" y="216.2" width="4.2" height="2.4" class="n" fill="#efb877"/>
+<rect x="242" y="216.2" width="4.2" height="2.4" class="n" fill="#b099f7"/>
 <text x="247.4" y="218.1" font-size="1.6" class="t">bench</text>
-<rect x="299" y="216.2" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<rect x="299" y="216.2" width="4.2" height="2.4" class="n" fill="#bcf799"/>
 <text x="304.4" y="218.1" font-size="1.6" class="t">ceilinglight</text>
-<rect x="356" y="216.2" width="4.2" height="2.4" class="n" fill="#a499f7"/>
+<rect x="356" y="216.2" width="4.2" height="2.4" class="n" fill="#e88a81"/>
 <text x="361.4" y="218.1" font-size="1.6" class="t">display</text>
-<rect x="242" y="219.6" width="4.2" height="2.4" class="n" fill="#99e0f7"/>
+<rect x="242" y="219.6" width="4.2" height="2.4" class="n" fill="#77efe5"/>
 <text x="247.4" y="221.5" font-size="1.6" class="t">duct</text>
-<rect x="299" y="219.6" width="4.2" height="2.4" class="n" fill="#b777ef"/>
+<rect x="299" y="219.6" width="4.2" height="2.4" class="n" fill="#ebef77"/>
 <text x="304.4" y="221.5" font-size="1.6" class="t">noticeboard</text>
-<rect x="356" y="219.6" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<rect x="356" y="219.6" width="4.2" height="2.4" class="n" fill="#e281e8"/>
 <text x="361.4" y="221.5" font-size="1.6" class="t">safety</text>
-<rect x="242" y="223" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<rect x="242" y="223" width="4.2" height="2.4" class="n" fill="#81d3e8"/>
 <text x="247.4" y="224.9" font-size="1.6" class="t">sign</text>
 <text x="15" y="11.2" font-size="2.6" class="t b">PLAN - MID-SHIP STAIR LOBBY</text>
 <text x="15" y="14.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>

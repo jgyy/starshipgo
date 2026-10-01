@@ -7,6 +7,7 @@ Doors to the spine corridors are on the x = -/+1.5 walls, the hull is the outer 
 from dressing import *   # noqa: F401,F403
 from recipes_deck3_helpers import *   # noqa: F401,F403
 from recipes_deck3_helpers import _log
+from recipes_food import food_provisions   # noqa: F401
 
 
 def rail(R, B, kind, x0, z0, x1, z1, skip=()):
@@ -263,6 +264,8 @@ def f_provisions(R, B):
     for x, z in ((-7.0, -4.5), (-5.0, -7.9), (-5.0, -0.6)):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), -6.0, -4.5, 0.0, y=R.y + R.h)
+    food_provisions(R, B)
+
 
 
 # ----------------------------------------------------------------------------------------------- WATER RECLAMATION PLANT

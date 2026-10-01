@@ -6,6 +6,7 @@ library, observatory, arboretum and flag officer's suite aft.  Every placement b
 import math
 
 from recipes_deck2_helpers import *   # noqa: F401,F403
+from recipes_food import food_wardroom   # noqa: F401
 
 
 # ----------------------------------------------------------------------------------------------- helpers
@@ -412,6 +413,8 @@ def f_wardroom(R, B):
            "An extinguisher by the door, the mess department sign and the exit marker; the bar's emergency light uses the beacon.")
     wi(R, B, "W", "safety_fire_extinguisher", -0.8, y=1.1, quiet=True)
     dsign(R, B, "W", -4.0, "dept_mess", y=3.1)
+    food_wardroom(R, B)
+
 
 
 # ----------------------------------------------------------------------------------------------- LIBRARY

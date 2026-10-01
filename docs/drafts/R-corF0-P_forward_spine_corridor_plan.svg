@@ -41,12 +41,12 @@
 <text x="166.4" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
 <polygon points="148,101.4 188,101.4 188,156.6 148,156.6" class="red" fill="url(#hZone)"/>
 <text x="149.6" y="129.4" font-size="1.2" class="t i halo" text-anchor="middle" fill="#a04040">DOOR CLEAR</text>
-<polygon points="185,161 185,167 181.02,167 181.02,161" class="f" fill="#df99f7"/>
-<polygon points="131,187 131,167 132.2,167 132.2,187" class="f" fill="#df99f7"/>
-<polygon points="185,186 185,192 183.46,192 183.46,186" class="f" fill="#f799eb"/>
-<polygon points="131,168.26 131,159.74 134.42,159.74 134.42,168.26" class="f" fill="#f799eb"/>
-<polygon points="131,139 131,119 132.24,119 132.24,139" class="f" fill="#99f7f6"/>
-<polygon points="185,119 185,139 183.8,139 183.8,119" class="f" fill="#99f7f6"/>
+<polygon points="185,161 185,167 181.02,167 181.02,161" class="f" fill="#e281e8"/>
+<polygon points="131,187 131,167 132.2,167 132.2,187" class="f" fill="#e281e8"/>
+<polygon points="185,186 185,192 183.46,192 183.46,186" class="f" fill="#81e8d6"/>
+<polygon points="131,168.26 131,159.74 134.42,159.74 134.42,168.26" class="f" fill="#81e8d6"/>
+<polygon points="131,139 131,119 132.24,119 132.24,139" class="f" fill="#81d3e8"/>
+<polygon points="185,119 185,139 183.8,139 183.8,119" class="f" fill="#81d3e8"/>
 <polygon points="136.4,180 136.4,140 145.6,140 145.6,180" class="dot" fill="none"/>
 <polygon points="136.4,98 136.4,58 145.6,58 145.6,98" class="dot" fill="none"/>
 <polygon points="137.4,139 137.4,99 144.6,99 144.6,139" class="dot" fill="none"/>
@@ -241,15 +241,15 @@
 <text x="406" y="90.75" font-size="1.6" class="t">1</text>
 <rect x="307" y="70.8" width="106" height="21" class="n" fill="none"/>
 <text x="307" y="98.8" font-size="1.9" class="t b">FURNITURE FAMILIES</text>
-<rect x="307" y="101" width="4.2" height="2.4" class="n" fill="#f799eb"/>
+<rect x="307" y="101" width="4.2" height="2.4" class="n" fill="#81e8d6"/>
 <text x="312.4" y="102.9" font-size="1.6" class="t">beacon</text>
-<rect x="360" y="101" width="4.2" height="2.4" class="n" fill="#ef779f"/>
+<rect x="360" y="101" width="4.2" height="2.4" class="n" fill="#d677ef"/>
 <text x="365.4" y="102.9" font-size="1.6" class="t">cabletray</text>
-<rect x="307" y="104.4" width="4.2" height="2.4" class="n" fill="#d677ef"/>
+<rect x="307" y="104.4" width="4.2" height="2.4" class="n" fill="#bcf799"/>
 <text x="312.4" y="106.3" font-size="1.6" class="t">ceilinglight</text>
-<rect x="360" y="104.4" width="4.2" height="2.4" class="n" fill="#df99f7"/>
+<rect x="360" y="104.4" width="4.2" height="2.4" class="n" fill="#e281e8"/>
 <text x="365.4" y="106.3" font-size="1.6" class="t">safety</text>
-<rect x="307" y="107.8" width="4.2" height="2.4" class="n" fill="#99f7f6"/>
+<rect x="307" y="107.8" width="4.2" height="2.4" class="n" fill="#81d3e8"/>
 <text x="312.4" y="109.7" font-size="1.6" class="t">sign</text>
 <text x="15" y="12.2" font-size="2.6" class="t b">PLAN - FORWARD SPINE CORRIDOR</text>
 <text x="15" y="15.4" font-size="1.4" class="t" fill="#555">Floor props as oriented footprints (front edge heavy); wall items = bars on wall; ceiling items dotted</text>

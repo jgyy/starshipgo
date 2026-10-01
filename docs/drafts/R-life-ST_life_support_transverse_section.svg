@@ -36,30 +36,30 @@
 <clipPath id="clipA"><rect x="145.07" y="56.7" width="133.86" height="80.6"/></clipPath>
 <g clip-path="url(#clipA)">
 <polygon points="145.37,63 330.77,63 330.77,131 145.37,131" class="x" fill="#e9edf1"/>
-<polygon points="270.77,65.2 311.37,65.2 311.37,74.8 270.77,74.8" class="f" fill="#c7edfa"/>
-<polygon points="229.77,65.2 270.37,65.2 270.37,74.8 229.77,74.8" class="f" fill="#c7edfa"/>
-<polygon points="188.77,65.2 229.37,65.2 229.37,74.8 188.77,74.8" class="f" fill="#c7edfa"/>
-<polygon points="241.27,96.4 259.27,96.4 259.27,131 241.27,131" class="f" fill="#d8f2b9"/>
-<polygon points="204.07,100.4 240.07,100.4 240.07,131 204.07,131" class="f" fill="#d8f2b8"/>
-<polygon points="180.97,93 202.87,93 202.87,130.8 180.97,130.8" class="f" fill="#d8f2b8"/>
-<polygon points="260.47,100.4 292.67,100.4 292.67,131 260.47,131" class="f" fill="#d8f2b7"/>
-<polygon points="155.37,84.2 179.77,84.2 179.77,131 155.37,131" class="f" fill="#d7f1b7"/>
-<polygon points="310.7,74 327.07,74 327.07,95.1 310.7,95.1" class="f" fill="#cbc4fa"/>
-<polygon points="263.37,110.4 280.88,110.4 280.88,130.9 263.37,130.9" class="f" fill="#cef1b4"/>
-<polygon points="284.79,110.84 291.92,110.84 291.92,111.4 284.79,111.4" class="f" fill="#fac1de"/>
+<polygon points="270.77,65.2 311.37,65.2 311.37,74.8 270.77,74.8" class="f" fill="#b4f6f0"/>
+<polygon points="229.77,65.2 270.37,65.2 270.37,74.8 229.77,74.8" class="f" fill="#b4f6f0"/>
+<polygon points="188.77,65.2 229.37,65.2 229.37,74.8 188.77,74.8" class="f" fill="#b4f6f0"/>
+<polygon points="241.27,96.4 259.27,96.4 259.27,131 241.27,131" class="f" fill="#b9edf2"/>
+<polygon points="204.07,100.4 240.07,100.4 240.07,131 204.07,131" class="f" fill="#b8edf2"/>
+<polygon points="180.97,93 202.87,93 202.87,130.8 180.97,130.8" class="f" fill="#b8edf2"/>
+<polygon points="260.47,100.4 292.67,100.4 292.67,131 260.47,131" class="f" fill="#b7edf2"/>
+<polygon points="155.37,84.2 179.77,84.2 179.77,131 155.37,131" class="f" fill="#b7edf1"/>
+<polygon points="310.7,74 327.07,74 327.07,95.1 310.7,95.1" class="f" fill="#f1bcb7"/>
+<polygon points="263.37,110.4 280.88,110.4 280.88,130.9 263.37,130.9" class="f" fill="#bef5ae"/>
+<polygon points="284.79,110.84 291.92,110.84 291.92,111.4 284.79,111.4" class="f" fill="#f1b3c6"/>
 <polygon points="255.07,63 295.37,63 295.37,68 255.07,68" class="dot" fill="none"/>
 <polygon points="214.17,63 254.47,63 254.47,68 214.17,68" class="dot" fill="none"/>
 <polygon points="173.27,63 213.57,63 213.57,68 173.27,68" class="dot" fill="none"/>
-<polygon points="187.65,97.06 199.09,97.06 199.09,131 187.65,131" class="f" fill="#f0edb2"/>
-<polygon points="273.25,103.2 307.46,103.2 307.46,131 273.25,131" class="f" fill="#cdb0f0"/>
-<polygon points="149.17,93.4 163.67,93.4 163.67,131 149.17,131" class="f" fill="#bec6f9"/>
+<polygon points="187.65,97.06 199.09,97.06 199.09,131 187.65,131" class="f" fill="#fae4c0"/>
+<polygon points="273.25,103.2 307.46,103.2 307.46,131 273.25,131" class="f" fill="#fabffa"/>
+<polygon points="149.17,93.4 163.67,93.4 163.67,131 149.17,131" class="f" fill="#b4aff0"/>
 <polygon points="195.51,63 207.91,63 207.91,64.96 195.51,64.96" class="dot" fill="none"/>
-<polygon points="245.47,90.4 280.76,90.4 280.76,131 245.47,131" class="f" fill="#d2f0ad"/>
+<polygon points="245.47,90.4 280.76,90.4 280.76,131 245.47,131" class="f" fill="#adeaf0"/>
 <polygon points="145.37,131 278.63,131 278.63,137 145.37,137" class="n" fill="url(#hSlab)"/>
 <polygon points="145.37,57 278.63,57 278.63,63 145.37,63" class="n" fill="url(#hSlab)"/>
 <polygon points="145.37,63 148.37,63 148.37,131 145.37,131" class="n" fill="#1c1c1c"/>
 <polygon points="274.9,63 278.63,63 278.63,131 274.9,131" class="n" fill="url(#hHull)"/>
-<polygon points="245.47,90.4 273.9,90.4 273.9,131 245.47,131" class="m" fill="#bde987"/>
+<polygon points="245.47,90.4 273.9,90.4 273.9,131 245.47,131" class="m" fill="#87e1e9"/>
 </g>
 <text x="291.07" y="70.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3050</text>
 <text x="250.07" y="70.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">3050</text>

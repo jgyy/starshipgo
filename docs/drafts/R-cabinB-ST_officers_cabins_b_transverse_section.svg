@@ -47,18 +47,18 @@
 <polygon points="282.12,83 295.51,83 295.51,111 282.12,111" class="n" fill="url(#hGlass)"/>
 <line x1="288.81" y1="111" x2="288.81" y2="83" class="f"/>
 <polygon points="300.87,63 303.13,63 303.13,131 300.87,131" class="x" fill="#f2f4f7"/>
-<polygon points="123.87,99.6 127.85,99.6 127.85,114.3 123.87,114.3" class="f" fill="#ebc1fa"/>
-<polygon points="220.37,110.36 225.37,110.36 225.37,119.8 220.37,119.8" class="f" fill="#e9f5ab"/>
-<polygon points="217.65,120 228.09,120 228.09,131.08 217.65,131.08" class="f" fill="#abf5db"/>
-<polygon points="232.67,105.56 253.07,105.56 253.07,131 232.67,131" class="f" fill="#fabfc6"/>
-<polygon points="192.67,105.56 213.07,105.56 213.07,131 192.67,131" class="f" fill="#fabfc6"/>
+<polygon points="123.87,99.6 127.85,99.6 127.85,114.3 123.87,114.3" class="f" fill="#edb3f1"/>
+<polygon points="220.37,110.36 225.37,110.36 225.37,119.8 220.37,119.8" class="f" fill="#f0b1b4"/>
+<polygon points="217.65,120 228.09,120 228.09,131.08 217.65,131.08" class="f" fill="#c0faf2"/>
+<polygon points="232.67,105.56 253.07,105.56 253.07,131 232.67,131" class="f" fill="#f5c9aa"/>
+<polygon points="192.67,105.56 213.07,105.56 213.07,131 192.67,131" class="f" fill="#f5c9aa"/>
 <polygon points="159.03,63 181.03,63 181.03,67.4 159.03,67.4" class="dot" fill="none"/>
 <polygon points="218.37,63 238.37,63 238.37,64.58 218.37,64.58" class="dot" fill="none"/>
 <polygon points="120.87,131 303.13,131 303.13,137 120.87,137" class="n" fill="url(#hSlab)"/>
 <polygon points="120.87,57 303.13,57 303.13,63 120.87,63" class="n" fill="url(#hSlab)"/>
 <polygon points="120.87,63 123.87,63 123.87,75.8 120.87,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="299.33,63 303.13,63 303.13,131 299.33,131" class="n" fill="url(#hHull)"/>
-<polygon points="218.37,63 238.37,63 238.37,64.58 218.37,64.58" class="m" fill="#d87def"/>
+<polygon points="218.37,63 238.37,63 238.37,64.58 218.37,64.58" class="m" fill="#bff79e"/>
 </g>
 <text x="125.86" y="109.5" font-size="1.2" class="t" text-anchor="middle" fill="#444">1100</text>
 <text x="120.87" y="54" font-size="1.8" class="t b">STBD</text>

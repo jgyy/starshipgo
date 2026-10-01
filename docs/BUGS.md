@@ -23,7 +23,7 @@ Before changing anything, the original game was audited by reading every script 
 
 ## The original layout, measured
 
-`tools/layout/audit.py` checks footprints, walls, windows, ceilings, mounting, department policy, walkability, BOM and lights. Run over the original ship (6,679 props) and the new one (1375 props):
+`tools/layout/audit.py` checks footprints, walls, windows, ceilings, mounting, department policy, walkability, BOM and lights. Run over the original ship (6,679 props) and the new one (2553 props):
 
 | Rule | What it catches | Original layout | New layout |
 |---|---|---|---|
@@ -44,12 +44,12 @@ Before changing anything, the original game was audited by reading every script 
 | `ceiling-overlap` | ceiling items overlapping | 11 | 0 |
 | `lights` | rooms without light fixtures | 9 | 0 |
 | `window-blocked` | tall props in front of windows | 6 | 0 |
-| `aisle-width` | passages under 0.8 m (warning) | 5 | 1 |
+| `aisle-width` | passages under 0.8 m (warning) | 5 | 7 |
 | `door-clearance` | props in a doorway | 1 | 0 |
 | `unknown-room-policy` | rooms the policy does not know (warning) | 1 | 0 |
-| **total** | | **2740** | **9** |
+| **total** | | **2740** | **15** |
 
-(The new layout's remaining entries are warnings only: aisle-width x1, duplicates x5, unreachable-pocket x3.)
+(The new layout's remaining entries are warnings only: aisle-width x7, duplicates x5, unreachable-pocket x3.)
 
 ## Defects
 
