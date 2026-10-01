@@ -86,7 +86,10 @@ static func _quads_of(mesh: Mesh, surf: int, xf: Transform3D, tex: String, node_
 		for t in tl:
 			for j in 3:
 				pts.append(xf * verts[tris[t + j]])
-		var u := (b - a)
+		# the two shorter edges of the first triangle are the quad's sides (the longest one is the diagonal)
+		var edges: Array = [b - a, c - b, a - c]
+		edges.sort_custom(func(x: Vector3, y: Vector3) -> bool: return x.length() < y.length())
+		var u: Vector3 = edges[1]
 		u = (u - n * u.dot(n)).normalized()
 		var v := n.cross(u).normalized()
 		var umin := 1e9
@@ -287,7 +290,13 @@ func attach_highlight(parent: Node3D) -> void:
 	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	m.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
-	m.albedo_color = Color(0.25, 0.9, 1.0, 0.22)
+	var img := Image.create(64, 64, false, Image.FORMAT_RGBA8)
+	for y in 64:
+		for x in 64:
+			var edge := mini(mini(x, 63 - x), mini(y, 63 - y))
+			img.set_pixel(x, y, Color(0.3, 0.92, 1.0, 0.95 if edge < 3 else (0.5 if edge < 5 else 0.07)))
+	m.albedo_texture = ImageTexture.create_from_image(img)
+	m.albedo_color = Color(0.55, 0.75, 0.8, 0.8)
 	m.cull_mode = BaseMaterial3D.CULL_DISABLED
 	highlight.material_override = m
 	highlight.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF

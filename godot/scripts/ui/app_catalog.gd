@@ -24,7 +24,7 @@ const TEXTURE_MAP := {
 }
 
 ## Textures that do not say what the machine is for: the room (or the machine) decides.
-const GENERIC := ["text", "graph", "bars", "systems", "diagnostic", "schematic", "off", "hazard", "waveform"]
+const GENERIC := ["text", "graph", "bars", "systems", "schematic", "off", "hazard", "waveform"]
 
 const ROOM_APP := {
 	"bridge": "nav", "ready": "computer", "lounge": "logbook", "conf": "starmap", "astro": "sensors", "capt": "logbook",
@@ -44,7 +44,7 @@ const CATEGORY_APP := {
 	"vending": "vending", "clock": "clock", "holo": "holo", "noticeboard": "logbook", "medscanner": "medical",
 	"reactor": "reactor", "generator": "power", "capacitor": "power", "scrubber": "lifesupport", "planter": "hydroponics",
 	"cryo": "medical", "medbed": "medical", "commsunit": "comms", "antenna": "comms", "cell": "security", "camera": "security",
-	"weaponrack": "tactical", "turbine": "reactor", "microscope": "science", "sciinstrument": "science", "telescope": "sensors",
+	"weaponrack": "tactical", "turbine": "reactor", "particle": "warp", "coil": "warp", "microscope": "science", "sciinstrument": "science", "telescope": "sensors",
 }
 
 const ID_APP := {
@@ -117,6 +117,10 @@ static func resolve(model_id: String, category: String, tex: String, room_id: St
 	var app := ""
 	if ID_APP.has(model_id):
 		app = ID_APP[model_id]
+	elif model_id.contains("warp") or model_id.contains("lattice"):
+		app = "warp"
+	elif model_id.contains("diagnostic"):
+		app = "diagnostics"
 	elif CATEGORY_APP.has(category) and not (tex != "" and category in ["generator", "capacitor"]):
 		app = CATEGORY_APP[category]
 	if app == "" and tex != "":

@@ -40,8 +40,10 @@ func _ready() -> void:
 	interact_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	status_label = _label(16, Color(0.6, 0.9, 1.0))
 	status_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
-	status_label.grow_horizontal = Control.GROW_DIRECTION_BEGIN
-	status_label.position = Vector2(-32, 26)
+	status_label.offset_left = -760.0
+	status_label.offset_right = -32.0
+	status_label.offset_top = 26.0
+	status_label.offset_bottom = 54.0
 	status_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	ring = Control.new()
 	ring.set_anchors_and_offsets_preset(Control.PRESET_CENTER)

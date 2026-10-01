@@ -72,6 +72,12 @@ func _ready() -> void:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		_run_ui_shots.call_deferred(ui_shot, _arg("--ui-out="))
 		return
+	var aim := _arg("--aim-shot=")
+	if aim != "":
+		_interactive = false
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		_run_aim_shot.call_deferred(aim, _arg("--aim-room="))
+		return
 	var bench := _arg("--bench=")
 	if bench != "":
 		_interactive = false
@@ -129,6 +135,40 @@ func _unhandled_input(event: InputEvent) -> void:
 		if not rec.is_empty():
 			terminal.open_host(rec)
 			get_viewport().set_input_as_handled()
+
+## --aim-shot=out.png [--aim-room=bridge] : stand 1.1 m in front of a screen in that room, run the 10 Hz look scan once
+## and save the frame (HUD prompt + ring + highlight).  End-to-end check of discovery, selection and the HUD.
+func _run_aim_shot(path: String, room: String) -> void:
+	if room == "":
+		room = "bridge"
+	await get_tree().create_timer(0.5).timeout
+	player.set_physics_process(false)
+	var rec: Dictionary = {}
+	for r in builder.screen_registry.records:
+		if r["kind"] == "screen" and r["room"] == room and float(r["hu"]) > 0.2 and (rec.is_empty() or r["app"] == "nav"):
+			rec = r
+	if rec.is_empty():
+		printerr("no screen in room ", room)
+		get_tree().quit(1)
+		return
+	var c: Vector3 = rec["center"]
+	var n: Vector3 = rec["normal"]
+	var eye: Vector3 = c + n * 1.1
+	eye.y = c.y + 0.25
+	player.global_position = eye - Vector3(0, 1.62, 0)
+	player.look_at_yaw_pitch(atan2(-(c - eye).x, -(c - eye).z), asin(clampf((c - eye).normalized().y, -1, 1)))
+	_room_id = ""
+	builder._current_room = ""
+	await get_tree().create_timer(0.8).timeout     # the 0.2 s room tick sets the room, banner and culling
+	_scan_screens()
+	print("aim target: ", builder.screen_registry.current.get("model", "none"), " app ", builder.screen_registry.current.get("app", ""))
+	hud.help_label.visible = false
+	for i in 8:
+		await get_tree().process_frame
+	var img := get_viewport().get_texture().get_image()
+	img.save_png(path)
+	print("shot ", path)
+	get_tree().quit()
 
 func _screen_scan() -> void:
 	var s := builder.screen_registry.summary()

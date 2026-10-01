@@ -25,7 +25,7 @@ func build() -> void:
 	_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var row := hb(v, 14)
 	for lv in ["green", "yellow", "red"]:
-		var b := btn(row, lv.to_upper() + " ALERT", func() -> void: st.set_alert(lv), true)
+		var b := btn(row, lv.to_upper() + " ALERT", func(_on: bool) -> void: st.set_alert(lv), true)
 		b.custom_minimum_size = Vector2(0, 74)
 		b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		b.add_theme_font_size_override("font_size", 22)
