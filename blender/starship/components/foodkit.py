@@ -55,7 +55,6 @@ _MATS = {
     "f_honey": ("#d89a20", 0.0, 0.15), "f_chocolate_dark": ("#2c1810", 0.0, 0.35), "f_chocolate_milk": ("#6a3a20", 0.0, 0.35),
     "f_wrapper_gold": ("#d4a840", 0.85, 0.3), "f_wrapper_red": ("#b02a2a", 0.7, 0.3), "f_wrapper_blue": ("#2a4a9a", 0.7, 0.3),
     "f_pouch_edge": ("#a0a6ae", 0.9, 0.35), "f_rubber_grey": ("#5a5e64", 0.0, 0.7), "f_glass_rim": ("#e8f0f4", 0.0, 0.1),
-    "f_ice_cube": ("#e6f4fa", 0.0, 0.1),
 }
 for _n, (_h, _me, _ro) in _MATS.items():
     register_material(_n, _h, _me, _ro)
@@ -69,7 +68,9 @@ for _n, _h, _a in (("f_glass", "#e6f0f4", 0.22), ("f_glass_green", "#5a8a52", 0.
                    ("f_tea_iced", "#a85a18", 0.8), ("f_martini", "#e8f0e8", 0.45), ("f_margarita", "#d4e888", 0.7),
                    ("f_mojito", "#d8f0c8", 0.55), ("f_cranberry", "#a01830", 0.85), ("f_blue_curacao", "#2aa8e8", 0.8),
                    ("f_coffee_iced", "#4a2a14", 0.9), ("f_clear_plastic", "#dceaf2", 0.3), ("f_olive_oil", "#b8a020", 0.75),
-                   ("f_jelly_clear", "#f0b0c0", 0.6)):
+                   ("f_jelly_clear", "#f0b0c0", 0.6), ("f_ice_cube", "#e6f4fa", 0.5), ("f_blue_lagoon", "#18b4e8", 0.78),
+                   ("f_cocoa_liquid", "#3a1c0e", 0.97), ("f_green_smoothie", "#7ab83a", 0.92), ("f_pink_smoothie", "#e87aa0", 0.92),
+                   ("f_tea_hot", "#b86a20", 0.85), ("f_bubble_milk_tea", "#c8a074", 0.9), ("f_soda_dark", "#2a1208", 0.92), ("f_champagne_bubble", "#f4ecb0", 0.5)):
     register_material(_n, _h, 0.0, 0.1, alpha=_a)
 
 
@@ -240,6 +241,71 @@ def slab(m, sx, sy, sz, pos=(0, 0, 0), mat="f_white", uv="box", rnd=0.002, rot=(
     return lathe(m, prof, pos, mat, 4, rot, (sx, 1.0, sz), uv, disp, warp, tile, ext=(0.5, 0.0, sy), a0=PI / 4)
 
 
+def extrude(m, pts, h, pos=(0, 0, 0), top="f_white", side=None, bottom=None, rot=(0, 0, 0), uvs=1.0):
+    """Extrude a 2D outline [(x, z), ...] along +Y by h (base at pos), with UVs: planar on the caps, perimeter x height on the sides.
+    top / side / bottom are materials (side and bottom default to `top`).  rot rotates the finished solid about pos."""
+    bm = m.cur["bm"]
+    side = side or top
+    bottom = bottom or top
+    mm = _rotm(rot)
+    n = len(pts)
+    area = sum(pts[i][0] * pts[(i + 1) % n][1] - pts[(i + 1) % n][0] * pts[i][1] for i in range(n))
+    P = list(pts) if area < 0 else list(reversed(pts))      # clockwise seen from +Y: the top face then points up
+    xs = [p[0] for p in P]
+    zs = [p[1] for p in P]
+    cx, cz = (min(xs) + max(xs)) / 2, (min(zs) + max(zs)) / 2
+
+    def V(x, y, z):
+        gx, gy, gz = _rot(mm, (x, y, z))
+        return bm.verts.new(g2b((gx + pos[0], gy + pos[1], gz + pos[2])))
+    lo = [V(x, 0.0, z) for x, z in P]
+    hi = [V(x, h, z) for x, z in P]
+    layer = bm.loops.layers.uv.verify()
+    faces = []
+
+    def face(vs, mat, uvl):
+        try:
+            f = bm.faces.new(vs)
+        except ValueError:
+            return
+        f.material_index = m._mi(mat)
+        for lp, uv in zip(f.loops, uvl):
+            lp[layer].uv = uv
+        faces.append(f)
+    face(list(reversed(hi)), top, [((x - cx) * uvs + 0.5, (z - cz) * uvs + 0.5) for x, z in reversed(P)])
+    face(lo, bottom, [((x - cx) * uvs + 0.5, (z - cz) * uvs + 0.5) for x, z in P])
+    d = 0.0
+    for i in range(n):
+        j = (i + 1) % n
+        seg = math.hypot(P[j][0] - P[i][0], P[j][1] - P[i][1])
+        face([lo[i], lo[j], hi[j], hi[i]], side, [(d * uvs, 0.0), ((d + seg) * uvs, 0.0), ((d + seg) * uvs, h * uvs), (d * uvs, h * uvs)])
+        d += seg
+    # make sure every face points outwards (outline orientation is not trusted)
+    c = sum((v.co for v in lo + hi), Vector()) / (2 * n)
+    for f in faces:
+        if f.is_valid and f.normal.dot(f.calc_center_median() - c) < 0:
+            f.normal_flip()
+    return faces
+
+
+def crate(m, w, d, h, mat="f_tray_grey", pos=(0, 0, 0), slots=3, t=0.012):
+    """Open plastic harvest crate (w x d x h) with slotted walls; returns the inner floor height."""
+    x, y, z = pos
+    m.box((w, t, d), (x, y + t / 2, z), mat, 0.003)
+    sl = (h - t) / (2 * slots + 1)
+    for k in range(slots + 1):
+        yy = y + t + sl * (2 * k + 0.5) + (0.0 if k < slots else sl * 0.5)
+        hh = sl if k < slots else sl * 1.6
+        m.box((w, hh, t), (x, yy, z - d / 2 + t / 2), mat, 0.002)
+        m.box((w, hh, t), (x, yy, z + d / 2 - t / 2), mat, 0.002)
+        m.box((t, hh, d - 2 * t), (x - w / 2 + t / 2, yy, z), mat, 0.002)
+        m.box((t, hh, d - 2 * t), (x + w / 2 - t / 2, yy, z), mat, 0.002)
+    for sx in (-1, 1):
+        for sz in (-1, 1):
+            m.box((t * 1.6, h, t * 1.6), (x + sx * (w / 2 - t * 0.8), y + h / 2, z + sz * (d / 2 - t * 0.8)), mat, 0.003)
+    return y + t
+
+
 def blob(m, radii, pos=(0, 0, 0), mat="f_white", seg=14, ring=10, disp=None, uv="sph", rot=(0, 0, 0), warp=None, tile=(1, 1)):
     """Ellipsoid (radii = (rx, ry, rz)) with optional noise displacement."""
     prof = [(math.sin(PI * k / ring), -math.cos(PI * k / ring)) for k in range(ring + 1)]
@@ -401,6 +467,37 @@ def spline(pts, n=6):
             out.append(tuple(0.5 * ((2 * p1[j]) + (-p0[j] + p2[j]) * t + (2 * p0[j] - 5 * p1[j] + 4 * p2[j] - p3[j]) * t2
                                     + (-p0[j] + 3 * p1[j] - 3 * p2[j] + p3[j]) * t3) for j in range(3)))
     out.append(tuple(pts[-1]))
+    return out
+
+
+def smooth_prof(ctrl, n=4):
+    """Smooth lathe outline through control points [(r, y), ...] (first / last r should be 0 for closed fruit)."""
+    pts = spline([(r, y, 0.0) for r, y in ctrl], n)
+    out = [(max(r, 0.0), y) for r, y, _ in pts]
+    out[0] = (ctrl[0][0], ctrl[0][1])
+    out[-1] = (ctrl[-1][0], ctrl[-1][1])
+    return out
+
+
+def scaled(prof, sr, sy):
+    return [(r * sr, y * sy) for r, y in prof]
+
+
+def bend_flat(Rc):
+    """Warp factory: bend a lathe made along +/-Y into a flat arc (curving towards +Z), cross-section X stays radial, Z becomes height."""
+    def w(x, y, z):
+        ph = y / Rc
+        return Rc * math.sin(ph) + x * math.cos(ph), z, Rc * (1 - math.cos(ph)) + x * math.sin(ph)
+    return w
+
+
+def heap(rng, n, R, H, jitter=0.15):
+    """n points (x, y, z) of a heap: Fibonacci spiral over a disc of radius R, dome height H (y of the surface at that point)."""
+    out = []
+    for k in range(n):
+        a = k * 2.399963 + rng.random() * jitter
+        r = R * math.sqrt((k + 0.5) / n)
+        out.append((r * math.cos(a), H * (1 - (r / R) ** 2), r * math.sin(a)))
     return out
 
 
