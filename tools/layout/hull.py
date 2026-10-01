@@ -168,7 +168,7 @@ if __name__ == "__main__":
 # =================================================================================================
 # Outer skin
 # =================================================================================================
-SKIN_N = 192               # vertices per ring (equal steps of angle about the skin centre)
+SKIN_N = 256               # vertices per ring (equal steps of angle about the skin centre)
 SKIN_DY = 0.5              # vertical ring spacing over the occupied height (m)
 SKIN_WINDOW = 5.0          # a deck step is spread over about this much height: turns terraces into long raked ramps
 SKIN_RELAX = 60            # blur-and-clamp passes that relax the skin over the room volumes
@@ -271,8 +271,8 @@ def skin(volumes, center=(0.0, 2.0)):
     rounded = []
     for r in levels:
         cur = list(r)
-        for _ in range(SKIN_RELAX // 2):
-            cur = [max(x, y) for x, y in zip(_blur(cur, 3), r)]
+        for _ in range(SKIN_RELAX):
+            cur = [max(x, y) for x, y in zip(_blur(cur, 4), r)]
         rounded.append(cur)
     # flare + margin: the sides lean outward with height
     rings = []

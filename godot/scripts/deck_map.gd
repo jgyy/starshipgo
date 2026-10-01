@@ -112,8 +112,8 @@ func _draw() -> void:
 			draw_line((mid - h - mn) * sc + off, (mid + h - mn) * sc + off, Color(0.5, 0.85, 1.0), 3.0)
 		# stair towers: arrows
 		if str(r["id"]).begins_with("tower"):
-			var up := deck > 1
-			var dn := deck < 3
+			var up := deck > _deck_min()
+			var dn := deck < _deck_max()
 			var t := ("UP/DN" if up and dn else ("UP" if dn else "DN"))
 			draw_string(font, c + Vector2(-16, 18), "STAIRS " + t, HORIZONTAL_ALIGNMENT_LEFT, -1, 10, Color(1, 0.92, 0.5))
 	for d in ship.get("doors", []):
@@ -132,6 +132,18 @@ func _draw() -> void:
 		var fwd := Vector2(-sin(yaw), -cos(yaw))
 		var side := Vector2(-fwd.y, fwd.x)
 		draw_colored_polygon(PackedVector2Array([pp + fwd * 11, pp - fwd * 7 + side * 6, pp - fwd * 7 - side * 6]), Color(1, 0.9, 0.3))
+
+func _deck_min() -> int:
+	var m := 99
+	for d in ship.get("decks", []):
+		m = mini(m, int(d["id"]))
+	return m
+
+func _deck_max() -> int:
+	var m := -99
+	for d in ship.get("decks", []):
+		m = maxi(m, int(d["id"]))
+	return m
 
 func _deck_name() -> String:
 	for d in ship.get("decks", []):
