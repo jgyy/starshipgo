@@ -8,11 +8,11 @@
 |---|---|---|---|---|---|---|---|
 | `nozzle_exhaust_bell_with_cooling_ribs` | Thruster / nozzle - Exhaust Bell With Cooling Ribs | Anvil Fluid Controls | 1438 x 2490 x 1370 | 4.16 t | 10 kW | 400 VAC 3ph | 2.92 M |
 | `nozzle_gimbal_mount` | Thruster / nozzle - Gimbal Mount | Anvil Fluid Controls | 1200 x 1450 x 1020 | 1.58 t | 4.2 kW | 208 VAC 3ph | 1.03 M |
-| `nozzle_ion_drive_engine` | Thruster / nozzle - Ion Drive Engine | Anvil Fluid Controls | 1200 x 1642 x 1200 | 2.1 t | 5 kW | 208 VAC 3ph | 1.32 M |
-| `nozzle_main_thruster_bell` | Thruster / nozzle - Main Thruster Bell | Anvil Fluid Controls | 1400 x 2250 x 1400 | 4.1 t | 10 kW | 400 VAC 3ph | 2.93 M |
+| `nozzle_ion_drive_engine` | Thruster / nozzle - Ion Drive Engine | Anvil Fluid Controls | 1200 x 1642 x 1200 | 2.1 t | 5 kW | 208 VAC 3ph | 1.31 M |
+| `nozzle_main_thruster_bell` | Thruster / nozzle - Main Thruster Bell | Anvil Fluid Controls | 1400 x 2250 x 1400 | 4.1 t | 10 kW | 400 VAC 3ph | 2.92 M |
 | `nozzle_plasma_injector_nozzle` | Thruster / nozzle - Plasma Injector Nozzle | Anvil Fluid Controls | 800 x 800 x 845 | 473.8 kg | 1.7 kW | 208 VAC 3ph | 288 k |
 | `nozzle_quad_rcs_block` | Thruster / nozzle - Quad Rcs Block | Anvil Fluid Controls | 1170 x 1070 x 1180 | 1.3 t | 3.3 kW | 208 VAC 3ph | 731 k |
-| `nozzle_rcs_thruster_cluster` | Thruster / nozzle - Rcs Thruster Cluster | Anvil Fluid Controls | 1000 x 1000 x 370 | 318.4 kg | 1.2 kW | 208 VAC 3ph | 166 k |
+| `nozzle_rcs_thruster_cluster` | Thruster / nozzle - Rcs Thruster Cluster | Anvil Fluid Controls | 1000 x 1000 x 370 | 318.6 kg | 1.2 kW | 208 VAC 3ph | 166 k |
 | `nozzle_vectoring_nozzle` | Thruster / nozzle - Vectoring Nozzle | Anvil Fluid Controls | 1500 x 1718 x 1788 | 4.06 t | 11 kW | 400 VAC 3ph | 2.79 M |
 
 ## Datasheets
@@ -43,7 +43,7 @@
 
 * Mass 2.1 t; size 1200 x 1642 x 1200 mm; heat 4.6 kW.
 * Power 1.8 kW idle / 5 kW typical / 11 kW peak at 208 VAC 3ph.
-* Price 1.32 M cr, lead time 128 days, MTBF 40,400 h, service every 2,000 h, service life 20 years, crew 1.
+* Price 1.31 M cr, lead time 128 days, MTBF 40,400 h, service every 2,000 h, service life 20 years, crew 1.
 * IP54, -20 to 60 C, 71 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Machinery control bus MCB-1.
 * floor-mounted, free-standing. Install with a hoist or gantry (2.1 t).
 
@@ -53,7 +53,7 @@
 
 * Mass 4.1 t; size 1400 x 2250 x 1400 mm; heat 9.2 kW.
 * Power 3.6 kW idle / 10 kW typical / 23 kW peak at 400 VAC 3ph.
-* Price 2.93 M cr, lead time 130 days, MTBF 31,400 h, service every 2,000 h, service life 20 years, crew 1.
+* Price 2.92 M cr, lead time 130 days, MTBF 31,400 h, service every 2,000 h, service life 20 years, crew 1.
 * IP54, -20 to 60 C, 72 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Machinery control bus MCB-1.
 * floor-mounted, free-standing. Install with a hoist or gantry (4.1 t).
 
@@ -81,11 +81,11 @@
 
 **Thruster / nozzle - Rcs Thruster Cluster**, Anvil Fluid Controls, part AFC-NOZ-4762 (consumer)
 
-* Mass 318.4 kg; size 1000 x 1000 x 370 mm; heat 1.1 kW.
+* Mass 318.6 kg; size 1000 x 1000 x 370 mm; heat 1.1 kW.
 * Power 420 W idle / 1.2 kW typical / 2.6 kW peak at 208 VAC 3ph.
 * Price 166 k cr, lead time 126 days, MTBF 32,400 h, service every 2,000 h, service life 20 years, crew 1.
 * IP54, -20 to 60 C, 68 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Machinery control bus MCB-1.
-* wall-mounted. Install with a hoist or gantry (318.4 kg).
+* wall-mounted. Install with a hoist or gantry (318.6 kg).
 
 ### `nozzle_vectoring_nozzle`
 

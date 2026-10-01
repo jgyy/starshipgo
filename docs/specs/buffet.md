@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `buffet_bakery_display_stand` | Buffet - Bakery Display Stand | Calder-Okonkwo Industries | 940 x 1480 x 540 | 101 kg | 0 W | none | 3,560 |
 | `buffet_chafing_buffet_line` | Buffet - Chafing Buffet Line | Calder-Okonkwo Industries | 1960 x 1306 x 760 | 219.6 kg | 0 W | none | 5,020 |
-| `buffet_dessert_display_case` | Buffet - Dessert Display Case | Calder-Okonkwo Industries | 1200 x 1113 x 600 | 108.2 kg | 0 W | none | 3,120 |
+| `buffet_dessert_display_case` | Buffet - Dessert Display Case | Calder-Okonkwo Industries | 1200 x 1112 x 600 | 108.1 kg | 0 W | none | 3,110 |
 | `buffet_fruit_market_stand` | Buffet - Fruit Market Stand | Calder-Okonkwo Industries | 1200 x 930 x 938 | 134.6 kg | 0 W | none | 5,080 |
 
 ## Datasheets
@@ -37,9 +37,9 @@
 
 **Buffet - Dessert Display Case**, Calder-Okonkwo Industries, part COI-BUF-6867 (passive)
 
-* Mass 108.2 kg; size 1200 x 1113 x 600 mm; heat 0 W.
+* Mass 108.1 kg; size 1200 x 1112 x 600 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,120 cr, lead time 48 days, MTBF 1,550,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 3,110 cr, lead time 48 days, MTBF 1,550,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 

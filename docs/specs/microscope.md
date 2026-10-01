@@ -54,7 +54,7 @@
 * Power 28 W idle / 92 W typical / 160 W peak at 48 VDC.
 * Price 95.8 k cr, lead time 104 days, MTBF 65,400 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 41 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `science` (screens: waveform).
+* Software: `science` (screens: waterfall).
 * table-mounted. Two-person lift.
 
 ### `microscope_stereo_microscope`

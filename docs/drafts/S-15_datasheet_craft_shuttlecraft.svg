@@ -86,7 +86,7 @@
 <text x="277" y="48.45" font-size="1.8" class="t">4380 x 3529 x 5459 mm (W x H x D)</text>
 <rect x="238" y="49.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="52.95" font-size="1.8" class="t b">Mass (dry)</text>
-<text x="277" y="52.95" font-size="1.8" class="t">29.92 t</text>
+<text x="277" y="52.95" font-size="1.8" class="t">29.86 t</text>
 <rect x="238" y="54" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="57.45" font-size="1.8" class="t b">Supply</text>
 <text x="277" y="57.45" font-size="1.8" class="t">208 VAC 3ph</text>
@@ -98,7 +98,7 @@
 <text x="277" y="66.45" font-size="1.8" class="t">6.3 kW</text>
 <rect x="238" y="67.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="70.95" font-size="1.8" class="t b">Unit price</text>
-<text x="277" y="70.95" font-size="1.8" class="t">63.90 M cr</text>
+<text x="277" y="70.95" font-size="1.8" class="t">63.70 M cr</text>
 <rect x="238" y="72" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="75.45" font-size="1.8" class="t b">Lead time</text>
 <text x="277" y="75.45" font-size="1.8" class="t">291 days</text>
@@ -134,7 +134,7 @@
 <text x="238" y="127.5" font-size="1.7" class="t">- CSA-F9 flight certificate</text>
 <text x="238" y="131.3" font-size="1.7" class="t">- CSA-P4 pressure equipment</text>
 <text x="238" y="139.1" font-size="2" class="t b">NOTES</text>
-<text x="238" y="143.6" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (29.92 t).</text>
+<text x="238" y="143.6" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (29.86 t).</text>
 <text x="16" y="178" font-size="2.2" class="t b">ELECTRICAL PROFILE</text>
 <text x="16" y="185.2" font-size="1.8" class="t">Idle</text>
 <rect x="34" y="182" width="15" height="4.2" class="n" fill="#6f8fbf"/>

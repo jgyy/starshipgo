@@ -14,7 +14,7 @@
 | `craft_medical_shuttle` | Craft - Medical Shuttle | Ironwake Heavy Works | 4100 x 2750 x 5905 | 22.29 t | 5.6 kW | 208 VAC 3ph | 36.5 M |
 | `craft_repair_pod` | Craft - Repair Pod | Ironwake Heavy Works | 2200 x 3110 x 3692 | 9.17 t | 3.3 kW | 208 VAC 3ph | 18.2 M |
 | `craft_scout` | Craft - Scout | Ironwake Heavy Works | 5540 x 2080 x 6386 | 24.88 t | 5.1 kW | 208 VAC 3ph | 50.1 M |
-| `craft_shuttlecraft` | Craft - Shuttlecraft | Ironwake Heavy Works | 4380 x 3529 x 5459 | 29.92 t | 6.8 kW | 208 VAC 3ph | 63.9 M |
+| `craft_shuttlecraft` | Craft - Shuttlecraft | Ironwake Heavy Works | 4380 x 3529 x 5459 | 29.86 t | 6.8 kW | 208 VAC 3ph | 63.7 M |
 | `craft_tug` | Craft - Tug | Ironwake Heavy Works | 2600 x 2640 x 6515 | 15.9 t | 4 kW | 208 VAC 3ph | 31.9 M |
 
 ## Datasheets
@@ -103,11 +103,11 @@
 
 **Craft - Shuttlecraft**, Ironwake Heavy Works, part IHW-CRA-2893 (consumer)
 
-* Mass 29.92 t; size 4380 x 3529 x 5459 mm; heat 6.3 kW.
+* Mass 29.86 t; size 4380 x 3529 x 5459 mm; heat 6.3 kW.
 * Power 2.1 kW idle / 6.8 kW typical / 14 kW peak at 208 VAC 3ph.
-* Price 63.9 M cr, lead time 291 days, MTBF 27,300 h, service every 1,000 h, service life 30 years, crew 2.
+* Price 63.7 M cr, lead time 291 days, MTBF 27,300 h, service every 1,000 h, service life 30 years, crew 2.
 * IP67, -60 to 80 C, 79 dB(A); certifications: CSA-F9 flight certificate, CSA-P4 pressure equipment; interface: Docking data link DDL-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (29.92 t).
+* floor-mounted, free-standing. Install with a hoist or gantry (29.86 t).
 
 ### `craft_tug`
 

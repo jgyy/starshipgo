@@ -11,7 +11,7 @@
 | `medbed_field_stretcher` | Medical bed - Field Stretcher | Lindqvist-Aoki Medical | 880 x 907 x 2200 | 182.9 kg | 280 W | 120 VAC 1ph | 334 k |
 | `medbed_isolation_bed` | Medical bed - Isolation Bed | Lindqvist-Aoki Medical | 1200 x 2346 x 2120 | 639.7 kg | 720 W | 120 VAC 1ph | 1.38 M |
 | `medbed_recovery_bed` | Medical bed - Recovery Bed | Lindqvist-Aoki Medical | 1159 x 1557 x 2125 | 458.3 kg | 450 W | 120 VAC 1ph | 843 k |
-| `medbed_surgical_table` | Medical bed - Surgical Table | Lindqvist-Aoki Medical | 900 x 2633 x 2500 | 655.8 kg | 640 W | 120 VAC 1ph | 1.55 M |
+| `medbed_surgical_table` | Medical bed - Surgical Table | Lindqvist-Aoki Medical | 900 x 2633 x 2500 | 655.7 kg | 640 W | 120 VAC 1ph | 1.55 M |
 
 ## Datasheets
 
@@ -70,9 +70,9 @@
 
 **Medical bed - Surgical Table**, Lindqvist-Aoki Medical, part LAM-MED-8954 (consumer)
 
-* Mass 655.8 kg; size 900 x 2633 x 2500 mm; heat 590 W.
+* Mass 655.7 kg; size 900 x 2633 x 2500 mm; heat 590 W.
 * Power 190 W idle / 640 W typical / 1.1 kW peak at 120 VAC 1ph.
 * Price 1.55 M cr, lead time 105 days, MTBF 63,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 42 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* floor-mounted, free-standing. Install with a hoist or gantry (655.8 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (655.7 kg).
 

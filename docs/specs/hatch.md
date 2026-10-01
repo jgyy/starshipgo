@@ -10,10 +10,10 @@
 | `hatch_emergency_red` | Hatch - Emergency Red | Calder-Okonkwo Industries | 1000 x 1160 x 160 | 45.3 kg | 0 W | none | 1,160 |
 | `hatch_floor_round_wheel` | Hatch - Floor Round Wheel | Calder-Okonkwo Industries | 1240 x 115 x 1240 | 46.7 kg | 0 W | none | 1,080 |
 | `hatch_floor_square_recessed` | Hatch - Floor Square Recessed | Calder-Okonkwo Industries | 1200 x 80 x 1235 | 28.6 kg | 0 W | none | 810 |
-| `hatch_hex_access` | Hatch - Hex Access | Calder-Okonkwo Industries | 992 x 903 x 150 | 35 kg | 0 W | none | 1,040 |
+| `hatch_hex_access` | Hatch - Hex Access | Calder-Okonkwo Industries | 992 x 903 x 153 | 35.7 kg | 0 W | none | 1,060 |
 | `hatch_iris` | Hatch - Iris | Calder-Okonkwo Industries | 1000 x 1000 x 115 | 30.9 kg | 0 W | none | 887 |
 | `hatch_jefferies_square` | Hatch - Jefferies Square | Calder-Okonkwo Industries | 850 x 850 x 140 | 24.8 kg | 0 W | none | 651 |
-| `hatch_oval_pressure` | Hatch - Oval Pressure | Calder-Okonkwo Industries | 844 x 1236 x 160 | 45.4 kg | 0 W | none | 1,230 |
+| `hatch_oval_pressure` | Hatch - Oval Pressure | Calder-Okonkwo Industries | 844 x 1236 x 163 | 46.3 kg | 0 W | none | 1,240 |
 | `hatch_porthole_round` | Hatch - Porthole Round | Calder-Okonkwo Industries | 1000 x 1000 x 180 | 48.2 kg | 0 W | none | 1,230 |
 | `hatch_round_wheel` | Hatch - Round Wheel | Calder-Okonkwo Industries | 955 x 950 x 223 | 57.1 kg | 0 W | none | 1,480 |
 
@@ -63,9 +63,9 @@
 
 **Hatch - Hex Access**, Calder-Okonkwo Industries, part COI-HAT-6829 (passive)
 
-* Mass 35 kg; size 992 x 903 x 150 mm; heat 0 W.
+* Mass 35.7 kg; size 992 x 903 x 153 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,040 cr, lead time 43 days, MTBF 1,574,600 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,060 cr, lead time 43 days, MTBF 1,574,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted. Two-person lift.
 
@@ -93,9 +93,9 @@
 
 **Hatch - Oval Pressure**, Calder-Okonkwo Industries, part COI-HAT-7511 (passive)
 
-* Mass 45.4 kg; size 844 x 1236 x 160 mm; heat 0 W.
+* Mass 46.3 kg; size 844 x 1236 x 163 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,230 cr, lead time 39 days, MTBF 1,561,200 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,240 cr, lead time 39 days, MTBF 1,561,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted. Two-person lift.
 

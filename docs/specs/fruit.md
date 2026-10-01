@@ -14,7 +14,7 @@
 | `fruit_coconut_cracked` | Fruit - Coconut Cracked | Greywater Galley Systems | 238 x 100 x 136 | 1.6 kg | 0 W | none | 272 |
 | `fruit_grapes_green_vine` | Fruit - Grapes Green Vine | Greywater Galley Systems | 126 x 79 x 108 | 0.55 kg | 0 W | none | 971 |
 | `fruit_grapes_purple` | Fruit - Grapes Purple | Greywater Galley Systems | 132 x 76 x 74 | 0.42 kg | 0 W | none | 807 |
-| `fruit_kiwi_halves` | Fruit - Kiwi Halves | Greywater Galley Systems | 142 x 51 x 120 | 0.42 kg | 0 W | none | 321 |
+| `fruit_kiwi_halves` | Fruit - Kiwi Halves | Greywater Galley Systems | 142 x 54 x 120 | 0.44 kg | 0 W | none | 322 |
 | `fruit_lemons_cut` | Fruit - Lemons Cut | Greywater Galley Systems | 174 x 52 x 136 | 0.56 kg | 0 W | none | 302 |
 | `fruit_mango_hedgehog` | Fruit - Mango Hedgehog | Greywater Galley Systems | 228 x 96 x 102 | 1.28 kg | 0 W | none | 691 |
 | `fruit_orange_and_half` | Fruit - Orange And Half | Greywater Galley Systems | 164 x 70 x 102 | 0.52 kg | 0 W | none | 271 |
@@ -111,9 +111,9 @@
 
 **Fruit - Kiwi Halves**, Greywater Galley Systems, part GGS-FRU-4276 (passive)
 
-* Mass 0.42 kg; size 142 x 51 x 120 mm; heat 0 W.
+* Mass 0.44 kg; size 142 x 54 x 120 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 321 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 322 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 

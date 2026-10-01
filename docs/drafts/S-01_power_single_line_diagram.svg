@@ -31,7 +31,7 @@
 <pattern id="hFloor" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.2" height="1.2" fill="#f2f2f2"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#555" stroke-width=".1"/></pattern>
 </defs>
 <rect x="0" y="0" width="420" height="297" fill="#ffffff"/>
-<text x="16" y="14" font-size="2.6" class="t b">GENERATION: 42.9 MW   |   TYPICAL LOAD 8.53 MW   |   CONNECTED PEAK 17.11 MW   |   BATTERIES 2503 kWh</text>
+<text x="16" y="14" font-size="2.6" class="t b">GENERATION: 42.9 MW   |   TYPICAL LOAD 8.54 MW   |   CONNECTED PEAK 17.11 MW   |   BATTERIES 2504 kWh</text>
 <text x="16" y="22" font-size="2.2" class="t b">SOURCES</text>
 <rect x="16" y="24" width="70" height="13" class="m" fill="#e4efe0"/>
 <text x="51" y="28.43" font-size="1.8" class="t b" text-anchor="middle">Plasma Tokamak Torus x1</text>
@@ -70,7 +70,7 @@
 <line x1="86" y1="126.5" x2="112" y2="126.5" class="m"/>
 <rect x="16" y="136" width="70" height="13" class="m" fill="#f1ead7"/>
 <text x="51" y="140.43" font-size="1.8" class="t b" text-anchor="middle">Battery / capacitor banks</text>
-<text x="51" y="143.13" font-size="1.8" class="t" text-anchor="middle">2503 kWh  11.8 MW</text>
+<text x="51" y="143.13" font-size="1.8" class="t" text-anchor="middle">2504 kWh  11.8 MW</text>
 <text x="51" y="145.83" font-size="1.8" class="t" text-anchor="middle">23 units</text>
 <line x1="86" y1="142.5" x2="112" y2="142.5" class="m"/>
 <rect x="110.5" y="20" width="3" height="216" class="h" fill="#333"/>
@@ -78,7 +78,7 @@
 <rect x="138" y="36.6" width="46" height="14" class="m" fill="#dfe6f2"/>
 <text x="161" y="41.59" font-size="1.7" class="t b" text-anchor="middle">Deck 0 feeder</text>
 <text x="161" y="44.2" font-size="1.7" class="t" text-anchor="middle">Sky Deck</text>
-<text x="161" y="46.8" font-size="1.7" class="t" text-anchor="middle">76.6 kW typ / 116.9 kW pk</text>
+<text x="161" y="46.8" font-size="1.7" class="t" text-anchor="middle">77.0 kW typ / 117.5 kW pk</text>
 <line x1="112" y1="43.6" x2="138" y2="43.6" class="m"/>
 <line x1="184" y1="43.6" x2="189" y2="43.6" class="m"/>
 <line x1="189" y1="36.85" x2="189" y2="48.35" class="m"/>
@@ -95,31 +95,31 @@
 <line x1="189" y1="48.35" x2="192" y2="48.35" class="m"/>
 <rect x="192" y="43.6" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="220" y="47.65" font-size="1.7" class="t b" text-anchor="middle">Science</text>
-<text x="220" y="50.24" font-size="1.7" class="t" text-anchor="middle">40.9 kW</text>
+<text x="220" y="50.24" font-size="1.7" class="t" text-anchor="middle">41.3 kW</text>
 <rect x="249.5" y="43.6" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="277.5" y="47.65" font-size="1.7" class="t b" text-anchor="middle">Circulation</text>
-<text x="277.5" y="50.24" font-size="1.7" class="t" text-anchor="middle">549 W</text>
+<text x="277.5" y="50.24" font-size="1.7" class="t" text-anchor="middle">550 W</text>
 <rect x="138" y="79.8" width="46" height="14" class="m" fill="#dfe6f2"/>
 <text x="161" y="84.8" font-size="1.7" class="t b" text-anchor="middle">Deck 1 feeder</text>
 <text x="161" y="87.4" font-size="1.7" class="t" text-anchor="middle">Command Deck</text>
-<text x="161" y="90" font-size="1.7" class="t" text-anchor="middle">62.9 kW typ / 107.5 kW pk</text>
+<text x="161" y="90" font-size="1.7" class="t" text-anchor="middle">63.3 kW typ / 108.3 kW pk</text>
 <line x1="112" y1="86.8" x2="138" y2="86.8" class="m"/>
 <line x1="184" y1="86.8" x2="189" y2="86.8" class="m"/>
 <line x1="189" y1="80.05" x2="189" y2="91.55" class="m"/>
 <line x1="189" y1="80.05" x2="192" y2="80.05" class="m"/>
 <rect x="192" y="75.3" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="220" y="79.35" font-size="1.7" class="t b" text-anchor="middle">Command</text>
-<text x="220" y="81.95" font-size="1.7" class="t" text-anchor="middle">30.6 kW</text>
+<text x="220" y="81.95" font-size="1.7" class="t" text-anchor="middle">30.8 kW</text>
 <rect x="249.5" y="75.3" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="277.5" y="79.35" font-size="1.7" class="t b" text-anchor="middle">Crew</text>
-<text x="277.5" y="81.95" font-size="1.7" class="t" text-anchor="middle">8.0 kW</text>
+<text x="277.5" y="81.95" font-size="1.7" class="t" text-anchor="middle">8.1 kW</text>
 <rect x="307" y="75.3" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="335" y="79.35" font-size="1.7" class="t b" text-anchor="middle">Science</text>
-<text x="335" y="81.95" font-size="1.7" class="t" text-anchor="middle">23.7 kW</text>
+<text x="335" y="81.95" font-size="1.7" class="t" text-anchor="middle">23.9 kW</text>
 <line x1="189" y1="91.55" x2="192" y2="91.55" class="m"/>
 <rect x="192" y="86.8" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="220" y="90.85" font-size="1.7" class="t b" text-anchor="middle">Circulation</text>
-<text x="220" y="93.45" font-size="1.7" class="t" text-anchor="middle">589 W</text>
+<text x="220" y="93.45" font-size="1.7" class="t" text-anchor="middle">590 W</text>
 <rect x="138" y="123" width="46" height="14" class="m" fill="#dfe6f2"/>
 <text x="161" y="128" font-size="1.7" class="t b" text-anchor="middle">Deck 2 feeder</text>
 <text x="161" y="130.59" font-size="1.7" class="t" text-anchor="middle">Habitat Deck</text>
@@ -160,7 +160,7 @@
 <text x="220" y="168.35" font-size="1.7" class="t" text-anchor="middle">765.2 kW</text>
 <rect x="249.5" y="161.7" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="277.5" y="165.75" font-size="1.7" class="t b" text-anchor="middle">Command</text>
-<text x="277.5" y="168.35" font-size="1.7" class="t" text-anchor="middle">128.5 kW</text>
+<text x="277.5" y="168.35" font-size="1.7" class="t" text-anchor="middle">129.4 kW</text>
 <rect x="307" y="161.7" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="335" y="165.75" font-size="1.7" class="t b" text-anchor="middle">Engineering</text>
 <text x="335" y="168.35" font-size="1.7" class="t" text-anchor="middle">4.01 MW</text>
@@ -173,7 +173,7 @@
 <text x="277.5" y="179.85" font-size="1.7" class="t" text-anchor="middle">1.5 kW</text>
 <rect x="307" y="173.2" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="335" y="177.25" font-size="1.7" class="t b" text-anchor="middle">Circulation</text>
-<text x="335" y="179.85" font-size="1.7" class="t" text-anchor="middle">763 W</text>
+<text x="335" y="179.85" font-size="1.7" class="t" text-anchor="middle">764 W</text>
 <rect x="138" y="209.4" width="46" height="14" class="m" fill="#dfe6f2"/>
 <text x="161" y="214.4" font-size="1.7" class="t b" text-anchor="middle">Deck 4 feeder</text>
 <text x="161" y="217" font-size="1.7" class="t" text-anchor="middle">Hold Deck</text>
@@ -197,7 +197,7 @@
 <text x="220" y="223.05" font-size="1.7" class="t" text-anchor="middle">23.0 kW</text>
 <rect x="249.5" y="216.4" width="56" height="9.5" class="m" fill="#ffffff"/>
 <text x="277.5" y="220.44" font-size="1.7" class="t b" text-anchor="middle">Circulation</text>
-<text x="277.5" y="223.05" font-size="1.7" class="t" text-anchor="middle">673 W</text>
+<text x="277.5" y="223.05" font-size="1.7" class="t" text-anchor="middle">674 W</text>
 <text x="236" y="244" font-size="1.5" class="t" style="fill:#444">Loads: sum of the typical figures of the placed machines (docs/MACHINE_SPECS.md); producers and batteries as rated.</text>
 <rect x="0.5" y="0.5" width="419" height="296" class="x" fill="none"/>
 <rect x="10" y="5" width="405" height="287" class="h" fill="none"/>

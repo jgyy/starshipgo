@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `pallet_boxes_layered` | Pallet / rack - Boxes Layered | Ironwake Heavy Works | 1240 x 1106 x 1030 | 52 kg | 0 W | none | 4,320 |
+| `pallet_boxes_layered` | Pallet / rack - Boxes Layered | Ironwake Heavy Works | 1240 x 1106 x 1030 | 51.9 kg | 0 W | none | 4,310 |
 | `pallet_composite_empty` | Pallet / rack - Composite Empty | Ironwake Heavy Works | 1200 x 180 x 1025 | 7.23 kg | 0 W | none | 808 |
 | `pallet_crates_banded` | Pallet / rack - Crates Banded | Ironwake Heavy Works | 1250 x 1105 x 1050 | 50.9 kg | 0 W | none | 5,730 |
 | `pallet_drums_banded` | Pallet / rack - Drums Banded | Ironwake Heavy Works | 1250 x 1029 x 1090 | 49.7 kg | 0 W | none | 4,700 |
@@ -19,7 +19,7 @@
 | `pallet_sacks_stacked` | Pallet / rack - Sacks Stacked | Ironwake Heavy Works | 1240 x 780 x 1080 | 41.1 kg | 0 W | none | 3,970 |
 | `pallet_wooden_empty` | Pallet / rack - Wooden Empty | Ironwake Heavy Works | 1200 x 150 x 1000 | 6.37 kg | 0 W | none | 698 |
 | `pallet_wrapped_stack` | Pallet / rack - Wrapped Stack | Ironwake Heavy Works | 1240 x 1364 x 1052 | 64.9 kg | 0 W | none | 7,360 |
-| `pallet_wrapped_tall_mixed` | Pallet / rack - Wrapped Tall Mixed | Ironwake Heavy Works | 1260 x 2115 x 1055 | 99.1 kg | 0 W | none | 8,960 |
+| `pallet_wrapped_tall_mixed` | Pallet / rack - Wrapped Tall Mixed | Ironwake Heavy Works | 1260 x 2115 x 1055 | 99 kg | 0 W | none | 8,950 |
 
 ## Datasheets
 
@@ -27,9 +27,9 @@
 
 **Pallet / rack - Boxes Layered**, Ironwake Heavy Works, part IHW-PAL-4400 (passive)
 
-* Mass 52 kg; size 1240 x 1106 x 1030 mm; heat 0 W.
+* Mass 51.9 kg; size 1240 x 1106 x 1030 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,320 cr, lead time 52 days, MTBF 596,800 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 4,310 cr, lead time 52 days, MTBF 596,800 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -157,9 +157,9 @@
 
 **Pallet / rack - Wrapped Tall Mixed**, Ironwake Heavy Works, part IHW-PAL-5042 (passive)
 
-* Mass 99.1 kg; size 1260 x 2115 x 1055 mm; heat 0 W.
+* Mass 99 kg; size 1260 x 2115 x 1055 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 8,960 cr, lead time 57 days, MTBF 554,600 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 8,950 cr, lead time 57 days, MTBF 554,600 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 

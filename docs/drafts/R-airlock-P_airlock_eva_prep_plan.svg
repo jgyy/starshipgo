@@ -46,15 +46,15 @@
 <polygon points="138.47,199.8 123,199.8 123,190.64 138.47,190.64" class="n" fill="#d4f799"/>
 <line x1="123" y1="190.64" x2="138.47" y2="190.64" class="m"/>
 <line x1="130.73" y1="190.64" x2="130.73" y2="191.84" class="f"/>
-<polygon points="153.8,199.8 139.13,199.8 139.13,192.93 153.8,192.93" class="n" fill="#bae881"/>
-<line x1="139.13" y1="192.93" x2="153.8" y2="192.93" class="m"/>
-<line x1="146.47" y1="192.93" x2="146.47" y2="194.13" class="f"/>
-<polygon points="178.47,199.8 154.47,199.8 154.47,191.8 178.47,191.8" class="n" fill="#bae881"/>
-<line x1="154.47" y1="191.8" x2="178.47" y2="191.8" class="m"/>
-<line x1="166.47" y1="191.8" x2="166.47" y2="193" class="f"/>
-<polygon points="193.8,199.8 179.13,199.8 179.13,192.93 193.8,192.93" class="n" fill="#bae881"/>
-<line x1="179.13" y1="192.93" x2="193.8" y2="192.93" class="m"/>
-<line x1="186.47" y1="192.93" x2="186.47" y2="194.13" class="f"/>
+<polygon points="153.88,199.8 139.13,199.8 139.13,192.89 153.88,192.89" class="n" fill="#bae881"/>
+<line x1="139.13" y1="192.89" x2="153.88" y2="192.89" class="m"/>
+<line x1="146.51" y1="192.89" x2="146.51" y2="194.09" class="f"/>
+<polygon points="178.55,199.8 154.55,199.8 154.55,191.8 178.55,191.8" class="n" fill="#bae881"/>
+<line x1="154.55" y1="191.8" x2="178.55" y2="191.8" class="m"/>
+<line x1="166.55" y1="191.8" x2="166.55" y2="193" class="f"/>
+<polygon points="193.96,199.8 179.21,199.8 179.21,192.89 193.96,192.89" class="n" fill="#bae881"/>
+<line x1="179.21" y1="192.89" x2="193.96" y2="192.89" class="m"/>
+<line x1="186.59" y1="192.89" x2="186.59" y2="194.09" class="f"/>
 <polygon points="128.16,168.71 157.57,168.71 157.57,175.97 128.16,175.97" class="n" fill="#bae881"/>
 <line x1="157.57" y1="175.97" x2="128.16" y2="175.97" class="m"/>
 <line x1="142.87" y1="175.97" x2="142.87" y2="174.77" class="f"/>
@@ -64,7 +64,7 @@
 <polygon points="98.73,182 98.73,161.33 105.85,161.33 105.85,182" class="n" fill="#99e0f7"/>
 <line x1="105.85" y1="161.33" x2="105.85" y2="182" class="m"/>
 <line x1="105.85" y1="171.67" x2="104.65" y2="171.67" class="f"/>
-<polygon points="97.24,57.67 108.49,57.67 108.49,59.8 97.24,59.8" class="f" fill="#ef77be"/>
+<polygon points="97.24,57.67 108.49,57.67 108.49,59.84 97.24,59.84" class="f" fill="#ef77be"/>
 <polygon points="104.87,200.33 100.87,200.33 100.87,197.68 104.87,197.68" class="f" fill="#e281e8"/>
 <polygon points="98.2,82.37 98.2,66.29 99.87,66.29 99.87,82.37" class="f" fill="#bae881"/>
 <polygon points="109.94,59.2 113.08,62.83 112.38,63.43 109.24,59.8" class="f" fill="#81e8c9"/>
@@ -82,13 +82,13 @@
 <polygon points="129.63,150.6 137.89,150.6 137.89,167.4 129.63,167.4" class="dot" fill="none"/>
 <text x="111.53" y="90.63" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">decontamination_arch</text>
 <text x="142.87" y="172.64" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">suit_up_bench</text>
-<text x="166.47" y="196.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">oxygen_pack_rack</text>
+<text x="166.55" y="196.1" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">oxygen_pack_rack</text>
 <text x="102.29" y="171.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Oxygen C~</text>
 <text x="114.6" y="195.52" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wardrobe</text>
 <text x="130.73" y="195.52" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">wardrobe</text>
 <text x="103.91" y="151.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">compact aux</text>
-<text x="146.47" y="196.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_locker</text>
-<text x="186.47" y="196.67" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_locker</text>
+<text x="146.51" y="196.65" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_locker</text>
+<text x="186.59" y="196.65" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_locker</text>
 <path d="M96.2 55.67 L109.53 55.67 L131.44 81 L152.8 106.33 L173.09 131.67 L191.83 157 L208.53 182.33 L219.8 202.33 L96.2 202.33Z M98.2 57.67 L108.62 57.67 L129.92 82.3 L151.25 107.6 L171.51 132.89 L190.19 158.15 L206.83 183.38 L216.38 200.33 L98.2 200.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="96.2,106.6 96.2,138.07 98.2,138.07 98.2,106.6" class="none" fill="#ffffff"/>
 <line x1="96.2" y1="106.6" x2="98.2" y2="106.6" class="m"/>
@@ -136,8 +136,8 @@
 <circle cx="98.71" cy="61.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.46" y1="87.42" x2="111.53" y2="90.33" class="x"/>
 <circle cx="111.53" cy="90.33" r="0.4" class="none" fill="#b03030"/>
-<line x1="188.05" y1="206.08" x2="186.47" y2="196.37" class="x"/>
-<circle cx="186.47" cy="196.37" r="0.4" class="none" fill="#b03030"/>
+<line x1="188.08" y1="206.07" x2="186.59" y2="196.35" class="x"/>
+<circle cx="186.59" cy="196.35" r="0.4" class="none" fill="#b03030"/>
 <line x1="142.72" y1="206.03" x2="142.87" y2="172.34" class="x"/>
 <circle cx="142.87" cy="172.34" r="0.4" class="none" fill="#b03030"/>
 <line x1="92.39" y1="141.32" x2="98.7" y2="143" class="x"/>

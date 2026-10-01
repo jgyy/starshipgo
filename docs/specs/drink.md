@@ -6,14 +6,14 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `drink_bubble_tea_cup` | Drink - Bubble Tea Cup | Greywater Galley Systems | 86 x 255 x 86 | 1.07 kg | 0 W | none | 883 |
+| `drink_bubble_tea_cup` | Drink - Bubble Tea Cup | Greywater Galley Systems | 86 x 257 x 86 | 1.08 kg | 0 W | none | 883 |
 | `drink_cappuccino_rosetta` | Drink - Cappuccino Rosetta | Greywater Galley Systems | 182 x 76 x 180 | 1.38 kg | 0 W | none | 555 |
 | `drink_coffee_pot_and_mugs` | Drink - Coffee Pot And Mugs | Greywater Galley Systems | 312 x 205 x 186 | 6.66 kg | 0 W | none | 946 |
 | `drink_espresso_cup_sugar` | Drink - Espresso Cup Sugar | Greywater Galley Systems | 116 x 54 x 116 | 0.36 kg | 0 W | none | 451 |
 | `drink_hot_cocoa_mug` | Drink - Hot Cocoa Mug | Greywater Galley Systems | 134 x 95 x 94 | 0.61 kg | 0 W | none | 456 |
-| `drink_iced_coffee_glass` | Drink - Iced Coffee Glass | Greywater Galley Systems | 80 x 215 x 80 | 0.69 kg | 0 W | none | 281 |
+| `drink_iced_coffee_glass` | Drink - Iced Coffee Glass | Greywater Galley Systems | 80 x 215 x 80 | 0.69 kg | 0 W | none | 287 |
 | `drink_latte_art_cup` | Drink - Latte Art Cup | Greywater Galley Systems | 158 x 72 x 156 | 0.88 kg | 0 W | none | 519 |
-| `drink_latte_macchiato_glass` | Drink - Latte Macchiato Glass | Greywater Galley Systems | 150 x 180 x 150 | 2.08 kg | 0 W | none | 412 |
+| `drink_latte_macchiato_glass` | Drink - Latte Macchiato Glass | Greywater Galley Systems | 150 x 181 x 150 | 2.1 kg | 0 W | none | 413 |
 | `drink_lemonade_pitcher_set` | Drink - Lemonade Pitcher Set | Greywater Galley Systems | 258 x 232 x 172 | 5.94 kg | 0 W | none | 809 |
 | `drink_mason_jar_green_smoothie` | Drink - Mason Jar Green Smoothie | Greywater Galley Systems | 78 x 190 x 78 | 0.56 kg | 0 W | none | 488 |
 | `drink_milk_glass_cookies` | Drink - Milk Glass Cookies | Greywater Galley Systems | 196 x 110 x 100 | 1.06 kg | 0 W | none | 388 |
@@ -30,7 +30,7 @@
 
 **Drink - Bubble Tea Cup**, Greywater Galley Systems, part GGS-DRI-3129 (passive)
 
-* Mass 1.07 kg; size 86 x 255 x 86 mm; heat 0 W.
+* Mass 1.08 kg; size 86 x 257 x 86 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 883 cr, lead time 31 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
@@ -82,7 +82,7 @@
 
 * Mass 0.69 kg; size 80 x 215 x 80 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 281 cr, lead time 26 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 287 cr, lead time 26 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -100,9 +100,9 @@
 
 **Drink - Latte Macchiato Glass**, Greywater Galley Systems, part GGS-DRI-6367 (passive)
 
-* Mass 2.08 kg; size 150 x 180 x 150 mm; heat 0 W.
+* Mass 2.1 kg; size 150 x 181 x 150 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 412 cr, lead time 22 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 413 cr, lead time 22 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 

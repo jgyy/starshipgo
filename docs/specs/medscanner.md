@@ -68,7 +68,7 @@
 * Power 580 W idle / 1.9 kW typical / 3.5 kW peak at 208 VAC 3ph.
 * Price 448 k cr, lead time 100 days, MTBF 73,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 45 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: lifesigns).
+* Software: `medical` (screens: ecg_multi).
 * floor-mounted, free-standing. Install with a hoist or gantry (259.2 kg).
 
 ### `medscanner_vitals_monitor_stand`

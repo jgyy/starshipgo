@@ -22,7 +22,7 @@
 | `junction_marshalling_cabinet` | Electrical junction - Marshalling Cabinet | Halvorsen Power Systems | 1190 x 1910 x 688 | 427.6 kg | 160 W | 48 VDC | 562 k |
 | `junction_meter_panel` | Electrical junction - Meter Panel | Halvorsen Power Systems | 900 x 550 x 129 | 17.9 kg | 11 W | 24 VDC | 23.8 k |
 | `junction_outlet_strip_panel` | Electrical junction - Outlet Strip Panel | Halvorsen Power Systems | 1000 x 160 x 81 | 3.55 kg | 0 W | none | 4,630 |
-| `junction_patch_panel` | Electrical junction - Patch Panel | Halvorsen Power Systems | 900 x 500 x 209 | 26.7 kg | 15 W | 24 VDC | 33 k |
+| `junction_patch_panel` | Electrical junction - Patch Panel | Halvorsen Power Systems | 900 x 500 x 211 | 27 kg | 15 W | 24 VDC | 33.4 k |
 | `junction_relay_cabinet` | Electrical junction - Relay Cabinet | Halvorsen Power Systems | 720 x 1710 x 450 | 145.9 kg | 57 W | 48 VDC | 190 k |
 | `junction_service_pedestal` | Electrical junction - Service Pedestal | Halvorsen Power Systems | 500 x 1205 x 500 | 70.2 kg | 32 W | 24 VDC | 91.3 k |
 | `junction_surge_protector_box` | Electrical junction - Surge Protector Box | Halvorsen Power Systems | 300 x 450 x 134 | 4.74 kg | 0 W | none | 4,690 |
@@ -196,9 +196,9 @@
 
 **Electrical junction - Patch Panel**, Halvorsen Power Systems, part HPS-JUN-5025 (consumer)
 
-* Mass 26.7 kg; size 900 x 500 x 209 mm; heat 14 W.
+* Mass 27 kg; size 900 x 500 x 211 mm; heat 14 W.
 * Power 3.8 W idle / 15 W typical / 23 W peak at 24 VDC.
-* Price 33 k cr, lead time 58 days, MTBF 87,900 h, service every 8,760 h, service life 10 years, crew 0.
+* Price 33.4 k cr, lead time 58 days, MTBF 87,900 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * wall-mounted. Two-person lift.
 

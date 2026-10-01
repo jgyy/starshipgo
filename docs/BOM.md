@@ -15,22 +15,22 @@ Every room of the ship is furnished from a written bill of materials: each **BOM
 | Doors / arches | 34 sliding doors, 35 open arches and portals |
 | Stair towers | 2 (port / starboard), 4 dog-leg flight pairs, 22 risers of 181.8 mm per deck |
 | BOM lines | 605 |
-| Placed items | 2590 |
+| Placed items | 2589 |
 | Distinct models used | 638 of 1198 in the catalogue |
-| Installed equipment mass | 494.64 t (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |
-| Typical / peak electrical load | 8.53 MW / 17.11 MW |
+| Installed equipment mass | 494.98 t (datasheets: [MACHINE_SPECS](MACHINE_SPECS.md)) |
+| Typical / peak electrical load | 8.54 MW / 17.11 MW |
 | Installed generation | 42.9 MW |
-| Equipment value | 562.56 M cr |
+| Equipment value | 562.61 M cr |
 
 ### Decks
 
 | Deck | Name | Hull area | Rooms | Room area | Items | BOM lines | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | Sky Deck | 859 m2 | 12 | 860 m2 | 462 | 113 | 31.91 t | 76.6 kW | 33.23 M |
-| 1 | Command Deck | 1042 m2 | 14 | 1042 m2 | 412 | 104 | 25.37 t | 62.9 kW | 19.53 M |
-| 2 | Habitat Deck | 1064 m2 | 15 | 1064 m2 | 596 | 148 | 50.19 t | 353.7 kW | 48.86 M |
-| 3 | Engineering Deck | 1244 m2 | 14 | 1245 m2 | 507 | 115 | 220.85 t | 4.95 MW | 259.11 M |
-| 4 | Hold Deck | 1146 m2 | 13 | 1146 m2 | 579 | 125 | 166.31 t | 3.10 MW | 201.84 M |
+| 0 | Sky Deck | 859 m2 | 12 | 860 m2 | 462 | 113 | 31.96 t | 77.0 kW | 33.28 M |
+| 1 | Command Deck | 1042 m2 | 14 | 1042 m2 | 412 | 104 | 25.55 t | 63.3 kW | 19.56 M |
+| 2 | Habitat Deck | 1064 m2 | 15 | 1064 m2 | 596 | 148 | 50.22 t | 353.7 kW | 48.87 M |
+| 3 | Engineering Deck | 1244 m2 | 14 | 1245 m2 | 507 | 115 | 220.94 t | 4.95 MW | 259.04 M |
+| 4 | Hold Deck | 1146 m2 | 13 | 1146 m2 | 578 | 125 | 166.32 t | 3.10 MW | 201.87 M |
 
 ### Design principles
 
@@ -57,7 +57,7 @@ flowchart LR
 | Family | What it is for | Qty | Distinct models |
 |---|---|---|---|
 | `ceilinglight` Ceiling light fixture | General lighting sized to the task in the room. | 294 | 14 |
-| `safety` Safety equipment | Fire, first-aid, breach and emergency gear required by regulation. | 164 | 15 |
+| `safety` Safety equipment | Fire, first-aid, breach and emergency gear required by regulation. | 163 | 15 |
 | `sign` Sign | Wayfinding and hazard marking. | 152 | 25 |
 | `cabletray` Cable tray | Carries power and data cables overhead or along walls, protected and accessible. | 145 | 4 |
 | `chair` Chair | Seating for desks and tables. | 133 | 6 |
@@ -226,16 +226,16 @@ The sky deck is a lens-shaped dome on top of the ship, away from the engines and
 | Code | Room | Area | Height | Items | BOM lines | Floor occupancy | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
 | [CF0](#cf0---forward-spine-corridor) | Forward Spine Corridor | 24.0 m2 | 3.4 m | 10 | 6 | 0 % | 68 kg | 30 W | 7.6 k |
-| [CA0](#ca0---aft-spine-corridor) | Aft Spine Corridor | 43.2 m2 | 3.4 m | 20 | 7 | 0 % | 130 kg | 145 W | 12.1 k |
+| [CA0](#ca0---aft-spine-corridor) | Aft Spine Corridor | 43.2 m2 | 3.4 m | 20 | 7 | 0 % | 130 kg | 146 W | 12.2 k |
 | [LB0](#lb0---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 15 | 7 | 0 % | 228 kg | 305 W | 83.5 k |
 | [SP0](#sp0---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 20 kg | 39 W | 4.7 k |
 | [SS0](#ss0---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
-| [SC](#sc---star-cartography) | Star Cartography | 220.5 m2 | 4.2 m | 87 | 16 | 20 % | 7.44 t | 28.6 kW | 11.01 M |
+| [SC](#sc---star-cartography) | Star Cartography | 220.5 m2 | 4.2 m | 87 | 16 | 20 % | 7.46 t | 28.9 kW | 11.04 M |
 | [BT](#bt---briefing-theatre) | Briefing Theatre | 91.8 m2 | 3.4 m | 56 | 11 | 14 % | 1.64 t | 4.7 kW | 1.16 M |
 | [WR](#wr---officers-wardroom--bar) | Officers' Wardroom & Bar | 91.8 m2 | 3.4 m | 75 | 16 | 25 % | 2.66 t | 6.0 kW | 584.4 k |
-| [LI](#li---library--archive) | Library & Archive | 84.5 m2 | 3.4 m | 59 | 10 | 28 % | 8.70 t | 14.1 kW | 7.31 M |
+| [LI](#li---library--archive) | Library & Archive | 84.5 m2 | 3.4 m | 59 | 10 | 28 % | 8.73 t | 14.1 kW | 7.33 M |
 | [AB](#ab---arboretum) | Arboretum | 62.8 m2 | 3.6 m | 41 | 12 | 26 % | 3.09 t | 9.0 kW | 1.50 M |
-| [OB](#ob---observatory) | Observatory | 84.5 m2 | 3.4 m | 43 | 11 | 25 % | 6.00 t | 12.3 kW | 10.14 M |
+| [OB](#ob---observatory) | Observatory | 84.5 m2 | 3.4 m | 43 | 11 | 25 % | 6.01 t | 12.4 kW | 10.15 M |
 | [FS](#fs---flag-officers-suite) | Flag Officer's Suite | 62.8 m2 | 3.4 m | 44 | 11 | 27 % | 1.92 t | 1.3 kW | 1.41 M |
 
 ### CF0 - Forward Spine Corridor
@@ -343,8 +343,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 4 (0 diagonal hull facets, 1 on the outer hull) |
 | Windows | none |
 | Items placed / distinct models | 20 / 14 |
-| Installed mass / value | 130 kg / 12.1 k cr |
-| Electrical load idle / typical / peak | 29 W / 145 W / 194 W |
+| Installed mass / value | 130 kg / 12.2 k cr |
+| Electrical load idle / typical / peak | 29 W / 146 W / 194 W |
 | Floor occupancy | 0 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
 
@@ -428,8 +428,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | Drinking water for crew. |
-| | **Line subtotal** | | | | **10.1** | **87** | **3,510** | |
+| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | Drinking water for crew. |
+| | **Line subtotal** | | | | **10.4** | **88** | **3,610** | |
 
 **Room totals by family**: cabletray x6, beacon x4, sign x4, ceilinglight x3, safety x2, fountain x1.
 
@@ -683,8 +683,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 11 (40.6 m2 of glazing) |
 | Design occupancy | 12 persons |
 | Items placed / distinct models | 87 / 52 |
-| Installed mass / value | 7.44 t / 11.01 M cr |
-| Electrical load idle / typical / peak | 7.7 kW / 28.6 kW / 42.3 kW |
+| Installed mass / value | 7.46 t / 11.04 M cr |
+| Electrical load idle / typical / peak | 7.7 kW / 28.9 kW / 42.7 kW |
 | Floor occupancy | 20 % (floor-standing footprints / floor area) |
 | Lights | 14 real lights, 9 ceiling fixtures |
 
@@ -784,13 +784,13 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `rack_blade_server_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 245 | 2900 | 250,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_cryogenic_quantum_rack` | Equipment rack | floor | 605 x 2000 x 1000 | 209 | 2900 | 231,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_blade_server_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 250 | 3000 | 255,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_cryogenic_quantum_rack` | Equipment rack | floor | 608 x 2006 x 1006 | 212 | 3000 | 234,000 | Houses servers, storage and network gear with cooling. |
 | 1 | `rack_crystal_archive_tower` | Equipment rack | floor | 708 x 2270 x 810 | 234 | 2800 | 302,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_gpu_cluster_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 251 | 2900 | 230,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 251 | 2600 | 268,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_storage_array` | Equipment rack | floor | 600 x 2000 x 1000 | 252 | 2800 | 227,000 | Houses servers, storage and network gear with cooling. |
-| | **Line subtotal** | | | | **1441** | **16900** | **1,508,000** | |
+| 1 | `rack_gpu_cluster_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2900 | 234,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2700 | 273,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_storage_array` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2800 | 231,000 | Houses servers, storage and network gear with cooling. |
+| | **Line subtotal** | | | | **1463** | **17200** | **1,529,000** | |
 
 #### SC-09 - The great wall of star charts (8 items)
 
@@ -1175,7 +1175,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1272 x 1020 | 78.2 | 0 | 3,080 | Soft seating for rest and informal meetings. |
+| 2 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1271 x 1020 | 78.2 | 0 | 3,080 | Soft seating for rest and informal meetings. |
 | 1 | `couch_three_seater_sofa` | Sofa / lounge seating | floor | 2300 x 980 x 970 | 67.6 | 0 | 2,840 | Soft seating for rest and informal meetings. |
 | 1 | `table_coffee_table` | Table | floor | 1120 x 422 x 620 | 9.4 | 0 | 417 | Work, meeting or dining surface. |
 | 1 | `tableware_teapot` | Tableware / table setting | table | 353 x 209 x 180 | 3.4 | 0 | 1,350 | Plates, cups and condiments on tables. |
@@ -1235,12 +1235,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `bottle_beer_lager_green` | Bottle / flask | table | 66 x 230 x 66 | 0.5 | 0 | 287 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
 | 2 | `bottle_gin_blue_flask` | Bottle / flask | table | 82 x 285 x 82 | 1.9 | 0 | 610 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
-| 1 | `bottle_wine_white_hock` | Bottle / flask | table | 72 x 338 x 72 | 0.8 | 0 | 378 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `bottle_wine_white_hock` | Bottle / flask | table | 78 x 338 x 78 | 1.0 | 0 | 380 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
 | 1 | `cocktail_beer_mug_foam` | Glassware and cocktails | table | 140 x 143 x 94 | 0.2 | 0 | 385 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
 | 2 | `cocktail_martini_olive` | Glassware and cocktails | table | 98 x 179 x 98 | 0.4 | 0 | 488 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
 | 2 | `cocktail_whisky_rocks_tumbler` | Glassware and cocktails | table | 76 x 85 x 76 | 0.1 | 0 | 350 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
 | 1 | `cocktail_wine_glass_red` | Glassware and cocktails | table | 84 x 195 x 84 | 0.2 | 0 | 308 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
-| | **Line subtotal** | | | | **4.1** | **0** | **2,806** | |
+| | **Line subtotal** | | | | **4.2** | **0** | **2,808** | |
 
 #### WR-15 - Dinner tables (1 item)
 
@@ -1258,8 +1258,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `buffet_bakery_display_stand` | Buffet / display furniture | floor | 940 x 1480 x 540 | 101 | 0 | 3,560 | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. |
-| 1 | `buffet_dessert_display_case` | Buffet / display furniture | floor | 1200 x 1113 x 600 | 108 | 0 | 3,120 | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. |
-| | **Line subtotal** | | | | **209** | **0** | **6,680** | |
+| 1 | `buffet_dessert_display_case` | Buffet / display furniture | floor | 1200 x 1112 x 600 | 108 | 0 | 3,110 | Hot-pan serving lines, bakery racks and display cases that let a crowd serve itself. |
+| | **Line subtotal** | | | | **209** | **0** | **6,670** | |
 
 **Room totals by family**: tableware x15, ceilinglight x9, chair x8, couch x7, cocktail x6, table x6, bottle x4, galley x4, locker x3, buffet x2, lamp x2, vending x2, clock x1, display x1, doorframe x1, drink x1, fountain x1, plant x1, sign x1.
 
@@ -1285,8 +1285,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 2 (4.0 m2 of glazing) |
 | Design occupancy | 14 persons |
 | Items placed / distinct models | 59 / 40 |
-| Installed mass / value | 8.70 t / 7.31 M cr |
-| Electrical load idle / typical / peak | 3.5 kW / 14.1 kW / 20.8 kW |
+| Installed mass / value | 8.73 t / 7.33 M cr |
+| Electrical load idle / typical / peak | 3.5 kW / 14.1 kW / 20.9 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 8 real lights, 8 ceiling fixtures |
 
@@ -1320,12 +1320,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `storage_archive_robot` | Data / secure storage | floor | 1800 x 2000 x 925 | 1942 | 3800 | 2,180,000 | Archives data and valuables. |
+| 1 | `storage_archive_robot` | Data / secure storage | floor | 1806 x 2006 x 928 | 1961 | 3800 | 2,200,000 | Archives data and valuables. |
 | 1 | `storage_data_crystal_vault` | Data / secure storage | floor | 1192 x 2120 x 1192 | 1678 | 3200 | 1,560,000 | Archives data and valuables. |
 | 1 | `storage_holo_storage_cylinder` | Data / secure storage | floor | 900 x 1990 x 912 | 899 | 1800 | 832,000 | Archives data and valuables. |
 | 1 | `storage_memory_core_column` | Data / secure storage | floor | 836 x 2520 x 836 | 975 | 2000 | 904,000 | Archives data and valuables. |
 | 1 | `storage_secure_data_safe` | Data / secure storage | floor | 920 x 1350 x 835 | 568 | 1100 | 686,000 | Archives data and valuables. |
-| | **Line subtotal** | | | | **6062** | **11900** | **6,162,000** | |
+| | **Line subtotal** | | | | **6081** | **11900** | **6,182,000** | |
 
 #### LI-03 - Notice board (1 item)
 
@@ -1372,7 +1372,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1272 x 1020 | 39.1 | 0 | 1,540 | Soft seating for rest and informal meetings. |
+| 1 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1271 x 1020 | 39.1 | 0 | 1,540 | Soft seating for rest and informal meetings. |
 | 1 | `couch_two_seater_sofa` | Sofa / lounge seating | floor | 1600 x 930 x 920 | 37.1 | 0 | 1,570 | Soft seating for rest and informal meetings. |
 | 1 | `lamp_floor_lamp` | Lamp | floor | 619 x 1760 x 320 | 31.1 | 63 | 9,810 | Local task or mood lighting. |
 | 1 | `lamp_reading_light` | Lamp | wall | 100 x 176 x 278 | 0.5 | 9 | 158 | Local task or mood lighting. |
@@ -1472,12 +1472,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `planter_herb_shelf_rack` | Hydroponic planter | floor | 1266 x 1809 x 406 | 130 | 550 | 65,500 | Grows food and oxygen-producing plants. |
+| 1 | `planter_herb_shelf_rack` | Hydroponic planter | floor | 1263 x 1809 x 406 | 130 | 550 | 65,400 | Grows food and oxygen-producing plants. |
 | 1 | `planter_microgreen_rack` | Hydroponic planter | floor | 1400 x 2175 x 700 | 294 | 1100 | 133,000 | Grows food and oxygen-producing plants. |
 | 1 | `planter_mushroom_shelf` | Hydroponic planter | floor | 1450 x 1910 x 750 | 304 | 880 | 134,000 | Grows food and oxygen-producing plants. |
 | 1 | `planter_tomato_vine_rack` | Hydroponic planter | floor | 1400 x 2050 x 541 | 241 | 830 | 110,000 | Grows food and oxygen-producing plants. |
 | 1 | `planter_vertical_grow_tower` | Hydroponic planter | floor | 700 x 2460 x 700 | 182 | 640 | 85,200 | Grows food and oxygen-producing plants. |
-| | **Line subtotal** | | | | **1151** | **4000** | **527,700** | |
+| | **Line subtotal** | | | | **1151** | **4000** | **527,600** | |
 
 #### AB-02 - Grow lights over the racks (4 items)
 
@@ -1615,8 +1615,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 2 (9.6 m2 of glazing) |
 | Design occupancy | 8 persons |
 | Items placed / distinct models | 43 / 37 |
-| Installed mass / value | 6.00 t / 10.14 M cr |
-| Electrical load idle / typical / peak | 3.3 kW / 12.3 kW / 20.1 kW |
+| Installed mass / value | 6.01 t / 10.15 M cr |
+| Electrical load idle / typical / peak | 3.3 kW / 12.4 kW / 20.2 kW |
 | Floor occupancy | 25 % (floor-standing footprints / floor area) |
 | Lights | 9 real lights, 6 ceiling fixtures |
 
@@ -1662,7 +1662,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `console_science` | Workstation console | floor | 1516 x 1351 x 904 | 260 | 370 | 527,000 | Operator station with displays and controls for one ship function. |
 | 1 | `console_sensor` | Workstation console | floor | 1618 x 1390 x 875 | 263 | 410 | 378,000 | Operator station with displays and controls for one ship function. |
 | 2 | `display_triple_stack` | Wall display | wall | 850 x 1550 x 83 | 14.6 | 122 | 24,600 | Shows status, plans and sensor data to people in the room. |
-| 1 | `display_wing_display` | Wall display | wall | 1572 x 745 x 306 | 24.0 | 150 | 43,500 | Shows status, plans and sensor data to people in the room. |
+| 1 | `display_wing_display` | Wall display | wall | 1572 x 745 x 307 | 24.0 | 150 | 43,500 | Shows status, plans and sensor data to people in the room. |
 | 1 | `seat_ops_chair` | Crew station seat | floor | 635 x 1025 x 630 | 12.9 | 0 | 808 | Operator chair for console positions. |
 | 1 | `seat_science_stool` | Crew station seat | floor | 558 x 646 x 558 | 6.2 | 0 | 528 | Operator chair for console positions. |
 | 1 | `seat_tactical_chair` | Crew station seat | floor | 670 x 1441 x 683 | 20.5 | 0 | 1,100 | Operator chair for console positions. |
@@ -1674,9 +1674,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 251 | 2600 | 268,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_storage_array` | Equipment rack | floor | 600 x 2000 x 1000 | 252 | 2800 | 227,000 | Houses servers, storage and network gear with cooling. |
-| | **Line subtotal** | | | | **502** | **5400** | **495,000** | |
+| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2700 | 273,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_storage_array` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2800 | 231,000 | Houses servers, storage and network gear with cooling. |
+| | **Line subtotal** | | | | **512** | **5500** | **504,000** | |
 
 #### OB-05 - Instrument bench (7 items)
 
@@ -1684,7 +1684,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `analyzer_mass_spectrometer` | Laboratory analyser | floor | 1675 x 1840 x 1003 | 1243 | 970 | 3,150,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
+| 1 | `analyzer_mass_spectrometer` | Laboratory analyser | floor | 1675 x 1840 x 1003 | 1242 | 970 | 3,150,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
 | 1 | `antenna_dish_array_demo` | Antenna / relay | floor | 2066 x 1889 x 1216 | 660 | 430 | 680,000 | Sends and receives subspace and radio traffic; mounted where signal paths and cabling are short. |
 | 1 | `labbench_lab_stool` | Laboratory furniture | floor | 531 x 735 x 564 | 21.4 | 0 | 1,210 | Benches, hoods and stools for safe wet and dry lab work. |
 | 1 | `labbench_sample_prep_table` | Laboratory furniture | floor | 1635 x 1545 x 800 | 199 | 0 | 8,270 | Benches, hoods and stools for safe wet and dry lab work. |
@@ -1817,9 +1817,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2060 x 687 | 134 | 0 | 4,540 | Secure storage for personal gear and issue equipment. |
+| 1 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2063 x 687 | 134 | 0 | 4,550 | Secure storage for personal gear and issue equipment. |
 | 1 | `shelving_pigeonhole` | Shelving | floor | 1700 x 2015 x 500 | 132 | 0 | 14,400 | Open storage for parts, stores and gear. |
-| | **Line subtotal** | | | | **266** | **0** | **18,940** | |
+| | **Line subtotal** | | | | **266** | **0** | **18,950** | |
 
 #### FS-03 - Admiral's desk (6 items)
 
@@ -1939,7 +1939,7 @@ The command deck sits at the top of the ship and reaches furthest forward: the b
 | Code | Room | Area | Height | Items | BOM lines | Floor occupancy | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
 | [CF1](#cf1---forward-spine-corridor) | Forward Spine Corridor | 63.0 m2 | 3.4 m | 25 | 6 | 0 % | 197 kg | 100 W | 15.4 k |
-| [CA1](#ca1---aft-spine-corridor) | Aft Spine Corridor | 31.2 m2 | 3.4 m | 15 | 7 | 0 % | 110 kg | 141 W | 13.5 k |
+| [CA1](#ca1---aft-spine-corridor) | Aft Spine Corridor | 31.2 m2 | 3.4 m | 15 | 7 | 0 % | 111 kg | 142 W | 13.6 k |
 | [LB1](#lb1---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 15 | 7 | 0 % | 210 kg | 293 W | 78.6 k |
 | [SP1](#sp1---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 5 | 3 | 0 % | 10 kg | 19 W | 2.2 k |
 | [SS1](#ss1---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 20 kg | 36 W | 4.5 k |
@@ -1947,11 +1947,11 @@ The command deck sits at the top of the ship and reaches furthest forward: the b
 | [RR](#rr---captains-ready-room) | Captain's Ready Room | 85.2 m2 | 3.4 m | 31 | 10 | 13 % | 1.38 t | 2.8 kW | 181.8 k |
 | [OL](#ol---observation-lounge) | Observation Lounge | 149.5 m2 | 3.6 m | 53 | 11 | 16 % | 2.68 t | 4.4 kW | 1.73 M |
 | [CR](#cr---conference-room) | Conference Room | 85.2 m2 | 3.4 m | 51 | 9 | 22 % | 1.67 t | 3.9 kW | 540.0 k |
-| [AM](#am---astrometrics) | Astrometrics | 149.5 m2 | 3.4 m | 43 | 9 | 13 % | 6.42 t | 23.7 kW | 7.44 M |
-| [OA](#oa---officers-cabins-a) | Officers' Cabins A | 59.0 m2 | 3.4 m | 39 | 6 | 28 % | 1.42 t | 399 W | 99.3 k |
-| [OB](#ob---officers-cabins-b) | Officers' Cabins B | 45.9 m2 | 3.4 m | 25 | 5 | 22 % | 980 kg | 271 W | 54.3 k |
-| [CQ](#cq---captains-quarters) | Captain's Quarters | 61.2 m2 | 3.4 m | 39 | 10 | 30 % | 1.87 t | 3.0 kW | 308.9 k |
-| [CC](#cc---communications-centre) | Communications Centre | 43.7 m2 | 3.4 m | 27 | 8 | 21 % | 3.50 t | 15.9 kW | 3.51 M |
+| [AM](#am---astrometrics) | Astrometrics | 149.5 m2 | 3.4 m | 43 | 9 | 13 % | 6.44 t | 23.9 kW | 7.46 M |
+| [OA](#oa---officers-cabins-a) | Officers' Cabins A | 59.0 m2 | 3.4 m | 39 | 6 | 28 % | 1.46 t | 409 W | 100.3 k |
+| [OB](#ob---officers-cabins-b) | Officers' Cabins B | 45.9 m2 | 3.4 m | 25 | 5 | 22 % | 1.03 t | 281 W | 55.3 k |
+| [CQ](#cq---captains-quarters) | Captain's Quarters | 61.2 m2 | 3.4 m | 39 | 10 | 30 % | 1.92 t | 3.0 kW | 309.9 k |
+| [CC](#cc---communications-centre) | Communications Centre | 43.7 m2 | 3.4 m | 27 | 8 | 21 % | 3.52 t | 16.1 kW | 3.53 M |
 
 ### CF1 - Forward Spine Corridor
 
@@ -2071,8 +2071,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 4 (0 diagonal hull facets, 1 on the outer hull) |
 | Windows | none |
 | Items placed / distinct models | 15 / 10 |
-| Installed mass / value | 110 kg / 13.5 k cr |
-| Electrical load idle / typical / peak | 29 W / 141 W / 189 W |
+| Installed mass / value | 111 kg / 13.6 k cr |
+| Electrical load idle / typical / peak | 29 W / 142 W / 189 W |
 | Floor occupancy | 0 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
 
@@ -2154,8 +2154,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | Drinking water for crew. |
-| | **Line subtotal** | | | | **10.1** | **87** | **3,510** | |
+| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | Drinking water for crew. |
+| | **Line subtotal** | | | | **10.4** | **88** | **3,610** | |
 
 **Room totals by family**: cabletray x4, sign x4, beacon x2, ceilinglight x2, safety x2, fountain x1.
 
@@ -2507,7 +2507,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 2 | `display_status_board` | Wall display | wall | 1500 x 1055 x 95 | 20.2 | 166 | 36,000 | Shows status, plans and sensor data to people in the room. |
 | 1 | `display_tactical_wall_screen` | Wall display | wall | 1990 x 1395 x 180 | 33.2 | 190 | 55,500 | Shows status, plans and sensor data to people in the room. |
-| 1 | `display_wing_display` | Wall display | wall | 1572 x 745 x 306 | 24.0 | 150 | 43,500 | Shows status, plans and sensor data to people in the room. |
+| 1 | `display_wing_display` | Wall display | wall | 1572 x 745 x 307 | 24.0 | 150 | 43,500 | Shows status, plans and sensor data to people in the room. |
 | | **Line subtotal** | | | | **77.4** | **506** | **135,000** | |
 
 #### BR-08 - Door signs and wall clock (2 items)
@@ -2622,7 +2622,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1272 x 1020 | 39.1 | 0 | 1,540 | Soft seating for rest and informal meetings. |
+| 1 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1271 x 1020 | 39.1 | 0 | 1,540 | Soft seating for rest and informal meetings. |
 | 1 | `couch_three_seater_sofa` | Sofa / lounge seating | floor | 2300 x 980 x 970 | 67.6 | 0 | 2,840 | Soft seating for rest and informal meetings. |
 | 1 | `table_coffee_table` | Table | floor | 1120 x 422 x 620 | 9.4 | 0 | 417 | Work, meeting or dining surface. |
 | 1 | `tableware_cups_and_mugs` | Tableware / table setting | table | 318 x 100 x 283 | 2.5 | 0 | 957 | Plates, cups and condiments on tables. |
@@ -2842,14 +2842,14 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `bottle_beer_lager_green` | Bottle / flask | table | 66 x 230 x 66 | 0.5 | 0 | 287 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
-| 1 | `bottle_whisky_decanter_square` | Bottle / flask | table | 94 x 230 x 100 | 1.0 | 0 | 124 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
-| 1 | `bottle_wine_red_bordeaux` | Bottle / flask | table | 76 x 325 x 76 | 0.9 | 0 | 382 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `bottle_whisky_decanter_square` | Bottle / flask | table | 94 x 230 x 103 | 1.0 | 0 | 125 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
+| 1 | `bottle_wine_red_bordeaux` | Bottle / flask | table | 82 x 325 x 82 | 1.1 | 0 | 384 | Water, wine, spirits, oils and flasks in glass, PET and steel containers. |
 | 1 | `cocktail_beer_mug_foam` | Glassware and cocktails | table | 140 x 143 x 94 | 0.2 | 0 | 385 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
 | 1 | `cocktail_champagne_flute` | Glassware and cocktails | table | 66 x 200 x 66 | 0.1 | 0 | 326 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
 | 1 | `cocktail_martini_olive` | Glassware and cocktails | table | 98 x 179 x 98 | 0.2 | 0 | 244 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
-| 1 | `cocktail_mojito_mint_highball` | Glassware and cocktails | table | 78 x 215 x 76 | 0.2 | 0 | 427 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
+| 1 | `cocktail_mojito_mint_highball` | Glassware and cocktails | table | 76 x 215 x 76 | 0.1 | 0 | 427 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
 | 1 | `cocktail_wine_glass_red` | Glassware and cocktails | table | 84 x 195 x 84 | 0.2 | 0 | 308 | Bar glasses and mixed drinks for the wardroom, lounge and the captain's table. |
-| | **Line subtotal** | | | | **3.3** | **0** | **2,483** | |
+| | **Line subtotal** | | | | **3.4** | **0** | **2,486** | |
 
 #### OL-11 - Snacks on the low tables (2 items)
 
@@ -2857,9 +2857,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `dessert_cheesecake_slice` | Dessert | table | 200 x 80 x 200 | 1.6 | 0 | 368 | Cakes, ice cream and puddings served after the main meal. |
+| 1 | `dessert_cheesecake_slice` | Dessert | table | 200 x 80 x 200 | 1.6 | 0 | 363 | Cakes, ice cream and puddings served after the main meal. |
 | 1 | `drink_cappuccino_rosetta` | Hot and cold drink | table | 182 x 76 x 180 | 1.4 | 0 | 555 | Coffee, tea, juices, shakes and smoothies at the table. |
-| | **Line subtotal** | | | | **3.0** | **0** | **923** | |
+| | **Line subtotal** | | | | **3.0** | **0** | **918** | |
 
 **Room totals by family**: ceilinglight x6, cocktail x5, couch x5, table x5, tableware x5, chair x4, bottle x3, galley x3, plant x3, display x2, lamp x2, safety x2, shelving x2, dessert x1, doorframe x1, drink x1, holo x1, sign x1, telescope x1.
 
@@ -2988,9 +2988,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 983 | Shared time reference for watch changes. |
+| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 982 | Shared time reference for watch changes. |
 | 1 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 4.3 | 0 | 869 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **5.0** | **2** | **1,852** | |
+| | **Line subtotal** | | | | **5.0** | **2** | **1,851** | |
 
 #### CR-09 - Refreshments for meetings (12 items)
 
@@ -3002,8 +3002,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 4 | `can_cola` | Canned drink | table | 66 x 123 x 66 | 0.2 | 0 | 1,308 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
 | 2 | `drink_coffee_pot_and_mugs` | Hot and cold drink | table | 312 x 205 x 186 | 13.3 | 0 | 1,892 | Coffee, tea, juices, shakes and smoothies at the table. |
 | 1 | `tray_bread_basket_wicker` | Serving tray / dish | table | 306 x 89 x 306 | 1.1 | 0 | 740 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
-| 1 | `tray_cake_stand_afternoon_tea` | Serving tray / dish | table | 308 x 422 x 306 | 5.4 | 0 | 1,100 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
-| | **Line subtotal** | | | | **22.0** | **0** | **7,000** | |
+| 1 | `tray_cake_stand_afternoon_tea` | Serving tray / dish | table | 308 x 425 x 306 | 5.4 | 0 | 1,100 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| | **Line subtotal** | | | | **22.1** | **0** | **7,000** | |
 
 **Room totals by family**: chair x13, tableware x6, bottle x4, can x4, terminal x3, ceilinglight x2, desk x2, display x2, drink x2, galley x2, plant x2, table x2, tray x2, cabinet x1, clock x1, commsunit x1, holo x1, safety x1.
 
@@ -3029,8 +3029,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 3 (13.0 m2 of glazing) |
 | Design occupancy | 6 persons |
 | Items placed / distinct models | 43 / 38 |
-| Installed mass / value | 6.42 t / 7.44 M cr |
-| Electrical load idle / typical / peak | 6.0 kW / 23.7 kW / 38.9 kW |
+| Installed mass / value | 6.44 t / 7.46 M cr |
+| Electrical load idle / typical / peak | 6.1 kW / 23.9 kW / 39.1 kW |
 | Floor occupancy | 13 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
 
@@ -3103,15 +3103,15 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `commsunit_radio_rack` | Communications unit | floor | 606 x 2103 x 512 | 197 | 260 | 229,000 | Radio and intercom equipment for ship and external communications. |
-| 1 | `rack_blade_server_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 245 | 2900 | 250,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `commsunit_radio_rack` | Communications unit | floor | 603 x 2103 x 512 | 196 | 260 | 228,000 | Radio and intercom equipment for ship and external communications. |
+| 1 | `rack_blade_server_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 250 | 3000 | 255,000 | Houses servers, storage and network gear with cooling. |
 | 1 | `rack_crystal_archive_tower` | Equipment rack | floor | 708 x 2270 x 810 | 234 | 2800 | 302,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_network_switch_rack` | Equipment rack | floor | 685 x 2000 x 1015 | 289 | 3200 | 259,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 251 | 2600 | 268,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_storage_array` | Equipment rack | floor | 600 x 2000 x 1000 | 252 | 2800 | 227,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_network_switch_rack` | Equipment rack | floor | 688 x 2006 x 1018 | 292 | 3200 | 261,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2700 | 273,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_storage_array` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2800 | 231,000 | Houses servers, storage and network gear with cooling. |
 | 1 | `rack_tape_archive_tower` | Equipment rack | floor | 700 x 2100 x 990 | 283 | 3200 | 348,000 | Houses servers, storage and network gear with cooling. |
 | 1 | `router_patch_panel` | Network hardware | wall | 900 x 555 x 208 | 30.4 | 77 | 37,700 | Routes data between ship systems. |
-| | **Line subtotal** | | | | **1781** | **17837** | **1,920,700** | |
+| | **Line subtotal** | | | | **1797** | **18037** | **1,935,700** | |
 
 #### AM-06 - Analysis desks (7 items)
 
@@ -3181,8 +3181,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 1 (2.0 m2 of glazing) |
 | Design occupancy | 3 persons |
 | Items placed / distinct models | 39 / 24 |
-| Installed mass / value | 1.42 t / 99.3 k cr |
-| Electrical load idle / typical / peak | 37 W / 399 W / 1.8 kW |
+| Installed mass / value | 1.46 t / 100.3 k cr |
+| Electrical load idle / typical / peak | 37 W / 409 W / 1.9 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
 
@@ -3222,9 +3222,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 3 | `lamp_architect_desk_lamp` | Lamp | table | 475 x 439 x 180 | 10.0 | 42 | 2,280 | Local task or mood lighting. |
 | 3 | `lamp_reading_light` | Lamp | wall | 100 x 176 x 278 | 1.4 | 28 | 474 | Local task or mood lighting. |
 | 2 | `locker_tall_vented_locker` | Personal / equipment locker | floor | 520 x 1888 x 547 | 95.8 | 0 | 4,180 | Secure storage for personal gear and issue equipment. |
-| 3 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2060 x 687 | 403 | 0 | 13,620 | Secure storage for personal gear and issue equipment. |
+| 3 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2063 x 687 | 404 | 0 | 13,650 | Secure storage for personal gear and issue equipment. |
 | 3 | `terminal_laptop_console` | Terminal / datapad | table | 340 x 238 x 272 | 13.6 | 33 | 15,450 | Data entry and information access. |
-| | **Line subtotal** | | | | **648** | **103** | **41,863** | |
+| | **Line subtotal** | | | | **649** | **103** | **41,893** | |
 
 #### OA-03 - Shared sitting area (4 items)
 
@@ -3232,7 +3232,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1272 x 1020 | 39.1 | 0 | 1,540 | Soft seating for rest and informal meetings. |
+| 1 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1271 x 1020 | 39.1 | 0 | 1,540 | Soft seating for rest and informal meetings. |
 | 1 | `couch_three_seater_sofa` | Sofa / lounge seating | floor | 2300 x 980 x 970 | 67.6 | 0 | 2,840 | Soft seating for rest and informal meetings. |
 | 1 | `table_side_table` | Table | floor | 522 x 554 x 542 | 5.1 | 0 | 320 | Work, meeting or dining surface. |
 | 1 | `tableware_cups_and_mugs` | Tableware / table setting | table | 318 x 100 x 283 | 2.5 | 0 | 957 | Plates, cups and condiments on tables. |
@@ -3255,10 +3255,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 983 | Shared time reference for watch changes. |
+| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 982 | Shared time reference for watch changes. |
 | 1 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 4.3 | 0 | 869 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_quarters` | Sign | wall | 1000 x 400 x 55 | 1.2 | 0 | 116 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **6.2** | **2** | **1,968** | |
+| | **Line subtotal** | | | | **6.2** | **2** | **1,967** | |
 
 #### OA-06 - Drink and fruit at the desk (3 items)
 
@@ -3295,8 +3295,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 5 (8.0 m2 of glazing) |
 | Design occupancy | 2 persons |
 | Items placed / distinct models | 25 / 18 |
-| Installed mass / value | 980 kg / 54.3 k cr |
-| Electrical load idle / typical / peak | 21 W / 271 W / 1.7 kW |
+| Installed mass / value | 1.03 t / 55.3 k cr |
+| Electrical load idle / typical / peak | 21 W / 281 W / 1.8 kW |
 | Floor occupancy | 22 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
 
@@ -3335,9 +3335,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 2 | `lamp_architect_desk_lamp` | Lamp | table | 475 x 439 x 180 | 6.7 | 28 | 1,520 | Local task or mood lighting. |
 | 2 | `lamp_reading_light` | Lamp | wall | 100 x 176 x 278 | 0.9 | 18 | 316 | Local task or mood lighting. |
 | 1 | `locker_tall_vented_locker` | Personal / equipment locker | floor | 520 x 1888 x 547 | 47.9 | 0 | 2,090 | Secure storage for personal gear and issue equipment. |
-| 2 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2060 x 687 | 269 | 0 | 9,080 | Secure storage for personal gear and issue equipment. |
+| 2 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2063 x 687 | 269 | 0 | 9,100 | Secure storage for personal gear and issue equipment. |
 | 2 | `terminal_laptop_console` | Terminal / datapad | table | 340 x 238 x 272 | 9.1 | 22 | 10,300 | Data entry and information access. |
-| | **Line subtotal** | | | | **408** | **68** | **26,753** | |
+| | **Line subtotal** | | | | **408** | **68** | **26,773** | |
 
 #### OB-03 - Sitting corner (4 items)
 
@@ -3345,7 +3345,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1272 x 1020 | 78.2 | 0 | 3,080 | Soft seating for rest and informal meetings. |
+| 2 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1271 x 1020 | 78.2 | 0 | 3,080 | Soft seating for rest and informal meetings. |
 | 1 | `lamp_table_lamp` | Lamp | table | 250 x 472 x 250 | 2.9 | 14 | 1,050 | Local task or mood lighting. |
 | 1 | `table_side_table` | Table | floor | 522 x 554 x 542 | 5.1 | 0 | 320 | Work, meeting or dining surface. |
 | | **Line subtotal** | | | | **86.2** | **14** | **4,450** | |
@@ -3395,8 +3395,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 1 (3.0 m2 of glazing) |
 | Design occupancy | 1 persons |
 | Items placed / distinct models | 39 / 34 |
-| Installed mass / value | 1.87 t / 308.9 k cr |
-| Electrical load idle / typical / peak | 807 W / 3.0 kW / 5.7 kW |
+| Installed mass / value | 1.92 t / 309.9 k cr |
+| Electrical load idle / typical / peak | 807 W / 3.0 kW / 5.8 kW |
 | Floor occupancy | 30 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
 
@@ -3441,8 +3441,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `locker_footlocker` | Personal / equipment locker | floor | 980 x 510 x 545 | 23.9 | 0 | 1,050 | Secure storage for personal gear and issue equipment. |
-| 2 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2060 x 687 | 269 | 0 | 9,080 | Secure storage for personal gear and issue equipment. |
-| | **Line subtotal** | | | | **292** | **0** | **10,130** | |
+| 2 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2063 x 687 | 269 | 0 | 9,100 | Secure storage for personal gear and issue equipment. |
+| | **Line subtotal** | | | | **293** | **0** | **10,150** | |
 
 #### CQ-04 - Study corner (6 items)
 
@@ -3466,10 +3466,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `couch_three_seater_sofa` | Sofa / lounge seating | floor | 2300 x 980 x 970 | 67.6 | 0 | 2,840 | Soft seating for rest and informal meetings. |
 | 1 | `display_holo_frame_panel` | Wall display | wall | 1490 x 860 x 85 | 6.5 | 65 | 10,100 | Shows status, plans and sensor data to people in the room. |
-| 1 | `plant_flower_vase` | Decorative plant | table | 269 x 498 x 290 | 3.4 | 0 | 357 | Improves wellbeing and air quality. |
+| 1 | `plant_flower_vase` | Decorative plant | table | 269 x 498 x 290 | 3.4 | 0 | 350 | Improves wellbeing and air quality. |
 | 1 | `table_coffee_table` | Table | floor | 1120 x 422 x 620 | 9.4 | 0 | 417 | Work, meeting or dining surface. |
 | 1 | `tableware_teapot` | Tableware / table setting | table | 353 x 209 x 180 | 3.4 | 0 | 1,350 | Plates, cups and condiments on tables. |
-| | **Line subtotal** | | | | **90.2** | **65** | **15,064** | |
+| | **Line subtotal** | | | | **90.2** | **65** | **15,057** | |
 
 #### CQ-06 - Dining table for four (6 items)
 
@@ -3508,10 +3508,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 983 | Shared time reference for watch changes. |
+| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 982 | Shared time reference for watch changes. |
 | 1 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 4.3 | 0 | 869 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_quarters` | Sign | wall | 1000 x 400 x 55 | 1.2 | 0 | 116 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **6.2** | **2** | **1,968** | |
+| | **Line subtotal** | | | | **6.2** | **2** | **1,967** | |
 
 #### CQ-10 - The captain's table (6 items)
 
@@ -3551,8 +3551,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 3 persons |
 | Items placed / distinct models | 27 / 23 |
-| Installed mass / value | 3.50 t / 3.51 M cr |
-| Electrical load idle / typical / peak | 4.0 kW / 15.9 kW / 25.1 kW |
+| Installed mass / value | 3.52 t / 3.53 M cr |
+| Electrical load idle / typical / peak | 4.0 kW / 16.1 kW / 25.4 kW |
 | Floor occupancy | 21 % (floor-standing footprints / floor area) |
 | Lights | 2 real lights, 2 ceiling fixtures |
 
@@ -3605,12 +3605,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `commsunit_radio_rack` | Communications unit | floor | 606 x 2103 x 512 | 197 | 260 | 229,000 | Radio and intercom equipment for ship and external communications. |
-| 1 | `rack_kvm_console_rack` | Equipment rack | floor | 600 x 2000 x 1210 | 262 | 3600 | 257,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_network_switch_rack` | Equipment rack | floor | 685 x 2000 x 1015 | 289 | 3200 | 259,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 251 | 2600 | 268,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_ups_battery_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 241 | 2600 | 231,000 | Houses servers, storage and network gear with cooling. |
-| | **Line subtotal** | | | | **1241** | **12260** | **1,244,000** | |
+| 1 | `commsunit_radio_rack` | Communications unit | floor | 603 x 2103 x 512 | 196 | 260 | 228,000 | Radio and intercom equipment for ship and external communications. |
+| 1 | `rack_kvm_console_rack` | Equipment rack | floor | 606 x 2006 x 1213 | 266 | 3700 | 261,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_network_switch_rack` | Equipment rack | floor | 688 x 2006 x 1018 | 292 | 3200 | 261,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2700 | 273,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_ups_battery_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 246 | 2600 | 236,000 | Houses servers, storage and network gear with cooling. |
+| | **Line subtotal** | | | | **1257** | **12460** | **1,259,000** | |
 
 #### CC-05 - Antennas, patch panel and key safe (6 items)
 
@@ -3672,18 +3672,18 @@ The habitat deck is the widest deck and holds everything that keeps the crew ali
 | Code | Room | Area | Height | Items | BOM lines | Floor occupancy | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
 | [CF2](#cf2---forward-spine-corridor) | Forward Spine Corridor | 90.0 m2 | 3.4 m | 37 | 6 | 0 % | 297 kg | 141 W | 24.2 k |
-| [CA2](#ca2---aft-spine-corridor) | Aft Spine Corridor | 43.2 m2 | 3.4 m | 20 | 7 | 0 % | 149 kg | 160 W | 16.1 k |
+| [CA2](#ca2---aft-spine-corridor) | Aft Spine Corridor | 43.2 m2 | 3.4 m | 20 | 7 | 0 % | 149 kg | 161 W | 16.2 k |
 | [LB2](#lb2---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 17 | 8 | 3 % | 597 kg | 1.3 kW | 200.4 k |
 | [SP2](#sp2---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 5 | 3 | 0 % | 10 kg | 18 W | 2.1 k |
 | [SS2](#ss2---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
-| [AR](#ar---armory) | Armory | 30.7 m2 | 3.4 m | 22 | 9 | 20 % | 2.91 t | 220.6 kW | 1.89 M |
+| [AR](#ar---armory) | Armory | 30.7 m2 | 3.4 m | 22 | 9 | 20 % | 2.92 t | 220.6 kW | 1.90 M |
 | [GA](#ga---galley) | Galley | 84.9 m2 | 3.4 m | 48 | 15 | 19 % | 4.60 t | 19.5 kW | 1.50 M |
 | [MH](#mh---mess-hall) | Mess Hall | 149.1 m2 | 3.6 m | 158 | 14 | 27 % | 3.53 t | 9.1 kW | 789.9 k |
 | [BG](#bg---brig) | Brig | 30.7 m2 | 3.4 m | 17 | 9 | 29 % | 2.94 t | 630 W | 1.44 M |
-| [SO](#so---security-office) | Security Office | 84.9 m2 | 3.4 m | 48 | 12 | 24 % | 3.38 t | 7.6 kW | 2.86 M |
+| [SO](#so---security-office) | Security Office | 84.9 m2 | 3.4 m | 48 | 12 | 24 % | 3.39 t | 7.6 kW | 2.87 M |
 | [MB](#mb---medical-bay) | Medical Bay | 149.1 m2 | 3.6 m | 52 | 14 | 30 % | 14.99 t | 66.4 kW | 27.39 M |
-| [RG](#rg---recreation--gym) | Recreation & Gym | 85.0 m2 | 3.4 m | 48 | 12 | 28 % | 2.83 t | 1.5 kW | 316.3 k |
-| [CW](#cw---crew-quarters) | Crew Quarters | 68.8 m2 | 3.4 m | 37 | 10 | 32 % | 881 kg | 190 W | 75.3 k |
+| [RG](#rg---recreation--gym) | Recreation & Gym | 85.0 m2 | 3.4 m | 48 | 12 | 28 % | 2.83 t | 1.5 kW | 316.5 k |
+| [CW](#cw---crew-quarters) | Crew Quarters | 68.8 m2 | 3.4 m | 37 | 10 | 32 % | 884 kg | 190 W | 75.4 k |
 | [SL](#sl---science-laboratory) | Science Laboratory | 85.0 m2 | 3.4 m | 34 | 12 | 25 % | 6.64 t | 6.0 kW | 9.28 M |
 | [HY](#hy---hydroponics-garden) | Hydroponics Garden | 68.8 m2 | 3.6 m | 47 | 14 | 28 % | 6.43 t | 20.6 kW | 3.07 M |
 
@@ -3807,8 +3807,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 4 (0 diagonal hull facets, 1 on the outer hull) |
 | Windows | none |
 | Items placed / distinct models | 20 / 14 |
-| Installed mass / value | 149 kg / 16.1 k cr |
-| Electrical load idle / typical / peak | 30 W / 160 W / 210 W |
+| Installed mass / value | 149 kg / 16.2 k cr |
+| Electrical load idle / typical / peak | 30 W / 161 W / 210 W |
 | Floor occupancy | 0 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
 
@@ -3891,8 +3891,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | Drinking water for crew. |
-| | **Line subtotal** | | | | **10.1** | **87** | **3,510** | |
+| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | Drinking water for crew. |
+| | **Line subtotal** | | | | **10.4** | **88** | **3,610** | |
 
 **Room totals by family**: cabletray x6, beacon x4, sign x4, ceilinglight x3, safety x2, fountain x1.
 
@@ -4155,7 +4155,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 2 persons |
 | Items placed / distinct models | 22 / 21 |
-| Installed mass / value | 2.91 t / 1.89 M cr |
+| Installed mass / value | 2.92 t / 1.90 M cr |
 | Electrical load idle / typical / peak | 67.1 kW / 220.6 kW / 362.2 kW |
 | Floor occupancy | 20 % (floor-standing footprints / floor area) |
 | Lights | 1 real lights, 1 ceiling fixtures |
@@ -4178,9 +4178,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `weaponrack_pistol_locker` | Weapon rack / armoury fitting | floor | 800 x 1400 x 415 | 103 | 28 | 70,900 | Secure storage of weapons and protective gear. |
-| 2 | `weaponrack_rifle_locker` | Weapon rack / armoury fitting | floor | 1000 x 2000 x 545 | 496 | 112 | 410,000 | Secure storage of weapons and protective gear. |
-| | **Line subtotal** | | | | **600** | **140** | **480,900** | |
+| 1 | `weaponrack_pistol_locker` | Weapon rack / armoury fitting | floor | 806 x 1403 x 418 | 105 | 28 | 72,100 | Secure storage of weapons and protective gear. |
+| 2 | `weaponrack_rifle_locker` | Weapon rack / armoury fitting | floor | 1006 x 2003 x 548 | 503 | 114 | 416,000 | Secure storage of weapons and protective gear. |
+| | **Line subtotal** | | | | **608** | **142** | **488,100** | |
 
 #### AR-02 - Armour locker (1 item)
 
@@ -4188,8 +4188,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `weaponrack_armour_plate_locker` | Weapon rack / armoury fitting | floor | 1000 x 2000 x 610 | 283 | 71 | 174,000 | Secure storage of weapons and protective gear. |
-| | **Line subtotal** | | | | **283** | **71** | **174,000** | |
+| 1 | `weaponrack_armour_plate_locker` | Weapon rack / armoury fitting | floor | 1006 x 2003 x 613 | 287 | 72 | 176,000 | Secure storage of weapons and protective gear. |
+| | **Line subtotal** | | | | **287** | **72** | **176,000** | |
 
 #### AR-03 - Wall racks on the hull facets (3 items)
 
@@ -4333,10 +4333,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `galley_kitchen_island` | Galley equipment | floor | 2060 x 1120 x 1017 | 414 | 0 | 113,000 | Food storage, cooking and dish-washing equipment. |
-| 1 | `galley_microwave` | Galley equipment | table | 500 x 300 x 410 | 9.7 | 320 | 3,830 | Food storage, cooking and dish-washing equipment. |
+| 1 | `galley_microwave` | Galley equipment | table | 500 x 300 x 410 | 9.7 | 320 | 3,820 | Food storage, cooking and dish-washing equipment. |
 | 1 | `galley_prep_counter` | Galley equipment | floor | 1800 x 1180 x 750 | 251 | 0 | 77,800 | Food storage, cooking and dish-washing equipment. |
 | 1 | `galley_toaster` | Galley equipment | table | 415 x 260 x 230 | 4.2 | 94 | 1,470 | Food storage, cooking and dish-washing equipment. |
-| | **Line subtotal** | | | | **679** | **414** | **196,100** | |
+| | **Line subtotal** | | | | **679** | **414** | **196,090** | |
 
 #### GA-04 - Cooking line (4 items)
 
@@ -4405,8 +4405,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 5 | `ceilinglight_cove_tray` | Ceiling light fixture | ceiling | 1600 x 170 x 500 | 101 | 120 | 28,850 | General lighting sized to the task in the room. |
 | 1 | `duct_ceiling_round_vent` | Ventilation duct / grille | ceiling | 584 x 160 x 584 | 3.9 | 0 | 2,610 | Moves conditioned air to and from the room. |
-| 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 106 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **105** | **120** | **31,566** | |
+| 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 104 | Fire, first-aid, breach and emergency gear required by regulation. |
+| | **Line subtotal** | | | | **105** | **120** | **31,564** | |
 
 #### GA-11 - Raw ingredients on the prep island (4 items)
 
@@ -4441,9 +4441,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `meal_beef_stew_pot` | Plated meal | table | 290 x 150 x 242 | 6.2 | 0 | 1,060 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `meal_salad_bowl_wood` | Plated meal | table | 300 x 129 x 300 | 5.9 | 0 | 1,500 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `tray_fruit_bowl_mixed` | Serving tray / dish | table | 340 x 150 x 338 | 2.2 | 0 | 1,030 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
-| 1 | `tray_hotel_pan_mash_gravy` | Serving tray / dish | table | 562 x 77 x 366 | 1.8 | 0 | 426 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
-| 1 | `tray_hotel_pan_roast_veg` | Serving tray / dish | table | 562 x 93 x 386 | 2.6 | 0 | 933 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
-| | **Line subtotal** | | | | **19.5** | **0** | **5,610** | |
+| 1 | `tray_hotel_pan_mash_gravy` | Serving tray / dish | table | 564 x 77 x 366 | 1.8 | 0 | 427 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| 1 | `tray_hotel_pan_roast_veg` | Serving tray / dish | table | 564 x 93 x 386 | 2.6 | 0 | 933 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
+| | **Line subtotal** | | | | **19.5** | **0** | **5,611** | |
 
 #### GA-14 - Hanging produce and drying rack (4 items)
 
@@ -4563,7 +4563,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 2 | `can_orange_soda` | Canned drink | table | 70 x 116 x 70 | 0.1 | 0 | 656 | Brand-less soft drinks and cold brew in 150-500 ml aluminium cans; stocked from the vending machines. |
 | 1 | `deli_cheese_board` | Cheese, charcuterie and dairy | table | 400 x 60 x 260 | 0.7 | 0 | 427 | Cheeses, cured meats, eggs and spreads: the cold-store items that fill boards and sandwiches. |
 | 2 | `drink_hot_cocoa_mug` | Hot and cold drink | table | 134 x 95 x 94 | 1.2 | 0 | 912 | Coffee, tea, juices, shakes and smoothies at the table. |
-| 3 | `drink_iced_coffee_glass` | Hot and cold drink | table | 80 x 215 x 80 | 2.1 | 0 | 843 | Coffee, tea, juices, shakes and smoothies at the table. |
+| 3 | `drink_iced_coffee_glass` | Hot and cold drink | table | 80 x 215 x 80 | 2.1 | 0 | 861 | Coffee, tea, juices, shakes and smoothies at the table. |
 | 1 | `drink_lemonade_pitcher_set` | Hot and cold drink | table | 258 x 232 x 172 | 5.9 | 0 | 809 | Coffee, tea, juices, shakes and smoothies at the table. |
 | 2 | `drink_milk_glass_cookies` | Hot and cold drink | table | 196 x 110 x 100 | 2.1 | 0 | 776 | Coffee, tea, juices, shakes and smoothies at the table. |
 | 4 | `drink_orange_juice_glass` | Hot and cold drink | table | 74 x 185 x 72 | 1.9 | 0 | 940 | Coffee, tea, juices, shakes and smoothies at the table. |
@@ -4572,11 +4572,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `meal_burger_with_fries` | Plated meal | table | 280 x 99 x 280 | 4.0 | 0 | 930 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `meal_burrito_plate` | Plated meal | table | 300 x 70 x 300 | 3.4 | 0 | 567 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `meal_caesar_salad` | Plated meal | table | 290 x 52 x 290 | 2.4 | 0 | 716 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
-| 1 | `meal_club_sandwich` | Plated meal | table | 280 x 98 x 280 | 3.9 | 0 | 436 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_club_sandwich` | Plated meal | table | 280 x 98 x 280 | 3.9 | 0 | 432 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `meal_curry_and_rice` | Plated meal | table | 320 x 76 x 320 | 4.5 | 0 | 861 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 3 | `meal_dumplings_steamer` | Plated meal | table | 298 x 50 x 308 | 7.9 | 0 | 2,484 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
-| 1 | `meal_fish_and_chips` | Plated meal | table | 320 x 64 x 320 | 3.8 | 0 | 862 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
-| 1 | `meal_fried_egg_breakfast` | Plated meal | table | 300 x 29 x 300 | 1.3 | 0 | 538 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_fish_and_chips` | Plated meal | table | 320 x 64 x 320 | 3.8 | 0 | 863 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
+| 1 | `meal_fried_egg_breakfast` | Plated meal | table | 300 x 30 x 300 | 1.4 | 0 | 538 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `meal_fried_rice_bowl` | Plated meal | table | 210 x 105 x 176 | 2.2 | 0 | 978 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 1 | `meal_lasagna_slice` | Plated meal | table | 280 x 69 x 280 | 2.7 | 0 | 395 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
 | 3 | `meal_mac_and_cheese` | Plated meal | table | 190 x 59 x 188 | 3.4 | 0 | 3,840 | Complete dishes the galley cooks: burgers, pizza, noodles, steak, sushi, salads, curries. |
@@ -4596,7 +4596,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `tray_bread_basket_wicker` | Serving tray / dish | table | 306 x 89 x 306 | 1.1 | 0 | 740 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
 | 1 | `tray_fruit_bowl_mixed` | Serving tray / dish | table | 340 x 150 x 338 | 2.2 | 0 | 1,030 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
 | 1 | `tray_soup_tureen_ladle` | Serving tray / dish | table | 454 x 214 x 320 | 4.0 | 0 | 674 | Meal trays, breakfast and drinks trays, hot pans, tureens and bread baskets used to carry and serve food. |
-| | **Line subtotal** | | | | **109** | **0** | **44,185** | |
+| | **Line subtotal** | | | | **109** | **0** | **44,200** | |
 
 #### MH-06 - Serving line (7 items)
 
@@ -4685,8 +4685,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 5 | `ceilinglight_cove_tray` | Ceiling light fixture | ceiling | 1600 x 170 x 500 | 101 | 120 | 28,850 | General lighting sized to the task in the room. |
 | 1 | `ceilinglight_ring_light` | Ceiling light fixture | ceiling | 960 x 136 x 960 | 17.1 | 24 | 4,380 | General lighting sized to the task in the room. |
 | 3 | `duct_ceiling_square_diffuser` | Ventilation duct / grille | ceiling | 700 x 120 x 703 | 13.6 | 0 | 7,200 | Moves conditioned air to and from the room. |
-| 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 212 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **132** | **144** | **40,642** | |
+| 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 208 | Fire, first-aid, breach and emergency gear required by regulation. |
+| | **Line subtotal** | | | | **132** | **144** | **40,638** | |
 
 #### MH-14 - Buffet and bakery stand (1 item)
 
@@ -4851,7 +4851,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 8 persons |
 | Items placed / distinct models | 48 / 34 |
-| Installed mass / value | 3.38 t / 2.86 M cr |
+| Installed mass / value | 3.39 t / 2.87 M cr |
 | Electrical load idle / typical / peak | 2.2 kW / 7.6 kW / 12.2 kW |
 | Floor occupancy | 24 % (floor-standing footprints / floor area) |
 | Lights | 5 real lights, 5 ceiling fixtures |
@@ -4930,9 +4930,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `weaponrack_pistol_locker` | Weapon rack / armoury fitting | floor | 800 x 1400 x 415 | 103 | 28 | 70,900 | Secure storage of weapons and protective gear. |
-| 1 | `weaponrack_rifle_locker` | Weapon rack / armoury fitting | floor | 1000 x 2000 x 545 | 248 | 56 | 205,000 | Secure storage of weapons and protective gear. |
-| | **Line subtotal** | | | | **351** | **84** | **275,900** | |
+| 1 | `weaponrack_pistol_locker` | Weapon rack / armoury fitting | floor | 806 x 1403 x 418 | 105 | 28 | 72,100 | Secure storage of weapons and protective gear. |
+| 1 | `weaponrack_rifle_locker` | Weapon rack / armoury fitting | floor | 1006 x 2003 x 548 | 251 | 57 | 208,000 | Secure storage of weapons and protective gear. |
+| | **Line subtotal** | | | | **356** | **85** | **280,100** | |
 
 #### SO-07 - Coffee point (2 items)
 
@@ -5121,12 +5121,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `labbench_wet_bench_sink` | Laboratory furniture | floor | 2000 x 1707 x 790 | 248 | 0 | 11,400 | Benches, hoods and stools for safe wet and dry lab work. |
 | 1 | `medbed_surgical_table` | Patient bed / table | floor | 900 x 2633 x 2500 | 656 | 640 | 1,550,000 | Examination, treatment and recovery of patients. |
-| 1 | `medtool_surgical_instrument_tray` | Medical instrument | table | 372 x 59 x 252 | 1.0 | 0 | 2,510 | Hand instruments and kits at the bedside. |
+| 1 | `medtool_surgical_instrument_tray` | Medical instrument | table | 372 x 60 x 252 | 1.0 | 0 | 2,530 | Hand instruments and kits at the bedside. |
 | 1 | `surgical_anesthesia_machine` | Surgical equipment | floor | 870 x 1737 x 680 | 183 | 910 | 367,000 | Operating-theatre machines. |
 | 1 | `surgical_defibrillator_cart` | Surgical equipment | floor | 740 x 1087 x 550 | 75.3 | 470 | 131,000 | Operating-theatre machines. |
 | 1 | `surgical_overhead_surgical_light_boom` | Surgical equipment | ceiling | 2100 x 965 x 900 | 313 | 1700 | 781,000 | Operating-theatre machines. |
 | 1 | `surgical_surgical_robotic_arm_unit` | Surgical equipment | floor | 1000 x 2039 x 1400 | 521 | 2500 | 1,250,000 | Operating-theatre machines. |
-| | **Line subtotal** | | | | **1997** | **6220** | **4,092,910** | |
+| | **Line subtotal** | | | | **1997** | **6220** | **4,092,930** | |
 
 #### MB-09 - Sharps, biohazard and first aid (3 items)
 
@@ -5163,9 +5163,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 983 | Shared time reference for watch changes. |
+| 1 | `clock_digital_clock` | Ship's clock | wall | 500 x 200 x 76 | 0.7 | 2 | 982 | Shared time reference for watch changes. |
 | 1 | `sign_dept_medical` | Sign | wall | 1000 x 400 x 48 | 1.0 | 0 | 88 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **1.7** | **2** | **1,071** | |
+| | **Line subtotal** | | | | **1.7** | **2** | **1,070** | |
 
 #### MB-13 - Ceiling lighting (8 items)
 
@@ -5219,7 +5219,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 1 (3.2 m2 of glazing) |
 | Design occupancy | 20 persons |
 | Items placed / distinct models | 48 / 37 |
-| Installed mass / value | 2.83 t / 316.3 k cr |
+| Installed mass / value | 2.83 t / 316.5 k cr |
 | Electrical load idle / typical / peak | 419 W / 1.5 kW / 2.2 kW |
 | Floor occupancy | 28 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -5283,7 +5283,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1272 x 1020 | 78.2 | 0 | 3,080 | Soft seating for rest and informal meetings. |
+| 2 | `couch_lounge_armchair` | Sofa / lounge seating | floor | 1020 x 1271 x 1020 | 78.2 | 0 | 3,080 | Soft seating for rest and informal meetings. |
 | 1 | `couch_three_seater_sofa` | Sofa / lounge seating | floor | 2300 x 980 x 970 | 67.6 | 0 | 2,840 | Soft seating for rest and informal meetings. |
 | 1 | `table_coffee_table` | Table | floor | 1120 x 422 x 620 | 9.4 | 0 | 417 | Work, meeting or dining surface. |
 | 1 | `tableware_cups_and_mugs` | Tableware / table setting | table | 318 x 100 x 283 | 2.5 | 0 | 957 | Plates, cups and condiments on tables. |
@@ -5307,10 +5307,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `display_holo_frame_panel` | Wall display | wall | 1490 x 860 x 85 | 6.5 | 65 | 10,100 | Shows status, plans and sensor data to people in the room. |
-| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | Drinking water for crew. |
+| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | Drinking water for crew. |
 | 1 | `vending_drink_machine` | Vending machine | floor | 956 x 1903 x 907 | 253 | 570 | 100,000 | Snacks, drinks and small parts for crew. |
 | 1 | `vending_snack_machine` | Vending machine | floor | 900 x 1903 x 847 | 209 | 520 | 67,900 | Snacks, drinks and small parts for crew. |
-| | **Line subtotal** | | | | **478** | **1242** | **181,510** | |
+| | **Line subtotal** | | | | **478** | **1243** | **181,610** | |
 
 #### RG-08 - Lockers and bench (3 items)
 
@@ -5394,7 +5394,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 4 (4.1 m2 of glazing) |
 | Design occupancy | 28 persons |
 | Items placed / distinct models | 37 / 23 |
-| Installed mass / value | 881 kg / 75.3 k cr |
+| Installed mass / value | 884 kg / 75.4 k cr |
 | Electrical load idle / typical / peak | 26 W / 190 W / 230 W |
 | Floor occupancy | 32 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
@@ -5599,9 +5599,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `analyzer_co2_incubator` | Laboratory analyser | floor | 830 x 1920 x 836 | 508 | 500 | 1,500,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
-| 1 | `analyzer_mass_spectrometer` | Laboratory analyser | floor | 1675 x 1840 x 1003 | 1243 | 970 | 3,150,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
+| 1 | `analyzer_mass_spectrometer` | Laboratory analyser | floor | 1675 x 1840 x 1003 | 1242 | 970 | 3,150,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
 | 1 | `microscope_electron_microscope` | Microscope | floor | 1570 x 1980 x 733 | 670 | 1200 | 1,820,000 | Magnifies samples for analysis. |
-| | **Line subtotal** | | | | **2420** | **2670** | **6,470,000** | |
+| | **Line subtotal** | | | | **2419** | **2670** | **6,470,000** | |
 
 #### SL-05 - Specimens and biocontainment (2 items)
 
@@ -5611,7 +5611,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `specimen_biocontainment_cabinet` | Specimen container | floor | 1610 x 2600 x 900 | 591 | 1900 | 1,680,000 | Holds biological and mineral samples safely. |
 | 1 | `specimen_seed_vault` | Specimen container | floor | 1000 x 1970 x 769 | 223 | 880 | 534,000 | Holds biological and mineral samples safely. |
-| | **Line subtotal** | | | | **814** | **2780** | **2,214,000** | |
+| | **Line subtotal** | | | | **813** | **2780** | **2,214,000** | |
 
 #### SL-06 - Instrument cabinets (2 items)
 
@@ -5753,11 +5753,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `planter_herb_shelf_rack` | Hydroponic planter | floor | 1266 x 1809 x 406 | 130 | 550 | 65,500 | Grows food and oxygen-producing plants. |
+| 1 | `planter_herb_shelf_rack` | Hydroponic planter | floor | 1263 x 1809 x 406 | 130 | 550 | 65,400 | Grows food and oxygen-producing plants. |
 | 1 | `planter_lettuce_trough` | Hydroponic planter | floor | 1250 x 865 x 700 | 105 | 420 | 58,600 | Grows food and oxygen-producing plants. |
 | 1 | `planter_microgreen_rack` | Hydroponic planter | floor | 1400 x 2175 x 700 | 294 | 1100 | 133,000 | Grows food and oxygen-producing plants. |
 | 1 | `planter_wheat_tray_bed` | Hydroponic planter | floor | 1610 x 2045 x 700 | 324 | 1100 | 175,000 | Grows food and oxygen-producing plants. |
-| | **Line subtotal** | | | | **853** | **3170** | **432,100** | |
+| | **Line subtotal** | | | | **853** | **3170** | **432,000** | |
 
 #### HY-04 - Growing row two (3 items)
 
@@ -5838,9 +5838,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 106 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 104 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_science` | Sign | wall | 1000 x 400 x 56 | 1.3 | 0 | 95 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **1.6** | **0** | **201** | |
+| | **Line subtotal** | | | | **1.6** | **0** | **199** | |
 
 #### HY-12 - Ceiling lighting (2 items)
 
@@ -5893,19 +5893,19 @@ The engineering deck is the ship's machinery floor: life support and the compute
 | Code | Room | Area | Height | Items | BOM lines | Floor occupancy | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
 | [CF3](#cf3---forward-spine-corridor) | Forward Spine Corridor | 72.0 m2 | 3.4 m | 27 | 6 | 0 % | 211 kg | 116 W | 18.6 k |
-| [CA3](#ca3---aft-spine-corridor) | Aft Spine Corridor | 43.2 m2 | 3.4 m | 20 | 7 | 0 % | 667 kg | 289 W | 29.2 k |
+| [CA3](#ca3---aft-spine-corridor) | Aft Spine Corridor | 43.2 m2 | 3.4 m | 20 | 7 | 0 % | 667 kg | 290 W | 29.3 k |
 | [LB3](#lb3---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 15 | 7 | 0 % | 222 kg | 299 W | 82.5 k |
 | [SP3](#sp3---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 11 kg | 28 W | 2.7 k |
 | [SS3](#ss3---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 31 W | 2.9 k |
 | [LS](#ls---life-support) | Life Support | 59.9 m2 | 3.4 m | 30 | 11 | 27 % | 10.25 t | 43.7 kW | 5.50 M |
-| [CO](#co---computer-core) | Computer Core | 143.4 m2 | 3.4 m | 85 | 9 | 25 % | 20.45 t | 128.5 kW | 17.93 M |
-| [AL](#al---airlock--eva-prep) | Airlock & EVA Prep | 59.9 m2 | 3.4 m | 25 | 9 | 14 % | 2.69 t | 1.5 kW | 832.8 k |
-| [ME](#me---main-engineering) | Main Engineering | 143.4 m2 | 3.4 m | 65 | 13 | 24 % | 61.37 t | 3.43 MW | 74.44 M |
+| [CO](#co---computer-core) | Computer Core | 143.4 m2 | 3.4 m | 85 | 9 | 25 % | 20.58 t | 129.4 kW | 18.05 M |
+| [AL](#al---airlock--eva-prep) | Airlock & EVA Prep | 59.9 m2 | 3.4 m | 25 | 9 | 14 % | 2.70 t | 1.5 kW | 833.4 k |
+| [ME](#me---main-engineering) | Main Engineering | 143.4 m2 | 3.4 m | 65 | 13 | 24 % | 61.36 t | 3.43 MW | 74.46 M |
 | [WS](#ws---engineering-workshop) | Engineering Workshop | 85.1 m2 | 3.4 m | 57 | 8 | 23 % | 9.01 t | 268 W | 4.15 M |
 | [CB](#cb---cargo-bay) | Cargo Bay | 80.0 m2 | 3.4 m | 36 | 10 | 24 % | 4.34 t | 3.2 kW | 1.10 M |
-| [PD](#pd---power-distribution) | Power Distribution | 85.1 m2 | 3.4 m | 55 | 11 | 30 % | 39.94 t | 573.7 kW | 36.34 M |
-| [SD](#sd---spares-depot) | Spares Depot | 80.0 m2 | 3.4 m | 35 | 8 | 26 % | 9.03 t | 746.5 kW | 4.59 M |
-| [HB](#hb---hangar-bay) | Hangar Bay | 299.0 m2 | 8.0 m | 45 | 10 | 25 % | 62.66 t | 15.5 kW | 114.09 M |
+| [PD](#pd---power-distribution) | Power Distribution | 85.1 m2 | 3.4 m | 55 | 11 | 30 % | 39.95 t | 573.7 kW | 36.34 M |
+| [SD](#sd---spares-depot) | Spares Depot | 80.0 m2 | 3.4 m | 35 | 8 | 26 % | 9.03 t | 746.5 kW | 4.58 M |
+| [HB](#hb---hangar-bay) | Hangar Bay | 299.0 m2 | 8.0 m | 45 | 10 | 25 % | 62.59 t | 15.5 kW | 113.89 M |
 
 ### CF3 - Forward Spine Corridor
 
@@ -6026,8 +6026,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 4 (0 diagonal hull facets, 0 on the outer hull) |
 | Windows | none |
 | Items placed / distinct models | 20 / 14 |
-| Installed mass / value | 667 kg / 29.2 k cr |
-| Electrical load idle / typical / peak | 30 W / 289 W / 1.7 kW |
+| Installed mass / value | 667 kg / 29.3 k cr |
+| Electrical load idle / typical / peak | 30 W / 290 W / 1.7 kW |
 | Floor occupancy | 0 % (floor-standing footprints / floor area) |
 | Lights | 3 real lights, 3 ceiling fixtures |
 
@@ -6114,8 +6114,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | Drinking water for crew. |
-| | **Line subtotal** | | | | **10.1** | **87** | **3,510** | |
+| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | Drinking water for crew. |
+| | **Line subtotal** | | | | **10.4** | **88** | **3,610** | |
 
 **Room totals by family**: cabletray x6, beacon x4, sign x4, ceilinglight x3, safety x2, fountain x1.
 
@@ -6525,8 +6525,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 1 persons |
 | Items placed / distinct models | 85 / 34 |
-| Installed mass / value | 20.45 t / 17.93 M cr |
-| Electrical load idle / typical / peak | 33.5 kW / 128.5 kW / 195.4 kW |
+| Installed mass / value | 20.58 t / 18.05 M cr |
+| Electrical load idle / typical / peak | 33.8 kW / 129.4 kW / 197.1 kW |
 | Generation / storage | 0 kW / 717 kWh |
 | Floor occupancy | 25 % (floor-standing footprints / floor area) |
 | Lights | 9 real lights, 9 ceiling fixtures |
@@ -6563,12 +6563,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 6 | `rack_blade_server_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 1469 | 17400 | 1,500,000 | Houses servers, storage and network gear with cooling. |
-| 2 | `rack_cryogenic_quantum_rack` | Equipment rack | floor | 605 x 2000 x 1000 | 417 | 5800 | 462,000 | Houses servers, storage and network gear with cooling. |
-| 5 | `rack_gpu_cluster_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 1256 | 14500 | 1,150,000 | Houses servers, storage and network gear with cooling. |
-| 3 | `rack_liquid_cooled_cabinet` | Equipment rack | floor | 600 x 2000 x 1018 | 707 | 9000 | 669,000 | Houses servers, storage and network gear with cooling. |
-| 4 | `rack_network_switch_rack` | Equipment rack | floor | 685 x 2000 x 1015 | 1158 | 12800 | 1,036,000 | Houses servers, storage and network gear with cooling. |
-| | **Line subtotal** | | | | **5008** | **59500** | **4,817,000** | |
+| 6 | `rack_blade_server_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 1498 | 18000 | 1,530,000 | Houses servers, storage and network gear with cooling. |
+| 2 | `rack_cryogenic_quantum_rack` | Equipment rack | floor | 608 x 2006 x 1006 | 423 | 6000 | 468,000 | Houses servers, storage and network gear with cooling. |
+| 5 | `rack_gpu_cluster_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 1280 | 14500 | 1,170,000 | Houses servers, storage and network gear with cooling. |
+| 3 | `rack_liquid_cooled_cabinet` | Equipment rack | floor | 606 x 2006 x 1021 | 718 | 9000 | 681,000 | Houses servers, storage and network gear with cooling. |
+| 4 | `rack_network_switch_rack` | Equipment rack | floor | 688 x 2006 x 1018 | 1170 | 12800 | 1,044,000 | Houses servers, storage and network gear with cooling. |
+| | **Line subtotal** | | | | **5089** | **60300** | **4,893,000** | |
 
 #### CO-03 - Storage pod, south rows (arrays and archive towers) (21 items)
 
@@ -6577,12 +6577,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 5 | `rack_crystal_archive_tower` | Equipment rack | floor | 708 x 2270 x 810 | 1168 | 14000 | 1,510,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_network_switch_rack` | Equipment rack | floor | 685 x 2000 x 1015 | 289 | 3200 | 259,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 251 | 2600 | 268,000 | Houses servers, storage and network gear with cooling. |
-| 9 | `rack_storage_array` | Equipment rack | floor | 600 x 2000 x 1000 | 2264 | 25200 | 2,043,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_network_switch_rack` | Equipment rack | floor | 688 x 2006 x 1018 | 292 | 3200 | 261,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_photonic_fiber_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 256 | 2700 | 273,000 | Houses servers, storage and network gear with cooling. |
+| 9 | `rack_storage_array` | Equipment rack | floor | 606 x 2006 x 1006 | 2307 | 25200 | 2,079,000 | Houses servers, storage and network gear with cooling. |
 | 4 | `rack_tape_archive_tower` | Equipment rack | floor | 700 x 2100 x 990 | 1131 | 12800 | 1,392,000 | Houses servers, storage and network gear with cooling. |
 | 1 | `storage_memory_core_column` | Data / secure storage | floor | 836 x 2520 x 836 | 975 | 2000 | 904,000 | Archives data and valuables. |
-| | **Line subtotal** | | | | **6078** | **59800** | **6,376,000** | |
+| | **Line subtotal** | | | | **6129** | **59900** | **6,419,000** | |
 
 #### CO-04 - Cooling plant (west wall) (2 items)
 
@@ -6676,7 +6676,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | 5 (5.0 m2 of glazing) |
 | Design occupancy | 4 persons |
 | Items placed / distinct models | 25 / 21 |
-| Installed mass / value | 2.69 t / 832.8 k cr |
+| Installed mass / value | 2.70 t / 833.4 k cr |
 | Electrical load idle / typical / peak | 96 W / 1.5 kW / 2.9 kW |
 | Floor occupancy | 14 % (floor-standing footprints / floor area) |
 | Lights | 4 real lights, 2 ceiling fixtures |
@@ -6715,8 +6715,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `beacon_airlock_status_light` | Alert beacon / emergency lamp | wall | 160 x 555 x 76 | 0.8 | 6 | 221 | Gives light and visual or audible warning during alarms and power loss. |
 | 1 | `beacon_rotating_beacon` | Alert beacon / emergency lamp | wall | 180 x 180 x 200 | 0.7 | 6 | 257 | Gives light and visual or audible warning during alarms and power loss. |
 | 1 | `controlpanel_airlock_control` | Wall control panel | wall | 360 x 500 x 69 | 5.8 | 38 | 7,570 | Local controls for doors, lights, environment and power. |
-| 1 | `hatch_oval_pressure` | Pressure hatch | wall | 844 x 1236 x 160 | 45.4 | 0 | 1,230 | Sealable access to ducts, tanks and compartments. |
-| | **Line subtotal** | | | | **52.6** | **50** | **9,278** | |
+| 1 | `hatch_oval_pressure` | Pressure hatch | wall | 844 x 1236 x 163 | 46.3 | 0 | 1,240 | Sealable access to ducts, tanks and compartments. |
+| | **Line subtotal** | | | | **53.5** | **50** | **9,288** | |
 
 #### AL-03 - Decontamination arch (1 item)
 
@@ -6733,10 +6733,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2060 x 687 | 269 | 0 | 9,080 | Secure storage for personal gear and issue equipment. |
-| 2 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1100 x 1900 x 515 | 232 | 0 | 45,200 | Stores and dresses pressure suits and breathing kit. |
+| 2 | `locker_wardrobe` | Personal / equipment locker | floor | 1160 x 2063 x 687 | 269 | 0 | 9,100 | Secure storage for personal gear and issue equipment. |
+| 2 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1106 x 1903 x 518 | 235 | 0 | 45,800 | Stores and dresses pressure suits and breathing kit. |
 | 1 | `suitrack_oxygen_pack_rack` | Suit / EVA rack | floor | 1800 x 1703 x 600 | 205 | 0 | 30,500 | Stores and dresses pressure suits and breathing kit. |
-| | **Line subtotal** | | | | **706** | **0** | **84,780** | |
+| | **Line subtotal** | | | | **709** | **0** | **85,400** | |
 
 #### AL-05 - Suit-up bench (1 item)
 
@@ -6813,7 +6813,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 3 persons |
 | Items placed / distinct models | 65 / 39 |
-| Installed mass / value | 61.37 t / 74.44 M cr |
+| Installed mass / value | 61.36 t / 74.46 M cr |
 | Electrical load idle / typical / peak | 1.23 MW / 3.43 MW / 7.34 MW |
 | Generation / storage | 17819 kW / 74 kWh |
 | Floor occupancy | 24 % (floor-standing footprints / floor area) |
@@ -6851,8 +6851,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `reactor_fusion_core_reactor` | Reactor / power core | floor | 2524 x 3043 x 2524 | 23841 | 130000 | 45,500,000 | Main and auxiliary power generation. |
-| | **Line subtotal** | | | | **23841** | **130000** | **45,500,000** | |
+| 1 | `reactor_fusion_core_reactor` | Reactor / power core | floor | 2524 x 3043 x 2524 | 23815 | 130000 | 45,500,000 | Main and auxiliary power generation. |
+| | **Line subtotal** | | | | **23815** | **130000** | **45,500,000** | |
 
 #### ME-03 - Reactor guard rail (7 items)
 
@@ -6901,9 +6901,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `capacitor_capacitor_bank_rack` | Energy storage | floor | 1100 x 1960 x 616 | 2186 | 54 | 2,100,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
+| 2 | `capacitor_capacitor_bank_rack` | Energy storage | floor | 1106 x 1960 x 619 | 2208 | 54 | 2,120,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
 | 1 | `capacitor_marx_bank` | Energy storage | floor | 900 x 1879 x 604 | 751 | 20 | 685,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
-| | **Line subtotal** | | | | **2937** | **74** | **2,785,000** | |
+| | **Line subtotal** | | | | **2959** | **74** | **2,805,000** | |
 
 #### ME-08 - Coolant and heat rejection (north-east facets) (4 items)
 
@@ -7063,7 +7063,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `barrel_gas_cylinder_rack` | Drum / cylinder store | floor | 910 x 1355 x 610 | 30.6 | 0 | 3,220 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
+| 1 | `barrel_gas_cylinder_rack` | Drum / cylinder store | floor | 910 x 1353 x 610 | 30.6 | 0 | 3,220 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
 | 1 | `cylinder_nitrogen_cylinder_trio` | Gas cylinder / dewar | floor | 1000 x 1953 x 700 | 589 | 0 | 266,000 | Stores compressed or liquefied gases (breathing oxygen, nitrogen) for life support and work. |
 | 1 | `engtool_oxy_torch_cart` | Engineering tool / equipment | floor | 902 x 1360 x 607 | 322 | 0 | 231,000 | Tools, carts and test gear for maintenance crews. |
 | 1 | `engtool_welding_rig` | Engineering tool / equipment | floor | 1316 x 1440 x 635 | 508 | 0 | 326,000 | Tools, carts and test gear for maintenance crews. |
@@ -7201,9 +7201,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `pallet_boxes_layered` | Pallet | floor | 1240 x 1106 x 1030 | 52.0 | 0 | 4,320 | Unit load for forklift handling. |
+| 1 | `pallet_boxes_layered` | Pallet | floor | 1240 x 1106 x 1030 | 51.9 | 0 | 4,310 | Unit load for forklift handling. |
 | 1 | `pallet_wrapped_stack` | Pallet | floor | 1240 x 1364 x 1052 | 64.9 | 0 | 7,360 | Unit load for forklift handling. |
-| | **Line subtotal** | | | | **117** | **0** | **11,680** | |
+| | **Line subtotal** | | | | **117** | **0** | **11,670** | |
 
 #### CB-05 - Forklift and pallet jack (south-east) (2 items)
 
@@ -7242,10 +7242,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 2 | `barrel_chemical_drum_hazard` | Drum / cylinder store | floor | 604 x 938 x 604 | 27.8 | 0 | 2,920 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
-| 2 | `safety_hazmat_cabinet` | Safety equipment | floor | 900 x 2000 x 575 | 192 | 0 | 40,800 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 2 | `safety_hazmat_cabinet` | Safety equipment | floor | 906 x 2003 x 578 | 195 | 0 | 41,400 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `safety_spill_kit_bin` | Safety equipment | floor | 640 x 1113 x 630 | 42.0 | 0 | 8,030 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_hazard_biohazard` | Sign | wall | 600 x 600 x 61 | 1.2 | 0 | 212 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **263** | **0** | **51,962** | |
+| | **Line subtotal** | | | | **266** | **0** | **52,562** | |
 
 #### CB-09 - Safety (3 items)
 
@@ -7291,7 +7291,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 2 persons |
 | Items placed / distinct models | 55 / 39 |
-| Installed mass / value | 39.94 t / 36.34 M cr |
+| Installed mass / value | 39.95 t / 36.34 M cr |
 | Electrical load idle / typical / peak | 207.7 kW / 573.7 kW / 1.21 MW |
 | Generation / storage | 5961 kW / 327 kWh |
 | Floor occupancy | 30 % (floor-standing footprints / floor area) |
@@ -7331,11 +7331,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `coil_discharge_coil_tower` | Power coil / conduit | floor | 1099 x 1940 x 1117 | 2355 | 370000 | 1,640,000 | Generates or channels plasma and field energy for propulsion. |
 | 1 | `generator_inverter_cabinet` | Power generator / transformer | floor | 820 x 1910 x 650 | 1371 | 2400 | 1,220,000 | Produces and conditions electrical power for the ship. |
-| 2 | `generator_pad_transformer` | Power generator / transformer | floor | 1690 x 1390 x 900 | 5550 | 10200 | 4,380,000 | Produces and conditions electrical power for the ship. |
+| 2 | `generator_pad_transformer` | Power generator / transformer | floor | 1690 x 1390 x 900 | 5538 | 10200 | 4,360,000 | Produces and conditions electrical power for the ship. |
 | 1 | `generator_power_distribution_cabinet` | Power generator / transformer | floor | 1120 x 2010 x 570 | 1615 | 3100 | 1,670,000 | Produces and conditions electrical power for the ship. |
 | 1 | `generator_rectifier_cabinet` | Power generator / transformer | floor | 920 x 2110 x 705 | 1749 | 3300 | 1,620,000 | Produces and conditions electrical power for the ship. |
 | 1 | `generator_regulator_tower` | Power generator / transformer | floor | 840 x 2520 x 840 | 2464 | 4300 | 2,490,000 | Produces and conditions electrical power for the ship. |
-| | **Line subtotal** | | | | **15104** | **393300** | **13,020,000** | |
+| | **Line subtotal** | | | | **15092** | **393300** | **13,000,000** | |
 
 #### PD-03 - Capacitor banks (middle row, north face) (6 items)
 
@@ -7343,10 +7343,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 3 | `capacitor_capacitor_bank_rack` | Energy storage | floor | 1100 x 1960 x 616 | 3279 | 81 | 3,150,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
+| 3 | `capacitor_capacitor_bank_rack` | Energy storage | floor | 1106 x 1960 x 619 | 3312 | 81 | 3,180,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
 | 2 | `capacitor_marx_bank` | Energy storage | floor | 900 x 1879 x 604 | 1501 | 40 | 1,370,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
 | 1 | `capacitor_power_cell_locker` | Energy storage | floor | 920 x 1910 x 555 | 684 | 280 | 733,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
-| | **Line subtotal** | | | | **5465** | **401** | **5,253,000** | |
+| | **Line subtotal** | | | | **5498** | **401** | **5,283,000** | |
 
 #### PD-04 - Switchgear (middle row, south face) (6 items)
 
@@ -7367,10 +7367,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `generator_diesel_genset` | Power generator / transformer | floor | 1950 x 1830 x 909 | 4205 | 4200 | 3,160,000 | Produces and conditions electrical power for the ship. |
-| 1 | `generator_gas_turbine_genset` | Power generator / transformer | floor | 2910 x 1700 x 924 | 5764 | 5700 | 6,090,000 | Produces and conditions electrical power for the ship. |
+| 1 | `generator_gas_turbine_genset` | Power generator / transformer | floor | 2910 x 1700 x 924 | 5760 | 5700 | 6,080,000 | Produces and conditions electrical power for the ship. |
 | 1 | `generator_micro_fusion_generator` | Power generator / transformer | floor | 1100 x 1360 x 1170 | 2309 | 36000 | 2,710,000 | Produces and conditions electrical power for the ship. |
 | 1 | `generator_motor_generator_set` | Power generator / transformer | floor | 2006 x 970 x 800 | 1999 | 2200 | 1,750,000 | Produces and conditions electrical power for the ship. |
-| | **Line subtotal** | | | | **14277** | **48100** | **13,710,000** | |
+| | **Line subtotal** | | | | **14273** | **48100** | **13,700,000** | |
 
 #### PD-06 - Monitoring console (east wall) (6 items)
 
@@ -7412,9 +7412,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `capacitor_battery_trolley` | Energy storage | floor | 1294 x 1075 x 700 | 712 | 290 | 709,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
+| 1 | `capacitor_battery_trolley` | Energy storage | floor | 1294 x 1075 x 700 | 711 | 290 | 708,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
 | 1 | `engtool_diagnostic_cart` | Engineering tool / equipment | floor | 700 x 1697 x 572 | 282 | 0 | 194,000 | Tools, carts and test gear for maintenance crews. |
-| | **Line subtotal** | | | | **993** | **290** | **903,000** | |
+| | **Line subtotal** | | | | **993** | **290** | **902,000** | |
 
 #### PD-10 - Overhead cable trays and pipes (7 items)
 
@@ -7462,7 +7462,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 2 persons |
 | Items placed / distinct models | 35 / 26 |
-| Installed mass / value | 9.03 t / 4.59 M cr |
+| Installed mass / value | 9.03 t / 4.58 M cr |
 | Electrical load idle / typical / peak | 262.3 kW / 746.5 kW / 1.62 MW |
 | Generation / storage | 0 kW / 274 kWh |
 | Floor occupancy | 26 % (floor-standing footprints / floor area) |
@@ -7546,9 +7546,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `coil_helical_plasma_coil` | Power coil / conduit | floor | 1100 x 2345 x 1094 | 2316 | 740000 | 1,450,000 | Generates or channels plasma and field energy for propulsion. |
-| 1 | `nozzle_ion_drive_engine` | Thruster / nozzle | floor | 1200 x 1642 x 1200 | 2100 | 5000 | 1,320,000 | Propulsion hardware (installed or held as spare). |
+| 1 | `nozzle_ion_drive_engine` | Thruster / nozzle | floor | 1200 x 1642 x 1200 | 2099 | 5000 | 1,310,000 | Propulsion hardware (installed or held as spare). |
 | 1 | `pallet_crates_banded` | Pallet | floor | 1250 x 1105 x 1050 | 50.9 | 0 | 5,730 | Unit load for forklift handling. |
-| | **Line subtotal** | | | | **4467** | **745000** | **2,775,730** | |
+| | **Line subtotal** | | | | **4466** | **745000** | **2,765,730** | |
 
 #### SD-07 - Tool and parts bins, pallet jack (south wall, west of the hangar door) (3 items)
 
@@ -7598,7 +7598,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 4 persons |
 | Items placed / distinct models | 45 / 22 |
-| Installed mass / value | 62.66 t / 114.09 M cr |
+| Installed mass / value | 62.59 t / 113.89 M cr |
 | Electrical load idle / typical / peak | 4.5 kW / 15.5 kW / 30.6 kW |
 | Floor occupancy | 25 % (floor-standing footprints / floor area) |
 | Lights | 8 real lights, 8 ceiling fixtures |
@@ -7635,9 +7635,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `craft_interceptor` | Small craft | floor | 4800 x 1716 x 5286 | 15818 | 4400 | 30,200,000 | Shuttles and pods for transport, rescue and repair outside the hull. |
 | 1 | `craft_repair_pod` | Small craft | floor | 2200 x 3110 x 3692 | 9167 | 3300 | 18,200,000 | Shuttles and pods for transport, rescue and repair outside the hull. |
-| 1 | `craft_shuttlecraft` | Small craft | floor | 4380 x 3529 x 5459 | 29919 | 6800 | 63,900,000 | Shuttles and pods for transport, rescue and repair outside the hull. |
+| 1 | `craft_shuttlecraft` | Small craft | floor | 4380 x 3529 x 5459 | 29855 | 6800 | 63,700,000 | Shuttles and pods for transport, rescue and repair outside the hull. |
 | 3 | `hangartool_landing_pad_square` | Flight-deck equipment | floor | 6000 x 125 x 6000 | 2782 | 0 | 561,000 | Servicing, fuelling, launch and safety gear for craft. |
-| | **Line subtotal** | | | | **57686** | **14500** | **112,861,000** | |
+| | **Line subtotal** | | | | **57622** | **14500** | **112,661,000** | |
 
 #### HB-03 - Ground power units (2 items)
 
@@ -7737,18 +7737,18 @@ The hold deck is the keel: antimatter containment as low and as far from the cre
 | Code | Room | Area | Height | Items | BOM lines | Floor occupancy | Mass | Typical load | Value cr |
 |---|---|---|---|---|---|---|---|---|---|
 | [CF4](#cf4---forward-spine-corridor) | Forward Spine Corridor | 60.0 m2 | 3.4 m | 25 | 6 | 0 % | 202 kg | 102 W | 18.4 k |
-| [CA4](#ca4---aft-spine-corridor) | Aft Spine Corridor | 79.2 m2 | 3.4 m | 30 | 7 | 0 % | 272 kg | 220 W | 26.9 k |
+| [CA4](#ca4---aft-spine-corridor) | Aft Spine Corridor | 79.2 m2 | 3.4 m | 30 | 7 | 0 % | 272 kg | 221 W | 27.0 k |
 | [LB4](#lb4---mid-ship-stair-lobby) | Mid-ship Stair Lobby | 46.1 m2 | 3.4 m | 15 | 7 | 0 % | 213 kg | 292 W | 79.9 k |
 | [SP4](#sp4---port-stair-tower) | Port Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 30 W | 2.7 k |
 | [SS4](#ss4---starboard-stair-tower) | Starboard Stair Tower | 23.8 m2 | 3.4 m | 6 | 3 | 0 % | 12 kg | 29 W | 2.8 k |
-| [AC](#ac---antimatter-containment) | Antimatter Containment | 82.8 m2 | 3.4 m | 52 | 13 | 30 % | 57.03 t | 2.27 MW | 77.64 M |
+| [AC](#ac---antimatter-containment) | Antimatter Containment | 82.8 m2 | 3.4 m | 52 | 13 | 30 % | 57.04 t | 2.27 MW | 77.65 M |
 | [PH](#ph---provisions-hold--cold-store) | Provisions Hold & Cold Store | 103.4 m2 | 3.4 m | 69 | 17 | 36 % | 12.96 t | 356.8 kW | 12.08 M |
-| [WP](#wp---water-reclamation-plant) | Water Reclamation Plant | 82.8 m2 | 3.4 m | 62 | 12 | 26 % | 10.81 t | 14.3 kW | 8.46 M |
-| [WW](#ww---waste--recycling-plant) | Waste & Recycling Plant | 103.4 m2 | 3.4 m | 53 | 12 | 27 % | 8.92 t | 8.7 kW | 3.51 M |
+| [WP](#wp---water-reclamation-plant) | Water Reclamation Plant | 82.8 m2 | 3.4 m | 61 | 12 | 26 % | 10.79 t | 14.3 kW | 8.45 M |
+| [WW](#ww---waste--recycling-plant) | Waste & Recycling Plant | 103.4 m2 | 3.4 m | 53 | 12 | 27 % | 8.93 t | 8.7 kW | 3.51 M |
 | [FH](#fh---fabrication-hall) | Fabrication Hall | 119.5 m2 | 3.4 m | 76 | 10 | 28 % | 12.43 t | 5.4 kW | 12.84 M |
-| [AX](#ax---auxiliary-control) | Auxiliary Control | 119.5 m2 | 3.4 m | 76 | 11 | 25 % | 9.58 t | 24.1 kW | 9.97 M |
+| [AX](#ax---auxiliary-control) | Auxiliary Control | 119.5 m2 | 3.4 m | 76 | 11 | 25 % | 9.60 t | 24.1 kW | 9.98 M |
 | [MC](#mc---main-cargo-hold) | Main Cargo Hold | 151.1 m2 | 3.4 m | 60 | 13 | 37 % | 7.91 t | 4.7 kW | 1.24 M |
-| [DP](#dp---drone--probe-bay) | Drone & Probe Bay | 151.1 m2 | 3.4 m | 49 | 11 | 41 % | 45.95 t | 409.6 kW | 75.98 M |
+| [DP](#dp---drone--probe-bay) | Drone & Probe Bay | 151.1 m2 | 3.4 m | 49 | 11 | 41 % | 45.96 t | 409.6 kW | 75.99 M |
 
 ### CF4 - Forward Spine Corridor
 
@@ -7867,8 +7867,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 4 (0 diagonal hull facets, 1 on the outer hull) |
 | Windows | none |
 | Items placed / distinct models | 30 / 14 |
-| Installed mass / value | 272 kg / 26.9 k cr |
-| Electrical load idle / typical / peak | 33 W / 220 W / 274 W |
+| Installed mass / value | 272 kg / 27.0 k cr |
+| Electrical load idle / typical / peak | 33 W / 221 W / 274 W |
 | Floor occupancy | 0 % (floor-standing footprints / floor area) |
 | Lights | 5 real lights, 5 ceiling fixtures |
 
@@ -7952,8 +7952,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | Drinking water for crew. |
-| | **Line subtotal** | | | | **10.1** | **87** | **3,510** | |
+| 1 | `fountain_drinking_fountain_wall_unit` | Drinking fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | Drinking water for crew. |
+| | **Line subtotal** | | | | **10.4** | **88** | **3,610** | |
 
 **Room totals by family**: cabletray x12, beacon x8, ceilinglight x5, safety x2, sign x2, fountain x1.
 
@@ -8206,9 +8206,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 2 persons |
 | Items placed / distinct models | 52 / 36 |
-| Installed mass / value | 57.03 t / 77.64 M cr |
+| Installed mass / value | 57.04 t / 77.65 M cr |
 | Electrical load idle / typical / peak | 750.3 kW / 2.27 MW / 4.48 MW |
-| Generation / storage | 19100 kW / 18 kWh |
+| Generation / storage | 19100 kW / 19 kWh |
 | Floor occupancy | 30 % (floor-standing footprints / floor area) |
 | Lights | 8 real lights, 6 ceiling fixtures |
 
@@ -8254,8 +8254,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `forcefield_emitter_pair` | Force-field barrier | floor | 2740 x 2200 x 340 | 451 | 160000 | 370,000 | Energy barrier that seals an opening while letting craft or people pass when lowered. |
-| 4 | `railing_guard_mesh` | Guard rail | floor | 2100 x 1065 x 160 | 189 | 0 | 4,760 | Stops falls near drops and hazards. |
-| | **Line subtotal** | | | | **640** | **160000** | **374,760** | |
+| 4 | `railing_guard_mesh` | Guard rail | floor | 2100 x 1068 x 160 | 190 | 0 | 4,800 | Stops falls near drops and hazards. |
+| | **Line subtotal** | | | | **641** | **160000** | **374,800** | |
 
 #### AC-04 - Magnetic bottle store (west hull facets) (2 items)
 
@@ -8293,9 +8293,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `capacitor_capacitor_bank_rack` | Energy storage | floor | 1100 x 1960 x 616 | 1093 | 27 | 1,050,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
+| 1 | `capacitor_capacitor_bank_rack` | Energy storage | floor | 1106 x 1960 x 619 | 1104 | 27 | 1,060,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
 | 1 | `capacitor_marx_bank` | Energy storage | floor | 900 x 1879 x 604 | 751 | 20 | 685,000 | Buffers electrical power so systems ride through peaks and brown-outs. |
-| | **Line subtotal** | | | | **1844** | **47** | **1,735,000** | |
+| | **Line subtotal** | | | | **1855** | **47** | **1,745,000** | |
 
 #### AC-08 - Emergency cooling (north-east corner) (1 item)
 
@@ -8326,10 +8326,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `safety_emergency_shower` | Safety equipment | floor | 934 x 2333 x 800 | 160 | 0 | 28,100 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `safety_eye_wash_station` | Safety equipment | wall | 700 x 700 x 480 | 22.5 | 0 | 4,500 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 1 | `safety_hazmat_cabinet` | Safety equipment | floor | 900 x 2000 x 575 | 96.1 | 0 | 20,400 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 1 | `safety_hazmat_cabinet` | Safety equipment | floor | 906 x 2003 x 578 | 97.4 | 0 | 20,700 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `safety_radiation_shelter_panel` | Safety equipment | wall | 1300 x 1000 x 98 | 11.6 | 0 | 1,840 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1100 x 1900 x 515 | 116 | 0 | 22,600 | Stores and dresses pressure suits and breathing kit. |
-| | **Line subtotal** | | | | **406** | **0** | **77,440** | |
+| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1106 x 1903 x 518 | 118 | 0 | 22,900 | Stores and dresses pressure suits and breathing kit. |
+| | **Line subtotal** | | | | **409** | **0** | **78,040** | |
 
 #### AC-11 - Overhead trays, pipes and ducts (8 items)
 
@@ -8348,8 +8348,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 3 | `camera_dome_ceiling` | Security sensor | ceiling | 318 x 150 x 318 | 6.6 | 30 | 4,560 | Surveillance and access control for the security department. |
-| 3 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.8 | 0 | 318 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **7.4** | **30** | **4,878** | |
+| 3 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.8 | 0 | 312 | Fire, first-aid, breach and emergency gear required by regulation. |
+| | **Line subtotal** | | | | **7.4** | **30** | **4,872** | |
 
 #### AC-13 - Hazard warnings, beacons and fire safety (7 items)
 
@@ -8447,7 +8447,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `forcefield_emitter_pair` | Force-field barrier | floor | 2740 x 2200 x 340 | 902 | 320000 | 740,000 | Energy barrier that seals an opening while letting craft or people pass when lowered. |
+| 2 | `forcefield_emitter_pair` | Force-field barrier | floor | 2740 x 2200 x 340 | 901 | 320000 | 740,000 | Energy barrier that seals an opening while letting craft or people pass when lowered. |
 | 1 | `sign_hazard_low_oxygen` | Sign | wall | 630 x 400 x 42 | 0.6 | 0 | 34 | Wayfinding and hazard marking. |
 | | **Line subtotal** | | | | **902** | **320000** | **740,034** | |
 
@@ -8477,10 +8477,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `pallet_boxes_layered` | Pallet | floor | 1240 x 1106 x 1030 | 52.0 | 0 | 4,320 | Unit load for forklift handling. |
+| 1 | `pallet_boxes_layered` | Pallet | floor | 1240 x 1106 x 1030 | 51.9 | 0 | 4,310 | Unit load for forklift handling. |
 | 1 | `pallet_mixed_goods` | Pallet | floor | 1200 x 879 x 1000 | 37.6 | 0 | 4,060 | Unit load for forklift handling. |
 | 1 | `pallet_sacks_stacked` | Pallet | floor | 1240 x 780 x 1080 | 41.1 | 0 | 3,970 | Unit load for forklift handling. |
-| | **Line subtotal** | | | | **131** | **0** | **12,350** | |
+| | **Line subtotal** | | | | **131** | **0** | **12,340** | |
 
 #### PH-08 - Oils, drinks and tinned stock (south pallet row) (3 items)
 
@@ -8499,10 +8499,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 2 | `safety_ration_locker` | Safety equipment | floor | 1000 x 1800 x 532 | 188 | 0 | 33,200 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 2 | `safety_ration_locker` | Safety equipment | floor | 1006 x 1803 x 535 | 190 | 0 | 33,600 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `shelving_parts_bins_rack` | Shelving | floor | 1640 x 2003 x 540 | 134 | 0 | 11,800 | Open storage for parts, stores and gear. |
 | 1 | `shelving_pigeonhole` | Shelving | floor | 1700 x 2015 x 500 | 132 | 0 | 14,400 | Open storage for parts, stores and gear. |
-| | **Line subtotal** | | | | **454** | **0** | **59,400** | |
+| | **Line subtotal** | | | | **456** | **0** | **59,800** | |
 
 #### PH-10 - Forklift and pallet jack (east wall, south of the door) (2 items)
 
@@ -8556,9 +8556,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `camera_dome_ceiling` | Security sensor | ceiling | 318 x 150 x 318 | 2.2 | 10 | 1,520 | Surveillance and access control for the security department. |
-| 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 212 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 208 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 3 | `sign_floor_marking` | Sign | floor | 1700 x 16 x 500 | 2.2 | 0 | 137 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **5.0** | **10** | **1,869** | |
+| | **Line subtotal** | | | | **5.0** | **10** | **1,865** | |
 
 #### PH-15 - Crates of fresh produce (4 items)
 
@@ -8590,8 +8590,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `ration_ration_boxes_stacked` | Space ration | table | 352 x 301 x 240 | 3.0 | 0 | 156 | Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food. |
-| | **Line subtotal** | | | | **3.0** | **0** | **156** | |
+| 1 | `ration_ration_boxes_stacked` | Space ration | table | 352 x 304 x 240 | 3.1 | 0 | 157 | Foil pouches, tubes, bars and trays: shelf-stable emergency and mission food. |
+| | **Line subtotal** | | | | **3.1** | **0** | **157** | |
 
 **Room totals by family**: safety x7, ceilinglight x6, cryo x6, pallet x6, sign x6, cabletray x4, galley x4, hanging x4, harvest x4, pipe x4, shelving x4, cylinder x2, forcefield x2, loader x2, terminal x2, camera x1, chair x1, desk x1, display x1, ration x1, watertank x1.
 
@@ -8616,8 +8616,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Walls | 13 (10 diagonal hull facets, 11 on the outer hull) |
 | Windows | none |
 | Design occupancy | 2 persons |
-| Items placed / distinct models | 62 / 49 |
-| Installed mass / value | 10.81 t / 8.46 M cr |
+| Items placed / distinct models | 61 / 48 |
+| Installed mass / value | 10.79 t / 8.45 M cr |
 | Electrical load idle / typical / peak | 5.5 kW / 14.3 kW / 23.8 kW |
 | Floor occupancy | 26 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -8634,7 +8634,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|
 | Sliding door to `corF4` | `door_maintenance_hatch` | 1 | Pressure-tight compartment door; slides open when someone approaches. |
 
-**Bill of materials - 12 lines, 62 items**
+**Bill of materials - 12 lines, 61 items**
 
 #### WP-01 - Ceiling lighting (6 items)
 
@@ -8706,11 +8706,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `analyzer_centrifuge` | Laboratory analyser | table | 516 x 428 x 536 | 42.5 | 140 | 118,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
 | 1 | `analyzer_gas_chromatograph` | Laboratory analyser | table | 620 x 745 x 523 | 93.0 | 180 | 285,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
-| 1 | `analyzer_mass_spectrometer` | Laboratory analyser | floor | 1675 x 1840 x 1003 | 1243 | 970 | 3,150,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
+| 1 | `analyzer_mass_spectrometer` | Laboratory analyser | floor | 1675 x 1840 x 1003 | 1242 | 970 | 3,150,000 | Measures and characterises samples (composition, structure, biology) for the science staff. |
 | 1 | `display_vitals_monitor` | Wall display | wall | 560 x 410 x 380 | 5.3 | 53 | 8,320 | Shows status, plans and sensor data to people in the room. |
 | 1 | `labbench_lab_stool` | Laboratory furniture | floor | 531 x 735 x 564 | 21.4 | 0 | 1,210 | Benches, hoods and stools for safe wet and dry lab work. |
 | 1 | `labbench_wet_bench_sink` | Laboratory furniture | floor | 2000 x 1707 x 790 | 248 | 0 | 11,400 | Benches, hoods and stools for safe wet and dry lab work. |
-| | **Line subtotal** | | | | **1653** | **1343** | **3,573,930** | |
+| | **Line subtotal** | | | | **1652** | **1343** | **3,573,930** | |
 
 #### WP-07 - Plant control console and seat (west wall, south of the door) (5 items)
 
@@ -8725,7 +8725,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `terminal_keyboard` | Terminal / datapad | table | 420 x 28 x 150 | 0.5 | 4 | 1,070 | Data entry and information access. |
 | | **Line subtotal** | | | | **467** | **454** | **571,618** | |
 
-#### WP-08 - Dosing chemicals and spill containment (north-east) (4 items)
+#### WP-08 - Dosing chemicals and spill containment (north-east) (3 items)
 
 *Why:* Chlorine-free polishing still needs anti-scalant and cleaning chemicals: two drums stand on a spill sump in the north corner, away from the lab and the door, with an eye wash and a spill kit so a leak is contained and treated at once.
 
@@ -8733,9 +8733,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `barrel_chemical_drum_hazard` | Drum / cylinder store | floor | 604 x 938 x 604 | 13.9 | 0 | 1,460 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
 | 1 | `barrel_plastic_drum_lidded` | Drum / cylinder store | floor | 675 x 980 x 640 | 16.9 | 0 | 2,060 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
-| 1 | `safety_eye_wash_station` | Safety equipment | wall | 700 x 700 x 480 | 22.5 | 0 | 4,500 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `safety_spill_kit_bin` | Safety equipment | floor | 640 x 1113 x 630 | 42.0 | 0 | 8,030 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **95.3** | **0** | **16,050** | |
+| | **Line subtotal** | | | | **72.8** | **0** | **11,550** | |
 
 #### WP-09 - Spare membranes and filter cartridges (1 item)
 
@@ -8773,15 +8772,15 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 2 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 8.5 | 0 | 1,738 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 212 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 2 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.5 | 0 | 208 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_engineering` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 158 | Wayfinding and hazard marking. |
 | 1 | `sign_emergency_exit` | Sign | wall | 560 x 240 x 84 | 0.6 | 0 | 44 | Wayfinding and hazard marking. |
 | 1 | `sign_hazard_biohazard` | Sign | wall | 600 x 600 x 61 | 1.2 | 0 | 212 | Wayfinding and hazard marking. |
 | 1 | `sign_wet_floor_stand` | Sign | floor | 360 x 645 x 422 | 5.5 | 0 | 134 | Wayfinding and hazard marking. |
 | 1 | `warnlight_red_alert_wall_unit` | Warning light | wall | 360 x 370 x 154 | 2.4 | 6 | 756 | Signals hazards and machine states. |
-| | **Line subtotal** | | | | **20.1** | **6** | **3,254** | |
+| | **Line subtotal** | | | | **20.1** | **6** | **3,250** | |
 
-**Room totals by family**: pipe x11, watertank x7, ceilinglight x6, safety x6, valve x6, sign x4, tank x4, analyzer x3, barrel x2, cabletray x2, display x2, labbench x2, cabinet x1, console x1, engtool x1, seat x1, storagebin x1, terminal x1, warnlight x1.
+**Room totals by family**: pipe x11, watertank x7, ceilinglight x6, valve x6, safety x5, sign x4, tank x4, analyzer x3, barrel x2, cabletray x2, display x2, labbench x2, cabinet x1, console x1, engtool x1, seat x1, storagebin x1, terminal x1, warnlight x1.
 
 <details><summary>Equipment families permitted in this room by the placement policy (54)</summary>
 
@@ -8805,7 +8804,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 2 persons |
 | Items placed / distinct models | 53 / 37 |
-| Installed mass / value | 8.92 t / 3.51 M cr |
+| Installed mass / value | 8.93 t / 3.51 M cr |
 | Electrical load idle / typical / peak | 2.9 kW / 8.7 kW / 15.7 kW |
 | Floor occupancy | 27 % (floor-standing footprints / floor area) |
 | Lights | 6 real lights, 6 ceiling fixtures |
@@ -8890,8 +8889,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `barrel_chemical_drum_hazard` | Drum / cylinder store | floor | 604 x 938 x 604 | 13.9 | 0 | 1,460 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
 | 2 | `bin_recycling_bin_triple` | Waste / recycling bin | floor | 1240 x 965 x 509 | 88.2 | 0 | 4,000 | Collects waste for the recycler; a clean ship stays habitable. |
 | 2 | `bin_trash_bin` | Waste / recycling bin | floor | 538 x 778 x 549 | 31.6 | 0 | 1,500 | Collects waste for the recycler; a clean ship stays habitable. |
-| 2 | `safety_hazmat_cabinet` | Safety equipment | floor | 900 x 2000 x 575 | 192 | 0 | 40,800 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **326** | **0** | **47,760** | |
+| 2 | `safety_hazmat_cabinet` | Safety equipment | floor | 906 x 2003 x 578 | 195 | 0 | 41,400 | Fire, first-aid, breach and emergency gear required by regulation. |
+| | **Line subtotal** | | | | **328** | **0** | **48,360** | |
 
 #### WW-07 - Baled output pallets (south wall, east) (2 items)
 
@@ -8920,8 +8919,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `safety_emergency_shower` | Safety equipment | floor | 934 x 2333 x 800 | 160 | 0 | 28,100 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1100 x 1900 x 515 | 116 | 0 | 22,600 | Stores and dresses pressure suits and breathing kit. |
-| | **Line subtotal** | | | | **276** | **0** | **50,700** | |
+| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1106 x 1903 x 518 | 118 | 0 | 22,900 | Stores and dresses pressure suits and breathing kit. |
+| | **Line subtotal** | | | | **278** | **0** | **51,000** | |
 
 #### WW-10 - Cleaning drone (1 item)
 
@@ -8951,11 +8950,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 1 | `camera_dome_ceiling` | Security sensor | ceiling | 318 x 150 x 318 | 2.2 | 10 | 1,520 | Surveillance and access control for the security department. |
 | 2 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 8.5 | 0 | 1,738 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 106 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 1 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.3 | 0 | 104 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_engineering` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 158 | Wayfinding and hazard marking. |
 | 1 | `sign_emergency_exit` | Sign | wall | 560 x 240 x 84 | 0.6 | 0 | 44 | Wayfinding and hazard marking. |
 | 1 | `sign_hazard_biohazard` | Sign | wall | 600 x 600 x 61 | 1.2 | 0 | 212 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **14.0** | **10** | **3,778** | |
+| | **Line subtotal** | | | | **14.0** | **10** | **3,776** | |
 
 **Room totals by family**: bin x7, ceilinglight x6, safety x6, cabletray x4, pipe x4, duct x3, loader x3, sign x3, pallet x2, storagebin x2, barrel x1, camera x1, cleaningbot x1, console x1, controlpanel x1, crate x1, display x1, scrubber x1, seat x1, suitrack x1, tank x1, terminal x1, valve x1.
 
@@ -9058,7 +9057,7 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `barrel_gas_cylinder_rack` | Drum / cylinder store | floor | 910 x 1355 x 610 | 30.6 | 0 | 3,220 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
+| 1 | `barrel_gas_cylinder_rack` | Drum / cylinder store | floor | 910 x 1353 x 610 | 30.6 | 0 | 3,220 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
 | 4 | `duct_rectangular_duct_run` | Ventilation duct / grille | wall | 2030 x 480 x 391 | 118 | 0 | 58,400 | Moves conditioned air to and from the room. |
 | 1 | `engtool_welding_rig` | Engineering tool / equipment | floor | 1316 x 1440 x 635 | 508 | 0 | 326,000 | Tools, carts and test gear for maintenance crews. |
 | 1 | `hangartool_paint_booth_screen` | Flight-deck equipment | floor | 2880 x 2550 x 500 | 758 | 0 | 153,000 | Servicing, fuelling, launch and safety gear for craft. |
@@ -9123,11 +9122,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `safety_eye_wash_station` | Safety equipment | wall | 700 x 700 x 480 | 22.5 | 0 | 4,500 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 2 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 8.5 | 0 | 1,738 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `safety_first_aid_cabinet` | Safety equipment | wall | 420 x 520 x 205 | 4.1 | 0 | 666 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 4 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 1.1 | 0 | 424 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 4 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 1.1 | 0 | 416 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_engineering` | Sign | wall | 1000 x 400 x 52 | 1.2 | 0 | 158 | Wayfinding and hazard marking. |
 | 1 | `sign_emergency_exit` | Sign | wall | 560 x 240 x 84 | 0.6 | 0 | 44 | Wayfinding and hazard marking. |
 | 2 | `sign_floor_marking` | Sign | floor | 1700 x 16 x 500 | 1.5 | 0 | 91 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **41.8** | **10** | **9,141** | |
+| | **Line subtotal** | | | | **41.8** | **10** | **9,133** | |
 
 **Room totals by family**: safety x9, pipe x8, analyzer x7, engtool x7, ceilinglight x6, cabletray x4, duct x4, seat x4, sign x4, hangartool x3, desk x2, pallet x2, shelving x2, terminal x2, toolbox x2, barrel x1, camera x1, chair x1, console x1, display x1, holo x1, labbench x1, loader x1, locker x1, storagebin x1.
 
@@ -9153,8 +9152,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 8 persons |
 | Items placed / distinct models | 76 / 53 |
-| Installed mass / value | 9.58 t / 9.97 M cr |
-| Electrical load idle / typical / peak | 6.7 kW / 24.1 kW / 37.1 kW |
+| Installed mass / value | 9.60 t / 9.98 M cr |
+| Electrical load idle / typical / peak | 6.8 kW / 24.1 kW / 37.2 kW |
 | Generation / storage | 0 kW / 478 kWh |
 | Floor occupancy | 25 % (floor-standing footprints / floor area) |
 | Lights | 7 real lights, 6 ceiling fixtures |
@@ -9191,10 +9190,10 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `display_main_viewscreen` | Wall display | wall | 5600 x 3240 x 340 | 409 | 2300 | 771,000 | Shows status, plans and sensor data to people in the room. |
+| 1 | `display_main_viewscreen` | Wall display | wall | 5600 x 3240 x 343 | 413 | 2300 | 778,000 | Shows status, plans and sensor data to people in the room. |
 | 1 | `display_status_board` | Wall display | wall | 1500 x 1055 x 95 | 10.1 | 83 | 18,000 | Shows status, plans and sensor data to people in the room. |
 | 1 | `display_tall_readout` | Wall display | wall | 500 x 1860 x 105 | 6.0 | 64 | 9,010 | Shows status, plans and sensor data to people in the room. |
-| | **Line subtotal** | | | | **425** | **2447** | **798,010** | |
+| | **Line subtotal** | | | | **429** | **2447** | **805,010** | |
 
 #### AX-03 - Front row stations: helm, operations, tactical, damage control (12 items)
 
@@ -9261,11 +9260,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `locker_gear_locker_keypad` | Personal / equipment locker | floor | 940 x 1610 x 665 | 90.1 | 0 | 3,860 | Secure storage for personal gear and issue equipment. |
 | 1 | `safety_breach_repair_kit` | Safety equipment | wall | 600 x 395 x 220 | 4.8 | 0 | 997 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 2 | `safety_damage_control_locker` | Safety equipment | floor | 1000 x 2000 x 625 | 221 | 0 | 47,400 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 1 | `safety_defibrillator_station` | Safety equipment | wall | 406 x 463 x 224 | 4.1 | 0 | 910 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 1 | `safety_defibrillator_station` | Safety equipment | wall | 406 x 463 x 225 | 4.1 | 0 | 914 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `suitrack_eva_helmet_rack` | Suit / EVA rack | wall | 1506 x 915 x 360 | 53.5 | 0 | 9,130 | Stores and dresses pressure suits and breathing kit. |
-| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1100 x 1900 x 515 | 116 | 0 | 22,600 | Stores and dresses pressure suits and breathing kit. |
+| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1106 x 1903 x 518 | 118 | 0 | 22,900 | Stores and dresses pressure suits and breathing kit. |
 | 1 | `suitrack_oxygen_pack_rack` | Suit / EVA rack | floor | 1800 x 1703 x 600 | 205 | 0 | 30,500 | Stores and dresses pressure suits and breathing kit. |
-| | **Line subtotal** | | | | **707** | **83** | **138,897** | |
+| | **Line subtotal** | | | | **709** | **83** | **139,201** | |
 
 #### AX-08 - Communications and data cabinets (west wall, south of the door) (5 items)
 
@@ -9274,11 +9273,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `commsunit_intercom_panel` | Communications unit | wall | 220 x 340 x 60 | 1.3 | 16 | 1,470 | Radio and intercom equipment for ship and external communications. |
-| 1 | `commsunit_radio_rack` | Communications unit | floor | 606 x 2103 x 512 | 197 | 260 | 229,000 | Radio and intercom equipment for ship and external communications. |
+| 1 | `commsunit_radio_rack` | Communications unit | floor | 603 x 2103 x 512 | 196 | 260 | 228,000 | Radio and intercom equipment for ship and external communications. |
 | 1 | `rack_armored_data_rack` | Equipment rack | floor | 710 x 2045 x 1160 | 289 | 4100 | 346,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_network_switch_rack` | Equipment rack | floor | 685 x 2000 x 1015 | 289 | 3200 | 259,000 | Houses servers, storage and network gear with cooling. |
-| 1 | `rack_ups_battery_rack` | Equipment rack | floor | 600 x 2000 x 1000 | 241 | 2600 | 231,000 | Houses servers, storage and network gear with cooling. |
-| | **Line subtotal** | | | | **1019** | **10176** | **1,066,470** | |
+| 1 | `rack_network_switch_rack` | Equipment rack | floor | 688 x 2006 x 1018 | 292 | 3200 | 261,000 | Houses servers, storage and network gear with cooling. |
+| 1 | `rack_ups_battery_rack` | Equipment rack | floor | 606 x 2006 x 1006 | 246 | 2600 | 236,000 | Houses servers, storage and network gear with cooling. |
+| | **Line subtotal** | | | | **1025** | **10176** | **1,072,470** | |
 
 #### AX-09 - Backup power and command safe (south wall) (4 items)
 
@@ -9313,11 +9312,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `camera_dome_ceiling` | Security sensor | ceiling | 318 x 150 x 318 | 2.2 | 10 | 1,520 | Surveillance and access control for the security department. |
 | 2 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 8.5 | 0 | 1,738 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `safety_first_aid_cabinet` | Safety equipment | wall | 420 x 520 x 205 | 4.1 | 0 | 666 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 3 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.8 | 0 | 318 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 3 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 0.8 | 0 | 312 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_bridge` | Sign | wall | 1000 x 400 x 62 | 1.4 | 0 | 179 | Wayfinding and hazard marking. |
 | 1 | `sign_emergency_exit` | Sign | wall | 560 x 240 x 84 | 0.6 | 0 | 44 | Wayfinding and hazard marking. |
 | 1 | `warnlight_red_alert_wall_unit` | Warning light | wall | 360 x 370 x 154 | 2.4 | 6 | 756 | Signals hazards and machine states. |
-| | **Line subtotal** | | | | **146** | **22** | **9,254** | |
+| | **Line subtotal** | | | | **146** | **22** | **9,248** | |
 
 **Room totals by family**: safety x10, console x9, seat x9, cabletray x8, terminal x8, ceilinglight x6, display x4, galley x3, rack x3, suitrack x3, capacitor x2, commsunit x2, sign x2, beacon x1, cabinet x1, camera x1, holo x1, locker x1, storage x1, warnlight x1.
 
@@ -9383,12 +9382,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `pallet_boxes_layered` | Pallet | floor | 1240 x 1106 x 1030 | 52.0 | 0 | 4,320 | Unit load for forklift handling. |
+| 1 | `pallet_boxes_layered` | Pallet | floor | 1240 x 1106 x 1030 | 51.9 | 0 | 4,310 | Unit load for forklift handling. |
 | 1 | `pallet_crates_banded` | Pallet | floor | 1250 x 1105 x 1050 | 50.9 | 0 | 5,730 | Unit load for forklift handling. |
 | 1 | `pallet_drums_banded` | Pallet | floor | 1250 x 1029 x 1090 | 49.7 | 0 | 4,700 | Unit load for forklift handling. |
 | 1 | `pallet_mixed_goods` | Pallet | floor | 1200 x 879 x 1000 | 37.6 | 0 | 4,060 | Unit load for forklift handling. |
 | 1 | `pallet_sacks_stacked` | Pallet | floor | 1240 x 780 x 1080 | 41.1 | 0 | 3,970 | Unit load for forklift handling. |
-| | **Line subtotal** | | | | **231** | **0** | **22,780** | |
+| | **Line subtotal** | | | | **231** | **0** | **22,770** | |
 
 #### MC-04 - Pallet bays: row B (north zone, lane side) (5 items)
 
@@ -9396,12 +9395,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `crate_cage_large` | Cargo crate / container | floor | 1614 x 1432 x 1062 | 147 | 0 | 14,900 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
+| 1 | `crate_cage_large` | Cargo crate / container | floor | 1614 x 1432 x 1065 | 147 | 0 | 14,900 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
 | 1 | `crate_wood_slat_12` | Cargo crate / container | floor | 1240 x 1150 x 1312 | 104 | 0 | 8,860 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
 | 1 | `pallet_roll_cage_loaded` | Pallet | floor | 806 x 1845 x 703 | 36.0 | 0 | 3,160 | Unit load for forklift handling. |
 | 1 | `pallet_wrapped_stack` | Pallet | floor | 1240 x 1364 x 1052 | 64.9 | 0 | 7,360 | Unit load for forklift handling. |
-| 1 | `pallet_wrapped_tall_mixed` | Pallet | floor | 1260 x 2115 x 1055 | 99.1 | 0 | 8,960 | Unit load for forklift handling. |
-| | **Line subtotal** | | | | **451** | **0** | **43,240** | |
+| 1 | `pallet_wrapped_tall_mixed` | Pallet | floor | 1260 x 2115 x 1055 | 99.0 | 0 | 8,950 | Unit load for forklift handling. |
+| | **Line subtotal** | | | | **451** | **0** | **43,230** | |
 
 #### MC-05 - Hazardous goods bay (south zone, hull side) (9 items)
 
@@ -9413,12 +9412,12 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 1 | `barrel_toxic_drums_sump` | Drum / cylinder store | floor | 1024 x 1005 x 900 | 35.4 | 0 | 3,580 | Bulk storage of fluids, chemicals and gases, secured upright so leaks stay contained. |
 | 1 | `crate_biohazard` | Cargo crate / container | floor | 812 x 826 x 738 | 29.2 | 0 | 2,900 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
 | 1 | `crate_flammable_red` | Cargo crate / container | floor | 812 x 912 x 741 | 30.0 | 0 | 3,270 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
-| 1 | `crate_hazard_yellow` | Cargo crate / container | floor | 984 x 812 x 968 | 47.7 | 0 | 4,790 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
+| 1 | `crate_hazard_yellow` | Cargo crate / container | floor | 986 x 812 x 968 | 47.8 | 0 | 4,800 | Palletised or boxed cargo and supplies, stacked to fit the deck loading. |
 | 1 | `hangartool_safety_barrier` | Flight-deck equipment | floor | 3000 x 1145 x 600 | 410 | 0 | 81,600 | Servicing, fuelling, launch and safety gear for craft. |
 | 1 | `safety_spill_kit_bin` | Safety equipment | floor | 640 x 1113 x 630 | 42.0 | 0 | 8,030 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_hazard_biohazard` | Sign | wall | 600 x 600 x 61 | 1.2 | 0 | 212 | Wayfinding and hazard marking. |
 | 1 | `sign_no_entry` | Sign | wall | 480 x 480 x 61 | 0.8 | 0 | 194 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **610** | **0** | **106,036** | |
+| | **Line subtotal** | | | | **610** | **0** | **106,046** | |
 
 #### MC-06 - 20 ft container (stern wall) (1 item)
 
@@ -9486,8 +9485,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 |---|---|---|---|---|---|---|---|---|
 | 3 | `cabletray_ladder_tray` | Cable tray | ceiling | 2000 x 173 x 460 | 47.1 | 0 | 1,416 | Carries power and data cables overhead or along walls, protected and accessible. |
 | 3 | `pipe_ceiling_hanger_run` | Pipe run | ceiling | 2000 x 317 x 222 | 66.6 | 0 | 2,307 | Carries water, coolant or gas. |
-| 5 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 1.4 | 0 | 530 | Fire, first-aid, breach and emergency gear required by regulation. |
-| | **Line subtotal** | | | | **115** | **0** | **4,253** | |
+| 5 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 1.4 | 0 | 520 | Fire, first-aid, breach and emergency gear required by regulation. |
+| | **Line subtotal** | | | | **115** | **0** | **4,243** | |
 
 #### MC-13 - Safety and signs (5 items)
 
@@ -9525,8 +9524,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Windows | none |
 | Design occupancy | 3 persons |
 | Items placed / distinct models | 49 / 32 |
-| Installed mass / value | 45.95 t / 75.98 M cr |
-| Electrical load idle / typical / peak | 126.0 kW / 409.6 kW / 656.9 kW |
+| Installed mass / value | 45.96 t / 75.99 M cr |
+| Electrical load idle / typical / peak | 126.1 kW / 409.6 kW / 657.0 kW |
 | Generation / storage | 0 kW / 615 kWh |
 | Floor occupancy | 41 % (floor-standing footprints / floor area) |
 | Lights | 10 real lights, 10 ceiling fixtures |
@@ -9599,9 +9598,9 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `commsunit_radio_rack` | Communications unit | floor | 606 x 2103 x 512 | 197 | 260 | 229,000 | Radio and intercom equipment for ship and external communications. |
-| 1 | `rack_open_frame_rack` | Equipment rack | floor | 570 x 2000 x 1000 | 233 | 2700 | 280,000 | Houses servers, storage and network gear with cooling. |
-| | **Line subtotal** | | | | **430** | **2960** | **509,000** | |
+| 1 | `commsunit_radio_rack` | Communications unit | floor | 603 x 2103 x 512 | 196 | 260 | 228,000 | Radio and intercom equipment for ship and external communications. |
+| 1 | `rack_open_frame_rack` | Equipment rack | floor | 573 x 2006 x 1006 | 236 | 2700 | 284,000 | Houses servers, storage and network gear with cooling. |
+| | **Line subtotal** | | | | **432** | **2960** | **512,000** | |
 
 #### DP-07 - Charging racks for probes and drones (west wall, south of the opening) (5 items)
 
@@ -9641,8 +9640,8 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | Qty | Model | Family | Mount | Size mm (W x H x D) | Mass kg | Typ. W | Price cr | Function of the family |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `nozzle_quad_rcs_block` | Thruster / nozzle | floor | 1170 x 1070 x 1180 | 1299 | 3300 | 731,000 | Propulsion hardware (installed or held as spare). |
-| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1100 x 1900 x 515 | 116 | 0 | 22,600 | Stores and dresses pressure suits and breathing kit. |
-| | **Line subtotal** | | | | **1415** | **3300** | **753,600** | |
+| 1 | `suitrack_glove_boot_locker` | Suit / EVA rack | floor | 1106 x 1903 x 518 | 118 | 0 | 22,900 | Stores and dresses pressure suits and breathing kit. |
+| | **Line subtotal** | | | | **1416** | **3300** | **753,900** | |
 
 #### DP-11 - Overhead services and signs (17 items)
 
@@ -9653,11 +9652,11 @@ Anything else (for example reactors, cargo crates or beds, unless listed above) 
 | 4 | `cabletray_ladder_tray` | Cable tray | ceiling | 2000 x 173 x 460 | 62.8 | 0 | 1,888 | Carries power and data cables overhead or along walls, protected and accessible. |
 | 3 | `pipe_ceiling_insulated_pair` | Pipe run | ceiling | 2015 x 250 x 400 | 84.0 | 0 | 2,163 | Carries water, coolant or gas. |
 | 1 | `safety_fire_extinguisher` | Safety equipment | wall | 300 x 735 x 199 | 4.3 | 0 | 869 | Fire, first-aid, breach and emergency gear required by regulation. |
-| 4 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 1.1 | 0 | 424 | Fire, first-aid, breach and emergency gear required by regulation. |
+| 4 | `safety_sprinkler_head` | Safety equipment | ceiling | 140 x 148 x 140 | 1.1 | 0 | 416 | Fire, first-aid, breach and emergency gear required by regulation. |
 | 1 | `sign_dept_hangar` | Sign | wall | 1000 x 400 x 48 | 1.1 | 0 | 96 | Wayfinding and hazard marking. |
 | 1 | `sign_emergency_exit` | Sign | wall | 560 x 240 x 84 | 0.6 | 0 | 44 | Wayfinding and hazard marking. |
 | 3 | `sign_floor_marking` | Sign | floor | 1700 x 16 x 500 | 2.2 | 0 | 137 | Wayfinding and hazard marking. |
-| | **Line subtotal** | | | | **156** | **0** | **5,622** | |
+| | **Line subtotal** | | | | **156** | **0** | **5,614** | |
 
 **Room totals by family**: ceilinglight x10, sign x6, hangartool x5, safety x5, cabletray x4, capacitor x4, pipe x3, craft x2, commsunit x1, console x1, display x1, forcefield x1, generator x1, nozzle x1, rack x1, seat x1, suitrack x1, terminal x1.
 
@@ -9679,7 +9678,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `analyzer_centrifuge` | analyzer | table | 516 x 428 x 536 | 42.5 | 140 | 118,000 | 3 | FH, SL, WP |
 | `analyzer_co2_incubator` | analyzer | floor | 830 x 1920 x 836 | 508 | 500 | 1,500,000 | 1 | SL |
 | `analyzer_gas_chromatograph` | analyzer | table | 620 x 745 x 523 | 93.0 | 180 | 285,000 | 1 | WP |
-| `analyzer_mass_spectrometer` | analyzer | floor | 1675 x 1840 x 1003 | 1243 | 970 | 3,150,000 | 3 | OB, SL, WP |
+| `analyzer_mass_spectrometer` | analyzer | floor | 1675 x 1840 x 1003 | 1242 | 970 | 3,150,000 | 3 | OB, SL, WP |
 | `analyzer_materials_tester` | analyzer | floor | 1048 x 2150 x 721 | 570 | 560 | 1,250,000 | 1 | FH |
 | `analyzer_spectrometer` | analyzer | table | 1015 x 470 x 357 | 60.3 | 180 | 186,000 | 3 | AM x2, FH |
 | `analyzer_thermal_cycler` | analyzer | table | 320 x 250 x 413 | 12.5 | 120 | 26,300 | 1 | SL |
@@ -9693,7 +9692,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `bakery_pretzel_salted` | bakery | table | 176 x 34 x 176 | 0.1 | 0 | 1,030 | 1 | RG |
 | `bakery_waffle_berries` | bakery | table | 280 x 51 x 280 | 0.5 | 0 | 638 | 1 | MH |
 | `barrel_chemical_drum_hazard` | barrel | floor | 604 x 938 x 604 | 13.9 | 0 | 1,460 | 5 | CB x2, MC, WP, WW |
-| `barrel_gas_cylinder_rack` | barrel | floor | 910 x 1355 x 610 | 30.6 | 0 | 3,220 | 2 | FH, WS |
+| `barrel_gas_cylinder_rack` | barrel | floor | 910 x 1353 x 610 | 30.6 | 0 | 3,220 | 2 | FH, WS |
 | `barrel_plastic_drum_lidded` | barrel | floor | 675 x 980 x 640 | 16.9 | 0 | 2,060 | 3 | HY x2, WP |
 | `barrel_toxic_drums_sump` | barrel | floor | 1024 x 1005 x 900 | 35.4 | 0 | 3,580 | 1 | MC |
 | `beacon_airlock_status_light` | beacon | wall | 160 x 555 x 76 | 0.8 | 6 | 221 | 1 | AL |
@@ -9714,11 +9713,11 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `bottle_beer_lager_green` | bottle | table | 66 x 230 x 66 | 0.5 | 0 | 287 | 3 | OL, RG, WR |
 | `bottle_gin_blue_flask` | bottle | table | 82 x 285 x 82 | 0.9 | 0 | 305 | 2 | WR x2 |
 | `bottle_water_bottle_500ml` | bottle | table | 70 x 211 x 70 | 0.5 | 0 | 490 | 8 | CR x4, MH x4 |
-| `bottle_whisky_decanter_square` | bottle | table | 94 x 230 x 100 | 1.0 | 0 | 124 | 1 | OL |
-| `bottle_wine_red_bordeaux` | bottle | table | 76 x 325 x 76 | 0.9 | 0 | 382 | 1 | OL |
-| `bottle_wine_white_hock` | bottle | table | 72 x 338 x 72 | 0.8 | 0 | 378 | 1 | WR |
+| `bottle_whisky_decanter_square` | bottle | table | 94 x 230 x 103 | 1.0 | 0 | 125 | 1 | OL |
+| `bottle_wine_red_bordeaux` | bottle | table | 82 x 325 x 82 | 1.1 | 0 | 384 | 1 | OL |
+| `bottle_wine_white_hock` | bottle | table | 78 x 338 x 78 | 1.0 | 0 | 380 | 1 | WR |
 | `buffet_bakery_display_stand` | buffet | floor | 940 x 1480 x 540 | 101 | 0 | 3,560 | 2 | MH, WR |
-| `buffet_dessert_display_case` | buffet | floor | 1200 x 1113 x 600 | 108 | 0 | 3,120 | 1 | WR |
+| `buffet_dessert_display_case` | buffet | floor | 1200 x 1112 x 600 | 108 | 0 | 3,110 | 1 | WR |
 | `cabinet_janitor_closet` | cabinet | floor | 850 x 1958 x 675 | 153 | 0 | 5,250 | 2 | HY, SL |
 | `cabinet_utility_cabinet` | cabinet | floor | 960 x 1833 x 580 | 134 | 0 | 4,940 | 5 | AX, CO, CR, PD, WP |
 | `cabinet_wall_storage_lockers` | cabinet | wall | 1200 x 800 x 400 | 54.4 | 0 | 2,250 | 1 | BT |
@@ -9738,8 +9737,8 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `can_lime_fizz` | can | table | 66 x 123 x 66 | 0.1 | 0 | 327 | 3 | MH x2, RG |
 | `can_orange_soda` | can | table | 70 x 116 x 70 | 0.1 | 0 | 328 | 2 | MH x2 |
 | `capacitor_battery_rack` | capacitor | floor | 1250 x 1985 x 627 | 1196 | 480 | 1,150,000 | 7 | AX x2, CO x3, DP x2 |
-| `capacitor_battery_trolley` | capacitor | floor | 1294 x 1075 x 700 | 712 | 290 | 709,000 | 1 | PD |
-| `capacitor_capacitor_bank_rack` | capacitor | floor | 1100 x 1960 x 616 | 1093 | 27 | 1,050,000 | 6 | AC, ME x2, PD x3 |
+| `capacitor_battery_trolley` | capacitor | floor | 1294 x 1075 x 700 | 711 | 290 | 708,000 | 1 | PD |
+| `capacitor_capacitor_bank_rack` | capacitor | floor | 1106 x 1960 x 619 | 1104 | 27 | 1,060,000 | 6 | AC, ME x2, PD x3 |
 | `capacitor_cell_charging_dock` | capacitor | wall | 1000 x 700 x 240 | 127 | 570 | 121,000 | 1 | DP |
 | `capacitor_marx_bank` | capacitor | floor | 900 x 1879 x 604 | 751 | 20 | 685,000 | 4 | AC, ME, PD x2 |
 | `capacitor_power_cell_locker` | capacitor | floor | 920 x 1910 x 555 | 684 | 280 | 733,000 | 4 | DP, PD, SD x2 |
@@ -9768,12 +9767,12 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `chair_swivel_office_chair` | chair | floor | 623 x 1125 x 625 | 8.5 | 0 | 459 | 42 | AM x2, AR, BG, BT x6, CQ, CR x12, CW, FH, LI, MB, OA x3, OB, PH, RR, SD, SL, SO x6, WS |
 | `cleaningbot_floor_scrubber_disc` | cleaningbot | floor | 720 x 375 x 720 | 47.8 | 230 | 43,000 | 1 | WW |
 | `clock_analogue_chronometer` | clock | wall | 480 x 480 x 100 | 2.4 | 2 | 3,410 | 3 | AM, MH, WR |
-| `clock_digital_clock` | clock | wall | 500 x 200 x 76 | 0.7 | 2 | 983 | 4 | CQ, CR, MB, OA |
+| `clock_digital_clock` | clock | wall | 500 x 200 x 76 | 0.7 | 2 | 982 | 4 | CQ, CR, MB, OA |
 | `clock_dual_time_ship_clock` | clock | wall | 900 x 420 x 98 | 3.4 | 2 | 3,610 | 5 | BR, MH, OB, RG, SC |
 | `cocktail_beer_mug_foam` | cocktail | table | 140 x 143 x 94 | 0.2 | 0 | 385 | 2 | OL, WR |
 | `cocktail_champagne_flute` | cocktail | table | 66 x 200 x 66 | 0.1 | 0 | 326 | 2 | CQ, OL |
 | `cocktail_martini_olive` | cocktail | table | 98 x 179 x 98 | 0.2 | 0 | 244 | 3 | OL, WR x2 |
-| `cocktail_mojito_mint_highball` | cocktail | table | 78 x 215 x 76 | 0.2 | 0 | 427 | 1 | OL |
+| `cocktail_mojito_mint_highball` | cocktail | table | 76 x 215 x 76 | 0.1 | 0 | 427 | 1 | OL |
 | `cocktail_whisky_rocks_tumbler` | cocktail | table | 76 x 85 x 76 | 0.1 | 0 | 175 | 3 | CQ, WR x2 |
 | `cocktail_wine_glass_red` | cocktail | table | 84 x 195 x 84 | 0.2 | 0 | 308 | 3 | CQ, OL, WR |
 | `coil_discharge_coil_tower` | coil | floor | 1099 x 1940 x 1117 | 2355 | 370000 | 1,640,000 | 2 | AC, PD |
@@ -9786,7 +9785,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `commsunit_comms_console` | commsunit | floor | 1660 x 1379 x 660 | 432 | 640 | 392,000 | 1 | CC |
 | `commsunit_handset_cradle` | commsunit | table | 245 x 182 x 303 | 3.7 | 19 | 3,640 | 1 | CC |
 | `commsunit_intercom_panel` | commsunit | wall | 220 x 340 x 60 | 1.3 | 16 | 1,470 | 1 | AX |
-| `commsunit_radio_rack` | commsunit | floor | 606 x 2103 x 512 | 197 | 260 | 229,000 | 4 | AM, AX, CC, DP |
+| `commsunit_radio_rack` | commsunit | floor | 603 x 2103 x 512 | 196 | 260 | 228,000 | 4 | AM, AX, CC, DP |
 | `commsunit_speaker_grille` | commsunit | wall | 600 x 300 x 105 | 5.5 | 22 | 5,510 | 3 | BT x2, CR |
 | `console_captain_podium` | console | floor | 600 x 1178 x 550 | 50.5 | 210 | 87,500 | 4 | AX, BR, BT, SC |
 | `console_communications` | console | floor | 1485 x 1371 x 804 | 212 | 370 | 422,000 | 5 | AX, BR, CC x2, SC |
@@ -9812,7 +9811,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `controlpanel_valve_control` | controlpanel | wall | 400 x 400 x 110 | 7.6 | 50 | 7,770 | 1 | AC |
 | `couch_bar_stool` | couch | floor | 478 x 960 x 478 | 6.5 | 0 | 474 | 13 | BT x6, OL x3, WR x4 |
 | `couch_chaise` | couch | floor | 865 x 1030 x 1775 | 43.7 | 0 | 1,500 | 2 | OB x2 |
-| `couch_lounge_armchair` | couch | floor | 1020 x 1272 x 1020 | 39.1 | 0 | 1,540 | 9 | LI, OA, OB x2, RG x2, RR, WR x2 |
+| `couch_lounge_armchair` | couch | floor | 1020 x 1271 x 1020 | 39.1 | 0 | 1,540 | 9 | LI, OA, OB x2, RG x2, RR, WR x2 |
 | `couch_observation_sofa` | couch | floor | 3161 x 1000 x 1271 | 120 | 0 | 5,190 | 2 | OL x2 |
 | `couch_ottoman` | couch | floor | 800 x 435 x 790 | 8.1 | 0 | 574 | 1 | FS |
 | `couch_three_seater_sofa` | couch | floor | 2300 x 980 x 970 | 67.6 | 0 | 2,840 | 5 | CQ, OA, RG, RR, WR |
@@ -9820,11 +9819,11 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `craft_interceptor` | craft | floor | 4800 x 1716 x 5286 | 15818 | 4400 | 30,200,000 | 1 | HB |
 | `craft_repair_pod` | craft | floor | 2200 x 3110 x 3692 | 9167 | 3300 | 18,200,000 | 2 | DP, HB |
 | `craft_scout` | craft | floor | 5540 x 2080 x 6386 | 24881 | 5100 | 50,100,000 | 1 | DP |
-| `craft_shuttlecraft` | craft | floor | 4380 x 3529 x 5459 | 29919 | 6800 | 63,900,000 | 1 | HB |
+| `craft_shuttlecraft` | craft | floor | 4380 x 3529 x 5459 | 29855 | 6800 | 63,700,000 | 1 | HB |
 | `crate_biohazard` | crate | floor | 812 x 826 x 738 | 29.2 | 0 | 2,900 | 2 | MC, WW |
-| `crate_cage_large` | crate | floor | 1614 x 1432 x 1062 | 147 | 0 | 14,900 | 1 | MC |
+| `crate_cage_large` | crate | floor | 1614 x 1432 x 1065 | 147 | 0 | 14,900 | 1 | MC |
 | `crate_flammable_red` | crate | floor | 812 x 912 x 741 | 30.0 | 0 | 3,270 | 1 | MC |
-| `crate_hazard_yellow` | crate | floor | 984 x 812 x 968 | 47.7 | 0 | 4,790 | 1 | MC |
+| `crate_hazard_yellow` | crate | floor | 986 x 812 x 968 | 47.8 | 0 | 4,800 | 1 | MC |
 | `crate_iso_container_blue` | crate | floor | 2468 x 2625 x 6105 | 2165 | 0 | 168,000 | 1 | MC |
 | `crate_wood_slat_12` | crate | floor | 1240 x 1150 x 1312 | 104 | 0 | 8,860 | 1 | MC |
 | `cryo_cryo_control_pillar` | cryo | floor | 1071 x 2020 x 700 | 461 | 3100 | 791,000 | 1 | PH |
@@ -9847,7 +9846,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `desk_secretary_desk` | desk | floor | 1060 x 1390 x 522 | 20.3 | 0 | 915 | 1 | LI |
 | `desk_workstation` | desk | floor | 1607 x 1222 x 750 | 41.0 | 0 | 1,560 | 6 | AM x2, PH, SD, SL, WS |
 | `desk_writing_desk` | desk | floor | 1200 x 953 x 600 | 19.5 | 0 | 797 | 7 | CW, OA x3, OB x3 |
-| `dessert_cheesecake_slice` | dessert | table | 200 x 80 x 200 | 1.6 | 0 | 368 | 1 | OL |
+| `dessert_cheesecake_slice` | dessert | table | 200 x 80 x 200 | 1.6 | 0 | 363 | 1 | OL |
 | `dessert_macarons_plate` | dessert | table | 200 x 23 x 200 | 0.5 | 0 | 882 | 1 | RG |
 | `dessert_tiramisu_cup` | dessert | table | 102 x 106 x 80 | 0.4 | 0 | 245 | 1 | GA |
 | `display_alert_board` | display | wall | 1000 x 1020 x 105 | 6.5 | 66 | 12,200 | 1 | SO |
@@ -9858,7 +9857,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `display_heading_display` | display | wall | 900 x 862 x 81 | 4.4 | 44 | 6,600 | 1 | AM |
 | `display_hex_display` | display | wall | 1090 x 952 x 105 | 7.2 | 69 | 12,600 | 4 | OL, SC x3 |
 | `display_holo_frame_panel` | display | wall | 1490 x 860 x 85 | 6.5 | 65 | 10,100 | 7 | CQ, FS, MH, OA, RG, RR, WR |
-| `display_main_viewscreen` | display | wall | 5600 x 3240 x 340 | 409 | 2300 | 771,000 | 1 | AX |
+| `display_main_viewscreen` | display | wall | 5600 x 3240 x 343 | 413 | 2300 | 778,000 | 1 | AX |
 | `display_power_board` | display | wall | 1400 x 900 x 116 | 10.3 | 80 | 17,800 | 4 | AC, ME, PD, WP |
 | `display_schematics_wall` | display | wall | 2500 x 1635 x 160 | 44.1 | 260 | 78,500 | 3 | CR, ME, SO |
 | `display_scope_rack` | display | wall | 1200 x 800 x 150 | 8.9 | 69 | 13,500 | 1 | AM |
@@ -9868,12 +9867,12 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `display_ticker_banner` | display | wall | 2340 x 280 x 118 | 5.2 | 47 | 10,500 | 3 | MH, SC x2 |
 | `display_triple_stack` | display | wall | 850 x 1550 x 83 | 7.3 | 61 | 12,300 | 7 | BG, OB x2, SC x4 |
 | `display_vitals_monitor` | display | wall | 560 x 410 x 380 | 5.3 | 53 | 8,320 | 1 | WP |
-| `display_wing_display` | display | wall | 1572 x 745 x 306 | 24.0 | 150 | 43,500 | 2 | BR, OB |
+| `display_wing_display` | display | wall | 1572 x 745 x 307 | 24.0 | 150 | 43,500 | 2 | BR, OB |
 | `door_blast` | door | floor | 2600 x 2940 x 295 | 498 | 130 | 10,500 | 4 | BG, FH, SD, SO |
 | `door_bulkhead` | door | floor | 2620 x 2860 x 285 | 466 | 130 | 8,510 | 4 | AX, BR, CC, RR |
-| `door_cabin` | door | floor | 2620 x 2860 x 285 | 461 | 120 | 10,400 | 3 | CQ, OA, OB |
-| `door_cargo` | door | floor | 2360 x 2806 x 285 | 400 | 110 | 8,800 | 3 | LS, PH, SD |
-| `door_cleanroom` | door | floor | 2280 x 2740 x 1075 | 1473 | 330 | 26,500 | 1 | AM |
+| `door_cabin` | door | floor | 2870 x 2860 x 285 | 509 | 130 | 11,400 | 3 | CQ, OA, OB |
+| `door_cargo` | door | floor | 2360 x 2803 x 285 | 399 | 110 | 8,780 | 3 | LS, PH, SD |
+| `door_cleanroom` | door | floor | 2280 x 2740 x 1075 | 1472 | 330 | 26,500 | 1 | AM |
 | `door_engineering` | door | floor | 2620 x 2860 x 285 | 455 | 120 | 11,800 | 2 | PD, WW |
 | `door_glass_lab` | door | floor | 2200 x 2740 x 245 | 281 | 90 | 6,280 | 2 | MB, SL |
 | `door_hangar_pressure` | door | floor | 2700 x 3160 x 295 | 517 | 130 | 14,000 | 4 | AC, CA3, CB, ME |
@@ -9881,19 +9880,19 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `door_officer_wood` | door | floor | 2400 x 2880 x 250 | 368 | 100 | 8,220 | 5 | BR x2, CO, CR, FS |
 | `door_science` | door | floor | 2620 x 2860 x 285 | 450 | 110 | 9,360 | 1 | OB |
 | `door_security` | door | floor | 2620 x 2860 x 285 | 424 | 120 | 11,400 | 3 | AL, AR, BG |
-| `doorframe_deep_bulkhead` | doorframe | floor | 2900 x 3050 x 600 | 523 | 0 | 11,000 | 2 | LI, RG |
-| `doorframe_gothic_arch` | doorframe | floor | 2800 x 3803 x 400 | 411 | 0 | 8,300 | 1 | AB |
-| `doorframe_hexagonal` | doorframe | floor | 2520 x 2953 x 248 | 200 | 0 | 5,260 | 1 | GA |
-| `doorframe_ibeam_portal` | doorframe | floor | 2600 x 2931 x 290 | 231 | 0 | 6,050 | 2 | HY, WR |
+| `doorframe_deep_bulkhead` | doorframe | floor | 2904 x 3055 x 600 | 525 | 0 | 11,100 | 2 | LI, RG |
+| `doorframe_gothic_arch` | doorframe | floor | 2800 x 3803 x 400 | 408 | 0 | 8,220 | 1 | AB |
+| `doorframe_hexagonal` | doorframe | floor | 2520 x 2953 x 248 | 200 | 0 | 5,250 | 1 | GA |
+| `doorframe_ibeam_portal` | doorframe | floor | 2600 x 2928 x 290 | 231 | 0 | 6,040 | 2 | HY, WR |
 | `doorframe_light_strip_square` | doorframe | floor | 2850 x 2903 x 240 | 193 | 0 | 3,890 | 1 | BT |
-| `doorframe_peaked_gable` | doorframe | floor | 2760 x 3672 x 400 | 399 | 0 | 10,500 | 1 | MH |
-| `doorframe_round_arch` | doorframe | floor | 3000 x 3241 x 500 | 545 | 0 | 13,900 | 1 | OL |
-| `doorframe_twin_ring` | doorframe | floor | 2440 x 2820 x 240 | 180 | 0 | 3,810 | 2 | CW, GA |
+| `doorframe_peaked_gable` | doorframe | floor | 2760 x 3672 x 400 | 398 | 0 | 10,500 | 1 | MH |
+| `doorframe_round_arch` | doorframe | floor | 3000 x 3247 x 500 | 545 | 0 | 13,900 | 1 | OL |
+| `doorframe_twin_ring` | doorframe | floor | 2440 x 2823 x 243 | 184 | 0 | 3,890 | 2 | CW, GA |
 | `drink_cappuccino_rosetta` | drink | table | 182 x 76 x 180 | 1.4 | 0 | 555 | 2 | OL, RR |
 | `drink_coffee_pot_and_mugs` | drink | table | 312 x 205 x 186 | 6.7 | 0 | 946 | 4 | BR, CR x2, SO |
 | `drink_espresso_cup_sugar` | drink | table | 116 x 54 x 116 | 0.4 | 0 | 451 | 3 | BG, CQ, SO |
 | `drink_hot_cocoa_mug` | drink | table | 134 x 95 x 94 | 0.6 | 0 | 456 | 6 | CW, MH x2, OA, OB, SO |
-| `drink_iced_coffee_glass` | drink | table | 80 x 215 x 80 | 0.7 | 0 | 281 | 3 | MH x3 |
+| `drink_iced_coffee_glass` | drink | table | 80 x 215 x 80 | 0.7 | 0 | 287 | 3 | MH x3 |
 | `drink_latte_art_cup` | drink | table | 158 x 72 x 156 | 0.9 | 0 | 519 | 1 | WR |
 | `drink_lemonade_pitcher_set` | drink | table | 258 x 232 x 172 | 5.9 | 0 | 809 | 1 | MH |
 | `drink_milk_glass_cookies` | drink | table | 196 x 110 x 100 | 1.1 | 0 | 388 | 2 | MH x2 |
@@ -9919,7 +9918,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `forcefield_blast_shutter` | forcefield | floor | 2806 x 3100 x 615 | 1347 | 390000 | 896,000 | 1 | DP |
 | `forcefield_emitter_pair` | forcefield | floor | 2740 x 2200 x 340 | 451 | 160000 | 370,000 | 3 | AC, PH x2 |
 | `forcefield_shield_doorway` | forcefield | floor | 2480 x 2800 x 365 | 626 | 220000 | 559,000 | 1 | AR |
-| `fountain_drinking_fountain_wall_unit` | fountain | wall | 500 x 540 x 312 | 10.1 | 87 | 3,510 | 6 | CA0, CA1, CA2, CA3, CA4, RG |
+| `fountain_drinking_fountain_wall_unit` | fountain | wall | 506 x 540 x 315 | 10.4 | 88 | 3,610 | 6 | CA0, CA1, CA2, CA3, CA4, RG |
 | `fountain_water_cooler_tower` | fountain | floor | 360 x 1293 x 425 | 23.1 | 130 | 7,510 | 4 | BT, MH, SO, WR |
 | `fruit_apple_green_pair` | fruit | table | 158 x 91 x 116 | 0.8 | 0 | 668 | 1 | CW |
 | `fruit_apple_red_and_slice` | fruit | table | 120 x 80 x 132 | 0.6 | 0 | 406 | 2 | MB, RR |
@@ -9931,7 +9930,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `galley_food_replicator` | galley | floor | 900 x 1940 x 680 | 197 | 1100 | 70,200 | 2 | GA, MH |
 | `galley_hanging_pots_rack` | galley | ceiling | 1200 x 510 x 400 | 40.3 | 0 | 14,700 | 1 | GA |
 | `galley_kitchen_island` | galley | floor | 2060 x 1120 x 1017 | 414 | 0 | 113,000 | 1 | GA |
-| `galley_microwave` | galley | table | 500 x 300 x 410 | 9.7 | 320 | 3,830 | 1 | GA |
+| `galley_microwave` | galley | table | 500 x 300 x 410 | 9.7 | 320 | 3,820 | 1 | GA |
 | `galley_prep_counter` | galley | floor | 1800 x 1180 x 750 | 251 | 0 | 77,800 | 3 | GA x3 |
 | `galley_range_with_hood` | galley | floor | 900 x 2500 x 825 | 330 | 4100 | 118,000 | 1 | GA |
 | `galley_refrigerator` | galley | floor | 800 x 1903 x 840 | 203 | 320 | 78,400 | 8 | AX, CQ, GA x2, OL, PH x2, WR |
@@ -9943,11 +9942,11 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `galley_toaster` | galley | table | 415 x 260 x 230 | 4.2 | 94 | 1,470 | 1 | GA |
 | `galley_water_cooler` | galley | floor | 366 x 1448 x 513 | 42.1 | 84 | 11,900 | 3 | AX, CR, OL |
 | `generator_diesel_genset` | generator | floor | 1950 x 1830 x 909 | 4205 | 4200 | 3,160,000 | 1 | PD |
-| `generator_gas_turbine_genset` | generator | floor | 2910 x 1700 x 924 | 5764 | 5700 | 6,090,000 | 1 | PD |
+| `generator_gas_turbine_genset` | generator | floor | 2910 x 1700 x 924 | 5760 | 5700 | 6,080,000 | 1 | PD |
 | `generator_inverter_cabinet` | generator | floor | 820 x 1910 x 650 | 1371 | 2400 | 1,220,000 | 3 | DP, ME, PD |
 | `generator_micro_fusion_generator` | generator | floor | 1100 x 1360 x 1170 | 2309 | 36000 | 2,710,000 | 1 | PD |
 | `generator_motor_generator_set` | generator | floor | 2006 x 970 x 800 | 1999 | 2200 | 1,750,000 | 2 | ME, PD |
-| `generator_pad_transformer` | generator | floor | 1690 x 1390 x 900 | 2775 | 5100 | 2,190,000 | 2 | PD x2 |
+| `generator_pad_transformer` | generator | floor | 1690 x 1390 x 900 | 2769 | 5100 | 2,180,000 | 2 | PD x2 |
 | `generator_power_distribution_cabinet` | generator | floor | 1120 x 2010 x 570 | 1615 | 3100 | 1,670,000 | 1 | PD |
 | `generator_rectifier_cabinet` | generator | floor | 920 x 2110 x 705 | 1749 | 3300 | 1,620,000 | 1 | PD |
 | `generator_regulator_tower` | generator | floor | 840 x 2520 x 840 | 2464 | 4300 | 2,490,000 | 1 | PD |
@@ -9986,7 +9985,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `harvest_crate_strawberries` | harvest | floor | 600 x 160 x 400 | 4.7 | 0 | 1,830 | 1 | HY |
 | `harvest_crate_tomatoes` | harvest | floor | 600 x 221 x 400 | 6.7 | 0 | 1,640 | 2 | GA, PH |
 | `harvest_tray_mushrooms` | harvest | floor | 600 x 111 x 400 | 3.3 | 0 | 1,350 | 1 | HY |
-| `hatch_oval_pressure` | hatch | wall | 844 x 1236 x 160 | 45.4 | 0 | 1,230 | 1 | AL |
+| `hatch_oval_pressure` | hatch | wall | 844 x 1236 x 163 | 46.3 | 0 | 1,240 | 1 | AL |
 | `holo_briefing_projector` | holo | floor | 598 x 1330 x 1204 | 112 | 650 | 171,000 | 1 | BT |
 | `holo_briefing_table` | holo | floor | 1594 x 1790 x 1594 | 600 | 2600 | 841,000 | 4 | AX, BR, SC, SO |
 | `holo_comm_bust_projector` | holo | floor | 554 x 1480 x 554 | 48.9 | 460 | 73,400 | 2 | BT, CC |
@@ -10031,16 +10030,16 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `locker_mirror_cabinet` | locker | wall | 620 x 880 x 195 | 9.0 | 0 | 420 | 1 | WR |
 | `locker_tall_vented_locker` | locker | floor | 520 x 1888 x 547 | 47.9 | 0 | 2,090 | 8 | CW x5, OA x2, OB |
 | `locker_wall_cabinet` | locker | wall | 900 x 641 x 342 | 15.9 | 0 | 724 | 1 | CW |
-| `locker_wardrobe` | locker | floor | 1160 x 2060 x 687 | 134 | 0 | 4,540 | 10 | AL x2, CQ x2, FS, OA x3, OB x2 |
+| `locker_wardrobe` | locker | floor | 1160 x 2063 x 687 | 134 | 0 | 4,550 | 10 | AL x2, CQ x2, FS, OA x3, OB x2 |
 | `meal_beef_stew_pot` | meal | table | 290 x 150 x 242 | 6.2 | 0 | 1,060 | 1 | GA |
 | `meal_burger_with_fries` | meal | table | 280 x 99 x 280 | 4.0 | 0 | 930 | 1 | MH |
 | `meal_burrito_plate` | meal | table | 300 x 70 x 300 | 3.4 | 0 | 567 | 1 | MH |
 | `meal_caesar_salad` | meal | table | 290 x 52 x 290 | 2.4 | 0 | 716 | 1 | MH |
-| `meal_club_sandwich` | meal | table | 280 x 98 x 280 | 3.9 | 0 | 436 | 1 | MH |
+| `meal_club_sandwich` | meal | table | 280 x 98 x 280 | 3.9 | 0 | 432 | 1 | MH |
 | `meal_curry_and_rice` | meal | table | 320 x 76 x 320 | 4.5 | 0 | 861 | 1 | MH |
 | `meal_dumplings_steamer` | meal | table | 298 x 50 x 308 | 2.6 | 0 | 828 | 3 | MH x3 |
-| `meal_fish_and_chips` | meal | table | 320 x 64 x 320 | 3.8 | 0 | 862 | 1 | MH |
-| `meal_fried_egg_breakfast` | meal | table | 300 x 29 x 300 | 1.3 | 0 | 538 | 1 | MH |
+| `meal_fish_and_chips` | meal | table | 320 x 64 x 320 | 3.8 | 0 | 863 | 1 | MH |
+| `meal_fried_egg_breakfast` | meal | table | 300 x 30 x 300 | 1.4 | 0 | 538 | 1 | MH |
 | `meal_fried_rice_bowl` | meal | table | 210 x 105 x 176 | 2.2 | 0 | 978 | 1 | MH |
 | `meal_lasagna_slice` | meal | table | 280 x 69 x 280 | 2.7 | 0 | 395 | 1 | MH |
 | `meal_mac_and_cheese` | meal | table | 190 x 59 x 188 | 1.1 | 0 | 1,280 | 3 | MH x3 |
@@ -10071,16 +10070,16 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `medsupply_iv_stand` | medsupply | floor | 644 x 2012 x 678 | 64.0 | 0 | 150,000 | 2 | MB x2 |
 | `medsupply_sharps_container` | medsupply | wall | 300 x 335 x 230 | 1.6 | 0 | 3,780 | 1 | MB |
 | `medsupply_wall_patient_monitor` | medsupply | wall | 875 x 765 x 140 | 6.4 | 0 | 12,600 | 4 | MB x4 |
-| `medtool_surgical_instrument_tray` | medtool | table | 372 x 59 x 252 | 1.0 | 0 | 2,510 | 1 | MB |
+| `medtool_surgical_instrument_tray` | medtool | table | 372 x 60 x 252 | 1.0 | 0 | 2,530 | 1 | MB |
 | `microscope_electron_microscope` | microscope | floor | 1570 x 1980 x 733 | 670 | 1200 | 1,820,000 | 1 | SL |
 | `microscope_optical_microscope` | microscope | table | 220 x 638 x 285 | 11.8 | 42 | 31,900 | 2 | AB, SL |
 | `microscope_stereo_microscope` | microscope | table | 256 x 627 x 353 | 17.1 | 49 | 42,100 | 1 | AB |
 | `noticeboard_cork_bulletin_board` | noticeboard | wall | 1200 x 908 x 80 | 5.4 | 43 | 8,920 | 4 | LI, MH, RG, WS |
 | `noticeboard_digital_message_board` | noticeboard | wall | 1400 x 580 x 71 | 3.9 | 30 | 6,040 | 6 | LB0, LB1, LB2, LB3, LB4, MH |
 | `noticeboard_duty_roster_display` | noticeboard | wall | 1000 x 1300 x 78 | 6.3 | 49 | 9,780 | 8 | CW, LB0, LB1, LB2, LB3, LB4, MH, OB |
-| `nozzle_ion_drive_engine` | nozzle | floor | 1200 x 1642 x 1200 | 2100 | 5000 | 1,320,000 | 1 | SD |
+| `nozzle_ion_drive_engine` | nozzle | floor | 1200 x 1642 x 1200 | 2099 | 5000 | 1,310,000 | 1 | SD |
 | `nozzle_quad_rcs_block` | nozzle | floor | 1170 x 1070 x 1180 | 1299 | 3300 | 731,000 | 1 | DP |
-| `pallet_boxes_layered` | pallet | floor | 1240 x 1106 x 1030 | 52.0 | 0 | 4,320 | 3 | CB, MC, PH |
+| `pallet_boxes_layered` | pallet | floor | 1240 x 1106 x 1030 | 51.9 | 0 | 4,310 | 3 | CB, MC, PH |
 | `pallet_crates_banded` | pallet | floor | 1250 x 1105 x 1050 | 50.9 | 0 | 5,730 | 3 | CB, MC, SD |
 | `pallet_drums_banded` | pallet | floor | 1250 x 1029 x 1090 | 49.7 | 0 | 4,700 | 3 | CB, MC, PH |
 | `pallet_mixed_goods` | pallet | floor | 1200 x 879 x 1000 | 37.6 | 0 | 4,060 | 2 | MC, PH |
@@ -10088,7 +10087,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `pallet_roll_cage_loaded` | pallet | floor | 806 x 1845 x 703 | 36.0 | 0 | 3,160 | 2 | MC, PH |
 | `pallet_sacks_stacked` | pallet | floor | 1240 x 780 x 1080 | 41.1 | 0 | 3,970 | 3 | MC, PH, WW |
 | `pallet_wrapped_stack` | pallet | floor | 1240 x 1364 x 1052 | 64.9 | 0 | 7,360 | 4 | CB, MC, PH, WW |
-| `pallet_wrapped_tall_mixed` | pallet | floor | 1260 x 2115 x 1055 | 99.1 | 0 | 8,960 | 1 | MC |
+| `pallet_wrapped_tall_mixed` | pallet | floor | 1260 x 2115 x 1055 | 99.0 | 0 | 8,950 | 1 | MC |
 | `panellight_backlit_rectangle` | panellight | wall | 660 x 960 x 62 | 4.4 | 9 | 996 | 2 | SC x2 |
 | `pipe_ceiling_flanged_twin` | pipe | ceiling | 2000 x 238 x 380 | 26.7 | 0 | 1,020 | 7 | ME x4, WP x3 |
 | `pipe_ceiling_hanger_run` | pipe | ceiling | 2000 x 317 x 222 | 22.2 | 0 | 769 | 21 | CB x5, FH x4, MC x3, SD x4, WS x5 |
@@ -10097,7 +10096,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `plant_bonsai` | plant | table | 431 x 397 x 200 | 2.9 | 0 | 308 | 2 | SL, SO |
 | `plant_fern` | plant | floor | 1568 x 876 x 1435 | 168 | 0 | 9,120 | 1 | OL |
 | `plant_ficus_tree` | plant | floor | 888 x 1936 x 1007 | 154 | 0 | 9,470 | 11 | AM, BT x2, CR x2, FS, LI, MH, OL, RR, WR |
-| `plant_flower_vase` | plant | table | 269 x 498 x 290 | 3.4 | 0 | 357 | 1 | CQ |
+| `plant_flower_vase` | plant | table | 269 x 498 x 290 | 3.4 | 0 | 350 | 1 | CQ |
 | `plant_hanging_plant` | plant | ceiling | 468 x 1322 x 478 | 24.5 | 0 | 1,640 | 7 | AB x2, FS x2, HY, LI x2 |
 | `plant_planter_box` | plant | floor | 1240 x 838 x 390 | 35.1 | 0 | 2,170 | 4 | MH x2, SC x2 |
 | `plant_succulent_set` | plant | table | 387 x 153 x 300 | 1.6 | 0 | 316 | 2 | OL, SO |
@@ -10105,7 +10104,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `planter_flower_bed_planter` | planter | floor | 1550 x 745 x 750 | 123 | 480 | 57,800 | 3 | AB x3 |
 | `planter_grow_light_bar_panel` | planter | ceiling | 1600 x 170 x 526 | 18.4 | 210 | 10,600 | 4 | AB x4 |
 | `planter_hanging_grow_light_array` | planter | ceiling | 1806 x 600 x 430 | 55.9 | 330 | 29,500 | 5 | AB, HY x4 |
-| `planter_herb_shelf_rack` | planter | floor | 1266 x 1809 x 406 | 130 | 550 | 65,500 | 2 | AB, HY |
+| `planter_herb_shelf_rack` | planter | floor | 1263 x 1809 x 406 | 130 | 550 | 65,400 | 2 | AB, HY |
 | `planter_lettuce_trough` | planter | floor | 1250 x 865 x 700 | 105 | 420 | 58,600 | 1 | HY |
 | `planter_microgreen_rack` | planter | floor | 1400 x 2175 x 700 | 294 | 1100 | 133,000 | 2 | AB, HY |
 | `planter_mushroom_shelf` | planter | floor | 1450 x 1910 x 750 | 304 | 880 | 134,000 | 2 | AB, HY |
@@ -10114,24 +10113,24 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `planter_vertical_grow_tower` | planter | floor | 700 x 2460 x 700 | 182 | 640 | 85,200 | 5 | AB, HY x4 |
 | `planter_wheat_tray_bed` | planter | floor | 1610 x 2045 x 700 | 324 | 1100 | 175,000 | 1 | HY |
 | `rack_armored_data_rack` | rack | floor | 710 x 2045 x 1160 | 289 | 4100 | 346,000 | 1 | AX |
-| `rack_blade_server_rack` | rack | floor | 600 x 2000 x 1000 | 245 | 2900 | 250,000 | 8 | AM, CO x6, SC |
-| `rack_cryogenic_quantum_rack` | rack | floor | 605 x 2000 x 1000 | 209 | 2900 | 231,000 | 3 | CO x2, SC |
+| `rack_blade_server_rack` | rack | floor | 606 x 2006 x 1006 | 250 | 3000 | 255,000 | 8 | AM, CO x6, SC |
+| `rack_cryogenic_quantum_rack` | rack | floor | 608 x 2006 x 1006 | 212 | 3000 | 234,000 | 3 | CO x2, SC |
 | `rack_crystal_archive_tower` | rack | floor | 708 x 2270 x 810 | 234 | 2800 | 302,000 | 7 | AM, CO x5, SC |
-| `rack_gpu_cluster_rack` | rack | floor | 600 x 2000 x 1000 | 251 | 2900 | 230,000 | 6 | CO x5, SC |
-| `rack_kvm_console_rack` | rack | floor | 600 x 2000 x 1210 | 262 | 3600 | 257,000 | 1 | CC |
-| `rack_liquid_cooled_cabinet` | rack | floor | 600 x 2000 x 1018 | 236 | 3000 | 223,000 | 3 | CO x3 |
-| `rack_network_switch_rack` | rack | floor | 685 x 2000 x 1015 | 289 | 3200 | 259,000 | 8 | AM, AX, CC, CO x5 |
-| `rack_open_frame_rack` | rack | floor | 570 x 2000 x 1000 | 233 | 2700 | 280,000 | 1 | DP |
-| `rack_photonic_fiber_rack` | rack | floor | 600 x 2000 x 1000 | 251 | 2600 | 268,000 | 5 | AM, CC, CO, OB, SC |
-| `rack_storage_array` | rack | floor | 600 x 2000 x 1000 | 252 | 2800 | 227,000 | 12 | AM, CO x9, OB, SC |
+| `rack_gpu_cluster_rack` | rack | floor | 606 x 2006 x 1006 | 256 | 2900 | 234,000 | 6 | CO x5, SC |
+| `rack_kvm_console_rack` | rack | floor | 606 x 2006 x 1213 | 266 | 3700 | 261,000 | 1 | CC |
+| `rack_liquid_cooled_cabinet` | rack | floor | 606 x 2006 x 1021 | 240 | 3000 | 227,000 | 3 | CO x3 |
+| `rack_network_switch_rack` | rack | floor | 688 x 2006 x 1018 | 292 | 3200 | 261,000 | 8 | AM, AX, CC, CO x5 |
+| `rack_open_frame_rack` | rack | floor | 573 x 2006 x 1006 | 236 | 2700 | 284,000 | 1 | DP |
+| `rack_photonic_fiber_rack` | rack | floor | 606 x 2006 x 1006 | 256 | 2700 | 273,000 | 5 | AM, CC, CO, OB, SC |
+| `rack_storage_array` | rack | floor | 606 x 2006 x 1006 | 256 | 2800 | 231,000 | 12 | AM, CO x9, OB, SC |
 | `rack_tape_archive_tower` | rack | floor | 700 x 2100 x 990 | 283 | 3200 | 348,000 | 5 | AM, CO x4 |
-| `rack_ups_battery_rack` | rack | floor | 600 x 2000 x 1000 | 241 | 2600 | 231,000 | 2 | AX, CC |
+| `rack_ups_battery_rack` | rack | floor | 606 x 2006 x 1006 | 246 | 2600 | 236,000 | 2 | AX, CC |
 | `railing_guard_balusters` | railing | floor | 2100 x 1058 x 160 | 47.4 | 0 | 1,150 | 7 | ME x7 |
-| `railing_guard_mesh` | railing | floor | 2100 x 1065 x 160 | 47.3 | 0 | 1,190 | 4 | AC x4 |
+| `railing_guard_mesh` | railing | floor | 2100 x 1068 x 160 | 47.5 | 0 | 1,200 | 4 | AC x4 |
 | `ration_cup_noodle_instant` | ration | table | 144 x 108 x 92 | 0.2 | 0 | 173 | 1 | CW |
 | `ration_pouch_fruit_puree_spout` | ration | table | 192 x 165 x 50 | 0.2 | 0 | 79 | 1 | MB |
-| `ration_ration_boxes_stacked` | ration | table | 352 x 301 x 240 | 3.0 | 0 | 156 | 1 | PH |
-| `reactor_fusion_core_reactor` | reactor | floor | 2524 x 3043 x 2524 | 23841 | 130000 | 45,500,000 | 1 | ME |
+| `ration_ration_boxes_stacked` | ration | table | 352 x 304 x 240 | 3.1 | 0 | 157 | 1 | PH |
+| `reactor_fusion_core_reactor` | reactor | floor | 2524 x 3043 x 2524 | 23815 | 130000 | 45,500,000 | 1 | ME |
 | `reactor_matter_antimatter_injector` | reactor | floor | 3522 x 2553 x 900 | 9960 | 470000 | 9,180,000 | 1 | AC |
 | `reactor_plasma_tokamak_torus` | reactor | floor | 2692 x 2803 x 2692 | 29247 | 150000 | 57,100,000 | 1 | AC |
 | `reactor_reactor_control_pillar` | reactor | floor | 952 x 2430 x 1090 | 3131 | 1500 | 2,730,000 | 1 | ME |
@@ -10140,18 +10139,18 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `router_wall_network_cabinet` | router | wall | 700 x 1010 x 285 | 58.3 | 140 | 72,800 | 2 | CC, CO |
 | `safety_breach_repair_kit` | safety | wall | 600 x 395 x 220 | 4.8 | 0 | 997 | 1 | AX |
 | `safety_damage_control_locker` | safety | floor | 1000 x 2000 x 625 | 111 | 0 | 23,700 | 3 | AX x2, BR |
-| `safety_defibrillator_station` | safety | wall | 406 x 463 x 224 | 4.1 | 0 | 910 | 1 | AX |
+| `safety_defibrillator_station` | safety | wall | 406 x 463 x 225 | 4.1 | 0 | 914 | 1 | AX |
 | `safety_emergency_shower` | safety | floor | 934 x 2333 x 800 | 160 | 0 | 28,100 | 3 | AC, SL, WW |
 | `safety_evac_route_map` | safety | wall | 1000 x 700 x 60 | 3.6 | 0 | 696 | 11 | CA0, CA1, CA2, CA3, CA4, CF0, CF1, CF2, CF3, CF4, CO |
-| `safety_eye_wash_station` | safety | wall | 700 x 700 x 480 | 22.5 | 0 | 4,500 | 6 | AC, FH, LS, ME, WP, WS |
+| `safety_eye_wash_station` | safety | wall | 700 x 700 x 480 | 22.5 | 0 | 4,500 | 5 | AC, FH, LS, ME, WS |
 | `safety_fire_blanket_box` | safety | wall | 280 x 390 x 120 | 1.2 | 0 | 235 | 2 | FH, WS |
 | `safety_fire_extinguisher` | safety | wall | 300 x 735 x 199 | 4.3 | 0 | 869 | 78 | AB, AC, AL, AM, AR, AX x2, BR, CA0, CA1, CA2, CA3, CA4, CB x2, CC, CF0, CF1, CF2 x2, CF3, CF4, CO, CQ, CR, CW, DP, FH x2, GA, HB, LB0 x2, LB1 x2, LB2 x2, LB3 x2, LB4 x2, LI, LS, MC x2, ME x2, MH x2, OA, OB, OL x2, PD x2, PH x2, RG, RR, SD, SO x2, SP0, SP1, SP2, SP3, SP4, SS0, SS1, SS2, SS3, SS4, WP x2, WS x2, WW x2 |
 | `safety_first_aid_cabinet` | safety | wall | 420 x 520 x 205 | 4.1 | 0 | 666 | 11 | AR, AX, BG, FH, MC, MH, PD, PH, SD, SO, WS |
-| `safety_hazmat_cabinet` | safety | floor | 900 x 2000 x 575 | 96.1 | 0 | 20,400 | 5 | AC, CB x2, WW x2 |
+| `safety_hazmat_cabinet` | safety | floor | 906 x 2003 x 578 | 97.4 | 0 | 20,700 | 5 | AC, CB x2, WW x2 |
 | `safety_radiation_shelter_panel` | safety | wall | 1300 x 1000 x 98 | 11.6 | 0 | 1,840 | 2 | AC, ME |
-| `safety_ration_locker` | safety | floor | 1000 x 1800 x 532 | 93.8 | 0 | 16,600 | 2 | PH x2 |
+| `safety_ration_locker` | safety | floor | 1006 x 1803 x 535 | 95.0 | 0 | 16,800 | 2 | PH x2 |
 | `safety_spill_kit_bin` | safety | floor | 640 x 1113 x 630 | 42.0 | 0 | 8,030 | 3 | CB, MC, WP |
-| `safety_sprinkler_head` | safety | ceiling | 140 x 148 x 140 | 0.3 | 0 | 106 | 28 | AC x3, AX x3, DP x4, FH x4, GA, HY, MC x5, MH x2, PH x2, WP x2, WW |
+| `safety_sprinkler_head` | safety | ceiling | 140 x 148 x 140 | 0.3 | 0 | 104 | 28 | AC x3, AX x3, DP x4, FH x4, GA, HY, MC x5, MH x2, PH x2, WP x2, WW |
 | `safety_suppression_nozzle` | safety | ceiling | 300 x 503 x 300 | 4.0 | 0 | 707 | 8 | BR x3, CO x5 |
 | `sciinstrument_portable_field_lab` | sciinstrument | table | 600 x 577 x 475 | 43.2 | 110 | 127,000 | 1 | OB |
 | `sciinstrument_sample_drill_rig` | sciinstrument | floor | 900 x 1880 x 800 | 427 | 810 | 902,000 | 1 | OB |
@@ -10210,7 +10209,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `specimen_seed_vault` | specimen | floor | 1000 x 1970 x 769 | 223 | 880 | 534,000 | 1 | SL |
 | `specimen_specimen_jar_set` | specimen | table | 600 x 360 x 260 | 8.6 | 120 | 22,600 | 1 | AB |
 | `spotlight_stage_truss_lights` | spotlight | ceiling | 1400 x 360 x 846 | 60.4 | 98 | 17,000 | 1 | SC |
-| `storage_archive_robot` | storage | floor | 1800 x 2000 x 925 | 1942 | 3800 | 2,180,000 | 1 | LI |
+| `storage_archive_robot` | storage | floor | 1806 x 2006 x 928 | 1961 | 3800 | 2,200,000 | 1 | LI |
 | `storage_cartridge_library_shelves` | storage | floor | 1206 x 1963 x 453 | 593 | 1100 | 716,000 | 2 | AM, LI |
 | `storage_data_crystal_vault` | storage | floor | 1192 x 2120 x 1192 | 1678 | 3200 | 1,560,000 | 1 | LI |
 | `storage_holo_storage_cylinder` | storage | floor | 900 x 1990 x 912 | 899 | 1800 | 832,000 | 1 | LI |
@@ -10224,7 +10223,7 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `storagebin_trash_compactor` | storagebin | floor | 940 x 2330 x 940 | 96.8 | 0 | 9,890 | 1 | WW |
 | `suitrack_decontamination_arch` | suitrack | floor | 1870 x 2003 x 840 | 338 | 960 | 67,400 | 1 | AL |
 | `suitrack_eva_helmet_rack` | suitrack | wall | 1506 x 915 x 360 | 53.5 | 0 | 9,130 | 2 | AL, AX |
-| `suitrack_glove_boot_locker` | suitrack | floor | 1100 x 1900 x 515 | 116 | 0 | 22,600 | 6 | AC, AL x2, AX, DP, WW |
+| `suitrack_glove_boot_locker` | suitrack | floor | 1106 x 1903 x 518 | 118 | 0 | 22,900 | 6 | AC, AL x2, AX, DP, WW |
 | `suitrack_oxygen_pack_rack` | suitrack | floor | 1800 x 1703 x 600 | 205 | 0 | 30,500 | 2 | AL, AX |
 | `suitrack_suit_up_bench` | suitrack | floor | 2206 x 1830 x 545 | 216 | 0 | 35,300 | 1 | AL |
 | `suitrack_tool_belt_board` | suitrack | wall | 1206 x 935 x 125 | 14.9 | 0 | 3,010 | 1 | AL |
@@ -10275,10 +10274,10 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `terminal_portable_reader` | terminal | table | 120 x 38 x 225 | 0.2 | 3 | 337 | 1 | LI |
 | `toolbox_tabletop_toolbox` | toolbox | table | 480 x 300 x 260 | 11.0 | 0 | 7,610 | 4 | FH x2, WS x2 |
 | `tray_bread_basket_wicker` | tray | table | 306 x 89 x 306 | 1.1 | 0 | 740 | 2 | CR, MH |
-| `tray_cake_stand_afternoon_tea` | tray | table | 308 x 422 x 306 | 5.4 | 0 | 1,100 | 1 | CR |
+| `tray_cake_stand_afternoon_tea` | tray | table | 308 x 425 x 306 | 5.4 | 0 | 1,100 | 1 | CR |
 | `tray_fruit_bowl_mixed` | tray | table | 340 x 150 x 338 | 2.2 | 0 | 1,030 | 2 | GA, MH |
-| `tray_hotel_pan_mash_gravy` | tray | table | 562 x 77 x 366 | 1.8 | 0 | 426 | 1 | GA |
-| `tray_hotel_pan_roast_veg` | tray | table | 562 x 93 x 386 | 2.6 | 0 | 933 | 1 | GA |
+| `tray_hotel_pan_mash_gravy` | tray | table | 564 x 77 x 366 | 1.8 | 0 | 427 | 1 | GA |
+| `tray_hotel_pan_roast_veg` | tray | table | 564 x 93 x 386 | 2.6 | 0 | 933 | 1 | GA |
 | `tray_meal_tray_steel` | tray | table | 464 x 110 x 306 | 1.9 | 0 | 655 | 1 | MB |
 | `tray_soup_tureen_ladle` | tray | table | 454 x 214 x 320 | 4.0 | 0 | 674 | 1 | MH |
 | `turbine_flywheel` | turbine | floor | 1500 x 1660 x 640 | 2232 | 94 | 2,090,000 | 1 | ME |
@@ -10305,12 +10304,12 @@ Every distinct model in the ship with its total quantity and the rooms that use 
 | `watertank_reverse_osmosis_skid` | watertank | floor | 1800 x 1530 x 616 | 413 | 0 | 188,000 | 2 | LS, WP |
 | `watertank_uv_water_purifier` | watertank | floor | 900 x 1730 x 570 | 223 | 2000 | 118,000 | 3 | GA, LS, WP |
 | `watertank_water_recycler` | watertank | floor | 1220 x 2340 x 1020 | 789 | 0 | 367,000 | 2 | LS, WP |
-| `weaponrack_armour_plate_locker` | weaponrack | floor | 1000 x 2000 x 610 | 283 | 71 | 174,000 | 1 | AR |
+| `weaponrack_armour_plate_locker` | weaponrack | floor | 1006 x 2003 x 613 | 287 | 72 | 176,000 | 1 | AR |
 | `weaponrack_cell_charger_rack` | weaponrack | wall | 1200 x 890 x 210 | 48.0 | 17 | 31,000 | 1 | AR |
 | `weaponrack_heavy_rifle_rack` | weaponrack | wall | 1200 x 1330 x 365 | 134 | 35 | 93,800 | 1 | AR |
-| `weaponrack_pistol_locker` | weaponrack | floor | 800 x 1400 x 415 | 103 | 28 | 70,900 | 2 | AR, SO |
+| `weaponrack_pistol_locker` | weaponrack | floor | 806 x 1403 x 418 | 105 | 28 | 72,100 | 2 | AR, SO |
 | `weaponrack_pistol_rack_wall` | weaponrack | wall | 956 x 725 x 85 | 13.9 | 8 | 8,850 | 1 | AR |
-| `weaponrack_rifle_locker` | weaponrack | floor | 1000 x 2000 x 545 | 248 | 56 | 205,000 | 3 | AR x2, SO |
+| `weaponrack_rifle_locker` | weaponrack | floor | 1006 x 2003 x 548 | 251 | 57 | 208,000 | 3 | AR x2, SO |
 | `weaponrack_riot_shield_rack` | weaponrack | wall | 1500 x 1100 x 160 | 56.9 | 19 | 45,400 | 1 | AR |
 | `weaponrack_weapons_inspection_bench` | weaponrack | floor | 1903 x 1717 x 800 | 613 | 140 | 459,000 | 1 | AR |
 

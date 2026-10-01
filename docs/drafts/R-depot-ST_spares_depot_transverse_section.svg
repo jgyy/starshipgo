@@ -47,13 +47,13 @@
 <polygon points="111.22,108.9 136.22,108.9 136.22,131 111.22,131" class="f" fill="#b5f1d0"/>
 <polygon points="164.72,98.16 188.72,98.16 188.72,131 164.72,131" class="f" fill="#ecc2fa"/>
 <polygon points="319.74,99.6 323.72,99.6 323.72,114.3 319.74,114.3" class="f" fill="#edb4f1"/>
-<polygon points="247.12,107.94 263.12,107.94 263.12,130.76 247.12,130.76" class="f" fill="#adc6f5"/>
+<polygon points="247.12,108.18 263.12,108.18 263.12,131 247.12,131" class="f" fill="#adc6f5"/>
 <polygon points="216.12,63 256.12,63 256.12,66.46 216.12,66.46" class="dot" fill="none"/>
 <polygon points="175.52,63 215.52,63 215.52,66.46 175.52,66.46" class="dot" fill="none"/>
 <polygon points="134.92,63 174.92,63 174.92,66.46 134.92,66.46" class="dot" fill="none"/>
 <polygon points="101.63,91.4 117.48,91.4 117.48,131 101.63,131" class="f" fill="#f4aaa8"/>
 <polygon points="265.06,63 285.06,63 285.06,64.58 265.06,64.58" class="dot" fill="none"/>
-<polygon points="205.34,62.98 218.1,62.98 218.1,66.56 205.34,66.56" class="dot" fill="none"/>
+<polygon points="205.34,63 218.1,63 218.1,66.58 205.34,66.58" class="dot" fill="none"/>
 <polygon points="135.88,63 160.88,63 160.88,64.3 135.88,64.3" class="dot" fill="none"/>
 <polygon points="322.04,70.6 323.72,70.6 323.72,75.4 322.04,75.4" class="f" fill="#ade2f0"/>
 <polygon points="97.28,131 326.72,131 326.72,137 97.28,137" class="n" fill="url(#hSlab)"/>
@@ -61,7 +61,7 @@
 <polygon points="97.28,63 100.28,63 100.28,131 97.28,131" class="n" fill="url(#hHull)"/>
 <polygon points="323.72,63 326.72,63 326.72,75.8 323.72,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="322.04,70.6 323.72,70.6 323.72,75.4 322.04,75.4" class="m" fill="#87d5e9"/>
-<polygon points="205.34,62.98 218.1,62.98 218.1,66.56 205.34,66.56" class="m" fill="#bff79e"/>
+<polygon points="205.34,63 218.1,63 218.1,66.58 205.34,66.58" class="m" fill="#bff79e"/>
 <polygon points="265.06,63 285.06,63 285.06,64.58 265.06,64.58" class="m" fill="#bff79e"/>
 <polygon points="135.88,63 160.88,63 160.88,64.3 135.88,64.3" class="m" fill="#bff79e"/>
 </g>

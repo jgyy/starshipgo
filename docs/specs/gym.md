@@ -10,7 +10,7 @@
 | `gym_exercise_bike` | Gym equipment - Exercise Bike | Sable Habitat Furnishings | 700 x 1260 x 1080 | 67.8 kg | 0 W | none | 2,350 |
 | `gym_punching_bag` | Gym equipment - Punching Bag | Sable Habitat Furnishings | 900 x 2163 x 915 | 125.5 kg | 0 W | none | 4,380 |
 | `gym_rowing_machine` | Gym equipment - Rowing Machine | Sable Habitat Furnishings | 530 x 980 x 2060 | 82.3 kg | 0 W | none | 3,190 |
-| `gym_treadmill` | Gym equipment - Treadmill | Sable Habitat Furnishings | 880 x 1245 x 1960 | 150.8 kg | 0 W | none | 6,210 |
+| `gym_treadmill` | Gym equipment - Treadmill | Sable Habitat Furnishings | 880 x 1245 x 1960 | 150.7 kg | 0 W | none | 6,210 |
 | `gym_weight_bench_and_rack` | Gym equipment - Weight Bench And Rack | Sable Habitat Furnishings | 1900 x 1400 x 1420 | 277.2 kg | 0 W | none | 10.8 k |
 | `gym_yoga_mat_rack` | Gym equipment - Yoga Mat Rack | Sable Habitat Furnishings | 1410 x 1048 x 450 | 54.3 kg | 0 W | none | 2,230 |
 
@@ -34,7 +34,7 @@
 * Passive: no electrical load.
 * Price 2,350 cr, lead time 40 days, MTBF 1,049,700 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
-* Software: `medical` (screens: vitals).
+* Software: `roster` (screens: body_scan).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `gym_punching_bag`
@@ -62,7 +62,7 @@
 
 **Gym equipment - Treadmill**, Sable Habitat Furnishings, part SHF-GYM-9869 (passive)
 
-* Mass 150.8 kg; size 880 x 1245 x 1960 mm; heat 0 W.
+* Mass 150.7 kg; size 880 x 1245 x 1960 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 6,210 cr, lead time 40 days, MTBF 916,300 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.

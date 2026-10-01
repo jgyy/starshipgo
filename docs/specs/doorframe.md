@@ -6,14 +6,14 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `doorframe_deep_bulkhead` | Door frame - Deep Bulkhead | Calder-Okonkwo Industries | 2900 x 3050 x 600 | 523.2 kg | 0 W | none | 11 k |
-| `doorframe_gothic_arch` | Door frame - Gothic Arch | Calder-Okonkwo Industries | 2800 x 3803 x 400 | 411.3 kg | 0 W | none | 8,300 |
-| `doorframe_hexagonal` | Door frame - Hexagonal | Calder-Okonkwo Industries | 2520 x 2953 x 248 | 200.4 kg | 0 W | none | 5,260 |
-| `doorframe_ibeam_portal` | Door frame - Ibeam Portal | Calder-Okonkwo Industries | 2600 x 2931 x 290 | 231.1 kg | 0 W | none | 6,050 |
-| `doorframe_light_strip_square` | Door frame - Light Strip Square | Calder-Okonkwo Industries | 2850 x 2903 x 240 | 193.2 kg | 0 W | none | 3,890 |
-| `doorframe_peaked_gable` | Door frame - Peaked Gable | Calder-Okonkwo Industries | 2760 x 3672 x 400 | 399.2 kg | 0 W | none | 10.5 k |
-| `doorframe_round_arch` | Door frame - Round Arch | Calder-Okonkwo Industries | 3000 x 3241 x 500 | 545.2 kg | 0 W | none | 13.9 k |
-| `doorframe_twin_ring` | Door frame - Twin Ring | Calder-Okonkwo Industries | 2440 x 2820 x 240 | 180.2 kg | 0 W | none | 3,810 |
+| `doorframe_deep_bulkhead` | Door frame - Deep Bulkhead | Calder-Okonkwo Industries | 2904 x 3055 x 600 | 525.3 kg | 0 W | none | 11.1 k |
+| `doorframe_gothic_arch` | Door frame - Gothic Arch | Calder-Okonkwo Industries | 2800 x 3803 x 400 | 408.5 kg | 0 W | none | 8,220 |
+| `doorframe_hexagonal` | Door frame - Hexagonal | Calder-Okonkwo Industries | 2520 x 2953 x 248 | 200.1 kg | 0 W | none | 5,250 |
+| `doorframe_ibeam_portal` | Door frame - Ibeam Portal | Calder-Okonkwo Industries | 2600 x 2928 x 290 | 230.8 kg | 0 W | none | 6,040 |
+| `doorframe_light_strip_square` | Door frame - Light Strip Square | Calder-Okonkwo Industries | 2850 x 2903 x 240 | 193.1 kg | 0 W | none | 3,890 |
+| `doorframe_peaked_gable` | Door frame - Peaked Gable | Calder-Okonkwo Industries | 2760 x 3672 x 400 | 398.5 kg | 0 W | none | 10.5 k |
+| `doorframe_round_arch` | Door frame - Round Arch | Calder-Okonkwo Industries | 3000 x 3247 x 500 | 544.7 kg | 0 W | none | 13.9 k |
+| `doorframe_twin_ring` | Door frame - Twin Ring | Calder-Okonkwo Industries | 2440 x 2823 x 243 | 183.5 kg | 0 W | none | 3,890 |
 
 ## Datasheets
 
@@ -21,29 +21,29 @@
 
 **Door frame - Deep Bulkhead**, Calder-Okonkwo Industries, part COI-DOO-9055 (passive)
 
-* Mass 523.2 kg; size 2900 x 3050 x 600 mm; heat 0 W.
+* Mass 525.3 kg; size 2904 x 3055 x 600 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 11 k cr, lead time 49 days, MTBF 1,464,600 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 11.1 k cr, lead time 49 days, MTBF 1,464,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (523.2 kg).
+* floor-mounted. Install with a hoist or gantry (525.3 kg).
 
 ### `doorframe_gothic_arch`
 
 **Door frame - Gothic Arch**, Calder-Okonkwo Industries, part COI-DOO-8497 (passive)
 
-* Mass 411.3 kg; size 2800 x 3803 x 400 mm; heat 0 W.
+* Mass 408.5 kg; size 2800 x 3803 x 400 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 8,300 cr, lead time 44 days, MTBF 1,317,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 8,220 cr, lead time 44 days, MTBF 1,317,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (411.3 kg).
+* floor-mounted. Install with a hoist or gantry (408.5 kg).
 
 ### `doorframe_hexagonal`
 
 **Door frame - Hexagonal**, Calder-Okonkwo Industries, part COI-DOO-2279 (passive)
 
-* Mass 200.4 kg; size 2520 x 2953 x 248 mm; heat 0 W.
+* Mass 200.1 kg; size 2520 x 2953 x 248 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 5,260 cr, lead time 49 days, MTBF 1,610,100 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 5,250 cr, lead time 49 days, MTBF 1,610,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -51,9 +51,9 @@
 
 **Door frame - Ibeam Portal**, Calder-Okonkwo Industries, part COI-DOO-6166 (passive)
 
-* Mass 231.1 kg; size 2600 x 2931 x 290 mm; heat 0 W.
+* Mass 230.8 kg; size 2600 x 2928 x 290 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 6,050 cr, lead time 48 days, MTBF 1,924,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 6,040 cr, lead time 48 days, MTBF 1,924,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -61,7 +61,7 @@
 
 **Door frame - Light Strip Square**, Calder-Okonkwo Industries, part COI-DOO-9969 (passive)
 
-* Mass 193.2 kg; size 2850 x 2903 x 240 mm; heat 0 W.
+* Mass 193.1 kg; size 2850 x 2903 x 240 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 3,890 cr, lead time 51 days, MTBF 1,222,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -71,29 +71,29 @@
 
 **Door frame - Peaked Gable**, Calder-Okonkwo Industries, part COI-DOO-7058 (passive)
 
-* Mass 399.2 kg; size 2760 x 3672 x 400 mm; heat 0 W.
+* Mass 398.5 kg; size 2760 x 3672 x 400 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 10.5 k cr, lead time 45 days, MTBF 1,766,700 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (399.2 kg).
+* floor-mounted. Install with a hoist or gantry (398.5 kg).
 
 ### `doorframe_round_arch`
 
 **Door frame - Round Arch**, Calder-Okonkwo Industries, part COI-DOO-2692 (passive)
 
-* Mass 545.2 kg; size 3000 x 3241 x 500 mm; heat 0 W.
+* Mass 544.7 kg; size 3000 x 3247 x 500 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 13.9 k cr, lead time 49 days, MTBF 1,933,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted. Install with a hoist or gantry (545.2 kg).
+* floor-mounted. Install with a hoist or gantry (544.7 kg).
 
 ### `doorframe_twin_ring`
 
 **Door frame - Twin Ring**, Calder-Okonkwo Industries, part COI-DOO-2263 (passive)
 
-* Mass 180.2 kg; size 2440 x 2820 x 240 mm; heat 0 W.
+* Mass 183.5 kg; size 2440 x 2823 x 243 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,810 cr, lead time 46 days, MTBF 1,817,000 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 3,890 cr, lead time 46 days, MTBF 1,817,000 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 

@@ -52,12 +52,15 @@
 <polygon points="102.97,88.08 102.97,71.92 112.5,71.92 112.5,88.08" class="n" fill="#f799f7"/>
 <line x1="112.5" y1="71.92" x2="112.5" y2="88.08" class="m"/>
 <line x1="112.5" y1="80" x2="111.3" y2="80" class="f"/>
-<polygon points="102.97,101.06 102.97,95 108.08,95 108.08,101.06" class="n" fill="#cdef77"/>
-<line x1="108.08" y1="95" x2="108.08" y2="101.06" class="m"/>
-<line x1="108.08" y1="98.03" x2="106.88" y2="98.03" class="f"/>
-<polygon points="102.97,107.36 102.97,101.66 112.97,101.66 112.97,107.36" class="n" fill="#a877ef"/>
-<line x1="112.97" y1="101.66" x2="112.97" y2="107.36" class="m"/>
-<line x1="112.97" y1="104.51" x2="111.77" y2="104.51" class="f"/>
+<polygon points="122.31,76.83 122.31,83.18 116,83.18 116,76.83" class="n" fill="#92ef77"/>
+<line x1="116" y1="83.18" x2="116" y2="76.83" class="m"/>
+<line x1="116" y1="80.01" x2="117.2" y2="80.01" class="f"/>
+<polygon points="102.97,101.03 102.97,95 108.08,95 108.08,101.03" class="n" fill="#cdef77"/>
+<line x1="108.08" y1="95" x2="108.08" y2="101.03" class="m"/>
+<line x1="108.08" y1="98.01" x2="106.88" y2="98.01" class="f"/>
+<polygon points="102.97,107.36 102.97,101.63 113.03,101.63 113.03,107.36" class="n" fill="#a877ef"/>
+<line x1="113.03" y1="101.63" x2="113.03" y2="107.36" class="m"/>
+<line x1="113.03" y1="104.49" x2="111.83" y2="104.49" class="f"/>
 <polygon points="102.97,162.5 102.97,150 109.23,150 109.23,162.5" class="n" fill="#7782ef"/>
 <line x1="109.23" y1="150" x2="109.23" y2="162.5" class="m"/>
 <line x1="109.23" y1="156.25" x2="108.03" y2="156.25" class="f"/>
@@ -73,12 +76,15 @@
 <polygon points="211.69,63.52 208.37,83.45 200.28,82.1 203.6,62.17" class="n" fill="#ef9a77"/>
 <line x1="200.28" y1="82.1" x2="203.6" y2="62.17" class="m"/>
 <line x1="201.94" y1="72.14" x2="203.12" y2="72.33" class="f"/>
+<polygon points="196.27,128.12 193.2,137.01 187.39,135 190.45,126.11" class="n" fill="#ef9a77"/>
+<line x1="187.39" y1="135" x2="190.45" y2="126.11" class="m"/>
+<line x1="188.92" y1="130.56" x2="190.05" y2="130.95" class="f"/>
 <polygon points="185.95,156.63 180.72,169.64 172.04,166.15 177.27,153.14" class="n" fill="#ef9a77"/>
 <line x1="172.04" y1="166.15" x2="177.27" y2="153.14" class="m"/>
 <line x1="174.66" y1="159.65" x2="175.77" y2="160.1" class="f"/>
-<polygon points="114.06,207.1 103.06,207.1 103.06,201.95 114.06,201.95" class="n" fill="#bae881"/>
-<line x1="103.06" y1="201.95" x2="114.06" y2="201.95" class="m"/>
-<line x1="108.56" y1="201.95" x2="108.56" y2="203.15" class="f"/>
+<polygon points="114.12,207.1 103.06,207.1 103.06,201.92 114.12,201.92" class="n" fill="#bae881"/>
+<line x1="103.06" y1="201.92" x2="114.12" y2="201.92" class="m"/>
+<line x1="108.59" y1="201.92" x2="108.59" y2="203.12" class="f"/>
 <polygon points="160.76,207.1 149.06,207.1 149.06,195.3 160.76,195.3" class="n" fill="#df99f7"/>
 <line x1="149.06" y1="195.3" x2="160.76" y2="195.3" class="m"/>
 <line x1="154.91" y1="195.3" x2="154.91" y2="196.5" class="f"/>
@@ -91,12 +97,6 @@
 <polygon points="167.56,127.5 184.56,127.5 184.56,132.5 167.56,132.5" class="n" fill="#81d3e8"/>
 <line x1="184.56" y1="132.5" x2="167.56" y2="132.5" class="m"/>
 <line x1="176.06" y1="132.5" x2="176.06" y2="131.3" class="f"/>
-<polygon points="196.27,128.12 193.2,137.01 187.39,135 190.45,126.11" class="n" fill="#ef9a77"/>
-<line x1="187.39" y1="135" x2="190.45" y2="126.11" class="m"/>
-<line x1="188.92" y1="130.56" x2="190.05" y2="130.95" class="f"/>
-<polygon points="122.31,76.83 122.31,83.18 116,83.18 116,76.83" class="n" fill="#92ef77"/>
-<line x1="116" y1="83.18" x2="116" y2="76.83" class="m"/>
-<line x1="116" y1="80.01" x2="117.2" y2="80.01" class="f"/>
 <polygon points="108.48,82.1 108.48,77.9 109.98,77.9 109.98,82.1" class="f" fill="#ea8daa" fill-opacity="0.9"/>
 <line x1="109.98" y1="77.9" x2="109.98" y2="82.1" class="m"/>
 <polygon points="102.56,58.5 102.56,55.5 104.55,55.5 104.55,58.5" class="f" fill="#e281e8"/>
@@ -138,8 +138,8 @@
 <text x="151.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
 <text x="176.06" y="130.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">floor_marking</text>
 <text x="191.83" y="131.86" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">tool_cart</text>
-<text x="107.97" y="104.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">open frame r~</text>
-<text x="108.56" y="204.82" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_lo~</text>
+<text x="108" y="104.79" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">open frame r~</text>
+<text x="108.59" y="204.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">glove_boot_lo~</text>
 <path d="M101.06 49 L214.94 49 L214.37 59 L209.37 89 L201.43 119 L191.06 149 L179 179 L166.06 209 L101.06 209Z M102.56 50.5 L213.35 50.5 L212.87 58.83 L207.9 88.68 L199.99 118.56 L189.66 148.48 L177.62 178.42 L165.08 207.5 L102.56 207.5Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="101.06,113 101.06,145 102.56,145 102.56,113" class="none" fill="#ffffff"/>
 <line x1="101.06" y1="113" x2="102.56" y2="113" class="m"/>
@@ -155,16 +155,16 @@
 <circle cx="158.06" cy="207.28" r="0.4" class="none" fill="#b03030"/>
 <line x1="97.36" y1="79.89" x2="103.04" y2="80" class="x"/>
 <circle cx="103.04" cy="80" r="0.4" class="none" fill="#b03030"/>
-<line x1="97.25" y1="95.81" x2="105.53" y2="98.03" class="x"/>
-<circle cx="105.53" cy="98.03" r="0.4" class="none" fill="#b03030"/>
+<line x1="97.25" y1="95.81" x2="105.53" y2="98.01" class="x"/>
+<circle cx="105.53" cy="98.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="97.3" y1="163.7" x2="103.77" y2="165" class="x"/>
 <circle cx="103.77" cy="165" r="0.4" class="none" fill="#b03030"/>
 <line x1="218.64" y1="72.37" x2="205.99" y2="72.81" class="x"/>
 <circle cx="205.99" cy="72.81" r="0.4" class="none" fill="#b03030"/>
 <line x1="218.64" y1="162.92" x2="178.99" y2="161.39" class="x"/>
 <circle cx="178.99" cy="161.39" r="0.4" class="none" fill="#b03030"/>
-<line x1="108.95" y1="212.7" x2="108.56" y2="204.52" class="x"/>
-<circle cx="108.56" cy="204.52" r="0.4" class="none" fill="#b03030"/>
+<line x1="108.96" y1="212.7" x2="108.59" y2="204.51" class="x"/>
+<circle cx="108.59" cy="204.51" r="0.4" class="none" fill="#b03030"/>
 <line x1="97.1" y1="194.59" x2="102.8" y2="197" class="x"/>
 <circle cx="102.8" cy="197" r="0.4" class="none" fill="#b03030"/>
 <circle cx="94.06" cy="110.09" r="3.3" class="n" fill="#fff"/>

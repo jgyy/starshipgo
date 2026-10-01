@@ -6,10 +6,10 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `storage_archive_robot` | Data storage - Archive Robot | Kestrel Cognitive Systems | 1800 x 2000 x 925 | 1.94 t | 3.8 kW | 208 VAC 3ph | 2.18 M |
+| `storage_archive_robot` | Data storage - Archive Robot | Kestrel Cognitive Systems | 1806 x 2006 x 928 | 1.96 t | 3.8 kW | 208 VAC 3ph | 2.2 M |
 | `storage_black_box_recorder` | Data storage - Black Box Recorder | Kestrel Cognitive Systems | 370 x 190 x 220 | 8 kg | 120 W | 48 VDC | 9,050 |
 | `storage_cartridge_library_shelves` | Data storage - Cartridge Library Shelves | Kestrel Cognitive Systems | 1206 x 1963 x 453 | 592.6 kg | 1.1 kW | 120 VAC 1ph | 716 k |
-| `storage_cold_storage_locker` | Data storage - Cold Storage Locker | Kestrel Cognitive Systems | 1200 x 2020 x 640 | 859.9 kg | 1.6 kW | 208 VAC 3ph | 1.1 M |
+| `storage_cold_storage_locker` | Data storage - Cold Storage Locker | Kestrel Cognitive Systems | 1200 x 2023 x 640 | 861.3 kg | 1.6 kW | 208 VAC 3ph | 1.1 M |
 | `storage_data_crystal_vault` | Data storage - Data Crystal Vault | Kestrel Cognitive Systems | 1192 x 2120 x 1192 | 1.68 t | 3.2 kW | 208 VAC 3ph | 1.56 M |
 | `storage_holo_storage_cylinder` | Data storage - Holo Storage Cylinder | Kestrel Cognitive Systems | 900 x 1990 x 912 | 899 kg | 1.8 kW | 208 VAC 3ph | 832 k |
 | `storage_memory_core_column` | Data storage - Memory Core Column | Kestrel Cognitive Systems | 836 x 2520 x 836 | 974.9 kg | 2 kW | 208 VAC 3ph | 904 k |
@@ -21,12 +21,12 @@
 
 **Data storage - Archive Robot**, Kestrel Cognitive Systems, part KCS-STO-6313 (consumer)
 
-* Mass 1.94 t; size 1800 x 2000 x 925 mm; heat 3.5 kW.
-* Power 940 W idle / 3.8 kW typical / 5.6 kW peak at 208 VAC 3ph.
-* Price 2.18 M cr, lead time 74 days, MTBF 91,100 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 1.96 t; size 1806 x 2006 x 928 mm; heat 3.5 kW.
+* Power 950 W idle / 3.8 kW typical / 5.7 kW peak at 208 VAC 3ph.
+* Price 2.2 M cr, lead time 74 days, MTBF 91,100 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 36 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `engineering` (screens: systems).
-* floor-mounted, free-standing. Install with a hoist or gantry (1.94 t).
+* Software: `atmosphere` (screens: atmosphere).
+* floor-mounted, free-standing. Install with a hoist or gantry (1.96 t).
 
 ### `storage_black_box_recorder`
 
@@ -52,11 +52,11 @@
 
 **Data storage - Cold Storage Locker**, Kestrel Cognitive Systems, part KCS-STO-7029 (consumer)
 
-* Mass 859.9 kg; size 1200 x 2020 x 640 mm; heat 1.5 kW.
+* Mass 861.3 kg; size 1200 x 2023 x 640 mm; heat 1.5 kW.
 * Power 400 W idle / 1.6 kW typical / 2.4 kW peak at 208 VAC 3ph.
 * Price 1.1 M cr, lead time 69 days, MTBF 83,500 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* floor-mounted, free-standing. Install with a hoist or gantry (859.9 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (861.3 kg).
 
 ### `storage_data_crystal_vault`
 

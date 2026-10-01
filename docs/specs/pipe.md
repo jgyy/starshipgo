@@ -14,7 +14,7 @@
 | `pipe_ceiling_turn` | Pipe - Ceiling Turn | Anvil Fluid Controls | 1248 x 255 x 1045 | 47.9 kg | 0 W | none | 1,290 |
 | `pipe_coolant_glow` | Pipe - Coolant Glow | Anvil Fluid Controls | 2000 x 168 x 184 | 9.65 kg | 0 W | none | 437 |
 | `pipe_corrugated_hose` | Pipe - Corrugated Hose | Anvil Fluid Controls | 2010 x 204 x 215 | 13.2 kg | 0 W | none | 666 |
-| `pipe_double_run` | Pipe - Double Run | Anvil Fluid Controls | 2000 x 264 x 148 | 12.5 kg | 0 W | none | 586 |
+| `pipe_double_run` | Pipe - Double Run | Anvil Fluid Controls | 2000 x 264 x 147 | 12.4 kg | 0 W | none | 584 |
 | `pipe_elbow_jog` | Pipe - Elbow Jog | Anvil Fluid Controls | 2000 x 576 x 190 | 32.5 kg | 0 W | none | 971 |
 | `pipe_elbow_up` | Pipe - Elbow Up | Anvil Fluid Controls | 1069 x 1043 x 165 | 27.3 kg | 0 W | none | 720 |
 | `pipe_expansion_loop` | Pipe - Expansion Loop | Anvil Fluid Controls | 2000 x 592 x 165 | 30.2 kg | 0 W | none | 1,060 |
@@ -113,9 +113,9 @@
 
 **Pipe - Double Run**, Anvil Fluid Controls, part AFC-PIP-2579 (passive)
 
-* Mass 12.5 kg; size 2000 x 264 x 148 mm; heat 0 W.
+* Mass 12.4 kg; size 2000 x 264 x 147 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 586 cr, lead time 37 days, MTBF 1,519,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 584 cr, lead time 37 days, MTBF 1,519,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 

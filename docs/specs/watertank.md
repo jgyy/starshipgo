@@ -12,7 +12,7 @@
 | `watertank_potable_water_tank` | Water system - Potable Water Tank | Brightwater Life Systems | 1518 x 2030 x 1143 | 1 t | 0 W | none | 552 k |
 | `watertank_reverse_osmosis_skid` | Water system - Reverse Osmosis Skid | Brightwater Life Systems | 1800 x 1530 x 616 | 413.2 kg | 0 W | none | 188 k |
 | `watertank_uv_water_purifier` | Water system - Uv Water Purifier | Brightwater Life Systems | 900 x 1730 x 570 | 223.1 kg | 2 kW | 208 VAC 3ph | 118 k |
-| `watertank_water_heater` | Water system - Water Heater | Brightwater Life Systems | 1200 x 2235 x 765 | 588.1 kg | 0 W | none | 329 k |
+| `watertank_water_heater` | Water system - Water Heater | Brightwater Life Systems | 1200 x 2235 x 765 | 587.5 kg | 0 W | none | 329 k |
 | `watertank_water_recycler` | Water system - Water Recycler | Brightwater Life Systems | 1220 x 2340 x 1020 | 788.8 kg | 0 W | none | 367 k |
 
 ## Datasheets
@@ -83,12 +83,12 @@
 
 **Water system - Water Heater**, Brightwater Life Systems, part BLS-WAT-5228 (passive)
 
-* Mass 588.1 kg; size 1200 x 2235 x 765 mm; heat 0 W.
+* Mass 587.5 kg; size 1200 x 2235 x 765 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 329 k cr, lead time 99 days, MTBF 47,200 h, service every 3,000 h, service life 18 years, crew 0.
 * IP54, -10 to 55 C; certifications: CSA-LS1 life support, CSA-P4 pressure equipment.
 * Software: `power` (screens: power).
-* floor-mounted, free-standing. Install with a hoist or gantry (588.1 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (587.5 kg).
 
 ### `watertank_water_recycler`
 

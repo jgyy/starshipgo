@@ -9,15 +9,15 @@
 | `ration_bento_ration_box` | Ration - Bento Ration Box | Calder-Okonkwo Industries | 240 x 51 x 374 | 0.52 kg | 0 W | none | 397 |
 | `ration_canned_beans_open` | Ration - Canned Beans Open | Calder-Okonkwo Industries | 232 x 141 x 110 | 0.41 kg | 0 W | none | 215 |
 | `ration_cup_noodle_instant` | Ration - Cup Noodle Instant | Calder-Okonkwo Industries | 144 x 108 x 92 | 0.16 kg | 0 W | none | 173 |
-| `ration_freeze_dried_tray` | Ration - Freeze Dried Tray | Calder-Okonkwo Industries | 242 x 41 x 160 | 0.2 kg | 0 W | none | 222 |
+| `ration_freeze_dried_tray` | Ration - Freeze Dried Tray | Calder-Okonkwo Industries | 242 x 42 x 160 | 0.2 kg | 0 W | none | 222 |
 | `ration_mre_tray_pasta` | Ration - Mre Tray Pasta | Calder-Okonkwo Industries | 314 x 46 x 232 | 0.38 kg | 0 W | none | 254 |
 | `ration_nutrient_tubes_set` | Ration - Nutrient Tubes Set | Calder-Okonkwo Industries | 156 x 107 x 124 | 0.22 kg | 0 W | none | 209 |
-| `ration_pouch_beef_stew` | Ration - Pouch Beef Stew | Calder-Okonkwo Industries | 300 x 185 x 94 | 0.59 kg | 0 W | none | 40 |
+| `ration_pouch_beef_stew` | Ration - Pouch Beef Stew | Calder-Okonkwo Industries | 300 x 188 x 94 | 0.6 kg | 0 W | none | 40 |
 | `ration_pouch_fruit_puree_spout` | Ration - Pouch Fruit Puree Spout | Calder-Okonkwo Industries | 192 x 165 x 50 | 0.16 kg | 0 W | none | 79 |
-| `ration_pouch_vegetable_flat` | Ration - Pouch Vegetable Flat | Calder-Okonkwo Industries | 236 x 69 x 200 | 0.35 kg | 0 W | none | 46 |
-| `ration_protein_bars_stack` | Ration - Protein Bars Stack | Calder-Okonkwo Industries | 198 x 55 x 150 | 0.2 kg | 0 W | none | 178 |
-| `ration_ration_boxes_stacked` | Ration - Ration Boxes Stacked | Calder-Okonkwo Industries | 352 x 301 x 240 | 3.03 kg | 0 W | none | 156 |
-| `ration_ration_brick_pack` | Ration - Ration Brick Pack | Calder-Okonkwo Industries | 152 x 56 x 190 | 0.17 kg | 0 W | none | 62 |
+| `ration_pouch_vegetable_flat` | Ration - Pouch Vegetable Flat | Calder-Okonkwo Industries | 236 x 72 x 200 | 0.36 kg | 0 W | none | 47 |
+| `ration_protein_bars_stack` | Ration - Protein Bars Stack | Calder-Okonkwo Industries | 198 x 58 x 150 | 0.21 kg | 0 W | none | 178 |
+| `ration_ration_boxes_stacked` | Ration - Ration Boxes Stacked | Calder-Okonkwo Industries | 352 x 304 x 240 | 3.06 kg | 0 W | none | 157 |
+| `ration_ration_brick_pack` | Ration - Ration Brick Pack | Calder-Okonkwo Industries | 155 x 59 x 193 | 0.18 kg | 0 W | none | 62 |
 | `ration_water_pouches_stack` | Ration - Water Pouches Stack | Calder-Okonkwo Industries | 192 x 191 x 188 | 0.71 kg | 0 W | none | 83 |
 
 ## Datasheets
@@ -56,7 +56,7 @@
 
 **Ration - Freeze Dried Tray**, Calder-Okonkwo Industries, part COI-RAT-2441 (passive)
 
-* Mass 0.2 kg; size 242 x 41 x 160 mm; heat 0 W.
+* Mass 0.2 kg; size 242 x 42 x 160 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 222 cr, lead time 40 days, MTBF 1,083,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -86,7 +86,7 @@
 
 **Ration - Pouch Beef Stew**, Calder-Okonkwo Industries, part COI-RAT-2017 (passive)
 
-* Mass 0.59 kg; size 300 x 185 x 94 mm; heat 0 W.
+* Mass 0.6 kg; size 300 x 188 x 94 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 40 cr, lead time 38 days, MTBF 1,446,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -106,9 +106,9 @@
 
 **Ration - Pouch Vegetable Flat**, Calder-Okonkwo Industries, part COI-RAT-1577 (passive)
 
-* Mass 0.35 kg; size 236 x 69 x 200 mm; heat 0 W.
+* Mass 0.36 kg; size 236 x 72 x 200 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 46 cr, lead time 33 days, MTBF 1,229,900 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 47 cr, lead time 34 days, MTBF 1,229,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * table-mounted.
 
@@ -116,7 +116,7 @@
 
 **Ration - Protein Bars Stack**, Calder-Okonkwo Industries, part COI-RAT-1121 (passive)
 
-* Mass 0.2 kg; size 198 x 55 x 150 mm; heat 0 W.
+* Mass 0.21 kg; size 198 x 58 x 150 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 178 cr, lead time 35 days, MTBF 1,278,300 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -126,9 +126,9 @@
 
 **Ration - Ration Boxes Stacked**, Calder-Okonkwo Industries, part COI-RAT-2655 (passive)
 
-* Mass 3.03 kg; size 352 x 301 x 240 mm; heat 0 W.
+* Mass 3.06 kg; size 352 x 304 x 240 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 156 cr, lead time 43 days, MTBF 1,436,700 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 157 cr, lead time 43 days, MTBF 1,436,700 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * table-mounted.
 
@@ -136,7 +136,7 @@
 
 **Ration - Ration Brick Pack**, Calder-Okonkwo Industries, part COI-RAT-9811 (passive)
 
-* Mass 0.17 kg; size 152 x 56 x 190 mm; heat 0 W.
+* Mass 0.18 kg; size 155 x 59 x 193 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 62 cr, lead time 33 days, MTBF 1,304,700 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.

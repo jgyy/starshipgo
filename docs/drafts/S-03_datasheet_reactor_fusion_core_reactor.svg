@@ -86,7 +86,7 @@
 <text x="277" y="48.45" font-size="1.8" class="t">2524 x 3043 x 2524 mm (W x H x D)</text>
 <rect x="238" y="49.5" width="171" height="4.5" class="f" fill="#ffffff"/>
 <text x="239" y="52.95" font-size="1.8" class="t b">Mass (dry)</text>
-<text x="277" y="52.95" font-size="1.8" class="t">23.84 t</text>
+<text x="277" y="52.95" font-size="1.8" class="t">23.82 t</text>
 <rect x="238" y="54" width="171" height="4.5" class="f" fill="#f4f6f9"/>
 <text x="239" y="57.45" font-size="1.8" class="t b">Supply</text>
 <text x="277" y="57.45" font-size="1.8" class="t">6.6 kVAC 3ph</text>
@@ -135,7 +135,7 @@
 <text x="238" y="131.3" font-size="1.7" class="t">- CSA-E24 electrical safety</text>
 <text x="238" y="135.1" font-size="1.7" class="t">- CSA-R3 radiation (fusion)</text>
 <text x="238" y="142.9" font-size="2" class="t b">NOTES</text>
-<text x="238" y="147.4" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (23.84 t). Output</text>
+<text x="238" y="147.4" font-size="1.7" class="t">floor-mounted, free-standing. Install with a hoist or gantry (23.82 t). Output</text>
 <text x="238" y="151.2" font-size="1.7" class="t">16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.</text>
 <text x="16" y="178" font-size="2.2" class="t b">ELECTRICAL PROFILE</text>
 <text x="16" y="185" font-size="2" class="t">Producer / storage: output 16.60 MW</text>

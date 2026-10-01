@@ -15,7 +15,7 @@
 | `engtool_oxy_torch_cart` | Engineering tool - Oxy Torch Cart | Anvil Fluid Controls | 902 x 1360 x 607 | 322.1 kg | 0 W | none | 231 k |
 | `engtool_portable_work_light` | Engineering tool - Portable Work Light | Anvil Fluid Controls | 746 x 1959 x 666 | 427.5 kg | 0 W | none | 239 k |
 | `engtool_rolling_toolbox` | Engineering tool - Rolling Toolbox | Anvil Fluid Controls | 820 x 1130 x 550 | 226.5 kg | 0 W | none | 163 k |
-| `engtool_spare_parts_bin` | Engineering tool - Spare Parts Bin | Anvil Fluid Controls | 850 x 930 x 500 | 158 kg | 0 W | none | 101 k |
+| `engtool_spare_parts_bin` | Engineering tool - Spare Parts Bin | Anvil Fluid Controls | 856 x 930 x 506 | 161 kg | 0 W | none | 103 k |
 | `engtool_tool_rack` | Engineering tool - Tool Rack | Anvil Fluid Controls | 1400 x 1045 x 160 | 113.2 kg | 0 W | none | 69.6 k |
 | `engtool_tool_wall_board` | Engineering tool - Tool Wall Board | Anvil Fluid Controls | 1710 x 1060 x 120 | 90.8 kg | 0 W | none | 60.9 k |
 | `engtool_wall_parts_bins` | Engineering tool - Wall Parts Bins | Anvil Fluid Controls | 1306 x 900 x 210 | 108.3 kg | 0 W | none | 68.1 k |
@@ -119,9 +119,9 @@
 
 **Engineering tool - Spare Parts Bin**, Anvil Fluid Controls, part AFC-ENG-1160 (passive)
 
-* Mass 158 kg; size 850 x 930 x 500 mm; heat 0 W.
+* Mass 161 kg; size 856 x 930 x 506 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 101 k cr, lead time 126 days, MTBF 36,400 h, service every 2,000 h, service life 20 years, crew 0.
+* Price 103 k cr, lead time 126 days, MTBF 36,400 h, service every 2,000 h, service life 20 years, crew 0.
 * IP54, -20 to 60 C; certifications: CSA-M5 machinery safety, CSA-E24 electrical safety.
 * floor-mounted, free-standing. Two-person lift.
 

@@ -38,13 +38,16 @@
 <polygon points="125.64,179 193.64,179 193.64,219 125.64,219" class="red" fill="url(#hZone)"/>
 <text x="159.64" y="181" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="267.38,154.2 267.38,103.8 272.34,103.8 272.34,154.2" class="m" fill="none"/>
-<polygon points="135.24,216.8 184.04,216.8 184.04,221.6 135.24,221.6" class="m" fill="none"/>
+<polygon points="135.24,216.74 184.04,216.74 184.04,221.6 135.24,221.6" class="m" fill="none"/>
 <polygon points="138.64,42.8 154.64,42.8 154.64,59.6 138.64,59.6" class="n" fill="#dcef77"/>
 <line x1="154.64" y1="59.6" x2="138.64" y2="59.6" class="m"/>
 <line x1="146.64" y1="59.6" x2="146.64" y2="58.4" class="f"/>
 <polygon points="155.64,42.8 171.64,42.8 171.64,59.6 155.64,59.6" class="n" fill="#dcef77"/>
 <line x1="171.64" y1="59.6" x2="155.64" y2="59.6" class="m"/>
 <line x1="163.64" y1="59.6" x2="163.64" y2="58.4" class="f"/>
+<polygon points="172.64,42.8 203.04,42.8 203.04,58.52 172.64,58.52" class="n" fill="#dcef77"/>
+<line x1="203.04" y1="58.52" x2="172.64" y2="58.52" class="m"/>
+<line x1="187.84" y1="58.52" x2="187.84" y2="57.32" class="f"/>
 <polygon points="220.94,42.8 246.36,42.8 246.36,53.72 220.94,53.72" class="n" fill="#dcef77"/>
 <line x1="246.36" y1="53.72" x2="220.94" y2="53.72" class="m"/>
 <line x1="233.65" y1="53.72" x2="233.65" y2="52.52" class="f"/>
@@ -90,9 +93,6 @@
 <polygon points="208.32,43 220.32,43 220.32,51 208.32,51" class="n" fill="#a0e881"/>
 <line x1="220.32" y1="51" x2="208.32" y2="51" class="m"/>
 <line x1="214.32" y1="51" x2="214.32" y2="49.8" class="f"/>
-<polygon points="172.64,42.8 203.04,42.8 203.04,58.52 172.64,58.52" class="n" fill="#dcef77"/>
-<line x1="203.04" y1="58.52" x2="172.64" y2="58.52" class="m"/>
-<line x1="187.84" y1="58.52" x2="187.84" y2="57.32" class="f"/>
 <polygon points="192.64,90.9 202.64,90.9 202.64,99.1 192.64,99.1" class="f" fill="#dff084" fill-opacity="0.9"/>
 <line x1="202.64" y1="99.1" x2="192.64" y2="99.1" class="m"/>
 <line x1="197.64" y1="99.1" x2="197.64" y2="97.9" class="f"/>
@@ -102,11 +102,11 @@
 <polygon points="203.94,93.58 207.34,93.58 207.34,96.42 203.94,96.42" class="f" fill="#eae58d" fill-opacity="0.9"/>
 <line x1="207.34" y1="96.42" x2="203.94" y2="96.42" class="m"/>
 <line x1="205.64" y1="96.42" x2="205.64" y2="95.22" class="f"/>
-<polygon points="100.26,211.36 89.02,211.36 89.02,204.04 100.26,204.04" class="f" fill="#edf7a3" fill-opacity="0.9"/>
-<line x1="89.02" y1="204.04" x2="100.26" y2="204.04" class="m"/>
+<polygon points="100.28,211.36 89,211.36 89,204.04 100.28,204.04" class="f" fill="#edf7a3" fill-opacity="0.9"/>
+<line x1="89" y1="204.04" x2="100.28" y2="204.04" class="m"/>
 <line x1="94.64" y1="204.04" x2="94.64" y2="205.24" class="f"/>
-<polygon points="113.26,211.56 102.02,211.56 102.02,203.84 113.26,203.84" class="f" fill="#edf7a3" fill-opacity="0.9"/>
-<line x1="102.02" y1="203.84" x2="113.26" y2="203.84" class="m"/>
+<polygon points="113.28,211.56 102,211.56 102,203.84 113.28,203.84" class="f" fill="#edf7a3" fill-opacity="0.9"/>
+<line x1="102" y1="203.84" x2="113.28" y2="203.84" class="m"/>
 <line x1="107.64" y1="203.84" x2="107.64" y2="205.04" class="f"/>
 <polygon points="121.54,210.12 115.74,210.12 115.74,205.28 121.54,205.28" class="f" fill="#ea8de3" fill-opacity="0.9"/>
 <line x1="115.74" y1="205.28" x2="121.54" y2="205.28" class="m"/>
@@ -122,6 +122,9 @@
 <polygon points="229.64,211.08 222.84,211.08 222.84,204.32 229.64,204.32" class="f" fill="#edf7a3" fill-opacity="0.9"/>
 <line x1="222.84" y1="204.32" x2="229.64" y2="204.32" class="m"/>
 <line x1="226.24" y1="204.32" x2="226.24" y2="205.52" class="f"/>
+<polygon points="149.5,122.7 157.8,122.7 157.8,127.3 149.5,127.3" class="f" fill="#dff084" fill-opacity="0.9"/>
+<line x1="157.8" y1="127.3" x2="149.5" y2="127.3" class="m"/>
+<line x1="153.65" y1="127.3" x2="153.65" y2="126.1" class="f"/>
 <polygon points="124.56,122.78 130.72,122.78 130.72,127.22 124.56,127.22" class="f" fill="#f7b7a3" fill-opacity="0.9"/>
 <line x1="130.72" y1="127.22" x2="124.56" y2="127.22" class="m"/>
 <line x1="127.64" y1="127.22" x2="127.64" y2="126.02" class="f"/>
@@ -134,9 +137,6 @@
 <polygon points="159.28,123.74 164,123.74 164,126.26 159.28,126.26" class="f" fill="#f7b7a3" fill-opacity="0.9"/>
 <line x1="164" y1="126.26" x2="159.28" y2="126.26" class="m"/>
 <line x1="161.64" y1="126.26" x2="161.64" y2="125.06" class="f"/>
-<polygon points="149.5,122.7 157.8,122.7 157.8,127.3 149.5,127.3" class="f" fill="#dff084" fill-opacity="0.9"/>
-<line x1="157.8" y1="127.3" x2="149.5" y2="127.3" class="m"/>
-<line x1="153.65" y1="127.3" x2="153.65" y2="126.1" class="f"/>
 <polygon points="208.64,42 214.64,42 214.64,45.98 208.64,45.98" class="f" fill="#e281e8"/>
 <polygon points="55.51,193.11 56.13,191.21 56.95,191.48 56.32,193.38" class="f" fill="#9999f7"/>
 <polygon points="53.62,198.8 54.38,196.52 55.71,196.96 54.95,199.24" class="f" fill="#9999f7"/>
@@ -166,7 +166,7 @@
 <text x="146.64" y="51.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refrigerator</text>
 <text x="163.64" y="51.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">refrigerator</text>
 <text x="67.64" y="208.7" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">food replicator</text>
-<text x="159.64" y="219.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">twin ring</text>
+<text x="159.64" y="219.47" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">twin ring</text>
 <text x="260.14" y="81.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">UV Water Purif~</text>
 <text x="214.32" y="47.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">crate_tomatoes</text>
 <text x="94.64" y="208" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hotel_pan_mash~</text>

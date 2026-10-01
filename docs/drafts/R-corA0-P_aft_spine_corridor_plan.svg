@@ -43,7 +43,7 @@
 <text x="164.67" y="99.53" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
 <polygon points="151.33,159.93 178,159.93 178,196.73 151.33,196.73" class="red" fill="url(#hZone)"/>
 <text x="164.67" y="161.93" font-size="1.2" class="t i halo" text-anchor="middle" style="fill:#a04040">DOOR CLEAR</text>
-<polygon points="176,135 176,141.67 171.84,141.67 171.84,135" class="f" fill="#f799b1"/>
+<polygon points="176,134.96 176,141.71 171.8,141.71 171.8,134.96" class="f" fill="#f799b1"/>
 <polygon points="176,127 176,131 173.35,131 173.35,127" class="f" fill="#e281e8"/>
 <polygon points="140,61 140,47.67 140.8,47.67 140.8,61" class="f" fill="#e281e8"/>
 <polygon points="176,127 176,131 174.97,131 174.97,127" class="f" fill="#81e8d6"/>
@@ -106,8 +106,8 @@
 <circle cx="146.67" cy="79.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="134.21" y1="55.77" x2="140.4" y2="54.33" class="x"/>
 <circle cx="140.4" cy="54.33" r="0.4" class="none" fill="#b03030"/>
-<line x1="181.76" y1="139.83" x2="173.92" y2="138.33" class="x"/>
-<circle cx="173.92" cy="138.33" r="0.4" class="none" fill="#b03030"/>
+<line x1="181.76" y1="139.83" x2="173.9" y2="138.33" class="x"/>
+<circle cx="173.9" cy="138.33" r="0.4" class="none" fill="#b03030"/>
 <circle cx="131" cy="71.78" r="3.3" class="n" fill="#fff"/>
 <text x="131" y="72.38" font-size="1.6" class="t b" text-anchor="middle">CA0-01</text>
 <circle cx="131" cy="209.11" r="3.3" class="n" fill="#fff"/>

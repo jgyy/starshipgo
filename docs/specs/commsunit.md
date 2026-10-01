@@ -10,7 +10,7 @@
 | `commsunit_encryption_unit` | Communications unit - Encryption Unit | Kestrel Cognitive Systems | 320 x 200 x 287 | 5.2 kg | 20 W | 24 VDC | 4,800 |
 | `commsunit_handset_cradle` | Communications unit - Handset Cradle | Kestrel Cognitive Systems | 245 x 182 x 303 | 3.67 kg | 19 W | 24 VDC | 3,640 |
 | `commsunit_intercom_panel` | Communications unit - Intercom Panel | Kestrel Cognitive Systems | 220 x 340 x 60 | 1.3 kg | 16 W | 24 VDC | 1,470 |
-| `commsunit_radio_rack` | Communications unit - Radio Rack | Kestrel Cognitive Systems | 606 x 2103 x 512 | 197.3 kg | 260 W | 48 VDC | 229 k |
+| `commsunit_radio_rack` | Communications unit - Radio Rack | Kestrel Cognitive Systems | 603 x 2103 x 512 | 196.3 kg | 260 W | 48 VDC | 228 k |
 | `commsunit_radio_transceiver` | Communications unit - Radio Transceiver | Kestrel Cognitive Systems | 558 x 500 x 300 | 24 kg | 51 W | 48 VDC | 28.6 k |
 | `commsunit_signal_booster` | Communications unit - Signal Booster | Kestrel Cognitive Systems | 440 x 430 x 254 | 12.8 kg | 31 W | 24 VDC | 11.4 k |
 | `commsunit_speaker_grille` | Communications unit - Speaker Grille | Kestrel Cognitive Systems | 600 x 300 x 105 | 5.51 kg | 22 W | 24 VDC | 5,510 |
@@ -67,9 +67,9 @@
 
 **Communications unit - Radio Rack**, Kestrel Cognitive Systems, part KCS-COM-9309 (consumer)
 
-* Mass 197.3 kg; size 606 x 2103 x 512 mm; heat 240 W.
+* Mass 196.3 kg; size 603 x 2103 x 512 mm; heat 240 W.
 * Power 64 W idle / 260 W typical / 390 W peak at 48 VDC.
-* Price 229 k cr, lead time 63 days, MTBF 65,100 h, service every 8,760 h, service life 10 years, crew 1.
+* Price 228 k cr, lead time 63 days, MTBF 65,100 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * Software: `comms` (screens: comm, ecg_multi).
 * floor-mounted, free-standing. Two-person lift.

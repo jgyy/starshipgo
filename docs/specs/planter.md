@@ -10,7 +10,7 @@
 | `planter_flower_bed_planter` | Hydroponic planter - Flower Bed Planter | Brightwater Life Systems | 1550 x 745 x 750 | 122.8 kg | 480 W | 120 VAC 1ph | 57.8 k |
 | `planter_grow_light_bar_panel` | Hydroponic planter - Grow Light Bar Panel | Brightwater Life Systems | 1600 x 170 x 526 | 18.4 kg | 210 W | 120 VAC 1ph | 10.6 k |
 | `planter_hanging_grow_light_array` | Hydroponic planter - Hanging Grow Light Array | Brightwater Life Systems | 1806 x 600 x 430 | 55.9 kg | 330 W | 120 VAC 1ph | 29.5 k |
-| `planter_herb_shelf_rack` | Hydroponic planter - Herb Shelf Rack | Brightwater Life Systems | 1266 x 1809 x 406 | 130.5 kg | 550 W | 120 VAC 1ph | 65.5 k |
+| `planter_herb_shelf_rack` | Hydroponic planter - Herb Shelf Rack | Brightwater Life Systems | 1263 x 1809 x 406 | 130.2 kg | 550 W | 120 VAC 1ph | 65.4 k |
 | `planter_lettuce_trough` | Hydroponic planter - Lettuce Trough | Brightwater Life Systems | 1250 x 865 x 700 | 104.9 kg | 420 W | 120 VAC 1ph | 58.6 k |
 | `planter_microgreen_rack` | Hydroponic planter - Microgreen Rack | Brightwater Life Systems | 1400 x 2175 x 700 | 293.7 kg | 1.1 kW | 120 VAC 1ph | 133 k |
 | `planter_mushroom_shelf` | Hydroponic planter - Mushroom Shelf | Brightwater Life Systems | 1450 x 1910 x 750 | 304.4 kg | 880 W | 120 VAC 1ph | 134 k |
@@ -65,9 +65,9 @@
 
 **Hydroponic planter - Herb Shelf Rack**, Brightwater Life Systems, part BLS-PLA-4731 (consumer)
 
-* Mass 130.5 kg; size 1266 x 1809 x 406 mm; heat 510 W.
+* Mass 130.2 kg; size 1263 x 1809 x 406 mm; heat 510 W.
 * Power 220 W idle / 550 W typical / 880 W peak at 120 VAC 1ph.
-* Price 65.5 k cr, lead time 89 days, MTBF 45,400 h, service every 3,000 h, service life 18 years, crew 1.
+* Price 65.4 k cr, lead time 89 days, MTBF 45,400 h, service every 3,000 h, service life 18 years, crew 1.
 * IP54, -10 to 55 C, 59 dB(A); certifications: CSA-LS1 life support, CSA-P4 pressure equipment; interface: Environmental bus EB-1.
 * floor-mounted, free-standing. Two-person lift.
 

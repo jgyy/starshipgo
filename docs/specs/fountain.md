@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `fountain_drinking_fountain_wall_unit` | Water fountain - Drinking Fountain Wall Unit | Greywater Galley Systems | 500 x 540 x 312 | 10.1 kg | 87 W | 120 VAC 1ph | 3,510 |
+| `fountain_drinking_fountain_wall_unit` | Water fountain - Drinking Fountain Wall Unit | Greywater Galley Systems | 506 x 540 x 315 | 10.4 kg | 88 W | 120 VAC 1ph | 3,610 |
 | `fountain_water_cooler_tower` | Water fountain - Water Cooler Tower | Greywater Galley Systems | 360 x 1293 x 425 | 23.1 kg | 130 W | 120 VAC 1ph | 7,510 |
 
 ## Datasheets
@@ -15,9 +15,9 @@
 
 **Water fountain - Drinking Fountain Wall Unit**, Greywater Galley Systems, part GGS-FOU-2447 (consumer)
 
-* Mass 10.1 kg; size 500 x 540 x 312 mm; heat 80 W.
-* Power 26 W idle / 87 W typical / 130 W peak at 120 VAC 1ph.
-* Price 3,510 cr, lead time 57 days, MTBF 43,100 h, service every 2,190 h, service life 15 years, crew 0.
+* Mass 10.4 kg; size 506 x 540 x 315 mm; heat 81 W.
+* Power 26 W idle / 88 W typical / 130 W peak at 120 VAC 1ph.
+* Price 3,610 cr, lead time 57 days, MTBF 43,100 h, service every 2,190 h, service life 15 years, crew 0.
 * IP44, 0 to 50 C, 49 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
 * wall-mounted.
 

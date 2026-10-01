@@ -10,7 +10,7 @@
 | `couch_bean_bag` | Couch / sofa - Bean Bag | Sable Habitat Furnishings | 1100 x 921 x 1100 | 31.6 kg | 0 W | none | 1,180 |
 | `couch_chaise` | Couch / sofa - Chaise | Sable Habitat Furnishings | 865 x 1030 x 1775 | 43.7 kg | 0 W | none | 1,500 |
 | `couch_corner_couch_segment` | Couch / sofa - Corner Couch Segment | Sable Habitat Furnishings | 1000 x 935 x 1000 | 26.5 kg | 0 W | none | 1,050 |
-| `couch_lounge_armchair` | Couch / sofa - Lounge Armchair | Sable Habitat Furnishings | 1020 x 1272 x 1020 | 39.1 kg | 0 W | none | 1,540 |
+| `couch_lounge_armchair` | Couch / sofa - Lounge Armchair | Sable Habitat Furnishings | 1020 x 1271 x 1020 | 39.1 kg | 0 W | none | 1,540 |
 | `couch_observation_sofa` | Couch / sofa - Observation Sofa | Sable Habitat Furnishings | 3161 x 1000 x 1271 | 120.3 kg | 0 W | none | 5,190 |
 | `couch_ottoman` | Couch / sofa - Ottoman | Sable Habitat Furnishings | 800 x 435 x 790 | 8.06 kg | 0 W | none | 574 |
 | `couch_seating_pod` | Couch / sofa - Seating Pod | Sable Habitat Furnishings | 1696 x 1145 x 1696 | 94.1 kg | 0 W | none | 4,340 |
@@ -63,7 +63,7 @@
 
 **Couch / sofa - Lounge Armchair**, Sable Habitat Furnishings, part SHF-COU-2548 (passive)
 
-* Mass 39.1 kg; size 1020 x 1272 x 1020 mm; heat 0 W.
+* Mass 39.1 kg; size 1020 x 1271 x 1020 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 1,540 cr, lead time 39 days, MTBF 1,146,800 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.

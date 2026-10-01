@@ -27,7 +27,7 @@
 * Power 120 W idle / 410 W typical / 690 W peak at 120 VAC 1ph.
 * Price 412 k cr, lead time 111 days, MTBF 39,800 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 44 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `logbook` (screens: log_list).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `sciinstrument_geiger_counter`
@@ -49,7 +49,7 @@
 * Power 13 W idle / 44 W typical / 75 W peak at 24 VDC.
 * Price 44.3 k cr, lead time 105 days, MTBF 54,500 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 41 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `science` (screens: waveform).
+* Software: `science` (screens: waterfall).
 * table-mounted.
 
 ### `sciinstrument_portable_field_lab`
@@ -115,7 +115,7 @@
 * Power 7.3 W idle / 24 W typical / 42 W peak at 24 VDC.
 * Price 24.7 k cr, lead time 104 days, MTBF 56,400 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 40 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `diagnostics` (screens: bars).
+* Software: `cargo` (screens: inventory_grid).
 * table-mounted.
 
 ### `sciinstrument_weather_station`

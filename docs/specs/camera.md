@@ -98,7 +98,7 @@
 * Power 2.6 W idle / 8.6 W typical / 14 W peak at 24 VDC.
 * Price 1,010 cr, lead time 72 days, MTBF 64,900 h, service every 4,380 h, service life 15 years, crew 0.
 * IP54, -10 to 55 C, 32 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* Software: `medical` (screens: vitals).
+* Software: `security` (screens: dna).
 * wall-mounted.
 
 ### `camera_sentry_sensor_pod`

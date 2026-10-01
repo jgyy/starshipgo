@@ -15,7 +15,7 @@
 | `hangartool_docking_clamp` | Hangar equipment - Docking Clamp | Ironwake Heavy Works | 1816 x 1900 x 1600 | 1.12 t | 0 W | none | 155 k |
 | `hangartool_door_control_pillar` | Hangar equipment - Door Control Pillar | Ironwake Heavy Works | 500 x 2985 x 500 | 135 kg | 0 W | none | 20.4 k |
 | `hangartool_engine_hoist` | Hangar equipment - Engine Hoist | Ironwake Heavy Works | 1000 x 2315 x 2305 | 1.06 t | 0 W | none | 204 k |
-| `hangartool_engine_stand` | Hangar equipment - Engine Stand | Ironwake Heavy Works | 1308 x 1996 x 2415 | 1.26 t | 0 W | none | 231 k |
+| `hangartool_engine_stand` | Hangar equipment - Engine Stand | Ironwake Heavy Works | 1303 x 1996 x 2415 | 1.25 t | 0 W | none | 229 k |
 | `hangartool_fire_cannon` | Hangar equipment - Fire Cannon | Ironwake Heavy Works | 1090 x 1440 x 1645 | 480.2 kg | 0 W | none | 86.2 k |
 | `hangartool_fuel_hose_reel` | Hangar equipment - Fuel Hose Reel | Ironwake Heavy Works | 1180 x 1030 x 1880 | 437.8 kg | 0 W | none | 69.7 k |
 | `hangartool_ground_power_unit` | Hangar equipment - Ground Power Unit | Ironwake Heavy Works | 1149 x 1550 x 915 | 327.3 kg | 0 W | none | 54.2 k |
@@ -23,7 +23,7 @@
 | `hangartool_landing_pad_square` | Hangar equipment - Landing Pad Square | Ironwake Heavy Works | 6000 x 125 x 6000 | 927.4 kg | 0 W | none | 187 k |
 | `hangartool_launch_rail_segment` | Hangar equipment - Launch Rail Segment | Ironwake Heavy Works | 1430 x 1209 x 4208 | 1.45 t | 0 W | none | 224 k |
 | `hangartool_light_tower` | Hangar equipment - Light Tower | Ironwake Heavy Works | 1900 x 5225 x 2450 | 4.96 t | 0 W | none | 677 k |
-| `hangartool_mooring_ring` | Hangar equipment - Mooring Ring | Ironwake Heavy Works | 1000 x 354 x 1000 | 64.3 kg | 0 W | none | 9,000 |
+| `hangartool_mooring_ring` | Hangar equipment - Mooring Ring | Ironwake Heavy Works | 1000 x 355 x 1000 | 64.5 kg | 0 W | none | 9,030 |
 | `hangartool_nose_gear_dolly` | Hangar equipment - Nose Gear Dolly | Ironwake Heavy Works | 1212 x 770 x 2550 | 468.4 kg | 0 W | none | 69.6 k |
 | `hangartool_paint_booth_screen` | Hangar equipment - Paint Booth Screen | Ironwake Heavy Works | 2880 x 2550 x 500 | 758.4 kg | 0 W | none | 153 k |
 | `hangartool_parts_washer` | Hangar equipment - Parts Washer | Ironwake Heavy Works | 1853 x 2011 x 1257 | 857.7 kg | 0 W | none | 141 k |
@@ -134,11 +134,11 @@
 
 **Hangar equipment - Engine Stand**, Ironwake Heavy Works, part IHW-HAN-6706 (passive)
 
-* Mass 1.26 t; size 1308 x 1996 x 2415 mm; heat 0 W.
+* Mass 1.25 t; size 1303 x 1996 x 2415 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 231 k cr, lead time 93 days, MTBF 100,500 h, service every 4,380 h, service life 20 years, crew 0.
+* Price 229 k cr, lead time 93 days, MTBF 100,500 h, service every 4,380 h, service life 20 years, crew 0.
 * IP55, -40 to 70 C; certifications: CSA-H2 flight deck, CSA-E24 electrical safety.
-* floor-mounted, free-standing. Install with a hoist or gantry (1.26 t).
+* floor-mounted, free-standing. Install with a hoist or gantry (1.25 t).
 
 ### `hangartool_fire_cannon`
 
@@ -215,9 +215,9 @@
 
 **Hangar equipment - Mooring Ring**, Ironwake Heavy Works, part IHW-HAN-7641 (passive)
 
-* Mass 64.3 kg; size 1000 x 354 x 1000 mm; heat 0 W.
+* Mass 64.5 kg; size 1000 x 355 x 1000 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 9,000 cr, lead time 89 days, MTBF 155,800 h, service every 4,380 h, service life 20 years, crew 0.
+* Price 9,030 cr, lead time 89 days, MTBF 155,800 h, service every 4,380 h, service life 20 years, crew 0.
 * IP55, -40 to 70 C; certifications: CSA-H2 flight deck, CSA-E24 electrical safety.
 * floor-mounted. Two-person lift.
 

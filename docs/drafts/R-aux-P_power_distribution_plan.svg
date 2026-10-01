@@ -56,24 +56,24 @@
 <polygon points="236.6,58.8 258.58,58.8 258.58,81.14 236.6,81.14" class="n" fill="#81ace8"/>
 <line x1="258.58" y1="81.14" x2="236.6" y2="81.14" class="m"/>
 <line x1="247.59" y1="81.14" x2="247.59" y2="79.94" class="f"/>
-<polygon points="143,118.16 121,118.16 121,105.84 143,105.84" class="n" fill="#7782ef"/>
-<line x1="121" y1="105.84" x2="143" y2="105.84" class="m"/>
-<line x1="132" y1="105.84" x2="132" y2="107.04" class="f"/>
-<polygon points="166,118.16 144,118.16 144,105.84 166,105.84" class="n" fill="#7782ef"/>
-<line x1="144" y1="105.84" x2="166" y2="105.84" class="m"/>
-<line x1="155" y1="105.84" x2="155" y2="107.04" class="f"/>
-<polygon points="189,118.16 167,118.16 167,105.84 189,105.84" class="n" fill="#7782ef"/>
-<line x1="167" y1="105.84" x2="189" y2="105.84" class="m"/>
-<line x1="178" y1="105.84" x2="178" y2="107.04" class="f"/>
-<polygon points="208,118.04 190,118.04 190,105.96 208,105.96" class="n" fill="#7782ef"/>
-<line x1="190" y1="105.96" x2="208" y2="105.96" class="m"/>
-<line x1="199" y1="105.96" x2="199" y2="107.16" class="f"/>
-<polygon points="227,118.04 209,118.04 209,105.96 227,105.96" class="n" fill="#7782ef"/>
-<line x1="209" y1="105.96" x2="227" y2="105.96" class="m"/>
-<line x1="218" y1="105.96" x2="218" y2="107.16" class="f"/>
-<polygon points="246.4,117.56 228,117.56 228,106.46 246.4,106.46" class="n" fill="#7782ef"/>
-<line x1="228" y1="106.46" x2="246.4" y2="106.46" class="m"/>
-<line x1="237.2" y1="106.46" x2="237.2" y2="107.66" class="f"/>
+<polygon points="143.12,118.2 121,118.2 121,105.82 143.12,105.82" class="n" fill="#7782ef"/>
+<line x1="121" y1="105.82" x2="143.12" y2="105.82" class="m"/>
+<line x1="132.06" y1="105.82" x2="132.06" y2="107.02" class="f"/>
+<polygon points="166.24,118.2 144.12,118.2 144.12,105.82 166.24,105.82" class="n" fill="#7782ef"/>
+<line x1="144.12" y1="105.82" x2="166.24" y2="105.82" class="m"/>
+<line x1="155.18" y1="105.82" x2="155.18" y2="107.02" class="f"/>
+<polygon points="189.36,118.2 167.24,118.2 167.24,105.82 189.36,105.82" class="n" fill="#7782ef"/>
+<line x1="167.24" y1="105.82" x2="189.36" y2="105.82" class="m"/>
+<line x1="178.3" y1="105.82" x2="178.3" y2="107.02" class="f"/>
+<polygon points="208.36,118.04 190.36,118.04 190.36,105.96 208.36,105.96" class="n" fill="#7782ef"/>
+<line x1="190.36" y1="105.96" x2="208.36" y2="105.96" class="m"/>
+<line x1="199.36" y1="105.96" x2="199.36" y2="107.16" class="f"/>
+<polygon points="227.36,118.04 209.36,118.04 209.36,105.96 227.36,105.96" class="n" fill="#7782ef"/>
+<line x1="209.36" y1="105.96" x2="227.36" y2="105.96" class="m"/>
+<line x1="218.36" y1="105.96" x2="218.36" y2="107.16" class="f"/>
+<polygon points="246.76,117.56 228.36,117.56 228.36,106.46 246.76,106.46" class="n" fill="#7782ef"/>
+<line x1="228.36" y1="106.46" x2="246.76" y2="106.46" class="m"/>
+<line x1="237.56" y1="106.46" x2="237.56" y2="107.66" class="f"/>
 <polygon points="121,119.08 141.4,119.08 141.4,133.34 121,133.34" class="n" fill="#b777ef"/>
 <line x1="141.4" y1="133.34" x2="121" y2="133.34" class="m"/>
 <line x1="131.2" y1="133.34" x2="131.2" y2="132.14" class="f"/>
@@ -107,6 +107,9 @@
 <polygon points="269.2,138.84 269.2,175.16 252,175.16 252,138.84" class="n" fill="#f799f7"/>
 <line x1="252" y1="175.16" x2="252" y2="138.84" class="m"/>
 <line x1="252" y1="157" x2="253.2" y2="157" class="f"/>
+<polygon points="232.4,163.34 232.4,150.64 245,150.64 245,163.34" class="n" fill="#92ef77"/>
+<line x1="245" y1="150.64" x2="245" y2="163.34" class="m"/>
+<line x1="245" y1="156.99" x2="243.8" y2="156.99" class="f"/>
 <polygon points="46.8,179.6 46.8,160.4 58.4,160.4 58.4,179.6" class="n" fill="#dfe881"/>
 <line x1="58.4" y1="160.4" x2="58.4" y2="179.6" class="m"/>
 <line x1="58.4" y1="170" x2="57.2" y2="170" class="f"/>
@@ -119,9 +122,6 @@
 <polygon points="172.06,148 197.94,148 197.94,162 172.06,162" class="n" fill="#7782ef"/>
 <line x1="197.94" y1="162" x2="172.06" y2="162" class="m"/>
 <line x1="185" y1="162" x2="185" y2="160.8" class="f"/>
-<polygon points="232.4,163.34 232.4,150.64 245,150.64 245,163.34" class="n" fill="#92ef77"/>
-<line x1="245" y1="150.64" x2="245" y2="163.34" class="m"/>
-<line x1="245" y1="156.99" x2="243.8" y2="156.99" class="f"/>
 <polygon points="259.1,152.8 259.1,161.2 256.1,161.2 256.1,152.8" class="f" fill="#ea8daa" fill-opacity="0.9"/>
 <line x1="256.1" y1="161.2" x2="256.1" y2="152.8" class="m"/>
 <line x1="256.1" y1="157" x2="257.3" y2="157" class="f"/>
@@ -164,16 +164,16 @@
 <text x="152.6" y="126.51" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Switchgear</text>
 <text x="198.8" y="126.51" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Switchgear</text>
 <text x="190.4" y="67.5" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Regulator Tower</text>
-<text x="132" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
-<text x="155" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
-<text x="178" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
+<text x="132.06" y="112.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
+<text x="155.18" y="112.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
+<text x="178.3" y="112.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
 <text x="209" y="66.15" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Rectifier Cabinet</text>
 <text x="100.2" y="64.8" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Power Distribution Cabinet</text>
 <text x="52.6" y="170.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">utility cabinet</text>
-<text x="199" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Marx Bank</text>
-<text x="218" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Marx Bank</text>
+<text x="199.36" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Marx Bank</text>
+<text x="218.36" y="112.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Marx Bank</text>
 <text x="227.4" y="65.6" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Inverter Cabinet</text>
-<text x="237.2" y="112.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Power Cell Locker</text>
+<text x="237.56" y="112.31" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Power Cell Locker</text>
 <text x="52.3" y="190.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Rolling Toolb~</text>
 <text x="218.2" y="126.51" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Control Cabinet with ~</text>
 <text x="139" y="155.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Diagnostic Cart</text>
@@ -189,8 +189,8 @@
 <circle cx="158" cy="102" r="0.4" class="none" fill="#b03030"/>
 <line x1="97.63" y1="51.24" x2="100.2" y2="64.5" class="x"/>
 <circle cx="100.2" cy="64.5" r="0.4" class="none" fill="#b03030"/>
-<line x1="276.7" y1="109.89" x2="237.2" y2="112.01" class="x"/>
-<circle cx="237.2" cy="112.01" r="0.4" class="none" fill="#b03030"/>
+<line x1="276.7" y1="109.89" x2="237.56" y2="112.01" class="x"/>
+<circle cx="237.56" cy="112.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="276.7" y1="125.22" x2="234.6" y2="126.2" class="x"/>
 <circle cx="234.6" cy="126.2" r="0.4" class="none" fill="#b03030"/>
 <line x1="211.25" y1="206.7" x2="210.66" y2="191.2" class="x"/>

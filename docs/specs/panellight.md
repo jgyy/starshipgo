@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `panellight_backlit_rectangle` | Panel light - Backlit Rectangle | Tamsin Lighting | 660 x 960 x 62 | 4.42 kg | 9.1 W | 24 VDC | 996 |
 | `panellight_door_side_light` | Panel light - Door Side Light | Tamsin Lighting | 160 x 560 x 52 | 0.55 kg | 5 W | 24 VDC | 231 |
-| `panellight_glowing_wall_strip` | Panel light - Glowing Wall Strip | Tamsin Lighting | 120 x 1300 x 65 | 1.04 kg | 5.6 W | 24 VDC | 370 |
+| `panellight_glowing_wall_strip` | Panel light - Glowing Wall Strip | Tamsin Lighting | 120 x 1300 x 63 | 1 kg | 5.5 W | 24 VDC | 358 |
 | `panellight_hex_glow_panel` | Panel light - Hex Glow Panel | Tamsin Lighting | 592 x 520 x 72 | 2.33 kg | 6.8 W | 24 VDC | 759 |
 | `panellight_illuminated_logo_plate` | Panel light - Illuminated Logo Plate | Tamsin Lighting | 600 x 360 x 52 | 1.32 kg | 6.3 W | 24 VDC | 391 |
 | `panellight_porthole_glow` | Panel light - Porthole Glow | Tamsin Lighting | 638 x 638 x 107 | 5.29 kg | 9.2 W | 24 VDC | 1,500 |
@@ -43,9 +43,9 @@
 
 **Panel light - Glowing Wall Strip**, Tamsin Lighting, part TAM-PAN-5202 (consumer)
 
-* Mass 1.04 kg; size 120 x 1300 x 65 mm; heat 4.5 W.
-* Power 0.28 W idle / 5.6 W typical / 6.1 W peak at 24 VDC.
-* Price 370 cr, lead time 32 days, MTBF 65,500 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 1 kg; size 120 x 1300 x 63 mm; heat 4.4 W.
+* Power 0.28 W idle / 5.5 W typical / 6.1 W peak at 24 VDC.
+* Price 358 cr, lead time 32 days, MTBF 65,500 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 

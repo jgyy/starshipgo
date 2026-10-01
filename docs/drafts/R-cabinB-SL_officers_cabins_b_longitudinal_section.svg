@@ -44,12 +44,12 @@
 <polygon points="163,84.5 165,84.5 165,97.5 163,97.5" class="f" fill="#f1bab5"/>
 <polygon points="171.86,113.9 173.74,113.9 173.74,115.8 171.86,115.8" class="f" fill="#f1b4e5"/>
 <polygon points="168,107.02 171.6,107.02 171.6,115.8 168,115.8" class="f" fill="#f1b3b6"/>
-<polygon points="163.8,111.96 175.8,111.96 175.8,131.02 163.8,131.02" class="f" fill="#ddadf5"/>
+<polygon points="163.8,111.94 175.8,111.94 175.8,131 163.8,131" class="f" fill="#ddadf5"/>
 <polygon points="210.44,63 213.56,63 213.56,67.4 210.44,67.4" class="dot" fill="none"/>
-<polygon points="163.6,89.8 186.8,89.8 186.8,131 163.6,131" class="f" fill="#e4f9bf"/>
+<polygon points="163.6,89.74 186.8,89.74 186.8,131 163.6,131" class="f" fill="#e4f9bf"/>
 <polygon points="163,103.08 168.56,103.08 168.56,106.6 163,106.6" class="f" fill="#f0aeb1"/>
 <polygon points="163.8,115 205.34,115 205.34,131 163.8,131" class="f" fill="#f4d0a6"/>
-<polygon points="225.8,105.56 246.2,105.56 246.2,131 225.8,131" class="f" fill="#f4c7a6"/>
+<polygon points="225.8,105.58 246.2,105.58 246.2,131 225.8,131" class="f" fill="#f4c7a6"/>
 <polygon points="160,131 264,131 264,137 160,137" class="n" fill="url(#hSlab)"/>
 <polygon points="160,57 264,57 264,63 160,63" class="n" fill="url(#hSlab)"/>
 <polygon points="160,63 163,63 163,131 160,131" class="n" fill="#1c1c1c"/>
@@ -59,7 +59,7 @@
 <polygon points="260.6,111 264.4,111 264.4,112.2 260.6,112.2" class="f" fill="#777"/>
 <polygon points="260.6,81.8 264.4,81.8 264.4,83 260.6,83" class="f" fill="#777"/>
 <polygon points="163.8,115 205.34,115 205.34,131 163.8,131" class="m" fill="#efbb7d"/>
-<polygon points="225.8,105.56 246.2,105.56 246.2,131 225.8,131" class="m" fill="#efad7d"/>
+<polygon points="225.8,105.58 246.2,105.58 246.2,131 225.8,131" class="m" fill="#efad7d"/>
 </g>
 <text x="173" y="79.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2600</text>
 <text x="246" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>

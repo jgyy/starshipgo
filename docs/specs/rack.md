@@ -7,19 +7,19 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `rack_armored_data_rack` | Equipment rack - Armored Data Rack | Kestrel Cognitive Systems | 710 x 2045 x 1160 | 289.4 kg | 4.1 kW | 208 VAC 3ph | 346 k |
-| `rack_blade_server_rack` | Equipment rack - Blade Server Rack | Kestrel Cognitive Systems | 600 x 2000 x 1000 | 244.9 kg | 2.9 kW | 208 VAC 3ph | 250 k |
+| `rack_blade_server_rack` | Equipment rack - Blade Server Rack | Kestrel Cognitive Systems | 606 x 2006 x 1006 | 249.6 kg | 3 kW | 208 VAC 3ph | 255 k |
 | `rack_computer_core_cabinet` | Equipment rack - Computer Core Cabinet | Kestrel Cognitive Systems | 900 x 2120 x 1107 | 386.6 kg | 4.5 kW | 208 VAC 3ph | 410 k |
-| `rack_cryogenic_quantum_rack` | Equipment rack - Cryogenic Quantum Rack | Kestrel Cognitive Systems | 605 x 2000 x 1000 | 208.7 kg | 2.9 kW | 208 VAC 3ph | 231 k |
+| `rack_cryogenic_quantum_rack` | Equipment rack - Cryogenic Quantum Rack | Kestrel Cognitive Systems | 608 x 2006 x 1006 | 211.6 kg | 3 kW | 208 VAC 3ph | 234 k |
 | `rack_crystal_archive_tower` | Equipment rack - Crystal Archive Tower | Kestrel Cognitive Systems | 708 x 2270 x 810 | 233.7 kg | 2.8 kW | 208 VAC 3ph | 302 k |
-| `rack_gpu_cluster_rack` | Equipment rack - Gpu Cluster Rack | Kestrel Cognitive Systems | 600 x 2000 x 1000 | 251.2 kg | 2.9 kW | 208 VAC 3ph | 230 k |
-| `rack_kvm_console_rack` | Equipment rack - Kvm Console Rack | Kestrel Cognitive Systems | 600 x 2000 x 1210 | 262.4 kg | 3.6 kW | 208 VAC 3ph | 257 k |
-| `rack_liquid_cooled_cabinet` | Equipment rack - Liquid Cooled Cabinet | Kestrel Cognitive Systems | 600 x 2000 x 1018 | 235.8 kg | 3 kW | 208 VAC 3ph | 223 k |
-| `rack_network_switch_rack` | Equipment rack - Network Switch Rack | Kestrel Cognitive Systems | 685 x 2000 x 1015 | 289.4 kg | 3.2 kW | 208 VAC 3ph | 259 k |
-| `rack_open_frame_rack` | Equipment rack - Open Frame Rack | Kestrel Cognitive Systems | 570 x 2000 x 1000 | 232.7 kg | 2.7 kW | 208 VAC 3ph | 280 k |
-| `rack_photonic_fiber_rack` | Equipment rack - Photonic Fiber Rack | Kestrel Cognitive Systems | 600 x 2000 x 1000 | 251 kg | 2.6 kW | 208 VAC 3ph | 268 k |
-| `rack_storage_array` | Equipment rack - Storage Array | Kestrel Cognitive Systems | 600 x 2000 x 1000 | 251.5 kg | 2.8 kW | 208 VAC 3ph | 227 k |
+| `rack_gpu_cluster_rack` | Equipment rack - Gpu Cluster Rack | Kestrel Cognitive Systems | 606 x 2006 x 1006 | 256 kg | 2.9 kW | 208 VAC 3ph | 234 k |
+| `rack_kvm_console_rack` | Equipment rack - Kvm Console Rack | Kestrel Cognitive Systems | 606 x 2006 x 1213 | 266.5 kg | 3.7 kW | 208 VAC 3ph | 261 k |
+| `rack_liquid_cooled_cabinet` | Equipment rack - Liquid Cooled Cabinet | Kestrel Cognitive Systems | 606 x 2006 x 1021 | 239.5 kg | 3 kW | 208 VAC 3ph | 227 k |
+| `rack_network_switch_rack` | Equipment rack - Network Switch Rack | Kestrel Cognitive Systems | 688 x 2006 x 1018 | 292.4 kg | 3.2 kW | 208 VAC 3ph | 261 k |
+| `rack_open_frame_rack` | Equipment rack - Open Frame Rack | Kestrel Cognitive Systems | 573 x 2006 x 1006 | 236.1 kg | 2.7 kW | 208 VAC 3ph | 284 k |
+| `rack_photonic_fiber_rack` | Equipment rack - Photonic Fiber Rack | Kestrel Cognitive Systems | 606 x 2006 x 1006 | 255.8 kg | 2.7 kW | 208 VAC 3ph | 273 k |
+| `rack_storage_array` | Equipment rack - Storage Array | Kestrel Cognitive Systems | 606 x 2006 x 1006 | 256.3 kg | 2.8 kW | 208 VAC 3ph | 231 k |
 | `rack_tape_archive_tower` | Equipment rack - Tape Archive Tower | Kestrel Cognitive Systems | 700 x 2100 x 990 | 282.7 kg | 3.2 kW | 208 VAC 3ph | 348 k |
-| `rack_ups_battery_rack` | Equipment rack - Ups Battery Rack | Kestrel Cognitive Systems | 600 x 2000 x 1000 | 241.3 kg | 2.6 kW | 208 VAC 3ph | 231 k |
+| `rack_ups_battery_rack` | Equipment rack - Ups Battery Rack | Kestrel Cognitive Systems | 606 x 2006 x 1006 | 245.9 kg | 2.6 kW | 208 VAC 3ph | 236 k |
 
 ## Datasheets
 
@@ -38,9 +38,9 @@
 
 **Equipment rack - Blade Server Rack**, Kestrel Cognitive Systems, part KCS-RAC-7213 (consumer)
 
-* Mass 244.9 kg; size 600 x 2000 x 1000 mm; heat 2.7 kW.
-* Power 740 W idle / 2.9 kW typical / 4.4 kW peak at 208 VAC 3ph.
-* Price 250 k cr, lead time 62 days, MTBF 87,400 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 249.6 kg; size 606 x 2006 x 1006 mm; heat 2.8 kW.
+* Power 750 W idle / 3 kW typical / 4.5 kW peak at 208 VAC 3ph.
+* Price 255 k cr, lead time 62 days, MTBF 87,400 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -59,11 +59,11 @@
 
 **Equipment rack - Cryogenic Quantum Rack**, Kestrel Cognitive Systems, part KCS-RAC-1155 (consumer)
 
-* Mass 208.7 kg; size 605 x 2000 x 1000 mm; heat 2.7 kW.
-* Power 740 W idle / 2.9 kW typical / 4.4 kW peak at 208 VAC 3ph.
-* Price 231 k cr, lead time 66 days, MTBF 105,300 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 211.6 kg; size 608 x 2006 x 1006 mm; heat 2.8 kW.
+* Power 750 W idle / 3 kW typical / 4.5 kW peak at 208 VAC 3ph.
+* Price 234 k cr, lead time 66 days, MTBF 105,300 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `atmosphere` (screens: graph).
+* Software: `computer` (screens: fuel_status).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `rack_crystal_archive_tower`
@@ -80,51 +80,51 @@
 
 **Equipment rack - Gpu Cluster Rack**, Kestrel Cognitive Systems, part KCS-RAC-8223 (consumer)
 
-* Mass 251.2 kg; size 600 x 2000 x 1000 mm; heat 2.7 kW.
-* Power 720 W idle / 2.9 kW typical / 4.3 kW peak at 208 VAC 3ph.
-* Price 230 k cr, lead time 60 days, MTBF 81,100 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 256 kg; size 606 x 2006 x 1006 mm; heat 2.7 kW.
+* Power 730 W idle / 2.9 kW typical / 4.4 kW peak at 208 VAC 3ph.
+* Price 234 k cr, lead time 60 days, MTBF 81,100 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* floor-mounted, free-standing. Install with a hoist or gantry (251.2 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (256 kg).
 
 ### `rack_kvm_console_rack`
 
 **Equipment rack - Kvm Console Rack**, Kestrel Cognitive Systems, part KCS-RAC-5989 (consumer)
 
-* Mass 262.4 kg; size 600 x 2000 x 1210 mm; heat 3.3 kW.
-* Power 900 W idle / 3.6 kW typical / 5.4 kW peak at 208 VAC 3ph.
-* Price 257 k cr, lead time 67 days, MTBF 80,200 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 266.5 kg; size 606 x 2006 x 1213 mm; heat 3.4 kW.
+* Power 910 W idle / 3.7 kW typical / 5.5 kW peak at 208 VAC 3ph.
+* Price 261 k cr, lead time 67 days, MTBF 80,200 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 36 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `engineering` (screens: systems).
-* floor-mounted, free-standing. Install with a hoist or gantry (262.4 kg).
+* Software: `lifesupport` (screens: life_support).
+* floor-mounted, free-standing. Install with a hoist or gantry (266.5 kg).
 
 ### `rack_liquid_cooled_cabinet`
 
 **Equipment rack - Liquid Cooled Cabinet**, Kestrel Cognitive Systems, part KCS-RAC-2269 (consumer)
 
-* Mass 235.8 kg; size 600 x 2000 x 1018 mm; heat 2.8 kW.
-* Power 750 W idle / 3 kW typical / 4.5 kW peak at 208 VAC 3ph.
-* Price 223 k cr, lead time 63 days, MTBF 70,800 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 239.5 kg; size 606 x 2006 x 1021 mm; heat 2.8 kW.
+* Power 760 W idle / 3 kW typical / 4.6 kW peak at 208 VAC 3ph.
+* Price 227 k cr, lead time 63 days, MTBF 70,800 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `diagnostics` (screens: bars).
+* Software: `computer` (screens: fuel_status).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `rack_network_switch_rack`
 
 **Equipment rack - Network Switch Rack**, Kestrel Cognitive Systems, part KCS-RAC-3910 (consumer)
 
-* Mass 289.4 kg; size 685 x 2000 x 1015 mm; heat 2.9 kW.
-* Power 790 W idle / 3.2 kW typical / 4.8 kW peak at 208 VAC 3ph.
-* Price 259 k cr, lead time 61 days, MTBF 95,600 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 292.4 kg; size 688 x 2006 x 1018 mm; heat 2.9 kW.
+* Power 800 W idle / 3.2 kW typical / 4.8 kW peak at 208 VAC 3ph.
+* Price 261 k cr, lead time 61 days, MTBF 95,600 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 36 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* floor-mounted, free-standing. Install with a hoist or gantry (289.4 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (292.4 kg).
 
 ### `rack_open_frame_rack`
 
 **Equipment rack - Open Frame Rack**, Kestrel Cognitive Systems, part KCS-RAC-3149 (consumer)
 
-* Mass 232.7 kg; size 570 x 2000 x 1000 mm; heat 2.5 kW.
-* Power 670 W idle / 2.7 kW typical / 4 kW peak at 208 VAC 3ph.
-* Price 280 k cr, lead time 66 days, MTBF 80,700 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 236.1 kg; size 573 x 2006 x 1006 mm; heat 2.5 kW.
+* Power 680 W idle / 2.7 kW typical / 4.1 kW peak at 208 VAC 3ph.
+* Price 284 k cr, lead time 66 days, MTBF 80,700 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -132,22 +132,22 @@
 
 **Equipment rack - Photonic Fiber Rack**, Kestrel Cognitive Systems, part KCS-RAC-7383 (consumer)
 
-* Mass 251 kg; size 600 x 2000 x 1000 mm; heat 2.4 kW.
-* Power 650 W idle / 2.6 kW typical / 3.9 kW peak at 208 VAC 3ph.
-* Price 268 k cr, lead time 69 days, MTBF 99,500 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 255.8 kg; size 606 x 2006 x 1006 mm; heat 2.5 kW.
+* Power 660 W idle / 2.7 kW typical / 4 kW peak at 208 VAC 3ph.
+* Price 273 k cr, lead time 69 days, MTBF 99,500 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `science` (screens: waveform).
-* floor-mounted, free-standing. Install with a hoist or gantry (251 kg).
+* Software: `computer` (screens: ecg_multi).
+* floor-mounted, free-standing. Install with a hoist or gantry (255.8 kg).
 
 ### `rack_storage_array`
 
 **Equipment rack - Storage Array**, Kestrel Cognitive Systems, part KCS-RAC-1422 (consumer)
 
-* Mass 251.5 kg; size 600 x 2000 x 1000 mm; heat 2.6 kW.
-* Power 690 W idle / 2.8 kW typical / 4.2 kW peak at 208 VAC 3ph.
-* Price 227 k cr, lead time 60 days, MTBF 65,900 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 256.3 kg; size 606 x 2006 x 1006 mm; heat 2.6 kW.
+* Power 700 W idle / 2.8 kW typical / 4.2 kW peak at 208 VAC 3ph.
+* Price 231 k cr, lead time 60 days, MTBF 65,900 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* floor-mounted, free-standing. Install with a hoist or gantry (251.5 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (256.3 kg).
 
 ### `rack_tape_archive_tower`
 
@@ -164,10 +164,10 @@
 
 **Equipment rack - Ups Battery Rack**, Kestrel Cognitive Systems, part KCS-RAC-2950 (consumer)
 
-* Mass 241.3 kg; size 600 x 2000 x 1000 mm; heat 2.4 kW.
-* Power 650 W idle / 2.6 kW typical / 3.9 kW peak at 208 VAC 3ph.
-* Price 231 k cr, lead time 60 days, MTBF 87,900 h, service every 8,760 h, service life 10 years, crew 0.
+* Mass 245.9 kg; size 606 x 2006 x 1006 mm; heat 2.4 kW.
+* Power 660 W idle / 2.6 kW typical / 4 kW peak at 208 VAC 3ph.
+* Price 236 k cr, lead time 60 days, MTBF 87,900 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 35 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `power` (screens: power).
+* Software: `lifesupport` (screens: life_support).
 * floor-mounted, free-standing. Two-person lift.
 

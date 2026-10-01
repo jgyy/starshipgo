@@ -9,7 +9,7 @@
 | `beacon_airlock_status_light` | Signal beacon - Airlock Status Light | Tamsin Lighting | 160 x 555 x 76 | 0.75 kg | 6.4 W | 24 VDC | 221 |
 | `beacon_emergency_flood` | Signal beacon - Emergency Flood | Tamsin Lighting | 532 x 200 x 256 | 3.08 kg | 5.7 W | 24 VDC | 775 |
 | `beacon_emergency_lighting_unit` | Signal beacon - Emergency Lighting Unit | Tamsin Lighting | 426 x 160 x 171 | 1.37 kg | 6.1 W | 24 VDC | 467 |
-| `beacon_evac_light_strip` | Signal beacon - Evac Light Strip | Tamsin Lighting | 1690 x 106 x 45 | 0.88 kg | 5.7 W | 24 VDC | 263 |
+| `beacon_evac_light_strip` | Signal beacon - Evac Light Strip | Tamsin Lighting | 1690 x 106 x 42 | 0.82 kg | 5.7 W | 24 VDC | 249 |
 | `beacon_intercom_speaker` | Signal beacon - Intercom Speaker | Tamsin Lighting | 300 x 420 x 77 | 1.1 kg | 6.1 W | 24 VDC | 543 |
 | `beacon_red_alert_bar` | Signal beacon - Red Alert Bar | Tamsin Lighting | 1320 x 140 x 166 | 3.33 kg | 6.4 W | 24 VDC | 1,050 |
 | `beacon_rotating_beacon` | Signal beacon - Rotating Beacon | Tamsin Lighting | 180 x 180 x 200 | 0.71 kg | 5.8 W | 24 VDC | 257 |
@@ -53,9 +53,9 @@
 
 **Signal beacon - Evac Light Strip**, Tamsin Lighting, part TAM-BEA-4474 (consumer)
 
-* Mass 0.88 kg; size 1690 x 106 x 45 mm; heat 4.6 W.
+* Mass 0.82 kg; size 1690 x 106 x 42 mm; heat 4.6 W.
 * Power 0.29 W idle / 5.7 W typical / 6.3 W peak at 24 VDC.
-* Price 263 cr, lead time 30 days, MTBF 73,100 h, service every 17,520 h, service life 12 years, crew 0.
+* Price 249 cr, lead time 30 days, MTBF 73,100 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 

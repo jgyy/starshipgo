@@ -6,7 +6,7 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `sign_barrier_tape_frame` | Sign - Barrier Tape Frame | Calder-Okonkwo Industries | 2050 x 1040 x 360 | 45.4 kg | 0 W | none | 1,120 |
+| `sign_barrier_tape_frame` | Sign - Barrier Tape Frame | Calder-Okonkwo Industries | 2050 x 1040 x 360 | 45.3 kg | 0 W | none | 1,110 |
 | `sign_blade_sign` | Sign - Blade Sign | Calder-Okonkwo Industries | 160 x 500 x 900 | 3.82 kg | 0 W | none | 130 |
 | `sign_deck_0` | Sign - Deck 0 | Calder-Okonkwo Industries | 800 x 950 x 45 | 1.8 kg | 0 W | none | 82 |
 | `sign_deck_1` | Sign - Deck 1 | Calder-Okonkwo Industries | 800 x 950 x 45 | 2 kg | 0 W | none | 84 |
@@ -41,9 +41,9 @@
 
 **Sign - Barrier Tape Frame**, Calder-Okonkwo Industries, part COI-SIG-2577 (passive)
 
-* Mass 45.4 kg; size 2050 x 1040 x 360 mm; heat 0 W.
+* Mass 45.3 kg; size 2050 x 1040 x 360 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,120 cr, lead time 47 days, MTBF 1,887,200 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,110 cr, lead time 47 days, MTBF 1,887,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 

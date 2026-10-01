@@ -6,10 +6,10 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `turbine_axial_compressor` | Turbomachinery - Axial Compressor | Halvorsen Power Systems | 2320 x 1457 x 1130 | 5.75 t | 46 kW | 400 VAC 3ph | 4.46 M |
+| `turbine_axial_compressor` | Turbomachinery - Axial Compressor | Halvorsen Power Systems | 2320 x 1457 x 1130 | 5.75 t | 46 kW | 400 VAC 3ph | 4.45 M |
 | `turbine_flywheel` | Turbomachinery - Flywheel | Halvorsen Power Systems | 1500 x 1660 x 640 | 2.23 t | 44.6 kWh | 400 VDC | 2.09 M |
 | `turbine_gyroscope` | Turbomachinery - Gyroscope | Halvorsen Power Systems | 1650 x 2180 x 1350 | 6.97 t | 8.6 kW | 208 VAC 3ph | 5.5 M |
-| `turbine_impeller_housing` | Turbomachinery - Impeller Housing | Halvorsen Power Systems | 1326 x 1671 x 1450 | 4.93 t | 41 kW | 400 VAC 3ph | 4.79 M |
+| `turbine_impeller_housing` | Turbomachinery - Impeller Housing | Halvorsen Power Systems | 1325 x 1671 x 1450 | 4.93 t | 41 kW | 400 VAC 3ph | 4.79 M |
 | `turbine_steam_turbine` | Turbomachinery - Steam Turbine | Halvorsen Power Systems | 2959 x 1821 x 1017 | 7.79 t | +939 kW out | 400 VAC 3ph | 6.47 M |
 | `turbine_vertical_turbopump` | Turbomachinery - Vertical Turbopump | Halvorsen Power Systems | 1351 x 2105 x 1100 | 4.4 t | 44 kW | 400 VAC 3ph | 4.54 M |
 
@@ -21,7 +21,7 @@
 
 * Mass 5.75 t; size 2320 x 1457 x 1130 mm; heat 42 kW.
 * Power 9.3 kW idle / 46 kW typical / 78 kW peak at 400 VAC 3ph.
-* Price 4.46 M cr, lead time 168 days, MTBF 64,200 h, service every 4,000 h, service life 25 years, crew 2.
+* Price 4.45 M cr, lead time 168 days, MTBF 64,200 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 81 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
 * floor-mounted, free-standing. Install with a hoist or gantry (5.75 t).
 
@@ -49,7 +49,7 @@
 
 **Turbomachinery - Impeller Housing**, Halvorsen Power Systems, part HPS-TUR-7518 (consumer)
 
-* Mass 4.93 t; size 1326 x 1671 x 1450 mm; heat 38 kW.
+* Mass 4.93 t; size 1325 x 1671 x 1450 mm; heat 38 kW.
 * Power 8.3 kW idle / 41 kW typical / 70 kW peak at 400 VAC 3ph.
 * Price 4.79 M cr, lead time 161 days, MTBF 63,700 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 81 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.

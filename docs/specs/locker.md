@@ -13,11 +13,11 @@
 | `locker_kit_bags_on_hooks` | Locker - Kit Bags On Hooks | Sable Habitat Furnishings | 1206 x 1385 x 383 | 56.6 kg | 0 W | none | 2,460 |
 | `locker_mirror_cabinet` | Locker - Mirror Cabinet | Sable Habitat Furnishings | 620 x 880 x 195 | 8.96 kg | 0 W | none | 420 |
 | `locker_sea_chest` | Locker - Sea Chest | Sable Habitat Furnishings | 1180 x 563 x 615 | 35.5 kg | 0 W | none | 1,600 |
-| `locker_shoe_rack` | Locker - Shoe Rack | Sable Habitat Furnishings | 840 x 915 x 300 | 18 kg | 0 W | none | 752 |
+| `locker_shoe_rack` | Locker - Shoe Rack | Sable Habitat Furnishings | 846 x 915 x 306 | 18.5 kg | 0 W | none | 770 |
 | `locker_tall_vented_locker` | Locker - Tall Vented Locker | Sable Habitat Furnishings | 520 x 1888 x 547 | 47.9 kg | 0 W | none | 2,090 |
 | `locker_under_bed_drawers` | Locker - Under-Bed Drawers | Sable Habitat Furnishings | 1200 x 240 x 797 | 18.5 kg | 0 W | none | 715 |
 | `locker_wall_cabinet` | Locker - Wall Cabinet | Sable Habitat Furnishings | 900 x 641 x 342 | 15.9 kg | 0 W | none | 724 |
-| `locker_wardrobe` | Locker - Wardrobe | Sable Habitat Furnishings | 1160 x 2060 x 687 | 134.3 kg | 0 W | none | 4,540 |
+| `locker_wardrobe` | Locker - Wardrobe | Sable Habitat Furnishings | 1160 x 2063 x 687 | 134.5 kg | 0 W | none | 4,550 |
 
 ## Datasheets
 
@@ -95,9 +95,9 @@
 
 **Locker - Shoe Rack**, Sable Habitat Furnishings, part SHF-LOC-4208 (passive)
 
-* Mass 18 kg; size 840 x 915 x 300 mm; heat 0 W.
+* Mass 18.5 kg; size 846 x 915 x 306 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 752 cr, lead time 37 days, MTBF 654,200 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 770 cr, lead time 37 days, MTBF 654,200 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing.
 
@@ -135,9 +135,9 @@
 
 **Locker - Wardrobe**, Sable Habitat Furnishings, part SHF-LOC-2053 (passive)
 
-* Mass 134.3 kg; size 1160 x 2060 x 687 mm; heat 0 W.
+* Mass 134.5 kg; size 1160 x 2063 x 687 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,540 cr, lead time 44 days, MTBF 792,400 h, service every 8,760 h, service life 30 years, crew 0.
+* Price 4,550 cr, lead time 44 days, MTBF 792,400 h, service every 8,760 h, service life 30 years, crew 0.
 * IP20, -20 to 60 C; certifications: CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 

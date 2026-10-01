@@ -10,10 +10,10 @@
 | `forcefield_blast_shutter` | Force-field emitter - Blast Shutter | Fennick Safety and Security | 2806 x 3100 x 615 | 1.35 t | 390 kW | 6.6 kVAC 3ph | 896 k |
 | `forcefield_containment_projector` | Force-field emitter - Containment Projector | Fennick Safety and Security | 1496 x 2400 x 1658 | 1.58 t | 520 kW | 6.6 kVAC 3ph | 1.25 M |
 | `forcefield_deflector_grid` | Force-field emitter - Deflector Grid | Fennick Safety and Security | 1700 x 1720 x 100 | 71.6 kg | 30 kW | 400 VAC 3ph | 52.9 k |
-| `forcefield_emitter_pair` | Force-field emitter - Emitter Pair | Fennick Safety and Security | 2740 x 2200 x 340 | 450.8 kg | 160 kW | 400 VAC 3ph | 370 k |
+| `forcefield_emitter_pair` | Force-field emitter - Emitter Pair | Fennick Safety and Security | 2740 x 2200 x 340 | 450.7 kg | 160 kW | 400 VAC 3ph | 370 k |
 | `forcefield_hangar_field_arch` | Force-field emitter - Hangar Field Arch | Fennick Safety and Security | 3400 x 3700 x 420 | 1.15 t | 400 kW | 6.6 kVAC 3ph | 1 M |
 | `forcefield_laser_grid_emitter` | Force-field emitter - Laser Grid Emitter | Fennick Safety and Security | 2640 x 1700 x 180 | 201.3 kg | 69 kW | 400 VAC 3ph | 180 k |
-| `forcefield_shield_doorway` | Force-field emitter - Shield Doorway | Fennick Safety and Security | 2480 x 2800 x 365 | 626.5 kg | 220 kW | 400 VAC 3ph | 559 k |
+| `forcefield_shield_doorway` | Force-field emitter - Shield Doorway | Fennick Safety and Security | 2480 x 2800 x 365 | 626.4 kg | 220 kW | 400 VAC 3ph | 559 k |
 
 ## Datasheets
 
@@ -61,11 +61,11 @@
 
 **Force-field emitter - Emitter Pair**, Fennick Safety and Security, part FSS-FOR-1313 (consumer)
 
-* Mass 450.8 kg; size 2740 x 2200 x 340 mm; heat 150 kW.
+* Mass 450.7 kg; size 2740 x 2200 x 340 mm; heat 150 kW.
 * Power 49 kW idle / 160 kW typical / 260 kW peak at 400 VAC 3ph.
 * Price 370 k cr, lead time 84 days, MTBF 61,500 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 48 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* floor-mounted. Install with a hoist or gantry (450.8 kg).
+* floor-mounted. Install with a hoist or gantry (450.7 kg).
 
 ### `forcefield_hangar_field_arch`
 
@@ -91,9 +91,9 @@
 
 **Force-field emitter - Shield Doorway**, Fennick Safety and Security, part FSS-FOR-5299 (consumer)
 
-* Mass 626.5 kg; size 2480 x 2800 x 365 mm; heat 200 kW.
+* Mass 626.4 kg; size 2480 x 2800 x 365 mm; heat 200 kW.
 * Power 67 kW idle / 220 kW typical / 360 kW peak at 400 VAC 3ph.
 * Price 559 k cr, lead time 85 days, MTBF 70,300 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 49 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* floor-mounted. Install with a hoist or gantry (626.5 kg).
+* floor-mounted. Install with a hoist or gantry (626.4 kg).
 

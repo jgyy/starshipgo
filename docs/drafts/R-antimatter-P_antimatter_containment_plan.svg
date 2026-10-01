@@ -58,31 +58,31 @@
 <polygon points="193.99,199.8 181.99,199.8 181.99,191.75 193.99,191.75" class="n" fill="#7782ef"/>
 <line x1="181.99" y1="191.75" x2="193.99" y2="191.75" class="m"/>
 <line x1="187.99" y1="191.75" x2="187.99" y2="192.95" class="f"/>
-<polygon points="209.72,199.8 195.05,199.8 195.05,191.59 209.72,191.59" class="n" fill="#7782ef"/>
-<line x1="195.05" y1="191.59" x2="209.72" y2="191.59" class="m"/>
-<line x1="202.39" y1="191.59" x2="202.39" y2="192.79" class="f"/>
+<polygon points="209.8,199.8 195.05,199.8 195.05,191.55 209.8,191.55" class="n" fill="#7782ef"/>
+<line x1="195.05" y1="191.55" x2="209.8" y2="191.55" class="m"/>
+<line x1="202.43" y1="191.55" x2="202.43" y2="192.75" class="f"/>
 <polygon points="231.45,63 231.45,84.33 210.12,84.33 210.12,63" class="n" fill="#9977ef"/>
 <line x1="210.12" y1="84.33" x2="210.12" y2="63" class="m"/>
 <line x1="210.12" y1="73.67" x2="211.32" y2="73.67" class="f"/>
 <polygon points="231.45,88.23 231.45,112.44 219.99,112.44 219.99,88.23" class="n" fill="#f799f7"/>
 <line x1="219.99" y1="112.44" x2="219.99" y2="88.23" class="m"/>
 <line x1="219.99" y1="100.33" x2="221.19" y2="100.33" class="f"/>
-<polygon points="231.45,155.67 231.45,170.33 224.59,170.33 224.59,155.67" class="n" fill="#bae881"/>
-<line x1="224.59" y1="170.33" x2="224.59" y2="155.67" class="m"/>
-<line x1="224.59" y1="163" x2="225.79" y2="163" class="f"/>
-<polygon points="231.45,171 231.45,183.45 220.79,183.45 220.79,171" class="n" fill="#e281e8"/>
-<line x1="220.79" y1="183.45" x2="220.79" y2="171" class="m"/>
-<line x1="220.79" y1="177.23" x2="221.99" y2="177.23" class="f"/>
-<polygon points="231.45,184.12 231.45,196.12 223.79,196.12 223.79,184.12" class="n" fill="#e281e8"/>
-<line x1="223.79" y1="196.12" x2="223.79" y2="184.12" class="m"/>
-<line x1="223.79" y1="190.12" x2="224.99" y2="190.12" class="f"/>
 <polygon points="206.92,104.57 206.92,96.11 215.32,96.11 215.32,104.57" class="n" fill="#92ef77"/>
 <line x1="215.32" y1="96.11" x2="215.32" y2="104.57" class="m"/>
 <line x1="215.32" y1="100.34" x2="214.12" y2="100.34" class="f"/>
+<polygon points="231.45,155.67 231.45,170.41 224.55,170.41 224.55,155.67" class="n" fill="#bae881"/>
+<line x1="224.55" y1="170.41" x2="224.55" y2="155.67" class="m"/>
+<line x1="224.55" y1="163.04" x2="225.75" y2="163.04" class="f"/>
+<polygon points="231.45,171.08 231.45,183.53 220.79,183.53 220.79,171.08" class="n" fill="#e281e8"/>
+<line x1="220.79" y1="183.53" x2="220.79" y2="171.08" class="m"/>
+<line x1="220.79" y1="177.31" x2="221.99" y2="177.31" class="f"/>
+<polygon points="231.45,184.2 231.45,196.28 223.75,196.28 223.75,184.2" class="n" fill="#e281e8"/>
+<line x1="223.75" y1="196.28" x2="223.75" y2="184.2" class="m"/>
+<line x1="223.75" y1="190.24" x2="224.95" y2="190.24" class="f"/>
 <polygon points="224.72,97.53 224.72,103.13 222.72,103.13 222.72,97.53" class="f" fill="#ea8daa" fill-opacity="0.9"/>
 <line x1="222.72" y1="103.13" x2="222.72" y2="97.53" class="m"/>
 <line x1="222.72" y1="100.33" x2="223.72" y2="100.33" class="f"/>
-<polygon points="85,196.73 87.72,187.81 93.84,189.67 91.12,198.6" class="f" fill="#e281e8"/>
+<polygon points="85.25,196.81 87.97,187.88 94.1,189.75 91.37,198.68" class="f" fill="#e281e8"/>
 <polygon points="156.21,103.97 172.75,90.28 176.91,95.31 160.37,108.99" class="f" fill="#81ace8"/>
 <polygon points="144.39,114.48 147.37,111.81 149.14,113.79 146.16,116.46" class="f" fill="#e281e8"/>
 <polygon points="215.32,57.67 232.65,57.67 232.65,58.97 215.32,58.97" class="f" fill="#e281e8"/>
@@ -122,10 +122,10 @@
 <text x="100.53" y="180.66" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Magnetic Bottle</text>
 <text x="120.83" y="150.82" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Magnetic Bottle</text>
 <text x="189.12" y="87.81" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Discharge Coil Tower</text>
-<text x="226.12" y="177.53" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">emergency_sho~</text>
-<text x="202.39" y="195.99" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
+<text x="226.12" y="177.61" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">emergency_sho~</text>
+<text x="202.43" y="195.97" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Capacitor Bank Rack</text>
 <text x="187.99" y="196.07" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Marx Bank</text>
-<text x="227.62" y="190.42" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_c~</text>
+<text x="227.6" y="190.54" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">hazmat_c~</text>
 <text x="211.12" y="100.64" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">ops chair</text>
 <path d="M82.29 199.67 L87.17 183.67 L95.19 167.67 L106.12 151.67 L119.71 135.67 L135.61 119.67 L153.45 103.67 L172.79 87.67 L193.13 71.67 L213.99 55.67 L233.99 55.67 L233.99 202.33 L82.01 202.33Z M84.26 200.07 L89.04 184.41 L96.91 168.68 L107.71 152.88 L121.18 137.02 L136.99 121.12 L154.76 105.18 L174.04 89.22 L194.36 73.25 L214.67 57.67 L231.99 57.67 L231.99 200.33 L84.23 200.33Z " class="none" fill="#1c1c1c" fill-rule="evenodd"/>
 <polygon points="233.99,119.93 233.99,151.4 231.99,151.4 231.99,119.93" class="none" fill="#ffffff"/>
@@ -145,8 +145,8 @@
 <circle cx="189.12" cy="87.51" r="0.4" class="none" fill="#b03030"/>
 <line x1="210.1" y1="206.11" x2="208.65" y2="199.56" class="x"/>
 <circle cx="208.65" cy="199.56" r="0.4" class="none" fill="#b03030"/>
-<line x1="203.05" y1="206.04" x2="202.39" y2="195.69" class="x"/>
-<circle cx="202.39" cy="195.69" r="0.4" class="none" fill="#b03030"/>
+<line x1="203.06" y1="206.04" x2="202.43" y2="195.67" class="x"/>
+<circle cx="202.43" cy="195.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="237.7" y1="71.95" x2="220.79" y2="73.67" class="x"/>
 <circle cx="220.79" cy="73.67" r="0.4" class="none" fill="#b03030"/>
 <line x1="237.75" y1="101.59" x2="231.35" y2="100.33" class="x"/>

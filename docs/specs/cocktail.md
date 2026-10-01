@@ -11,7 +11,7 @@
 | `cocktail_champagne_flute` | Cocktail - Champagne Flute | Calder-Okonkwo Industries | 66 x 200 x 66 | 0.1 kg | 0 W | none | 326 |
 | `cocktail_margarita_salt_rim` | Cocktail - Margarita Salt Rim | Calder-Okonkwo Industries | 120 x 163 x 120 | 0.3 kg | 0 W | none | 419 |
 | `cocktail_martini_olive` | Cocktail - Martini Olive | Calder-Okonkwo Industries | 98 x 179 x 98 | 0.2 kg | 0 W | none | 244 |
-| `cocktail_mojito_mint_highball` | Cocktail - Mojito Mint Highball | Calder-Okonkwo Industries | 78 x 215 x 76 | 0.16 kg | 0 W | none | 427 |
+| `cocktail_mojito_mint_highball` | Cocktail - Mojito Mint Highball | Calder-Okonkwo Industries | 76 x 215 x 76 | 0.15 kg | 0 W | none | 427 |
 | `cocktail_old_fashioned_orange` | Cocktail - Old Fashioned Orange | Calder-Okonkwo Industries | 80 x 110 x 80 | 0.08 kg | 0 W | none | 214 |
 | `cocktail_pint_stout` | Cocktail - Pint Stout | Calder-Okonkwo Industries | 86 x 155 x 86 | 0.13 kg | 0 W | none | 216 |
 | `cocktail_whisky_rocks_tumbler` | Cocktail - Whisky Rocks Tumbler | Calder-Okonkwo Industries | 76 x 85 x 76 | 0.05 kg | 0 W | none | 175 |
@@ -73,7 +73,7 @@
 
 **Cocktail - Mojito Mint Highball**, Calder-Okonkwo Industries, part COI-COC-7441 (passive)
 
-* Mass 0.16 kg; size 78 x 215 x 76 mm; heat 0 W.
+* Mass 0.15 kg; size 76 x 215 x 76 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 427 cr, lead time 40 days, MTBF 1,384,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.

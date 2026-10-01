@@ -16,7 +16,7 @@
 | `wallpanel_light_diffuser` | Wall panel - Light Diffuser | Calder-Okonkwo Industries | 1000 x 1200 x 104 | 12.4 kg | 0 W | none | 275 |
 | `wallpanel_plain_smooth` | Wall panel - Plain Smooth | Calder-Okonkwo Industries | 1000 x 1200 x 52 | 5.85 kg | 0 W | none | 170 |
 | `wallpanel_quilted_insulation` | Wall panel - Quilted Insulation | Calder-Okonkwo Industries | 1000 x 1200 x 145 | 18.5 kg | 0 W | none | 528 |
-| `wallpanel_ribbed` | Wall panel - Ribbed | Calder-Okonkwo Industries | 1010 x 1200 x 105 | 12.5 kg | 0 W | none | 415 |
+| `wallpanel_ribbed` | Wall panel - Ribbed | Calder-Okonkwo Industries | 1006 x 1200 x 103 | 12.2 kg | 0 W | none | 409 |
 | `wallpanel_riveted_plate` | Wall panel - Riveted Plate | Calder-Okonkwo Industries | 1000 x 1200 x 82 | 9.93 kg | 0 W | none | 294 |
 | `wallpanel_screen_inset` | Wall panel - Screen Inset | Calder-Okonkwo Industries | 1000 x 1200 x 80 | 10.3 kg | 0 W | none | 285 |
 | `wallpanel_service_bolted` | Wall panel - Service Bolted | Calder-Okonkwo Industries | 1000 x 1200 x 130 | 16.7 kg | 0 W | none | 516 |
@@ -25,11 +25,11 @@
 | `wallpanel_tall_hazard_stripe` | Wall panel - Tall Hazard Stripe | Calder-Okonkwo Industries | 1000 x 2400 x 74 | 18.5 kg | 0 W | none | 491 |
 | `wallpanel_tall_lockers` | Wall panel - Tall Lockers | Calder-Okonkwo Industries | 1000 x 2400 x 155 | 38.4 kg | 0 W | none | 836 |
 | `wallpanel_tall_pipe_niche` | Wall panel - Tall Pipe Niche | Calder-Okonkwo Industries | 1000 x 2400 x 176 | 41 kg | 0 W | none | 1,290 |
-| `wallpanel_tall_ribbed` | Wall panel - Tall Ribbed | Calder-Okonkwo Industries | 1010 x 2400 x 125 | 30.4 kg | 0 W | none | 742 |
+| `wallpanel_tall_ribbed` | Wall panel - Tall Ribbed | Calder-Okonkwo Industries | 1006 x 2400 x 123 | 29.8 kg | 0 W | none | 731 |
 | `wallpanel_tall_window_slit` | Wall panel - Tall Window Slit | Calder-Okonkwo Industries | 1000 x 2400 x 125 | 30 kg | 0 W | none | 608 |
 | `wallpanel_tall_wood_panelled` | Wall panel - Tall Wood Panelled | Calder-Okonkwo Industries | 1006 x 2406 x 103 | 24.8 kg | 0 W | none | 596 |
 | `wallpanel_vent_grille` | Wall panel - Vent Grille | Calder-Okonkwo Industries | 1000 x 1200 x 109 | 12.9 kg | 0 W | none | 482 |
-| `wallpanel_wood_veneer` | Wall panel - Wood Veneer | Calder-Okonkwo Industries | 1000 x 1200 x 80 | 10.3 kg | 0 W | none | 349 |
+| `wallpanel_wood_veneer` | Wall panel - Wood Veneer | Calder-Okonkwo Industries | 1006 x 1206 x 80 | 10.4 kg | 0 W | none | 356 |
 
 ## Datasheets
 
@@ -137,9 +137,9 @@
 
 **Wall panel - Ribbed**, Calder-Okonkwo Industries, part COI-WAL-2798 (passive)
 
-* Mass 12.5 kg; size 1010 x 1200 x 105 mm; heat 0 W.
+* Mass 12.2 kg; size 1006 x 1200 x 103 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 415 cr, lead time 45 days, MTBF 1,376,900 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 409 cr, lead time 45 days, MTBF 1,376,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 
@@ -228,9 +228,9 @@
 
 **Wall panel - Tall Ribbed**, Calder-Okonkwo Industries, part COI-WAL-2740 (passive)
 
-* Mass 30.4 kg; size 1010 x 2400 x 125 mm; heat 0 W.
+* Mass 29.8 kg; size 1006 x 2400 x 123 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 742 cr, lead time 47 days, MTBF 1,640,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 731 cr, lead time 47 days, MTBF 1,640,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted. Two-person lift.
 
@@ -268,9 +268,9 @@
 
 **Wall panel - Wood Veneer**, Calder-Okonkwo Industries, part COI-WAL-7708 (passive)
 
-* Mass 10.3 kg; size 1000 x 1200 x 80 mm; heat 0 W.
+* Mass 10.4 kg; size 1006 x 1206 x 80 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 349 cr, lead time 43 days, MTBF 1,400,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 356 cr, lead time 43 days, MTBF 1,400,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * wall-mounted.
 

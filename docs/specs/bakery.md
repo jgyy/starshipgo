@@ -10,7 +10,7 @@
 | `bakery_baguette` | Bakery - Baguette | Calder-Okonkwo Industries | 520 x 69 x 56 | 0.23 kg | 0 W | none | 279 |
 | `bakery_bread_loaf` | Bakery - Bread Loaf | Calder-Okonkwo Industries | 300 x 125 x 104 | 0.42 kg | 0 W | none | 166 |
 | `bakery_brioche_loaf` | Bakery - Brioche Loaf | Calder-Okonkwo Industries | 300 x 120 x 130 | 0.59 kg | 0 W | none | 410 |
-| `bakery_cake_slice_chocolate` | Bakery - Cake Slice Chocolate | Calder-Okonkwo Industries | 200 x 78 x 200 | 0.34 kg | 0 W | none | 296 |
+| `bakery_cake_slice_chocolate` | Bakery - Cake Slice Chocolate | Calder-Okonkwo Industries | 200 x 78 x 200 | 0.34 kg | 0 W | none | 289 |
 | `bakery_cinnamon_roll` | Bakery - Cinnamon Roll | Calder-Okonkwo Industries | 180 x 37 x 178 | 0.15 kg | 0 W | none | 873 |
 | `bakery_cookies_on_plate` | Bakery - Cookies On Plate | Calder-Okonkwo Industries | 240 x 39 x 240 | 0.26 kg | 0 W | none | 495 |
 | `bakery_croissant` | Bakery - Croissant | Calder-Okonkwo Industries | 158 x 61 x 60 | 0.07 kg | 0 W | none | 380 |
@@ -74,7 +74,7 @@
 
 * Mass 0.34 kg; size 200 x 78 x 200 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 296 cr, lead time 44 days, MTBF 1,711,000 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 289 cr, lead time 44 days, MTBF 1,711,000 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * table-mounted.
 

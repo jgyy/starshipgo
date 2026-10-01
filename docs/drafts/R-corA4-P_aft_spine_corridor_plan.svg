@@ -39,7 +39,7 @@
 <polygon points="154.67,56.47 168,56.47 168,74.87 154.67,74.87" class="red" fill="url(#hZone)"/>
 <polygon points="148,151.67 154.67,151.67 154.67,175.67 148,175.67" class="red" fill="url(#hZone)"/>
 <polygon points="161.33,151.67 168,151.67 168,175.67 161.33,175.67" class="red" fill="url(#hZone)"/>
-<polygon points="167,132 167,135.33 164.92,135.33 164.92,132" class="f" fill="#f799b1"/>
+<polygon points="167,131.98 167,135.35 164.9,135.35 164.9,131.98" class="f" fill="#f799b1"/>
 <polygon points="167,128 167,130 165.67,130 165.67,128" class="f" fill="#e281e8"/>
 <polygon points="149,55 149,48.33 149.4,48.33 149.4,55" class="f" fill="#e281e8"/>
 <polygon points="167,88 167,90 166.49,90 166.49,88" class="f" fill="#81e8d6"/>
@@ -104,8 +104,8 @@
 <circle cx="152.33" cy="201.16" r="0.4" class="none" fill="#b03030"/>
 <line x1="144.16" y1="50.15" x2="149.2" y2="51.67" class="x"/>
 <circle cx="149.2" cy="51.67" r="0.4" class="none" fill="#b03030"/>
-<line x1="172.35" y1="138.43" x2="165.96" y2="133.67" class="x"/>
-<circle cx="165.96" cy="133.67" r="0.4" class="none" fill="#b03030"/>
+<line x1="172.35" y1="138.43" x2="165.95" y2="133.67" class="x"/>
+<circle cx="165.95" cy="133.67" r="0.4" class="none" fill="#b03030"/>
 <circle cx="141" cy="94.8" r="3.3" class="n" fill="#fff"/>
 <text x="141" y="95.4" font-size="1.6" class="t b" text-anchor="middle">CA4-01</text>
 <circle cx="141" cy="208.8" r="3.3" class="n" fill="#fff"/>

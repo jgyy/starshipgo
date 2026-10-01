@@ -14,7 +14,7 @@
 | `galley_food_replicator` | Galley equipment - Food Replicator | Greywater Galley Systems | 900 x 1940 x 680 | 196.6 kg | 1.1 kW | 120 VAC 1ph | 70.2 k |
 | `galley_hanging_pots_rack` | Galley equipment - Hanging Pots Rack | Greywater Galley Systems | 1200 x 510 x 400 | 40.3 kg | 0 W | none | 14.7 k |
 | `galley_kitchen_island` | Galley equipment - Kitchen Island | Greywater Galley Systems | 2060 x 1120 x 1017 | 414.5 kg | 0 W | none | 113 k |
-| `galley_microwave` | Galley equipment - Microwave | Greywater Galley Systems | 500 x 300 x 410 | 9.73 kg | 320 W | 120 VAC 1ph | 3,830 |
+| `galley_microwave` | Galley equipment - Microwave | Greywater Galley Systems | 500 x 300 x 410 | 9.72 kg | 320 W | 120 VAC 1ph | 3,820 |
 | `galley_prep_counter` | Galley equipment - Prep Counter | Greywater Galley Systems | 1800 x 1180 x 750 | 251 kg | 0 W | none | 77.8 k |
 | `galley_range_with_hood` | Galley equipment - Range With Hood | Greywater Galley Systems | 900 x 2500 x 825 | 330.3 kg | 4.1 kW | 208 VAC 3ph | 118 k |
 | `galley_refrigerator` | Galley equipment - Refrigerator | Greywater Galley Systems | 800 x 1903 x 840 | 203.2 kg | 320 W | 120 VAC 1ph | 78.4 k |
@@ -116,9 +116,9 @@
 
 **Galley equipment - Microwave**, Greywater Galley Systems, part GGS-GAL-4264 (consumer)
 
-* Mass 9.73 kg; size 500 x 300 x 410 mm; heat 290 W.
+* Mass 9.72 kg; size 500 x 300 x 410 mm; heat 290 W.
 * Power 97 W idle / 320 W typical / 480 W peak at 120 VAC 1ph.
-* Price 3,830 cr, lead time 57 days, MTBF 30,400 h, service every 2,190 h, service life 15 years, crew 1.
+* Price 3,820 cr, lead time 57 days, MTBF 30,400 h, service every 2,190 h, service life 15 years, crew 1.
 * IP44, 0 to 50 C, 51 dB(A); certifications: CSA-F2 food contact, CSA-E24 electrical safety.
 * table-mounted.
 

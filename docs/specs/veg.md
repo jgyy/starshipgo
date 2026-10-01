@@ -20,7 +20,7 @@
 | `veg_lettuce_heads` | Veg - Lettuce Heads | Calder-Okonkwo Industries | 364 x 90 x 238 | 1.02 kg | 0 W | none | 653 |
 | `veg_mushrooms_brown_white` | Veg - Mushrooms Brown White | Calder-Okonkwo Industries | 158 x 51 x 146 | 0.16 kg | 0 W | none | 1,010 |
 | `veg_onions_assorted` | Veg - Onions Assorted | Calder-Okonkwo Industries | 228 x 100 x 176 | 0.56 kg | 0 W | none | 1,060 |
-| `veg_pea_pods_open` | Veg - Pea Pods Open | Calder-Okonkwo Industries | 172 x 28 x 112 | 0.07 kg | 0 W | none | 385 |
+| `veg_pea_pods_open` | Veg - Pea Pods Open | Calder-Okonkwo Industries | 172 x 29 x 112 | 0.07 kg | 0 W | none | 385 |
 | `veg_potatoes_pile` | Veg - Potatoes Pile | Calder-Okonkwo Industries | 298 x 109 x 252 | 1.08 kg | 0 W | none | 713 |
 | `veg_pumpkin_ribbed` | Veg - Pumpkin Ribbed | Calder-Okonkwo Industries | 286 x 242 x 272 | 2.51 kg | 0 W | none | 607 |
 | `veg_radish_bunch` | Veg - Radish Bunch | Calder-Okonkwo Industries | 184 x 73 x 68 | 0.12 kg | 0 W | none | 1,290 |
@@ -172,7 +172,7 @@
 
 **Veg - Pea Pods Open**, Calder-Okonkwo Industries, part COI-VEG-2355 (passive)
 
-* Mass 0.07 kg; size 172 x 28 x 112 mm; heat 0 W.
+* Mass 0.07 kg; size 172 x 29 x 112 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 385 cr, lead time 37 days, MTBF 1,768,000 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.

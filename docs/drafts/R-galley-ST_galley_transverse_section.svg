@@ -38,14 +38,14 @@
 <polygon points="114.23,63 337.51,63 337.51,131 114.23,131" class="x" fill="#e9ecf1"/>
 <polygon points="194.23,75.8 254.23,75.8 254.23,131 194.23,131" class="n" fill="#c3cad6"/>
 <line x1="224.23" y1="131" x2="224.23" y2="75.8" class="f"/>
-<polygon points="199.83,74.6 248.63,74.6 248.63,131 199.83,131" class="f" fill="none"/>
+<polygon points="199.83,74.54 248.63,74.54 248.63,131 199.83,131" class="f" fill="none"/>
 <polygon points="165.81,110.48 167.85,110.48 167.85,112.6 165.81,112.6" class="f" fill="#c7fada"/>
 <polygon points="262.33,109.6 268.13,109.6 268.13,112.6 262.33,112.6" class="f" fill="#f2b9ed"/>
 <polygon points="170.81,111.52 175.65,111.52 175.65,112.6 170.81,112.6" class="f" fill="#daf6b4"/>
 <polygon points="178.23,110.02 184.23,110.02 184.23,112.6 178.23,112.6" class="f" fill="#f2b9ed"/>
 <polygon points="154.23,109.6 161.03,109.6 161.03,112.6 154.23,112.6" class="f" fill="#f4fac6"/>
-<polygon points="283.61,111.06 294.85,111.06 294.85,112.6 283.61,112.6" class="f" fill="#f4fac6"/>
-<polygon points="270.61,110.74 281.85,110.74 281.85,112.6 270.61,112.6" class="f" fill="#f4fac6"/>
+<polygon points="283.59,111.06 294.87,111.06 294.87,112.6 283.59,112.6" class="f" fill="#f4fac6"/>
+<polygon points="270.59,110.74 281.87,110.74 281.87,112.6 270.59,112.6" class="f" fill="#f4fac6"/>
 <polygon points="307.23,92.2 325.23,92.2 325.23,131 307.23,131" class="f" fill="#ebf6b3"/>
 <polygon points="260.23,107.4 296.23,107.4 296.23,131 260.23,131" class="f" fill="#ebf6b3"/>
 <polygon points="151.23,107.4 187.23,107.4 187.23,131 151.23,131" class="f" fill="#ebf6b3"/>

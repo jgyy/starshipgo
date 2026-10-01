@@ -12,8 +12,8 @@
 | `ceilingpanel_diffuser_2x2` | Ceiling panel - Diffuser 2X2 | Calder-Okonkwo Industries | 2000 x 190 x 2000 | 49.6 kg | 0 W | none | 980 |
 | `ceilingpanel_dome_light_1x1` | Ceiling panel - Dome Light 1X1 | Calder-Okonkwo Industries | 1000 x 225 x 1000 | 16.5 kg | 0 W | none | 526 |
 | `ceilingpanel_egg_crate_2x2` | Ceiling panel - Egg Crate 2X2 | Calder-Okonkwo Industries | 2006 x 113 x 2006 | 30.8 kg | 0 W | none | 676 |
-| `ceilingpanel_grid_tile_1x1` | Ceiling panel - Grid Tile 1X1 | Calder-Okonkwo Industries | 1000 x 40 x 1000 | 2.66 kg | 0 W | none | 99 |
-| `ceilingpanel_hazard_hatch_1x1` | Ceiling panel - Hazard Hatch 1X1 | Calder-Okonkwo Industries | 1000 x 105 x 1000 | 7.1 kg | 0 W | none | 199 |
+| `ceilingpanel_grid_tile_1x1` | Ceiling panel - Grid Tile 1X1 | Calder-Okonkwo Industries | 1006 x 43 x 1006 | 2.89 kg | 0 W | none | 105 |
+| `ceilingpanel_hazard_hatch_1x1` | Ceiling panel - Hazard Hatch 1X1 | Calder-Okonkwo Industries | 1006 x 108 x 1006 | 7.39 kg | 0 W | none | 204 |
 | `ceilingpanel_light_recess_2x2` | Ceiling panel - Light Recess 2X2 | Calder-Okonkwo Industries | 2000 x 115 x 2000 | 28.2 kg | 0 W | none | 645 |
 | `ceilingpanel_perforated_1x1` | Ceiling panel - Perforated 1X1 | Calder-Okonkwo Industries | 1006 x 43 x 1006 | 3.22 kg | 0 W | none | 303 |
 | `ceilingpanel_speaker_grille_1x1` | Ceiling panel - Speaker Grille 1X1 | Calder-Okonkwo Industries | 1000 x 100 x 1000 | 7.12 kg | 0 W | none | 480 |
@@ -87,9 +87,9 @@
 
 **Ceiling panel - Grid Tile 1X1**, Calder-Okonkwo Industries, part COI-CEI-3310 (passive)
 
-* Mass 2.66 kg; size 1000 x 40 x 1000 mm; heat 0 W.
+* Mass 2.89 kg; size 1006 x 43 x 1006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 99 cr, lead time 36 days, MTBF 1,241,600 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 105 cr, lead time 37 days, MTBF 1,241,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 
@@ -97,9 +97,9 @@
 
 **Ceiling panel - Hazard Hatch 1X1**, Calder-Okonkwo Industries, part COI-CEI-9185 (passive)
 
-* Mass 7.1 kg; size 1000 x 105 x 1000 mm; heat 0 W.
+* Mass 7.39 kg; size 1006 x 108 x 1006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 199 cr, lead time 42 days, MTBF 1,643,800 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 204 cr, lead time 42 days, MTBF 1,643,800 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * ceiling-mounted.
 

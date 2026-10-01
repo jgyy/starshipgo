@@ -56,9 +56,9 @@
 <polygon points="219.74,113.34 221.06,113.34 221.06,115.8 219.74,115.8" class="f" fill="#f1c2b5"/>
 <polygon points="209.18,113.8 214.84,113.8 214.84,115.8 209.18,115.8" class="f" fill="#f1d7b4"/>
 <polygon points="210.44,63 213.56,63 213.56,67.4 210.44,67.4" class="dot" fill="none"/>
-<polygon points="279.18,110.6 285.58,110.6 285.58,114.2 279.18,114.2" class="f" fill="#f1d6b2"/>
+<polygon points="279.18,110.2 285.58,110.2 285.58,113.8 279.18,113.8" class="f" fill="#f1d6b2"/>
 <polygon points="210.4,109.5 213.6,109.5 213.6,115.8 210.4,115.8" class="f" fill="#f1d6b2"/>
-<polygon points="214.94,107.36 221.06,107.36 221.06,115.8 214.94,115.8" class="f" fill="#f3fac1"/>
+<polygon points="214.94,107.3 221.06,107.3 221.06,115.8 214.94,115.8" class="f" fill="#f3fac1"/>
 <polygon points="135,78.9 138.6,78.9 138.6,106.8 135,106.8" class="f" fill="#f1b7b2"/>
 <polygon points="286.9,80 289,80 289,86 286.9,86" class="f" fill="#e0f5ac"/>
 <polygon points="184.76,108.5 197.26,108.5 197.26,131 184.76,131" class="f" fill="#faebc0"/>
@@ -72,14 +72,14 @@
 <polygon points="199.9,115.22 224.1,115.22 224.1,131 199.9,131" class="f" fill="#bdf9f1"/>
 <polygon points="199.9,115.22 224.1,115.22 224.1,131 199.9,131" class="f" fill="#bcf9f1"/>
 <polygon points="276.56,110.08 288.2,110.08 288.2,131 276.56,131" class="f" fill="#daa6f4"/>
-<polygon points="280.58,109.64 284.18,109.64 284.18,113.82 280.58,113.82" class="f" fill="#f0d3ad"/>
+<polygon points="280.58,109.62 284.18,109.62 284.18,113.8 280.58,113.8" class="f" fill="#f0d3ad"/>
 <polygon points="132,131 292,131 292,137 132,137" class="n" fill="url(#hSlab)"/>
 <polygon points="132,57 292,57 292,63 132,63" class="n" fill="url(#hSlab)"/>
 <polygon points="132,63 135,63 135,75.8 132,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="289,63 292,63 292,131 289,131" class="n" fill="#1c1c1c"/>
 <polygon points="199.9,115.22 224.1,115.22 224.1,131 199.9,131" class="m" fill="#9ef7eb"/>
 <polygon points="276.56,110.08 288.2,110.08 288.2,131 276.56,131" class="m" fill="#c97def"/>
-<polygon points="280.58,109.64 284.18,109.64 284.18,113.82 280.58,113.82" class="m" fill="#e9bf87"/>
+<polygon points="280.58,109.62 284.18,109.62 284.18,113.8 280.58,113.8" class="m" fill="#e9bf87"/>
 </g>
 <text x="136.8" y="93.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1900</text>
 <text x="287.95" y="83.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2400</text>

@@ -23,7 +23,7 @@
 * Power 270 W idle / 910 W typical / 1.6 kW peak at 120 VAC 1ph.
 * Price 367 k cr, lead time 94 days, MTBF 55,400 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 10 to 35 C, 43 dB(A); certifications: CSA-MD5 medical device, CSA-E24 electrical safety; interface: Medical data bus MDB-1 (encrypted).
-* Software: `medical` (screens: vitals).
+* Software: `medical` (screens: body_scan).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `surgical_defibrillator_cart`

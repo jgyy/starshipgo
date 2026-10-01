@@ -7,8 +7,8 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `capacitor_battery_rack` | Energy storage - Battery Rack | Halvorsen Power Systems | 1250 x 1985 x 627 | 1.2 t | 239 kWh | 400 VDC | 1.15 M |
-| `capacitor_battery_trolley` | Energy storage - Battery Trolley | Halvorsen Power Systems | 1294 x 1075 x 700 | 711.6 kg | 142 kWh | 400 VDC | 709 k |
-| `capacitor_capacitor_bank_rack` | Energy storage - Capacitor Bank Rack | Halvorsen Power Systems | 1100 x 1960 x 616 | 1.09 t | 10.9 kWh | 400 VDC | 1.05 M |
+| `capacitor_battery_trolley` | Energy storage - Battery Trolley | Halvorsen Power Systems | 1294 x 1075 x 700 | 711.3 kg | 142 kWh | 400 VDC | 708 k |
+| `capacitor_capacitor_bank_rack` | Energy storage - Capacitor Bank Rack | Halvorsen Power Systems | 1106 x 1960 x 619 | 1.1 t | 11 kWh | 400 VDC | 1.06 M |
 | `capacitor_capacitor_wall_array` | Energy storage - Capacitor Wall Array | Halvorsen Power Systems | 1200 x 1200 x 295 | 331.9 kg | 3.32 kWh | 48 VDC | 361 k |
 | `capacitor_cell_charging_dock` | Energy storage - Cell Charging Dock | Halvorsen Power Systems | 1000 x 700 x 240 | 126.6 kg | 570 W | 120 VAC 1ph | 121 k |
 | `capacitor_cell_tray` | Energy storage - Cell Tray | Halvorsen Power Systems | 550 x 142 x 200 | 11.8 kg | 2.36 kWh | 48 VDC | 12.6 k |
@@ -41,21 +41,21 @@
 
 **Energy storage - Battery Trolley**, Halvorsen Power Systems, part HPS-CAP-1963 (energy storage)
 
-* Mass 711.6 kg; size 1294 x 1075 x 700 mm; heat 720 W.
+* Mass 711.3 kg; size 1294 x 1075 x 700 mm; heat 720 W.
 * Capacity 142 kWh, discharge up to 285 kW at 400 VDC.
-* Price 709 k cr, lead time 163 days, MTBF 41,200 h, service every 4,000 h, service life 25 years, crew 2.
+* Price 708 k cr, lead time 163 days, MTBF 41,200 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 77 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (711.6 kg). Stores 142 kWh; discharge limited to 285 kW.
+* floor-mounted, free-standing. Install with a hoist or gantry (711.3 kg). Stores 142 kWh; discharge limited to 285 kW.
 
 ### `capacitor_capacitor_bank_rack`
 
 **Energy storage - Capacitor Bank Rack**, Halvorsen Power Systems, part HPS-CAP-4659 (energy storage)
 
-* Mass 1.09 t; size 1100 x 1960 x 616 mm; heat 1.3 kW.
-* Capacity 10.9 kWh, discharge up to 656 kW at 400 VDC.
-* Price 1.05 M cr, lead time 159 days, MTBF 50,900 h, service every 4,000 h, service life 25 years, crew 2.
+* Mass 1.1 t; size 1106 x 1960 x 619 mm; heat 1.3 kW.
+* Capacity 11 kWh, discharge up to 662 kW at 400 VDC.
+* Price 1.06 M cr, lead time 159 days, MTBF 50,900 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 79 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
-* floor-mounted, free-standing. Install with a hoist or gantry (1.09 t). Stores 10.9 kWh; discharge limited to 656 kW.
+* floor-mounted, free-standing. Install with a hoist or gantry (1.1 t). Stores 11 kWh; discharge limited to 662 kW.
 
 ### `capacitor_capacitor_wall_array`
 

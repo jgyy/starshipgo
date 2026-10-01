@@ -21,7 +21,7 @@
 | `valve_pressure_relief_valve` | Valve / coupling - Pressure Relief Valve | Anvil Fluid Controls | 520 x 1235 x 400 | 100.7 kg | 0 W | none | 2,210 |
 | `valve_quick_couplings` | Valve / coupling - Quick Couplings | Anvil Fluid Controls | 440 x 123 x 140 | 2.69 kg | 0 W | none | 144 |
 | `valve_sight_glass` | Valve / coupling - Sight Glass | Anvil Fluid Controls | 500 x 500 x 215 | 21.1 kg | 0 W | none | 607 |
-| `valve_test_manifold` | Valve / coupling - Test Manifold | Anvil Fluid Controls | 500 x 197 x 318 | 11.5 kg | 0 W | none | 372 |
+| `valve_test_manifold` | Valve / coupling - Test Manifold | Anvil Fluid Controls | 500 x 198 x 318 | 11.5 kg | 0 W | none | 372 |
 | `valve_twin_isolation_station` | Valve / coupling - Twin Isolation Station | Anvil Fluid Controls | 900 x 900 x 345 | 103.3 kg | 0 W | none | 2,630 |
 | `valve_valve_tree` | Valve / coupling - Valve Tree | Anvil Fluid Controls | 842 x 1725 x 500 | 285 kg | 0 W | none | 7,250 |
 
@@ -181,7 +181,7 @@
 
 **Valve / coupling - Test Manifold**, Anvil Fluid Controls, part AFC-VAL-9333 (passive)
 
-* Mass 11.5 kg; size 500 x 197 x 318 mm; heat 0 W.
+* Mass 11.5 kg; size 500 x 198 x 318 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 372 cr, lead time 41 days, MTBF 1,377,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.

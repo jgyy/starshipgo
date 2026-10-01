@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `reactor_auxiliary_reactor` | Reactor - Auxiliary Reactor | Halvorsen Power Systems | 2090 x 2348 x 1300 | 7.41 t | +2.72 MW out | 6.6 kVAC 3ph | 10.9 M |
 | `reactor_emergency_reactor` | Reactor - Emergency Reactor | Halvorsen Power Systems | 1650 x 1895 x 1250 | 4.62 t | +919 kW out | 400 VAC 3ph | 4.79 M |
-| `reactor_fusion_core_reactor` | Reactor - Fusion Core Reactor | Halvorsen Power Systems | 2524 x 3043 x 2524 | 23.84 t | +16.6 MW out | 6.6 kVAC 3ph | 45.5 M |
+| `reactor_fusion_core_reactor` | Reactor - Fusion Core Reactor | Halvorsen Power Systems | 2524 x 3043 x 2524 | 23.82 t | +16.6 MW out | 6.6 kVAC 3ph | 45.5 M |
 | `reactor_matter_antimatter_injector` | Reactor - Matter Antimatter Injector | Halvorsen Power Systems | 3522 x 2553 x 900 | 9.96 t | 470 kW | 6.6 kVAC 3ph | 9.18 M |
 | `reactor_plasma_tokamak_torus` | Reactor - Plasma Tokamak Torus | Halvorsen Power Systems | 2692 x 2803 x 2692 | 29.25 t | +19.1 MW out | 6.6 kVAC 3ph | 57.1 M |
 | `reactor_reactor_control_pillar` | Reactor - Reactor Control Pillar | Halvorsen Power Systems | 952 x 2430 x 1090 | 3.13 t | 1.5 kW | 208 VAC 3ph | 2.73 M |
@@ -39,12 +39,12 @@
 
 **Reactor - Fusion Core Reactor**, Halvorsen Power Systems, part HPS-REA-5727 (producer)
 
-* Mass 23.84 t; size 2524 x 3043 x 2524 mm; heat 5 MW.
+* Mass 23.82 t; size 2524 x 3043 x 2524 mm; heat 5 MW.
 * Output 16600 kW at 6.6 kVAC 3ph; own load 130 kW.
 * Price 45.5 M cr, lead time 169 days, MTBF 60,759 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 86 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety, CSA-R3 radiation (fusion); interface: Power management bus PMB-1.
 * Software: `engineering` (screens: engine_temp).
-* floor-mounted, free-standing. Install with a hoist or gantry (23.84 t). Output 16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.
+* floor-mounted, free-standing. Install with a hoist or gantry (23.82 t). Output 16.6 MW at 6.6 kVAC 3ph; connect only through its breaker panel.
 
 ### `reactor_matter_antimatter_injector`
 

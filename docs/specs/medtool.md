@@ -12,8 +12,8 @@
 | `medtool_med_kit_case` | Medical tool - Med-Kit Case | Lindqvist-Aoki Medical | 360 x 232 x 168 | 2.71 kg | 0 W | none | 6,800 |
 | `medtool_medical_shoulder_bag` | Medical tool - Medical Shoulder Bag | Lindqvist-Aoki Medical | 380 x 329 x 190 | 4.23 kg | 0 W | none | 10.6 k |
 | `medtool_medical_tricorder` | Medical tool - Medical Tricorder | Lindqvist-Aoki Medical | 180 x 95 x 335 | 1.1 kg | 0 W | none | 2,620 |
-| `medtool_surgical_instrument_tray` | Medical tool - Surgical Instrument Tray | Lindqvist-Aoki Medical | 372 x 59 x 252 | 1.02 kg | 0 W | none | 2,510 |
-| `medtool_syringe_rack` | Medical tool - Syringe Rack | Lindqvist-Aoki Medical | 306 x 204 x 143 | 1.79 kg | 0 W | none | 4,620 |
+| `medtool_surgical_instrument_tray` | Medical tool - Surgical Instrument Tray | Lindqvist-Aoki Medical | 372 x 60 x 252 | 1.03 kg | 0 W | none | 2,530 |
+| `medtool_syringe_rack` | Medical tool - Syringe Rack | Lindqvist-Aoki Medical | 306 x 205 x 143 | 1.8 kg | 0 W | none | 4,640 |
 
 ## Datasheets
 
@@ -75,16 +75,16 @@
 * Passive: no electrical load.
 * Price 2,620 cr, lead time 82 days, MTBF 73,300 h, service every 4,380 h, service life 12 years, crew 0.
 * IP32, 10 to 35 C; certifications: CSA-MD5 medical device, CSA-E24 electrical safety.
-* Software: `medical` (screens: medical).
+* Software: `computer` (screens: thermal).
 * table-mounted.
 
 ### `medtool_surgical_instrument_tray`
 
 **Medical tool - Surgical Instrument Tray**, Lindqvist-Aoki Medical, part LAM-MED-9472 (passive)
 
-* Mass 1.02 kg; size 372 x 59 x 252 mm; heat 0 W.
+* Mass 1.03 kg; size 372 x 60 x 252 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 2,510 cr, lead time 86 days, MTBF 68,700 h, service every 4,380 h, service life 12 years, crew 0.
+* Price 2,530 cr, lead time 86 days, MTBF 68,700 h, service every 4,380 h, service life 12 years, crew 0.
 * IP32, 10 to 35 C; certifications: CSA-MD5 medical device, CSA-E24 electrical safety.
 * table-mounted.
 
@@ -92,9 +92,9 @@
 
 **Medical tool - Syringe Rack**, Lindqvist-Aoki Medical, part LAM-MED-7696 (passive)
 
-* Mass 1.79 kg; size 306 x 204 x 143 mm; heat 0 W.
+* Mass 1.8 kg; size 306 x 205 x 143 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,620 cr, lead time 85 days, MTBF 58,700 h, service every 4,380 h, service life 12 years, crew 0.
+* Price 4,640 cr, lead time 85 days, MTBF 58,700 h, service every 4,380 h, service life 12 years, crew 0.
 * IP32, 10 to 35 C; certifications: CSA-MD5 medical device, CSA-E24 electrical safety.
 * table-mounted.
 

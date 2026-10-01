@@ -109,7 +109,7 @@
 * Power 42 W idle / 170 W typical / 250 W peak at 48 VDC.
 * Price 196 k cr, lead time 63 days, MTBF 84,700 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 30 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `science` (screens: waveform).
+* Software: `comms` (screens: ecg_multi).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `antenna_whip_antenna_cluster`

@@ -9,7 +9,7 @@
 | `particle_detector_ring_segment` | Particle physics equipment - Detector Ring Segment | Orrery Instruments | 2247 x 2470 x 1320 | 4.33 t | 570 kW | 6.6 kVAC 3ph | 12.9 M |
 | `particle_mini_collider_ring` | Particle physics equipment - Mini Collider Ring | Orrery Instruments | 2600 x 1400 x 2600 | 5.72 t | 780 kW | 6.6 kVAC 3ph | 15.9 M |
 | `particle_plasma_chamber` | Particle physics equipment - Plasma Chamber | Orrery Instruments | 1196 x 2000 x 1222 | 1.96 t | 260 kW | 6.6 kVAC 3ph | 4.45 M |
-| `particle_quantum_chandelier` | Particle physics equipment - Quantum Chandelier | Orrery Instruments | 1200 x 3000 x 840 | 2.04 t | 270 kW | 6.6 kVAC 3ph | 4.33 M |
+| `particle_quantum_chandelier` | Particle physics equipment - Quantum Chandelier | Orrery Instruments | 1200 x 3006 x 840 | 2.04 t | 270 kW | 6.6 kVAC 3ph | 4.34 M |
 | `particle_tesla_emitter` | Particle physics equipment - Tesla Emitter | Orrery Instruments | 798 x 2533 x 808 | 986.3 kg | 140 kW | 400 VAC 3ph | 2.61 M |
 | `particle_tractor_field_emitter` | Particle physics equipment - Tractor Field Emitter | Orrery Instruments | 1000 x 1500 x 1011 | 945.1 kg | 120 kW | 400 VAC 3ph | 2.85 M |
 
@@ -51,9 +51,9 @@
 
 **Particle physics equipment - Quantum Chandelier**, Orrery Instruments, part ORI-PAR-2310 (consumer)
 
-* Mass 2.04 t; size 1200 x 3000 x 840 mm; heat 250 kW.
+* Mass 2.04 t; size 1200 x 3006 x 840 mm; heat 250 kW.
 * Power 81 kW idle / 270 kW typical / 460 kW peak at 6.6 kVAC 3ph.
-* Price 4.33 M cr, lead time 120 days, MTBF 64,100 h, service every 4,380 h, service life 12 years, crew 1.
+* Price 4.34 M cr, lead time 120 days, MTBF 64,100 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 57 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
 * Software: `engineering` (screens: systems).
 * floor-mounted, free-standing. Install with a hoist or gantry (2.04 t).
@@ -76,6 +76,6 @@
 * Power 37 kW idle / 120 kW typical / 210 kW peak at 400 VAC 3ph.
 * Price 2.85 M cr, lead time 114 days, MTBF 67,700 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 55 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `nav` (screens: nav).
+* Software: `deckplan` (screens: deck_map).
 * floor-mounted, free-standing. Install with a hoist or gantry (945.1 kg).
 

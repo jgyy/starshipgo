@@ -9,7 +9,7 @@
 | `plant_bonsai` | Plant - Bonsai | Brightwater Life Systems | 431 x 397 x 200 | 2.91 kg | 0 W | none | 308 |
 | `plant_fern` | Plant - Fern | Brightwater Life Systems | 1568 x 876 x 1435 | 167.5 kg | 0 W | none | 9,120 |
 | `plant_ficus_tree` | Plant - Ficus Tree | Brightwater Life Systems | 888 x 1936 x 1007 | 153.8 kg | 0 W | none | 9,470 |
-| `plant_flower_vase` | Plant - Flower Vase | Brightwater Life Systems | 269 x 498 x 290 | 3.36 kg | 0 W | none | 357 |
+| `plant_flower_vase` | Plant - Flower Vase | Brightwater Life Systems | 269 x 498 x 290 | 3.35 kg | 0 W | none | 350 |
 | `plant_hanging_plant` | Plant - Hanging Plant | Brightwater Life Systems | 468 x 1322 x 478 | 24.5 kg | 0 W | none | 1,640 |
 | `plant_moss_wall_panel` | Plant - Moss Wall Panel | Brightwater Life Systems | 1033 x 765 x 122 | 8.14 kg | 0 W | none | 809 |
 | `plant_planter_box` | Plant - Planter Box | Brightwater Life Systems | 1240 x 838 x 390 | 35.1 kg | 0 W | none | 2,170 |
@@ -51,9 +51,9 @@
 
 **Plant - Flower Vase**, Brightwater Life Systems, part BLS-PLA-6278 (passive)
 
-* Mass 3.36 kg; size 269 x 498 x 290 mm; heat 0 W.
+* Mass 3.35 kg; size 269 x 498 x 290 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 357 cr, lead time 23 days, MTBF n/a, service every 168 h, service life 2 years, crew 0.
+* Price 350 cr, lead time 23 days, MTBF n/a, service every 168 h, service life 2 years, crew 0.
 * n/a, 10 to 35 C; certifications: CSA-BIO1 biosafety.
 * table-mounted.
 

@@ -40,18 +40,18 @@
 <line x1="212" y1="131" x2="212" y2="75.8" class="f"/>
 <polygon points="202,65 222,65 222,73 202,73" class="f" fill="#c0e9f3"/>
 <polygon points="146,75 170,75 170,93.16 146,93.16" class="f" fill="#f5f7bb"/>
-<polygon points="183,70 241,70 241,131 183,131" class="f" fill="none"/>
+<polygon points="182.96,69.9 241.04,69.9 241.04,131 182.96,131" class="f" fill="none"/>
 <polygon points="271,99.6 277,99.6 277,114.3 271,114.3" class="f" fill="#f0c0f3"/>
 <polygon points="245,103.04 255,103.04 255,131 245,131" class="f" fill="#f3bfcf"/>
 <polygon points="148.4,103.2 169.6,103.2 169.6,131 148.4,131" class="f" fill="#e2baf6"/>
 <polygon points="261.94,92.28 282.08,92.28 282.08,131 261.94,131" class="f" fill="#c9fafa"/>
 <polygon points="152.78,108.5 165.24,108.5 165.24,131 152.78,131" class="f" fill="#faeec8"/>
 <polygon points="182.8,63 187.2,63 187.2,67.64 182.8,67.64" class="dot" fill="none"/>
-<polygon points="232.62,62.98 245.38,62.98 245.38,66.56 232.62,66.56" class="dot" fill="none"/>
+<polygon points="232.62,63 245.38,63 245.38,66.58 232.62,66.58" class="dot" fill="none"/>
 <polygon points="265.5,104 282.2,104 282.2,131 265.5,131" class="f" fill="#b6f1c9"/>
-<polygon points="172.54,112.6 181.46,112.6 181.46,131.16 172.54,131.16" class="f" fill="#faecc3"/>
-<polygon points="191.54,112.6 200.46,112.6 200.46,131.16 191.54,131.16" class="f" fill="#faecc3"/>
-<polygon points="210.54,112.6 219.46,112.6 219.46,131.16 210.54,131.16" class="f" fill="#faecc3"/>
+<polygon points="172.54,112.44 181.46,112.44 181.46,131 172.54,131" class="f" fill="#faecc3"/>
+<polygon points="191.54,112.44 200.46,112.44 200.46,131 191.54,131" class="f" fill="#faecc3"/>
+<polygon points="210.54,112.44 219.46,112.44 219.46,131 210.54,131" class="f" fill="#faecc3"/>
 <polygon points="187.5,115.42 191.5,115.42 191.5,115.8 187.5,115.8" class="f" fill="#f1b3c6"/>
 <polygon points="201.3,115.04 203.7,115.04 203.7,115.8 201.3,115.8" class="f" fill="#f1b3c6"/>
 <polygon points="263.96,91.2 282.2,91.2 282.2,131 263.96,131" class="f" fill="#b3f1c7"/>
@@ -61,14 +61,14 @@
 <polygon points="192.2,63 199.8,63 199.8,83.4 192.2,83.4" class="dot" fill="none"/>
 <polygon points="227.22,63 236.78,63 236.78,89.44 227.22,89.44" class="dot" fill="none"/>
 <polygon points="166,115.6 226,115.6 226,131 166,131" class="f" fill="#c0faf2"/>
-<polygon points="265.48,80.6 282.2,80.6 282.2,131 265.48,131" class="f" fill="#aff0c4"/>
+<polygon points="265.48,80.6 282.2,80.6 282.2,131 265.48,131" class="f" fill="#b0f0c4"/>
 <polygon points="141.8,84.94 155.6,84.94 155.6,131 141.8,131" class="f" fill="#f9bcdb"/>
 <polygon points="258.36,88.6 282.2,88.6 282.2,131 258.36,131" class="f" fill="#adf0c2"/>
 <polygon points="172.8,113.2 181.2,113.2 181.2,131 172.8,131" class="f" fill="#f9eabc"/>
 <polygon points="191.8,113.2 200.2,113.2 200.2,131 191.8,131" class="f" fill="#f9eabc"/>
 <polygon points="210.8,113.2 219.2,113.2 219.2,131 210.8,131" class="f" fill="#f9eabc"/>
 <polygon points="183.28,63 186.7,63 186.7,66.7 183.28,66.7" class="dot" fill="none"/>
-<polygon points="232.62,62.98 245.38,62.98 245.38,66.56 232.62,66.56" class="dot" fill="none"/>
+<polygon points="232.62,63 245.38,63 245.38,66.58 232.62,66.58" class="dot" fill="none"/>
 <polygon points="138,131 286,131 286,137 138,137" class="n" fill="url(#hSlab)"/>
 <polygon points="138,57 286,57 286,63 138,63" class="n" fill="url(#hSlab)"/>
 <polygon points="138,63 141,63 141,131 138,131" class="n" fill="#1c1c1c"/>
@@ -79,7 +79,7 @@
 <polygon points="191.8,113.2 200.2,113.2 200.2,131 191.8,131" class="m" fill="#f7e09e"/>
 <polygon points="210.8,113.2 219.2,113.2 219.2,131 210.8,131" class="m" fill="#f7e09e"/>
 <polygon points="183.28,63 186.7,63 186.7,66.7 183.28,66.7" class="m" fill="#bff79e"/>
-<polygon points="232.62,62.98 245.38,62.98 245.38,66.56 232.62,66.56" class="m" fill="#bff79e"/>
+<polygon points="232.62,63 245.38,63 245.38,66.58 232.62,66.58" class="m" fill="#bff79e"/>
 </g>
 <text x="158" y="83.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2400</text>
 <text x="212" y="69.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">3100</text>

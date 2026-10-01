@@ -10,16 +10,16 @@
 | `bottle_beer_lager_green` | Bottle - Beer Lager Green | Greywater Galley Systems | 66 x 230 x 66 | 0.48 kg | 0 W | none | 287 |
 | `bottle_champagne_foil` | Bottle - Champagne Foil | Greywater Galley Systems | 80 x 324 x 80 | 0.99 kg | 0 W | none | 348 |
 | `bottle_gin_blue_flask` | Bottle - Gin Blue Flask | Greywater Galley Systems | 82 x 285 x 82 | 0.95 kg | 0 W | none | 305 |
-| `bottle_hip_flask_steel` | Bottle - Hip Flask Steel | Greywater Galley Systems | 110 x 185 x 32 | 0.32 kg | 0 W | none | 66 |
+| `bottle_hip_flask_steel` | Bottle - Hip Flask Steel | Greywater Galley Systems | 110 x 185 x 34 | 0.34 kg | 0 W | none | 66 |
 | `bottle_hot_sauce_bottle` | Bottle - Hot Sauce Bottle | Greywater Galley Systems | 54 x 175 x 52 | 0.23 kg | 0 W | none | 228 |
 | `bottle_milk_bottle_glass` | Bottle - Milk Bottle Glass | Greywater Galley Systems | 70 x 193 x 68 | 0.47 kg | 0 W | none | 360 |
 | `bottle_olive_oil_cruet` | Bottle - Olive Oil Cruet | Greywater Galley Systems | 74 x 282 x 74 | 0.78 kg | 0 W | none | 304 |
-| `bottle_sport_bottle_squeeze` | Bottle - Sport Bottle Squeeze | Greywater Galley Systems | 62 x 251 x 62 | 0.46 kg | 0 W | none | 242 |
-| `bottle_thermos_vacuum_flask` | Bottle - Thermos Vacuum Flask | Greywater Galley Systems | 116 x 295 x 82 | 1.41 kg | 0 W | none | 235 |
+| `bottle_sport_bottle_squeeze` | Bottle - Sport Bottle Squeeze | Greywater Galley Systems | 68 x 251 x 68 | 0.56 kg | 0 W | none | 244 |
+| `bottle_thermos_vacuum_flask` | Bottle - Thermos Vacuum Flask | Greywater Galley Systems | 119 x 295 x 86 | 1.51 kg | 0 W | none | 236 |
 | `bottle_water_bottle_500ml` | Bottle - Water Bottle 500Ml | Greywater Galley Systems | 70 x 211 x 70 | 0.49 kg | 0 W | none | 490 |
-| `bottle_whisky_decanter_square` | Bottle - Whisky Decanter Square | Greywater Galley Systems | 94 x 230 x 100 | 0.99 kg | 0 W | none | 124 |
-| `bottle_wine_red_bordeaux` | Bottle - Wine Red Bordeaux | Greywater Galley Systems | 76 x 325 x 76 | 0.94 kg | 0 W | none | 382 |
-| `bottle_wine_white_hock` | Bottle - Wine White Hock | Greywater Galley Systems | 72 x 338 x 72 | 0.83 kg | 0 W | none | 378 |
+| `bottle_whisky_decanter_square` | Bottle - Whisky Decanter Square | Greywater Galley Systems | 94 x 230 x 103 | 1.02 kg | 0 W | none | 125 |
+| `bottle_wine_red_bordeaux` | Bottle - Wine Red Bordeaux | Greywater Galley Systems | 82 x 325 x 82 | 1.09 kg | 0 W | none | 384 |
+| `bottle_wine_white_hock` | Bottle - Wine White Hock | Greywater Galley Systems | 78 x 338 x 78 | 0.97 kg | 0 W | none | 380 |
 
 ## Datasheets
 
@@ -67,7 +67,7 @@
 
 **Bottle - Hip Flask Steel**, Greywater Galley Systems, part GGS-BOT-5997 (passive)
 
-* Mass 0.32 kg; size 110 x 185 x 32 mm; heat 0 W.
+* Mass 0.34 kg; size 110 x 185 x 34 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 66 cr, lead time 20 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
@@ -107,9 +107,9 @@
 
 **Bottle - Sport Bottle Squeeze**, Greywater Galley Systems, part GGS-BOT-5568 (passive)
 
-* Mass 0.46 kg; size 62 x 251 x 62 mm; heat 0 W.
+* Mass 0.56 kg; size 68 x 251 x 68 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 242 cr, lead time 22 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 244 cr, lead time 22 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -117,9 +117,9 @@
 
 **Bottle - Thermos Vacuum Flask**, Greywater Galley Systems, part GGS-BOT-9146 (passive)
 
-* Mass 1.41 kg; size 116 x 295 x 82 mm; heat 0 W.
+* Mass 1.51 kg; size 119 x 295 x 86 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 235 cr, lead time 24 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 236 cr, lead time 24 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -137,9 +137,9 @@
 
 **Bottle - Whisky Decanter Square**, Greywater Galley Systems, part GGS-BOT-9806 (passive)
 
-* Mass 0.99 kg; size 94 x 230 x 100 mm; heat 0 W.
+* Mass 1.02 kg; size 94 x 230 x 103 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 124 cr, lead time 21 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 125 cr, lead time 21 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -147,9 +147,9 @@
 
 **Bottle - Wine Red Bordeaux**, Greywater Galley Systems, part GGS-BOT-2531 (passive)
 
-* Mass 0.94 kg; size 76 x 325 x 76 mm; heat 0 W.
+* Mass 1.09 kg; size 82 x 325 x 82 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 382 cr, lead time 22 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 384 cr, lead time 22 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -157,9 +157,9 @@
 
 **Bottle - Wine White Hock**, Greywater Galley Systems, part GGS-BOT-7073 (passive)
 
-* Mass 0.83 kg; size 72 x 338 x 72 mm; heat 0 W.
+* Mass 0.97 kg; size 78 x 338 x 78 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 378 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 380 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 

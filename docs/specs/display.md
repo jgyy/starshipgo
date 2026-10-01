@@ -16,7 +16,7 @@
 | `display_heading_display` | Display - Heading Display | Meridian Avionics | 900 x 862 x 81 | 4.4 kg | 44 W | 24 VDC | 6,600 |
 | `display_hex_display` | Display - Hex Display | Meridian Avionics | 1090 x 952 x 105 | 7.16 kg | 69 W | 48 VDC | 12.6 k |
 | `display_holo_frame_panel` | Display - Holo Frame Panel | Meridian Avionics | 1490 x 860 x 85 | 6.51 kg | 65 W | 48 VDC | 10.1 k |
-| `display_main_viewscreen` | Display - Main Viewscreen | Meridian Avionics | 5600 x 3240 x 340 | 409.2 kg | 2.3 kW | 208 VAC 3ph | 771 k |
+| `display_main_viewscreen` | Display - Main Viewscreen | Meridian Avionics | 5600 x 3240 x 343 | 412.8 kg | 2.3 kW | 208 VAC 3ph | 778 k |
 | `display_power_board` | Display - Power Board | Meridian Avionics | 1400 x 900 x 116 | 10.3 kg | 80 W | 48 VDC | 17.8 k |
 | `display_schematics_wall` | Display - Schematics Wall | Meridian Avionics | 2500 x 1635 x 160 | 44.1 kg | 260 W | 48 VDC | 78.5 k |
 | `display_scope_rack` | Display - Scope Rack | Meridian Avionics | 1200 x 800 x 150 | 8.88 kg | 69 W | 48 VDC | 13.5 k |
@@ -27,7 +27,7 @@
 | `display_ticker_banner` | Display - Ticker Banner | Meridian Avionics | 2340 x 280 x 118 | 5.19 kg | 47 W | 24 VDC | 10.5 k |
 | `display_triple_stack` | Display - Triple Stack | Meridian Avionics | 850 x 1550 x 83 | 7.29 kg | 61 W | 48 VDC | 12.3 k |
 | `display_vitals_monitor` | Display - Vitals Monitor | Meridian Avionics | 560 x 410 x 380 | 5.31 kg | 53 W | 24 VDC | 8,320 |
-| `display_wing_display` | Display - Wing Display | Meridian Avionics | 1572 x 745 x 306 | 24 kg | 150 W | 48 VDC | 43.5 k |
+| `display_wing_display` | Display - Wing Display | Meridian Avionics | 1572 x 745 x 307 | 24 kg | 150 W | 48 VDC | 43.5 k |
 
 ## Datasheets
 
@@ -82,7 +82,7 @@
 * Power 25 W idle / 83 W typical / 120 W peak at 48 VDC.
 * Price 23.5 k cr, lead time 77 days, MTBF 93,900 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `deckplan` (screens: schematic).
+* Software: `diagnostics` (screens: coolant_flow).
 * wall-mounted.
 
 ### `display_diagnostic_rack`
@@ -137,19 +137,19 @@
 * Power 19 W idle / 65 W typical / 91 W peak at 48 VDC.
 * Price 10.1 k cr, lead time 74 days, MTBF 55,800 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `holo` (screens: globe).
+* Software: `deckplan` (screens: planet_survey).
 * wall-mounted.
 
 ### `display_main_viewscreen`
 
 **Display - Main Viewscreen**, Meridian Avionics, part MAV-DIS-7731 (consumer)
 
-* Mass 409.2 kg; size 5600 x 3240 x 340 mm; heat 2.1 kW.
+* Mass 412.8 kg; size 5600 x 3240 x 343 mm; heat 2.1 kW.
 * Power 680 W idle / 2.3 kW typical / 3.2 kW peak at 208 VAC 3ph.
-* Price 771 k cr, lead time 87 days, MTBF 53,700 h, service every 8,760 h, service life 12 years, crew 1.
+* Price 778 k cr, lead time 87 days, MTBF 53,700 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 37 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `starmap` (screens: starmap).
-* wall-mounted. Install with a hoist or gantry (409.2 kg).
+* Software: `diagnostics` (screens: star_chart).
+* wall-mounted. Install with a hoist or gantry (412.8 kg).
 
 ### `display_power_board`
 
@@ -170,7 +170,7 @@
 * Power 79 W idle / 260 W typical / 370 W peak at 48 VDC.
 * Price 78.5 k cr, lead time 79 days, MTBF 61,900 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 33 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `deckplan` (screens: schematic).
+* Software: `engineering` (screens: damage_control).
 * wall-mounted. Two-person lift.
 
 ### `display_scope_rack`
@@ -181,7 +181,7 @@
 * Power 21 W idle / 69 W typical / 97 W peak at 48 VDC.
 * Price 13.5 k cr, lead time 76 days, MTBF 94,800 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `science`, `sensors` (screens: waveform, radar).
+* Software: `science`, `sensors` (screens: waveform, radar_sector).
 * wall-mounted.
 
 ### `display_status_board`
@@ -214,7 +214,7 @@
 * Power 57 W idle / 190 W typical / 260 W peak at 48 VDC.
 * Price 55.5 k cr, lead time 78 days, MTBF 85,100 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 32 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `tactical` (screens: tactical).
+* Software: `tactical` (screens: shield_status).
 * wall-mounted. Two-person lift.
 
 ### `display_tall_readout`
@@ -247,7 +247,7 @@
 * Power 18 W idle / 61 W typical / 85 W peak at 48 VDC.
 * Price 12.3 k cr, lead time 69 days, MTBF 54,600 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 31 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `science`, `atmosphere`, `diagnostics` (screens: waveform, graph, bars).
+* Software: `comms`, `diagnostics`, `cargo` (screens: comms_spectrum, fuel_status, inventory_grid).
 * wall-mounted.
 
 ### `display_vitals_monitor`
@@ -265,7 +265,7 @@
 
 **Display - Wing Display**, Meridian Avionics, part MAV-DIS-2600 (consumer)
 
-* Mass 24 kg; size 1572 x 745 x 306 mm; heat 140 W.
+* Mass 24 kg; size 1572 x 745 x 307 mm; heat 140 W.
 * Power 46 W idle / 150 W typical / 220 W peak at 48 VDC.
 * Price 43.5 k cr, lead time 81 days, MTBF 79,000 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 32 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.

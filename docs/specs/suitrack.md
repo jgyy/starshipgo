@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `suitrack_decontamination_arch` | Suit rack - Decontamination Arch | Fennick Safety and Security | 1870 x 2003 x 840 | 338.4 kg | 960 W | 120 VAC 1ph | 67.4 k |
 | `suitrack_eva_helmet_rack` | Suit rack - Eva Helmet Rack | Fennick Safety and Security | 1506 x 915 x 360 | 53.5 kg | 0 W | none | 9,130 |
-| `suitrack_glove_boot_locker` | Suit rack - Glove Boot Locker | Fennick Safety and Security | 1100 x 1900 x 515 | 116 kg | 0 W | none | 22.6 k |
+| `suitrack_glove_boot_locker` | Suit rack - Glove Boot Locker | Fennick Safety and Security | 1106 x 1903 x 518 | 117.5 kg | 0 W | none | 22.9 k |
 | `suitrack_oxygen_pack_rack` | Suit rack - Oxygen Pack Rack | Fennick Safety and Security | 1800 x 1703 x 600 | 204.9 kg | 0 W | none | 30.5 k |
 | `suitrack_suit_up_bench` | Suit rack - Suit Up Bench | Fennick Safety and Security | 2206 x 1830 x 545 | 216.3 kg | 0 W | none | 35.3 k |
 | `suitrack_tool_belt_board` | Suit rack - Tool Belt Board | Fennick Safety and Security | 1206 x 935 x 125 | 14.9 kg | 0 W | none | 3,010 |
@@ -39,9 +39,9 @@
 
 **Suit rack - Glove Boot Locker**, Fennick Safety and Security, part FSS-SUI-3854 (passive)
 
-* Mass 116 kg; size 1100 x 1900 x 515 mm; heat 0 W.
+* Mass 117.5 kg; size 1106 x 1903 x 518 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 22.6 k cr, lead time 51 days, MTBF 371,300 h, service every 4,380 h, service life 15 years, crew 0.
+* Price 22.9 k cr, lead time 51 days, MTBF 371,300 h, service every 4,380 h, service life 15 years, crew 0.
 * IP44, -30 to 70 C; certifications: CSA-S3 safety equipment, CSA-F1 fire and smoke.
 * floor-mounted, free-standing. Two-person lift.
 

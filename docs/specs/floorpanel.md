@@ -10,12 +10,12 @@
 | `floorpanel_cable_cover_1x1` | Floor panel - Cable Cover 1X1 | Calder-Okonkwo Industries | 1000 x 57 x 1000 | 10.6 kg | 0 W | none | 298 |
 | `floorpanel_carpet_tile_1x1` | Floor panel - Carpet Tile 1X1 | Calder-Okonkwo Industries | 1000 x 41 x 1000 | 7.76 kg | 0 W | none | 178 |
 | `floorpanel_checker_2x2` | Floor panel - Checker 2X2 | Calder-Okonkwo Industries | 2000 x 32 x 2000 | 27.2 kg | 0 W | none | 602 |
-| `floorpanel_deck_seam_2x2` | Floor panel - Deck Seam 2X2 | Calder-Okonkwo Industries | 2006 x 37 x 2006 | 30.3 kg | 0 W | none | 772 |
-| `floorpanel_diamond_plate_2x2` | Floor panel - Diamond Plate 2X2 | Calder-Okonkwo Industries | 2000 x 38 x 2000 | 31.3 kg | 0 W | none | 850 |
+| `floorpanel_deck_seam_2x2` | Floor panel - Deck Seam 2X2 | Calder-Okonkwo Industries | 2006 x 38 x 2006 | 31.1 kg | 0 W | none | 789 |
+| `floorpanel_diamond_plate_2x2` | Floor panel - Diamond Plate 2X2 | Calder-Okonkwo Industries | 2006 x 41 x 2006 | 34 kg | 0 W | none | 909 |
 | `floorpanel_glow_edge_2x2` | Floor panel - Glow Edge 2X2 | Calder-Okonkwo Industries | 2000 x 48 x 2000 | 37.3 kg | 0 W | none | 779 |
-| `floorpanel_grating_1x1` | Floor panel - Grating 1X1 | Calder-Okonkwo Industries | 1000 x 45 x 1000 | 8.43 kg | 0 W | none | 303 |
+| `floorpanel_grating_1x1` | Floor panel - Grating 1X1 | Calder-Okonkwo Industries | 1006 x 51 x 1006 | 9.67 kg | 0 W | none | 336 |
 | `floorpanel_hatch_handle_1x1` | Floor panel - Hatch Handle 1X1 | Calder-Okonkwo Industries | 1000 x 60 x 1000 | 11.9 kg | 0 W | none | 294 |
-| `floorpanel_hazard_edge_2x2` | Floor panel - Hazard Edge 2X2 | Calder-Okonkwo Industries | 2000 x 35 x 2000 | 27.6 kg | 0 W | none | 626 |
+| `floorpanel_hazard_edge_2x2` | Floor panel - Hazard Edge 2X2 | Calder-Okonkwo Industries | 2006 x 38 x 2006 | 30.2 kg | 0 W | none | 677 |
 | `floorpanel_hex_tile_1x1` | Floor panel - Hex Tile 1X1 | Calder-Okonkwo Industries | 1000 x 45 x 1056 | 9.66 kg | 0 W | none | 392 |
 | `floorpanel_rubber_studs_1x1` | Floor panel - Rubber Studs 1X1 | Calder-Okonkwo Industries | 1006 x 33 x 1003 | 6.99 kg | 0 W | none | 401 |
 
@@ -65,9 +65,9 @@
 
 **Floor panel - Deck Seam 2X2**, Calder-Okonkwo Industries, part COI-FLO-6758 (passive)
 
-* Mass 30.3 kg; size 2006 x 37 x 2006 mm; heat 0 W.
+* Mass 31.1 kg; size 2006 x 38 x 2006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 772 cr, lead time 42 days, MTBF 1,549,000 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 789 cr, lead time 42 days, MTBF 1,549,000 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -75,9 +75,9 @@
 
 **Floor panel - Diamond Plate 2X2**, Calder-Okonkwo Industries, part COI-FLO-7394 (passive)
 
-* Mass 31.3 kg; size 2000 x 38 x 2000 mm; heat 0 W.
+* Mass 34 kg; size 2006 x 41 x 2006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 850 cr, lead time 46 days, MTBF 1,930,500 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 909 cr, lead time 46 days, MTBF 1,930,500 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 
@@ -95,9 +95,9 @@
 
 **Floor panel - Grating 1X1**, Calder-Okonkwo Industries, part COI-FLO-7292 (passive)
 
-* Mass 8.43 kg; size 1000 x 45 x 1000 mm; heat 0 W.
+* Mass 9.67 kg; size 1006 x 51 x 1006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 303 cr, lead time 35 days, MTBF 1,516,100 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 336 cr, lead time 36 days, MTBF 1,516,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted.
 
@@ -115,9 +115,9 @@
 
 **Floor panel - Hazard Edge 2X2**, Calder-Okonkwo Industries, part COI-FLO-5380 (passive)
 
-* Mass 27.6 kg; size 2000 x 35 x 2000 mm; heat 0 W.
+* Mass 30.2 kg; size 2006 x 38 x 2006 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 626 cr, lead time 42 days, MTBF 1,111,100 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 677 cr, lead time 42 days, MTBF 1,111,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted. Two-person lift.
 

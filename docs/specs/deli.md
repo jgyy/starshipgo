@@ -12,7 +12,7 @@
 | `deli_egg_carton_dozen` | Deli - Egg Carton Dozen | Calder-Okonkwo Industries | 310 x 152 x 212 | 1.37 kg | 0 W | none | 1,110 |
 | `deli_ham_leg_stand` | Deli - Ham Leg Stand | Calder-Okonkwo Industries | 504 x 214 x 200 | 2.67 kg | 0 W | none | 487 |
 | `deli_honey_pot_dipper` | Deli - Honey Pot Dipper | Calder-Okonkwo Industries | 114 x 140 x 114 | 0.2 kg | 0 W | none | 337 |
-| `deli_jam_jars_trio` | Deli - Jam Jars Trio | Calder-Okonkwo Industries | 234 x 123 x 68 | 0.25 kg | 0 W | none | 503 |
+| `deli_jam_jars_trio` | Deli - Jam Jars Trio | Calder-Okonkwo Industries | 234 x 123 x 71 | 0.26 kg | 0 W | none | 504 |
 | `deli_parmesan_wheel_wedge` | Deli - Parmesan Wheel Wedge | Calder-Okonkwo Industries | 566 x 120 x 372 | 2.7 kg | 0 W | none | 216 |
 | `deli_sausage_plate` | Deli - Sausage Plate | Calder-Okonkwo Industries | 300 x 44 x 300 | 0.5 kg | 0 W | none | 537 |
 
@@ -82,9 +82,9 @@
 
 **Deli - Jam Jars Trio**, Calder-Okonkwo Industries, part COI-DEL-9706 (passive)
 
-* Mass 0.25 kg; size 234 x 123 x 68 mm; heat 0 W.
+* Mass 0.26 kg; size 234 x 123 x 71 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 503 cr, lead time 41 days, MTBF 1,936,200 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 504 cr, lead time 41 days, MTBF 1,936,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * table-mounted.
 

@@ -8,13 +8,13 @@
 |---|---|---|---|---|---|---|---|
 | `tray_bread_basket_wicker` | Tray - Bread Basket Wicker | Calder-Okonkwo Industries | 306 x 89 x 306 | 1.15 kg | 0 W | none | 740 |
 | `tray_breakfast_tray_wood` | Tray - Breakfast Tray Wood | Calder-Okonkwo Industries | 500 x 135 x 340 | 3.18 kg | 0 W | none | 854 |
-| `tray_cake_stand_afternoon_tea` | Tray - Cake Stand Afternoon Tea | Calder-Okonkwo Industries | 308 x 422 x 306 | 5.38 kg | 0 W | none | 1,100 |
+| `tray_cake_stand_afternoon_tea` | Tray - Cake Stand Afternoon Tea | Calder-Okonkwo Industries | 308 x 425 x 306 | 5.42 kg | 0 W | none | 1,100 |
 | `tray_cloche_hot_dish` | Tray - Cloche Hot Dish | Calder-Okonkwo Industries | 300 x 175 x 298 | 2.05 kg | 0 W | none | 785 |
 | `tray_coffee_set_tray` | Tray - Coffee Set Tray | Calder-Okonkwo Industries | 460 x 217 x 320 | 4.02 kg | 0 W | none | 1,440 |
 | `tray_drinks_tray_round` | Tray - Drinks Tray Round | Calder-Okonkwo Industries | 328 x 166 x 328 | 2.31 kg | 0 W | none | 835 |
 | `tray_fruit_bowl_mixed` | Tray - Fruit Bowl Mixed | Calder-Okonkwo Industries | 340 x 150 x 338 | 2.21 kg | 0 W | none | 1,030 |
-| `tray_hotel_pan_mash_gravy` | Tray - Hotel Pan Mash Gravy | Calder-Okonkwo Industries | 562 x 77 x 366 | 1.8 kg | 0 W | none | 426 |
-| `tray_hotel_pan_roast_veg` | Tray - Hotel Pan Roast Veg | Calder-Okonkwo Industries | 562 x 93 x 386 | 2.63 kg | 0 W | none | 933 |
+| `tray_hotel_pan_mash_gravy` | Tray - Hotel Pan Mash Gravy | Calder-Okonkwo Industries | 564 x 77 x 366 | 1.81 kg | 0 W | none | 427 |
+| `tray_hotel_pan_roast_veg` | Tray - Hotel Pan Roast Veg | Calder-Okonkwo Industries | 564 x 93 x 386 | 2.64 kg | 0 W | none | 933 |
 | `tray_meal_tray_brig` | Tray - Meal Tray Brig | Calder-Okonkwo Industries | 380 x 54 x 290 | 0.66 kg | 0 W | none | 322 |
 | `tray_meal_tray_steel` | Tray - Meal Tray Steel | Calder-Okonkwo Industries | 464 x 110 x 306 | 1.92 kg | 0 W | none | 655 |
 | `tray_soup_tureen_ladle` | Tray - Soup Tureen Ladle | Calder-Okonkwo Industries | 454 x 214 x 320 | 3.97 kg | 0 W | none | 674 |
@@ -45,7 +45,7 @@
 
 **Tray - Cake Stand Afternoon Tea**, Calder-Okonkwo Industries, part COI-TRA-3197 (passive)
 
-* Mass 5.38 kg; size 308 x 422 x 306 mm; heat 0 W.
+* Mass 5.42 kg; size 308 x 425 x 306 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 1,100 cr, lead time 48 days, MTBF 1,857,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
@@ -95,9 +95,9 @@
 
 **Tray - Hotel Pan Mash Gravy**, Calder-Okonkwo Industries, part COI-TRA-2127 (passive)
 
-* Mass 1.8 kg; size 562 x 77 x 366 mm; heat 0 W.
+* Mass 1.81 kg; size 564 x 77 x 366 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 426 cr, lead time 44 days, MTBF 1,120,500 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 427 cr, lead time 44 days, MTBF 1,120,500 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * table-mounted.
 
@@ -105,7 +105,7 @@
 
 **Tray - Hotel Pan Roast Veg**, Calder-Okonkwo Industries, part COI-TRA-9232 (passive)
 
-* Mass 2.63 kg; size 562 x 93 x 386 mm; heat 0 W.
+* Mass 2.64 kg; size 564 x 93 x 386 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 933 cr, lead time 46 days, MTBF 1,421,500 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.

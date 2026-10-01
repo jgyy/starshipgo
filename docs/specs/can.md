@@ -13,7 +13,7 @@
 | `can_grape_pop_mini` | Can - Grape Pop Mini | Calder-Okonkwo Industries | 52 x 91 x 52 | 0.05 kg | 0 W | none | 327 |
 | `can_lime_fizz` | Can - Lime Fizz | Calder-Okonkwo Industries | 66 x 123 x 66 | 0.07 kg | 0 W | none | 327 |
 | `can_orange_soda` | Can - Orange Soda | Calder-Okonkwo Industries | 70 x 116 x 70 | 0.07 kg | 0 W | none | 328 |
-| `can_sixpack_cola` | Can - Sixpack Cola | Calder-Okonkwo Industries | 200 x 123 x 132 | 0.42 kg | 0 W | none | 368 |
+| `can_sixpack_cola` | Can - Sixpack Cola | Calder-Okonkwo Industries | 200 x 126 x 132 | 0.43 kg | 0 W | none | 368 |
 | `can_tonic_sleek` | Can - Tonic Sleek | Calder-Okonkwo Industries | 54 x 147 x 54 | 0.05 kg | 0 W | none | 327 |
 
 ## Datasheets
@@ -92,7 +92,7 @@
 
 **Can - Sixpack Cola**, Calder-Okonkwo Industries, part COI-CAN-3862 (passive)
 
-* Mass 0.42 kg; size 200 x 123 x 132 mm; heat 0 W.
+* Mass 0.43 kg; size 200 x 126 x 132 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 368 cr, lead time 37 days, MTBF 1,913,300 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.

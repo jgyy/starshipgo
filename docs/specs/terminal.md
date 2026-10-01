@@ -50,7 +50,7 @@
 * Power 1 W idle / 4 W typical / 6 W peak at 24 VDC.
 * Price 411 cr, lead time 52 days, MTBF 93,300 h, service every 8,760 h, service life 10 years, crew 1.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
-* Software: `medical` (screens: medical).
+* Software: `computer` (screens: assay).
 * table-mounted.
 
 ### `terminal_desk_intercom`

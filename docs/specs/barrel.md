@@ -11,14 +11,14 @@
 | `barrel_coolant_drums_pallet` | Barrel / drum - Coolant Drums Pallet | Ironwake Heavy Works | 1260 x 1029 x 1060 | 63 kg | 0 W | none | 6,480 |
 | `barrel_cryo_flask` | Barrel / drum - Cryo Flask | Ironwake Heavy Works | 650 x 1412 x 655 | 26.6 kg | 0 W | none | 2,620 |
 | `barrel_cryo_flask_cart` | Barrel / drum - Cryo Flask Cart | Ironwake Heavy Works | 1108 x 1245 x 680 | 40.5 kg | 0 W | none | 4,440 |
-| `barrel_gas_cylinder_rack` | Barrel / drum - Gas Cylinder Rack | Ironwake Heavy Works | 910 x 1355 x 610 | 30.6 kg | 0 W | none | 3,220 |
+| `barrel_gas_cylinder_rack` | Barrel / drum - Gas Cylinder Rack | Ironwake Heavy Works | 910 x 1353 x 610 | 30.6 kg | 0 W | none | 3,220 |
 | `barrel_gas_cylinder_trolley` | Barrel / drum - Gas Cylinder Trolley | Ironwake Heavy Works | 660 x 1390 x 600 | 20.9 kg | 0 W | none | 2,610 |
 | `barrel_ibc_tote_composite` | Barrel / drum - Ibc Tote Composite | Ironwake Heavy Works | 1352 x 1345 x 1358 | 94.7 kg | 0 W | none | 7,680 |
 | `barrel_ibc_tote_steel` | Barrel / drum - Ibc Tote Steel | Ironwake Heavy Works | 1004 x 1323 x 1358 | 68.5 kg | 0 W | none | 5,980 |
 | `barrel_jerrycan_rack` | Barrel / drum - Jerrycan Rack | Ironwake Heavy Works | 1300 x 1095 x 600 | 33 kg | 0 W | none | 3,250 |
 | `barrel_jerrycan_single` | Barrel / drum - Jerrycan Single | Ironwake Heavy Works | 340 x 570 x 171 | 1.18 kg | 0 W | none | 162 |
 | `barrel_plastic_drum_lidded` | Barrel / drum - Plastic Drum Lidded | Ironwake Heavy Works | 675 x 980 x 640 | 16.9 kg | 0 W | none | 2,060 |
-| `barrel_powder_keg_cradle` | Barrel / drum - Powder Keg Cradle | Ironwake Heavy Works | 1660 x 1085 x 800 | 61.3 kg | 0 W | none | 6,080 |
+| `barrel_powder_keg_cradle` | Barrel / drum - Powder Keg Cradle | Ironwake Heavy Works | 1660 x 1085 x 800 | 61.1 kg | 0 W | none | 6,050 |
 | `barrel_steel_drum_blue` | Barrel / drum - Steel Drum Blue | Ironwake Heavy Works | 604 x 918 x 604 | 12.6 kg | 0 W | none | 1,210 |
 | `barrel_steel_drum_pair` | Barrel / drum - Steel Drum Pair | Ironwake Heavy Works | 1737 x 918 x 700 | 47.4 kg | 0 W | none | 4,190 |
 | `barrel_toxic_drums_sump` | Barrel / drum - Toxic Drums Sump | Ironwake Heavy Works | 1024 x 1005 x 900 | 35.4 kg | 0 W | none | 3,580 |
@@ -79,7 +79,7 @@
 
 **Barrel / drum - Gas Cylinder Rack**, Ironwake Heavy Works, part IHW-BAR-6290 (passive)
 
-* Mass 30.6 kg; size 910 x 1355 x 610 mm; heat 0 W.
+* Mass 30.6 kg; size 910 x 1353 x 610 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 3,220 cr, lead time 59 days, MTBF 392,900 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -149,9 +149,9 @@
 
 **Barrel / drum - Powder Keg Cradle**, Ironwake Heavy Works, part IHW-BAR-5202 (passive)
 
-* Mass 61.3 kg; size 1660 x 1085 x 800 mm; heat 0 W.
+* Mass 61.1 kg; size 1660 x 1085 x 800 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 6,080 cr, lead time 54 days, MTBF 506,400 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 6,050 cr, lead time 54 days, MTBF 506,400 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 

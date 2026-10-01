@@ -57,12 +57,12 @@
 <polygon points="134.22,103 159.22,103 159.22,117 134.22,117" class="n" fill="#e8c981"/>
 <line x1="159.22" y1="117" x2="134.22" y2="117" class="m"/>
 <line x1="146.72" y1="117" x2="146.72" y2="115.8" class="f"/>
-<polygon points="161.22,105.94 186.54,105.94 186.54,114.06 161.22,114.06" class="n" fill="#e8c981"/>
-<line x1="186.54" y1="114.06" x2="161.22" y2="114.06" class="m"/>
-<line x1="173.88" y1="114.06" x2="173.88" y2="112.86" class="f"/>
-<polygon points="188.54,103 216.54,103 216.54,117 188.54,117" class="n" fill="#e8c981"/>
-<line x1="216.54" y1="117" x2="188.54" y2="117" class="m"/>
-<line x1="202.54" y1="117" x2="202.54" y2="115.8" class="f"/>
+<polygon points="161.22,105.94 186.48,105.94 186.48,114.06 161.22,114.06" class="n" fill="#e8c981"/>
+<line x1="186.48" y1="114.06" x2="161.22" y2="114.06" class="m"/>
+<line x1="173.85" y1="114.06" x2="173.85" y2="112.86" class="f"/>
+<polygon points="188.48,103 216.48,103 216.48,117 188.48,117" class="n" fill="#e8c981"/>
+<line x1="216.48" y1="117" x2="188.48" y2="117" class="m"/>
+<line x1="202.48" y1="117" x2="202.48" y2="115.8" class="f"/>
 <polygon points="100.02,140.6 128.02,140.6 128.02,151.42 100.02,151.42" class="n" fill="#e8c981"/>
 <line x1="128.02" y1="151.42" x2="100.02" y2="151.42" class="m"/>
 <line x1="114.02" y1="151.42" x2="114.02" y2="150.22" class="f"/>
@@ -120,6 +120,9 @@
 <polygon points="239.8,128.77 233.47,138.97 226.68,134.75 233.01,124.55" class="n" fill="#a0e881"/>
 <line x1="226.68" y1="134.75" x2="233.01" y2="124.55" class="m"/>
 <line x1="229.84" y1="129.65" x2="230.86" y2="130.28" class="f"/>
+<polygon points="111.48,166.2 118.54,166.2 118.54,169.8 111.48,169.8" class="f" fill="#eac28d" fill-opacity="0.9"/>
+<line x1="118.54" y1="169.8" x2="111.48" y2="169.8" class="m"/>
+<line x1="115.01" y1="169.8" x2="115.01" y2="168.6" class="f"/>
 <polygon points="119.84,165.18 126.2,165.18 126.2,170.84 119.84,170.84" class="f" fill="#eac28d" fill-opacity="0.9"/>
 <line x1="126.2" y1="170.84" x2="119.84" y2="170.84" class="m"/>
 <line x1="123.02" y1="170.84" x2="123.02" y2="169.64" class="f"/>
@@ -129,16 +132,13 @@
 <polygon points="116.66,175.14 121.38,175.14 121.38,177.66 116.66,177.66" class="f" fill="#f7b7a3" fill-opacity="0.9"/>
 <line x1="121.38" y1="177.66" x2="116.66" y2="177.66" class="m"/>
 <line x1="119.02" y1="177.66" x2="119.02" y2="176.46" class="f"/>
-<polygon points="111.48,166.2 118.54,166.2 118.54,169.8 111.48,169.8" class="f" fill="#eac28d" fill-opacity="0.9"/>
-<line x1="118.54" y1="169.8" x2="111.48" y2="169.8" class="m"/>
-<line x1="115.01" y1="169.8" x2="115.01" y2="168.6" class="f"/>
 <polygon points="45.22,62 55.22,62 55.22,63.86 45.22,63.86" class="f" fill="#9999f7"/>
 <polygon points="93.52,62 134.52,62 134.52,68 93.52,68" class="f" fill="#ef77cd"/>
 <polygon points="173.52,62 214.52,62 214.52,68 173.52,68" class="f" fill="#ef77cd"/>
 <polygon points="47.02,139 47.02,119 48.14,119 48.14,139" class="f" fill="#81d3e8"/>
 <polygon points="85.34,170.22 94.7,170.22 94.7,179.78 85.34,179.78" class="dot" fill="none"/>
 <polygon points="98.06,105.7 134.18,105.7 134.18,114.3 98.06,114.3" class="dot" fill="none"/>
-<polygon points="184.48,105.7 220.6,105.7 220.6,114.3 184.48,114.3" class="dot" fill="none"/>
+<polygon points="184.42,105.7 220.54,105.7 220.54,114.3 184.42,114.3" class="dot" fill="none"/>
 <polygon points="95.96,141.7 132.08,141.7 132.08,150.3 95.96,150.3" class="dot" fill="none"/>
 <polygon points="146.46,141.7 182.58,141.7 182.58,150.3 146.46,150.3" class="dot" fill="none"/>
 <polygon points="137.86,67 178.16,67 178.16,75 137.86,75" class="dot" fill="none"/>
@@ -152,7 +152,7 @@
 <text x="116.12" y="110.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Wheat Tray Bed</text>
 <text x="164.52" y="146.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Mushroom Shelf</text>
 <text x="172.81" y="69.9" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Circulation Pump</text>
-<text x="202.54" y="110.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Microgreen Rack</text>
+<text x="202.48" y="110.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Microgreen Rack</text>
 <text x="240.03" y="71.2" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Humidity Control Unit</text>
 <text x="146.72" y="110.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Lettuce Trough</text>
 <text x="139.02" y="146.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Strawberry Tiered Planter</text>
@@ -161,7 +161,7 @@
 <text x="95.74" y="168.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">armchair</text>
 <text x="142.3" y="168.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">armchair</text>
 <text x="80.02" y="69.85" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">janitor closet</text>
-<text x="173.88" y="110.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Herb Shelf Rack</text>
+<text x="173.85" y="110.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Herb Shelf Rack</text>
 <text x="54.82" y="74.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Vertical Grow Tower</text>
 <text x="54.82" y="90.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Vertical Grow Tower</text>
 <text x="54.82" y="171.3" font-size="1.25" class="t" text-anchor="middle" style="fill:#333">Vertical Grow Tower</text>
@@ -207,8 +207,8 @@
 <circle cx="172.81" cy="69.6" r="0.4" class="none" fill="#b03030"/>
 <line x1="219.05" y1="55.25" x2="221.47" y2="69.2" class="x"/>
 <circle cx="221.47" cy="69.2" r="0.4" class="none" fill="#b03030"/>
-<line x1="203.32" y1="55.3" x2="202.54" y2="110" class="x"/>
-<circle cx="202.54" cy="110" r="0.4" class="none" fill="#b03030"/>
+<line x1="203.32" y1="55.3" x2="202.48" y2="110" class="x"/>
+<circle cx="202.48" cy="110" r="0.4" class="none" fill="#b03030"/>
 <line x1="112.71" y1="202.7" x2="114.02" y2="146.01" class="x"/>
 <circle cx="114.02" cy="146.01" r="0.4" class="none" fill="#b03030"/>
 <line x1="40.32" y1="90.41" x2="54.82" y2="90" class="x"/>

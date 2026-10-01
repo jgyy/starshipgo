@@ -12,7 +12,7 @@
 | `specimen_containment_cylinder` | Specimen storage - Containment Cylinder | Orrery Instruments | 1260 x 2225 x 1139 | 479.7 kg | 1.7 kW | 208 VAC 3ph | 1 M |
 | `specimen_desktop_terrarium` | Specimen storage - Desktop Terrarium | Orrery Instruments | 600 x 490 x 400 | 18.2 kg | 150 W | 48 VDC | 44.1 k |
 | `specimen_rock_sample_case` | Specimen storage - Rock Sample Case | Orrery Instruments | 506 x 450 x 450 | 14.8 kg | 150 W | 48 VDC | 34.9 k |
-| `specimen_seed_vault` | Specimen storage - Seed Vault | Orrery Instruments | 1000 x 1970 x 769 | 222.9 kg | 880 W | 120 VAC 1ph | 534 k |
+| `specimen_seed_vault` | Specimen storage - Seed Vault | Orrery Instruments | 1000 x 1970 x 769 | 222.8 kg | 880 W | 120 VAC 1ph | 534 k |
 | `specimen_specimen_jar_set` | Specimen storage - Specimen Jar Set | Orrery Instruments | 600 x 360 x 260 | 8.64 kg | 120 W | 48 VDC | 22.6 k |
 | `specimen_vial_rack` | Specimen storage - Vial Rack | Orrery Instruments | 366 x 190 x 220 | 2.39 kg | 100 W | 48 VDC | 5,530 |
 
@@ -85,7 +85,7 @@
 
 **Specimen storage - Seed Vault**, Orrery Instruments, part ORI-SPE-6515 (consumer)
 
-* Mass 222.9 kg; size 1000 x 1970 x 769 mm; heat 810 W.
+* Mass 222.8 kg; size 1000 x 1970 x 769 mm; heat 810 W.
 * Power 260 W idle / 880 W typical / 1.5 kW peak at 120 VAC 1ph.
 * Price 534 k cr, lead time 110 days, MTBF 56,200 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 45 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.

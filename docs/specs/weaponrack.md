@@ -6,20 +6,20 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `weaponrack_armour_plate_locker` | Weapon rack - Armour Plate Locker | Fennick Safety and Security | 1000 x 2000 x 610 | 283.2 kg | 71 W | 48 VDC | 174 k |
-| `weaponrack_canister_cabinet` | Weapon rack - Canister Cabinet | Fennick Safety and Security | 1000 x 1400 x 545 | 174.2 kg | 42 W | 24 VDC | 126 k |
+| `weaponrack_armour_plate_locker` | Weapon rack - Armour Plate Locker | Fennick Safety and Security | 1006 x 2003 x 613 | 286.8 kg | 72 W | 48 VDC | 176 k |
+| `weaponrack_canister_cabinet` | Weapon rack - Canister Cabinet | Fennick Safety and Security | 1006 x 1403 x 548 | 176.6 kg | 42 W | 24 VDC | 127 k |
 | `weaponrack_cell_charger_rack` | Weapon rack - Cell Charger Rack | Fennick Safety and Security | 1200 x 890 x 210 | 48 kg | 17 W | 24 VDC | 31 k |
 | `weaponrack_energy_charger_tower` | Weapon rack - Energy Charger Tower | Fennick Safety and Security | 554 x 1870 x 640 | 140 kg | 37 W | 24 VDC | 108 k |
 | `weaponrack_gun_cleaning_station` | Weapon rack - Gun Cleaning Station | Fennick Safety and Security | 1665 x 1875 x 703 | 517 kg | 120 W | 48 VDC | 366 k |
 | `weaponrack_gun_safe` | Weapon rack - Gun Safe | Fennick Safety and Security | 800 x 1500 x 712 | 200 kg | 52 W | 48 VDC | 138 k |
 | `weaponrack_heavy_rifle_rack` | Weapon rack - Heavy Rifle Rack | Fennick Safety and Security | 1200 x 1330 x 365 | 134.1 kg | 35 W | 24 VDC | 93.8 k |
-| `weaponrack_pistol_locker` | Weapon rack - Pistol Locker | Fennick Safety and Security | 800 x 1400 x 415 | 103.2 kg | 28 W | 24 VDC | 70.9 k |
+| `weaponrack_pistol_locker` | Weapon rack - Pistol Locker | Fennick Safety and Security | 806 x 1403 x 418 | 104.9 kg | 28 W | 24 VDC | 72.1 k |
 | `weaponrack_pistol_rack_wall` | Weapon rack - Pistol Rack Wall | Fennick Safety and Security | 956 x 725 x 85 | 13.9 kg | 7.9 W | 24 VDC | 8,850 |
-| `weaponrack_rifle_locker` | Weapon rack - Rifle Locker | Fennick Safety and Security | 1000 x 2000 x 545 | 248.2 kg | 56 W | 48 VDC | 205 k |
+| `weaponrack_rifle_locker` | Weapon rack - Rifle Locker | Fennick Safety and Security | 1006 x 2003 x 548 | 251.4 kg | 57 W | 48 VDC | 208 k |
 | `weaponrack_rifle_rack_wall` | Weapon rack - Rifle Rack Wall | Fennick Safety and Security | 1340 x 1030 x 145 | 47.5 kg | 15 W | 24 VDC | 41.4 k |
 | `weaponrack_riot_shield_rack` | Weapon rack - Riot Shield Rack | Fennick Safety and Security | 1500 x 1100 x 160 | 56.9 kg | 19 W | 24 VDC | 45.4 k |
 | `weaponrack_target_range_panel` | Weapon rack - Target Range Panel | Fennick Safety and Security | 1300 x 1106 x 100 | 33 kg | 13 W | 24 VDC | 27.2 k |
-| `weaponrack_weapons_inspection_bench` | Weapon rack - Weapons Inspection Bench | Fennick Safety and Security | 1903 x 1717 x 800 | 612.9 kg | 140 W | 48 VDC | 459 k |
+| `weaponrack_weapons_inspection_bench` | Weapon rack - Weapons Inspection Bench | Fennick Safety and Security | 1903 x 1717 x 800 | 612.8 kg | 140 W | 48 VDC | 459 k |
 
 ## Datasheets
 
@@ -27,19 +27,19 @@
 
 **Weapon rack - Armour Plate Locker**, Fennick Safety and Security, part FSS-WEA-6142 (consumer)
 
-* Mass 283.2 kg; size 1000 x 2000 x 610 mm; heat 65 W.
-* Power 21 W idle / 71 W typical / 110 W peak at 48 VDC.
-* Price 174 k cr, lead time 77 days, MTBF 86,400 h, service every 4,380 h, service life 15 years, crew 1.
+* Mass 286.8 kg; size 1006 x 2003 x 613 mm; heat 66 W.
+* Power 22 W idle / 72 W typical / 110 W peak at 48 VDC.
+* Price 176 k cr, lead time 77 days, MTBF 86,400 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* floor-mounted, free-standing. Install with a hoist or gantry (283.2 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (286.8 kg).
 
 ### `weaponrack_canister_cabinet`
 
 **Weapon rack - Canister Cabinet**, Fennick Safety and Security, part FSS-WEA-7371 (consumer)
 
-* Mass 174.2 kg; size 1000 x 1400 x 545 mm; heat 39 W.
-* Power 13 W idle / 42 W typical / 67 W peak at 24 VDC.
-* Price 126 k cr, lead time 78 days, MTBF 60,500 h, service every 4,380 h, service life 15 years, crew 1.
+* Mass 176.6 kg; size 1006 x 1403 x 548 mm; heat 39 W.
+* Power 13 W idle / 42 W typical / 68 W peak at 24 VDC.
+* Price 127 k cr, lead time 78 days, MTBF 60,500 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
 * floor-mounted, free-standing. Two-person lift.
 
@@ -82,7 +82,7 @@
 * Power 16 W idle / 52 W typical / 83 W peak at 48 VDC.
 * Price 138 k cr, lead time 75 days, MTBF 86,200 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* Software: `power` (screens: power).
+* Software: `power` (screens: power_grid).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `weaponrack_heavy_rifle_rack`
@@ -99,9 +99,9 @@
 
 **Weapon rack - Pistol Locker**, Fennick Safety and Security, part FSS-WEA-2616 (consumer)
 
-* Mass 103.2 kg; size 800 x 1400 x 415 mm; heat 26 W.
-* Power 8.3 W idle / 28 W typical / 44 W peak at 24 VDC.
-* Price 70.9 k cr, lead time 83 days, MTBF 75,100 h, service every 4,380 h, service life 15 years, crew 1.
+* Mass 104.9 kg; size 806 x 1403 x 418 mm; heat 26 W.
+* Power 8.4 W idle / 28 W typical / 45 W peak at 24 VDC.
+* Price 72.1 k cr, lead time 83 days, MTBF 75,100 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
 * floor-mounted, free-standing. Two-person lift.
 
@@ -119,11 +119,11 @@
 
 **Weapon rack - Rifle Locker**, Fennick Safety and Security, part FSS-WEA-1165 (consumer)
 
-* Mass 248.2 kg; size 1000 x 2000 x 545 mm; heat 52 W.
-* Power 17 W idle / 56 W typical / 89 W peak at 48 VDC.
-* Price 205 k cr, lead time 77 days, MTBF 74,400 h, service every 4,380 h, service life 15 years, crew 1.
+* Mass 251.4 kg; size 1006 x 2003 x 548 mm; heat 52 W.
+* Power 17 W idle / 57 W typical / 91 W peak at 48 VDC.
+* Price 208 k cr, lead time 77 days, MTBF 74,400 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* floor-mounted, free-standing. Two-person lift.
+* floor-mounted, free-standing. Install with a hoist or gantry (251.4 kg).
 
 ### `weaponrack_rifle_rack_wall`
 
@@ -160,10 +160,10 @@
 
 **Weapon rack - Weapons Inspection Bench**, Fennick Safety and Security, part FSS-WEA-2712 (consumer)
 
-* Mass 612.9 kg; size 1903 x 1717 x 800 mm; heat 130 W.
+* Mass 612.8 kg; size 1903 x 1717 x 800 mm; heat 130 W.
 * Power 42 W idle / 140 W typical / 220 W peak at 48 VDC.
 * Price 459 k cr, lead time 82 days, MTBF 53,300 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 34 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
 * Software: `diagnostics` (screens: diagnostic).
-* floor-mounted, free-standing. Install with a hoist or gantry (612.9 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (612.8 kg).
 

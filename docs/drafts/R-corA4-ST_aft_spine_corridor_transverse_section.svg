@@ -47,7 +47,7 @@
 <polygon points="224.4,63 233.6,63 233.6,66.96 224.4,66.96" class="dot" fill="none"/>
 <polygon points="235.58,78.4 239,78.4 239,81.6 235.58,81.6" class="f" fill="#b7f1e7"/>
 <polygon points="225.4,63 232.6,63 232.6,66.06 225.4,66.06" class="dot" fill="none"/>
-<polygon points="185,106 191.24,106 191.24,116.8 185,116.8" class="f" fill="#f9becd"/>
+<polygon points="185,106 191.3,106 191.3,116.8 185,116.8" class="f" fill="#f9becd"/>
 <polygon points="202.4,63 221.6,63 221.6,65.72 202.4,65.72" class="dot" fill="none"/>
 <polygon points="237.46,75.8 239,75.8 239,84.2 237.46,84.2" class="f" fill="#adf0e4"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="f" fill="#ecadf0"/>
@@ -61,7 +61,7 @@
 <polygon points="224,63 234,63 234,66.86 224,66.86" class="m" fill="#d87def"/>
 <polygon points="202.4,63 221.6,63 221.6,65.72 202.4,65.72" class="m" fill="#bff79e"/>
 </g>
-<text x="188.12" y="113.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">900</text>
+<text x="188.15" y="113.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">900</text>
 <text x="186.99" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
 <text x="186.99" y="106.86" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
 <text x="238.23" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>

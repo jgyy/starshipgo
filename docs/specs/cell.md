@@ -10,7 +10,7 @@
 | `cell_control_desk` | Detention fitting - Control Desk | Fennick Safety and Security | 1900 x 1373 x 800 | 250.3 kg | 43 W | 24 VDC | 164 k |
 | `cell_door_bars` | Detention fitting - Door Bars | Fennick Safety and Security | 1440 x 2420 x 250 | 104.9 kg | 27 W | 24 VDC | 84 k |
 | `cell_door_forcefield` | Detention fitting - Door Forcefield | Fennick Safety and Security | 1880 x 2600 x 315 | 175.9 kg | 34 W | 24 VDC | 132 k |
-| `cell_holding_bench` | Detention fitting - Holding Bench | Fennick Safety and Security | 2006 x 1250 x 563 | 157.7 kg | 35 W | 24 VDC | 105 k |
+| `cell_holding_bench` | Detention fitting - Holding Bench | Fennick Safety and Security | 2006 x 1250 x 560 | 156.8 kg | 35 W | 24 VDC | 104 k |
 | `cell_interrogation_table` | Detention fitting - Interrogation Table | Fennick Safety and Security | 1600 x 1010 x 2160 | 392.1 kg | 55 W | 48 VDC | 247 k |
 | `cell_observation_window` | Detention fitting - Observation Window | Fennick Safety and Security | 2406 x 2603 x 330 | 242.2 kg | 44 W | 24 VDC | 160 k |
 | `cell_property_locker` | Detention fitting - Property Locker | Fennick Safety and Security | 920 x 1903 x 665 | 134.4 kg | 32 W | 24 VDC | 120 k |
@@ -27,7 +27,7 @@
 * Power 16 W idle / 52 W typical / 83 W peak at 48 VDC.
 * Price 285 k cr, lead time 83 days, MTBF 58,000 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* Software: `diagnostics` (screens: diagnostic).
+* Software: `computer` (screens: terminal).
 * floor-mounted, free-standing. Install with a hoist or gantry (332.4 kg).
 
 ### `cell_control_desk`
@@ -59,16 +59,16 @@
 * Power 10 W idle / 34 W typical / 55 W peak at 24 VDC.
 * Price 132 k cr, lead time 77 days, MTBF 51,000 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
-* Software: `alert` (screens: alert).
+* Software: `power` (screens: airlock_cycle).
 * floor-mounted, free-standing. Two-person lift.
 
 ### `cell_holding_bench`
 
 **Detention fitting - Holding Bench**, Fennick Safety and Security, part FSS-CEL-6806 (consumer)
 
-* Mass 157.7 kg; size 2006 x 1250 x 563 mm; heat 32 W.
+* Mass 156.8 kg; size 2006 x 1250 x 560 mm; heat 32 W.
 * Power 10 W idle / 35 W typical / 55 W peak at 24 VDC.
-* Price 105 k cr, lead time 76 days, MTBF 87,300 h, service every 4,380 h, service life 15 years, crew 1.
+* Price 104 k cr, lead time 76 days, MTBF 87,300 h, service every 4,380 h, service life 15 years, crew 1.
 * IP54, -10 to 55 C, 33 dB(A); certifications: CSA-SEC2 security, CSA-E24 electrical safety; interface: Security bus SEB-1 (encrypted).
 * floor-mounted, free-standing. Two-person lift.
 

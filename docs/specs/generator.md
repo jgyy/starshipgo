@@ -8,11 +8,11 @@
 |---|---|---|---|---|---|---|---|
 | `generator_diesel_genset` | Power generation / conversion - Diesel Genset | Halvorsen Power Systems | 1950 x 1830 x 909 | 4.21 t | +521 kW out | 400 VAC 3ph | 3.16 M |
 | `generator_fuel_processor` | Power generation / conversion - Fuel Processor | Halvorsen Power Systems | 1405 x 2394 x 900 | 4.16 t | 9.7 kW | 208 VAC 3ph | 3.35 M |
-| `generator_gas_turbine_genset` | Power generation / conversion - Gas Turbine Genset | Halvorsen Power Systems | 2910 x 1700 x 924 | 5.76 t | +710 kW out | 400 VAC 3ph | 6.09 M |
+| `generator_gas_turbine_genset` | Power generation / conversion - Gas Turbine Genset | Halvorsen Power Systems | 2910 x 1700 x 924 | 5.76 t | +710 kW out | 400 VAC 3ph | 6.08 M |
 | `generator_inverter_cabinet` | Power generation / conversion - Inverter Cabinet | Halvorsen Power Systems | 820 x 1910 x 650 | 1.37 t | 2.4 kW | 208 VAC 3ph | 1.22 M |
 | `generator_micro_fusion_generator` | Power generation / conversion - Micro Fusion Generator | Halvorsen Power Systems | 1100 x 1360 x 1170 | 2.31 t | +4.45 MW out | 6.6 kVAC 3ph | 2.71 M |
 | `generator_motor_generator_set` | Power generation / conversion - Motor Generator Set | Halvorsen Power Systems | 2006 x 970 x 800 | 2 t | +280 kW out | 400 VAC 3ph | 1.75 M |
-| `generator_pad_transformer` | Power generation / conversion - Pad Transformer | Halvorsen Power Systems | 1690 x 1390 x 900 | 2.77 t | 5.1 kW | 208 VAC 3ph | 2.19 M |
+| `generator_pad_transformer` | Power generation / conversion - Pad Transformer | Halvorsen Power Systems | 1690 x 1390 x 900 | 2.77 t | 5.1 kW | 208 VAC 3ph | 2.18 M |
 | `generator_power_distribution_cabinet` | Power generation / conversion - Power Distribution Cabinet | Halvorsen Power Systems | 1120 x 2010 x 570 | 1.61 t | 3.1 kW | 208 VAC 3ph | 1.67 M |
 | `generator_rectifier_cabinet` | Power generation / conversion - Rectifier Cabinet | Halvorsen Power Systems | 920 x 2110 x 705 | 1.75 t | 3.3 kW | 208 VAC 3ph | 1.62 M |
 | `generator_regulator_tower` | Power generation / conversion - Regulator Tower | Halvorsen Power Systems | 840 x 2520 x 840 | 2.46 t | 4.3 kW | 208 VAC 3ph | 2.49 M |
@@ -47,7 +47,7 @@
 
 * Mass 5.76 t; size 2910 x 1700 x 924 mm; heat 43 kW.
 * Output 710 kW at 400 VAC 3ph; own load 5.7 kW.
-* Price 6.09 M cr, lead time 167 days, MTBF 45,700 h, service every 4,000 h, service life 25 years, crew 2.
+* Price 6.08 M cr, lead time 167 days, MTBF 45,700 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 79 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
 * floor-mounted, free-standing. Install with a hoist or gantry (5.76 t). Output 710 kW at 400 VAC 3ph; connect only through its breaker panel.
 
@@ -88,7 +88,7 @@
 
 * Mass 2.77 t; size 1690 x 1390 x 900 mm; heat 5.1 kW.
 * Converter rating 846 kVA, 208 VAC 3ph; losses 5.1 kW.
-* Price 2.19 M cr, lead time 158 days, MTBF 37,300 h, service every 4,000 h, service life 25 years, crew 2.
+* Price 2.18 M cr, lead time 158 days, MTBF 37,300 h, service every 4,000 h, service life 25 years, crew 2.
 * IP54, -20 to 55 C, 77 dB(A); certifications: CSA-M5 machinery safety, CSA-E24 electrical safety; interface: Power management bus PMB-1.
 * floor-mounted, free-standing. Install with a hoist or gantry (2.77 t). Conversion rating 846 kVA; losses about 0.6 % at typical load.
 

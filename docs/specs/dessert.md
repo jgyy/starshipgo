@@ -7,8 +7,8 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `dessert_brownie_stack` | Dessert - Brownie Stack | Greywater Galley Systems | 200 x 101 x 200 | 2.03 kg | 0 W | none | 350 |
-| `dessert_cheesecake_slice` | Dessert - Cheesecake Slice | Greywater Galley Systems | 200 x 80 x 200 | 1.64 kg | 0 W | none | 368 |
-| `dessert_chocolate_bar_open` | Dessert - Chocolate Bar Open | Greywater Galley Systems | 206 x 34 x 74 | 0.22 kg | 0 W | none | 100 |
+| `dessert_cheesecake_slice` | Dessert - Cheesecake Slice | Greywater Galley Systems | 200 x 80 x 200 | 1.64 kg | 0 W | none | 363 |
+| `dessert_chocolate_bar_open` | Dessert - Chocolate Bar Open | Greywater Galley Systems | 206 x 34 x 76 | 0.23 kg | 0 W | none | 100 |
 | `dessert_creme_caramel` | Dessert - Creme Caramel | Greywater Galley Systems | 180 x 63 x 178 | 1.05 kg | 0 W | none | 319 |
 | `dessert_fruit_tart` | Dessert - Fruit Tart | Greywater Galley Systems | 206 x 49 x 206 | 1.11 kg | 0 W | none | 895 |
 | `dessert_ice_cream_cone_double` | Dessert - Ice Cream Cone Double | Greywater Galley Systems | 80 x 256 x 80 | 0.86 kg | 0 W | none | 617 |
@@ -35,7 +35,7 @@
 
 * Mass 1.64 kg; size 200 x 80 x 200 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 368 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 363 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -43,7 +43,7 @@
 
 **Dessert - Chocolate Bar Open**, Greywater Galley Systems, part GGS-DES-8425 (passive)
 
-* Mass 0.22 kg; size 206 x 34 x 74 mm; heat 0 W.
+* Mass 0.23 kg; size 206 x 34 x 76 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 100 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.

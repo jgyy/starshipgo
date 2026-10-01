@@ -6,16 +6,16 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `crate_ammo_box` | Crate / container - Ammo Box | Ironwake Heavy Works | 570 x 362 x 332 | 3.97 kg | 0 W | none | 484 |
+| `crate_ammo_box` | Crate / container - Ammo Box | Ironwake Heavy Works | 570 x 363 x 332 | 3.98 kg | 0 W | none | 484 |
 | `crate_ammo_stack` | Crate / container - Ammo Stack | Ironwake Heavy Works | 600 x 815 x 350 | 9.71 kg | 0 W | none | 1,200 |
 | `crate_biohazard` | Crate / container - Biohazard | Ironwake Heavy Works | 812 x 826 x 738 | 29.2 kg | 0 W | none | 2,900 |
-| `crate_cage_large` | Crate / container - Cage Large | Ironwake Heavy Works | 1614 x 1432 x 1062 | 147 kg | 0 W | none | 14.9 k |
+| `crate_cage_large` | Crate / container - Cage Large | Ironwake Heavy Works | 1614 x 1432 x 1065 | 147.4 kg | 0 W | none | 14.9 k |
 | `crate_cage_small` | Crate / container - Cage Small | Ironwake Heavy Works | 912 x 725 x 642 | 22.7 kg | 0 W | none | 2,670 |
-| `crate_cold_chain` | Crate / container - Cold Chain | Ironwake Heavy Works | 984 x 930 x 777 | 38 kg | 0 W | none | 3,610 |
+| `crate_cold_chain` | Crate / container - Cold Chain | Ironwake Heavy Works | 986 x 930 x 777 | 38.1 kg | 0 W | none | 3,620 |
 | `crate_flammable_red` | Crate / container - Flammable Red | Ironwake Heavy Works | 812 x 912 x 741 | 30 kg | 0 W | none | 3,270 |
 | `crate_fragile` | Crate / container - Fragile | Ironwake Heavy Works | 1000 x 900 x 907 | 44.3 kg | 0 W | none | 3,760 |
 | `crate_hard_case` | Crate / container - Hard Case | Ironwake Heavy Works | 920 x 452 x 622 | 14.4 kg | 0 W | none | 1,420 |
-| `crate_hazard_yellow` | Crate / container - Hazard Yellow | Ironwake Heavy Works | 984 x 812 x 968 | 47.7 kg | 0 W | none | 4,790 |
+| `crate_hazard_yellow` | Crate / container - Hazard Yellow | Ironwake Heavy Works | 986 x 812 x 968 | 47.8 kg | 0 W | none | 4,800 |
 | `crate_iso_container_blue` | Crate / container - Iso Container Blue | Ironwake Heavy Works | 2468 x 2625 x 6105 | 2.17 t | 0 W | none | 168 k |
 | `crate_iso_container_hazard` | Crate / container - Iso Container Hazard | Ironwake Heavy Works | 2476 x 2625 x 6105 | 2.27 t | 0 W | none | 247 k |
 | `crate_medical_supply` | Crate / container - Medical Supply | Ironwake Heavy Works | 812 x 568 x 538 | 15.1 kg | 0 W | none | 1,740 |
@@ -25,9 +25,9 @@
 | `crate_pod_pressurised_long` | Crate / container - Pod Pressurised Long | Ironwake Heavy Works | 1400 x 1455 x 2460 | 292.1 kg | 0 W | none | 24.5 k |
 | `crate_pod_pressurised_tall` | Crate / container - Pod Pressurised Tall | Ironwake Heavy Works | 1400 x 2185 x 1400 | 277 kg | 0 W | none | 28.2 k |
 | `crate_refrigerated` | Crate / container - Refrigerated | Ironwake Heavy Works | 1284 x 1175 x 1031 | 84.7 kg | 0 W | none | 7,870 |
-| `crate_ribbed_steel` | Crate / container - Ribbed Steel | Ironwake Heavy Works | 1254 x 1300 x 1861 | 179.1 kg | 0 W | none | 17.1 k |
+| `crate_ribbed_steel` | Crate / container - Ribbed Steel | Ironwake Heavy Works | 1254 x 1300 x 1859 | 178.9 kg | 0 W | none | 17 k |
 | `crate_stacked_pair` | Crate / container - Stacked Pair | Ironwake Heavy Works | 1044 x 1263 x 851 | 68.6 kg | 0 W | none | 5,850 |
-| `crate_steel_1m` | Crate / container - Steel 1M | Ironwake Heavy Works | 1084 x 1012 x 1038 | 70.1 kg | 0 W | none | 6,860 |
+| `crate_steel_1m` | Crate / container - Steel 1M | Ironwake Heavy Works | 1086 x 1012 x 1038 | 70.3 kg | 0 W | none | 6,880 |
 | `crate_strapped_pair` | Crate / container - Strapped Pair | Ironwake Heavy Works | 1712 x 931 x 1004 | 93.4 kg | 0 W | none | 9,380 |
 | `crate_strapped_single` | Crate / container - Strapped Single | Ironwake Heavy Works | 912 x 769 x 967 | 39.7 kg | 0 W | none | 3,910 |
 | `crate_tote_grey` | Crate / container - Tote Grey | Ironwake Heavy Works | 644 x 405 x 464 | 6.67 kg | 0 W | none | 795 |
@@ -43,7 +43,7 @@
 
 **Crate / container - Ammo Box**, Ironwake Heavy Works, part IHW-CRA-9090 (passive)
 
-* Mass 3.97 kg; size 570 x 362 x 332 mm; heat 0 W.
+* Mass 3.98 kg; size 570 x 363 x 332 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 484 cr, lead time 49 days, MTBF 393,400 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -73,7 +73,7 @@
 
 **Crate / container - Cage Large**, Ironwake Heavy Works, part IHW-CRA-1606 (passive)
 
-* Mass 147 kg; size 1614 x 1432 x 1062 mm; heat 0 W.
+* Mass 147.4 kg; size 1614 x 1432 x 1065 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 14.9 k cr, lead time 55 days, MTBF 438,100 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
@@ -93,9 +93,9 @@
 
 **Crate / container - Cold Chain**, Ironwake Heavy Works, part IHW-CRA-4362 (passive)
 
-* Mass 38 kg; size 984 x 930 x 777 mm; heat 0 W.
+* Mass 38.1 kg; size 986 x 930 x 777 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 3,610 cr, lead time 54 days, MTBF 520,800 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 3,620 cr, lead time 54 days, MTBF 520,800 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * Software: `engineering` (screens: engine_temp).
 * floor-mounted, free-standing. Two-person lift.
@@ -134,9 +134,9 @@
 
 **Crate / container - Hazard Yellow**, Ironwake Heavy Works, part IHW-CRA-3413 (passive)
 
-* Mass 47.7 kg; size 984 x 812 x 968 mm; heat 0 W.
+* Mass 47.8 kg; size 986 x 812 x 968 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 4,790 cr, lead time 56 days, MTBF 392,900 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 4,800 cr, lead time 56 days, MTBF 392,900 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -234,9 +234,9 @@
 
 **Crate / container - Ribbed Steel**, Ironwake Heavy Works, part IHW-CRA-3719 (passive)
 
-* Mass 179.1 kg; size 1254 x 1300 x 1861 mm; heat 0 W.
+* Mass 178.9 kg; size 1254 x 1300 x 1859 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 17.1 k cr, lead time 59 days, MTBF 439,000 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 17 k cr, lead time 59 days, MTBF 439,000 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 
@@ -254,9 +254,9 @@
 
 **Crate / container - Steel 1M**, Ironwake Heavy Works, part IHW-CRA-6737 (passive)
 
-* Mass 70.1 kg; size 1084 x 1012 x 1038 mm; heat 0 W.
+* Mass 70.3 kg; size 1086 x 1012 x 1038 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 6,860 cr, lead time 61 days, MTBF 628,500 h, service every 8,760 h, service life 25 years, crew 0.
+* Price 6,880 cr, lead time 61 days, MTBF 628,500 h, service every 8,760 h, service life 25 years, crew 0.
 * IP54, -40 to 70 C; certifications: CSA-C1 cargo handling.
 * floor-mounted, free-standing. Two-person lift.
 

@@ -60,21 +60,21 @@
 <polygon points="232.14,113.2 240.54,113.2 240.54,131 232.14,131" class="f" fill="#f9eabd"/>
 <polygon points="216.14,113.2 224.54,113.2 224.54,131 216.14,131" class="f" fill="#f9eabd"/>
 <polygon points="159.52,63 163.8,63 163.8,67.64 159.52,67.64" class="dot" fill="none"/>
-<polygon points="107.74,74.6 112.54,74.6 112.54,131 107.74,131" class="f" fill="none"/>
+<polygon points="107.74,74.54 112.6,74.54 112.6,131 107.74,131" class="f" fill="none"/>
 <polygon points="253.56,115 295.1,115 295.1,131 253.56,131" class="f" fill="#f4d0a6"/>
 <polygon points="158.16,95.8 170.54,95.8 170.54,131 158.16,131" class="f" fill="#f0adb0"/>
 <polygon points="113.34,67 114.44,67 114.44,75 113.34,75" class="f" fill="#ade2f0"/>
-<polygon points="280.6,62.98 293.36,62.98 293.36,66.56 280.6,66.56" class="dot" fill="none"/>
+<polygon points="280.6,63 293.36,63 293.36,66.58 280.6,66.58" class="dot" fill="none"/>
 <polygon points="214.38,63 234.26,63 234.26,64.46 214.38,64.46" class="dot" fill="none"/>
 <polygon points="110.34,131 313.66,131 313.66,137 110.34,137" class="n" fill="url(#hSlab)"/>
 <polygon points="110.34,57 313.66,57 313.66,63 110.34,63" class="n" fill="url(#hSlab)"/>
 <polygon points="110.34,63 113.34,63 113.34,75.8 110.34,75.8" class="n" fill="#1c1c1c"/>
 <polygon points="310.13,63 313.66,63 313.66,131 310.13,131" class="n" fill="url(#hHull)"/>
-<polygon points="107.74,74.6 112.54,74.6 112.54,131 107.74,131" class="m" fill="none"/>
+<polygon points="107.74,74.54 112.6,74.54 112.6,131 107.74,131" class="m" fill="none"/>
 <polygon points="253.56,115 295.1,115 295.1,131 253.56,131" class="m" fill="#efbb7d"/>
 <polygon points="158.16,95.8 170.54,95.8 170.54,131 158.16,131" class="m" fill="#e9878c"/>
 <polygon points="113.34,67 114.44,67 114.44,75 113.34,75" class="m" fill="#87d5e9"/>
-<polygon points="280.6,62.98 293.36,62.98 293.36,66.56 280.6,66.56" class="m" fill="#bff79e"/>
+<polygon points="280.6,63 293.36,63 293.36,66.58 280.6,66.58" class="m" fill="#bff79e"/>
 <polygon points="214.38,63 234.26,63 234.26,64.46 214.38,64.46" class="m" fill="#bff79e"/>
 </g>
 <text x="113.89" y="71.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">3000</text>

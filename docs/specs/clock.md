@@ -7,7 +7,7 @@
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
 | `clock_analogue_chronometer` | Chronometer - Analogue Chronometer | Meridian Avionics | 480 x 480 x 100 | 2.38 kg | 2.2 W | 24 VDC | 3,410 |
-| `clock_digital_clock` | Chronometer - Digital Clock | Meridian Avionics | 500 x 200 x 76 | 0.7 kg | 2.1 W | 24 VDC | 983 |
+| `clock_digital_clock` | Chronometer - Digital Clock | Meridian Avionics | 500 x 200 x 76 | 0.7 kg | 2.1 W | 24 VDC | 982 |
 | `clock_dual_time_ship_clock` | Chronometer - Dual Time Ship Clock | Meridian Avionics | 900 x 420 x 98 | 3.44 kg | 2 W | 24 VDC | 3,610 |
 
 ## Datasheets
@@ -28,7 +28,7 @@
 
 * Mass 0.7 kg; size 500 x 200 x 76 mm; heat 1.9 W.
 * Power 0.54 W idle / 2.1 W typical / 3.2 W peak at 24 VDC.
-* Price 983 cr, lead time 51 days, MTBF 68,500 h, service every 8,760 h, service life 10 years, crew 0.
+* Price 982 cr, lead time 51 days, MTBF 68,500 h, service every 8,760 h, service life 10 years, crew 0.
 * IP30, 0 to 45 C, 28 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility; interface: Ship data bus SDB-2, 1 GbE.
 * wall-mounted.
 

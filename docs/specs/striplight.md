@@ -8,14 +8,14 @@
 |---|---|---|---|---|---|---|---|
 | `striplight_baseboard_glow` | Strip light - Baseboard Glow | Tamsin Lighting | 1200 x 80 x 45 | 0.46 kg | 8 W | 24 VDC | 177 |
 | `striplight_cove_strip_warm` | Strip light - Cove Strip Warm | Tamsin Lighting | 2000 x 65 x 96 | 1.36 kg | 11 W | 24 VDC | 368 |
-| `striplight_dot_matrix_strip` | Strip light - Dot Matrix Strip | Tamsin Lighting | 1030 x 60 x 37 | 0.27 kg | 6.7 W | 24 VDC | 368 |
+| `striplight_dot_matrix_strip` | Strip light - Dot Matrix Strip | Tamsin Lighting | 1030 x 60 x 34 | 0.25 kg | 6.6 W | 24 VDC | 363 |
 | `striplight_floor_dash_guide` | Strip light - Floor Dash Guide | Tamsin Lighting | 1600 x 20 x 120 | 0.45 kg | 7.5 W | 24 VDC | 217 |
-| `striplight_floor_edge_runner` | Strip light - Floor Edge Runner | Tamsin Lighting | 2030 x 35 x 70 | 0.59 kg | 8.1 W | 24 VDC | 191 |
+| `striplight_floor_edge_runner` | Strip light - Floor Edge Runner | Tamsin Lighting | 2030 x 33 x 66 | 0.52 kg | 8 W | 24 VDC | 175 |
 | `striplight_handrail_light` | Strip light - Handrail Light | Tamsin Lighting | 2000 x 46 x 92 | 0.96 kg | 8.4 W | 24 VDC | 255 |
 | `striplight_hanging_linear_bar` | Strip light - Hanging Linear Bar | Tamsin Lighting | 1500 x 434 x 60 | 4.54 kg | 19 W | 24 VDC | 1,080 |
-| `striplight_recessed_ceiling_channel` | Strip light - Recessed Ceiling Channel | Tamsin Lighting | 1520 x 55 x 150 | 1.31 kg | 9.2 W | 24 VDC | 327 |
+| `striplight_recessed_ceiling_channel` | Strip light - Recessed Ceiling Channel | Tamsin Lighting | 1520 x 53 x 146 | 1.23 kg | 8.9 W | 24 VDC | 310 |
 | `striplight_stair_edge_light` | Strip light - Stair Edge Light | Tamsin Lighting | 1200 x 33 x 103 | 0.42 kg | 7.1 W | 24 VDC | 166 |
-| `striplight_under_console_glow` | Strip light - Under Console Glow | Tamsin Lighting | 1800 x 50 x 50 | 0.52 kg | 6.7 W | 24 VDC | 168 |
+| `striplight_under_console_glow` | Strip light - Under Console Glow | Tamsin Lighting | 1800 x 50 x 56 | 0.59 kg | 6.9 W | 24 VDC | 185 |
 
 ## Datasheets
 
@@ -43,9 +43,9 @@
 
 **Strip light - Dot Matrix Strip**, Tamsin Lighting, part TAM-STR-8538 (consumer)
 
-* Mass 0.27 kg; size 1030 x 60 x 37 mm; heat 5.4 W.
-* Power 0.33 W idle / 6.7 W typical / 7.4 W peak at 24 VDC.
-* Price 368 cr, lead time 34 days, MTBF 75,200 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.25 kg; size 1030 x 60 x 34 mm; heat 5.3 W.
+* Power 0.33 W idle / 6.6 W typical / 7.3 W peak at 24 VDC.
+* Price 363 cr, lead time 34 days, MTBF 75,200 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 
@@ -63,9 +63,9 @@
 
 **Strip light - Floor Edge Runner**, Tamsin Lighting, part TAM-STR-6687 (consumer)
 
-* Mass 0.59 kg; size 2030 x 35 x 70 mm; heat 6.5 W.
-* Power 0.41 W idle / 8.1 W typical / 9 W peak at 24 VDC.
-* Price 191 cr, lead time 33 days, MTBF 49,100 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.52 kg; size 2030 x 33 x 66 mm; heat 6.4 W.
+* Power 0.4 W idle / 8 W typical / 8.8 W peak at 24 VDC.
+* Price 175 cr, lead time 33 days, MTBF 49,100 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * floor-mounted.
 
@@ -93,9 +93,9 @@
 
 **Strip light - Recessed Ceiling Channel**, Tamsin Lighting, part TAM-STR-4371 (consumer)
 
-* Mass 1.31 kg; size 1520 x 55 x 150 mm; heat 7.4 W.
-* Power 0.46 W idle / 9.2 W typical / 10 W peak at 24 VDC.
-* Price 327 cr, lead time 30 days, MTBF 72,000 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 1.23 kg; size 1520 x 53 x 146 mm; heat 7.1 W.
+* Power 0.45 W idle / 8.9 W typical / 9.8 W peak at 24 VDC.
+* Price 310 cr, lead time 29 days, MTBF 72,000 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * ceiling-mounted.
 
@@ -113,9 +113,9 @@
 
 **Strip light - Under Console Glow**, Tamsin Lighting, part TAM-STR-6534 (consumer)
 
-* Mass 0.52 kg; size 1800 x 50 x 50 mm; heat 5.4 W.
-* Power 0.34 W idle / 6.7 W typical / 7.4 W peak at 24 VDC.
-* Price 168 cr, lead time 25 days, MTBF 55,300 h, service every 17,520 h, service life 12 years, crew 0.
+* Mass 0.59 kg; size 1800 x 50 x 56 mm; heat 5.5 W.
+* Power 0.34 W idle / 6.9 W typical / 7.6 W peak at 24 VDC.
+* Price 185 cr, lead time 25 days, MTBF 55,300 h, service every 17,520 h, service life 12 years, crew 0.
 * IP44, -20 to 55 C; certifications: CSA-E24 electrical safety, CSA-L3 photobiological; interface: Lighting bus LB-1 (dimming).
 * wall-mounted.
 

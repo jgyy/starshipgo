@@ -10,7 +10,7 @@
 | `console_communications` | Bridge console - Communications | Meridian Avionics | 1485 x 1371 x 804 | 212 kg | 370 W | 120 VAC 1ph | 422 k |
 | `console_compact_aux` | Bridge console - Compact Aux | Meridian Avionics | 1016 x 1311 x 777 | 145 kg | 280 W | 48 VDC | 286 k |
 | `console_corner` | Bridge console - Corner | Meridian Avionics | 1884 x 1445 x 1328 | 492.7 kg | 600 W | 120 VAC 1ph | 714 k |
-| `console_curved_command_desk` | Bridge console - Curved Command Desk | Meridian Avionics | 2708 x 1060 x 1035 | 389.7 kg | 500 W | 120 VAC 1ph | 563 k |
+| `console_curved_command_desk` | Bridge console - Curved Command Desk | Meridian Avionics | 2708 x 1063 x 1035 | 390.8 kg | 500 W | 120 VAC 1ph | 564 k |
 | `console_damage_control` | Bridge console - Damage Control | Meridian Avionics | 1716 x 1390 x 910 | 283.2 kg | 450 W | 120 VAC 1ph | 422 k |
 | `console_engineering_status` | Bridge console - Engineering Status | Meridian Avionics | 1816 x 1596 x 860 | 345.8 kg | 490 W | 120 VAC 1ph | 681 k |
 | `console_environmental` | Bridge console - Environmental | Meridian Avionics | 1812 x 1390 x 854 | 309.5 kg | 370 W | 120 VAC 1ph | 547 k |
@@ -77,12 +77,12 @@
 
 **Bridge console - Curved Command Desk**, Meridian Avionics, part MAV-CON-2624 (consumer)
 
-* Mass 389.7 kg; size 2708 x 1060 x 1035 mm; heat 460 W.
+* Mass 390.8 kg; size 2708 x 1063 x 1035 mm; heat 460 W.
 * Power 150 W idle / 500 W typical / 700 W peak at 120 VAC 1ph.
-* Price 563 k cr, lead time 82 days, MTBF 68,400 h, service every 8,760 h, service life 12 years, crew 1.
+* Price 564 k cr, lead time 82 days, MTBF 68,400 h, service every 8,760 h, service life 12 years, crew 1.
 * IP30, 0 to 45 C, 34 dB(A); certifications: CSA-E24 electrical safety, CSA-EMC4 compatibility, CSA-B7 bridge systems; interface: Ship data bus SDB-2, 10 GbE.
-* Software: `nav`, `engineering`, `tactical` (screens: nav, systems, tactical).
-* floor-mounted, free-standing. Install with a hoist or gantry (389.7 kg).
+* Software: `docking`, `hydroponics`, `tactical` (screens: docking, hydro_status, tactical).
+* floor-mounted, free-standing. Install with a hoist or gantry (390.8 kg).
 
 ### `console_damage_control`
 

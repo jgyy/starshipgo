@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|
 | `railing_guard_balusters` | Railing - Guard Balusters | Calder-Okonkwo Industries | 2100 x 1058 x 160 | 47.4 kg | 0 W | none | 1,150 |
 | `railing_guard_glass` | Railing - Guard Glass | Calder-Okonkwo Industries | 2120 x 1063 x 160 | 47.2 kg | 0 W | none | 1,260 |
-| `railing_guard_mesh` | Railing - Guard Mesh | Calder-Okonkwo Industries | 2100 x 1065 x 160 | 47.3 kg | 0 W | none | 1,190 |
+| `railing_guard_mesh` | Railing - Guard Mesh | Calder-Okonkwo Industries | 2100 x 1068 x 160 | 47.5 kg | 0 W | none | 1,200 |
 | `railing_guard_tube` | Railing - Guard Tube | Calder-Okonkwo Industries | 2040 x 1093 x 140 | 38.6 kg | 0 W | none | 901 |
 | `railing_maintenance_ladder` | Railing - Maintenance Ladder | Calder-Okonkwo Industries | 500 x 3400 x 195 | 40.6 kg | 0 W | none | 989 |
 | `railing_service_stair_4_step` | Railing - Service Stair 4 Step | Calder-Okonkwo Industries | 1060 x 1724 x 1185 | 266.5 kg | 0 W | none | 5,960 |
@@ -39,9 +39,9 @@
 
 **Railing - Guard Mesh**, Calder-Okonkwo Industries, part COI-RAI-4708 (passive)
 
-* Mass 47.3 kg; size 2100 x 1065 x 160 mm; heat 0 W.
+* Mass 47.5 kg; size 2100 x 1068 x 160 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 1,190 cr, lead time 40 days, MTBF 1,248,400 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 1,200 cr, lead time 40 days, MTBF 1,248,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted, free-standing. Two-person lift.
 

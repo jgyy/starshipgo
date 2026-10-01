@@ -6,20 +6,20 @@
 
 | Model | Designation | Manufacturer | Size mm (W x H x D) | Mass | Power typ. | Supply | Price cr |
 |---|---|---|---|---|---|---|---|
-| `pillar_arch_rib` | Structural pillar - Arch Rib | Calder-Okonkwo Industries | 3480 x 3683 x 600 | 5.58 t | 0 W | none | 104 k |
-| `pillar_box_beam_light` | Structural pillar - Box Beam Light | Calder-Okonkwo Industries | 4000 x 400 x 540 | 622.1 kg | 0 W | none | 11.4 k |
+| `pillar_arch_rib` | Structural pillar - Arch Rib | Calder-Okonkwo Industries | 3480 x 3683 x 600 | 5.56 t | 0 W | none | 103 k |
+| `pillar_box_beam_light` | Structural pillar - Box Beam Light | Calder-Okonkwo Industries | 4006 x 400 x 540 | 623 kg | 0 W | none | 11.4 k |
 | `pillar_bulkhead_frame` | Structural pillar - Bulkhead Frame | Calder-Okonkwo Industries | 2200 x 3403 x 500 | 2.86 t | 0 W | none | 56.3 k |
 | `pillar_buttress` | Structural pillar - Buttress | Calder-Okonkwo Industries | 600 x 3403 x 1000 | 1.52 t | 0 W | none | 39.4 k |
 | `pillar_fluted_round` | Structural pillar - Fluted Round | Calder-Okonkwo Industries | 640 x 3400 x 640 | 1.11 t | 0 W | none | 21.8 k |
 | `pillar_h_beam` | Structural pillar - H Beam | Calder-Okonkwo Industries | 600 x 3400 x 600 | 861.5 kg | 0 W | none | 19 k |
 | `pillar_h_beam_4m` | Structural pillar - H Beam 4M | Calder-Okonkwo Industries | 4000 x 400 x 420 | 473.4 kg | 0 W | none | 9,950 |
 | `pillar_hex_light` | Structural pillar - Hex Light | Calder-Okonkwo Industries | 624 x 3400 x 720 | 1.1 t | 0 W | none | 19.9 k |
-| `pillar_pipe_wrapped` | Structural pillar - Pipe Wrapped | Calder-Okonkwo Industries | 551 x 3400 x 601 | 841.6 kg | 0 W | none | 21.3 k |
+| `pillar_pipe_wrapped` | Structural pillar - Pipe Wrapped | Calder-Okonkwo Industries | 551 x 3406 x 601 | 843.1 kg | 0 W | none | 21.3 k |
 | `pillar_square_plinth` | Structural pillar - Square Plinth | Calder-Okonkwo Industries | 600 x 3400 x 600 | 886.9 kg | 0 W | none | 22 k |
-| `pillar_tapered_ring` | Structural pillar - Tapered Ring | Calder-Okonkwo Industries | 840 x 3400 x 840 | 1.69 t | 0 W | none | 38.2 k |
-| `pillar_truss` | Structural pillar - Truss | Calder-Okonkwo Industries | 500 x 3400 x 500 | 640.6 kg | 0 W | none | 16.9 k |
+| `pillar_tapered_ring` | Structural pillar - Tapered Ring | Calder-Okonkwo Industries | 840 x 3400 x 840 | 1.69 t | 0 W | none | 38.1 k |
+| `pillar_truss` | Structural pillar - Truss | Calder-Okonkwo Industries | 500 x 3406 x 500 | 641.7 kg | 0 W | none | 16.9 k |
 | `pillar_truss_beam_4m` | Structural pillar - Truss Beam 4M | Calder-Okonkwo Industries | 4024 x 515 x 466 | 674.8 kg | 0 W | none | 17.9 k |
-| `pillar_twin_rods` | Structural pillar - Twin Rods | Calder-Okonkwo Industries | 920 x 3400 x 320 | 690.9 kg | 0 W | none | 16.6 k |
+| `pillar_twin_rods` | Structural pillar - Twin Rods | Calder-Okonkwo Industries | 920 x 3406 x 320 | 692.1 kg | 0 W | none | 16.6 k |
 
 ## Datasheets
 
@@ -27,21 +27,21 @@
 
 **Structural pillar - Arch Rib**, Calder-Okonkwo Industries, part COI-PIL-8848 (passive)
 
-* Mass 5.58 t; size 3480 x 3683 x 600 mm; heat 0 W.
+* Mass 5.56 t; size 3480 x 3683 x 600 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 104 k cr, lead time 59 days, MTBF 1,628,900 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 103 k cr, lead time 59 days, MTBF 1,628,900 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted, free-standing. Install with a hoist or gantry (5.58 t).
+* floor-mounted, free-standing. Install with a hoist or gantry (5.56 t).
 
 ### `pillar_box_beam_light`
 
 **Structural pillar - Box Beam Light**, Calder-Okonkwo Industries, part COI-PIL-4217 (passive)
 
-* Mass 622.1 kg; size 4000 x 400 x 540 mm; heat 0 W.
+* Mass 623 kg; size 4006 x 400 x 540 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 11.4 k cr, lead time 51 days, MTBF 1,437,100 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* ceiling-mounted. Install with a hoist or gantry (622.1 kg).
+* ceiling-mounted. Install with a hoist or gantry (623 kg).
 
 ### `pillar_bulkhead_frame`
 
@@ -107,11 +107,11 @@
 
 **Structural pillar - Pipe Wrapped**, Calder-Okonkwo Industries, part COI-PIL-6758 (passive)
 
-* Mass 841.6 kg; size 551 x 3400 x 601 mm; heat 0 W.
+* Mass 843.1 kg; size 551 x 3406 x 601 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 21.3 k cr, lead time 47 days, MTBF 1,515,600 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted, free-standing. Install with a hoist or gantry (841.6 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (843.1 kg).
 
 ### `pillar_square_plinth`
 
@@ -129,7 +129,7 @@
 
 * Mass 1.69 t; size 840 x 3400 x 840 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 38.2 k cr, lead time 56 days, MTBF 1,602,200 h, service every 17,520 h, service life 40 years, crew 0.
+* Price 38.1 k cr, lead time 56 days, MTBF 1,602,200 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
 * floor-mounted, free-standing. Install with a hoist or gantry (1.69 t).
 
@@ -137,11 +137,11 @@
 
 **Structural pillar - Truss**, Calder-Okonkwo Industries, part COI-PIL-6941 (passive)
 
-* Mass 640.6 kg; size 500 x 3400 x 500 mm; heat 0 W.
+* Mass 641.7 kg; size 500 x 3406 x 500 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 16.9 k cr, lead time 52 days, MTBF 1,375,400 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted, free-standing. Install with a hoist or gantry (640.6 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (641.7 kg).
 
 ### `pillar_truss_beam_4m`
 
@@ -157,9 +157,9 @@
 
 **Structural pillar - Twin Rods**, Calder-Okonkwo Industries, part COI-PIL-2644 (passive)
 
-* Mass 690.9 kg; size 920 x 3400 x 320 mm; heat 0 W.
+* Mass 692.1 kg; size 920 x 3406 x 320 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 16.6 k cr, lead time 47 days, MTBF 1,918,300 h, service every 17,520 h, service life 40 years, crew 0.
 * IP40, -40 to 80 C; certifications: CSA-S2 structural.
-* floor-mounted, free-standing. Install with a hoist or gantry (690.9 kg).
+* floor-mounted, free-standing. Install with a hoist or gantry (692.1 kg).
 

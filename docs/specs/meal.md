@@ -10,17 +10,17 @@
 | `meal_burger_with_fries` | Meal - Burger With Fries | Greywater Galley Systems | 280 x 99 x 280 | 4.05 kg | 0 W | none | 930 |
 | `meal_burrito_plate` | Meal - Burrito Plate | Greywater Galley Systems | 300 x 70 x 300 | 3.36 kg | 0 W | none | 567 |
 | `meal_caesar_salad` | Meal - Caesar Salad | Greywater Galley Systems | 290 x 52 x 290 | 2.41 kg | 0 W | none | 716 |
-| `meal_club_sandwich` | Meal - Club Sandwich | Greywater Galley Systems | 280 x 98 x 280 | 3.9 kg | 0 W | none | 436 |
+| `meal_club_sandwich` | Meal - Club Sandwich | Greywater Galley Systems | 280 x 98 x 280 | 3.89 kg | 0 W | none | 432 |
 | `meal_curry_and_rice` | Meal - Curry And Rice | Greywater Galley Systems | 320 x 76 x 320 | 4.55 kg | 0 W | none | 861 |
 | `meal_double_cheeseburger` | Meal - Double Cheeseburger | Greywater Galley Systems | 236 x 159 x 236 | 4.93 kg | 0 W | none | 665 |
 | `meal_dumplings_steamer` | Meal - Dumplings Steamer | Greywater Galley Systems | 298 x 50 x 308 | 2.65 kg | 0 W | none | 828 |
-| `meal_fish_and_chips` | Meal - Fish And Chips | Greywater Galley Systems | 320 x 64 x 320 | 3.76 kg | 0 W | none | 862 |
-| `meal_fried_egg_breakfast` | Meal - Fried Egg Breakfast | Greywater Galley Systems | 300 x 29 x 300 | 1.33 kg | 0 W | none | 538 |
+| `meal_fish_and_chips` | Meal - Fish And Chips | Greywater Galley Systems | 320 x 64 x 320 | 3.76 kg | 0 W | none | 863 |
+| `meal_fried_egg_breakfast` | Meal - Fried Egg Breakfast | Greywater Galley Systems | 300 x 30 x 300 | 1.37 kg | 0 W | none | 538 |
 | `meal_fried_rice_bowl` | Meal - Fried Rice Bowl | Greywater Galley Systems | 210 x 105 x 176 | 2.17 kg | 0 W | none | 978 |
 | `meal_hot_dog_mustard` | Meal - Hot Dog Mustard | Greywater Galley Systems | 226 x 88 x 150 | 1.58 kg | 0 W | none | 387 |
 | `meal_lasagna_slice` | Meal - Lasagna Slice | Greywater Galley Systems | 280 x 69 x 280 | 2.73 kg | 0 W | none | 395 |
 | `meal_mac_and_cheese` | Meal - Mac And Cheese | Greywater Galley Systems | 190 x 59 x 188 | 1.13 kg | 0 W | none | 1,280 |
-| `meal_maki_platter` | Meal - Maki Platter | Greywater Galley Systems | 396 x 47 x 210 | 2.07 kg | 0 W | none | 687 |
+| `meal_maki_platter` | Meal - Maki Platter | Greywater Galley Systems | 396 x 49 x 210 | 2.16 kg | 0 W | none | 688 |
 | `meal_omelette_plate` | Meal - Omelette Plate | Greywater Galley Systems | 300 x 45 x 300 | 2.32 kg | 0 W | none | 733 |
 | `meal_paella_pan` | Meal - Paella Pan | Greywater Galley Systems | 462 x 53 x 360 | 5.09 kg | 0 W | none | 1,110 |
 | `meal_pho_bowl` | Meal - Pho Bowl | Greywater Galley Systems | 256 x 112 x 230 | 3.38 kg | 0 W | none | 1,560 |
@@ -83,9 +83,9 @@
 
 **Meal - Club Sandwich**, Greywater Galley Systems, part GGS-MEA-6974 (passive)
 
-* Mass 3.9 kg; size 280 x 98 x 280 mm; heat 0 W.
+* Mass 3.89 kg; size 280 x 98 x 280 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 436 cr, lead time 29 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 432 cr, lead time 29 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -125,7 +125,7 @@
 
 * Mass 3.76 kg; size 320 x 64 x 320 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 862 cr, lead time 32 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 863 cr, lead time 32 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 
@@ -133,7 +133,7 @@
 
 **Meal - Fried Egg Breakfast**, Greywater Galley Systems, part GGS-MEA-4628 (passive)
 
-* Mass 1.33 kg; size 300 x 29 x 300 mm; heat 0 W.
+* Mass 1.37 kg; size 300 x 30 x 300 mm; heat 0 W.
 * Passive: no electrical load.
 * Price 538 cr, lead time 23 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
@@ -183,9 +183,9 @@
 
 **Meal - Maki Platter**, Greywater Galley Systems, part GGS-MEA-3967 (passive)
 
-* Mass 2.07 kg; size 396 x 47 x 210 mm; heat 0 W.
+* Mass 2.16 kg; size 396 x 49 x 210 mm; heat 0 W.
 * Passive: no electrical load.
-* Price 687 cr, lead time 27 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
+* Price 688 cr, lead time 27 days, MTBF n/a, service every n/a, service life 1 years, crew 0.
 * sealed, -20 to 30 C; certifications: CSA-F2 food contact.
 * table-mounted. Perishable provision; store below 30 C.
 

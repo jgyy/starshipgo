@@ -41,8 +41,8 @@
 <polygon points="248.2,90.94 281,90.94 281,131 248.2,131" class="f" fill="#fac5e0"/>
 <polygon points="180.2,93.94 201,93.94 201,131 180.2,131" class="f" fill="#e6fac5"/>
 <polygon points="202.2,84.94 247,84.94 247,131 202.2,131" class="f" fill="#fac4e0"/>
-<polygon points="151,101 179,101 179,130.86 151,130.86" class="f" fill="#f5c4b0"/>
-<polygon points="99.6,102 109.2,102 109.2,116 99.6,116" class="f" fill="#eeb5f1"/>
+<polygon points="151,101.14 179,101.14 179,131 151,131" class="f" fill="#f5c4b0"/>
+<polygon points="100,102 109.6,102 109.6,116 100,116" class="f" fill="#eeb5f1"/>
 <polygon points="275,63 315,63 315,69.34 275,69.34" class="dot" fill="none"/>
 <polygon points="234.4,63 274.4,63 274.4,69.34 234.4,69.34" class="dot" fill="none"/>
 <polygon points="193.8,63 233.8,63 233.8,69.34 193.8,69.34" class="dot" fill="none"/>
@@ -54,8 +54,8 @@
 <polygon points="138.66,63 158.66,63 158.66,64.58 138.66,64.58" class="dot" fill="none"/>
 <polygon points="269.14,63 281.54,63 281.54,65.02 269.14,65.02" class="dot" fill="none"/>
 <polygon points="205.8,63 218.2,63 218.2,65.02 205.8,65.02" class="dot" fill="none"/>
-<polygon points="298,126.6 308,126.6 308,130.9 298,130.9" class="f" fill="#f9e3be"/>
-<polygon points="311,103.9 323.2,103.9 323.2,131 311,131" class="f" fill="#f9bdf2"/>
+<polygon points="298,126.7 308,126.7 308,131 298,131" class="f" fill="#f9e3be"/>
+<polygon points="311,103.94 323.2,103.94 323.2,131 311,131" class="f" fill="#f9bdf2"/>
 <polygon points="316.18,65.2 324,65.2 324,74.8 316.18,74.8" class="f" fill="#a6f4ee"/>
 <polygon points="229,107.4 265,107.4 265,131 229,131" class="f" fill="#f9e2bc"/>
 <polygon points="211.5,108.4 222.5,108.4 222.5,131 211.5,131" class="f" fill="#f9e2bc"/>
@@ -82,7 +82,7 @@
 <polygon points="153.2,63 193.2,63 193.2,66.46 153.2,66.46" class="m" fill="#d87def"/>
 <polygon points="112.6,63 152.6,63 152.6,66.46 112.6,66.46" class="m" fill="#d87def"/>
 </g>
-<text x="104.4" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
+<text x="104.8" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
 <text x="119" y="105.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1300</text>
 <text x="320.09" y="70.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">3050</text>
 <text x="101.99" y="106.86" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>

@@ -41,7 +41,7 @@
 * Power 130 W idle / 430 W typical / 730 W peak at 120 VAC 1ph.
 * Price 794 k cr, lead time 111 days, MTBF 44,400 h, service every 4,380 h, service life 12 years, crew 1.
 * IP32, 5 to 40 C, 44 dB(A); certifications: CSA-E24 electrical safety, CSA-LAB2 laboratory; interface: Lab data bus LDB-1, 1 GbE.
-* Software: `science` (screens: waveform).
+* Software: `starmap` (screens: waterfall).
 * floor-mounted, free-standing. Install with a hoist or gantry (266.3 kg).
 
 ### `telescope_star_tracker_scope`

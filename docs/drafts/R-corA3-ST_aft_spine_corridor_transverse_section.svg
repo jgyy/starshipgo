@@ -39,13 +39,13 @@
 <polygon points="188.4,75.8 235.6,75.8 235.6,131 188.4,131" class="n" fill="#c3cad6"/>
 <line x1="212" y1="131" x2="212" y2="75.8" class="f"/>
 <polygon points="237.46,75.8 239,75.8 239,84.2 237.46,84.2" class="f" fill="#c2f3eb"/>
-<polygon points="205.62,62.98 218.38,62.98 218.38,66.56 205.62,66.56" class="dot" fill="none"/>
+<polygon points="205.62,63 218.38,63 218.38,66.58 205.62,66.58" class="dot" fill="none"/>
 <polygon points="224,63 234,63 234,66.86 224,66.86" class="dot" fill="none"/>
 <polygon points="237.96,67 239,67 239,75 237.96,75" class="f" fill="#b8e6f2"/>
 <polygon points="185,67 186.04,67 186.04,75 185,75" class="f" fill="#b8e6f2"/>
 <polygon points="185,78.4 188.42,78.4 188.42,81.6 185,81.6" class="f" fill="#b3f1e6"/>
 <polygon points="224.4,63 233.6,63 233.6,66.46 224.4,66.46" class="dot" fill="none"/>
-<polygon points="185,106 191.24,106 191.24,116.8 185,116.8" class="f" fill="#f9becd"/>
+<polygon points="185,106 191.3,106 191.3,116.8 185,116.8" class="f" fill="#f9becd"/>
 <polygon points="201,63 223,63 223,67.4 201,67.4" class="dot" fill="none"/>
 <polygon points="185,75.8 186.54,75.8 186.54,84.2 185,84.2" class="f" fill="#adf0e4"/>
 <polygon points="185,99.6 188.98,99.6 188.98,114.3 185,114.3" class="f" fill="#ecadf0"/>
@@ -59,7 +59,7 @@
 <polygon points="201,63 223,63 223,67.4 201,67.4" class="m" fill="#bff79e"/>
 <polygon points="224.4,63 233.6,63 233.6,66.96 224.4,66.96" class="m" fill="#d87def"/>
 </g>
-<text x="188.12" y="113.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">900</text>
+<text x="188.15" y="113.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">900</text>
 <text x="186.99" y="109.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
 <text x="186.99" y="106.86" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">1100</text>
 <text x="238.23" y="80.5" font-size="1.2" class="t" text-anchor="middle" style="fill:#444">2550</text>
