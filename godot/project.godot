@@ -23,6 +23,15 @@ window/size/viewport_height=900
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[importer_defaults]
+
+texture={
+"mipmaps/generate": true
+}
+wav={
+"compress/mode": 0
+}
+
 [input]
 
 move_forward={
@@ -82,18 +91,6 @@ toggle_help={
 
 textures/canvas_textures/default_texture_filter=2
 textures/default_filters/anisotropic_filtering_level=4
-anti_aliasing/screen_space_roughness_limiter/enabled=true
-anti_aliasing/screen_space_roughness_limiter/amount=0.4
-anti_aliasing/screen_space_roughness_limiter/limit=0.18
 environment/ssao/quality=1
+anti_aliasing/screen_space_roughness_limiter/amount=0.4
 anti_aliasing/quality/screen_space_aa=1
-occlusion_culling/use_occlusion_culling=false
-
-[importer_defaults]
-
-texture={
-"mipmaps/generate": true
-}
-wav={
-"compress/mode": 0
-}
