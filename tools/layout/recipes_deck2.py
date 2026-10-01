@@ -1,5 +1,7 @@
 """Room recipes - Deck 2 (Habitat Deck)."""
 from recipes_deck2_helpers import *   # noqa: F401,F403
+from recipes_food import (food_brig, food_dorm, food_galley, food_hydro, food_medbay, food_mess, food_rec, food_secoff,   # noqa: F401
+                          mess_tables)
 
 
 # ----------------------------------------------------------------------------------------------- MESS
@@ -48,14 +50,7 @@ def f_mess(R, B):
             cm = "chair_mess_chair" if x0 < -6.5 else "chair_folding_chair"
             put(R, B, cm, x0 - 0.26, z, 90.0)
             put(R, B, cm, x1 + 0.26, z, -90.0)
-    R.line("Table settings",
-           "Plates, cups, condiments and napkin dispensers on the tables make the hall read as a dining room and save a trip to the counter.")
-    sets = ["tableware_plate_stack", "tableware_condiments", "tableware_cups_and_mugs", "tableware_napkin_dispenser", "tableware_bread_basket"]
-    for i, t in enumerate(tables + shorts):
-        if t in tables:
-            top(R, B, t, [sets[i % 5], sets[(i + 2) % 5]], step=0.9)
-        else:
-            top(R, B, t, [sets[(i + 1) % 3]], quiet=True)
+    mess_tables(R, B, tables, shorts)
     # --- serving line, north wall both sides of the portal
     R.line("Serving line",
            "Food replicator, salad bar and a coffee machine stand against the galley wall either side of the portal, so trays are filled "
@@ -109,6 +104,7 @@ def f_mess(R, B):
     R.place(M(B, "safety_sprinkler_head"), -7.5, -10.5, 0.0, y=R.y + R.h)
     R.place(M(B, "safety_sprinkler_head"), -7.5, -2.8, 0.0, y=R.y + R.h)
     R.omni(-12.3, R.y + 1.6, -5.0, color="#bfe0ff", energy=0.6, rng_=5.0)
+    food_mess(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- GALLEY
@@ -150,12 +146,10 @@ def f_galley(R, B):
     R.line("Serving line",
            "Two counters flank the portal on the mess side: hot food on the port side, salads and cold on the starboard side, so plates move "
            "straight through the opening without the cooks entering the hall.")
-    c1 = wall(R, B, "S", "galley_prep_counter", -9.7)
+    wall(R, B, "S", "galley_prep_counter", -9.7)
     wall(R, B, "S", "galley_food_replicator", -11.6, quiet=True)
-    c2 = wall(R, B, "S", "galley_prep_counter", -4.25)
+    wall(R, B, "S", "galley_prep_counter", -4.25)
     wall(R, B, "S", "galley_water_cooler", -2.5, quiet=True)
-    top(R, B, c1, ["tableware_meal_tray", "tableware_plate_stack"], step=0.7, quiet=True)
-    top(R, B, c2, ["tableware_salad", "tableware_bowls"], step=0.7, quiet=True)
     R.line("Hanging pots and ceiling rail",
            "Pans and ladles hang above the island within arm's reach, freeing drawer space and keeping the floor clear.")
     if isl:
@@ -177,6 +171,7 @@ def f_galley(R, B):
     ext_lights(R, B, spacing=3.6)
     R.place(M(B, "duct_ceiling_round_vent"), -10.4, -17.4, 0.0, y=R.y + R.h)
     R.place(M(B, "safety_sprinkler_head"), -7.0, -20.2, 0.0, y=R.y + R.h)
+    food_galley(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- ARMORY
@@ -289,6 +284,7 @@ def f_brig(R, B):
     R.line("Ceiling lighting",
            "Sealed, vandal-resistant light panels; one directly over the cell front.")
     ext_lights(R, B, spacing=3.0, x_margin=0.6)
+    food_brig(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- SECURITY OFFICE
@@ -380,6 +376,7 @@ def f_secoff(R, B):
     R.line("Ceiling lighting",
            "Bright lighting (350 lux) on a 3.5 m grid with the brig door and the briefing table lit separately.")
     ext_lights(R, B, spacing=3.6)
+    food_secoff(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- MEDICAL BAY
@@ -474,6 +471,7 @@ def f_medbay(R, B):
     R.line("Ceiling lighting",
            "Shadow-free panels (500 lux) over the ward and surgical corner, dimmer panels over the recovery area.")
     ext_lights(R, B, spacing=3.6)
+    food_medbay(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- RECREATION
@@ -548,6 +546,7 @@ def f_rec(R, B):
     dsign(R, B, "E", 7.3, "dept_quarters", y=3.0)
     R.line("Ceiling lighting", "Bright light over the gym (400 lux) and warm light over the lounge.")
     ext_lights(R, B, spacing=3.6)
+    food_rec(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- CREW QUARTERS
@@ -616,6 +615,7 @@ def f_dorm(R, B):
     R.line("Ceiling lighting",
            "Dim warm lights (150 lux) on a grid for night watch, with a brighter one over the common table.")
     ext_lights(R, B, spacing=3.6, energy=1.0)
+    food_dorm(R, B)
 
 
 # ----------------------------------------------------------------------------------------------- SCIENCE LAB
@@ -791,3 +791,4 @@ def f_hydro(R, B):
     R.line("Ceiling lighting",
            "Warm general lights on a wide grid (200 lux) for people; growth is lit by the grow arrays.")
     ext_lights(R, B, spacing=4.0, energy=1.0)
+    food_hydro(R, B)

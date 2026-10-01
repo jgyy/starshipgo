@@ -66,7 +66,7 @@ def violations(models):
 
 class BuildAllCheck(unittest.TestCase):
     def test_check_runs_without_bpy(self):
-        # The system python has no bpy; --check must still plan all 1000 models.
+        # The system python has no bpy; --check must still plan every model (1000 components + 196 food and drink).
         r = subprocess.run([sys.executable, os.path.join(ROOT, "blender", "build_all.py"), "--check"],
                            capture_output=True, text=True, timeout=300)
         self.assertEqual(r.returncode, 0, r.stderr)

@@ -23,7 +23,7 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-TARGET = 1002
+TARGET = 1198   # 1000 original components + 196 food and drink models + 2 deck signs (blender/starship/components/food*.py)
 
 
 def slug(s):
@@ -58,6 +58,15 @@ def missing_textures(tex_dir, textures):
         want += [os.path.join("surfaces", f"{n}_{k}.png") for k in ("albedo", "normal", "orm")]
     want += [os.path.join("sky", "stars.png"), os.path.join("sky", "planet.png")]
     return [w for w in want if not os.path.exists(os.path.join(tex_dir, w))]
+
+
+def food_textures(tex_dir):
+    """Generate the procedural food albedo maps (godot/textures/food/*.jpg) that do not exist yet."""
+    from starship import textures_food
+    todo = textures_food.missing(tex_dir)
+    if todo:
+        print(f"generating {len(todo)} food textures ...")
+        textures_food.make_all(tex_dir, only=set(todo))
 
 
 def run_shard(args, shard, nshards):
@@ -131,6 +140,8 @@ def main():
         textures.make_screens(os.path.join(out, "textures"))
         textures.make_surfaces(os.path.join(out, "textures"))
         textures.make_sky(os.path.join(out, "textures"))
+        from starship import textures_food
+        textures_food.make_all(os.path.join(out, "textures"))
         return
 
     fams = load_families()
@@ -154,6 +165,7 @@ def main():
         textures.make_screens(tex_dir)
         textures.make_surfaces(tex_dir)
         textures.make_sky(tex_dir)
+    food_textures(tex_dir)
     t0 = time.time()
     procs = [subprocess.Popen([sys.executable, __file__, "--out", out, "--only", args.only,
                                "--shard", f"{k}/{args.jobs}"]) for k in range(args.jobs)]
