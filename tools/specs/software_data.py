@@ -697,3 +697,22 @@ APPS = [
         ["Ship mode shows every deck", "Model mode shows the data card"],
         ),
 ]
+
+
+def resolve_app(texture, category=""):
+    """Application opened by a screen texture name (the game applies the same four rules, see docs/SOFTWARE_SPEC.md 3.2)."""
+    t = texture
+    if t.startswith("screen_"):
+        t = t[len("screen_"):]
+    if t.startswith("scr_"):
+        t = t[len("scr_"):]
+    if t in TEXTURE_MAP:
+        return TEXTURE_MAP[t]
+    best = ""
+    for k in TEXTURE_PREFIX_MAP:
+        key = k[len("scr_"):]
+        if t.startswith(key) and len(key) > len(best):
+            best = key
+    if best:
+        return TEXTURE_PREFIX_MAP["scr_" + best]
+    return CATEGORY_APP.get(category, "computer")
