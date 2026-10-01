@@ -39,6 +39,39 @@ def _sconces_between_windows(R, B, sides, mid="sconce_frosted_glass_shell", y=1.
             wi(R, B, s, mid, e["len"] - 0.16, y=y, quiet=True)
 
 
+def _table_chairs(R, B, table, mid, per_side=3, pitch=0.9, ends=None, sides=(-1, 1), gap=0.06):
+    """Chairs along the two long sides of a table, facing it; `ends` = model for the two end seats.  Works for a table whose long
+    axis runs along x (yaw 0 / 180) or along z (yaw 90 / -90)."""
+    out = []
+    if table is None:
+        return out
+    x0, z0, x1, z1 = table["_fp"]
+    xm, zm = (x0 + x1) / 2, (z0 + z1) / 2
+    d = M(B, mid)["size"][2]
+    vertical = abs(round(table["yaw"]) % 180) == 90
+    for i in range(per_side):
+        t = (i - (per_side - 1) / 2.0) * pitch
+        if vertical:
+            if -1 in sides:
+                out.append(put(R, B, mid, x0 - gap - d / 2, zm + t, 90.0, quiet=True))
+            if 1 in sides:
+                out.append(put(R, B, mid, x1 + gap + d / 2, zm + t, -90.0, quiet=True))
+        else:
+            if -1 in sides:
+                out.append(put(R, B, mid, xm + t, z0 - gap - d / 2, 0.0, quiet=True))
+            if 1 in sides:
+                out.append(put(R, B, mid, xm + t, z1 + gap + d / 2, 180.0, quiet=True))
+    if ends:
+        de = M(B, ends)["size"][2]
+        if vertical:
+            out.append(put(R, B, ends, xm, z0 - gap - de / 2, 0.0, quiet=True))
+            out.append(put(R, B, ends, xm, z1 + gap + de / 2, 180.0, quiet=True))
+        else:
+            out.append(put(R, B, ends, x0 - gap - de / 2, zm, 90.0, quiet=True))
+            out.append(put(R, B, ends, x1 + gap + de / 2, zm, -90.0, quiet=True))
+    return out
+
+
 def _chairs(R, B, mid, pts, centre, **kw):
     """Chairs at (x, z) points all turned toward `centre`."""
     out = []
@@ -379,3 +412,77 @@ def f_wardroom(R, B):
            "An extinguisher by the door, the mess department sign and the exit marker; the bar's emergency light uses the beacon.")
     wi(R, B, "W", "safety_fire_extinguisher", -0.8, y=1.1, quiet=True)
     dsign(R, B, "W", -4.0, "dept_mess", y=3.1)
+
+
+# ----------------------------------------------------------------------------------------------- LIBRARY
+def f_library(R, B):
+    R.describe(
+        "The ship's library and data archive: bookshelves and cartridge stacks for the printed and recorded record, reading tables for "
+        "study, a quiet armchair corner by the port window, and the librarian's issue desk by the door.",
+        basis="11.5 m x 7.4 m.  Shelving runs along the north and south walls (about 18 m of shelf), two reading tables in the open middle "
+              "with 1.2 m aisles, the archive machines (robot librarian, data vault, memory core) along the south wall, an armchair "
+              "nook in the south-west corner with a window seat on the port wall.  Door on the east wall with its 2 m zone clear.",
+        crew=14, adjacency="Aft spine corridor through the east door; hull windows on the port wall; the observatory and flag suite "
+                           "are across the corridor.")
+    R.line("Shelving along the north wall",
+           "Pigeonhole book cases, cartridge shelves and archive boxes take the whole north wall: the ship's reference works and logs "
+           "stand shoulder to shoulder with the shelf faces turned to the room, within reach of the tables.")
+    seq(R, B, "N", ["shelving_pigeonhole", "shelving_pigeonhole", "storage_cartridge_library_shelves", "shelving_heavy_boxes",
+                    "shelving_pigeonhole"], -12.5, gap=0.03)
+    R.line("Data archive machines",
+           "The ship's recorded knowledge: a robot librarian that fetches cartridges, a data crystal vault, a memory core column, a "
+           "secure safe for restricted logs and a holographic storage cylinder; all on the south wall where power and data conduits run.")
+    seq(R, B, "S", ["storage_archive_robot", "storage_data_crystal_vault", "storage_memory_core_column", "storage_holo_storage_cylinder",
+                    "storage_secure_data_safe"], -9.5, gap=0.05)
+    R.line("Notice board",
+           "The notice board above the librarian's issue desk announces new acquisitions, opening hours and the quiet-zone rules.")
+    wi(R, B, "E", "noticeboard_cork_bulletin_board", 4.6, y=2.4, quiet=True)
+    R.line("Reading tables",
+           "Two long tables, standing north-south in the middle of the room so that readers face the stacks and the door stays in view, give "
+           "the reading room its centre; with lamps and datapads people can study on their own or in a group.")
+    t1 = put(R, B, "table_conference_table", -8.0, 6.5, 90.0)
+    t2 = put(R, B, "table_long_mess_table", -5.4, 6.5, 90.0)
+    _table_chairs(R, B, t1, "chair_mess_chair", pitch=0.95)
+    _table_chairs(R, B, t2, "chair_folding_chair", pitch=0.95, sides=(1,))
+    top(R, B, t1, ["lamp_architect_desk_lamp", "terminal_datapad_stack", "terminal_laptop_console"], step=0.9, quiet=True)
+    top(R, B, t2, ["lamp_table_lamp", "terminal_datapad", "terminal_portable_reader", "tableware_cups_and_mugs"], step=0.65, quiet=True)
+    R.line("Librarian's issue desk and catalogue kiosks",
+           "The librarian's tall issue desk stands beside the door so every borrower is seen on entering; catalogue kiosks next to it "
+           "let readers search the archive without disturbing the librarian.")
+    d = wall(R, B, "E", "desk_secretary_desk", 4.65)
+    if d:
+        put(R, B, "chair_swivel_office_chair", d["_fp"][0] - 0.5, (d["_fp"][1] + d["_fp"][3]) / 2, 90.0, quiet=True)
+    wall(R, B, "E", "terminal_info_kiosk", 9.2, quiet=True)
+    R.line("Reading nook",
+           "A sofa with an armchair and coffee table in the south-west corner, a metre or more back from the port windows so the glass "
+           "stays clear, are the quiet place for reading for pleasure; a floor lamp and a wall reading light give a warm light.")
+    sofa = first(R, B, "couch_two_seater_sofa", [(-11.3, 10.1, 180.0), (-11.0, 10.1, 180.0)], quiet=True)
+    first(R, B, "couch_lounge_armchair", [(-11.9, 7.8, 90.0), (-11.7, 7.8, 90.0)], quiet=True)
+    ct = first(R, B, "table_coffee_table", [(-10.6, 8.3, 0.0), (-10.6, 8.5, 0.0)], quiet=True)
+    top(R, B, ct, ["tableware_cups_and_mugs"], quiet=True)
+    first(R, B, "lamp_floor_lamp", [(-9.1, 8.4, 0.0), (-9.2, 8.6, 0.0)])
+    wi(R, B, "W", "lamp_reading_light", 7.0, y=1.5, quiet=True)
+    R.line("Rug",
+           "A soft carpet-tile rug under the nook's furniture marks it out as the 'quiet corner' and deadens footsteps.")
+    for x in (-11.8, -10.8, -9.8):
+        for z in (7.9, 8.9):
+            R.place(M(B, "floorpanel_carpet_tile_1x1"), x, z, 0.0, check=False)
+    R.line("Plants and globe",
+           "A ficus by the door and hanging plants over the reading tables make the room friendlier; a reading globe of the nearest star systems stands in the corner by the stacks.")
+    first(R, B, "plant_ficus_tree", [(-2.4, 10.3, 0.0), (-2.5, 10.4, 0.0)])
+    for x in (-8.0, -5.4):
+        _ceil(R, B, "plant_hanging_plant", x, 8.3)
+    first(R, B, "holo_star_map_globe", [(-12.0, 4.9, 0.0)], quiet=True)
+    R.line("Lighting",
+           "Pendant lights hang over each reading table and downlights elsewhere give about 300 lux, with extra warm lights at the "
+           "nook; screens and shelves have no reflected glare.")
+    _lights(R, B, spacing=3.6, energy=1.1, color="#fff0d8", x_margin=1.0)
+    _ceil(R, B, "ceilinglight_pendant_globe", -8.0, 6.5)
+    _ceil(R, B, "ceilinglight_pendant_globe", -5.4, 6.5)
+    R.omni(-10.4, R.y + 2.0, 8.6, color="#ffcf90", energy=0.8, rng_=4.5)
+    R.omni(-6.7, R.y + 2.3, 6.5, color="#fff1d6", energy=0.8, rng_=5.0)
+    R.line("Safety and signs",
+           "An extinguisher by the door and the quarters department sign; a quiet-zone panel on the east wall reminds visitors of the rules.")
+    wi(R, B, "E", "safety_fire_extinguisher", 10.4, y=1.1, quiet=True)
+    wi(R, B, "E", "panellight_illuminated_logo_plate", 3.9, y=1.6, quiet=True)
+    dsign(R, B, "E", 7.3, "dept_quarters", y=3.1)
