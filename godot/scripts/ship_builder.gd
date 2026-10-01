@@ -152,8 +152,26 @@ func _deck_y(deck: int) -> float:
 			return float(d["y"])
 	return 0.0
 
+## Surface kind chosen by the room's theme (room["mats"], written by tools/layout/themes.py) for `slot`, or "" when
+## the room has no theme / the texture does not exist - callers then use the original single-texture look.
+func _themed(room: Dictionary, slot: String) -> String:
+	var k: String = str(room.get("mats", {}).get(slot, ""))
+	return k if k != "" and ShipMaterials.has_kind(k) else ""
+
+## Room tint multiplied over a themed texture: `mix_key` (room["mats"]["tint_wall"/"tint_floor"]) says how much of
+## the room's pastel colour is applied (0 = none: the texture already has its own colour).
+func _theme_tint(room: Dictionary, mix_key: String, col: Color) -> Color:
+	return Color.WHITE.lerp(col, float(room.get("mats", {}).get(mix_key, 0.0)))
+
 func _mat_for(key: String, room: Dictionary) -> Material:
 	var tint := Color.from_string(room.get("tint", "#ffffff"), Color.WHITE)
+	var tk := _themed(room, {"wall": "wall", "floor": "floor", "ceiling": "ceiling", "trim": "trim", "frame": "accent_tex",
+			"clad": "clad", "roof": "clad", "belly": "clad"}.get(key, "-"))
+	if tk != "":
+		match key:
+			"wall": return ShipMaterials.surface(tk, _theme_tint(room, "tint_wall", tint), -1.0)
+			"floor": return ShipMaterials.surface(tk, _theme_tint(room, "tint_floor", Color.from_string(room.get("floor_tint", "#ffffff"), Color.WHITE)), -1.0)
+			"ceiling", "trim", "frame", "clad", "roof", "belly": return ShipMaterials.surface(tk, Color.WHITE, -1.0)
 	match key:
 		"wall": return ShipMaterials.surface("wall_trim", tint, 4.0)
 		"floor": return ShipMaterials.surface(room.get("floor", "deck_plate"), Color.from_string(room.get("floor_tint", "#ffffff"), Color.WHITE), 4.0)
@@ -579,6 +597,7 @@ func _meshes_of(id: String) -> Array:
 			if n != inst:
 				xf = xf * n.transform
 			if n is MeshInstance3D and (n as MeshInstance3D).mesh != null:
+				PropMaterials.apply_mesh((n as MeshInstance3D).mesh)       # textured materials, see prop_materials.gd
 				out.append({"mesh": (n as MeshInstance3D).mesh, "xf": xf})
 			for c in n.get_children():
 				if c is Node3D:

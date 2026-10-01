@@ -210,8 +210,9 @@ SURFACES = {
 
 
 def make_surfaces(outdir, n=512):
+    from .textures_lib import prefilter_existing
     for name, fn in SURFACES.items():
-        alb, nrm, orm = fn(n)
+        alb, nrm, orm = prefilter_existing(*fn(n))      # band-limit: removes sub-2px detail that shimmers (docs/TEXTURES.md)
         save(os.path.join(outdir, "surfaces", name + "_albedo.png"), np.clip(alb, 0, 1))
         save_data(os.path.join(outdir, "surfaces", name + "_normal.png"), nrm)
         save_data(os.path.join(outdir, "surfaces", name + "_orm.png"), orm)
@@ -529,3 +530,8 @@ def make_screens(outdir):
         img = img * (0.9 + 0.1 * (np.arange(S)[:, None, None] % 2))
         img = np.round(np.clip(img, 0, 1) * 15) / 15
         save(os.path.join(outdir, "screens", name + ".png"), img)
+
+
+# extended screen library (appended so the seeds / order of the original screens do not change)
+from .textures_screens import NEW_SCREENS  # noqa: E402
+SCREENS.update(NEW_SCREENS)

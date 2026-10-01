@@ -18,6 +18,7 @@ var _near := 0
 var _snd: AudioStreamPlayer3D
 
 func setup() -> void:
+	PropMaterials.apply_tree(self)               # textured door materials (prop_materials.gd)
 	_l = find_child("leaf_l", true, false) as Node3D
 	_r = find_child("leaf_r", true, false) as Node3D
 	if _l:

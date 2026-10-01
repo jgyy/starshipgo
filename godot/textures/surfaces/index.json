@@ -1,0 +1,878 @@
+{
+"acoustic_foam": {
+"group": "padded",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"acoustic_panel_grey": {
+"group": "padded",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"alu_anodised_blue": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"alu_anodised_gold": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"alu_anodised_red": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"alu_anodised_teal": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"alu_graphite": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"alu_silver": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"armour_clean": {
+"group": "hull",
+"neutral": false,
+"size": 1024,
+"tile_m": 3.0
+},
+"armour_dark": {
+"group": "hull",
+"neutral": false,
+"size": 512,
+"tile_m": 3.0
+},
+"armour_scorched": {
+"group": "hull",
+"neutral": false,
+"size": 1024,
+"tile_m": 3.0
+},
+"armour_weathered": {
+"group": "hull",
+"neutral": false,
+"size": 1024,
+"tile_m": 3.0
+},
+"brass_brushed": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"carbon_fibre_plain": {
+"group": "composite",
+"neutral": false,
+"size": 512,
+"tile_m": 0.6
+},
+"carbon_fibre_twill": {
+"group": "composite",
+"neutral": false,
+"size": 512,
+"tile_m": 0.6
+},
+"cargo_deck_lanes": {
+"group": "floor",
+"neutral": false,
+"size": 512,
+"tile_m": 4.0
+},
+"carpet": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"carpet_geo_blue": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.5
+},
+"carpet_geo_burgundy": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.5
+},
+"carpet_hex_teal": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.5
+},
+"carpet_loop_beige": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"carpet_stripe_navy": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.5
+},
+"carpet_tweed_grey": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"carpet_tweed_navy": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"carpet_tweed_red": {
+"group": "carpet",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"ceiling": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"ceramic_subway_white": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"ceramic_tile_black": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"ceramic_tile_blue": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"ceramic_tile_green": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"ceramic_tile_sand": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"ceramic_tile_white": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"chrome_polished": {
+"group": "metal",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"circuit_board": {
+"group": "tech",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"concrete_poured": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"concrete_rough": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"concrete_smooth": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"copper_brushed": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"cork": {
+"group": "floor",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"deck_plate": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"diamond_plate_alu": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"diamond_plate_dark": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"diamond_plate_steel": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"epoxy_floor_grey": {
+"group": "floor",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"fabric_grey": {
+"group": "fabric",
+"neutral": false,
+"size": 512,
+"tile_m": 0.5
+},
+"fabric_heather": {
+"group": "fabric",
+"neutral": false,
+"size": 512,
+"tile_m": 0.5
+},
+"fabric_navy": {
+"group": "fabric",
+"neutral": false,
+"size": 512,
+"tile_m": 0.5
+},
+"fabric_red": {
+"group": "fabric",
+"neutral": false,
+"size": 512,
+"tile_m": 0.5
+},
+"fabric_tan": {
+"group": "fabric",
+"neutral": false,
+"size": 512,
+"tile_m": 0.5
+},
+"fabric_teal": {
+"group": "fabric",
+"neutral": false,
+"size": 512,
+"tile_m": 0.5
+},
+"foil_gold_mylar": {
+"group": "insulation",
+"neutral": false,
+"size": 512,
+"tile_m": 0.8
+},
+"glass_ceramic": {
+"group": "tech",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"grass": {
+"group": "organic",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"grating": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"gravel": {
+"group": "organic",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"gunmetal_blasted": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"hazard_floor": {
+"group": "floor",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"hazard_floor_red": {
+"group": "floor",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"hex_plate_dark": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"hex_plate_steel": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"hex_tile_teal": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"hex_tile_white": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"hull_ceramic_tiles": {
+"group": "hull",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"hull_dark": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"hull_panel": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"hull_plate": {
+"group": "legacy",
+"neutral": false,
+"size": 1024,
+"tile_m": 4.0
+},
+"hull_window_frame": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"insulation_blanket": {
+"group": "insulation",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"kevlar_weave": {
+"group": "composite",
+"neutral": false,
+"size": 512,
+"tile_m": 0.6
+},
+"laminate_beige": {
+"group": "laminate",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"laminate_black": {
+"group": "laminate",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"laminate_clinic_blue": {
+"group": "laminate",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"laminate_grey": {
+"group": "laminate",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"laminate_white": {
+"group": "laminate",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"leather_black": {
+"group": "leather",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"leather_brown": {
+"group": "leather",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"leather_red": {
+"group": "leather",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"leather_tan": {
+"group": "leather",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"leather_white": {
+"group": "leather",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"marble_black": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"marble_green": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"marble_white": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"mosaic_tile_blue": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"mosaic_tile_grey": {
+"group": "tile",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"moss": {
+"group": "organic",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"p_brushed": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.5
+},
+"p_cardboard": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.4
+},
+"p_ceramic": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.6
+},
+"p_concrete": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 1.5
+},
+"p_foam": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.4
+},
+"p_leaf": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.3
+},
+"p_leather": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.4
+},
+"p_metal_satin": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.8
+},
+"p_paint": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.6
+},
+"p_panel_lines": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 1.0
+},
+"p_plastic": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.5
+},
+"p_rubber": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.4
+},
+"p_scratched": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.8
+},
+"p_soil": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.6
+},
+"p_weave": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.3
+},
+"p_wood_coarse": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.5
+},
+"p_wood_fine": {
+"group": "prop",
+"neutral": true,
+"size": 256,
+"tile_m": 0.5
+},
+"panel_cargo_yellow": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_cmd_blue": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_crew_beige": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_eng_orange": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_grey": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_life_green": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_med_teal": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_sci_violet": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_sec_red": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"panel_white": {
+"group": "panel",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"perforated_dark": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"perforated_hex": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"perforated_mesh": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"pipe_wrap_foil": {
+"group": "insulation",
+"neutral": false,
+"size": 512,
+"tile_m": 0.6
+},
+"plywood": {
+"group": "wood",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"quilted_black": {
+"group": "padded",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"quilted_blue": {
+"group": "padded",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"quilted_cream": {
+"group": "padded",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"riveted_plate_big": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"riveted_plate_blue": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"riveted_plate_grey": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"riveted_plate_steel": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"rubber_floor_black": {
+"group": "floor",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"rubber_floor_grey": {
+"group": "floor",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"rubber_floor_ribbed": {
+"group": "floor",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"soil": {
+"group": "organic",
+"neutral": false,
+"size": 256,
+"tile_m": 1.0
+},
+"solar_cell": {
+"group": "tech",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"stair_riser": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"stair_tread": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"steel_brushed": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"terrazzo_dark": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"terrazzo_light": {
+"group": "stone",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"titanium_brushed": {
+"group": "metal",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"vent_grille": {
+"group": "plate",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"wall_trim": {
+"group": "legacy",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"wood_bamboo": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"wood_mahogany": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"wood_oak": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"wood_parquet": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"wood_planks_dark": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"wood_planks_grey": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"wood_planks_light": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 2.0
+},
+"wood_teak": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+},
+"wood_walnut": {
+"group": "wood",
+"neutral": false,
+"size": 512,
+"tile_m": 1.0
+}
+}
