@@ -145,6 +145,8 @@ def mat(name):
         b.inputs["Metallic"].default_value = 0.2
     elif name.startswith("screen:"):
         m = _screen_material(name.split(":", 1)[1])
+    elif name.startswith("tex:"):
+        m = _food_material(name.split(":", 1)[1])
     else:
         raise KeyError(f"unknown material {name!r}")
     _mat_cache[name] = m
@@ -166,6 +168,25 @@ def _screen_material(tex):
     b.inputs["Roughness"].default_value = 0.15
     nt.links.new(t.outputs["Color"], b.inputs["Emission Color"])
     b.inputs["Emission Strength"].default_value = 1.6
+    return m
+
+
+def _food_material(tex):
+    """`tex:<name>` - opaque material using the procedural food albedo godot/textures/food/<name>.jpg
+    (see textures_food.py for the generator; roughness / metallic come from its SURFACE table).
+    Parts using it must have UVs."""
+    from . import textures_food
+    rough, metal = textures_food.surface(tex)
+    m, b = _new_material("food_" + tex)
+    path = textures_food.tex_path(TEXTURE_DIR, tex)
+    img = bpy.data.images.load(path, check_existing=True)
+    nt = m.node_tree
+    t = nt.nodes.new("ShaderNodeTexImage")
+    t.image = img
+    t.interpolation = "Linear"
+    nt.links.new(t.outputs["Color"], b.inputs["Base Color"])
+    b.inputs["Roughness"].default_value = rough
+    b.inputs["Metallic"].default_value = metal
     return m
 
 
@@ -431,7 +452,7 @@ def export(model, path):
         if not bm.faces:
             continue
         bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-5)
-        _smooth(bm)
+        _smooth(bm, getattr(model, "smooth_angle", math.radians(38)))
         me = bpy.data.meshes.new(gname)
         bm.to_mesh(me)
         for mn in g["mats"]:
