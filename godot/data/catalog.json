@@ -1033,7 +1033,7 @@
    ],
    "tris": 2484,
    "top_y": null,
-   "bytes": 107088,
+   "bytes": 107472,
    "family": "food_bakery"
   },
   {
@@ -6667,7 +6667,7 @@
    ],
    "tris": 1412,
    "top_y": null,
-   "bytes": 81160,
+   "bytes": 83400,
    "family": "food_cocktail"
   },
   {
@@ -10927,7 +10927,7 @@
    ],
    "tris": 1106,
    "top_y": null,
-   "bytes": 44724,
+   "bytes": 44788,
    "family": "food_deli"
   },
   {
@@ -13359,7 +13359,7 @@
    ],
    "tris": 2344,
    "top_y": null,
-   "bytes": 73140,
+   "bytes": 89788,
    "family": "food_drink"
   },
   {
@@ -13391,7 +13391,7 @@
    ],
    "tris": 1596,
    "top_y": null,
-   "bytes": 75336,
+   "bytes": 76684,
    "family": "food_drink"
   },
   {
@@ -15286,7 +15286,7 @@
    ],
    "tris": 3888,
    "top_y": null,
-   "bytes": 141232,
+   "bytes": 143028,
    "family": "food_fruit"
   },
   {
@@ -15670,7 +15670,7 @@
    ],
    "tris": 2828,
    "top_y": null,
-   "bytes": 90540,
+   "bytes": 92780,
    "family": "food_fruit"
   },
   {
@@ -21398,7 +21398,7 @@
    ],
    "tris": 1716,
    "top_y": null,
-   "bytes": 102084,
+   "bytes": 103112,
    "family": "food_meal"
   },
   {
@@ -21799,22 +21799,22 @@
    "solid": false,
    "size": [
     0.4,
-    0.144,
-    0.276
+    0.138,
+    0.328
    ],
    "bounds_min": [
     -0.2,
     0.0,
-    -0.138
+    -0.164
    ],
    "bounds_max": [
     0.2,
-    0.144,
-    0.138
+    0.138,
+    0.164
    ],
-   "tris": 4848,
+   "tris": 5060,
    "top_y": 0.02,
-   "bytes": 191284,
+   "bytes": 197012,
    "family": "food_meal"
   },
   {
@@ -21863,7 +21863,7 @@
    "solid": false,
    "size": [
     0.2,
-    0.07,
+    0.068,
     0.15
    ],
    "bounds_min": [
@@ -21873,7 +21873,7 @@
    ],
    "bounds_max": [
     0.1,
-    0.07,
+    0.068,
     0.075
    ],
    "tris": 1128,
@@ -21895,7 +21895,7 @@
    "solid": false,
    "size": [
     0.29,
-    0.074,
+    0.063,
     0.29
    ],
    "bounds_min": [
@@ -21905,12 +21905,12 @@
    ],
    "bounds_max": [
     0.145,
-    0.074,
+    0.063,
     0.145
    ],
-   "tris": 3256,
+   "tris": 4032,
    "top_y": null,
-   "bytes": 133864,
+   "bytes": 163648,
    "family": "food_meal"
   },
   {
@@ -34529,7 +34529,7 @@
    ],
    "tris": 2632,
    "top_y": 0.02,
-   "bytes": 159072,
+   "bytes": 160420,
    "family": "food_tray"
   },
   {

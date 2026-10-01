@@ -64,11 +64,11 @@ def violations(models):
 
 class BuildAllCheck(unittest.TestCase):
     def test_check_runs_without_bpy(self):
-        # The system python has no bpy; --check must still plan all 1000 models.
+        # The system python has no bpy; --check must still plan every model (1000 components + 196 food and drink).
         r = subprocess.run([sys.executable, os.path.join(ROOT, "blender", "build_all.py"), "--check"],
                            capture_output=True, text=True, timeout=300)
         self.assertEqual(r.returncode, 0, r.stderr)
-        self.assertIn("1000 models", r.stdout)
+        self.assertIn("1196 models", r.stdout)
 
     def test_kit_imports_without_bpy(self):
         sys.path.insert(0, os.path.join(ROOT, "blender"))
@@ -87,8 +87,8 @@ class CatalogConventions(unittest.TestCase):
         cls.by_id = {e["id"]: e for e in cls.models}
 
     def test_count_and_unique_ids(self):
-        self.assertEqual(len(self.models), 1000)
-        self.assertEqual(len(self.by_id), 1000)
+        self.assertEqual(len(self.models), 1196)
+        self.assertEqual(len(self.by_id), 1196)
 
     def test_fixed_floor_models(self):
         for mid in FIXED_FLOOR:

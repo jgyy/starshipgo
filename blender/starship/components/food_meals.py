@@ -214,21 +214,24 @@ def _(m, rng):
 def _(m, rng):
     lathe(m, [(0, 0), (0.17, 0), (0.19, 0.012), (0.2, 0.026), (0.185, 0.03), (0.17, 0.014), (0, 0.012)], (0, 0, 0), "f_plate", 40, scale=(1.0, 1.0, 0.68))
     y = 0.016
-    blob(m, (0.095, 0.062, 0.07), (0.0, y + 0.05, 0.0), "tex:chicken_skin", 28, 16, uv="sph", disp=(0.003, 22), tile=(2, 1))
-    blob(m, (0.05, 0.04, 0.045), (-0.045, y + 0.088, 0.0), "tex:chicken_skin", 20, 12, uv="sph", disp=(0.002, 30))
-    blob(m, (0.05, 0.04, 0.045), (0.045, y + 0.088, 0.0), "tex:chicken_skin", 20, 12, uv="sph", disp=(0.002, 30))
+    # the bird lies on its back: carcass along z (neck end -z), breast ridge on top, thighs and drumsticks at the +z end
+    blob(m, (0.075, 0.058, 0.105), (0.0, y + 0.05, -0.0), "tex:chicken_skin", 26, 16, uv="sph", disp=(0.003, 22), tile=(2, 1))
     for sgn in (-1, 1):
-        pts = spline([(sgn * 0.05, y + 0.035, 0.045), (sgn * 0.11, y + 0.03, 0.075), (sgn * 0.15, y + 0.025, 0.06)], 4)
-        tube3(m, pts, [0.03, 0.025, 0.02, 0.016, 0.012, 0.01, 0.009, 0.008, 0.007, 0.006][: len(pts)] if len(pts) <= 10 else [0.03 - 0.0017 * i for i in range(len(pts))],
-              "tex:chicken_skin", 12, uv=True, tile=(2, 2), disp=(0.0015, 40))
-        tube3(m, [(sgn * 0.15, y + 0.025, 0.06), (sgn * 0.168, y + 0.022, 0.066)], 0.005, "f_cream", 6)
-        blob(m, (0.007, 0.007, 0.007), (sgn * 0.17, y + 0.022, 0.0675), "f_cream", 8, 6, uv=None)
+        blob(m, (0.042, 0.034, 0.075), (sgn * 0.034, y + 0.088, -0.012), "tex:chicken_skin", 18, 12, uv="sph", disp=(0.002, 30))
+        blob(m, (0.026, 0.03, 0.05), (sgn * 0.068, y + 0.062, -0.045), "tex:chicken_skin", 12, 8, uv="sph", disp=(0.002, 30))
+        thigh = [(sgn * 0.048, y + 0.05, 0.062), (sgn * 0.085, y + 0.045, 0.09), (sgn * 0.1, y + 0.03, 0.135), (sgn * 0.09, y + 0.02, 0.17)]
+        pts = spline(thigh, 4)
+        tube3(m, pts, [0.034 - 0.022 * i / (len(pts) - 1) for i in range(len(pts))], "tex:chicken_skin", 12, uv=True, tile=(2, 2), disp=(0.0012, 40))
+        blob(m, (0.007, 0.007, 0.011), (sgn * 0.089, y + 0.02, 0.182), "f_cream", 8, 6, uv=None)
+        tube3(m, [(sgn * 0.09, y + 0.02, 0.17), (sgn * 0.088, y + 0.02, 0.185)], 0.0045, "f_cream", 6)
     for k in range(7):
         a = k * 0.9 + 0.4
-        blob(m, (0.026, 0.02, 0.026), (0.1 * math.cos(a) * 1.3 * (0.8 + 0.2 * (k % 2)), y + 0.02, -0.1 * math.sin(a) * 0.78 * (0.9)), "tex:potato_skin", 12, 8, uv="sph", disp=(0.003, 40)) if abs(math.cos(a)) > 0.45 or math.sin(a) < 0 else None
-    for (sx, sz, a) in ((-0.12, -0.075, 0.4), (0.13, -0.06, 2.0), (0.0, 0.1, 1.2)):
+        px, pz = 0.145 * math.cos(a) * 1.15, 0.1 * math.sin(a) * 1.0
+        if abs(px) > 0.1 or pz < -0.04:
+            blob(m, (0.026, 0.02, 0.026), (px, y + 0.02, pz), "tex:potato_skin", 12, 8, uv="sph", disp=(0.003, 40))
+    for (sx, sz, a) in ((-0.12, -0.08, 0.4), (0.13, -0.07, 2.0), (0.0, 0.1, 1.2)):
         sprig(m, (sx, y + 0.012, sz), "f_herb", 4, 0.022, rng, a)
-    for (lx, lz) in ((-0.15, 0.04), (0.14, 0.045)):
+    for (lx, lz) in ((-0.15, 0.06), (0.15, -0.0)):
         blob(m, (0.027, 0.02, 0.022), (lx, y + 0.018, lz), "tex:lemon_peel", 14, 10, uv="sph")
 
 
@@ -340,20 +343,21 @@ def _(m, rng):
 def _(m, rng):
     plate(m, 0.145, "f_plate", well=0.012)
     y = 0.012
-    for k in range(18):
+    for k in range(26):
         a = rng.random() * TAU
-        rr = 0.04 + 0.01 * (k % 3)
-        h = y + 0.006 + 0.005 * (k // 6)
-        pts = [(rr * math.cos(a + t * 0.5) * (1 - 0.1 * t), h + 0.003 * math.sin(t * 3.0 + k), rr * math.sin(a + t * 0.5) * (1 - 0.1 * t)) for t in (0, 1, 2, 3, 4, 5, 6, 7)]
-        tube3(m, pts, 0.0021, "tex:pasta", 5, uv=True, tile=(1, 6))
-    blob(m, (0.044, 0.026, 0.044), (0.0, y + 0.03, 0.0), "tex:bolognese", 20, 12, uv="sph", disp=(0.005, 55))
+        rr = 0.045 + 0.018 * (k % 3)
+        h = y + 0.006 + 0.004 * (k // 7)
+        pts = [(rr * math.cos(a + t * 0.55) * (1 - 0.06 * t), h + 0.004 * math.sin(t * 3.0 + k), rr * math.sin(a + t * 0.55) * (1 - 0.06 * t)) for t in (0, 1, 2, 3, 4, 5, 6)]
+        tube3(m, pts, 0.0023, "tex:pasta", 5, uv=True, tile=(1, 6))
+    blob(m, (0.06, 0.012, 0.06), (0.0, y + 0.02, 0.0), "tex:pasta", 20, 8, uv="sph", disp=(0.004, 50), tile=(2, 2))
+    blob(m, (0.042, 0.015, 0.042), (0.0, y + 0.03, 0.0), "tex:bolognese", 18, 8, uv="sph", disp=(0.004, 55))
     for k in range(10):
         a = k * 2.4
-        blob(m, (0.006, 0.004, 0.006), (0.025 * math.cos(a), y + 0.055 - 0.004 * (k % 3), 0.025 * math.sin(a)), "tex:bolognese", 6, 4, uv="sph") if k < 6 else None
+        blob(m, (0.006, 0.004, 0.006), (0.024 * math.cos(a), y + 0.042 - 0.002 * (k % 3), 0.024 * math.sin(a)), "tex:bolognese", 6, 4, uv="sph")
     for k in range(9):
         a = k * 1.9
-        blob(m, (0.004, 0.0015, 0.0025), (0.032 * math.cos(a), y + 0.049 - 0.01 * (0.032 / 0.05), 0.032 * math.sin(a)), "f_cheese_white", 5, 3, uv=None, rot=(0, a, 0))
-    sprig(m, (0.0, y + 0.058, 0.0), "f_herb", 3, 0.013, rng)
+        blob(m, (0.004, 0.0015, 0.0025), (0.03 * math.cos(a), y + 0.037 - 0.003 * (k % 2), 0.03 * math.sin(a)), "f_cheese_white", 5, 3, uv=None, rot=(0, a, 0))
+    sprig(m, (0.0, y + 0.047, 0.0), "f_herb", 3, 0.013, rng)
 
 
 @meal("mac_and_cheese")
@@ -623,11 +627,11 @@ def _(m, rng):
     vessel(m, [(0.0, 0.0), (0.07, 0.0), (0.09, 0.012), (0.1, 0.05)], 0.004, (0, 0, 0), "f_plate_sage", 30, scale=(1.0, 1.0, 0.75))
     lathe(m, [(0, 0), (0.093, 0.0), (0.095, 0.01), (0.08, 0.018), (0.0, 0.024)], (0, 0.036, 0), "f_cream", 30, scale=(1.0, 1.0, 0.76), disp=(0.0025, 60))
     for r in range(5):
-        z = -0.048 + r * 0.024
-        half = 0.09 * math.sqrt(max(0.0, 1 - (z / 0.075) ** 2))
-        tube3(m, [(-half * 0.9, 0.062, z), (0.0, 0.066, z), (half * 0.9, 0.062, z)], 0.0038, "f_butter", 6, caps=True, disp=(0.0006, 90))
+        z = (r - 2) * 0.026
+        half = 0.088 * math.sqrt(max(0.0, 1 - (z / 0.073) ** 2))
+        tube3(m, [(-half * 0.85, 0.058, z), (0.0, 0.0625, z), (half * 0.85, 0.058, z)], 0.0036, "f_butter", 6, caps=True, disp=(0.0006, 90))
     for k in range(4):
-        sprig(m, (-0.03 + 0.02 * k, 0.067, 0.0), "f_herb", 2, 0.011, rng, k)
+        sprig(m, (-0.03 + 0.02 * k, 0.065, 0.0), "f_herb", 2, 0.011, rng, k)
 
 
 menu.register()

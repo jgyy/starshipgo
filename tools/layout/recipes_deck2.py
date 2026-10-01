@@ -146,9 +146,9 @@ def f_galley(R, B):
     R.line("Serving line",
            "Two counters flank the portal on the mess side: hot food on the port side, salads and cold on the starboard side, so plates move "
            "straight through the opening without the cooks entering the hall.")
-    c1 = wall(R, B, "S", "galley_prep_counter", -9.7)
+    wall(R, B, "S", "galley_prep_counter", -9.7)
     wall(R, B, "S", "galley_food_replicator", -11.6, quiet=True)
-    c2 = wall(R, B, "S", "galley_prep_counter", -4.25)
+    wall(R, B, "S", "galley_prep_counter", -4.25)
     wall(R, B, "S", "galley_water_cooler", -2.5, quiet=True)
     R.line("Hanging pots and ceiling rail",
            "Pans and ladles hang above the island within arm's reach, freeing drawer space and keeping the floor clear.")

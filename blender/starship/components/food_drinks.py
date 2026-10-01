@@ -269,20 +269,23 @@ def _(m, rng):
 
 # ================================================================ CANS
 CANS = (
-    ("cola", "tex:can_cola", 0.033, 0.122, 0.0),
-    ("lime_fizz", "tex:can_lime", 0.033, 0.122, 0.0),
-    ("orange_soda", "tex:can_orange", 0.033, 0.115, 0.002),
-    ("blue_cooler_tall", "tex:can_blue", 0.033, 0.168, 0.0),
-    ("grape_pop_mini", "tex:can_grape", 0.026, 0.09, 0.0),
-    ("energy_slim", "tex:can_energy", 0.029, 0.135, 0.0),
-    ("tonic_sleek", "tex:can_tonic", 0.027, 0.146, 0.0),
-    ("cold_brew", "tex:can_coffee", 0.0325, 0.095, 0.0),
+    ("cola", "tex:can_cola", 0.033, 0.122, 0.0, 0.0),
+    ("lime_fizz", "tex:can_lime", 0.033, 0.122, 0.0, 0.026),
+    ("orange_soda", "tex:can_orange", 0.033, 0.115, 0.002, 0.0),
+    ("blue_cooler_tall", "tex:can_blue", 0.033, 0.168, 0.0, 0.0),
+    ("grape_pop_mini", "tex:can_grape", 0.026, 0.09, 0.0, 0.0),
+    ("energy_slim", "tex:can_energy", 0.029, 0.135, 0.0, 0.0),
+    ("tonic_sleek", "tex:can_tonic", 0.027, 0.146, 0.0, 0.0),
+    ("cold_brew", "tex:can_coffee", 0.0325, 0.095, 0.0, 0.0),
 )
 
 
-def make_can(m, tex, R, H, bulge, opened=False):
+def make_can(m, tex, R, H, bulge, taper=0.0):
+    """Aluminium can R x H with a printed body; `bulge` swells the belly, `taper` is the extra height of a bottle-shaped shoulder."""
     hb = 0.012
-    body = [(R * 0.82, hb), (R * 0.95, hb + 0.002), (R, hb + 0.006), (R + bulge, H * 0.5), (R, H - 0.016), (R * 0.9, H - 0.008)]
+    body = [(R * 0.82, hb), (R * 0.95, hb + 0.002), (R, hb + 0.006), (R + bulge, H * 0.5), (R, H - 0.016 - taper), (R * 0.9, H - 0.008)]
+    if taper:
+        body = body[:-2] + [(R * 0.93, H - 0.012 - taper * 0.5), (R * 0.88, H - 0.006)]
     lathe(m, body, (0, 0, 0), tex, 28, uv="cyl", tile=(1, 1))
     # aluminium base with domed bottom, shoulder, lid with recessed top, stay-tab
     lathe(m, [(0.0, 0.006), (R * 0.62, 0.003), (R * 0.82, 0.0), (R * 0.86, 0.004), (R * 0.82, hb), (0.0, hb)], (0, 0, 0), "f_foil", 26)
@@ -297,7 +300,7 @@ def _can(label):
     row = next(c for c in CANS if c[0] == label)
 
     def f(m, rng):
-        make_can(m, row[1], row[2], row[3], row[4])
+        make_can(m, row[1], row[2], row[3], row[4], row[5])
     return f
 
 

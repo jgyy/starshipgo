@@ -178,6 +178,8 @@ def lathe(m, prof, pos=(0, 0, 0), mat="f_plate", seg=24, rot=(0, 0, 0), scale=(1
     bm = m.cur["bm"]
     mi = m._mi(mat)
     mm = _rotm(rot)
+    if uv is None and mat.startswith("tex:"):
+        uv = "sph"                                  # a textured part always needs UVs
     full = abs(arc - TAU) < 1e-6
     n = seg if full else seg + 1
     ys = [p[1] for p in prof]
@@ -371,6 +373,7 @@ def tube3(m, pts, radii, mat="f_white", seg=8, uv=None, caps=True, tile=(1, 1), 
     caps=True rounds both ends.  uv: None or 'tube' (u around, v along)."""
     bm = m.cur["bm"]
     mi = m._mi(mat)
+    uv = uv or mat.startswith("tex:")
     n = len(pts)
     rad = [radii] * n if not isinstance(radii, (list, tuple)) else list(radii)
     P = [Vector(p) for p in pts]

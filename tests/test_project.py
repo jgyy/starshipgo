@@ -7,7 +7,7 @@ import unittest
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GODOT = os.path.join(ROOT, "godot")
-TARGET = 1000
+TARGET = 1196        # 1000 original components + 196 food and drink models
 
 
 def load(name):
@@ -21,7 +21,7 @@ class CatalogTests(unittest.TestCase):
         cls.cat = load("catalog.json")
         cls.models = cls.cat["models"]
 
-    def test_exactly_1000_models(self):
+    def test_exact_model_count(self):
         self.assertEqual(len(self.models), TARGET)
         self.assertEqual(self.cat["count"], TARGET)
 
