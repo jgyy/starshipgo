@@ -6,6 +6,7 @@ Doors to the spine corridors are on the x = -/+1.5 walls, the hull is the outer 
 """
 from dressing import *   # noqa: F401,F403
 from recipes_deck3_helpers import *   # noqa: F401,F403
+from recipes_deck3_helpers import _log
 
 
 def rail(R, B, kind, x0, z0, x1, z1, skip=()):
@@ -28,6 +29,20 @@ def rail(R, B, kind, x0, z0, x1, z1, skip=()):
 
 def sign_at(R, B, side, mid, along, y=2.6):
     return wall_y(R, B, side, mid, along, y, check=False)
+
+
+def aw_try(R, B, side, mid, alongs, **kw):
+    """Like aw() but tries several positions along the wall and keeps the first that fits (silent miss only if none fits)."""
+    m = mm(B, mid)
+    for a in alongs:
+        p = R.against_wall(side, m, a, gap=kw.get("gap", 0.04))
+        if p is None and os.environ.get("DBG4"):
+            e = R.edge(side)
+            print("DBG", mid, side, a, e and e.get("len"), R.wall_span(side), m["size"], file=sys.stderr)
+        if p is not None:
+            return p
+    _log(R, mid, (side, alongs))
+    return None
 
 
 def mark(R, B, x, z, yaw=0.0, mid="sign_floor_marking"):
@@ -408,7 +423,6 @@ def f_waste(R, B):
            "biogas; the sump tank takes the liquor to the water plant. They stand in the south-east corner away from the door and the operator.")
     aw(R, B, "E", "tank_spherical_pressure_vessel", -2.2)
     wall_y(R, B, "E", "valve_dial_gauge", -2.2, bottom=2.5)
-    wall_y(R, B, "E", "valve_pressure_relief_valve", -0.7, 1.0) if False else None
 
     R.line("Sorting bins and hazardous waste (south wall, west)",
            "Crew drop sorted waste into triple recycling bins; medical and chemical waste have their own sealed hazmat cabinets and a drum bay "
@@ -451,7 +465,6 @@ def f_waste(R, B):
     sign_at(R, B, "N", "sign_dept_engineering", 2.7, 2.9)
     fe(R, B, "E", -3.4)
     fe(R, B, "N", 3.3)
-    wall_y(R, B, "S", "safety_eye_wash_station", 8.9, 1.1) if False else None
     R.place(mm(B, "safety_sprinkler_head"), 7.0, -5.2, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), 8.0, -3.9, 0.0, y=R.y + R.h)
 
@@ -653,3 +666,103 @@ def f_auxctl(R, B):
     for x, z in ((6.0, 6.0), (6.0, 11.0), (10.0, 8.2)):
         R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
     R.place(mm(B, "camera_dome_ceiling"), 6.5, 8.2, 0.0, y=R.y + R.h)
+
+
+# ----------------------------------------------------------------------------------------------- MAIN CARGO HOLD
+def f_hold(R, B):
+    R.describe(
+        "The Main Cargo Hold is the keel-deck freight space: pallets, crates and containers of everything the ship carries that is not "
+        "food (provisions have their own hold), spare equipment, trade goods and mission cargo, stored in marked bays and moved by forklift "
+        "and cargo loader between the corridor opening and the bays.",
+        basis="One 3.2 m wide main lane runs from the corridor opening along the axis of the hold; two storage zones lie either side of it. "
+              "North zone: low-bay pallet racking on the north wall, a 1.5 m forklift aisle, then a double row of pallets (1.2 x 1.0 m "
+              "bays); south zone: a row of crates, a 1.5 m aisle and a hazardous-goods bay on the hull side, and a 20 ft container "
+              "on the starboard wall. Capacity: about 25 pallet positions plus the racking and a 20 ft container (about 25 t), roughly one year of "
+              "consumables for the deck crew. The loading console sits at the opening so the cargo clerk sees every movement.",
+        crew=3,
+        adjacency="Aft spine corridor through a 3.2 m opening (east side, forklift width); Fabrication Hall directly north; "
+                  "the stern is the keel hull - there is no hull opening on this deck, freight goes up by the stair towers' freight lift trunk.",
+        notes="Ceiling 3.4 m: racking is the 3.2 m low-bay type; the tallest pallet stands 2.1 m, so lights and sprinklers clear every load.")
+    R.line("Ceiling lighting", "Bright panels (300 lux) on a 3.6 m grid light the lanes and bay labels; fixtures sit over the lanes so no load shadows a label.")
+    lights(R, spacing=3.6, color="#f4f4ff", energy=1.6)
+    R.keep_clear((-8.6, 20.4, -2.5, 23.6), "3.2 m main forklift lane from the corridor opening into the hold")
+
+    R.line("Low-bay pallet racking (north wall)",
+           "The slow-moving stock stands on three low-bay racks on the north wall, out of the traffic lanes and furthest from the door; the "
+           "fast-moving stock is on the floor bays nearer the lane. The racks are 1.2 m deep with a 1.5 m forklift aisle in front.")
+    wall_row(R, B, "N", ["pallet_rack_bay_low_wire"] * 3, -12.3, gap=0.1)
+
+    R.line("Pallet bays: row A (north zone)",
+           "Five different unit loads stand in marked 1.3 m bays: boxes, banded crates, drums, mixed goods and sacks; each "
+           "pallet is turned so its label faces the 1.5 m forklift aisle on the racking side.")
+    line_x(R, B, ["pallet_boxes_layered", "pallet_crates_banded", "pallet_drums_banded", "pallet_mixed_goods", "pallet_sacks_stacked"],
+           -11.3, 17.45, 0.0, gap=0.1)
+
+    R.line("Pallet bays: row B (north zone, lane side)",
+           "A second row of tall wrapped loads, a roll cage, a caged crate and a wooden crate is next to the main lane, for the loads that are moved "
+           "most often; it touches row A (they are handled as one double row from the lane side).")
+    line_x(R, B, ["pallet_wrapped_tall_mixed", "crate_wood_slat_12", "pallet_roll_cage_loaded", "crate_cage_large", "pallet_wrapped_stack"],
+           -11.3, 18.75, 0.0, gap=0.2)
+
+    R.line("Hazardous goods bay (south zone, hull side)",
+           "Flammable, toxic and biohazard crates and drums stand together in a row on the hull side of the lane, furthest from the door and the "
+           "console, behind a safety barrier, with a spill kit and signs so a leak is contained and nobody enters by mistake.")
+    line_x(R, B, ["crate_flammable_red", "crate_biohazard", "crate_hazard_yellow", "barrel_chemical_drum_hazard", "barrel_toxic_drums_sump"],
+           -9.4, 24.55, 0.0, gap=0.12)
+    put(R, B, "safety_spill_kit_bin", -8.9, 26.2, 0.0)
+    put(R, B, "hangartool_safety_barrier", -6.8, 25.7, 0.0)
+    put(R, B, "pallet_empty_stack", -3.7, 24.6, 0.0)
+    wall_y(R, B, "D2", "sign_hazard_biohazard", 1.5, 2.6, check=False)
+    wall_y(R, B, "D1", "sign_no_entry", 1.5, 2.4, check=False)
+
+    R.line("20 ft container (stern wall)",
+           "A standard blue 20 ft container is parked along the stern wall as a bulk store for mixed ship's stores; it is the last-in, "
+           "first-out space and its doors face the aisle so it can be unloaded by the forklift.")
+    put(R, B, "crate_iso_container_blue", -4.85, 28.55, 90.0)
+
+    R.line("Shelving cage and fuel shelf",
+           "Caged lockers hold the valuable and pilferable items (electronics, medicine stock, tools), the gas and fuel shelf holds small gas "
+           "and fuel containers away from the floor; the cage stands on the hull side of the pallet rows and the shelf on the starboard wall, both out of the lane.")
+    put(R, B, "shelving_cage_lockers", -11.8, 16.9, 90.0)
+    aw(R, B, "E", "shelving_gas_and_fuel_shelf", 25.4)
+
+    R.line("Loaders: forklift and pallet jacks (east wall, north of the opening)",
+           "The platform forklift and a hover pallet jack park nose-out along the east wall north of the opening, where they can "
+           "turn straight into the lane; they stand clear of the 3.2 m opening.")
+    put(R, B, "loader_platform_forklift", -2.4, 18.55, 180.0)
+    put(R, B, "loader_hover_pallet_jack", -10.6, 20.35, 0.0)
+
+    R.line("Cargo tug (west end of the lane)",
+           "A cargo tug docks at the west end of the lane: it shuttles loads between the bays and the lift trunk, so the forklift is free for the heavy pallets.")
+    put(R, B, "loader_cargo_tug", -9.5, 22.4, 0.0)
+
+    R.line("Loading console and manifest desk (east wall, north)",
+           "The cargo clerk logs every load and assigns bays at a console beside the opening: from the seat the lane, the pallet rows and "
+           "the corridor are in view; the display above the console shows the bay plan with free positions.")
+    con = aw(R, B, "E", "console_compact_aux", 15.3)
+    seat_for(R, B, con, "seat_ops_chair")
+    if con:
+        tops(R, B, con, ["terminal_keyboard"], [(0.0, 0.15)])
+    wall_y(R, B, "E", "display_status_board", 15.3, bottom=2.0, check=False)
+
+    R.line("Lane markings and barriers",
+           "Floor stencils mark the main lane and a barrier marks the pedestrian crossing to the console: "
+           "the rule is that no cargo stands in the lane, ever.")
+    for x in (-8.0, -5.5, -3.5):
+        mark(R, B, x, 22.0, 0.0)
+
+    R.line("Cable trays, pipes and ceiling sprinklers",
+           "Sprinkler lines and cable trays run along the lanes overhead; sprinkler heads protect each bay.")
+    ceil_run(R, B, ["cabletray_ladder_tray"] * 4, -9.0, 19.9, "x")
+    ceil_run(R, B, ["pipe_ceiling_hanger_run"] * 3, -9.0, 25.8, "x")
+    for x, z in ((-10.0, 16.0), (-6.0, 16.0), (-10.0, 24.0), (-6.0, 26.5), (-3.5, 17.0)):
+        R.place(mm(B, "safety_sprinkler_head"), x, z, 0.0, y=R.y + R.h)
+
+    R.line("Safety and signs",
+           "Extinguishers at the opening and the racks, a first-aid cabinet by the console, exit sign beside the opening and the department sign: "
+           "the usual marks of a freight space.")
+    fe(R, B, "E", 27.0, y=1.5)
+    fe(R, B, "N", -3.3, y=1.5)
+    wall_y(R, B, "N", "safety_first_aid_cabinet", -2.4, 1.5)
+    sign_at(R, B, "E", "sign_emergency_exit", 19.7, 2.9)
+    sign_at(R, B, "E", "sign_dept_cargo", 25.2, 2.9)
