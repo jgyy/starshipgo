@@ -640,6 +640,10 @@ def f_observ(R, B):
     first(R, B, "plant_ficus_tree", [(2.3, 4.0, 0.0)], quiet=True)
     wi(R, B, "W", "noticeboard_duty_roster_display", 4.4, y=1.7, quiet=True)
     wi(R, B, "W", "clock_dual_time_ship_clock", 10.2, y=2.3, quiet=True)
+    for x in (4.0, 10.9, 11.9):
+        wi(R, B, "N", "sconce_chrome_uplight", x, y=1.9, quiet=True)
+    wi(R, B, "S", "instrument_radar_scope", 2.6, y=1.8, quiet=True)
+    wi(R, B, "D1", "sconce_chrome_uplight", 0.7, y=1.9, quiet=True)
     R.line("Low red lighting",
            "Dim downlights and red omni lights keep the room around 20 lux so the eye stays dark-adapted; the consoles' own displays "
            "and a cool blue accent at the telescope are the main light sources.")
