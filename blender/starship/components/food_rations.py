@@ -463,10 +463,9 @@ def _(m, rng):
     dishes = ("tex:curry", "tex:rice", "tex:soup_tomato", "tex:cheese_sauce")
     for k in range(4):
         x = -0.69 + 0.46 * k
-        m.box((0.43, 0.09, 0.3), (x, 0.905, 0.0), "f_steel", 0.006)
-        lathe(m, [(0.0, 0.0), (0.14, 0.0), (0.14, 0.001), (0.0, 0.001)], (x, 0.948, 0.0), dishes[k], 4, uv="top", a0=PI / 4, scale=(1.4, 1.0, 1.0), disp=(0.004, 30))
+        m.box((0.43, 0.06, 0.3), (x, 0.88, 0.0), "f_steel", 0.006)
+        slab(m, 0.38, 0.03, 0.25, (x, 0.88, 0.0), dishes[k], "box", 0.01, disp=(0.004, 30))
         m.link((x + 0.1, 0.99, 0.0), (x + 0.2, 1.01, 0.12), 0.004, "f_steel", 5)
-        m.box((0.03, 0.03, 0.01), (x, 0.7, D / 2 + 0.0), "f_cap_red", 0.003)
     # sneeze guard
     for sx in (-1, 1):
         m.box((0.03, 0.4, 0.03), (sx * (W / 2 - 0.05), 1.07, D / 2 - 0.08), "f_steel", 0.003)

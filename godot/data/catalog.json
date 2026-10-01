@@ -1,6 +1,6 @@
 {
  "version": 1,
- "count": 1000,
+ "count": 1196,
  "models": [
   {
    "id": "analyzer_3d_fabricator",
@@ -587,6 +587,614 @@
    "top_y": 0.06,
    "bytes": 39520,
    "family": "comm_antenna_floor"
+  },
+  {
+   "id": "bakery_bagel_poppy",
+   "category": "bakery",
+   "label": "bagel_poppy",
+   "file": "models/bakery/bakery_bagel_poppy.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.104,
+    0.036,
+    0.102
+   ],
+   "bounds_min": [
+    -0.052,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.052,
+    0.036,
+    0.051
+   ],
+   "tris": 2072,
+   "top_y": null,
+   "bytes": 117076,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_baguette",
+   "category": "bakery",
+   "label": "baguette",
+   "file": "models/bakery/bakery_baguette.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.52,
+    0.069,
+    0.056
+   ],
+   "bounds_min": [
+    -0.26,
+    0.0,
+    -0.028
+   ],
+   "bounds_max": [
+    0.26,
+    0.069,
+    0.028
+   ],
+   "tris": 912,
+   "top_y": null,
+   "bytes": 60784,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_bread_loaf",
+   "category": "bakery",
+   "label": "bread_loaf",
+   "file": "models/bakery/bakery_bread_loaf.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.125,
+    0.104
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.052
+   ],
+   "bounds_max": [
+    0.15,
+    0.125,
+    0.052
+   ],
+   "tris": 516,
+   "top_y": null,
+   "bytes": 52004,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_brioche_loaf",
+   "category": "bakery",
+   "label": "brioche_loaf",
+   "file": "models/bakery/bakery_brioche_loaf.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.12,
+    0.13
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.065
+   ],
+   "bounds_max": [
+    0.15,
+    0.12,
+    0.065
+   ],
+   "tris": 1332,
+   "top_y": null,
+   "bytes": 58344,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cake_slice_chocolate",
+   "category": "bakery",
+   "label": "cake_slice_chocolate",
+   "file": "models/bakery/bakery_cake_slice_chocolate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.078,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.078,
+    0.1
+   ],
+   "tris": 958,
+   "top_y": null,
+   "bytes": 38332,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cinnamon_roll",
+   "category": "bakery",
+   "label": "cinnamon_roll",
+   "file": "models/bakery/bakery_cinnamon_roll.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.18,
+    0.037,
+    0.178
+   ],
+   "bounds_min": [
+    -0.09,
+    0.0,
+    -0.089
+   ],
+   "bounds_max": [
+    0.09,
+    0.037,
+    0.089
+   ],
+   "tris": 2900,
+   "top_y": null,
+   "bytes": 103460,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cookies_on_plate",
+   "category": "bakery",
+   "label": "cookies_on_plate",
+   "file": "models/bakery/bakery_cookies_on_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.24,
+    0.039,
+    0.24
+   ],
+   "bounds_min": [
+    -0.12,
+    0.0,
+    -0.12
+   ],
+   "bounds_max": [
+    0.12,
+    0.039,
+    0.12
+   ],
+   "tris": 1632,
+   "top_y": null,
+   "bytes": 81276,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_croissant",
+   "category": "bakery",
+   "label": "croissant",
+   "file": "models/bakery/bakery_croissant.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.061,
+    0.06
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.03
+   ],
+   "bounds_max": [
+    0.079,
+    0.061,
+    0.03
+   ],
+   "tris": 1260,
+   "top_y": null,
+   "bytes": 50424,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_cupcake_swirl",
+   "category": "bakery",
+   "label": "cupcake_swirl",
+   "file": "models/bakery/bakery_cupcake_swirl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.084,
+    0.115,
+    0.086
+   ],
+   "bounds_min": [
+    -0.042,
+    0.0,
+    -0.043
+   ],
+   "bounds_max": [
+    0.042,
+    0.115,
+    0.043
+   ],
+   "tris": 1974,
+   "top_y": null,
+   "bytes": 74196,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_donut_chocolate",
+   "category": "bakery",
+   "label": "donut_chocolate",
+   "file": "models/bakery/bakery_donut_chocolate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.102,
+    0.036,
+    0.102
+   ],
+   "bounds_min": [
+    -0.051,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.051,
+    0.036,
+    0.051
+   ],
+   "tris": 2184,
+   "top_y": null,
+   "bytes": 87268,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_donut_pink_sprinkles",
+   "category": "bakery",
+   "label": "donut_pink_sprinkles",
+   "file": "models/bakery/bakery_donut_pink_sprinkles.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.1,
+    0.037,
+    0.1
+   ],
+   "bounds_min": [
+    -0.05,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.05,
+    0.037,
+    0.05
+   ],
+   "tris": 1664,
+   "top_y": null,
+   "bytes": 72644,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_layer_cake_birthday",
+   "category": "bakery",
+   "label": "layer_cake_birthday",
+   "file": "models/bakery/bakery_layer_cake_birthday.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.24,
+    0.253,
+    0.24
+   ],
+   "bounds_min": [
+    -0.12,
+    0.0,
+    -0.12
+   ],
+   "bounds_max": [
+    0.12,
+    0.253,
+    0.12
+   ],
+   "tris": 3008,
+   "top_y": null,
+   "bytes": 147716,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_muffin_choc_chip",
+   "category": "bakery",
+   "label": "muffin_choc_chip",
+   "file": "models/bakery/bakery_muffin_choc_chip.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.106,
+    0.088,
+    0.106
+   ],
+   "bounds_min": [
+    -0.053,
+    0.0,
+    -0.053
+   ],
+   "bounds_max": [
+    0.053,
+    0.088,
+    0.053
+   ],
+   "tris": 624,
+   "top_y": null,
+   "bytes": 56064,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_pancake_stack",
+   "category": "bakery",
+   "label": "pancake_stack",
+   "file": "models/bakery/bakery_pancake_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.26,
+    0.102,
+    0.26
+   ],
+   "bounds_min": [
+    -0.13,
+    0.0,
+    -0.13
+   ],
+   "bounds_max": [
+    0.13,
+    0.102,
+    0.13
+   ],
+   "tris": 2484,
+   "top_y": null,
+   "bytes": 107088,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_pie_apple_lattice",
+   "category": "bakery",
+   "label": "pie_apple_lattice",
+   "file": "models/bakery/bakery_pie_apple_lattice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.242,
+    0.054,
+    0.242
+   ],
+   "bounds_min": [
+    -0.121,
+    0.0,
+    -0.121
+   ],
+   "bounds_max": [
+    0.121,
+    0.054,
+    0.121
+   ],
+   "tris": 1360,
+   "top_y": null,
+   "bytes": 79816,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_pretzel_salted",
+   "category": "bakery",
+   "label": "pretzel_salted",
+   "file": "models/bakery/bakery_pretzel_salted.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.176,
+    0.034,
+    0.176
+   ],
+   "bounds_min": [
+    -0.088,
+    0.0,
+    -0.088
+   ],
+   "bounds_max": [
+    0.088,
+    0.034,
+    0.088
+   ],
+   "tris": 3420,
+   "top_y": null,
+   "bytes": 147244,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_sourdough_boule",
+   "category": "bakery",
+   "label": "sourdough_boule",
+   "file": "models/bakery/bakery_sourdough_boule.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.26,
+    0.157,
+    0.26
+   ],
+   "bounds_min": [
+    -0.13,
+    0.0,
+    -0.13
+   ],
+   "bounds_max": [
+    0.13,
+    0.157,
+    0.13
+   ],
+   "tris": 2268,
+   "top_y": null,
+   "bytes": 136600,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_toast_in_rack",
+   "category": "bakery",
+   "label": "toast_in_rack",
+   "file": "models/bakery/bakery_toast_in_rack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.1,
+    0.105,
+    0.17
+   ],
+   "bounds_min": [
+    -0.05,
+    0.0,
+    -0.085
+   ],
+   "bounds_max": [
+    0.05,
+    0.105,
+    0.085
+   ],
+   "tris": 840,
+   "top_y": null,
+   "bytes": 68920,
+   "family": "food_bakery"
+  },
+  {
+   "id": "bakery_waffle_berries",
+   "category": "bakery",
+   "label": "waffle_berries",
+   "file": "models/bakery/bakery_waffle_berries.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "bakery"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.051,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.051,
+    0.14
+   ],
+   "tris": 2094,
+   "top_y": null,
+   "bytes": 114580,
+   "family": "food_bakery"
   },
   {
    "id": "barrel_canister_cluster",
@@ -2036,6 +2644,600 @@
    "family": "bin_wall"
   },
   {
+   "id": "bottle_beer_brown_longneck",
+   "category": "bottle",
+   "label": "beer_brown_longneck",
+   "file": "models/bottle/bottle_beer_brown_longneck.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.064,
+    0.256,
+    0.062
+   ],
+   "bounds_min": [
+    -0.032,
+    0.0,
+    -0.031
+   ],
+   "bounds_max": [
+    0.032,
+    0.256,
+    0.031
+   ],
+   "tris": 1094,
+   "top_y": null,
+   "bytes": 46208,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_beer_lager_green",
+   "category": "bottle",
+   "label": "beer_lager_green",
+   "file": "models/bottle/bottle_beer_lager_green.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.23,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.23,
+    0.033
+   ],
+   "tris": 934,
+   "top_y": null,
+   "bytes": 39484,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_champagne_foil",
+   "category": "bottle",
+   "label": "champagne_foil",
+   "file": "models/bottle/bottle_champagne_foil.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.324,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.324,
+    0.04
+   ],
+   "tris": 1108,
+   "top_y": null,
+   "bytes": 60908,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_gin_blue_flask",
+   "category": "bottle",
+   "label": "gin_blue_flask",
+   "file": "models/bottle/bottle_gin_blue_flask.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.082,
+    0.285,
+    0.082
+   ],
+   "bounds_min": [
+    -0.041,
+    0.0,
+    -0.041
+   ],
+   "bounds_max": [
+    0.041,
+    0.285,
+    0.041
+   ],
+   "tris": 970,
+   "top_y": null,
+   "bytes": 35508,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_hip_flask_steel",
+   "category": "bottle",
+   "label": "hip_flask_steel",
+   "file": "models/bottle/bottle_hip_flask_steel.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.11,
+    0.185,
+    0.032
+   ],
+   "bounds_min": [
+    -0.055,
+    0.0,
+    -0.016
+   ],
+   "bounds_max": [
+    0.055,
+    0.185,
+    0.016
+   ],
+   "tris": 200,
+   "top_y": null,
+   "bytes": 7132,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_hot_sauce_bottle",
+   "category": "bottle",
+   "label": "hot_sauce_bottle",
+   "file": "models/bottle/bottle_hot_sauce_bottle.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.054,
+    0.175,
+    0.052
+   ],
+   "bounds_min": [
+    -0.027,
+    0.0,
+    -0.026
+   ],
+   "bounds_max": [
+    0.027,
+    0.175,
+    0.026
+   ],
+   "tris": 750,
+   "top_y": null,
+   "bytes": 31204,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_milk_bottle_glass",
+   "category": "bottle",
+   "label": "milk_bottle_glass",
+   "file": "models/bottle/bottle_milk_bottle_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.07,
+    0.193,
+    0.068
+   ],
+   "bounds_min": [
+    -0.035,
+    0.0,
+    -0.034
+   ],
+   "bounds_max": [
+    0.035,
+    0.193,
+    0.034
+   ],
+   "tris": 1174,
+   "top_y": null,
+   "bytes": 46488,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_olive_oil_cruet",
+   "category": "bottle",
+   "label": "olive_oil_cruet",
+   "file": "models/bottle/bottle_olive_oil_cruet.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.074,
+    0.282,
+    0.074
+   ],
+   "bounds_min": [
+    -0.037,
+    0.0,
+    -0.037
+   ],
+   "bounds_max": [
+    0.037,
+    0.282,
+    0.037
+   ],
+   "tris": 970,
+   "top_y": null,
+   "bytes": 24468,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_sport_bottle_squeeze",
+   "category": "bottle",
+   "label": "sport_bottle_squeeze",
+   "file": "models/bottle/bottle_sport_bottle_squeeze.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.062,
+    0.251,
+    0.062
+   ],
+   "bounds_min": [
+    -0.031,
+    0.0,
+    -0.031
+   ],
+   "bounds_max": [
+    0.031,
+    0.251,
+    0.031
+   ],
+   "tris": 780,
+   "top_y": null,
+   "bytes": 32120,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_thermos_vacuum_flask",
+   "category": "bottle",
+   "label": "thermos_vacuum_flask",
+   "file": "models/bottle/bottle_thermos_vacuum_flask.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.116,
+    0.295,
+    0.082
+   ],
+   "bounds_min": [
+    -0.058,
+    0.0,
+    -0.041
+   ],
+   "bounds_max": [
+    0.058,
+    0.295,
+    0.041
+   ],
+   "tris": 712,
+   "top_y": null,
+   "bytes": 32556,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_water_bottle_500ml",
+   "category": "bottle",
+   "label": "water_bottle_500ml",
+   "file": "models/bottle/bottle_water_bottle_500ml.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.07,
+    0.211,
+    0.07
+   ],
+   "bounds_min": [
+    -0.035,
+    0.0,
+    -0.035
+   ],
+   "bounds_max": [
+    0.035,
+    0.211,
+    0.035
+   ],
+   "tris": 1608,
+   "top_y": null,
+   "bytes": 55856,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_whisky_decanter_square",
+   "category": "bottle",
+   "label": "whisky_decanter_square",
+   "file": "models/bottle/bottle_whisky_decanter_square.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.094,
+    0.23,
+    0.1
+   ],
+   "bounds_min": [
+    -0.047,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.047,
+    0.23,
+    0.05
+   ],
+   "tris": 352,
+   "top_y": null,
+   "bytes": 13824,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_wine_red_bordeaux",
+   "category": "bottle",
+   "label": "wine_red_bordeaux",
+   "file": "models/bottle/bottle_wine_red_bordeaux.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.076,
+    0.325,
+    0.076
+   ],
+   "bounds_min": [
+    -0.038,
+    0.0,
+    -0.038
+   ],
+   "bounds_max": [
+    0.038,
+    0.325,
+    0.038
+   ],
+   "tris": 1224,
+   "top_y": null,
+   "bytes": 41704,
+   "family": "food_bottle"
+  },
+  {
+   "id": "bottle_wine_white_hock",
+   "category": "bottle",
+   "label": "wine_white_hock",
+   "file": "models/bottle/bottle_wine_white_hock.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "bottle"
+   ],
+   "solid": false,
+   "size": [
+    0.072,
+    0.338,
+    0.072
+   ],
+   "bounds_min": [
+    -0.036,
+    0.0,
+    -0.036
+   ],
+   "bounds_max": [
+    0.036,
+    0.338,
+    0.036
+   ],
+   "tris": 1224,
+   "top_y": null,
+   "bytes": 44312,
+   "family": "food_bottle"
+  },
+  {
+   "id": "buffet_bakery_display_stand",
+   "category": "buffet",
+   "label": "bakery_display_stand",
+   "file": "models/buffet/buffet_bakery_display_stand.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    0.94,
+    1.48,
+    0.54
+   ],
+   "bounds_min": [
+    -0.47,
+    0.0,
+    -0.27
+   ],
+   "bounds_max": [
+    0.47,
+    1.48,
+    0.27
+   ],
+   "tris": 5424,
+   "top_y": 1.48,
+   "bytes": 198628,
+   "family": "food_buffet"
+  },
+  {
+   "id": "buffet_chafing_buffet_line",
+   "category": "buffet",
+   "label": "chafing_buffet_line",
+   "file": "models/buffet/buffet_chafing_buffet_line.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    1.96,
+    1.306,
+    0.76
+   ],
+   "bounds_min": [
+    -0.98,
+    0.0,
+    -0.38
+   ],
+   "bounds_max": [
+    0.98,
+    1.306,
+    0.38
+   ],
+   "tris": 1000,
+   "top_y": 0.92,
+   "bytes": 94600,
+   "family": "food_buffet"
+  },
+  {
+   "id": "buffet_dessert_display_case",
+   "category": "buffet",
+   "label": "dessert_display_case",
+   "file": "models/buffet/buffet_dessert_display_case.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    1.2,
+    1.113,
+    0.6
+   ],
+   "bounds_min": [
+    -0.6,
+    0.0,
+    -0.3
+   ],
+   "bounds_max": [
+    0.6,
+    1.113,
+    0.3
+   ],
+   "tris": 3040,
+   "top_y": 1.12,
+   "bytes": 165820,
+   "family": "food_buffet"
+  },
+  {
+   "id": "buffet_fruit_market_stand",
+   "category": "buffet",
+   "label": "fruit_market_stand",
+   "file": "models/buffet/buffet_fruit_market_stand.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "buffet",
+    "display"
+   ],
+   "solid": false,
+   "size": [
+    1.2,
+    0.93,
+    0.938
+   ],
+   "bounds_min": [
+    -0.6,
+    0.0,
+    -0.469
+   ],
+   "bounds_max": [
+    0.6,
+    0.93,
+    0.469
+   ],
+   "tris": 6920,
+   "top_y": 0.08,
+   "bytes": 282700,
+   "family": "food_buffet"
+  },
+  {
    "id": "cabinet_janitor_closet",
    "category": "cabinet",
    "label": "janitor closet",
@@ -2696,6 +3898,303 @@
    "top_y": null,
    "bytes": 15152,
    "family": "camera_wall"
+  },
+  {
+   "id": "can_blue_cooler_tall",
+   "category": "can",
+   "label": "blue_cooler_tall",
+   "file": "models/can/can_blue_cooler_tall.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.169,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.169,
+    0.033
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 50236,
+   "family": "food_can"
+  },
+  {
+   "id": "can_cola",
+   "category": "can",
+   "label": "cola",
+   "file": "models/can/can_cola.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.123,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.123,
+    0.033
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 45948,
+   "family": "food_can"
+  },
+  {
+   "id": "can_cold_brew",
+   "category": "can",
+   "label": "cold_brew",
+   "file": "models/can/can_cold_brew.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.064,
+    0.096,
+    0.064
+   ],
+   "bounds_min": [
+    -0.032,
+    0.0,
+    -0.032
+   ],
+   "bounds_max": [
+    0.032,
+    0.096,
+    0.032
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 50468,
+   "family": "food_can"
+  },
+  {
+   "id": "can_energy_slim",
+   "category": "can",
+   "label": "energy_slim",
+   "file": "models/can/can_energy_slim.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.058,
+    0.136,
+    0.058
+   ],
+   "bounds_min": [
+    -0.029,
+    0.0,
+    -0.029
+   ],
+   "bounds_max": [
+    0.029,
+    0.136,
+    0.029
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 45816,
+   "family": "food_can"
+  },
+  {
+   "id": "can_grape_pop_mini",
+   "category": "can",
+   "label": "grape_pop_mini",
+   "file": "models/can/can_grape_pop_mini.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.052,
+    0.091,
+    0.052
+   ],
+   "bounds_min": [
+    -0.026,
+    0.0,
+    -0.026
+   ],
+   "bounds_max": [
+    0.026,
+    0.091,
+    0.026
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 65296,
+   "family": "food_can"
+  },
+  {
+   "id": "can_lime_fizz",
+   "category": "can",
+   "label": "lime_fizz",
+   "file": "models/can/can_lime_fizz.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.123,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.123,
+    0.033
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 51320,
+   "family": "food_can"
+  },
+  {
+   "id": "can_orange_soda",
+   "category": "can",
+   "label": "orange_soda",
+   "file": "models/can/can_orange_soda.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.07,
+    0.116,
+    0.07
+   ],
+   "bounds_min": [
+    -0.035,
+    0.0,
+    -0.035
+   ],
+   "bounds_max": [
+    0.035,
+    0.116,
+    0.035
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 49528,
+   "family": "food_can"
+  },
+  {
+   "id": "can_sixpack_cola",
+   "category": "can",
+   "label": "sixpack_cola",
+   "file": "models/can/can_sixpack_cola.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.123,
+    0.132
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.066
+   ],
+   "bounds_max": [
+    0.1,
+    0.123,
+    0.066
+   ],
+   "tris": 1200,
+   "top_y": null,
+   "bytes": 62300,
+   "family": "food_can"
+  },
+  {
+   "id": "can_tonic_sleek",
+   "category": "can",
+   "label": "tonic_sleek",
+   "file": "models/can/can_tonic_sleek.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "can"
+   ],
+   "solid": false,
+   "size": [
+    0.054,
+    0.147,
+    0.054
+   ],
+   "bounds_min": [
+    -0.027,
+    0.0,
+    -0.027
+   ],
+   "bounds_max": [
+    0.027,
+    0.147,
+    0.027
+   ],
+   "tris": 1086,
+   "top_y": null,
+   "bytes": 50996,
+   "family": "food_can"
   },
   {
    "id": "capacitor_battery_rack",
@@ -4972,6 +6471,336 @@
    "top_y": null,
    "bytes": 54108,
    "family": "clock"
+  },
+  {
+   "id": "cocktail_beer_mug_foam",
+   "category": "cocktail",
+   "label": "beer_mug_foam",
+   "file": "models/cocktail/cocktail_beer_mug_foam.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.14,
+    0.143,
+    0.094
+   ],
+   "bounds_min": [
+    -0.07,
+    0.0,
+    -0.047
+   ],
+   "bounds_max": [
+    0.07,
+    0.143,
+    0.047
+   ],
+   "tris": 1264,
+   "top_y": null,
+   "bytes": 52856,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_blue_lagoon_hurricane",
+   "category": "cocktail",
+   "label": "blue_lagoon_hurricane",
+   "file": "models/cocktail/cocktail_blue_lagoon_hurricane.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.215,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.215,
+    0.04
+   ],
+   "tris": 1256,
+   "top_y": null,
+   "bytes": 46672,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_champagne_flute",
+   "category": "cocktail",
+   "label": "champagne_flute",
+   "file": "models/cocktail/cocktail_champagne_flute.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.066,
+    0.2,
+    0.066
+   ],
+   "bounds_min": [
+    -0.033,
+    0.0,
+    -0.033
+   ],
+   "bounds_max": [
+    0.033,
+    0.2,
+    0.033
+   ],
+   "tris": 1080,
+   "top_y": null,
+   "bytes": 31480,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_margarita_salt_rim",
+   "category": "cocktail",
+   "label": "margarita_salt_rim",
+   "file": "models/cocktail/cocktail_margarita_salt_rim.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.12,
+    0.163,
+    0.12
+   ],
+   "bounds_min": [
+    -0.06,
+    0.0,
+    -0.06
+   ],
+   "bounds_max": [
+    0.06,
+    0.163,
+    0.06
+   ],
+   "tris": 1376,
+   "top_y": null,
+   "bytes": 91656,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_martini_olive",
+   "category": "cocktail",
+   "label": "martini_olive",
+   "file": "models/cocktail/cocktail_martini_olive.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.098,
+    0.179,
+    0.098
+   ],
+   "bounds_min": [
+    -0.049,
+    0.0,
+    -0.049
+   ],
+   "bounds_max": [
+    0.049,
+    0.179,
+    0.049
+   ],
+   "tris": 800,
+   "top_y": null,
+   "bytes": 25140,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_mojito_mint_highball",
+   "category": "cocktail",
+   "label": "mojito_mint_highball",
+   "file": "models/cocktail/cocktail_mojito_mint_highball.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.078,
+    0.215,
+    0.076
+   ],
+   "bounds_min": [
+    -0.039,
+    0.0,
+    -0.038
+   ],
+   "bounds_max": [
+    0.039,
+    0.215,
+    0.038
+   ],
+   "tris": 1412,
+   "top_y": null,
+   "bytes": 81160,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_old_fashioned_orange",
+   "category": "cocktail",
+   "label": "old_fashioned_orange",
+   "file": "models/cocktail/cocktail_old_fashioned_orange.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.11,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.11,
+    0.04
+   ],
+   "tris": 706,
+   "top_y": null,
+   "bytes": 32540,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_pint_stout",
+   "category": "cocktail",
+   "label": "pint_stout",
+   "file": "models/cocktail/cocktail_pint_stout.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.086,
+    0.155,
+    0.086
+   ],
+   "bounds_min": [
+    -0.043,
+    0.0,
+    -0.043
+   ],
+   "bounds_max": [
+    0.043,
+    0.155,
+    0.043
+   ],
+   "tris": 708,
+   "top_y": null,
+   "bytes": 20828,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_whisky_rocks_tumbler",
+   "category": "cocktail",
+   "label": "whisky_rocks_tumbler",
+   "file": "models/cocktail/cocktail_whisky_rocks_tumbler.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.076,
+    0.085,
+    0.076
+   ],
+   "bounds_min": [
+    -0.038,
+    0.0,
+    -0.038
+   ],
+   "bounds_max": [
+    0.038,
+    0.085,
+    0.038
+   ],
+   "tris": 580,
+   "top_y": null,
+   "bytes": 17356,
+   "family": "food_cocktail"
+  },
+  {
+   "id": "cocktail_wine_glass_red",
+   "category": "cocktail",
+   "label": "wine_glass_red",
+   "file": "models/cocktail/cocktail_wine_glass_red.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink",
+    "glass"
+   ],
+   "solid": false,
+   "size": [
+    0.084,
+    0.195,
+    0.084
+   ],
+   "bounds_min": [
+    -0.042,
+    0.0,
+    -0.042
+   ],
+   "bounds_max": [
+    0.042,
+    0.195,
+    0.042
+   ],
+   "tris": 1016,
+   "top_y": null,
+   "bytes": 24992,
+   "family": "food_cocktail"
   },
   {
    "id": "coil_coil_gantry",
@@ -8910,6 +10739,294 @@
    "family": "cylinders"
   },
   {
+   "id": "deli_butter_dish_and_knife",
+   "category": "deli",
+   "label": "butter_dish_and_knife",
+   "file": "models/deli/deli_butter_dish_and_knife.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.17,
+    0.046,
+    0.142
+   ],
+   "bounds_min": [
+    -0.085,
+    0.0,
+    -0.071
+   ],
+   "bounds_max": [
+    0.085,
+    0.046,
+    0.071
+   ],
+   "tris": 120,
+   "top_y": null,
+   "bytes": 6348,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_charcuterie_board",
+   "category": "deli",
+   "label": "charcuterie_board",
+   "file": "models/deli/deli_charcuterie_board.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.42,
+    0.048,
+    0.28
+   ],
+   "bounds_min": [
+    -0.21,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.21,
+    0.048,
+    0.14
+   ],
+   "tris": 4260,
+   "top_y": 0.02,
+   "bytes": 183612,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_cheese_board",
+   "category": "deli",
+   "label": "cheese_board",
+   "file": "models/deli/deli_cheese_board.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.4,
+    0.06,
+    0.26
+   ],
+   "bounds_min": [
+    -0.2,
+    0.0,
+    -0.13
+   ],
+   "bounds_max": [
+    0.2,
+    0.06,
+    0.13
+   ],
+   "tris": 1368,
+   "top_y": 0.02,
+   "bytes": 87336,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_egg_carton_dozen",
+   "category": "deli",
+   "label": "egg_carton_dozen",
+   "file": "models/deli/deli_egg_carton_dozen.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.31,
+    0.152,
+    0.212
+   ],
+   "bounds_min": [
+    -0.155,
+    0.0,
+    -0.106
+   ],
+   "bounds_max": [
+    0.155,
+    0.152,
+    0.106
+   ],
+   "tris": 3592,
+   "top_y": null,
+   "bytes": 116604,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_ham_leg_stand",
+   "category": "deli",
+   "label": "ham_leg_stand",
+   "file": "models/deli/deli_ham_leg_stand.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.504,
+    0.214,
+    0.2
+   ],
+   "bounds_min": [
+    -0.252,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.252,
+    0.214,
+    0.1
+   ],
+   "tris": 1460,
+   "top_y": 0.06,
+   "bytes": 67096,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_honey_pot_dipper",
+   "category": "deli",
+   "label": "honey_pot_dipper",
+   "file": "models/deli/deli_honey_pot_dipper.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.114,
+    0.14,
+    0.114
+   ],
+   "bounds_min": [
+    -0.057,
+    0.0,
+    -0.057
+   ],
+   "bounds_max": [
+    0.057,
+    0.14,
+    0.057
+   ],
+   "tris": 1106,
+   "top_y": null,
+   "bytes": 44724,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_jam_jars_trio",
+   "category": "deli",
+   "label": "jam_jars_trio",
+   "file": "models/deli/deli_jam_jars_trio.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.234,
+    0.123,
+    0.068
+   ],
+   "bounds_min": [
+    -0.117,
+    0.0,
+    -0.034
+   ],
+   "bounds_max": [
+    0.117,
+    0.123,
+    0.034
+   ],
+   "tris": 1656,
+   "top_y": null,
+   "bytes": 69600,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_parmesan_wheel_wedge",
+   "category": "deli",
+   "label": "parmesan_wheel_wedge",
+   "file": "models/deli/deli_parmesan_wheel_wedge.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.566,
+    0.12,
+    0.372
+   ],
+   "bounds_min": [
+    -0.283,
+    0.0,
+    -0.186
+   ],
+   "bounds_max": [
+    0.283,
+    0.12,
+    0.186
+   ],
+   "tris": 528,
+   "top_y": 0.12,
+   "bytes": 38980,
+   "family": "food_deli"
+  },
+  {
+   "id": "deli_sausage_plate",
+   "category": "deli",
+   "label": "sausage_plate",
+   "file": "models/deli/deli_sausage_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "deli"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.044,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.044,
+    0.15
+   ],
+   "tris": 1746,
+   "top_y": null,
+   "bytes": 53928,
+   "family": "food_deli"
+  },
+  {
    "id": "desk_computer_desk",
    "category": "desk",
    "label": "computer desk",
@@ -9228,6 +11345,326 @@
    "top_y": 0.76,
    "bytes": 22888,
    "family": "crew_desk_floor"
+  },
+  {
+   "id": "dessert_brownie_stack",
+   "category": "dessert",
+   "label": "brownie_stack",
+   "file": "models/dessert/dessert_brownie_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.101,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.101,
+    0.1
+   ],
+   "tris": 1060,
+   "top_y": null,
+   "bytes": 64252,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_cheesecake_slice",
+   "category": "dessert",
+   "label": "cheesecake_slice",
+   "file": "models/dessert/dessert_cheesecake_slice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.08,
+    0.1
+   ],
+   "tris": 1128,
+   "top_y": null,
+   "bytes": 95592,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_chocolate_bar_open",
+   "category": "dessert",
+   "label": "chocolate_bar_open",
+   "file": "models/dessert/dessert_chocolate_bar_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.206,
+    0.034,
+    0.074
+   ],
+   "bounds_min": [
+    -0.103,
+    0.0,
+    -0.037
+   ],
+   "bounds_max": [
+    0.103,
+    0.034,
+    0.037
+   ],
+   "tris": 320,
+   "top_y": null,
+   "bytes": 21756,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_creme_caramel",
+   "category": "dessert",
+   "label": "creme_caramel",
+   "file": "models/dessert/dessert_creme_caramel.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.18,
+    0.063,
+    0.178
+   ],
+   "bounds_min": [
+    -0.09,
+    0.0,
+    -0.089
+   ],
+   "bounds_max": [
+    0.09,
+    0.063,
+    0.089
+   ],
+   "tris": 1006,
+   "top_y": null,
+   "bytes": 25964,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_fruit_tart",
+   "category": "dessert",
+   "label": "fruit_tart",
+   "file": "models/dessert/dessert_fruit_tart.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.206,
+    0.049,
+    0.206
+   ],
+   "bounds_min": [
+    -0.103,
+    0.0,
+    -0.103
+   ],
+   "bounds_max": [
+    0.103,
+    0.049,
+    0.103
+   ],
+   "tris": 2928,
+   "top_y": null,
+   "bytes": 133972,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_ice_cream_cone_double",
+   "category": "dessert",
+   "label": "ice_cream_cone_double",
+   "file": "models/dessert/dessert_ice_cream_cone_double.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.256,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.256,
+    0.04
+   ],
+   "tris": 2004,
+   "top_y": null,
+   "bytes": 78068,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_jelly_mould",
+   "category": "dessert",
+   "label": "jelly_mould",
+   "file": "models/dessert/dessert_jelly_mould.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.093,
+    0.198
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.099
+   ],
+   "bounds_max": [
+    0.1,
+    0.093,
+    0.099
+   ],
+   "tris": 1196,
+   "top_y": null,
+   "bytes": 60272,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_macarons_plate",
+   "category": "dessert",
+   "label": "macarons_plate",
+   "file": "models/dessert/dessert_macarons_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.023,
+    0.2
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.1,
+    0.023,
+    0.1
+   ],
+   "tris": 2912,
+   "top_y": null,
+   "bytes": 74812,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_sundae_glass",
+   "category": "dessert",
+   "label": "sundae_glass",
+   "file": "models/dessert/dessert_sundae_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.132,
+    0.277,
+    0.118
+   ],
+   "bounds_min": [
+    -0.066,
+    0.0,
+    -0.059
+   ],
+   "bounds_max": [
+    0.066,
+    0.277,
+    0.059
+   ],
+   "tris": 2236,
+   "top_y": null,
+   "bytes": 91564,
+   "family": "food_dessert"
+  },
+  {
+   "id": "dessert_tiramisu_cup",
+   "category": "dessert",
+   "label": "tiramisu_cup",
+   "file": "models/dessert/dessert_tiramisu_cup.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "dessert"
+   ],
+   "solid": false,
+   "size": [
+    0.102,
+    0.106,
+    0.08
+   ],
+   "bounds_min": [
+    -0.051,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.051,
+    0.106,
+    0.04
+   ],
+   "tris": 792,
+   "top_y": null,
+   "bytes": 27096,
+   "family": "food_dessert"
   },
   {
    "id": "display_alert_board",
@@ -10636,6 +13073,550 @@
    "top_y": 2.8,
    "bytes": 43868,
    "family": "doorframe_fam"
+  },
+  {
+   "id": "drink_bubble_tea_cup",
+   "category": "drink",
+   "label": "bubble_tea_cup",
+   "file": "models/drink/drink_bubble_tea_cup.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.086,
+    0.255,
+    0.086
+   ],
+   "bounds_min": [
+    -0.043,
+    0.0,
+    -0.043
+   ],
+   "bounds_max": [
+    0.043,
+    0.255,
+    0.043
+   ],
+   "tris": 2892,
+   "top_y": null,
+   "bytes": 99244,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_cappuccino_rosetta",
+   "category": "drink",
+   "label": "cappuccino_rosetta",
+   "file": "models/drink/drink_cappuccino_rosetta.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.182,
+    0.076,
+    0.18
+   ],
+   "bounds_min": [
+    -0.091,
+    0.0,
+    -0.09
+   ],
+   "bounds_max": [
+    0.091,
+    0.076,
+    0.09
+   ],
+   "tris": 1774,
+   "top_y": null,
+   "bytes": 95020,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_coffee_pot_and_mugs",
+   "category": "drink",
+   "label": "coffee_pot_and_mugs",
+   "file": "models/drink/drink_coffee_pot_and_mugs.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.312,
+    0.205,
+    0.186
+   ],
+   "bounds_min": [
+    -0.156,
+    0.0,
+    -0.093
+   ],
+   "bounds_max": [
+    0.156,
+    0.205,
+    0.093
+   ],
+   "tris": 2764,
+   "top_y": null,
+   "bytes": 83988,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_espresso_cup_sugar",
+   "category": "drink",
+   "label": "espresso_cup_sugar",
+   "file": "models/drink/drink_espresso_cup_sugar.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.116,
+    0.054,
+    0.116
+   ],
+   "bounds_min": [
+    -0.058,
+    0.0,
+    -0.058
+   ],
+   "bounds_max": [
+    0.058,
+    0.054,
+    0.058
+   ],
+   "tris": 1486,
+   "top_y": null,
+   "bytes": 53584,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_hot_cocoa_mug",
+   "category": "drink",
+   "label": "hot_cocoa_mug",
+   "file": "models/drink/drink_hot_cocoa_mug.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.134,
+    0.095,
+    0.094
+   ],
+   "bounds_min": [
+    -0.067,
+    0.0,
+    -0.047
+   ],
+   "bounds_max": [
+    0.067,
+    0.095,
+    0.047
+   ],
+   "tris": 1482,
+   "top_y": null,
+   "bytes": 51968,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_iced_coffee_glass",
+   "category": "drink",
+   "label": "iced_coffee_glass",
+   "file": "models/drink/drink_iced_coffee_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.08,
+    0.215,
+    0.08
+   ],
+   "bounds_min": [
+    -0.04,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.04,
+    0.215,
+    0.04
+   ],
+   "tris": 900,
+   "top_y": null,
+   "bytes": 26380,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_latte_art_cup",
+   "category": "drink",
+   "label": "latte_art_cup",
+   "file": "models/drink/drink_latte_art_cup.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.072,
+    0.156
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.078
+   ],
+   "bounds_max": [
+    0.079,
+    0.072,
+    0.078
+   ],
+   "tris": 1690,
+   "top_y": null,
+   "bytes": 55900,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_latte_macchiato_glass",
+   "category": "drink",
+   "label": "latte_macchiato_glass",
+   "file": "models/drink/drink_latte_macchiato_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.15,
+    0.18,
+    0.15
+   ],
+   "bounds_min": [
+    -0.075,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.075,
+    0.18,
+    0.075
+   ],
+   "tris": 1268,
+   "top_y": null,
+   "bytes": 50184,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_lemonade_pitcher_set",
+   "category": "drink",
+   "label": "lemonade_pitcher_set",
+   "file": "models/drink/drink_lemonade_pitcher_set.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.258,
+    0.232,
+    0.172
+   ],
+   "bounds_min": [
+    -0.129,
+    0.0,
+    -0.086
+   ],
+   "bounds_max": [
+    0.129,
+    0.232,
+    0.086
+   ],
+   "tris": 2344,
+   "top_y": null,
+   "bytes": 73140,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_mason_jar_green_smoothie",
+   "category": "drink",
+   "label": "mason_jar_green_smoothie",
+   "file": "models/drink/drink_mason_jar_green_smoothie.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.078,
+    0.19,
+    0.078
+   ],
+   "bounds_min": [
+    -0.039,
+    0.0,
+    -0.039
+   ],
+   "bounds_max": [
+    0.039,
+    0.19,
+    0.039
+   ],
+   "tris": 1596,
+   "top_y": null,
+   "bytes": 75336,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_milk_glass_cookies",
+   "category": "drink",
+   "label": "milk_glass_cookies",
+   "file": "models/drink/drink_milk_glass_cookies.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.196,
+    0.11,
+    0.1
+   ],
+   "bounds_min": [
+    -0.098,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.098,
+    0.11,
+    0.05
+   ],
+   "tris": 1232,
+   "top_y": null,
+   "bytes": 77452,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_milkshake_whipped",
+   "category": "drink",
+   "label": "milkshake_whipped",
+   "file": "models/drink/drink_milkshake_whipped.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.094,
+    0.27,
+    0.096
+   ],
+   "bounds_min": [
+    -0.047,
+    0.0,
+    -0.048
+   ],
+   "bounds_max": [
+    0.047,
+    0.27,
+    0.048
+   ],
+   "tris": 1288,
+   "top_y": null,
+   "bytes": 47936,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_orange_juice_glass",
+   "category": "drink",
+   "label": "orange_juice_glass",
+   "file": "models/drink/drink_orange_juice_glass.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.074,
+    0.185,
+    0.072
+   ],
+   "bounds_min": [
+    -0.037,
+    0.0,
+    -0.036
+   ],
+   "bounds_max": [
+    0.037,
+    0.185,
+    0.036
+   ],
+   "tris": 760,
+   "top_y": null,
+   "bytes": 55408,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_smoothie_strawberry_tall",
+   "category": "drink",
+   "label": "smoothie_strawberry_tall",
+   "file": "models/drink/drink_smoothie_strawberry_tall.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.088,
+    0.235,
+    0.08
+   ],
+   "bounds_min": [
+    -0.044,
+    0.0,
+    -0.04
+   ],
+   "bounds_max": [
+    0.044,
+    0.235,
+    0.04
+   ],
+   "tris": 1028,
+   "top_y": null,
+   "bytes": 60328,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_tea_cup_with_bag",
+   "category": "drink",
+   "label": "tea_cup_with_bag",
+   "file": "models/drink/drink_tea_cup_with_bag.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.144,
+    0.076,
+    0.144
+   ],
+   "bounds_min": [
+    -0.072,
+    0.0,
+    -0.072
+   ],
+   "bounds_max": [
+    0.072,
+    0.076,
+    0.072
+   ],
+   "tris": 1438,
+   "top_y": null,
+   "bytes": 35492,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_tea_pot_and_cups",
+   "category": "drink",
+   "label": "tea_pot_and_cups",
+   "file": "models/drink/drink_tea_pot_and_cups.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.358,
+    0.147,
+    0.324
+   ],
+   "bounds_min": [
+    -0.179,
+    0.0,
+    -0.162
+   ],
+   "bounds_max": [
+    0.179,
+    0.147,
+    0.162
+   ],
+   "tris": 4650,
+   "top_y": null,
+   "bytes": 126132,
+   "family": "food_drink"
+  },
+  {
+   "id": "drink_water_glass_ice_lemon",
+   "category": "drink",
+   "label": "water_glass_ice_lemon",
+   "file": "models/drink/drink_water_glass_ice_lemon.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "drink"
+   ],
+   "solid": false,
+   "size": [
+    0.078,
+    0.109,
+    0.072
+   ],
+   "bounds_min": [
+    -0.039,
+    0.0,
+    -0.036
+   ],
+   "bounds_max": [
+    0.039,
+    0.109,
+    0.036
+   ],
+   "tris": 712,
+   "top_y": null,
+   "bytes": 21380,
+   "family": "food_drink"
   },
   {
    "id": "duct_ceiling_round_vent",
@@ -12179,6 +15160,582 @@
    "top_y": 0.98,
    "bytes": 25352,
    "family": "fountain_floor"
+  },
+  {
+   "id": "fruit_apple_green_pair",
+   "category": "fruit",
+   "label": "apple_green_pair",
+   "file": "models/fruit/fruit_apple_green_pair.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.091,
+    0.116
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.058
+   ],
+   "bounds_max": [
+    0.079,
+    0.091,
+    0.058
+   ],
+   "tris": 2178,
+   "top_y": null,
+   "bytes": 80212,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_apple_red_and_slice",
+   "category": "fruit",
+   "label": "apple_red_and_slice",
+   "file": "models/fruit/fruit_apple_red_and_slice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.12,
+    0.08,
+    0.132
+   ],
+   "bounds_min": [
+    -0.06,
+    0.0,
+    -0.066
+   ],
+   "bounds_max": [
+    0.06,
+    0.08,
+    0.066
+   ],
+   "tris": 1322,
+   "top_y": null,
+   "bytes": 67468,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_banana_bunch",
+   "category": "fruit",
+   "label": "banana_bunch",
+   "file": "models/fruit/fruit_banana_bunch.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.13,
+    0.044,
+    0.286
+   ],
+   "bounds_min": [
+    -0.065,
+    0.0,
+    -0.143
+   ],
+   "bounds_max": [
+    0.065,
+    0.044,
+    0.143
+   ],
+   "tris": 724,
+   "top_y": null,
+   "bytes": 42132,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_blueberries_bowl",
+   "category": "fruit",
+   "label": "blueberries_bowl",
+   "file": "models/fruit/fruit_blueberries_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.124,
+    0.064,
+    0.124
+   ],
+   "bounds_min": [
+    -0.062,
+    0.0,
+    -0.062
+   ],
+   "bounds_max": [
+    0.062,
+    0.064,
+    0.062
+   ],
+   "tris": 3888,
+   "top_y": null,
+   "bytes": 141232,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_cherries_stems",
+   "category": "fruit",
+   "label": "cherries_stems",
+   "file": "models/fruit/fruit_cherries_stems.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.082,
+    0.074,
+    0.058
+   ],
+   "bounds_min": [
+    -0.041,
+    0.0,
+    -0.029
+   ],
+   "bounds_max": [
+    0.041,
+    0.074,
+    0.029
+   ],
+   "tris": 1744,
+   "top_y": null,
+   "bytes": 72564,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_coconut_cracked",
+   "category": "fruit",
+   "label": "coconut_cracked",
+   "file": "models/fruit/fruit_coconut_cracked.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.238,
+    0.1,
+    0.136
+   ],
+   "bounds_min": [
+    -0.119,
+    0.0,
+    -0.068
+   ],
+   "bounds_max": [
+    0.119,
+    0.1,
+    0.068
+   ],
+   "tris": 836,
+   "top_y": null,
+   "bytes": 47472,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_grapes_green_vine",
+   "category": "fruit",
+   "label": "grapes_green_vine",
+   "file": "models/fruit/fruit_grapes_green_vine.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.126,
+    0.079,
+    0.108
+   ],
+   "bounds_min": [
+    -0.063,
+    0.0,
+    -0.054
+   ],
+   "bounds_max": [
+    0.063,
+    0.079,
+    0.054
+   ],
+   "tris": 3204,
+   "top_y": null,
+   "bytes": 118476,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_grapes_purple",
+   "category": "fruit",
+   "label": "grapes_purple",
+   "file": "models/fruit/fruit_grapes_purple.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.132,
+    0.076,
+    0.074
+   ],
+   "bounds_min": [
+    -0.066,
+    0.0,
+    -0.037
+   ],
+   "bounds_max": [
+    0.066,
+    0.076,
+    0.037
+   ],
+   "tris": 2668,
+   "top_y": null,
+   "bytes": 104224,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_kiwi_halves",
+   "category": "fruit",
+   "label": "kiwi_halves",
+   "file": "models/fruit/fruit_kiwi_halves.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.142,
+    0.051,
+    0.12
+   ],
+   "bounds_min": [
+    -0.071,
+    0.0,
+    -0.06
+   ],
+   "bounds_max": [
+    0.071,
+    0.051,
+    0.06
+   ],
+   "tris": 1044,
+   "top_y": null,
+   "bytes": 69788,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_lemons_cut",
+   "category": "fruit",
+   "label": "lemons_cut",
+   "file": "models/fruit/fruit_lemons_cut.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.174,
+    0.052,
+    0.136
+   ],
+   "bounds_min": [
+    -0.087,
+    0.0,
+    -0.068
+   ],
+   "bounds_max": [
+    0.087,
+    0.052,
+    0.068
+   ],
+   "tris": 984,
+   "top_y": null,
+   "bytes": 48572,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_mango_hedgehog",
+   "category": "fruit",
+   "label": "mango_hedgehog",
+   "file": "models/fruit/fruit_mango_hedgehog.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.228,
+    0.096,
+    0.102
+   ],
+   "bounds_min": [
+    -0.114,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.114,
+    0.096,
+    0.051
+   ],
+   "tris": 2244,
+   "top_y": null,
+   "bytes": 64676,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_orange_and_half",
+   "category": "fruit",
+   "label": "orange_and_half",
+   "file": "models/fruit/fruit_orange_and_half.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.164,
+    0.07,
+    0.102
+   ],
+   "bounds_min": [
+    -0.082,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.082,
+    0.07,
+    0.051
+   ],
+   "tris": 874,
+   "top_y": null,
+   "bytes": 74896,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_peaches_halved",
+   "category": "fruit",
+   "label": "peaches_halved",
+   "file": "models/fruit/fruit_peaches_halved.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.222,
+    0.076,
+    0.092
+   ],
+   "bounds_min": [
+    -0.111,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.111,
+    0.076,
+    0.046
+   ],
+   "tris": 1340,
+   "top_y": null,
+   "bytes": 43168,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_pear_ripe",
+   "category": "fruit",
+   "label": "pear_ripe",
+   "file": "models/fruit/fruit_pear_ripe.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.154,
+    0.147,
+    0.142
+   ],
+   "bounds_min": [
+    -0.077,
+    0.0,
+    -0.071
+   ],
+   "bounds_max": [
+    0.077,
+    0.147,
+    0.071
+   ],
+   "tris": 2338,
+   "top_y": null,
+   "bytes": 86680,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_pineapple_whole",
+   "category": "fruit",
+   "label": "pineapple_whole",
+   "file": "models/fruit/fruit_pineapple_whole.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.126,
+    0.25,
+    0.102
+   ],
+   "bounds_min": [
+    -0.063,
+    0.0,
+    -0.051
+   ],
+   "bounds_max": [
+    0.063,
+    0.25,
+    0.051
+   ],
+   "tris": 2128,
+   "top_y": null,
+   "bytes": 119164,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_pomegranate_open",
+   "category": "fruit",
+   "label": "pomegranate_open",
+   "file": "models/fruit/fruit_pomegranate_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.178,
+    0.078,
+    0.104
+   ],
+   "bounds_min": [
+    -0.089,
+    0.0,
+    -0.052
+   ],
+   "bounds_max": [
+    0.089,
+    0.078,
+    0.052
+   ],
+   "tris": 2828,
+   "top_y": null,
+   "bytes": 90540,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_strawberries_bowl",
+   "category": "fruit",
+   "label": "strawberries_bowl",
+   "file": "models/fruit/fruit_strawberries_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.14,
+    0.09,
+    0.138
+   ],
+   "bounds_min": [
+    -0.07,
+    0.0,
+    -0.069
+   ],
+   "bounds_max": [
+    0.07,
+    0.09,
+    0.069
+   ],
+   "tris": 8092,
+   "top_y": null,
+   "bytes": 238100,
+   "family": "food_fruit"
+  },
+  {
+   "id": "fruit_watermelon_wedge",
+   "category": "fruit",
+   "label": "watermelon_wedge",
+   "file": "models/fruit/fruit_watermelon_wedge.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "fruit"
+   ],
+   "solid": false,
+   "size": [
+    0.22,
+    0.094,
+    0.052
+   ],
+   "bounds_min": [
+    -0.11,
+    0.0,
+    -0.026
+   ],
+   "bounds_max": [
+    0.11,
+    0.094,
+    0.026
+   ],
+   "tris": 212,
+   "top_y": null,
+   "bytes": 29216,
+   "family": "food_fruit"
   },
   {
    "id": "galley_chest_freezer",
@@ -14283,6 +17840,398 @@
    "top_y": 0.02,
    "bytes": 15892,
    "family": "gen"
+  },
+  {
+   "id": "hanging_chili_ristra",
+   "category": "hanging",
+   "label": "chili_ristra",
+   "file": "models/hanging/hanging_chili_ristra.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.1,
+    0.686,
+    0.043
+   ],
+   "bounds_min": [
+    -0.05,
+    -0.343,
+    -0.0
+   ],
+   "bounds_max": [
+    0.05,
+    0.343,
+    0.043
+   ],
+   "tris": 3105,
+   "top_y": null,
+   "bytes": 95396,
+   "family": "food_hanging"
+  },
+  {
+   "id": "hanging_garlic_braid",
+   "category": "hanging",
+   "label": "garlic_braid",
+   "file": "models/hanging/hanging_garlic_braid.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.12,
+    0.486,
+    0.07
+   ],
+   "bounds_min": [
+    -0.06,
+    -0.243,
+    -0.0
+   ],
+   "bounds_max": [
+    0.06,
+    0.243,
+    0.07
+   ],
+   "tris": 6224,
+   "top_y": null,
+   "bytes": 166440,
+   "family": "food_hanging"
+  },
+  {
+   "id": "hanging_herb_bundles",
+   "category": "hanging",
+   "label": "herb_bundles",
+   "file": "models/hanging/hanging_herb_bundles.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.5,
+    0.316,
+    0.093
+   ],
+   "bounds_min": [
+    -0.25,
+    -0.158,
+    -0.0
+   ],
+   "bounds_max": [
+    0.25,
+    0.158,
+    0.093
+   ],
+   "tris": 3036,
+   "top_y": null,
+   "bytes": 176000,
+   "family": "food_hanging"
+  },
+  {
+   "id": "hanging_sausage_links_hanging",
+   "category": "hanging",
+   "label": "sausage_links_hanging",
+   "file": "models/hanging/hanging_sausage_links_hanging.glb",
+   "mount": "wall",
+   "mount_y": 1.7,
+   "tags": [
+    "food",
+    "hanging"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.38,
+    0.047
+   ],
+   "bounds_min": [
+    -0.15,
+    -0.19,
+    -0.0
+   ],
+   "bounds_max": [
+    0.15,
+    0.19,
+    0.047
+   ],
+   "tris": 2536,
+   "top_y": null,
+   "bytes": 118176,
+   "family": "food_hanging"
+  },
+  {
+   "id": "harvest_crate_cabbages",
+   "category": "harvest",
+   "label": "crate_cabbages",
+   "file": "models/harvest/harvest_crate_cabbages.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.604,
+    0.23,
+    0.416
+   ],
+   "bounds_min": [
+    -0.302,
+    0.0,
+    -0.208
+   ],
+   "bounds_max": [
+    0.302,
+    0.23,
+    0.208
+   ],
+   "tris": 3224,
+   "top_y": 0.02,
+   "bytes": 136868,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_herbs",
+   "category": "harvest",
+   "label": "crate_herbs",
+   "file": "models/harvest/harvest_crate_herbs.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.16,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.16,
+    0.2
+   ],
+   "tris": 3084,
+   "top_y": 0.02,
+   "bytes": 194636,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_lettuce",
+   "category": "harvest",
+   "label": "crate_lettuce",
+   "file": "models/harvest/harvest_crate_lettuce.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.622,
+    0.221,
+    0.498
+   ],
+   "bounds_min": [
+    -0.311,
+    0.0,
+    -0.249
+   ],
+   "bounds_max": [
+    0.311,
+    0.221,
+    0.249
+   ],
+   "tris": 3296,
+   "top_y": 0.02,
+   "bytes": 129244,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_peppers",
+   "category": "harvest",
+   "label": "crate_peppers",
+   "file": "models/harvest/harvest_crate_peppers.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.244,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.244,
+    0.2
+   ],
+   "tris": 2152,
+   "top_y": 0.02,
+   "bytes": 112428,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_potatoes",
+   "category": "harvest",
+   "label": "crate_potatoes",
+   "file": "models/harvest/harvest_crate_potatoes.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.266,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.266,
+    0.2
+   ],
+   "tris": 3320,
+   "top_y": 0.02,
+   "bytes": 114008,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_strawberries",
+   "category": "harvest",
+   "label": "crate_strawberries",
+   "file": "models/harvest/harvest_crate_strawberries.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.16,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.16,
+    0.2
+   ],
+   "tris": 5784,
+   "top_y": 0.02,
+   "bytes": 214648,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_crate_tomatoes",
+   "category": "harvest",
+   "label": "crate_tomatoes",
+   "file": "models/harvest/harvest_crate_tomatoes.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.221,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.221,
+    0.2
+   ],
+   "tris": 4952,
+   "top_y": 0.02,
+   "bytes": 161908,
+   "family": "food_harvest"
+  },
+  {
+   "id": "harvest_tray_mushrooms",
+   "category": "harvest",
+   "label": "tray_mushrooms",
+   "file": "models/harvest/harvest_tray_mushrooms.glb",
+   "mount": "floor",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "hydroponics",
+    "crate"
+   ],
+   "solid": false,
+   "size": [
+    0.6,
+    0.111,
+    0.4
+   ],
+   "bounds_min": [
+    -0.3,
+    0.0,
+    -0.2
+   ],
+   "bounds_max": [
+    0.3,
+    0.111,
+    0.2
+   ],
+   "tris": 4284,
+   "top_y": 0.04,
+   "bytes": 149096,
+   "family": "food_harvest"
   },
   {
    "id": "hatch_dogged_rectangular",
@@ -17131,6 +21080,966 @@
    "top_y": 2.06,
    "bytes": 14824,
    "family": "crew_locker_floor"
+  },
+  {
+   "id": "meal_beef_stew_pot",
+   "category": "meal",
+   "label": "beef_stew_pot",
+   "file": "models/meal/meal_beef_stew_pot.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.29,
+    0.15,
+    0.242
+   ],
+   "bounds_min": [
+    -0.145,
+    0.0,
+    -0.121
+   ],
+   "bounds_max": [
+    0.145,
+    0.15,
+    0.121
+   ],
+   "tris": 3276,
+   "top_y": null,
+   "bytes": 168664,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_burger_with_fries",
+   "category": "meal",
+   "label": "burger_with_fries",
+   "file": "models/meal/meal_burger_with_fries.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.099,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.099,
+    0.14
+   ],
+   "tris": 2856,
+   "top_y": null,
+   "bytes": 138140,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_burrito_plate",
+   "category": "meal",
+   "label": "burrito_plate",
+   "file": "models/meal/meal_burrito_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.07,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.07,
+    0.15
+   ],
+   "tris": 1740,
+   "top_y": null,
+   "bytes": 102108,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_caesar_salad",
+   "category": "meal",
+   "label": "caesar_salad",
+   "file": "models/meal/meal_caesar_salad.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.29,
+    0.052,
+    0.29
+   ],
+   "bounds_min": [
+    -0.145,
+    0.0,
+    -0.145
+   ],
+   "bounds_max": [
+    0.145,
+    0.052,
+    0.145
+   ],
+   "tris": 2244,
+   "top_y": null,
+   "bytes": 99276,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_club_sandwich",
+   "category": "meal",
+   "label": "club_sandwich",
+   "file": "models/meal/meal_club_sandwich.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.098,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.098,
+    0.14
+   ],
+   "tris": 1210,
+   "top_y": null,
+   "bytes": 39540,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_curry_and_rice",
+   "category": "meal",
+   "label": "curry_and_rice",
+   "file": "models/meal/meal_curry_and_rice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.32,
+    0.076,
+    0.32
+   ],
+   "bounds_min": [
+    -0.16,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.16,
+    0.076,
+    0.16
+   ],
+   "tris": 2588,
+   "top_y": 0.02,
+   "bytes": 142892,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_double_cheeseburger",
+   "category": "meal",
+   "label": "double_cheeseburger",
+   "file": "models/meal/meal_double_cheeseburger.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.236,
+    0.159,
+    0.236
+   ],
+   "bounds_min": [
+    -0.118,
+    0.0,
+    -0.118
+   ],
+   "bounds_max": [
+    0.118,
+    0.159,
+    0.118
+   ],
+   "tris": 1904,
+   "top_y": 0.0,
+   "bytes": 111944,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_dumplings_steamer",
+   "category": "meal",
+   "label": "dumplings_steamer",
+   "file": "models/meal/meal_dumplings_steamer.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.298,
+    0.05,
+    0.308
+   ],
+   "bounds_min": [
+    -0.149,
+    0.0,
+    -0.154
+   ],
+   "bounds_max": [
+    0.149,
+    0.05,
+    0.154
+   ],
+   "tris": 2612,
+   "top_y": null,
+   "bytes": 100836,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_fish_and_chips",
+   "category": "meal",
+   "label": "fish_and_chips",
+   "file": "models/meal/meal_fish_and_chips.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.32,
+    0.064,
+    0.32
+   ],
+   "bounds_min": [
+    -0.16,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.16,
+    0.064,
+    0.16
+   ],
+   "tris": 2674,
+   "top_y": null,
+   "bytes": 95180,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_fried_egg_breakfast",
+   "category": "meal",
+   "label": "fried_egg_breakfast",
+   "file": "models/meal/meal_fried_egg_breakfast.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.029,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.029,
+    0.15
+   ],
+   "tris": 1716,
+   "top_y": null,
+   "bytes": 102084,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_fried_rice_bowl",
+   "category": "meal",
+   "label": "fried_rice_bowl",
+   "file": "models/meal/meal_fried_rice_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.21,
+    0.105,
+    0.176
+   ],
+   "bounds_min": [
+    -0.105,
+    0.0,
+    -0.088
+   ],
+   "bounds_max": [
+    0.105,
+    0.105,
+    0.088
+   ],
+   "tris": 3130,
+   "top_y": null,
+   "bytes": 131724,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_hot_dog_mustard",
+   "category": "meal",
+   "label": "hot_dog_mustard",
+   "file": "models/meal/meal_hot_dog_mustard.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.226,
+    0.088,
+    0.15
+   ],
+   "bounds_min": [
+    -0.113,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.113,
+    0.088,
+    0.075
+   ],
+   "tris": 1214,
+   "top_y": null,
+   "bytes": 93348,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_lasagna_slice",
+   "category": "meal",
+   "label": "lasagna_slice",
+   "file": "models/meal/meal_lasagna_slice.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.28,
+    0.069,
+    0.28
+   ],
+   "bounds_min": [
+    -0.14,
+    0.0,
+    -0.14
+   ],
+   "bounds_max": [
+    0.14,
+    0.069,
+    0.14
+   ],
+   "tris": 1196,
+   "top_y": null,
+   "bytes": 58624,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_mac_and_cheese",
+   "category": "meal",
+   "label": "mac_and_cheese",
+   "file": "models/meal/meal_mac_and_cheese.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.19,
+    0.059,
+    0.188
+   ],
+   "bounds_min": [
+    -0.095,
+    0.0,
+    -0.094
+   ],
+   "bounds_max": [
+    0.095,
+    0.059,
+    0.094
+   ],
+   "tris": 4212,
+   "top_y": null,
+   "bytes": 147892,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_maki_platter",
+   "category": "meal",
+   "label": "maki_platter",
+   "file": "models/meal/meal_maki_platter.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.396,
+    0.047,
+    0.21
+   ],
+   "bounds_min": [
+    -0.198,
+    0.0,
+    -0.105
+   ],
+   "bounds_max": [
+    0.198,
+    0.047,
+    0.105
+   ],
+   "tris": 2192,
+   "top_y": null,
+   "bytes": 118876,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_omelette_plate",
+   "category": "meal",
+   "label": "omelette_plate",
+   "file": "models/meal/meal_omelette_plate.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.045,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.045,
+    0.15
+   ],
+   "tris": 2312,
+   "top_y": null,
+   "bytes": 88424,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_paella_pan",
+   "category": "meal",
+   "label": "paella_pan",
+   "file": "models/meal/meal_paella_pan.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.462,
+    0.053,
+    0.36
+   ],
+   "bounds_min": [
+    -0.231,
+    0.0,
+    -0.18
+   ],
+   "bounds_max": [
+    0.231,
+    0.053,
+    0.18
+   ],
+   "tris": 3420,
+   "top_y": 0.02,
+   "bytes": 128228,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_pho_bowl",
+   "category": "meal",
+   "label": "pho_bowl",
+   "file": "models/meal/meal_pho_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.256,
+    0.112,
+    0.23
+   ],
+   "bounds_min": [
+    -0.128,
+    0.0,
+    -0.115
+   ],
+   "bounds_max": [
+    0.128,
+    0.112,
+    0.115
+   ],
+   "tris": 5030,
+   "top_y": 0.08,
+   "bytes": 213212,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_pizza_margherita",
+   "category": "meal",
+   "label": "pizza_margherita",
+   "file": "models/meal/meal_pizza_margherita.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.336,
+    0.027,
+    0.336
+   ],
+   "bounds_min": [
+    -0.168,
+    0.0,
+    -0.168
+   ],
+   "bounds_max": [
+    0.168,
+    0.027,
+    0.168
+   ],
+   "tris": 2612,
+   "top_y": 0.02,
+   "bytes": 137000,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_pizza_pepperoni",
+   "category": "meal",
+   "label": "pizza_pepperoni",
+   "file": "models/meal/meal_pizza_pepperoni.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.33,
+    0.021,
+    0.33
+   ],
+   "bounds_min": [
+    -0.165,
+    0.0,
+    -0.165
+   ],
+   "bounds_max": [
+    0.165,
+    0.021,
+    0.165
+   ],
+   "tris": 3756,
+   "top_y": 0.02,
+   "bytes": 180608,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_porridge_bowl",
+   "category": "meal",
+   "label": "porridge_bowl",
+   "file": "models/meal/meal_porridge_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.19,
+    0.08,
+    0.17
+   ],
+   "bounds_min": [
+    -0.095,
+    0.0,
+    -0.085
+   ],
+   "bounds_max": [
+    0.095,
+    0.08,
+    0.085
+   ],
+   "tris": 3104,
+   "top_y": null,
+   "bytes": 101388,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_ramen_bowl",
+   "category": "meal",
+   "label": "ramen_bowl",
+   "file": "models/meal/meal_ramen_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.238,
+    0.145,
+    0.21
+   ],
+   "bounds_min": [
+    -0.119,
+    0.0,
+    -0.105
+   ],
+   "bounds_max": [
+    0.119,
+    0.145,
+    0.105
+   ],
+   "tris": 6860,
+   "top_y": null,
+   "bytes": 264868,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_roast_chicken",
+   "category": "meal",
+   "label": "roast_chicken",
+   "file": "models/meal/meal_roast_chicken.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.4,
+    0.144,
+    0.276
+   ],
+   "bounds_min": [
+    -0.2,
+    0.0,
+    -0.138
+   ],
+   "bounds_max": [
+    0.2,
+    0.144,
+    0.138
+   ],
+   "tris": 4848,
+   "top_y": 0.02,
+   "bytes": 191284,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_salad_bowl_wood",
+   "category": "meal",
+   "label": "salad_bowl_wood",
+   "file": "models/meal/meal_salad_bowl_wood.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.129,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.129,
+    0.15
+   ],
+   "tris": 4712,
+   "top_y": null,
+   "bytes": 225328,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_shepherds_pie_dish",
+   "category": "meal",
+   "label": "shepherds_pie_dish",
+   "file": "models/meal/meal_shepherds_pie_dish.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.2,
+    0.07,
+    0.15
+   ],
+   "bounds_min": [
+    -0.1,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.1,
+    0.07,
+    0.075
+   ],
+   "tris": 1128,
+   "top_y": null,
+   "bytes": 30700,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_spaghetti_bolognese",
+   "category": "meal",
+   "label": "spaghetti_bolognese",
+   "file": "models/meal/meal_spaghetti_bolognese.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.29,
+    0.074,
+    0.29
+   ],
+   "bounds_min": [
+    -0.145,
+    0.0,
+    -0.145
+   ],
+   "bounds_max": [
+    0.145,
+    0.074,
+    0.145
+   ],
+   "tris": 3256,
+   "top_y": null,
+   "bytes": 133864,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_steak_dinner",
+   "category": "meal",
+   "label": "steak_dinner",
+   "file": "models/meal/meal_steak_dinner.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.056,
+    0.3
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.15
+   ],
+   "bounds_max": [
+    0.15,
+    0.056,
+    0.15
+   ],
+   "tris": 2492,
+   "top_y": null,
+   "bytes": 104688,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_sushi_nigiri_set",
+   "category": "meal",
+   "label": "sushi_nigiri_set",
+   "file": "models/meal/meal_sushi_nigiri_set.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.052,
+    0.13
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.065
+   ],
+   "bounds_max": [
+    0.15,
+    0.052,
+    0.065
+   ],
+   "tris": 2060,
+   "top_y": null,
+   "bytes": 99176,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_tacos_trio",
+   "category": "meal",
+   "label": "tacos_trio",
+   "file": "models/meal/meal_tacos_trio.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.324,
+    0.085,
+    0.13
+   ],
+   "bounds_min": [
+    -0.162,
+    0.0,
+    -0.065
+   ],
+   "bounds_max": [
+    0.162,
+    0.085,
+    0.065
+   ],
+   "tris": 1064,
+   "top_y": null,
+   "bytes": 59568,
+   "family": "food_meal"
+  },
+  {
+   "id": "meal_tomato_soup_bowl",
+   "category": "meal",
+   "label": "tomato_soup_bowl",
+   "file": "models/meal/meal_tomato_soup_bowl.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "meal"
+   ],
+   "solid": false,
+   "size": [
+    0.21,
+    0.07,
+    0.208
+   ],
+   "bounds_min": [
+    -0.105,
+    0.0,
+    -0.104
+   ],
+   "bounds_max": [
+    0.105,
+    0.07,
+    0.104
+   ],
+   "tris": 2184,
+   "top_y": null,
+   "bytes": 75440,
+   "family": "food_meal"
   },
   {
    "id": "medbed_diagnostic_biobed",
@@ -22094,6 +27003,422 @@
    "top_y": 0.8,
    "bytes": 41808,
    "family": "railing_fam"
+  },
+  {
+   "id": "ration_bento_ration_box",
+   "category": "ration",
+   "label": "bento_ration_box",
+   "file": "models/ration/ration_bento_ration_box.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.24,
+    0.051,
+    0.374
+   ],
+   "bounds_min": [
+    -0.12,
+    0.0,
+    -0.187
+   ],
+   "bounds_max": [
+    0.12,
+    0.051,
+    0.187
+   ],
+   "tris": 1292,
+   "top_y": 0.02,
+   "bytes": 111880,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_canned_beans_open",
+   "category": "ration",
+   "label": "canned_beans_open",
+   "file": "models/ration/ration_canned_beans_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.232,
+    0.141,
+    0.11
+   ],
+   "bounds_min": [
+    -0.116,
+    0.0,
+    -0.055
+   ],
+   "bounds_max": [
+    0.116,
+    0.141,
+    0.055
+   ],
+   "tris": 684,
+   "top_y": null,
+   "bytes": 40624,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_cup_noodle_instant",
+   "category": "ration",
+   "label": "cup_noodle_instant",
+   "file": "models/ration/ration_cup_noodle_instant.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.144,
+    0.108,
+    0.092
+   ],
+   "bounds_min": [
+    -0.072,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.072,
+    0.108,
+    0.046
+   ],
+   "tris": 564,
+   "top_y": null,
+   "bytes": 34648,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_freeze_dried_tray",
+   "category": "ration",
+   "label": "freeze_dried_tray",
+   "file": "models/ration/ration_freeze_dried_tray.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.242,
+    0.041,
+    0.16
+   ],
+   "bounds_min": [
+    -0.121,
+    0.0,
+    -0.08
+   ],
+   "bounds_max": [
+    0.121,
+    0.041,
+    0.08
+   ],
+   "tris": 724,
+   "top_y": null,
+   "bytes": 68092,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_mre_tray_pasta",
+   "category": "ration",
+   "label": "mre_tray_pasta",
+   "file": "models/ration/ration_mre_tray_pasta.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.314,
+    0.046,
+    0.232
+   ],
+   "bounds_min": [
+    -0.157,
+    0.0,
+    -0.116
+   ],
+   "bounds_max": [
+    0.157,
+    0.046,
+    0.116
+   ],
+   "tris": 824,
+   "top_y": null,
+   "bytes": 49880,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_nutrient_tubes_set",
+   "category": "ration",
+   "label": "nutrient_tubes_set",
+   "file": "models/ration/ration_nutrient_tubes_set.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.156,
+    0.107,
+    0.124
+   ],
+   "bounds_min": [
+    -0.078,
+    0.0,
+    -0.062
+   ],
+   "bounds_max": [
+    0.078,
+    0.107,
+    0.062
+   ],
+   "tris": 684,
+   "top_y": null,
+   "bytes": 49712,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_pouch_beef_stew",
+   "category": "ration",
+   "label": "pouch_beef_stew",
+   "file": "models/ration/ration_pouch_beef_stew.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.185,
+    0.094
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.047
+   ],
+   "bounds_max": [
+    0.15,
+    0.185,
+    0.047
+   ],
+   "tris": 96,
+   "top_y": null,
+   "bytes": 24240,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_pouch_fruit_puree_spout",
+   "category": "ration",
+   "label": "pouch_fruit_puree_spout",
+   "file": "models/ration/ration_pouch_fruit_puree_spout.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.192,
+    0.165,
+    0.05
+   ],
+   "bounds_min": [
+    -0.096,
+    0.0,
+    -0.025
+   ],
+   "bounds_max": [
+    0.096,
+    0.165,
+    0.025
+   ],
+   "tris": 252,
+   "top_y": null,
+   "bytes": 42624,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_pouch_vegetable_flat",
+   "category": "ration",
+   "label": "pouch_vegetable_flat",
+   "file": "models/ration/ration_pouch_vegetable_flat.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.236,
+    0.069,
+    0.2
+   ],
+   "bounds_min": [
+    -0.118,
+    0.0,
+    -0.1
+   ],
+   "bounds_max": [
+    0.118,
+    0.069,
+    0.1
+   ],
+   "tris": 128,
+   "top_y": null,
+   "bytes": 30288,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_protein_bars_stack",
+   "category": "ration",
+   "label": "protein_bars_stack",
+   "file": "models/ration/ration_protein_bars_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.198,
+    0.055,
+    0.15
+   ],
+   "bounds_min": [
+    -0.099,
+    0.0,
+    -0.075
+   ],
+   "bounds_max": [
+    0.099,
+    0.055,
+    0.075
+   ],
+   "tris": 576,
+   "top_y": null,
+   "bytes": 94672,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_ration_boxes_stacked",
+   "category": "ration",
+   "label": "ration_boxes_stacked",
+   "file": "models/ration/ration_ration_boxes_stacked.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.352,
+    0.301,
+    0.24
+   ],
+   "bounds_min": [
+    -0.176,
+    0.0,
+    -0.12
+   ],
+   "bounds_max": [
+    0.176,
+    0.301,
+    0.12
+   ],
+   "tris": 288,
+   "top_y": 0.3,
+   "bytes": 24468,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_ration_brick_pack",
+   "category": "ration",
+   "label": "ration_brick_pack",
+   "file": "models/ration/ration_ration_brick_pack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.152,
+    0.056,
+    0.19
+   ],
+   "bounds_min": [
+    -0.076,
+    0.0,
+    -0.095
+   ],
+   "bounds_max": [
+    0.076,
+    0.056,
+    0.095
+   ],
+   "tris": 192,
+   "top_y": null,
+   "bytes": 24744,
+   "family": "food_ration"
+  },
+  {
+   "id": "ration_water_pouches_stack",
+   "category": "ration",
+   "label": "water_pouches_stack",
+   "file": "models/ration/ration_water_pouches_stack.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "ration"
+   ],
+   "solid": false,
+   "size": [
+    0.192,
+    0.191,
+    0.188
+   ],
+   "bounds_min": [
+    -0.096,
+    0.0,
+    -0.094
+   ],
+   "bounds_max": [
+    0.096,
+    0.191,
+    0.094
+   ],
+   "tris": 228,
+   "top_y": null,
+   "bytes": 22484,
+   "family": "food_ration"
   },
   {
    "id": "reactor_auxiliary_reactor",
@@ -29144,6 +34469,390 @@
    "family": "toolbox"
   },
   {
+   "id": "tray_bread_basket_wicker",
+   "category": "tray",
+   "label": "bread_basket_wicker",
+   "file": "models/tray/tray_bread_basket_wicker.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.306,
+    0.089,
+    0.306
+   ],
+   "bounds_min": [
+    -0.153,
+    0.0,
+    -0.153
+   ],
+   "bounds_max": [
+    0.153,
+    0.089,
+    0.153
+   ],
+   "tris": 2384,
+   "top_y": null,
+   "bytes": 103024,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_breakfast_tray_wood",
+   "category": "tray",
+   "label": "breakfast_tray_wood",
+   "file": "models/tray/tray_breakfast_tray_wood.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.5,
+    0.135,
+    0.34
+   ],
+   "bounds_min": [
+    -0.25,
+    0.0,
+    -0.17
+   ],
+   "bounds_max": [
+    0.25,
+    0.135,
+    0.17
+   ],
+   "tris": 2632,
+   "top_y": 0.02,
+   "bytes": 159072,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_cake_stand_afternoon_tea",
+   "category": "tray",
+   "label": "cake_stand_afternoon_tea",
+   "file": "models/tray/tray_cake_stand_afternoon_tea.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.308,
+    0.422,
+    0.306
+   ],
+   "bounds_min": [
+    -0.154,
+    0.0,
+    -0.153
+   ],
+   "bounds_max": [
+    0.154,
+    0.422,
+    0.153
+   ],
+   "tris": 3307,
+   "top_y": 0.0,
+   "bytes": 140480,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_cloche_hot_dish",
+   "category": "tray",
+   "label": "cloche_hot_dish",
+   "file": "models/tray/tray_cloche_hot_dish.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.3,
+    0.175,
+    0.298
+   ],
+   "bounds_min": [
+    -0.15,
+    0.0,
+    -0.149
+   ],
+   "bounds_max": [
+    0.15,
+    0.175,
+    0.149
+   ],
+   "tris": 2466,
+   "top_y": null,
+   "bytes": 97764,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_coffee_set_tray",
+   "category": "tray",
+   "label": "coffee_set_tray",
+   "file": "models/tray/tray_coffee_set_tray.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.46,
+    0.217,
+    0.32
+   ],
+   "bounds_min": [
+    -0.23,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.23,
+    0.217,
+    0.16
+   ],
+   "tris": 4538,
+   "top_y": 0.02,
+   "bytes": 144468,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_drinks_tray_round",
+   "category": "tray",
+   "label": "drinks_tray_round",
+   "file": "models/tray/tray_drinks_tray_round.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.328,
+    0.166,
+    0.328
+   ],
+   "bounds_min": [
+    -0.164,
+    0.0,
+    -0.164
+   ],
+   "bounds_max": [
+    0.164,
+    0.166,
+    0.164
+   ],
+   "tris": 2626,
+   "top_y": 0.0,
+   "bytes": 66896,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_fruit_bowl_mixed",
+   "category": "tray",
+   "label": "fruit_bowl_mixed",
+   "file": "models/tray/tray_fruit_bowl_mixed.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.34,
+    0.15,
+    0.338
+   ],
+   "bounds_min": [
+    -0.17,
+    0.0,
+    -0.169
+   ],
+   "bounds_max": [
+    0.17,
+    0.15,
+    0.169
+   ],
+   "tris": 3270,
+   "top_y": null,
+   "bytes": 180368,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_hotel_pan_mash_gravy",
+   "category": "tray",
+   "label": "hotel_pan_mash_gravy",
+   "file": "models/tray/tray_hotel_pan_mash_gravy.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.562,
+    0.077,
+    0.366
+   ],
+   "bounds_min": [
+    -0.281,
+    0.0,
+    -0.183
+   ],
+   "bounds_max": [
+    0.281,
+    0.077,
+    0.183
+   ],
+   "tris": 1280,
+   "top_y": 0.06,
+   "bytes": 62944,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_hotel_pan_roast_veg",
+   "category": "tray",
+   "label": "hotel_pan_roast_veg",
+   "file": "models/tray/tray_hotel_pan_roast_veg.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.562,
+    0.093,
+    0.386
+   ],
+   "bounds_min": [
+    -0.281,
+    0.0,
+    -0.193
+   ],
+   "bounds_max": [
+    0.281,
+    0.093,
+    0.193
+   ],
+   "tris": 2942,
+   "top_y": 0.02,
+   "bytes": 155332,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_meal_tray_brig",
+   "category": "tray",
+   "label": "meal_tray_brig",
+   "file": "models/tray/tray_meal_tray_brig.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.38,
+    0.054,
+    0.29
+   ],
+   "bounds_min": [
+    -0.19,
+    0.0,
+    -0.145
+   ],
+   "bounds_max": [
+    0.19,
+    0.054,
+    0.145
+   ],
+   "tris": 1016,
+   "top_y": 0.0,
+   "bytes": 84740,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_meal_tray_steel",
+   "category": "tray",
+   "label": "meal_tray_steel",
+   "file": "models/tray/tray_meal_tray_steel.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.464,
+    0.11,
+    0.306
+   ],
+   "bounds_min": [
+    -0.232,
+    0.0,
+    -0.153
+   ],
+   "bounds_max": [
+    0.232,
+    0.11,
+    0.153
+   ],
+   "tris": 2016,
+   "top_y": 0.02,
+   "bytes": 127768,
+   "family": "food_tray"
+  },
+  {
+   "id": "tray_soup_tureen_ladle",
+   "category": "tray",
+   "label": "soup_tureen_ladle",
+   "file": "models/tray/tray_soup_tureen_ladle.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "tray"
+   ],
+   "solid": false,
+   "size": [
+    0.454,
+    0.214,
+    0.32
+   ],
+   "bounds_min": [
+    -0.227,
+    0.0,
+    -0.16
+   ],
+   "bounds_max": [
+    0.227,
+    0.214,
+    0.16
+   ],
+   "tris": 1920,
+   "top_y": null,
+   "bytes": 56340,
+   "family": "food_tray"
+  },
+  {
    "id": "turbine_axial_compressor",
    "category": "turbine",
    "label": "Axial Compressor",
@@ -29886,6 +35595,614 @@
    "top_y": 0.08,
    "bytes": 65940,
    "family": "gen"
+  },
+  {
+   "id": "veg_asparagus_bundle",
+   "category": "veg",
+   "label": "asparagus_bundle",
+   "file": "models/veg/veg_asparagus_bundle.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.264,
+    0.014,
+    0.1
+   ],
+   "bounds_min": [
+    -0.132,
+    0.0,
+    -0.05
+   ],
+   "bounds_max": [
+    0.132,
+    0.014,
+    0.05
+   ],
+   "tris": 1222,
+   "top_y": null,
+   "bytes": 61304,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_aubergine_pair",
+   "category": "veg",
+   "label": "aubergine_pair",
+   "file": "models/veg/veg_aubergine_pair.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.178,
+    0.263,
+    0.092
+   ],
+   "bounds_min": [
+    -0.089,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.089,
+    0.263,
+    0.046
+   ],
+   "tris": 2120,
+   "top_y": null,
+   "bytes": 60992,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_bell_peppers_trio",
+   "category": "veg",
+   "label": "bell_peppers_trio",
+   "file": "models/veg/veg_bell_peppers_trio.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.226,
+    0.118,
+    0.19
+   ],
+   "bounds_min": [
+    -0.113,
+    0.0,
+    -0.095
+   ],
+   "bounds_max": [
+    0.113,
+    0.118,
+    0.095
+   ],
+   "tris": 3450,
+   "top_y": null,
+   "bytes": 90268,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_broccoli_cauliflower",
+   "category": "veg",
+   "label": "broccoli_cauliflower",
+   "file": "models/veg/veg_broccoli_cauliflower.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.22,
+    0.106,
+    0.124
+   ],
+   "bounds_min": [
+    -0.11,
+    0.0,
+    -0.062
+   ],
+   "bounds_max": [
+    0.11,
+    0.106,
+    0.062
+   ],
+   "tris": 4432,
+   "top_y": null,
+   "bytes": 138040,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_cabbage_green",
+   "category": "veg",
+   "label": "cabbage_green",
+   "file": "models/veg/veg_cabbage_green.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.258,
+    0.162,
+    0.264
+   ],
+   "bounds_min": [
+    -0.129,
+    0.0,
+    -0.132
+   ],
+   "bounds_max": [
+    0.129,
+    0.162,
+    0.132
+   ],
+   "tris": 1404,
+   "top_y": null,
+   "bytes": 60324,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_cabbage_red_halved",
+   "category": "veg",
+   "label": "cabbage_red_halved",
+   "file": "models/veg/veg_cabbage_red_halved.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.362,
+    0.16,
+    0.168
+   ],
+   "bounds_min": [
+    -0.181,
+    0.0,
+    -0.084
+   ],
+   "bounds_max": [
+    0.181,
+    0.16,
+    0.084
+   ],
+   "tris": 1656,
+   "top_y": null,
+   "bytes": 70864,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_carrots_bunch",
+   "category": "veg",
+   "label": "carrots_bunch",
+   "file": "models/veg/veg_carrots_bunch.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.308,
+    0.039,
+    0.222
+   ],
+   "bounds_min": [
+    -0.154,
+    0.0,
+    -0.111
+   ],
+   "bounds_max": [
+    0.154,
+    0.039,
+    0.111
+   ],
+   "tris": 2986,
+   "top_y": null,
+   "bytes": 126068,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_chili_peppers_pile",
+   "category": "veg",
+   "label": "chili_peppers_pile",
+   "file": "models/veg/veg_chili_peppers_pile.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.112,
+    0.048,
+    0.028
+   ],
+   "bounds_min": [
+    -0.056,
+    0.0,
+    -0.014
+   ],
+   "bounds_max": [
+    0.056,
+    0.048,
+    0.014
+   ],
+   "tris": 1053,
+   "top_y": null,
+   "bytes": 43316,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_corn_cobs",
+   "category": "veg",
+   "label": "corn_cobs",
+   "file": "models/veg/veg_corn_cobs.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.288,
+    0.084,
+    0.14
+   ],
+   "bounds_min": [
+    -0.144,
+    0.0,
+    -0.07
+   ],
+   "bounds_max": [
+    0.144,
+    0.084,
+    0.07
+   ],
+   "tris": 2120,
+   "top_y": null,
+   "bytes": 100620,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_cucumbers_sliced",
+   "category": "veg",
+   "label": "cucumbers_sliced",
+   "file": "models/veg/veg_cucumbers_sliced.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.22,
+    0.043,
+    0.114
+   ],
+   "bounds_min": [
+    -0.11,
+    0.0,
+    -0.057
+   ],
+   "bounds_max": [
+    0.11,
+    0.043,
+    0.057
+   ],
+   "tris": 1900,
+   "top_y": null,
+   "bytes": 64688,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_garlic_bulbs",
+   "category": "veg",
+   "label": "garlic_bulbs",
+   "file": "models/veg/veg_garlic_bulbs.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.186,
+    0.075,
+    0.092
+   ],
+   "bounds_min": [
+    -0.093,
+    0.0,
+    -0.046
+   ],
+   "bounds_max": [
+    0.093,
+    0.075,
+    0.046
+   ],
+   "tris": 2956,
+   "top_y": null,
+   "bytes": 82500,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_lettuce_heads",
+   "category": "veg",
+   "label": "lettuce_heads",
+   "file": "models/veg/veg_lettuce_heads.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.364,
+    0.09,
+    0.238
+   ],
+   "bounds_min": [
+    -0.182,
+    0.0,
+    -0.119
+   ],
+   "bounds_max": [
+    0.182,
+    0.09,
+    0.119
+   ],
+   "tris": 2088,
+   "top_y": null,
+   "bytes": 129576,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_mushrooms_brown_white",
+   "category": "veg",
+   "label": "mushrooms_brown_white",
+   "file": "models/veg/veg_mushrooms_brown_white.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.158,
+    0.051,
+    0.146
+   ],
+   "bounds_min": [
+    -0.079,
+    0.0,
+    -0.073
+   ],
+   "bounds_max": [
+    0.079,
+    0.051,
+    0.073
+   ],
+   "tris": 3360,
+   "top_y": null,
+   "bytes": 109960,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_onions_assorted",
+   "category": "veg",
+   "label": "onions_assorted",
+   "file": "models/veg/veg_onions_assorted.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.228,
+    0.1,
+    0.176
+   ],
+   "bounds_min": [
+    -0.114,
+    0.0,
+    -0.088
+   ],
+   "bounds_max": [
+    0.114,
+    0.1,
+    0.088
+   ],
+   "tris": 3474,
+   "top_y": null,
+   "bytes": 109856,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_pea_pods_open",
+   "category": "veg",
+   "label": "pea_pods_open",
+   "file": "models/veg/veg_pea_pods_open.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.172,
+    0.028,
+    0.112
+   ],
+   "bounds_min": [
+    -0.086,
+    0.0,
+    -0.056
+   ],
+   "bounds_max": [
+    0.086,
+    0.028,
+    0.056
+   ],
+   "tris": 1280,
+   "top_y": null,
+   "bytes": 49996,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_potatoes_pile",
+   "category": "veg",
+   "label": "potatoes_pile",
+   "file": "models/veg/veg_potatoes_pile.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.298,
+    0.109,
+    0.252
+   ],
+   "bounds_min": [
+    -0.149,
+    0.0,
+    -0.126
+   ],
+   "bounds_max": [
+    0.149,
+    0.109,
+    0.126
+   ],
+   "tris": 2304,
+   "top_y": null,
+   "bytes": 83260,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_pumpkin_ribbed",
+   "category": "veg",
+   "label": "pumpkin_ribbed",
+   "file": "models/veg/veg_pumpkin_ribbed.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.286,
+    0.242,
+    0.272
+   ],
+   "bounds_min": [
+    -0.143,
+    0.0,
+    -0.136
+   ],
+   "bounds_max": [
+    0.143,
+    0.242,
+    0.136
+   ],
+   "tris": 1840,
+   "top_y": null,
+   "bytes": 56540,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_radish_bunch",
+   "category": "veg",
+   "label": "radish_bunch",
+   "file": "models/veg/veg_radish_bunch.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.184,
+    0.073,
+    0.068
+   ],
+   "bounds_min": [
+    -0.092,
+    0.0,
+    -0.034
+   ],
+   "bounds_max": [
+    0.092,
+    0.073,
+    0.034
+   ],
+   "tris": 4284,
+   "top_y": null,
+   "bytes": 140064,
+   "family": "food_veg"
+  },
+  {
+   "id": "veg_tomatoes_on_vine",
+   "category": "veg",
+   "label": "tomatoes_on_vine",
+   "file": "models/veg/veg_tomatoes_on_vine.glb",
+   "mount": "table",
+   "mount_y": null,
+   "tags": [
+    "food",
+    "vegetable"
+   ],
+   "solid": false,
+   "size": [
+    0.236,
+    0.062,
+    0.126
+   ],
+   "bounds_min": [
+    -0.118,
+    0.0,
+    -0.063
+   ],
+   "bounds_max": [
+    0.118,
+    0.062,
+    0.063
+   ],
+   "tris": 4820,
+   "top_y": null,
+   "bytes": 158048,
+   "family": "food_veg"
   },
   {
    "id": "vending_drink_machine",

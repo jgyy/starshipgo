@@ -23,7 +23,7 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-TARGET = 1000
+TARGET = 1196   # 1000 original components + 196 food and drink models (blender/starship/components/food*.py)
 
 
 def slug(s):

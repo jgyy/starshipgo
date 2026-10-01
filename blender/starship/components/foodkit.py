@@ -127,6 +127,7 @@ def _uv_for(mode, p, nrm, ext, tile, cy):
 
 def _assign_uv(bm, faces, local, mode, ext, tile, cy):
     layer = bm.loops.layers.uv.verify()
+    bm.normal_update()
     for f in faces:
         nl = (0.0, 0.0, 0.0)
         if mode == "box" or mode == "auto":
